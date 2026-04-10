@@ -208,7 +208,7 @@ var userName = userName
 var password = password
 
         try {
-            this.this.addDbUser(this.AT_LOCALHOST, db, userName, password)
+            this.addDbUser(this.AT_LOCALHOST, db, userName, password)
 
     var hostName: string = this.getHostName()!;
         
@@ -220,7 +220,7 @@ var password = password
                                 )
                         
                                     {
-                                    this.this.addDbUser(hostName, db, userName, password)
+                                    this.addDbUser(hostName, db, userName, password)
 
                                     }
                                 

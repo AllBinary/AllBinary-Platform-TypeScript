@@ -189,8 +189,8 @@ progressCanvas!.update(graphics)
 getInstance = OpenGLImageCacheFactory.getInstance()getInstance as OpenGLImageCache
 getInstance.
                     update(gl)
-this.this.processRunnables()
-this.this.set(gl)
+this.processRunnables()
+this.set(gl)
 }
 
 

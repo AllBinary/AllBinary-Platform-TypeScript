@@ -169,7 +169,7 @@ i < vector.length; i++)
 
 }
 
-this.this.remove(removeVector)
+this.remove(removeVector)
 }
 
 

@@ -187,7 +187,7 @@ this.directionalInterface= directionalCompositeInterface!.getDirectionalInterfac
 
 this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties()
 DestroyedEventHandler.getInstance()!.addListener(this)
-this.this.init()
+this.init()
 }
 
 
@@ -199,7 +199,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                         if(this.isBeyondTarget())
                         
                                     {
-                                    this.this.init()
+                                    this.init()
 this.velocityInterface!.zero()
 
                                     }
@@ -208,13 +208,13 @@ this.velocityInterface!.zero()
                         if(!dive)
                         
                                     {
-                                    this.this.target(allBinaryLayerManager)
+                                    this.target(allBinaryLayerManager)
 
                                     }
                                 
                         else {
-                            this.this.dive()
-this.this.attack()
+                            this.dive()
+this.attack()
 
                         }
                             
@@ -347,7 +347,7 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
                         if(!initialDropped && this.directionOfTarget != directionFactory!.NOT_BORDERED_WITH)
                         
                                     {
-                                    this.this.drop()
+                                    this.drop()
 
                                     }
                                 
@@ -359,7 +359,7 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
                         if(this.directionOfTarget == directionFactory!.UP || this.directionOfTarget == directionFactory!.DOWN)
                         
                                     {
-                                    this.this.verticalTargeting(x)
+                                    this.verticalTargeting(x)
 
                                     }
                                 
@@ -367,7 +367,7 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
                         if(this.directionOfTarget == directionFactory!.LEFT || this.directionOfTarget == directionFactory!.RIGHT)
                         
                                     {
-                                    this.this.horizontalTargeting(y)
+                                    this.horizontalTargeting(y)
 
                                     }
                                 
@@ -395,7 +395,7 @@ var x = x
                         if(ownerLayerInterface!.getXP() < x)
                         
                                     {
-                                    this.this.moveRight()
+                                    this.moveRight()
 
                                     }
                                 
@@ -403,7 +403,7 @@ var x = x
                         if(ownerLayerInterface!.getXP() > x)
                         
                                     {
-                                    this.this.moveLeft()
+                                    this.moveLeft()
 
                                     }
                                 
@@ -411,7 +411,7 @@ var x = x
                         if(ownerLayerInterface!.getXP() > x -3 && ownerLayerInterface!.getXP() < x +3)
                         
                                     {
-                                    this.this.setDive()
+                                    this.setDive()
 
                                     }
                                 
@@ -431,7 +431,7 @@ var y = y
                         if(ownerLayerInterface!.getYP() < y)
                         
                                     {
-                                    this.this.moveDown()
+                                    this.moveDown()
 
                                     }
                                 
@@ -439,7 +439,7 @@ var y = y
                         if(ownerLayerInterface!.getYP() > y)
                         
                                     {
-                                    this.this.moveUp()
+                                    this.moveUp()
 
                                     }
                                 
@@ -447,7 +447,7 @@ var y = y
                         if(ownerLayerInterface!.getYP() > y -3 && ownerLayerInterface!.getYP() < y +3)
                         
                                     {
-                                    this.this.setDive()
+                                    this.setDive()
 
                                     }
                                 
@@ -464,7 +464,7 @@ TrackingEventHandler.getInstance()!.removeListener(this)
                 //@Throws(Error::class)
             
     moveRight(){
-this.this.setLastDirection(this.directionFactory!.RIGHT)
+this.setLastDirection(this.directionFactory!.RIGHT)
 this.directionalInterface!.setFrame(this.lastDirection)
 this.aiVistor!.visit(this)
 }
@@ -473,7 +473,7 @@ this.aiVistor!.visit(this)
                 //@Throws(Error::class)
             
     moveLeft(){
-this.this.setLastDirection(this.directionFactory!.LEFT)
+this.setLastDirection(this.directionFactory!.LEFT)
 this.directionalInterface!.setFrame(this.lastDirection)
 this.aiVistor!.visit(this)
 }
@@ -482,7 +482,7 @@ this.aiVistor!.visit(this)
                 //@Throws(Error::class)
             
     moveDown(){
-this.this.setLastDirection(this.directionFactory!.DOWN)
+this.setLastDirection(this.directionFactory!.DOWN)
 this.directionalInterface!.setFrame(this.lastDirection)
 this.aiVistor!.visit(this)
 }
@@ -491,7 +491,7 @@ this.aiVistor!.visit(this)
                 //@Throws(Error::class)
             
     moveUp(){
-this.this.setLastDirection(this.directionFactory!.UP)
+this.setLastDirection(this.directionFactory!.UP)
 this.directionalInterface!.setFrame(this.lastDirection)
 this.aiVistor!.visit(this)
 }

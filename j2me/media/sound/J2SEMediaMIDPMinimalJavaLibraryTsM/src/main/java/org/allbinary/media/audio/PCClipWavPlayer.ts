@@ -270,7 +270,7 @@ var controlType = controlType
     public setVolume(leftVolume: number, rightVolume: number){
     //var leftVolume = leftVolume
     //var rightVolume = rightVolume
-this.this.setVolume((leftVolume.toFloat()) /100.0f)
+this.setVolume((leftVolume.toFloat()) /100.0f)
 }
 
 

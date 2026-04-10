@@ -46,7 +46,7 @@ var height = height
 var basicColor = basicColor
 this.width= width
 this.height= height
-this.this.setBasicColorP(basicColor)
+this.setBasicColorP(basicColor)
 }
 
 

@@ -145,7 +145,7 @@ var selectRTSLayerVisitorFactoryInterface = selectRTSLayerVisitorFactoryInterfac
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.initInputProcessors()
+this.initInputProcessors()
 this.rtsPlayerLayerInterface= rtsPlayerLayerInterface
 this.list= list
 this.selectRTSLayerVisitorInterface= selectRTSLayerVisitorFactoryInterface!.getInstance(this)
@@ -429,19 +429,19 @@ index < size; index++)
         
 
 key= gameKeyEvent!.getKey()
-this.this.processInput(key)
+this.processInput(key)
 }
 
 
                         if(isSingleKeyProcessing)
                         
                                     {
-                                    this.this.clear()
+                                    this.clear()
 
                                     }
                                 
                         else {
-                            this.this.update()
+                            this.update()
 
                         }
                             
@@ -470,7 +470,7 @@ this.paintSelectedRTSLayersList= BasicArrayListUtil.getInstance()!.getImmutableI
                         if(selectedLayer == CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER)
                         
                                     {
-                                    this.this.deselectAll()
+                                    this.deselectAll()
 this.selectedRTSLayersList!.clear()
 
                                     }
@@ -512,7 +512,7 @@ stringBuffer!.append("Selected Layer: ")
 logUtil!.put(stringBuffer!.toString(), this, "setSelectedRTSLayer")
 this.paintSelectedRTSLayersList= BasicArrayListUtil.getInstance()!.getImmutableInstance()
 this.selectRTSLayerVisitorInterface!.visit(selectedLayer)
-this.this.deselectAll()
+this.deselectAll()
 
                         if(this.selectedRTSLayersList!.size() > 0)
                         

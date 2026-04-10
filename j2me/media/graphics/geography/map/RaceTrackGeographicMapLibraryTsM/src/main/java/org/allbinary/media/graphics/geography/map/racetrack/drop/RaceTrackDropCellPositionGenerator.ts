@@ -146,7 +146,7 @@ this.list.clear()
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
     //var geographicMapInterface = geographicMapInterface
-this.this.init()
+this.init()
 
     var baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap = geographicMapInterface as BaseRaceTrackGeographicMap;
         
@@ -236,7 +236,7 @@ ahead++
         
 index >= 0; index--)
         {
-this.this.drop(allBinaryGameLayerManager, index)
+this.drop(allBinaryGameLayerManager, index)
 }
 
 }
@@ -259,7 +259,7 @@ this.this.drop(allBinaryGameLayerManager, index)
         
         
 
-this.this.drop(allBinaryLayerManager, index)
+this.drop(allBinaryLayerManager, index)
 
                                     }
                                 

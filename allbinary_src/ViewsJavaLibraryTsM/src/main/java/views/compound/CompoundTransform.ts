@@ -69,7 +69,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setURIResolver(StoreUriResolver(this.getTransformInfoInterface(), this.getURIResolver() as BasicUriResolver) as URIResolver)
+this.setURIResolver(StoreUriResolver(this.getTransformInfoInterface(), this.getURIResolver() as BasicUriResolver) as URIResolver)
 
     var objectConfig: CompoundContextTransformInfoObjectConfig = new CompoundContextTransformInfoObjectConfig(this.abeClientInformation, this.getTransformInfoInterface(), this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());
         
@@ -88,7 +88,7 @@ this.this.setURIResolver(StoreUriResolver(this.getTransformInfoInterface(), this
         
         
 
-this.this.setInputStream(templateInputStream)
+this.setInputStream(templateInputStream)
 }
 
 

@@ -30,7 +30,7 @@ this.data= data
     public visit(anyType: any = {}): any = {}{
 var anyType = anyType
 stringBuilder!.delete(0, stringBuilder!.length())
-this.this.print(data, stringBuilder)
+this.print(data, stringBuilder)
 
 
 
@@ -47,7 +47,7 @@ var data = data
         
         
 
-this.this.print(data, stringBuilder)
+this.print(data, stringBuilder)
 }
 
 

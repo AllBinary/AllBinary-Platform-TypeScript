@@ -84,9 +84,9 @@ public constructor (name: string, remoteInfo: RemoteInfo, viewPosition: ViewPosi
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setCollidableInferface(CollidableAlwaysPickupNeverCollideBehaviorFactory.getInstance())
-this.this.setLayerWidth(10)
-this.this.setLayerHeight(10)
+this.setCollidableInferface(CollidableAlwaysPickupNeverCollideBehaviorFactory.getInstance())
+this.setLayerWidth(10)
+this.setLayerHeight(10)
 }
 
 public constructor (name: string, remoteInfo: RemoteInfo, total: number, pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition)                        
@@ -105,10 +105,10 @@ public constructor (name: string, remoteInfo: RemoteInfo, total: number, pickedU
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setCollidableInferface(CollidableAlwaysPickupNeverCollideBehaviorFactory.getInstance())
-this.this.setLayerWidth(10)
-this.this.setLayerHeight(10)
-this.this.init(pickedUpLayerInterfaceFactoryInterface, animationInterface)
+this.setCollidableInferface(CollidableAlwaysPickupNeverCollideBehaviorFactory.getInstance())
+this.setLayerWidth(10)
+this.setLayerHeight(10)
+this.init(pickedUpLayerInterfaceFactoryInterface, animationInterface)
 }
 
 public constructor (name: string, viewPosition: ViewPosition)                        
@@ -147,7 +147,7 @@ public constructor (name: string, total: number, pickedUpLayerInterfaceFactoryIn
     //var animationInterface = animationInterface
 this.pickedUpLayerInterfaceFactoryInterface= pickedUpLayerInterfaceFactoryInterface
 this.animationInterface= animationInterface
-this.this.setDestroyed(false)
+this.setDestroyed(false)
 }
 
 
@@ -155,7 +155,7 @@ this.this.setDestroyed(false)
 var x = x
 var y = y
 var z = z
-this.this.setPosition(x, y, z)
+this.setPosition(x, y, z)
 }
 
 
@@ -212,7 +212,7 @@ this.animationInterface!.paintThreed(graphics, viewX, viewY, 3)
 
 
     public setPickedUp(){
-this.this.setDestroyed(true)
+this.setDestroyed(true)
 }
 
 

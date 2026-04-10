@@ -65,7 +65,7 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.update()
+this.update()
 }
 
 
@@ -171,7 +171,7 @@ index < size; index++)
                         
                                     {
                                     super.toggle()
-this.this.update()
+this.update()
 
                                     }
                                 
@@ -186,7 +186,7 @@ this.this.update()
                         
                                     {
                                     super.disable()
-this.this.update()
+this.update()
 
                                     }
                                 
@@ -201,7 +201,7 @@ this.this.update()
                         
                                     {
                                     super.enable()
-this.this.update()
+this.update()
 
                                     }
                                 

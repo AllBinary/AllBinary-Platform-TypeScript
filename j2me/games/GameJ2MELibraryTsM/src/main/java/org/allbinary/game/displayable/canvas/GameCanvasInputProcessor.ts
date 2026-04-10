@@ -158,7 +158,7 @@ logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
     //var canvas = canvas
     //var keyCode = keyCode
     //var deviceId = deviceId
-this.this.removeGameKeyEvent(canvas, keyCode, deviceId, false)
+this.removeGameKeyEvent(canvas, keyCode, deviceId, false)
 }
 
 

@@ -61,7 +61,7 @@ export class FullScreenUtil
                                 )
                         
                                     {
-                                    this.this.init(fullScreenInterface)
+                                    this.init(fullScreenInterface)
 
                                     }
                                 

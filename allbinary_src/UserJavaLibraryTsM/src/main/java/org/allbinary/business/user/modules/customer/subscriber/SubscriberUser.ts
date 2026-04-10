@@ -64,7 +64,7 @@ this.subscription= Subscription()
     public validateSession(weblisketSession: WeblisketSessionInterface){
 var weblisketSession = weblisketSession
 super.validateSession(weblisketSession)
-this.this.updateSession(weblisketSession)
+this.updateSession(weblisketSession)
 }
 
 

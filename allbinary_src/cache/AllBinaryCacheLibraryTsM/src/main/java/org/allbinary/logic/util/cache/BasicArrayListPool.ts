@@ -96,7 +96,7 @@ var usedList = usedList
         
         
 
-this.this.add(anyType)
+this.add(anyType)
 }
 
 usedList!.clear()
@@ -127,7 +127,7 @@ var usedList = usedList
                         
                                     {
                                     usedList!.remove(index)
-this.this.add(list)
+this.add(list)
 
                                     }
                                 

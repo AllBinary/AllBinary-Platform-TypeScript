@@ -110,7 +110,7 @@ var level = level
                     
 this.transformInfoInterface= transformInfoInterface
 this.themeVector= Vector()
-this.this.addThemes(node)
+this.addThemes(node)
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, node: Node, rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface)                        
@@ -129,7 +129,7 @@ var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
                     
 this.transformInfoInterface= transformInfoInterface
 this.themeVector= Vector()
-this.this.addThemes(node)
+this.addThemes(node)
 }
 
 

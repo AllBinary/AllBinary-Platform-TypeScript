@@ -58,14 +58,14 @@ public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocit
             super();
             var basicDecimal = basicDecimal
 var velocityProperties = velocityProperties
-this.this.setSpeedBasicDecimal(basicDecimal)
+this.setSpeedBasicDecimal(basicDecimal)
 this.velocityProperties= velocityProperties
 }
 
 public constructor (){
 
             super();
-            this.this.setSpeedBasicDecimal(BasicDecimal.ZERO_BIGDECIMAL)
+            this.setSpeedBasicDecimal(BasicDecimal.ZERO_BIGDECIMAL)
 this.velocityProperties= BasicVelocityProperties()
 }
 

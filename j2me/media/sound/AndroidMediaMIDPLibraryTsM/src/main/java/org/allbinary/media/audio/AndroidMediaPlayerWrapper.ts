@@ -95,7 +95,7 @@ public constructor (resource: string){
 
                                     }
                                 
-this.this.setMediaPlayer(mediaPlayer)
+this.setMediaPlayer(mediaPlayer)
 this.mediaPlayer!.setLooping(false)
 } catch(e: Exception)
             {

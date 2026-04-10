@@ -55,8 +55,8 @@ export class StoreFrontsTag extends TableTag {
 public constructor (){
 
             super();
-            this.this.setTagHelperFactory(StoreFrontsHelperFactory())
-this.this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory())
+            this.setTagHelperFactory(StoreFrontsHelperFactory())
+this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory())
 }
 
 
@@ -290,7 +290,7 @@ this.getPropertiesHashMap()!.put("total", this.getTotal())
 
                                     }
                                 
-this.this.install()
+this.install()
 
                                     }
                                 
@@ -298,7 +298,7 @@ this.this.install()
                         if(this.getCommand()!.compareTo(storeFrontData!.INSTALL_COMPLETE) == 0)
                         
                                     {
-                                    this.this.sendStoreCreatedEmails()
+                                    this.sendStoreCreatedEmails()
 
                                     }
                                 

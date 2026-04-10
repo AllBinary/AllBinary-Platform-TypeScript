@@ -130,7 +130,7 @@ this.offsetY= offsetY
                                     {
                                     gravityUtil!.process(velocityProperties)
 velocityProperties!.limitXYToForwardAndReverseMaxVelocity()
-this.this.gravity()
+this.gravity()
 
                                     }
                                 
@@ -347,7 +347,7 @@ layer.
         
         
 
-this.this.moveAndLand(geographicMapInterfaceArray, geographicMapCellTypeArray, geographicMapCellPosition, velocityProperties, layer, x, y)
+this.moveAndLand(geographicMapInterfaceArray, geographicMapCellTypeArray, geographicMapCellPosition, velocityProperties, layer, x, y)
 
                         if(geographicMapCellPosition == 
                                     null

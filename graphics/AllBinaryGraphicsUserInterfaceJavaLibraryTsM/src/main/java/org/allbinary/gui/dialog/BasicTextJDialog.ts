@@ -54,7 +54,7 @@ var text = text
                             //For kotlin this is before the body of the constructor.
                     
 initComponents()
-this.this.setText(text)
+this.setText(text)
 }
 
 
@@ -108,7 +108,7 @@ pack()
 
     jButton1ActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.this.setVisible(false)
+this.setVisible(false)
 
                         if(this.closeListenerInterface != 
                                     null

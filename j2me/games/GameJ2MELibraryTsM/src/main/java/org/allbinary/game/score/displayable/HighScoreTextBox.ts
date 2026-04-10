@@ -155,10 +155,10 @@ highScoreUtil= HighScoreUtil(highScoresFactoryInterface, highScoresHelper, abeCl
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-this.this.removeAllCommands()
+this.removeAllCommands()
 PostGameCommandFactory.getInstance()!.addCommands(this)
-this.this.addCommand(HighScoreUtil.SUBMIT_TEXTBOX_COMMAND)
-this.this.setCommandListener(cmdListener)
+this.addCommand(HighScoreUtil.SUBMIT_TEXTBOX_COMMAND)
+this.setCommandListener(cmdListener)
 }
 
 
@@ -174,8 +174,8 @@ this.virtualKeyboardEventHandler!.close()
 this.paintable= this.pleaseWait
 this.repaintBehavior!.onChangeRepaint(this)
 super.close()
-this.this.removeCommand(HighScoreUtil.SUBMIT_TEXTBOX_COMMAND)
-this.this.update()
+this.removeCommand(HighScoreUtil.SUBMIT_TEXTBOX_COMMAND)
+this.update()
 
                         if(this.submitted)
                         

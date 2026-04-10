@@ -51,8 +51,8 @@ export class BillingAddressTag extends TableTag {
 public constructor (){
 
             super();
-            this.this.setTagHelperFactory(BillingAddressHelperFactory())
-this.this.setTagRequestHelperFactory(BillingAddressHelperFactory())
+            this.setTagHelperFactory(BillingAddressHelperFactory())
+this.setTagRequestHelperFactory(BillingAddressHelperFactory())
 }
 
 

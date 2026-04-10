@@ -115,7 +115,7 @@ export class ImageModifierUtil
         
         
 
-this.this.setAlpha(originalImage, image, imageIndex, alphaFloat)
+this.setAlpha(originalImage, image, imageIndex, alphaFloat)
 }
 
 
@@ -129,7 +129,7 @@ this.this.setAlpha(originalImage, image, imageIndex, alphaFloat)
                         
                                     {
                                     this.alphaArray[imageIndex]= false
-this.this.setAlpha2(originalImage, image, imageIndex, alpha)
+this.setAlpha2(originalImage, image, imageIndex, alpha)
 
                                     }
                                 
@@ -225,7 +225,7 @@ this.alphaArray= BooleanArray(size)
 index < size; index++)
         {
 imageArray[index]= originalImageArray[index]!
-this.this.handleImage(imageArray, index, originalImageArray[index]!)
+this.handleImage(imageArray, index, originalImageArray[index]!)
 }
 
 

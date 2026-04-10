@@ -54,8 +54,8 @@ public constructor (){
                         if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
                         
                                     {
-                                    this.this.setName("Add Validation StoreFront View")
-this.this.setObjectFile("views.admin.storefront.AddValidationStoreFrontView")
+                                    this.setName("Add Validation StoreFront View")
+this.setObjectFile("views.admin.storefront.AddValidationStoreFrontView")
 
                                     }
                                 
@@ -74,8 +74,8 @@ this.this.setObjectFile("views.admin.storefront.AddValidationStoreFrontView")
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.EDIT) == 0)
                         
                                     {
-                                    this.this.setName("Edit Validation StoreFront View")
-this.this.setObjectFile("views.admin.storefront.EditValidationStoreFrontView")
+                                    this.setName("Edit Validation StoreFront View")
+this.setObjectFile("views.admin.storefront.EditValidationStoreFrontView")
 
                                     }
                                 
@@ -83,8 +83,8 @@ this.this.setObjectFile("views.admin.storefront.EditValidationStoreFrontView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.UPDATE) == 0)
                         
                                     {
-                                    this.this.setName("Update Validation StoreFront View")
-this.this.setObjectFile("views.admin.storefront.UpdateValidationStoreFrontView")
+                                    this.setName("Update Validation StoreFront View")
+this.setObjectFile("views.admin.storefront.UpdateValidationStoreFrontView")
 
                                     }
                                 
@@ -92,8 +92,8 @@ this.this.setObjectFile("views.admin.storefront.UpdateValidationStoreFrontView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.DELETE) == 0)
                         
                                     {
-                                    this.this.setName("Delete Validation StoreFront View")
-this.this.setObjectFile("views.admin.storefront.DeleteValidationStoreFrontView")
+                                    this.setName("Delete Validation StoreFront View")
+this.setObjectFile("views.admin.storefront.DeleteValidationStoreFrontView")
 
                                     }
                                 

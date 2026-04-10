@@ -67,7 +67,7 @@ this.animationInterface= animationInterface
 this.life= life
 this.healthInterface= healthInterface
 this.healthInterface!.addListener(this)
-this.this.onHealthChange()
+this.onHealthChange()
 }
 
 public constructor (layerInterface: AllBinaryLayer, life: Life, healthInterface: Health, location: number, direction: number)                        

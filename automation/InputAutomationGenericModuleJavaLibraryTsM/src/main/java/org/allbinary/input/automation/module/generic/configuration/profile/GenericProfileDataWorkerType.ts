@@ -84,7 +84,7 @@ public constructor (name: string){
 
             super();
             var name = name
-this.this.setName(name)
+this.setName(name)
 hashMap!.put(this.getName(), this)
 }
 

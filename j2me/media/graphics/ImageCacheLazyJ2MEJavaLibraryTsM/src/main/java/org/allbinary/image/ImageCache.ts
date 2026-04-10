@@ -577,7 +577,7 @@ loadImageForAnimation()
                                 )
                         
                                     {
-                                    this.this.loadImageForAnimation(lazyImageRotationAnimation)
+                                    this.loadImageForAnimation(lazyImageRotationAnimation)
 
                                     }
                                 
@@ -651,7 +651,7 @@ loadImageForAnimation()
 image= loadList!.remove(0) as Image
 }
 
-this.this.loadImage(image)
+this.loadImage(image)
 }
 
 
@@ -711,7 +711,7 @@ this.this.loadImage(image)
                         if(image2.isReady())
                         
                                     {
-                                    this.this.init(image, image2)
+                                    this.init(image, image2)
 
 
 
@@ -982,7 +982,7 @@ index < size; index++)
                                 
 }
 
-this.this.runTask()
+this.runTask()
 
     var index: number = this.getIndex(key)!;
         
@@ -1154,7 +1154,7 @@ this.loadAfterList!.remove(lazyImageRotationAnimation)
 
                         }
                             
-this.this.runTask()
+this.runTask()
 }
 
 

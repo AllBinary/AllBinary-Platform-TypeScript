@@ -178,7 +178,7 @@ public constructor (eventHandlerName: string){
             super();
             var eventHandlerName = eventHandlerName
 this.eventHandlerName= eventHandlerName
-this.this.initNextId()
+this.initNextId()
 this.userNameEvenNameHashMap!.put(this.eventHandlerName, this)
 }
 

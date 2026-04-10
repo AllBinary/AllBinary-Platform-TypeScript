@@ -245,7 +245,7 @@ this.runningP= isRunning
                         if(this.runningP)
                         
                                     {
-                                    this.this.reset()
+                                    this.reset()
 this.done= false
 
                                     }
@@ -265,7 +265,7 @@ this.done= false
         
 
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
-this.this.setRunning(false)
+this.setRunning(false)
 }
 
 }
@@ -280,7 +280,7 @@ pathFindingInfo= NullUtil.getInstance()!.NULL_OBJECT
 
 
     finish(){
-this.this.reset2()
+this.reset2()
 currentPassRunnable= ALREADY_ENDED_RUNNABLE
 done= true
 }
@@ -297,7 +297,7 @@ done= true
 
 
     public reset(){
-this.this.reset2()
+this.reset2()
 this.currentPassRunnable= FIRST_RUNNABLE
 this.done= false
 }

@@ -150,7 +150,7 @@ genericProfileActionsJPanelLayout!.setVerticalGroup(genericProfileActionsJPanelL
         
         
 
-this.this.setLayout(layout)
+this.setLayout(layout)
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(genericProfileActionsJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 596, javax.swing.GroupLayout.PREFERRED_SIZE)!.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
 layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(genericProfileActionsJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE))
 }
@@ -200,7 +200,7 @@ this.blankGenericProfileActionJPanel!.removeAll()
         
         
 
-this.this.setGenericProfileActionJPanel(GenericProfileActionJPanel())
+this.setGenericProfileActionJPanel(GenericProfileActionJPanel())
 this.getGenericProfileActionJPanel()!.setGenericProfileAction(genericProfileAction)
 this.getGenericProfileActionJPanel()!.updateProfileActionUI()
 
@@ -226,7 +226,7 @@ var evt = evt
         
         
 
-this.this.updateProfileActionUI(profileActionNameString)
+this.updateProfileActionUI(profileActionNameString)
 } catch(e: Exception)
             {
 logUtil!.put(this.commonStrings!.EXCEPTION, this, "genericProfileActionsJListValueChanged", e)
@@ -245,10 +245,10 @@ var evt = evt
         
 
 this.getGenericProfileActions()!.add(newActionName)
-this.this.setModel()
+this.setModel()
 this.genericProfileActionsJList!.setSelectedValue(newActionName, true)
 this.newProfileActionJDialog!.setVisible(false)
-this.this.updateProfileActionUI(newActionName)
+this.updateProfileActionUI(newActionName)
 } catch(e: Exception)
             {
 logUtil!.put(this.commonStrings!.EXCEPTION, this, "okNewProfileActionJButtonActionPerformed", e)
@@ -284,7 +284,7 @@ index < anyType!.length; index++)
 this.getGenericProfileActions()!.remove(nextSelectedValueString)
 }
 
-this.this.selectFirstElement()
+this.selectFirstElement()
 } catch(e: Exception)
             {
 logUtil!.put(this.commonStrings!.EXCEPTION, this, "deleteActionJButtonActionPerformed", e)
@@ -296,13 +296,13 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "deleteActionJButtonActionPerf
                 //@Throws(Error::class)
             
     public selectFirstElement(){
-this.this.setModel()
+this.setModel()
 
                         if(this.genericProfileActionsJList!.getModel()!.getSize() > 0)
                         
                                     {
                                     this.genericProfileActionsJList!.setSelectedValue(this.genericProfileActionsJList!.getModel()!.getElementAt(0), true)
-this.this.updateProfileActionUI(this.genericProfileActionsJList!.getModel()!.getElementAt(0) as String)
+this.updateProfileActionUI(this.genericProfileActionsJList!.getModel()!.getElementAt(0) as String)
 
                                     }
                                 

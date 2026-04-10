@@ -73,8 +73,8 @@ public constructor (dataId: Integer, width: number, height: number, cellWidth: n
                             //For kotlin this is before the body of the constructor.
                     
 this.dataId= dataId
-this.this.setLayerWidth(width)
-this.this.setLayerHeight(height)
+this.setLayerWidth(width)
+this.setLayerHeight(height)
 super.setPosition(0, 0, 0)
 this.cellWidth= cellWidth
 this.cellHeight= cellHeight
@@ -131,7 +131,7 @@ col < columns; col++)
         
 row < rows; row++)
         {
-this.this.setCell(col, row, mapTwoDArray[row]![col]!)
+this.setCell(col, row, mapTwoDArray[row]![col]!)
 }
 
 }
@@ -178,7 +178,7 @@ row < rows; row++)
                         
                                     {
                                     mapTwoDArray[row]![col]= toTileId
-this.this.setCell(col, row, mapTwoDArray[row]![col]!)
+this.setCell(col, row, mapTwoDArray[row]![col]!)
 
                                     }
                                 

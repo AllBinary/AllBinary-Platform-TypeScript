@@ -134,13 +134,13 @@ var maxHeight = maxHeight
 var maxWidth = maxWidth
 var bufferZone = bufferZone
 var basicColor = basicColor
-this.this.setLocation(location)
-this.this.setDirection(direction)
-this.this.setBufferZone(bufferZone)
-this.this.setMaxWidth(maxWidth)
-this.this.setMaxHeight(maxHeight)
-this.this.onDisplayChangeEvent(DisplayInfoSingleton.getInstance()!.displayChangeEvent)
-this.this.setBasicColorP(basicColor)
+this.setLocation(location)
+this.setDirection(direction)
+this.setBufferZone(bufferZone)
+this.setMaxWidth(maxWidth)
+this.setMaxHeight(maxHeight)
+this.onDisplayChangeEvent(DisplayInfoSingleton.getInstance()!.displayChangeEvent)
+this.setBasicColorP(basicColor)
 this.color= basicColor!.toInt()
 }
 
@@ -286,7 +286,7 @@ var displayChangeEvent = displayChangeEvent
 
 this.hudGraphicsPosition= this.getHudGraphicsPosition(displayInfo!.getLastWidth(), displayInfo!.getLastHeight())
 x= this.hudGraphicsPosition!.getPoint()!.getX()
-this.this.setY(this.hudGraphicsPosition!.getPoint()!.getY())
+this.setY(this.hudGraphicsPosition!.getPoint()!.getY())
 } catch(e: Exception)
             {
 

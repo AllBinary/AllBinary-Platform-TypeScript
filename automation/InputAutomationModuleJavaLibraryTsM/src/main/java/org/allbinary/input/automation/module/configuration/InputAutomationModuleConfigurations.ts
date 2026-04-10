@@ -70,7 +70,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, file: F
             super();
                 //var abeClientInformation = abeClientInformation
     //var file = file
-this.this.setHashMap(HashMap<Any, Any>())
+this.setHashMap(HashMap<Any, Any>())
 
     var bytes: ByteArray = ByteArray(100000);
         
@@ -131,7 +131,7 @@ index < nameNodeList!.getLength(); index++)
         
         
 
-this.this.add(InputAutomationModuleConfiguration(abeClientInformation, node))
+this.add(InputAutomationModuleConfiguration(abeClientInformation, node))
 }
 
 
@@ -144,7 +144,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, documen
             super();
                 //var abeClientInformation = abeClientInformation
     //var document = document
-this.this.setHashMap(HashMap<Any, Any>())
+this.setHashMap(HashMap<Any, Any>())
 
     var nameNodeList: NodeList = document.getElementsByTagName(InputAutomationModuleData.NAME)!;
         
@@ -166,7 +166,7 @@ index < nameNodeList!.getLength(); index++)
         
         
 
-this.this.add(InputAutomationModuleConfiguration(abeClientInformation, node))
+this.add(InputAutomationModuleConfiguration(abeClientInformation, node))
 }
 
 }
@@ -175,7 +175,7 @@ public constructor (inputAutomationModuleConfigurationList: List<InputAutomation
 
             super();
                 //var inputAutomationModuleConfigurationList = inputAutomationModuleConfigurationList
-this.this.setHashMap(HashMap<Any, Any>())
+this.setHashMap(HashMap<Any, Any>())
 
     var size: number = inputAutomationModuleConfigurationList!.size!;
         
@@ -195,7 +195,7 @@ this.this.setHashMap(HashMap<Any, Any>())
 index < size; index++)
         {
 inputAutomationModuleConfiguration= inputAutomationModuleConfigurationList!.get(index)
-this.this.add(inputAutomationModuleConfiguration)
+this.add(inputAutomationModuleConfiguration)
 }
 
 }
@@ -203,7 +203,7 @@ this.this.add(inputAutomationModuleConfiguration)
 public constructor (){
 
             super();
-            this.this.setHashMap(HashMap<Any, Any>())
+            this.setHashMap(HashMap<Any, Any>())
 }
 
 

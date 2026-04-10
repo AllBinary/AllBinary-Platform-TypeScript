@@ -78,9 +78,9 @@ public constructor (gameSkillType: GameSkillType, extra: string, time: number){
             var gameSkillType = gameSkillType
 var extra = extra
 var time = time
-this.this.setGameSkillType(gameSkillType)
-this.this.setExtra(extra)
-this.this.setTime(time)
+this.setGameSkillType(gameSkillType)
+this.setExtra(extra)
+this.setTime(time)
 this.vector= Vector()
 hashMap!.put(StringBuilder().
                             append(this.getGameSkillType()!.getName())!.append(CommonSeps.getInstance()!.SPACE)!.append(extra)!.toString(), this)

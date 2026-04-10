@@ -136,7 +136,7 @@ this.searchRequest= SearchRequest(storeFrontInterface, searchParams, xslFile, co
 
                                     }
                                 
-this.this.getFormData()
+this.getFormData()
 }
 
 

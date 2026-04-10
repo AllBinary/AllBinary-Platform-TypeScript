@@ -129,13 +129,13 @@ i= i -1
 j= j -1
 }
 
-this.this.swap(data, i -1, j -1)
+this.swap(data, i -1, j -1)
 i++
 j= length
 
         while(i < j)
         {
-this.this.swap(data, i -1, j -1)
+this.swap(data, i -1, j -1)
 i++
 j--
 }
@@ -213,7 +213,7 @@ System.out.println(iterations)
         
 count < iterations -1; count++)
         {
-this.this.getNext(data)
+this.getNext(data)
 visitor.visit(this)
 }
 

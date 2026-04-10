@@ -42,7 +42,7 @@ public constructor (libraryName: string){
 
             super();
             var libraryName = libraryName
-this.this.setLibraryName(libraryName)
+this.setLibraryName(libraryName)
 }
 
 

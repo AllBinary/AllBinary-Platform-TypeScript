@@ -61,7 +61,7 @@ public constructor (node: Node){
 
             super();
             var node = node
-this.this.setName(DomNodeHelper.getTextNodeValue(node))
+this.setName(DomNodeHelper.getTextNodeValue(node))
 this.vector= Vector()
 
     var nodeList: NodeList = node.getChildNodes()!;
@@ -106,7 +106,7 @@ public constructor (name: string){
 
             super();
             var name = name
-this.this.setName(name)
+this.setName(name)
 this.vector= Vector()
 }
 

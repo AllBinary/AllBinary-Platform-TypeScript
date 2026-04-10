@@ -108,7 +108,7 @@ index < nodeList!.getLength(); index++)
         
         
 
-this.this.setIsOn(.
+this.setIsOn(.
                             )
 
                                     }
@@ -134,7 +134,7 @@ this.this.setIsOn(.
 
                         }
                             
-this.this.init()
+this.init()
 }
 
 public constructor ()                        
@@ -146,7 +146,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.init()
+this.init()
 }
 
 

@@ -92,7 +92,7 @@ this.eventListenerInterfaceList= BasicArrayList()
 index < size; index++)
         {
 eventListenerInterface= vector.get(index) as EventListenerInterface
-this.this.addListener(eventListenerInterface)
+this.addListener(eventListenerInterface)
 }
 
 }
@@ -119,7 +119,7 @@ this.this.addListener(eventListenerInterface)
 index < size; index++)
         {
 eventListenerInterface= vector.get(index) as EventListenerInterface
-this.this.removeListener(eventListenerInterface)
+this.removeListener(eventListenerInterface)
 }
 
 }
@@ -181,7 +181,7 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface)
 
         try {
             eventListenerInterface= this.eventListenerInterfaceList!.get(index) as EventListenerInterface
-this.this.process(eventObject, eventListenerInterface)
+this.process(eventObject, eventListenerInterface)
 } catch(e: Exception)
             {
 logUtil!.put(commonStrings!.EXCEPTION, this, eventStrings!.FIRE_EVENT, e)

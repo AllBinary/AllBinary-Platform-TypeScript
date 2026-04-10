@@ -158,7 +158,7 @@ this.associatedAdvancedRTSGameLayer= associatedAdvancedRTSGameLayer
 this.completeTimeDelayHelper= TimeDelayHelper(30000)
 this.targetList= BasicArrayList()
 this.possibleTargetList= BasicArrayList()
-this.this.setWaypointPathsList(BasicArrayListUtil.getInstance()!.getImmutableInstance())
+this.setWaypointPathsList(BasicArrayListUtil.getInstance()!.getImmutableInstance())
 this.currentGeographicMapCellHistoryP= GeographicMapCellHistory()
 this.FAKE_WAYPOINT_LAYER= fakeWaypoint
 }
@@ -190,7 +190,7 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.onWaypointEvent(this.as
                         if(this.associatedAdvancedRTSGameLayer!.isSelected())
                         
                                     {
-                                    this.this.addWaypointFromUser(advancedRTSGameLayer)
+                                    this.addWaypointFromUser(advancedRTSGameLayer)
 
                                     }
                                 
@@ -198,7 +198,7 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.onWaypointEvent(this.as
                         if(advancedRTSGameLayer!.shouldAddWaypointFromBuilding())
                         
                                     {
-                                    this.this.addWaypointFromBuilding(advancedRTSGameLayer)
+                                    this.addWaypointFromBuilding(advancedRTSGameLayer)
 
                                     }
                                 
@@ -303,16 +303,16 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.insertWaypoint(this.ass
                         if(this.isMoving())
                         
                                     {
-                                    this.this.setMovingFromStopped(false)
+                                    this.setMovingFromStopped(false)
 
                                     }
                                 
                         else {
-                            this.this.setMovingFromStopped(true)
+                            this.setMovingFromStopped(true)
 
                         }
                             
-this.this.setMoving(false)
+this.setMoving(false)
 }
 
 
@@ -335,7 +335,7 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.setRandomGeographicMapC
         
         
 
-this.this.setGeographicMapCellHistoryPath(geographicMapCellPositionBasicArrayList)
+this.setGeographicMapCellHistoryPath(geographicMapCellPositionBasicArrayList)
 
                                     }
                                 
@@ -357,7 +357,7 @@ this.lastPathGeographicMapCellPosition= SimpleGeographicMapCellPositionFactory.N
                                 
 this.currentGeographicMapCellHistoryP!.init()
 this.associatedAdvancedRTSGameLayer!.init(this.currentGeographicMapCellHistoryP, geographicMapCellPositionBasicArrayList)
-this.this.setTrackingWaypoint(true)
+this.setTrackingWaypoint(true)
 this.getCompleteTimeDelayHelper()!.setStartTime()
 }
 
@@ -429,7 +429,7 @@ this.getCompleteTimeDelayHelper()!.setStartTime()
                         
                                     {
                                     this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.moveAwayFromBuilding(this.associatedAdvancedRTSGameLayer)
-this.this.setCurrentTargetLayerInterface(this.FAKE_WAYPOINT_LAYER as CollidableDestroyableDamageableLayer)
+this.setCurrentTargetLayerInterface(this.FAKE_WAYPOINT_LAYER as CollidableDestroyableDamageableLayer)
 
     var pathsList: BasicArrayList = buildingLayer!.getMoveOutOfBuildAreaPath(geographicMapCellPosition)!;
         

@@ -112,7 +112,7 @@ this.session= request.getSession(true)
                                 )
                         
                                     {
-                                    this.this.setStoreName(propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as String)
+                                    this.setStoreName(propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as String)
 
                                     }
                                 

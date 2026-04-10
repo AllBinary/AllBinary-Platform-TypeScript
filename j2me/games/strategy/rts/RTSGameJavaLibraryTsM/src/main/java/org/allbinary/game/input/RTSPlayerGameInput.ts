@@ -164,7 +164,7 @@ public constructor (gameCanvas: AllBinaryGameCanvas, inputList: BasicArrayList, 
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.initInputProcessors()
+this.initInputProcessors()
 this.gameCanvas= gameCanvas
 this.inputList= inputList
 this.towerInfoPaintable= towerInfoPaintable
@@ -174,7 +174,7 @@ this.selectedRTSLayerPlayerGameInput= SelectedRTSLayersPlayerGameInput(this.getR
                         if(this.rtsPlayerLayerInterface != NullRTSLayer.NULL_RTS_LAYER)
                         
                                     {
-                                    this.this.setSelectedRtsFormInput(this.rtsPlayerLayerInterface!.getRTSFormInput())
+                                    this.setSelectedRtsFormInput(this.rtsPlayerLayerInterface!.getRTSFormInput())
 
                                     }
                                 
@@ -260,7 +260,7 @@ GameInputProcessorUtil.init(this.removeInputProcessorArray)
 var layerManager = layerManager
 
         try {
-            this.this.processMotionInput(layerManager)
+            this.processMotionInput(layerManager)
 
     var size: number = inputList!.size()!;
         
@@ -297,12 +297,12 @@ this.removeInputProcessorArray[key]!.process(layerManager, gameKeyEvent)
                         if(isIsSingleKeyProcessing())
                         
                                     {
-                                    this.this.clear()
+                                    this.clear()
 
                                     }
                                 
                         else {
-                            this.this.update()
+                            this.update()
 
                         }
                             
@@ -388,7 +388,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e)
         
         
 
-this.this.setSelectedRTSLayer(foundRTSLayer, geographicMapCellPosition)
+this.setSelectedRTSLayer(foundRTSLayer, geographicMapCellPosition)
 
                                     }
                                 

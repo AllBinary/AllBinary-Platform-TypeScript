@@ -112,8 +112,8 @@ this.transformInfoInterface= transformInfoInterface
 this.abPath= AbPath()
 this.category= CategoryData.getInstance()!.ROOTCATEGORY
 this.isRealRoot= true
-this.this.initPath()
-this.this.log()
+this.initPath()
+this.log()
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, categoryAbPath: AbPath){
@@ -133,8 +133,8 @@ this.category= CategoryData.getInstance()!.ROOTCATEGORY
 
                                     }
                                 
-this.this.initPath()
-this.this.log()
+this.initPath()
+this.log()
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
@@ -159,8 +159,8 @@ this.category= CategoryData.getInstance()!.ROOTCATEGORY
 
                                     }
                                 
-this.this.initPath()
-this.this.log()
+this.initPath()
+this.log()
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<Any, Any>){
@@ -185,8 +185,8 @@ this.category= CategoryData.getInstance()!.ROOTCATEGORY
 
                                     }
                                 
-this.this.initPath()
-this.this.log()
+this.initPath()
+this.log()
 }
 
 
@@ -214,7 +214,7 @@ this.this.log()
         
 
 this.webAppAbPath= AbPath(httpServletRequest!.getContextPath() +postPath)
-this.this.setRootFilePath(AbPath(URLGLOBALS.getMainPath() +postPath))
+this.setRootFilePath(AbPath(URLGLOBALS.getMainPath() +postPath))
 }
 
 

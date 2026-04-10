@@ -107,7 +107,7 @@ this.bufferedImageVector!.add(capturedImageWorkerResultsEvent)
                         if(this.bufferedImageVector!.length > 1)
                         
                                     {
-                                    this.this.run()
+                                    this.run()
 
                                     }
                                 
@@ -117,7 +117,7 @@ this.bufferedImageVector!.add(capturedImageWorkerResultsEvent)
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
     //var allBinaryEventObject = allBinaryEventObject
-this.this.onCaptureEvent(allBinaryEventObject as CapturedImageWorkerResultsEvent)
+this.onCaptureEvent(allBinaryEventObject as CapturedImageWorkerResultsEvent)
 }
 
 
@@ -125,7 +125,7 @@ this.this.onCaptureEvent(allBinaryEventObject as CapturedImageWorkerResultsEvent
 
         try {
             logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-this.this.setRunning(true)
+this.setRunning(true)
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
@@ -163,7 +163,7 @@ capturedImageWorkerResultsEvent[1]= this.bufferedImageVector!.get(1) as Captured
         
 
 ImageComparisonResultCacheSingleton.getInstance()!.add(imageComparisonResultFrameCacheable)
-this.this.fireEvent(ImageComparisonResultsEvent(this, imageComparisonResult))
+this.fireEvent(ImageComparisonResultsEvent(this, imageComparisonResult))
 logUtil!.put(StringMaker().
                             append("Image Comparison Result: ")!.append(imageComparisonResult!.toString())!.append(" for frame: ")!.appendlong(frame)!.toString(), this, this.commonStrings!.RUN)
 
@@ -186,7 +186,7 @@ index2++
         
 
 logUtil!.put(message, this, this.commonStrings!.RUN)
-this.this.setRunning(false)
+this.setRunning(false)
 logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
 } catch(e: Exception)
             {

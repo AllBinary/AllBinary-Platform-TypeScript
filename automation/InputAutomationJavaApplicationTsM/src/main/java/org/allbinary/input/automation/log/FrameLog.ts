@@ -100,7 +100,7 @@ var vectorOfStrings = vectorOfStrings
         
 index < size; index++)
         {
-this.this.addAction(vectorOfStrings!.get(index) as String)
+this.addAction(vectorOfStrings!.get(index) as String)
 }
 
 }

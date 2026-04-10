@@ -63,7 +63,7 @@ public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFac
                 //var image = image
     //var animationBehaviorFactory = animationBehaviorFactory
 this.animationBehaviorFactory= animationBehaviorFactory
-this.this.init(image, image.getWidth(), image.getHeight(),  -(image.getWidth() shr 2),  -(image.getHeight() shr 2))
+this.init(image, image.getWidth(), image.getHeight(),  -(image.getWidth() shr 2),  -(image.getHeight() shr 2))
 }
 
 public constructor (image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
@@ -74,7 +74,7 @@ public constructor (image: Image, dx: number, dy: number, animationBehaviorFacto
     //var dy = dy
     //var animationBehaviorFactory = animationBehaviorFactory
 this.animationBehaviorFactory= animationBehaviorFactory
-this.this.init(image, image.getWidth(), image.getHeight(), dx, dy)
+this.init(image, image.getWidth(), image.getHeight(), dx, dy)
 }
 
 public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
@@ -87,7 +87,7 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
     //var dy = dy
     //var animationBehaviorFactory = animationBehaviorFactory
 this.animationBehaviorFactory= animationBehaviorFactory
-this.this.init(image, width, height, dx, dy)
+this.init(image, width, height, dx, dy)
 }
 
 public constructor (image: Image, width: number, height: number, dx: number, dy: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory){
@@ -101,7 +101,7 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
     //var angleIncrement = angleIncrement
     //var animationBehaviorFactory = animationBehaviorFactory
 this.animationBehaviorFactory= animationBehaviorFactory
-this.this.init(image, width, height, dx, dy, angleIncrement)
+this.init(image, width, height, dx, dy, angleIncrement)
 }
 
 
@@ -123,7 +123,7 @@ this.this.init(image, width, height, dx, dy, angleIncrement)
         
         
 
-this.this.init(image, width, height, dx, dy, angleIncrement)
+this.init(image, width, height, dx, dy, angleIncrement)
 }
 
 

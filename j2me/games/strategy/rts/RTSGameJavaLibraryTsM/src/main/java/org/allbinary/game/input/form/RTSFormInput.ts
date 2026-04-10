@@ -198,7 +198,7 @@ this.hashtable.put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getIns
 
                                     }
                                 
-this.this.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index)
+this.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index)
 }
 
 
@@ -206,7 +206,7 @@ this.this.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, ite
             
     public process(layerManager: AllBinaryLayerManager){
     //var layerManager = layerManager
-this.this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager)
+this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager)
 }
 
 
@@ -271,7 +271,7 @@ this.this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager
 
                                     }
                                 
-this.this.processSticky(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index)
+this.processSticky(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index)
 
 
 

@@ -232,25 +232,25 @@ listener= l
 
 
     public removePauseCommand(){
-this.this.removeCommand(MyCommandsFactory.getInstance()!.PAUSE_COMMAND)
+this.removeCommand(MyCommandsFactory.getInstance()!.PAUSE_COMMAND)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pause(){
 logUtil!.put(commonStrings!.START, this, canvasStrings!.PAUSE)
-this.this.removePauseCommand()
-this.this.addCommand(MyCommandsFactory.getInstance()!.RESUME_COMMAND)
-this.this.setPaused(true)
+this.removePauseCommand()
+this.addCommand(MyCommandsFactory.getInstance()!.RESUME_COMMAND)
+this.setPaused(true)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public unPause(){
 logUtil!.put(commonStrings!.START, this, canvasStrings!.UN_PAUSE)
-this.this.removeCommand(MyCommandsFactory.getInstance()!.RESUME_COMMAND)
-this.this.addCommand(MyCommandsFactory.getInstance()!.PAUSE_COMMAND)
-this.this.setPaused(false)
+this.removeCommand(MyCommandsFactory.getInstance()!.RESUME_COMMAND)
+this.addCommand(MyCommandsFactory.getInstance()!.PAUSE_COMMAND)
+this.setPaused(false)
 }
 
 

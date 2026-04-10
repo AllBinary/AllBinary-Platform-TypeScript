@@ -456,7 +456,7 @@ stringBuffer!.append(" does not exist.<br />")
         
         
 
-this.this.validationInfo(stringBuffer, fileName, fileItemFieldName, size)
+this.validationInfo(stringBuffer, fileName, fileItemFieldName, size)
 
                                     }
                                 
@@ -580,7 +580,7 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
 
                         }
                             
-this.this.processImageFiles()
+this.processImageFiles()
 
                                     }
                                 

@@ -215,8 +215,8 @@ var index = index
 
 
     public stopAll(){
-this.this.stopAllBanner()
-this.this.stopAllPage()
+this.stopAllBanner()
+this.stopAllPage()
 }
 
 

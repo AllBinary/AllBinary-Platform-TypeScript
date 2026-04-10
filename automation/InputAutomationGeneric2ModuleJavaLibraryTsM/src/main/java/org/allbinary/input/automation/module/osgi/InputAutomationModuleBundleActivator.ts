@@ -75,7 +75,7 @@ export class InputAutomationModuleBundleActivator
 public constructor (){
 
             super();
-            this.this.init()
+            this.init()
 }
 
 
@@ -241,8 +241,8 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "removeModules")
     public start(context: BundleContext){
 var context = context
 logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.START)
-this.this.addModules(context)
-this.this.registerAsService(context)
+this.addModules(context)
+this.registerAsService(context)
 }
 
 
@@ -251,7 +251,7 @@ this.this.registerAsService(context)
     public stop(context: BundleContext){
 var context = context
 logUtil!.put(this.commonStrings!.START, this, "stop")
-this.this.removeModules(context)
+this.removeModules(context)
 }
 
 

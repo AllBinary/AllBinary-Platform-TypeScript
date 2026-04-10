@@ -112,7 +112,7 @@ stringBuffer!.append(this.sqlStrings!.PRIMARY_KEY)
 stringBuffer!.append(NOTHING)
 stringBuffer!.append(this.sqlStrings!.END)
 this.tableData= stringBuffer!.toString()
-this.this.setTable(this.tableName)
+this.setTable(this.tableName)
 }
 
 

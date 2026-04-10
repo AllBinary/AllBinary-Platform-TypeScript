@@ -52,8 +52,8 @@ this.role= value
     public doStartTag(): number{
 
         try {
-            this.this.setName("Admin Users View")
-this.this.setObjectFile("views.admin.user.UsersValidationView")
+            this.setName("Admin Users View")
+this.setObjectFile("views.admin.user.UsersValidationView")
 
                         if(this.getCommand() != 
                                     null

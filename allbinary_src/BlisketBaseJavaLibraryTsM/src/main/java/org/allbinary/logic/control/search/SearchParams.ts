@@ -61,16 +61,16 @@ public constructor (request: HttpServletRequest){
             super();
             var request = request
 this.columnsAndSearchValues= HashMap<Any, Any>()
-this.this.setLength(request.getParameter(SearchData.LENGTH))
-this.this.setOrder(request.getParameter(SearchData.ORDER))
+this.setLength(request.getParameter(SearchData.LENGTH))
+this.setOrder(request.getParameter(SearchData.ORDER))
 
     var page: string = request.getParameter(SearchData.PAGE)!;
         
         
 
-this.this.setStartPage(page)
-this.this.setEndPage(page)
-this.this.setSortBy(request.getParameter(SearchData.SORTBY))
+this.setStartPage(page)
+this.setEndPage(page)
+this.setSortBy(request.getParameter(SearchData.SORTBY))
 
     var index: number = 0;
         
@@ -91,7 +91,7 @@ this.this.setSortBy(request.getParameter(SearchData.SORTBY))
                                     null
                                 )
         {
-this.this.add(columnName, columnValue)
+this.add(columnName, columnValue)
 index++
 columnName= request.getParameter(SearchData.COLUMNNAME +"[" +index +"]")
 columnValue= request.getParameter(SearchData.COLUMNVALUE +"[" +index +"]")

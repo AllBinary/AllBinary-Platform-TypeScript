@@ -78,7 +78,7 @@ index < size; index++)
         
         
 
-this.this.collide(layerManager, collidableInterfaceCompositeInterface, collidableInterfaceCompositeInterface2)
+this.collide(layerManager, collidableInterfaceCompositeInterface, collidableInterfaceCompositeInterface2)
 }
 
 }

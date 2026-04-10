@@ -135,8 +135,8 @@ this.status= value
     public doStartTag(): number{
 
         try {
-            this.this.setName("Basic Order History View")
-this.this.setObjectFile("views.generic.order.history.ValidationView")
+            this.setName("Basic Order History View")
+this.setObjectFile("views.generic.order.history.ValidationView")
 
                         if(this.getCommand() != 
                                     null

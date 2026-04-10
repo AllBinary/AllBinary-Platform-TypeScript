@@ -149,7 +149,7 @@ logUtil!.put("Number Of Profiles Specified: " +nodeList!.getLength(), this, "Con
                                 )
                         
                                     {
-                                    this.this.initProfiles(nodeList!.item(0))
+                                    this.initProfiles(nodeList!.item(0))
 
                                     }
                                 
@@ -267,7 +267,7 @@ var name = name
 this.hashMap!.put(name, GenericProfile(name))
 this.getDefaultListModelHelper()!.add(name)
 this.getDefaultListModelHelper()!.initDefaultModelList()
-this.this.save()
+this.save()
 }
 
 
@@ -278,7 +278,7 @@ var name = name
 this.hashMap!.remove(name)
 this.getDefaultListModelHelper()!.remove(name)
 this.getDefaultListModelHelper()!.initDefaultModelList()
-this.this.save()
+this.save()
 }
 
 

@@ -111,7 +111,7 @@ this.request= pageContext!.getRequest() as HttpServletRequest
                         }
                             
 this.weblisketSession= WeblisketSession(propertiesHashMap, pageContext)
-this.this.getFormData()
+this.getFormData()
 }
 
 

@@ -72,7 +72,7 @@ var gameKeyEvent = gameKeyEvent
                         if(timeHelper!.isTime())
                         
                                     {
-                                    this.this.processInput()
+                                    this.processInput()
 this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas())
 
                                     }
@@ -95,7 +95,7 @@ var gameKeyEvent = gameKeyEvent
                         if(this.timeHelper!.isTime())
                         
                                     {
-                                    this.this.processInput()
+                                    this.processInput()
 this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas())
 
                                     }
@@ -118,7 +118,7 @@ var gameKeyEvent = gameKeyEvent
                         if(timeHelper!.isTime())
                         
                                     {
-                                    this.this.processInput()
+                                    this.processInput()
 this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas())
 
                                     }
@@ -140,7 +140,7 @@ var motionGestureEvent = motionGestureEvent
                         if(timeHelper!.isTime())
                         
                                     {
-                                    this.this.processInput()
+                                    this.processInput()
 this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas())
 
                                     }

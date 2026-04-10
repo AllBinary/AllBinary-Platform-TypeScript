@@ -115,7 +115,7 @@ this.list= BasicArrayList()
 this.basicColorList= BasicArrayList()
 this.positionList= BasicArrayList()
 GeographicMapCellPositionEventHandler.getInstance()!.addListener(this)
-this.this.init()
+this.init()
 }
 
 
@@ -287,7 +287,7 @@ this.animationInterface!.paint(graphics, point.getX() +this.x, point.getY() +thi
     public paint(graphics: Graphics){
     //var graphics = graphics
 allBinaryTiledLayer!.paint(graphics)
-this.this.paintDots(graphics)
+this.paintDots(graphics)
 }
 
 

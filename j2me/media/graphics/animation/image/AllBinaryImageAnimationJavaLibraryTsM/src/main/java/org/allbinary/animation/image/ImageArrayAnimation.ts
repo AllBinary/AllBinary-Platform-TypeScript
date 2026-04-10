@@ -66,7 +66,7 @@ public constructor (imageArray: Image[], animationBehavior: AnimationBehavior)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setImageArray(imageArray)
+this.setImageArray(imageArray)
 }
 
 

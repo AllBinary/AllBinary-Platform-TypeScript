@@ -66,7 +66,7 @@ public constructor (size: number)
                         if(this.index >= this.list.size())
                         
                                     {
-                                    this.this.add()
+                                    this.add()
 
                                     }
                                 

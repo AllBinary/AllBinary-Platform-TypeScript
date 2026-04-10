@@ -467,19 +467,19 @@ public constructor (abeClientInformation: AbeClientInformationInterface, command
                             //For kotlin this is before the body of the constructor.
                     
 this.abeClientInformation= abeClientInformation
-this.this.setWait(NullWaitGameRunnable.getInstance()!.WAIT)
+this.setWait(NullWaitGameRunnable.getInstance()!.WAIT)
 this.gameInitializationInterfaceFactoryInterface= gameInitializationInterfaceFactoryInterface
 GameInitializationUtil.getInstance()!.initDemo(abeClientInformation, this, gameInitializationInterfaceFactoryInterface)
 ResizableListenerHandler.getInstance()!.fireEvent(false)
 this.overlayPaintable= overlayPaintable
 this.highScoresFactoryInterface= highScoresFactoryInterface
-this.this.setDefaultPaintableInterface(paintable)
-this.this.setPaintableInterface(this.getDefaultPaintableInterface())
+this.setDefaultPaintableInterface(paintable)
+this.setPaintableInterface(this.getDefaultPaintableInterface())
 
                         if(isContinue)
                         
                                     {
-                                    this.this.addCommand(GameCommandsFactory.getInstance()!.CONTINUE_COMMAND)
+                                    this.addCommand(GameCommandsFactory.getInstance()!.CONTINUE_COMMAND)
 
                                     }
                                 
@@ -487,7 +487,7 @@ this.this.setPaintableInterface(this.getDefaultPaintableInterface())
                         if(ChangedGameFeatureListener.getInstance()!.isChanged(GameFeatureFactory.getInstance()!.SOUND))
                         
                                     {
-                                    this.this.mediaInit()
+                                    this.mediaInit()
 
                                     }
                                 
@@ -651,7 +651,7 @@ commandList!.add(gameCommandsFactory!.DISPLAY_ABOUT)
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-this.this.removeAllCommands()
+this.removeAllCommands()
 
     var commandArray: any = {}[] = getCustomCommands()!;
         
@@ -673,11 +673,11 @@ this.this.removeAllCommands()
         
 index < size; index++)
         {
-this.this.addCommand(commandArray[index]! as Command)
+this.addCommand(commandArray[index]! as Command)
 }
 
 CustomGameMenuUtil.add(this)
-this.this.setCommandListener(cmdListener)
+this.setCommandListener(cmdListener)
 }
 
 
@@ -703,7 +703,7 @@ ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this)
                 //@Throws(Error::class)
             
     initMenu(){
-this.this.close()
+this.close()
 
     var commandTextItemArrayFactory: CommandTextItemArrayFactory = DemoLimitedCommandTextItemArrayFactory.getInstance()!.getCommandTextItemArrayFactory()!;
         
@@ -731,7 +731,7 @@ PreLogUtil.put(StringMaker().
         
         
 
-this.this.setMenuForm(scrollSelectionForm)
+this.setMenuForm(scrollSelectionForm)
 
     var formType2: FormType = FormTypeFactory.getInstance()!.getFormType()!;
         
@@ -747,11 +747,11 @@ scrollSelectionForm!.init(rectangle2, formType2)
                         if(this.getMenuForm() != ScrollSelectionFormNoneFactory.getInstance())
                         
                                     {
-                                    this.this.setMenuInputProcessor(CommandFormInputProcessor(BasicArrayList(),  -1, this, this.getMenuForm()))
+                                    this.setMenuInputProcessor(CommandFormInputProcessor(BasicArrayList(),  -1, this, this.getMenuForm()))
 
                                     }
                                 
-this.this.open()
+this.open()
 }
 
 
@@ -779,33 +779,33 @@ GameKeyEventHandler.getInstance()!.removeListener(this.getMenuInputProcessor())
 
     public keyPressed(keyCode: number){
 var keyCode = keyCode
-this.this.keyPressed(keyCode, 0)
+this.keyPressed(keyCode, 0)
 }
 
 
     public keyReleased(keyCode: number){
 var keyCode = keyCode
-this.this.keyReleased(keyCode, 0)
+this.keyReleased(keyCode, 0)
 }
 
 
     public keyRepeated(keyCode: number){
 var keyCode = keyCode
-this.this.keyRepeated(keyCode, 0)
+this.keyRepeated(keyCode, 0)
 }
 
 
     public keyPressed(keyCode: number, deviceId: number){
 var keyCode = keyCode
 var deviceId = deviceId
-this.this.addGameKeyEvent(keyCode, false)
+this.addGameKeyEvent(keyCode, false)
 }
 
 
     public keyReleased(keyCode: number, deviceId: number){
 var keyCode = keyCode
 var deviceId = deviceId
-this.this.removeGameKeyEvent(keyCode, false)
+this.removeGameKeyEvent(keyCode, false)
 }
 
 
@@ -820,7 +820,7 @@ var deviceId = deviceId
                         if(this.isSingleKeyRepeatableProcessing)
                         
                                     {
-                                    this.this.addGameKeyEvent(keyCode, true)
+                                    this.addGameKeyEvent(keyCode, true)
 
                                     }
                                 
@@ -923,8 +923,8 @@ logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pause(){
-this.this.close()
-this.this.setPaused(true)
+this.close()
+this.setPaused(true)
 this.gameRunnable= NullWaitGameRunnable.getInstance()
 this.gameCanvas!.pause()
 }
@@ -932,10 +932,10 @@ this.gameCanvas!.pause()
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public unPause(){
-this.this.open()
+this.open()
 this.gameCanvas!.unPause()
 this.gameRunnable= this.gameCanvas!.gameRunnable
-this.this.setPaused(false)
+this.setPaused(false)
 }
 
 
@@ -1093,8 +1093,8 @@ logUtil!.put("Not Implemented since not a game", this, "setGameOver")
 
                                     }
                                 
-this.this.setState(newState)
-this.this.setState()
+this.setState(newState)
+this.setState()
 }
 
 
@@ -1219,7 +1219,7 @@ this.threadFactoryUtil!.start(this.canvasThread)
                         if(this.getWait() == NullWaitGameRunnable.getInstance()!.WAIT)
                         
                                     {
-                                    this.this.setWait(this.getTempWait())
+                                    this.setWait(this.getTempWait())
 
                                     }
                                 
@@ -1258,7 +1258,7 @@ this.overlayPaintable!.update()
     public process(){
 super.process()
 this.getMenuInputProcessor()!.processInput()
-this.this.preDemoProcess()
+this.preDemoProcess()
 
                         if(this.state == 0)
                         
@@ -1285,7 +1285,7 @@ this.this.preDemoProcess()
                         if(this.gameCanvas != NullGameCanvas.getInstance() && this.gameCanvas!.isGameOver())
                         
                                     {
-                                    this.this.stopGameDemo()
+                                    this.stopGameDemo()
 
     var randomLevel: number = this.getNextRandom()!;
         
@@ -1298,7 +1298,7 @@ this.this.preDemoProcess()
 
 gameInfo!.setCurrentLevel(randomLevel)
 this.gameCanvas!.setGameOver(false)
-this.this.start()
+this.start()
 
                                     }
                                 
@@ -1310,7 +1310,7 @@ this.this.start()
                         if(!demoGameRunnable!.isRunning())
                         
                                     {
-                                    this.this.startDemoGame()
+                                    this.startDemoGame()
 demoGameRunnable!.setRunning(true)
 
     var thread: Thread = threadFactoryUtil!.getInstance(demoGameRunnable)!;
@@ -1372,14 +1372,14 @@ PreLogUtil.put(commonStrings!.START, this, METHOD_NAME)
                                     {
                                     this.gameRunnable= this.gameCanvas!.gameRunnable
 PreLogUtil.put("Showing Game", this, METHOD_NAME)
-this.this.setPaintableInterface(this.gameCanvas)
+this.setPaintableInterface(this.gameCanvas)
 
                                     }
                                 
                         else {
                             this.gameRunnable= NullWaitGameRunnable.getInstance()
 PreLogUtil.put("Not Showing Game", this, METHOD_NAME)
-this.this.setPaintableInterface(this.getDefaultPaintableInterface())
+this.setPaintableInterface(this.getDefaultPaintableInterface())
 
                         }
                             
@@ -1412,12 +1412,12 @@ this.gameRunnable!.run()
                         if(timeDelayHelper!.isTime() && this.isReadyForStateChange())
                         
                                     {
-                                    this.this.demoStateChange()
+                                    this.demoStateChange()
 
                                     }
                                 
                         else {
-                            this.this.process()
+                            this.process()
 
                         }
                             
@@ -1444,8 +1444,8 @@ logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN)
         
 
 progressCanvas!.addPortion(50, "Demo Thread")
-this.this.setCurrentThread()
-this.this.setRunning(true)
+this.setCurrentThread()
+this.setRunning(true)
 
                         if(features.isFeature(MainFeatureFactory.getInstance()!.LOAD_ONDEMAND))
                         
@@ -1460,9 +1460,9 @@ this.this.setRunning(true)
                         }
                             
 fullScreenUtil!.init(this, this.getCustomCommandListener())
-this.this.initMenu()
-this.this.initPostPaint()
-this.this.setState()
+this.initMenu()
+this.initPostPaint()
+this.setState()
 
                         if(features.isDefault(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD))
                         
@@ -1471,8 +1471,8 @@ this.this.setState()
         while(gameCanvas == NullGameCanvas.getInstance() || !gameCanvas!.isInitialized())
         {
 this.loopTimeHelper!.setStartTime()
-this.this.processGame()
-this.this.processLoopSleep()
+this.processGame()
+this.processLoopSleep()
 }
 
 
@@ -1514,10 +1514,10 @@ currentDisplayableFactory!.setMyCanvas(this)
                             
         while(this.isRunning())
         {
-this.this.run3()
+this.run3()
 }
 
-this.this.end()
+this.end()
 
                         }
                             
@@ -1534,8 +1534,8 @@ logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN)
             
     public run3(){
 this.loopTimeHelper!.setStartTime()
-this.this.processGame()
-this.this.processLoopSleep()
+this.processGame()
+this.processLoopSleep()
 }
 
 
@@ -1572,7 +1572,7 @@ super.setRunning(running)
         
 
 currentDisplayableFactory!.clearRunnable()
-this.this.end()
+this.end()
 
                                     }
                                 
@@ -1616,9 +1616,9 @@ baseGameStatistics!.init()
                                     }
                                 
 logUtil!.put("Demo End", this, commonStrings!.RUN)
-this.this.close()
+this.close()
 DisplayChangeEventHandler.getInstance()!.removeListener(this)
-this.this.stopGameDemo()
+this.stopGameDemo()
 }
 
 

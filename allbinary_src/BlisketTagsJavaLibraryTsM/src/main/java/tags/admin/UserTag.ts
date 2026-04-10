@@ -66,8 +66,8 @@ this.getPropertiesHashMap()!.put(UserRoleData.NAME, this.role)
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.NEW) == 0)
                         
                                     {
-                                    this.this.setName("New User View")
-this.this.setObjectFile("views.admin.user.NewUserView")
+                                    this.setName("New User View")
+this.setObjectFile("views.admin.user.NewUserView")
 
                                     }
                                 
@@ -75,8 +75,8 @@ this.this.setObjectFile("views.admin.user.NewUserView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0 || this.getCommand()!.compareTo(SqlStrings.getInstance()!.INSERT_INTO) == 0)
                         
                                     {
-                                    this.this.setName("Add Validation User View")
-this.this.setObjectFile("views.admin.user.AddValidationUserView")
+                                    this.setName("Add Validation User View")
+this.setObjectFile("views.admin.user.AddValidationUserView")
 
                                     }
                                 
@@ -84,8 +84,8 @@ this.this.setObjectFile("views.admin.user.AddValidationUserView")
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.this.setName("Validation User View")
-this.this.setObjectFile("views.admin.user.ViewValidationUserView")
+                                    this.setName("Validation User View")
+this.setObjectFile("views.admin.user.ViewValidationUserView")
 
                                     }
                                 
@@ -93,8 +93,8 @@ this.this.setObjectFile("views.admin.user.ViewValidationUserView")
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.EDIT) == 0)
                         
                                     {
-                                    this.this.setName("Validation User View")
-this.this.setObjectFile("views.admin.user.EditValidationUserView")
+                                    this.setName("Validation User View")
+this.setObjectFile("views.admin.user.EditValidationUserView")
 
                                     }
                                 
@@ -102,8 +102,8 @@ this.this.setObjectFile("views.admin.user.EditValidationUserView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.UPDATE) == 0 || this.getCommand()!.compareTo(SqlStrings.getInstance()!.UPDATE) == 0)
                         
                                     {
-                                    this.this.setName("Update Validation User View")
-this.this.setObjectFile("views.admin.user.UpdateValidationUserView")
+                                    this.setName("Update Validation User View")
+this.setObjectFile("views.admin.user.UpdateValidationUserView")
 
                                     }
                                 
@@ -111,8 +111,8 @@ this.this.setObjectFile("views.admin.user.UpdateValidationUserView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.DELETE) == 0)
                         
                                     {
-                                    this.this.setName("Delete Validation User View")
-this.this.setObjectFile("views.admin.user.DeleteValidationUserView")
+                                    this.setName("Delete Validation User View")
+this.setObjectFile("views.admin.user.DeleteValidationUserView")
 
                                     }
                                 

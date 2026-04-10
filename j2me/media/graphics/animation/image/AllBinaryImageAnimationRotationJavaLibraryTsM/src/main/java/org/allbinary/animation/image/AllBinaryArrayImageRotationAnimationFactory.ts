@@ -203,7 +203,7 @@ public constructor (image: Image, width: number, height: number, animationBehavi
                             //For kotlin this is before the body of the constructor.
                     
 this.angleIncrement= AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()
-this.this.init()
+this.init()
 }
 
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
@@ -221,14 +221,14 @@ public constructor (image: Image, width: number, height: number, angleIncrement:
                             //For kotlin this is before the body of the constructor.
                     
 this.angleIncrement= angleIncrement
-this.this.init()
+this.init()
 }
 
 
                 //@Throws(Error::class)
             
     init(){
-this.this.setImageArray(ImageToRotationImageArrayUtil.getInstance()!.generate(this.getImage(), this.getAngleIncrement(), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt()))
+this.setImageArray(ImageToRotationImageArrayUtil.getInstance()!.generate(this.getImage(), this.getAngleIncrement(), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt()))
 }
 
 

@@ -68,14 +68,14 @@ public constructor (name: string, version: string, specialName: string, shortNam
     public init(){
 
         try {
-            this.this.setOperatingSystemInterface(OperatingSystemFactory.getInstance()!.getOperatingSystemInstance())
+            this.setOperatingSystemInterface(OperatingSystemFactory.getInstance()!.getOperatingSystemInstance())
 
     var licenseInitInfo: LicenseInitInfo = LicenseInitInfoUtil.getInstance()!.read()!;
         
         
 
-this.this.setLicenseId(licenseInitInfo!.getLicenseId())
-this.this.setLicenseServers(licenseInitInfo!.getServerList())
+this.setLicenseId(licenseInitInfo!.getLicenseId())
+this.setLicenseServers(licenseInitInfo!.getServerList())
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
@@ -90,7 +90,7 @@ this.this.setLicenseServers(licenseInitInfo!.getServerList())
         
         
 
-this.this.setLicenseId(NONE)
+this.setLicenseId(NONE)
 
                                     }
                                 

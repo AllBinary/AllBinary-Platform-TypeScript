@@ -68,7 +68,7 @@ public constructor (title: string, items: CustomItem[], formPaintableFactory: It
                             //For kotlin this is before the body of the constructor.
                     
 this.moveForSmallScreen= moveForSmallScreen
-this.this.init()
+this.init()
 }
 
 public constructor (title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
@@ -89,7 +89,7 @@ public constructor (title: string, items: CustomItem[], rectangle: Rectangle, fo
                             //For kotlin this is before the body of the constructor.
                     
 this.moveForSmallScreen= moveForSmallScreen
-this.this.init()
+this.init()
 }
 
 
@@ -99,7 +99,7 @@ this.this.init()
     //var rectangle = rectangle
     //var formType = formType
 super.init(rectangle, formType)
-this.this.init()
+this.init()
 }
 
 

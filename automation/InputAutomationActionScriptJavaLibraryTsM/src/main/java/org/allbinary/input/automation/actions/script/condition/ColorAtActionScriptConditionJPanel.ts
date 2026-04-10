@@ -50,7 +50,7 @@ public constructor (colorAtActionScriptConditionInterface: ColorAtActionScriptCo
 logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 initComponents()
 this.colorAtActionScriptConditionInterface= colorAtActionScriptConditionInterface
-this.this.set()
+this.set()
 }
 
 
@@ -345,7 +345,7 @@ jLabel1!.setText("Color At:")
         
         
 
-this.this.setLayout(layout)
+this.setLayout(layout)
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)!.addComponent(colorAtActionJButton)))
 layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel1)!.addComponent(colorAtActionJButton)))
 }
@@ -353,7 +353,7 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
     okJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.this.update()
+this.update()
 this.getColorAtActionJDialog()!.setVisible(false)
 }
 

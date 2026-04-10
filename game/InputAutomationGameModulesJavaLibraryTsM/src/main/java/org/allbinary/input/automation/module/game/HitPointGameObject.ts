@@ -68,12 +68,12 @@ var y = y
                         if(this.getRatios()[bufferedImage!.length -1]!.doubleValue() < 1.0F)
                         
                                     {
-                                    this.this.setDamaged(true)
+                                    this.setDamaged(true)
 
                                     }
                                 
                         else {
-                            this.this.setDamaged(false)
+                            this.setDamaged(false)
 
                         }
                             

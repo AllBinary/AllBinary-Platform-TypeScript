@@ -120,7 +120,7 @@ this.name= name
 
 logUtil!.put(StringMaker().
                             append("Available List of Animations: ")!.append(hashtable.toString())!.toString(), this, commonStrings!.INIT)
-this.this.setInitialized(true)
+this.setInitialized(true)
 }
 
 

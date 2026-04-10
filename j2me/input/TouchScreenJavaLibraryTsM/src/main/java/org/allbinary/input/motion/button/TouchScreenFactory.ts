@@ -68,8 +68,8 @@ private constructor (){
             super();
             
         try {
-            this.this.setTouch(true)
-this.this.setMultiTouch(false)
+            this.setTouch(true)
+this.setMultiTouch(false)
 } catch(e: Exception)
             {
 

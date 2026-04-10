@@ -120,7 +120,7 @@ this.gameInfo= gameInfo
     //var highScoresArray = highScoresArray
 this.highScoresArray= highScoresArray
 firstTime= false
-this.this.saveHighScore()
+this.saveHighScore()
 }
 
 

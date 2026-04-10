@@ -84,7 +84,7 @@ this.dimension= dimension
 index < size; index++)
         {
 layerPlacementInterface= list.objectArray[index]! as LayerPlacementInterface
-this.this.process(layerPlacementInterface)
+this.process(layerPlacementInterface)
 }
 
 }

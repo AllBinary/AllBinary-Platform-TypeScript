@@ -304,7 +304,7 @@ aboveJButtonActionPerformed(evt)
         
         
 
-this.this.setLayout(layout)
+this.setLayout(layout)
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(aboveJButton)!.addGap(0, 335, Short.MAX_VALUE)))
 layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addContainerGap()!.addComponent(aboveJButton)!.addContainerGap(286, Short.MAX_VALUE)))
 }
@@ -312,7 +312,7 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
     aboveJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.this.process()
+this.process()
 }
 
 

@@ -101,7 +101,7 @@ public constructor (){
         
         
 
-this.this.save(imageComparisonResult, imageComparisonResultFrameCacheable!.getFrame())
+this.save(imageComparisonResult, imageComparisonResultFrameCacheable!.getFrame())
 
                                     }
                                 

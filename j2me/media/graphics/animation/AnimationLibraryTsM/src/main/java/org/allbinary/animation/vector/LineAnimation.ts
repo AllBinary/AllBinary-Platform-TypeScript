@@ -57,7 +57,7 @@ public constructor (basicColor: BasicColor){
 
             super();
             var basicColor = basicColor
-this.this.setBasicColorP(basicColor)
+this.setBasicColorP(basicColor)
 }
 
 

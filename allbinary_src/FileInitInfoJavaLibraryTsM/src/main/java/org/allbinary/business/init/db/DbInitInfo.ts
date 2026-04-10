@@ -117,12 +117,12 @@ this.initFileName= initFileName
                         if(read)
                         
                                     {
-                                    this.this.updateIfNeeded()
+                                    this.updateIfNeeded()
 
                                     }
                                 
                         else {
-                            this.this.setHasRead(true)
+                            this.setHasRead(true)
 
                         }
                             
@@ -318,19 +318,19 @@ hasRead= false
         
         
 
-this.this.setJdbcDriver(WeakCrypt(1).
+this.setJdbcDriver(WeakCrypt(1).
                             decrypt(decryptedJdbcDriver))
-this.this.setName(WeakCrypt(2).
+this.setName(WeakCrypt(2).
                             decrypt(decryptedName))
-this.this.setUserName(WeakCrypt(3).
+this.setUserName(WeakCrypt(3).
                             decrypt(decryptedUserName))
-this.this.setPassword(WeakCrypt(4).
+this.setPassword(WeakCrypt(4).
                             decrypt(decryptedPassword))
-this.this.setSchema(WeakCrypt(5).
+this.setSchema(WeakCrypt(5).
                             decrypt(decryptedSchema))
-this.this.setServer(WeakCrypt(6).
+this.setServer(WeakCrypt(6).
                             decrypt(decryptedServer))
-this.this.setPort(WeakCrypt(7).
+this.setPort(WeakCrypt(7).
                             decrypt(decryptedPort))
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
@@ -388,7 +388,7 @@ this.hasRead= value
                         
                                     {
                                     hasRead= true
-this.this.load()
+this.load()
 
                                     }
                                 
@@ -408,7 +408,7 @@ this.this.load()
 
 
     public getName(): string{
-this.this.updateIfNeeded()
+this.updateIfNeeded()
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
@@ -427,7 +427,7 @@ this.this.updateIfNeeded()
 
 
     public getUserName(): string{
-this.this.updateIfNeeded()
+this.updateIfNeeded()
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
@@ -446,7 +446,7 @@ this.this.updateIfNeeded()
 
 
     public getPassword(): string{
-this.this.updateIfNeeded()
+this.updateIfNeeded()
 
 
 
@@ -457,7 +457,7 @@ this.this.updateIfNeeded()
 
 
     public getSchema(): string{
-this.this.updateIfNeeded()
+this.updateIfNeeded()
 
 
 
@@ -468,7 +468,7 @@ this.this.updateIfNeeded()
 
 
     public getServer(): string{
-this.this.updateIfNeeded()
+this.updateIfNeeded()
 
 
 
@@ -479,7 +479,7 @@ this.this.updateIfNeeded()
 
 
     public getPort(): string{
-this.this.updateIfNeeded()
+this.updateIfNeeded()
 
 
 

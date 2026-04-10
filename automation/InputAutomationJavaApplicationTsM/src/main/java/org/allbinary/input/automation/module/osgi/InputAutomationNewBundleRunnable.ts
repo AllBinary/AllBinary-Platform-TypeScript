@@ -522,7 +522,7 @@ logUtil!.put(CommonLabels.getInstance()!.START +url, this, "install")
 
         try {
             logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-this.this.setRunning(true)
+this.setRunning(true)
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
@@ -533,7 +533,7 @@ this.this.setRunning(true)
         {
 timeHelper!.setStartTime()
 logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
-this.this.updateModules()
+this.updateModules()
 break;
 
                     

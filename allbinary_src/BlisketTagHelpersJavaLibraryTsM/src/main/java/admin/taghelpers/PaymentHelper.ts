@@ -77,7 +77,7 @@ var pageContext = pageContext
 this.request= pageContext!.getRequest() as HttpServletRequest
 this.weblisketSession= WeblisketSession(hashMap, pageContext)
 this.portion= Portion(hashMap)
-this.this.getFormData()
+this.getFormData()
 }
 
 

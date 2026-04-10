@@ -83,7 +83,7 @@ index < size; index++)
         
 
 System.out.println("Track " +index)
-this.this.printPaths(list)
+this.printPaths(list)
 }
 
 } catch(e: Exception)

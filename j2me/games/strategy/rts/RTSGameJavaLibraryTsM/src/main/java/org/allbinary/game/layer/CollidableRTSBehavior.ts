@@ -142,7 +142,7 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
                                     }
                                 
                         else {
-                            this.this.collideNone(collidableInterfaceCompositeInterface)
+                            this.collideNone(collidableInterfaceCompositeInterface)
 
                         }
                             

@@ -88,7 +88,7 @@ this.terrainEventListener!.onTerrainEvent(TerrainEventCircularStaticPool.getInst
 
     update(){
 super.update()
-this.this.changeDirectionIfCliffReached()
+this.changeDirectionIfCliffReached()
 }
 
 
@@ -132,7 +132,7 @@ index < size; index++)
                         if(angle == DOWN)
                         
                                     {
-                                    this.this.nextDirection()
+                                    this.nextDirection()
 
                         if(!this.isFollowLimitedByTerrain)
                         

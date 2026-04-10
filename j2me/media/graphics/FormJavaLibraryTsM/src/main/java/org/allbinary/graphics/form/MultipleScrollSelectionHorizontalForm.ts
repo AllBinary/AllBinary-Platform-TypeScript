@@ -194,7 +194,7 @@ dx= dx2
                         if(this.formType == formTypeFactory!.VERTICAL_CENTER_FORM)
                         
                                     {
-                                    this.this.paintItem(graphics, index, item, dx, dy)
+                                    this.paintItem(graphics, index, item, dx, dy)
 this.paintable.paint(graphics, index, dx, dy)
 
                                     }

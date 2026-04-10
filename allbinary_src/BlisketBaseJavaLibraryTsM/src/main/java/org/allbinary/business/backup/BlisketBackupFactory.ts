@@ -144,7 +144,7 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH)
         
         
 
-this.this.backup(fileBasicArrayList, path.toFileSystemString() +"backup.zip")
+this.backup(fileBasicArrayList, path.toFileSystemString() +"backup.zip")
 } catch(e: Exception)
             {
 logUtil!.put(this.commonStrings!.EXCEPTION, this, "backup()", e)
@@ -227,7 +227,7 @@ PreLogUtil.put(stringBuffer!.toString(), this, "backupViews()")
 fileBasicArrayList!.addAll(this.getFileBasicArrayList(viewsPath))
 }
 
-this.this.backup(fileBasicArrayList, path.toFileSystemString() +"backupViews.zip")
+this.backup(fileBasicArrayList, path.toFileSystemString() +"backupViews.zip")
 } catch(e: Exception)
             {
 logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupViews()", e)
@@ -315,7 +315,7 @@ PreLogUtil.put(stringBuffer!.toString(), this, "backupResources()")
 fileBasicArrayList!.addAll(this.getFileBasicArrayList(resourcesPath))
 }
 
-this.this.backup(fileBasicArrayList, path.toFileSystemString() +"backupResources.zip")
+this.backup(fileBasicArrayList, path.toFileSystemString() +"backupResources.zip")
 } catch(e: Exception)
             {
 logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupResources()", e)
@@ -387,7 +387,7 @@ stringBuffer!.append(nextStore)
 fileBasicArrayList!.addAll(this.getFileBasicArrayList(stringBuffer!.toString()))
 }
 
-this.this.backup(fileBasicArrayList, path.toFileSystemString() +"backupJsps.zip")
+this.backup(fileBasicArrayList, path.toFileSystemString() +"backupJsps.zip")
 } catch(e: Exception)
             {
 logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupJsps()", e)

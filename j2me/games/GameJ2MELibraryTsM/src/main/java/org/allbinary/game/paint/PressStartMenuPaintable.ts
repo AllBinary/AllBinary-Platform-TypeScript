@@ -111,12 +111,12 @@ var graphics = graphics
                         if(this.isFlash())
                         
                                     {
-                                    this.this.setFlash(false)
+                                    this.setFlash(false)
 
                                     }
                                 
                         else {
-                            this.this.setFlash(true)
+                            this.setFlash(true)
 
                         }
                             

@@ -129,7 +129,7 @@ super.deleteWhere(whereHashMap)
 
     public add(address: StreetAddress){
 var address = address
-this.this.add(address, TableDataFactory.getInstance()!.INTEGER_MAX_VALUE_STRING)
+this.add(address, TableDataFactory.getInstance()!.INTEGER_MAX_VALUE_STRING)
 }
 
 
@@ -166,7 +166,7 @@ values.add(address.getCountry())
 
 values.add(time)
 super.insert(values)
-this.this.setDefault(getLastId())
+this.setDefault(getLastId())
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -207,7 +207,7 @@ var address = address
 whereKeyValuePairs!.put(StreetAddressData.ID, address.getId())
 whereKeyValuePairs!.put(UserData.USERNAME, this.userName)
 super.updateWhere(whereKeyValuePairs, addressHashMap)
-this.this.setDefault(address.getId())
+this.setDefault(address.getId())
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         

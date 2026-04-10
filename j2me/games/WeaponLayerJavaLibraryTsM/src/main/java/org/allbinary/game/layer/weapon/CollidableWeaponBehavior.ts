@@ -73,15 +73,15 @@ var collidable = collidable
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setCollided(false)
-this.this.setCollidable(true)
+this.setCollided(false)
+this.setCollidable(true)
 this.collisionHelper= CollidableHelperFactory.getInstance()
 }
 
 
     public init(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface
-this.this.setCollided(false)
+this.setCollided(false)
 this.collisionHelper!.setOwnerLayerInterface(sourceLayerInterface)
 }
 

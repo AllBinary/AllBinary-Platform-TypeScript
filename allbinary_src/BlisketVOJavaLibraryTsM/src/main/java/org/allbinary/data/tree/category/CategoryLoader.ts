@@ -125,7 +125,7 @@ var categoryInterface = categoryInterface
 
                                     }
                                 
-this.this.save(categoryInterface)
+this.save(categoryInterface)
 
                                     }
                                 

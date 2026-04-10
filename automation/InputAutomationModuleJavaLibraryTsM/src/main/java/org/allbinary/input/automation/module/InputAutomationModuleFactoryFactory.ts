@@ -101,7 +101,7 @@ this.hashMap= HashMap<Any, Any>()
         while(iterator.hasNext())
         {
 inputAutomationModuleConfiguration= iterator.next() as InputAutomationModuleConfiguration
-this.this.add(inputAutomationModuleConfiguration)
+this.add(inputAutomationModuleConfiguration)
 }
 
 this.defaultListModelHelper!.initDefaultModelList()

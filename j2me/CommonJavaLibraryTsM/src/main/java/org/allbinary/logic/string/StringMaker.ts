@@ -27,8 +27,8 @@ public constructor (){
         
         
 
-this.this.ensureCapacity(this.currentLength +stringLength)
-string.
+this.ensureCapacity(this.currentLength +stringLength)
+
 
 
         for (let i = 0; i < stringLength; i++) {
@@ -48,7 +48,7 @@ this.currentLength += stringLength
 
     public appendchar(c: string): StringMaker{
     //var c = c
-this.this.ensureCapacity(this.currentLength +1)
+this.ensureCapacity(this.currentLength +1)
 this.charArray[this.currentLength++]= c
 
 
@@ -61,7 +61,7 @@ this.charArray[this.currentLength++]= c
 
     public appendbyte(b: number): StringMaker{
     //var b = b
-this.this.append(b.toString())
+this.append(b.toString())
 
 
 
@@ -73,7 +73,7 @@ this.this.append(b.toString())
 
     public appendshort(b: number): StringMaker{
     //var b = b
-this.this.append(b.toString())
+this.append(b.toString())
 
 
 
@@ -85,7 +85,7 @@ this.this.append(b.toString())
 
     public appendint(i: number): StringMaker{
     //var i = i
-this.this.append(i.toString())
+this.append(i.toString())
 
 
 
@@ -97,7 +97,7 @@ this.this.append(i.toString())
 
     public appendlong(l: number): StringMaker{
     //var l = l
-this.this.append(l.toString())
+this.append(l.toString())
 
 
 
@@ -109,7 +109,7 @@ this.this.append(l.toString())
 
     public appendfloat(f: number): StringMaker{
 var f = f
-this.this.append(f.toString())
+this.append(f.toString())
 
 
 
@@ -125,7 +125,7 @@ this.this.append(f.toString())
                         if(bool)
                         
                                     {
-                                    this.this.ensureCapacity(this.currentLength +4)
+                                    this.ensureCapacity(this.currentLength +4)
 this.charArray[this.currentLength++]= 
                                     't'
                                     
@@ -142,7 +142,7 @@ this.charArray[this.currentLength++]=
                                     }
                                 
                         else {
-                            this.this.ensureCapacity(this.currentLength +5)
+                            this.ensureCapacity(this.currentLength +5)
 this.charArray[this.currentLength++]= 
                                     'f'
                                     
@@ -203,7 +203,7 @@ this.charArray[this.currentLength++]=
         
         
 
-System.
+
 
 
         for (let i = 0; i < min; i++) {

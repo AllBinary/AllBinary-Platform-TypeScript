@@ -416,7 +416,7 @@ stringBuffer!.append(BasicItemValidation(this.itemInterface).
         
         
 
-this.this.validationInfo(stringBuffer, fileName, fileItemFieldName, size)
+this.validationInfo(stringBuffer, fileName, fileItemFieldName, size)
 
                                     }
                                 
@@ -490,7 +490,7 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
 
                         }
                             
-this.this.processImageFiles()
+this.processImageFiles()
 
                                     }
                                 

@@ -68,7 +68,7 @@ var key = key
         try {
             this.algorithm= algorithm
 this.key= key.encodeToByteArray()
-this.this.init()
+this.init()
 } catch(e: Exception)
             {
 

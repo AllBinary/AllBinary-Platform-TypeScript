@@ -47,7 +47,7 @@ public constructor (costFromStart: number, costToGoal: number){
     //var costToGoal = costToGoal
 this.costFromStartP= costFromStart
 this.costToEndP= costToGoal
-this.this.setTotalCost()
+this.setTotalCost()
 }
 
 

@@ -205,11 +205,11 @@ var cmdListener = cmdListener
 
     public start(){
 logUtil!.put(commonStrings!.START, this, commonStrings!.START_METHOD_NAME)
-this.this.setBackground(true)
+this.setBackground(true)
 this.gauge.setHeight(30)
 this.gauge.setLabel(commonStrings!.PLEASE_WAIT)
-this.this.setText(TEXT)
-this.this.setValue(0)
+this.setText(TEXT)
+this.setValue(0)
 this.inGameProcessor= Processor.getInstance()
 this.paintable= GAUGE_PAINTABLE
 this.inProgress= true
@@ -232,11 +232,11 @@ logUtil!.put(commonStrings!.START, this, START_BACKGROUND)
         
         
 
-this.this.setBackground(background)
+this.setBackground(background)
 this.gauge.setHeight(myFont!.DEFAULT_CHAR_HEIGHT +2)
 this.gauge.setLabel(backgroundLabel)
-this.this.setText(TEXT)
-this.this.setValue(0)
+this.setText(TEXT)
+this.setValue(0)
 this.inGameProcessor= Processor.getInstance()
 this.paintable= GAUGE_PAINTABLE
 }
@@ -245,7 +245,7 @@ this.paintable= GAUGE_PAINTABLE
     public endActual(){
 this.allbinaryMidlet!.commandAction(GameCommandsFactory.getInstance()!.SHOW_GAME_CANVAS, NullCanvas.NULL_CANVAS)
 this.inProgress= false
-this.this.inGame()
+this.inGame()
 }
 
 
@@ -257,7 +257,7 @@ this.inGameProcessor= IN_GAME_PROCESSOR
     public end(){
 logUtil!.put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME)
 this.gauge.setValue(this.getMaxValue())
-this.this.endActual()
+this.endActual()
 this.paintable= NullPaintable.getInstance()
 }
 
@@ -284,7 +284,7 @@ this.inGameProcessor= IN_GAME_PROCESSOR
 var value = value
 var text = text
 var index = index
-this.this.setText(StringMaker().
+this.setText(StringMaker().
                             append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getInstance(index)!.toString())!.toString())
 this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value)
 }
@@ -294,7 +294,7 @@ this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value)
 var value = value
 var text = text
 var index = index
-this.this.setText(StringMaker().
+this.setText(StringMaker().
                             append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getInstance(index)!.toString())!.toString())
 PreLogUtil.put(this.text, this, ADD_PORTION)
 this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value)
@@ -312,7 +312,7 @@ var text = text
 
                                     }
                                 
-this.this.setText(text)
+this.setText(text)
 this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value)
 }
 

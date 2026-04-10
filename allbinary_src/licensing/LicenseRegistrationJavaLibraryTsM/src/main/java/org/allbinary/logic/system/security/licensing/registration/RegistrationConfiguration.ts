@@ -98,12 +98,12 @@ private constructor (){
                         if(FileFactory.getInstance()!.isFile(FILE))
                         
                                     {
-                                    this.this.read()
+                                    this.read()
 
                                     }
                                 
                         else {
-                            this.this.write()
+                            this.write()
 
                         }
                             
@@ -138,7 +138,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
         
         
 
-this.this.setRegistrationCode(dataInputStream!.readUTF())
+this.setRegistrationCode(dataInputStream!.readUTF())
 PreLogUtil.put(StringMaker().
                             append("Read Configuration: ")!.append(this.toString())!.toString(), this, "read")
 }

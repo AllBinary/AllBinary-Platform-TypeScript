@@ -42,8 +42,8 @@ public constructor (storeName: string, gatewayName: string){
             super();
             var storeName = storeName
 var gatewayName = gatewayName
-this.this.setStoreName(storeName)
-this.this.setName(gatewayName)
+this.setStoreName(storeName)
+this.setName(gatewayName)
 }
 
 

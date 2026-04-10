@@ -54,8 +54,8 @@ export class OrderItemsTag extends TableTag {
 public constructor (){
 
             super();
-            this.this.setTagHelperFactory(OrderItemsHelperFactory())
-this.this.setTagRequestHelperFactory(OrderItemsRequestHelperFactory())
+            this.setTagHelperFactory(OrderItemsHelperFactory())
+this.setTagRequestHelperFactory(OrderItemsRequestHelperFactory())
 }
 
 

@@ -58,7 +58,7 @@ public constructor (imageArray: Image[], animationBehavior: AnimationBehavior)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.reset()
+this.reset()
 }
 
 
@@ -82,7 +82,7 @@ this.circularIndexUtil!.setIndex(this.circularIndexUtil!.getSize() -1)
 
 
     public reset(){
-this.this.setFrame(this.getSize() -1)
+this.setFrame(this.getSize() -1)
 loopCount= 0
 }
 
@@ -96,7 +96,7 @@ loopCount= 0
                         if(timeDelayHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
                                     {
-                                    this.this.previousFrame()
+                                    this.previousFrame()
 
                         if(this.getFrame() == 0)
                         

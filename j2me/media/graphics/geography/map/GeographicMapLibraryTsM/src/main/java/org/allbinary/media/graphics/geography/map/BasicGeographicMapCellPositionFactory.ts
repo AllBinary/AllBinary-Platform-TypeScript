@@ -62,7 +62,7 @@ this.columns= this.tiledLayer!.getColumns()
 this.rows= this.tiledLayer!.getRows()
 this.geographicMapCellPositionArray= Array(rows) { arrayOfNulls<GeographicMapCellPosition?>(columns) }
                                                             
-this.this.init()
+this.init()
 }
 
 
@@ -114,7 +114,7 @@ column < columns; column++)
         
 row < rows; row++)
         {
-this.this.createInstance(column, row, width, height)
+this.createInstance(column, row, width, height)
 }
 
 }

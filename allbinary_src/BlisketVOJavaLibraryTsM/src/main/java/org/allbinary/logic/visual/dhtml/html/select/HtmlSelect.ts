@@ -123,12 +123,12 @@ var fileName = fileName
         
         
 
-this.this.addOption(option)
+this.addOption(option)
 }
 
 } catch(e: Exception)
             {
-this.this.addOption("Error")
+this.addOption("Error")
 }
 
 }

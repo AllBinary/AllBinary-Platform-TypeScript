@@ -41,7 +41,7 @@ var motionRectangles = motionRectangles
                             //For kotlin this is before the body of the constructor.
                     
 this.frame= frame
-this.this.setMotionRectangles(motionRectangles)
+this.setMotionRectangles(motionRectangles)
 }
 
 

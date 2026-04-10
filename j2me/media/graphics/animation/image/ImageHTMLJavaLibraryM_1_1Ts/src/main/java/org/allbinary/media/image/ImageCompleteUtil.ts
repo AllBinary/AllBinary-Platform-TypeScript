@@ -89,7 +89,7 @@ var name = name
                         if(!playnCoreImage!.isReady() || playnCoreImage!.width() +playnCoreImage!.height() <= 0)
                         
                                     {
-                                    this.this.handleTimeout(name)
+                                    this.handleTimeout(name)
 
 
 

@@ -155,10 +155,10 @@ index < size; index++)
         
         
 
-this.this.delete(abeClientInformation, gameInfo, integer.toInt())
+this.delete(abeClientInformation, gameInfo, integer.toInt())
 }
 
-this.this.clear()
+this.clear()
 }
 
 
@@ -292,7 +292,7 @@ nameBasicArrayList!.add(smallIntegerSingletonFactory!.getInstance(id))
                                 
 } catch(e: Exception)
             {
-this.this.save(abeClientInformation, gameInfo, this.name)
+this.save(abeClientInformation, gameInfo, this.name)
 logUtil!.put(StringMaker().
                             append(commonStrings!.EXCEPTION_LABEL)!.append(ExceptionUtil.getInstance()!.getStackTrace(e))!.toString(), this, commonStrings!.LOAD)
 }

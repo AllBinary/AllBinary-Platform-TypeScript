@@ -90,8 +90,8 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                 //@Throws(Error::class)
             
     public addDomNodeInterfaces(){
-this.this.addDomNodeInterface(this.body as DomNodeInterface)
-this.this.addDomNodeInterface(this as DomNodeInterface)
+this.addDomNodeInterface(this.body as DomNodeInterface)
+this.addDomNodeInterface(this as DomNodeInterface)
 }
 
 
@@ -126,7 +126,7 @@ var document = document
     public view(): string{
 
         try {
-            this.this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces()
 
     var success: string = DomDocumentHelper.toString(this.getDoc())!;
         

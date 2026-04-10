@@ -274,7 +274,7 @@ basketNode!.appendChild(subTotalNode)
 
 
     public addDomNodeInterfaces(){
-this.this.addDomNodeInterface(this as DomNodeInterface)
+this.addDomNodeInterface(this as DomNodeInterface)
 }
 
 
@@ -283,7 +283,7 @@ this.this.addDomNodeInterface(this as DomNodeInterface)
     public view(): string{
 
         try {
-            this.this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces()
 
 
 

@@ -223,7 +223,7 @@ var unconditional = unconditional
         try {
             logUtil!.put(commonStrings!.START, this, METHOD_NAME)
 PreLogUtil.put(Memory.getInfo(), this, METHOD_NAME)
-this.this.setDestroyed(true)
+this.setDestroyed(true)
 } catch(e: Exception)
             {
 logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e)

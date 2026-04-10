@@ -113,7 +113,7 @@ public constructor (hashMap: HashMap<Any, Any>, httpServletRequest: HttpServletR
             var hashMap = hashMap
 var httpServletRequest = httpServletRequest
 this.weblisketSession= WeblisketSession(hashMap, httpServletRequest)
-this.this.getFormData()
+this.getFormData()
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
@@ -665,7 +665,7 @@ login= userEntityInterface!.login(userName, password)
 
                                     }
                                 
-this.this.nextAttempt()
+this.nextAttempt()
 
 
 
@@ -675,7 +675,7 @@ this.this.nextAttempt()
 
                                     }
                                 
-this.this.nextAttempt()
+this.nextAttempt()
 
 
 
@@ -710,7 +710,7 @@ this.this.nextAttempt()
                         if(BooleanUtil.getInstance()!.getFromString(timeout))
                         
                                     {
-                                    this.this.invalidateSession()
+                                    this.invalidateSession()
 
 
 

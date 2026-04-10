@@ -170,8 +170,8 @@ allbinaryLayer!.setPosition(allbinaryLayer!.getXP(), 1, allbinaryLayer!.getZP())
                         if(ownerLayerInterface!.getXP() -ownerLayerInterface!.getWidth() <= 0 && frame == angleIncrementInfo!.LEFT_FRAME.toInt())
                         
                                     {
-                                    this.this.reverse()
-this.this.drop()
+                                    this.reverse()
+this.drop()
 
                                     }
                                 
@@ -184,9 +184,9 @@ this.this.drop()
                         if(ownerLayerInterface!.getX2() +ownerLayerInterface!.getWidth() > displayInfo!.getLastWidth() && frame == angleIncrementInfo!.RIGHT_FRAME.toInt())
                         
                                     {
-                                    this.this.reverse()
-this.this.accelerate()
-this.this.drop()
+                                    this.reverse()
+this.accelerate()
+this.drop()
 
                                     }
                                 

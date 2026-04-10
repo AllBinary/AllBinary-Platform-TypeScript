@@ -53,11 +53,11 @@ export class ConcurrentImageLoadingProcessor extends BaseImageLoadingProcessor {
     public run(){
 
         try {
-            this.this.setRunning(true)
+            this.setRunning(true)
 imageCache!.waitForLoadNow()
 imageCache!.loadImages()
 imageCache!.loadRemainingAnimations()
-this.this.setRunning(false)
+this.setRunning(false)
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
@@ -73,7 +73,7 @@ this.this.setRunning(false)
                                 
 } catch(e: Exception)
             {
-this.this.setRunning(false)
+this.setRunning(false)
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 

@@ -73,7 +73,7 @@ public constructor (itemHashMap: HashMap<Any, Any>)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setData(itemHashMap)
+this.setData(itemHashMap)
 }
 
 public constructor (){

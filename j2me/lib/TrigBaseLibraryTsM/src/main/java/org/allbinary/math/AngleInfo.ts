@@ -72,7 +72,7 @@ var frame = frame
         
         
 
-this.this.setAngle(frameUtil!.adjustAngleToFrameAngle(newAngle).toShort())
+this.setAngle(frameUtil!.adjustAngleToFrameAngle(newAngle).toShort())
 }
 
 

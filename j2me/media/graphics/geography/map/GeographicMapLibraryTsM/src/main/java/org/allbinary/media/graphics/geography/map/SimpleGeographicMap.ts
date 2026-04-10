@@ -68,8 +68,8 @@ this.id= id
 this.name= name
 this.cellTypeIdToGeographicMapCellType= cellTypeIdToGeographicMapCellType
 this.tiledLayer= tiledLayer
-this.this.setBackgroundBasicColor(backgroundBasicColor)
-this.this.setForegroundBasicColor(foregroundBasicColor)
+this.setBackgroundBasicColor(backgroundBasicColor)
+this.setForegroundBasicColor(foregroundBasicColor)
 }
 
 

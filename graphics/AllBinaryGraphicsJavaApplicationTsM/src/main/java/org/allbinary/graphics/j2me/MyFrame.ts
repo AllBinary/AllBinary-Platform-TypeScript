@@ -176,7 +176,7 @@ public constructor (){
 
             super();
             initComponents()
-this.this.setSize(Dimension(550, 400))
+this.setSize(Dimension(550, 400))
 this.mainJPanel!.setSize(Dimension(550, 400))
 this.jTabbedPane!.setSize(Dimension(550, 400))
 fileJDialog= FileJDialog()
@@ -609,25 +609,25 @@ getSelectedWorkArea()!.changeZoom(1)
 
     openJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.this.openGraphics()
+this.openGraphics()
 }
 
 
     exportJMenuItem1ActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.this.export()
+this.export()
 }
 
 
     saveJMenuItemMousePressed(evt: java.awt.event.MouseEvent){
 var evt = evt
-this.this.save()
+this.save()
 }
 
 
     jTabbedPaneStateChanged(evt: javax.swing.event.ChangeEvent){
 var evt = evt
-this.this.updateSelectedWorkArea()
+this.updateSelectedWorkArea()
 }
 
 
@@ -644,7 +644,7 @@ System.exit(0)
 
     newJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.this.newGraphics()
+this.newGraphics()
 }
 
 
@@ -661,13 +661,13 @@ System.exit(0)
 
     openJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.this.openGraphics()
+this.openGraphics()
 }
 
 
     jButton2ActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.this.newGraphics()
+this.newGraphics()
 }
 
 
@@ -687,13 +687,13 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "centerJMenuItemActionPerformed", e
 
     saveJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.this.save()
+this.save()
 }
 
 
     jButton1ActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.this.export()
+this.export()
 }
 
 
@@ -736,7 +736,7 @@ index < files.length; index++)
         
 
 workAreaJPanel!.setLayout(GridLayout(1, 1))
-this.this.add(workAreaJPanel as WorkAreaJPanelInterface)
+this.add(workAreaJPanel as WorkAreaJPanelInterface)
 }
 
 this.fileJDialog!.setVisible(false)
@@ -956,7 +956,7 @@ jTabbedPane!.setSelectedComponent(newCanvasInterface as JPanel)
         
 
 animationThread!.start()
-this.this.updateSelectedWorkArea()
+this.updateSelectedWorkArea()
 } catch(e: Exception)
             {
 

@@ -120,7 +120,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 this.request= this.getPageContext()!.getRequest() as HttpServletRequest
-this.this.getFormData()
+this.getFormData()
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, empty: string)                        
@@ -151,7 +151,7 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest
                 //@Throws(Error::class)
             
     getFormData(){
-this.this.setRequestHashMap(MultipartRequestParams(request).
+this.setRequestHashMap(MultipartRequestParams(request).
                             toHashMap())
 this.id= this.getRequestHashMap()!.get(BasicItemData.ID) as String
 }
@@ -173,7 +173,7 @@ this.id= this.getRequestHashMap()!.get(BasicItemData.ID) as String
 
                                     }
                                 
-this.this.addDomNodeInterface(BasicItemView(itemInterface, vector))
+this.addDomNodeInterface(BasicItemView(itemInterface, vector))
 }
 
 
@@ -182,7 +182,7 @@ this.this.addDomNodeInterface(BasicItemView(itemInterface, vector))
     public view(): string{
 
         try {
-            this.this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces()
 
 
 

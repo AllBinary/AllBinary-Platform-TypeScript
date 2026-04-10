@@ -124,7 +124,7 @@ public constructor (vectorInfo: VectorInfo, basicColor: BasicColor, animationBeh
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.init()
+this.init()
 }
 
 

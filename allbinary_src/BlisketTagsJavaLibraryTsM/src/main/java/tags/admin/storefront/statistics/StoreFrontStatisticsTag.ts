@@ -54,8 +54,8 @@ public constructor (){
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.this.setName("Validation StoreFrontStatistics View")
-this.this.setObjectFile("views.admin.storefront.statistics.ValidationStoreFrontStatisticsView")
+                                    this.setName("Validation StoreFrontStatistics View")
+this.setObjectFile("views.admin.storefront.statistics.ValidationStoreFrontStatisticsView")
 
                                     }
                                 

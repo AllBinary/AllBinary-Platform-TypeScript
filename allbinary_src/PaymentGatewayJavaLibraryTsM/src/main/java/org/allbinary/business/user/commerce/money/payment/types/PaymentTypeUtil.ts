@@ -311,7 +311,7 @@ var storeName = storeName
 
                                     }
                                 
-this.this.initDefault(storeName)
+this.initDefault(storeName)
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(this.defaultName))
                         

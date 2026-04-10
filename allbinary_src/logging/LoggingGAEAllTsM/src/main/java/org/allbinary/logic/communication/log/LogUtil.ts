@@ -85,7 +85,7 @@ private constructor (){
         
         
 
-this.this.put(specialMessage, anyType, functionName, exception)
+this.put(specialMessage, anyType, functionName, exception)
 }
 
 
@@ -93,7 +93,7 @@ this.this.put(specialMessage, anyType, functionName, exception)
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName
-this.this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT)
+this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT)
 }
 
 

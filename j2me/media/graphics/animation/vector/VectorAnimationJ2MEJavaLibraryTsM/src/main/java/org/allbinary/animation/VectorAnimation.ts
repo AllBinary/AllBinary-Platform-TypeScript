@@ -67,8 +67,8 @@ public constructor (currentPoints: IntArray[][], basicColor: BasicColor, animati
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setPoints(currentPoints)
-this.this.setBasicColorP(basicColor)
+this.setPoints(currentPoints)
+this.setBasicColorP(basicColor)
 }
 
 public constructor (currentPoints: IntArray[], basicColor: BasicColor, animationBehavior: AnimationBehavior)                        
@@ -83,7 +83,7 @@ public constructor (currentPoints: IntArray[], basicColor: BasicColor, animation
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setPoints(Array(1) { Array(currentPoints!.length) { IntArray(2) } })
+this.setPoints(Array(1) { Array(currentPoints!.length) { IntArray(2) } })
 
     var size: number = currentPoints!.length
                 ;
@@ -104,7 +104,7 @@ this.currentPoints[0]![index]![0]= currentPoints[index]![0]!
 this.currentPoints[0]![index]![1]= currentPoints[index]![1]!
 }
 
-this.this.setBasicColorP(basicColor)
+this.setBasicColorP(basicColor)
 }
 
 
@@ -228,7 +228,7 @@ var graphics = graphics
 var x = x
 var y = y
 this.basicSetColorUtil!.setBasicColorP(graphics, basicColor)
-this.this.paintVectors(graphics, x, y)
+this.paintVectors(graphics, x, y)
 }
 
 

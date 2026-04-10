@@ -99,7 +99,7 @@ this.trackingList= BasicArrayList()
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
-this.this.update()
+this.update()
 
     var direction: Direction = this.setFiringDirectionForTargetIfInRange()!;
         

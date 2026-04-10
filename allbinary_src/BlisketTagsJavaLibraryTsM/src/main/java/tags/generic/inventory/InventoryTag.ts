@@ -217,9 +217,9 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>")
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.SEARCH) == 0)
                         
                                     {
-                                    this.this.setName("Basic Search Inventory View")
-this.this.setObjectFile("views.generic.inventory.AutoSearchValidationInventoryView")
-this.this.search()
+                                    this.setName("Basic Search Inventory View")
+this.setObjectFile("views.generic.inventory.AutoSearchValidationInventoryView")
+this.search()
 
 
 
@@ -233,9 +233,9 @@ this.this.search()
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEWSUMMARY) == 0)
                         
                                     {
-                                    this.this.setName("Basic Inventory View")
-this.this.setObjectFile("views.generic.inventory.AutoValidationInventoryView")
-this.this.viewSummary()
+                                    this.setName("Basic Inventory View")
+this.setObjectFile("views.generic.inventory.AutoValidationInventoryView")
+this.viewSummary()
 
 
 
@@ -249,8 +249,8 @@ this.this.viewSummary()
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.this.setName("Basic Inventory View")
-this.this.setObjectFile("views.generic.inventory.AutoValidationInventoryView")
+                                    this.setName("Basic Inventory View")
+this.setObjectFile("views.generic.inventory.AutoValidationInventoryView")
 
 
 

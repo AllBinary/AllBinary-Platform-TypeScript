@@ -73,15 +73,15 @@ private constructor (index: number, size: number){
             super();
             var index = index
 var size = size
-this.this.setSize(size)
-this.this.setIndex(index)
+this.setSize(size)
+this.setIndex(index)
 }
 
 private constructor (size: number){
 
             super();
             var size = size
-this.this.setSize(size)
+this.setSize(size)
 }
 
 

@@ -218,12 +218,12 @@ public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterfa
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setVisible(false)
-this.this.setWaypointBehavior(WaypointBehaviorBase())
+this.setVisible(false)
+this.setWaypointBehavior(WaypointBehaviorBase())
 this.shakeListener= ShakeAnimationListenerFactory.getInstance()
 this.vibration= AllBinaryVibration.getInstance()
 this.duration= GameConfigurationCentral.getInstance()!.VIBRATION.getValue()!.toInt() *100
-this.this.setParentLayer(parentLayer)
+this.setParentLayer(parentLayer)
 }
 
 public constructor ()                        
@@ -235,11 +235,11 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setWaypointBehavior(WaypointBehaviorBase())
+this.setWaypointBehavior(WaypointBehaviorBase())
 this.shakeListener= NoShakeAnimationListener.NO_SHAKE_ANIMATION_LISTENER
 this.vibration= AllBinaryNoVibration.NO_VIBRATION
 this.duration= 0
-this.this.setParentLayer(NullPathFindingLayer.NULL_PATH_FINDING_LAYER)
+this.setParentLayer(NullPathFindingLayer.NULL_PATH_FINDING_LAYER)
 }
 
 
@@ -263,12 +263,12 @@ var rtsPlayerLayerInterface = rtsPlayerLayerInterface
                         if(advancedRTSPlayerLayerInterface!.isLocalPlayer() || advancedRTSPlayerLayerInterface!.getGameType() == GameTypeFactory.getInstance()!.BOT)
                         
                                     {
-                                    this.this.setVisible(true)
+                                    this.setVisible(true)
 
                                     }
                                 
                         else {
-                            this.this.setVisible(false)
+                            this.setVisible(false)
 
                         }
                             
@@ -280,7 +280,7 @@ var rtsPlayerLayerInterface = rtsPlayerLayerInterface
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 super.construct(rtsPlayerLayerInterface)
-this.this.initVisibility(rtsPlayerLayerInterface)
+this.initVisibility(rtsPlayerLayerInterface)
 BuildingEventHandler.getInstance()!.addListener(this.getWaypointBehavior()!.getWaypoint())
 }
 

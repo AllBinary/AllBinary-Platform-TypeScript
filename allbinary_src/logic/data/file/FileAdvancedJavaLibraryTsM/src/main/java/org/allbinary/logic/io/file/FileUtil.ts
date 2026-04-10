@@ -182,7 +182,7 @@ var file = file
         
         
 
-this.this.write(inputStream, dataOutputStream)
+this.write(inputStream, dataOutputStream)
 }
 
 
@@ -304,7 +304,7 @@ var file = file
 var path = path
 var realPath = realPath
 var cloud = cloud
-this.this.copyToCloud(file, path, realPath, cloud, false, false)
+this.copyToCloud(file, path, realPath, cloud, false, false)
 }
 
 
@@ -374,7 +374,7 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud")
         
         
 
-this.this.copy(fileInputStream, dataOutputStream)
+this.copy(fileInputStream, dataOutputStream)
 } catch(e: Exception)
             {
 
@@ -407,7 +407,7 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud", e)
     public copyToCloud(file: AbFile, outFile: AbFile){
 var file = file
 var outFile = outFile
-this.this.copyToCloud(file, outFile, false, false)
+this.copyToCloud(file, outFile, false, false)
 }
 
 
@@ -466,7 +466,7 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud")
         
         
 
-this.this.copy(fileInputStream, dataOutputStream)
+this.copy(fileInputStream, dataOutputStream)
 } catch(e: Exception)
             {
 
@@ -610,7 +610,7 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile")
     copyFile(fromFile: AbFile, toFile: AbFile){
 var fromFile = fromFile
 var toFile = toFile
-this.this.copyFile(fromFile, toFile, false, false)
+this.copyFile(fromFile, toFile, false, false)
 }
 
 
@@ -665,7 +665,7 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile")
         
         
 
-this.this.copy(fileInputStream, dataOutputStream)
+this.copy(fileInputStream, dataOutputStream)
 } catch(e: Exception)
             {
 
@@ -826,7 +826,7 @@ index < end; index++)
         
         
 
-this.this.copyFile(nextFile, toFile, overwriteNewer, overwriteAll)
+this.copyFile(nextFile, toFile, overwriteNewer, overwriteAll)
 
                         }
                             
@@ -929,7 +929,7 @@ index < size; index++)
                         if(file.isFile())
                         
                                     {
-                                    this.this.copyFile(file, AbFile(newDirectoryAbPath!.toString(), file.getName()))
+                                    this.copyFile(file, AbFile(newDirectoryAbPath!.toString(), file.getName()))
 
                                     }
                                 
@@ -937,7 +937,7 @@ index < size; index++)
                         if(file.isDirectory())
                         
                                     {
-                                    this.this.copyDirectory(file, AbFile(newDirectoryAbPath))
+                                    this.copyDirectory(file, AbFile(newDirectoryAbPath))
 
                                     }
                                 
@@ -1053,7 +1053,7 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copy")
         
         
 
-this.this.copyFile(fromLocationFile, file)
+this.copyFile(fromLocationFile, file)
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
@@ -1077,7 +1077,7 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copy")
                                     }
                                 
                         else {
-                            this.this.copyFile(fromLocationFile, toLocationFile)
+                            this.copyFile(fromLocationFile, toLocationFile)
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
@@ -1147,7 +1147,7 @@ index < fileArray!.length; index++)
         
         
 
-this.this.copyFile(file, aFile)
+this.copyFile(file, aFile)
 
                                     }
                                 

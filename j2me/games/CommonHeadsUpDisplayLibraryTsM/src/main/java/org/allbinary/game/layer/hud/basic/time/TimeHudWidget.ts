@@ -76,7 +76,7 @@ var timer = timer
                             //For kotlin this is before the body of the constructor.
                     
 this.timer= timer
-this.this.set()
+this.set()
 
     var myFont: MyFont = MyFont.getInstance()!;
         
@@ -130,7 +130,7 @@ var timer = timer
 
     public update(){
 this.timer.update()
-this.this.set()
+this.set()
 }
 
 

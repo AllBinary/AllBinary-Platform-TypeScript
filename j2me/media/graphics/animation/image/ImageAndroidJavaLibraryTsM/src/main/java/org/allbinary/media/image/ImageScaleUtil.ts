@@ -298,7 +298,7 @@ this.scaleYBasicArrayList!.add(scaleY)
         
         
 
-this.this.scale(image, matrix, scaleX, scaleY)
+this.scale(image, matrix, scaleX, scaleY)
 image.getGraphics()!.drawImage(originalImage, 0, 0, anchor)
 
 

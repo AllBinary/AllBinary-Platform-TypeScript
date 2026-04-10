@@ -126,7 +126,7 @@ this.code= DomNodeHelper.getTextNodeValue(codeNode)
         
 
 this.country= DomNodeHelper.getTextNodeValue(countryNode)
-this.this.log()
+this.log()
 }
 
 public constructor (streetAddress: StreetAddress){
@@ -141,21 +141,21 @@ this.state= streetAddress!.getState()
 this.code= streetAddress!.getCode()
 this.country= streetAddress!.getCountry()
 this.isDefault= streetAddress!.isDefault()
-this.this.log()
+this.log()
 }
 
 public constructor (request: HttpServletRequest){
 
             super();
             var request = request
-this.this.setId(request.getParameter(StreetAddressData.ID))
-this.this.setName(request.getParameter(StreetAddressData.NAME))
-this.this.setStreet(request.getParameter(StreetAddressData.STREET))
-this.this.setCity(request.getParameter(StreetAddressData.CITY))
-this.this.setState(request.getParameter(StreetAddressData.STATE))
-this.this.setCode(request.getParameter(StreetAddressData.CODE))
-this.this.setCountry(request.getParameter(StreetAddressData.COUNTRY))
-this.this.log()
+this.setId(request.getParameter(StreetAddressData.ID))
+this.setName(request.getParameter(StreetAddressData.NAME))
+this.setStreet(request.getParameter(StreetAddressData.STREET))
+this.setCity(request.getParameter(StreetAddressData.CITY))
+this.setState(request.getParameter(StreetAddressData.STATE))
+this.setCode(request.getParameter(StreetAddressData.CODE))
+this.setCountry(request.getParameter(StreetAddressData.COUNTRY))
+this.log()
 }
 
 public constructor (name: string, street: string, city: string, state: string, code: string, country: string){
@@ -173,7 +173,7 @@ this.city= city
 this.state= state
 this.code= code
 this.country= country
-this.this.log()
+this.log()
 }
 
 public constructor (address: HashMap<Any, Any>){
@@ -207,7 +207,7 @@ this.country= address.get(StreetAddressData.COUNTRY) as String
 
                         }
                             
-this.this.log()
+this.log()
 }
 
 

@@ -285,7 +285,7 @@ this.animationInterfaceArray[index]!.setFrame(angle)
 
     public adjustFrame(newAngle: Angle){
     //var newAngle = newAngle
-this.this.adjustFrame(newAngle!.getValue())
+this.adjustFrame(newAngle!.getValue())
 }
 
 

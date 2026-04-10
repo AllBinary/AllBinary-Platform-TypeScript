@@ -95,7 +95,7 @@ nextLayerInterface= this.list.get(index) as AllBinaryLayer
                         if(layerInterface!.getZP() > nextLayerInterface!.getZP())
                         
                                     {
-                                    this.this.append(layerInterface, index)
+                                    this.append(layerInterface, index)
 
 
 
@@ -107,7 +107,7 @@ nextLayerInterface= this.list.get(index) as AllBinaryLayer
                                 
 }
 
-this.this.append(layerInterface)
+this.append(layerInterface)
 }
 
 

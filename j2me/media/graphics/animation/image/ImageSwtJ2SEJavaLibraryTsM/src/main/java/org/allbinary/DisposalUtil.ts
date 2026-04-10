@@ -83,7 +83,7 @@ export class DisposalUtil
         
         
 
-this.this.dispose(mutableImage!.getImage() as Resource)
+this.dispose(mutableImage!.getImage() as Resource)
 
                                     }
                                 

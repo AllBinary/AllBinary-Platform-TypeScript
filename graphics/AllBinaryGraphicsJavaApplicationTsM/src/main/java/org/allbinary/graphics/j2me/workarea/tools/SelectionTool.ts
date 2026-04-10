@@ -462,7 +462,7 @@ var yPixelsPerCell = yPixelsPerCell
 logUtil!.put(commonStrings!.START, this, MouseStrings.getInstance()!.MOUSE_RELEASED)
 this.endPoint= PointFactory.getInstance()!.getInstance(mouseEvent!.getX(), mouseEvent!.getY())
 this.active= false
-this.this.makeSelection()
+this.makeSelection()
 }
 
 

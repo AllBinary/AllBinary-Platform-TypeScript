@@ -109,7 +109,7 @@ public constructor (cmdListener: CommandListener, label: string, text: string, m
 
 textFieldItem!.setString(text)
 this.textFieldItem= textFieldItem
-this.this.setTitle(label)
+this.setTitle(label)
 }
 
 
@@ -127,25 +127,25 @@ this.this.setTitle(label)
     //var repeated = repeated
 logUtil!.put(StringMaker().
                             append(commonStrings!.START)!.appendint(keyCode)!.toString(), this, "onEvent")
-this.this.keyPressed(keyCode, deviceId)
+this.keyPressed(keyCode, deviceId)
 }
 
 
     public keyPressed(keyCode: number){
     //var keyCode = keyCode
-this.this.keyPressed(keyCode, 0)
+this.keyPressed(keyCode, 0)
 }
 
 
     public keyReleased(keyCode: number){
     //var keyCode = keyCode
-this.this.keyReleased(keyCode, 0)
+this.keyReleased(keyCode, 0)
 }
 
 
     public keyRepeated(keyCode: number){
     //var keyCode = keyCode
-this.this.keyRepeated(keyCode, 0)
+this.keyRepeated(keyCode, 0)
 }
 
 
@@ -170,7 +170,7 @@ this.this.keyRepeated(keyCode, 0)
                         if(platformKeyFactory!.isSubmission(input))
                         
                                     {
-                                    this.this.submit()
+                                    this.submit()
 
                                     }
                                 
@@ -206,7 +206,7 @@ graphics.setColor(this.foregroundColor)
 
                                     }
                                 
-this.this.paint(graphics, 8, graphics.getFont()!.getHeight() +2)
+this.paint(graphics, 8, graphics.getFont()!.getHeight() +2)
 super.paint(graphics)
 }
 

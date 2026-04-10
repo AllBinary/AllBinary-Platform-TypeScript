@@ -463,7 +463,7 @@ this.paths[columnIndex]![rowIndex]= basicArrayListUtil!.getImmutableInstance()
 
     public reset(){
 this.getConnectedWaypointList()!.clear()
-this.this.releaseCachedPaths()
+this.releaseCachedPaths()
 }
 
 

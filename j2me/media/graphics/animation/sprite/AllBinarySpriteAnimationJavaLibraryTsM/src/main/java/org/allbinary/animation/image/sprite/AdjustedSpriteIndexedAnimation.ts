@@ -84,7 +84,7 @@ this.dy= dy
     //var frame = frame
     //var x = x
     //var y = y
-this.this.setFrame(frame)
+this.setFrame(frame)
 this.sprite.setPosition(x +this.dx, y +this.dy)
 super.paint(graphics)
 }

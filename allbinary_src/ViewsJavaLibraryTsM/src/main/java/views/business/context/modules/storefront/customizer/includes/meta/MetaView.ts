@@ -64,7 +64,7 @@ this.metasValidation= MetasValidation(this.getWeblisketSession()!.getStoreName()
 
 
     public addDomNodeInterfaces(){
-this.this.addDomNodeInterface(this.metasValidation as DomNodeInterface)
+this.addDomNodeInterface(this.metasValidation as DomNodeInterface)
 }
 
 
@@ -104,7 +104,7 @@ var document = document
     public view(): string{
 
         try {
-            this.this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces()
 
 
 

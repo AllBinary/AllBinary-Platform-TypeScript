@@ -75,7 +75,7 @@ this.isFallingWithoutJumpAttempt= true
     public land(velocityProperties: VelocityProperties){
     //var velocityProperties = velocityProperties
 velocityProperties!.getVelocityYBasicDecimalP()!.set(0)
-this.this.land()
+this.land()
 }
 
 

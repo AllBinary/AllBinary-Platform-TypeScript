@@ -48,14 +48,14 @@ public constructor (timeCreated: TimeCreated){
 
             super();
             var timeCreated = timeCreated
-this.this.setTimeCreated(timeCreated)
+this.setTimeCreated(timeCreated)
 }
 
 public constructor (node: Node){
 
             super();
             var node = node
-this.this.setTimeCreated(TimeCreated(DomNodeHelper.getTextNodeValue(node)))
+this.setTimeCreated(TimeCreated(DomNodeHelper.getTextNodeValue(node)))
 }
 
 

@@ -87,7 +87,7 @@ canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight(
         
         
 
-this.this.drawImage(originalImage, image, canvasSurface)
+this.drawImage(originalImage, image, canvasSurface)
 
 
 

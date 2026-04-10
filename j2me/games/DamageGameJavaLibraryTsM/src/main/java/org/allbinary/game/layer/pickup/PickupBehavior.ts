@@ -123,7 +123,7 @@ var pickupLayerInterface = pickupLayerInterface
                         if(pickedUpLayerType == pickedUpLayerTypeFactory!.BEAM || pickedUpLayerType == pickedUpLayerTypeFactory!.MINE || pickedUpLayerType == pickedUpLayerTypeFactory!.PROJECTILE || pickedUpLayerType == pickedUpLayerTypeFactory!.ENHANCEMENT)
                         
                                     {
-                                    this.this.add(pickedUpLayerInterfaceFactoryInterface as CountedPickedUpLayerInterfaceFactoryInterface)
+                                    this.add(pickedUpLayerInterfaceFactoryInterface as CountedPickedUpLayerInterfaceFactoryInterface)
 
                                     }
                                 
@@ -148,7 +148,7 @@ collidableDestroyableDamageableLayer!.addPart(pickedUpLayerInterfaceFactoryInter
                                     }
                                 
                         else {
-                            this.this.doPickup(pickedUpLayerInterfaceFactoryInterface as PickupProcessorInterface)
+                            this.doPickup(pickedUpLayerInterfaceFactoryInterface as PickupProcessorInterface)
 
                         }
                             
@@ -173,7 +173,7 @@ var countedPickedUpLayerInterfaceFactoryInterface = countedPickedUpLayerInterfac
         
         
 
-this.this.add(countedPickedUpLayerInterfaceFactoryInterface, partIndex)
+this.add(countedPickedUpLayerInterfaceFactoryInterface, partIndex)
 }
 
 

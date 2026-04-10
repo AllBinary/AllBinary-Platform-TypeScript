@@ -174,7 +174,7 @@ private constructor (){
     //var scaleY = scaleY
     //var maxScaleX = maxScaleX
     //var maxScaleY = maxScaleY
-this.this.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX, scaleY, maxScaleX, maxScaleY, true)
+this.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX, scaleY, maxScaleX, maxScaleY, true)
 }
 
 

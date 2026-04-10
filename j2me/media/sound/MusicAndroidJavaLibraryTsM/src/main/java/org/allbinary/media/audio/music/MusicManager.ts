@@ -195,7 +195,7 @@ var nextSongSound = nextSongSound
 this.nextSongSound= nextSongSound
 this.leftVolume= leftVolume
 this.rightVolume= rightVolume
-this.this.reset()
+this.reset()
 }
 
 
@@ -222,7 +222,7 @@ this.timeDelayHelper!.delay= 0
                         if(this.timeDelayHelper!.isTime(gameTickTimeDelayHelper!.startTime))
                         
                                     {
-                                    this.this.startNewSong()
+                                    this.startNewSong()
 
 
 
@@ -244,7 +244,7 @@ this.timeDelayHelper!.delay= 0
                                     }
                                 
                         else {
-                            this.this.startNewSong()
+                            this.startNewSong()
 
                         }
                             

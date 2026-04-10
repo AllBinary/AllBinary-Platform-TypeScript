@@ -83,13 +83,13 @@ this.imageSearchConstraintsInterface= imageSearchConstraintsInterface
     public onImageComparisonResultsEvent(imageComparisonResultsEvent: ImageComparisonResultsEvent){
 var imageComparisonResultsEvent = imageComparisonResultsEvent
 this.imageComparisonInfoVector!.add(imageComparisonResultsEvent!.getImageComparisonResult())
-this.this.run()
+this.run()
 }
 
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
 var allBinaryEventObject = allBinaryEventObject
-this.this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResultsEvent)
+this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResultsEvent)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -115,7 +115,7 @@ this.running= running
 
         try {
             logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-this.this.setRunning(true)
+this.setRunning(true)
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
@@ -136,7 +136,7 @@ logUtil!.put(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN)
 this.imageComparisonInfoVector!.remove(imageComparisonInfo)
 this.index++
 logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
-this.this.setRunning(false)
+this.setRunning(false)
 logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
 } catch(e: Exception)
             {

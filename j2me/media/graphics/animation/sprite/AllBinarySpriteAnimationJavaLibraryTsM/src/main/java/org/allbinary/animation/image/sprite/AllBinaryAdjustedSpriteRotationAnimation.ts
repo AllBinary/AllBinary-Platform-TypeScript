@@ -61,7 +61,7 @@ this.dy= dy
     //var x = x
     //var y = y
 this.sprite.setPosition(x +this.dx, y +this.dy)
-this.this.paint(g)
+this.paint(g)
 }
 
 

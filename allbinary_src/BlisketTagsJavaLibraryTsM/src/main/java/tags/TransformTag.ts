@@ -156,7 +156,7 @@ logUtil!.put(stringBuffer!.toString(), this, "doStartTag")
 
                                     }
                                 
-this.this.setHelper()
+this.setHelper()
 pageContext!.getOut()!.print(this.view())
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))

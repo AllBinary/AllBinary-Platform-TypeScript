@@ -79,14 +79,14 @@ public constructor (total: number, countedPickedUpLayerInterfaceFactory: Counted
             var total = total
 var countedPickedUpLayerInterfaceFactory = countedPickedUpLayerInterfaceFactory
 this.primitiveLongUtil= PrimitiveLongUtil(1000)
-this.this.init(total, countedPickedUpLayerInterfaceFactory)
+this.init(total, countedPickedUpLayerInterfaceFactory)
 }
 
 
     init(total: number, countedPickedUpLayerInterfaceFactory: CountedPickedUpLayerInterfaceFactory){
 var total = total
 var countedPickedUpLayerInterfaceFactory = countedPickedUpLayerInterfaceFactory
-this.this.setCountedPickedUpLayerInterfaceFactory(countedPickedUpLayerInterfaceFactory)
+this.setCountedPickedUpLayerInterfaceFactory(countedPickedUpLayerInterfaceFactory)
 this.total= total
 }
 
@@ -102,7 +102,7 @@ var z = z
                         if(this.total > 0)
                         
                                     {
-                                    this.this.setTotal(this.total -1)
+                                    this.setTotal(this.total -1)
 
 
 
@@ -142,7 +142,7 @@ this.totalString= this.primitiveLongUtil!.getCharArray(total)
         
         
 
-this.this.setXOffset(font.charsWidth(totalString, 0, this.primitiveLongUtil!.getCurrentTotalDigits()) +(font.getSize() shr 1))
+this.setXOffset(font.charsWidth(totalString, 0, this.primitiveLongUtil!.getCurrentTotalDigits()) +(font.getSize() shr 1))
 }
 
 

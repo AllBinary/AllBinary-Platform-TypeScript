@@ -149,7 +149,7 @@ this.dimension= IntegerDimension(0, 0)
         
         
 
-this.this.setAngle(angle)
+this.setAngle(angle)
 
     var sizeNode: Node = DomHelper.getInstance()!.searchNodeList(this.SIZE, canvasNode!.getChildNodes())!;
         
@@ -187,7 +187,7 @@ this.this.setAngle(angle)
         
         
 
-this.this.setWorkArea(x, y)
+this.setWorkArea(x, y)
 
     var zoomNode: Node = DomHelper.getInstance()!.searchNodeList(this.ZOOM, canvasNode!.getChildNodes())!;
         
@@ -242,7 +242,7 @@ this.grid.setZoom(Integer(zoomTextNode!.getNodeValue()).
         
         
 
-this.this.setGrid(gridX, gridY)
+this.setGrid(gridX, gridY)
 
     var enableNode: Node = DomHelper.getInstance()!.searchNodeList(this.ENABLED, gridNode!.getChildNodes())!;
         
@@ -338,7 +338,7 @@ this.angle= angle
     public setWorkArea(x: number, y: number){
 var x = x
 var y = y
-this.this.setDimension(IntegerDimension(x, y))
+this.setDimension(IntegerDimension(x, y))
 }
 
 

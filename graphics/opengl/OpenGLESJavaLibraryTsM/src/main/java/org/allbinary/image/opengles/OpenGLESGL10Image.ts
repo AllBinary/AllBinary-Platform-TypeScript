@@ -229,7 +229,7 @@ public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, text
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.initVertices()
+this.initVertices()
 }
 
 

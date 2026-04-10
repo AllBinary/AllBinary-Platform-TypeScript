@@ -89,16 +89,16 @@ protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInte
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setCollidableInferface(CollidableWaypointBehavior(this, true))
+this.setCollidableInferface(CollidableWaypointBehavior(this, true))
 this.getWaypointBehavior()!.setWaypoint(Waypoint(this, AttackSound.getInstance()))
-this.this.setAnimationInterface(this.indexedButShouldBeRotationAnimationInterface)
+this.setAnimationInterface(this.indexedButShouldBeRotationAnimationInterface)
 }
 
 
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 this.percentCompleteP= 100
-this.this.initVisibility(rtsPlayerLayerInterface)
+this.initVisibility(rtsPlayerLayerInterface)
 }
 
 

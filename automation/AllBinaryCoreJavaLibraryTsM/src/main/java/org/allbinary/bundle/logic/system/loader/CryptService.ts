@@ -112,11 +112,11 @@ logUtil!.put("Set Globals: " +URLGLOBALS.getWebappPath(), this, this.commonStrin
     
 } catch(e: LicensingException)
             {
-this.this.showLicenseDialog(abeClientInformation, e)
+this.showLicenseDialog(abeClientInformation, e)
 }
  catch(e: Exception)
             {
-this.this.showLicenseDialog(abeClientInformation, e)
+this.showLicenseDialog(abeClientInformation, e)
 }
 
 

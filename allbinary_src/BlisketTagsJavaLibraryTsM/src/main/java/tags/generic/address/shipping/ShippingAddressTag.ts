@@ -59,8 +59,8 @@ public constructor (){
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.this.setName("Basic Shipping Address View")
-this.this.setObjectFile("views.generic.address.shipping.ViewShippingAddressesView")
+                                    this.setName("Basic Shipping Address View")
+this.setObjectFile("views.generic.address.shipping.ViewShippingAddressesView")
 
                                     }
                                 
@@ -68,8 +68,8 @@ this.this.setObjectFile("views.generic.address.shipping.ViewShippingAddressesVie
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.EDIT) == 0)
                         
                                     {
-                                    this.this.setName("Basic Shipping Address View")
-this.this.setObjectFile("views.generic.address.shipping.EditShippingAddressesView")
+                                    this.setName("Basic Shipping Address View")
+this.setObjectFile("views.generic.address.shipping.EditShippingAddressesView")
 
                                     }
                                 
@@ -77,8 +77,8 @@ this.this.setObjectFile("views.generic.address.shipping.EditShippingAddressesVie
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.NEW) == 0)
                         
                                     {
-                                    this.this.setName("Basic Shipping Address View")
-this.this.setObjectFile("views.generic.address.shipping.NewShippingAddressesView")
+                                    this.setName("Basic Shipping Address View")
+this.setObjectFile("views.generic.address.shipping.NewShippingAddressesView")
 
                                     }
                                 
@@ -86,8 +86,8 @@ this.this.setObjectFile("views.generic.address.shipping.NewShippingAddressesView
                         if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
                         
                                     {
-                                    this.this.setName("Basic Shipping Address View")
-this.this.setObjectFile("views.generic.address.shipping.AddShippingAddressesView")
+                                    this.setName("Basic Shipping Address View")
+this.setObjectFile("views.generic.address.shipping.AddShippingAddressesView")
 
                                     }
                                 
@@ -95,8 +95,8 @@ this.this.setObjectFile("views.generic.address.shipping.AddShippingAddressesView
                         if(this.getCommand()!.compareTo(this.commonStrings!.DELETE) == 0)
                         
                                     {
-                                    this.this.setName("Basic Shipping Address View")
-this.this.setObjectFile("views.generic.address.shipping.DeleteShippingAddressesView")
+                                    this.setName("Basic Shipping Address View")
+this.setObjectFile("views.generic.address.shipping.DeleteShippingAddressesView")
 
                                     }
                                 
@@ -104,8 +104,8 @@ this.this.setObjectFile("views.generic.address.shipping.DeleteShippingAddressesV
                         if(this.getCommand()!.compareTo(ShippingAddressData.SELECT) == 0)
                         
                                     {
-                                    this.this.setName("Basic Shipping Address View")
-this.this.setObjectFile("views.generic.address.shipping.SelectShippingAddressesView")
+                                    this.setName("Basic Shipping Address View")
+this.setObjectFile("views.generic.address.shipping.SelectShippingAddressesView")
 
                                     }
                                 
@@ -113,8 +113,8 @@ this.this.setObjectFile("views.generic.address.shipping.SelectShippingAddressesV
                         if(this.getCommand()!.compareTo(ShippingAddressData.SETTOBILLINGADDRESS) == 0)
                         
                                     {
-                                    this.this.setName("Basic Shipping Address View")
-this.this.setObjectFile("views.generic.address.shipping.SetShippingAddressesView")
+                                    this.setName("Basic Shipping Address View")
+this.setObjectFile("views.generic.address.shipping.SetShippingAddressesView")
 
                                     }
                                 

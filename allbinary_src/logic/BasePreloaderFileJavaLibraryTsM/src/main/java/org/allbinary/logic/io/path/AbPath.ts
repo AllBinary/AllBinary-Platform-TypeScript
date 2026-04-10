@@ -151,7 +151,7 @@ this.path= abPathUtil!.adjustEnd(abPathUtil!.adjust(this.getPath(aPath)))
 
     init(){
 this.schema= EMPTY_STRING
-this.this.setPath(abPathData!.SEPARATOR)
+this.setPath(abPathData!.SEPARATOR)
 this.nameP= EMPTY_STRING
 }
 

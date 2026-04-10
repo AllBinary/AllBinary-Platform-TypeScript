@@ -91,13 +91,13 @@ public constructor (filePath: string){
 
             super();
             var filePath = filePath
-this.this.init(filePath)
+this.init(filePath)
 }
 
 public constructor (){
 
             super();
-            this.this.init(CPUFILE)
+            this.init(CPUFILE)
 }
 
 

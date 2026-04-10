@@ -60,7 +60,7 @@ public constructor (bufferedImage: BufferedImage){
             var bufferedImage = bufferedImage
 initComponents()
 this.bufferedImage= bufferedImage
-this.this.setSize(this.bufferedImage!.getWidth(
+this.setSize(this.bufferedImage!.getWidth(
                             null), this.bufferedImage!.getHeight(
                             null))
 }
@@ -90,7 +90,7 @@ isDrawn= true
         
         
 
-this.this.setLayout(layout)
+this.setLayout(layout)
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 400, Short.MAX_VALUE))
 layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 300, Short.MAX_VALUE))
 }

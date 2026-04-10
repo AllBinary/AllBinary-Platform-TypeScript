@@ -80,7 +80,7 @@ public constructor (text: string, animationBehavior: AnimationBehavior)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setText(text)
+this.setText(text)
 }
 
 

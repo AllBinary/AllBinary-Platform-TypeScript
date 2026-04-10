@@ -83,7 +83,7 @@ private constructor (){
                                 )
                         
                                     {
-                                    this.this.put(specialMessage, anyType, functionName, exception)
+                                    this.put(specialMessage, anyType, functionName, exception)
 
                                     }
                                 

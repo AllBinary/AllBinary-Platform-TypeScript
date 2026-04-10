@@ -64,8 +64,8 @@ export class BasicPlayer
 public constructor (){
 
             super();
-            this.this.setLoopCount(0)
-this.this.setState(Player.UNREALIZED)
+            this.setLoopCount(0)
+this.setState(Player.UNREALIZED)
 }
 
 
@@ -229,7 +229,7 @@ var now = now
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public start(){
-this.this.setState(Player.STARTED)
+this.setState(Player.STARTED)
 }
 
 
@@ -237,7 +237,7 @@ this.this.setState(Player.STARTED)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public stop(){
-this.this.setState(Player.PREFETCHED)
+this.setState(Player.PREFETCHED)
 }
 
 

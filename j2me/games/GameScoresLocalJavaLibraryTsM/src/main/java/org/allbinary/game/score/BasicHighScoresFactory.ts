@@ -82,7 +82,7 @@ this.abeClientInformation= abeClientInformation
     //var gameInfo = gameInfo
     //var highScoresResultsListener = highScoresResultsListener
 logUtil!.put("Getting Local HighScores", this, FETCH)
-this.this.fetchHighScores(gameInfo, highScoresResultsListener, true)
+this.fetchHighScores(gameInfo, highScoresResultsListener, true)
 }
 
 

@@ -136,7 +136,7 @@ private constructor (){
 
                         }
                             
-this.this.scale(originalImage, image, scaleX, scaleY, true)
+this.scale(originalImage, image, scaleX, scaleY, true)
 
 
 
@@ -165,7 +165,7 @@ this.this.scale(originalImage, image, scaleX, scaleY, true)
 
                                     }
                                 
-this.this.scale(originalImage, originalImageArray[0]!, scaleX, scaleY, false)
+this.scale(originalImage, originalImageArray[0]!, scaleX, scaleY, false)
 }
 
 

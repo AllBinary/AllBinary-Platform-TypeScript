@@ -132,12 +132,12 @@ private constructor (){
                         if(FileFactory.getInstance()!.isFile(FILE))
                         
                                     {
-                                    this.this.read()
+                                    this.read()
 
                                     }
                                 
                         else {
-                            this.this.write()
+                            this.write()
 
                         }
                             
@@ -181,7 +181,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(openGLValue == 0)
                         
                                     {
-                                    this.this.setOpenGL(false)
+                                    this.setOpenGL(false)
 
                                     }
                                 
@@ -189,7 +189,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(openGLValue == 1)
                         
                                     {
-                                    this.this.setOpenGL(true)
+                                    this.setOpenGL(true)
 
                                     }
                                 
@@ -210,7 +210,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(version.compareTo(openGLFeatureFactory!.OPENGL_AUTO_SELECT.getName()) == 0)
                         
                                     {
-                                    this.this.setVersionSelector(openGLFeatureFactory!.OPENGL_AUTO_SELECT)
+                                    this.setVersionSelector(openGLFeatureFactory!.OPENGL_AUTO_SELECT)
 
                                     }
                                 
@@ -218,7 +218,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(version.compareTo(openGLFeatureFactory!.OPENGL_MINIMUM.getName()) == 0)
                         
                                     {
-                                    this.this.setVersionSelector(openGLFeatureFactory!.OPENGL_MINIMUM)
+                                    this.setVersionSelector(openGLFeatureFactory!.OPENGL_MINIMUM)
 
                                     }
                                 
@@ -239,7 +239,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(type.compareTo(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD.getName()) == 0)
                         
                                     {
-                                    this.this.setType(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD)
+                                    this.setType(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD)
 
                                     }
                                 
@@ -247,7 +247,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(type.compareTo(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS.getName()) == 0)
                         
                                     {
-                                    this.this.setType(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS)
+                                    this.setType(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS)
 
                                     }
                                 
@@ -268,7 +268,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(imageColor!.compareTo(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444.getName()) == 0)
                         
                                     {
-                                    this.this.setImageColor(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444)
+                                    this.setImageColor(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444)
 
                                     }
                                 
@@ -276,7 +276,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(imageColor!.compareTo(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444.getName()) == 0)
                         
                                     {
-                                    this.this.setImageColor(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444)
+                                    this.setImageColor(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444)
 
                                     }
                                 
@@ -284,7 +284,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(imageColor!.compareTo(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444.getName()) == 0)
                         
                                     {
-                                    this.this.setImageColor(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444)
+                                    this.setImageColor(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444)
 
                                     }
                                 
@@ -305,7 +305,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(color.compareTo(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444.getName()) == 0)
                         
                                     {
-                                    this.this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444)
+                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444)
 
                                     }
                                 
@@ -313,7 +313,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(color.compareTo(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565.getName()) == 0)
                         
                                     {
-                                    this.this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565)
+                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565)
 
                                     }
                                 
@@ -321,7 +321,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(color.compareTo(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888.getName()) == 0)
                         
                                     {
-                                    this.this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888)
+                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888)
 
                                     }
                                 
@@ -490,7 +490,7 @@ PreLogUtil.put(this.toString(), this, this.commonStrings!.INIT)
                         if(!this.isOpenGL())
                         
                                     {
-                                    this.this.setOpenGL(true)
+                                    this.setOpenGL(true)
 modified= true
 
                                     }
@@ -503,7 +503,7 @@ modified= true
                         if(this.isOpenGL())
                         
                                     {
-                                    this.this.setOpenGL(false)
+                                    this.setOpenGL(false)
 modified= true
 
                                     }
@@ -526,7 +526,7 @@ modified= true
                         if(gameFeature != this.getType())
                         
                                     {
-                                    this.this.setType(gameFeature as OpenGLFeature)
+                                    this.setType(gameFeature as OpenGLFeature)
 modified= true
 
                                     }
@@ -549,7 +549,7 @@ modified= true
                         if(this.getImageColor() != gameFeature)
                         
                                     {
-                                    this.this.setImageColor(gameFeature as OpenGLFeature)
+                                    this.setImageColor(gameFeature as OpenGLFeature)
 
                         if(colorLocked)
                         
@@ -558,7 +558,7 @@ modified= true
                         if(gameFeature == openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444)
                         
                                     {
-                                    this.this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444)
+                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444)
 
                                     }
                                 
@@ -566,7 +566,7 @@ modified= true
                         if(gameFeature == openGLFeatureFactory!.IMAGE_COLOR_DEPTH_565)
                         
                                     {
-                                    this.this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565)
+                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565)
 
                                     }
                                 
@@ -574,7 +574,7 @@ modified= true
                         if(gameFeature == openGLFeatureFactory!.IMAGE_COLOR_DEPTH_8888)
                         
                                     {
-                                    this.this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888)
+                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888)
 
                                     }
                                 
@@ -603,7 +603,7 @@ modified= true
                         if(this.getColor() != gameFeature)
                         
                                     {
-                                    this.this.setColor(gameFeature as OpenGLFeature)
+                                    this.setColor(gameFeature as OpenGLFeature)
 modified= true
 
                                     }
@@ -622,7 +622,7 @@ modified= true
                         if(features.isFeature(gameFeature))
                         
                                     {
-                                    this.this.setVersionSelector(gameFeature as OpenGLFeature)
+                                    this.setVersionSelector(gameFeature as OpenGLFeature)
 
                                     }
                                 
@@ -634,7 +634,7 @@ modified= true
                         if(modified)
                         
                                     {
-                                    this.this.write()
+                                    this.write()
 
                                     }
                                 

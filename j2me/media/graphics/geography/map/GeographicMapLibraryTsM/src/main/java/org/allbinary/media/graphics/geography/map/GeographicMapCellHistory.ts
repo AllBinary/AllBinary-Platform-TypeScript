@@ -97,7 +97,7 @@ public constructor (){
             super();
             this.list= BasicArrayList()
 this.visitedList= BasicArrayList()
-this.this.init()
+this.init()
 }
 
 
@@ -154,7 +154,7 @@ this.visitedList!.ensureCapacity(size)
 index < size; index++)
         {
 geographicMapCellPosition= list.get(index) as GeographicMapCellPosition
-this.this.track(geographicMapCellPosition)
+this.track(geographicMapCellPosition)
 }
 
 }
@@ -693,7 +693,7 @@ isCellVisitedBoolean= localVisitedList!.get(index) as Boolean
                         if(!isCellVisitedBoolean)
                         
                                     {
-                                    this.this.paintNotVisited(graphics, geographicMapInterface!.getAllBinaryTiledLayer(), geographicMapCellPosition!.getPoint())
+                                    this.paintNotVisited(graphics, geographicMapInterface!.getAllBinaryTiledLayer(), geographicMapCellPosition!.getPoint())
 
                                     }
                                 

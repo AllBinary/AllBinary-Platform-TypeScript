@@ -73,7 +73,7 @@ var viewArray = viewArray
 
     public init(anyType: any = {}){
 var anyType = anyType
-this.this.init()
+this.init()
 }
 
 

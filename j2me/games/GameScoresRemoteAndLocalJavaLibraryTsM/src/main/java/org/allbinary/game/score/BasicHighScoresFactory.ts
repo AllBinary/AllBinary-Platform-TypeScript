@@ -124,7 +124,7 @@ this.softwareInformation= softwareInformation
     //var gameInfo = gameInfo
     //var highScoresResultsListener = highScoresResultsListener
 logUtil!.put("Getting Remote/Local HighScores", this, FETCH)
-this.this.fetchHighScores(gameInfo, highScoresResultsListener, true)
+this.fetchHighScores(gameInfo, highScoresResultsListener, true)
 }
 
 

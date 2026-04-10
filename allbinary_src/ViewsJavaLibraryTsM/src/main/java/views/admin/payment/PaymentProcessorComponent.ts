@@ -74,7 +74,7 @@ paymentProcessorInterface!.process()
         
 
 httpTransformInfoInterface!.getWeblisketSession()!.removeBasket()
-this.this.addDomNodeInterface(paymentProcessorInterface as DomNodeInterface)
+this.addDomNodeInterface(paymentProcessorInterface as DomNodeInterface)
 }
 
 
@@ -83,7 +83,7 @@ this.this.addDomNodeInterface(paymentProcessorInterface as DomNodeInterface)
     public view(): string{
 
         try {
-            this.this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces()
 
 
 

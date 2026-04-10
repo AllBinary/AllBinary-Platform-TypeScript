@@ -136,9 +136,9 @@ this.name= localName
         
         
 
-this.this.setPosition(point.getX(), point.getY(), point.getZ())
-this.this.setHalfWidth((this.getWidth() shr 1))
-this.this.setHalfHeight((this.getHeight() shr 1))
+this.setPosition(point.getX(), point.getY(), point.getZ())
+this.setHalfWidth((this.getWidth() shr 1))
+this.setHalfHeight((this.getHeight() shr 1))
 this.viewPosition= viewPosition
 this.viewPosition!.setAllbinaryLayer(this)
 }
@@ -379,7 +379,7 @@ stringBuffer!.appendint(this.getHeight())
         
         
 
-this.this.toString(stringBuffer)
+this.toString(stringBuffer)
 
 
 

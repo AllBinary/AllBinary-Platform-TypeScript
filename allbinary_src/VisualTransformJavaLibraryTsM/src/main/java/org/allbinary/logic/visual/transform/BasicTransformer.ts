@@ -97,7 +97,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, transfo
                             //For kotlin this is before the body of the constructor.
                     
 this.abeClientInformation= abeClientInformation
-this.this.setTemplateAsInputStream()
+this.setTemplateAsInputStream()
 }
 
 
@@ -144,8 +144,8 @@ outputStream= this.streamUtil!.get(inputStream, outputStream, ByteArray(16384)) 
 
                                     }
                                 
-this.this.setInputStream(ByteArrayInputStream(decrypted) as InputStream)
-this.this.setURIResolver(BasicUriResolver(TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION) as URIResolver)
+this.setInputStream(ByteArrayInputStream(decrypted) as InputStream)
+this.setURIResolver(BasicUriResolver(TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION) as URIResolver)
 } catch(e: Exception)
             {
 
@@ -220,8 +220,8 @@ outputStream= this.streamUtil!.get(inputStream, outputStream, ByteArray(16384)) 
 
                                     }
                                 
-this.this.setInputStream(ByteArrayInputStream(decrypted) as InputStream)
-this.this.setURIResolver(BasicUriResolver(TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION) as URIResolver)
+this.setInputStream(ByteArrayInputStream(decrypted) as InputStream)
+this.setURIResolver(BasicUriResolver(TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION) as URIResolver)
 } catch(e: Exception)
             {
 
@@ -350,7 +350,7 @@ logUtil!.put(stringBuffer!.toString(), this, "setTemplateAsInputStream()")
                         if(encFile!.isFile())
                         
                                     {
-                                    this.this.setEncryptedTemplateFileAsInputStream(encFile)
+                                    this.setEncryptedTemplateFileAsInputStream(encFile)
 
 
 
@@ -397,8 +397,8 @@ outputStream= this.streamUtil!.get(inputStream, outputStream, ByteArray(16384)) 
 
                                     }
                                 
-this.this.setInputStream(ByteArrayInputStream(outputStream!.toByteArray()) as InputStream)
-this.this.setURIResolver(BasicUriResolver(transformInfoTemplateData!.UNCRYPTED_EXTENSION) as URIResolver)
+this.setInputStream(ByteArrayInputStream(outputStream!.toByteArray()) as InputStream)
+this.setURIResolver(BasicUriResolver(transformInfoTemplateData!.UNCRYPTED_EXTENSION) as URIResolver)
 
 
 
@@ -435,7 +435,7 @@ stringBuffer!.append(transformInfoTemplateData!.ENCRYPTED_EXTENSION)
                         if(file.isFile())
                         
                                     {
-                                    this.this.setEncryptedTemplateFileAsInputStream(file)
+                                    this.setEncryptedTemplateFileAsInputStream(file)
 
                                     }
                                 
@@ -454,7 +454,7 @@ stringBuffer!.append(transformInfoTemplateData!.ENCRYPTED_EXTENSION)
                                     }
                                 
                         else {
-                            this.this.setEncryptedTemplateAsInputStream()
+                            this.setEncryptedTemplateAsInputStream()
 
                         }
                             

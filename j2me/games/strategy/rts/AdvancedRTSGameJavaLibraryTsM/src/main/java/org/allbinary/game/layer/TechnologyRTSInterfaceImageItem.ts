@@ -133,7 +133,7 @@ this.adjustedCostY=  -yOffset +imageHeight -(2 *DEFAULT_CHAR_HEIGHT)
 this.adjustedCostX= 2 +(DOLLAR.length *(DEFAULT_CHAR_HEIGHT -1))
 this.adjustedLevelY=  -yOffset +imageHeight -DEFAULT_CHAR_HEIGHT
 this.adjustedLevelX= 2 +(LEVEL.length *(DEFAULT_CHAR_HEIGHT -1))
-this.this.update()
+this.update()
 }
 
 

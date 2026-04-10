@@ -79,7 +79,7 @@ PreLogUtil.put(commonStrings!.START, this, commonStrings!.GET_INSTANCE)
         
 
 RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance()!.init()
-this.this.init(geographicMapInterface, pathFindingInfo, graphArray)
+this.init(geographicMapInterface, pathFindingInfo, graphArray)
 
 
 

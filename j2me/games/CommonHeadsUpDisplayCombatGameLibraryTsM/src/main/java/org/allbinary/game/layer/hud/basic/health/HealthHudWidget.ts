@@ -84,9 +84,9 @@ this.animationInterface= animationInterface
 this.healthInterface= healthInterface
 this.healthInterface!.addListener(this)
 this.healthScale= (this.healthInterface!.getMaxHealth() /6) +1
-this.this.onHealthChange()
+this.onHealthChange()
 this.xArray= IntArray(30)
-this.this.update()
+this.update()
 }
 
 
@@ -119,7 +119,7 @@ this.xArray[index]= this.getX() +(index *16)
     public setX(x: number){
 var x = x
 super.setX(x)
-this.this.update()
+this.update()
 }
 
 

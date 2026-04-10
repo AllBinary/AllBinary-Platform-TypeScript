@@ -78,7 +78,7 @@ public constructor (bufferedImage: BufferedImage, bufferedImage2: BufferedImage,
 var bufferedImage2 = bufferedImage2
 var tolerance = tolerance
 this.nonMatchingPixelVector= Vector()
-this.this.setBufferedImages(new Array(2))
+this.setBufferedImages(new Array(2))
 this.getBufferedImages()[0]= bufferedImage
 this.getBufferedImages()[1]= bufferedImage2
 this.imageHeight= bufferedImage!.getHeight()

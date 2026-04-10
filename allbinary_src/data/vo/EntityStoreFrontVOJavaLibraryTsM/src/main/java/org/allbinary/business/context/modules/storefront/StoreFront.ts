@@ -284,7 +284,7 @@ public constructor (request: HttpServletRequest){
 
             super();
                 //var request = request
-this.this.getFormData(RequestParams(request).
+this.getFormData(RequestParams(request).
                             toHashMap())
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
@@ -294,14 +294,14 @@ this.this.getFormData(RequestParams(request).
 
                                     }
                                 
-this.this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getInstance()!.getInstance("Admin"))
+this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getInstance()!.getInstance("Admin"))
 }
 
 public constructor (hashMap: HashMap<Any, Any>){
 
             super();
                 //var hashMap = hashMap
-this.this.getFormData(hashMap)
+this.getFormData(hashMap)
 
     var domDocumentString: string = hashMap!.get(StoreFrontData.getInstance()!.CONFIGURATION) as String;
         
@@ -318,7 +318,7 @@ this.this.getFormData(hashMap)
         
         
 
-this.this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getInstance()!.getInstance(document))
+this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getInstance()!.getInstance(document))
 
                                     }
                                 
@@ -1830,7 +1830,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
                         if(current < halfViewTotal)
                         
                                     {
-                                    this.this.installViews(fromSpecialDirectoryAbPath, toDirectoryAbPath, current, halfViewTotal)
+                                    this.installViews(fromSpecialDirectoryAbPath, toDirectoryAbPath, current, halfViewTotal)
 
                                     }
                                 
@@ -1838,7 +1838,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
                         if(current < viewTotal)
                         
                                     {
-                                    this.this.installViews(fromDirectoryAbPath, toDirectoryAbPath, current -halfViewTotal, viewTotal -halfViewTotal)
+                                    this.installViews(fromDirectoryAbPath, toDirectoryAbPath, current -halfViewTotal, viewTotal -halfViewTotal)
 
                                     }
                                 
@@ -1846,7 +1846,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
                                     }
                                 
                         else {
-                            this.this.installViews(fromDirectoryAbPath, toDirectoryAbPath, current, viewTotal)
+                            this.installViews(fromDirectoryAbPath, toDirectoryAbPath, current, viewTotal)
 
                         }
                             
@@ -1857,12 +1857,12 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
                         if(current < installTotal)
                         
                                     {
-                                    this.this.installResources(fromDirectoryAbPath, current -viewTotal, installTotal -viewTotal)
+                                    this.installResources(fromDirectoryAbPath, current -viewTotal, installTotal -viewTotal)
 
                                     }
                                 
                         else {
-                            this.this.installMedia(fromDirectoryAbPath, current -installTotal, total -installTotal)
+                            this.installMedia(fromDirectoryAbPath, current -installTotal, total -installTotal)
 
                         }
                             

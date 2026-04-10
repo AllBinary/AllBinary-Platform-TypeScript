@@ -70,7 +70,7 @@ public constructor (){
 
 
     updateUrl(){
-this.this.updateHost()
+this.updateHost()
 
     var stringBuffer: StringMaker = new StringMaker();
         
@@ -210,42 +210,42 @@ this.jdbcDriver= value
     public setName(value: string){
 var value = value
 this.name= value
-this.this.updateUrl()
+this.updateUrl()
 }
 
 
     public setUserName(value: string){
 var value = value
 this.userName= value
-this.this.updateUrl()
+this.updateUrl()
 }
 
 
     public setPassword(value: string){
 var value = value
 this.password= value
-this.this.updateUrl()
+this.updateUrl()
 }
 
 
     public setSchema(value: string){
 var value = value
 this.schema= value
-this.this.updateUrl()
+this.updateUrl()
 }
 
 
     public setServer(value: string){
 var value = value
 this.server= value
-this.this.updateUrl()
+this.updateUrl()
 }
 
 
     public setPort(value: string){
 var value = value
 this.port= value
-this.this.updateUrl()
+this.updateUrl()
 }
 
 

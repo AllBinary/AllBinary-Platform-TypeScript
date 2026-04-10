@@ -151,7 +151,7 @@ this.transformInfoInterface= transformInfoInterface
 this.categoryAbPath= pathUtil!.removeNameFromPath(categoryThemePath)
 this.themeName= pathUtil!.getNameFromPath(categoryThemePath)
 this.styleValidationInterface= cssStyleValidation
-this.this.init()
+this.init()
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, hashMap: HashMap<Any, Any>){
@@ -191,7 +191,7 @@ logUtil!.put("Http Request Constructor", this, stringBuffer!.toString())
 
                                     }
                                 
-this.this.init()
+this.init()
 }
 
 public constructor (storeThemeCategoryInterface: StoreThemeCategoryInterface, node: Node){
@@ -224,7 +224,7 @@ this.themeName= DomNodeHelper.getTextNodeValue(valueNode)
 
 this.themePreviewImageName= DomNodeHelper.getTextNodeValue(previewImageNameValueNode)
 this.webAppAbPath= storeThemeCategoryInterface!.getWebAppPath()
-this.this.init(storeThemeCategoryInterface)
+this.init(storeThemeCategoryInterface)
 }
 
 
@@ -246,7 +246,7 @@ this.this.init(storeThemeCategoryInterface)
         
         
 
-this.this.init(rootStoreThemeCategoryInterface)
+this.init(rootStoreThemeCategoryInterface)
 }
 
 

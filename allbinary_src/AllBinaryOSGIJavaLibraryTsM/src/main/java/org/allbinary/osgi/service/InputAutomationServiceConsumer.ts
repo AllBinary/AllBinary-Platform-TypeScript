@@ -68,9 +68,9 @@ public constructor (registryName: string, bundleContext: BundleContext, osgiServ
                 //var registryName = registryName
     //var bundleContext = bundleContext
     //var osgiServiceVisitorInterface = osgiServiceVisitorInterface
-this.this.setRegistryName(registryName)
-this.this.setBundleContext(bundleContext)
-this.this.setOsgiServiceVisitorInterface(osgiServiceVisitorInterface)
+this.setRegistryName(registryName)
+this.setBundleContext(bundleContext)
+this.setOsgiServiceVisitorInterface(osgiServiceVisitorInterface)
 }
 
 

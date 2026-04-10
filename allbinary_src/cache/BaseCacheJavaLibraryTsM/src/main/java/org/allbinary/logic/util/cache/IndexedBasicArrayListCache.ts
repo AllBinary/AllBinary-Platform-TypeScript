@@ -46,7 +46,7 @@ public constructor (size: number){
 
             super();
             var size = size
-this.this.init(size)
+this.init(size)
 }
 
 
@@ -69,7 +69,7 @@ var size = size
         
 index >= this.size; index--)
         {
-this.this.add()
+this.add()
 }
 
 this.size= size

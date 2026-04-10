@@ -89,7 +89,7 @@ public constructor (animationInterface: Animation){
 
             super();
                 //var animationInterface = animationInterface
-this.this.setAnimationInterface(animationInterface)
+this.setAnimationInterface(animationInterface)
 }
 
 public constructor (animationInterface: Animation, sourceLayerInterface: AllBinaryLayer, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship){
@@ -100,8 +100,8 @@ public constructor (animationInterface: Animation, sourceLayerInterface: AllBina
     //var weaponProperties = weaponProperties
     //var scoreableInterface = scoreableInterface
     //var relativeRelationship = relativeRelationship
-this.this.init(sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship)
-this.this.setAnimationInterface(animationInterface)
+this.init(sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship)
+this.setAnimationInterface(animationInterface)
 }
 
 
@@ -110,8 +110,8 @@ this.this.setAnimationInterface(animationInterface)
     //var weaponProperties = weaponProperties
     //var scoreableInterface = scoreableInterface
     //var relativeRelationship = relativeRelationship
-this.this.setOwnerLayerInterface(sourceLayerInterface)
-this.this.setWeaponProperties(weaponProperties)
+this.setOwnerLayerInterface(sourceLayerInterface)
+this.setWeaponProperties(weaponProperties)
 this.scoreableInterface= scoreableInterface
 this.relativeRelationship= relativeRelationship
 }
@@ -123,7 +123,7 @@ this.relativeRelationship= relativeRelationship
     //var allbinaryLayerManager = allbinaryLayerManager
     //var angle = angle
     //var otherAngle = otherAngle
-this.this.process(allbinaryLayerManager, angle, otherAngle, this.getWeaponProperties(), this.scoreableInterface)
+this.process(allbinaryLayerManager, angle, otherAngle, this.getWeaponProperties(), this.scoreableInterface)
 }
 
 

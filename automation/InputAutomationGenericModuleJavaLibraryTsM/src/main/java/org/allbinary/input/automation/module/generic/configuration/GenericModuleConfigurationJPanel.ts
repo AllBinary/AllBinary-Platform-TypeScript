@@ -69,8 +69,8 @@ public constructor (){
 
             super();
             initComponents()
-this.this.setGenericProfiles(GenericProfiles(GenericProfiles.DEFAULT_FILE))
-this.this.selectFirstElement()
+this.setGenericProfiles(GenericProfiles(GenericProfiles.DEFAULT_FILE))
+this.selectFirstElement()
 }
 
 
@@ -366,7 +366,7 @@ this.getBlankGenericProfileActionsJPanel()!.removeAll()
         
         
 
-this.this.setSelectedGenericProfile(this.getGenericProfiles()!.get(profileNameString))
+this.setSelectedGenericProfile(this.getGenericProfiles()!.get(profileNameString))
 this.getSelectedGenericProfile()!.setGenericProfileActions(GenericProfileActions(genericProfileActionsJPanel, profileNameString))
 genericProfileActionsJPanel!.setGenericProfileActions(this.getSelectedGenericProfile()!.getGenericProfileActions())
 genericProfileActionsJPanel!.selectFirstElement()
@@ -377,7 +377,7 @@ genericProfileActionsJPanel!.selectFirstElement()
 
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(genericProfileActionsJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
 layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 256, Short.MAX_VALUE)!.addComponent(genericProfileActionsJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-this.this.updateProfileOptions()
+this.updateProfileOptions()
 logUtil!.put("Setting Configuration Profile JPanel", this, "updateProfileUI")
 
                                     }
@@ -399,7 +399,7 @@ this.genericProfilesJList!.setModel(this.getGenericProfiles()!.getDefaultListMod
                         
                                     {
                                     this.genericProfilesJList!.setSelectedValue(this.genericProfilesJList!.getModel()!.getElementAt(0), true)
-this.this.updateProfileUI(this.genericProfilesJList!.getModel()!.getElementAt(0) as String)
+this.updateProfileUI(this.genericProfilesJList!.getModel()!.getElementAt(0) as String)
 
                                     }
                                 
@@ -553,7 +553,7 @@ var evt = evt
         
         
 
-this.this.updateProfileUI(profileNameString)
+this.updateProfileUI(profileNameString)
 } catch(e: Exception)
             {
 logUtil!.put(this.commonStrings!.EXCEPTION, this, "genericProfilesJListValueChanged", e)
@@ -589,7 +589,7 @@ index < anyType!.length; index++)
 this.getGenericProfiles()!.remove(nextSelectedValueString)
 }
 
-this.this.selectFirstElement()
+this.selectFirstElement()
 } catch(e: Exception)
             {
 logUtil!.put(this.commonStrings!.EXCEPTION, this, "deleteProfileJButtonActionPerformed", e)
@@ -611,7 +611,7 @@ this.getGenericProfiles()!.add(newProfileName)
 this.genericProfilesJList!.setModel(this.getGenericProfiles()!.getDefaultListModelHelper()!.getListModel())
 this.genericProfilesJList!.setSelectedValue(newProfileName, true)
 this.newProfileJDialog!.setVisible(false)
-this.this.updateProfileUI(newProfileName)
+this.updateProfileUI(newProfileName)
 } catch(e: Exception)
             {
 logUtil!.put(this.commonStrings!.EXCEPTION, this, "okNewProfileJButtonActionPerformed", e)

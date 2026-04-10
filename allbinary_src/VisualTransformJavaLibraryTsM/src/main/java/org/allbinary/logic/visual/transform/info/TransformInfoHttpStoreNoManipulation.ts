@@ -48,8 +48,8 @@ var pageContext = pageContext
             
     setObjectConfigFile(value: string){
 var value = value
-this.this.setObjectConfigFileName(value)
-this.this.setObjectConfigInterface(TransformInfoObjectConfigNoManipulationFactory.getInstance()!.getInstance(this, this.getObjectConfigFilePath()))
+this.setObjectConfigFileName(value)
+this.setObjectConfigInterface(TransformInfoObjectConfigNoManipulationFactory.getInstance()!.getInstance(this, this.getObjectConfigFilePath()))
 }
 
 

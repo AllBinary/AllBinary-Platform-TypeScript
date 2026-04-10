@@ -78,7 +78,7 @@ public constructor (clientInfo: AbeClientInformationInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setServer(0)
+this.setServer(0)
 }
 
 
@@ -125,7 +125,7 @@ serverUrl= serverUrl!.substring(0, index +1) +PAGE
         
         
 
-this.this.setClient(xmlRpcClient)
+this.setClient(xmlRpcClient)
 xmlRpcClient!.setBasicAuthentication(
                             null, 
                             null)

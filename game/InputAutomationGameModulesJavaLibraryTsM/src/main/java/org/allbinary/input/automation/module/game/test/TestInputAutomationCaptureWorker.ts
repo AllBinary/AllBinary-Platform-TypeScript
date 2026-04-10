@@ -96,7 +96,7 @@ var motionRectangleConstraintsInterface = motionRectangleConstraintsInterface
                             //For kotlin this is before the body of the constructor.
                     
 logUtil!.put(MESSAGE, this, commonStrings!.CONSTRUCTOR)
-this.this.setGenericProfileActions(genericProfileActions)
+this.setGenericProfileActions(genericProfileActions)
 }
 
 
@@ -187,8 +187,8 @@ cacheInterface!.get(anyType)
             
     public process(){
 logUtil!.put(commonStrings!.START, this, commonStrings!.PROCESS)
-this.this.startDataWorkers()
-this.this.processDataWorkerResults()
+this.startDataWorkers()
+this.processDataWorkerResults()
 }
 
 

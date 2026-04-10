@@ -132,7 +132,7 @@ var pageContext = pageContext
                     
 this.request= pageContext!.getRequest() as HttpServletRequest
 this.xslFile= propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME) as String
-this.this.getFormData()
+this.getFormData()
 }
 
 
@@ -236,7 +236,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STOREGENERAT
         
         
 
-this.this.email()
+this.email()
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         

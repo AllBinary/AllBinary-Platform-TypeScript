@@ -55,7 +55,7 @@ public constructor (width: number, height: number, basicColor: BasicColor)
                     
 this.width= width
 this.height= height
-this.this.setBasicColorP(basicColor)
+this.setBasicColorP(basicColor)
 }
 
 

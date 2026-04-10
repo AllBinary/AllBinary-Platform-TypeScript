@@ -270,12 +270,12 @@ var treePath = treePath
                         if(node.getUserObject() is CanvasTreeLabel)
                         
                                     {
-                                    this.this.removeCanvas(node)
+                                    this.removeCanvas(node)
 
                                     }
                                 
                         else {
-                            this.this.removeGraphicItem(node)
+                            this.removeGraphicItem(node)
 
                         }
                             
@@ -299,10 +299,10 @@ parent.remove(node)
         
         
 
-this.this.copy(treePath)
-this.this.updateTree()
-this.this.expand()
-this.this.repaint()
+this.copy(treePath)
+this.updateTree()
+this.expand()
+this.repaint()
 }
 
 
@@ -485,10 +485,10 @@ var evt = evt
         
         
 
-this.this.rotate(treePath, 45)
-this.this.updateTree()
-this.this.expand()
-this.this.repaint()
+this.rotate(treePath, 45)
+this.updateTree()
+this.expand()
+this.repaint()
 } catch(e: Exception)
             {
 logUtil!.put(commonStrings!.EXCEPTION, this, "rotateJMenuItemMousePressed", e)
@@ -556,7 +556,7 @@ index < selectedTreePathArray!.length; index++)
                         if((evt.getModifiers() and evt.BUTTON1_MASK) == evt.BUTTON1_MASK)
                         
                                     {
-                                    this.this.deselectAll()
+                                    this.deselectAll()
 
 
 
@@ -581,7 +581,7 @@ index < selectedTreePathArray!.length; index++)
                                     }
                                 
                         else {
-                            this.this.selectGraphicItem(defaultMutableTreeNode)
+                            this.selectGraphicItem(defaultMutableTreeNode)
 
                         }
                             
@@ -615,7 +615,7 @@ var evt = evt
 var evt = evt
 
         try {
-            this.this.copy()
+            this.copy()
 } catch(e: Exception)
             {
 logUtil!.put(commonStrings!.EXCEPTION, this, "copyJMenuItemMousePressed", e)
@@ -648,10 +648,10 @@ index < selectedTreePathArray!.length; index++)
         
         
 
-this.this.remove(treePath)
-this.this.updateTree()
-this.this.expand()
-this.this.repaint()
+this.remove(treePath)
+this.updateTree()
+this.expand()
+this.repaint()
 }
 
 } catch(e: Exception)

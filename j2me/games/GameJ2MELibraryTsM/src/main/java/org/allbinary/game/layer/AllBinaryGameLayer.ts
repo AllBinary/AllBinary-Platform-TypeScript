@@ -216,7 +216,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
                 //@Throws(Error::class)
             
     public onViewPositionChangeEvent(){
-this.this.onChangeEvent(this.viewPositionEvent)
+this.onChangeEvent(this.viewPositionEvent)
 }
 
 
@@ -228,12 +228,12 @@ this.this.onChangeEvent(this.viewPositionEvent)
                         if(GameLayerUtil.isOnScreen(this))
                         
                                     {
-                                    this.this.setVisible(true)
+                                    this.setVisible(true)
 
                                     }
                                 
                         else {
-                            this.this.setVisible(false)
+                            this.setVisible(false)
 
                         }
                             
@@ -271,14 +271,14 @@ graphics.drawRect(viewX, viewY, this.getWidth(), this.getHeight())
     public setWidth(width: number){
     //var width = width
 super.setLayerWidth(width)
-this.this.setHalfWidth(width shr 1)
+this.setHalfWidth(width shr 1)
 }
 
 
     public setHeight(height: number){
     //var height = height
 super.setLayerHeight(height)
-this.this.setHalfHeight(height shr 1)
+this.setHalfHeight(height shr 1)
 }
 
 

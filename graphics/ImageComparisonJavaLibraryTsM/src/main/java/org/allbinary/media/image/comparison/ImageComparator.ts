@@ -216,7 +216,7 @@ indexY < imageComparisonInfo!.imageHeight; indexY++)
         
 indexX < imageComparisonInfo!.imageWidth; indexX++)
         {
-this.this.process(imageComparisonInfo, PointFactory.getInstance()!.getInstance(indexX, indexY))
+this.process(imageComparisonInfo, PointFactory.getInstance()!.getInstance(indexX, indexY))
 
                         if(imageComparisonInfo!.getNonMatchingPixelVector()!.size() > this.imageComparatorConstraintsInterface!.getMaxNonMatchingPixelDeltas())
                         

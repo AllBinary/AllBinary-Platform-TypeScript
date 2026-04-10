@@ -100,7 +100,7 @@ public constructor (transformInfoInterface: Object){
             super();
             var transformInfoInterface = transformInfoInterface
 this.ownerTransformInfoInterface= transformInfoInterface
-this.this.createDocument()
+this.createDocument()
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -152,7 +152,7 @@ this.document= document
                                 )
                         
                                     {
-                                    this.this.setOutputTypeName(DomNodeHelper.getTextNodeValue(node))
+                                    this.setOutputTypeName(DomNodeHelper.getTextNodeValue(node))
 
                                     }
                                 
@@ -196,7 +196,7 @@ public constructor (transformInfoInterface: Object, name: string, type: string){
 var name = name
 var type = type
 this.ownerTransformInfoInterface= transformInfoInterface
-this.this.createDocument()
+this.createDocument()
 
     var configNameAttr: Attr = this.document.createAttribute(TransformInfoObjectConfigData.getInstance()!.NAME)!;
         

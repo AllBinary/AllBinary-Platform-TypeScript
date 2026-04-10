@@ -38,9 +38,9 @@ export class ColorAverage
 public constructor (){
 
             super();
-            this.this.setAvgRed(0)
-this.this.setAvgGreen(0)
-this.this.setAvgBlue(0)
+            this.setAvgRed(0)
+this.setAvgGreen(0)
+this.setAvgBlue(0)
 }
 
 

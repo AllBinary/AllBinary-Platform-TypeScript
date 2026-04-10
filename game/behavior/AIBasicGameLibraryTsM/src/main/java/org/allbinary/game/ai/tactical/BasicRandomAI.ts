@@ -154,7 +154,7 @@ likelyhoodIntegerKeyArray= likelyhoodIntegerArray[key]!
                         if(i_random >= likelyhoodIntegerKeyArray[0]!.toInt() && i_random < likelyhoodIntegerKeyArray[1]!.toInt())
                         
                                     {
-                                    this.this.setLastKey(key)
+                                    this.setLastKey(key)
 break;
 
                     

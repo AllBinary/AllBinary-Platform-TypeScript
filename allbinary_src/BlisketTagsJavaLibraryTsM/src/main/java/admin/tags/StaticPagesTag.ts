@@ -57,8 +57,8 @@ export class StaticPagesTag extends TableTag {
 public constructor (){
 
             super();
-            this.this.setTagHelperFactory(StaticPagesHelperFactory())
-this.this.setTagRequestHelperFactory(StaticPagesRequestHelperFactory())
+            this.setTagHelperFactory(StaticPagesHelperFactory())
+this.setTagRequestHelperFactory(StaticPagesRequestHelperFactory())
 }
 
 

@@ -48,7 +48,7 @@ this.allbinaryLayer= layerInterface
 this.animationInterface= animationInterface
 this.healthInterface= healthInterface
 this.healthInterface!.addListener(this)
-this.this.onHealthChange()
+this.onHealthChange()
 }
 
 public constructor (layerInterface: AllBinaryLayer, healthInterface: Health, location: number, direction: number)                        

@@ -69,14 +69,14 @@ var foregroundBasicColor = foregroundBasicColor
                     
 logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 this.list= list
-this.this.update()
-this.this.initCommands(commandListener)
+this.update()
+this.initCommands(commandListener)
 
     var gameDifficultyFactory: GameDifficultyFactory = GameDifficultyFactory.getInstance()!;
         
         
 
-this.this.setSelectedId(gameDifficultyFactory!.getLevel())
+this.setSelectedId(gameDifficultyFactory!.getLevel())
 }
 
 
@@ -87,7 +87,7 @@ super.open()
 
     public close(){
 super.close()
-this.this.save()
+this.save()
 }
 
 
@@ -110,17 +110,17 @@ var cmdListener = cmdListener
         
         
 
-this.this.removeAllCommands()
-this.this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.this.setCommandListener(cmdListener)
+this.removeAllCommands()
+this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS)
+this.setCommandListener(cmdListener)
 }
 
 
                 //@Throws(Error::class)
             
     public update(){
-this.this.deleteAll()
-this.this.add(list, "Difficulty", Choice.EXCLUSIVE)
+this.deleteAll()
+this.add(list, "Difficulty", Choice.EXCLUSIVE)
 super.update()
 }
 
@@ -142,7 +142,7 @@ var option = option
 
                                     }
                                 
-this.this.append(choiceGroup)
+this.append(choiceGroup)
 }
 
 

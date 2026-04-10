@@ -140,7 +140,7 @@ hashMap!.put(Integer(Integer.valueOf(1))Integer(Integer.valueOf(this.totalRotati
 getParent = this.getParent()getParent as HashMapJDialogListenerInterface
 getParent.
                     onHashMap(hashMap)
-this.this.setVisible(false)
+this.setVisible(false)
 } catch(e: Exception)
             {
 

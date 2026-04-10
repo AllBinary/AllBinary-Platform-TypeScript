@@ -59,7 +59,7 @@ protected constructor (paymentMethod: string){
 
             super();
             var paymentMethod = paymentMethod
-this.this.init(paymentMethod)
+this.init(paymentMethod)
 }
 
 protected constructor (paymentMethod: string, paymentGatewayInterfaceFactoryInterface: PaymentGatewayInterfaceFactoryInterface, paymentGatewayDomNodeFactoryInterface: PaymentGatewayDomNodeFactoryInterface){
@@ -68,7 +68,7 @@ protected constructor (paymentMethod: string, paymentGatewayInterfaceFactoryInte
             var paymentMethod = paymentMethod
 var paymentGatewayInterfaceFactoryInterface = paymentGatewayInterfaceFactoryInterface
 var paymentGatewayDomNodeFactoryInterface = paymentGatewayDomNodeFactoryInterface
-this.this.init(paymentMethod)
+this.init(paymentMethod)
 this.paymentGatewayInterfaceFactoryInterface= paymentGatewayInterfaceFactoryInterface
 this.paymentGatewayDomNodeFactoryInterface= paymentGatewayDomNodeFactoryInterface
 }

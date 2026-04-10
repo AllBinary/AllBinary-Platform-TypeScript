@@ -53,7 +53,7 @@ this.selectedHighScores= selectedHighScores
     //var highScoresArrayP = highScoresArrayP
 super.setHighScoresArray(highScoresArrayP)
 this.circularIndexUtil!.setSize(this.highScoresArrayP!.length)
-this.this.selectHighScores()
+this.selectHighScores()
 }
 
 
@@ -62,7 +62,7 @@ this.this.selectHighScores()
                         if(this.highScoresArrayP!.length == 0)
                         
                                     {
-                                    this.this.setSelectedHighScores(NullHighScoresSingletonFactory.getInstance())
+                                    this.setSelectedHighScores(NullHighScoresSingletonFactory.getInstance())
 
 
 
@@ -90,7 +90,7 @@ highScores= this.highScoresArrayP[this.circularIndexUtil!.next()]!
 index++
 }
 
-this.this.setSelectedHighScores(highScores)
+this.setSelectedHighScores(highScores)
 }
 
 

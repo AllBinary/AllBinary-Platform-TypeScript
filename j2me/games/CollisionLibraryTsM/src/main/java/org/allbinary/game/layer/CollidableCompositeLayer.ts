@@ -74,7 +74,7 @@ public constructor (layerInfo: Rectangle, viewPosition: ViewPosition, collidable
                             //For kotlin this is before the body of the constructor.
                     
 this.collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance()
-this.this.setCollidableInferface(collidableInferface)
+this.setCollidableInferface(collidableInferface)
 }
 
 public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition, collidableInferface: CollidableBaseBehavior)                        
@@ -91,7 +91,7 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
                             //For kotlin this is before the body of the constructor.
                     
 this.collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance()
-this.this.setCollidableInferface(collidableInferface)
+this.setCollidableInferface(collidableInferface)
 }
 
 public constructor (layerInfo: Rectangle, viewPosition: ViewPosition)                        
@@ -193,7 +193,7 @@ stringBuffer!.append(this.getCollidableInferface()!.toString())
         
         
 
-this.this.toString(stringBuffer)
+this.toString(stringBuffer)
 
 
 

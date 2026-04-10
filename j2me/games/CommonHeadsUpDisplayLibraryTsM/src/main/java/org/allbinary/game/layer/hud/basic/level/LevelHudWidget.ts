@@ -101,7 +101,7 @@ this.levelString= LEVEL.toCharArray()
 this.offset= myFont!.charsWidth(this.levelString, 0, this.levelString!.length) +myFont!.getSize()
 this.maxlevel= maxlevel
 this.level= maxlevel
-this.this.update()
+this.update()
 }
 
 
@@ -114,13 +114,13 @@ levelNumberTotalDigits= this.primitiveLongUtil!.getCurrentTotalDigits()
     public setLevel(level: number){
 var level = level
 this.level= level
-this.this.update()
+this.update()
 }
 
 
     public nextLevel(){
 this.level++
-this.this.update()
+this.update()
 }
 
 
@@ -134,7 +134,7 @@ this.level--
 
                                     }
                                 
-this.this.update()
+this.update()
 }
 
 

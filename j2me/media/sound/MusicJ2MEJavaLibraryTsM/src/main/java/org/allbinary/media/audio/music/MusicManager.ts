@@ -176,11 +176,11 @@ this.songList= songList
         
         
 
-this.this.nextSong(randomSongSound, 0, 0)
+this.nextSong(randomSongSound, 0, 0)
 
                                     }
                                 
-this.this.process()
+this.process()
 }
 
 
@@ -191,7 +191,7 @@ this.this.process()
 PreLogUtil.put(StringMaker().
                             append(NEXT_SONG)!.append(nextSongSound!.getResource())!.toString(), this, commonStrings!.PROCESS)
 this.nextSongSound= nextSongSound
-this.this.reset()
+this.reset()
 this.stopped= false
 }
 
@@ -300,7 +300,7 @@ this.noDuration= true
 PreLogUtil.put(StringMaker().
                             append(STOPPING)!.append(endingCurrentSongSound!.getResource())!.append(SONG)!.appendlong(duration)!.toString(), this, commonStrings!.PROCESS)
 endingCurrentSongSound!.getPlayerP()!.stop()
-this.this.waitForStateChange(endingCurrentSongSound, startingCurrentSongSound)
+this.waitForStateChange(endingCurrentSongSound, startingCurrentSongSound)
 
                                     }
                                 
@@ -312,7 +312,7 @@ this.this.waitForStateChange(endingCurrentSongSound, startingCurrentSongSound)
                                     PreLogUtil.put(StringMaker().
                             append(STOPPING)!.append(endingCurrentSongSound!.getResource())!.append(SONG)!.appendlong(duration)!.toString(), this, commonStrings!.PROCESS)
 endingCurrentSongSound!.getPlayerP()!.stop()
-this.this.waitForStateChange(endingCurrentSongSound, startingCurrentSongSound)
+this.waitForStateChange(endingCurrentSongSound, startingCurrentSongSound)
 
                                     }
                                 

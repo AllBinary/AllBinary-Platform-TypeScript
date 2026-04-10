@@ -41,8 +41,8 @@ public constructor (){
     public doStartTag(): number{
 
         try {
-            this.this.setName("Basic Order View")
-this.this.setObjectFile("views.generic.order.ValidationView")
+            this.setName("Basic Order View")
+this.setObjectFile("views.generic.order.ValidationView")
 
                         if(this.getCommand() != 
                                     null

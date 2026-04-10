@@ -65,13 +65,13 @@ var rtsLayer = rtsLayer
                         if(rtsLayer!.isUpgradeable())
                         
                                     {
-                                    this.this.setUpgradeCost(StringMaker().
+                                    this.setUpgradeCost(StringMaker().
                             append(UPGRADE)!.appendint(rtsLayer!.getUpgradeCost())!.toString())
 
                                     }
                                 
                         else {
-                            this.this.setUpgradeCost(StringUtil.getInstance()!.EMPTY_STRING)
+                            this.setUpgradeCost(StringUtil.getInstance()!.EMPTY_STRING)
 
                         }
                             
@@ -79,13 +79,13 @@ var rtsLayer = rtsLayer
                         if(rtsLayer!.isDowngradeable())
                         
                                     {
-                                    this.this.setDownGradeCost(StringMaker().
+                                    this.setDownGradeCost(StringMaker().
                             append(DOWNGRADE)!.appendint(rtsLayer!.getDowngradeCost())!.toString())
 
                                     }
                                 
                         else {
-                            this.this.setDownGradeCost(StringUtil.getInstance()!.EMPTY_STRING)
+                            this.setDownGradeCost(StringUtil.getInstance()!.EMPTY_STRING)
 
                         }
                             

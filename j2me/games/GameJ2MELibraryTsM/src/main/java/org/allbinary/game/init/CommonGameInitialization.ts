@@ -85,7 +85,7 @@ super.init(abeClientInformation, commandListener, level)
                         if(!this.isGameInitialized() && level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel())
                         
                                     {
-                                    this.this.setGameInitialized(true)
+                                    this.setGameInitialized(true)
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
@@ -97,7 +97,7 @@ PointFactory.getInstance()!.init()
 progressCanvas!.addPortion(50, "Points")
 AngleFactory.getInstance()
 progressCanvas!.addPortion(50, "Angles")
-this.this.initGame()
+this.initGame()
 this.resourceInitializationArray[GAME_RESOURCES]!.init()
 
                                     }

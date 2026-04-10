@@ -145,7 +145,7 @@ this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.NAME, this.vie
 
                                     }
                                 
-this.this.setHelper()
+this.setHelper()
 
 
 

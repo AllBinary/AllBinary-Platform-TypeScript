@@ -35,8 +35,8 @@ public constructor (maxForwardVelocity: number, maxReverseVelocity: number){
             super();
             var maxForwardVelocity = maxForwardVelocity
 var maxReverseVelocity = maxReverseVelocity
-this.this.setMaxForwardVelocity(maxForwardVelocity)
-this.this.setMaxReverseVelocity(maxReverseVelocity)
+this.setMaxForwardVelocity(maxForwardVelocity)
+this.setMaxReverseVelocity(maxReverseVelocity)
 }
 
 
@@ -73,32 +73,32 @@ this.maxReverseVelocity= maxReverseVelocity
 
 
     public limitMaxXYForwardVelocity(){
-this.this.limitMaxXYVelocity(this.getMaxForwardVelocity())
+this.limitMaxXYVelocity(this.getMaxForwardVelocity())
 }
 
 
     public limitMaxXYReverseVelocity(){
-this.this.limitMaxXYVelocity(this.getMaxReverseVelocity())
+this.limitMaxXYVelocity(this.getMaxReverseVelocity())
 }
 
 
     public limitMaxYForwardVelocity(){
-this.this.limitMaxYVelocity(this.getMaxForwardVelocity())
+this.limitMaxYVelocity(this.getMaxForwardVelocity())
 }
 
 
     public limitMaxYReverseVelocity(){
-this.this.limitMaxYVelocity(this.getMaxReverseVelocity())
+this.limitMaxYVelocity(this.getMaxReverseVelocity())
 }
 
 
     public limitMaxXForwardVelocity(){
-this.this.limitMaxXVelocity(this.getMaxForwardVelocity())
+this.limitMaxXVelocity(this.getMaxForwardVelocity())
 }
 
 
     public limitMaxXReverseVelocity(){
-this.this.limitMaxXVelocity(this.getMaxReverseVelocity())
+this.limitMaxXVelocity(this.getMaxReverseVelocity())
 }
 
 
@@ -123,15 +123,15 @@ this.this.limitMaxXVelocity(this.getMaxReverseVelocity())
 
 
     public limitXYToForwardAndReverseMaxVelocity(){
-this.this.limitMaxXYForwardVelocity()
-this.this.limitMaxXYReverseVelocity()
+this.limitMaxXYForwardVelocity()
+this.limitMaxXYReverseVelocity()
 }
 
 
     public limitMaxXYVelocity(maxVelocity: number){
 var maxVelocity = maxVelocity
-this.this.limitMaxXVelocity(maxVelocity)
-this.this.limitMaxYVelocity(maxVelocity)
+this.limitMaxXVelocity(maxVelocity)
+this.limitMaxYVelocity(maxVelocity)
 }
 
 
@@ -163,8 +163,8 @@ var maxVelocity = maxVelocity
 
     public limitMaxYVelocity(maxVelocity: number){
 var maxVelocity = maxVelocity
-this.this.limitMaxPositiveYVelocity(maxVelocity)
-this.this.limitMaxNegativeYVelocity(maxVelocity)
+this.limitMaxPositiveYVelocity(maxVelocity)
+this.limitMaxNegativeYVelocity(maxVelocity)
 }
 
 
@@ -257,7 +257,7 @@ var magnitude = magnitude
 var angle = angle
 var otherAngle = otherAngle
 super.setVelocity(magnitude, angle, otherAngle)
-this.this.limitXYToForwardAndReverseMaxVelocity()
+this.limitXYToForwardAndReverseMaxVelocity()
 }
 
 
@@ -266,7 +266,7 @@ var magnitude = magnitude
 var angle = angle
 var otherAngle = otherAngle
 super.addVelocity(magnitude, angle, otherAngle)
-this.this.limitXYToForwardAndReverseMaxVelocity()
+this.limitXYToForwardAndReverseMaxVelocity()
 }
 
 

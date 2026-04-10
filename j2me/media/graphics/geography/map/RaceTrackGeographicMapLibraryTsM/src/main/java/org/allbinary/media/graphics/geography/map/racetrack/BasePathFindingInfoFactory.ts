@@ -121,7 +121,7 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType()
                         if(geographicCellType == startLineId)
                         
                                     {
-                                    this@BasePathFindingInfoFactory.this.addStartPathFindingNode(pathFindingInfo, cellPosition)
+                                    this@BasePathFindingInfoFactory.addStartPathFindingNode(pathFindingInfo, cellPosition)
 
                                     }
                                 
@@ -133,12 +133,12 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType()
                         if(geographicCellType == startLineId)
                         
                                     {
-                                    this@BasePathFindingInfoFactory.this.addEndPathFindingNode(pathFindingInfo, geographicMapInterface!.getGeographicMapCellPositionFactoryInterface()!.getInstance(geographicMapInterface, cellPosition!.getColumn(), cellPosition!.getRow(), tiledLayer!.getColumns(), tiledLayer!.getRows(), tiledLayer!.getCellWidth(), tiledLayer!.getCellHeight()))
+                                    this@BasePathFindingInfoFactory.addEndPathFindingNode(pathFindingInfo, geographicMapInterface!.getGeographicMapCellPositionFactoryInterface()!.getInstance(geographicMapInterface, cellPosition!.getColumn(), cellPosition!.getRow(), tiledLayer!.getColumns(), tiledLayer!.getRows(), tiledLayer!.getCellWidth(), tiledLayer!.getCellHeight()))
 
                                     }
                                 
                         else {
-                            this@BasePathFindingInfoFactory.this.addEndPathFindingNode(pathFindingInfo, cellPosition)
+                            this@BasePathFindingInfoFactory.addEndPathFindingNode(pathFindingInfo, cellPosition)
 
                         }
                             

@@ -45,7 +45,7 @@ export class ARectangleFilledAnimation extends Animation
 public constructor (){
 
             super();
-            this.this.setBasicColorP(BasicColorFactory.getInstance()!.BLACK)
+            this.setBasicColorP(BasicColorFactory.getInstance()!.BLACK)
 }
 
 

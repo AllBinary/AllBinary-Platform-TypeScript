@@ -238,7 +238,7 @@ hasRead= value
                         
                                     {
                                     hasRead= true
-this.this.get()
+this.get()
 
                                     }
                                 
@@ -266,7 +266,7 @@ this.this.get()
     public isTesting(): boolean{
 
         try {
-            this.this.updateIfNeeded()
+            this.updateIfNeeded()
 
 
 
@@ -295,7 +295,7 @@ this.this.get()
 
 
     public getTesting(): string{
-this.this.updateIfNeeded()
+this.updateIfNeeded()
 
 
 
@@ -306,7 +306,7 @@ this.this.updateIfNeeded()
 
 
     public getTestHtmlPath(): string{
-this.this.updateIfNeeded()
+this.updateIfNeeded()
 
                         if(testHtmlPath != 
                                     null
@@ -336,7 +336,7 @@ this.this.updateIfNeeded()
 
 
     public getMainPath(): string{
-this.this.updateIfNeeded()
+this.updateIfNeeded()
 
                         if(mainPath != 
                                     null

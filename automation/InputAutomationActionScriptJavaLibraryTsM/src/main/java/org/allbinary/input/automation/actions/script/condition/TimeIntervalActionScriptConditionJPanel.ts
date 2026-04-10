@@ -44,7 +44,7 @@ public constructor (timeIntervalActionScriptConditionInterface: TimeIntervalActi
 logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 initComponents()
 this.timeIntervalActionScriptConditionInterface= timeIntervalActionScriptConditionInterface
-this.this.set()
+this.set()
 }
 
 
@@ -140,7 +140,7 @@ jLabel1!.setText("Time Interval:")
         
         
 
-this.this.setLayout(layout)
+this.setLayout(layout)
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addComponent(timeIntervalActionJButton)))
 layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel1)!.addComponent(timeIntervalActionJButton)))
 }
@@ -148,7 +148,7 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
     okJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.this.update()
+this.update()
 this.getTimeIntervalActionJDialog()!.setVisible(false)
 }
 

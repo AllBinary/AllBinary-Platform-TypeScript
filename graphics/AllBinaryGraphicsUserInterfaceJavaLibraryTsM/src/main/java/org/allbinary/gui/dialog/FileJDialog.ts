@@ -123,7 +123,7 @@ logUtil!.put("Starting Action Command: " +evt.getActionCommand(), this, "ActionP
                         if(evt.getActionCommand() == this.getJFileChooser1()!.CANCEL_SELECTION)
                         
                                     {
-                                    this.this.setVisible(false)
+                                    this.setVisible(false)
 
                                     }
                                 

@@ -78,7 +78,7 @@ Thread.sleep(15.toLong() +(this.priorityP *2))
         
 
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
-this.this.setRunning(false)
+this.setRunning(false)
 }
 
 }

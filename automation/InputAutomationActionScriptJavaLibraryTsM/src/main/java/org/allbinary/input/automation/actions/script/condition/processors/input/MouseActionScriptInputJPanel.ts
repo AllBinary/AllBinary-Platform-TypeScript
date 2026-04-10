@@ -77,7 +77,7 @@ defaultComboBoxModel!.addElement(TempInputRobotNames.LOW_NAME)
 defaultComboBoxModel!.addElement(TempInputRobotNames.SYS_NAME)
 defaultComboBoxModel!.addElement(InputRobot.NAME)
 this.inputAutomationTypeJComboBox!.setModel(defaultComboBoxModel)
-this.this.set()
+this.set()
 }
 
 
@@ -148,7 +148,7 @@ this.mouseActionScriptInputInterface!.log()
                 //@Throws(Error::class)
             
     update(){
-this.this.updateInputType()
+this.updateInputType()
 this.mouseActionScriptInputInterface!.setTime(getText.valueOf())
 logUtil!.put("Button State: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update")
 
@@ -337,7 +337,7 @@ jLabel1!.setText("Mouse:")
         
         
 
-this.this.setLayout(layout)
+this.setLayout(layout)
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)!.addComponent(mouseActionJButton)))
 layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel1)!.addComponent(mouseActionJButton)))
 }
@@ -352,7 +352,7 @@ var evt = evt
 var evt = evt
 
         try {
-            this.this.update()
+            this.update()
 this.getMouseActionJDialog()!.setVisible(false)
 } catch(e: Exception)
             {

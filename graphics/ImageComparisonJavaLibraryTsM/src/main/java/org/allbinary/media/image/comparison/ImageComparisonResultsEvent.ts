@@ -37,7 +37,7 @@ var imageComparisonInfo = imageComparisonInfo
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setImageComparisonResult(imageComparisonInfo)
+this.setImageComparisonResult(imageComparisonInfo)
 }
 
 

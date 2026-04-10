@@ -75,7 +75,7 @@ b.order(ByteOrder.nativeOrder())
 buffer.put(p_a)
 buffer.put(p_b)
 buffer.put(p_c)
-this.this.position(buffer, 0)
+this.position(buffer, 0)
 
 
 
@@ -105,7 +105,7 @@ buffer.put(p_a)
 buffer.put(p_b)
 buffer.put(p_c)
 buffer.put(p_d)
-this.this.position(buffer, 0)
+this.position(buffer, 0)
 
 
 
@@ -142,7 +142,7 @@ v= (unsigned.toFloat()) /255f
 buffer.put(v)
 }
 
-this.this.position(buffer, 0)
+this.position(buffer, 0)
 
 
 

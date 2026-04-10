@@ -158,7 +158,7 @@ public constructor (name: string){
 
             super();
             var name = name
-this.this.setName(name)
+this.setName(name)
 }
 
 public constructor (name: string, objectFileName: string, objectConfigFileName: string, templateFileName: string, dataFileName: string){
@@ -169,11 +169,11 @@ var objectFileName = objectFileName
 var objectConfigFileName = objectConfigFileName
 var templateFileName = templateFileName
 var dataFileName = dataFileName
-this.this.setName(name)
-this.this.setObjectFile(objectFileName)
-this.this.setObjectConfigFile(objectConfigFileName)
-this.this.setTemplateFile(templateFileName)
-this.this.setDataFile(dataFileName)
+this.setName(name)
+this.setObjectFile(objectFileName)
+this.setObjectConfigFile(objectConfigFileName)
+this.setTemplateFile(templateFileName)
+this.setDataFile(dataFileName)
 }
 
 
@@ -309,7 +309,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
 
                                     }
                                 
-this.this.setObjectConfig(hashMap!.get(transformInfoData!.OBJECTCONFIG) as String)
+this.setObjectConfig(hashMap!.get(transformInfoData!.OBJECTCONFIG) as String)
 
                                     }
                                 
@@ -330,7 +330,7 @@ this.this.setObjectConfig(hashMap!.get(transformInfoData!.OBJECTCONFIG) as Strin
 
                                     }
                                 
-this.this.setObjectConfigFile(objectConfigFileName)
+this.setObjectConfigFile(objectConfigFileName)
 
                                     }
                                 
@@ -349,7 +349,7 @@ this.this.setObjectConfigFile(objectConfigFileName)
                                 )
                         
                                     {
-                                    this.this.setObjectConfigInterface(TransformInfoObjectConfig(this))
+                                    this.setObjectConfigInterface(TransformInfoObjectConfig(this))
 
                                     }
                                 
@@ -576,7 +576,7 @@ this.objectConfigFileName= value
     setObjectConfigFile(value: string){
 var value = value
 this.objectConfigFileName= value
-this.this.setObjectConfigInterface(TransformInfoObjectConfigAndManipulatorFactory.getInstance()!.getInstance(abeClientInformation, this, this.getObjectConfigFilePath()))
+this.setObjectConfigInterface(TransformInfoObjectConfigAndManipulatorFactory.getInstance()!.getInstance(abeClientInformation, this, this.getObjectConfigFilePath()))
 }
 
 
@@ -589,7 +589,7 @@ var value = value
         
         
 
-this.this.setObjectConfigInterface(TransformInfoObjectConfigAndManipulatorFactory.getInstance()!.getInstance(abeClientInformation, this, document))
+this.setObjectConfigInterface(TransformInfoObjectConfigAndManipulatorFactory.getInstance()!.getInstance(abeClientInformation, this, document))
 }
 
 

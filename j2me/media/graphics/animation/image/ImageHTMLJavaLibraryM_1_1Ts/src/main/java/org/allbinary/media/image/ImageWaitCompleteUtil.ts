@@ -76,7 +76,7 @@ public constructor (){
     //var image = image
     //var name = name
 this.timeDelayHelper!.setStartTime()
-this.this.waitFor(image, name, this.timeDelayHelper)
+this.waitFor(image, name, this.timeDelayHelper)
 }
 
 
@@ -172,7 +172,7 @@ PreLogUtil.put("Image Total: " +size, this, "waitForAll")
         
 index < size; index++)
         {
-this.this.waitFor(hashtable.get(objectArray[index]!) as Image, objectArray[index]! as String, this.allTimeDelayHelper)
+this.waitFor(hashtable.get(objectArray[index]!) as Image, objectArray[index]! as String, this.allTimeDelayHelper)
 }
 
 }

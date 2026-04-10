@@ -181,7 +181,7 @@ var eventObject = eventObject
 
         try {
             eventListenerInterface= this.eventListenerInterfaceList!.objectArray[index]! as EventListenerInterface
-this.this.process(eventObject, eventListenerInterface)
+this.process(eventObject, eventListenerInterface)
 } catch(e: Exception)
             {
 

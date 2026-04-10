@@ -50,7 +50,7 @@ list.addAll(BuildingScrollTouchButtonsBuilder().
                             getList())
 list.addAll(UpgradeDowngradeTouchButtonsBuilder().
                             getList())
-this.this.add(list)
+this.add(list)
 
 
 

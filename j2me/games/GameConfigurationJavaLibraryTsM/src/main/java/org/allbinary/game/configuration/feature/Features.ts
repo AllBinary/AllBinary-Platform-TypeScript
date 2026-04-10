@@ -84,7 +84,7 @@ private constructor (){
             super();
             list= BasicArrayList()
 defaultList= BasicArrayList()
-this.this.init()
+this.init()
 }
 
 
@@ -92,7 +92,7 @@ this.this.init()
             
     public addDefault(gameFeature: Feature){
     //var gameFeature = gameFeature
-this.this.add(gameFeature)
+this.add(gameFeature)
 
                         if(!defaultList!.contains(gameFeature))
                         
@@ -128,7 +128,7 @@ GameFeatureEventHandler.getInstance()!.fireEvent(GameFeatureEvent(gameFeature, g
     //var gameFeature = gameFeature
 logUtil!.put(StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(gameFeature!.toString())!.toString(), this, "removeDefault")
-this.this.remove(gameFeature)
+this.remove(gameFeature)
 defaultList!.remove(gameFeature)
 }
 
@@ -173,14 +173,14 @@ GameFeatureEventHandler.getInstance()!.fireEvent(GameFeatureEvent(gameFeature, g
         
         
 
-this.this.addDefault(gameFeatureFactory!.ARTIFICIAL_INTELLEGENCE_PROCESSOR)
-this.this.addDefault(gameFeatureFactory!.COLLIDABLE_INTERFACE_LAYER_PROCESSOR)
-this.this.addDefault(gameFeatureFactory!.GAME_INPUT_LAYER_PROCESSOR)
-this.this.addDefault(gameFeatureFactory!.TICKABLE_LAYER_PROCESSOR)
-this.this.addDefault(inputFeatureFactory!.MULTI_KEY_PRESS)
-this.this.addDefault(inputFeatureFactory!.REMOVE_DUPLICATE_KEY_PRESSES)
-this.this.addDefault(gameFeatureFactory!.SCREEN_SHAKE)
-this.this.addDefault(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION)
+this.addDefault(gameFeatureFactory!.ARTIFICIAL_INTELLEGENCE_PROCESSOR)
+this.addDefault(gameFeatureFactory!.COLLIDABLE_INTERFACE_LAYER_PROCESSOR)
+this.addDefault(gameFeatureFactory!.GAME_INPUT_LAYER_PROCESSOR)
+this.addDefault(gameFeatureFactory!.TICKABLE_LAYER_PROCESSOR)
+this.addDefault(inputFeatureFactory!.MULTI_KEY_PRESS)
+this.addDefault(inputFeatureFactory!.REMOVE_DUPLICATE_KEY_PRESSES)
+this.addDefault(gameFeatureFactory!.SCREEN_SHAKE)
+this.addDefault(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION)
 
     var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
         
@@ -190,20 +190,20 @@ this.this.addDefault(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION)
                         if(operatingSystemInterface!.isOverScan())
                         
                                     {
-                                    this.this.addDefault(sensorFeatureFactory!.NO_ORIENTATION)
-this.this.addDefault(touchFeatureFactory!.HIDE_SCREEN_BUTTONS)
+                                    this.addDefault(sensorFeatureFactory!.NO_ORIENTATION)
+this.addDefault(touchFeatureFactory!.HIDE_SCREEN_BUTTONS)
 
                                     }
                                 
                         else {
-                            this.this.addDefault(sensorFeatureFactory!.ORIENTATION_SENSORS)
-this.this.addDefault(touchFeatureFactory!.AUTO_HIDE_SHOW_SCREEN_BUTTONS)
+                            this.addDefault(sensorFeatureFactory!.ORIENTATION_SENSORS)
+this.addDefault(touchFeatureFactory!.AUTO_HIDE_SHOW_SCREEN_BUTTONS)
 
                         }
                             
-this.this.addDefault(touchFeatureFactory!.TOUCH_ENABLED)
-this.this.addDefault(MainFeatureFactory.getInstance()!.FULL_SCREEN)
-this.this.addDefault(MainFeatureFactory.getInstance()!.LOAD_ONDEMAND)
+this.addDefault(touchFeatureFactory!.TOUCH_ENABLED)
+this.addDefault(MainFeatureFactory.getInstance()!.FULL_SCREEN)
+this.addDefault(MainFeatureFactory.getInstance()!.LOAD_ONDEMAND)
 } catch(e: Exception)
             {
 PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
@@ -242,12 +242,12 @@ var gameFeature = gameFeature
                         if(this.isFeature(gameFeature))
                         
                                     {
-                                    this.this.remove(gameFeature)
+                                    this.remove(gameFeature)
 
                                     }
                                 
                         else {
-                            this.this.add(gameFeature)
+                            this.add(gameFeature)
 
                         }
                             

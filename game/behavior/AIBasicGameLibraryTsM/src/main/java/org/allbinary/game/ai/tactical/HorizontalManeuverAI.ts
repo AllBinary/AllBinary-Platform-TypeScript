@@ -78,8 +78,8 @@ var allBinaryLayerManager = allBinaryLayerManager
                         if(ownerLayerInterface!.getXP() -currentSpeed <= 0)
                         
                                     {
-                                    this.this.reverse()
-this.this.drop()
+                                    this.reverse()
+this.drop()
 
                                     }
                                 
@@ -87,9 +87,9 @@ this.this.drop()
                         if(ownerLayerInterface!.getX2() +currentSpeed > DisplayInfoSingleton.getInstance()!.getLastWidth())
                         
                                     {
-                                    this.this.reverse()
-this.this.accelerate()
-this.this.drop()
+                                    this.reverse()
+this.accelerate()
+this.drop()
 
                                     }
                                 

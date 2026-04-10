@@ -55,7 +55,7 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.updateRandomDistance()
+this.updateRandomDistance()
 }
 
 
@@ -75,7 +75,7 @@ super.processAI(this.keyDirection)
                         
                                     {
                                     super.processAI(Canvas.KEY_NUM1)
-this.this.updateRandomDistance()
+this.updateRandomDistance()
 this.changedDirection= false
 
                                     }

@@ -39,8 +39,8 @@ export class DownloadItemsTag extends TableTag {
 public constructor (){
 
             super();
-            this.this.setTagHelperFactory(DownloadItemsHelperFactory())
-this.this.setTagRequestHelperFactory(DownloadItemsRequestHelperFactory())
+            this.setTagHelperFactory(DownloadItemsHelperFactory())
+this.setTagRequestHelperFactory(DownloadItemsRequestHelperFactory())
 }
 
 

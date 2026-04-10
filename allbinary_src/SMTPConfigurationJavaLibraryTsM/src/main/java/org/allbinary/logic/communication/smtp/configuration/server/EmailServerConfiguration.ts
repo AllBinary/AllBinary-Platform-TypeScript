@@ -62,7 +62,7 @@ logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
-this.this.setSmtpServer(StringUtil.getInstance()!.EMPTY_STRING)
+this.setSmtpServer(StringUtil.getInstance()!.EMPTY_STRING)
 }
 
 public constructor (hashMap: HashMap<Any, Any>){
@@ -82,10 +82,10 @@ logUtil!.put(commonStrings!.START, this, "EmailServerConfiguration(HashMap)")
 
                                     }
                                 
-this.this.setAccountName(hashMap!.get(EmailServerConfigurationData.ACCOUNT) as String)
-this.this.setPassword(hashMap!.get(EmailServerConfigurationData.PASSWORD) as String)
-this.this.setSmtpServer(hashMap!.get(EmailServerConfigurationData.SERVER) as String)
-this.this.log()
+this.setAccountName(hashMap!.get(EmailServerConfigurationData.ACCOUNT) as String)
+this.setPassword(hashMap!.get(EmailServerConfigurationData.PASSWORD) as String)
+this.setSmtpServer(hashMap!.get(EmailServerConfigurationData.SERVER) as String)
+this.log()
 }
 
 public constructor (account: string, password: string, server: string){
@@ -107,10 +107,10 @@ logUtil!.put(commonStrings!.START, this, "EmailServerConfiguration(HashMap)")
 
                                     }
                                 
-this.this.setAccountName(account)
-this.this.setPassword(password)
-this.this.setSmtpServer(server)
-this.this.log()
+this.setAccountName(account)
+this.setPassword(password)
+this.setSmtpServer(server)
+this.log()
 }
 
 

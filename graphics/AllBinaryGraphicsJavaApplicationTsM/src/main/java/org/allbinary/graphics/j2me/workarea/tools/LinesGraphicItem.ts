@@ -210,7 +210,7 @@ index < numberOfLines; index++)
         
         
 
-this.this.addPoint(pointOneNode!.getChildNodes())
+this.addPoint(pointOneNode!.getChildNodes())
 
                         if(index == numberOfLines -1)
                         
@@ -220,7 +220,7 @@ this.this.addPoint(pointOneNode!.getChildNodes())
         
         
 
-this.this.addPoint(pointTwoNode!.getChildNodes())
+this.addPoint(pointTwoNode!.getChildNodes())
 
                                     }
                                 
@@ -288,19 +288,19 @@ this.theta= theta
 
     public addRotate(theta: number){
 var theta = theta
-this.this.setRotate(this.theta +theta)
+this.setRotate(this.theta +theta)
 }
 
 
     public setAngle(angle: number){
 var angle = angle
-this.this.setRotate(Math.toRadians(angle))
+this.setRotate(Math.toRadians(angle))
 }
 
 
     public addAngle(angle: number){
 var angle = angle
-this.this.setRotate(this.theta +Math.toRadians(angle))
+this.setRotate(this.theta +Math.toRadians(angle))
 }
 
 
@@ -369,7 +369,7 @@ var pointNodes = pointNodes
         
         
 
-this.this.addPoint(point)
+this.addPoint(point)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -687,7 +687,7 @@ var y = y
         
 
 StatusFactory.getInstance()!.setStatus("Line Point Added: " +point.toString())
-this.this.addPoint(point)
+this.addPoint(point)
 
                                     }
                                 
@@ -696,7 +696,7 @@ this.this.addPoint(point)
                         
                                     {
                                     StatusFactory.getInstance()!.setStatus("Line Point Removed")
-this.this.removePoint()
+this.removePoint()
 
                                     }
                                 
@@ -779,7 +779,7 @@ var keyEvent = keyEvent
                         
                                     {
                                     StatusFactory.getInstance()!.setStatus("Deactivated")
-this.this.deactivate()
+this.deactivate()
 
                                     }
                                 
@@ -787,7 +787,7 @@ this.this.deactivate()
                         if(keyCode == keyEvent!.VK_UP)
                         
                                     {
-                                    this.this.translate(0,  -1)
+                                    this.translate(0,  -1)
 
                                     }
                                 
@@ -795,7 +795,7 @@ this.this.deactivate()
                         if(keyCode == keyEvent!.VK_DOWN)
                         
                                     {
-                                    this.this.translate(0, 1)
+                                    this.translate(0, 1)
 
                                     }
                                 
@@ -803,7 +803,7 @@ this.this.deactivate()
                         if(keyCode == keyEvent!.VK_LEFT)
                         
                                     {
-                                    this.this.translate( -1, 0)
+                                    this.translate( -1, 0)
 
                                     }
                                 
@@ -811,7 +811,7 @@ this.this.deactivate()
                         if(keyCode == keyEvent!.VK_RIGHT)
                         
                                     {
-                                    this.this.translate(1, 0)
+                                    this.translate(1, 0)
 
                                     }
                                 

@@ -66,7 +66,7 @@ public constructor (request: HttpServletRequest)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.processMultipartRequest(request)
+this.processMultipartRequest(request)
 }
 
 public constructor (pageContext: PageContext)                        
@@ -79,7 +79,7 @@ public constructor (pageContext: PageContext)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.processMultipartRequest(pageContext!.getRequest() as HttpServletRequest)
+this.processMultipartRequest(pageContext!.getRequest() as HttpServletRequest)
 }
 
 
@@ -170,8 +170,8 @@ index < size; index++)
 
                                     }
                                 
-this.this.setSpecial()
-this.this.setMap(specialRequest)
+this.setSpecial()
+this.setMap(specialRequest)
 
                                     }
                                 

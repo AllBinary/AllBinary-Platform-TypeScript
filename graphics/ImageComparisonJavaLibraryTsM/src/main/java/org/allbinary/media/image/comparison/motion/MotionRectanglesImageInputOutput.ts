@@ -118,15 +118,15 @@ var frame = frame
         
         
 
-this.this.save(motionRectangles, frame)
+this.save(motionRectangles, frame)
 motionRectanglesResultsFrameCacheable= 
                                     (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable
 motionRectangles= motionRectanglesResultsFrameCacheable!.getMotionRectangles()
-this.this.save(motionRectangles, frame)
+this.save(motionRectangles, frame)
 motionRectanglesResultsFrameCacheable= 
                                     (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable
 motionRectangles= motionRectanglesResultsFrameCacheable!.getMotionRectangles()
-this.this.save(motionRectangles, frame)
+this.save(motionRectangles, frame)
 
                                     }
                                 

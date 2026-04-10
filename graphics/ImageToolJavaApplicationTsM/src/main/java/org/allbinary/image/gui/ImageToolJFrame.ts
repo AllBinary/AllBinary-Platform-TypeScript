@@ -93,7 +93,7 @@ public constructor (){
         
         
 
-this.this.setSize(640, 480)
+this.setSize(640, 480)
 this.getMaxRedJTextField()!.setText("255")
 this.getMaxGreenJTextField()!.setText("255")
 this.getMaxBlueJTextField()!.setText("255")

@@ -68,7 +68,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                                     }
                                 
-this.this.setTransformDocumentInterface(TransformStoreDocumentFactory.getInstance(this.getPageContext(), this.getWeblisketSession()))
+this.setTransformDocumentInterface(TransformStoreDocumentFactory.getInstance(this.getPageContext(), this.getWeblisketSession()))
 }
 
 
@@ -85,7 +85,7 @@ this.this.setTransformDocumentInterface(TransformStoreDocumentFactory.getInstanc
 
                                     }
                                 
-this.this.toXmlDoc()
+this.toXmlDoc()
 
     var success: string = DomDocumentHelper.toString(this.getDoc())!;
         

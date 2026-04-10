@@ -87,23 +87,23 @@ this.playerInputId= playerInputId
 
     public onPressGameKeyEvent(gameKeyEvent: GameKeyEvent){
     //var gameKeyEvent = gameKeyEvent
-this.this.add(gameKeyEvent)
-this.this.addForRemoval(gameKeyEvent)
+this.add(gameKeyEvent)
+this.addForRemoval(gameKeyEvent)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onDownGameKeyEvent(gameKeyEvent: GameKeyEvent){
     //var gameKeyEvent = gameKeyEvent
-this.this.add(gameKeyEvent)
+this.add(gameKeyEvent)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onDownKeyEvent(gameKeyEvent: GameKeyEvent){
     //var gameKeyEvent = gameKeyEvent
-this.this.add(gameKeyEvent)
-this.this.addForRemoval(gameKeyEvent)
+this.add(gameKeyEvent)
+this.addForRemoval(gameKeyEvent)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -118,7 +118,7 @@ PreLogUtil.put(StringMaker().
 
     public onUpGameKeyEvent(gameKeyEvent: GameKeyEvent){
     //var gameKeyEvent = gameKeyEvent
-this.this.addForRemoval(gameKeyEvent)
+this.addForRemoval(gameKeyEvent)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.

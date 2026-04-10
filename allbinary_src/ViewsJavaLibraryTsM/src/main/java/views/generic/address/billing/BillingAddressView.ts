@@ -122,8 +122,8 @@ formNode!.appendChild(streetAddress!.toXmlNode(document))
 
 
     public addDomNodeInterfaces(){
-this.this.addDomNodeInterface(this as DomNodeInterface)
-this.this.addDomNodeInterface(StatesView() as DomNodeInterface)
+this.addDomNodeInterface(this as DomNodeInterface)
+this.addDomNodeInterface(StatesView() as DomNodeInterface)
 }
 
 
@@ -132,7 +132,7 @@ this.this.addDomNodeInterface(StatesView() as DomNodeInterface)
     public view(): string{
 
         try {
-            this.this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces()
 
 
 

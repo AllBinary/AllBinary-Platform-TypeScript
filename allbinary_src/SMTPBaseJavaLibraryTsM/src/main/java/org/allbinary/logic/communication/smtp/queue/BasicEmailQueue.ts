@@ -76,8 +76,8 @@ private constructor (){
 
     public offer(emailInterface: EmailInterface): boolean{
 var emailInterface = emailInterface
-this.this.offer(emailInterface as Object)
-this.this.post(emailInterface)
+this.offer(emailInterface as Object)
+this.post(emailInterface)
 
 
 
@@ -90,7 +90,7 @@ this.this.post(emailInterface)
 
     remove(emailInterface: EmailInterface){
 var emailInterface = emailInterface
-this.this.remove(emailInterface as Object)
+this.remove(emailInterface as Object)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -114,7 +114,7 @@ var emailInterface = emailInterface
                         if(this.send(emailInterface))
                         
                                     {
-                                    this.this.remove(emailInterface)
+                                    this.remove(emailInterface)
 processAllUnsent()
 
                                     }
@@ -150,7 +150,7 @@ index < size; index++)
                         if(this.send(emailInterface))
                         
                                     {
-                                    this.this.remove(emailInterface)
+                                    this.remove(emailInterface)
 processAllUnsent()
 
                                     }

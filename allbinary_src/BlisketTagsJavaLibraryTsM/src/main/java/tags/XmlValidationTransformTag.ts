@@ -98,7 +98,7 @@ public constructor (){
     public doStartTag(): number{
 
         try {
-            this.this.setHelper()
+            this.setHelper()
 
                         if(this.isValid())
                         

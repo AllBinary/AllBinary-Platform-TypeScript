@@ -119,7 +119,7 @@ outputStream!.write(buffer, 0, len)
 
 
         try {
-            this.this.get(inputStream, outputStream, byteArray)
+            this.get(inputStream, outputStream, byteArray)
 
 
 
@@ -135,7 +135,7 @@ outputStream!.write(buffer, 0, len)
 }
 
          finally {
-            this.this.close(outputStream)
+            this.close(outputStream)
 
          }
         

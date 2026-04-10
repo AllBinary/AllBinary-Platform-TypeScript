@@ -291,7 +291,7 @@ HttpFileUploadUtil.log(fileItem)
                                     }
                                 
                         else {
-                            this.this.processFile(fileItem)
+                            this.processFile(fileItem)
 this.getRequestHashMap()!.put(DownloadItemData.SIZE, (size).toString())
 
                         }
@@ -337,7 +337,7 @@ HttpFileUploadUtil.log(fileItem)
                                     }
                                 
                         else {
-                            this.this.processFile(fileItem)
+                            this.processFile(fileItem)
 
                         }
                             
@@ -382,8 +382,8 @@ HttpFileUploadUtil.log(fileItem)
                                     }
                                 
                         else {
-                            this.this.processFile(fileItem)
-this.this.unzip(fileItem)
+                            this.processFile(fileItem)
+this.unzip(fileItem)
 
                         }
                             
@@ -645,7 +645,7 @@ stringBuffer!.append("<br />")
         
         
 
-this.this.validationInfo(stringBuffer, fileName, size)
+this.validationInfo(stringBuffer, fileName, size)
 
                                     }
                                 
@@ -679,7 +679,7 @@ stringBuffer!.append("<br/>")
         
         
 
-this.this.validationInfo(stringBuffer, fileName, size)
+this.validationInfo(stringBuffer, fileName, size)
 
                                     }
                                 
@@ -711,7 +711,7 @@ this.this.validationInfo(stringBuffer, fileName, size)
         
         
 
-this.this.validationInfo(stringBuffer, fileName, size)
+this.validationInfo(stringBuffer, fileName, size)
 
                                     }
                                 

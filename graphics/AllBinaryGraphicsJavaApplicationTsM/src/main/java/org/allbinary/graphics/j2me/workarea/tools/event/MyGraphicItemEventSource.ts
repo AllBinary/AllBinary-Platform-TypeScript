@@ -51,7 +51,7 @@ var angle = angle
 var treeNode = treeNode
 this.command= command
 this.treeNode= treeNode
-this.this.setAngle(angle)
+this.setAngle(angle)
 }
 
 

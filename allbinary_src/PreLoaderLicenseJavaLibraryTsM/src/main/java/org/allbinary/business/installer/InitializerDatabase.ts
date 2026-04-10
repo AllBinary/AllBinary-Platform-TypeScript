@@ -152,7 +152,7 @@ stringBuffer!.append(values[0]!)
 logUtil!.put(stringBuffer!.toString(), this, "getFormData()")
 }
 
-this.this.getFormData(abeClientInformation, hashMap)
+this.getFormData(abeClientInformation, hashMap)
 }
 
 public constructor (abeClientInformation: AbeClientInformationInterface, initHashMap: HashMap<Any, Any>){
@@ -160,7 +160,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, initHas
             super();
                 //var abeClientInformation = abeClientInformation
     //var initHashMap = initHashMap
-this.this.getFormData(abeClientInformation, initHashMap)
+this.getFormData(abeClientInformation, initHashMap)
 }
 
 

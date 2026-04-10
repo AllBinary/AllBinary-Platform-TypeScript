@@ -55,7 +55,7 @@ public constructor (dataId: Integer, tiledLayer: TiledLayer, mapTwoDArray: IntAr
                     
 this.tiledLayerP= tiledLayer
 this.debugColor= debugColor
-this.this.setCells(mapTwoDArray)
+this.setCells(mapTwoDArray)
 }
 
 

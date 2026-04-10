@@ -220,7 +220,7 @@ this.workAreaJTreeJPanel= WorkAreaJTreeJPanel(this.name)
 this.canvasHolderJPanel= JPanel()
 this.canvasHolderJPanel!.setSize(dimension)
 this.canvasHolderJPanel!.setLayout(GridLayout(1, 1))
-this.this.setSize(dimension)
+this.setSize(dimension)
 this.canvasJPanelList= LinkedList()
 
     var gridBagLayout: GridBagLayout = new GridBagLayout();
@@ -435,7 +435,7 @@ var newCanvasJPanel = newCanvasJPanel
                         
                                     {
                                     this.canvasJPanelList!.add(newCanvasJPanel)
-this.this.select(this.canvasJPanelList!.size() -1)
+this.select(this.canvasJPanelList!.size() -1)
 
                                     }
                                 
@@ -620,7 +620,7 @@ var treeNode = treeNode
                                 )
                         
                                     {
-                                    this.this.select(frameInteger!.toInt())
+                                    this.select(frameInteger!.toInt())
 
                                     }
                                 
@@ -766,7 +766,7 @@ var evt = evt
         
 
 this.canvasJPanelList!.remove(frameInt!.toInt())
-this.this.select(frameInt!.toInt())
+this.select(frameInt!.toInt())
 
                                     }
                                 
@@ -777,13 +777,13 @@ this.this.select(frameInt!.toInt())
             
     public duplicate(evt: MyCanvasEvent){
 var evt = evt
-this.this.duplicate(evt.getTreeNode())
+this.duplicate(evt.getTreeNode())
 }
 
 
     public select(evt: MyCanvasEvent){
 var evt = evt
-this.this.select(evt.getTreeNode())
+this.select(evt.getTreeNode())
 StatusFactory.getInstance()!.setStatus("Frame Selected")
 }
 
@@ -817,7 +817,7 @@ var evt = evt
                         
                                     {
                                     canvasJPanel!.addAngle(evt.getAngle())
-this.this.select(frameInt!.toInt())
+this.select(frameInt!.toInt())
 
                                     }
                                 
@@ -827,7 +827,7 @@ StatusFactory.getInstance()!.setStatus("Canvas Rotated")
 
     public explode(evt: MyCanvasEvent){
 var evt = evt
-this.this.explodeAll()
+this.explodeAll()
 }
 
 
@@ -835,7 +835,7 @@ this.this.explodeAll()
             
     public autoExplode(evt: MyCanvasEvent){
 var evt = evt
-this.this.autoExplode(10, 0)
+this.autoExplode(10, 0)
 }
 
 
@@ -855,7 +855,7 @@ canvasJPanel!.center()
             
     public center(evt: MyCanvasEvent){
 var evt = evt
-this.this.center()
+this.center()
 }
 
 
@@ -894,7 +894,7 @@ index < size; index++)
 
                                     }
                                 
-this.this.select(index)
+this.select(index)
 Thread.sleep(100)
 }
 

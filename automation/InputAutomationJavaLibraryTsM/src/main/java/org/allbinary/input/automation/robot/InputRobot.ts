@@ -122,7 +122,7 @@ logUtil!.put(message, this, "moveMouseToTarget")
 
     public mouseMove(point: Point){
 var point = point
-this.this.mouseMove(point.x, point.y)
+this.mouseMove(point.x, point.y)
 }
 
 
@@ -144,7 +144,7 @@ logUtil!.put(message, this, "moveMouse")
             
     public mouseMoveToTarget(rectangle: Rectangle){
 var rectangle = rectangle
-this.this.mouseMoveToTarget(rectangle, 0, 0)
+this.mouseMoveToTarget(rectangle, 0, 0)
 }
 
 

@@ -73,7 +73,7 @@ public constructor (gameType: GameType, gameMode: GameMode, highestLevel: number
     //var currentLevel = currentLevel
 this.gameType= gameType
 this.gameMode= gameMode
-this.this.setHighestLevel(highestLevel)
+this.setHighestLevel(highestLevel)
 this.currentLevel= currentLevel
 this.playerType= PlayerTypesFactory.getInstance()!.PLAYER_TYPE_ONE
 }
@@ -88,7 +88,7 @@ var highestLevel = highestLevel
 var currentLevel = currentLevel
 this.gameType= gameType
 this.gameMode= gameMode
-this.this.setHighestLevel(highestLevel)
+this.setHighestLevel(highestLevel)
 this.currentLevel= currentLevel
 this.playerType= playerType
 }

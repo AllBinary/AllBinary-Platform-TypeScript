@@ -57,8 +57,8 @@ export class OrderHistoryTag extends TableTag {
 public constructor (){
 
             super();
-            this.this.setTagHelperFactory(OrderHistoryHelperFactory())
-this.this.setTagRequestHelperFactory(OrderHistoryRequestHelperFactory())
+            this.setTagHelperFactory(OrderHistoryHelperFactory())
+this.setTagRequestHelperFactory(OrderHistoryRequestHelperFactory())
 }
 
 
@@ -210,7 +210,7 @@ this.status= value
                         if(this.getCommand()!.compareTo(OrderHistoryData.SETSTATUS) == 0)
                         
                                     {
-                                    this.this.setOrderStatus()
+                                    this.setOrderStatus()
 
                                     }
                                 

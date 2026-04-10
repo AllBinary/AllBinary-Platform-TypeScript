@@ -163,7 +163,7 @@ var foregroundBasicColor = foregroundBasicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.init()
+this.init()
 DisplayChangeEventHandler.getInstance()!.addListener(this)
 
     var size: number = IMAGE.length
@@ -221,11 +221,11 @@ this.showTitleProgressBarRunnable= ShowTitleProgressBarRunnable(this.midletActiv
 this.dismissTitleProgressBarRunnable= DismissTitleProgressBarRunnable(this.midletActivity, this)
 this.titleProgressDialogSetProgressRunnable= TitleProgressBarSetProgressRunnable(this.midletActivity, this)
 this.titleProgressDialogPortionSetProgressRunnable= TitleProgressBarPortionSetProgressRunnable(this.midletActivity, this)
-this.this.loadProgressImages()
+this.loadProgressImages()
 
                                     }
                                 
-this.this.updateCurrent()
+this.updateCurrent()
 } catch(e: Exception)
             {
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
@@ -306,8 +306,8 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 var displayChangeEvent = displayChangeEvent
 
         try {
-            this.this.loadProgressImages()
-this.this.updateCurrent()
+            this.loadProgressImages()
+this.updateCurrent()
 } catch(e: Exception)
             {
 logUtil!.put(commonStrings!.EXCEPTION_LABEL +ExceptionUtil.getInstance()!.getStackTrace(e), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT)
@@ -339,12 +339,12 @@ this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0)
                         if(displayInfo!.isPortrait(lastWidth, lastHeight))
                         
                                     {
-                                    this.this.setImages(0, lastWidth, lastHeight)
+                                    this.setImages(0, lastWidth, lastHeight)
 
                                     }
                                 
                         else {
-                            this.this.setImages(2, lastWidth, lastHeight)
+                            this.setImages(2, lastWidth, lastHeight)
 
                         }
                             
@@ -582,7 +582,7 @@ index < size; index++)
                                 
 }
 
-this.this.updateCurrent()
+this.updateCurrent()
 }
 
 
@@ -591,7 +591,7 @@ this.this.updateCurrent()
     public update(graphics: Graphics){
 var graphics = graphics
 logUtil!.put(commonStrings!.START, this, commonStrings!.UPDATE)
-this.this.initOpenGL(graphics)
+this.initOpenGL(graphics)
 this.image= GameFeatureImageCacheFactory.getInstance()!.get(RESOURCE)
 
     var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;
@@ -675,7 +675,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e)
     setBackground(background: boolean){
 var background = background
 super.setBackground(background)
-this.this.updateCurrent()
+this.updateCurrent()
 }
 
 

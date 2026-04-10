@@ -173,7 +173,7 @@ var ev = ev
                         if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.PRESSED)
                         
                                     {
-                                    this.this.onPressedMotionGestureEvent(ev)
+                                    this.onPressedMotionGestureEvent(ev)
 
                                     }
                                 
@@ -181,7 +181,7 @@ var ev = ev
                         if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.RELEASED)
                         
                                     {
-                                    this.this.released(ev)
+                                    this.released(ev)
 
                                     }
                                 

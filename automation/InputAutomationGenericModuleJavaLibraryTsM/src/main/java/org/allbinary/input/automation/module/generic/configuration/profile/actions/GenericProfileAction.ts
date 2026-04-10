@@ -89,7 +89,7 @@ var node = node
 
                         }
                             
-this.this.setGenericProfileActionScript(GenericProfileActionScript(this.genericProfileActionJPanel, node))
+this.setGenericProfileActionScript(GenericProfileActionScript(this.genericProfileActionJPanel, node))
 }
 
 public constructor (name: string){
@@ -97,7 +97,7 @@ public constructor (name: string){
             super();
             var name = name
 this.name= name
-this.this.setGenericProfileActionScript(GenericProfileActionScript(this.genericProfileActionJPanel))
+this.setGenericProfileActionScript(GenericProfileActionScript(this.genericProfileActionJPanel))
 }
 
 

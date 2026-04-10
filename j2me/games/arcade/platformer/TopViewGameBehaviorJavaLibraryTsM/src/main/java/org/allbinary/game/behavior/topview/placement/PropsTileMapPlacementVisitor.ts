@@ -103,7 +103,7 @@ index2 < size2; index2++)
                                     }
                                 
                         else {
-                            this.this.visit2(mapArray, mapData, index, index2)
+                            this.visit2(mapArray, mapData, index, index2)
 
                         }
                             

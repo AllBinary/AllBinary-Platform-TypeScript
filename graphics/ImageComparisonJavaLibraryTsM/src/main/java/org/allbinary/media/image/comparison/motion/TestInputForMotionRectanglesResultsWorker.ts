@@ -97,13 +97,13 @@ public constructor (){
     public onMotionRectanglesImageComparisonResultsEvent(motionRectanglesImageComparisonResultsEvent: MotionRectanglesResultsEvent){
 var motionRectanglesImageComparisonResultsEvent = motionRectanglesImageComparisonResultsEvent
 this.getMotionRectanglesVector()!.add(motionRectanglesImageComparisonResultsEvent!.getMotionRectangles())
-this.this.run()
+this.run()
 }
 
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
 var allBinaryEventObject = allBinaryEventObject
-this.this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as MotionRectanglesResultsEvent)
+this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as MotionRectanglesResultsEvent)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -129,7 +129,7 @@ this.running= running
 
         try {
             logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-this.this.setRunning(true)
+this.setRunning(true)
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         

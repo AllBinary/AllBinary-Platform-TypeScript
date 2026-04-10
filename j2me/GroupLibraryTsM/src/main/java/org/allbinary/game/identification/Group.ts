@@ -60,7 +60,7 @@ public constructor (teamName: string, teamId: number){
             super();
             var teamName = teamName
 var teamId = teamId
-this.this.setName(teamName)
+this.setName(teamName)
 this.teamId= teamId
 }
 

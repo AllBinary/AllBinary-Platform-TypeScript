@@ -54,8 +54,8 @@ export class QuoteRequestTag extends TableTag {
 public constructor (){
 
             super();
-            this.this.setTagHelperFactory(QuoteHelperFactory())
-this.this.setTagRequestHelperFactory(QuoteRequestHelperFactory())
+            this.setTagHelperFactory(QuoteHelperFactory())
+this.setTagRequestHelperFactory(QuoteRequestHelperFactory())
 }
 
 
@@ -148,7 +148,7 @@ this.storeName= storeName
                         if(this.getCommand()!.compareTo("EMAIL") == 0)
                         
                                     {
-                                    this.this.email()
+                                    this.email()
 
 
 

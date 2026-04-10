@@ -179,7 +179,7 @@ public constructor (hashMap: HashMap<Any, Any>){
 
                                     }
                                 
-this.this.getFormData(hashMap)
+this.getFormData(hashMap)
 }
 
 

@@ -91,7 +91,7 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
             
     collideNone(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
-this.this.chase(collidableInterfaceCompositeInterface)
+this.chase(collidableInterfaceCompositeInterface)
 
     var rtsLayer: AdvancedRTSGameLayer = collidableInterfaceCompositeInterface as AdvancedRTSGameLayer;
         
@@ -101,7 +101,7 @@ this.this.chase(collidableInterfaceCompositeInterface)
                         if(rtsLayer!.getType() == UnitLayer.getStaticType())
                         
                                     {
-                                    this.this.collideUnit(rtsLayer as UnitLayer)
+                                    this.collideUnit(rtsLayer as UnitLayer)
 
                                     }
                                 

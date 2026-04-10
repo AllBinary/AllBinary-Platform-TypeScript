@@ -110,7 +110,7 @@ public constructor (gameCanvas: AllBinaryGameCanvas, stringArray: string[], line
 this.gameCanvas= gameCanvas
 this.stringArray= stringArray
 this.lastWidth= IntArray(this.stringArray!.length)
-this.this.setBasicColorP(basicColor)
+this.setBasicColorP(basicColor)
 this.color= basicColor!.toInt()
 this.lineArray= lineArray
 this.fontSize= font.getSize()

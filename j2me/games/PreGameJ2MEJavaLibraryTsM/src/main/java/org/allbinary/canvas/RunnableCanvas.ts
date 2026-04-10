@@ -118,7 +118,7 @@ this.runnableCanvasRefreshHelper= RunnableCanvasRefreshHelper(this)
                                 )
                         
                                     {
-                                    this.this.initCommands(commandListener)
+                                    this.initCommands(commandListener)
 
                                     }
                                 
@@ -342,7 +342,7 @@ this.currentThread= thread
     showNotify(){
 
         try {
-            this.this.stopWaiting()
+            this.stopWaiting()
 } catch(e: Exception)
             {
 logUtil!.put(commonStrings!.EXCEPTION, this, "showNotify", e)
@@ -369,7 +369,7 @@ this.notified= true
 this.threadObjectUtil!.notifyObject(this)
 }
 
-this.this.repaint()
+this.repaint()
 }
 
 
@@ -459,7 +459,7 @@ logUtil!.put(stringMaker!.append(START_PAUSE)!.appendlong(System.currentTimeMill
 
         while(this.isPaused() && this.isRunning() && !this.isSingleThread())
         {
-this.this.processSleep()
+this.processSleep()
 
                         if(!this.isPausable())
                         
@@ -517,7 +517,7 @@ logUtil!.put(stringMaker!.append(END_PAUSE)!.appendlong(System.currentTimeMillis
 
 
     public run(){
-this.this.setCurrentThread()
+this.setCurrentThread()
 }
 
 

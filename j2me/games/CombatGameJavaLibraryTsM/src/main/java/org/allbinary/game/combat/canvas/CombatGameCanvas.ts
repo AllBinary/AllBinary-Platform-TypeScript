@@ -97,7 +97,7 @@ ProgressCanvasFactory.getInstance()!.addPortion(50, "Destroy Events")
             
     init(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-this.this.CombatGameCanvas_init()
+this.CombatGameCanvas_init()
 super.init(abeClientInformation)
 }
 
@@ -177,7 +177,7 @@ basicLayerProcessor[index]!.getList()!.clear()
 GroupLayerManagerListener.getInstance()!.clear()
 GroupLayerManagerListener.getInstance()!.log()
 DestroyedEventHandler.getInstance()!.removeAllListeners()
-this.this.cleanupManager()
+this.cleanupManager()
 }
 
 

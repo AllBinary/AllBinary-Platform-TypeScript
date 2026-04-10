@@ -163,7 +163,7 @@ public constructor (request: HttpServletRequest){
 
             super();
                 //var request = request
-this.this.getFormData(RequestParams(request).
+this.getFormData(RequestParams(request).
                             toHashMap())
 this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(this.getRole())
 }
@@ -172,7 +172,7 @@ public constructor (userHashMap: HashMap<Any, Any>){
 
             super();
                 //var userHashMap = userHashMap
-this.this.getFormData(userHashMap)
+this.getFormData(userHashMap)
 this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(this.getRole())
 }
 
@@ -530,12 +530,12 @@ this.password.set(value)
 
 
     public enable(){
-this.this.setEnable("Yes")
+this.setEnable("Yes")
 }
 
 
     public disable(){
-this.this.setEnable("No")
+this.setEnable("No")
 }
 
 

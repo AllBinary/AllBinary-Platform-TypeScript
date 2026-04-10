@@ -89,8 +89,8 @@ logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
         
         
 
-this.this.append(TextField("Name: ", timeString, 30, TextField.ANY))
-this.this.initCommands(commandListener)
+this.append(TextField("Name: ", timeString, 30, TextField.ANY))
+this.initCommands(commandListener)
 }
 
 
@@ -101,10 +101,10 @@ var cmdListener = cmdListener
         
         
 
-this.this.removeAllCommands()
-this.this.addCommand(gameCommandsFactory!.SAVE)
-this.this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.this.setCommandListener(cmdListener)
+this.removeAllCommands()
+this.addCommand(gameCommandsFactory!.SAVE)
+this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS)
+this.setCommandListener(cmdListener)
 }
 
 

@@ -95,7 +95,7 @@ export class XmlDocumentHelper
 private constructor (){
 
             super();
-            this.this.init(4, true)
+            this.init(4, true)
 }
 
 

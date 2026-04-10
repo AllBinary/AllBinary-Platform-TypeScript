@@ -98,7 +98,7 @@ public constructor (image: Image, layerInterfaceFactoryInterface: CostLayerInter
 var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
 this.image= image
 this.layerInterfaceFactoryInterface= layerInterfaceFactoryInterface
-this.this.update()
+this.update()
 }
 
 
@@ -112,7 +112,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 var event = event
 
         try {
-            this.this.update()
+            this.update()
 } catch(e: Exception)
             {
 

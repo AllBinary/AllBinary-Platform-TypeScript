@@ -164,7 +164,7 @@ private constructor (abeClientInformation: AbeClientInformationInterface, softwa
                     
 this.abeClientInformation= abeClientInformation
 this.softwareInformation= softwareInformation
-this.this.setAscending(ascending)
+this.setAscending(ascending)
 
                         if(preload)
                         

@@ -99,11 +99,11 @@ public constructor (inputAutomationActionInterface: InputAutomationActionInterfa
                             //For kotlin this is before the body of the constructor.
                     
 logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
-this.this.setCaptureWorker(GenericProfileCaptureWorkerFactory.getInstance(genericProfile))
-this.this.setInputAutomationActionInterface(inputAutomationActionInterface)
-this.this.setImageComparisonWorker(ImageComparisonWorker(imageComparatorConstraintsInterface))
-this.this.setMotionRectanglesWorker(MotionRectanglesWorker(motionRectangleConstraintsInterface))
-this.this.setGenericProfile(genericProfile)
+this.setCaptureWorker(GenericProfileCaptureWorkerFactory.getInstance(genericProfile))
+this.setInputAutomationActionInterface(inputAutomationActionInterface)
+this.setImageComparisonWorker(ImageComparisonWorker(imageComparatorConstraintsInterface))
+this.setMotionRectanglesWorker(MotionRectanglesWorker(motionRectangleConstraintsInterface))
+this.setGenericProfile(genericProfile)
 
     var vector: Vector = this.getGenericProfile()!.getGenericProfileDataWorkerTypeVector()!;
         
@@ -155,7 +155,7 @@ logUtil!.put("Adding Listener: " +genericProfileDataWorkerType, this, this.commo
             
     public processDataWorkerResults(){
 logUtil!.put(this.commonStrings!.START, this, this.PROCESS_DATA_WORKER_RESULTS)
-this.this.waitForDataWorkers()
+this.waitForDataWorkers()
 
     var cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance() as J2SECacheInterface;
         
@@ -252,8 +252,8 @@ lastFrame= getFrame()
             
     public process(){
 logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.PROCESS)
-this.this.startDataWorkers()
-this.this.processDataWorkerResults()
+this.startDataWorkers()
+this.processDataWorkerResults()
 }
 
 

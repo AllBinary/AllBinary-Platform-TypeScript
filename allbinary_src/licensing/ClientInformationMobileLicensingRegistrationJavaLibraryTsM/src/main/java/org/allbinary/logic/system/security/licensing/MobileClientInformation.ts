@@ -77,7 +77,7 @@ public constructor (name: string, version: string, specialName: string, shortNam
                                 )
                         
                                     {
-                                    this.this.setHardSale(false)
+                                    this.setHardSale(false)
 
                                     }
                                 

@@ -489,7 +489,7 @@ logUtil!.put(stringBuffer!.toString(), this, "isRarelyUsedSession()")
     isRoleValid(): boolean{
 
         try {
-            this.this.makeSessionValid(BasicUserRoleFactory.getInstance()!.INSTALLER, userName)
+            this.makeSessionValid(BasicUserRoleFactory.getInstance()!.INSTALLER, userName)
 
 
 
@@ -743,7 +743,7 @@ index < size; index++)
 
                                     }
                                 
-this.this.nextAttempt()
+this.nextAttempt()
 
 
 
@@ -753,7 +753,7 @@ this.this.nextAttempt()
 
                                     }
                                 
-this.this.nextAttempt()
+this.nextAttempt()
 
 
 
@@ -790,7 +790,7 @@ this.this.nextAttempt()
                         if(BooleanUtil.getInstance()!.getFromString(timeout))
                         
                                     {
-                                    this.this.invalidateSession()
+                                    this.invalidateSession()
 
 
 
@@ -846,7 +846,7 @@ this.this.nextAttempt()
 
 this.request= pageContext!.getRequest() as HttpServletRequest
 this.weblisketSession= BasicWeblisketSession(pageContext)
-this.this.getFormData()
+this.getFormData()
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         

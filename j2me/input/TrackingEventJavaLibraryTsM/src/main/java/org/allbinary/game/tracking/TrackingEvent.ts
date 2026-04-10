@@ -55,13 +55,13 @@ public constructor (allBinaryLayerInterface: AllBinaryLayer)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setLayerInterface(allBinaryLayerInterface)
+this.setLayerInterface(allBinaryLayerInterface)
 }
 
 
     public init(anyType: any = {}){
 var anyType = anyType
-this.this.setSource(anyType)
+this.setSource(anyType)
 }
 
 

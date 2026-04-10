@@ -103,7 +103,7 @@ this.rawRectangle= rawRectangle
 this.cellPosition= cellPosition
 this.xBorder= xBorder
 this.yBorder= yBorder
-this.this.updateRectangle()
+this.updateRectangle()
 logUtil!.put(StringMaker().
                             append("Created: ")!.append(this.toString())!.toString(), this, this.commonStrings!.CONSTRUCTOR)
 }

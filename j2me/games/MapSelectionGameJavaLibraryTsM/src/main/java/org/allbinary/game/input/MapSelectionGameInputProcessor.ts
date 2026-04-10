@@ -102,7 +102,7 @@ export class MapSelectionGameInputProcessor extends Processor
     public run(){
 
         try {
-            this.this.setRunning(true)
+            this.setRunning(true)
 SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance())
 
     var track: number = preGameSelectorPaintable!.getPreGameSelectionForm()!.getSelectedIndex() +1;
@@ -117,10 +117,10 @@ SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance())
 gameCanvas!.getLayerManager()!.getGameInfo()!.setCurrentLevel(wave)
 gameCanvas!.buildGame(false)
 GameKeyEventHandler.getInstance()!.removeListener(getPlayerGameInput())
-this.this.setRunning(false)
+this.setRunning(false)
 } catch(e: Exception)
             {
-this.this.setRunning(false)
+this.setRunning(false)
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         

@@ -55,7 +55,7 @@ var document = document
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setDocument(this.generate(this.toXmlDoc()))
+this.setDocument(this.generate(this.toXmlDoc()))
 }
 
 public constructor (abeClientInformation: Object, transformInfoInterface: Object, name: string, type: string)                        
@@ -71,7 +71,7 @@ var type = type
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setDocument(this.generate(this.toXmlDoc()))
+this.setDocument(this.generate(this.toXmlDoc()))
 }
 
 

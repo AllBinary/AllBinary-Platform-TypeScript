@@ -153,7 +153,7 @@ this.value= 0
 
     public add(value: number){
 var value = value
-this.this.set(this.value +value)
+this.set(this.value +value)
 }
 
 
@@ -175,7 +175,7 @@ this.valueTotalDigits= this.primitiveLongUtil!.getCurrentTotalDigits()
 
     public reduce(value: number){
 var value = value
-this.this.set(this.value -value)
+this.set(this.value -value)
 }
 
 

@@ -166,42 +166,42 @@ super.close()
 this.paintable.process()
 this.selectedGameKey= NONE
 this.selectedInput= NONE
-this.this.update()
+this.update()
 }
 
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-this.this.removeAllCommands()
-this.this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.this.addCommand(GameInputMappingCanvas.DEFAULT)
-this.this.addCommand(GameInputMappingInstructionsCanvas.DISPLAY)
-this.this.setCommandListener(cmdListener)
+this.removeAllCommands()
+this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS)
+this.addCommand(GameInputMappingCanvas.DEFAULT)
+this.addCommand(GameInputMappingInstructionsCanvas.DISPLAY)
+this.setCommandListener(cmdListener)
 }
 
 
     public keyPressed(keyCode: number){
 var keyCode = keyCode
-this.this.keyPressed(keyCode, 0)
+this.keyPressed(keyCode, 0)
 }
 
 
     public keyReleased(keyCode: number){
 var keyCode = keyCode
-this.this.keyReleased(keyCode, 0)
+this.keyReleased(keyCode, 0)
 }
 
 
     public keyRepeated(keyCode: number){
 var keyCode = keyCode
-this.this.keyRepeated(keyCode, 0)
+this.keyRepeated(keyCode, 0)
 }
 
 
     public keyPressed(keyCode: number, deviceId: number){
 var keyCode = keyCode
 var deviceId = deviceId
-this.this.addGameKeyEvent(keyCode, false)
+this.addGameKeyEvent(keyCode, false)
 super.keyPressed(keyCode, 0)
 }
 
@@ -227,7 +227,7 @@ var repeated = repeated
         
         
 
-this.this.process(gameKey, input)
+this.process(gameKey, input)
 } catch(e: Exception)
             {
 logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
@@ -255,12 +255,12 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.PROCESS)
                         if(this.selectedGameKey != NONE)
                         
                                     {
-                                    this.this.gameActionCrud(gameKey, input)
+                                    this.gameActionCrud(gameKey, input)
 
                                     }
                                 
                         else {
-                            this.this.setSelectedAction(gameKey)
+                            this.setSelectedAction(gameKey)
 
                         }
                             
@@ -320,7 +320,7 @@ this.repaintBehavior!.onChangeRepaint(this)
                                     }
                                 
                         else {
-                            this.this.addNewMapping(gameKey, input)
+                            this.addNewMapping(gameKey, input)
 
                         }
                             
@@ -331,12 +331,12 @@ this.repaintBehavior!.onChangeRepaint(this)
                         if(this.inputMapping!.isDelete(input))
                         
                                     {
-                                    this.this.deleteCurrentMapping()
+                                    this.deleteCurrentMapping()
 
                                     }
                                 
                         else {
-                            this.this.setSelectedAction(gameKey)
+                            this.setSelectedAction(gameKey)
 
                         }
                             
@@ -375,13 +375,13 @@ stringBuffer!.append(this.stringUtil!.toString(this.selectedInput))
 logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME)
 inputMapping!.getInputMapping()!.add(this.selectedGameKey, input)
 this.selectedInput= input
-this.this.update()
+this.update()
 
                                     }
                                 
                         else {
                             logUtil!.put("Unable to add Mapping since one already exists or is MENU, HOME, or BACK key and setting selected action to what it is already mapped to", this, METHOD_NAME)
-this.this.setSelectedAction(gameKey)
+this.setSelectedAction(gameKey)
 
                         }
                             
@@ -418,7 +418,7 @@ stringBuffer!.append(stringUtil!.toString(this.selectedInput))
 logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME)
 inputMapping!.getInputMapping()!.remove(this.selectedGameKey, this.selectedInput)
 this.selectedInput= NONE
-this.this.update()
+this.update()
 
                                     }
                                 

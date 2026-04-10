@@ -82,7 +82,7 @@ this.runningP= isRunning
     public setTargetLayer(waypointLayer: PathFindingLayerInterface){
     //var waypointLayer = waypointLayer
 this.targetPathFindingLayer= waypointLayer
-this.this.setPriority()
+this.setPriority()
 }
 
 

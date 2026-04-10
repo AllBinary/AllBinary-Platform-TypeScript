@@ -192,8 +192,8 @@ number3dBufferList!.set(index++, col.toFloat() *w -width5, row.toFloat() *h -hei
     public onHealthChange(newX2: number){
     //var newX2 = newX2
 super.onHealthChange(newX2)
-this.this.updateColor()
-this.this.updateSize()
+this.updateColor()
+this.updateSize()
 }
 
 

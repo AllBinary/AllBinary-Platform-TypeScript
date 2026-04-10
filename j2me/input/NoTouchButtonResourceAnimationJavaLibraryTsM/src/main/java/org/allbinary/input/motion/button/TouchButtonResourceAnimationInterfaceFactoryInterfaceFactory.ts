@@ -67,7 +67,7 @@ public constructor (name: string)
             
     public init(level: number){
 var level = level
-this.this.init(ImageCacheFactory.getInstance(), level)
+this.init(ImageCacheFactory.getInstance(), level)
 }
 
 

@@ -101,7 +101,7 @@ logUtil!.put(gameNotificationEvent!.getString(), this, METHOD_NAME)
 
                                     }
                                 
-this.this.add(gameNotificationEvent!.getString(), gameNotificationEvent!.getSeconds(), gameNotificationEvent!.getBasicColorP(), gameNotificationEvent!.getPermanent())
+this.add(gameNotificationEvent!.getString(), gameNotificationEvent!.getSeconds(), gameNotificationEvent!.getBasicColorP(), gameNotificationEvent!.getPermanent())
 }
 
 

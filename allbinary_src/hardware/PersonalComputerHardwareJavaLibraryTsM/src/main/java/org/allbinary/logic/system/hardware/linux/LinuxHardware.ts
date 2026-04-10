@@ -159,13 +159,13 @@ public constructor (path: string){
 
             super();
             var path = path
-this.this.init(path)
+this.init(path)
 }
 
 public constructor (){
 
             super();
-            this.this.init(PCIFILE)
+            this.init(PCIFILE)
 
                         if(componentInterfaceVector!.length < MINHARDWARE)
                         

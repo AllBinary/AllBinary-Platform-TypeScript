@@ -64,7 +64,7 @@ this.globalsValidation= GlobalsValidation(this.getWeblisketSession()!.getStoreNa
 
 
     public addDomNodeInterfaces(){
-this.this.addDomNodeInterface(this.globalsValidation as DomNodeInterface)
+this.addDomNodeInterface(this.globalsValidation as DomNodeInterface)
 }
 
 
@@ -104,7 +104,7 @@ var document = document
     public view(): string{
 
         try {
-            this.this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces()
 
 
 

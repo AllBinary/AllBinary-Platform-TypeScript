@@ -109,7 +109,7 @@ this.offset= myFont!.stringWidth(this.primitiveLongUtil!.getMaxDigits()) +myFont
 
     public add(value: number){
 var value = value
-this.this.set(this.velocity +value)
+this.set(this.velocity +value)
 }
 
 
@@ -161,7 +161,7 @@ this.offset2= this.offset -myFont!.stringWidth(this.totalDigits) -myFont!.string
 
     public reduce(value: number){
 var value = value
-this.this.set(this.velocity -value)
+this.set(this.velocity -value)
 }
 
 

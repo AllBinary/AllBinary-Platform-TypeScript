@@ -54,7 +54,7 @@ public constructor (motionRectangleConstraintsInterface: MotionRectangleConstrai
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setMotionRectangleConstraintsInterface(motionRectangleConstraintsInterface)
+this.setMotionRectangleConstraintsInterface(motionRectangleConstraintsInterface)
 }
 
 
@@ -177,7 +177,7 @@ index < size; index++)
                         vector.add(motionRectangle)
 }
 
-this.this.setVector(vector)
+this.setVector(vector)
 }
 
 

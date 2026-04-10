@@ -357,7 +357,7 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
                         if(command.compareTo(BasketData.DELETE) == 0)
                         
                                     {
-                                    this.this.removeItemFromBasket()
+                                    this.removeItemFromBasket()
 
                                     }
                                 
@@ -365,7 +365,7 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
                         if(command.compareTo(BasketData.ADJUST) == 0)
                         
                                     {
-                                    this.this.adjustBasket()
+                                    this.adjustBasket()
 
                                     }
                                 

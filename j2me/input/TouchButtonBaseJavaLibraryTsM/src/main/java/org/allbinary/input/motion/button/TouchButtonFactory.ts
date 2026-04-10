@@ -63,7 +63,7 @@ private constructor (){
 
     public defaultList(){
 this.list= LIST
-this.this.toggle(false, LIST)
+this.toggle(false, LIST)
 }
 
 

@@ -65,7 +65,7 @@ this.hasPainted= false
 
         try {
             logUtil!.put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME)
-this.this.endActual()
+this.endActual()
 this.paintable= GAUGE_PAINTABLE
 ImageCacheFactory.getInstance()!.runTask()
 ImageCacheFactory.getInstance()!.progressEnded()
@@ -93,7 +93,7 @@ this.paintable= NullPaintable.getInstance()
                         if(this.paintable == GAUGE_PAINTABLE && this.hasPainted)
                         
                                     {
-                                    this.this.endFromInitialLazyLoadingComplete()
+                                    this.endFromInitialLazyLoadingComplete()
 
                                     }
                                 

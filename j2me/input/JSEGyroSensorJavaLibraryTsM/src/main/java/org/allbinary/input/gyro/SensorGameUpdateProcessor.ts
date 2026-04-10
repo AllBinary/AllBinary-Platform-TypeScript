@@ -98,7 +98,7 @@ var anyType = anyType
     setNoSensors(){
 GyroSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(NoCompleteMotionGestureInputEventListener.getInstance())
 AccelerometerSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(NoCompleteMotionGestureInputEventListener.getInstance())
-this.this.setInputSensor(NoAllBinarySensor.getInstance())
+this.setInputSensor(NoAllBinarySensor.getInstance())
 }
 
 

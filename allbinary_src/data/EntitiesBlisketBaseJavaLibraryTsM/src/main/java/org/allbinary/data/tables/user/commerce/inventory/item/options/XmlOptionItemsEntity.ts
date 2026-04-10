@@ -66,7 +66,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setTableName(tableName)
+this.setTableName(tableName)
 }
 
 

@@ -29,7 +29,7 @@ protected constructor (name: string){
 
             super();
             var name = name
-this.this.setName(name)
+this.setName(name)
 }
 
 

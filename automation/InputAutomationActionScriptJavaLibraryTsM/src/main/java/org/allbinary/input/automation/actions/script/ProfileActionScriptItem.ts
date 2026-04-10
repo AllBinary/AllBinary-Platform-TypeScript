@@ -113,7 +113,7 @@ var node = node
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.init()
+this.init()
 logUtil!.put("Label: " +label, this, this.commonStrings!.CONSTRUCTOR)
 }
 
@@ -127,7 +127,7 @@ public constructor (label: string)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.init()
+this.init()
 logUtil!.put("Label: " +label, this, this.commonStrings!.CONSTRUCTOR)
 }
 
@@ -186,7 +186,7 @@ var actionEvent = actionEvent
                         if(actionEvent!.getActionCommand()!.compareTo(EDIT) == 0)
                         
                                     {
-                                    this.this.showDialog()
+                                    this.showDialog()
 
                                     }
                                 

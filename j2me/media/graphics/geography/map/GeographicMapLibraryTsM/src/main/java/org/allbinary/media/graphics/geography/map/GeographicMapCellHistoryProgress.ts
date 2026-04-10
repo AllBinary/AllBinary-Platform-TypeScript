@@ -37,7 +37,7 @@ public constructor (geographicMapCellHistoryArray: GeographicMapCellHistory[]){
             super();
                 //var geographicMapCellHistoryArray = geographicMapCellHistoryArray
 this.geographicMapCellHistoryArray= geographicMapCellHistoryArray
-this.this.init()
+this.init()
 }
 
 

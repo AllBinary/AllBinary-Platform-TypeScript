@@ -68,7 +68,7 @@ logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
                                     }
                                 
 this.storeFrontInterface= storeFrontInterface
-this.this.init()
+this.init()
 }
 
 
@@ -85,7 +85,7 @@ this.this.init()
         
         
 
-this.this.setEmailServerConfigurationInterface(emailServerConfigurationInterface)
+this.setEmailServerConfigurationInterface(emailServerConfigurationInterface)
 }
 
 

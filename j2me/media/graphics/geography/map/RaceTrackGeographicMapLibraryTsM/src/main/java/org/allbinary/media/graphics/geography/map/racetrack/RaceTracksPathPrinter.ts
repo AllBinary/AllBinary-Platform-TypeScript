@@ -84,7 +84,7 @@ index < size; index++)
         {
 System.out.println(StringMaker().
                             append(" Path ")!.appendint(index)!.append(CommonLabels.getInstance()!.COLON_SEP)!.toString())
-this.this.printPath(list.get(index) as BasicArrayList)
+this.printPath(list.get(index) as BasicArrayList)
 }
 
 }

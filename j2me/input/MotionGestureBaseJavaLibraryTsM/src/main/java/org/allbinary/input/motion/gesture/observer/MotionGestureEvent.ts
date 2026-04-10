@@ -84,7 +84,7 @@ var motionGesture = motionGesture
                             //For kotlin this is before the body of the constructor.
                     
 this.id= id
-this.this.setMotionGesture(motionGesture)
+this.setMotionGesture(motionGesture)
 }
 
 

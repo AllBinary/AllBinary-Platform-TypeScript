@@ -185,14 +185,14 @@ this.colorFillPaintable= ColorFillPaintableFactory.getInstance()!.getInstance(al
                         if(this.highScoresHelper!.getHighScoresArray() == NoHighScoresFactory.getInstance()!.NO_HIGH_SCORES)
                         
                                     {
-                                    this.this.setPaintable(this.waitPaintable)
+                                    this.setPaintable(this.waitPaintable)
 
                                     }
                                 
                         else {
                             logUtil!.put("Show HighScores that are already loaded", this, commonStrings!.CONSTRUCTOR)
-this.this.updateCommand(this.currentCommand)
-this.this.setPaintable(this.getHighScoresPaintable())
+this.updateCommand(this.currentCommand)
+this.setPaintable(this.getHighScoresPaintable())
 
                         }
                             
@@ -256,9 +256,9 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-this.this.removeAllCommands()
-this.this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.this.setCommandListener(cmdListener)
+this.removeAllCommands()
+this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS)
+this.setCommandListener(cmdListener)
 }
 
 
@@ -338,8 +338,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
                         }
                             
 this.highScoresHelper!.setHighScoresArray(highScoresArray)
-this.this.updateCommand(this.currentCommand)
-this.this.setPaintable(this.getHighScoresPaintable())
+this.updateCommand(this.currentCommand)
+this.setPaintable(this.getHighScoresPaintable())
 } catch(e: Exception)
             {
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
@@ -403,9 +403,9 @@ logUtil!.put(StringMaker().
                         if(index != nextIndex)
                         
                                     {
-                                    this.this.removeAllCommands()
-this.this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.this.addCommand(highScoreCommandsFactory!.HIGH_SCORE_COMMANDS[nextIndex]!)
+                                    this.removeAllCommands()
+this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS)
+this.addCommand(highScoreCommandsFactory!.HIGH_SCORE_COMMANDS[nextIndex]!)
 
                                     }
                                 
@@ -413,9 +413,9 @@ this.this.addCommand(highScoreCommandsFactory!.HIGH_SCORE_COMMANDS[nextIndex]!)
                                     }
                                 
 this.currentCommand= command
-this.this.close()
+this.close()
 super.initMenu()
-this.this.open()
+this.open()
 this.repaintBehavior!.onChangeRepaint(this)
 }
 

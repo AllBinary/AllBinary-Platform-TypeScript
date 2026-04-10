@@ -60,7 +60,7 @@ this.key= key
 
     public setBufferedImage(bufferedImage: BufferedImage){
 var bufferedImage = bufferedImage
-this.this.setIioImage(IIOImage(bufferedImage, 
+this.setIioImage(IIOImage(bufferedImage, 
                             null, 
                             null))
 }

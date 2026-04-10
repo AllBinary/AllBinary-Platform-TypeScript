@@ -107,7 +107,7 @@ super.setBasicColorP(basicColor)
                         
                                     {
                                     matrix.setRotate(0.0f, this.halfWidth.toFloat(), this.halfHeight.toFloat())
-this.this.updateImage()
+this.updateImage()
 
                                     }
                                 
@@ -116,7 +116,7 @@ this.this.updateImage()
 
     public changeBasicColor(basicColor: BasicColor){
     //var basicColor = basicColor
-this.this.setBasicColorP(basicColor)
+this.setBasicColorP(basicColor)
 }
 
 
@@ -142,7 +142,7 @@ imageModifierUtil!.setAlpha(this.originalImage, this.getImage(), 0, this.alphaP)
                         
                                     {
                                     matrix.setRotate(0.0f, this.halfWidth.toFloat(), this.halfHeight.toFloat())
-this.this.updateImage()
+this.updateImage()
 
                                     }
                                 
@@ -152,14 +152,14 @@ this.this.updateImage()
     public nextRotation(){
 super.nextRotation()
 matrix.setRotate(this.increment.toFloat(), this.halfWidth.toFloat(), this.halfHeight.toFloat())
-this.this.updateImage()
+this.updateImage()
 }
 
 
     public previousRotation(){
 super.previousRotation()
 matrix.setRotate( -this.increment.toFloat(), this.halfWidth.toFloat(), this.halfHeight.toFloat())
-this.this.updateImage()
+this.updateImage()
 }
 
 
@@ -183,7 +183,7 @@ this.circularIndexUtil!.setIndex(index)
 
 this.angleInfo!.adjustAngle(newFrame)
 matrix.setRotate((newFrame -currentFrame).toFloat() *increment, this.halfWidth.toFloat(), this.halfHeight.toFloat())
-this.this.updateImage()
+this.updateImage()
 }
 
 

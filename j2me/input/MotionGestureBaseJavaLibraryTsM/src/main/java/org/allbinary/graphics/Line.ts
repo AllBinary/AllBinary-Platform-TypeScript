@@ -38,8 +38,8 @@ public constructor (p1: GPoint, p2: GPoint){
 var p2 = p2
 this.p1= PointFactory.getInstance()!.ZERO_ZERO
 this.p2= this.p1
-this.this.setP1(p1)
-this.this.setP2(p2)
+this.setP1(p1)
+this.setP2(p2)
 }
 
 
@@ -102,14 +102,14 @@ deltaY= getP1()!.getY().toDouble() -getP2()!.getY()
     public setP1(p1: GPoint){
 var p1 = p1
 this.p1= p1
-this.this.update()
+this.update()
 }
 
 
     public setP2(p2: GPoint){
 var p2 = p2
 this.p2= p2
-this.this.update()
+this.update()
 }
 
 

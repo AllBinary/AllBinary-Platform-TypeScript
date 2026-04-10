@@ -82,7 +82,7 @@ public constructor (hashMap: HashMap<Any, Any>){
 
             super();
             var hashMap = hashMap
-this.this.getFormData(hashMap)
+this.getFormData(hashMap)
 }
 
 

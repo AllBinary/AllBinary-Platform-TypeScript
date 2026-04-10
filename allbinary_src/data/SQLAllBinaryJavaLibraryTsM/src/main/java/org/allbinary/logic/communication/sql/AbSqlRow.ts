@@ -243,7 +243,7 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
         
         
 
-this.this.executeSQLStatement(sqlStatement)
+this.executeSQLStatement(sqlStatement)
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -415,7 +415,7 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
         
         
 
-this.this.executeSQLStatement(sqlStatement)
+this.executeSQLStatement(sqlStatement)
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -467,7 +467,7 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
         
         
 
-this.this.executeSQLStatement(sqlStatement)
+this.executeSQLStatement(sqlStatement)
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -560,7 +560,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE)
         
         
 
-this.this.executeSQLStatement(sqlStatement)
+this.executeSQLStatement(sqlStatement)
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -631,7 +631,7 @@ stringBuffer!.append(INSERT_END)
         
         
 
-this.this.executeSQLStatement(sqlStatement)
+this.executeSQLStatement(sqlStatement)
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         

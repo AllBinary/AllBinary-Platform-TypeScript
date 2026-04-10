@@ -316,8 +316,8 @@ get.
                                 )
                         
                                     {
-                                    this.this.emailUser(quoteRequest)
-this.this.emailAdmins(quoteRequest)
+                                    this.emailUser(quoteRequest)
+this.emailAdmins(quoteRequest)
 
 
 

@@ -154,7 +154,7 @@ super.setBasicColorP(basicColor)
                         
                                     {
                                     this.setColorProcessor= SetColorProcessor.getInstance()
-this.this.updateImage()
+this.updateImage()
 
                                     }
                                 
@@ -184,7 +184,7 @@ super.changeBasicColor(basicColor)
                         
                                     {
                                     this.changeColorProcessor= ChangeColorProcessor.getInstance()
-this.this.updateImage()
+this.updateImage()
 
                                     }
                                 
@@ -212,7 +212,7 @@ super.setAlpha(alpha)
                         
                                     {
                                     this.alphaProcessor= AlphaProcessor.getInstance()
-this.this.updateImage()
+this.updateImage()
 
                                     }
                                 
@@ -229,7 +229,7 @@ this.scaleY= scaleY
                         
                                     {
                                     this.scaleProcessor!.update(this.realOriginalImage, this.originalImageArray, this.twoImages, this.bufferedImageIndex, this.scaleX, this.scaleY, this.maxScaleX, this.maxScaleY)
-this.this.updateImage()
+this.updateImage()
 
                                     }
                                 
@@ -244,19 +244,19 @@ this.lastScaleY= this.scaleY
 this.maxScaleX= maxScaleX
 this.maxScaleY= maxScaleY
 this.scaleProcessor!.update(this.realOriginalImage, this.originalImageArray, this.twoImages, this.bufferedImageIndex, this.scaleX, this.scaleY, this.maxScaleX, this.maxScaleY)
-this.this.updateImage()
+this.updateImage()
 }
 
 
     public nextRotation(){
 super.nextRotation()
-this.this.updateImage()
+this.updateImage()
 }
 
 
     public previousRotation(){
 super.previousRotation()
-this.this.updateImage()
+this.updateImage()
 }
 
 
@@ -265,14 +265,14 @@ this.imageRotationUtil!.rotateImage(this.originalImageArray[0]!, this.twoImages[
 this.alphaProcessor!.update(imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.alphaP)
 this.setColorProcessor!.update(imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.basicColor)
 this.changeColorProcessor!.update(imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.changeBasicColorP)
-this.this.swap()
+this.swap()
 }
 
 
     public setFrame(index: number){
     //var index = index
 super.setFrame(index)
-this.this.updateImage()
+this.updateImage()
 }
 
 

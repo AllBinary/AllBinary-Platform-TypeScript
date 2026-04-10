@@ -67,10 +67,10 @@ var motionGestureInput = motionGestureInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setName(name)
+this.setName(name)
 
         try {
-            this.this.setMotionGestureInput(motionGestureInput)
+            this.setMotionGestureInput(motionGestureInput)
 } catch(e: Exception)
             {
 

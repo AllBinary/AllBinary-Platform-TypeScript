@@ -215,8 +215,8 @@ stringBuffer!.append(" from to the Inventory table")
     public update(): string{
 
         try {
-            this.this.delete()
-this.this.insert()
+            this.delete()
+this.insert()
 
     var success: string = "Item Successfully Updated";
         

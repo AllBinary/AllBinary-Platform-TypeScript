@@ -154,7 +154,7 @@ this.BORDER= BORDER
 
                         }
                             
-this.this.init(rectangle)
+this.init(rectangle)
 }
 
 

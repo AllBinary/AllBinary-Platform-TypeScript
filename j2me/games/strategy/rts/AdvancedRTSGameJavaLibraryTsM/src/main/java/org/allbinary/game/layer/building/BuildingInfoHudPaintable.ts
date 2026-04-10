@@ -186,8 +186,8 @@ this.getAnimationInterface()!.paint(graphics, this.imageX, y)
         
         
 
-this.this.setName(buildingLayer!.getName())
-this.this.setAnimationInterface(buildingLayer!.getVerticleBuildAnimationInterface())
+this.setName(buildingLayer!.getName())
+this.setAnimationInterface(buildingLayer!.getVerticleBuildAnimationInterface())
 this.productivityHud!.set(buildingLayer!.getProductivity())
 this.efficiencyHud!.set(buildingLayer!.getEfficiency() /100)
 

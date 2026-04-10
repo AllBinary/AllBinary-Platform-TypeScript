@@ -54,11 +54,11 @@ private constructor (){
 
 
     public init(){
-this.this.setDamage(0)
-this.this.setHealth(0)
-this.this.setReload(0)
-this.this.setRepair(0)
-this.this.setSpeed(0)
+this.setDamage(0)
+this.setHealth(0)
+this.setReload(0)
+this.setRepair(0)
+this.setSpeed(0)
 }
 
 

@@ -79,7 +79,7 @@ var directoryAbPath = directoryAbPath
             
     public remove(existingDirectoryAbPath: AbPath){
 var existingDirectoryAbPath = existingDirectoryAbPath
-this.this.remove(existingDirectoryAbPath!.toFileSystemString())
+this.remove(existingDirectoryAbPath!.toFileSystemString())
 }
 
 

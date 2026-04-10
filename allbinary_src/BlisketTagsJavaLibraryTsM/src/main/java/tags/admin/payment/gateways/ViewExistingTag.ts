@@ -51,8 +51,8 @@ public constructor (){
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.this.setName("Validation User View")
-this.this.setObjectFile("views.admin.payment.gateways.SelectExistingValidationView")
+                                    this.setName("Validation User View")
+this.setObjectFile("views.admin.payment.gateways.SelectExistingValidationView")
 
                                     }
                                 

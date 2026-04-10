@@ -54,7 +54,7 @@ this.width= width
 this.height= height
 this.offsetX= offsetX
 this.offsetY= offsetY
-this.this.setBasicColorP(basicColor)
+this.setBasicColorP(basicColor)
 }
 
 

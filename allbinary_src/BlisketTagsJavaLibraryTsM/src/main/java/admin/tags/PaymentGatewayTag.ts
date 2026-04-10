@@ -46,8 +46,8 @@ export class PaymentGatewayTag extends TableTag {
 public constructor (){
 
             super();
-            this.this.setTagHelperFactory(PaymentGatewayHelperFactory())
-this.this.setTagRequestHelperFactory(PaymentGatewayHelperFactory())
+            this.setTagHelperFactory(PaymentGatewayHelperFactory())
+this.setTagRequestHelperFactory(PaymentGatewayHelperFactory())
 }
 
 

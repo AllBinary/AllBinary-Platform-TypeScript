@@ -166,7 +166,7 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND)
                         if(AuthenticationHelperUtil.getInstance()!.isAuthorized(authenticationHelper, filePath))
                         
                                     {
-                                    this.this.saveFile(filePath)
+                                    this.saveFile(filePath)
 response.setContentType("text/plain")
 response.getOutputStream()!.write("OK!".encodeToByteArray())
 

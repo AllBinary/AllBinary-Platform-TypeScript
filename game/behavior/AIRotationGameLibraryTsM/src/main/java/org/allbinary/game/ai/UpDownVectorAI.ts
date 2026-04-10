@@ -107,7 +107,7 @@ this.index++
                                 
                         else {
                             this.index= 0
-this.this.processAI(allBinaryLayerManager)
+this.processAI(allBinaryLayerManager)
 
                         }
                             

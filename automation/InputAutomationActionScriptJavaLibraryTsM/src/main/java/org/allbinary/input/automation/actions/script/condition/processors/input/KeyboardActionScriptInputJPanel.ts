@@ -105,7 +105,7 @@ this.releaseJRadioButton!.setSelected(true)
 
                                     }
                                 
-this.this.set()
+this.set()
 }
 
 
@@ -193,8 +193,8 @@ this.keyActionScriptInputInterface!.setText(text)
                 //@Throws(Error::class)
             
     update(){
-this.this.updateInputType()
-this.this.updateKeys()
+this.updateInputType()
+this.updateKeys()
 this.keyActionScriptInputInterface!.setTime(Integer.valueOf(this.timeJTextField!.getText())!.toInt())
 this.keyActionScriptInputInterface!.log()
 }
@@ -376,7 +376,7 @@ jLabel1!.setText("Key:")
         
         
 
-this.this.setLayout(layout)
+this.setLayout(layout)
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)!.addComponent(keyActionJButton)))
 layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel1)!.addComponent(keyActionJButton)))
 }
@@ -444,7 +444,7 @@ var evt = evt
         
         
 
-this.this.prependText(integer)
+this.prependText(integer)
 this.keyIntegerJComboBox!.setSelectedIndex(this.keyNameJComboBox!.getSelectedIndex())
 }
 
@@ -453,7 +453,7 @@ this.keyIntegerJComboBox!.setSelectedIndex(this.keyNameJComboBox!.getSelectedInd
 var evt = evt
 
         try {
-            this.this.update()
+            this.update()
 this.getKeyActionJDialog()!.setVisible(false)
 } catch(e: Exception)
             {

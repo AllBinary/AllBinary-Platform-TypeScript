@@ -251,7 +251,7 @@ this.scaleLargestTo= scaleLargestTo.toFloat()
                         if(this.full[WIDTH] != aLastWidth || this.full[HEIGHT] != aLastHeight)
                         
                                     {
-                                    this.this.setLastSizeForce(aLastWidth, aLastHeight, reason)
+                                    this.setLastSizeForce(aLastWidth, aLastHeight, reason)
 
                                     }
                                 
@@ -365,7 +365,7 @@ lastHalf[WIDTH]= (last[WIDTH] shr 1)
 last[HEIGHT]= aLastHeight
 lastHalf[HEIGHT]= (last[HEIGHT] shr 1)
 SWTJOGLProcessor.getInstance()!.setCustom(aLastWidth, aLastHeight, this.ratio)
-this.this.add(SET_LAST_SIZE_METHOD_NAME)
+this.add(SET_LAST_SIZE_METHOD_NAME)
 }
 
 
@@ -449,7 +449,7 @@ list.add(reason)
                         if(list.size() > 0)
                         
                                     {
-                                    this.this.processForced()
+                                    this.processForced()
 
                                     }
                                 
@@ -607,7 +607,7 @@ lastHalf[WIDTH]= (last[WIDTH] shr 1)
 last[HEIGHT]= aLastHeight
 lastHalf[HEIGHT]= (last[HEIGHT] shr 1)
 SWTJOGLProcessor.getInstance()!.setCustom(aLastWidth, aLastHeight, this.ratio)
-this.this.add(commonStrings!.UPDATE)
+this.add(commonStrings!.UPDATE)
 
 
 

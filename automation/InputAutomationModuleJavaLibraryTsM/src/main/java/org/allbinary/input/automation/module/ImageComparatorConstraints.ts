@@ -60,7 +60,7 @@ public constructor (doImageComparisonEveryNthFrame: number){
             super();
             var doImageComparisonEveryNthFrame = doImageComparisonEveryNthFrame
 this.doImageComparisonEveryNthFrame= doImageComparisonEveryNthFrame
-this.this.setAvoidVector(Vector())
+this.setAvoidVector(Vector())
 }
 
 

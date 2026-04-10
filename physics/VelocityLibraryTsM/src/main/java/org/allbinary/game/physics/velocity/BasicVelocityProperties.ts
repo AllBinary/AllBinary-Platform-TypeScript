@@ -132,7 +132,7 @@ this.velocityZBasicDecimal!.set(0)
         
         
 
-this.this.setVelocity(magnitudeBasicDecimal, angle, otherAngle)
+this.setVelocity(magnitudeBasicDecimal, angle, otherAngle)
 }
 
 
@@ -150,7 +150,7 @@ this.this.setVelocity(magnitudeBasicDecimal, angle, otherAngle)
         
         
 
-this.this.setVelocity(magnitude, angle, otherAngle)
+this.setVelocity(magnitude, angle, otherAngle)
 }
 
 
@@ -168,7 +168,7 @@ this.this.setVelocity(magnitude, angle, otherAngle)
         
         
 
-this.this.addVelocity(magnitudeBasicDecimal, angle, otherAngle)
+this.addVelocity(magnitudeBasicDecimal, angle, otherAngle)
 }
 
 
@@ -186,7 +186,7 @@ this.this.addVelocity(magnitudeBasicDecimal, angle, otherAngle)
         
         
 
-this.this.addVelocity(magnitude, angle, otherAngle)
+this.addVelocity(magnitude, angle, otherAngle)
 }
 
 
@@ -199,7 +199,7 @@ this.this.addVelocity(magnitude, angle, otherAngle)
         
         
 
-this.this.setVelocity(magnitude, angle, otherAngle)
+this.setVelocity(magnitude, angle, otherAngle)
 }
 
 
@@ -212,7 +212,7 @@ this.this.setVelocity(magnitude, angle, otherAngle)
         
         
 
-this.this.addVelocity(magnitude, angle, otherAngle)
+this.addVelocity(magnitude, angle, otherAngle)
 }
 
 
@@ -220,7 +220,7 @@ this.this.addVelocity(magnitude, angle, otherAngle)
     //var magnitude = magnitude
     //var angle = angle
     //var otherAngle = otherAngle
-this.this.setVelocity(magnitude, angle.getValue().toInt(), otherAngle!.getValue().toInt())
+this.setVelocity(magnitude, angle.getValue().toInt(), otherAngle!.getValue().toInt())
 }
 
 
@@ -228,7 +228,7 @@ this.this.setVelocity(magnitude, angle.getValue().toInt(), otherAngle!.getValue(
     //var magnitude = magnitude
     //var angle = angle
     //var otherAngle = otherAngle
-this.this.addVelocity(magnitude, angle.getValue().toInt(), otherAngle!.getValue().toInt())
+this.addVelocity(magnitude, angle.getValue().toInt(), otherAngle!.getValue().toInt())
 }
 
 

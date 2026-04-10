@@ -194,7 +194,7 @@ PreLogUtil.put(this.toString(), this, this.commonStrings!.INIT)
                         if(!this.isOpenGL())
                         
                                     {
-                                    this.this.setOpenGL(true)
+                                    this.setOpenGL(true)
 modified= true
 
                                     }
@@ -207,7 +207,7 @@ modified= true
                         if(this.isOpenGL())
                         
                                     {
-                                    this.this.setOpenGL(false)
+                                    this.setOpenGL(false)
 modified= true
 
                                     }
@@ -230,7 +230,7 @@ modified= true
                         if(gameFeature != this.getType())
                         
                                     {
-                                    this.this.setType(gameFeature as OpenGLFeature)
+                                    this.setType(gameFeature as OpenGLFeature)
 modified= true
 
                                     }
@@ -253,7 +253,7 @@ modified= true
                         if(this.getImageColor() != gameFeature)
                         
                                     {
-                                    this.this.setImageColor(gameFeature as OpenGLFeature)
+                                    this.setImageColor(gameFeature as OpenGLFeature)
 
                         if(colorLocked)
                         
@@ -262,7 +262,7 @@ modified= true
                         if(gameFeature == openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444)
                         
                                     {
-                                    this.this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444)
+                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444)
 
                                     }
                                 
@@ -270,7 +270,7 @@ modified= true
                         if(gameFeature == openGLFeatureFactory!.IMAGE_COLOR_DEPTH_565)
                         
                                     {
-                                    this.this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565)
+                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565)
 
                                     }
                                 
@@ -278,7 +278,7 @@ modified= true
                         if(gameFeature == openGLFeatureFactory!.IMAGE_COLOR_DEPTH_8888)
                         
                                     {
-                                    this.this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888)
+                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888)
 
                                     }
                                 
@@ -307,7 +307,7 @@ modified= true
                         if(this.getColor() != gameFeature)
                         
                                     {
-                                    this.this.setColor(gameFeature as OpenGLFeature)
+                                    this.setColor(gameFeature as OpenGLFeature)
 modified= true
 
                                     }
@@ -326,7 +326,7 @@ modified= true
                         if(features.isFeature(gameFeature))
                         
                                     {
-                                    this.this.setVersionSelector(gameFeature as OpenGLFeature)
+                                    this.setVersionSelector(gameFeature as OpenGLFeature)
 
                                     }
                                 

@@ -83,7 +83,7 @@ this.tableName= tableName
 var data = data
 
         try {
-            this.this.executeSQLStatement(data)
+            this.executeSQLStatement(data)
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -128,7 +128,7 @@ var data = data
 
 
         try {
-            this.this.executeSQLStatement(sqlStatement)
+            this.executeSQLStatement(sqlStatement)
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         

@@ -262,7 +262,7 @@ super.process(layerManager)
         
         
 
-this.this.process(rtsPlayerLayerInterface, layerManager, geographicMapCellPosition)
+this.process(rtsPlayerLayerInterface, layerManager, geographicMapCellPosition)
 
                                     }
                                 
@@ -341,7 +341,7 @@ rtsLayer!.geographicMapCellPositionAreaBase!.update(geographicMapInterface)
 
                         }
                             
-this.this.attemptBuild(rtsPlayerLayerInterface, layerManager, this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer, itemIndex)
+this.attemptBuild(rtsPlayerLayerInterface, layerManager, this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer, itemIndex)
 }
 
 
@@ -354,9 +354,9 @@ this.this.attemptBuild(rtsPlayerLayerInterface, layerManager, this.newUnconstruc
 var item = item
 var index = index
 logUtil!.put("Set Sticking Item: " +item, this, "processSticky")
-this.this.setSelectedStickyItem(item)
-this.this.setSelectedStickyItemIndex(index)
-this.this.setStickyItemSelected(true)
+this.setSelectedStickyItem(item)
+this.setSelectedStickyItemIndex(index)
+this.setStickyItemSelected(true)
 this.stickyAssociatedRtsLayer= associatedRtsLayer as RTSLayer
 this.getHashtable()!.put(Layer.ID, associatedRtsLayer)
 }
@@ -511,7 +511,7 @@ WaypointCellPositionHistory.getInstance()!.add(list, layerInterface)
         
         
 
-this.this.addWayPoint(waypointLayer)
+this.addWayPoint(waypointLayer)
 
     var rtsPlayerGameInput: RTSPlayerGameInput = rtsPlayerLayerInterface!.getPlayerGameInput() as RTSPlayerGameInput;
         

@@ -97,7 +97,7 @@ this.bufferedImages[0]= bufferedImage
 this.bufferedImages[1]= bufferedImage2
 this.frameOne= frameOne
 this.frameTwo= frameTwo
-this.this.setTolerance(0)
+this.setTolerance(0)
 
     var imageHeight: number = bufferedImage!.getHeight()!;
         

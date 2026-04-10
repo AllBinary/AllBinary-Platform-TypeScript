@@ -121,7 +121,7 @@ URLGLOBALS.init(urlGlobals)
                         if(command.compareTo(GLOBALS2.SET) == 0)
                         
                                     {
-                                    this.this.setCustomLoaderWebappPath()
+                                    this.setCustomLoaderWebappPath()
 
                                     }
                                 

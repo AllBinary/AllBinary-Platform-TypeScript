@@ -673,7 +673,7 @@ logUtil!.put(stringBuffer!.toString(), this, "doStartTag()")
                         if(this.getCommand()!.compareTo(commonStrings!.INSERT) == 0 || this.getCommand()!.compareTo(SqlStrings.getInstance()!.INSERT_INTO) == 0)
                         
                                     {
-                                    this.this.insert()
+                                    this.insert()
 
                                     }
                                 
@@ -681,7 +681,7 @@ logUtil!.put(stringBuffer!.toString(), this, "doStartTag()")
                         if(this.getCommand()!.compareTo(commonStrings!.DELETE) == 0)
                         
                                     {
-                                    this.this.delete()
+                                    this.delete()
 
                                     }
                                 
@@ -689,7 +689,7 @@ logUtil!.put(stringBuffer!.toString(), this, "doStartTag()")
                         if(this.getCommand()!.compareTo(commonStrings!.UPDATE) == 0 || this.getCommand()!.compareTo(SqlStrings.getInstance()!.UPDATE) == 0)
                         
                                     {
-                                    this.this.update()
+                                    this.update()
 
                                     }
                                 

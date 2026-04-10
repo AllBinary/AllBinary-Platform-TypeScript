@@ -254,7 +254,7 @@ this.getColorRangeInterface()!.setMaxBlue(string.valueOf())
 
                         }
                             
-this.this.init()
+this.init()
 }
 
 public constructor ()                        
@@ -267,7 +267,7 @@ public constructor ()
                             //For kotlin this is before the body of the constructor.
                     
 this.point= Point(0, 0)
-this.this.init()
+this.init()
 }
 
 

@@ -57,8 +57,8 @@ export class CategoryTag extends TableTag {
 public constructor (){
 
             super();
-            this.this.setTagHelperFactory(CategoryHelperFactory())
-this.this.setTagRequestHelperFactory(CategoryRequestHelperFactory())
+            this.setTagHelperFactory(CategoryHelperFactory())
+this.setTagRequestHelperFactory(CategoryRequestHelperFactory())
 }
 
 

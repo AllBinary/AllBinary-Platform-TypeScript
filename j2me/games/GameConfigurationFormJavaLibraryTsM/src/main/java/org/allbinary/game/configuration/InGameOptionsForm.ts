@@ -81,16 +81,16 @@ logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
 gameFeatureFormUtil!.addChoiceGroup(this, InGameFeatureChoiceGroups.getExclusiveInstance()!.get(), Choice.EXCLUSIVE)
 gameFeatureFormUtil!.addChoiceGroup(this, InGameFeatureChoiceGroups.getMultipleInstance()!.get(), Choice.MULTIPLE)
-this.this.initCommands(commandListener)
+this.initCommands(commandListener)
 }
 
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-this.this.removeAllCommands()
-this.this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.this.addCommand(InGameOptionsForm.DEFAULT)
-this.this.setCommandListener(cmdListener)
+this.removeAllCommands()
+this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS)
+this.addCommand(InGameOptionsForm.DEFAULT)
+this.setCommandListener(cmdListener)
 }
 
 

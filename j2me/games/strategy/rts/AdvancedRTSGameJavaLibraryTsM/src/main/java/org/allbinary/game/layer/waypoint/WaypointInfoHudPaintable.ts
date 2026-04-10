@@ -58,8 +58,8 @@ public constructor (){
         
         
 
-this.this.setName(rtsLayer!.getName())
-this.this.setAnimationInterface(rtsLayer!.getVerticleBuildAnimationInterface())
+this.setName(rtsLayer!.getName())
+this.setAnimationInterface(rtsLayer!.getVerticleBuildAnimationInterface())
 this.keyvalueDrawString!.update(rtsLayer!.getParentLayer()!.getName())
 }
 

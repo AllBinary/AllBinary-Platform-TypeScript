@@ -69,7 +69,7 @@ protected constructor (gameInputMappingArray: GameInputMapping[], basicColor: Ba
                             //For kotlin this is before the body of the constructor.
                     
 this.gameInputMappingArray= gameInputMappingArray
-this.this.update(NONE, NONE)
+this.update(NONE, NONE)
 }
 
 

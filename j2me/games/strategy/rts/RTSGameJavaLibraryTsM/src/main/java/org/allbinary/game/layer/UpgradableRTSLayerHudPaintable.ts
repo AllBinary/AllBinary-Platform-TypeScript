@@ -124,8 +124,8 @@ this.percentCompleteX2= this.imageX +CommonButtons.getInstance()!.STANDARD_BUTTO
         
 
 this.rtsLayerCompositePaintableLateInit!.update(rtsLayer)
-this.this.setAnimationInterface(rtsLayer!.getVerticleBuildAnimationInterface())
-this.this.setName(rtsLayer!.getName())
+this.setAnimationInterface(rtsLayer!.getVerticleBuildAnimationInterface())
+this.setName(rtsLayer!.getName())
 }
 
 

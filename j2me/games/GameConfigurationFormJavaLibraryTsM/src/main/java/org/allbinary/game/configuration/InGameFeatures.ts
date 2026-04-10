@@ -84,7 +84,7 @@ export class InGameFeatures extends Init {
                                 )
                         
                                     {
-                                    this.this.addToInGameMenu()
+                                    this.addToInGameMenu()
 
                                     }
                                 
@@ -98,7 +98,7 @@ export class InGameFeatures extends Init {
                         if(inGameExclusiveOrientationSensorVector!.size() == 0)
                         
                                     {
-                                    this.this.addToInGameMenu()
+                                    this.addToInGameMenu()
 
                                     }
                                 

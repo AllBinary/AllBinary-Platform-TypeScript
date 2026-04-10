@@ -44,8 +44,8 @@ public constructor (){
     public doStartTag(): number{
 
         try {
-            this.this.setName("Mini Basket View")
-this.this.setObjectFile("views.generic.basket.mini.ValidationView")
+            this.setName("Mini Basket View")
+this.setObjectFile("views.generic.basket.mini.ValidationView")
 
                         if(this.getCommand() != 
                                     null

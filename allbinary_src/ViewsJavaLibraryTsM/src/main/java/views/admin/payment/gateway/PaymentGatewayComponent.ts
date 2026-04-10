@@ -84,14 +84,14 @@ this.paymentGatewayInterface= paymentGatewayInterface
         
         
 
-this.this.addDomNodeInterface(domNodeInterface)
+this.addDomNodeInterface(domNodeInterface)
 }
 
 
     public view(): string{
 
         try {
-            this.this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces()
 
 
 

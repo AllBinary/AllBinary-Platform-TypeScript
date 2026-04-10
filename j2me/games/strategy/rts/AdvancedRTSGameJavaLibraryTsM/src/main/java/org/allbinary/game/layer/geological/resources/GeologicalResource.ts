@@ -32,12 +32,12 @@ public constructor (initTotal: number){
             super();
             var initTotal = initTotal
 this.initTotal= initTotal
-this.this.init()
+this.init()
 }
 
 
     public init(){
-this.this.setTotal(this.initTotal)
+this.setTotal(this.initTotal)
 }
 
 
@@ -52,12 +52,12 @@ var value = value
                         if(this.getTotal() +value > max)
                         
                                     {
-                                    this.this.setTotal(max)
+                                    this.setTotal(max)
 
                                     }
                                 
                         else {
-                            this.this.setTotal(this.getTotal() +value)
+                            this.setTotal(this.getTotal() +value)
 
                         }
                             
@@ -70,12 +70,12 @@ var value = value
                         if(this.getTotal() -value < 0)
                         
                                     {
-                                    this.this.setTotal(0)
+                                    this.setTotal(0)
 
                                     }
                                 
                         else {
-                            this.this.setTotal(this.getTotal() -value)
+                            this.setTotal(this.getTotal() -value)
 
                         }
                             

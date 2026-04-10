@@ -121,37 +121,37 @@ this.string= StringMaker().
 
 
     public releaseAndNotFired(){
-this.this.append(RELEASED_AND_NOT_FIRED)
+this.append(RELEASED_AND_NOT_FIRED)
 }
 
 
     public releaseAndFired(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.this.append(RELEASED_AND_FIRED, touchButtonInput)
+this.append(RELEASED_AND_FIRED, touchButtonInput)
 }
 
 
     public releaseAndFired2(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.this.append(RELEASED_AND_FIRED_2, touchButtonInput)
+this.append(RELEASED_AND_FIRED_2, touchButtonInput)
 }
 
 
     public releaseAndFiredAssociated(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.this.append(ASSOCIATED_RELEASED_AND_FIRED, touchButtonInput)
+this.append(ASSOCIATED_RELEASED_AND_FIRED, touchButtonInput)
 }
 
 
     public pressedAndFired(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.this.append(PRESSED_AND_FIRED, touchButtonInput)
+this.append(PRESSED_AND_FIRED, touchButtonInput)
 }
 
 
     public pressedAndNotFired(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.this.append(PRESSED_AND_NOT_FIRED, touchButtonInput)
+this.append(PRESSED_AND_NOT_FIRED, touchButtonInput)
 }
 
 

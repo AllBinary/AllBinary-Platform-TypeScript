@@ -117,7 +117,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setTableName(tableName)
+this.setTableName(tableName)
 }
 
 
@@ -232,7 +232,7 @@ vector.add(ZERO_STRING)
 vector.add(ZERO_STRING)
 vector.add(ZERO_STRING)
 vector.add(ZERO_STRING)
-this.this.insert(vector)
+this.insert(vector)
 }
 
 

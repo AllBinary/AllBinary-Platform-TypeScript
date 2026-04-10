@@ -69,7 +69,7 @@ this.logic= true
     public setXsl(value: string){
 var value = value
 this.xslFile= value
-this.this.setTemplateFile(this.xslFile)
+this.setTemplateFile(this.xslFile)
 }
 
 
@@ -202,7 +202,7 @@ logUtil!.put(stringBuffer!.toString(), this, "doStartTag")
 
                                     }
                                 
-this.this.setHelper()
+this.setHelper()
 
                         if(this.isValid())
                         

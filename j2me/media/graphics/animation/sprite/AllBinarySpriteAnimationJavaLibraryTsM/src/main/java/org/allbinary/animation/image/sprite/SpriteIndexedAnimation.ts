@@ -137,7 +137,7 @@ index < this.basicColorArray!.length; index++)
                         if(basicColor == this.basicColorArray[index])
                         
                                     {
-                                    this.this.setFrame(index)
+                                    this.setFrame(index)
 break;
 
                     
@@ -181,7 +181,7 @@ break;
     //var frame = frame
     //var x = x
     //var y = y
-this.this.setFrame(frame)
+this.setFrame(frame)
 this.sprite.setPosition(x, y)
 sprite.paint(graphics)
 }

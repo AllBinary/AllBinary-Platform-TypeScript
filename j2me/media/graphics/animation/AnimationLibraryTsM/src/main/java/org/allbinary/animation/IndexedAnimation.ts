@@ -60,7 +60,7 @@ this.animationBehaviorP= animationBehavior
 
     public reset(){
 this.animationBehaviorP!.reset()
-this.this.setFrame(0)
+this.setFrame(0)
 }
 
 
@@ -147,9 +147,9 @@ this.this.setFrame(0)
 
     public setState(indexedAnimation: IndexedAnimation){
     //var indexedAnimation = indexedAnimation
-this.this.setFrame(indexedAnimation!.getFrame())
-this.this.setDx(indexedAnimation!.getDx())
-this.this.setDy(indexedAnimation!.getDy())
+this.setFrame(indexedAnimation!.getFrame())
+this.setDx(indexedAnimation!.getDx())
+this.setDy(indexedAnimation!.getDy())
 }
 
 

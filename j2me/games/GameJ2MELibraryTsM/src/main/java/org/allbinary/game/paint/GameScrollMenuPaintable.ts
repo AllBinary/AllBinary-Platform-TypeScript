@@ -62,14 +62,14 @@ var basicColor = basicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setColor(basicColor)
+this.setColor(basicColor)
 ColorChangeEventHandler.getInstance()!.addListener(this)
 }
 
 
     public setState(state: number){
 var state = state
-this.this.setCurrentStatePaintable(this.getMainDemoStatePaintable())
+this.setCurrentStatePaintable(this.getMainDemoStatePaintable())
 }
 
 

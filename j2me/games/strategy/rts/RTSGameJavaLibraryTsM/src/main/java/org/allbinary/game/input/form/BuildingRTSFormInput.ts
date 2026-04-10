@@ -220,7 +220,7 @@ this.mapEdgeGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
     //var item = item
     //var itemIndex = itemIndex
 super.process(layerManager)
-this.this.buildFromMotionInput(rtsPlayerLayerInterface, layerManager, item, itemIndex)
+this.buildFromMotionInput(rtsPlayerLayerInterface, layerManager, item, itemIndex)
 }
 
 
@@ -379,7 +379,7 @@ rtsLayer!.geographicMapCellPositionAreaBase!.update(geographicMapInterface)
         
         
 
-this.this.attemptBuild(rtsPlayerLayerInterface, layerManager, rtsLayer, itemIndex)
+this.attemptBuild(rtsPlayerLayerInterface, layerManager, rtsLayer, itemIndex)
 
                                     }
                                 
@@ -545,7 +545,7 @@ logUtil!.put(stringBuffer!.toString(), this, "attemptBuild")
                                     layerInterface!.construct(rtsPlayerLayerInterface)
 newUnconstructedRTSLayerInterfaceArray[itemIndex]= CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER
 capital.removeMoney(cost)
-this.this.add(rtsPlayerLayerInterface, layerManager, layerInterface)
+this.add(rtsPlayerLayerInterface, layerManager, layerInterface)
 
 
 

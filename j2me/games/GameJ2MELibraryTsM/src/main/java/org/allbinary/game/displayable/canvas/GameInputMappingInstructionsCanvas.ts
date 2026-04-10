@@ -100,9 +100,9 @@ this.colorFillPaintable= ColorFillPaintableFactory.getInstance()!.getInstance(al
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-this.this.removeAllCommands()
-this.this.addCommand(GameInputMappingInstructionsCanvas.CLOSE)
-this.this.setCommandListener(cmdListener)
+this.removeAllCommands()
+this.addCommand(GameInputMappingInstructionsCanvas.CLOSE)
+this.setCommandListener(cmdListener)
 }
 
 

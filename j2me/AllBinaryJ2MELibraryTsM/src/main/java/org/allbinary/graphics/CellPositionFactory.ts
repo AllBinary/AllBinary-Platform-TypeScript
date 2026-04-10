@@ -111,7 +111,7 @@ column < columns; column++)
         
 row < rows; row++)
         {
-this.this.createInstance(column, row)
+this.createInstance(column, row)
 }
 
 }

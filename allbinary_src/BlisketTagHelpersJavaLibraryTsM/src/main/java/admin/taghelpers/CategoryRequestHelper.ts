@@ -126,7 +126,7 @@ var pageContext = pageContext
             this.request= pageContext!.getRequest() as HttpServletRequest
 this.pageContext= pageContext
 this.hashMap= hashMap
-this.this.getXmlData()
+this.getXmlData()
 } catch(e: Exception)
             {
 
@@ -222,7 +222,7 @@ xmlRequest= keyArray[index]! as String
 
                                     }
                                 
-this.this.setCategoryLoader(requestNode)
+this.setCategoryLoader(requestNode)
 
     var parentCategoryNode: Node = DomSearchHelper.getNode(categoryData!.PARENT, requestNode!.getChildNodes())!;
         

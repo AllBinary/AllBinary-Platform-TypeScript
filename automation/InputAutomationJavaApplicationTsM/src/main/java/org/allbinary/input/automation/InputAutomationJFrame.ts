@@ -239,8 +239,8 @@ url= this::class.getResource("/resources/allbinaryicon8bit.jpg")
         
         
 
-this.this.setIconImage(imageIcon!.getImage())
-this.this.init()
+this.setIconImage(imageIcon!.getImage())
+this.init()
 }
 
 
@@ -766,7 +766,7 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "onRemove", e)
         
 
 inputAutomationModuleConfigurations!.add(inputAutomationConfigurationChangeEvent!.getInputAutomationModuleConfiguration())
-this.this.init()
+this.init()
 } catch(e: Exception)
             {
 logUtil!.put(this.commonStrings!.EXCEPTION, this, "onAdd", e)
@@ -791,7 +791,7 @@ var inputAutomationConfigurationChangeEvent = inputAutomationConfigurationChange
         
 
 inputAutomationModuleConfigurations!.remove(inputAutomationConfigurationChangeEvent!.getInputAutomationModuleConfiguration())
-this.this.init()
+this.init()
 } catch(e: Exception)
             {
 logUtil!.put(this.commonStrings!.EXCEPTION, this, "onRemove", e)

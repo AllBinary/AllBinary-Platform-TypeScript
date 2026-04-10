@@ -52,7 +52,7 @@ public constructor (clientInformationFactory: ClientInformationFactory){
 
             super();
                 //var clientInformationFactory = clientInformationFactory
-this.this.preInit()
+this.preInit()
 this.abeClientInformation= clientInformationFactory!.getInstance()
 }
 

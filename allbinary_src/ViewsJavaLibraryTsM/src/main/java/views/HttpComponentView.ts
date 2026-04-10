@@ -98,7 +98,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                                     }
                                 
 this.domNodeInterfaceVector= Vector()
-this.this.setTransformDocumentInterface(TransformHttpRequestDocumentFactory.getInstance(this.getPageContext(), this.getWeblisketSession()))
+this.setTransformDocumentInterface(TransformHttpRequestDocumentFactory.getInstance(this.getPageContext(), this.getWeblisketSession()))
 }
 
 
@@ -242,7 +242,7 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
     public view(): string{
 
         try {
-            this.this.toXmlDoc()
+            this.toXmlDoc()
 
     var success: string = DomDocumentHelper.toString(this.getDoc())!;
         

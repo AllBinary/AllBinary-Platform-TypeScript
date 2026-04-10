@@ -49,7 +49,7 @@ public constructor (filterStringBasicArrayList: BasicArrayList){
 
             super();
             var filterStringBasicArrayList = filterStringBasicArrayList
-this.this.setFilterStringBasicArrayList(filterStringBasicArrayList)
+this.setFilterStringBasicArrayList(filterStringBasicArrayList)
 PreLogUtil.put("Filter BasicArrayList: " +this.getFilterStringBasicArrayList()!.toString(), this, this.commonStrings!.CONSTRUCTOR)
 }
 

@@ -52,7 +52,7 @@ var vectorAnimationFactoryInterface = vectorAnimationFactoryInterface
 this.vectorInfo= vectorInfo
 this.basicColor= basicColor
 this.vectorAnimationFactoryInterface= vectorAnimationFactoryInterface
-this.this.init()
+this.init()
 }
 
 

@@ -70,11 +70,11 @@ public constructor (bufferedImage: BufferedImage[], minX: Object, maxX: Object, 
 var minX = minX
 var maxX = maxX
 var y = y
-this.this.setRatios(new Array(bufferedImage!.length))
-this.this.setMinX(minX)
-this.this.setMaxX(maxX)
-this.this.setY(y)
-this.this.setSize(maxX -minX)
+this.setRatios(new Array(bufferedImage!.length))
+this.setMinX(minX)
+this.setMaxX(maxX)
+this.setY(y)
+this.setSize(maxX -minX)
 
 
 
@@ -97,12 +97,12 @@ this.getRatios()[index]= Double(nominator /this.getSize())
                         if(this.getRatios()[bufferedImage!.length -1]!.doubleValue() > 0.93F)
                         
                                     {
-                                    this.this.setGood(true)
+                                    this.setGood(true)
 
                                     }
                                 
                         else {
-                            this.this.setGood(false)
+                            this.setGood(false)
 
                         }
                             
@@ -110,12 +110,12 @@ this.getRatios()[index]= Double(nominator /this.getSize())
                         if(this.getRatios()[bufferedImage!.length -1]!.doubleValue() < this.getRatios()[0]!.doubleValue())
                         
                                     {
-                                    this.this.setDropping(true)
+                                    this.setDropping(true)
 
                                     }
                                 
                         else {
-                            this.this.setDropping(false)
+                            this.setDropping(false)
 
                         }
                             

@@ -85,7 +85,7 @@ super.removeAllListeners()
                         if(eventListenerInterface != NullEventListener.NULL_EVENT_LISTENER)
                         
                                     {
-                                    this.this.addListener(eventListenerInterface)
+                                    this.addListener(eventListenerInterface)
 
                                     }
                                 

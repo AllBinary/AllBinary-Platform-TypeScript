@@ -81,7 +81,7 @@ var inputToGameKeyMapping = inputToGameKeyMapping
                     
 this.inputToGameKeyMapping= inputToGameKeyMapping
 GameKeyCompleteMotionGestureInputEventFactory.getInstance()!.add(this)
-this.this.update()
+this.update()
 }
 
 
@@ -98,8 +98,8 @@ this.this.update()
     public update(){
 
         try {
-            this.this.setGameKey(inputToGameKeyMapping!.getInstance(this.getMotionGestureInput()!.getId()))
-this.this.setGameKeyEvent(this.gameKeyEventFactory!.getInstance(this, getGameKey()))
+            this.setGameKey(inputToGameKeyMapping!.getInstance(this.getMotionGestureInput()!.getId()))
+this.setGameKeyEvent(this.gameKeyEventFactory!.getInstance(this, getGameKey()))
 } catch(e: Exception)
             {
 

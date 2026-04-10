@@ -81,7 +81,7 @@ public constructor (originalImageArray: Image[], angleInfo: AngleInfo, animation
                             //For kotlin this is before the body of the constructor.
                     
 this.originalImageArray= originalImageArray
-this.this.setImageArray(imageModifierUtil!.getImageArray(originalImageArray))
+this.setImageArray(imageModifierUtil!.getImageArray(originalImageArray))
 this.currentImage= this.imageArray[this.circularIndexUtil!.getIndex()]!
 }
 

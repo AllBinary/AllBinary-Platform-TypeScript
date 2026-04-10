@@ -53,12 +53,12 @@ public constructor (capturedImageActionScriptOutputInterface: ImageActionScriptO
 logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 initComponents()
 this.capturedImageActionScriptOutputInterface= capturedImageActionScriptOutputInterface
-this.this.set()
+this.set()
 }
 
 
     set(){
-this.this.setImageTypeJlistModel()
+this.setImageTypeJlistModel()
 
     var imageTypes: ImageTypes = this.capturedImageActionScriptOutputInterface!.getImageTypes()!;
         
@@ -313,7 +313,7 @@ jLabel1!.setText("Capture Image:")
         
         
 
-this.this.setLayout(layout)
+this.setLayout(layout)
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addComponent(capturedImageActionJButton)))
 layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel1)!.addComponent(capturedImageActionJButton)))
 }
@@ -326,7 +326,7 @@ var evt = evt
 
     okJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.this.update()
+this.update()
 this.getCapturedImageActionJDialog()!.setVisible(false)
 }
 

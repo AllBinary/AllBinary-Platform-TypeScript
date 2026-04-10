@@ -138,7 +138,7 @@ list.add(SPECIAL_BUTTON_SIX)
 list.add(SPECIAL_BUTTON_SIX)
 list.add(SPECIAL_BUTTON_SEVEN_TESTING_ONLY)
 list.add(SPECIAL_BUTTON_EIGHT_TESTING_ONLY)
-this.this.updateAll(list, inputToGameKeyMapping)
+this.updateAll(list, inputToGameKeyMapping)
 CancelTouchButtonInputFactory.getInstance()
 
                                     }
@@ -148,7 +148,7 @@ CancelTouchButtonInputFactory.getInstance()
 
     public updateAll(inputToGameKeyMapping: InputToGameKeyMapping){
 var inputToGameKeyMapping = inputToGameKeyMapping
-this.this.updateAll(this.list, inputToGameKeyMapping)
+this.updateAll(this.list, inputToGameKeyMapping)
 }
 
 

@@ -201,7 +201,7 @@ vector.add(keyString.valueOf())
         
         
 
-this.this.setDelayBetweenKeys(Integer.valueOf(time)!.toInt())
+this.setDelayBetweenKeys(Integer.valueOf(time)!.toInt())
 
                                     }
                                 
@@ -214,7 +214,7 @@ this.this.setDelayBetweenKeys(Integer.valueOf(time)!.toInt())
         
         
 
-this.this.setPress(value.concatToString()
+this.setPress(value.concatToString()
 
                                     )
 
@@ -229,7 +229,7 @@ this.this.setPress(value.concatToString()
         
         
 
-this.this.setRelease(value.concatToString()
+this.setRelease(value.concatToString()
 
                                     )
 
@@ -245,7 +245,7 @@ this.this.setRelease(value.concatToString()
                             
 }
 
-this.this.setKeyArray(vector.toArray(new Array(vector.length)) as Array<Integer?>)
+this.setKeyArray(vector.toArray(new Array(vector.length)) as Array<Integer?>)
 
                                     }
                                 
@@ -257,12 +257,12 @@ this.this.setKeyArray(vector.toArray(new Array(vector.length)) as Array<Integer?
 
                         }
                             
-this.this.setAllowsChildren(false)
+this.setAllowsChildren(false)
 
                         if(!this.isPress() && !this.isRelease())
                         
                                     {
-                                    this.this.setNormal()
+                                    this.setNormal()
 
                                     }
                                 
@@ -282,12 +282,12 @@ public constructor ()
                         if(!this.isPress() && !this.isRelease())
                         
                                     {
-                                    this.this.setNormal()
+                                    this.setNormal()
 
                                     }
                                 
-this.this.setAllowsChildren(false)
-this.this.setTime(120)
+this.setAllowsChildren(false)
+this.setTime(120)
 this.keyboardActionScriptInputJPanel= KeyboardActionScriptInputJPanel(this)
 }
 
@@ -351,8 +351,8 @@ this.release= release
 
 
     public setNormal(){
-this.this.setPress(true)
-this.this.setRelease(true)
+this.setPress(true)
+this.setRelease(true)
 }
 
 
@@ -400,7 +400,7 @@ logUtil!.put(CommonLabels.getInstance()!.START +text, this, "setText")
         
         
 
-this.this.setKeyArray(integerArray)
+this.setKeyArray(integerArray)
 }
 
 

@@ -101,7 +101,7 @@ public constructor (commandListener: CommandListener, title: string, backgrounBa
                             //For kotlin this is before the body of the constructor.
                     
 logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-this.this.addConfiguration()
+this.addConfiguration()
 
     var gameFeatureFormUtil: GameFeatureFormUtil = GameFeatureFormUtil.getInstance()!;
         
@@ -109,16 +109,16 @@ this.this.addConfiguration()
 
 gameFeatureFormUtil!.addChoiceGroup(this, GameFeatureChoiceGroups.getExclusiveInstance()!.get(), Choice.EXCLUSIVE)
 gameFeatureFormUtil!.addChoiceGroup(this, GameFeatureChoiceGroups.getMultipleInstance()!.get(), Choice.MULTIPLE)
-this.this.initCommands(commandListener)
-this.this.setItemStateListener(GameFeatureItemStateListener(this))
-this.this.addTextFieldsIfSimulated()
+this.initCommands(commandListener)
+this.setItemStateListener(GameFeatureItemStateListener(this))
+this.addTextFieldsIfSimulated()
 }
 
 
     public close(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
 super.close()
-this.this.save(abeClientInformation)
+this.save(abeClientInformation)
 }
 
 
@@ -159,7 +159,7 @@ this.this.save(abeClientInformation)
                         if(list.contains(SensorFeatureFactory.getInstance()!.SIMULATED_ORIENTATION_SENSORS))
                         
                                     {
-                                    this.this.addTextFields()
+                                    this.addTextFields()
 
                                     }
                                 
@@ -206,7 +206,7 @@ index < size; index++)
         {
 gameConfigurationTextInput= hashtable.get(objectArray[index]! as Object) as GameConfigurationTextInput
 textField= TextField(gameConfigurationTextInput!.getLabel(), gameConfigurationTextInput!.getText(), 30, TextField.ANY)
-this.this.append(textField)
+this.append(textField)
 }
 
 }
@@ -265,7 +265,7 @@ logUtil!.put(stringMaker!.append(NAME)!.append(gameConfiguration!.toString())!.t
 gauge= GameConfigurationGauge(gameConfiguration)
 gauge.setDefaultCommand(GAUGE_CHANGE)
 gauge.setItemCommandListener(GameFeatureItemCommandListener(this))
-this.this.append(gauge)
+this.append(gauge)
 }
 
 }
@@ -278,10 +278,10 @@ this.this.append(gauge)
         
         
 
-this.this.removeAllCommands()
-this.this.addCommand(gameCommandsFactory!.CLOSE_OPTIONS)
-this.this.addCommand(gameCommandsFactory!.DEFAULT_OPTIONS)
-this.this.setCommandListener(cmdListener)
+this.removeAllCommands()
+this.addCommand(gameCommandsFactory!.CLOSE_OPTIONS)
+this.addCommand(gameCommandsFactory!.DEFAULT_OPTIONS)
+this.setCommandListener(cmdListener)
 }
 
 

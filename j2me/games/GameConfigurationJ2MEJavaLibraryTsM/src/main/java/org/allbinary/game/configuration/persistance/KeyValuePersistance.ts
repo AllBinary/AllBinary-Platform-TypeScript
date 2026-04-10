@@ -83,7 +83,7 @@ protected constructor (recordId: string)
             
     public loadAll(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-this.this.loadAll(abeClientInformation, 1)
+this.loadAll(abeClientInformation, 1)
 }
 
 

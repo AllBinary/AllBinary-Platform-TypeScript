@@ -69,7 +69,7 @@ export class InputAutomationRobotBundleActivator
 public constructor (){
 
             super();
-            this.this.init()
+            this.init()
 }
 
 
@@ -235,8 +235,8 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "removeRobots")
     public start(context: BundleContext){
 var context = context
 logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.START)
-this.this.addRobots(context)
-this.this.registerAsService(context)
+this.addRobots(context)
+this.registerAsService(context)
 }
 
 
@@ -245,7 +245,7 @@ this.this.registerAsService(context)
     public stop(context: BundleContext){
 var context = context
 logUtil!.put("Stop", this, this.commonStrings!.START)
-this.this.removeRobots(context)
+this.removeRobots(context)
 }
 
 

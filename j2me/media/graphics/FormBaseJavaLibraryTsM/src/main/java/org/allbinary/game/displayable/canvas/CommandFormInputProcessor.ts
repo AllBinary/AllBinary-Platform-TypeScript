@@ -307,7 +307,7 @@ key= gameKeyEvent!.getKey()
                                 
 }
 
-this.this.clear()
+this.clear()
 
                         if(size > 0 || motionInputsIndex >= 0)
                         
@@ -362,7 +362,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.PROCESS_INPU
         
         
 
-this.this.processMotionInput(motionGestureEvent)
+this.processMotionInput(motionGestureEvent)
 
                                     }
                                 
@@ -421,7 +421,7 @@ motionGestureEventList!.clear()
                         if(this.clickTimeHelper!.isTime())
                         
                                     {
-                                    this.this.processCommand()
+                                    this.processCommand()
 
                                     }
                                 
@@ -452,7 +452,7 @@ motionGestureEventList!.clear()
                         
                                     {
                                     logUtil!.put("Double Press", this, gameInputStrings!.PROCESS_MOTION_INPUT)
-this.this.processCommand()
+this.processCommand()
 
                                     }
                                 

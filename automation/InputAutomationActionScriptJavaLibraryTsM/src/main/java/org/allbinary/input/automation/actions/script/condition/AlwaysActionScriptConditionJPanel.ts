@@ -44,7 +44,7 @@ public constructor (alwaysActionScriptConditionInterface: AlwaysActionScriptCond
 logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 initComponents()
 this.alwaysActionScriptConditionInterface= alwaysActionScriptConditionInterface
-this.this.set()
+this.set()
 }
 
 
@@ -154,7 +154,7 @@ jLabel1!.setText("Always:")
         
         
 
-this.this.setLayout(layout)
+this.setLayout(layout)
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)!.addComponent(alwaysActionJButton)))
 layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel1)!.addComponent(alwaysActionJButton)))
 }
@@ -162,7 +162,7 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
     okJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.this.update()
+this.update()
 this.getAlwaysActionJDialog()!.setVisible(false)
 }
 

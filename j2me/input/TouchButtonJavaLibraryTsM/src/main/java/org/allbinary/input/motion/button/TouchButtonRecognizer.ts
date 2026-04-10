@@ -239,7 +239,7 @@ var deviceId = deviceId
                         
                                     {
                                     lastPressedTouchButtonInput= BasicTouchInputFactory.getInstance()!.NONE
-this.this.processRelease(touchButtonInput, deviceId)
+this.processRelease(touchButtonInput, deviceId)
 
 
 
@@ -282,7 +282,7 @@ point= rectangle.getPoint()
                         
                                     {
                                     touchButtonInput= touchButton!.getTouchButtonInput()
-this.this.processRelease(touchButtonInput, deviceId)
+this.processRelease(touchButtonInput, deviceId)
 
 
 

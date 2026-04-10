@@ -44,9 +44,9 @@ public constructor (ram: Integer, projectile: Integer, drops: Integer){
             var ram = ram
 var projectile = projectile
 var drops = drops
-this.this.setRam(ram)
-this.this.setProjectile(projectile)
-this.this.setDrops(drops)
+this.setRam(ram)
+this.setProjectile(projectile)
+this.setDrops(drops)
 }
 
 

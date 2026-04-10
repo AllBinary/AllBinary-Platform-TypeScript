@@ -27,8 +27,8 @@ export class WorkFlowTag extends TableTag {
 public constructor (){
 
             super();
-            this.this.setTagHelperFactory(WorkFlowHelperFactory())
-this.this.setTagRequestHelperFactory(WorkFlowHelperFactory())
+            this.setTagHelperFactory(WorkFlowHelperFactory())
+this.setTagRequestHelperFactory(WorkFlowHelperFactory())
 }
 
 

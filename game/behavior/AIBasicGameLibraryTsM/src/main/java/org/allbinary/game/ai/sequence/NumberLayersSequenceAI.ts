@@ -64,7 +64,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                         if(allBinaryLayerManager!.getSize() < this.numberOfLayersLeft)
                         
                                     {
-                                    this.this.setIndex(1)
+                                    this.setIndex(1)
 
                                     }
                                 

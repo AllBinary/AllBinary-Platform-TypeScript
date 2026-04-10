@@ -175,7 +175,7 @@ this.pickupBehavior= PickupBehavior.NULL_PICKUP_BEHAVIOR
                 //@Throws(Error::class)
             
     public initPosition(){
-this.this.setPosition(this.initX, this.initY, this.initZ)
+this.setPosition(this.initX, this.initY, this.initZ)
 }
 
 
@@ -573,7 +573,7 @@ stringBuffer!.appendint(initZ)
         
         
 
-this.this.toString(stringBuffer)
+this.toString(stringBuffer)
 
 
 

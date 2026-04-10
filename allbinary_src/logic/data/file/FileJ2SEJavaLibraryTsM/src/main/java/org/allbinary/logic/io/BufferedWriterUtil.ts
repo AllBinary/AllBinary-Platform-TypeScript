@@ -68,7 +68,7 @@ export class BufferedWriterUtil
 
                                     }
                                 
-this.this.write(abFile, data)
+this.write(abFile, data)
 }
 
 
@@ -85,7 +85,7 @@ this.this.write(abFile, data)
 
                                     }
                                 
-this.this.write(abFile, data)
+this.write(abFile, data)
 }
 
 

@@ -32,7 +32,7 @@ export class ImageColorRangeResults
 public constructor (){
 
             super();
-            this.this.setColorRangeInterface(ColorRange() as ColorRangeInterface)
+            this.setColorRangeInterface(ColorRange() as ColorRangeInterface)
 }
 
 

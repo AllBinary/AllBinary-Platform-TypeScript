@@ -194,21 +194,21 @@ this.DEFAULT_CHILD_NAME_LIST.add(HighScoresCanvas.NAME)
 
                                     }
                                 
-this.this.setDisplayable(displayable)
+this.setDisplayable(displayable)
 }
 
 
     public setDisplayable(displayable: Displayable){
     //var displayable = displayable
 this.displayable= displayable
-this.this.setOpenGlReadydisplayable(displayable)
+this.setOpenGlReadydisplayable(displayable)
 }
 
 
     public setOpenGlReadydisplayable(openGlReadydisplayable: Displayable){
     //var openGlReadydisplayable = openGlReadydisplayable
 this.openGlReadydisplayable= openGlReadydisplayable
-this.this.update()
+this.update()
 }
 
 
@@ -231,7 +231,7 @@ this.runnable= runnable
                         if(this.usedRunnable != this.runnable)
                         
                                     {
-                                    this.this.update()
+                                    this.update()
 
                                     }
                                 
@@ -247,7 +247,7 @@ this.runnable= runnable
     public clearRunnable(){
 PreLogUtil.put(StringMaker().
                             append(RUNNABLE)!.append(this.stringUtil!.toString(NullRunnable.getInstance()))!.toString(), this, CLEAR_RUNNABLE)
-this.this.setUsedRunnable(NullWaitGameRunnable.getInstance())
+this.setUsedRunnable(NullWaitGameRunnable.getInstance())
 }
 
 
@@ -280,7 +280,7 @@ stringMaker!.append(this.stringUtil!.toString(openGlReadydisplayable))
                         
                                     {
                                     PreLogUtil.put(stringMaker!.append(commonSeps!.SPACE)!.append(SWTUtil.SWT)!.append(commonSeps!.SPACE)!.append(RUNNABLE)!.append(this.stringUtil!.toString(NullRunnable.getInstance()))!.toString(), this, commonStrings!.UPDATE)
-this.this.setUsedRunnable(NullWaitGameRunnable.getInstance())
+this.setUsedRunnable(NullWaitGameRunnable.getInstance())
 
                                     }
                                 
@@ -289,7 +289,7 @@ this.this.setUsedRunnable(NullWaitGameRunnable.getInstance())
                         
                                     {
                                     PreLogUtil.put(stringMaker!.append(commonSeps!.SPACE)!.append(GraphicsStrings.getInstance()!.HTML)!.append(commonSeps!.SPACE)!.append(RUNNABLE)!.append(this.stringUtil!.toString(runnable))!.toString(), this, commonStrings!.UPDATE)
-this.this.setUsedRunnable(runnable)
+this.setUsedRunnable(runnable)
 
                                     }
                                 
@@ -298,13 +298,13 @@ this.this.setUsedRunnable(runnable)
                         
                                     {
                                     PreLogUtil.put(stringMaker!.append(commonSeps!.SPACE)!.append(OpenGLFeatureFactory.getInstance()!.OPENGL.toString())!.append(commonSeps!.SPACE)!.append(RUNNABLE)!.append(this.stringUtil!.toString(runnable))!.toString(), this, commonStrings!.UPDATE)
-this.this.setUsedRunnable(runnable)
+this.setUsedRunnable(runnable)
 
                                     }
                                 
                         else {
                             PreLogUtil.put(stringMaker!.append(RUNNABLE)!.append(this.stringUtil!.toString(NullRunnable.getInstance()))!.toString(), this, commonStrings!.UPDATE)
-this.this.setUsedRunnable(NullWaitGameRunnable.getInstance())
+this.setUsedRunnable(NullWaitGameRunnable.getInstance())
 
                         }
                             

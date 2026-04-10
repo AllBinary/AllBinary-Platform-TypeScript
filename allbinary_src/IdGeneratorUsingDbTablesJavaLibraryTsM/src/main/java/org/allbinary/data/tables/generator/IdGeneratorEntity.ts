@@ -155,7 +155,7 @@ var value = value
 
 map.put(NAME, name)
 map.put(VALUE, value.toString())
-this.this.update(map)
+this.update(map)
 }
 
 

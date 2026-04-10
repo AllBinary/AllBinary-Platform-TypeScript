@@ -160,7 +160,7 @@ propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.SETSHIPPINGTYPE) == 0)
                         
                                     {
-                                    this.this.setShippingType()
+                                    this.setShippingType()
 
                                     }
                                 

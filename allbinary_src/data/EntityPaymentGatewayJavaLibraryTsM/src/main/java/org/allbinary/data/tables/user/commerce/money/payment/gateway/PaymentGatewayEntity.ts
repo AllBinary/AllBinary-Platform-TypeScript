@@ -96,7 +96,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setTableName(tableName)
+this.setTableName(tableName)
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         

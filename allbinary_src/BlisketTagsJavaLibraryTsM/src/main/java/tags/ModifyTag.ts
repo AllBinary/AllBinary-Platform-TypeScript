@@ -275,7 +275,7 @@ logUtil!.put(stringBuffer!.toString(), this, "doStartTag()")
                                 )
                         
                                     {
-                                    this.this.setHelper()
+                                    this.setHelper()
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         

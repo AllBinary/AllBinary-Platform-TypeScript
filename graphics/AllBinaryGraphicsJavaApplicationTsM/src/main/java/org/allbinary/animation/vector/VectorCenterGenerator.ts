@@ -157,7 +157,7 @@ index < size; index++)
                         if(item.getName() == LinesGraphicItem.getStaticName())
                         
                                     {
-                                    this.this.getInstance(item.getPointsInterface()!.getPoints())
+                                    this.getInstance(item.getPointsInterface()!.getPoints())
 
                                     }
                                 
@@ -215,7 +215,7 @@ dy= middle -currentMiddleY
             
     public transform(hashMap: HashMap<Any, Any>){
 var hashMap = hashMap
-this.this.calculate(hashMap)
+this.calculate(hashMap)
 logUtil!.put(StringMaker().
                             append(" dx: ")!.appendint(dx)!.append(" dy: ")!.appendint(dy)!.toString(), this, commonStrings!.GET_INSTANCE)
 

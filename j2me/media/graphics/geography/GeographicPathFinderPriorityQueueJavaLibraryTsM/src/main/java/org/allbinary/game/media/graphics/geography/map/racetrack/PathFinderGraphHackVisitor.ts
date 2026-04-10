@@ -49,9 +49,9 @@ var maxPathWeight = maxPathWeight
 var graph = graph
 var startPathFindingNodeList = startPathFindingNodeList
 var endPathFindingNodeList = endPathFindingNodeList
-this.this.fixStart(graph, startPathFindingNodeList)
-this.this.fixEnd(graph, endPathFindingNodeList)
-this.this.fixOverPassEdges(graph)
+this.fixStart(graph, startPathFindingNodeList)
+this.fixEnd(graph, endPathFindingNodeList)
+this.fixOverPassEdges(graph)
 }
 
 

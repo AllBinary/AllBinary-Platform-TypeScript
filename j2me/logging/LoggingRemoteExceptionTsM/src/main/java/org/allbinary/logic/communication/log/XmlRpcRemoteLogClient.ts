@@ -89,7 +89,7 @@ serverUrl= serverUrl!.substring(0, index +1) +"logservssl.php"
         
         
 
-this.this.setClient(xmlRpcClient)
+this.setClient(xmlRpcClient)
 xmlRpcClient!.setBasicAuthentication(
                             null, 
                             null)

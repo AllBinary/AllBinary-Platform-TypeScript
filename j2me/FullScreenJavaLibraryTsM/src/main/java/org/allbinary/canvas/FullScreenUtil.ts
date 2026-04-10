@@ -64,7 +64,7 @@ fullScreenInterface.
                                 )
                         
                                     {
-                                    this.this.init(fullScreenInterface)
+                                    this.init(fullScreenInterface)
 
                                     }
                                 

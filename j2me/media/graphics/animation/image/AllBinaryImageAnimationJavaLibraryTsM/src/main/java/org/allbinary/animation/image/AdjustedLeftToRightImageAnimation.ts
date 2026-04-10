@@ -48,7 +48,7 @@ public constructor (image: Image, sequenceArray: IntArray, dx: number, dy: numbe
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.init(dx, dy)
+this.init(dx, dy)
 }
 
 

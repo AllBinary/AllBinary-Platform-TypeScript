@@ -134,7 +134,7 @@ this.dxArray= dxArray
 this.dyArray= dyArray
 this.y= y
 this.widthP= width
-this.this.reset()
+this.reset()
 }
 
 
@@ -158,7 +158,7 @@ this.this.reset()
                         if(totalTimeElapsed > indexedAnimationBehavior!.frameDelayTime)
                         
                                     {
-                                    this.this.previousFrame()
+                                    this.previousFrame()
 this.lastFrameStartTime= currentTime
 
                                     }
@@ -260,12 +260,12 @@ this.animationInterfaceArray[index]!.setFrame(frame)
 
 
     public setLastFrame(){
-this.this.setFrame(this.getSize() -1)
+this.setFrame(this.getSize() -1)
 }
 
 
     public reset(){
-this.this.setLastFrame()
+this.setLastFrame()
 
     var indexedAnimationBehavior: IndexedAnimationBehavior = (this.getAnimationBehavior() as IndexedAnimationBehavior);
         
@@ -297,8 +297,8 @@ this.animationInterfaceArray[index]!.previousFrame()
     //var frame = frame
     //var x = x
     //var y = y
-this.this.setFrame(frame)
-this.this.paint(graphics, x, y)
+this.setFrame(frame)
+this.paint(graphics, x, y)
 }
 
 

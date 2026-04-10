@@ -137,7 +137,7 @@ inputPersistance= InputPersistance(name)
     //var abeClientInformation = abeClientInformation
 this.getInputMapping()!.removeAll()
 this.getInputMapping()!.add(this.getDefault())
-this.this.save(abeClientInformation)
+this.save(abeClientInformation)
 }
 
 
@@ -146,7 +146,7 @@ this.this.save(abeClientInformation)
     public update(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
 this.inputPersistance!.deleteAll(abeClientInformation)
-this.this.save(abeClientInformation)
+this.save(abeClientInformation)
 }
 
 
@@ -185,7 +185,7 @@ logUtil!.put(commonStrings!.START, this, commonStrings!.INIT)
             {
 PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
 inputPersistance!.deleteRecoreStore(abeClientInformation)
-this.this.setDefault(abeClientInformation)
+this.setDefault(abeClientInformation)
 inputPersistance!.loadAll(abeClientInformation)
 }
 

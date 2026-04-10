@@ -175,7 +175,7 @@ taskQueue= BasicArrayList()
                         if(!this.isAlive)
                         
                                     {
-                                    this.this.init()
+                                    this.init()
 
                                     }
                                 
@@ -253,7 +253,7 @@ this.taskQueue!.add(index, task)
                         if(!isAlive)
                         
                                     {
-                                    this.this.init()
+                                    this.init()
 
                                     }
                                 

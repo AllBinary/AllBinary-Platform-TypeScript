@@ -73,7 +73,7 @@ var key = key
 
     public init(anyType: any = {}){
 var anyType = anyType
-this.this.setSource(anyType)
+this.setSource(anyType)
 }
 
 

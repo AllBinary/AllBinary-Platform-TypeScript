@@ -67,7 +67,7 @@ export class TextNotificationUtil
     public fireError(message: string){
 var message = message
 PrimaryPlayerQueueFactory.getInstance()!.add(ErrorSound.getInstance())
-this.this.fire(message)
+this.fire(message)
 }
 
 
@@ -76,7 +76,7 @@ this.this.fire(message)
     public fireNew(message: string){
 var message = message
 PrimaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance())
-this.this.fire(message)
+this.fire(message)
 }
 
 
@@ -85,7 +85,7 @@ this.this.fire(message)
     public fireSuccess(message: string){
 var message = message
 PrimaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance())
-this.this.fire(message)
+this.fire(message)
 }
 
 

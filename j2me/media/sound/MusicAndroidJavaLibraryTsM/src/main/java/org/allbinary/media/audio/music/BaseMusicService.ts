@@ -187,7 +187,7 @@ logUtil!.put(CommonLabels.getInstance()!.COMMAND_LABEL +command, this, commonSta
                         if(command == 1)
                         
                                     {
-                                    this.this.pause()
+                                    this.pause()
 
 
 
@@ -201,7 +201,7 @@ logUtil!.put(CommonLabels.getInstance()!.COMMAND_LABEL +command, this, commonSta
                         if(command == 2)
                         
                                     {
-                                    this.this.resume()
+                                    this.resume()
 
 
 
@@ -286,7 +286,7 @@ thread.start()
 
                                     }
                                 
-this.this.start()
+this.start()
 
                                     }
                                 

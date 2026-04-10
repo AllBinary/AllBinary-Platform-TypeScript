@@ -81,7 +81,7 @@ logUtil!.put(stringBuffer!.toString(), this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
-this.this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING)
+this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING)
 }
 
 public constructor (propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext)                        
@@ -103,7 +103,7 @@ var pageContext = pageContext
 
                                     }
                                 
-this.this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING)
+this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING)
 }
 
 

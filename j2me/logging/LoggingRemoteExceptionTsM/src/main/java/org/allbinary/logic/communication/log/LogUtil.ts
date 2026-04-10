@@ -125,7 +125,7 @@ var log = log
         
         
 
-this.this.put(specialMessage, anyType, functionName, exception)
+this.put(specialMessage, anyType, functionName, exception)
 }
 
 

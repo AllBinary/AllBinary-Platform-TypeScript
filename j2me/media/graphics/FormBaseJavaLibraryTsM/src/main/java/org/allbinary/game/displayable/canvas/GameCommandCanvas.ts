@@ -246,14 +246,14 @@ this.foregroundBasicColor= foregroundBasicColor
 this.backgroundBasicColor= backgroundBasicColor
 this.foregroundColor= foregroundBasicColor!.toInt()
 this.backgroundColor= backgroundBasicColor!.toInt()
-this.this.initCommands(cmdListener)
+this.initCommands(cmdListener)
 
                         if(cmdListener != NullCommandListener.NULL_COMMAND_LISTENER)
                         
                                     {
                                     
         try {
-            this.this.initMenu()
+            this.initMenu()
 repaintProcessor!.process()
 } catch(e: Exception)
             {
@@ -286,7 +286,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
         
 
 this.menuForm!.init(rectangle, FormTypeFactory.getInstance()!.VERTICAL_CENTER_FORM)
-this.this.update()
+this.update()
 } catch(e: Exception)
             {
 logUtil!.put(commonStrings!.EXCEPTION, this, "onResize", e)
@@ -297,9 +297,9 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "onResize", e)
 
     public initCommands(cmdListener: CommandListener){
     //var cmdListener = cmdListener
-this.this.removeAllCommands()
-this.this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.this.setCommandListener(cmdListener)
+this.removeAllCommands()
+this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS)
+this.setCommandListener(cmdListener)
 }
 
 
@@ -316,7 +316,7 @@ this.menuForm= form
                         if(form != ScrollSelectionFormNoneFactory.getInstance())
                         
                                     {
-                                    this.this.setMenuInputProcessor(ImmediateCommandFormInputProcessor(BasicArrayList(),  -1, this, form))
+                                    this.setMenuInputProcessor(ImmediateCommandFormInputProcessor(BasicArrayList(),  -1, this, form))
 this.menuPaintable= FormPaintable(form)
 
                                     }
@@ -414,19 +414,19 @@ this.repaintProcessor!.process()
 
     public keyPressed(keyCode: number){
     //var keyCode = keyCode
-this.this.keyPressed(keyCode, 0)
+this.keyPressed(keyCode, 0)
 }
 
 
     public keyReleased(keyCode: number){
     //var keyCode = keyCode
-this.this.keyReleased(keyCode, 0)
+this.keyReleased(keyCode, 0)
 }
 
 
     public keyRepeated(keyCode: number){
     //var keyCode = keyCode
-this.this.keyRepeated(keyCode, 0)
+this.keyRepeated(keyCode, 0)
 }
 
 
@@ -435,14 +435,14 @@ this.this.keyRepeated(keyCode, 0)
     //var deviceId = deviceId
 logUtil!.put(StringMaker().
                             append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, gameInputStrings!.KEY_PRESSED)
-this.this.addGameKeyEvent(keyCode, 0, false)
+this.addGameKeyEvent(keyCode, 0, false)
 }
 
 
     public keyReleased(keyCode: number, deviceId: number){
     //var keyCode = keyCode
     //var deviceId = deviceId
-this.this.removeGameKeyEvent(keyCode, deviceId, false)
+this.removeGameKeyEvent(keyCode, deviceId, false)
 }
 
 
@@ -453,7 +453,7 @@ this.this.removeGameKeyEvent(keyCode, deviceId, false)
                         if(this.isSingleKeyRepeatableProcessing)
                         
                                     {
-                                    this.this.addGameKeyEvent(keyCode, deviceId, true)
+                                    this.addGameKeyEvent(keyCode, deviceId, true)
 
                                     }
                                 

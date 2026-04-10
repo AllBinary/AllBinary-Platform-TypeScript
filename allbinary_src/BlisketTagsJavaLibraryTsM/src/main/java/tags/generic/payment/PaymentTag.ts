@@ -47,8 +47,8 @@ public constructor (){
     public doStartTag(): number{
 
         try {
-            this.this.setName("Basic Payment View")
-this.this.setObjectFile("views.generic.payment.ValidationView")
+            this.setName("Basic Payment View")
+this.setObjectFile("views.generic.payment.ValidationView")
 
                         if(this.getCommand() != 
                                     null

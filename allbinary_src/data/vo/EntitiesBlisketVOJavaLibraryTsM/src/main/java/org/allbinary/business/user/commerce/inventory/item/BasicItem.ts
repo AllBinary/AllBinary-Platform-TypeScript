@@ -164,7 +164,7 @@ this.lastModified= itemHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as St
 this.price= Money(itemHashMap!.get(BasicItemData.PRICE) as String)
 this.comment= itemHashMap!.get(BasicItemData.COMMENT) as String
 this.customs= itemHashMap!.get(BasicItemData.CUSTOMS) as String
-this.this.setDownloads(itemHashMap!.get(BasicItemData.DOWNLOADS) as String)
+this.setDownloads(itemHashMap!.get(BasicItemData.DOWNLOADS) as String)
 this.groups= itemHashMap!.get(BasicItemData.GROUPS) as String
 this.options= itemHashMap!.get(BasicItemData.OPTIONS) as String
 this.permissions= itemHashMap!.get(BasicItemData.PERMISSIONS) as String
@@ -212,7 +212,7 @@ this.lastModified= EMPTY
 this.price= Money()
 this.comment= EMPTY
 this.customs= EMPTY
-this.this.setDownloads(EMPTY)
+this.setDownloads(EMPTY)
 this.groups= EMPTY
 this.options= EMPTY
 this.permissions= EMPTY
@@ -374,7 +374,7 @@ this.downloads= value
                         if(downloadInteger!.toInt() != 0)
                         
                                     {
-                                    this.this.setDownloadable(true)
+                                    this.setDownloadable(true)
 
                                     }
                                 

@@ -399,7 +399,7 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT)
 
                                     }
                                 
-this.this.savePage(file, productListingPages[index]!)
+this.savePage(file, productListingPages[index]!)
 }
 
 }
@@ -557,13 +557,13 @@ index < size; index++)
                         if(keywordData!.length > 1)
                         
                                     {
-                                    this.this.create(keywordData, keywordFilenameHashMap, vector, staticPath)
+                                    this.create(keywordData, keywordFilenameHashMap, vector, staticPath)
 
                                     }
                                 
 }
 
-this.this.addStaticPageInfoToDatabase(storeFront, keywordFilenameHashMap)
+this.addStaticPageInfoToDatabase(storeFront, keywordFilenameHashMap)
 stringBuffer!.delete(0, stringBuffer!.length())
 stringBuffer!.append("Static Files Generated Successfully For ")
 stringBuffer!.append(storeFront!.getName())

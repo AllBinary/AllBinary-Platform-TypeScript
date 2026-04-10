@@ -103,11 +103,11 @@ var foregroundBasicColor = foregroundBasicColor
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-this.this.removeAllCommands()
-this.this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.this.addCommand(GameCommandsFactory.getInstance()!.TOGGLE_KEYBOARD)
-this.this.addCommand(SUBMIT_COMMAND)
-this.this.setCommandListener(cmdListener)
+this.removeAllCommands()
+this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS)
+this.addCommand(GameCommandsFactory.getInstance()!.TOGGLE_KEYBOARD)
+this.addCommand(SUBMIT_COMMAND)
+this.setCommandListener(cmdListener)
 }
 
 
@@ -127,7 +127,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "open", e)
 
 super.open()
 this.paintable= NullPaintable.getInstance()
-this.this.repaint()
+this.repaint()
 }
 
 
@@ -146,7 +146,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "open", e)
 }
 
 this.paintable= this.pleaseWaitPaintable
-this.this.repaint()
+this.repaint()
 super.close()
 }
 

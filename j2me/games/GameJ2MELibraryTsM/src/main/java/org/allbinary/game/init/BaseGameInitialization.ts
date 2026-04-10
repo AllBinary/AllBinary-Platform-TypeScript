@@ -164,9 +164,9 @@ ChangedGameFeatureListener.getInstance()!.remove(InputFeatureFactory.getInstance
 
                                     }
                                 
-this.this.setInitialized(true)
-this.this.initKey(getPortion())
-this.this.initKeyMapping(abeClientInformation, getPortion())
+this.setInitialized(true)
+this.initKey(getPortion())
+this.initKeyMapping(abeClientInformation, getPortion())
 GameKeyEventFactory.getInstance()!.init()
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
@@ -204,7 +204,7 @@ var level = level
                         if(this.resourceAnimationChange() && level == resourceLoadingLevelFactory!.LOAD_EARLY.getLevel())
                         
                                     {
-                                    this.this.clearResources()
+                                    this.clearResources()
 this.resourceInitializationArray[this.EARLY_CHANGABLE_RESOURCES]!.init()
 
                                     }
@@ -217,7 +217,7 @@ this.resourceInitializationArray[this.EARLY_CHANGABLE_RESOURCES]!.init()
                         if(this.allLoaded)
                         
                                     {
-                                    this.this.clearResources()
+                                    this.clearResources()
 
                                     }
                                 

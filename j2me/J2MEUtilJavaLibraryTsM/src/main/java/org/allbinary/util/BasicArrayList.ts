@@ -100,7 +100,7 @@ stringBuffer!.appendint(currentIndex)
                                     }
                                 
 ensureCapacity(currentIndex +1)
-System.
+
 
 
         for (let i = ; i < ; i++) {
@@ -205,7 +205,7 @@ index < currentIndex; index++)
                         if(numMoved > 0)
                         
                                     {
-                                    System.
+                                    
 
 
         for (let i = ; i < numMoved; i++) {
@@ -256,7 +256,7 @@ index < currentIndex; index++)
                         if(numMoved > 0)
                         
                                     {
-                                    System.
+                                    
 
 
         for (let i = ; i < numMoved; i++) {
@@ -392,7 +392,7 @@ objectArray[currentIndex++]= list.objectArray[index]!
         
 
 ensureCapacity(currentIndex +numSize)
-System.
+
 
 
         for (let i = 0; i < numSize; i++) {
@@ -721,7 +721,7 @@ currentIndex= 0
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return arrayUtil!.copyOf(this.objectArray, currentIndex, objectArray!::class);
     
-System.
+
 
 
         for (let i = 0; i < currentIndex; i++) {

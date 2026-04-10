@@ -94,7 +94,7 @@ export class SelectionHudPaintable extends InitUpdatePaintable {
 protected constructor (){
 
             super();
-            this.this.update()
+            this.update()
 this.primitiveLongUtil= PrimitiveLongUtil(10000)
 }
 
@@ -114,7 +114,7 @@ this.x= CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +touchButtonLocationHe
 this.textX= this.getX() +4
 this.width= displayInfoSingleton!.getLastWidth() -this.getX() *2
 this.imageX= this.getWidth() +touchButtonLocationHelper!.getColumnsRemainderHalf() -10
-this.this.setHeight(CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +myFont!.DEFAULT_CHAR_HEIGHT)
+this.setHeight(CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +myFont!.DEFAULT_CHAR_HEIGHT)
 }
 
 
@@ -184,7 +184,7 @@ this.name= name
     public setBasicColorP(basicColor: BasicColor){
 var basicColor = basicColor
 this.basicColor= basicColor
-this.this.setColor(basicColor!.toInt())
+this.setColor(basicColor!.toInt())
 }
 
 

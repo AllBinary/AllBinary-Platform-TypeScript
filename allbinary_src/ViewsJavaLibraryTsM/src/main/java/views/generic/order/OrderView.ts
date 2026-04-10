@@ -81,7 +81,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 this.request= this.getPageContext()!.getRequest() as HttpServletRequest
-this.this.getFormData()
+this.getFormData()
 }
 
 
@@ -152,7 +152,7 @@ node.appendChild(orderHistoryNode)
 
 
     public addDomNodeInterfaces(){
-this.this.addDomNodeInterface(this as DomNodeInterface)
+this.addDomNodeInterface(this as DomNodeInterface)
 }
 
 
@@ -161,7 +161,7 @@ this.this.addDomNodeInterface(this as DomNodeInterface)
     public view(): string{
 
         try {
-            this.this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces()
 
 
 

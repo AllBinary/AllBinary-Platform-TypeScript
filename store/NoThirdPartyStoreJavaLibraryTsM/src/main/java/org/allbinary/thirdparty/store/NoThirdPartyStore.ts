@@ -41,7 +41,7 @@ export class NoThirdPartyStore extends ThirdPartyStore {
 
     public authorize(clientInformationInterface: AbeClientInformationInterface){
 var clientInformationInterface = clientInformationInterface
-this.this.setAuthorized(true)
+this.setAuthorized(true)
 }
 
 

@@ -89,7 +89,7 @@ var value = value
                         if(value < 10)
                         
                                     {
-                                    this.this.setCurrentTotalDigits(1)
+                                    this.setCurrentTotalDigits(1)
 
 
 
@@ -103,7 +103,7 @@ var value = value
                         if(value > maxValue)
                         
                                     {
-                                    this.this.setCurrentTotalDigits(3)
+                                    this.setCurrentTotalDigits(3)
 
 
 
@@ -159,7 +159,7 @@ lastValue += digit *div
 div= div /10
 }
 
-this.this.setCurrentTotalDigits(index)
+this.setCurrentTotalDigits(index)
 
 
 

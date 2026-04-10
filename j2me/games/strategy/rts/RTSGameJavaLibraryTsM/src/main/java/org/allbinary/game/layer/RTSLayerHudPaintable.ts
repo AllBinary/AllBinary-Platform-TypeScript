@@ -74,7 +74,7 @@ private constructor (){
         
         
 
-this.this.setName(this.getRtsLayer()!.getName())
+this.setName(this.getRtsLayer()!.getName())
 
     var partInterface: BasicWeaponPart = this.getRtsLayer()!.getPartInterfaceArray()[0]! as BasicWeaponPart;
         

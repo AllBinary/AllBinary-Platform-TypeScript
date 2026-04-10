@@ -178,7 +178,7 @@ private constructor (abeClientInformation: AbeClientInformationInterface, gameIn
 this.abeClientInformation= abeClientInformation
 this.gameInfo= gameInfo
 this.recordComparatorInterface= recordComparatorInterface
-this.this.load()
+this.load()
 }
 
 
@@ -211,7 +211,7 @@ this.this.load()
                         
                                     {
                                     logUtil!.put("Removing Lowest Score", this, commonStrings!.ADD)
-this.this.removeLowestHighScore()
+this.removeLowestHighScore()
 
                                     }
                                 
@@ -226,7 +226,7 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
         
         
 
-this.this.load()
+this.load()
 } catch(e: RecordStoreException)
             {
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
@@ -396,7 +396,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e)
 
         try {
             recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)
-this.this.setList(BasicArrayList())
+this.setList(BasicArrayList())
 
     var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;
         

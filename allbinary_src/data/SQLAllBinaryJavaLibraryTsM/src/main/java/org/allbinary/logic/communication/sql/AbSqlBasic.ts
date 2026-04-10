@@ -219,7 +219,7 @@ this.conn=
     //var databaseName = databaseName
 
         try {
-            this.this.executeSQLStatement(sqlStrings!.CREATE_DATABASE +databaseName)
+            this.executeSQLStatement(sqlStrings!.CREATE_DATABASE +databaseName)
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -277,7 +277,7 @@ this.conn=
                         
                                     {
                                     connectAttemptCounter++
-this.this.initialize()
+this.initialize()
 
                                     }
                                 
@@ -332,7 +332,7 @@ jdbcDriverClass!.newInstance()
 
                             }
                     
-this.this.createConnection()
+this.createConnection()
 } catch(se: Exception)
             {
 

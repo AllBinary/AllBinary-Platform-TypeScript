@@ -166,7 +166,7 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 
             super();
             var databaseConnectionInfoInterface = databaseConnectionInfoInterface
-this.this.setDatabaseConnectionInfoInterface(databaseConnectionInfoInterface)
+this.setDatabaseConnectionInfoInterface(databaseConnectionInfoInterface)
 }
 
 
@@ -194,7 +194,7 @@ var tableData = tableData
 stringBuffer!.append("Creating Table: ")
 stringBuffer!.append(tableData)
 PreLogUtil.put(stringBuffer!.toString(), INIT_SQL, "createTable()")
-this.this.executeSQLStatement(tableData)
+this.executeSQLStatement(tableData)
 
 
 
@@ -230,7 +230,7 @@ this.this.executeSQLStatement(tableData)
 
 
         try {
-            this.this.executeSQLStatement(sqlStatement)
+            this.executeSQLStatement(sqlStatement)
 
 
 
@@ -518,7 +518,7 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
         
         
 
-this.this.executeSQLStatement(sqlStatement)
+this.executeSQLStatement(sqlStatement)
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -590,7 +590,7 @@ stringBuffer!.append(INSERT_END)
         
         
 
-this.this.executeSQLStatement(sqlStatement)
+this.executeSQLStatement(sqlStatement)
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -784,7 +784,7 @@ Class.forName(jdbcDriver)!.newInstance()
 
                                     }
                                 
-this.this.createConnection()
+this.createConnection()
 } catch(se: Exception)
             {
 

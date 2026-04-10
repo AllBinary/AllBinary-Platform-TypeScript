@@ -137,7 +137,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EV
 
         try {
             eventListenerInterface= this.eventListenerInterfaceList!.get(index) as EventListenerInterface
-this.this.process(eventObject, eventListenerInterface)
+this.process(eventObject, eventListenerInterface)
 } catch(e: Exception)
             {
 logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
@@ -197,7 +197,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EV
 
         try {
             eventListenerInterface= this.eventListenerInterfaceList!.get(index) as EventListenerInterface
-this.this.process(eventObject, eventListenerInterface)
+this.process(eventObject, eventListenerInterface)
 } catch(e: Exception)
             {
 logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)

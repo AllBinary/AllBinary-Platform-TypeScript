@@ -86,7 +86,7 @@ var context = context
         try {
             logUtil!.put(this.commonStrings!.START, this, "start")
 AllBinaryPreloaderActivator.context= context
-this.this.registerAsService()
+this.registerAsService()
 } catch(e: Exception)
             {
 logUtil!.put(this.commonStrings!.EXCEPTION, this, "start", e)

@@ -54,7 +54,7 @@ public constructor (basicColor: BasicColor, animationBehaviorFactory: AnimationB
                 //var basicColor = basicColor
     //var animationBehaviorFactory = animationBehaviorFactory
 this.animationBehaviorFactory= animationBehaviorFactory
-this.this.setBasicColorP(basicColor)
+this.setBasicColorP(basicColor)
 }
 
 

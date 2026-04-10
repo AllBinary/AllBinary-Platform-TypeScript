@@ -73,7 +73,7 @@ var remoteMethod = remoteMethod
                             //For kotlin this is before the body of the constructor.
                     
 this.page= page
-this.this.setServer(0)
+this.setServer(0)
 }
 
 
@@ -115,7 +115,7 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET)
         
         
 
-this.this.setClient(xmlRpcClient)
+this.setClient(xmlRpcClient)
 xmlRpcClient!.setBasicAuthentication(
                             null, 
                             null)

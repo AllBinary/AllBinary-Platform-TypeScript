@@ -106,7 +106,7 @@ logUtil!.put(stringBuffer!.toString(), this, "Constructor(HashMap, HashMap , Pag
 
                                     }
                                 
-this.this.setStoreName(databaseHashMap!.get(StoreFrontData.getInstance()!.NAME) as String)
+this.setStoreName(databaseHashMap!.get(StoreFrontData.getInstance()!.NAME) as String)
 }
 
 public constructor (storeFrontInterface: StoreFrontInterface, propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext)                        
@@ -129,7 +129,7 @@ var pageContext = pageContext
 
                                     }
                                 
-this.this.setStoreName(storeFrontInterface!.getName())
+this.setStoreName(storeFrontInterface!.getName())
 }
 
 

@@ -84,7 +84,7 @@ public constructor (){
 
             super();
             logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-this.this.clear()
+this.clear()
 }
 
 
@@ -107,7 +107,7 @@ platformToGameKeyMapping[index]= gameKeyFactory!.NONE
 
     removeAll(){
 super.removeAll()
-this.this.clear()
+this.clear()
 }
 
 
@@ -132,7 +132,7 @@ index >= 0; index--)
                         if(input != gameKeyFactory!.NONE)
                         
                                     {
-                                    this.this.addAll(input, inputToGameKeyMapping!.getMappedInput(input))
+                                    this.addAll(input, inputToGameKeyMapping!.getMappedInput(input))
 
                                     }
                                 
@@ -159,7 +159,7 @@ index >= 0; index--)
         
         
 
-this.this.add(input, mappedToInput)
+this.add(input, mappedToInput)
 }
 
 }
@@ -169,7 +169,7 @@ this.this.add(input, mappedToInput)
 var input = input
 var mappedToInput = mappedToInput
 super.add(input, mappedToInput)
-this.this.set(input, mappedToInput)
+this.set(input, mappedToInput)
 }
 
 
@@ -179,7 +179,7 @@ var mappedToInput = mappedToInput
 logUtil!.put(StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(input))!.append(" == ")!.append(StringUtil.getInstance()!.toString(mappedToInput))!.toString(), this, "InputToGameKeyMapping::remove")
 super.remove(input, mappedToInput)
-this.this.set(input, gameKeyFactory!.NONE)
+this.set(input, gameKeyFactory!.NONE)
 }
 
 
@@ -411,7 +411,7 @@ this.negativePlatformToGameKeyMapping= negativePlatformToGameKeyMapping
         
 --index >= 0; )
         {
-this.this.init(canvas, mappedGameKeys[index]!)
+this.init(canvas, mappedGameKeys[index]!)
 }
 
 } catch(t: Throwable)

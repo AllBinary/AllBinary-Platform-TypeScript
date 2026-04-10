@@ -110,7 +110,7 @@ var evt = evt
 
                                 }
                             )
-this.this.setSize(150, 100)
+this.setSize(150, 100)
 this.getContentPane()!.setLayout(GridLayout(5, 2))
 this.getContentPane()!.add(JLabel("Please enter"))
 this.getContentPane()!.add(JLabel(" the size."))
@@ -121,7 +121,7 @@ this.getContentPane()!.add(xSizeJTextField)
 this.getContentPane()!.add(JLabel("Y: "))
 this.getContentPane()!.add(ySizeJTextField)
 this.getContentPane()!.add(submitButton)
-this.this.show()
+this.show()
 } catch(e: Exception)
             {
 
@@ -166,7 +166,7 @@ this.this.show()
 
 workAreaJPanel!.setLayout(GridLayout(1, 1))
 parent.add(workAreaJPanel as WorkAreaJPanelInterface)
-this.this.dispose()
+this.dispose()
 } catch(e: Exception)
             {
 

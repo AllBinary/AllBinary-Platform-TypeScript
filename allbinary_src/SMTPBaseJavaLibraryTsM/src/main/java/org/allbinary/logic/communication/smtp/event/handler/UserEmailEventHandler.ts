@@ -59,7 +59,7 @@ var userEmailEventNameData = userEmailEventNameData
 var emailInfo = emailInfo
 this.userEmailEventNameData= userEmailEventNameData
 this.emailInfo= emailInfo
-this.this.fireEmailEvent()
+this.fireEmailEvent()
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -86,7 +86,7 @@ index < size; index++)
         
         
 
-this.this.addListener(userEmailEventListenerInterface)
+this.addListener(userEmailEventListenerInterface)
 }
 
 }

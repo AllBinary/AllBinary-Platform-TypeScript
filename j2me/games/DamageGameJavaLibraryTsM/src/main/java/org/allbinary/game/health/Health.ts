@@ -61,8 +61,8 @@ public constructor (maxHealth: number){
 
             super();
             var maxHealth = maxHealth
-this.this.setMaxHealth(maxHealth)
-this.this.setHealth(maxHealth)
+this.setMaxHealth(maxHealth)
+this.setHealth(maxHealth)
 }
 
 
@@ -77,12 +77,12 @@ var ahealth = ahealth
                         if(newHealth > this.getMaxHealth())
                         
                                     {
-                                    this.this.setHealth(this.getMaxHealth())
+                                    this.setHealth(this.getMaxHealth())
 
                                     }
                                 
                         else {
-                            this.this.setHealth(newHealth)
+                            this.setHealth(newHealth)
 
                         }
                             
@@ -90,7 +90,7 @@ var ahealth = ahealth
 
 
     public heal(){
-this.this.setHealth(this.getMaxHealth())
+this.setHealth(this.getMaxHealth())
 }
 
 
@@ -151,7 +151,7 @@ ForcedLogUtil.log(stringBuffer!.toString(), this)
         
         
 
-this.this.setHealth(health)
+this.setHealth(health)
 }
 
 

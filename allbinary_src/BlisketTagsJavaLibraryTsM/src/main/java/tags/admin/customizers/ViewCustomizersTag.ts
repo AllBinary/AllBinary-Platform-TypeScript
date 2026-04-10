@@ -41,8 +41,8 @@ public constructor (){
     public doStartTag(): number{
 
         try {
-            this.this.setName("Add Validation Customizers View")
-this.this.setObjectFile("views.admin.customizers.CustomizersValidationView")
+            this.setName("Add Validation Customizers View")
+this.setObjectFile("views.admin.customizers.CustomizersValidationView")
 
 
 

@@ -66,7 +66,7 @@ export class GameConfigurationUtil
     public change(gameOptionsForm: GameOptionsForm, gauge: GameConfigurationGauge){
 var gameOptionsForm = gameOptionsForm
 var gauge = gauge
-this.this.update(gauge)
+this.update(gauge)
 
     var gameConfigurationSingleton: GameConfigurationSingleton = GameConfigurationSingleton.getInstance()!;
         
@@ -77,7 +77,7 @@ this.this.update(gauge)
         
         
 
-this.this.updateChallange(gameOptionsForm, gameConfiguration)
+this.updateChallange(gameOptionsForm, gameConfiguration)
 }
 
 

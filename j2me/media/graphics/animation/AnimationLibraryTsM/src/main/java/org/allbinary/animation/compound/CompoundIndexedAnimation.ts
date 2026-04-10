@@ -170,7 +170,7 @@ this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.paintThreed(gr
         
 
 this.circularIndexUtil!.next()
-this.this.setFrame(frame)
+this.setFrame(frame)
 }
 
 
@@ -181,7 +181,7 @@ this.this.setFrame(frame)
         
 
 this.circularIndexUtil!.previous()
-this.this.setFrame(frame)
+this.setFrame(frame)
 }
 
 
@@ -193,7 +193,7 @@ this.this.setFrame(frame)
         
 
 this.circularIndexUtil!.setIndex(index)
-this.this.setFrame(frame)
+this.setFrame(frame)
 }
 
 

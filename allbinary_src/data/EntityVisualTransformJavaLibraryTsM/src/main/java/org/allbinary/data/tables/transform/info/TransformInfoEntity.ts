@@ -106,7 +106,7 @@ var transformInfoFactoryInterface = transformInfoFactoryInterface
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setTableName(tableName)
+this.setTableName(tableName)
 this.transformInfoObjectConfigGeneratorFactoryInterface= transformInfoObjectConfigGeneratorFactoryInterface
 this.transformInfoObjectConfigAndManipulatorFactoryInterface= transformInfoObjectConfigAndManipulatorFactoryInterface
 this.transformInfoFactoryInterface= transformInfoFactoryInterface

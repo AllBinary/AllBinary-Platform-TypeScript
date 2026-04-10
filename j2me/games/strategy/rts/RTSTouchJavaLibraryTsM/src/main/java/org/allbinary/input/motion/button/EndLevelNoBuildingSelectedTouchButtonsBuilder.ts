@@ -48,7 +48,7 @@ list.addAll(BasicTouchButtonsBuilder().
                             getList())
 list.addAll(BuildingScrollTouchButtonsBuilder().
                             getList())
-this.this.add(list)
+this.add(list)
 
 
 

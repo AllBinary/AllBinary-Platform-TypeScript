@@ -53,7 +53,7 @@ public constructor (originalImage: Image, image: Image, angleInfo: AngleInfo, to
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.init(dx, dy)
+this.init(dx, dy)
 }
 
 

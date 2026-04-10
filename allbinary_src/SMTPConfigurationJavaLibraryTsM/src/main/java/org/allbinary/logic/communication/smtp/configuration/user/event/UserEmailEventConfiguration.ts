@@ -44,8 +44,8 @@ export class UserEmailEventConfiguration
 public constructor (){
 
             super();
-            this.this.setName(StringUtil.getInstance()!.EMPTY_STRING)
-this.this.setEventListenerClassPath(StringUtil.getInstance()!.EMPTY_STRING)
+            this.setName(StringUtil.getInstance()!.EMPTY_STRING)
+this.setEventListenerClassPath(StringUtil.getInstance()!.EMPTY_STRING)
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
@@ -60,8 +60,8 @@ public constructor (hashMap: HashMap<Any, Any>){
 
             super();
             var hashMap = hashMap
-this.this.setName(hashMap!.get(UserEmailEventConfigurationData.NAME) as String)
-this.this.setEventListenerClassPath(hashMap!.get(UserEmailEventConfigurationData.LISTENER_CLASSPATH) as String)
+this.setName(hashMap!.get(UserEmailEventConfigurationData.NAME) as String)
+this.setEventListenerClassPath(hashMap!.get(UserEmailEventConfigurationData.LISTENER_CLASSPATH) as String)
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         

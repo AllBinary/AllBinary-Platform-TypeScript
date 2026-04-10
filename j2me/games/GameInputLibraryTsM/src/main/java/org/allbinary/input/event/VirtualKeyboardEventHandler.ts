@@ -85,7 +85,7 @@ virtualKeyboardEventListenerInterface!.onVirtualKeyboardEvent(eventObject as Vir
 
         try {
             Thread.sleep(120)
-this.this.fireEvent(this.SHOW_EVENT)
+this.fireEvent(this.SHOW_EVENT)
 } catch(e: Exception)
             {
 logUtil!.put(commonStrings!.EXCEPTION, this, "open", e)
@@ -98,7 +98,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "open", e)
 
         try {
             Thread.sleep(120)
-this.this.fireEvent(this.HIDE_EVENT)
+this.fireEvent(this.HIDE_EVENT)
 } catch(e: Exception)
             {
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e)

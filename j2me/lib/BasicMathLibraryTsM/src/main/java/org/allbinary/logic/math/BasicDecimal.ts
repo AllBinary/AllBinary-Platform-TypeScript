@@ -34,14 +34,14 @@ public constructor (bigDecimal: BasicDecimal){
             super();
             var bigDecimal = bigDecimal
 this.units= bigDecimal!.getUnscaled()
-this.this.updateScaled()
+this.updateScaled()
 }
 
 public constructor (){
 
             super();
             this.units= 0
-this.this.updateScaled()
+this.updateScaled()
 }
 
 public constructor (units: number){
@@ -49,112 +49,112 @@ public constructor (units: number){
             super();
             var units = units
 this.units= units
-this.this.updateScaled()
+this.updateScaled()
 }
 
 
     public set(value: number){
 var value = value
 this.units= value.toLong()
-this.this.updateScaled()
+this.updateScaled()
 }
 
 
     public set(value: number){
 var value = value
 this.units= value
-this.this.updateScaled()
+this.updateScaled()
 }
 
 
     public set(bigDecimal: BasicDecimal){
 var bigDecimal = bigDecimal
 this.units= bigDecimal!.getUnscaled()
-this.this.updateScaled()
+this.updateScaled()
 }
 
 
     public add(value: number){
 var value = value
 this.units= this.units +value
-this.this.updateScaled()
+this.updateScaled()
 }
 
 
     public add(value: number){
 var value = value
 this.units= this.units +value
-this.this.updateScaled()
+this.updateScaled()
 }
 
 
     public add(bigDecimal: BasicDecimal){
 var bigDecimal = bigDecimal
 this.units= this.units +bigDecimal!.getUnscaled()
-this.this.updateScaled()
+this.updateScaled()
 }
 
 
     public subtract(value: number){
 var value = value
 this.units= this.units -value
-this.this.updateScaled()
+this.updateScaled()
 }
 
 
     public subtract(value: number){
 var value = value
 this.units= this.units -value
-this.this.updateScaled()
+this.updateScaled()
 }
 
 
     public subtract(bigDecimal: BasicDecimal){
 var bigDecimal = bigDecimal
 this.units= this.units -bigDecimal!.getUnscaled()
-this.this.updateScaled()
+this.updateScaled()
 }
 
 
     public multiply(value: number){
 var value = value
 this.units= this.units *value
-this.this.updateScaled()
+this.updateScaled()
 }
 
 
     public multiply(value: number){
 var value = value
 this.units= this.units *value
-this.this.updateScaled()
+this.updateScaled()
 }
 
 
     public multiply(bigDecimal: BasicDecimal){
 var bigDecimal = bigDecimal
 this.units= this.units *bigDecimal!.getUnscaled()
-this.this.updateScaled()
+this.updateScaled()
 }
 
 
     public divide(value: number){
 var value = value
 this.units= this.units /value
-this.this.updateScaled()
+this.updateScaled()
 }
 
 
     public divide(value: number){
 var value = value
 this.units= this.units /value
-this.this.updateScaled()
+this.updateScaled()
 }
 
 
     public divide(bigDecimal: BasicDecimal){
 var bigDecimal = bigDecimal
 this.units= this.units /bigDecimal!.getUnscaled()
-this.this.updateScaled()
+this.updateScaled()
 }
 
 

@@ -132,7 +132,7 @@ this.currentIndex= 0
 this.stationaryVisibleCellPositions= Array(rows) { ShortArray(columns) }
 this.visibleCellPositions= Array(rows) { ShortArray(columns) }
 this.currentlyVisibleCellPositions= Array(rows) { ShortArray(columns) }
-this.this.setSimpleTiledLayer(simpleTiledLayer)
+this.setSimpleTiledLayer(simpleTiledLayer)
 }
 
 
@@ -154,7 +154,7 @@ this.paintSimpleTiledLayer= this.simpleTiledLayer
             
     public onMoveEvent(scrollMapEvent: ScrollMapEvent){
 var scrollMapEvent = scrollMapEvent
-this.this.move(scrollMapEvent!.getDx(), scrollMapEvent!.getDy())
+this.move(scrollMapEvent!.getDx(), scrollMapEvent!.getDy())
 }
 
 

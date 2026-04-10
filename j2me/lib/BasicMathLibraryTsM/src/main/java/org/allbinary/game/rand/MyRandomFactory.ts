@@ -265,7 +265,7 @@ var range = range
 
     public shuffle(intArray: IntArray){
     //var intArray = intArray
-this.this.shuffle(intArray, intArray!.length *7)
+this.shuffle(intArray, intArray!.length *7)
 }
 
 
@@ -310,7 +310,7 @@ intArray[randomIndex2]= value
     public shuffle(intArray: IntArray, intArray2: IntArray){
     //var intArray = intArray
     //var intArray2 = intArray2
-this.this.shuffle(intArray, intArray2, intArray!.length *7)
+this.shuffle(intArray, intArray2, intArray!.length *7)
 }
 
 

@@ -58,14 +58,14 @@ export class UserEmailEventsConfiguration
 public constructor (){
 
             super();
-            this.this.init()
+            this.init()
 }
 
 public constructor (hashMap: HashMap<Any, Any>){
 
             super();
             var hashMap = hashMap
-this.this.init()
+this.init()
 }
 
 

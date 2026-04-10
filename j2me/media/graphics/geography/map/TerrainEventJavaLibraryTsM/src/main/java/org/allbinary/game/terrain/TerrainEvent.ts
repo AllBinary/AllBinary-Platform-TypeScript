@@ -55,7 +55,7 @@ public constructor (basicTerrainInfo: BasicTerrainInfo)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setBasicTerrainInfo(basicTerrainInfo)
+this.setBasicTerrainInfo(basicTerrainInfo)
 }
 
 

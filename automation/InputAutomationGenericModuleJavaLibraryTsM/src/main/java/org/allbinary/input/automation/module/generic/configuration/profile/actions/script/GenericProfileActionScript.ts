@@ -92,7 +92,7 @@ var node = node
                             //For kotlin this is before the body of the constructor.
                     
 this.genericProfileActionJPanel= genericProfileActionJPanel
-this.this.setProfileActionConditionInterfaceVector(Vector())
+this.setProfileActionConditionInterfaceVector(Vector())
 
     var actionScriptNode: Node = DomSearchHelper.getNode(GenericProfileActionData.SCRIPT, node.getChildNodes())!;
         
@@ -128,7 +128,7 @@ index < nodeList!.getLength(); index++)
                         if(actionConditionNode!.getNodeType() == Node.ELEMENT_NODE)
                         
                                     {
-                                    this.this.addCondition(ProfileActionScriptConditionFactory.getInstance(actionConditionNode))
+                                    this.addCondition(ProfileActionScriptConditionFactory.getInstance(actionConditionNode))
 
                                     }
                                 
@@ -152,7 +152,7 @@ public constructor (genericProfileActionJPanel: GenericProfileActionJPanel){
             super();
             var genericProfileActionJPanel = genericProfileActionJPanel
 this.genericProfileActionJPanel= genericProfileActionJPanel
-this.this.setProfileActionConditionInterfaceVector(Vector())
+this.setProfileActionConditionInterfaceVector(Vector())
 }
 
 
@@ -160,7 +160,7 @@ this.this.setProfileActionConditionInterfaceVector(Vector())
 var profileActionScriptNodeInterface = profileActionScriptNodeInterface
 logUtil!.put(this.commonStrings!.START, this, "addCondition")
 this.getProfileActionConditionInterfaceVector()!.add(profileActionScriptNodeInterface)
-this.this.add(profileActionScriptNodeInterface)
+this.add(profileActionScriptNodeInterface)
 }
 
 
@@ -168,7 +168,7 @@ this.this.add(profileActionScriptNodeInterface)
 var profileActionScriptNodeInterface = profileActionScriptNodeInterface
 logUtil!.put(this.commonStrings!.START, this, "removeCondition")
 this.getProfileActionConditionInterfaceVector()!.remove(profileActionScriptNodeInterface)
-this.this.remove(profileActionScriptNodeInterface)
+this.remove(profileActionScriptNodeInterface)
 }
 
 

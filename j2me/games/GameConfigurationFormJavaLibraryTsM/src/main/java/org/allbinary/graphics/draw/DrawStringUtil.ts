@@ -302,7 +302,7 @@ currentLength--
 
                                     }
                                 
-this.this.drawCenterString(graphics, string, offset, currentLength, x, y +((index +extraLines++) *charHeight))
+this.drawCenterString(graphics, string, offset, currentLength, x, y +((index +extraLines++) *charHeight))
 offset= offset +currentLength
 currentLength= linePortion
 }

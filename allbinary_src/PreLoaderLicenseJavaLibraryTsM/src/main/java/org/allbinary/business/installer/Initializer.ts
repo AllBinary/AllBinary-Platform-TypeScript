@@ -210,14 +210,14 @@ stringBuffer!.append(values[0]!)
 logUtil!.put(stringBuffer!.toString(), this, "getFormData()")
 }
 
-this.this.getFormData(hashMap)
+this.getFormData(hashMap)
 }
 
 public constructor (initHashMap: HashMap<Any, Any>){
 
             super();
             var initHashMap = initHashMap
-this.this.getFormData(initHashMap)
+this.getFormData(initHashMap)
 }
 
 

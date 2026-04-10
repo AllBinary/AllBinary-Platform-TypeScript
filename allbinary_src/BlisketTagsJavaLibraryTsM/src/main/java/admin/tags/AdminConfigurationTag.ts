@@ -30,8 +30,8 @@ export class AdminConfigurationTag extends TableTag {
 public constructor (){
 
             super();
-            this.this.setTagHelperFactory(AdminConfigurationHelperFactory())
-this.this.setTagRequestHelperFactory(AdminConfigurationRequestHelperFactory())
+            this.setTagHelperFactory(AdminConfigurationHelperFactory())
+this.setTagRequestHelperFactory(AdminConfigurationRequestHelperFactory())
 }
 
 

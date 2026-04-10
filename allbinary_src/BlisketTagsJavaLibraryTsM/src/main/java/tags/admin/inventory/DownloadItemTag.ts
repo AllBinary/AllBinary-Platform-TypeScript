@@ -65,8 +65,8 @@ public constructor (){
                         if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
                         
                                     {
-                                    this.this.setName("Add Inventory Item Validation View")
-this.this.setObjectFile("views.admin.inventory.download.AddFileValidationView")
+                                    this.setName("Add Inventory Item Validation View")
+this.setObjectFile("views.admin.inventory.download.AddFileValidationView")
 
                                     }
                                 
@@ -74,8 +74,8 @@ this.this.setObjectFile("views.admin.inventory.download.AddFileValidationView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.DELETE) == 0)
                         
                                     {
-                                    this.this.setName("Delete Inventory Item Validation View")
-this.this.setObjectFile("views.admin.inventory.download.DeleteFileValidationView")
+                                    this.setName("Delete Inventory Item Validation View")
+this.setObjectFile("views.admin.inventory.download.DeleteFileValidationView")
 
                                     }
                                 
@@ -83,8 +83,8 @@ this.this.setObjectFile("views.admin.inventory.download.DeleteFileValidationView
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.EDIT) == 0)
                         
                                     {
-                                    this.this.setName("Edit Inventory Item Validation View")
-this.this.setObjectFile("views.admin.inventory.download.EditValidationView")
+                                    this.setName("Edit Inventory Item Validation View")
+this.setObjectFile("views.admin.inventory.download.EditValidationView")
 
                                     }
                                 
@@ -92,8 +92,8 @@ this.this.setObjectFile("views.admin.inventory.download.EditValidationView")
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.NEW) == 0)
                         
                                     {
-                                    this.this.setName("New Inventory Item Validation View")
-this.this.setObjectFile("views.admin.inventory.download.NewValidationView")
+                                    this.setName("New Inventory Item Validation View")
+this.setObjectFile("views.admin.inventory.download.NewValidationView")
 
                                     }
                                 
@@ -101,8 +101,8 @@ this.this.setObjectFile("views.admin.inventory.download.NewValidationView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.UPDATE) == 0)
                         
                                     {
-                                    this.this.setName("Update Inventory Item Validation View")
-this.this.setObjectFile("views.admin.inventory.download.UpdateFileValidationView")
+                                    this.setName("Update Inventory Item Validation View")
+this.setObjectFile("views.admin.inventory.download.UpdateFileValidationView")
 
                                     }
                                 

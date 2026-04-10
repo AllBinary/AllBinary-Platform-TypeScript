@@ -95,7 +95,7 @@ export class GameInitializationUtil
                         if(features.isFeature(mainFeatureFactory!.LOAD_ALL))
                         
                                     {
-                                    this.this.initGame(abeClientInformation, canvas, gameInitializationInterfaceFactoryInterface)
+                                    this.initGame(abeClientInformation, canvas, gameInitializationInterfaceFactoryInterface)
 
                                     }
                                 

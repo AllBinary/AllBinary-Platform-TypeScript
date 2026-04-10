@@ -111,7 +111,7 @@ index < nodeList!.getLength(); index++)
         
         
 
-this.this.setTimeDelayHelper(TimeDelayHelper(Integer(Integer.valueOf(interval))))
+this.setTimeDelayHelper(TimeDelayHelper(Integer(Integer.valueOf(interval))))
 
                                     }
                                 
@@ -136,7 +136,7 @@ this.this.setTimeDelayHelper(TimeDelayHelper(Integer(Integer.valueOf(interval)))
 
                         }
                             
-this.this.init()
+this.init()
 }
 
 public constructor ()                        
@@ -148,8 +148,8 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setTimeDelayHelper(TimeDelayHelper(0))
-this.this.init()
+this.setTimeDelayHelper(TimeDelayHelper(0))
+this.init()
 }
 
 

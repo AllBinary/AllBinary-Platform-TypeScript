@@ -67,7 +67,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.getFormData()
+this.getFormData()
 }
 
 

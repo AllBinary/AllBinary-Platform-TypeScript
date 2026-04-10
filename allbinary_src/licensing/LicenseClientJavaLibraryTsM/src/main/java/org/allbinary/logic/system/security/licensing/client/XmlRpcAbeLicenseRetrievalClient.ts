@@ -112,7 +112,7 @@ logUtil!.put(CommonLabels.getInstance()!.START_LABEL +stringBuffer!.toString(), 
         
         
 
-this.this.setClient(xmlRpcClient)
+this.setClient(xmlRpcClient)
 xmlRpcClient!.setBasicAuthentication(
                             null, 
                             null)

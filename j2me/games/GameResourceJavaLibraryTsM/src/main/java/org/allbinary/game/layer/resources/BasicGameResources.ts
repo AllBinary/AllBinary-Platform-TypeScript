@@ -74,7 +74,7 @@ var SIZE = SIZE
                         if(scale > 1 && scale -1 < SIZE.length)
                         
                                     {
-                                    this.this.init(ROOT, SIZE[scale -1]!)
+                                    this.init(ROOT, SIZE[scale -1]!)
 
                                     }
                                 

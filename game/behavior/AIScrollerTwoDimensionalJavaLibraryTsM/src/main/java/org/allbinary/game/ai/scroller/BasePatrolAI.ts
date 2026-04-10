@@ -96,8 +96,8 @@ this.currentDistance= maxDistance!.toInt()
 
 
     update(){
-this.this.updateTotalDistance()
-this.this.changeDirectionIfReachedPacingAreaMax()
+this.updateTotalDistance()
+this.changeDirectionIfReachedPacingAreaMax()
 }
 
 
@@ -131,7 +131,7 @@ xTotalDistance += velocityProperties!.getVelocityXBasicDecimalP()!.getScaled()
                         if(totalDistance > this.currentDistance)
                         
                                     {
-                                    this.this.nextDirection()
+                                    this.nextDirection()
 
                                     }
                                 

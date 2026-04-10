@@ -76,7 +76,7 @@ public constructor (viewPosition: ViewPosition)
 var x = x
 var y = y
 var z = z
-this.this.setPosition(x +5, y +5, z)
+this.setPosition(x +5, y +5, z)
 this.viewPositionEventHandler!.addListener(this as AllBinaryLayer)
 SecondaryPlayerQueueFactory.getInstance()!.add(DropWeaponSound.getInstance())
 }

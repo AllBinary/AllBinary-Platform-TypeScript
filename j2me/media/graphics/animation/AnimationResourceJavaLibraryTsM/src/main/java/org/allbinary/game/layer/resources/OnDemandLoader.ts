@@ -99,7 +99,7 @@ this.resourceAnimationInterfaceFactoryInterfaceFactory= resourceAnimationInterfa
 
                                     }
                                 
-this.this.initAll(imageCache, loadingString)
+this.initAll(imageCache, loadingString)
 
                                     }
                                 
@@ -112,7 +112,7 @@ this.this.initAll(imageCache, loadingString)
         
         
 
-this.this.initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface, imageCache, level, loadingString)
+this.initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface, imageCache, level, loadingString)
 
                                     }
                                 

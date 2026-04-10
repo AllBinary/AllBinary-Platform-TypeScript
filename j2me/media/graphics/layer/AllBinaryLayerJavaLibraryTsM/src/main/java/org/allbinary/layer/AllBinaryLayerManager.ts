@@ -103,7 +103,7 @@ index < size; index++)
                         if(!this.contains(layerInterface))
                         
                                     {
-                                    this.this.appendProcessors(layerInterface)
+                                    this.appendProcessors(layerInterface)
 super.append(layerInterface)
 
                                     }
@@ -120,7 +120,7 @@ super.append(layerInterface)
                         if(!this.contains(layerInterface))
                         
                                     {
-                                    this.this.appendProcessors(layerInterface)
+                                    this.appendProcessors(layerInterface)
 super.append(layerInterface, index)
 
                                     }

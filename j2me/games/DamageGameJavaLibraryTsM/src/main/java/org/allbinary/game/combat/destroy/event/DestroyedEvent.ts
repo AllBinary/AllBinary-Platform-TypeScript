@@ -57,7 +57,7 @@ public constructor (combatGameCanvas: AllBinaryGameCanvas)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setAllBinaryGameCanvas(combatGameCanvas)
+this.setAllBinaryGameCanvas(combatGameCanvas)
 }
 
 

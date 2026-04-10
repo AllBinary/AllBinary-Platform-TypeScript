@@ -40,7 +40,7 @@ public constructor (motionRectangles: MotionRectangles, frame: Long){
             var motionRectangles = motionRectangles
 var frame = frame
 this.frame= frame
-this.this.setMotionRectangles(motionRectangles)
+this.setMotionRectangles(motionRectangles)
 }
 
 

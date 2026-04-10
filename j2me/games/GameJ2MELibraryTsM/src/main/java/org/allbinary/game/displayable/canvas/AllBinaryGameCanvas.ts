@@ -672,7 +672,7 @@ public constructor (commandListener: CommandListener, gameLayerManager: AllBinar
                     
 this.highScoresHelper= highScoresFactoryInterface!.createHighScoresHelper()
 this.gameInitializationInterfaceFactoryInterface= gameInitializationInterfaceFactoryInterface
-this.this.init(gameLayerManager, buffered)
+this.init(gameLayerManager, buffered)
 this.highScoresFactoryInterface= highScoresFactoryInterface
 
                         if(this.gameLayerManager!.getGameInfo()!.getGameType() == gameTypeFactory!.BOT)
@@ -689,9 +689,9 @@ this.menuBehavior= this.getInGameMenuBehavior()
 
                         }
                             
-this.this.initSpecialPaint()
-this.this.initPopupMenu()
-this.this.initMenu()
+this.initSpecialPaint()
+this.initPopupMenu()
+this.initMenu()
 DisplayChangeEventHandler.getInstance()!.addListener(this)
 }
 
@@ -877,8 +877,8 @@ super.processSleep()
                         if(features.isFeature(touchFeatureFactory!.TOUCH_ENABLED))
                         
                                     {
-                                    this.this.setOpenMenuPaintable(BasicPopupMenuPaintable(popupMenuRectangle, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor()))
-this.this.setPopupMenuInputProcessor(PopupMenuInputProcessor(BasicArrayList(),  -1, this, popupMenuRectangle))
+                                    this.setOpenMenuPaintable(BasicPopupMenuPaintable(popupMenuRectangle, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor()))
+this.setPopupMenuInputProcessor(PopupMenuInputProcessor(BasicArrayList(),  -1, this, popupMenuRectangle))
 
                                     }
                                 
@@ -900,7 +900,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "initMenu", e)
                 //@Throws(Error::class)
             
     initMenu2(){
-this.this.closeMenu()
+this.closeMenu()
 
     var formUtil: FormUtil = FormUtil.getInstance()!;
         
@@ -931,7 +931,7 @@ this.this.closeMenu()
         
         
 
-this.this.setMenuForm(CommandCurrentSelectionFormFactory.getInstance(StringUtil.getInstance()!.EMPTY_STRING, items, rectangle, formType, 25, false, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor()))
+this.setMenuForm(CommandCurrentSelectionFormFactory.getInstance(StringUtil.getInstance()!.EMPTY_STRING, items, rectangle, formType, 25, false, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor()))
 
     var scrollSelectionForm: ScrollSelectionForm = this.getMenuForm()!;
         
@@ -954,12 +954,12 @@ this.this.setMenuForm(CommandCurrentSelectionFormFactory.getInstance(StringUtil.
                             
                         }
                             
-this.this.setMenuInputProcessor(this.getPopupMenuInputProcessor())
+this.setMenuInputProcessor(this.getPopupMenuInputProcessor())
 
                         if(scrollSelectionForm != ScrollSelectionFormNoneFactory.getInstance())
                         
                                     {
-                                    this.this.setFormPaintable(FormPaintable(scrollSelectionForm))
+                                    this.setFormPaintable(FormPaintable(scrollSelectionForm))
 
                                     }
                                 
@@ -967,7 +967,7 @@ this.this.setMenuInputProcessor(this.getPopupMenuInputProcessor())
                             
                         }
                             
-this.this.closeMenu()
+this.closeMenu()
 }
 
 
@@ -1048,7 +1048,7 @@ scrollSelectionForm!.init(rectangle, formType)
 
     public pause(){
 this.gameBehavior!.pause(this)
-this.this.closeMenu()
+this.closeMenu()
 super.pause()
 touchButtonFactory!.toggle(this.isPaused(), BasicArrayListUtil.getInstance()!.getImmutableInstance())
 System.gc()
@@ -1058,7 +1058,7 @@ System.gc()
 
     public unPause(){
 logUtil!.put(commonStrings!.START, this, gameStrings!.UNPAUSE)
-this.this.closeMenu()
+this.closeMenu()
 System.gc()
 super.unPause()
 touchButtonFactory!.toggle(this.isPaused(), BasicArrayListUtil.getInstance()!.getImmutableInstance())
@@ -1104,8 +1104,8 @@ this.menuBehavior!.popupMenu(this)
             
     public popupMenu2(){
 primaryPlayerQueue!.add(SelectSound.getInstance())
-this.this.setMenuPaintable(this.getFormPaintable())
-this.this.setMenuInputProcessor(this.mainMenuInputProcessor)
+this.setMenuPaintable(this.getFormPaintable())
+this.setMenuInputProcessor(this.mainMenuInputProcessor)
 this.basicMotionGesturesHandler!.addListener(this.mainMenuInputProcessor)
 this.gameKeyEventHandler!.addListener(this.mainMenuInputProcessor)
 }
@@ -1119,9 +1119,9 @@ logUtil!.put(commonStrings!.START, this, this.gameStrings!.TOGGLE_MENU)
                         if(this.getMenuPaintable() == this.getOpenMenuPaintable())
                         
                                     {
-                                    this.this.pause()
-this.this.updateMenu()
-this.this.popupMenu()
+                                    this.pause()
+this.updateMenu()
+this.popupMenu()
 
                                     }
                                 
@@ -1130,7 +1130,7 @@ this.this.popupMenu()
                         
                                     {
                                     primaryPlayerQueue!.add(SelectSound.getInstance())
-this.this.unPause()
+this.unPause()
 
                                     }
                                 
@@ -1143,10 +1143,10 @@ this.menuBehavior!.closeMenu(this)
 
 
     public closeMenu2(){
-this.this.setMenuPaintable(this.getOpenMenuPaintable())
+this.setMenuPaintable(this.getOpenMenuPaintable())
 this.basicMotionGesturesHandler!.removeListener(this.mainMenuInputProcessor)
 this.gameKeyEventHandler!.removeListener(this.mainMenuInputProcessor)
-this.this.setMenuInputProcessor(this.getPopupMenuInputProcessor())
+this.setMenuInputProcessor(this.getPopupMenuInputProcessor())
 }
 
 
@@ -1167,8 +1167,8 @@ secondaryPlayerQueue!.clear()
                 //@Throws(Error::class)
             
     processorInit(){
-this.this.setMainStateProcessor(Processor.getInstance())
-this.this.setProcessGameProcessor(GameProcessor(this))
+this.setMainStateProcessor(Processor.getInstance())
+this.setProcessGameProcessor(GameProcessor(this))
 }
 
 
@@ -1183,8 +1183,8 @@ this.menuBehavior!.initSpecialPaint(this)
 var gameLayerManager = gameLayerManager
 var buffered = buffered
 this.gameStateTimeHelper!.setStartTime()
-this.this.setHighScoreSubmitted(false)
-this.this.setLayerManager(gameLayerManager)
+this.setHighScoreSubmitted(false)
+this.setLayerManager(gameLayerManager)
 
                         if(!buffered)
                         
@@ -1206,7 +1206,7 @@ logUtil!.put(BUFF_MESSAGE, this, commonStrings!.CONSTRUCTOR)
 
                         }
                             
-this.this.setGameInputProcessor(Processor.getInstance())
+this.setGameInputProcessor(Processor.getInstance())
 
     var features: Features = Features.getInstance()!;
         
@@ -1229,12 +1229,12 @@ this.cheatProcessor= NoPlayerGameInput.getInstance()
                         }
                             
 this.realEndGameProcessor= EndGameProcessor(this)
-this.this.setEndGameProcessor(Processor.getInstance())
+this.setEndGameProcessor(Processor.getInstance())
 this.realStartIntermissionProcessor= StartIntermissionProcessor(this)
 this.startIntermissionProcessor= Processor.getInstance()
-this.this.setEndGameStatePaintable(EndGamePaintable(this))
-this.this.setEndGamePaintable(NullPaintable.getInstance())
-this.this.setIntermissionPaintable(NullPaintable.getInstance())
+this.setEndGameStatePaintable(EndGamePaintable(this))
+this.setEndGamePaintable(NullPaintable.getInstance())
+this.setIntermissionPaintable(NullPaintable.getInstance())
 this.getStartIntermissionInterface()!.setListener(this)
 }
 
@@ -1258,12 +1258,12 @@ var enable = enable
                         if(enable)
                         
                                     {
-                                    this.this.setIntermissionPaintable(this.getStartIntermissionPaintable())
+                                    this.setIntermissionPaintable(this.getStartIntermissionPaintable())
 
                                     }
                                 
                         else {
-                            this.this.setIntermissionPaintable(NullPaintable.getInstance())
+                            this.setIntermissionPaintable(NullPaintable.getInstance())
 
                         }
                             
@@ -1310,7 +1310,7 @@ GameInitializationUtil.getInstance()!.initGame(abeClientInformation, this, gameI
 
 logUtil!.put(StringMaker().
                             append("Sound Changing To: ")!.appendboolean(features.isFeature(gameFeatureFactory!.SOUND))!.toString(), this, "initConfigurable")
-this.this.mediaInit()
+this.mediaInit()
 changedGameFeatureListener!.remove(gameFeatureFactory!.SOUND)
 
                                     }
@@ -1335,7 +1335,7 @@ changedGameFeatureListener!.remove(sensorFeatureFactory!.SIMULATED_ORIENTATION_S
         
         
 
-this.this.loadResources(resourceLoadingLevelFactory!.LOAD_GAME)
+this.loadResources(resourceLoadingLevelFactory!.LOAD_GAME)
 }
 
 
@@ -1343,11 +1343,11 @@ this.this.loadResources(resourceLoadingLevelFactory!.LOAD_GAME)
             
     init(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-this.this.initConfigurable(abeClientInformation)
-this.this.processorInit()
+this.initConfigurable(abeClientInformation)
+this.processorInit()
 this.sensorGameUpdateProcessor!.process(this.gameLayerManager)
 this.sensorGameUpdateProcessor!.sendNotifications(this.gameLayerManager)
-this.this.initTouch()
+this.initTouch()
 }
 
 
@@ -1367,8 +1367,8 @@ this.this.initTouch()
 gameInitializedEvent!.setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_TOUCH)
 GameInitializedEventHandler.getInstance()!.fireEvent(gameInitializedEvent)
 touchButtonFactory!.defaultList()
-this.this.updateTouch()
-this.this.postInitTouch()
+this.updateTouch()
+this.postInitTouch()
 }
 
 
@@ -1412,7 +1412,7 @@ this.gameBehavior!.updateTouch(this)
                         if(this.gameLayerManager!.getGameInfo()!.getCurrentLevel() -getStartLevel() == 1)
                         
                                     {
-                                    this.this.setTouchPaintableP(NullPaintable.getInstance())
+                                    this.setTouchPaintableP(NullPaintable.getInstance())
 
                                     }
                                 
@@ -1425,16 +1425,16 @@ this.gameBehavior!.updateTouch(this)
                 //@Throws(Error::class)
             
     postInitTouch(){
-this.this.setTouchButtonsPaintable(TouchButtonsPaintableFactory.getInstance(this.gameLayerManager!.getForegroundBasicColor()))
-this.this.updateScreenButtonPaintable()
+this.setTouchButtonsPaintable(TouchButtonsPaintableFactory.getInstance(this.gameLayerManager!.getForegroundBasicColor()))
+this.updateScreenButtonPaintable()
 }
 
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-this.this.removeAllCommands()
-this.this.addCommands()
-this.this.setCommandListener(cmdListener)
+this.removeAllCommands()
+this.addCommands()
+this.setCommandListener(cmdListener)
 }
 
 
@@ -1453,13 +1453,13 @@ this.this.setCommandListener(cmdListener)
                         if(DebugFactory.getInstance() != NoDebug.getInstance())
                         
                                     {
-                                    this.this.addCommand(gameCommandsFactory!.START_TRACE)
+                                    this.addCommand(gameCommandsFactory!.START_TRACE)
 
                                     }
                                 
-this.this.addCommand(gameCommandsFactory!.RESTART_COMMAND)
-this.this.addCommand(myCommandsFactory!.PAUSE_COMMAND)
-this.this.addCommand(gameCommandsFactory!.QUIT_COMMAND)
+this.addCommand(gameCommandsFactory!.RESTART_COMMAND)
+this.addCommand(myCommandsFactory!.PAUSE_COMMAND)
+this.addCommand(gameCommandsFactory!.QUIT_COMMAND)
 
     var isOverScan: boolean = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!.isOverScan()!;
         
@@ -1493,12 +1493,12 @@ this.this.addCommand(gameCommandsFactory!.QUIT_COMMAND)
                             isAny())
                         
                                     {
-                                    this.this.addCommand(InGameOptionsForm.DISPLAY)
+                                    this.addCommand(InGameOptionsForm.DISPLAY)
 
                                     }
                                 
-this.this.addCommand(gameCommandsFactory!.SAVE)
-this.this.addCommand(gameCommandsFactory!.DISPLAY_LOAD_FORM)
+this.addCommand(gameCommandsFactory!.SAVE)
+this.addCommand(gameCommandsFactory!.DISPLAY_LOAD_FORM)
 
                                     }
                                 
@@ -1542,8 +1542,8 @@ logUtil!.put(StringMaker().
                                     }
                                 
 this.sensorGameUpdateProcessor!.process(this.gameLayerManager)
-this.this.updateTouch()
-this.this.updateScreenButtonPaintable()
+this.updateTouch()
+this.updateScreenButtonPaintable()
 this.sensorGameUpdateProcessor!.sendNotifications(this.gameLayerManager)
 } catch(e: Exception)
             {
@@ -1570,8 +1570,8 @@ this.gameBehavior!.updateScreenButtonPaintable(this)
                         if(features.isFeature(touchFeatureFactory!.AUTO_HIDE_SHOW_SCREEN_BUTTONS))
                         
                                     {
-                                    this.this.setTouchPaintableP(this.getTouchButtonsPaintable())
-this.this.setStartLevel(this.gameLayerManager!.getGameInfo()!.getCurrentLevel())
+                                    this.setTouchPaintableP(this.getTouchButtonsPaintable())
+this.setStartLevel(this.gameLayerManager!.getGameInfo()!.getCurrentLevel())
 
                                     }
                                 
@@ -1579,7 +1579,7 @@ this.this.setStartLevel(this.gameLayerManager!.getGameInfo()!.getCurrentLevel())
                         if(features.isFeature(touchFeatureFactory!.SHOW_SCREEN_BUTTONS))
                         
                                     {
-                                    this.this.setTouchPaintableP(this.getTouchButtonsPaintable())
+                                    this.setTouchPaintableP(this.getTouchButtonsPaintable())
 
                                     }
                                 
@@ -1587,12 +1587,12 @@ this.this.setStartLevel(this.gameLayerManager!.getGameInfo()!.getCurrentLevel())
                         if(features.isFeature(touchFeatureFactory!.HIDE_SCREEN_BUTTONS))
                         
                                     {
-                                    this.this.setTouchPaintableP(NullPaintable.getInstance())
+                                    this.setTouchPaintableP(NullPaintable.getInstance())
 
                                     }
                                 
                         else {
-                            this.this.setTouchPaintableP(NullPaintable.getInstance())
+                            this.setTouchPaintableP(NullPaintable.getInstance())
 
                         }
                             
@@ -1637,10 +1637,10 @@ this.gameOver= gameOver
             
     public setGameOver(){
 PreLogUtil.put(commonStrings!.START, this, this.gameStrings!.SET_GAME_OVER)
-this.this.setGameOver(true)
+this.setGameOver(true)
 removePauseCommand()
-this.this.setGameState(SHOW_END_RESULT_GAME_STATE)
-this.this.setEndGamePaintable(getEndGameStatePaintable())
+this.setGameState(SHOW_END_RESULT_GAME_STATE)
+this.setEndGamePaintable(getEndGameStatePaintable())
 }
 
 
@@ -1690,8 +1690,8 @@ logUtil!.put(StringMaker().
                             append(this.gameStrings!.GAME_STATE)!.append(this.stringUtil!.toString(gameState))!.toString(), this, this.gameStrings!.SET_GAME_STATE)
 this.gameState= gameState
 this.gameStateTimeHelper!.setStartTime()
-this.this.updateEndGameProcessor()
-this.this.updateGameKeyEventProcessor()
+this.updateEndGameProcessor()
+this.updateGameKeyEventProcessor()
 this.gameBehavior!.setGameState(this)
 }
 
@@ -1732,7 +1732,7 @@ gameAdState!.processAdState(this.gameState, this.gameLayerManager!.getGameInfo()
 
 
     removeAllGameKeyInputListenersOnBuild(){
-this.this.removeAllGameKeyInputListeners()
+this.removeAllGameKeyInputListeners()
 }
 
 
@@ -1758,7 +1758,7 @@ index >= 0; index--)
         
         
 
-this.this.removeKeyInputListener(playerGameInput)
+this.removeKeyInputListener(playerGameInput)
 playerGameInput!.removeNonAIInputGameKeyEvents()
 }
 
@@ -1785,12 +1785,12 @@ this.gameBehavior!.updateEndGameProcessor(this)
                         if(this.getGameState() == SHOW_END_RESULT_GAME_STATE || this.getGameState() == SHOW_HIGH_SCORE_GAME_STATE)
                         
                                     {
-                                    this.this.setEndGameProcessor(this.realEndGameProcessor)
+                                    this.setEndGameProcessor(this.realEndGameProcessor)
 
                                     }
                                 
                         else {
-                            this.this.setEndGameProcessor(Processor.getInstance())
+                            this.setEndGameProcessor(Processor.getInstance())
 
                         }
                             
@@ -1871,17 +1871,17 @@ screenCapture!.startRecording()
         
 
 progressCanvas!.addPortion(portion, "Generic Build")
-this.this.removeAllGameKeyInputListenersOnBuild()
-this.this.updateTouch()
+this.removeAllGameKeyInputListenersOnBuild()
+this.updateTouch()
 progressCanvas!.addPortion(portion, "High Scores")
 this.highScoresFactoryInterface!.fetchHighScores(this.gameLayerManager!.getGameInfo(), this.highScoresHelper)
-this.this.setHighScoresPaintable(NullPaintable.getInstance())
+this.setHighScoresPaintable(NullPaintable.getInstance())
 progressCanvas!.addPortion(portion, "Finishing.")
 this.getEndGameInfoP()!.update(this.getLayerManager()!.getGameInfo(), this)
 this.isSingleKeyRepeatableProcessing= features.isFeature(InputFeatureFactory.getInstance()!.SINGLE_KEY_REPEAT_PRESS)
-this.this.setGameOver(false)
+this.setGameOver(false)
 progressCanvas!.addPortion(portion, "Finishing..")
-this.this.updateColor()
+this.updateColor()
 this.getStartIntermissionPaintable()!.update()
 
                         if(!this.isRunningInAnotherThread())
@@ -1923,7 +1923,7 @@ progressCanvas!.addPortion(portion, "Finishing...")
 
                         }
                             
-this.this.setInitialized(true)
+this.setInitialized(true)
 
                                     }
                                 
@@ -1966,7 +1966,7 @@ playerGameInput= this.localPlayerGameInputList!.get(index) as PlayerGameInput
 PreLogUtil.put(StringMaker().
                             append(this.gameInputStrings!.ENABLE_PLAYER_GAME_INPUT)!.append(playerGameInput!.toString())!.toString(), this, BUILD_GAME)
 playerGameInput!.removeNonAIInputGameKeyEvents()
-this.this.addKeyInputListener(playerGameInput)
+this.addKeyInputListener(playerGameInput)
 }
 
 }
@@ -2093,7 +2093,7 @@ this.colorFillPaintable!.paint(graphics)
     public paint(graphics: Graphics){
     //var graphics = graphics
 baseGameStatistics!.nextRefresh()
-this.this.draw(graphics)
+this.draw(graphics)
 menuPaintable!.paint(graphics)
 this.progressPaintable!.paint(graphics)
 }
@@ -2114,7 +2114,7 @@ this.progressPaintable!.paint(graphics)
 var graphics = graphics
 this.endGamePaintable!.paint(graphics)
 this.intermissionPaintable!.paint(graphics)
-this.this.paintIntermission(graphics)
+this.paintIntermission(graphics)
 this.touchPaintable!.paint(graphics)
 }
 
@@ -2138,19 +2138,19 @@ var graphics = graphics
 
     public keyPressed(keyCode: number){
 var keyCode = keyCode
-this.this.keyPressed(keyCode, 0)
+this.keyPressed(keyCode, 0)
 }
 
 
     public keyReleased(keyCode: number){
 var keyCode = keyCode
-this.this.keyReleased(keyCode, 0)
+this.keyReleased(keyCode, 0)
 }
 
 
     public keyRepeated(keyCode: number){
 var keyCode = keyCode
-this.this.keyRepeated(keyCode, 0)
+this.keyRepeated(keyCode, 0)
 }
 
 
@@ -2345,8 +2345,8 @@ Thread.sleep(YIELD_SLEEP)
         
 
 progressCanvas!.addPortion(50, "Game Thread")
-this.this.setCurrentThread()
-this.this.setRunning(true)
+this.setCurrentThread()
+this.setRunning(true)
 
                         if(this.getCustomCommandListener() == NullCommandListener.NULL_COMMAND_LISTENER)
                         
@@ -2355,8 +2355,8 @@ this.this.setRunning(true)
 
                                     }
                                 
-this.this.shouldWait()
-this.this.threadInit()
+this.shouldWait()
+this.threadInit()
 
                         if(this.getCustomCommandListener() == NullCommandListener.NULL_COMMAND_LISTENER)
                         
@@ -2365,7 +2365,7 @@ this.this.threadInit()
 
                                     }
                                 
-this.this.open()
+this.open()
 
     var gameAdState: GameAdState = gameAdStateFactory!.getCurrentInstance()!;
         
@@ -2431,10 +2431,10 @@ OpenGLThreadUtil.getInstance()!.onResume()
 
         while(this.isRunning())
         {
-this.this.run3()
+this.run3()
 }
 
-this.this.end()
+this.end()
 
                                     }
                                 
@@ -2443,10 +2443,10 @@ this.this.end()
 
         while(this.isRunning())
         {
-this.this.run3()
+this.run3()
 }
 
-this.this.end()
+this.end()
 
                         }
                             
@@ -2458,8 +2458,8 @@ this.this.end()
     public run3(){
 this.loopTimeHelper!.setStartTime(gameTickTimeDelayHelper!.setStartTime())
 gameTickDisplayInfoSingleton!.update()
-this.this.processGame()
-this.this.processLoopSleep()
+this.processGame()
+this.processLoopSleep()
 }
 
 
@@ -2498,7 +2498,7 @@ currentDisplayableFactory!.clearRunnable()
 
                                     }
                                 
-this.this.end()
+this.end()
 
                                     }
                                 
@@ -2521,9 +2521,9 @@ baseGameStatistics!.add(StringMaker().
                             append(baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString())
 baseGameStatistics!.init()
 this.gameKeyEventHandler!.removeListener(this.cheatProcessor)
-this.this.close()
-this.this.removeAllGameKeyInputListeners()
-this.this.endGameThread()
+this.close()
+this.removeAllGameKeyInputListeners()
+this.endGameThread()
 }
 
 

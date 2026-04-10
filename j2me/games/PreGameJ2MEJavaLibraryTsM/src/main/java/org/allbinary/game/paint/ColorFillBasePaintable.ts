@@ -47,14 +47,14 @@ public constructor (basicColor: BasicColor){
 
             super();
             var basicColor = basicColor
-this.this.setBasicColorP(basicColor)
+this.setBasicColorP(basicColor)
 }
 
 
     public setBasicColorP(basicColor: BasicColor){
 var basicColor = basicColor
 this.basicColor= basicColor
-this.this.setColor(this.getBasicColorP()!.toInt())
+this.setColor(this.getBasicColorP()!.toInt())
 }
 
 

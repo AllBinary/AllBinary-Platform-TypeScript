@@ -37,7 +37,7 @@ export class SingleSensorGameUpdateProcessor extends SensorGameUpdateProcessor {
             
     public process(anyType: any = {}){
 var anyType = anyType
-this.this.setNoSensors()
+this.setNoSensors()
 }
 
 

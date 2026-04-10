@@ -90,7 +90,7 @@ export class AndroidHardware
 public constructor (){
 
             super();
-            this.this.init(DEVICES)
+            this.init(DEVICES)
 
                         if(componentInterfaceVector!.size() < MINHARDWARE)
                         

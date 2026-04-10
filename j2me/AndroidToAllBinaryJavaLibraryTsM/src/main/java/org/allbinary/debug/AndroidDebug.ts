@@ -41,7 +41,7 @@ export class AndroidDebug
         
 
     public start(){
-this.this.setStartTime(System.currentTimeMillis())
+this.setStartTime(System.currentTimeMillis())
 Debug.startMethodTracing("trace", bufferSize)
 setRunning(true)
 }

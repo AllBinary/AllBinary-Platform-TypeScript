@@ -81,8 +81,8 @@ this.image= image
     //var frame = frame
     //var x = x
     //var y = y
-this.this.setFrame(frame)
-this.this.paint(g, x, y)
+this.setFrame(frame)
+this.paint(g, x, y)
 }
 
 
@@ -91,7 +91,7 @@ this.this.paint(g, x, y)
     //var x = x
     //var y = y
 this.sprite.setPosition(x, y)
-this.this.paint(g)
+this.paint(g)
 }
 
 

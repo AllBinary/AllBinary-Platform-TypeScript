@@ -61,7 +61,7 @@ var direction = direction
                     
 this.lifeInterface= lifeInterface
 this.xArray= IntArray(this.getLifeInterface()!.getMaxlives().toInt())
-this.this.update()
+this.update()
 this.animationInterface= animationInterface
 }
 
@@ -69,7 +69,7 @@ this.animationInterface= animationInterface
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
 var displayChangeEvent = displayChangeEvent
 super.onDisplayChangeEvent(displayChangeEvent)
-this.this.update()
+this.update()
 }
 
 
@@ -107,7 +107,7 @@ this.xArray[index]= this.getX() +(index *16)
     public setX(x: number){
 var x = x
 super.setX(x)
-this.this.update()
+this.update()
 }
 
 

@@ -47,7 +47,7 @@ public constructor (delay: number){
             super();
                 //var delay = delay
 this.delay= delay
-this.this.setStartTime()
+this.setStartTime()
 }
 
 
@@ -297,7 +297,7 @@ this.startTime= Long.MAX_VALUE
                                     {
                                     this.startTime= System.currentTimeMillis() +this.elapsedTimeAtPause
 this.elapsedTimeAtPause= Long.MIN_VALUE
-this.this.setStartTime()
+this.setStartTime()
 
 
 

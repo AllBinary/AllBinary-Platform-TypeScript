@@ -120,7 +120,7 @@ index < nodeList!.getLength(); index++)
         
         
 
-this.this.setSaved(.
+this.setSaved(.
                             )
 
                                     }
@@ -134,7 +134,7 @@ this.this.setSaved(.
         
         
 
-this.this.setSaved(.
+this.setSaved(.
                             )
 
                                     }
@@ -143,7 +143,7 @@ this.this.setSaved(.
                         if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.TYPES) == 0)
                         
                                     {
-                                    this.this.setImageTypes(ImageTypes(childNode))
+                                    this.setImageTypes(ImageTypes(childNode))
 
                                     }
                                 
@@ -168,7 +168,7 @@ this.this.setSaved(.
 
                         }
                             
-this.this.setAllowsChildren(false)
+this.setAllowsChildren(false)
 this.actionScriptOutputJPanel= ImageActionScriptOutputJPanel(this)
 }
 
@@ -181,8 +181,8 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setImageTypes(ImageTypes())
-this.this.setAllowsChildren(false)
+this.setImageTypes(ImageTypes())
+this.setAllowsChildren(false)
 this.actionScriptOutputJPanel= ImageActionScriptOutputJPanel(this)
 }
 

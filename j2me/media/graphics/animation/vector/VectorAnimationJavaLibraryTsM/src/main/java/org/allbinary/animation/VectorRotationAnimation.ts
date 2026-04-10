@@ -62,13 +62,13 @@ this.angleInfo!.adjustAngle(this.getFrame())
         
         
 
-this.this.adjustFrame(angle)
+this.adjustFrame(angle)
 }
 
 
     public setFrame(angle: Angle){
     //var angle = angle
-this.this.adjustFrame(angle)
+this.adjustFrame(angle)
 }
 
 
@@ -81,13 +81,13 @@ this.angleInfo!.adjustAngle(this.getFrame())
 
     public adjustFrame(newAngle: number){
     //var newAngle = newAngle
-this.this.setFrame(frameUtil!.getFrameForAngle(newAngle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement().toInt()))
+this.setFrame(frameUtil!.getFrameForAngle(newAngle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement().toInt()))
 }
 
 
     public adjustFrame(newAngle: Angle){
     //var newAngle = newAngle
-this.this.adjustFrame(newAngle!.getValue())
+this.adjustFrame(newAngle!.getValue())
 }
 
 

@@ -190,7 +190,7 @@ gameKeyEvent= list.objectArray[index]! as GameKeyEvent
                                 
 }
 
-this.this.clear()
+this.clear()
 
                         if(size > 0 || motionInputsIndex >= 0)
                         
@@ -245,7 +245,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, GameInputStrings.getInstance()!.PRO
         
         
 
-this.this.processMotionInput(motionGestureEvent)
+this.processMotionInput(motionGestureEvent)
 
                                     }
                                 

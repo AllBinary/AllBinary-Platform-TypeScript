@@ -110,8 +110,8 @@ this.user= UserEntityFactory.getInstance()!.getUser(orderHistory!.getUserName())
                 //@Throws(Error::class)
             
     public process(){
-this.this.notifyStoreAdmin()
-this.this.notifyUser()
+this.notifyStoreAdmin()
+this.notifyUser()
 }
 
 

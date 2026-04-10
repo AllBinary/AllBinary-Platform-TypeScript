@@ -41,8 +41,8 @@ public constructor (){
         
         
 
-this.this.setInputAutomationModuleInterface(inputAutomationGenericModuleServiceFactory!.getInputAutomationModuleInterfaceArray())
-this.this.setServiceFactory(inputAutomationGenericModuleServiceFactory)
+this.setInputAutomationModuleInterface(inputAutomationGenericModuleServiceFactory!.getInputAutomationModuleInterfaceArray())
+this.setServiceFactory(inputAutomationGenericModuleServiceFactory)
 }
 
 

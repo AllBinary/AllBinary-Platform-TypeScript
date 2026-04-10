@@ -51,14 +51,14 @@ this.demoCanvas= demoCanvas
     public run(){
 
         try {
-            this.this.setRunning(true)
+            this.setRunning(true)
 this.demoCanvas!.stopGameDemo()
 this.demoCanvas!.create()
 this.demoCanvas!.start()
-this.this.setRunning(false)
+this.setRunning(false)
 } catch(e: Exception)
             {
-this.this.setRunning(false)
+this.setRunning(false)
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         

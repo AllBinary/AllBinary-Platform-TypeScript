@@ -187,7 +187,7 @@ var secondString = secondString
         
         
 
-this.this.setExpirationCalendar(calendar, yearString, monthString, dayString, hourString, minuteString, secondString)
+this.setExpirationCalendar(calendar, yearString, monthString, dayString, hourString, minuteString, secondString)
 
     var timeDelta: number = calendar.getTimeInMillis()!;
         

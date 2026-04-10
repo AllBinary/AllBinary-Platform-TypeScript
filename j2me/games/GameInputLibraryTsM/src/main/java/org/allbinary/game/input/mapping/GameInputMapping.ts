@@ -42,8 +42,8 @@ public constructor (name: string, gameKey: GameKey){
             super();
             var name = name
 var gameKey = gameKey
-this.this.setName(name)
-this.this.setGameKey(gameKey)
+this.setName(name)
+this.setGameKey(gameKey)
 }
 
 

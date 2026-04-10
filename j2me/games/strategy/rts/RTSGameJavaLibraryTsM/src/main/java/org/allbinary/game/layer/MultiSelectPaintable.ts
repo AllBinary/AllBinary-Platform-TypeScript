@@ -65,7 +65,7 @@ public constructor (){
 
     public update(list: BasicArrayList){
 var list = list
-this.this.clear()
+this.clear()
 
     var size: number = list.size()!;
         

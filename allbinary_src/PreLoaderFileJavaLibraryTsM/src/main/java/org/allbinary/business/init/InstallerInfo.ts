@@ -196,9 +196,9 @@ hasRead= false
         
         
 
-this.this.setUserName(WeakCrypt(1).
+this.setUserName(WeakCrypt(1).
                             decrypt(decryptedUserName))
-this.this.setPassword(WeakCrypt(2).
+this.setPassword(WeakCrypt(2).
                             decrypt(decryptedPassword))
 
                                     }
@@ -251,7 +251,7 @@ InstallerInfo.password= password
                         
                                     {
                                     hasRead= true
-this.this.read()
+this.read()
 
                         if(InstallerInfo.userName == 
                                     null
@@ -280,7 +280,7 @@ this.this.read()
                 //@Throws(Error::class)
             
     public getUserName(): string{
-this.this.updateIfNeeded()
+this.updateIfNeeded()
 
 
 
@@ -293,7 +293,7 @@ this.this.updateIfNeeded()
                 //@Throws(Error::class)
             
     public getPassword(): string{
-this.this.updateIfNeeded()
+this.updateIfNeeded()
 
 
 
@@ -308,7 +308,7 @@ this.this.updateIfNeeded()
     public isValid(userName: string, password: string): boolean{
 var userName = userName
 var password = password
-this.this.updateIfNeeded()
+this.updateIfNeeded()
 
                         if(this.userName != 
                                     null

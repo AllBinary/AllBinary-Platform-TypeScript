@@ -77,7 +77,7 @@ public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, text
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.onDisplayChangeEvent(
+this.onDisplayChangeEvent(
                             null)
 rectangle= intArrayOf(0,this.getHeight(), this.getWidth(),  -this.getHeight();
         
@@ -101,7 +101,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "onResize", e)
 
     public set(gl: GL){
     //var gl = gl
-this.this.onDisplayChangeEvent(
+this.onDisplayChangeEvent(
                             null)
 
     var gl11: GL11 = gl as GL11;

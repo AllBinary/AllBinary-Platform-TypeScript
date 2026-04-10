@@ -92,10 +92,10 @@ var playerInputId = playerInputId
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.initInputProcessors()
+this.initInputProcessors()
 this.geographicMapInterface= geographicMapInterface
 this.inputList= list
-this.this.init()
+this.init()
 }
 
 
@@ -138,7 +138,7 @@ this.maxRight= this.getSpecialWidth()
         
         
 
-this.this.move( -terrainTiledLayer!.getXP(), 0)
+this.move( -terrainTiledLayer!.getXP(), 0)
 
                         if(terrainTiledLayer!.getWidth() < displayInfo!.getLastWidth())
                         
@@ -148,7 +148,7 @@ this.this.move( -terrainTiledLayer!.getXP(), 0)
         
         
 
-this.this.move( -diffX, 0)
+this.move( -diffX, 0)
 
                                     }
                                 
@@ -158,7 +158,7 @@ this.this.move( -diffX, 0)
         
         
 
-this.this.move(diffX, 0)
+this.move(diffX, 0)
 
                         }
                             
@@ -197,7 +197,7 @@ var anchor = anchor
         
         
 
-this.this.move(0, diffY)
+this.move(0, diffY)
 
                                     }
                                 
@@ -211,7 +211,7 @@ this.this.move(0, diffY)
         
         
 
-this.this.move(0, diffY)
+this.move(0, diffY)
 
                                     }
                                 
@@ -238,7 +238,7 @@ this.this.move(0, diffY)
                         if(this.keepOnMapMinY(y))
                         
                                     {
-                                    this.this.move(0,  -10)
+                                    this.move(0,  -10)
 
                                     }
                                 
@@ -257,7 +257,7 @@ this.this.move(0, diffY)
                         if(this.keepOnMapMaxY(y))
                         
                                     {
-                                    this.this.move(0, 10)
+                                    this.move(0, 10)
 
                                     }
                                 
@@ -276,7 +276,7 @@ this.this.move(0, diffY)
                         if(this.keepOnMapMinX(x))
                         
                                     {
-                                    this.this.move(10, 0)
+                                    this.move(10, 0)
 
                                     }
                                 
@@ -295,7 +295,7 @@ this.this.move(0, diffY)
                         if(this.keepOnMapMaxX(x))
                         
                                     {
-                                    this.this.move( -10, 0)
+                                    this.move( -10, 0)
 
                                     }
                                 
@@ -351,19 +351,19 @@ index < size; index++)
         
 
 key= gameKeyEvent!.getKey()
-this.this.processInput(key)
+this.processInput(key)
 }
 
 
                         if(isSingleKeyProcessing)
                         
                                     {
-                                    this.this.clear()
+                                    this.clear()
 
                                     }
                                 
                         else {
-                            this.this.update()
+                            this.update()
 
                         }
                             

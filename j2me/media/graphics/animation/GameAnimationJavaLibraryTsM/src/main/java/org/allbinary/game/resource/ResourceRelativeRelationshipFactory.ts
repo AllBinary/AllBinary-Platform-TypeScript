@@ -51,7 +51,7 @@ export class ResourceRelativeRelationshipFactory
             
     public init(level: number){
 var level = level
-this.this.setInitialized(true)
+this.setInitialized(true)
 }
 
 

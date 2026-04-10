@@ -85,8 +85,8 @@ public constructor (title: string, items: CustomItem[], rectangle: Rectangle, fo
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.initAnimations()
-this.this.update(items)
+this.initAnimations()
+this.update(items)
 }
 
 
@@ -140,7 +140,7 @@ this.unSelectedAnimationArray[index]= nullAnimation
         
 --index >= 0; )
         {
-this.this.update(index, items[index]!)
+this.update(index, items[index]!)
 }
 
 }
@@ -241,7 +241,7 @@ adjustedBorder= 4
         
         
 
-this.this.update(result, item)
+this.update(result, item)
 
 
 
@@ -258,7 +258,7 @@ super.delete(itemNum)
 
 
     public deleteAll(){
-this.this.initAnimations()
+this.initAnimations()
 super.deleteAll()
 }
 

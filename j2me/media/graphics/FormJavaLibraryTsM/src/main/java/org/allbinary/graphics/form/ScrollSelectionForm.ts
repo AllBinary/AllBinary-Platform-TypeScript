@@ -500,7 +500,7 @@ logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
                         if(index < 0)
                         
                                     {
-                                    this.this.setSelectedIndex(0)
+                                    this.setSelectedIndex(0)
 
                                     }
                                 
@@ -508,12 +508,12 @@ logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
                         if(index > max)
                         
                                     {
-                                    this.this.setSelectedIndex(max)
+                                    this.setSelectedIndex(max)
 
                                     }
                                 
                         else {
-                            this.this.setSelectedIndex(index)
+                            this.setSelectedIndex(index)
 
                         }
                             

@@ -58,12 +58,12 @@ public constructor (searchRequest: SearchRequest)
                                 )
                         
                                     {
-                                    this.this.setStoreName(searchRequest!.getStoreFront()!.getName())
+                                    this.setStoreName(searchRequest!.getStoreFront()!.getName())
 
                                     }
                                 
                         else {
-                            this.this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING)
+                            this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING)
 
                         }
                             
@@ -72,7 +72,7 @@ public constructor (searchRequest: SearchRequest)
         
         
 
-this.this.setTemplateFile(dataFileName)
+this.setTemplateFile(dataFileName)
 }
 
 

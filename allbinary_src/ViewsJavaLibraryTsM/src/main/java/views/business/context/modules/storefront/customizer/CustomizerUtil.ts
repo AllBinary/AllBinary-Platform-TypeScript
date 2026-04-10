@@ -363,7 +363,7 @@ logUtil!.put(stringBuffer!.toString(), this, "insert()")
 
                                     }
                                 
-this.this.write(specifiedTransformInfoInterface, documentString)
+this.write(specifiedTransformInfoInterface, documentString)
 
                         }
                             

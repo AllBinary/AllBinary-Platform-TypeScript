@@ -181,7 +181,7 @@ progressCanvas!.start()
         
         
 
-this.this.setStartStateHashtable(NullUtil.getInstance()!.NULL_TABLE)
+this.setStartStateHashtable(NullUtil.getInstance()!.NULL_TABLE)
 PrimaryThreadPool.getInstance()!.runTask(CreateGameRunnable(this, hashtable))
 logUtil!.put(commonStrings!.END, this, CREATE_GAME)
 }

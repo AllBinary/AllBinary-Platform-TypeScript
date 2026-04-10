@@ -73,7 +73,7 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 index < size; index++)
         {
-this.this.setIndex(index)
+this.setIndex(index)
 super.processAI(allBinaryLayerManager)
 }
 

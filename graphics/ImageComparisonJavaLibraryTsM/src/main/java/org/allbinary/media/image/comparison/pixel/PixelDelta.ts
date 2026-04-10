@@ -63,8 +63,8 @@ public constructor (point: GPoint, colorDelta: ColorDelta){
             super();
             var point = point
 var colorDelta = colorDelta
-this.this.setPoint(point)
-this.this.setColorDelta(colorDelta)
+this.setPoint(point)
+this.setColorDelta(colorDelta)
 this.key= PixelDelta.getKey(this.getPoint(), this.getColorDelta())
 }
 

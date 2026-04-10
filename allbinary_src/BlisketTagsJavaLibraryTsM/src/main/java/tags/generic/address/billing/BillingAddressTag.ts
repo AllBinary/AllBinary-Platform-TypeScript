@@ -57,8 +57,8 @@ public constructor (){
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.this.setName("Basic Billing Address View")
-this.this.setObjectFile("views.generic.address.billing.ValidationView")
+                                    this.setName("Basic Billing Address View")
+this.setObjectFile("views.generic.address.billing.ValidationView")
 
                                     }
                                 
@@ -66,8 +66,8 @@ this.this.setObjectFile("views.generic.address.billing.ValidationView")
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.EDIT) == 0)
                         
                                     {
-                                    this.this.setName("Basic Billing Address View")
-this.this.setObjectFile("views.generic.address.billing.EditValidationView")
+                                    this.setName("Basic Billing Address View")
+this.setObjectFile("views.generic.address.billing.EditValidationView")
 
                                     }
                                 
@@ -75,8 +75,8 @@ this.this.setObjectFile("views.generic.address.billing.EditValidationView")
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.NEW) == 0)
                         
                                     {
-                                    this.this.setName("Basic Billing Address View")
-this.this.setObjectFile("views.generic.address.billing.NewValidationView")
+                                    this.setName("Basic Billing Address View")
+this.setObjectFile("views.generic.address.billing.NewValidationView")
 
                                     }
                                 
@@ -84,8 +84,8 @@ this.this.setObjectFile("views.generic.address.billing.NewValidationView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
                         
                                     {
-                                    this.this.setName("Basic Billing Address View")
-this.this.setObjectFile("views.generic.address.billing.AddValidationView")
+                                    this.setName("Basic Billing Address View")
+this.setObjectFile("views.generic.address.billing.AddValidationView")
 
                                     }
                                 
@@ -93,8 +93,8 @@ this.this.setObjectFile("views.generic.address.billing.AddValidationView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.DELETE) == 0)
                         
                                     {
-                                    this.this.setName("Basic Billing Address View")
-this.this.setObjectFile("views.generic.address.billing.DeleteValidationView")
+                                    this.setName("Basic Billing Address View")
+this.setObjectFile("views.generic.address.billing.DeleteValidationView")
 
                                     }
                                 
@@ -102,8 +102,8 @@ this.this.setObjectFile("views.generic.address.billing.DeleteValidationView")
                         if(this.getCommand()!.compareTo(BillingAddressData.SELECT) == 0)
                         
                                     {
-                                    this.this.setName("Basic Billing Address View")
-this.this.setObjectFile("views.generic.address.billing.SelectValidationView")
+                                    this.setName("Basic Billing Address View")
+this.setObjectFile("views.generic.address.billing.SelectValidationView")
 
                                     }
                                 
@@ -111,8 +111,8 @@ this.this.setObjectFile("views.generic.address.billing.SelectValidationView")
                         if(this.getCommand()!.compareTo(BillingAddressData.SETTOSHIPPINGADDRESS) == 0)
                         
                                     {
-                                    this.this.setName("Basic Billing Address View")
-this.this.setObjectFile("views.generic.address.billing.SetValidationView")
+                                    this.setName("Basic Billing Address View")
+this.setObjectFile("views.generic.address.billing.SetValidationView")
 
                                     }
                                 

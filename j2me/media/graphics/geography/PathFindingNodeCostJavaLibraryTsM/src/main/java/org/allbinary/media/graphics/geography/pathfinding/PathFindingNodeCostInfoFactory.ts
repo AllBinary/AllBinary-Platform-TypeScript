@@ -46,7 +46,7 @@ this.pathFindingNodeCostInfoAdjacencyList= Array(max) { arrayOfNulls<PathFinding
     //var geographicMapCellPosition = geographicMapCellPosition
     //var costFromStart = costFromStart
     //var costToEnd = costToEnd
-this.this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition, costFromStart, costToEnd)
+this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition, costFromStart, costToEnd)
 }
 
 

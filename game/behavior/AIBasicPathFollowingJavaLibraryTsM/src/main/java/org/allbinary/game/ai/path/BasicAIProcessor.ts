@@ -89,8 +89,8 @@ this.name= name
 this.geographicMapCellHistory= geographicMapCellHistory
 this.geographicMapCellPositionBasicArrayList= chosenPathList
 this.geographicMapCellPathHistoryInfo= geographicMapCellPathHistoryInfo
-this.this.setName(name)
-this.this.setNewPath(geographicMapCellHistory, chosenPathList)
+this.setName(name)
+this.setNewPath(geographicMapCellHistory, chosenPathList)
 this.basicAI= BasicDirectionAIHelper(this.getName(), angleInfo)
 }
 
@@ -98,9 +98,9 @@ this.basicAI= BasicDirectionAIHelper(this.getName(), angleInfo)
     setNewPath(geographicMapCellHistory: GeographicMapCellHistory, chosenPathList: BasicArrayList){
 var geographicMapCellHistory = geographicMapCellHistory
 var chosenPathList = chosenPathList
-this.this.setGeographicMapCellHistory(geographicMapCellHistory)
+this.setGeographicMapCellHistory(geographicMapCellHistory)
 this.geographicMapCellPositionBasicArrayList= chosenPathList
-this.this.init()
+this.init()
 }
 
 
@@ -108,7 +108,7 @@ this.this.init()
 this.geographicMapCellPathHistoryInfo= GeographicMapCellPathHistoryInfo()
 this.geographicMapCellPathHistoryInfo!.setPreviousOnPathGeographicMapCellPosition(geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1) as GeographicMapCellPosition)
 this.geographicMapCellPathHistoryInfo!.setNextOnPathGeographicMapCellPosition(geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1) as GeographicMapCellPosition)
-this.this.update()
+this.update()
 }
 
 
@@ -173,7 +173,7 @@ var currentGeographicMapCellPosition = currentGeographicMapCellPosition
                         if(this.geographicMapCellPositionBasicArrayList!.contains(currentGeographicMapCellPosition))
                         
                                     {
-                                    this.this.update()
+                                    this.update()
 keyDirection= this.goTowardNextChosenOnPathPosition(currentGeographicMapCellPosition)
 this.geographicMapCellPathHistoryInfo!.setPreviousOnPathGeographicMapCellPosition(currentGeographicMapCellPosition)
 

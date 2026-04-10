@@ -112,7 +112,7 @@ public constructor (imageProcessorInput: ImageProcessorInput){
             super();
                 //var imageProcessorInput = imageProcessorInput
 initComponents()
-this.this.setImageProcessorInput(imageProcessorInput)
+this.setImageProcessorInput(imageProcessorInput)
 }
 
 
@@ -180,7 +180,7 @@ defaultListModel!.addElement(this.icon[index]!)
 }
 
 this.imageJList!.setModel(defaultListModel)
-this.this.updateOnPropertiesChange()
+this.updateOnPropertiesChange()
 } catch(e: Exception)
             {
 logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e)
@@ -266,7 +266,7 @@ this.fudgeItJButton!.setEnabled(false)
 
                                     }
                                 
-this.this.updateImage(tempBufferedImageArray)
+this.updateImage(tempBufferedImageArray)
 } catch(e: Exception)
             {
 logUtil!.put(commonStrings!.EXCEPTION, this, "updateImage", e)
@@ -326,7 +326,7 @@ tempBufferedImageArray[index]= bufferedImage
         
         
 
-this.this.updateImage(fudgedBufferedImageArray)
+this.updateImage(fudgedBufferedImageArray)
 } catch(e: Exception)
             {
 logUtil!.put(commonStrings!.EXCEPTION, this, "updateImageWithFudgedImages", e)
@@ -349,7 +349,7 @@ this.result= ImageUnifierUtil.getInstance()!.getImage(tempBufferedImageArray, th
         
 
 this.jScrollPane2!.getViewport()!.add(label)
-this.this.updateUI()
+this.updateUI()
 }
 
 
@@ -387,7 +387,7 @@ imageUnifierProperties!.setImageUnifierCell(imageUnifierCell)
                                     }
                                 
 this.cellRatioJTextField!.setText(cellRatioString)
-this.this.updateImage()
+this.updateImage()
 
                                     }
                                 
@@ -582,7 +582,7 @@ jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(javax.swing.G
         
         
 
-this.this.setLayout(layout)
+this.setLayout(layout)
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 527, Short.MAX_VALUE)))
 layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)!.addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, 0, 445, Short.MAX_VALUE)!.addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 445, Short.MAX_VALUE)!.addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 445, Short.MAX_VALUE))!.addContainerGap()))
 }
@@ -590,7 +590,7 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
     jButton2ActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.this.updateOnPropertiesChange()
+this.updateOnPropertiesChange()
 }
 
 
@@ -611,31 +611,31 @@ var evt = evt
 
     fudgeItJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.this.updateImageWithFudgedImages()
+this.updateImageWithFudgedImages()
 }
 
 
     cellHeightJTextFieldActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.this.updateOnPropertiesChange()
+this.updateOnPropertiesChange()
 }
 
 
     cellWidthJTextFieldActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.this.updateOnPropertiesChange()
+this.updateOnPropertiesChange()
 }
 
 
     columnsJTextFieldActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.this.updateOnPropertiesChange()
+this.updateOnPropertiesChange()
 }
 
 
     rowsJTextFieldActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.this.updateOnPropertiesChange()
+this.updateOnPropertiesChange()
 }
 
 
@@ -703,7 +703,7 @@ var evt = evt
 
 defaultListModel!.insertElementAt(indexedImageIcon, index +1)
 this.imageJList!.setSelectedIndex(index +1)
-this.this.updateImage()
+this.updateImage()
 
                                     }
                                 
@@ -733,7 +733,7 @@ var evt = evt
 
 defaultListModel!.insertElementAt(indexedImageIcon, index -1)
 this.imageJList!.setSelectedIndex(index -1)
-this.this.updateImage()
+this.updateImage()
 
                                     }
                                 
@@ -780,7 +780,7 @@ defaultListModel!.insertElementAt(indexedImageIcon, last -index)
                         
                                     {
                                     this.imageJList!.setSelectedIndex(0)
-this.this.updateImage()
+this.updateImage()
 
                                     }
                                 
@@ -844,7 +844,7 @@ this.this.updateImage()
     public setImageProcessorInput(imageProcessorInput: ImageProcessorInput){
 var imageProcessorInput = imageProcessorInput
 this.imageProcessorInput= imageProcessorInput
-this.this.init()
+this.init()
 }
 
 

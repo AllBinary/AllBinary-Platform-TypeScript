@@ -78,7 +78,7 @@ initComponents()
         
 
 this.getActionScriptJTree()!.setModel(defaultTreeModel)
-this.this.repaint()
+this.repaint()
 logUtil!.put("Updated UI", this, "updateJTree")
 }
 

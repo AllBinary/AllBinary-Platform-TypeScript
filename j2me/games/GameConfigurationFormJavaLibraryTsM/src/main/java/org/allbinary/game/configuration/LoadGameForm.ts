@@ -73,8 +73,8 @@ var foregroundBasicColor = foregroundBasicColor
                             //For kotlin this is before the body of the constructor.
                     
 logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-this.this.update()
-this.this.initCommands(commandListener)
+this.update()
+this.initCommands(commandListener)
 }
 
 
@@ -85,11 +85,11 @@ var cmdListener = cmdListener
         
         
 
-this.this.removeAllCommands()
-this.this.addCommand(gameCommandsFactory!.LOAD_FILE)
-this.this.addCommand(gameCommandsFactory!.DELETE_FILE)
-this.this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.this.setCommandListener(cmdListener)
+this.removeAllCommands()
+this.addCommand(gameCommandsFactory!.LOAD_FILE)
+this.addCommand(gameCommandsFactory!.DELETE_FILE)
+this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS)
+this.setCommandListener(cmdListener)
 }
 
 
@@ -101,18 +101,18 @@ this.this.setCommandListener(cmdListener)
         
         
 
-this.this.deleteAll()
+this.deleteAll()
 
                         if(list.size() > 0)
                         
                                     {
-                                    this.this.add(list, "Select A Saved Game", Choice.EXCLUSIVE)
+                                    this.add(list, "Select A Saved Game", Choice.EXCLUSIVE)
 this.areChoices= true
 
                                     }
                                 
                         else {
-                            this.this.append(StringItem("No Saved Games", StringUtil.getInstance()!.EMPTY_STRING))
+                            this.append(StringItem("No Saved Games", StringUtil.getInstance()!.EMPTY_STRING))
 this.areChoices= false
 
                         }
@@ -138,7 +138,7 @@ var option = option
 
                                     }
                                 
-this.this.append(choiceGroup)
+this.append(choiceGroup)
 }
 
 

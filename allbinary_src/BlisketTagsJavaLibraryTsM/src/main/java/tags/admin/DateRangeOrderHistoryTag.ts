@@ -70,8 +70,8 @@ this.status= value
 
                                     }
                                 
-this.this.setName("Range Order History View")
-this.this.setObjectFile("views.admin.orderhistory.DateRangeOrderHistoryView")
+this.setName("Range Order History View")
+this.setObjectFile("views.admin.orderhistory.DateRangeOrderHistoryView")
 
                         if(this.getCommand() != 
                                     null

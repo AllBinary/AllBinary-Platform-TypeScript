@@ -124,7 +124,7 @@ index < nodeList!.getLength(); index++)
         
         
 
-this.this.setButtonClicks(Integer.valueOf(buttons)!.toInt())
+this.setButtonClicks(Integer.valueOf(buttons)!.toInt())
 
                                     }
                                 
@@ -167,7 +167,7 @@ this.this.setButtonClicks(Integer.valueOf(buttons)!.toInt())
         
         
 
-this.this.setPoint(newPoint)
+this.setPoint(newPoint)
 
                                     }
                                 
@@ -192,7 +192,7 @@ this.this.setPoint(newPoint)
 
                         }
                             
-this.this.setAllowsChildren(false)
+this.setAllowsChildren(false)
 this.mouseActionScriptInputJPanel= MouseActionScriptInputJPanel(this)
 }
 
@@ -206,7 +206,7 @@ public constructor ()
                             //For kotlin this is before the body of the constructor.
                     
 this.point= Point()
-this.this.setAllowsChildren(false)
+this.setAllowsChildren(false)
 this.mouseActionScriptInputJPanel= MouseActionScriptInputJPanel(this)
 }
 

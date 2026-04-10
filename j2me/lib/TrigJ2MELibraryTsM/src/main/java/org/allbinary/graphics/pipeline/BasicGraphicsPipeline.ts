@@ -115,7 +115,7 @@ this.pointBasicArrayList= newBasicArrayList
             
     public rotate(angle: Angle){
 var angle = angle
-this.this.rotate(angle.getValue().toInt())
+this.rotate(angle.getValue().toInt())
 }
 
 

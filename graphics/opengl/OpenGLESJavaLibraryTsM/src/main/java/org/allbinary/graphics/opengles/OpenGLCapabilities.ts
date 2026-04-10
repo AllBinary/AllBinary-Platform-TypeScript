@@ -538,7 +538,7 @@ var gameFeature = gameFeature
 
 
     public isGlExtensionDrawTexture(): boolean{
-this.this.requireInitialization()
+this.requireInitialization()
 
 
 
@@ -559,7 +559,7 @@ this.this.requireInitialization()
 
 
     public isGlExtensionGPUShader4(): boolean{
-this.this.requireInitialization()
+this.requireInitialization()
 
 
 
@@ -570,7 +570,7 @@ this.this.requireInitialization()
 
 
     public getGlVersion(): string{
-this.this.requireInitialization()
+this.requireInitialization()
 
 
 
@@ -581,7 +581,7 @@ this.this.requireInitialization()
 
 
     public getGlVersionString(): string{
-this.this.requireInitialization()
+this.requireInitialization()
 
 
 
@@ -592,7 +592,7 @@ this.this.requireInitialization()
 
 
     public getGlShaderVersion(): string{
-this.this.requireInitialization()
+this.requireInitialization()
 
 
 
@@ -603,7 +603,7 @@ this.this.requireInitialization()
 
 
     public isGlThreedDrawTexture(): boolean{
-this.this.requireInitialization()
+this.requireInitialization()
 
 
 
@@ -614,7 +614,7 @@ this.this.requireInitialization()
 
 
     public getGlRenderer(): string{
-this.this.requireInitialization()
+this.requireInitialization()
 
 
 
@@ -625,7 +625,7 @@ this.this.requireInitialization()
 
 
     public isVertexBufferObjectSupport(): boolean{
-this.this.requireInitialization()
+this.requireInitialization()
 
 
 
@@ -637,7 +637,7 @@ this.this.requireInitialization()
 
     public isTextureSizeValid(widthAndHeight: number): boolean{
     //var widthAndHeight = widthAndHeight
-this.this.requireInitialization()
+this.requireInitialization()
 
                         if(this.maxTextureSize >= widthAndHeight)
                         

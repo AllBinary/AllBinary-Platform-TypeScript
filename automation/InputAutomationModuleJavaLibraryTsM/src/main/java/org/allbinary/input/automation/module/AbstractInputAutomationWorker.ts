@@ -180,7 +180,7 @@ this.getCaptureWorker()!.setRunning(false)
 
         try {
             logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-this.this.setRunning(true)
+this.setRunning(true)
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
@@ -190,13 +190,13 @@ this.this.setRunning(true)
         while(this.isRunning())
         {
 timeHelper!.setStartTime()
-this.this.process()
+this.process()
 this.index++
 logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed() +" Index: " +this.index, this, this.commonStrings!.RUN)
 }
 
-this.this.stopDataWorkers()
-this.this.waitForDataWorkers()
+this.stopDataWorkers()
+this.waitForDataWorkers()
 logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
 } catch(e: Exception)
             {

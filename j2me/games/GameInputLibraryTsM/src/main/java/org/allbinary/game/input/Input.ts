@@ -40,8 +40,8 @@ public constructor (id: number, name: string){
             super();
             var id = id
 var name = name
-this.this.setId(id)
-this.this.setName(name)
+this.setId(id)
+this.setName(name)
 }
 
 

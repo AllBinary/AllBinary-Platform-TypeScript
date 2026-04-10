@@ -153,7 +153,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setTableName(tableName)
+this.setTableName(tableName)
 }
 
 
@@ -360,7 +360,7 @@ vector.add(order.getUserComments())
 vector.add(order.getUserCancelComments())
 vector.add(order.getStoreComments())
 vector.add(order.getStoreCancelComments())
-this.this.insert(vector)
+this.insert(vector)
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         

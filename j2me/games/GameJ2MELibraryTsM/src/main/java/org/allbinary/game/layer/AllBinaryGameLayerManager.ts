@@ -178,7 +178,7 @@ index < size; index++)
 layerProcessorInterfaceArray[index]= list.objectArray[index]! as LayerProcessor
 }
 
-this.this.setLayerProcessorArray(layerProcessorInterfaceArray)
+this.setLayerProcessorArray(layerProcessorInterfaceArray)
 }
 
 

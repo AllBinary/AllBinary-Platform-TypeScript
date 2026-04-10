@@ -142,7 +142,7 @@ var exception = exception
         
         
 
-this.this.showDialog(data)
+this.showDialog(data)
 System.out.println(data)
 
 
@@ -192,7 +192,7 @@ var exception = exception
         
         
 
-this.this.showDialog(data)
+this.showDialog(data)
 System.out.println(data)
 
 

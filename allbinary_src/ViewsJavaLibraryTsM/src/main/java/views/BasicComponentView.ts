@@ -88,8 +88,8 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                                     }
                                 
-this.this.setTransformInfoInterface(transformInfoInterface)
-this.this.setTransformDocumentInterface(TransformDocumentFactory.getInstance())
+this.setTransformInfoInterface(transformInfoInterface)
+this.setTransformDocumentInterface(TransformDocumentFactory.getInstance())
 }
 
 

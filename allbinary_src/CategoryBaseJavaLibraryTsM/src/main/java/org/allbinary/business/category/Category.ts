@@ -109,7 +109,7 @@ public constructor (categoryPropertiesFactoryInterface: CategoryPropertiesFactor
                                 
 this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance()
 this.categoryHierarchyInterface= CategoryHierarchy(this, this) as CategoryHierarchyInterface
-this.this.log()
+this.log()
 }
 
 public constructor (categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number){
@@ -119,7 +119,7 @@ public constructor (categoryPropertiesFactoryInterface: CategoryPropertiesFactor
 var level = level
 this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance()
 this.categoryHierarchyInterface= CategoryHierarchy(this, this, level) as CategoryHierarchyInterface
-this.this.log()
+this.log()
 }
 
 public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface){
@@ -130,7 +130,7 @@ var parentCategoryInterface = parentCategoryInterface
 var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
 this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance() as CategoryPropertiesInterface
 this.categoryHierarchyInterface= CategoryHierarchy(rootCategoryInterface, parentCategoryInterface) as CategoryHierarchyInterface
-this.this.log()
+this.log()
 }
 
 
@@ -238,7 +238,7 @@ this.typeVector!.add(this.PROPERTIES)
 
     public addChild(categoryInterface: CategoryInterface): boolean{
 var categoryInterface = categoryInterface
-this.this.removeDuplicateChild(categoryInterface)
+this.removeDuplicateChild(categoryInterface)
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
@@ -331,7 +331,7 @@ bool_return= true
                                 
 }
 
-this.this.removal(removalVector)
+this.removal(removalVector)
 
 
 
@@ -463,7 +463,7 @@ break;
                                 
 }
 
-this.this.removal(removalVector)
+this.removal(removalVector)
 
 
 

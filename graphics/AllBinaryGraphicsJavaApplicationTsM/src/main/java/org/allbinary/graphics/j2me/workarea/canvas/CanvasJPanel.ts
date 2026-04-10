@@ -183,8 +183,8 @@ this.grid= Grid()
             this.workAreaJTreeJPanel= workAreaJTreeJPanel
 initComponents()
 initMyComponents()
-this.this.setSize(dimension)
-this.this.setCanvasSize(x, y)
+this.setSize(dimension)
+this.setCanvasSize(x, y)
 } catch(e: Exception)
             {
 
@@ -211,8 +211,8 @@ this.grid= Grid(canvasDom!.getGrid())
             this.workAreaJTreeJPanel= workAreaJTreeJPanel
 initComponents()
 initMyComponents()
-this.this.setSize(dimension)
-this.this.setCanvasSize(canvasDom!.getDimension()!.getWidth(), canvasDom!.getDimension()!.getHeight())
+this.setSize(dimension)
+this.setCanvasSize(canvasDom!.getDimension()!.getWidth(), canvasDom!.getDimension()!.getHeight())
 this.graphicItemHashMap= canvasDom!.getGraphicItemHashMap()
 
     var graphicItemArray: any = {}[] = graphicItemHashMap!.keys.toTypedArray()!;
@@ -243,8 +243,8 @@ index < size; index++)
 canvasTreeNode!.add(graphicItemTreeNode)
 }
 
-this.this.repaint()
-this.this.setAngle(canvasDom!.getAngle())
+this.repaint()
+this.setAngle(canvasDom!.getAngle())
 this.workAreaJTreeJPanel!.updateTree()
 this.workAreaJTreeJPanel!.expand()
 this.workAreaJTreeJPanel!.repaint()
@@ -273,13 +273,13 @@ frame++
 this.workAreaJTreeJPanel!.add(this.getTreeNode())
 this.graphicItemHashMap= HashMap<Any, Any>()
 this.grid.grid= PointFactory.getInstance()!.getInstance(0, 0)
-this.this.setCanvasDimension(IntegerDimension(0, 0))
+this.setCanvasDimension(IntegerDimension(0, 0))
 this.selectedTool= 
                                         null
                                     
-this.this.addKeyListener(this)
-this.this.addMouseListener(this)
-this.this.addMouseMotionListener(this)
+this.addKeyListener(this)
+this.addMouseListener(this)
+this.addMouseMotionListener(this)
 MyGraphicItemEventService.addListener(this)
 }
 
@@ -345,14 +345,14 @@ this.grid.isGridPossible= true
 
                                     }
                                 
-this.this.setCanvasDimension(IntegerDimension(x, y))
+this.setCanvasDimension(IntegerDimension(x, y))
 this.grid.isChanged= true
 }
 
 
     public setGrid(point: GPoint){
 var point = point
-this.this.setGrid(point.getX(), point.getY())
+this.setGrid(point.getX(), point.getY())
 }
 
 
@@ -405,7 +405,7 @@ this.grid.isChanged= true
         
         
 
-this.this.setGrid(1, 1)
+this.setGrid(1, 1)
 this.grid.isChanged= true
 }
 
@@ -428,7 +428,7 @@ this.angle= angle
 
     public addAngle(angle: number){
 var angle = angle
-this.this.setAngle(this.angle +angle)
+this.setAngle(this.angle +angle)
 }
 
 
@@ -593,7 +593,7 @@ item.setPointsInterface(newPoints)
 item.setAngle(angleDelta)
 }
 
-this.this.repaint()
+this.repaint()
 }
 
 
@@ -645,7 +645,7 @@ newPoints!.addPoints(basicArrayList)
 item.setPointsInterface(newPoints)
 }
 
-this.this.repaint()
+this.repaint()
 }
 
 
@@ -654,7 +654,7 @@ this.this.repaint()
     public center(){
 VectorCenterGenerator().
                             transform(this.getGraphicItemHashMap())
-this.this.repaint()
+this.repaint()
 }
 
 
@@ -739,7 +739,7 @@ index < size; index++)
         
         
 
-this.this.duplicateGraphicItem(graphicItem)
+this.duplicateGraphicItem(graphicItem)
 }
 
 }
@@ -944,12 +944,12 @@ graphics.fillRect(0, 0, getWidth(), getHeight())
                         if(this.getGrid()!.getZoom() > 2 && this.getGrid()!.isGridOn && this.getGrid()!.isGridPossible)
                         
                                     {
-                                    this.this.setDefaultGrid()
-this.this.drawGrid(graphics)
+                                    this.setDefaultGrid()
+this.drawGrid(graphics)
 
                                     }
                                 
-this.this.drawItems(graphics)
+this.drawItems(graphics)
 graphics.drawString(Double(this.getAngle()).
                             toString(), this.getWidth() -75, this.getHeight() -15)
 this.grid.isChanged= false
@@ -1015,7 +1015,7 @@ graphicItem!.mouseClicked(mouseEvent, this.getXPixelsPerWorkAreaPixel(), this.ge
                                     }
                                 
                         else {
-                            this.this.setNewTool()
+                            this.setNewTool()
 
     var graphicItem: GraphicItemInterface = this.getSelectedTool()!;
         
@@ -1035,7 +1035,7 @@ graphicItem!.mouseClicked(mouseEvent, this.getXPixelsPerWorkAreaPixel(), this.ge
                         }
                             
 this.grid.isChanged= true
-this.this.repaint()
+this.repaint()
 this.workAreaJTreeJPanel!.updateTree()
 this.workAreaJTreeJPanel!.expand()
 this.workAreaJTreeJPanel!.repaint()
@@ -1072,9 +1072,9 @@ graphicItem!.mousePressed(mouseEvent, this.getXPixelsPerWorkAreaPixel(), this.ge
 
                                     }
                                 
-this.this.requestFocus()
+this.requestFocus()
 this.grid.isChanged= true
-this.this.repaint()
+this.repaint()
 }
 
 
@@ -1096,9 +1096,9 @@ StatusFactory.getInstance()!.setStatusNoLog(MouseStrings.getInstance()!.MOUSE_RE
 
                                     }
                                 
-this.this.requestFocus()
+this.requestFocus()
 this.grid.isChanged= true
-this.this.repaint()
+this.repaint()
 }
 
 
@@ -1120,9 +1120,9 @@ StatusFactory.getInstance()!.setStatusNoLog(MouseStrings.getInstance()!.MOUSE_DR
 
                                     }
                                 
-this.this.requestFocus()
+this.requestFocus()
 this.grid.isChanged= true
-this.this.repaint()
+this.repaint()
 }
 
 
@@ -1144,9 +1144,9 @@ graphicItem!.mouseMoved(mouseEvent, this.getXPixelsPerWorkAreaPixel(), this.getY
 
                                     }
                                 
-this.this.requestFocus()
+this.requestFocus()
 this.grid.isChanged= true
-this.this.repaint()
+this.repaint()
 }
 
 
@@ -1275,12 +1275,12 @@ graphicItem!.keyPressed(keyEvent)
                                     }
                                 
                         else {
-                            this.this.setNewTool()
+                            this.setNewTool()
 
                         }
                             
 this.grid.isChanged= true
-this.this.repaint()
+this.repaint()
 }
 
 
@@ -1390,7 +1390,7 @@ var event = event
                                 )
                         
                                     {
-                                    this.this.duplicateGraphicItem(graphicItem)
+                                    this.duplicateGraphicItem(graphicItem)
 this.workAreaJTreeJPanel!.updateTree()
 this.workAreaJTreeJPanel!.expand()
 this.workAreaJTreeJPanel!.repaint()

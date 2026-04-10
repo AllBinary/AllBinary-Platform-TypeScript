@@ -105,7 +105,7 @@ public constructor (abeClientInformation: Object, transformInfoInterface: Object
                             //For kotlin this is before the body of the constructor.
                     
 this.abeClientInformation= abeClientInformation
-this.this.setDocument(this.generate(this.toXmlDoc()))
+this.setDocument(this.generate(this.toXmlDoc()))
 }
 
 public constructor (abeClientInformation: Object, transformInfoInterface: Object, name: string, type: string)                        
@@ -122,7 +122,7 @@ public constructor (abeClientInformation: Object, transformInfoInterface: Object
                             //For kotlin this is before the body of the constructor.
                     
 this.abeClientInformation= abeClientInformation
-this.this.setDocument(this.generate(this.toXmlDoc()))
+this.setDocument(this.generate(this.toXmlDoc()))
 }
 
 

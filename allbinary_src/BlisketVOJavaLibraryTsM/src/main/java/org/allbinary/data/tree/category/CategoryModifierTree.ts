@@ -106,8 +106,8 @@ this.directory.create(directoryToBeCreatedAbPath)
 
                                     }
                                 
-this.this.save(parentCategoryInterface)
-this.this.save(newChildCategoryInterface)
+this.save(parentCategoryInterface)
+this.save(newChildCategoryInterface)
 
                                     }
                                 
@@ -145,9 +145,9 @@ var existingChildCategoryInterface = existingChildCategoryInterface
         
         
 
-this.this.delete(existingChildCategoryInterface)
+this.delete(existingChildCategoryInterface)
 parentCategoryInterface!.removeChild(existingChildCategoryInterface)
-this.this.save(parentCategoryInterface)
+this.save(parentCategoryInterface)
 this.directory.remove(directoryToBeDeletedAbPath)
 
                                     }

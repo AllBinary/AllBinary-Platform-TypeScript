@@ -179,7 +179,7 @@ this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.paintThreed(gr
         
 
 this.circularIndexUtil!.next()
-this.this.setFrame(frame)
+this.setFrame(frame)
 }
 
 
@@ -190,7 +190,7 @@ this.this.setFrame(frame)
         
 
 this.circularIndexUtil!.previous()
-this.this.setFrame(frame)
+this.setFrame(frame)
 }
 
 
@@ -202,7 +202,7 @@ this.this.setFrame(frame)
         
 
 this.circularIndexUtil!.setIndex(index)
-this.this.setFrame(frame)
+this.setFrame(frame)
 }
 
 
@@ -220,7 +220,7 @@ this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.setFrame(angle
 
     public adjustFrame(newAngle: Angle){
     //var newAngle = newAngle
-this.this.adjustFrame(newAngle!.getValue())
+this.adjustFrame(newAngle!.getValue())
 }
 
 

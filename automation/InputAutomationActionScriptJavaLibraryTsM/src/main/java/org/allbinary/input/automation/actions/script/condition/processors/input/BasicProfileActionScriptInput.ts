@@ -113,16 +113,16 @@ logUtil!.put(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR)
         
         
 
-this.this.setTime(Integer.valueOf(delayString)!.toInt())
+this.setTime(Integer.valueOf(delayString)!.toInt())
 
                                     }
                                 
                         else {
-                            this.this.setTime(0)
+                            this.setTime(0)
 
                         }
                             
-this.this.setInputRobotInterface(InputRobotFactory.getInstance()!.get(inputTypeString))
+this.setInputRobotInterface(InputRobotFactory.getInstance()!.get(inputTypeString))
 }
 
 public constructor (label: string)                        
@@ -156,8 +156,8 @@ logUtil!.put(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR)
         
         
 
-this.this.setInputRobotInterface(inputRobotFactory!.get(iterator.next() as String))
-this.this.setTime(0)
+this.setInputRobotInterface(inputRobotFactory!.get(iterator.next() as String))
+this.setTime(0)
 }
 
 

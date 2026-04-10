@@ -63,8 +63,8 @@ this.getPropertiesHashMap()!.put(UserRoleData.NAME, this.role)
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.EDIT +org.allbinary.globals.GLOBALS2.EDIT) == 0)
                         
                                     {
-                                    this.this.setName("Edit Session Validation User View - i.e. User Profile Edit")
-this.this.setObjectFile("views.generic.user.EditValidationView")
+                                    this.setName("Edit Session Validation User View - i.e. User Profile Edit")
+this.setObjectFile("views.generic.user.EditValidationView")
 
                                     }
                                 
@@ -72,8 +72,8 @@ this.this.setObjectFile("views.generic.user.EditValidationView")
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.NEW) == 0)
                         
                                     {
-                                    this.this.setName("New User View")
-this.this.setObjectFile("views.generic.user.NewUserView")
+                                    this.setName("New User View")
+this.setObjectFile("views.generic.user.NewUserView")
 
                                     }
                                 
@@ -81,8 +81,8 @@ this.this.setObjectFile("views.generic.user.NewUserView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
                         
                                     {
-                                    this.this.setName("Add Validation User View")
-this.this.setObjectFile("views.generic.user.AddValidationUserView")
+                                    this.setName("Add Validation User View")
+this.setObjectFile("views.generic.user.AddValidationUserView")
 
                                     }
                                 
@@ -90,8 +90,8 @@ this.this.setObjectFile("views.generic.user.AddValidationUserView")
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.this.setName("Validation User View")
-this.this.setObjectFile("views.generic.user.ViewValidationUserView")
+                                    this.setName("Validation User View")
+this.setObjectFile("views.generic.user.ViewValidationUserView")
 
                                     }
                                 
@@ -99,8 +99,8 @@ this.this.setObjectFile("views.generic.user.ViewValidationUserView")
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.EDIT) == 0)
                         
                                     {
-                                    this.this.setName("Validation User View")
-this.this.setObjectFile("views.generic.user.EditValidationUserView")
+                                    this.setName("Validation User View")
+this.setObjectFile("views.generic.user.EditValidationUserView")
 
                                     }
                                 
@@ -108,8 +108,8 @@ this.this.setObjectFile("views.generic.user.EditValidationUserView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.UPDATE) == 0)
                         
                                     {
-                                    this.this.setName("Update Validation User View")
-this.this.setObjectFile("views.generic.user.UpdateValidationUserView")
+                                    this.setName("Update Validation User View")
+this.setObjectFile("views.generic.user.UpdateValidationUserView")
 
                                     }
                                 
@@ -117,8 +117,8 @@ this.this.setObjectFile("views.generic.user.UpdateValidationUserView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.DELETE) == 0)
                         
                                     {
-                                    this.this.setName("Delete Validation User View")
-this.this.setObjectFile("views.generic.user.DeleteValidationUserView")
+                                    this.setName("Delete Validation User View")
+this.setObjectFile("views.generic.user.DeleteValidationUserView")
 
                                     }
                                 

@@ -61,13 +61,13 @@ var gameInput = gameInput
         
 
 this.rotationAnimationInterface= rotationAnimationInterfaceCompositeInterface!.getRotationAnimationInterface()
-this.this.update()
+this.update()
 }
 
 
     reverse(){
 super.reverse()
-this.this.update()
+this.update()
 }
 
 

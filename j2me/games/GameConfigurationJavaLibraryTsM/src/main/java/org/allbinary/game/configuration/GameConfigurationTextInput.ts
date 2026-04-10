@@ -83,8 +83,8 @@ public constructor (label: string, text: string){
             super();
             var label = label
 var text = text
-this.this.setText(text)
-this.this.setLabel(label)
+this.setText(text)
+this.setLabel(label)
 hashtable.put(this.getLabel(), this)
 }
 

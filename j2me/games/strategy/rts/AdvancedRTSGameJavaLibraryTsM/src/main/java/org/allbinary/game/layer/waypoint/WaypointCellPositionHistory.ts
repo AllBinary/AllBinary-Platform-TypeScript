@@ -76,7 +76,7 @@ var layerInterface = layerInterface
         
 index >= 0; index--)
         {
-this.this.add(list.get(index) as CellPosition, layerInterface)
+this.add(list.get(index) as CellPosition, layerInterface)
 }
 
 }

@@ -56,7 +56,7 @@ public constructor (anyType: any = {}, animationBehavior: AnimationBehavior)
         
         
 
-this.this.init(allBinaryImageRotationAnimationInfo!.getDx(), allBinaryImageRotationAnimationInfo!.getDy())
+this.init(allBinaryImageRotationAnimationInfo!.getDx(), allBinaryImageRotationAnimationInfo!.getDy())
 }
 
 public constructor (imageArray: Image[], animationBehavior: AnimationBehavior)                        
@@ -118,7 +118,7 @@ public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: numbe
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.init(dx, dy)
+this.init(dx, dy)
 }
 
 public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior)                        
@@ -134,7 +134,7 @@ public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: numbe
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.init( -(imageArray[0]!.getWidth() shr 2),  -(imageArray[0]!.getHeight() shr 2))
+this.init( -(imageArray[0]!.getWidth() shr 2),  -(imageArray[0]!.getHeight() shr 2))
 }
 
 
@@ -143,8 +143,8 @@ this.this.init( -(imageArray[0]!.getWidth() shr 2),  -(imageArray[0]!.getHeight(
     public init(dx: number, dy: number){
     //var dx = dx
     //var dy = dy
-this.this.setDx(dx)
-this.this.setDy(dy)
+this.setDx(dx)
+this.setDy(dy)
 }
 
 

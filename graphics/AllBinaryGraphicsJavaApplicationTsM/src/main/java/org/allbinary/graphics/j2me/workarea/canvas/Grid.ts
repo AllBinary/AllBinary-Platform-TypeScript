@@ -54,9 +54,9 @@ public constructor (grid: Grid){
             super();
             var grid = grid
 this.grid= grid.grid
-this.this.showGrid(grid.isGridOn)
+this.showGrid(grid.isGridOn)
 this.isGridPossible= grid.isGridPossible
-this.this.setZoom(grid.getZoom())
+this.setZoom(grid.getZoom())
 }
 
 

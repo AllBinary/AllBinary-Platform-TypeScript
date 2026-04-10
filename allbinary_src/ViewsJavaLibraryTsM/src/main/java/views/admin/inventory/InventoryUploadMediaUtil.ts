@@ -233,7 +233,7 @@ logUtil!.put(stringBuffer!.toString(), this, "saveFiles()")
         
         
 
-this.this.setFileNames(fileName)
+this.setFileNames(fileName)
 
                         if(isMediaSupported)
                         

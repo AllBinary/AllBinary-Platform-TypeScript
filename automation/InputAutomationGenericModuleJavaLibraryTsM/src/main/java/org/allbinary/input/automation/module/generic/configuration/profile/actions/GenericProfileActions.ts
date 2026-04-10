@@ -110,9 +110,9 @@ public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, na
             super();
             var genericProfileActionsJPanel = genericProfileActionsJPanel
 var name = name
-this.this.setName(name)
-this.this.init(genericProfileActionsJPanel)
-this.this.load()
+this.setName(name)
+this.init(genericProfileActionsJPanel)
+this.load()
 }
 
 public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, abPath: AbPath, name: string){
@@ -121,9 +121,9 @@ public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, ab
             var genericProfileActionsJPanel = genericProfileActionsJPanel
 var abPath = abPath
 var name = name
-this.this.setName(name)
-this.this.init(genericProfileActionsJPanel)
-this.this.load()
+this.setName(name)
+this.init(genericProfileActionsJPanel)
+this.load()
 }
 
 public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, fileInputStream: FileInputStream, name: string){
@@ -132,9 +132,9 @@ public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, fi
             var genericProfileActionsJPanel = genericProfileActionsJPanel
 var fileInputStream = fileInputStream
 var name = name
-this.this.setName(name)
-this.this.init(genericProfileActionsJPanel)
-this.this.fileInit(fileInputStream)
+this.setName(name)
+this.init(genericProfileActionsJPanel)
+this.fileInit(fileInputStream)
 }
 
 
@@ -142,9 +142,9 @@ this.this.fileInit(fileInputStream)
             
     init(genericProfileActionsJPanel: GenericProfileActionsJPanel){
 var genericProfileActionsJPanel = genericProfileActionsJPanel
-this.this.setGenericProfileActionsJPanel(genericProfileActionsJPanel)
+this.setGenericProfileActionsJPanel(genericProfileActionsJPanel)
 this.actionsDefaultListModelHelper= DefaultListModelHelper()
-this.this.setHashMap(HashMap<Any, Any>())
+this.setHashMap(HashMap<Any, Any>())
 }
 
 
@@ -182,7 +182,7 @@ idOutData!.writeBytes(DomDocumentHelper.toString(this.toXmlDoc()))
         
         
 
-this.this.fileInit(idFile)
+this.fileInit(idFile)
 
                                     }
                                 
@@ -255,7 +255,7 @@ index < nameNodeList!.getLength(); index++)
                                 )
                         
                                     {
-                                    this.this.initActions(nodeList)
+                                    this.initActions(nodeList)
 
                                     }
                                 
@@ -355,7 +355,7 @@ var name = name
 this.getHashMap()!.put(genericProfileAction!.getName(), genericProfileAction)
 this.getDefaultListModelHelper()!.add(genericProfileAction!.getName())
 this.getDefaultListModelHelper()!.initDefaultModelList()
-this.this.save()
+this.save()
 }
 
 
@@ -366,7 +366,7 @@ var name = name
 this.getHashMap()!.remove(name)
 this.getDefaultListModelHelper()!.remove(name)
 this.getDefaultListModelHelper()!.initDefaultModelList()
-this.this.save()
+this.save()
 }
 
 

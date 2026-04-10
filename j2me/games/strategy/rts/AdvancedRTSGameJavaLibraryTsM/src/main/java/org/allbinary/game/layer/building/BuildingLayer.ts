@@ -210,7 +210,7 @@ public constructor (remoteInfo: RemoteInfo, groupInterface: Group[], rootName: s
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setCollidableInferface(CollidableRTSBehavior(this, true))
+this.setCollidableInferface(CollidableRTSBehavior(this, true))
 this.getWaypointBehavior()!.setWaypoint(Waypoint(this, SelectSound.getInstance()))
 
     var damageFloaters: DamageFloaters = DamageFloaters.getInstance()!;
@@ -253,12 +253,12 @@ this.damageFloatersPaintableInterface= damageFloatersPaintableInterface
                                 
 this.healthBar= healthBar
 this.pathsHashtable= Hashtable<Any, Any>()
-this.this.setMaxLevel(30)
-this.this.setProductivity(1)
-this.this.setEfficiency(this.calculateEfficiency())
+this.setMaxLevel(30)
+this.setProductivity(1)
+this.setEfficiency(this.calculateEfficiency())
 this.efficiencyPerLevel= 10000 /this.getMaxLevel() +10000 % this.getMaxLevel()
 this.efficiency= this.efficiencyPerLevel
-this.this.generateMoveOutOfBuildAreaPaths()
+this.generateMoveOutOfBuildAreaPaths()
 this.trackingEvent= TrackingEvent(this)
 }
 
@@ -271,7 +271,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setCollidableInferface(CollidableRTSBehavior(this, true))
+this.setCollidableInferface(CollidableRTSBehavior(this, true))
 this.getWaypointBehavior()!.setWaypoint(Waypoint(this, SelectSound.getInstance()))
 this.efficiencyPerLevel= 0
 this.efficiency= 0
@@ -297,7 +297,7 @@ this.pathsHashtable= NullUtil.getInstance()!.NULL_TABLE
                         
                                     {
                                     this.local= true
-this.this.addVisibility()
+this.addVisibility()
 
                                     }
                                 
@@ -356,7 +356,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                         if(this.getHealthInterface()!.isDamaged())
                         
                                     {
-                                    this.this.setAnimationInterface(this.destroyAnimationInterface)
+                                    this.setAnimationInterface(this.destroyAnimationInterface)
 
                                     }
                                 
@@ -386,7 +386,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                         if(!this.getHealthInterface()!.isAlive())
                         
                                     {
-                                    this.this.setDestroyed(true)
+                                    this.setDestroyed(true)
 
                                     }
                                 
@@ -402,12 +402,12 @@ var allBinaryLayerManager = allBinaryLayerManager
                                     }
                                 
                         else {
-                            this.this.setAnimationInterface(this.destroyAnimationInterface)
+                            this.setAnimationInterface(this.destroyAnimationInterface)
 SecondaryPlayerQueueFactory.getInstance()!.add(ExplosionBasicSound.getInstance())
 this.shakeListener!.onSmallShakeEvent()
 vibration.vibrate(duration, 0, 0)
 this.timeDelayHelper!.setStartTime()
-this.this.setReadyForExplosion(true)
+this.setReadyForExplosion(true)
 
                         }
                             
@@ -481,16 +481,16 @@ logUtil!.put("Cost: " +downgradeCost, this, "getDowngradeCost")
 
     public downgrade(){
 super.downgrade()
-this.this.setProductivity(this.getProductivity() -1)
-this.this.setEfficiency(this.getEfficiency() -this.calculateEfficiency())
+this.setProductivity(this.getProductivity() -1)
+this.setEfficiency(this.getEfficiency() -this.calculateEfficiency())
 this.getHealthInterface()!.setMaxHealth(this.getHealthInterface()!.getMaxHealth() -((this.getLevel() +1) *100))
 }
 
 
     public upgrade(){
 super.upgrade()
-this.this.setProductivity(this.getProductivity() +1)
-this.this.setEfficiency(this.getEfficiency() +this.calculateEfficiency())
+this.setProductivity(this.getProductivity() +1)
+this.setEfficiency(this.getEfficiency() +this.calculateEfficiency())
 this.getHealthInterface()!.setMaxHealth(this.getHealthInterface()!.getMaxHealth() +(this.getLevel() *100))
 }
 
@@ -748,7 +748,7 @@ TrackingEventHandler.getInstance()!.removeListener(this)
                         if(this.local)
                         
                                     {
-                                    this.this.removeVisibility()
+                                    this.removeVisibility()
 
                                     }
                                 

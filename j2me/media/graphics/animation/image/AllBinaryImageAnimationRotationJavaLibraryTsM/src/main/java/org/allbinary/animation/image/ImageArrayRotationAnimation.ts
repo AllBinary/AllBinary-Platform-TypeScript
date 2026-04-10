@@ -53,7 +53,7 @@ protected constructor (anyType: any = {}, animationBehavior: AnimationBehavior)
         
         
 
-this.this.init(allBinaryImageRotationAnimationInfo!.getImageArray(), allBinaryImageRotationAnimationInfo!.getAngleInfoP(), allBinaryImageRotationAnimationInfo!.getTotalAngle())
+this.init(allBinaryImageRotationAnimationInfo!.getImageArray(), allBinaryImageRotationAnimationInfo!.getAngleInfoP(), allBinaryImageRotationAnimationInfo!.getTotalAngle())
 }
 
 public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior)                        
@@ -69,7 +69,7 @@ public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: numbe
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.init(imageArray, angleInfo, totalAngle)
+this.init(imageArray, angleInfo, totalAngle)
 }
 
 public constructor (imageArray: Image[], animationBehavior: AnimationBehavior)                        

@@ -220,7 +220,7 @@ inputProcessorArray[key]!.process(allbinaryLayerManager, GameKeyEvent.NONE)
 
     public processInput(allbinaryLayerManager: AllBinaryLayerManager){
 var allbinaryLayerManager = allbinaryLayerManager
-this.this.processInput(allbinaryLayerManager, this.getGameKeyEventList())
+this.processInput(allbinaryLayerManager, this.getGameKeyEventList())
 this.getGameKeyEventList()!.clear()
 }
 

@@ -84,7 +84,7 @@ this.image= PaintableToImageUtil.getImage(allBinaryTiledLayer, aWidth, aHeight)
     public paint(graphics: Graphics){
 var graphics = graphics
 graphics.drawImage(image, x, y, anchor)
-this.this.paintDots(graphics)
+this.paintDots(graphics)
 }
 
 

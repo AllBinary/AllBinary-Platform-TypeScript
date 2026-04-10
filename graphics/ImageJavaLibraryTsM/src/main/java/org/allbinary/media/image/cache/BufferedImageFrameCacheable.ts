@@ -43,7 +43,7 @@ public constructor (bufferedImage: BufferedImage, frame: Long){
             var bufferedImage = bufferedImage
 var frame = frame
 this.frame= frame
-this.this.setBufferedImage(bufferedImage)
+this.setBufferedImage(bufferedImage)
 }
 
 

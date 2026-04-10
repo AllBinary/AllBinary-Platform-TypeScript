@@ -134,7 +134,7 @@ this.pathFinderGraphVisitorFactoryInterface= pathFinderGraphVisitorFactoryInterf
         
 
 RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance()!.init()
-this.this.init(geographicMapInterface, pathFindingInfo, mapArray)
+this.init(geographicMapInterface, pathFindingInfo, mapArray)
 this.basicGeographicMapPathFinder!.init(geographicMapInterface, basicGeographicMapGraph, pathFinderGraphVisitorFactoryInterface!.getInstance(geographicMapInterface))
 pathFindingInfo!.setPathFinder(basicGeographicMapPathFinder)
 
@@ -153,7 +153,7 @@ pathFindingInfo!.setPathFinder(basicGeographicMapPathFinder)
     //var pathFindingInfo = pathFindingInfo
     //var mapArray = mapArray
 super.init(geographicMapInterface, pathFindingInfo, mapArray)
-this.this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray)
+this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray)
 }
 
 
@@ -288,7 +288,7 @@ column < totalColumns; column++)
         
 row < totalRows; row++)
         {
-this.this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray, geographicMapCellPositionFactory!.getInstance(column, row))
+this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray, geographicMapCellPositionFactory!.getInstance(column, row))
 }
 
 }

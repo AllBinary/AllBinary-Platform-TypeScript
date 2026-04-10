@@ -233,7 +233,7 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESS) == 0)
                         
                                     {
-                                    this.this.process()
+                                    this.process()
 
                                     }
                                 

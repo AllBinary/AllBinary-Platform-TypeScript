@@ -397,19 +397,19 @@ public constructor (abeClientInformation: AbeClientInformationInterface, command
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setWait(NullWaitGameRunnable.getInstance()!.WAIT)
+this.setWait(NullWaitGameRunnable.getInstance()!.WAIT)
 this.gameInitializationInterfaceFactoryInterface= gameInitializationInterfaceFactoryInterface
 GameInitializationUtil.getInstance()!.initDemo(abeClientInformation, this, gameInitializationInterfaceFactoryInterface)
 ResizableListenerHandler.getInstance()!.fireEvent(false)
 this.overlayPaintable= overlayPaintable
 this.highScoresFactoryInterface= highScoresFactoryInterface
-this.this.setDefaultPaintableInterface(paintable)
-this.this.setPaintableInterface(this.getDefaultPaintableInterface())
+this.setDefaultPaintableInterface(paintable)
+this.setPaintableInterface(this.getDefaultPaintableInterface())
 
                         if(isContinue)
                         
                                     {
-                                    this.this.addCommand(GameCommandsFactory.getInstance()!.CONTINUE_COMMAND)
+                                    this.addCommand(GameCommandsFactory.getInstance()!.CONTINUE_COMMAND)
 
                                     }
                                 
@@ -417,7 +417,7 @@ this.this.setPaintableInterface(this.getDefaultPaintableInterface())
                         if(ChangedGameFeatureListener.getInstance()!.isChanged(GameFeatureFactory.getInstance()!.SOUND))
                         
                                     {
-                                    this.this.mediaInit()
+                                    this.mediaInit()
 
                                     }
                                 
@@ -578,7 +578,7 @@ commandList!.add(gameCommandsFactory!.DISPLAY_ABOUT)
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-this.this.removeAllCommands()
+this.removeAllCommands()
 
     var commandArray: any = {}[] = getCustomCommands()!;
         
@@ -600,11 +600,11 @@ this.this.removeAllCommands()
         
 index < size; index++)
         {
-this.this.addCommand(commandArray[index]! as Command)
+this.addCommand(commandArray[index]! as Command)
 }
 
 CustomGameMenuUtil.add(this)
-this.this.setCommandListener(cmdListener)
+this.setCommandListener(cmdListener)
 }
 
 
@@ -630,8 +630,8 @@ ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this)
                 //@Throws(Error::class)
             
     initMenu(){
-this.this.close()
-this.this.open()
+this.close()
+this.open()
 }
 
 
@@ -659,33 +659,33 @@ GameKeyEventHandler.getInstance()!.removeListener(this.getMenuInputProcessor())
 
     public keyPressed(keyCode: number){
 var keyCode = keyCode
-this.this.keyPressed(keyCode, 0)
+this.keyPressed(keyCode, 0)
 }
 
 
     public keyReleased(keyCode: number){
 var keyCode = keyCode
-this.this.keyReleased(keyCode, 0)
+this.keyReleased(keyCode, 0)
 }
 
 
     public keyRepeated(keyCode: number){
 var keyCode = keyCode
-this.this.keyRepeated(keyCode, 0)
+this.keyRepeated(keyCode, 0)
 }
 
 
     public keyPressed(keyCode: number, deviceId: number){
 var keyCode = keyCode
 var deviceId = deviceId
-this.this.addGameKeyEvent(keyCode, false)
+this.addGameKeyEvent(keyCode, false)
 }
 
 
     public keyReleased(keyCode: number, deviceId: number){
 var keyCode = keyCode
 var deviceId = deviceId
-this.this.removeGameKeyEvent(keyCode, false)
+this.removeGameKeyEvent(keyCode, false)
 }
 
 
@@ -700,7 +700,7 @@ var deviceId = deviceId
                         if(this.isSingleKeyRepeatableProcessing)
                         
                                     {
-                                    this.this.addGameKeyEvent(keyCode, true)
+                                    this.addGameKeyEvent(keyCode, true)
 
                                     }
                                 
@@ -791,15 +791,15 @@ logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pause(){
-this.this.close()
-this.this.setPaused(true)
+this.close()
+this.setPaused(true)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public unPause(){
-this.this.open()
-this.this.setPaused(false)
+this.open()
+this.setPaused(false)
 }
 
 
@@ -956,8 +956,8 @@ logUtil!.put("Not Implemented since not a game", this, "setGameOver")
 
                                     }
                                 
-this.this.setState(newState)
-this.this.setState()
+this.setState(newState)
+this.setState()
 }
 
 
@@ -1062,7 +1062,7 @@ this.overlayPaintable!.update()
             
     public process(){
 this.getMenuInputProcessor()!.processInput()
-this.this.preDemoProcess()
+this.preDemoProcess()
 
                         if(this.state == 0)
                         
@@ -1102,7 +1102,7 @@ this.this.preDemoProcess()
     processGame(){
 this.gameRunnable!.run()
 this.specialAnimationInterface!.nextFrame()
-this.this.process()
+this.process()
 }
 
 
@@ -1116,8 +1116,8 @@ logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN)
         
 
 progressCanvas!.addPortion(50, "Demo Thread")
-this.this.setCurrentThread()
-this.this.setRunning(true)
+this.setCurrentThread()
+this.setRunning(true)
 
                         if(features.isFeature(MainFeatureFactory.getInstance()!.LOAD_ONDEMAND))
                         
@@ -1132,9 +1132,9 @@ this.this.setRunning(true)
                         }
                             
 fullScreenUtil!.init(this, this.getCustomCommandListener())
-this.this.initMenu()
-this.this.initPostPaint()
-this.this.setState()
+this.initMenu()
+this.initPostPaint()
+this.setState()
 
                         if(features.isDefault(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD))
                         
@@ -1155,11 +1155,11 @@ this.this.setState()
         while(this.isRunning())
         {
 this.loopTimeHelper!.setStartTime()
-this.this.processGame()
-this.this.processLoopSleep()
+this.processGame()
+this.processLoopSleep()
 }
 
-this.this.end()
+this.end()
 
                         }
                             
@@ -1187,7 +1187,7 @@ super.setRunning(running)
         
 
 currentDisplayableFactory!.clearRunnable()
-this.this.end()
+this.end()
 
                                     }
                                 
@@ -1223,7 +1223,7 @@ baseGameStatistics!.init()
                                     }
                                 
 logUtil!.put("Demo End", this, commonStrings!.RUN)
-this.this.close()
+this.close()
 DisplayChangeEventHandler.getInstance()!.removeListener(this)
 }
 

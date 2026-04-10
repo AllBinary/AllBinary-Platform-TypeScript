@@ -73,14 +73,14 @@ hashMap!.put(UserEmailEventConfigurationData.NAME, name)
         
 
 hashMap!.put(UserEmailEventConfigurationData.LISTENER_CLASSPATH, eventListenerClassPath)
-this.this.setUserEmailEventConfigurationInterface(UserEmailEventConfiguration(hashMap) as UserEmailEventConfigurationInterface)
+this.setUserEmailEventConfigurationInterface(UserEmailEventConfiguration(hashMap) as UserEmailEventConfigurationInterface)
 }
 
 public constructor (userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface){
 
             super();
             var userEmailEventConfigurationInterface = userEmailEventConfigurationInterface
-this.this.setUserEmailEventConfigurationInterface(userEmailEventConfigurationInterface)
+this.setUserEmailEventConfigurationInterface(userEmailEventConfigurationInterface)
 }
 
 

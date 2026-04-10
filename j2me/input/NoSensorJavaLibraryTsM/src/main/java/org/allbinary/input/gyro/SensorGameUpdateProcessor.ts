@@ -92,7 +92,7 @@ var anyType = anyType
 
 
     setNoSensors(){
-this.this.setInputSensor(NoAllBinarySensor.getInstance())
+this.setInputSensor(NoAllBinarySensor.getInstance())
 }
 
 

@@ -140,7 +140,7 @@ onMotionGestureEvent(ev)
 var ev = ev
 isMouseGestureOccurring= true
 currentMotionGesture= TouchMotionGestureFactory.getInstance()!.NO_MOTION
-this.this.onMotionGestureEvent(ev)
+this.onMotionGestureEvent(ev)
 }
 
 
@@ -187,7 +187,7 @@ var ev = ev
                         if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.PRESSED)
                         
                                     {
-                                    this.this.onPressedMotionGestureEvent(ev)
+                                    this.onPressedMotionGestureEvent(ev)
 
                                     }
                                 
@@ -195,7 +195,7 @@ var ev = ev
                         if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.RELEASED)
                         
                                     {
-                                    this.this.released(ev)
+                                    this.released(ev)
 
                                     }
                                 

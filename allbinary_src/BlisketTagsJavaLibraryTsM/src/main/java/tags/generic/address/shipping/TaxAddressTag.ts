@@ -54,8 +54,8 @@ public constructor (){
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.this.setName("Basic Shipping Address View")
-this.this.setObjectFile("views.generic.address.shipping.TaxValidationView")
+                                    this.setName("Basic Shipping Address View")
+this.setObjectFile("views.generic.address.shipping.TaxValidationView")
 
                                     }
                                 
@@ -63,8 +63,8 @@ this.this.setObjectFile("views.generic.address.shipping.TaxValidationView")
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.NEW) == 0)
                         
                                     {
-                                    this.this.setName("Basic Shipping Address View")
-this.this.setObjectFile("views.generic.address.shipping.NewValidationView")
+                                    this.setName("Basic Shipping Address View")
+this.setObjectFile("views.generic.address.shipping.NewValidationView")
 
                                     }
                                 
@@ -72,8 +72,8 @@ this.this.setObjectFile("views.generic.address.shipping.NewValidationView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
                         
                                     {
-                                    this.this.setName("Basic Shipping Address View")
-this.this.setObjectFile("views.generic.address.shipping.AddTaxValidationView")
+                                    this.setName("Basic Shipping Address View")
+this.setObjectFile("views.generic.address.shipping.AddTaxValidationView")
 
                                     }
                                 
@@ -81,8 +81,8 @@ this.this.setObjectFile("views.generic.address.shipping.AddTaxValidationView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.UPDATE) == 0)
                         
                                     {
-                                    this.this.setName("Basic Shipping Address View")
-this.this.setObjectFile("views.generic.address.shipping.UpdateTaxValidationView")
+                                    this.setName("Basic Shipping Address View")
+this.setObjectFile("views.generic.address.shipping.UpdateTaxValidationView")
 
                                     }
                                 

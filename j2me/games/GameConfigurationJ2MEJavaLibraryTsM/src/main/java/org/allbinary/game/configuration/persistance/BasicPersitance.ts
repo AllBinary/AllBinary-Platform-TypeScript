@@ -113,10 +113,10 @@ index < size; index++)
         
         
 
-this.this.delete(abeClientInformation, integer.toInt())
+this.delete(abeClientInformation, integer.toInt())
 }
 
-this.this.clear()
+this.clear()
 }
 
 

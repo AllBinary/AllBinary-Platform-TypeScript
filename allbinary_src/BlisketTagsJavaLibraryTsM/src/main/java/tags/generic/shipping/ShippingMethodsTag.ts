@@ -50,8 +50,8 @@ public constructor (){
                                 )
                         
                                     {
-                                    this.this.setName("Basic Shipping View")
-this.this.setObjectFile("views.generic.shipping.ValidationView")
+                                    this.setName("Basic Shipping View")
+this.setObjectFile("views.generic.shipping.ValidationView")
 
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         

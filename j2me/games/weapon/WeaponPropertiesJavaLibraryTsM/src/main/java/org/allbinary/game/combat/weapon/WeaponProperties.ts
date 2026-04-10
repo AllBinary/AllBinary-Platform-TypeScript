@@ -100,11 +100,11 @@ messageSent= true
 
                                     }
                                 
-this.this.setReloadTime(reloadTime)
-this.this.setTargetingTime(targetingTime)
-this.this.setDamage(damage)
-this.this.setDissipation(dissipation)
-this.this.setSpeed(BasicDecimal(speed))
+this.setReloadTime(reloadTime)
+this.setTargetingTime(targetingTime)
+this.setDamage(damage)
+this.setDissipation(dissipation)
+this.setSpeed(BasicDecimal(speed))
 
                         if(dissipation != ZERO)
                         
@@ -124,7 +124,7 @@ this.this.setSpeed(BasicDecimal(speed))
         
         
 
-this.this.setRange((value *9).toInt() /10)
+this.setRange((value *9).toInt() /10)
 
                                     }
                                 

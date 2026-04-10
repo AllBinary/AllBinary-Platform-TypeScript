@@ -91,7 +91,7 @@ this.abContext= AbContext(propertiesHashMap, pageContext)
 
                                     }
                                 
-this.this.override(propertiesHashMap)
+this.override(propertiesHashMap)
 }
 
 public constructor (request: HttpServletRequest, propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext)                        
@@ -115,9 +115,9 @@ this.abContext= AbContext(propertiesHashMap, pageContext)
 
                                     }
                                 
-this.this.set(RequestParams(request as HttpServletRequest).
+this.set(RequestParams(request as HttpServletRequest).
                             toHashMap())
-this.this.override(propertiesHashMap)
+this.override(propertiesHashMap)
 }
 
 public constructor (databaseHashMap: HashMap<Any, Any>, propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext)                        
@@ -141,7 +141,7 @@ this.abContext= AbContext(propertiesHashMap, pageContext)
 
                                     }
                                 
-this.this.set(databaseHashMap)
+this.set(databaseHashMap)
 }
 
 public constructor (propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext)                        
@@ -164,7 +164,7 @@ this.abContext= AbContext(propertiesHashMap, pageContext)
 
                                     }
                                 
-this.this.set(propertiesHashMap)
+this.set(propertiesHashMap)
 }
 
 public constructor (parentViewOfThisTransformInfoInterface: TransformInfoHttp)                        
@@ -198,10 +198,10 @@ var hashMap = hashMap
         
         
 
-this.this.setName(hashMap!.get(transformInfoData!.NAME) as String)
-this.this.setStoreName(hashMap!.get(StoreFrontData.getInstance()!.NAME) as String)
-this.this.setObjectFile(hashMap!.get(transformInfoData!.OBJECTFILENAME) as String)
-this.this.setObject(hashMap!.get(transformInfoData!.OBJECT) as String)
+this.setName(hashMap!.get(transformInfoData!.NAME) as String)
+this.setStoreName(hashMap!.get(StoreFrontData.getInstance()!.NAME) as String)
+this.setObjectFile(hashMap!.get(transformInfoData!.OBJECTFILENAME) as String)
+this.setObject(hashMap!.get(transformInfoData!.OBJECT) as String)
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
@@ -216,12 +216,12 @@ this.this.setObject(hashMap!.get(transformInfoData!.OBJECT) as String)
                         if(stringValidationUtil!.isValidRequired(objectConfigString, 10, AbSqlData.MAXBLOB))
                         
                                     {
-                                    this.this.setObjectConfig(objectConfigString)
+                                    this.setObjectConfig(objectConfigString)
 
                                     }
                                 
                         else {
-                            this.this.setObjectConfig(TransformInfoObjectConfig(this).
+                            this.setObjectConfig(TransformInfoObjectConfig(this).
                             toString())
 
                         }
@@ -230,14 +230,14 @@ this.this.setObject(hashMap!.get(transformInfoData!.OBJECT) as String)
                         if(!stringValidationUtil!.isEmpty(hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as String))
                         
                                     {
-                                    this.this.setObjectConfigFile(hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as String)
+                                    this.setObjectConfigFile(hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as String)
 
                                     }
                                 
-this.this.setTemplateFile(hashMap!.get(transformInfoData!.TEMPLATEFILENAME) as String)
-this.this.setTemplate(hashMap!.get(transformInfoData!.TEMPLATE) as String)
-this.this.setDataFile(hashMap!.get(transformInfoData!.DATAFILENAME) as String)
-this.this.setData(hashMap!.get(transformInfoData!.DATA) as String)
+this.setTemplateFile(hashMap!.get(transformInfoData!.TEMPLATEFILENAME) as String)
+this.setTemplate(hashMap!.get(transformInfoData!.TEMPLATE) as String)
+this.setDataFile(hashMap!.get(transformInfoData!.DATAFILENAME) as String)
+this.setData(hashMap!.get(transformInfoData!.DATA) as String)
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         

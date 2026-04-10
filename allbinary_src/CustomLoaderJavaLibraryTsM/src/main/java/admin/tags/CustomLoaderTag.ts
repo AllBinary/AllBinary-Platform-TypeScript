@@ -157,7 +157,7 @@ setMethod!.invoke(anyType, methodArgs)
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.SET) == 0)
                         
                                     {
-                                    this.this.setCustomLoaderWebappPath()
+                                    this.setCustomLoaderWebappPath()
 
                                     }
                                 

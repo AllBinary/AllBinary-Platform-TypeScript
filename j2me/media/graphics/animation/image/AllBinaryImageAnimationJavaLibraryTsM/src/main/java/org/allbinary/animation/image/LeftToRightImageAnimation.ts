@@ -55,7 +55,7 @@ this.currentWidth= 0
                         if(this.getSequence()[0] ==  -1)
                         
                                     {
-                                    this.this.setFrame(this.getSize() -1)
+                                    this.setFrame(this.getSize() -1)
 
                                     }
                                 
@@ -76,7 +76,7 @@ this.currentWidth= 0
 
                         }
                             
-this.this.update()
+this.update()
 }
 
 
@@ -94,14 +94,14 @@ this.this.update()
 
                         }
                             
-this.this.update()
+this.update()
 }
 
 
     public setFrame(index: number){
 var index = index
 super.setFrame(index)
-this.this.update()
+this.update()
 }
 
 

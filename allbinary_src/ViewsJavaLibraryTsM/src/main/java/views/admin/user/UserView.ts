@@ -59,7 +59,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
 
     public addDomNodeInterfaces(){
-this.this.addDomNodeInterface(UserDomNode(this.user) as DomNodeInterface)
+this.addDomNodeInterface(UserDomNode(this.user) as DomNodeInterface)
 }
 
 
@@ -68,7 +68,7 @@ this.this.addDomNodeInterface(UserDomNode(this.user) as DomNodeInterface)
     public view(): string{
 
         try {
-            this.this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces()
 
 
 

@@ -213,7 +213,7 @@ var totalPaths = totalPaths
                         if(multipassState!.step == 1)
                         
                                     {
-                                    this.this.searchStart(startPathFindingNodeList!.get(0) as PathFindingNode, endPathFindingNodeList!.get(0) as PathFindingNode, multipassState)
+                                    this.searchStart(startPathFindingNodeList!.get(0) as PathFindingNode, endPathFindingNodeList!.get(0) as PathFindingNode, multipassState)
 
                                     }
                                 
@@ -270,7 +270,7 @@ pathList!.add(list)
     //var startPathFindingNode = startPathFindingNode
     //var endPathFindingNode = endPathFindingNode
     //var multipassState = multipassState
-this.this.findPathStart(startPathFindingNode!.geographicMapCellPosition, endPathFindingNode!.geographicMapCellPosition, multipassState)
+this.findPathStart(startPathFindingNode!.geographicMapCellPosition, endPathFindingNode!.geographicMapCellPosition, multipassState)
 }
 
 

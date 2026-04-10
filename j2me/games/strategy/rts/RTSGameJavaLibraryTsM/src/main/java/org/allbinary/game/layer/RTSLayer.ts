@@ -369,11 +369,11 @@ protected constructor (remoteInfo: RemoteInfo, groupInterface: Group[], rootName
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.initInputProcessors()
+this.initInputProcessors()
 this.rootName= rootName
 this.healthInterface= healthInterface
 this.rtsFormInput= rtsFormInput
-this.this.setPosition(x, y, z)
+this.setPosition(x, y, z)
 this.verticleBuildAnimationInterface= verticleBuildAnimationInterfaceFactoryInterface!.getInstance(0) as IndexedAnimation
 this.buildAnimationInterface= buildAnimationInterfaceFactoryInterface!.getInstance(0)
 this.baseAnimationInterface= baseAnimationInterfaceFactoryInterface!.getInstance(0)
@@ -404,7 +404,7 @@ protected constructor (remoteInfo: RemoteInfo)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.initInputProcessors()
+this.initInputProcessors()
 this.rtsFormInput= NullRTSFormInputFactory.getInstance()
 
     var animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
@@ -459,7 +459,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
         
 
 viewPosition2!.setTiledLayer(tiledLayer)
-this.this.updateWaypointBehavior(geographicMapInterface)
+this.updateWaypointBehavior(geographicMapInterface)
 }
 
 
@@ -484,7 +484,7 @@ this.hackVerticleBuild= 0
     public select(){
 this.rangeAnimation= this.initRangeAnimation
 this.sensorRangeAnimation= this.initSensorRangeAnimation
-this.this.setSelected(true)
+this.setSelected(true)
 }
 
 
@@ -496,7 +496,7 @@ this.this.setSelected(true)
 
 this.rangeAnimation= animation
 this.sensorRangeAnimation= animation
-this.this.setSelected(false)
+this.setSelected(false)
 }
 
 
@@ -557,12 +557,12 @@ this.animationInterface= this.indexedButShouldBeRotationAnimationInterface
                         if(this.isCompleted())
                         
                                     {
-                                    this.this.processBuiltTick(allBinaryLayerManager)
+                                    this.processBuiltTick(allBinaryLayerManager)
 
                                     }
                                 
                         else {
-                            this.this.build()
+                            this.build()
 
                         }
                             

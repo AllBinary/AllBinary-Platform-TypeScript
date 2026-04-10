@@ -42,7 +42,7 @@ public constructor (key: BufferedImageInfo){
             super();
             var key = key
 this.key= key
-this.this.setBufferedImage(BufferedImage(key.getWidth(), key.getHeight(), key.getType()))
+this.setBufferedImage(BufferedImage(key.getWidth(), key.getHeight(), key.getType()))
 }
 
 

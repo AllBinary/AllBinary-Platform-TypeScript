@@ -160,7 +160,7 @@ pooledThread!.start()
                         if(!this.isAlive)
                         
                                     {
-                                    this.this.init()
+                                    this.init()
 
                                     }
                                 
@@ -247,7 +247,7 @@ notify()
                         if(!isAlive)
                         
                                     {
-                                    this.this.init()
+                                    this.init()
 
                                     }
                                 
@@ -293,7 +293,7 @@ notify()
 
                                     }
                                 
-this.this.wait()
+this.wait()
 }
 
 

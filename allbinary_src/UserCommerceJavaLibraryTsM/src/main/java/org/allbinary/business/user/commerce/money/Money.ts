@@ -112,7 +112,7 @@ this.units= units as Long
 
     public add(moreMoney: Money){
 var moreMoney = moreMoney
-this.this.add(moreMoney!.toString())
+this.add(moreMoney!.toString())
 }
 
 

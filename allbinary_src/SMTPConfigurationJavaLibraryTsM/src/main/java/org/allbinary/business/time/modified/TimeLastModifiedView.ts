@@ -48,14 +48,14 @@ public constructor (timeLastModified: TimeLastModified){
 
             super();
             var timeLastModified = timeLastModified
-this.this.setTimeLastModified(timeLastModified)
+this.setTimeLastModified(timeLastModified)
 }
 
 public constructor (node: Node){
 
             super();
             var node = node
-this.this.setTimeLastModified(TimeLastModified(DomNodeHelper.getTextNodeValue(node)))
+this.setTimeLastModified(TimeLastModified(DomNodeHelper.getTextNodeValue(node)))
 }
 
 

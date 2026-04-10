@@ -114,7 +114,7 @@ public constructor (image: Image, width: number, height: number, angleIncrement:
     //var height = height
     //var angleIncrement = angleIncrement
     //var animationBehaviorFactory = animationBehaviorFactory
-this.this.setImage(image)
+this.setImage(image)
 this.angleIncrement= angleIncrement
 this.animationBehaviorFactory= animationBehaviorFactory
 }

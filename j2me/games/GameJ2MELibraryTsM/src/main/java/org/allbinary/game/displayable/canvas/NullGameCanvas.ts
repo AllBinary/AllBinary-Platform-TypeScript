@@ -127,20 +127,20 @@ this.running= running
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pause(){
-this.this.setPaused(true)
+this.setPaused(true)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public unPause(){
-this.this.setPaused(false)
+this.setPaused(false)
 }
 
 
     public initCommands(cmdListener: CommandListener){
     //var cmdListener = cmdListener
-this.this.removeAllCommands()
-this.this.setCommandListener(cmdListener)
+this.removeAllCommands()
+this.setCommandListener(cmdListener)
 }
 
 

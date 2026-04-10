@@ -598,7 +598,7 @@ protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInte
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setCollidableInferface(CollidableUnitBehavior(this, true))
+this.setCollidableInferface(CollidableUnitBehavior(this, true))
 this.waypointLayerInterfaceFactoryInterface= waypointLayerInterfaceFactoryInterface
 this.maxResourceLoad= maxResourceLoad!.toShort()
 this.moveSoundInterface= moveSoundInterface
@@ -636,7 +636,7 @@ this.initResourceAnimation!.setFrame(direction)
 this.decalAnimation!.setFrame(direction)
 this.rotationAnimationInterfaceP= this.indexedButShouldBeRotationAnimationInterface as RotationAnimation
 this.rotationAnimationInterfaceP!.setFrame(direction)
-this.this.setMaxLevel(12)
+this.setMaxLevel(12)
 this.vehicleProperties= vehicleProperties
 this.trackingEvent= TrackingEvent(this)
 this.initPathAnimation= PathAnimation(this, LinePathRelativeAnimation.getInstance())
@@ -664,7 +664,7 @@ this.initPathAnimation!.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
 hashtable.put(Group.ID, this.getGroupInterface())
 hashtable.put(Layer.ID, this)
 hashtable.put(AllBinaryGameLayerManager.ID, allBinaryGameLayerManagerP)
-this.this.setWaypointBehavior(UnitWaypointBehavior2(this, waypointLayerInterfaceFactoryInterface!.getInstance(hashtable, x, y, z) as AdvancedRTSGameLayer))
+this.setWaypointBehavior(UnitWaypointBehavior2(this, waypointLayerInterfaceFactoryInterface!.getInstance(hashtable, x, y, z) as AdvancedRTSGameLayer))
 
     var features: Features = Features.getInstance()!;
         
@@ -684,7 +684,7 @@ this.this.setWaypointBehavior(UnitWaypointBehavior2(this, waypointLayerInterface
 
 this.getWaypointBehavior()!.setWaypoint(waypoint)
 super.updateWaypointBehavior(geographicMapInterface)
-this.this.initRangeHack()
+this.initRangeHack()
 }
 
 
@@ -697,7 +697,7 @@ TrackingEventHandler.getInstance()!.addListener(this)
 WaypointEventHandlerFactory.getInstance(this.getGroupInterface()[0]!)!.addListener(this.getUnitWaypointBehavior())
 BuildingEventHandler.getInstance()!.addListener(this)
 this.getUnitWaypointBehavior()!.setCurrentPathGeographicMapCellPosition(this.getCurrentGeographicMapCellPosition())
-this.this.updateSensorGeographicMapCellPositionList()
+this.updateSensorGeographicMapCellPositionList()
 this.getUnitWaypointBehavior()!.setLastPathGeographicMapCellPosition(this.getUnitWaypointBehavior()!.getCurrentPathGeographicMapCellPosition())
 }
 
@@ -978,7 +978,7 @@ closestIndex= index
         
         
 
-this.this.teleportTo(geographicMapCellPosition)
+this.teleportTo(geographicMapCellPosition)
 
                                     }
                                 
@@ -1094,7 +1094,7 @@ this.fireTimeHelper!.delay= (weaponProperties!.getReloadTime().toInt())
                         if(!this.getHealthInterface()!.isAlive())
                         
                                     {
-                                    this.this.setDestroyed(true)
+                                    this.setDestroyed(true)
 
                                     }
                                 
@@ -1110,11 +1110,11 @@ this.fireTimeHelper!.delay= (weaponProperties!.getReloadTime().toInt())
                                     }
                                 
                         else {
-                            this.this.setAnimationInterface(this.destroyAnimationInterface)
+                            this.setAnimationInterface(this.destroyAnimationInterface)
 SecondaryPlayerQueueFactory.getInstance()!.add(ExplosionBasicSound.getInstance())
 this.shakeListener!.onSmallShakeEvent()
 vibration.vibrate(duration, 0, 0)
-this.this.setReadyForExplosion(true)
+this.setReadyForExplosion(true)
 
                         }
                             
@@ -1138,7 +1138,7 @@ this.getUnitWaypointBehavior()!.processTick(allBinaryLayerManager)
         
         
 
-this.this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getHalfHeight(), this.z)
+this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getHalfHeight(), this.z)
 }
 
 
@@ -1194,12 +1194,12 @@ this.this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getH
                         if(this.fireTimeHelper!.isTime())
                         
                                     {
-                                    this.this.fireAll(layerManager)
+                                    this.fireAll(layerManager)
 
                                     }
                                 
                         else {
-                            this.this.reload()
+                            this.reload()
 
                         }
                             
@@ -1234,7 +1234,7 @@ this.rotationAnimationInterfaceP!.nextRotation()
                         if(!velocityProperties!.isOverXYMaxForwardVelocity())
                         
                                     {
-                                    this.this.accelerate(this.decelerationBasicDecimal)
+                                    this.accelerate(this.decelerationBasicDecimal)
 
                                     }
                                 
@@ -1251,7 +1251,7 @@ this.rotationAnimationInterfaceP!.nextRotation()
                         if(!velocityProperties!.isOverXYMaxForwardVelocity())
                         
                                     {
-                                    this.this.accelerate(this.accelerationBasicDecimal)
+                                    this.accelerate(this.accelerationBasicDecimal)
 
                                     }
                                 
@@ -1307,8 +1307,8 @@ this.inputProcessorArray[key]!.process(layerManager, GameKeyEvent.NONE)
 }
 
 list.clear()
-this.this.groundFriction()
-this.this.move()
+this.groundFriction()
+this.move()
 }
 
 
@@ -1356,7 +1356,7 @@ salvoInterface!.process(layerManager, angle.toShort(), 90.toShort())
 
     public upgrade(){
 super.upgrade()
-this.this.initRangeHack()
+this.initRangeHack()
 }
 
 
@@ -1400,7 +1400,7 @@ this.getVehicleProperties()!.getVehicleFrictionProperties()!.friction(this.getVe
         
 
 this.rtsLogHelper!.trackTo(this, nextUnvisitedPathGeographicMapCellPosition, dx, dy, reason)
-this.this.trackTo(dx, dy)
+this.trackTo(dx, dy)
 }
 
 
@@ -1414,7 +1414,7 @@ this.this.trackTo(dx, dy)
         
         
 
-this.this.trackTo(dx, dy, angleOfTarget)
+this.trackTo(dx, dy, angleOfTarget)
 }
 
 
@@ -1544,7 +1544,7 @@ this.rtsLogHelper!.currentMoveEnded(this)
                         if(this.movementAngle == this.angleFactory!.LEFT || this.movementAngle == this.angleFactory!.RIGHT)
                         
                                     {
-                                    this.this.handleDeltalY(dx, dy)
+                                    this.handleDeltalY(dx, dy)
 
                                     }
                                 
@@ -1552,7 +1552,7 @@ this.rtsLogHelper!.currentMoveEnded(this)
                         if(this.movementAngle == this.angleFactory!.UP || this.movementAngle == this.angleFactory!.DOWN)
                         
                                     {
-                                    this.this.handleDeltalX(dx, dy)
+                                    this.handleDeltalX(dx, dy)
 
                                     }
                                 
@@ -1578,7 +1578,7 @@ this.rtsLogHelper!.currentMoveEnded(this)
                         if(Math.abs(dx) > Math.abs(dy) && dy != 0)
                         
                                     {
-                                    this.this.handleDeltalY(dx, dy)
+                                    this.handleDeltalY(dx, dy)
 
                                     }
                                 
@@ -1586,12 +1586,12 @@ this.rtsLogHelper!.currentMoveEnded(this)
                         if(dx != 0)
                         
                                     {
-                                    this.this.handleDeltalX(dx, dy)
+                                    this.handleDeltalX(dx, dy)
 
                                     }
                                 
                         else {
-                            this.this.handleDeltalY(dx, dy)
+                            this.handleDeltalY(dx, dy)
 
                         }
                             
@@ -1755,7 +1755,7 @@ index >= 0; index--)
                                 
 }
 
-this.this.fireOrMove()
+this.fireOrMove()
 
                                     }
                                 
@@ -1763,7 +1763,7 @@ this.this.fireOrMove()
                         if(!this.turnTo(dx, dy, targetAngle))
                         
                                     {
-                                    this.this.fireOrMove()
+                                    this.fireOrMove()
 
                                     }
                                 
@@ -1798,7 +1798,7 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.UP
                         else {
                             this.captionAnimationHelper!.update(CommonPhoneStrings.getInstance()!.FIRE, this.basicColorFactory!.RED)
 this.rtsLayer2LogHelper!.steeringFireOrStop(this)
-this.this.allStop()
+this.allStop()
 this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.KEY_NUM0))
 TrackingEventHandler.getInstance()!.fireEvent(this.getTrackingEvent())
 
@@ -1873,7 +1873,7 @@ layerPartialCellPositionsUtil!.getAll(geographicMapInterface, this, velocityXSca
 
 x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, this.getWidth())
 y= tiledLayerUtil!.keepOnMapY(tiledLayer, y, this.getHeight())
-this.this.setPosition(x, y, this.z)
+this.setPosition(x, y, this.z)
 
                                     }
                                 
@@ -2117,7 +2117,7 @@ var resource = resource
                                     }
                                 
                         else {
-                            this.this.clearResourceAnimation()
+                            this.clearResourceAnimation()
 
                         }
                             
@@ -2145,7 +2145,7 @@ var ownerLayer = ownerLayer
                                     {
                                     CAPITAL_EVENT.setValue(this.getLoad())
 CapitalEventHandlerFactory.getInstance(ownerLayer!.getGroupInterface()[0]!)!.fireEvent(CAPITAL_EVENT)
-this.this.setLoad(0)
+this.setLoad(0)
 
                                     }
                                 

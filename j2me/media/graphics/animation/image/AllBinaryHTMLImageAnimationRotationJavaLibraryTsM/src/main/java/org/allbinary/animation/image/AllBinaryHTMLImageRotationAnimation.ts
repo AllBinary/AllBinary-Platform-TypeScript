@@ -155,7 +155,7 @@ super.setBasicColorP(basicColor)
                         if(changed)
                         
                                     {
-                                    this.this.updateImage()
+                                    this.updateImage()
 
                                     }
                                 
@@ -183,7 +183,7 @@ super.setAlpha(alpha)
                         
                                     {
                                     this.alphaProcessor= AlphaProcessor.getInstance()
-this.this.updateImage()
+this.updateImage()
 
                                     }
                                 
@@ -192,13 +192,13 @@ this.this.updateImage()
 
     public nextRotation(){
 super.nextRotation()
-this.this.updateImage()
+this.updateImage()
 }
 
 
     public previousRotation(){
 super.previousRotation()
-this.this.updateImage()
+this.updateImage()
 }
 
 
@@ -213,14 +213,14 @@ this.imageRotationUtil!.rotateImageClear(originalImage, this.twoImages[this.buff
 this.alphaProcessor!.setAlpha(imageModifierUtil, this.originalImage, this.twoImages[this.bufferedImageIndex]!, this.alphaP)
 this.imageRotationUtil!.drawImage(originalImage, imageToShow, canvasSurface)
 canvasSurface!.restore()
-this.this.swap()
+this.swap()
 }
 
 
     public setFrame(index: number){
     //var index = index
 super.setFrame(index)
-this.this.updateImage()
+this.updateImage()
 }
 
 

@@ -58,7 +58,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                 //@Throws(Error::class)
             
     public addDomNodeInterfaces(){
-this.this.addDomNodeInterface(this.styleValidationInterface as DomNodeInterface)
+this.addDomNodeInterface(this.styleValidationInterface as DomNodeInterface)
 }
 
 
@@ -67,7 +67,7 @@ this.this.addDomNodeInterface(this.styleValidationInterface as DomNodeInterface)
     public view(): string{
 
         try {
-            this.this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces()
 
 
 

@@ -186,7 +186,7 @@ index < size -1; index++)
                         if(index == start)
                         
                                     {
-                                    this.this.setBasicColorP(this.startColor)
+                                    this.setBasicColorP(this.startColor)
 this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
 
                                     }
@@ -195,13 +195,13 @@ this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.get
                         if(geographicMapCellHistory!.isVisited(geographicMapCellPosition))
                         
                                     {
-                                    this.this.setBasicColorP(this.endColor)
+                                    this.setBasicColorP(this.endColor)
 this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
 
                                     }
                                 
                         else {
-                            this.this.setBasicColorP(this.middleColor)
+                            this.setBasicColorP(this.middleColor)
 this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
 
                         }

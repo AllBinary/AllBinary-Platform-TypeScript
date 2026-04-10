@@ -69,7 +69,7 @@ this.domNodeInterface= RealTimeStoreFrontStatisticsView(RealTimeStoreFrontStatis
 
 
     public addDomNodeInterfaces(){
-this.this.addDomNodeInterface(this.domNodeInterface as DomNodeInterface)
+this.addDomNodeInterface(this.domNodeInterface as DomNodeInterface)
 }
 
 
@@ -78,7 +78,7 @@ this.this.addDomNodeInterface(this.domNodeInterface as DomNodeInterface)
     public view(): string{
 
         try {
-            this.this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces()
 
 
 

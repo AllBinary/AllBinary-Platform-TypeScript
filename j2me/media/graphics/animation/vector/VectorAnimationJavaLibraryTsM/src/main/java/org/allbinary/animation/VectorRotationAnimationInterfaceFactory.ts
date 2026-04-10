@@ -66,7 +66,7 @@ public constructor (currentPoints: IntArray[][], basicColor: BasicColor, animati
     //var basicColor = basicColor
     //var animationBehaviorFactory = animationBehaviorFactory
 this.currentPoints= currentPoints
-this.this.setBasicColorP(basicColor)
+this.setBasicColorP(basicColor)
 this.animationBehaviorFactory= animationBehaviorFactory
 }
 

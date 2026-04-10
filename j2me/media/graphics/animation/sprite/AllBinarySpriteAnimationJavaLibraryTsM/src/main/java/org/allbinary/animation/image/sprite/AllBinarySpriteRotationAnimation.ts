@@ -80,13 +80,13 @@ var direction = direction
         
         
 
-this.this.adjustFrame(angle)
+this.adjustFrame(angle)
 }
 
 
     public setFrame(angle: Angle){
 var angle = angle
-this.this.adjustFrame(angle)
+this.adjustFrame(angle)
 }
 
 
@@ -99,13 +99,13 @@ this.angleInfo!.adjustAngle(this.getFrame())
 
     public adjustFrame(angle: Angle){
 var angle = angle
-this.this.adjustFrame(angle.getValue())
+this.adjustFrame(angle.getValue())
 }
 
 
     public adjustFrame(angle: number){
 var angle = angle
-this.this.setFrame(frameUtil!.getFrameForAngle(angle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement().toInt()))
+this.setFrame(frameUtil!.getFrameForAngle(angle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement().toInt()))
 }
 
 

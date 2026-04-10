@@ -55,7 +55,7 @@ public constructor (parent: any = {}, geographicMapCellPosition: GeographicMapCe
                 //var parent = parent
     //var geographicMapCellPosition = geographicMapCellPosition
 this.parent= parent
-this.this.setGeographicMapCellPositionP(geographicMapCellPosition)
+this.setGeographicMapCellPositionP(geographicMapCellPosition)
 
                         if(this.geographicMapCellPosition == SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         

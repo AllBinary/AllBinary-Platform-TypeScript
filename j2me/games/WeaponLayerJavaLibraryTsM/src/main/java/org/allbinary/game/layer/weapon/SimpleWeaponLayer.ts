@@ -50,7 +50,7 @@ public constructor (name: string, movement: Movement, animationInterface: Animat
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setCollidableInferface(CollidableWeaponBehavior(this, true))
+this.setCollidableInferface(CollidableWeaponBehavior(this, true))
 }
 
 public constructor (name: string, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition)                        
@@ -68,7 +68,7 @@ public constructor (name: string, movement: Movement, animationInterface: Animat
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setCollidableInferface(CollidableWeaponBehavior(this, true))
+this.setCollidableInferface(CollidableWeaponBehavior(this, true))
 }
 
 public constructor (name: string, remoteInfo: RemoteInfo, multiPlayerType: number, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition)                        
@@ -88,7 +88,7 @@ public constructor (name: string, remoteInfo: RemoteInfo, multiPlayerType: numbe
 
                             //For kotlin this is before the body of the constructor.
                     
-this.this.setCollidableInferface(CollidableWeaponBehavior(this, true))
+this.setCollidableInferface(CollidableWeaponBehavior(this, true))
 }
 
 

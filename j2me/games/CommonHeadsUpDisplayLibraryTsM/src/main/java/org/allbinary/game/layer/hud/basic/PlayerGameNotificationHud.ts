@@ -226,7 +226,7 @@ this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize())
                         if(this.gameNotification!.getSize() > 0)
                         
                                     {
-                                    this.this.setAndRemove()
+                                    this.setAndRemove()
 
                                     }
                                 
@@ -234,7 +234,7 @@ this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize())
                         if(this.permanentGameNotification!.getSize() > 0)
                         
                                     {
-                                    this.this.setNextUnremoveable()
+                                    this.setNextUnremoveable()
 
                                     }
                                 
@@ -258,7 +258,7 @@ this.string= this.gameNotification!.stringList!.remove(0) as String
         
         
 
-this.this.setX((displayInfo!.getLastWidth() -width) shr 1)
+this.setX((displayInfo!.getLastWidth() -width) shr 1)
 this.point.setX(this.getX())
 this.point.setY(this.getY())
 
@@ -280,7 +280,7 @@ this.point.setY(this.getY())
                                     }
                                 
 this.timeDelayHelper!.delay= iTime
-this.this.setBasicColorP(this.gameNotification!.colorList!.remove(0) as BasicColor)
+this.setBasicColorP(this.gameNotification!.colorList!.remove(0) as BasicColor)
 }
 
 
@@ -298,7 +298,7 @@ this.string= this.permanentGameNotification!.stringList!.objectArray[index]! as 
         
         
 
-this.this.setX((displayInfo!.getLastWidth() -width) shr 1)
+this.setX((displayInfo!.getLastWidth() -width) shr 1)
 this.point.setX(this.getX())
 this.point.setY(this.getY())
 
@@ -307,7 +307,7 @@ this.point.setY(this.getY())
         
 
 this.timeDelayHelper!.delay= time.toInt() *1000
-this.this.setBasicColorP(this.permanentGameNotification!.colorList!.objectArray[index]! as BasicColor)
+this.setBasicColorP(this.permanentGameNotification!.colorList!.objectArray[index]! as BasicColor)
 this.circularIndexUtil!.next()
 }
 

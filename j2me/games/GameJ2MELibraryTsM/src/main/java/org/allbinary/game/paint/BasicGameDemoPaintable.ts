@@ -50,7 +50,7 @@ public constructor (mainDemoStatePaintable: Paintable, ownershipPaintable: Paint
 var ownershipPaintable = ownershipPaintable
 var helpPaintableInterface = helpPaintableInterface
 this.mainDemoStatePaintable= mainDemoStatePaintable
-this.this.setCurrentStatePaintable(NullPaintable.getInstance())
+this.setCurrentStatePaintable(NullPaintable.getInstance())
 this.ownershipPaintable= ownershipPaintable
 this.helpPaintableInterface= helpPaintableInterface
 }
@@ -62,7 +62,7 @@ var state = state
                         if(state == 0)
                         
                                     {
-                                    this.this.setCurrentStatePaintable(this.getMainDemoStatePaintable())
+                                    this.setCurrentStatePaintable(this.getMainDemoStatePaintable())
 
                                     }
                                 
@@ -70,12 +70,12 @@ var state = state
                         if(state == 1)
                         
                                     {
-                                    this.this.setCurrentStatePaintable(this.helpPaintableInterface)
+                                    this.setCurrentStatePaintable(this.helpPaintableInterface)
 
                                     }
                                 
                         else {
-                            this.this.setCurrentStatePaintable(this.ownershipPaintable)
+                            this.setCurrentStatePaintable(this.ownershipPaintable)
 
                         }
                             

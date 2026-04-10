@@ -377,7 +377,7 @@ openGLESImage!.openGLESImageProperties!.alphaf= (alphaInt.toFloat()) /255f
 
                                     }
                                 
-this.this.setAlpha(image, alphaInt)
+this.setAlpha(image, alphaInt)
 }
 
 

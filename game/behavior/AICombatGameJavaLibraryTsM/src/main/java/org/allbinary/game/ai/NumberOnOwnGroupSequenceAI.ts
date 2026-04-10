@@ -85,7 +85,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                         if(numberOnSameTeam[index]!.toInt() > size)
                         
                                     {
-                                    this.this.next()
+                                    this.next()
 
                                     }
                                 

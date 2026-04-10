@@ -96,7 +96,7 @@ collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickup(collidableIn
                                     }
                                 
                         else {
-                            this.this.collide(collidableInterfaceCompositeInterface as VehiclePropertiesCompositeInterface)
+                            this.collide(collidableInterfaceCompositeInterface as VehiclePropertiesCompositeInterface)
 
                         }
                             
@@ -168,8 +168,8 @@ vehicleProperties!.getVelocityProperties()!.getVelocityXBasicDecimalP()!.add(hal
                             
                         }
                             
-this.this.collideFriction(ownerVehicleLayerInterface)
-this.this.collideFriction(vehiclePropertiesCompositeInterface)
+this.collideFriction(ownerVehicleLayerInterface)
+this.collideFriction(vehiclePropertiesCompositeInterface)
 totalImpactVelocity= impactVelocityX +impactVelocityY
 }
 

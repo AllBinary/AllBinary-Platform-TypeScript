@@ -247,7 +247,7 @@ transformer.transform(xmlStreamSource, streamResult)
 
         try {
             outputFile!.createNewFile()
-this.this.translate(StreamSource(xsltFilePath), StreamSource(StringBufferInputStream(DomDocumentHelper.toString(xmlDocument))), StreamResult(outputFile))
+this.translate(StreamSource(xsltFilePath), StreamSource(StringBufferInputStream(DomDocumentHelper.toString(xmlDocument))), StreamResult(outputFile))
 } catch(e: Exception)
             {
 

@@ -99,7 +99,7 @@ this.eventListenerInterfaceList= BasicArrayList()
 index < size; index++)
         {
 eventListenerInterface= vector.get(index) as RawKeyEventListener
-this.this.addListener(eventListenerInterface)
+this.addListener(eventListenerInterface)
 }
 
 }
@@ -163,7 +163,7 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface)
 
         try {
             eventListenerInterface= this.eventListenerInterfaceList!.get(index) as RawKeyEventListener
-this.this.process(keyCode, deviceId, repeated, eventListenerInterface)
+this.process(keyCode, deviceId, repeated, eventListenerInterface)
 } catch(e: Exception)
             {
 

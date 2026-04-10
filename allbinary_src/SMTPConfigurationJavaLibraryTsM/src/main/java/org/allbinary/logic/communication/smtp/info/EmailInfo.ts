@@ -56,7 +56,7 @@ logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
-this.this.init(basicEmailInfo, 
+this.init(basicEmailInfo, 
                             null, 
                             null)
 }
@@ -80,7 +80,7 @@ logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
-this.this.init(basicEmailInfo, 
+this.init(basicEmailInfo, 
                             null, 
                             null)
 }

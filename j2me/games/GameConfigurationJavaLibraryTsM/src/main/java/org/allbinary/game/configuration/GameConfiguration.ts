@@ -70,11 +70,11 @@ public constructor (name: string, defaultValue: Integer, minValue: Integer, maxV
     //var defaultValue = defaultValue
     //var minValue = minValue
     //var maxValue = maxValue
-this.this.setName(name)
-this.this.setDefaultValue(defaultValue)
+this.setName(name)
+this.setDefaultValue(defaultValue)
 this.value= this.getDefaultValue()
-this.this.setMinValue(minValue)
-this.this.setMaxValue(maxValue)
+this.setMinValue(minValue)
+this.setMaxValue(maxValue)
 GameConfigurationSingleton.getInstance()!.getHashtable()!.put(this.getName(), this)
 }
 
@@ -178,7 +178,7 @@ this.defaultValue= defaultValue
                 //@Throws(Error::class)
             
     public setDefault(){
-this.this.setValue(this.getDefaultValue())
+this.setValue(this.getDefaultValue())
 }
 
 
