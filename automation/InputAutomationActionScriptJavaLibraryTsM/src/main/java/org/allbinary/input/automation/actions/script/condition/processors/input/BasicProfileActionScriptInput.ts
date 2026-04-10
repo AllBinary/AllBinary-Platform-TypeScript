@@ -86,7 +86,7 @@ public constructor (label: string, node: Node)
 
                             //For kotlin this is before the body of the constructor.
                     
-put(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR)
 
     var actionNode: Node = DomSearchHelper.getNode(GenericProfileActionScriptInputData.TYPE, node.getChildNodes())!;
         
@@ -103,7 +103,6 @@ put(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR)
         
 
 
-    
                         if(timeNode != 
                                     null
                                 )
@@ -114,16 +113,16 @@ put(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR)
         
         
 
-this.setTime(Integer.valueOf(delayString)!.toInt())
+this.this.setTime(Integer.valueOf(delayString)!.toInt())
 
                                     }
                                 
                         else {
-                            this.setTime(0)
+                            this.this.setTime(0)
 
                         }
                             
-this.setInputRobotInterface(InputRobotFactory.getInstance()!.get(inputTypeString))
+this.this.setInputRobotInterface(InputRobotFactory.getInstance()!.get(inputTypeString))
 }
 
 public constructor (label: string)                        
@@ -136,7 +135,7 @@ public constructor (label: string)
 
                             //For kotlin this is before the body of the constructor.
                     
-put(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR)
 
     var inputRobotFactory: InputRobotFactory = InputRobotFactory.getInstance()!;
         
@@ -157,8 +156,8 @@ put(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR)
         
         
 
-this.setInputRobotInterface(inputRobotFactory!.get(iterator.next() as String))
-this.setTime(0)
+this.this.setInputRobotInterface(inputRobotFactory!.get(iterator.next() as String))
+this.this.setTime(0)
 }
 
 
@@ -184,9 +183,9 @@ this.time= time
         
         
 
-put(GenericProfileActionScriptInputData.TYPE, this.getInputRobotInterface()!.getName())
-put(GenericProfileActionScriptInputData.DELAY, Integer.toString(this.getTime()))
-put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
+hashMap!.put(GenericProfileActionScriptInputData.TYPE, this.getInputRobotInterface()!.getName())
+hashMap!.put(GenericProfileActionScriptInputData.DELAY, Integer.toString(this.getTime()))
+logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
 
 
 
@@ -196,7 +195,7 @@ put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -236,26 +235,25 @@ this.inputRobotInterface= inputRobotInterface
         
         
 
-append(super.toString())
-append(" Input Type: ")
+stringBuffer!.append(super.toString())
+stringBuffer!.append(" Input Type: ")
 
-    
                         if(this.getInputRobotInterface() != 
                                     null
                                 )
                         
                                     {
-                                    append(this.getInputRobotInterface()!.getName())
+                                    stringBuffer!.append(this.getInputRobotInterface()!.getName())
 
                                     }
                                 
                         else {
-                            append(StringUtil.getInstance()!.NULL_STRING)
+                            stringBuffer!.append(StringUtil.getInstance()!.NULL_STRING)
 
                         }
                             
-append(" Time: ")
-appendlong(this.getTime())
+stringBuffer!.append(" Time: ")
+stringBuffer!.appendlong(this.getTime())
 
 
 

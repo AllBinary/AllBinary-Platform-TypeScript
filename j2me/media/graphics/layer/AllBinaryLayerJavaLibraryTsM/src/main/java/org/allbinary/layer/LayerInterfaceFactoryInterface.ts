@@ -25,7 +25,7 @@ import { Hashtable } from "../../../java/util/Hashtable.js";
 interface LayerInterfaceFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getInstance(hashtable: Hashtable<Any, Any>, x: number, y: number, z: number): AllBinaryLayer
 

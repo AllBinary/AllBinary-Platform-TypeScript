@@ -90,7 +90,7 @@ this.renderer= renderer as AllBinaryRendererBase3
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(gl: GL10){
     //var gl = gl
@@ -118,11 +118,10 @@ index >= 0; index--)
         
 
 
-    
                         if(openGLESImage != OpenGLESImage.NULL_OPENGL_IMAGE)
                         
                                     {
-                                    set(gl)
+                                    openGLESImage!.set(gl)
 
                                     }
                                 
@@ -133,7 +132,7 @@ index >= 0; index--)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createImage(caller: string, width: number, height: number): Image{
     //var caller = caller
@@ -145,7 +144,6 @@ var height = height
         
 
 
-    
                         if(height > width)
                         
                                     {
@@ -179,11 +177,10 @@ height= textureSize
         //mutex.withLock
         {
 
-    
                         if(image != NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    add(image)
+                                    list.add(image)
 
                                     }
                                 
@@ -198,7 +195,7 @@ height= textureSize
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createImage(key: any = {}, inputStream: InputStream): Image{
     //var key = key
@@ -221,11 +218,10 @@ height= textureSize
         //mutex.withLock
         {
 
-    
                         if(image != NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    add(image)
+                                    list.add(image)
 
                                     }
                                 
@@ -262,7 +258,6 @@ height= textureSize
         //mutex.withLock
         {
 
-    
                         if(list.contains(image))
                         
                                     {
@@ -273,13 +268,13 @@ height= textureSize
 
                                     }
                                 
-add(image)
+list.add(image)
 }
 
-add(image)
+this.renderer.add(image)
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
 }
 
 }

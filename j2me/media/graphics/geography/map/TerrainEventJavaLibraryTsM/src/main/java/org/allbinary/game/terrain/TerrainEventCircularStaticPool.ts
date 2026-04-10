@@ -46,11 +46,11 @@ export class TerrainEventCircularStaticPool
         
 
     public init(){
-init(TerrainEventFactory())
+EVENT_POOL.init(TerrainEventFactory())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getInstance(basicTerrainInfo: BasicTerrainInfo): TerrainEvent{
@@ -60,7 +60,7 @@ var basicTerrainInfo = basicTerrainInfo
         
         
 
-setBasicTerrainInfoForCircularStaticPool(basicTerrainInfo)
+trackingEvent!.setBasicTerrainInfoForCircularStaticPool(basicTerrainInfo)
 
 
 

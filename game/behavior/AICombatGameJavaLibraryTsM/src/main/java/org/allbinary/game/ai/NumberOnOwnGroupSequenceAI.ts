@@ -58,7 +58,7 @@ this.numberOnSameTeam= numberOnSameTeam
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -73,7 +73,6 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 
 
-    
                         if(numberOnSameTeam!.length > index)
                         
                                     {
@@ -83,18 +82,17 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 
 
-    
                         if(numberOnSameTeam[index]!.toInt() > size)
                         
                                     {
-                                    this.next()
+                                    this.this.next()
 
                                     }
                                 
 
                                     }
                                 
-processAI(allBinaryLayerManager)
+super.processAI(allBinaryLayerManager)
 }
 
 

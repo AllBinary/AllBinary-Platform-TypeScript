@@ -55,7 +55,7 @@ public constructor (basicTerrainInfo: BasicTerrainInfo)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setBasicTerrainInfo(basicTerrainInfo)
+this.this.setBasicTerrainInfo(basicTerrainInfo)
 }
 
 
@@ -65,9 +65,9 @@ this.setBasicTerrainInfo(basicTerrainInfo)
         
         
 
-append("TerrainEvent: \n")
-append("LayerInterface: ")
-append(this.basicTerrainInfo!.toString())
+stringBuffer!.append("TerrainEvent: \n")
+stringBuffer!.append("LayerInterface: ")
+stringBuffer!.append(this.basicTerrainInfo!.toString())
 
 
 

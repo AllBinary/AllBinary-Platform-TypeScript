@@ -110,9 +110,9 @@ public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, na
             super();
             var genericProfileActionsJPanel = genericProfileActionsJPanel
 var name = name
-this.setName(name)
-this.init(genericProfileActionsJPanel)
-this.load()
+this.this.setName(name)
+this.this.init(genericProfileActionsJPanel)
+this.this.load()
 }
 
 public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, abPath: AbPath, name: string){
@@ -121,9 +121,9 @@ public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, ab
             var genericProfileActionsJPanel = genericProfileActionsJPanel
 var abPath = abPath
 var name = name
-this.setName(name)
-this.init(genericProfileActionsJPanel)
-this.load()
+this.this.setName(name)
+this.this.init(genericProfileActionsJPanel)
+this.this.load()
 }
 
 public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, fileInputStream: FileInputStream, name: string){
@@ -132,23 +132,23 @@ public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, fi
             var genericProfileActionsJPanel = genericProfileActionsJPanel
 var fileInputStream = fileInputStream
 var name = name
-this.setName(name)
-this.init(genericProfileActionsJPanel)
-this.fileInit(fileInputStream)
+this.this.setName(name)
+this.this.init(genericProfileActionsJPanel)
+this.this.fileInit(fileInputStream)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(genericProfileActionsJPanel: GenericProfileActionsJPanel){
 var genericProfileActionsJPanel = genericProfileActionsJPanel
-this.setGenericProfileActionsJPanel(genericProfileActionsJPanel)
+this.this.setGenericProfileActionsJPanel(genericProfileActionsJPanel)
 this.actionsDefaultListModelHelper= DefaultListModelHelper()
-this.setHashMap(HashMap<Any, Any>())
+this.this.setHashMap(HashMap<Any, Any>())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public save(){
 
@@ -161,11 +161,11 @@ this.setHashMap(HashMap<Any, Any>())
         
         
 
-writeBytes(DomDocumentHelper.toString(this.toXmlDoc()))
+idOutData!.writeBytes(DomDocumentHelper.toString(this.toXmlDoc()))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     load(){
 
@@ -174,7 +174,6 @@ writeBytes(DomDocumentHelper.toString(this.toXmlDoc()))
         
 
 
-    
                         if(file.isFile())
                         
                                     {
@@ -183,19 +182,19 @@ writeBytes(DomDocumentHelper.toString(this.toXmlDoc()))
         
         
 
-this.fileInit(idFile)
+this.this.fileInit(idFile)
 
                                     }
                                 
                         else {
-                            put("No Profile: " +file.getAbsolutePath(), this, "Contructor")
+                            logUtil!.put("No Profile: " +file.getAbsolutePath(), this, "Contructor")
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     fileInit(fileInputStream: FileInputStream){
 var fileInputStream = fileInputStream
@@ -229,7 +228,7 @@ var fileInputStream = fileInputStream
         
         
 
-put("Number Of Profiles Specified: " +nameNodeList!.getLength(), this, "Contructor")
+logUtil!.put("Number Of Profiles Specified: " +nameNodeList!.getLength(), this, "Contructor")
 
 
 
@@ -251,13 +250,12 @@ index < nameNodeList!.getLength(); index++)
         
 
 
-    
                         if(nodeList != 
                                     null
                                 )
                         
                                     {
-                                    this.initActions(nodeList)
+                                    this.this.initActions(nodeList)
 
                                     }
                                 
@@ -265,18 +263,18 @@ index < nameNodeList!.getLength(); index++)
                             
 
 
-                            throw Exception(GenericProfileActionData.NAME +" Name Node Node Children")
+                            throw Error(GenericProfileActionData.NAME +" Name Node Node Children")
 
                         }
                             
 }
 
-put("Loaded: " +this.getHashMap()!.size +" Configuration Profile Action(s)", this, "Contructor")
-initDefaultModelList()
+logUtil!.put("Loaded: " +this.getHashMap()!.size +" Configuration Profile Action(s)", this, "Contructor")
+this.getDefaultListModelHelper()!.initDefaultModelList()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     initActions(nodeList: NodeList){
 var nodeList = nodeList
@@ -296,7 +294,6 @@ index < nodeList!.getLength(); index++)
         
 
 
-    
                         if(actionNode != 
                                     null
                                 )
@@ -307,8 +304,8 @@ index < nodeList!.getLength(); index++)
         
         
 
-put(genericConfigurationProfileAction!.getName(), genericConfigurationProfileAction)
-add(genericConfigurationProfileAction!.getName())
+this.getHashMap()!.put(genericConfigurationProfileAction!.getName(), genericConfigurationProfileAction)
+this.getDefaultListModelHelper()!.add(genericConfigurationProfileAction!.getName())
 
                                     }
                                 
@@ -316,7 +313,7 @@ add(genericConfigurationProfileAction!.getName())
                             
 
 
-                            throw Exception(GenericProfileActionData.NAME +" Node Null")
+                            throw Error(GenericProfileActionData.NAME +" Node Null")
 
                         }
                             
@@ -346,7 +343,7 @@ var string = string
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public add(name: string){
 var name = name
@@ -355,21 +352,21 @@ var name = name
         
         
 
-put(genericProfileAction!.getName(), genericProfileAction)
-add(genericProfileAction!.getName())
-initDefaultModelList()
-this.save()
+this.getHashMap()!.put(genericProfileAction!.getName(), genericProfileAction)
+this.getDefaultListModelHelper()!.add(genericProfileAction!.getName())
+this.getDefaultListModelHelper()!.initDefaultModelList()
+this.this.save()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public remove(name: string){
 var name = name
-remove(name)
-remove(name)
-initDefaultModelList()
-this.save()
+this.getHashMap()!.remove(name)
+this.getDefaultListModelHelper()!.remove(name)
+this.getDefaultListModelHelper()!.initDefaultModelList()
+this.this.save()
 }
 
 
@@ -379,7 +376,7 @@ this.save()
         
         
 
-put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
+logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
 
 
 
@@ -389,7 +386,7 @@ put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -434,7 +431,7 @@ index < size; index++)
         
         
 
-appendChild(nextGenericProfileAction!.toXmlNode(document))
+node.appendChild(nextGenericProfileAction!.toXmlNode(document))
 }
 
 
@@ -446,7 +443,7 @@ appendChild(nextGenericProfileAction!.toXmlNode(document))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlDoc(): Document{
 
@@ -459,7 +456,7 @@ appendChild(nextGenericProfileAction!.toXmlNode(document))
         
         
 
-appendChild(node)
+document.appendChild(node)
 
 
 

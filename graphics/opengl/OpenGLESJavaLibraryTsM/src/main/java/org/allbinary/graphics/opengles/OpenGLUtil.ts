@@ -130,18 +130,17 @@ export class OpenGLUtil
 
         try {
             
-    
                         if(!created)
                         
                                     {
                                     created= true
-put(CommonLabels.getInstance()!.START_LABEL +OpenGLCapabilities.getInstance()!.toString(), this, this.renderStrings!.ON_SURFACE_CREATED)
+PreLogUtil.put(CommonLabels.getInstance()!.START_LABEL +OpenGLCapabilities.getInstance()!.toString(), this, this.renderStrings!.ON_SURFACE_CREATED)
 
                                     }
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e)
 }
 
 }
@@ -152,11 +151,11 @@ put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e)
     //var loadTextures = loadTextures
 
         try {
-            load(gl)
-logError(gl)
+            loadTextures!.load(gl)
+OpenGLLogUtil.getInstance()!.logError(gl)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e)
 }
 
 }
@@ -166,31 +165,32 @@ put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onSurfaceChanged(gl: GL10, graphics: OpenGLESGraphics){
     //var gl = gl
     //var graphics = graphics
 
-    
                         if(!surfaceCreatedAndInitialized)
                         
                                     {
-                                    init()
+                                    graphics.init()
 surfaceCreatedAndInitialized= true
 
                                     }
                                 
-update()
+graphics.update()
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
 
-update(graphics)
-update(gl)
-this.processRunnables()
-this.set(gl)
+progressCanvas!.update(graphics)
+getInstance = OpenGLImageCacheFactory.getInstance()getInstance as OpenGLImageCache
+getInstance.
+                    update(gl)
+this.this.processRunnables()
+this.this.set(gl)
 }
 
 
@@ -202,7 +202,6 @@ this.set(gl)
         
 
 
-    
                         if(encapsulateImage != image)
                         
                                     {
@@ -213,7 +212,7 @@ this.set(gl)
 
         //mutex.withLock
         {
-add(encapsulateImage)
+list.add(encapsulateImage)
 }
 
 
@@ -242,7 +241,7 @@ add(encapsulateImage)
 
         //mutex.withLock
         {
-clear()
+list.clear()
 }
 
 }
@@ -258,12 +257,11 @@ clear()
         //mutex.withLock
         {
 
-    
                         if(!this.runnableList!.contains(runnable))
                         
                                     {
-                                    add(runnable)
-add(this.canvasStrings!.SCALED_IMAGES)
+                                    this.runnableList!.add(runnable)
+displayInfoSingleton!.add(this.canvasStrings!.SCALED_IMAGES)
 
                                     }
                                 
@@ -299,16 +297,16 @@ add(this.canvasStrings!.SCALED_IMAGES)
 index < size; index++)
         {
 runnable= this.runnableList!.get(index) as Runnable
-run()
+runnable.run()
 }
 
-clear()
+this.runnableList!.clear()
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     set(gl: GL10){
 var gl = gl
@@ -331,7 +329,9 @@ var gl = gl
 index2 < size; index2++)
         {
 image= this.list.get(index2)
-set(gl)
+image = imageimage as OpenGLESImage
+image.
+                    set(gl)
 }
 
 }

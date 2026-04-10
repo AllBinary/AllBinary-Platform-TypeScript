@@ -63,7 +63,7 @@ export class InputAutomationConfigurationFactory
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static init(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -88,11 +88,10 @@ export class InputAutomationConfigurationFactory
         
 
 
-    
                         if(file.isFile())
                         
                                     {
-                                    put("LoadingConfiguration", INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT)
+                                    logUtil!.put("LoadingConfiguration", INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT)
 
     var jaxbContext: JAXBContext = JAXBContext.newInstance(InputAutomationConfiguration::class)!;
         
@@ -114,7 +113,7 @@ inputAutomationConfiguration= root.getValue() as InputAutomationConfiguration
         
         
 
-put("isInstalled: " +inputAutomationConfiguration!.isInstalled(), INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT)
+logUtil!.put("isInstalled: " +inputAutomationConfiguration!.isInstalled(), INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT)
 
     var size: number = inputAutomationModuleConfigurationList!.size!;
         
@@ -134,15 +133,15 @@ put("isInstalled: " +inputAutomationConfiguration!.isInstalled(), INPUT_AUTOMATI
 index < size; index++)
         {
 inputAutomationModuleConfiguration= inputAutomationModuleConfigurationList!.get(index)
-init(abeClientInformation)
+inputAutomationModuleConfiguration!.init(abeClientInformation)
 }
 
-put("LoadedConfiguration", INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT)
+logUtil!.put("LoadedConfiguration", INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT)
 
                                     }
                                 
                         else {
-                            put("New Configuration", INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT)
+                            logUtil!.put("New Configuration", INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT)
 inputAutomationConfiguration= InputAutomationConfiguration()
 
                         }

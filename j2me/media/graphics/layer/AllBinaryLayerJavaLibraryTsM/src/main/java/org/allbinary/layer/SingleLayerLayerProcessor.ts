@@ -33,7 +33,7 @@ public constructor ()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -42,7 +42,7 @@ var allBinaryLayerManager = allBinaryLayerManager
         
         
 
-this.process(allBinaryLayerManager, layerManager!.getLayerAt(0) as AllBinaryLayer, 0)
+this.this.process(allBinaryLayerManager, layerManager!.getLayerAt(0) as AllBinaryLayer, 0)
 }
 
 

@@ -98,7 +98,7 @@ export class AllBinaryMediaManager
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static init(soundsFactoryInterface: SoundsFactoryInterface){
     //var soundsFactoryInterface = soundsFactoryInterface
@@ -112,19 +112,22 @@ export class AllBinaryMediaManager
         
         
 
-put(commonString!.START, THIS, commonString!.INIT)
-addPortion(50, "Media Manager")
-init()
+logUtil!.put(commonString!.START, THIS, commonString!.INIT)
+ProgressCanvasFactory.getInstance()!.addPortion(50, "Media Manager")
+Sounds(soundsFactoryInterface).
+                            init()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
     //var soundsFactoryInterface = soundsFactoryInterface
-stopAll()
-closeAll()
-gc()
+Sounds(soundsFactoryInterface).
+                            stopAll()
+Sounds(soundsFactoryInterface).
+                            closeAll()
+System.gc()
 }
 
 
@@ -132,12 +135,11 @@ gc()
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static createPlayer(resource: string): Player{
     //var resource = resource
 
-    
                         if(resource.startsWith(Manager.TONE_DEVICE_LOCATOR))
                         
                                     {
@@ -151,7 +153,6 @@ gc()
                                     }
                                 
                              else 
-    
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.SOUND))
                         
                                     {
@@ -185,7 +186,7 @@ gc()
         
         
 
-put(commonString!.EXCEPTION, THIS, CREATE_PLAYER, e)
+logUtil!.put(commonString!.EXCEPTION, THIS, CREATE_PLAYER, e)
 
 
 
@@ -210,7 +211,7 @@ put(commonString!.EXCEPTION, THIS, CREATE_PLAYER, e)
 }
 
 
-                @Throws(IOException::class, MediaException::class)
+                //@Throws(IOException::class, MediaException::class)
             
     public static createPlayer(stream: InputStream, type: string): Player{
     //var stream = stream
@@ -222,7 +223,7 @@ put(commonString!.EXCEPTION, THIS, CREATE_PLAYER, e)
 }
 
 
-                @Throws(MediaException::class)
+                //@Throws(MediaException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static playTone(frequency: number, time: number, volume: number){

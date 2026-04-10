@@ -51,7 +51,7 @@ public constructor (currentPoints: IntArray[][], basicColor: BasicColor, animati
 
                             //For kotlin this is before the body of the constructor.
                     
-adjustAngle(this.getFrame())
+this.angleInfo!.adjustAngle(this.getFrame())
 }
 
 
@@ -62,32 +62,32 @@ adjustAngle(this.getFrame())
         
         
 
-this.adjustFrame(angle)
+this.this.adjustFrame(angle)
 }
 
 
     public setFrame(angle: Angle){
     //var angle = angle
-this.adjustFrame(angle)
+this.this.adjustFrame(angle)
 }
 
 
     public setFrame(index: number){
     //var index = index
-setFrame(index)
-adjustAngle(this.getFrame())
+super.setFrame(index)
+this.angleInfo!.adjustAngle(this.getFrame())
 }
 
 
     public adjustFrame(newAngle: number){
     //var newAngle = newAngle
-this.setFrame(frameUtil!.getFrameForAngle(newAngle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement().toInt()))
+this.this.setFrame(frameUtil!.getFrameForAngle(newAngle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement().toInt()))
 }
 
 
     public adjustFrame(newAngle: Angle){
     //var newAngle = newAngle
-this.adjustFrame(newAngle!.getValue())
+this.this.adjustFrame(newAngle!.getValue())
 }
 
 

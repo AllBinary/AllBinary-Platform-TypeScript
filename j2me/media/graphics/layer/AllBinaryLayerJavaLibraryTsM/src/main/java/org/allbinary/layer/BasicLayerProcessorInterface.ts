@@ -22,7 +22,7 @@
 interface BasicLayerProcessorInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(allBinaryLayerManager: AllBinaryLayerManager)
 

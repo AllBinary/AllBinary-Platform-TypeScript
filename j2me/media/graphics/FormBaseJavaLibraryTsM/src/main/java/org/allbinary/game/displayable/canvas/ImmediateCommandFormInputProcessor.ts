@@ -67,20 +67,19 @@ this.gameCommandCanvas= gameCommandCanvas
 var gameKeyEvent = gameKeyEvent
 
         try {
-            onPressGameKeyEvent(gameKeyEvent)
+            super.onPressGameKeyEvent(gameKeyEvent)
 
-    
                         if(timeHelper!.isTime())
                         
                                     {
-                                    this.processInput()
-onChangeRepaint(this.getCanvas())
+                                    this.this.processInput()
+this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas())
 
                                     }
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_PRESS_GAME_KEY, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_PRESS_GAME_KEY, e)
 }
 
 }
@@ -91,20 +90,19 @@ put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_PRESS_GAME_KEY, e)
 var gameKeyEvent = gameKeyEvent
 
         try {
-            onDownGameKeyEvent(gameKeyEvent)
+            super.onDownGameKeyEvent(gameKeyEvent)
 
-    
                         if(this.timeHelper!.isTime())
                         
                                     {
-                                    this.processInput()
-onChangeRepaint(this.getCanvas())
+                                    this.this.processInput()
+this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas())
 
                                     }
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_DOWN_GAME_KEY, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_DOWN_GAME_KEY, e)
 }
 
 }
@@ -115,20 +113,19 @@ put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_DOWN_GAME_KEY, e)
 var gameKeyEvent = gameKeyEvent
 
         try {
-            onUpGameKeyEvent(gameKeyEvent)
+            super.onUpGameKeyEvent(gameKeyEvent)
 
-    
                         if(timeHelper!.isTime())
                         
                                     {
-                                    this.processInput()
-onChangeRepaint(this.getCanvas())
+                                    this.this.processInput()
+this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas())
 
                                     }
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_UP_GAME_KEY, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_UP_GAME_KEY, e)
 }
 
 }
@@ -138,20 +135,19 @@ put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_UP_GAME_KEY, e)
 var motionGestureEvent = motionGestureEvent
 
         try {
-            onMotionGestureEvent(motionGestureEvent)
+            super.onMotionGestureEvent(motionGestureEvent)
 
-    
                         if(timeHelper!.isTime())
                         
                                     {
-                                    this.processInput()
-onChangeRepaint(this.getCanvas())
+                                    this.this.processInput()
+this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas())
 
                                     }
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "onMotionGestureEvent", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "onMotionGestureEvent", e)
 }
 
 }

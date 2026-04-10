@@ -33,14 +33,14 @@ export class LayerManagerEventListener
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onCreateLayerManagerEvent(layerManagerEvent: LayerManagerEvent){
     //var layerManagerEvent = layerManagerEvent
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onDeleteLayerManagerEvent(layerManagerEvent: LayerManagerEvent){
     //var layerManagerEvent = layerManagerEvent

@@ -123,7 +123,7 @@ private constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createDocument(xmlFile: File): Document{
 var xmlFile = xmlFile
@@ -161,7 +161,7 @@ var xmlFile = xmlFile
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toString(document: Document): string{
 var document = document
@@ -192,7 +192,7 @@ var document = document
         
         
 
-transform(domSource, streamResult)
+copyTransformer!.transform(domSource, streamResult)
 
 
 
@@ -210,7 +210,7 @@ transform(domSource, streamResult)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public save(file: File, document: Document){
 var file = file
@@ -232,13 +232,13 @@ var document = document
         
         
 
-createNewFile()
+file.createNewFile()
 
     var streamResult: StreamResult = new StreamResult(file);
         
         
 
-transform(domSource, streamResult)
+copyTransformer!.transform(domSource, streamResult)
 } catch(e: Exception)
             {
 
@@ -250,7 +250,7 @@ transform(domSource, streamResult)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getChildNodeList(nodeName: string, nodeList: NodeList): NodeList{
 var nodeName = nodeName
@@ -276,7 +276,6 @@ index < numberOfNodes; index++)
         
 
 
-    
                         if(node.getNodeName()!.compareTo(nodeName) == 0)
                         
                                     {
@@ -294,11 +293,11 @@ index < numberOfNodes; index++)
 
 
 
-                            throw Exception(nodeName +" Node Not Found")
+                            throw Error(nodeName +" Node Not Found")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getChildrenWithoutTextNodes(nodeName: string, nodeList: NodeList): BasicArrayList{
 var nodeName = nodeName
@@ -334,11 +333,10 @@ index < numberOfChildren; index++)
         
 
 
-    
                         if(node.getNodeType() != Node.TEXT_NODE)
                         
                                     {
-                                    add(node)
+                                    list.add(node)
 
                                     }
                                 
@@ -353,7 +351,7 @@ index < numberOfChildren; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getWithoutTextNodes(nodeList: NodeList): BasicArrayList{
 var nodeList = nodeList
@@ -383,11 +381,10 @@ index < numberOfChildren; index++)
         
 
 
-    
                         if(node.getNodeType() != Node.TEXT_NODE)
                         
                                     {
-                                    add(node)
+                                    list.add(node)
 
                                     }
                                 
@@ -402,7 +399,7 @@ index < numberOfChildren; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public searchNodeList(nodeName: string, nodeList: NodeList): Node{
 var nodeName = nodeName
@@ -427,9 +424,8 @@ index < numberOfNodes; index++)
         
         
 
-put("NodeName: " +node.getNodeName(), this, "searchNodeList")
+logUtil!.put("NodeName: " +node.getNodeName(), this, "searchNodeList")
 
-    
                         if(node.getNodeName()!.compareTo(nodeName) == 0)
                         
                                     {
@@ -447,11 +443,11 @@ put("NodeName: " +node.getNodeName(), this, "searchNodeList")
 
 
 
-                            throw Exception(nodeName +" Node Not Found in search")
+                            throw Error(nodeName +" Node Not Found in search")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public searchNodeList(nodeName: string, nodeList: BasicArrayList): Node{
 var nodeName = nodeName
@@ -476,9 +472,8 @@ index < numberOfNodes; index++)
         
         
 
-put("NodeName: " +node.getNodeName(), this, "searchNodeList")
+logUtil!.put("NodeName: " +node.getNodeName(), this, "searchNodeList")
 
-    
                         if(node.getNodeName()!.compareTo(nodeName) == 0)
                         
                                     {
@@ -496,7 +491,7 @@ put("NodeName: " +node.getNodeName(), this, "searchNodeList")
 
 
 
-                            throw Exception(nodeName +" Node Not Found in search")
+                            throw Error(nodeName +" Node Not Found in search")
 }
 
 

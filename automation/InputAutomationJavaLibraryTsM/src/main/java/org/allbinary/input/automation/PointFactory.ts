@@ -41,7 +41,6 @@ var y = y
         
 
 
-    
                         if(point == 
                                     null
                                 )

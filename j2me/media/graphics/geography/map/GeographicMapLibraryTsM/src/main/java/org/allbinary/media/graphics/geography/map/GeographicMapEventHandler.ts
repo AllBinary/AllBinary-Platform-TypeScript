@@ -63,11 +63,10 @@ private constructor (){
     public addListener(gameLayer: AllBinaryGameLayer){
 var gameLayer = gameLayer
 
-    
                         if(!list.contains(gameLayer))
                         
                                     {
-                                    add(gameLayer)
+                                    list.add(gameLayer)
 
                                     }
                                 
@@ -75,15 +74,15 @@ var gameLayer = gameLayer
 
 
     public removeAllListeners(){
-clear()
-removeAllListeners()
+this.list.clear()
+super.removeAllListeners()
 }
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-remove(eventListenerInterface)
-removeListener(eventListenerInterface)
+this.list.remove(eventListenerInterface)
+super.removeListener(eventListenerInterface)
 }
 
 
@@ -105,10 +104,10 @@ removeListener(eventListenerInterface)
         
         
 
-move()
+gameLayer!.move()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
 }
 
 }

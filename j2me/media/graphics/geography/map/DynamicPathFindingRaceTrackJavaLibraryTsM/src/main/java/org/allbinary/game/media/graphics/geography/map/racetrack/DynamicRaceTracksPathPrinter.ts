@@ -82,8 +82,8 @@ index < size; index++)
         
         
 
-println("Track " +index)
-this.printPaths(list)
+System.out.println("Track " +index)
+this.this.printPaths(list)
 }
 
 } catch(e: Exception)
@@ -93,7 +93,7 @@ this.printPaths(list)
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
 }
 
 }

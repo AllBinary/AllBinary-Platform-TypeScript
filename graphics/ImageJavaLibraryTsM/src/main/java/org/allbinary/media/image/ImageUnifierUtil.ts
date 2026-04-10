@@ -96,7 +96,7 @@ var imageUnifierProperties = imageUnifierProperties
         
         
 
-put("Setting Image - " +commonLabels!.WIDTH_LABEL +newBufferedImage!.getWidth() +commonLabels!.HEIGHT_LABEL +newBufferedImage!.getHeight(), this, "getImage")
+logUtil!.put("Setting Image - " +commonLabels!.WIDTH_LABEL +newBufferedImage!.getWidth() +commonLabels!.HEIGHT_LABEL +newBufferedImage!.getHeight(), this, "getImage")
 
     var g: Graphics2D = newBufferedImage!.createGraphics()!;
         
@@ -132,8 +132,8 @@ index < bufferedImageArray!.length; index++)
         
         
 
-put("Adding Image: " +index +" x: " +x +" y: " +y, this, "getImage")
-drawImage(bufferedImageArray[index]!, x, y, imageUnifierProperties!.getImageUnifierCell()!.getWidth()!.toInt(), imageUnifierProperties!.getImageUnifierCell()!.getHeight()!.toInt(), 
+logUtil!.put("Adding Image: " +index +" x: " +x +" y: " +y, this, "getImage")
+g.drawImage(bufferedImageArray[index]!, x, y, imageUnifierProperties!.getImageUnifierCell()!.getWidth()!.toInt(), imageUnifierProperties!.getImageUnifierCell()!.getHeight()!.toInt(), 
                             null)
 
     var totalColumnsMinusOne: number = (imageUnifierProperties!.getColumns()!.toInt() -1);
@@ -141,7 +141,6 @@ drawImage(bufferedImageArray[index]!, x, y, imageUnifierProperties!.getImageUnif
         
 
 
-    
                         if(columnIndex > totalColumnsMinusOne)
                         
                                     {
@@ -152,7 +151,7 @@ columnIndex= 0
                                 
 }
 
-dispose()
+g.dispose()
 
 
 

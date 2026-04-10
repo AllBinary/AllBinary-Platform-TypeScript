@@ -121,9 +121,10 @@ export class MyFrame extends javax.swing.JFrame
 var args = args
 
         try {
-            getInstance()
-init()
-show()
+            AngleFactory.getInstance()
+SmallIntegerSingletonFactory.getInstance()!.init()
+MyFrame().
+                            show()
 } catch(e: Exception)
             {
 
@@ -131,7 +132,7 @@ show()
         
         
 
-put(CommonStrings.getInstance()!.EXCEPTION, 
+logUtil!.put(CommonStrings.getInstance()!.EXCEPTION, 
                             null, "main", e)
 }
 
@@ -175,11 +176,11 @@ public constructor (){
 
             super();
             initComponents()
-this.setSize(Dimension(550, 400))
-setSize(Dimension(550, 400))
-setSize(Dimension(550, 400))
+this.this.setSize(Dimension(550, 400))
+this.mainJPanel!.setSize(Dimension(550, 400))
+this.jTabbedPane!.setSize(Dimension(550, 400))
 fileJDialog= FileJDialog()
-addFinishedListener(this)
+fileJDialog!.addFinishedListener(this)
 this.rotateJDialog= RotateJDialog(this, false)
 }
 
@@ -242,8 +243,8 @@ exitForm(evt)
 
                                 }
                             )
-setText("New")
-addActionListener(object: java.awt.event.ActionListener()
+jButton2!.setText("New")
+jButton2!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -253,9 +254,9 @@ jButton2ActionPerformed(evt)
 
                                 }
                             )
-add(jButton2)
-setText("Save")
-addActionListener(object: java.awt.event.ActionListener()
+jToolBar1!.add(jButton2)
+saveJButton!.setText("Save")
+saveJButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -265,9 +266,9 @@ saveJButtonActionPerformed(evt)
 
                                 }
                             )
-add(saveJButton)
-setText("Export")
-addActionListener(object: java.awt.event.ActionListener()
+jToolBar1!.add(saveJButton)
+jButton1!.setText("Export")
+jButton1!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -277,9 +278,9 @@ jButton1ActionPerformed(evt)
 
                                 }
                             )
-add(jButton1)
-setText("Open")
-addActionListener(object: java.awt.event.ActionListener()
+jToolBar1!.add(jButton1)
+openJButton!.setText("Open")
+openJButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -289,19 +290,19 @@ openJButtonActionPerformed(evt)
 
                                 }
                             )
-add(openJButton)
-setText("Copy")
-add(jButton3)
-setText("Insert Before")
-add(jButton4)
-setText("Insert After")
-add(jButton41)
-setText("Delete")
-add(jButton5)
-setText("AnimateEdit")
-add(animateJButton)
-setText("Play")
-addMouseListener(object: java.awt.event.MouseAdapter()
+jToolBar1!.add(openJButton)
+jButton3!.setText("Copy")
+jToolBar1!.add(jButton3)
+jButton4!.setText("Insert Before")
+jToolBar1!.add(jButton4)
+jButton41!.setText("Insert After")
+jToolBar1!.add(jButton41)
+jButton5!.setText("Delete")
+jToolBar1!.add(jButton5)
+animateJButton!.setText("AnimateEdit")
+jToolBar1!.add(animateJButton)
+playJButton!.setText("Play")
+playJButton!.addMouseListener(object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -311,9 +312,9 @@ playJButtonMousePressed(evt)
 
                                 }
                             )
-add(playJButton)
-setText("Stop")
-addMouseListener(object: java.awt.event.MouseAdapter()
+jToolBar1!.add(playJButton)
+stopJjButton!.setText("Stop")
+stopJjButton!.addMouseListener(object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -323,12 +324,12 @@ stopJjButtonMousePressed(evt)
 
                                 }
                             )
-add(stopJjButton)
-add(jToolBar1, java.awt.BorderLayout.NORTH)
-setLayout(java.awt.GridLayout(1, 0))
-setLayout(java.awt.GridLayout(1, 0))
-setMinimumSize(java.awt.Dimension(550, 400))
-addChangeListener(object: javax.swing.event.ChangeListener()
+jToolBar1!.add(stopJjButton)
+getContentPane()!.add(jToolBar1, java.awt.BorderLayout.NORTH)
+jPanel1!.setLayout(java.awt.GridLayout(1, 0))
+mainJPanel!.setLayout(java.awt.GridLayout(1, 0))
+jTabbedPane!.setMinimumSize(java.awt.Dimension(550, 400))
+jTabbedPane!.addChangeListener(object: javax.swing.event.ChangeListener()
                                 {
                                 
     public stateChanged(evt: javax.swing.event.ChangeEvent){
@@ -338,15 +339,15 @@ jTabbedPaneStateChanged(evt)
 
                                 }
                             )
-add(jTabbedPane)
-add(mainJPanel)
-add(jPanel1, java.awt.BorderLayout.CENTER)
-setLayout(java.awt.GridLayout(1, 0))
-setText("Status Bar")
-add(statusJLabel)
-add(statusJPanel, java.awt.BorderLayout.SOUTH)
-setText("File")
-addActionListener(object: java.awt.event.ActionListener()
+mainJPanel!.add(jTabbedPane)
+jPanel1!.add(mainJPanel)
+getContentPane()!.add(jPanel1, java.awt.BorderLayout.CENTER)
+statusJPanel!.setLayout(java.awt.GridLayout(1, 0))
+statusJLabel!.setText("Status Bar")
+statusJPanel!.add(statusJLabel)
+getContentPane()!.add(statusJPanel, java.awt.BorderLayout.SOUTH)
+fileJMenu!.setText("File")
+fileJMenu!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -356,8 +357,8 @@ fileJMenuActionPerformed(evt)
 
                                 }
                             )
-setText("New")
-addActionListener(object: java.awt.event.ActionListener()
+newJMenuItem!.setText("New")
+newJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -367,9 +368,9 @@ newJMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(newJMenuItem)
-setText("Open")
-addActionListener(object: java.awt.event.ActionListener()
+fileJMenu!.add(newJMenuItem)
+openJMenuItem!.setText("Open")
+openJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -379,9 +380,9 @@ openJMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(openJMenuItem)
-setText("Save")
-addMouseListener(object: java.awt.event.MouseAdapter()
+fileJMenu!.add(openJMenuItem)
+saveJMenuItem!.setText("Save")
+saveJMenuItem!.addMouseListener(object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -391,11 +392,11 @@ saveJMenuItemMousePressed(evt)
 
                                 }
                             )
-add(saveJMenuItem)
-setText("SaveAs")
-add(saveAsJMenuItem)
-setText("Export")
-addActionListener(object: java.awt.event.ActionListener()
+fileJMenu!.add(saveJMenuItem)
+saveAsJMenuItem!.setText("SaveAs")
+fileJMenu!.add(saveAsJMenuItem)
+exportJMenuItem1!.setText("Export")
+exportJMenuItem1!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -405,9 +406,9 @@ exportJMenuItem1ActionPerformed(evt)
 
                                 }
                             )
-add(exportJMenuItem1)
-setText("Exit")
-addActionListener(object: java.awt.event.ActionListener()
+fileJMenu!.add(exportJMenuItem1)
+exitJMenuItem!.setText("Exit")
+exitJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -417,11 +418,11 @@ exitJMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(exitJMenuItem)
-add(fileJMenu)
-setText("View")
-setText("Zoom In")
-addMouseListener(object: java.awt.event.MouseAdapter()
+fileJMenu!.add(exitJMenuItem)
+menuJMenuBar!.add(fileJMenu)
+viewJMenu!.setText("View")
+zoomInJMenuItem!.setText("Zoom In")
+zoomInJMenuItem!.addMouseListener(object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -431,9 +432,9 @@ zoomInJMenuItemMousePressed(evt)
 
                                 }
                             )
-add(zoomInJMenuItem)
-setText("Zoom Out")
-addMouseListener(object: java.awt.event.MouseAdapter()
+viewJMenu!.add(zoomInJMenuItem)
+zoomOutJMenuItem!.setText("Zoom Out")
+zoomOutJMenuItem!.addMouseListener(object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -443,11 +444,11 @@ zoomOutJMenuItemMousePressed(evt)
 
                                 }
                             )
-add(zoomOutJMenuItem)
-add(viewJMenu)
-setText("Objects")
-setText("Explode All")
-addMouseListener(object: java.awt.event.MouseAdapter()
+viewJMenu!.add(zoomOutJMenuItem)
+menuJMenuBar!.add(viewJMenu)
+objectJMenu!.setText("Objects")
+explodeAllJMenuItem!.setText("Explode All")
+explodeAllJMenuItem!.addMouseListener(object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -457,10 +458,10 @@ explodeAllJMenuItemMousePressed(evt)
 
                                 }
                             )
-add(explodeAllJMenuItem)
-add(objectJMenu)
-setText("Frame")
-addActionListener(object: java.awt.event.ActionListener()
+objectJMenu!.add(explodeAllJMenuItem)
+menuJMenuBar!.add(objectJMenu)
+frameJMenu!.setText("Frame")
+frameJMenu!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -470,22 +471,22 @@ frameJMenuActionPerformed(evt)
 
                                 }
                             )
-setText("Previous")
-add(previousFrameJMenuItem)
-setText("Next")
-add(nextFrameJMenuItem)
-setText("Remove")
-add(removeJMenuItem)
-setText("Copy")
-add(copyJMenuItem1)
-setText("Ins After")
-add(insertAfterJMenuItem)
-setText("Ins Before")
-add(insertBeforeJMenuItem)
-add(frameJMenu)
-setText("Generate")
-setText("Center")
-addActionListener(object: java.awt.event.ActionListener()
+previousFrameJMenuItem!.setText("Previous")
+frameJMenu!.add(previousFrameJMenuItem)
+nextFrameJMenuItem!.setText("Next")
+frameJMenu!.add(nextFrameJMenuItem)
+removeJMenuItem!.setText("Remove")
+frameJMenu!.add(removeJMenuItem)
+copyJMenuItem1!.setText("Copy")
+frameJMenu!.add(copyJMenuItem1)
+insertAfterJMenuItem!.setText("Ins After")
+frameJMenu!.add(insertAfterJMenuItem)
+insertBeforeJMenuItem!.setText("Ins Before")
+frameJMenu!.add(insertBeforeJMenuItem)
+menuJMenuBar!.add(frameJMenu)
+generateJMenu!.setText("Generate")
+centerJMenuItem!.setText("Center")
+centerJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -495,11 +496,11 @@ centerJMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(centerJMenuItem)
-setText("Damage")
-add(autoDamageJMenuItem)
-setText("Explode")
-addMouseListener(object: java.awt.event.MouseAdapter()
+generateJMenu!.add(centerJMenuItem)
+autoDamageJMenuItem!.setText("Damage")
+generateJMenu!.add(autoDamageJMenuItem)
+autoExplodeJMenuItem!.setText("Explode")
+autoExplodeJMenuItem!.addMouseListener(object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -509,11 +510,11 @@ autoExplodeJMenuItemMousePressed(evt)
 
                                 }
                             )
-add(autoExplodeJMenuItem)
-setText("Grow")
-add(autoGrowJMenuItem)
-setText("Mirror")
-addActionListener(object: java.awt.event.ActionListener()
+generateJMenu!.add(autoExplodeJMenuItem)
+autoGrowJMenuItem!.setText("Grow")
+generateJMenu!.add(autoGrowJMenuItem)
+jMenuItem1!.setText("Mirror")
+jMenuItem1!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -523,9 +524,9 @@ jMenuItem1ActionPerformed(evt)
 
                                 }
                             )
-add(jMenuItem1)
-setText("Rotate")
-addMouseListener(object: java.awt.event.MouseAdapter()
+generateJMenu!.add(jMenuItem1)
+autoRotateGenerationJMenuItem!.setText("Rotate")
+autoRotateGenerationJMenuItem!.addMouseListener(object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -535,14 +536,14 @@ autoRotateGenerationJMenuItemMousePressed(evt)
 
                                 }
                             )
-add(autoRotateGenerationJMenuItem)
-setText("Shield")
-add(autoSheildMenuItem)
-setText("Shrink")
-add(autoShrinkJMenuItem)
-add(generateJMenu)
-setText("Help")
-add(jMenu1)
+generateJMenu!.add(autoRotateGenerationJMenuItem)
+autoSheildMenuItem!.setText("Shield")
+generateJMenu!.add(autoSheildMenuItem)
+autoShrinkJMenuItem!.setText("Shrink")
+generateJMenu!.add(autoShrinkJMenuItem)
+menuJMenuBar!.add(generateJMenu)
+jMenu1!.setText("Help")
+menuJMenuBar!.add(jMenu1)
 setJMenuBar(menuJMenuBar)
 pack()
 }
@@ -552,11 +553,11 @@ pack()
 var evt = evt
 
         try {
-            fire(MyCanvasEvent(MyCanvasEventSource(MyCanvasEventService.EXPLODE, 
+            MyCanvasEventService.fire(MyCanvasEvent(MyCanvasEventSource(MyCanvasEventService.EXPLODE, 
                             null) as Object))
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "explodeAllJMenuItemMousePressed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "explodeAllJMenuItemMousePressed", e)
 }
 
 }
@@ -566,11 +567,11 @@ put(commonStrings!.EXCEPTION, this, "explodeAllJMenuItemMousePressed", e)
 var evt = evt
 
         try {
-            fire(MyCanvasEvent(MyCanvasEventSource(MyCanvasEventService.AUTOEXPLODE, 
+            MyCanvasEventService.fire(MyCanvasEvent(MyCanvasEventSource(MyCanvasEventService.AUTOEXPLODE, 
                             null) as Object))
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "autoExplodeJMenuItemMousePressed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "autoExplodeJMenuItemMousePressed", e)
 }
 
 }
@@ -578,55 +579,55 @@ put(commonStrings!.EXCEPTION, this, "autoExplodeJMenuItemMousePressed", e)
 
     stopJjButtonMousePressed(evt: java.awt.event.MouseEvent){
 var evt = evt
-stop()
+this.getSelectedWorkArea()!.stop()
 }
 
 
     playJButtonMousePressed(evt: java.awt.event.MouseEvent){
 var evt = evt
-play()
+this.getSelectedWorkArea()!.play()
 }
 
 
     autoRotateGenerationJMenuItemMousePressed(evt: java.awt.event.MouseEvent){
 var evt = evt
-setVisible(true)
+this.rotateJDialog!.setVisible(true)
 }
 
 
     zoomOutJMenuItemMousePressed(evt: java.awt.event.MouseEvent){
 var evt = evt
-changeZoom( -1)
+getSelectedWorkArea()!.changeZoom( -1)
 }
 
 
     zoomInJMenuItemMousePressed(evt: java.awt.event.MouseEvent){
 var evt = evt
-changeZoom(1)
+getSelectedWorkArea()!.changeZoom(1)
 }
 
 
     openJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.openGraphics()
+this.this.openGraphics()
 }
 
 
     exportJMenuItem1ActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.export()
+this.this.export()
 }
 
 
     saveJMenuItemMousePressed(evt: java.awt.event.MouseEvent){
 var evt = evt
-this.save()
+this.this.save()
 }
 
 
     jTabbedPaneStateChanged(evt: javax.swing.event.ChangeEvent){
 var evt = evt
-this.updateSelectedWorkArea()
+this.this.updateSelectedWorkArea()
 }
 
 
@@ -637,13 +638,13 @@ var evt = evt
 
     exitJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-exit(0)
+System.exit(0)
 }
 
 
     newJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.newGraphics()
+this.this.newGraphics()
 }
 
 
@@ -654,19 +655,19 @@ var evt = evt
 
     exitForm(evt: java.awt.event.WindowEvent){
 var evt = evt
-exit(0)
+System.exit(0)
 }
 
 
     openJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.openGraphics()
+this.this.openGraphics()
 }
 
 
     jButton2ActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.newGraphics()
+this.this.newGraphics()
 }
 
 
@@ -674,11 +675,11 @@ this.newGraphics()
 var evt = evt
 
         try {
-            fire(MyCanvasEvent(MyCanvasEventSource(MyCanvasEventService.CENTER, 
+            MyCanvasEventService.fire(MyCanvasEvent(MyCanvasEventSource(MyCanvasEventService.CENTER, 
                             null) as Object))
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "centerJMenuItemActionPerformed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "centerJMenuItemActionPerformed", e)
 }
 
 }
@@ -686,13 +687,13 @@ put(commonStrings!.EXCEPTION, this, "centerJMenuItemActionPerformed", e)
 
     saveJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.save()
+this.this.save()
 }
 
 
     jButton1ActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.export()
+this.this.export()
 }
 
 
@@ -700,10 +701,10 @@ this.export()
 var evt = evt
 
         try {
-            autoMirror()
+            this.getSelectedWorkArea()!.autoMirror()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "centerJMenuItemActionPerformed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "centerJMenuItemActionPerformed", e)
 }
 
 }
@@ -713,7 +714,7 @@ put(commonStrings!.EXCEPTION, this, "centerJMenuItemActionPerformed", e)
 var files = files
 
         try {
-            put("Reading: " +files, this, "onFiles")
+            logUtil!.put("Reading: " +files, this, "onFiles")
 
 
 
@@ -734,14 +735,14 @@ index < files.length; index++)
         
         
 
-setLayout(GridLayout(1, 1))
-this.add(workAreaJPanel as WorkAreaJPanelInterface)
+workAreaJPanel!.setLayout(GridLayout(1, 1))
+this.this.add(workAreaJPanel as WorkAreaJPanelInterface)
 }
 
-setVisible(false)
+this.fileJDialog!.setVisible(false)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "onFiles", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "onFiles", e)
 }
 
 }
@@ -768,11 +769,10 @@ put(commonStrings!.EXCEPTION, this, "onFiles", e)
 } catch(e: Exception)
             {
 
-    
                         if(LOGGING.contains(LOGGING.MENUEVENT))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "newJMenuItemActionPerformed", e)
+                                    guiLog!.put(commonStrings!.EXCEPTION, this, "newJMenuItemActionPerformed", e)
 
                                     }
                                 
@@ -784,16 +784,15 @@ put(commonStrings!.EXCEPTION, this, "onFiles", e)
     openGraphics(){
 
         try {
-            put("Starting", this, "openImageJMenuItemActionPerformed")
-setVisible(true)
+            logUtil!.put("Starting", this, "openImageJMenuItemActionPerformed")
+fileJDialog!.setVisible(true)
 } catch(e: Exception)
             {
 
-    
                         if(LOGGING.contains(LOGGING.MENUEVENT))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "open", e)
+                                    guiLog!.put(commonStrings!.EXCEPTION, this, "open", e)
 
                                     }
                                 
@@ -820,16 +819,15 @@ setVisible(true)
         
         
 
-put("Export: " +DomHelper.getInstance()!.toString(document), this, "exportJMenuItem1ActionPerformed")
-export(file, this.TEMPLATE_EXPORT_PATH +"/" +this.JAVA_TEMPLATE, document)
+logUtil!.put("Export: " +DomHelper.getInstance()!.toString(document), this, "exportJMenuItem1ActionPerformed")
+xslHelper!.export(file, this.TEMPLATE_EXPORT_PATH +"/" +this.JAVA_TEMPLATE, document)
 } catch(e: Exception)
             {
 
-    
                         if(LOGGING.contains(LOGGING.MENUEVENT))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "export", e)
+                                    guiLog!.put(commonStrings!.EXCEPTION, this, "export", e)
 
                                     }
                                 
@@ -846,15 +844,14 @@ export(file, this.TEMPLATE_EXPORT_PATH +"/" +this.JAVA_TEMPLATE, document)
         
         
 
-save(File(this.SAVE_PATH +"/" +workAreaJPanel!.getName() +SAVEEXTENSION), workAreaJPanel!.toDocument())
+DomHelper.getInstance()!.save(File(this.SAVE_PATH +"/" +workAreaJPanel!.getName() +SAVEEXTENSION), workAreaJPanel!.toDocument())
 } catch(e: Exception)
             {
 
-    
                         if(LOGGING.contains(LOGGING.MENUEVENT))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e)
+                                    guiLog!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e)
 
                                     }
                                 
@@ -863,7 +860,7 @@ save(File(this.SAVE_PATH +"/" +workAreaJPanel!.getName() +SAVEEXTENSION), workAr
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onHashMap(hashMap: HashMap<Any, Any>){
 var hashMap = hashMap
@@ -877,7 +874,7 @@ var hashMap = hashMap
         
         
 
-autoRotate(angleIncrementInteger!.toInt(), totalRotationInteger!.toInt())
+this.getSelectedWorkArea()!.autoRotate(angleIncrementInteger!.toInt(), totalRotationInteger!.toInt())
 }
 
 
@@ -912,7 +909,7 @@ index < numberOfTabs; index++)
         
         
 
-deselect()
+workAreaJPanel!.deselect()
 }
 
 
@@ -921,20 +918,19 @@ deselect()
         
 
 
-    
                         if(workAreaJPanel != 
                                     null
                                 )
                         
                                     {
-                                    select()
+                                    workAreaJPanel!.select()
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public add(newCanvasInterface: WorkAreaJPanelInterface){
 var newCanvasInterface = newCanvasInterface
@@ -942,34 +938,32 @@ var newCanvasInterface = newCanvasInterface
         try {
             this.numberOfWorkAreas++
 
-    
                         if(this.numberOfWorkAreas == MAXWORKAREAS)
                         
                                     {
                                     
 
 
-                            throw Exception()
+                            throw Error()
 
                                     }
                                 
-addTab(newCanvasInterface!.getName(), newCanvasInterface as JPanel)
-setSelectedComponent(newCanvasInterface as JPanel)
+jTabbedPane!.addTab(newCanvasInterface!.getName(), newCanvasInterface as JPanel)
+jTabbedPane!.setSelectedComponent(newCanvasInterface as JPanel)
 
     var animationThread: Thread = new Thread(newCanvasInterface as Runnable);
         
         
 
-start()
-this.updateSelectedWorkArea()
+animationThread!.start()
+this.this.updateSelectedWorkArea()
 } catch(e: Exception)
             {
 
-    
                         if(LOGGING.contains(LOGGING.GRAPHICSCREATION))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "addNewCanvas", e)
+                                    guiLog!.put(commonStrings!.EXCEPTION, this, "addNewCanvas", e)
 
                                     }
                                 
@@ -980,7 +974,7 @@ this.updateSelectedWorkArea()
 
     public keyPressed(keyEvent: java.awt.event.KeyEvent){
 var keyEvent = keyEvent
-keyPressed(keyEvent)
+this.getSelectedWorkArea()!.keyPressed(keyEvent)
 }
 
 

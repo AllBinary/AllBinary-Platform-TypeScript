@@ -92,7 +92,7 @@ this.request= httpTransformInfoInterface!.getPageContext()!.getRequest() as Http
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -103,7 +103,7 @@ var document = document
         
         
 
-appendChild(streetAddress!.toXmlNode(document))
+formNode!.appendChild(streetAddress!.toXmlNode(document))
 
 
 
@@ -113,11 +113,10 @@ appendChild(streetAddress!.toXmlNode(document))
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
 
                                     }
                                 
@@ -131,17 +130,17 @@ appendChild(streetAddress!.toXmlNode(document))
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface)
-this.addDomNodeInterface(StatesView() as DomNodeInterface)
+this.this.addDomNodeInterface(this as DomNodeInterface)
+this.this.addDomNodeInterface(StatesView() as DomNodeInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.this.addDomNodeInterfaces()
 
 
 
@@ -151,11 +150,10 @@ this.addDomNodeInterface(StatesView() as DomNodeInterface)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 

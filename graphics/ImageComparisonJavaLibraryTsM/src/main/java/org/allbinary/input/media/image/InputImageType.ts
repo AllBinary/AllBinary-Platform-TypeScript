@@ -81,8 +81,8 @@ private constructor (name: string, index: number){
 var index = index
 this.name= name
 this.index= index
-add(this)
-put(this.getName(), this)
+TYPE_VECTOR.add(this)
+this.hashMap!.put(this.getName(), this)
 }
 
 

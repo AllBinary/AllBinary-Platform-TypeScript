@@ -95,47 +95,45 @@ index < size; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public append(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
 
-    
                         if(!this.contains(layerInterface))
                         
                                     {
-                                    this.appendProcessors(layerInterface)
-append(layerInterface)
+                                    this.this.appendProcessors(layerInterface)
+super.append(layerInterface)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public append(layerInterface: AllBinaryLayer, index: number){
     //var layerInterface = layerInterface
     //var index = index
 
-    
                         if(!this.contains(layerInterface))
                         
                                     {
-                                    this.appendProcessors(layerInterface)
-append(layerInterface, index)
+                                    this.this.appendProcessors(layerInterface)
+super.append(layerInterface, index)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     appendProcessors(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
-setLayerInterface(layerInterface)
-fireEvent(this.createLayerManagerEvent)
+this.createLayerManagerEvent!.setLayerInterface(layerInterface)
+layerManagerEventHandler!.fireEvent(this.createLayerManagerEvent)
 
     var layerProcessorInterface: LayerProcessor
 
@@ -152,11 +150,10 @@ fireEvent(this.createLayerManagerEvent)
         {
 layerProcessorInterface= basicLayerProcessorArray[index]!
 
-    
                         if(layerProcessorInterface!.isProcessorLayer(layerInterface))
                         
                                     {
-                                    append(layerInterface)
+                                    layerProcessorInterface!.getLayerManager()!.append(layerInterface)
 
                                     }
                                 
@@ -165,13 +162,13 @@ layerProcessorInterface= basicLayerProcessorArray[index]!
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public remove(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
-setLayerInterface(layerInterface)
-fireDeleteEvent(this.deleteLayerManagerEvent)
+deleteLayerManagerEvent!.setLayerInterface(layerInterface)
+layerManagerEventHandler!.fireDeleteEvent(this.deleteLayerManagerEvent)
 
     var layerProcessorInterface: LayerProcessor
 
@@ -187,14 +184,14 @@ fireDeleteEvent(this.deleteLayerManagerEvent)
 --index >= 0; )
         {
 layerProcessorInterface= basicLayerProcessorArray[index]!
-remove(layerInterface)
+layerProcessorInterface!.getLayerManager()!.remove(layerInterface)
 }
 
-remove(layerInterface)
+super.remove(layerInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
 
@@ -217,13 +214,13 @@ remove(layerInterface)
 index < size; index++)
         {
 layerProcessorInterface= basicLayerProcessorArray[index]!
-process(this)
+layerProcessorInterface!.process(this)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public cleanup(){
 
@@ -246,10 +243,10 @@ process(this)
 index < size; index++)
         {
 layerProcessorInterface= basicLayerProcessorArray[index]!
-cleanup()
+layerProcessorInterface!.getLayerManager()!.cleanup()
 }
 
-cleanup()
+super.cleanup()
 }
 
 

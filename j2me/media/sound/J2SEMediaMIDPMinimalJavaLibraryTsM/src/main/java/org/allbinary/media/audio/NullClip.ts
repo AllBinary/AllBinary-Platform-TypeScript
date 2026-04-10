@@ -59,7 +59,7 @@ export class NullClip
         
         
 
-                @Throws(LineUnavailableException::class)
+                //@Throws(LineUnavailableException::class)
             
     public open(format: AudioFormat, data: ByteArray, offset: number, bufferSize: number){
 var format = format
@@ -69,7 +69,7 @@ var bufferSize = bufferSize
 }
 
 
-                @Throws(LineUnavailableException::class, IOException::class)
+                //@Throws(LineUnavailableException::class, IOException::class)
             
     public open(stream: AudioInputStream){
 var stream = stream
@@ -233,7 +233,7 @@ var count = count
 }
 
 
-                @Throws(LineUnavailableException::class)
+                //@Throws(LineUnavailableException::class)
             
     public open(){
 }

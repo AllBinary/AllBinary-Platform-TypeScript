@@ -103,34 +103,34 @@ this.GL_QUAD_STRIP= com.jogamp.opengl.GL2.GL_QUAD_STRIP
 
     public glActiveTexture(texture: number){
 var texture = texture
-glActiveTexture(texture)
+this.gl10.glActiveTexture(texture)
 }
 
 
     public glAlphaFunc(func: number, ref: number){
 var func = func
 var ref = ref
-glAlphaFunc(func, ref)
+this.gl10.glAlphaFunc(func, ref)
 }
 
 
     public glBindTexture(target: number, texture: number){
 var target = target
 var texture = texture
-glBindTexture(target, texture)
+this.gl10.glBindTexture(target, texture)
 }
 
 
     public glBlendFunc(sfactor: number, dfactor: number){
 var sfactor = sfactor
 var dfactor = dfactor
-glBlendFunc(sfactor, dfactor)
+this.gl10.glBlendFunc(sfactor, dfactor)
 }
 
 
     public glClear(mask: number){
 var mask = mask
-glClear(mask)
+this.gl10.glClear(mask)
 }
 
 
@@ -139,25 +139,25 @@ var red = red
 var green = green
 var blue = blue
 var alpha = alpha
-glClearColor(red, green, blue, alpha)
+this.gl10.glClearColor(red, green, blue, alpha)
 }
 
 
     public glClearDepthf(depth: number){
 var depth = depth
-glClearDepthf(depth)
+this.gl10.glClearDepthf(depth)
 }
 
 
     public glClearStencil(s: number){
 var s = s
-glClearStencil(s)
+this.gl10.glClearStencil(s)
 }
 
 
     public glClientActiveTexture(texture: number){
 var texture = texture
-glClientActiveTexture(texture)
+this.gl10.glClientActiveTexture(texture)
 }
 
 
@@ -166,7 +166,7 @@ var red = red
 var green = green
 var blue = blue
 var alpha = alpha
-glColor4f(red, green, blue, alpha)
+this.gl10.glColor4f(red, green, blue, alpha)
 }
 
 
@@ -175,7 +175,7 @@ var red = red
 var green = green
 var blue = blue
 var alpha = alpha
-glColorMask(red, green, blue, alpha)
+this.gl10.glColorMask(red, green, blue, alpha)
 }
 
 
@@ -184,7 +184,7 @@ var size = size
 var type = type
 var stride = stride
 var pointer = pointer
-glColorPointer(size, type, stride, pointer)
+this.gl10.glColorPointer(size, type, stride, pointer)
 }
 
 
@@ -197,7 +197,7 @@ var height = height
 var border = border
 var imageSize = imageSize
 var data = data
-glCompressedTexImage2D(target, level, internalformat, width, height, border, imageSize, data)
+this.gl10.glCompressedTexImage2D(target, level, internalformat, width, height, border, imageSize, data)
 }
 
 
@@ -211,7 +211,7 @@ var height = height
 var format = format
 var imageSize = imageSize
 var data = data
-glCompressedTexSubImage2D(target, level, xoffset, yoffset, width, height, format, imageSize, data)
+this.gl10.glCompressedTexSubImage2D(target, level, xoffset, yoffset, width, height, format, imageSize, data)
 }
 
 
@@ -224,7 +224,7 @@ var y = y
 var width = width
 var height = height
 var border = border
-glCopyTexImage2D(target, level, internalformat, x, y, width, height, border)
+this.gl10.glCopyTexImage2D(target, level, internalformat, x, y, width, height, border)
 }
 
 
@@ -237,13 +237,13 @@ var x = x
 var y = y
 var width = width
 var height = height
-glCopyTexSubImage2D(target, level, xoffset, yoffset, x, y, width, height)
+this.gl10.glCopyTexSubImage2D(target, level, xoffset, yoffset, x, y, width, height)
 }
 
 
     public glCullFace(mode: number){
 var mode = mode
-glCullFace(mode)
+this.gl10.glCullFace(mode)
 }
 
 
@@ -251,45 +251,45 @@ glCullFace(mode)
 var n = n
 var textures = textures
 var offset = offset
-glDeleteTextures(n, textures, offset)
+this.gl10.glDeleteTextures(n, textures, offset)
 }
 
 
     public glDeleteTextures(n: number, textures: java.nio.IntBuffer){
 var n = n
 var textures = textures
-glDeleteTextures(n, textures)
+this.gl10.glDeleteTextures(n, textures)
 }
 
 
     public glDepthFunc(func: number){
 var func = func
-glDepthFunc(func)
+this.gl10.glDepthFunc(func)
 }
 
 
     public glDepthMask(flag: boolean){
 var flag = flag
-glDepthMask(flag)
+this.gl10.glDepthMask(flag)
 }
 
 
     public glDepthRangef(zNear: number, zFar: number){
 var zNear = zNear
 var zFar = zFar
-glDepthRangef(zNear, zFar)
+this.gl10.glDepthRangef(zNear, zFar)
 }
 
 
     public glDisable(cap: number){
 var cap = cap
-glDisable(cap)
+this.gl10.glDisable(cap)
 }
 
 
     public glDisableClientState(array: number){
 var array = array
-glDisableClientState(array)
+this.gl10.glDisableClientState(array)
 }
 
 
@@ -297,7 +297,7 @@ glDisableClientState(array)
 var mode = mode
 var first = first
 var count = count
-glDrawArrays(mode, first, count)
+this.gl10.glDrawArrays(mode, first, count)
 }
 
 
@@ -306,36 +306,36 @@ var mode = mode
 var count = count
 var type = type
 var indices = indices
-glDrawElements(mode, count, type, indices)
+this.gl10.glDrawElements(mode, count, type, indices)
 }
 
 
     public glEnable(cap: number){
 var cap = cap
-glEnable(cap)
+this.gl10.glEnable(cap)
 }
 
 
     public glEnableClientState(array: number){
 var array = array
-glEnableClientState(array)
+this.gl10.glEnableClientState(array)
 }
 
 
     public glFinish(){
-glFinish()
+this.gl10.glFinish()
 }
 
 
     public glFlush(){
-glFlush()
+this.gl10.glFlush()
 }
 
 
     public glFogf(pname: number, param: number){
 var pname = pname
 var param = param
-glFogf(pname, param)
+this.gl10.glFogf(pname, param)
 }
 
 
@@ -343,20 +343,20 @@ glFogf(pname, param)
 var pname = pname
 var params = params
 var offset = offset
-glFogfv(pname, params, offset)
+this.gl10.glFogfv(pname, params, offset)
 }
 
 
     public glFogfv(pname: number, params: java.nio.FloatBuffer){
 var pname = pname
 var params = params
-glFogfv(pname, params)
+this.gl10.glFogfv(pname, params)
 }
 
 
     public glFrontFace(mode: number){
 var mode = mode
-glFrontFace(mode)
+this.gl10.glFrontFace(mode)
 }
 
 
@@ -367,7 +367,7 @@ var bottom = bottom
 var top = top
 var zNear = zNear
 var zFar = zFar
-glFrustumf(left, right, bottom, top, zNear, zFar)
+this.gl10.glFrustumf(left, right, bottom, top, zNear, zFar)
 }
 
 
@@ -375,14 +375,14 @@ glFrustumf(left, right, bottom, top, zNear, zFar)
 var n = n
 var textures = textures
 var offset = offset
-glGenTextures(n, textures, offset)
+this.gl10.glGenTextures(n, textures, offset)
 }
 
 
     public glGenTextures(n: number, textures: java.nio.IntBuffer){
 var n = n
 var textures = textures
-glGenTextures(n, textures)
+this.gl10.glGenTextures(n, textures)
 }
 
 
@@ -400,14 +400,14 @@ glGenTextures(n, textures)
 var pname = pname
 var params = params
 var offset = offset
-glGetIntegerv(pname, params, offset)
+this.gl10.glGetIntegerv(pname, params, offset)
 }
 
 
     public glGetIntegerv(pname: number, params: java.nio.IntBuffer){
 var pname = pname
 var params = params
-glGetIntegerv(pname, params)
+this.gl10.glGetIntegerv(pname, params)
 }
 
 
@@ -425,14 +425,14 @@ var name = name
     public glHint(target: number, mode: number){
 var target = target
 var mode = mode
-glHint(target, mode)
+this.gl10.glHint(target, mode)
 }
 
 
     public glLightModelf(pname: number, param: number){
 var pname = pname
 var param = param
-glLightModelf(pname, param)
+this.gl10.glLightModelf(pname, param)
 }
 
 
@@ -440,14 +440,14 @@ glLightModelf(pname, param)
 var pname = pname
 var params = params
 var offset = offset
-glLightModelfv(pname, params, offset)
+this.gl10.glLightModelfv(pname, params, offset)
 }
 
 
     public glLightModelfv(pname: number, params: java.nio.FloatBuffer){
 var pname = pname
 var params = params
-glLightModelfv(pname, params)
+this.gl10.glLightModelfv(pname, params)
 }
 
 
@@ -455,7 +455,7 @@ glLightModelfv(pname, params)
 var light = light
 var pname = pname
 var param = param
-glLightf(light, pname, param)
+this.gl10.glLightf(light, pname, param)
 }
 
 
@@ -464,7 +464,7 @@ var light = light
 var pname = pname
 var params = params
 var offset = offset
-glLightfv(light, pname, params, offset)
+this.gl10.glLightfv(light, pname, params, offset)
 }
 
 
@@ -472,37 +472,37 @@ glLightfv(light, pname, params, offset)
 var light = light
 var pname = pname
 var params = params
-glLightfv(light, pname, params)
+this.gl10.glLightfv(light, pname, params)
 }
 
 
     public glLineWidth(width: number){
 var width = width
-glLineWidth(width)
+this.gl10.glLineWidth(width)
 }
 
 
     public glLoadIdentity(){
-glLoadIdentity()
+this.gl10.glLoadIdentity()
 }
 
 
     public glLoadMatrixf(m: FloatArray, offset: number){
 var m = m
 var offset = offset
-glLoadMatrixf(m, offset)
+this.gl10.glLoadMatrixf(m, offset)
 }
 
 
     public glLoadMatrixf(m: java.nio.FloatBuffer){
 var m = m
-glLoadMatrixf(m)
+this.gl10.glLoadMatrixf(m)
 }
 
 
     public glLogicOp(opcode: number){
 var opcode = opcode
-glLogicOp(opcode)
+this.gl10.glLogicOp(opcode)
 }
 
 
@@ -510,7 +510,7 @@ glLogicOp(opcode)
 var face = face
 var pname = pname
 var param = param
-glMaterialf(face, pname, param)
+this.gl10.glMaterialf(face, pname, param)
 }
 
 
@@ -519,7 +519,7 @@ var face = face
 var pname = pname
 var params = params
 var offset = offset
-glMaterialfv(face, pname, params, offset)
+this.gl10.glMaterialfv(face, pname, params, offset)
 }
 
 
@@ -527,26 +527,26 @@ glMaterialfv(face, pname, params, offset)
 var face = face
 var pname = pname
 var params = params
-glMaterialfv(face, pname, params)
+this.gl10.glMaterialfv(face, pname, params)
 }
 
 
     public glMatrixMode(mode: number){
 var mode = mode
-glMatrixMode(mode)
+this.gl10.glMatrixMode(mode)
 }
 
 
     public glMultMatrixf(m: FloatArray, offset: number){
 var m = m
 var offset = offset
-glMultMatrixf(m, offset)
+this.gl10.glMultMatrixf(m, offset)
 }
 
 
     public glMultMatrixf(m: java.nio.FloatBuffer){
 var m = m
-glMultMatrixf(m)
+this.gl10.glMultMatrixf(m)
 }
 
 
@@ -556,7 +556,7 @@ var s = s
 var t = t
 var r = r
 var q = q
-glMultiTexCoord4f(target, s, t, r, q)
+this.gl10.glMultiTexCoord4f(target, s, t, r, q)
 }
 
 
@@ -564,7 +564,7 @@ glMultiTexCoord4f(target, s, t, r, q)
 var nx = nx
 var ny = ny
 var nz = nz
-glNormal3f(nx, ny, nz)
+this.gl10.glNormal3f(nx, ny, nz)
 }
 
 
@@ -572,7 +572,7 @@ glNormal3f(nx, ny, nz)
 var type = type
 var stride = stride
 var pointer = pointer
-glNormalPointer(type, stride, pointer)
+this.gl10.glNormalPointer(type, stride, pointer)
 }
 
 
@@ -583,37 +583,37 @@ var bottom = bottom
 var top = top
 var zNear = zNear
 var zFar = zFar
-glOrthof(left, right, bottom, top, zNear, zFar)
+this.gl10.glOrthof(left, right, bottom, top, zNear, zFar)
 }
 
 
     public glPixelStorei(pname: number, param: number){
 var pname = pname
 var param = param
-glPixelStorei(pname, param)
+this.gl10.glPixelStorei(pname, param)
 }
 
 
     public glPointSize(size: number){
 var size = size
-glPointSize(size)
+this.gl10.glPointSize(size)
 }
 
 
     public glPolygonOffset(factor: number, units: number){
 var factor = factor
 var units = units
-glPolygonOffset(factor, units)
+this.gl10.glPolygonOffset(factor, units)
 }
 
 
     public glPopMatrix(){
-glPopMatrix()
+this.gl10.glPopMatrix()
 }
 
 
     public glPushMatrix(){
-glPushMatrix()
+this.gl10.glPushMatrix()
 }
 
 
@@ -625,7 +625,7 @@ var height = height
 var format = format
 var type = type
 var pixels = pixels
-glReadPixels(x, y, width, height, format, type, pixels)
+this.gl10.glReadPixels(x, y, width, height, format, type, pixels)
 }
 
 
@@ -634,7 +634,7 @@ var angle = angle
 var x = x
 var y = y
 var z = z
-glRotatef(angle, x, y, z)
+this.gl10.glRotatef(angle, x, y, z)
 }
 
 
@@ -643,14 +643,14 @@ var angle = angle
 var x = x
 var y = y
 var z = z
-glRotatef(angle, x, y, z)
+this.gl10.glRotatef(angle, x, y, z)
 }
 
 
     public glSampleCoverage(value: number, invert: boolean){
 var value = value
 var invert = invert
-glSampleCoverage(value, invert)
+this.gl10.glSampleCoverage(value, invert)
 }
 
 
@@ -658,7 +658,7 @@ glSampleCoverage(value, invert)
 var x = x
 var y = y
 var z = z
-glScalef(x, y, z)
+this.gl10.glScalef(x, y, z)
 }
 
 
@@ -666,7 +666,7 @@ glScalef(x, y, z)
 var x = x
 var y = y
 var z = z
-glScalef(x, y, z)
+this.gl10.glScalef(x, y, z)
 }
 
 
@@ -675,13 +675,13 @@ var x = x
 var y = y
 var width = width
 var height = height
-glScissor(x, y, width, height)
+this.gl10.glScissor(x, y, width, height)
 }
 
 
     public glShadeModel(mode: number){
 var mode = mode
-glShadeModel(mode)
+this.gl10.glShadeModel(mode)
 }
 
 
@@ -689,13 +689,13 @@ glShadeModel(mode)
 var func = func
 var ref = ref
 var mask = mask
-glStencilFunc(func, ref, mask)
+this.gl10.glStencilFunc(func, ref, mask)
 }
 
 
     public glStencilMask(mask: number){
 var mask = mask
-glStencilMask(mask)
+this.gl10.glStencilMask(mask)
 }
 
 
@@ -703,7 +703,7 @@ glStencilMask(mask)
 var fail = fail
 var zfail = zfail
 var zpass = zpass
-glStencilOp(fail, zfail, zpass)
+this.gl10.glStencilOp(fail, zfail, zpass)
 }
 
 
@@ -712,7 +712,7 @@ var size = size
 var type = type
 var stride = stride
 var pointer = pointer
-glTexCoordPointer(size, type, stride, pointer)
+this.gl10.glTexCoordPointer(size, type, stride, pointer)
 }
 
 
@@ -720,7 +720,7 @@ glTexCoordPointer(size, type, stride, pointer)
 var target = target
 var pname = pname
 var param = param
-glTexEnvf(target, pname, param)
+this.gl10.glTexEnvf(target, pname, param)
 }
 
 
@@ -729,7 +729,7 @@ var target = target
 var pname = pname
 var params = params
 var offset = offset
-glTexEnvfv(target, pname, params, offset)
+this.gl10.glTexEnvfv(target, pname, params, offset)
 }
 
 
@@ -737,7 +737,7 @@ glTexEnvfv(target, pname, params, offset)
 var target = target
 var pname = pname
 var params = params
-glTexEnvfv(target, pname, params)
+this.gl10.glTexEnvfv(target, pname, params)
 }
 
 
@@ -751,7 +751,7 @@ var border = border
 var format = format
 var type = type
 var pixels = pixels
-glTexImage2D(target, level, internalformat, width, height, border, format, type, pixels)
+this.gl10.glTexImage2D(target, level, internalformat, width, height, border, format, type, pixels)
 }
 
 
@@ -759,7 +759,7 @@ glTexImage2D(target, level, internalformat, width, height, border, format, type,
 var target = target
 var pname = pname
 var param = param
-glTexParameterf(target, pname, param)
+this.gl10.glTexParameterf(target, pname, param)
 }
 
 
@@ -767,7 +767,7 @@ glTexParameterf(target, pname, param)
 var target = target
 var pname = pname
 var param = param
-glTexParameteri(target, pname, param)
+this.gl10.glTexParameteri(target, pname, param)
 }
 
 
@@ -781,7 +781,7 @@ var height = height
 var format = format
 var type = type
 var pixels = pixels
-glTexSubImage2D(target, level, xoffset, yoffset, width, height, format, type, pixels)
+this.gl10.glTexSubImage2D(target, level, xoffset, yoffset, width, height, format, type, pixels)
 }
 
 
@@ -789,7 +789,7 @@ glTexSubImage2D(target, level, xoffset, yoffset, width, height, format, type, pi
 var x = x
 var y = y
 var z = z
-glTranslatef(x, y, z)
+this.gl10.glTranslatef(x, y, z)
 }
 
 
@@ -798,7 +798,7 @@ var size = size
 var type = type
 var stride = stride
 var pointer = pointer
-glVertexPointer(size, type, stride, pointer)
+this.gl10.glVertexPointer(size, type, stride, pointer)
 }
 
 
@@ -807,18 +807,18 @@ var x = x
 var y = y
 var width = width
 var height = height
-glViewport(x, y, width, height)
+this.gl10.glViewport(x, y, width, height)
 }
 
 
     public glBegin(i: number){
 var i = i
-glBegin(i)
+this.gl10.glBegin(i)
 }
 
 
     public glEnd(){
-glEnd()
+this.gl10.glEnd()
 }
 
 
@@ -826,14 +826,14 @@ glEnd()
 var f = f
 var f2 = f2
 var f3 = f3
-glVertex3f(f, f2, f3)
+this.gl10.glVertex3f(f, f2, f3)
 }
 
 
     public glPolygonMode(i: number, i1: number){
 var i = i
 var i1 = i1
-glPolygonMode(i, i1)
+this.gl10.glPolygonMode(i, i1)
 }
 
 

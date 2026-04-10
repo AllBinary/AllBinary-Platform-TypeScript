@@ -38,7 +38,6 @@ var key = key
         
 
 
-    
                         if(key == Canvas.UP)
                         
                                     {
@@ -52,7 +51,6 @@ var key = key
                                     }
                                 
                              else 
-    
                         if(key == Canvas.DOWN)
                         
                                     {
@@ -66,7 +64,6 @@ var key = key
                                     }
                                 
                              else 
-    
                         if(key == Canvas.RIGHT)
                         
                                     {
@@ -80,7 +77,6 @@ var key = key
                                     }
                                 
                              else 
-    
                         if(key == Canvas.LEFT)
                         
                                     {
@@ -94,7 +90,6 @@ var key = key
                                     }
                                 
                              else 
-    
                         if(key == Canvas.FIRE)
                         
                                     {

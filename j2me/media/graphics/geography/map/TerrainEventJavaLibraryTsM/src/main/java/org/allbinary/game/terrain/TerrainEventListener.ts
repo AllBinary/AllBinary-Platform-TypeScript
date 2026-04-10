@@ -29,14 +29,14 @@ export class TerrainEventListener
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
     public onTerrainEvent(terrainEvent: TerrainEvent){
 var terrainEvent = terrainEvent
-clear()
-add(terrainEvent)
+this.list.clear()
+this.list.add(terrainEvent)
 }
 
 

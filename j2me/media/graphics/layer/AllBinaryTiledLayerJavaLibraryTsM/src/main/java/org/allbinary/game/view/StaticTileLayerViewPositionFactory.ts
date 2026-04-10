@@ -31,7 +31,7 @@ export class StaticTileLayerViewPositionFactory
                 , ViewPositionFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(): ViewPosition{
 

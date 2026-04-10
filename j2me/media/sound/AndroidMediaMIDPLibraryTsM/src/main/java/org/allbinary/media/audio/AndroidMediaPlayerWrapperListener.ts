@@ -62,7 +62,7 @@ public constructor (androidMediaPlayerWrapper: AndroidMediaPlayerWrapper, listen
     //var listeningLevel = listeningLevel
 
         try {
-            put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 this.androidMediaPlayerWrapper= androidMediaPlayerWrapper
 
     var mediaPlayer: MediaPlayer = androidMediaPlayerWrapper!.getMediaPlayer()!;
@@ -70,11 +70,10 @@ this.androidMediaPlayerWrapper= androidMediaPlayerWrapper
         
 
 
-    
                         if(listeningLevel == 1)
                         
                                     {
-                                    setOnCompletionListener(mOnCompletionListener)
+                                    mediaPlayer!.setOnCompletionListener(mOnCompletionListener)
 
                                     }
                                 
@@ -82,13 +81,13 @@ this.androidMediaPlayerWrapper= androidMediaPlayerWrapper
                             
 
 
-                            throw Exception("Unknow Listening Leve")
+                            throw Error("Unknow Listening Leve")
 
                         }
                             
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 }
@@ -99,20 +98,20 @@ public constructor (androidMediaPlayerWrapper: AndroidMediaPlayerWrapper){
                 //var androidMediaPlayerWrapper = androidMediaPlayerWrapper
 
         try {
-            put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 this.androidMediaPlayerWrapper= androidMediaPlayerWrapper
 
     var mediaPlayer: MediaPlayer = androidMediaPlayerWrapper!.getMediaPlayer()!;
         
         
 
-setOnCompletionListener(mOnCompletionListener)
-setOnBufferingUpdateListener(mOnBufferingUpdateListener)
-setOnPreparedListener(mOnPreparedListener)
-setOnErrorListener(mOnErrorListener)
+mediaPlayer!.setOnCompletionListener(mOnCompletionListener)
+mediaPlayer!.setOnBufferingUpdateListener(mOnBufferingUpdateListener)
+mediaPlayer!.setOnPreparedListener(mOnPreparedListener)
+mediaPlayer!.setOnErrorListener(mOnErrorListener)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 }
@@ -197,9 +196,9 @@ export inner class MediaPlayerOnCompletionListener
     public onBufferingUpdate(mediaPlayer: MediaPlayer, i: number){
     //var mediaPlayer = mediaPlayer
     //var i = i
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Update buffer: ")!.appendint(i)!.append("%")!.toString(), this, AndroidMediaPlayerWrapperListener.ON_BUFFERING_UPDATE)
-update(PlayerListener.DEVICE_UNAVAILABLE)
+this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerListener.DEVICE_UNAVAILABLE)
 }
 
                                 }
@@ -212,8 +211,8 @@ update(PlayerListener.DEVICE_UNAVAILABLE)
                                 
     public onPrepared(mp: MediaPlayer){
     //var mp = mp
-put(commonStrings!.START, this, AndroidMediaPlayerWrapperListener.ON_PREPARE)
-update(PlayerListener.DEVICE_AVAILABLE)
+logUtil!.put(commonStrings!.START, this, AndroidMediaPlayerWrapperListener.ON_PREPARE)
+this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerListener.DEVICE_AVAILABLE)
 }
 
                                 }
@@ -228,9 +227,9 @@ update(PlayerListener.DEVICE_AVAILABLE)
     //var mp = mp
     //var what = what
     //var extra = extra
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append("What: ")!.appendint(what)!.append(" Extra: ")!.appendint(extra)!.toString(), this, AndroidMediaPlayerWrapperListener.ON_ERROR)
-update(PlayerListener.ERROR)
+this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerListener.ERROR)
 
 
 
@@ -249,8 +248,8 @@ update(PlayerListener.ERROR)
                                 
     public onCompletion(mp: MediaPlayer){
     //var mp = mp
-put(commonStrings!.START, this, AndroidMediaPlayerWrapperListener.ON_COMPLETE)
-update(PlayerListener.END_OF_MEDIA)
+logUtil!.put(commonStrings!.START, this, AndroidMediaPlayerWrapperListener.ON_COMPLETE)
+this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerListener.END_OF_MEDIA)
 }
 
                                 }

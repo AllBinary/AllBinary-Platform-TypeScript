@@ -78,11 +78,11 @@ public constructor (gameSkillType: GameSkillType, extra: string, time: number){
             var gameSkillType = gameSkillType
 var extra = extra
 var time = time
-this.setGameSkillType(gameSkillType)
-this.setExtra(extra)
-this.setTime(time)
+this.this.setGameSkillType(gameSkillType)
+this.this.setExtra(extra)
+this.this.setTime(time)
 this.vector= Vector()
-put(StringBuilder().
+hashMap!.put(StringBuilder().
                             append(this.getGameSkillType()!.getName())!.append(CommonSeps.getInstance()!.SPACE)!.append(extra)!.toString(), this)
 }
 
@@ -137,7 +137,7 @@ this.time= time
 
     public addProperty(gameSkillPropertyInterface: GameSkillPropertyInterface){
 var gameSkillPropertyInterface = gameSkillPropertyInterface
-add(gameSkillPropertyInterface)
+this.vector.add(gameSkillPropertyInterface)
 }
 
 
@@ -162,14 +162,14 @@ add(gameSkillPropertyInterface)
         
         
 
-append(GAME_SKILL_LABEL)
-append(this.getGameSkillType()!.toString())
-append(commonSeps!.SPACE)
-append(EXTRA_LABEL)
-append(this.getExtra())
-append(commonSeps!.SPACE)
-append(TIME_LABEL)
-appendlong(this.getTime())
+stringBuffer!.append(GAME_SKILL_LABEL)
+stringBuffer!.append(this.getGameSkillType()!.toString())
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(EXTRA_LABEL)
+stringBuffer!.append(this.getExtra())
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(TIME_LABEL)
+stringBuffer!.appendlong(this.getTime())
 
 
 

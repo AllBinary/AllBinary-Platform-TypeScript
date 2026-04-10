@@ -73,7 +73,7 @@ index < size; index++)
         
         
 
-add(motionRectangle!.clone())
+vector.add(motionRectangle!.clone())
 }
 
 consolidateMotionRectangles()
@@ -86,7 +86,7 @@ consolidateMotionRectangles()
         
         
 
-put("Start - Size Before: " +vector.length, this, "consolidateMotionRectangleConstraints")
+logUtil!.put("Start - Size Before: " +vector.length, this, "consolidateMotionRectangleConstraints")
 
     var removeVector: Vector = new Vector();
         
@@ -158,11 +158,10 @@ i < vector.length; i++)
         
 
 
-    
                         if(rectangle.x <= rectangle2.x && rectangle.y <= rectangle2.y && x2 >= rightX && y2 >= bottomY)
                         
                                     {
-                                    add(motionRectangle2)
+                                    removeVector!.add(motionRectangle2)
 
                                     }
                                 
@@ -170,7 +169,7 @@ i < vector.length; i++)
 
 }
 
-this.remove(removeVector)
+this.this.remove(removeVector)
 }
 
 
@@ -196,7 +195,7 @@ var removeVector = removeVector
         
 index < size; index++)
         {
-remove(removeVector!.get(index))
+vector.remove(removeVector!.get(index))
 }
 
 }

@@ -25,7 +25,7 @@ import { AllBinaryGameLayer } from "../../../../org/allbinary/game/layer/AllBina
 export class NoBasicConstantVelocityMovement extends BasicConstantVelocityMovement {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(layer: AllBinaryGameLayer){
 var layer = layer

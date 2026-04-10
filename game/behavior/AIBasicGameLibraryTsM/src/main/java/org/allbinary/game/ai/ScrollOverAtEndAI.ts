@@ -47,7 +47,7 @@ var gameInput = gameInput
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -82,38 +82,34 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 
 
-    
                         if(x > displayInfo!.getLastWidth())
                         
                                     {
-                                    setPosition(0, y, ownerLayerInterface!.getZP())
+                                    ownerLayerInterface!.setPosition(0, y, ownerLayerInterface!.getZP())
 
                                     }
                                 
 
-    
                         if(y > displayInfo!.getLastHeight())
                         
                                     {
-                                    setPosition(x, 0, ownerLayerInterface!.getZP())
+                                    ownerLayerInterface!.setPosition(x, 0, ownerLayerInterface!.getZP())
 
                                     }
                                 
 
-    
                         if(x <  -width)
                         
                                     {
-                                    setPosition(displayInfo!.getLastWidth() -width, y, ownerLayerInterface!.getZP())
+                                    ownerLayerInterface!.setPosition(displayInfo!.getLastWidth() -width, y, ownerLayerInterface!.getZP())
 
                                     }
                                 
 
-    
                         if(y <  -height)
                         
                                     {
-                                    setPosition(x, displayInfo!.getLastHeight() -height, ownerLayerInterface!.getZP())
+                                    ownerLayerInterface!.setPosition(x, displayInfo!.getLastHeight() -height, ownerLayerInterface!.getZP())
 
                                     }
                                 

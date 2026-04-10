@@ -60,7 +60,7 @@ interface GraphicItemInterface {
 
     setFulcrumPoint(point: GPoint)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     translate(x: number, y: number)
 
@@ -76,7 +76,7 @@ interface GraphicItemInterface {
 
     paint(g: Graphics, canvasAngle: Double, dimension: IntegerDimension, x: number, y: number)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     toDom(canvasDom: CanvasDom): Node
 
@@ -104,7 +104,7 @@ interface GraphicItemInterface {
 
     keyTyped(keyEvent: java.awt.event.KeyEvent)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     duplicate(): GraphicItemInterface
 

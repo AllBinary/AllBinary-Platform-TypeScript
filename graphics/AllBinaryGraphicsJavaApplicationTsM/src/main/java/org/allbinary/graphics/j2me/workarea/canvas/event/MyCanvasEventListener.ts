@@ -24,7 +24,7 @@ interface MyCanvasEventListener {
 
     public delete(evt: MyCanvasEvent)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public duplicate(evt: MyCanvasEvent)
 
@@ -34,11 +34,11 @@ interface MyCanvasEventListener {
 
     public explode(evt: MyCanvasEvent)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public autoExplode(evt: MyCanvasEvent)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public center(evt: MyCanvasEvent)
 

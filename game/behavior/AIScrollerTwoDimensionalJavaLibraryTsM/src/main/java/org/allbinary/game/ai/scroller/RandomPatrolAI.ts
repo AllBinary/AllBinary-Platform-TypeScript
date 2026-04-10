@@ -55,7 +55,7 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.updateRandomDistance()
+this.this.updateRandomDistance()
 }
 
 
@@ -64,19 +64,18 @@ this.currentDistance= MyRandomFactory.getInstance()!.getAbsoluteNextInt(this.max
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
-update()
-processAI(this.keyDirection)
+super.update()
+super.processAI(this.keyDirection)
 
-    
                         if(this.changedDirection)
                         
                                     {
-                                    processAI(Canvas.KEY_NUM1)
-this.updateRandomDistance()
+                                    super.processAI(Canvas.KEY_NUM1)
+this.this.updateRandomDistance()
 this.changedDirection= false
 
                                     }
@@ -85,7 +84,7 @@ this.changedDirection= false
 
 
     nextDirection(){
-nextDirection()
+super.nextDirection()
 this.changedDirection= true
 }
 

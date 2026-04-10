@@ -75,12 +75,10 @@ var frame = frame
         
 
 
-    
                         if(degrees < 180)
                         
                                     {
                                     
-    
                         if(angle > directionAngle)
                         
                                     {
@@ -89,7 +87,6 @@ var frame = frame
                                     }
                                 
                              else 
-    
                         if(angle < directionAngle)
                         
                                     {
@@ -102,7 +99,6 @@ var frame = frame
                                 
                         else {
                             
-    
                         if(angle > directionAngle)
                         
                                     {
@@ -111,7 +107,6 @@ var frame = frame
                                     }
                                 
                              else 
-    
                         if(angle < directionAngle)
                         
                                     {
@@ -139,7 +134,6 @@ var frame = frame
         
 
 
-    
                         if(this.angleInfo!.getAngle() != angle)
                         
                                     {
@@ -183,7 +177,6 @@ var frame = frame
         
 
 
-    
                         if(geographicMapDirectionData == directionFactory!.DOWN)
                         
                                     {
@@ -192,7 +185,6 @@ var frame = frame
                                     }
                                 
                              else 
-    
                         if(geographicMapDirectionData == directionFactory!.UP)
                         
                                     {
@@ -201,7 +193,6 @@ var frame = frame
                                     }
                                 
                              else 
-    
                         if(geographicMapDirectionData == directionFactory!.LEFT)
                         
                                     {
@@ -210,7 +201,6 @@ var frame = frame
                                     }
                                 
                              else 
-    
                         if(geographicMapDirectionData == directionFactory!.RIGHT)
                         
                                     {

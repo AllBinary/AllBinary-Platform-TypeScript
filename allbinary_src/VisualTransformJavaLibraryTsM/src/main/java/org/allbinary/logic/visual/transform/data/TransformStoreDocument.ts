@@ -65,25 +65,23 @@ var weblisketSession = weblisketSession
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Using Session StoreName: " +storeName, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Using Session StoreName: " +storeName, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
-appendChild(StoreFrontViewFactory.getInstance(storeName)!.toXmlNode(this.getDoc()))
-appendChild(RequestParams(pageContext!.getRequest() as HttpServletRequest).
+this.getBaseNode()!.appendChild(StoreFrontViewFactory.getInstance(storeName)!.toXmlNode(this.getDoc()))
+this.getBaseNode()!.appendChild(RequestParams(pageContext!.getRequest() as HttpServletRequest).
                             toXmlNode(this.getDoc()))
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e)
 
                                     }
                                 
@@ -107,16 +105,15 @@ public constructor (searchRequest: SearchRequest)
                     
 
         try {
-            appendChild(StoreFrontViewFactory.getInstance(searchRequest!.getStoreFront()!.getName())!.toXmlNode(this.getDoc()))
-appendChild(searchRequest!.getParams()!.getParamsNode(this.getDoc()))
+            this.getBaseNode()!.appendChild(StoreFrontViewFactory.getInstance(searchRequest!.getStoreFront()!.getName())!.toXmlNode(this.getDoc()))
+this.getBaseNode()!.appendChild(searchRequest!.getParams()!.getParamsNode(this.getDoc()))
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e)
 
                                     }
                                 

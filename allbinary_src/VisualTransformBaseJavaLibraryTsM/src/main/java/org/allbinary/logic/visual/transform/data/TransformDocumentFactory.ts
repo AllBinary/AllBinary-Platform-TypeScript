@@ -24,7 +24,7 @@ export class TransformDocumentFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(): TransformDocumentInterface{
 

@@ -53,7 +53,7 @@ var gameInput = gameInput
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -108,42 +108,38 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 
 
-    
                         if(x2 +velocityProperties!.getVelocityXBasicDecimalP()!.getScaled() > displayInfo!.getLastWidth())
                         
                                     {
-                                    setPosition(displayInfo!.getLastWidth() -width, y, ownerLayerInterface!.getZP())
-set(0)
+                                    ownerLayerInterface!.setPosition(displayInfo!.getLastWidth() -width, y, ownerLayerInterface!.getZP())
+velocityProperties!.getVelocityYBasicDecimalP()!.set(0)
 
                                     }
                                 
 
-    
                         if(y2 +velocityProperties!.getVelocityYBasicDecimalP()!.getScaled() > displayInfo!.getLastHeight())
                         
                                     {
-                                    setPosition(x, displayInfo!.getLastHeight() -height, ownerLayerInterface!.getZP())
-set(0)
+                                    ownerLayerInterface!.setPosition(x, displayInfo!.getLastHeight() -height, ownerLayerInterface!.getZP())
+velocityProperties!.getVelocityXBasicDecimalP()!.set(0)
 
                                     }
                                 
 
-    
                         if(x +velocityProperties!.getVelocityXBasicDecimalP()!.getScaled() < 0)
                         
                                     {
-                                    setPosition(0, y, ownerLayerInterface!.getZP())
-set(0)
+                                    ownerLayerInterface!.setPosition(0, y, ownerLayerInterface!.getZP())
+velocityProperties!.getVelocityYBasicDecimalP()!.set(0)
 
                                     }
                                 
 
-    
                         if(y +velocityProperties!.getVelocityYBasicDecimalP()!.getScaled() < 0)
                         
                                     {
-                                    setPosition(x, 0, ownerLayerInterface!.getZP())
-set(0)
+                                    ownerLayerInterface!.setPosition(x, 0, ownerLayerInterface!.getZP())
+velocityProperties!.getVelocityXBasicDecimalP()!.set(0)
 
                                     }
                                 

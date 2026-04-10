@@ -80,12 +80,12 @@ index < keyArray!.length; index++)
         
         
 
-put(keyAsString, keyArray[index]!)
+keyStringHashtable!.put(keyAsString, keyArray[index]!)
 }
 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, "KeySingleFactory", STATIC_BLOCK, e)
+logUtil!.put(commonStrings!.EXCEPTION, "KeySingleFactory", STATIC_BLOCK, e)
 }
 
 }

@@ -102,7 +102,7 @@ this.searchRequest= searchRequest
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public searchSingleStaticPage(): string{
 
@@ -130,7 +130,6 @@ this.searchRequest= searchRequest
         
 
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(file))
                         
                                     {
@@ -149,13 +148,13 @@ this.searchRequest= searchRequest
         
         
 
-append(storeFront!.getCurrentHostName())
-append(storeFront!.getCurrentHostNamePath())
-append(storeFront!.getStaticPath())
-append(file)
-append(this.searchRequest!.getParams()!.getEndPage())
-append(AbPathData.getInstance()!.EXTENSION_SEP)
-append(InputOutputTypeData.getInstance()!.DEFAULT)
+stringBuffer!.append(storeFront!.getCurrentHostName())
+stringBuffer!.append(storeFront!.getCurrentHostNamePath())
+stringBuffer!.append(storeFront!.getStaticPath())
+stringBuffer!.append(file)
+stringBuffer!.append(this.searchRequest!.getParams()!.getEndPage())
+stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP)
+stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT)
 
     var filePath: string = Replace(CommonSeps.getInstance()!.SPACE, "%20").
                             all(stringBuffer!.toString())!;
@@ -174,24 +173,23 @@ append(InputOutputTypeData.getInstance()!.DEFAULT)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "searchSingleStaticPage", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "searchSingleStaticPage", e)
 
                                     }
                                 
 
 
 
-                            throw Exception("Failed retrieve Single Product Page Static")
+                            throw Error("Failed retrieve Single Product Page Static")
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public searchSingleDynamicPage(): string{
 
@@ -210,24 +208,23 @@ append(InputOutputTypeData.getInstance()!.DEFAULT)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "searchSingleDynamicPage", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "searchSingleDynamicPage", e)
 
                                     }
                                 
 
 
 
-                            throw Exception("Failed retrieve Single Product Page Dynamically")
+                            throw Error("Failed retrieve Single Product Page Dynamically")
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public search(): string[]{
 
@@ -254,7 +251,7 @@ append(InputOutputTypeData.getInstance()!.DEFAULT)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getProduct(product: string): string{
 var product = product

@@ -45,8 +45,8 @@ public constructor (name: string, imageComparisonResult: ImageComparisonResult){
             var name = name
 var imageComparisonResult = imageComparisonResult
 this.name= name
-this.setImageComparisonResult(imageComparisonResult)
-this.setVector(Vector())
+this.this.setImageComparisonResult(imageComparisonResult)
+this.this.setVector(Vector())
 }
 
 

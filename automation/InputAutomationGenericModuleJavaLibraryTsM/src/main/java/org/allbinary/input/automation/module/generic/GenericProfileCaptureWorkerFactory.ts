@@ -42,7 +42,7 @@ export class GenericProfileCaptureWorkerFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(genericProfile: GenericProfile): CaptureWorkerInterface{
 var genericProfile = genericProfile
@@ -72,7 +72,6 @@ index < size; index++)
         
 
 
-    
                         if(genericProfileDataWorkerType == GenericProfileDataWorkerType.SCREEN_CAPTURE)
                         
                                     {
@@ -86,7 +85,6 @@ index < size; index++)
                                     }
                                 
                              else 
-    
                         if(genericProfileDataWorkerType == GenericProfileDataWorkerType.SAVED_CAPTURE)
                         
                                     {
@@ -104,7 +102,7 @@ index < size; index++)
 
 
 
-                            throw Exception("No CaptureWorkerInterface specified in GenericProfile")
+                            throw Error("No CaptureWorkerInterface specified in GenericProfile")
 }
 
 private constructor (){

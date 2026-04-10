@@ -98,12 +98,12 @@ public constructor (inputAutomationActionInterface: InputAutomationActionInterfa
 
                             //For kotlin this is before the body of the constructor.
                     
-put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
-this.setCaptureWorker(GenericProfileCaptureWorkerFactory.getInstance(genericProfile))
-this.setInputAutomationActionInterface(inputAutomationActionInterface)
-this.setImageComparisonWorker(ImageComparisonWorker(imageComparatorConstraintsInterface))
-this.setMotionRectanglesWorker(MotionRectanglesWorker(motionRectangleConstraintsInterface))
-this.setGenericProfile(genericProfile)
+logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+this.this.setCaptureWorker(GenericProfileCaptureWorkerFactory.getInstance(genericProfile))
+this.this.setInputAutomationActionInterface(inputAutomationActionInterface)
+this.this.setImageComparisonWorker(ImageComparisonWorker(imageComparatorConstraintsInterface))
+this.this.setMotionRectanglesWorker(MotionRectanglesWorker(motionRectangleConstraintsInterface))
+this.this.setGenericProfile(genericProfile)
 
     var vector: Vector = this.getGenericProfile()!.getGenericProfileDataWorkerTypeVector()!;
         
@@ -129,22 +129,20 @@ index < size; index++)
         
         
 
-put("Adding Listener: " +genericProfileDataWorkerType, this, this.commonStrings!.CONSTRUCTOR)
+logUtil!.put("Adding Listener: " +genericProfileDataWorkerType, this, this.commonStrings!.CONSTRUCTOR)
 
-    
                         if(genericProfileDataWorkerType == GenericProfileDataWorkerType.COMPARISON)
                         
                                     {
-                                    addListener(this.getImageComparisonWorker())
+                                    this.getCaptureWorker()!.addListener(this.getImageComparisonWorker())
 
                                     }
                                 
                              else 
-    
                         if(genericProfileDataWorkerType == GenericProfileDataWorkerType.MOTION)
                         
                                     {
-                                    addListener(this.getMotionRectanglesWorker())
+                                    this.getImageComparisonWorker()!.addListener(this.getMotionRectanglesWorker())
 
                                     }
                                 
@@ -153,11 +151,11 @@ put("Adding Listener: " +genericProfileDataWorkerType, this, this.commonStrings!
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processDataWorkerResults(){
-put(this.commonStrings!.START, this, this.PROCESS_DATA_WORKER_RESULTS)
-this.waitForDataWorkers()
+logUtil!.put(this.commonStrings!.START, this, this.PROCESS_DATA_WORKER_RESULTS)
+this.this.waitForDataWorkers()
 
     var cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance() as J2SECacheInterface;
         
@@ -169,18 +167,16 @@ this.waitForDataWorkers()
         
 
 
-    
                         if(keyArray!.length > 0)
                         
                                     {
-                                    put("Image Available", this, this.PROCESS_DATA_WORKER_RESULTS)
+                                    logUtil!.put("Image Available", this, this.PROCESS_DATA_WORKER_RESULTS)
 setFrame(keyArray[keyArray!.length -1]! as Long)
 
-    
                         if(getFrame() > lastFrame)
                         
                                     {
-                                    put("Processing new frame: " +getFrame(), this, this.PROCESS_DATA_WORKER_RESULTS)
+                                    logUtil!.put("Processing new frame: " +getFrame(), this, this.PROCESS_DATA_WORKER_RESULTS)
 
     var hashMap: HashMap<Any, Any> = this.getGenericProfile()!.getGenericProfileActions()!.getHashMap()!;
         
@@ -191,7 +187,7 @@ setFrame(keyArray[keyArray!.length -1]! as Long)
         
         
 
-put("Processing " +set.size() +"Actions", this, this.PROCESS_DATA_WORKER_RESULTS)
+logUtil!.put("Processing " +set.size() +"Actions", this, this.PROCESS_DATA_WORKER_RESULTS)
 
     var actionNameArray: any = {}[] = set.toArray()!;
         
@@ -218,7 +214,7 @@ index < size; index++)
         
         
 
-put("Processing Action: " +actionNameString, this, this.PROCESS_DATA_WORKER_RESULTS)
+logUtil!.put("Processing Action: " +actionNameString, this, this.PROCESS_DATA_WORKER_RESULTS)
 
     var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString as Object) as GenericProfileAction;
         
@@ -234,7 +230,7 @@ put("Processing Action: " +actionNameString, this, this.PROCESS_DATA_WORKER_RESU
         
         
 
-processProfileActionConditions(vector, getFrame())
+CaptureWorkerUtil.processProfileActionConditions(vector, getFrame())
 }
 
 lastFrame= getFrame()
@@ -245,19 +241,19 @@ lastFrame= getFrame()
                                     }
                                 
                         else {
-                            put("Image Not Available", this, this.PROCESS_DATA_WORKER_RESULTS)
+                            logUtil!.put("Image Not Available", this, this.PROCESS_DATA_WORKER_RESULTS)
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
-put(this.commonStrings!.START, this, this.commonStrings!.PROCESS)
-this.startDataWorkers()
-this.processDataWorkerResults()
+logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.PROCESS)
+this.this.startDataWorkers()
+this.this.processDataWorkerResults()
 }
 
 

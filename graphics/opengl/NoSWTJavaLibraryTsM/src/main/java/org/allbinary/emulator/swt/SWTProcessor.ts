@@ -50,7 +50,7 @@ export class SWTProcessor
 
     public process(display: Display){
     //var display = display
-sleep()
+display.sleep()
 }
 
 

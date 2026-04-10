@@ -72,7 +72,6 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
 
 
-    
                         if(this.order.isIdValid() == Boolean.FALSE)
                         
                                     {
@@ -88,7 +87,6 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                         else {
                             this.orderHistory= OrderHistoryFactory.getInstance(this.order.getId())
 
-    
                         if(this.orderHistory == 
                                     null
                                  || this.orderHistory!.isValid() == Boolean.FALSE)
@@ -110,7 +108,6 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
 this.basketReview= orderItems!.getBasketReview(this.order.getId())
 
-    
                         if(this.basketReview == 
                                     null
                                  || this.basketReview!.isValid() == Boolean.FALSE)
@@ -137,11 +134,10 @@ this.basketReview= orderItems!.getBasketReview(this.order.getId())
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -165,26 +161,24 @@ this.basketReview= orderItems!.getBasketReview(this.order.getId())
         
 
 
-    
                         if(this.order.isIdValid() == Boolean.FALSE)
                         
                                     {
-                                    append(this.order.getIdValidationInfo())
+                                    stringBuffer!.append(this.order.getIdValidationInfo())
 
                                     }
                                 
                         else {
                             this.orderHistory= OrderHistoryFactory.getInstance(this.order.getId())
 
-    
                         if(this.orderHistory == 
                                     null
                                  || this.orderHistory!.isValid() == Boolean.FALSE)
                         
                                     {
-                                    append("Order History data error for: ")
-append(this.order.getId())
-append("<br />")
+                                    stringBuffer!.append("Order History data error for: ")
+stringBuffer!.append(this.order.getId())
+stringBuffer!.append("<br />")
 
                                     }
                                 
@@ -195,26 +189,24 @@ append("<br />")
 
 this.basketReview= orderItems!.getBasketReview(this.order.getId())
 
-    
                         if(this.basketReview == 
                                     null
                                 )
                         
                                     {
-                                    append("Order Items data error - does not exist for: ")
-append(this.order.getId())
-append("<br />")
+                                    stringBuffer!.append("Order Items data error - does not exist for: ")
+stringBuffer!.append(this.order.getId())
+stringBuffer!.append("<br />")
 
                                     }
                                 
                              else 
-    
                         if(this.basketReview!.isValid() == Boolean.FALSE)
                         
                                     {
-                                    append("Order Items data error - not valid for: ")
-append(this.order.getId())
-append("<br />")
+                                    stringBuffer!.append("Order Items data error - not valid for: ")
+stringBuffer!.append(this.order.getId())
+stringBuffer!.append("<br />")
 
                                     }
                                 
@@ -230,11 +222,10 @@ append("<br />")
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 

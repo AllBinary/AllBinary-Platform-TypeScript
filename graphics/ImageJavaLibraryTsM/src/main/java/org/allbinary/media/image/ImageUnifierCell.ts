@@ -32,8 +32,8 @@ public constructor (width: Integer, height: Integer){
             super();
             var width = width
 var height = height
-this.setWidth(width)
-this.setHeight(height)
+this.this.setWidth(width)
+this.this.setHeight(height)
 }
 
 

@@ -22,7 +22,7 @@
 interface ViewPositionFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getInstance(): ViewPosition
 

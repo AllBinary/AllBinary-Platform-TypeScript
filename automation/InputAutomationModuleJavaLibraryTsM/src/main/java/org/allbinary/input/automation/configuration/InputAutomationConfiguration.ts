@@ -115,7 +115,7 @@ public constructor (){
     public setInstalled(installed: boolean){
 var installed = installed
 this.installed= installed
-put("Installed: " +installed, this, "setIntalled")
+logUtil!.put("Installed: " +installed, this, "setIntalled")
 }
 
 
@@ -129,7 +129,7 @@ put("Installed: " +installed, this, "setIntalled")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public save(){
 
@@ -145,7 +145,7 @@ put("Installed: " +installed, this, "setIntalled")
         
         
 
-copy(AbPath(file.getAbsolutePath()), AbPath(file.getAbsolutePath() +".bak.xml"))
+FileUtil.getInstance()!.copy(AbPath(file.getAbsolutePath()), AbPath(file.getAbsolutePath() +".bak.xml"))
 
     var jaxbContext: JAXBContext = JAXBContext.newInstance(InputAutomationConfiguration::class)!;
         
@@ -156,9 +156,9 @@ copy(AbPath(file.getAbsolutePath()), AbPath(file.getAbsolutePath() +".bak.xml"))
         
         
 
-setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true)
-marshal(this, document)
-save(FileWrapperUtil.wrapFile(file), document)
+marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true)
+marshaller.marshal(this, document)
+DomDocumentFileHelper.save(FileWrapperUtil.wrapFile(file), document)
 }
 
 

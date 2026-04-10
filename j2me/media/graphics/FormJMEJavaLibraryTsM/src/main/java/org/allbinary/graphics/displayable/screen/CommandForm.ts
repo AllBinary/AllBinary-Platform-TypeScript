@@ -96,10 +96,10 @@ var foregroundBasicColor = foregroundBasicColor
 this.commandStack= Stack<Any>()
 
         try {
-            process()
+            repaintProcessor!.process()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 }
@@ -111,19 +111,19 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 
 
     public open(){
-put(this.commonStrings!.START, this, "open")
+logUtil!.put(this.commonStrings!.START, this, "open")
 }
 
 
     public close(){
-put(this.commonStrings!.START, this, commonStrings!.CLOSE)
+logUtil!.put(this.commonStrings!.START, this, commonStrings!.CLOSE)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(){
-process()
+this.repaintProcessor!.process()
 }
 
 
@@ -139,8 +139,8 @@ process()
 
     public addCommand(command: Command){
 var command = command
-push(command)
-addCommand(command)
+commandStack!.push(command)
+super.addCommand(command)
 }
 
 
@@ -160,7 +160,7 @@ addCommand(command)
         
 index < size; index++)
         {
-removeCommand(commandStack!.pop() as Command)
+super.removeCommand(commandStack!.pop() as Command)
 }
 
 }

@@ -44,8 +44,8 @@ var lastFrame = lastFrame
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setPath(path)
-this.setLastFrame(lastFrame)
+this.this.setPath(path)
+this.this.setLastFrame(lastFrame)
 }
 
 

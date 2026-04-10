@@ -25,7 +25,7 @@ export class ArtificialIntelligenceFactory
                 , ArtificialIntelligenceFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(anyType: any = {}): ArtificialIntelligence{
 var anyType = anyType

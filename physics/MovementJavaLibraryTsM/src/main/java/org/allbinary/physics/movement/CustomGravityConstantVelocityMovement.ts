@@ -54,18 +54,18 @@ this.customGravity= customGravity
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(layer: AllBinaryGameLayer){
 var layer = layer
-process(layer)
-process(this.getVelocityProperties(), this.customGravity)
+super.process(layer)
+gravityUtil!.process(this.getVelocityProperties(), this.customGravity)
 
     var velocityProperties: VelocityProperties = this.getVelocityProperties() as VelocityProperties;
         
         
 
-limitMaxYForwardVelocity()
+velocityProperties!.limitMaxYForwardVelocity()
 }
 
 

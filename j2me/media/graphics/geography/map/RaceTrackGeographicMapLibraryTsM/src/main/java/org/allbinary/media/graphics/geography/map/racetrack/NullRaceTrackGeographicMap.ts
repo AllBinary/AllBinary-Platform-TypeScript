@@ -82,7 +82,7 @@ export class NullRaceTrackGeographicMap
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getCellPositionsAt(layer: Layer, currentCellPositionArray: GeographicMapCellPosition[][], cellPositionArray: GeographicMapCellPosition[][]): boolean{
 var layer = layer
@@ -95,7 +95,7 @@ var cellPositionArray = cellPositionArray
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getCellPositionAt(x: number, y: number): GeographicMapCellPosition{
 var x = x
@@ -107,7 +107,7 @@ var y = y
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getCellPositionAtNoThrow(x: number, y: number): GeographicMapCellPosition{
 var x = x
@@ -128,7 +128,7 @@ var cellTypeId = cellTypeId
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getCellTypeAt(x: number, y: number): GeographicMapCellType{
 var x = x
@@ -140,7 +140,7 @@ var y = y
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getCellTypeAt(geographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellType{
 var geographicMapCellPosition = geographicMapCellPosition

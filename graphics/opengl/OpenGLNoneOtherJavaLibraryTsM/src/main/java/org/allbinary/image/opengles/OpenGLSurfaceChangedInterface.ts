@@ -11,7 +11,7 @@ import { GL } from "../../../../javax/microedition/khronos/opengles/GL.js";
 interface OpenGLSurfaceChangedInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     set(gl: GL)
 

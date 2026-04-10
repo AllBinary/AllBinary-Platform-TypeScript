@@ -99,7 +99,6 @@ public constructor (scale: number){
         
 
 
-    
                         if(AvianUtil.isAvian())
                         
                                     {
@@ -125,7 +124,6 @@ shortPattern= shortPatterAsByteArray.decodeToString()
 this.shortPattern= shortPattern
 this.scale= scale
 
-    
                         if(!AndroidUtil.isAndroid())
                         MyFont.getInstance()
 this.CELLS_PER_ROW= 16
@@ -140,7 +138,6 @@ this.actualCellsPerRow= textureSize /cellSize
     public getAsTextureSize(textureSize: number): number{
 var textureSize = textureSize
 
-    
                         if(textureSize <= 64)
                         
                                     {
@@ -149,7 +146,6 @@ var textureSize = textureSize
                                     }
                                 
                              else 
-    
                         if(textureSize <= 128)
                         
                                     {
@@ -158,7 +154,6 @@ var textureSize = textureSize
                                     }
                                 
                              else 
-    
                         if(textureSize <= 256)
                         
                                     {
@@ -167,7 +162,6 @@ var textureSize = textureSize
                                     }
                                 
                              else 
-    
                         if(textureSize <= 512)
                         
                                     {
@@ -176,7 +170,6 @@ var textureSize = textureSize
                                     }
                                 
                              else 
-    
                         if(textureSize <= 1024)
                         
                                     {
@@ -196,7 +189,6 @@ var textureSize = textureSize
     public getCellSize(cellSize: number): number{
 var cellSize = cellSize
 
-    
                         if(cellSize <= 16)
                         
                                     {
@@ -205,7 +197,6 @@ var cellSize = cellSize
                                     }
                                 
                              else 
-    
                         if(cellSize <= 32)
                         
                                     {
@@ -214,7 +205,6 @@ var cellSize = cellSize
                                     }
                                 
                              else 
-    
                         if(cellSize <= 64)
                         
                                     {
@@ -223,7 +213,6 @@ var cellSize = cellSize
                                     }
                                 
                              else 
-    
                         if(cellSize <= 128)
                         
                                     {
@@ -232,7 +221,6 @@ var cellSize = cellSize
                                     }
                                 
                              else 
-    
                         if(cellSize <= 256)
                         
                                     {

@@ -123,7 +123,6 @@ public constructor (title: string, items: CustomItem[], rectangle: Rectangle, fo
         
 
 
-    
                         if(J2MEUtil.isJ2ME())
                         
                                     {
@@ -131,8 +130,8 @@ public constructor (title: string, items: CustomItem[], rectangle: Rectangle, fo
                                     }
                                 
                         else {
-                            setColor(backgroundColor)
-fillRect(x, y, this.rectangle.getWidth(), this.rectangle.getHeight())
+                            graphics.setColor(backgroundColor)
+graphics.fillRect(x, y, this.rectangle.getWidth(), this.rectangle.getHeight())
 
                         }
                             
@@ -141,7 +140,7 @@ fillRect(x, y, this.rectangle.getWidth(), this.rectangle.getHeight())
         
         
 
-drawString(this.getTitle(), x, y -myFont!.DEFAULT_CHAR_HEIGHT, 0)
+graphics.drawString(this.getTitle(), x, y -myFont!.DEFAULT_CHAR_HEIGHT, 0)
 
     var item: CustomItemInterface
 
@@ -157,12 +156,10 @@ index < size; index++)
         {
 item= this.get(index) as CustomItemInterface
 
-    
                         if(dx >= this.rectangle.getMaxX())
                         
                                     {
                                     
-    
                         if(logged)
                         
                                     {
@@ -171,7 +168,7 @@ item= this.get(index) as CustomItemInterface
                                 
                         else {
                             logged= true
-put(StringMaker().
+PreLogUtil.put(StringMaker().
                             append("painting beyond maxx: ")!.appendint(this.rectangle.getMaxX())!.toString(), this, canvasStrings!.PAINT)
 
                         }
@@ -180,7 +177,6 @@ put(StringMaker().
                                     }
                                 
 
-    
                         if(this.formType == formTypeFactory!.HORIZONTAL_FORM)
                         
                                     {
@@ -189,18 +185,17 @@ put(StringMaker().
         
         
 
-paint(graphics, index, dx, dy)
+this.paintable.paint(graphics, index, dx, dy)
 dx= dx2
 
                                     }
                                 
                              else 
-    
                         if(this.formType == formTypeFactory!.VERTICAL_CENTER_FORM)
                         
                                     {
-                                    this.paintItem(graphics, index, item, dx, dy)
-paint(graphics, index, dx, dy)
+                                    this.this.paintItem(graphics, index, item, dx, dy)
+this.paintable.paint(graphics, index, dx, dy)
 
                                     }
                                 
@@ -208,7 +203,7 @@ paint(graphics, index, dx, dy)
                             
 
 
-                            throw Exception(formTypeFactory!.UNK)
+                            throw Error(formTypeFactory!.UNK)
 
                         }
                             
@@ -216,7 +211,7 @@ paint(graphics, index, dx, dy)
 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT)
 }
 
 }

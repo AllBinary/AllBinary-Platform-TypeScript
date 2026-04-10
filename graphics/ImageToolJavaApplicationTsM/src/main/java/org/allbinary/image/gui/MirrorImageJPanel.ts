@@ -81,14 +81,91 @@ public constructor (imageProcessorInput: ImageProcessorInput)
 
                             //For kotlin this is before the body of the constructor.
                     
-put("Starting", this, this.commonStrings!.CONSTRUCTOR)
+logUtil!.put("Starting", this, this.commonStrings!.CONSTRUCTOR)
 initComponents()
 this.imageProcessorInput= imageProcessorInput
 }
 
 
     public process(){
-start()
+object: Thread()
+                                {
+                                
+    public run(){
+
+        try {
+            
+    var imageProcessorInput: ImageProcessorInput = this@MirrorImageJPanel.getImageProcessorInput()!;
+        
+        
+
+
+    var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;
+        
+        
+
+
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < bufferedImageArray!.length; index++)
+        {
+this@MirrorImageJPanel.result= MirrorImageUtil.getInstance()!.getImage(bufferedImageArray[index]!, this@MirrorImageJPanel.verticleJCheckBox!.isSelected(), this@MirrorImageJPanel.horizontalJCheckBox!.isSelected())
+
+    var file: File = imageProcessorInput!.getFiles()[index]!;
+        
+        
+
+
+                        if(this@MirrorImageJPanel.writeOverOriginalJRadioButton!.isSelected())
+                        
+                                    {
+                                    
+                                    }
+                                
+                             else 
+                        if(this@MirrorImageJPanel.renameJRadioButton!.isSelected())
+                        
+                                    {
+                                    
+    var filePath: string = file.getAbsolutePath()!;
+        
+        
+
+
+    var extensionIndex: number = filePath!.indexOf(imageStrings!.PNG_EXTENSION)!;
+        
+        
+
+filePath= filePath!.substring(0, extensionIndex) +"_mirror" +imageStrings!.PNG_EXTENSION
+logUtil!.put("Renamed File: " +filePath, this, commonStrings!.RUN)
+file= File(filePath)
+
+                                    }
+                                
+
+    var isWritten: boolean = ImageIO.write(this@MirrorImageJPanel.result as RenderedImage, imageStrings!.PNG, file)!;
+        
+        
+
+logUtil!.put("File: " +file +" Wrote: " +isWritten, this, commonStrings!.RUN)
+this@MirrorImageJPanel.getParent()!.repaint()
+}
+
+} catch(e: Exception)
+            {
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+}
+
+}
+
+                                }
+                            .
+                            start()
 }
 
 
@@ -101,13 +178,12 @@ jPanel1= object: javax.swing.JPanel()
     public paint(graphics: Graphics){
 var graphics = graphics
 
-    
                         if(this@MirrorImageJPanel.result != 
                                     null
                                 )
                         
                                     {
-                                    drawImage(this@MirrorImageJPanel.result, 0, 0, this@MirrorImageJPanel.result.getWidth(
+                                    graphics.drawImage(this@MirrorImageJPanel.result, 0, 0, this@MirrorImageJPanel.result.getWidth(
                             null), this@MirrorImageJPanel.result.getHeight(
                             null), 
                             null)
@@ -131,16 +207,16 @@ jLabel2= javax.swing.JLabel()
         
         
 
-setLayout(jPanel1Layout)
-setHorizontalGroup(jPanel1Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(0, 522, Short.MAX_VALUE))
-setVerticalGroup(jPanel1Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(0, 230, Short.MAX_VALUE))
-setSelected(true)
-setText("Horizontal")
-setEnabled(false)
-setText("Verticle")
-setEnabled(false)
-setText("Generate")
-addActionListener(object: java.awt.event.ActionListener()
+jPanel1!.setLayout(jPanel1Layout)
+jPanel1Layout!.setHorizontalGroup(jPanel1Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(0, 522, Short.MAX_VALUE))
+jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(0, 230, Short.MAX_VALUE))
+horizontalJCheckBox!.setSelected(true)
+horizontalJCheckBox!.setText("Horizontal")
+horizontalJCheckBox!.setEnabled(false)
+verticleJCheckBox!.setText("Verticle")
+verticleJCheckBox!.setEnabled(false)
+generateJButton!.setText("Generate")
+generateJButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -150,8 +226,8 @@ generateJButtonActionPerformed(evt)
 
                                 }
                             )
-setText("Save As filename_mirror")
-addActionListener(object: java.awt.event.ActionListener()
+renameJRadioButton!.setText("Save As filename_mirror")
+renameJRadioButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -161,38 +237,38 @@ renameJRadioButtonActionPerformed(evt)
 
                                 }
                             )
-setText("Write Over Original")
+writeOverOriginalJRadioButton!.setText("Write Over Original")
 
     var jPanel2Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(jPanel2);
         
         
 
-setLayout(jPanel2Layout)
-setHorizontalGroup(jPanel2Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(jPanel2Layout!.createSequentialGroup()!.addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.add(verticleJCheckBox)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)!.add(horizontalJCheckBox)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(writeOverOriginalJRadioButton)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)!.add(renameJRadioButton)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(generateJButton)!.add(37, 37, 37)))
-setVerticalGroup(jPanel2Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(jPanel2Layout!.createSequentialGroup()!.add(jPanel2Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)!.add(horizontalJCheckBox)!.add(verticleJCheckBox)!.add(writeOverOriginalJRadioButton)!.add(renameJRadioButton)!.add(generateJButton))!.addContainerGap()))
-setText("Results:")
+jPanel2!.setLayout(jPanel2Layout)
+jPanel2Layout!.setHorizontalGroup(jPanel2Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(jPanel2Layout!.createSequentialGroup()!.addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.add(verticleJCheckBox)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)!.add(horizontalJCheckBox)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(writeOverOriginalJRadioButton)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)!.add(renameJRadioButton)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(generateJButton)!.add(37, 37, 37)))
+jPanel2Layout!.setVerticalGroup(jPanel2Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(jPanel2Layout!.createSequentialGroup()!.add(jPanel2Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)!.add(horizontalJCheckBox)!.add(verticleJCheckBox)!.add(writeOverOriginalJRadioButton)!.add(renameJRadioButton)!.add(generateJButton))!.addContainerGap()))
+jLabel2!.setText("Results:")
 
     var jPanel3Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(jPanel3);
         
         
 
-setLayout(jPanel3Layout)
-setHorizontalGroup(jPanel3Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(jPanel3Layout!.createSequentialGroup()!.add(jLabel2)!.addContainerGap(433, Short.MAX_VALUE)))
-setVerticalGroup(jPanel3Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(jLabel2))
+jPanel3!.setLayout(jPanel3Layout)
+jPanel3Layout!.setHorizontalGroup(jPanel3Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(jPanel3Layout!.createSequentialGroup()!.add(jLabel2)!.addContainerGap(433, Short.MAX_VALUE)))
+jPanel3Layout!.setVerticalGroup(jPanel3Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(jLabel2))
 
     var layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this);
         
         
 
-this.setLayout(layout)
-setHorizontalGroup(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()!.addContainerGap()!.add(jPanel3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addContainerGap())!.add(jPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.add(layout.createSequentialGroup()!.add(jPanel2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-setVerticalGroup(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(layout.createSequentialGroup()!.add(jPanel2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 25, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(jPanel3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(jPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+this.this.setLayout(layout)
+layout.setHorizontalGroup(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()!.addContainerGap()!.add(jPanel3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addContainerGap())!.add(jPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.add(layout.createSequentialGroup()!.add(jPanel2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+layout.setVerticalGroup(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(layout.createSequentialGroup()!.add(jPanel2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 25, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(jPanel3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(jPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
 }
 
 
     generateJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.process()
+this.this.process()
 }
 
 

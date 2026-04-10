@@ -100,9 +100,8 @@ public constructor (transformInfoInterface: Object){
             super();
             var transformInfoInterface = transformInfoInterface
 this.ownerTransformInfoInterface= transformInfoInterface
-this.createDocument()
+this.this.createDocument()
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -111,26 +110,25 @@ this.createDocument()
         
         
 
-append("TransformInfo: ")
+stringBuffer!.append("TransformInfo: ")
 
-    
                         if(this.ownerTransformInfoInterface != 
                                     null
                                 )
                         
                                     {
-                                    append(this.ownerTransformInfoInterface!.getName())
+                                    stringBuffer!.append(this.ownerTransformInfoInterface!.getName())
 
                                     }
                                 
                         else {
-                            append("No Owner!?#@")
+                            stringBuffer!.append("No Owner!?#@")
 
                         }
                             
-append("\nConstructed with document: ")
-append(this.toString())
-put(stringBuffer!.toString(), this, "Constructor(TransformInfoInterface)")
+stringBuffer!.append("\nConstructed with document: ")
+stringBuffer!.append(this.toString())
+logUtil!.put(stringBuffer!.toString(), this, "Constructor(TransformInfoInterface)")
 
                                     }
                                 
@@ -149,18 +147,16 @@ this.document= document
         
 
 
-    
                         if(node != 
                                     null
                                 )
                         
                                     {
-                                    this.setOutputTypeName(DomNodeHelper.getTextNodeValue(node))
+                                    this.this.setOutputTypeName(DomNodeHelper.getTextNodeValue(node))
 
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -169,26 +165,25 @@ this.document= document
         
         
 
-append("TransformInfo: ")
+stringBuffer!.append("TransformInfo: ")
 
-    
                         if(this.ownerTransformInfoInterface != 
                                     null
                                 )
                         
                                     {
-                                    append(this.ownerTransformInfoInterface!.getName())
+                                    stringBuffer!.append(this.ownerTransformInfoInterface!.getName())
 
                                     }
                                 
                         else {
-                            append("No Owner!?#@")
+                            stringBuffer!.append("No Owner!?#@")
 
                         }
                             
-append("\nConstructed with document: ")
-append(this.toString())
-put(stringBuffer!.toString(), this, "Constructor(TransformInfoInterface, Document)")
+stringBuffer!.append("\nConstructed with document: ")
+stringBuffer!.append(this.toString())
+logUtil!.put(stringBuffer!.toString(), this, "Constructor(TransformInfoInterface, Document)")
 
                                     }
                                 
@@ -201,21 +196,20 @@ public constructor (transformInfoInterface: Object, name: string, type: string){
 var name = name
 var type = type
 this.ownerTransformInfoInterface= transformInfoInterface
-this.createDocument()
+this.this.createDocument()
 
     var configNameAttr: Attr = this.document.createAttribute(TransformInfoObjectConfigData.getInstance()!.NAME)!;
         
         
 
-setValue(name)
+configNameAttr!.setValue(name)
 
     var objectConfigNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;
         
         
 
-appendChild(configNameAttr)
+objectConfigNode!.appendChild(configNameAttr)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -224,26 +218,25 @@ appendChild(configNameAttr)
         
         
 
-append("TransformInfo: ")
+stringBuffer!.append("TransformInfo: ")
 
-    
                         if(this.ownerTransformInfoInterface != 
                                     null
                                 )
                         
                                     {
-                                    append(this.ownerTransformInfoInterface!.getName())
+                                    stringBuffer!.append(this.ownerTransformInfoInterface!.getName())
 
                                     }
                                 
                         else {
-                            append("No Owner!?#@")
+                            stringBuffer!.append("No Owner!?#@")
 
                         }
                             
-append("\nConstructed with document: ")
-append(this.toString())
-put(stringBuffer!.toString(), this, "Constructor(TransformInfoInterface, name, type)")
+stringBuffer!.append("\nConstructed with document: ")
+stringBuffer!.append(this.toString())
+logUtil!.put(stringBuffer!.toString(), this, "Constructor(TransformInfoInterface, name, type)")
 
                                     }
                                 
@@ -257,7 +250,7 @@ this.document= DomDocumentHelper.create()
         
         
 
-appendChild(objectConfigNode)
+this.document.appendChild(objectConfigNode)
 }
 
 
@@ -271,7 +264,7 @@ appendChild(objectConfigNode)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlDoc(): Document{
 
@@ -332,7 +325,6 @@ index < numberOfViews; index++)
         
 
 
-    
                         if(transformInfoInterface!.getName()!.compareTo(attrNode!.getValue()) == 0)
                         
                                     {
@@ -356,7 +348,7 @@ index < numberOfViews; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getTemplateAttributes(): NamedNodeMap{
 
@@ -373,7 +365,7 @@ index < numberOfViews; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getName(): string{
 
@@ -390,7 +382,7 @@ index < numberOfViews; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setName(name: string){
 var name = name
@@ -399,11 +391,11 @@ var name = name
         
         
 
-setValue(name)
+attrNode!.setValue(name)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getNodeVector(nodeName: string): Vector{
 var nodeName = nodeName
@@ -413,7 +405,6 @@ var nodeName = nodeName
         
 
 
-    
                         if(componentsNodeList != 
                                     null
                                  && componentsNodeList!.getLength() > 0)
@@ -430,7 +421,6 @@ var nodeName = nodeName
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -439,11 +429,11 @@ var nodeName = nodeName
         
         
 
-append("Number Of ")
-append(nodeName)
-append(" Nodes: ")
-appendint(numberOfViews)
-put(stringBuffer!.toString(), this, "getNodeVector(nodename)")
+stringBuffer!.append("Number Of ")
+stringBuffer!.append(nodeName)
+stringBuffer!.append(" Nodes: ")
+stringBuffer!.appendint(numberOfViews)
+logUtil!.put(stringBuffer!.toString(), this, "getNodeVector(nodename)")
 
                                     }
                                 
@@ -465,7 +455,7 @@ put(stringBuffer!.toString(), this, "getNodeVector(nodename)")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getTransformDomNodes(nodeName: string): Vector{
 var nodeName = nodeName
@@ -499,7 +489,7 @@ index < size; index++)
         
         
 
-add(TransformInfoDomNode(viewNode))
+viewVector!.add(TransformInfoDomNode(viewNode))
 }
 
 
@@ -511,7 +501,7 @@ add(TransformInfoDomNode(viewNode))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getTransforms(nodeName: string): Vector{
 var nodeName = nodeName
@@ -545,7 +535,7 @@ index < size; index++)
         
         
 
-add(TransformInfoDomNode(viewNode).
+viewVector!.add(TransformInfoDomNode(viewNode).
                             getTransformInfoInterface())
 }
 
@@ -558,16 +548,15 @@ add(TransformInfoDomNode(viewNode).
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getTransformsGroup(group: string): Vector{
 var group = group
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Started: " +group, this, "getTransformsGroup()")
+                                    logUtil!.put("Started: " +group, this, "getTransformsGroup()")
 
                                     }
                                 
@@ -587,7 +576,6 @@ var group = group
         
 
 
-    
                         if(componentsNodeList != 
                                     null
                                  && componentsNodeList!.getLength() > 0)
@@ -634,7 +622,6 @@ index < length; index++)
         
 
 
-    
                         if(value.compareTo(group) == 0)
                         
                                     {
@@ -658,11 +645,10 @@ break;
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Number Of Nodes: " +numberOfViews, this, "getTransformsGroup()")
+                                    logUtil!.put("Number Of Nodes: " +numberOfViews, this, "getTransformsGroup()")
 
                                     }
                                 
@@ -686,7 +672,7 @@ index < size; index++)
         
         
 
-add(TransformInfoDomNode(viewNode))
+viewVector!.add(TransformInfoDomNode(viewNode))
 }
 
 
@@ -694,23 +680,21 @@ add(TransformInfoDomNode(viewNode))
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
                                     
-    
                         if(componentsNodeList == 
                                     null
                                 )
                         
                                     {
-                                    put("Number Of Nodes: NULL", this, "getTransformsGroup()")
+                                    logUtil!.put("Number Of Nodes: NULL", this, "getTransformsGroup()")
 
                                     }
                                 
                         else {
-                            put("Number Of Nodes: 0", this, "getTransformsGroup()")
+                            logUtil!.put("Number Of Nodes: 0", this, "getTransformsGroup()")
 
                         }
                             
@@ -729,7 +713,7 @@ add(TransformInfoDomNode(viewNode))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getTransformDomNodes(): Vector{
 
@@ -741,7 +725,7 @@ add(TransformInfoDomNode(viewNode))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getTransforms(): Vector{
 
@@ -753,7 +737,7 @@ add(TransformInfoDomNode(viewNode))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getGroupTransforms(): Vector{
 
@@ -765,7 +749,7 @@ add(TransformInfoDomNode(viewNode))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getParentTransforms(): Vector{
 
@@ -793,7 +777,7 @@ this.outputTypeName= outputTypeName
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getOutputTypeName(): string{
 
@@ -805,7 +789,7 @@ this.outputTypeName= outputTypeName
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInputOutputTypeName(): string{
 
@@ -822,7 +806,7 @@ this.outputTypeName= outputTypeName
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInputOutputTypeFile(): string{
 
@@ -839,7 +823,7 @@ this.outputTypeName= outputTypeName
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getImportUriPath(): string{
 
@@ -860,7 +844,6 @@ this.outputTypeName= outputTypeName
 
         try {
             
-    
                         if(this.document != 
                                     null
                                 )
@@ -888,11 +871,10 @@ this.outputTypeName= outputTypeName
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("DOM Document error", this, commonStrings!.TOSTRING)
+                                    logUtil!.put("DOM Document error", this, commonStrings!.TOSTRING)
 
                                     }
                                 

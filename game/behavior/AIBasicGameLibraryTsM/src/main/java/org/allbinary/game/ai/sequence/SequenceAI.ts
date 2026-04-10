@@ -66,11 +66,11 @@ var gameInput = gameInput
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
-processAI(allBinaryLayerManager)
+this.getArtificialIntelligenceInterface()[index]!.processAI(allBinaryLayerManager)
 }
 
 
@@ -82,7 +82,6 @@ this.index++
         
 
 
-    
                         if(artificialIntelligenceInterface!.getId() == ArtificialIntelligenceTransitionInterface.ID)
                         
                                     {
@@ -91,7 +90,7 @@ this.index++
         
         
 
-transition()
+artificialIntelligenceTransitionInterface!.transition()
 
                                     }
                                 
@@ -140,9 +139,9 @@ this.index= index
         
         
 
-append(super.toString())
-append(" Selected AI: ")
-append(StringUtil.getInstance()!.toString(this.getSelectedArtificialIntelligenceInterface()))
+stringBuffer!.append(super.toString())
+stringBuffer!.append(" Selected AI: ")
+stringBuffer!.append(StringUtil.getInstance()!.toString(this.getSelectedArtificialIntelligenceInterface()))
 
 
 

@@ -52,28 +52,26 @@ this.numberOfLayersLeft= numberOfEnemiesLeft
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
-    
                         if(this.getIndex() == 0)
                         
                                     {
                                     
-    
                         if(allBinaryLayerManager!.getSize() < this.numberOfLayersLeft)
                         
                                     {
-                                    this.setIndex(1)
+                                    this.this.setIndex(1)
 
                                     }
                                 
 
                                     }
                                 
-processAI(allBinaryLayerManager)
+super.processAI(allBinaryLayerManager)
 }
 
 

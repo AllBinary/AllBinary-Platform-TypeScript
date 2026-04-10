@@ -61,19 +61,18 @@ var gameInput = gameInput
         
 
 this.rotationAnimationInterface= rotationAnimationInterfaceCompositeInterface!.getRotationAnimationInterface()
-this.update()
+this.this.update()
 }
 
 
     reverse(){
-reverse()
-this.update()
+super.reverse()
+this.this.update()
 }
 
 
     update(){
 
-    
                         if(currentRelativeAngle == 0)
                         
                                     {
@@ -92,12 +91,11 @@ this.update()
         
         
 
-setFrame(angleIncrementInfo!.RIGHT_FRAME.toInt())
+rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT_FRAME.toInt())
 
                                     }
                                 
                              else 
-    
                         if(currentRelativeAngle == 180)
                         
                                     {
@@ -116,7 +114,7 @@ setFrame(angleIncrementInfo!.RIGHT_FRAME.toInt())
         
         
 
-setFrame(angleIncrementInfo!.LEFT_FRAME.toInt())
+rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.LEFT_FRAME.toInt())
 
                                     }
                                 

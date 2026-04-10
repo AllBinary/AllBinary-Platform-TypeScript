@@ -58,7 +58,7 @@ export class CanvasTrimUtil
         
         
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public process(imageProcessorInput: ImageProcessorInput, cutCanvasFromLeftReduction: number, cutCanvasFromTopReduction: number, cutCanvasFromRightReduction: number, cutCanvasFromBottomReduction: number, visitor: ImageProcessedVisitor){
     //var imageProcessorInput = imageProcessorInput
@@ -98,7 +98,7 @@ index < size; index++)
         {
 bufferedImage= bufferedImageArray[index]!
 subBufferedImageArray[index]= bufferedImage!.getSubimage(cutCanvasFromLeftReduction, cutCanvasFromTopReduction, bufferedImage!.getWidth() -cutCanvasFromLeftReduction -cutCanvasFromRightReduction, bufferedImage!.getHeight() -cutCanvasFromTopReduction -cutCanvasFromBottomReduction)
-visit(subBufferedImageArray[index]!, stringUtil!.EMPTY_STRING, index)
+visitor.visit(subBufferedImageArray[index]!, stringUtil!.EMPTY_STRING, index)
 }
 
 }

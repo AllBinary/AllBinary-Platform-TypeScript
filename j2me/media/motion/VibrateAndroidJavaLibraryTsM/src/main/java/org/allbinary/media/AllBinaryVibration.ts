@@ -50,7 +50,6 @@ export class AllBinaryVibration extends AllBinaryVibrationME {
 
     public static init(){
 
-    
                         if(GameConfigurationCentral.getInstance()!.VIBRATION.getValue()!.toInt() == 0)
                         
                                     {
@@ -79,7 +78,7 @@ protected constructor (){
 var duration = duration
 var type = type
 var volume = volume
-vibrate(duration.toLong())
+vibrator.vibrate(duration.toLong())
 }
 
 

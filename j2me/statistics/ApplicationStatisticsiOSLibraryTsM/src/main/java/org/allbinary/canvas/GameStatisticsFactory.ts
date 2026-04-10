@@ -46,16 +46,15 @@ import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js"
     public add(string: string){
 var string = string
 
-    
                         if(this.stringBuffer!.length() > 12000)
                         
                                     {
-                                    delete(0, this.stringBuffer!.length())
-append("Old Stats Cleared")
+                                    this.stringBuffer!.delete(0, this.stringBuffer!.length())
+this.stringBuffer!.append("Old Stats Cleared")
 
                                     }
                                 
-append(string)
+this.stringBuffer!.append(string)
 }
 
 

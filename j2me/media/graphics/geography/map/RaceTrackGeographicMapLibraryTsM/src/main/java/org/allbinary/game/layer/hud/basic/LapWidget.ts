@@ -73,18 +73,18 @@ var lapInfo = lapInfo
         
         
 
-delete(0, stringBuffer!.length())
-append(LAP_STR)
-appendint(lapInfo!.getCurrentLap())
-append(OF_STR)
-appendint(lapInfo!.getTotalLaps())
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(LAP_STR)
+stringBuffer!.appendint(lapInfo!.getCurrentLap())
+stringBuffer!.append(OF_STR)
+stringBuffer!.appendint(lapInfo!.getTotalLaps())
 this.string= stringBuffer!.toString()
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics, this.string)
+super.paint(graphics, this.string)
 }
 
 

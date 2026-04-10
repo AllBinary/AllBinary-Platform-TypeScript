@@ -32,7 +32,7 @@ public constructor (inputRobotInterface: InputRobotInterface){
 
             super();
             var inputRobotInterface = inputRobotInterface
-this.setInputRobotInterface(inputRobotInterface)
+this.this.setInputRobotInterface(inputRobotInterface)
 }
 
 

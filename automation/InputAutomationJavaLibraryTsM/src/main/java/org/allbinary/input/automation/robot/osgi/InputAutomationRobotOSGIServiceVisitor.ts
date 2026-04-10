@@ -74,7 +74,7 @@ public constructor (){
     //var osgiServiceInterface = osgiServiceInterface
 
         try {
-            put(this.commonStrings!.START, this, "visit")
+            logUtil!.put(this.commonStrings!.START, this, "visit")
 
     var inputAutomationRobotServiceInterface: InputAutomationRobotServiceInterface = osgiServiceInterface as InputAutomationRobotServiceInterface;
         
@@ -95,8 +95,8 @@ public constructor (){
         
 index < inputRobotInterfaceArray!.length; index++)
         {
-put("Adding: " +inputRobotInterfaceArray[index]!.getName(), this, "visit")
-add(inputRobotInterfaceArray[index]!)
+logUtil!.put("Adding: " +inputRobotInterfaceArray[index]!.getName(), this, "visit")
+InputRobotFactory.getInstance()!.add(inputRobotInterfaceArray[index]!)
 }
 
 
@@ -107,7 +107,7 @@ add(inputRobotInterfaceArray[index]!)
     
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "visit", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "visit", e)
 
 
 

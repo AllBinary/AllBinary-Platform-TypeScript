@@ -67,16 +67,14 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
         try {
             
-    
                         if(UserName.getInstance()!.isValid(this.getWeblisketSession()!.getUserName()) == Boolean.FALSE)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Failed to validate username", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Failed to validate username", this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -91,18 +89,16 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                                 
 this.user= UserEntityFactory.getInstance()!.getUser(this.getWeblisketSession()!.getUserName())
 
-    
                         if(this.user == 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("User does not exist", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("User does not exist", this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -116,16 +112,14 @@ this.user= UserEntityFactory.getInstance()!.getUser(this.getWeblisketSession()!.
                                     }
                                 
 
-    
                         if(this.user.isValid() == Boolean.FALSE)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("User exists but is invalid - Probably manually modified", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("User exists but is invalid - Probably manually modified", this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -147,11 +141,10 @@ this.user= UserEntityFactory.getInstance()!.getUser(this.getWeblisketSession()!.
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -175,58 +168,52 @@ this.user= UserEntityFactory.getInstance()!.getUser(this.getWeblisketSession()!.
         
 
 
-    
                         if(UserName.getInstance()!.isValid(this.getWeblisketSession()!.getUserName()) == Boolean.FALSE)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Failed to validate username", this, "validationInfo()")
+                                    logUtil!.put("Failed to validate username", this, "validationInfo()")
 
                                     }
                                 
-append("Session User Name is not valid - Your session data has been logged!")
+stringBuffer!.append("Session User Name is not valid - Your session data has been logged!")
 
                                     }
                                 
 
-    
                         if(this.user == 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("User does not exist", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("User does not exist", this, commonStrings!.IS_VALID)
 
                                     }
                                 
-append("User profile does not exist - Your session data has been logged!")
+stringBuffer!.append("User profile does not exist - Your session data has been logged!")
 
                                     }
                                 
 
-    
                         if(this.user.isValid() == Boolean.FALSE)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("User exists but is invalid - Probably manually modified", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("User exists but is invalid - Probably manually modified", this, commonStrings!.IS_VALID)
 
                                     }
                                 
-append(this.user.validationInfo())
+stringBuffer!.append(this.user.validationInfo())
 
                                     }
                                 
@@ -239,11 +226,10 @@ append(this.user.validationInfo())
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 

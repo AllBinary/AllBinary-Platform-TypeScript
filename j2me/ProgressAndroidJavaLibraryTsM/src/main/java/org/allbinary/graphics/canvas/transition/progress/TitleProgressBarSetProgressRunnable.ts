@@ -51,7 +51,7 @@ var progressCanvas = progressCanvas
     public run(){
 
         try {
-            onSetProgress(this.progressCanvas!.getValue().toInt(), this.progressCanvas!.getText())
+            this.midletActivity!.onSetProgress(this.progressCanvas!.getValue().toInt(), this.progressCanvas!.getText())
 } catch(e: Exception)
             {
 
@@ -59,7 +59,7 @@ var progressCanvas = progressCanvas
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }

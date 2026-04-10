@@ -54,7 +54,7 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getCurrentOverCellType(geographicMap: BasicGeographicMap): GeographicMapCellType{
     //var geographicMap = geographicMap
@@ -64,7 +64,6 @@ public constructor (){
         
 
 
-    
                         if(geographicMapCellPosition != this.previousGeographicMapCellPosition)
                         
                                     {
@@ -81,13 +80,12 @@ public constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public updateStart(gameCanvasInterface: AllBinaryGameCanvasInterface, layer: AllBinaryLayer): boolean{
     //var gameCanvasInterface = gameCanvasInterface
     //var layer = layer
 
-    
                         if(gameCanvasInterface != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
                                     {
@@ -103,7 +101,6 @@ public constructor (){
 
 this.newGeographicMapCellPosition= geographicMapInterface!.getCellPositionAt(layer.getXP() +layer.getHalfWidth(), layer.getYP() +layer.getHalfHeight())
 
-    
                         if(this.newGeographicMapCellPosition != this.currentGeographicMapCellPosition)
                         
                                     {
@@ -131,7 +128,6 @@ this.newGeographicMapCellPosition= geographicMapInterface!.getCellPositionAt(lay
 
     public updateEnd(): boolean{
 
-    
                         if(this.currentGeographicMapCellPosition != this.previousGeographicMapCellPosition)
                         
                                     {

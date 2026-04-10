@@ -24,11 +24,11 @@ interface LayerProcessorInterface extends BasicLayerProcessorInterface {
 
     getLayerManager(): LayerManager
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     isProcessorLayer(layerInterface: AllBinaryLayer): boolean
 

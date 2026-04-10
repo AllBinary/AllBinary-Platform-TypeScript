@@ -86,7 +86,7 @@ this.running= running
 
     public onCaptureEvent(capturedImageEvent: CapturedImageWorkerResultsEvent){
 var capturedImageEvent = capturedImageEvent
-add(capturedImageEvent)
+capturedImageWorkerResultsEventVector!.add(capturedImageEvent)
 run()
 }
 
@@ -100,14 +100,14 @@ onCaptureEvent(allBinaryEventObject as CapturedImageWorkerResultsEvent)
     public run(){
 
         try {
-            put(this.commonStrings!.START, this, this.commonStrings!.RUN)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
 setRunning(true)
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
         
 
-setStartTime()
+timeHelper!.setStartTime()
 
     var capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent = (capturedImageWorkerResultsEventVector!.get(0) as CapturedImageWorkerResultsEvent);
         
@@ -118,14 +118,15 @@ setStartTime()
         
         
 
-save(screenBufferedImage, capturedImageWorkerResultsEvent!.getFrame())
-remove(capturedImageWorkerResultsEvent)
-put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
+CapturedImageInputOutput().
+                            save(screenBufferedImage, capturedImageWorkerResultsEvent!.getFrame())
+capturedImageWorkerResultsEventVector!.remove(capturedImageWorkerResultsEvent)
+logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
 setRunning(false)
-put(this.commonStrings!.END, this, this.commonStrings!.RUN)
+logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
 }
 
 }

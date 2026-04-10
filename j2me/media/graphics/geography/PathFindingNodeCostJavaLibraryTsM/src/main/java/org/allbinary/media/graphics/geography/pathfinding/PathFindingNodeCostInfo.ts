@@ -47,7 +47,7 @@ public constructor (costFromStart: number, costToGoal: number){
     //var costToGoal = costToGoal
 this.costFromStartP= costFromStart
 this.costToEndP= costToGoal
-this.setTotalCost()
+this.this.setTotalCost()
 }
 
 
@@ -63,19 +63,18 @@ this.totalCostP= totalCost
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setTotalCost(){
 this.totalCostP= costFromStartP +costToEndP
 
-    
                         if(this.totalCostP > pathFindingNodeCostInfoData!.MAX_NODE_COST)
                         
                                     {
                                     
 
 
-                            throw Exception("Max Cost Exceeded")
+                            throw Error("Max Cost Exceeded")
 
                                     }
                                 
@@ -111,14 +110,14 @@ var pathFindingNodeCostInfo = pathFindingNodeCostInfo
         
         
 
-append(this::class.toString()!)
-append(CommonLabels.getInstance()!.COLON_SEP)
-append("CostFromStart: ")
-appendlong(this.costFromStartP)
-append(" CostToEnd: ")
-appendlong(this.costToEndP)
-append(" TotalCost: ")
-appendlong(this.totalCostP)
+stringBuffer!.append(this::class.toString()!)
+stringBuffer!.append(CommonLabels.getInstance()!.COLON_SEP)
+stringBuffer!.append("CostFromStart: ")
+stringBuffer!.appendlong(this.costFromStartP)
+stringBuffer!.append(" CostToEnd: ")
+stringBuffer!.appendlong(this.costToEndP)
+stringBuffer!.append(" TotalCost: ")
+stringBuffer!.appendlong(this.totalCostP)
 
 
 

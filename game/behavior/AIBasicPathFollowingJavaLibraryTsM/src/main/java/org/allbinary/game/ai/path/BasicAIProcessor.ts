@@ -89,8 +89,8 @@ this.name= name
 this.geographicMapCellHistory= geographicMapCellHistory
 this.geographicMapCellPositionBasicArrayList= chosenPathList
 this.geographicMapCellPathHistoryInfo= geographicMapCellPathHistoryInfo
-this.setName(name)
-this.setNewPath(geographicMapCellHistory, chosenPathList)
+this.this.setName(name)
+this.this.setNewPath(geographicMapCellHistory, chosenPathList)
 this.basicAI= BasicDirectionAIHelper(this.getName(), angleInfo)
 }
 
@@ -98,17 +98,17 @@ this.basicAI= BasicDirectionAIHelper(this.getName(), angleInfo)
     setNewPath(geographicMapCellHistory: GeographicMapCellHistory, chosenPathList: BasicArrayList){
 var geographicMapCellHistory = geographicMapCellHistory
 var chosenPathList = chosenPathList
-this.setGeographicMapCellHistory(geographicMapCellHistory)
+this.this.setGeographicMapCellHistory(geographicMapCellHistory)
 this.geographicMapCellPositionBasicArrayList= chosenPathList
-this.init()
+this.this.init()
 }
 
 
     public init(){
 this.geographicMapCellPathHistoryInfo= GeographicMapCellPathHistoryInfo()
-setPreviousOnPathGeographicMapCellPosition(geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1) as GeographicMapCellPosition)
-setNextOnPathGeographicMapCellPosition(geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1) as GeographicMapCellPosition)
-this.update()
+this.geographicMapCellPathHistoryInfo!.setPreviousOnPathGeographicMapCellPosition(geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1) as GeographicMapCellPosition)
+this.geographicMapCellPathHistoryInfo!.setNextOnPathGeographicMapCellPosition(geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1) as GeographicMapCellPosition)
+this.this.update()
 }
 
 
@@ -116,7 +116,7 @@ this.update()
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     goTowardNextChosenOnPathPosition(currentGeographicMapCellPosition: GeographicMapCellPosition): number{
 var currentGeographicMapCellPosition = currentGeographicMapCellPosition
@@ -136,7 +136,6 @@ var currentGeographicMapCellPosition = currentGeographicMapCellPosition
         
 
 
-    
                         if(geographicMapDirectionData == DirectionFactory.getInstance()!.NOT_BORDERED_WITH)
                         
                                     {
@@ -155,12 +154,12 @@ keyDirection= this.basicAI!.getAIKeyPressedFromDirection(geographicMapDirectionD
 
 
     update(){
-setNextUnvisitedOnPathGeographicMapCellPosition(this.getGeographicMapCellHistory()!.getFirstUnvisited())
-setNextChosenOnPathGeographicMapCellPosition(this.geographicMapCellPathHistoryInfo!.getNextUnvisitedOnPathGeographicMapCellPosition())
+this.geographicMapCellPathHistoryInfo!.setNextUnvisitedOnPathGeographicMapCellPosition(this.getGeographicMapCellHistory()!.getFirstUnvisited())
+this.geographicMapCellPathHistoryInfo!.setNextChosenOnPathGeographicMapCellPosition(this.geographicMapCellPathHistoryInfo!.getNextUnvisitedOnPathGeographicMapCellPosition())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(myManager: AllBinaryLayerManager, currentGeographicMapCellPosition: GeographicMapCellPosition): number{
 var myManager = myManager
@@ -171,13 +170,12 @@ var currentGeographicMapCellPosition = currentGeographicMapCellPosition
         
 
 
-    
                         if(this.geographicMapCellPositionBasicArrayList!.contains(currentGeographicMapCellPosition))
                         
                                     {
-                                    this.update()
+                                    this.this.update()
 keyDirection= this.goTowardNextChosenOnPathPosition(currentGeographicMapCellPosition)
-setPreviousOnPathGeographicMapCellPosition(currentGeographicMapCellPosition)
+this.geographicMapCellPathHistoryInfo!.setPreviousOnPathGeographicMapCellPosition(currentGeographicMapCellPosition)
 
                                     }
                                 

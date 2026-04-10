@@ -82,7 +82,7 @@ public constructor (node: Node)
 
                             //For kotlin this is before the body of the constructor.
                     
-put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 this.point= Point()
 
     var actionNode: Node = DomSearchHelper.getNode(MouseActionScriptInputData.NAME, node.getChildNodes())!;
@@ -90,7 +90,6 @@ this.point= Point()
         
 
 
-    
                         if(actionNode != 
                                     null
                                 )
@@ -117,7 +116,6 @@ index < nodeList!.getLength(); index++)
         
 
 
-    
                         if(childNode!.getNodeName()!.compareTo(MouseActionScriptInputData.BUTTONS) == 0)
                         
                                     {
@@ -126,12 +124,11 @@ index < nodeList!.getLength(); index++)
         
         
 
-this.setButtonClicks(Integer.valueOf(buttons)!.toInt())
+this.this.setButtonClicks(Integer.valueOf(buttons)!.toInt())
 
                                     }
                                 
                              else 
-    
                         if(childNode!.getNodeName()!.compareTo(MouseActionScriptInputData.MOVE) == 0)
                         
                                     {
@@ -170,7 +167,7 @@ this.setButtonClicks(Integer.valueOf(buttons)!.toInt())
         
         
 
-this.setPoint(newPoint)
+this.this.setPoint(newPoint)
 
                                     }
                                 
@@ -178,7 +175,7 @@ this.setPoint(newPoint)
                             
 
 
-                            throw Exception("Action Script Input Unknown Node")
+                            throw Error("Action Script Input Unknown Node")
 
                         }
                             
@@ -191,11 +188,11 @@ this.setPoint(newPoint)
                             
 
 
-                            throw Exception("Action Script Input Node Null")
+                            throw Error("Action Script Input Node Null")
 
                         }
                             
-this.setAllowsChildren(false)
+this.this.setAllowsChildren(false)
 this.mouseActionScriptInputJPanel= MouseActionScriptInputJPanel(this)
 }
 
@@ -209,7 +206,7 @@ public constructor ()
                             //For kotlin this is before the body of the constructor.
                     
 this.point= Point()
-this.setAllowsChildren(false)
+this.this.setAllowsChildren(false)
 this.mouseActionScriptInputJPanel= MouseActionScriptInputJPanel(this)
 }
 
@@ -247,7 +244,7 @@ this.buttons= buttons
 
 
     public showDialog(){
-setVisible(true)
+this.mouseActionScriptInputJPanel!.getMouseActionJDialog()!.setVisible(true)
 }
 
 
@@ -257,8 +254,8 @@ setVisible(true)
         
         
 
-put(MouseActionScriptInputData.BUTTONS, Integer.toString(this.getButtonClicks()))
-put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
+hashMap!.put(MouseActionScriptInputData.BUTTONS, Integer.toString(this.getButtonClicks()))
+logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
 
 
 
@@ -268,7 +265,7 @@ put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -282,15 +279,15 @@ var document = document
         
         
 
-appendChild(mouseNode)
+node.appendChild(mouseNode)
 
     var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
         
         
 
-put(MouseActionScriptInputData.MOVE_X, Integer.toString(this.getPoint()!.x))
-put(MouseActionScriptInputData.MOVE_Y, Integer.toString(this.getPoint()!.y))
-appendChild(ModDomHelper.createNodeWithValueNodes(document, MouseActionScriptInputData.MOVE, hashMap))
+hashMap!.put(MouseActionScriptInputData.MOVE_X, Integer.toString(this.getPoint()!.x))
+hashMap!.put(MouseActionScriptInputData.MOVE_Y, Integer.toString(this.getPoint()!.y))
+mouseNode!.appendChild(ModDomHelper.createNodeWithValueNodes(document, MouseActionScriptInputData.MOVE, hashMap))
 
 
 
@@ -300,11 +297,11 @@ appendChild(ModDomHelper.createNodeWithValueNodes(document, MouseActionScriptInp
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(frame: Long){
 var frame = frame
-process(this)
+MouseInputAutomationProcessor.process(this)
 }
 
 
@@ -314,57 +311,54 @@ process(this)
         
         
 
-append("1: ")
+buttonStringBuffer!.append("1: ")
 
     var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
         
         
 
 
-    
                         if((this.getButtonClicks() and InputEvent.BUTTON1_MASK) != 0)
                         
                                     {
-                                    append(booleanFactory!.TRUE_STRING)
+                                    buttonStringBuffer!.append(booleanFactory!.TRUE_STRING)
 
                                     }
                                 
                         else {
-                            append(booleanFactory!.FALSE_STRING)
+                            buttonStringBuffer!.append(booleanFactory!.FALSE_STRING)
 
                         }
                             
-append(" 2: ")
+buttonStringBuffer!.append(" 2: ")
 
-    
                         if((this.getButtonClicks() and InputEvent.BUTTON2_MASK) != 0)
                         
                                     {
-                                    append(booleanFactory!.TRUE_STRING)
+                                    buttonStringBuffer!.append(booleanFactory!.TRUE_STRING)
 
                                     }
                                 
                         else {
-                            append(booleanFactory!.FALSE_STRING)
+                            buttonStringBuffer!.append(booleanFactory!.FALSE_STRING)
 
                         }
                             
-append(" 3: ")
+buttonStringBuffer!.append(" 3: ")
 
-    
                         if((this.getButtonClicks() and InputEvent.BUTTON3_MASK) != 0)
                         
                                     {
-                                    append(booleanFactory!.TRUE_STRING)
+                                    buttonStringBuffer!.append(booleanFactory!.TRUE_STRING)
 
                                     }
                                 
                         else {
-                            append(booleanFactory!.FALSE_STRING)
+                            buttonStringBuffer!.append(booleanFactory!.FALSE_STRING)
 
                         }
                             
-put("Input Type: " +this.getInputRobotInterface()!.getName() +" Point: " +this.getPoint() +" Buttons Clicked: " +buttonStringBuffer!.toString(), this, "log")
+logUtil!.put("Input Type: " +this.getInputRobotInterface()!.getName() +" Point: " +this.getPoint() +" Buttons Clicked: " +buttonStringBuffer!.toString(), this, "log")
 }
 
 

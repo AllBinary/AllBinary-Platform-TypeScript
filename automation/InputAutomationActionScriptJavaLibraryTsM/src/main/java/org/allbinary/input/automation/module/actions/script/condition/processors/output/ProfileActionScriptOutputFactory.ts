@@ -30,7 +30,7 @@ export class ProfileActionScriptOutputFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(node: Node): ProfileActionScriptOutputInterface{
 var node = node
@@ -42,7 +42,6 @@ var node = node
         
 
 
-    
                         if(DomSearchHelper.getNodeNoThrow(ImageActionScriptOutputData.NAME, node.getChildNodes()) != 
                                     null
                                 )
@@ -56,7 +55,7 @@ var node = node
                             
 
 
-                            throw Exception("No Such ActionScript Output")
+                            throw Error("No Such ActionScript Output")
 
                         }
                             

@@ -37,7 +37,7 @@ var imageComparisonSearch = imageComparisonSearch
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setImageComparisonSearch(imageComparisonSearch)
+this.this.setImageComparisonSearch(imageComparisonSearch)
 }
 
 

@@ -74,7 +74,7 @@ export class StylesValidationFactory
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(hashMap: HashMap<Any, Any>): Vector{
 var hashMap = hashMap
@@ -101,7 +101,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(document: Document): Vector{
 var document = document
@@ -116,20 +116,18 @@ var document = document
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Style Present: " +DomDocumentHelper.toString(document), this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Style Present: " +DomDocumentHelper.toString(document), this, commonStrings!.GET_INSTANCE)
 
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Styles Present: " +nodeList!.getLength(), this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Styles Present: " +nodeList!.getLength(), this, commonStrings!.GET_INSTANCE)
 
                                     }
                                 
@@ -154,11 +152,10 @@ index < nodeList!.getLength(); index++)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Number Of Style Nodes Present: " +styleNodeList!.length, this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Number Of Style Nodes Present: " +styleNodeList!.length, this, commonStrings!.GET_INSTANCE)
 
                                     }
                                 
@@ -183,11 +180,10 @@ styleNodesIndex < styleNodeList!.length; styleNodesIndex++)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Number Of Element Nodes Present: " +cssElementStyleNodeList!.length, this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Number Of Element Nodes Present: " +cssElementStyleNodeList!.length, this, commonStrings!.GET_INSTANCE)
 
                                     }
                                 
@@ -202,11 +198,10 @@ styleNodesIndex < styleNodeList!.length; styleNodesIndex++)
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("No Style Present", this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("No Style Present", this, commonStrings!.GET_INSTANCE)
 
                                     }
                                 

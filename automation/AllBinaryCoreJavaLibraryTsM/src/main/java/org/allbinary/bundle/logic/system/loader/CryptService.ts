@@ -83,8 +83,8 @@ export class CryptService
 public constructor (){
 
             super();
-            init(this::class.java.classLoader, "./")
-put("Set Globals: " +URLGLOBALS.getWebappPath(), this, this.commonStrings!.CONSTRUCTOR)
+            Globals.getInstance()!.init(this::class.java.classLoader, "./")
+logUtil!.put("Set Globals: " +URLGLOBALS.getWebappPath(), this, this.commonStrings!.CONSTRUCTOR)
 }
 
 
@@ -112,11 +112,11 @@ put("Set Globals: " +URLGLOBALS.getWebappPath(), this, this.commonStrings!.CONST
     
 } catch(e: LicensingException)
             {
-this.showLicenseDialog(abeClientInformation, e)
+this.this.showLicenseDialog(abeClientInformation, e)
 }
  catch(e: Exception)
             {
-this.showLicenseDialog(abeClientInformation, e)
+this.this.showLicenseDialog(abeClientInformation, e)
 }
 
 
@@ -128,12 +128,12 @@ this.showLicenseDialog(abeClientInformation, e)
 }
 
 
-    showLicenseDialog(abeClientInformation: AbeClientInformationInterface, e: Exception){
+    showLicenseDialog(abeClientInformation: AbeClientInformationInterface, e: Error){
     //var abeClientInformation = abeClientInformation
     //var e = e
 
         try {
-            put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e)
+            logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e)
 
     var basicTextJDialog: BasicTextJDialog = new BasicTextJDialog(e.message);
         
@@ -147,16 +147,14 @@ this.showLicenseDialog(abeClientInformation, e)
         
 
 
-    
                         if(abeLicenseInterface != AbeNoLicense.getInstance())
                         
                                     {
                                     
-    
                         if(abeLicenseInterface!.isValid())
                         
                                     {
-                                    setText("Subscription Invalid")
+                                    basicTextJDialog!.setText("Subscription Invalid")
 
                                     }
                                 
@@ -165,14 +163,14 @@ this.showLicenseDialog(abeClientInformation, e)
                                 
 } catch(e2: LicensingException)
             {
-put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e2)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e2)
 }
 
-addCloseListener(ExitCloseListener())
-setVisible(true)
+basicTextJDialog!.addCloseListener(ExitCloseListener())
+basicTextJDialog!.setVisible(true)
 } catch(e3: Exception)
             {
-put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e3)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e3)
 }
 
 }

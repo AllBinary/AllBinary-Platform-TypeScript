@@ -129,61 +129,61 @@ var storeName = storeName
         
         
 
-put(
+hashMap!.put(
                                                 [
                                                     viewName +SPACE;
         
         
                                                 ], ONE_EMPTY_STRING_ARRAY)
-put(
+hashMap!.put(
                                                 [
                                                     storeName +SPACE;
         
         
                                                 ], ONE_EMPTY_STRING_ARRAY)
-put(
+hashMap!.put(
                                                 [
                                                     CUSTOMIZER_NAME;
         
         
                                                 ], ONE_EMPTY_STRING_ARRAY)
-put(
+hashMap!.put(
                                                 [
                                                     BODY_VIEWNAMEKEY;
         
         
                                                 ], ONE_EMPTY_STRING_ARRAY)
-put(
+hashMap!.put(
                                                 [
                                                     TITLE_VIEWNAMEKEY;
         
         
                                                 ], ONE_EMPTY_STRING_ARRAY)
-put(
+hashMap!.put(
                                                 [
                                                     GLOBALS_NEW;
         
         
                                                 ], ONE_EMPTY_STRING_ARRAY)
-put(
+hashMap!.put(
                                                 [
                                                     GLOBALS_INSERT;
         
         
                                                 ], ONE_EMPTY_STRING_ARRAY)
-put(
+hashMap!.put(
                                                 [
                                                     GLOBALS_DELETE;
         
         
                                                 ], ONE_EMPTY_STRING_ARRAY)
-put(
+hashMap!.put(
                                                 [
                                                     GLOBALS_EDIT;
         
         
                                                 ], ONE_EMPTY_STRING_ARRAY)
-put(
+hashMap!.put(
                                                 [
                                                     GLOBALS_UPDATE;
         
@@ -202,11 +202,10 @@ put(
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("RootViewName for ObjectConfig: " +rootViewName, this, "getPageNameHack")
+                                    logUtil!.put("RootViewName for ObjectConfig: " +rootViewName, this, "getPageNameHack")
 
                                     }
                                 

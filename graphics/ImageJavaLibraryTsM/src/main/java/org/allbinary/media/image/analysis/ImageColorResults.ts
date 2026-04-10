@@ -30,14 +30,14 @@ export class ImageColorResults
 public constructor (){
 
             super();
-            this.setColorRange(ColorRange())
-setMaxRed( -1)
-setMaxGreen( -1)
-setMaxBlue( -1)
-setMinRed(256)
-setMinGreen(256)
-setMinBlue(256)
-this.setColorAverage(ColorAverage())
+            this.this.setColorRange(ColorRange())
+this.getColorRange()!.setMaxRed( -1)
+this.getColorRange()!.setMaxGreen( -1)
+this.getColorRange()!.setMaxBlue( -1)
+this.getColorRange()!.setMinRed(256)
+this.getColorRange()!.setMinGreen(256)
+this.getColorRange()!.setMinBlue(256)
+this.this.setColorAverage(ColorAverage())
 }
 
 

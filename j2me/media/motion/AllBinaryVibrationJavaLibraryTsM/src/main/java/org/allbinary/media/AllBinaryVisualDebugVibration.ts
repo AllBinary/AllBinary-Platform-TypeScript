@@ -60,7 +60,6 @@ this.timeDelayHelper!.delay= duration
     public paint(graphics: Graphics){
 var graphics = graphics
 
-    
                         if(timeDelayHelper!.isTime())
                         
                                     {
@@ -80,7 +79,7 @@ var graphics = graphics
         
         
 
-drawString(VIBRATING, displayInfoSingleton!.getLastHalfWidth() -(width shr 1), 0, anchor)
+graphics.drawString(VIBRATING, displayInfoSingleton!.getLastHalfWidth() -(width shr 1), 0, anchor)
 
                                     }
                                 

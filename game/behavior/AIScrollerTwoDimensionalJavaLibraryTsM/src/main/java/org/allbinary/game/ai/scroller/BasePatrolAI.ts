@@ -96,8 +96,8 @@ this.currentDistance= maxDistance!.toInt()
 
 
     update(){
-this.updateTotalDistance()
-this.changeDirectionIfReachedPacingAreaMax()
+this.this.updateTotalDistance()
+this.this.changeDirectionIfReachedPacingAreaMax()
 }
 
 
@@ -128,11 +128,10 @@ xTotalDistance += velocityProperties!.getVelocityXBasicDecimalP()!.getScaled()
         
 
 
-    
                         if(totalDistance > this.currentDistance)
                         
                                     {
-                                    this.nextDirection()
+                                    this.this.nextDirection()
 
                                     }
                                 
@@ -141,7 +140,6 @@ xTotalDistance += velocityProperties!.getVelocityXBasicDecimalP()!.getScaled()
 
     nextDirection(){
 
-    
                         if(this.lastKeyDirection == Canvas.LEFT)
                         
                                     {
@@ -152,7 +150,6 @@ xTotalDistance= 0
                                     }
                                 
                              else 
-    
                         if(this.lastKeyDirection == Canvas.RIGHT)
                         
                                     {

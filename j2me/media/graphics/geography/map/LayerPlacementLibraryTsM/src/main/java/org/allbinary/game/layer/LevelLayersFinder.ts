@@ -89,11 +89,10 @@ var hashtable = hashtable
         
 
 
-    
                         if(!list.contains(cachedInteger))
                         
                                     {
-                                    add(cachedInteger)
+                                    list.add(cachedInteger)
 
                                     }
                                 

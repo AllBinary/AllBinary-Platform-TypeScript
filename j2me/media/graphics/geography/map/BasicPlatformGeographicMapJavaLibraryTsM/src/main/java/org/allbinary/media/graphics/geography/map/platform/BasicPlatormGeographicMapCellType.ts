@@ -136,7 +136,6 @@ this.types= typeArray
 index < size; index++)
         {
 
-    
                         if(types[index] == type)
                         
                                     {

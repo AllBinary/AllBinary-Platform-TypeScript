@@ -62,7 +62,7 @@ export class ImageArrayRotationUtil
         
         
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public process(imageProcessorInput: ImageProcessorInput, input: string, visitor: ImageProcessedVisitor){
     //var imageProcessorInput = imageProcessorInput
@@ -72,7 +72,6 @@ export class ImageArrayRotationUtil
     var totalAngle: Integer
 
 
-    
                         if(input == this.commonStrings!.UP)
                         
                                     {
@@ -81,7 +80,6 @@ export class ImageArrayRotationUtil
                                     }
                                 
                              else 
-    
                         if(input == this.commonStrings!.DOWN)
                         
                                     {
@@ -112,9 +110,9 @@ export class ImageArrayRotationUtil
         
 index < bufferedImageArray!.length; index++)
         {
-put(TOTAL_ANGLE +totalAngle, this, commonStrings!.RUN)
+logUtil!.put(TOTAL_ANGLE +totalAngle, this, commonStrings!.RUN)
 generatedBufferedImage= ImageJ2SERotationUtil.getInstance()!.getRotatedImage(bufferedImageArray[index]!, totalAngle!.toInt())
-visit(generatedBufferedImage, input, index)
+visitor.visit(generatedBufferedImage, input, index)
 }
 
 }

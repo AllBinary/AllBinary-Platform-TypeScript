@@ -72,7 +72,6 @@ private constructor (){
         
 
 
-    
                         if(bufferedImageArray!.length < totalImages)
                         end= bufferedImageArray!.length
 
@@ -91,7 +90,6 @@ private constructor (){
 index < end; index++)
         {
 
-    
                         if(ratio != (bufferedImageArray[index]!.getWidth().toDouble() /bufferedImageArray[index]!.getHeight()))
                         
                                     {
@@ -129,7 +127,6 @@ index < end; index++)
         
 
 
-    
                         if(bufferedImageArray!.length < totalImages)
                         end= bufferedImageArray!.length
 
@@ -154,7 +151,7 @@ ratio += (bufferedImageArray[index]!.getWidth().toDouble() /bufferedImageArray[i
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fudge(bufferedImage: BufferedImage, ratio: number): BufferedImage{
 var bufferedImage = bufferedImage
@@ -180,7 +177,6 @@ var ratio = ratio
         
 
 
-    
                         if(ratio > imageRatio)
                         
                                     {
@@ -200,7 +196,7 @@ point.y= (newHeight -bufferedImage!.getHeight()) /2
         
         
 
-put(commonLabels!.WIDTH_LABEL +bufferedImage!.getWidth() +" newWidth: " +newWidth +commonLabels!.HEIGHT_LABEL +bufferedImage!.getHeight() +" newHeight: " +newHeight +" needed ratio: " +(newWidth.toDouble() /newHeight), this, "fudge")
+logUtil!.put(commonLabels!.WIDTH_LABEL +bufferedImage!.getWidth() +" newWidth: " +newWidth +commonLabels!.HEIGHT_LABEL +bufferedImage!.getHeight() +" newHeight: " +newHeight +" needed ratio: " +(newWidth.toDouble() /newHeight), this, "fudge")
 
     var newBufferedImage: BufferedImage = this.imageUtil!.create(newWidth, newHeight)!;
         
@@ -212,7 +208,6 @@ put(commonLabels!.WIDTH_LABEL +bufferedImage!.getWidth() +" newWidth: " +newWidt
         
 
 
-    
                         if(point.x > 0)
                         
                                     {
@@ -226,7 +221,7 @@ put(commonLabels!.WIDTH_LABEL +bufferedImage!.getWidth() +" newWidth: " +newWidt
         
         
 
-put("Draw some columns to fill in gap", this, "fudge")
+logUtil!.put("Draw some columns to fill in gap", this, "fudge")
 
 
 
@@ -237,9 +232,9 @@ put("Draw some columns to fill in gap", this, "fudge")
         
 index < point.x; index++)
         {
-drawImage(firstColumnBufferedImage, index, 0, 
+g.drawImage(firstColumnBufferedImage, index, 0, 
                             null)
-drawImage(lastColumnBufferedImage, newWidth -index, 0, 
+g.drawImage(lastColumnBufferedImage, newWidth -index, 0, 
                             null)
 }
 
@@ -247,7 +242,6 @@ drawImage(lastColumnBufferedImage, newWidth -index, 0,
                                     }
                                 
 
-    
                         if(point.y > 0)
                         
                                     {
@@ -261,7 +255,7 @@ drawImage(lastColumnBufferedImage, newWidth -index, 0,
         
         
 
-put("Draw some rows to fill in gap", this, "fudge")
+logUtil!.put("Draw some rows to fill in gap", this, "fudge")
 
 
 
@@ -272,16 +266,16 @@ put("Draw some rows to fill in gap", this, "fudge")
         
 index < point.y; index++)
         {
-drawImage(firstRowBufferedImage, 0, index, 
+g.drawImage(firstRowBufferedImage, 0, index, 
                             null)
-drawImage(lastRowBufferedImage, 0, newHeight -index, 
+g.drawImage(lastRowBufferedImage, 0, newHeight -index, 
                             null)
 }
 
 
                                     }
                                 
-drawImage(bufferedImage, point.x, point.y, bufferedImage!.getWidth(), bufferedImage!.getHeight(), 
+g.drawImage(bufferedImage, point.x, point.y, bufferedImage!.getWidth(), bufferedImage!.getHeight(), 
                             null)
 
 
@@ -292,7 +286,7 @@ drawImage(bufferedImage, point.x, point.y, bufferedImage!.getWidth(), bufferedIm
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fudge(bufferedImageArray: BufferedImage[], totalImages: number, ratio: number): BufferedImage[]{
     //var bufferedImageArray = bufferedImageArray
@@ -304,7 +298,6 @@ drawImage(bufferedImage, point.x, point.y, bufferedImage!.getWidth(), bufferedIm
         
 
 
-    
                         if(bufferedImageArray!.length < totalImages)
                         end= bufferedImageArray!.length
 

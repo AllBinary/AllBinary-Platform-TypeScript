@@ -186,57 +186,54 @@ this.directionalInterface= directionalCompositeInterface!.getDirectionalInterfac
         
 
 this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties()
-addListener(this)
-this.init()
+DestroyedEventHandler.getInstance()!.addListener(this)
+this.this.init()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
-    
                         if(this.isBeyondTarget())
                         
                                     {
-                                    this.init()
-zero()
+                                    this.this.init()
+this.velocityInterface!.zero()
 
                                     }
                                 
 
-    
                         if(!dive)
                         
                                     {
-                                    this.target(allBinaryLayerManager)
+                                    this.this.target(allBinaryLayerManager)
 
                                     }
                                 
                         else {
-                            this.dive()
-this.attack()
+                            this.this.dive()
+this.this.attack()
 
                         }
                             
-clear()
+this.list.clear()
 }
 
 
     init(){
 this.dive= false
 this.directionOfTarget= DirectionFactory.getInstance()!.NOT_BORDERED_WITH
-addListener(this)
+TrackingEventHandler.getInstance()!.addListener(this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     target(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
-    
                         if(this.list.size() == 0)
                         
                                     {
@@ -266,7 +263,6 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
         
 
 
-    
                         if(layerInterface!.getGroupInterface() == ownerLayerInterface!.getGroupInterface())
                         
                                     {
@@ -305,12 +301,10 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
         
 
 
-    
                         if(mathUtil!.abs(yDistance) > mathUtil!.abs(xDistance))
                         
                                     {
                                     
-    
                         if(yDistance > MIN_DISTANCE)
                         
                                     {
@@ -319,7 +313,6 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
                                     }
                                 
                              else 
-    
                         if(yDistance <  -MIN_DISTANCE)
                         
                                     {
@@ -332,7 +325,6 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
                                 
                         else {
                             
-    
                         if(xDistance > MIN_DISTANCE)
                         
                                     {
@@ -341,7 +333,6 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
                                     }
                                 
                              else 
-    
                         if(xDistance <  -MIN_DISTANCE)
                         
                                     {
@@ -353,39 +344,35 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
                         }
                             
 
-    
                         if(!initialDropped && this.directionOfTarget != directionFactory!.NOT_BORDERED_WITH)
                         
                                     {
-                                    this.drop()
+                                    this.this.drop()
 
                                     }
                                 
 
-    
                         if(initialDropped)
                         
                                     {
                                     
-    
                         if(this.directionOfTarget == directionFactory!.UP || this.directionOfTarget == directionFactory!.DOWN)
                         
                                     {
-                                    this.verticalTargeting(x)
+                                    this.this.verticalTargeting(x)
 
                                     }
                                 
                              else 
-    
                         if(this.directionOfTarget == directionFactory!.LEFT || this.directionOfTarget == directionFactory!.RIGHT)
                         
                                     {
-                                    this.horizontalTargeting(y)
+                                    this.this.horizontalTargeting(y)
 
                                     }
                                 
                         else {
-                            processAI(allBinaryLayerManager)
+                            this.artificialIntelligenceInterface!.processAI(allBinaryLayerManager)
 
                         }
                             
@@ -395,7 +382,7 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     verticalTargeting(x: number){
 var x = x
@@ -405,36 +392,33 @@ var x = x
         
 
 
-    
                         if(ownerLayerInterface!.getXP() < x)
                         
                                     {
-                                    this.moveRight()
+                                    this.this.moveRight()
 
                                     }
                                 
 
-    
                         if(ownerLayerInterface!.getXP() > x)
                         
                                     {
-                                    this.moveLeft()
+                                    this.this.moveLeft()
 
                                     }
                                 
 
-    
                         if(ownerLayerInterface!.getXP() > x -3 && ownerLayerInterface!.getXP() < x +3)
                         
                                     {
-                                    this.setDive()
+                                    this.this.setDive()
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     horizontalTargeting(y: number){
 var y = y
@@ -444,29 +428,26 @@ var y = y
         
 
 
-    
                         if(ownerLayerInterface!.getYP() < y)
                         
                                     {
-                                    this.moveDown()
+                                    this.this.moveDown()
 
                                     }
                                 
 
-    
                         if(ownerLayerInterface!.getYP() > y)
                         
                                     {
-                                    this.moveUp()
+                                    this.this.moveUp()
 
                                     }
                                 
 
-    
                         if(ownerLayerInterface!.getYP() > y -3 && ownerLayerInterface!.getYP() < y +3)
                         
                                     {
-                                    this.setDive()
+                                    this.this.setDive()
 
                                     }
                                 
@@ -475,72 +456,71 @@ var y = y
 
     setDive(){
 this.dive= true
-zero()
-removeListener(this)
+this.velocityInterface!.zero()
+TrackingEventHandler.getInstance()!.removeListener(this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     moveRight(){
-this.setLastDirection(this.directionFactory!.RIGHT)
-setFrame(this.lastDirection)
-visit(this)
+this.this.setLastDirection(this.directionFactory!.RIGHT)
+this.directionalInterface!.setFrame(this.lastDirection)
+this.aiVistor!.visit(this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     moveLeft(){
-this.setLastDirection(this.directionFactory!.LEFT)
-setFrame(this.lastDirection)
-visit(this)
+this.this.setLastDirection(this.directionFactory!.LEFT)
+this.directionalInterface!.setFrame(this.lastDirection)
+this.aiVistor!.visit(this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     moveDown(){
-this.setLastDirection(this.directionFactory!.DOWN)
-setFrame(this.lastDirection)
-visit(this)
+this.this.setLastDirection(this.directionFactory!.DOWN)
+this.directionalInterface!.setFrame(this.lastDirection)
+this.aiVistor!.visit(this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     moveUp(){
-this.setLastDirection(this.directionFactory!.UP)
-setFrame(this.lastDirection)
-visit(this)
+this.this.setLastDirection(this.directionFactory!.UP)
+this.directionalInterface!.setFrame(this.lastDirection)
+this.aiVistor!.visit(this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     dive(){
-setFrame(this.directionOfTarget)
-visit(this)
+this.directionalInterface!.setFrame(this.directionOfTarget)
+this.aiVistor!.visit(this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     attack(){
-processAI(Canvas.KEY_NUM1)
+super.processAI(Canvas.KEY_NUM1)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     drop(){
 
-    
                         if(this.timeDelayHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
                         
                                     {
                                     initialDropped= true
-visit(this)
+this.aiVistor!.visit(this)
 
                                     }
                                 
@@ -549,12 +529,10 @@ visit(this)
 
     isBeyondTarget(): boolean{
 
-    
                         if(this.directionOfTarget == directionFactory!.DOWN)
                         
                                     {
                                     
-    
                         if(this.getOwnerLayerInterface()!.getYP() > this.lastTrackingLayerInterface!.getYP() +MIN_DISTANCE)
                         
                                     {
@@ -581,12 +559,10 @@ visit(this)
                                     }
                                 
                              else 
-    
                         if(this.directionOfTarget == directionFactory!.UP)
                         
                                     {
                                     
-    
                         if(this.getOwnerLayerInterface()!.getYP() < this.lastTrackingLayerInterface!.getYP() +MIN_DISTANCE)
                         
                                     {
@@ -613,12 +589,10 @@ visit(this)
                                     }
                                 
                              else 
-    
                         if(this.directionOfTarget == directionFactory!.RIGHT)
                         
                                     {
                                     
-    
                         if(this.getOwnerLayerInterface()!.getXP() > this.lastTrackingLayerInterface!.getXP() +MIN_DISTANCE)
                         
                                     {
@@ -645,12 +619,10 @@ visit(this)
                                     }
                                 
                              else 
-    
                         if(this.directionOfTarget == directionFactory!.LEFT)
                         
                                     {
                                     
-    
                         if(this.getOwnerLayerInterface()!.getXP() < this.lastTrackingLayerInterface!.getXP() +MIN_DISTANCE)
                         
                                     {
@@ -691,25 +663,24 @@ visit(this)
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
     public onMovement(trackingEvent: TrackingEvent){
 var trackingEvent = trackingEvent
-add(trackingEvent)
+this.list.add(trackingEvent)
 }
 
 
     public onDestroyed(destroyedEvent: DestroyedEvent){
 var destroyedEvent = destroyedEvent
 
-    
                         if(this.getOwnerLayerInterface() == destroyedEvent!.getLayerInterface())
                         
                                     {
-                                    removeListener(this)
-removeListener(this)
+                                    TrackingEventHandler.getInstance()!.removeListener(this)
+DestroyedEventHandler.getInstance()!.removeListener(this)
 
                                     }
                                 
@@ -725,11 +696,10 @@ this.lastDirection= lastDirection
         
 
 
-    
                         if(value < 4)
                         
                                     {
-                                    setLastKey(directionToKeyMap[value]!)
+                                    super.setLastKey(directionToKeyMap[value]!)
 
                                     }
                                 
@@ -738,9 +708,8 @@ this.lastDirection= lastDirection
 
     public setLastKey(lastKey: number){
 var lastKey = lastKey
-setLastKey(lastKey)
+super.setLastKey(lastKey)
 
-    
                         if(this.getLastKey() == Canvas.LEFT)
                         
                                     {
@@ -749,7 +718,6 @@ setLastKey(lastKey)
                                     }
                                 
                              else 
-    
                         if(this.getLastKey() == Canvas.DOWN)
                         
                                     {
@@ -758,7 +726,6 @@ setLastKey(lastKey)
                                     }
                                 
                              else 
-    
                         if(this.getLastKey() == Canvas.UP)
                         
                                     {
@@ -767,7 +734,6 @@ setLastKey(lastKey)
                                     }
                                 
                              else 
-    
                         if(this.getLastKey() == Canvas.RIGHT)
                         
                                     {
@@ -794,9 +760,9 @@ setLastKey(lastKey)
         
         
 
-append(super.toString())
-append(" LastDirection: ")
-append(StringUtil.getInstance()!.toString(this.getLastDirection()))
+stringBuffer!.append(super.toString())
+stringBuffer!.append(" LastDirection: ")
+stringBuffer!.append(StringUtil.getInstance()!.toString(this.getLastDirection()))
 
 
 

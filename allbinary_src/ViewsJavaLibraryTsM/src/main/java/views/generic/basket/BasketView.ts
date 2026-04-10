@@ -99,7 +99,7 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -167,7 +167,6 @@ index < size; index++)
         
 
 
-    
                         if(itemInterface != 
                                     null
                                 )
@@ -188,7 +187,7 @@ index < size; index++)
         
         
 
-appendChild(ModDomHelper.createNameValueNodes(document, BasketData.ITEMTOTALINBASKET, numberInBasket))
+node.appendChild(ModDomHelper.createNameValueNodes(document, BasketData.ITEMTOTALINBASKET, numberInBasket))
 
     var itemPrice: Money = itemInterface!.getPrice()!;
         
@@ -199,14 +198,14 @@ appendChild(ModDomHelper.createNameValueNodes(document, BasketData.ITEMTOTALINBA
         
         
 
-multiply(basketInterface!.getNumberOf(product)!.toInt())
-appendChild(ModDomHelper.createNameValueNodes(document, BasketData.ITEMTOTAL, itemTotal!.toString()))
-appendChild(node)
+itemTotal!.multiply(basketInterface!.getNumberOf(product)!.toInt())
+node.appendChild(ModDomHelper.createNameValueNodes(document, BasketData.ITEMTOTAL, itemTotal!.toString()))
+basketNode!.appendChild(node)
 
                                     }
                                 
                         else {
-                            put("Product Failed: " +product, this, "toXmlNode")
+                            logUtil!.put("Product Failed: " +product, this, "toXmlNode")
 
                         }
                             
@@ -223,7 +222,7 @@ numberOfResults++
         
         
 
-appendChild(totalNumberTextNode)
+totalNumberNode!.appendChild(totalNumberTextNode)
 
     var totalWeightNode: Node = document.createElement(BasketData.TOTALWEIGHT)!;
         
@@ -234,7 +233,7 @@ appendChild(totalNumberTextNode)
         
         
 
-appendChild(totalWeightTextNode)
+totalWeightNode!.appendChild(totalWeightTextNode)
 
     var subTotalNode: Node = document.createElement(BasketData.SUBTOTAL)!;
         
@@ -245,10 +244,10 @@ appendChild(totalWeightTextNode)
         
         
 
-appendChild(subTotalTextNode)
-appendChild(totalNumberNode)
-appendChild(totalWeightNode)
-appendChild(subTotalNode)
+subTotalNode!.appendChild(subTotalTextNode)
+basketNode!.appendChild(totalNumberNode)
+basketNode!.appendChild(totalWeightNode)
+basketNode!.appendChild(subTotalNode)
 
 
 
@@ -258,11 +257,10 @@ appendChild(subTotalNode)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
 
                                     }
                                 
@@ -276,16 +274,16 @@ appendChild(subTotalNode)
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface)
+this.this.addDomNodeInterface(this as DomNodeInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.this.addDomNodeInterfaces()
 
 
 
@@ -295,11 +293,10 @@ this.addDomNodeInterface(this as DomNodeInterface)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 

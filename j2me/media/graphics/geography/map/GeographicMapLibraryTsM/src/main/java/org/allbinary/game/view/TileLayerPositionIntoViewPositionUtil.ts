@@ -57,7 +57,7 @@ export class TileLayerPositionIntoViewPositionUtil
         
         
 
-setTiledLayer(tiledLayer)
+viewPosition!.setTiledLayer(tiledLayer)
 }
 
 

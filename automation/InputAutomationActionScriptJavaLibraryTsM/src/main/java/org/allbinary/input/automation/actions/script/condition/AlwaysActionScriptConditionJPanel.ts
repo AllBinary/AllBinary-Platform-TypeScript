@@ -41,48 +41,46 @@ public constructor (alwaysActionScriptConditionInterface: AlwaysActionScriptCond
 
             super();
             var alwaysActionScriptConditionInterface = alwaysActionScriptConditionInterface
-put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 initComponents()
 this.alwaysActionScriptConditionInterface= alwaysActionScriptConditionInterface
-this.set()
+this.this.set()
 }
 
 
     set(){
 
-    
                         if(this.alwaysActionScriptConditionInterface!.isIsOn())
                         
                                     {
-                                    setSelectedIndex(0)
+                                    this.alwaysJComboBox!.setSelectedIndex(0)
 
                                     }
                                 
                         else {
-                            setSelectedIndex(1)
+                            this.alwaysJComboBox!.setSelectedIndex(1)
 
                         }
                             
-log()
+this.alwaysActionScriptConditionInterface!.log()
 }
 
 
     update(){
 
-    
                         if(this.alwaysJComboBox!.getSelectedIndex() == 0)
                         
                                     {
-                                    setIsOn(true)
+                                    this.alwaysActionScriptConditionInterface!.setIsOn(true)
 
                                     }
                                 
                         else {
-                            setIsOn(false)
+                            this.alwaysActionScriptConditionInterface!.setIsOn(false)
 
                         }
                             
-log()
+this.alwaysActionScriptConditionInterface!.log()
 }
 
 
@@ -110,10 +108,10 @@ jLabel2= javax.swing.JLabel()
 alwaysJComboBox= javax.swing.JComboBox()
 alwaysActionJButton= javax.swing.JButton()
 jLabel1= javax.swing.JLabel()
-setMinimumSize(java.awt.Dimension(250, 150))
-setText("Always Condition Options")
-setText("OK")
-addActionListener(object: java.awt.event.ActionListener()
+alwaysActionJDialog!.setMinimumSize(java.awt.Dimension(250, 150))
+titleJLabel!.setText("Always Condition Options")
+okJButton!.setText("OK")
+okJButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -123,8 +121,8 @@ okJButtonActionPerformed(evt)
 
                                 }
                             )
-setText("On:")
-setModel(javax.swing.DefaultComboBoxModel(
+jLabel2!.setText("On:")
+alwaysJComboBox!.setModel(javax.swing.DefaultComboBoxModel(
                                                 [
                                                     "true","false";
         
@@ -135,12 +133,12 @@ setModel(javax.swing.DefaultComboBoxModel(
         
         
 
-setLayout(alwaysActionJDialogLayout)
-setHorizontalGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(alwaysActionJDialogLayout!.createSequentialGroup()!.addGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(alwaysActionJDialogLayout!.createSequentialGroup()!.addGap(47, 47, 47)!.addGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, alwaysActionJDialogLayout!.createSequentialGroup()!.addComponent(jLabel2)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addComponent(alwaysJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addComponent(titleJLabel)))!.addGroup(alwaysActionJDialogLayout!.createSequentialGroup()!.addGap(79, 79, 79)!.addComponent(okJButton)))!.addContainerGap(45, Short.MAX_VALUE)))
-setVerticalGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(alwaysActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addComponent(titleJLabel)!.addGap(20, 20, 20)!.addGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(alwaysJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addComponent(jLabel2))!.addGap(15, 15, 15)!.addComponent(okJButton)!.addContainerGap()))
+alwaysActionJDialog!.getContentPane()!.setLayout(alwaysActionJDialogLayout)
+alwaysActionJDialogLayout!.setHorizontalGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(alwaysActionJDialogLayout!.createSequentialGroup()!.addGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(alwaysActionJDialogLayout!.createSequentialGroup()!.addGap(47, 47, 47)!.addGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, alwaysActionJDialogLayout!.createSequentialGroup()!.addComponent(jLabel2)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addComponent(alwaysJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addComponent(titleJLabel)))!.addGroup(alwaysActionJDialogLayout!.createSequentialGroup()!.addGap(79, 79, 79)!.addComponent(okJButton)))!.addContainerGap(45, Short.MAX_VALUE)))
+alwaysActionJDialogLayout!.setVerticalGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(alwaysActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addComponent(titleJLabel)!.addGap(20, 20, 20)!.addGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(alwaysJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addComponent(jLabel2))!.addGap(15, 15, 15)!.addComponent(okJButton)!.addContainerGap()))
 setMinimumSize(java.awt.Dimension(100, 0))
-setText("Edit")
-addActionListener(object: java.awt.event.ActionListener()
+alwaysActionJButton!.setText("Edit")
+alwaysActionJButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -150,28 +148,28 @@ alwaysActionJButtonActionPerformed(evt)
 
                                 }
                             )
-setText("Always:")
+jLabel1!.setText("Always:")
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
         
         
 
-this.setLayout(layout)
-setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)!.addComponent(alwaysActionJButton)))
-setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel1)!.addComponent(alwaysActionJButton)))
+this.this.setLayout(layout)
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)!.addComponent(alwaysActionJButton)))
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel1)!.addComponent(alwaysActionJButton)))
 }
 
 
     okJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.update()
-setVisible(false)
+this.this.update()
+this.getAlwaysActionJDialog()!.setVisible(false)
 }
 
 
     alwaysActionJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-setVisible(true)
+this.getAlwaysActionJDialog()!.setVisible(true)
 }
 
 

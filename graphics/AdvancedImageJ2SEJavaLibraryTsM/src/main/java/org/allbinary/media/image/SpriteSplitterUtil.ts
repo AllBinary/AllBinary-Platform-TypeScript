@@ -95,7 +95,7 @@ export class SpriteSplitterUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(imageProcessorInput: ImageProcessorInput, totalFrames: number, totalAnimations: number, widthReduction: number, heightReduction: number, increaseWidth: number, increaseHeight: number, spriteType: string, visitor: ImageProcessedVisitor){
     //var imageProcessorInput = imageProcessorInput
@@ -129,9 +129,8 @@ export class SpriteSplitterUtil
 index < bufferedImageArray!.length; index++)
         {
 bufferedImage= bufferedImageArray[index]!
-put(spriteType, this, commonStrings!.RUN)
+logUtil!.put(spriteType, this, commonStrings!.RUN)
 
-    
                         if(spriteType == HORIZONTAL_SPRITE)
                         
                                     {
@@ -157,8 +156,8 @@ put(spriteType, this, commonStrings!.RUN)
 
 generatedBufferedImageArray= Array(rows) { arrayOfNulls<BufferedImage?>(columns) }
                                                             
-put("Processing Individual Cells columns: " +columns +" rows: " +rows, this, commonStrings!.RUN)
-put("Processing Individual Cells cellHeight: " +cellHeight +" cellWidth: " +cellWidth, this, commonStrings!.RUN)
+logUtil!.put("Processing Individual Cells columns: " +columns +" rows: " +rows, this, commonStrings!.RUN)
+logUtil!.put("Processing Individual Cells cellHeight: " +cellHeight +" cellWidth: " +cellWidth, this, commonStrings!.RUN)
 
     var imageUtil: ImageUtil = ImageUtil.getInstance()!;
         
@@ -205,7 +204,6 @@ index3 < columns; index3++)
 x= cellWidth *index3
 generatedBufferedImageArray[index2]![index3]= bufferedImage!.getSubimage(x +widthReduction, y +heightReduction, cellWidth -(widthReduction *2), cellHeight -(heightReduction *2))
 
-    
                         if(increaseWidth != 0 || increaseHeight != 0)
                         
                                     {
@@ -215,25 +213,25 @@ generatedBufferedImageArray[index2]![index3]= bufferedImage!.getSubimage(x +widt
                                 
 nameEnding= StringMaker().
                             appendint(index2)!.append(commonSeps!.UNDERSCORE)!.appendint(index3)!.toString()
-visit(generatedBufferedImageArray[index2]![index3]!, nameEnding, index)
+visitor.visit(generatedBufferedImageArray[index2]![index3]!, nameEnding, index)
 }
 
 }
 
-put("Processing Rows from Cells", this, commonStrings!.RUN)
+logUtil!.put("Processing Rows from Cells", this, commonStrings!.RUN)
 
     var imageUnifierProperties: ImageUnifierProperties = new ImageUnifierProperties();
         
         
 
-setRows(.valueOf())
-setColumns(columns.valueOf())
+imageUnifierProperties!.setRows(.valueOf())
+imageUnifierProperties!.setColumns(columns.valueOf())
 
     var imageUnifierCell: ImageUnifierCell = new ImageUnifierCell(Integer(Integer.valueOf(cellWidth -(2 *widthReduction)))Integer(Integer.valueOf(cellHeight -(2 *heightReduction))));
         
         
 
-setImageUnifierCell(imageUnifierCell)
+imageUnifierProperties!.setImageUnifierCell(imageUnifierCell)
 
 
 
@@ -270,14 +268,13 @@ nameEnding= StringMaker().
         
         
 
-visit(generatedBufferedImage, nameEnding, index)
+visitor.visit(generatedBufferedImage, nameEnding, index)
 }
 
 
                                     }
                                 
                              else 
-    
                         if(spriteType == HORIZONTAL_ANIMATIONS)
                         
                                     {
@@ -285,7 +282,6 @@ visit(generatedBufferedImage, nameEnding, index)
                                     }
                                 
                              else 
-    
                         if(spriteType == this.DIRECTIONAL_ANIMATIONS)
                         
                                     {
@@ -316,7 +312,7 @@ visit(generatedBufferedImage, nameEnding, index)
 
 generatedBufferedImageArray= Array(rows) { arrayOfNulls<BufferedImage?>(columns) }
                                                             
-put("Processing Individual Cells for each Direction", this, commonStrings!.RUN)
+logUtil!.put("Processing Individual Cells for each Direction", this, commonStrings!.RUN)
 
     var nameEnding: string = 
                 null
@@ -358,7 +354,6 @@ index3 < columns; index3++)
 x= cellWidth *index3
 generatedBufferedImageArray[index2]![index3]= bufferedImage!.getSubimage(x +widthReduction, y +heightReduction, cellWidth -(widthReduction *2), cellHeight -(heightReduction *2))
 
-    
                         if(increaseWidth != 0 || increaseHeight != 0)
                         
                                     {
@@ -368,7 +363,7 @@ generatedBufferedImageArray[index2]![index3]= bufferedImage!.getSubimage(x +widt
                                 
 nameEnding= StringMaker().
                             append(this.commonStrings!.DIRECTION_NAME[index2]!)!.append(commonSeps!.UNDERSCORE)!.appendint(index3)!.toString()
-visit(generatedBufferedImageArray[index2]![index3]!, nameEnding, index)
+visitor.visit(generatedBufferedImageArray[index2]![index3]!, nameEnding, index)
 }
 
 }
@@ -378,15 +373,15 @@ visit(generatedBufferedImageArray[index2]![index3]!, nameEnding, index)
         
         
 
-setRows(.valueOf())
-setColumns(columns.valueOf())
+imageUnifierProperties!.setRows(.valueOf())
+imageUnifierProperties!.setColumns(columns.valueOf())
 
     var imageUnifierCell: ImageUnifierCell = new ImageUnifierCell(Integer(Integer.valueOf(cellWidth -(2 *widthReduction))) +increaseWidth, Integer(Integer.valueOf(cellHeight -(2 *heightReduction) +increaseHeight)));
         
         
 
-setImageUnifierCell(imageUnifierCell)
-put("Processing Rows from Cells for each Direction", this, commonStrings!.RUN)
+imageUnifierProperties!.setImageUnifierCell(imageUnifierCell)
+logUtil!.put("Processing Rows from Cells for each Direction", this, commonStrings!.RUN)
 
 
 
@@ -423,7 +418,7 @@ nameEnding= StringMaker().
         
         
 
-visit(generatedBufferedImage, nameEnding, index)
+visitor.visit(generatedBufferedImage, nameEnding, index)
 }
 
 

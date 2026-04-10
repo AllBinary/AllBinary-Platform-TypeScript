@@ -62,7 +62,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(geographicMapInterface: BasicGeographicMap, graphArray: IntArray[]): PathFindingInfo{
     //var geographicMapInterface = geographicMapInterface
@@ -72,14 +72,14 @@ private constructor (){
         
         
 
-put(commonStrings!.START, this, commonStrings!.GET_INSTANCE)
+PreLogUtil.put(commonStrings!.START, this, commonStrings!.GET_INSTANCE)
 
     var pathFindingInfo: PathFindingInfo = new PathFindingInfo(PathFindingNodeCostInfoFactoryBase());
         
         
 
-init()
-this.init(geographicMapInterface, pathFindingInfo, graphArray)
+RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance()!.init()
+this.this.init(geographicMapInterface, pathFindingInfo, graphArray)
 
 
 

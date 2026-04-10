@@ -55,8 +55,8 @@ this.profileActionScriptConditionInterface= profileActionScriptConditionInterfac
     initComponents(){
 removeJButton= javax.swing.JButton()
 setLayout(java.awt.GridLayout())
-setText("Remove")
-addActionListener(object: java.awt.event.ActionListener()
+removeJButton!.setText("Remove")
+removeJButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -78,13 +78,12 @@ var evt = evt
         
 
 
-    
                         if(genericProfileAction == 
                                     null
                                 )
                         
                                     {
-                                    put("GenericProfileAction was null", this, "removeJButtonActionPerformed")
+                                    logUtil!.put("GenericProfileAction was null", this, "removeJButtonActionPerformed")
 
 
 
@@ -94,8 +93,8 @@ var evt = evt
 
                                     }
                                 
-removeCondition(this.profileActionScriptConditionInterface)
-updateProfileActionUI()
+genericProfileAction!.getGenericProfileActionScript()!.removeCondition(this.profileActionScriptConditionInterface)
+this.genericProfileActionJPanel!.updateProfileActionUI()
 }
 
 

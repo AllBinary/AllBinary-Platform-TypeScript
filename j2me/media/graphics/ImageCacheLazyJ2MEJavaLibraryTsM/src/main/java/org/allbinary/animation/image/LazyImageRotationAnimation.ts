@@ -114,7 +114,7 @@ this.animationInterfaceFactoryInterface= animationInterfaceFactoryInterface
         
         
 
-add(this)
+imageCache!.add(this)
 this.scaleProperties= scaleProperties
 this.NULL_INDEX_ANIMATION= NullRotationAnimationFactory.getFactoryInstance()!.getInstance(0) as IndexedAnimation
 this.animation= object: RotationAnimation(animationBehavior)
@@ -142,11 +142,11 @@ this.index= index
     //var y = y
 
         try {
-            insertFirst(this@LazyImageRotationAnimation)
+            ImageCacheFactory.getInstance()!.insertFirst(this@LazyImageRotationAnimation)
 animation= NULL_INDEX_ANIMATION
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
 }
 
 }
@@ -158,11 +158,11 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
     //var z = z
 
         try {
-            insertFirst(this@LazyImageRotationAnimation)
+            ImageCacheFactory.getInstance()!.insertFirst(this@LazyImageRotationAnimation)
 animation= NULL_INDEX_ANIMATION
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
 }
 
 }
@@ -180,12 +180,12 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
         
         
 
-setInitialScale(scaleProperties)
+this.animationInterfaceFactoryInterface!.setInitialScale(scaleProperties)
 this.animation= this.animationInterfaceFactoryInterface!.getInstance(this.instanceId) as IndexedAnimation
-setState(animation)
+this.animation.setState(animation)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, SET_REAL_ANIMATION, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, SET_REAL_ANIMATION, e)
 }
 
 }
@@ -194,7 +194,7 @@ put(commonStrings!.EXCEPTION, this, SET_REAL_ANIMATION, e)
     public setScale(scaleX: number, scaleY: number){
     //var scaleX = scaleX
     //var scaleY = scaleY
-setScale(scaleX, scaleY)
+this.animation.setScale(scaleX, scaleY)
 }
 
 
@@ -208,72 +208,84 @@ setScale(scaleX, scaleY)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public set(gl: GL){
     //var gl = gl
-set(gl)
+this.animation.set(gl)
 }
 
 
     public setAlpha(alpha: number){
     //var alpha = alpha
-setAlpha(alpha)
+this.animation.setAlpha(alpha)
 }
 
 
     public setDx(dx: number){
     //var dx = dx
-setDx(dx)
+this.animation.setDx(dx)
 }
 
 
     public setDy(dy: number){
     //var dy = dy
-setDy(dy)
+this.animation.setDy(dy)
 }
 
 
     public setMaxScale(maxScaleX: number, maxScaleY: number){
     //var maxScaleX = maxScaleX
     //var maxScaleY = maxScaleY
-setMaxScale(maxScaleX, maxScaleY)
+this.animation.setMaxScale(maxScaleX, maxScaleY)
 }
 
 
     public nextRotation(){
-nextRotation()
+animation = this.animationanimation as RotationAnimation
+animation.
+                    nextRotation()
 }
 
 
     public previousRotation(){
-previousRotation()
+animation = this.animationanimation as RotationAnimation
+animation.
+                    previousRotation()
 }
 
 
     public nextRotationX(){
-nextRotationX()
+animation = this.animationanimation as RotationAnimation
+animation.
+                    nextRotationX()
 }
 
 
     public previousRotationX(){
-previousRotationX()
+animation = this.animationanimation as RotationAnimation
+animation.
+                    previousRotationX()
 }
 
 
     public nextRotationZ(){
-nextRotationZ()
+animation = this.animationanimation as RotationAnimation
+animation.
+                    nextRotationZ()
 }
 
 
     public previousRotationZ(){
-previousRotationZ()
+animation = this.animationanimation as RotationAnimation
+animation.
+                    previousRotationZ()
 }
 
 
     public changeBasicColor(basicColor: BasicColor){
     //var basicColor = basicColor
-changeBasicColor(basicColor)
+this.animation.changeBasicColor(basicColor)
 }
 
 
@@ -347,21 +359,21 @@ changeBasicColor(basicColor)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public nextFrame(){
-nextFrame()
+this.animation.nextFrame()
 }
 
 
     public reset(){
-reset()
+this.animation.reset()
 }
 
 
     public setFrame(index: number){
     //var index = index
-setFrame(index)
+this.animation.setFrame(index)
 }
 
 
@@ -375,7 +387,7 @@ setFrame(index)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAnimationSize(): number{
 
@@ -398,7 +410,7 @@ setFrame(index)
 
 
     public previousFrame(){
-previousFrame()
+this.animation.previousFrame()
 }
 
 
@@ -414,7 +426,7 @@ previousFrame()
 
     public setSequence(sequence: IntArray){
     //var sequence = sequence
-setSequence(sequence)
+this.animation.setSequence(sequence)
 }
 
 
@@ -444,10 +456,10 @@ setSequence(sequence)
     //var y = y
 
         try {
-            paint(graphics, x, y)
+            this.animation.paint(graphics, x, y)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e)
 }
 
 }
@@ -460,10 +472,10 @@ put(commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e)
     //var z = z
 
         try {
-            paintThreed(graphics, x, y, z)
+            this.animation.paintThreed(graphics, x, y, z)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e)
 }
 
 }

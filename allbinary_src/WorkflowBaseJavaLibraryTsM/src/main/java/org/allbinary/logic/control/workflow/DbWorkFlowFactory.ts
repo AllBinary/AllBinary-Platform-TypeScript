@@ -68,7 +68,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class, LicensingException::class)
+                //@Throws(Error::class, LicensingException::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<Any, Any>): WorkFlowInterface{
     //var abeClientInformation = abeClientInformation
@@ -106,7 +106,6 @@ params[0]= hashMap as Object
 } catch(e: LicensingException)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
@@ -115,7 +114,7 @@ params[0]= hashMap as Object
         
         
 
-put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e)
 
                                     }
                                 
@@ -127,7 +126,6 @@ put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e)
  catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
@@ -136,7 +134,7 @@ put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e)
         
         
 
-put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e)
 
                                     }
                                 

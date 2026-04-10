@@ -66,7 +66,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -92,7 +92,7 @@ var document = document
         
         
 
-appendChild(totalNumberTextNode)
+totalNumberNode!.appendChild(totalNumberTextNode)
 
     var totalWeightNode: Node = document.createElement(BasketData.TOTALWEIGHT)!;
         
@@ -103,7 +103,7 @@ appendChild(totalNumberTextNode)
         
         
 
-appendChild(totalWeightTextNode)
+totalWeightNode!.appendChild(totalWeightTextNode)
 
     var subTotalNode: Node = document.createElement(BasketData.SUBTOTAL)!;
         
@@ -114,10 +114,10 @@ appendChild(totalWeightTextNode)
         
         
 
-appendChild(subTotalTextNode)
-appendChild(totalNumberNode)
-appendChild(totalWeightNode)
-appendChild(subTotalNode)
+subTotalNode!.appendChild(subTotalTextNode)
+basketNode!.appendChild(totalNumberNode)
+basketNode!.appendChild(totalWeightNode)
+basketNode!.appendChild(subTotalNode)
 
 
 
@@ -127,11 +127,10 @@ appendChild(subTotalNode)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
 
                                     }
                                 
@@ -145,16 +144,16 @@ appendChild(subTotalNode)
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface)
+this.this.addDomNodeInterface(this as DomNodeInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.this.addDomNodeInterfaces()
 
 
 
@@ -164,11 +163,10 @@ this.addDomNodeInterface(this as DomNodeInterface)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 

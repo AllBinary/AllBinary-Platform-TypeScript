@@ -34,7 +34,6 @@ export class DragVelocityBehavior extends VelocityBehaviorBase {
     //var nominator = nominator
     //var denominator = denominator
 
-    
                         if(velocityProperties!.getVelocityXBasicDecimalP()!.getUnscaled() != 0L)
                         
                                     {
@@ -43,13 +42,12 @@ export class DragVelocityBehavior extends VelocityBehaviorBase {
         
         
 
-multiply(nominator)
-divide(denominator)
+basicDecimal!.multiply(nominator)
+basicDecimal!.divide(denominator)
 
                                     }
                                 
 
-    
                         if(velocityProperties!.getVelocityYBasicDecimalP()!.getUnscaled() != 0L)
                         
                                     {
@@ -58,8 +56,8 @@ divide(denominator)
         
         
 
-multiply(nominator)
-divide(denominator)
+basicDecimal!.multiply(nominator)
+basicDecimal!.divide(denominator)
 
                                     }
                                 
@@ -76,12 +74,11 @@ divide(denominator)
         
 
 
-    
                         if(basicDecimal!.getUnscaled() != 0L)
                         
                                     {
-                                    multiply(nominator)
-divide(denominator)
+                                    basicDecimal!.multiply(nominator)
+basicDecimal!.divide(denominator)
 
                                     }
                                 
@@ -93,7 +90,6 @@ divide(denominator)
     //var nominator = nominator
     //var denominator = denominator
 
-    
                         if(velocityProperties!.getVelocityYBasicDecimalP()!.getUnscaled() != 0L)
                         
                                     {
@@ -102,8 +98,8 @@ divide(denominator)
         
         
 
-multiply(nominator)
-divide(denominator)
+basicDecimal!.multiply(nominator)
+basicDecimal!.divide(denominator)
 
                                     }
                                 

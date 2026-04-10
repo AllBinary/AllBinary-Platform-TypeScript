@@ -36,7 +36,7 @@ export class ItemPaintableFactory extends ItemPaintable {
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(paintableForm: PaintableForm): ItemPaintable{
 var paintableForm = paintableForm

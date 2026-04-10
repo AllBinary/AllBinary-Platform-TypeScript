@@ -39,25 +39,25 @@ interface GeographicMapInterface {
 
     getAllBinaryTiledLayer(): AllBinaryTiledLayer
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getCellPositionsAt(layer: Layer, currentCellPositionArray: GeographicMapCellPosition[][], cellPositionArray: GeographicMapCellPosition[][]): boolean
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getCellPositionAt(x: number, y: number): GeographicMapCellPosition
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getCellPositionAtNoThrow(x: number, y: number): GeographicMapCellPosition
 
     getCellTypeFromMapCellTypeInt(cellTypeId: number): number
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getCellTypeAt(x: number, y: number): GeographicMapCellType
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getCellTypeAt(geographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellType
 

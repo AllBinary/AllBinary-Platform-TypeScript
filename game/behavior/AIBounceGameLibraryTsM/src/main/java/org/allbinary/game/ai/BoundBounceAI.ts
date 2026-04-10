@@ -75,15 +75,15 @@ var graphics = graphics
         
         
 
-drawRect(rectange.getPoint()!.getX(), rectange.getPoint()!.getY(), rectange.getWidth(), rectange.getHeight())
+graphics.drawRect(rectange.getPoint()!.getX(), rectange.getPoint()!.getY(), rectange.getWidth(), rectange.getHeight())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
-visit(this.boundsVisitorInterface)
+this.layerBounds!.visit(this.boundsVisitorInterface)
 }
 
 

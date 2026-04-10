@@ -115,7 +115,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getFirstNonRoadAdjacentCellPosition(column: number, row: number): GeographicMapCellPosition{
     //var column = column
@@ -164,7 +164,6 @@ surroundingCellPositions[3]= geographicMapCellPositionFactory!.getInstance(colum
 geographicMapCellPosition= surroundingCellPositions[index]!
 raceTrackGeographicMapCellType= raceTrackGeographicMap!.getCellTypeAt(geographicMapCellPosition) as RaceTrackGeographicMapCellType
 
-    
                         if(!raceTrackGeographicMapCellTypeFactory!.isPath(raceTrackGeographicMapCellType))
                         
                                     {
@@ -190,13 +189,13 @@ break;
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
     //var geographicMapInterface = geographicMapInterface
-put(AllBinaryGameLayerManager.ID, allBinaryGameLayerManager)
-update(allBinaryGameLayerManager, geographicMapInterface)
+hashtable.put(AllBinaryGameLayerManager.ID, allBinaryGameLayerManager)
+super.update(allBinaryGameLayerManager, geographicMapInterface)
 }
 
 
@@ -204,7 +203,7 @@ update(allBinaryGameLayerManager, geographicMapInterface)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     drop(allBinaryLayerManager: AllBinaryLayerManager, index: number){
     //var allBinaryLayerManager = allBinaryLayerManager
@@ -220,7 +219,6 @@ update(allBinaryGameLayerManager, geographicMapInterface)
         
 
 
-    
                         if(randomGeographicMapCellPosition == 
                                     null
                                 )
@@ -241,7 +239,6 @@ update(allBinaryGameLayerManager, geographicMapInterface)
         
 
 
-    
                         if(!dropCellPositionHistory!.isCellPositionWithDrop(geographicMapCellPosition))
                         
                                     {
@@ -256,7 +253,6 @@ update(allBinaryGameLayerManager, geographicMapInterface)
         
 
 
-    
                         if(objectCanBeNull != 
                                     null
                                 )
@@ -266,11 +262,11 @@ update(allBinaryGameLayerManager, geographicMapInterface)
                                     }
                                 
                         else {
-                            put(Group.ID, BasicGroupFactory.getInstance()!.NONE_ARRAY)
+                            this.hashtable.put(Group.ID, BasicGroupFactory.getInstance()!.NONE_ARRAY)
 
                         }
                             
-put(DirectionFactory.getInstance()!.NAME, direction)
+this.hashtable.put(DirectionFactory.getInstance()!.NAME, direction)
 
     var point: GPoint = randomGeographicMapCellPosition!.getPoint()!;
         
@@ -307,7 +303,6 @@ put(DirectionFactory.getInstance()!.NAME, direction)
         
 
 
-    
                         if(dropCellPositionHistory!.anyCellPositionWithDrop(list))
                         
                                     {
@@ -335,7 +330,6 @@ put(DirectionFactory.getInstance()!.NAME, direction)
         {
 geographicMapCellType= this.raceTrackGeographicMap!.getCellTypeAt(list.get(index2) as GeographicMapCellPosition)
 
-    
                         if(raceTrackGeographicMapCellTypeFactory!.isPath(geographicMapCellType))
                         
                                     {
@@ -350,8 +344,8 @@ geographicMapCellType= this.raceTrackGeographicMap!.getCellTypeAt(list.get(index
                                 
 }
 
-add(list, layerInterface)
-append(layerInterface)
+dropCellPositionHistory!.add(list, layerInterface)
+allBinaryLayerManager!.append(layerInterface)
 
                                     }
                                 

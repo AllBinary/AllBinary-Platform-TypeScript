@@ -61,22 +61,22 @@ var motionRectangleConstraintsInterface = motionRectangleConstraintsInterface
 
                             //For kotlin this is before the body of the constructor.
                     
-put("BasicTestAttackWorder", this, this.commonStrings!.CONSTRUCTOR)
+logUtil!.put("BasicTestAttackWorder", this, this.commonStrings!.CONSTRUCTOR)
 this.sleep= sleep
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processBetweenWorkers(){
-sleep(2000)
+Thread.sleep(2000)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
-put(this.commonStrings!.START, this, commonStrings!.PROCESS)
+logUtil!.put(this.commonStrings!.START, this, commonStrings!.PROCESS)
 
     var hashtable: Hashtable<Any, Any> = InputRobotFactory.getInstance()!.get()!;
         
@@ -119,11 +119,10 @@ index < size; index++)
         
 
 
-    
                         if(this.sleep > 0)
                         
                                     {
-                                    sleep(this.sleep)
+                                    Thread.sleep(this.sleep)
 
                                     }
                                 

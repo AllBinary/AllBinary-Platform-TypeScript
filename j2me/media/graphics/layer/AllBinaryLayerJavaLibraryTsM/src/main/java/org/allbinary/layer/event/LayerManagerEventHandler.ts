@@ -66,11 +66,10 @@ private constructor (){
     public addListener(layerManagerEventListener: LayerManagerEventListener){
     //var layerManagerEventListener = layerManagerEventListener
 
-    
                         if(!list.contains(layerManagerEventListener))
                         
                                     {
-                                    add(layerManagerEventListener)
+                                    list.add(layerManagerEventListener)
 
                                     }
                                 
@@ -78,19 +77,19 @@ private constructor (){
 
 
     public removeAllListeners(){
-clear()
-removeAllListeners()
+this.list.clear()
+super.removeAllListeners()
 }
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
-remove(eventListenerInterface)
-removeListener(eventListenerInterface)
+this.list.remove(eventListenerInterface)
+super.removeListener(eventListenerInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fireEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
@@ -111,15 +110,15 @@ removeListener(eventListenerInterface)
         
         
 
-onCreateLayerManagerEvent(eventObject as LayerManagerEvent)
+layerManagerEventListener!.onCreateLayerManagerEvent(eventObject as LayerManagerEvent)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
 }
 
 }
 
-fireEvent(eventObject)
+super.fireEvent(eventObject)
 }
 
 
@@ -131,7 +130,7 @@ fireEvent(eventObject)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public fireDeleteEvent(eventObject: AllBinaryEventObject){
@@ -153,10 +152,10 @@ fireEvent(eventObject)
         
         
 
-onDeleteLayerManagerEvent(eventObject as LayerManagerEvent)
+layerManagerEventListener!.onDeleteLayerManagerEvent(eventObject as LayerManagerEvent)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
 }
 
 }
@@ -184,10 +183,10 @@ put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
         try {
             eventListenerInterface= eventListenerInterfaceList!.objectArray[index]! as EventListenerInterface
 layerManagerEventListenerInterface= (eventListenerInterface as LayerManagerEventListenerInterface)
-onDeleteLayerManagerEvent(eventObject as LayerManagerEvent)
+layerManagerEventListenerInterface!.onDeleteLayerManagerEvent(eventObject as LayerManagerEvent)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
 }
 
 index++
@@ -196,7 +195,7 @@ index++
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject
@@ -206,7 +205,7 @@ index++
         
         
 
-onCreateLayerManagerEvent(eventObject as LayerManagerEvent)
+layerManagerEventListenerInterface!.onCreateLayerManagerEvent(eventObject as LayerManagerEvent)
 }
 
 

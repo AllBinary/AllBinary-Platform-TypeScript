@@ -42,7 +42,7 @@ export class ImageActionScriptOutputProcessor
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static process(imageActionScriptOutputInterface: ImageActionScriptOutputInterface, frame: Long){
     //var imageActionScriptOutputInterface = imageActionScriptOutputInterface
@@ -57,7 +57,7 @@ export class ImageActionScriptOutputProcessor
         
         
 
-put("Start - Processing at: " +imageActionScriptOutputInterface!.toString(), "ImageActionScriptOutputProcessor", commonStrings!.PROCESS)
+logUtil!.put("Start - Processing at: " +imageActionScriptOutputInterface!.toString(), "ImageActionScriptOutputProcessor", commonStrings!.PROCESS)
 
     var imageTypes: ImageTypes = imageActionScriptOutputInterface!.getImageTypes()!;
         
@@ -93,7 +93,7 @@ index < size; index++)
         
         
 
-save(frame)
+imageIOInterface!.save(frame)
 }
 
 }

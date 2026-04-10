@@ -48,7 +48,7 @@ public constructor ()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, startIndex: number){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -65,7 +65,6 @@ var startIndex = startIndex
         
 
 
-    
                         if(collidableBase!.isCollidable())
                         
                                     {
@@ -98,12 +97,11 @@ index < size; index++)
 collidableInterfaceCompositeInterface2= layerManager!.getLayerAt(index) as CollidableCompositeLayer
 collidableBase2= collidableInterfaceCompositeInterface2!.getCollidableInferface()
 
-    
                         if(collidableBase2!.isCollidable() && collidableBase!.isCollision(collidableInterfaceCompositeInterface2))
                         
                                     {
-                                    collide(collidableInterfaceCompositeInterface2)
-collide(collidableInterfaceCompositeInterface)
+                                    collidableBase!.collide(collidableInterfaceCompositeInterface2)
+collidableBase2!.collide(collidableInterfaceCompositeInterface)
 
                                     }
                                 
@@ -118,7 +116,6 @@ collide(collidableInterfaceCompositeInterface)
     public isProcessorLayer(layerInterface: AllBinaryLayer): boolean{
 var layerInterface = layerInterface
 
-    
                         if(layerInterface!.implmentsCollidableInterface())
                         
                                     {

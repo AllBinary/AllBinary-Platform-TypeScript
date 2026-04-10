@@ -101,7 +101,7 @@ var node = node
 
                             //For kotlin this is before the body of the constructor.
                     
-this.init()
+this.this.init()
 
     var nodeList: NodeList = node.getChildNodes()!;
         
@@ -123,34 +123,30 @@ index < nodeList!.getLength(); index++)
         
 
 
-    
                         if(actionItemNode!.getNodeType() == Node.ELEMENT_NODE)
                         
                                     {
                                     
-    
                         if(actionItemNode!.getNodeName()!.compareTo(GenericProfileActionScriptConditionData.NAME) == 0)
                         
                                     {
-                                    this.addCondition(ProfileActionScriptConditionFactory.getInstance(actionItemNode))
+                                    this.this.addCondition(ProfileActionScriptConditionFactory.getInstance(actionItemNode))
 
                                     }
                                 
                              else 
-    
                         if(actionItemNode!.getNodeName()!.compareTo(GenericProfileActionScriptInputData.NAME) == 0)
                         
                                     {
-                                    this.addProcessor(ProfileActionScriptInputFactory.getInstance(actionItemNode))
+                                    this.this.addProcessor(ProfileActionScriptInputFactory.getInstance(actionItemNode))
 
                                     }
                                 
                              else 
-    
                         if(actionItemNode!.getNodeName()!.compareTo(GenericProfileActionScriptOutputData.NAME) == 0)
                         
                                     {
-                                    this.addProcessor(ProfileActionScriptOutputFactory.getInstance(actionItemNode))
+                                    this.this.addProcessor(ProfileActionScriptOutputFactory.getInstance(actionItemNode))
 
                                     }
                                 
@@ -162,7 +158,7 @@ index < nodeList!.getLength(); index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public addProcessorNodes(node: Node){
 var node = node
@@ -187,20 +183,18 @@ index < nodeList!.getLength(); index++)
         
 
 
-    
                         if(processorActionItemNode!.getNodeName()!.compareTo(GenericProfileActionScriptInputData.NAME) == 0)
                         
                                     {
-                                    this.addProcessor(ProfileActionScriptInputFactory.getInstance(processorActionItemNode))
+                                    this.this.addProcessor(ProfileActionScriptInputFactory.getInstance(processorActionItemNode))
 
                                     }
                                 
                              else 
-    
                         if(processorActionItemNode!.getNodeName()!.compareTo(GenericProfileActionScriptOutputData.NAME) == 0)
                         
                                     {
-                                    this.addProcessor(ProfileActionScriptOutputFactory.getInstance(processorActionItemNode))
+                                    this.this.addProcessor(ProfileActionScriptOutputFactory.getInstance(processorActionItemNode))
 
                                     }
                                 
@@ -218,16 +212,16 @@ public constructor (label: string)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.init()
+this.this.init()
 }
 
 
     init(){
-this.setProfileActionProcessorInterfaceVector(Vector())
-this.setProfileActionConditionInterfaceVector(Vector())
-add(this.getConditionJPopupMenu())
-add(this.getInputJPopupMenu())
-add(this.getOutputJPopupMenu())
+this.this.setProfileActionProcessorInterfaceVector(Vector())
+this.this.setProfileActionConditionInterfaceVector(Vector())
+this.getJPopupMenu()!.add(this.getConditionJPopupMenu())
+this.getJPopupMenu()!.add(this.getInputJPopupMenu())
+this.getJPopupMenu()!.add(this.getOutputJPopupMenu())
 }
 
 
@@ -252,12 +246,12 @@ add(this.getOutputJPopupMenu())
         
         
 
-addActionListener(this)
-addActionListener(this)
-addActionListener(this)
-add(jMenuItemColorAt)
-add(jMenuItemAlways)
-add(jMenuItemTimeInterval)
+jMenuItemColorAt!.addActionListener(this)
+jMenuItemAlways!.addActionListener(this)
+jMenuItemTimeInterval!.addActionListener(this)
+jMenu!.add(jMenuItemColorAt)
+jMenu!.add(jMenuItemAlways)
+jMenu!.add(jMenuItemTimeInterval)
 
 
 
@@ -288,12 +282,12 @@ add(jMenuItemTimeInterval)
         
         
 
-addActionListener(this)
-addActionListener(this)
-addActionListener(this)
-add(jMenuItemKey)
-add(jMenuItemMouse)
-add(jMenuItemJoystick)
+jMenuItemKey!.addActionListener(this)
+jMenuItemMouse!.addActionListener(this)
+jMenuItemJoystick!.addActionListener(this)
+jMenu!.add(jMenuItemKey)
+jMenu!.add(jMenuItemMouse)
+jMenu!.add(jMenuItemJoystick)
 
 
 
@@ -314,8 +308,8 @@ add(jMenuItemJoystick)
         
         
 
-addActionListener(this)
-add(jMenuItemImage)
+jMenuItemImage!.addActionListener(this)
+jMenu!.add(jMenuItemImage)
 
 
 
@@ -327,37 +321,37 @@ add(jMenuItemImage)
 
     public addProcessor(profileActionProcessorInterface: ProfileActionScriptProcessorInterface){
 var profileActionProcessorInterface = profileActionProcessorInterface
-put(this.commonStrings!.START, this, "addInput")
-add(profileActionProcessorInterface)
-this.add(profileActionProcessorInterface)
+logUtil!.put(this.commonStrings!.START, this, "addInput")
+this.getProfileActionProcessorInterfaceVector()!.add(profileActionProcessorInterface)
+this.this.add(profileActionProcessorInterface)
 }
 
 
     public removeProcessor(profileActionProcessorInterface: ProfileActionScriptProcessorInterface){
 var profileActionProcessorInterface = profileActionProcessorInterface
-put(this.commonStrings!.START, this, "removeInput")
-remove(profileActionProcessorInterface)
-this.remove(profileActionProcessorInterface)
+logUtil!.put(this.commonStrings!.START, this, "removeInput")
+this.getProfileActionProcessorInterfaceVector()!.remove(profileActionProcessorInterface)
+this.this.remove(profileActionProcessorInterface)
 }
 
 
     public removeCondition(profileActionScriptNodeInterface: ProfileActionScriptNodeInterface){
 var profileActionScriptNodeInterface = profileActionScriptNodeInterface
-put(this.commonStrings!.START, this, "removeCondition")
-remove(profileActionScriptNodeInterface)
-this.remove(profileActionScriptNodeInterface)
+logUtil!.put(this.commonStrings!.START, this, "removeCondition")
+this.getProfileActionConditionInterfaceVector()!.remove(profileActionScriptNodeInterface)
+this.this.remove(profileActionScriptNodeInterface)
 }
 
 
     public addCondition(profileActionScriptNodeInterface: ProfileActionScriptNodeInterface){
 var profileActionScriptNodeInterface = profileActionScriptNodeInterface
-put(this.commonStrings!.START, this, "addCondition")
-add(profileActionScriptNodeInterface)
-this.add(profileActionScriptNodeInterface)
+logUtil!.put(this.commonStrings!.START, this, "addCondition")
+this.getProfileActionConditionInterfaceVector()!.add(profileActionScriptNodeInterface)
+this.this.add(profileActionScriptNodeInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -391,7 +385,7 @@ index < size; index++)
         
         
 
-appendChild(profileActionConditionInterface!.toXmlNode(document))
+node.appendChild(profileActionConditionInterface!.toXmlNode(document))
 }
 
 
@@ -419,7 +413,7 @@ index < size2; index++)
         
         
 
-appendChild(profileActionProcessorInterface!.toXmlNode(document))
+node.appendChild(profileActionProcessorInterface!.toXmlNode(document))
 }
 
 
@@ -451,14 +445,12 @@ this.profileActionConditionInterfaceVector= profileActionConditionInterfaceVecto
 var actionEvent = actionEvent
 
         try {
-            actionPerformed(actionEvent)
+            super.actionPerformed(actionEvent)
 
-    
                         if(actionEvent!.getActionCommand()!.compareTo(DELETE) == 0)
                         
                                     {
                                     
-    
                         if(this.getParent() is ProfileActionScriptNodeInterface)
                         
                                     {
@@ -467,8 +459,8 @@ var actionEvent = actionEvent
         
         
 
-removeCondition(this)
-updateJTree()
+profileActionScriptNodeInterface!.removeCondition(this)
+JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.updateJTree()
 
                                     }
                                 
@@ -476,68 +468,62 @@ updateJTree()
                                     }
                                 
                              else 
-    
                         if(actionEvent!.getActionCommand()!.compareTo(NEW_COLOR_AT) == 0)
                         
                                     {
-                                    this.addCondition(ColorAtActionScriptCondition())
-this.updateTree()
+                                    this.this.addCondition(ColorAtActionScriptCondition())
+this.this.updateTree()
 
                                     }
                                 
                              else 
-    
                         if(actionEvent!.getActionCommand()!.compareTo(NEW_ALWAYS) == 0)
                         
                                     {
-                                    this.addCondition(AlwaysActionScriptCondition())
-this.updateTree()
+                                    this.this.addCondition(AlwaysActionScriptCondition())
+this.this.updateTree()
 
                                     }
                                 
                              else 
-    
                         if(actionEvent!.getActionCommand()!.compareTo(NEW_TIME_INTERVAL) == 0)
                         
                                     {
-                                    this.addCondition(TimeIntervalActionScriptCondition())
-this.updateTree()
+                                    this.this.addCondition(TimeIntervalActionScriptCondition())
+this.this.updateTree()
 
                                     }
                                 
                              else 
-    
                         if(actionEvent!.getActionCommand()!.compareTo(NEW_KEY_INPUT) == 0)
                         
                                     {
-                                    this.addProcessor(KeyboardActionScriptInput())
-this.updateTree()
+                                    this.this.addProcessor(KeyboardActionScriptInput())
+this.this.updateTree()
 
                                     }
                                 
                              else 
-    
                         if(actionEvent!.getActionCommand()!.compareTo(NEW_MOUSE_INPUT) == 0)
                         
                                     {
-                                    this.addProcessor(MouseActionScriptInput())
-this.updateTree()
+                                    this.this.addProcessor(MouseActionScriptInput())
+this.this.updateTree()
 
                                     }
                                 
                              else 
-    
                         if(actionEvent!.getActionCommand()!.compareTo(NEW_IMAGE_OUTPUT) == 0)
                         
                                     {
-                                    this.addProcessor(ImageActionScriptOutput())
-this.updateTree()
+                                    this.this.addProcessor(ImageActionScriptOutput())
+this.this.updateTree()
 
                                     }
                                 
 } catch(e: Exception)
             {
-put("Error", this, "actionPerformed", e)
+logUtil!.put("Error", this, "actionPerformed", e)
 }
 
 }
@@ -560,17 +546,17 @@ this.profileActionProcessorInterfaceVector= profileActionProcessorInterfaceVecto
 
 
     updateTree(){
-updateJTree()
+JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.updateJTree()
 
     var treePath: TreePath = new TreePath(this);
         
         
 
-expandPath(treePath)
+JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.getActionScriptJTree()!.expandPath(treePath)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public shouldProcess(frame: Long): boolean{
 var frame = frame
@@ -600,7 +586,6 @@ index < size; index++)
         
 
 
-    
                         if(!profileActionScriptConditionInterface!.shouldProcess(frame))
                         
                                     {
@@ -624,11 +609,11 @@ index < size; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(frame: Long){
 var frame = frame
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Start - Processing ")!.appendint(this.getProfileActionProcessorInterfaceVector()!.size())!.append(" inputs")!.toString(), this, commonStrings!.PROCESS)
 
     var profileActionProcessorInterfaceVector: Vector = this.getProfileActionProcessorInterfaceVector()!;
@@ -655,7 +640,7 @@ index < size; index++)
         
         
 
-process(frame)
+profileActionScriptProcessorInterface!.process(frame)
 }
 
 }

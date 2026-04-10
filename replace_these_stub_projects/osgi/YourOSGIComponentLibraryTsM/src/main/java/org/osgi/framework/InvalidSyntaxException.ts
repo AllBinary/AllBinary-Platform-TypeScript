@@ -5,7 +5,7 @@
 
 
 
-export class InvalidSyntaxException extends Exception {
+export class InvalidSyntaxException extends Error {
         
 
 }

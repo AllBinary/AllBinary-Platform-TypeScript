@@ -74,7 +74,6 @@ public constructor (node: Node)
         
 
 
-    
                         if(actionNode != 
                                     null
                                 )
@@ -101,7 +100,6 @@ index < nodeList!.getLength(); index++)
         
 
 
-    
                         if(childNode!.getNodeName()!.compareTo(AlwaysActionScriptConditionData.IS_ON) == 0)
                         
                                     {
@@ -110,7 +108,7 @@ index < nodeList!.getLength(); index++)
         
         
 
-this.setIsOn(.
+this.this.setIsOn(.
                             )
 
                                     }
@@ -119,7 +117,7 @@ this.setIsOn(.
                             
 
 
-                            throw Exception("Action Script Condition Unknown Node")
+                            throw Error("Action Script Condition Unknown Node")
 
                         }
                             
@@ -132,11 +130,11 @@ this.setIsOn(.
                             
 
 
-                            throw Exception("Action Script Condition Node Null")
+                            throw Error("Action Script Condition Node Null")
 
                         }
                             
-this.init()
+this.this.init()
 }
 
 public constructor ()                        
@@ -148,7 +146,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.init()
+this.this.init()
 }
 
 
@@ -174,7 +172,7 @@ this.isOn= isOn
 
 
     public showDialog(){
-setVisible(true)
+this.alwaysActionScriptConditionJPanel!.getAlwaysActionJDialog()!.setVisible(true)
 }
 
 
@@ -184,8 +182,8 @@ setVisible(true)
         
         
 
-put(AlwaysActionScriptConditionData.IS_ON, Boolean.toString(this.isIsOn()))
-put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
+hashMap!.put(AlwaysActionScriptConditionData.IS_ON, Boolean.toString(this.isIsOn()))
+logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
 
 
 
@@ -195,7 +193,7 @@ put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -204,7 +202,7 @@ var document = document
         
         
 
-appendChild(ModDomHelper.createNodeWithValueNodes(document, AlwaysActionScriptConditionData.NAME, this.toHashMap()))
+node.appendChild(ModDomHelper.createNodeWithValueNodes(document, AlwaysActionScriptConditionData.NAME, this.toHashMap()))
 
 
 
@@ -214,12 +212,11 @@ appendChild(ModDomHelper.createNodeWithValueNodes(document, AlwaysActionScriptCo
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public shouldProcess(frame: Long): boolean{
 var frame = frame
 
-    
                         if(this.isIsOn())
                         
                                     {
@@ -242,7 +239,7 @@ var frame = frame
 
 
     public log(){
-put("Is On: " +this.isIsOn(), this, "log")
+logUtil!.put("Is On: " +this.isIsOn(), this, "log")
 }
 
 

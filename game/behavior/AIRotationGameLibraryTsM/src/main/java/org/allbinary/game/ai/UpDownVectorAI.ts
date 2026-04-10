@@ -62,11 +62,11 @@ var gameInput = gameInput
         
 
 this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties()
-set(0)
+this.velocityInterface!.getVelocityYBasicDecimalP()!.set(0)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -76,7 +76,6 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 
 
-    
                         if(this.index < 5)
                         
                                     {
@@ -85,14 +84,13 @@ var allBinaryLayerManager = allBinaryLayerManager
         
         
 
-set(0)
-add(y)
+basicDecimal!.set(0)
+basicDecimal!.add(y)
 this.index++
 
                                     }
                                 
                              else 
-    
                         if(this.index < 10)
                         
                                     {
@@ -101,15 +99,15 @@ this.index++
         
         
 
-set(0)
-subtract(y)
+basicDecimal!.set(0)
+basicDecimal!.subtract(y)
 this.index++
 
                                     }
                                 
                         else {
                             this.index= 0
-this.processAI(allBinaryLayerManager)
+this.this.processAI(allBinaryLayerManager)
 
                         }
                             

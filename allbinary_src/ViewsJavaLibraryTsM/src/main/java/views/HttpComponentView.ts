@@ -90,16 +90,15 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("View Name: " +transformInfoInterface!.getName(), this, "ComponentView()")
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "ComponentView()")
 
                                     }
                                 
 this.domNodeInterfaceVector= Vector()
-this.setTransformDocumentInterface(TransformHttpRequestDocumentFactory.getInstance(this.getPageContext(), this.getWeblisketSession()))
+this.this.setTransformDocumentInterface(TransformHttpRequestDocumentFactory.getInstance(this.getPageContext(), this.getWeblisketSession()))
 }
 
 
@@ -135,11 +134,11 @@ this.transformDocumentInterface= transformDocumentInterface
 
     public addDomNodeInterface(domNodeInterface: DomNodeInterface){
 var domNodeInterface = domNodeInterface
-add(domNodeInterface)
+this.domNodeInterfaceVector!.add(domNodeInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlDoc(): Document{
 
@@ -164,7 +163,7 @@ index < size; index++)
         
         
 
-appendChild(domNodeInterface!.toXmlNode(this.transformDocumentInterface!.getDoc()))
+this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.toXmlNode(this.transformDocumentInterface!.getDoc()))
 }
 
 
@@ -176,11 +175,10 @@ appendChild(domNodeInterface!.toXmlNode(this.transformDocumentInterface!.getDoc(
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "toXmlDoc()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlDoc()", e)
 
                                     }
                                 
@@ -193,7 +191,7 @@ appendChild(domNodeInterface!.toXmlNode(this.transformDocumentInterface!.getDoc(
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDoc(): Document{
 
@@ -207,7 +205,6 @@ appendChild(domNodeInterface!.toXmlNode(this.transformDocumentInterface!.getDoc(
         
 
 
-    
                         if(node != 
                                     null
                                 )
@@ -219,13 +216,12 @@ appendChild(domNodeInterface!.toXmlNode(this.transformDocumentInterface!.getDoc(
         
 
 
-    
                         if(dataNode != 
                                     null
                                 )
                         
                                     {
-                                    appendChild(dataNode)
+                                    this.getTransformDocumentInterface()!.getBaseNode()!.appendChild(dataNode)
 
                                     }
                                 
@@ -241,12 +237,12 @@ appendChild(domNodeInterface!.toXmlNode(this.transformDocumentInterface!.getDoc(
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
         try {
-            this.toXmlDoc()
+            this.this.toXmlDoc()
 
     var success: string = DomDocumentHelper.toString(this.getDoc())!;
         
@@ -267,11 +263,10 @@ appendChild(domNodeInterface!.toXmlNode(this.transformDocumentInterface!.getDoc(
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 

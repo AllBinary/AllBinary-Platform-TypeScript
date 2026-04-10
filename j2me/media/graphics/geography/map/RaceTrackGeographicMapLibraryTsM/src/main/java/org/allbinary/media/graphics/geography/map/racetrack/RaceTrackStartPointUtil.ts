@@ -45,7 +45,7 @@ export class RaceTrackStartPointUtil
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static get(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, index: number): GPoint{
     //var geographicMapInterface = geographicMapInterface

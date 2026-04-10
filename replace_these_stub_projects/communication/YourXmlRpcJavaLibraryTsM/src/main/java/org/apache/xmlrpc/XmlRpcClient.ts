@@ -79,7 +79,7 @@ var password = password
 }
 
 
-                @Throws(XmlRpcException::class, IOException::class)
+                //@Throws(XmlRpcException::class, IOException::class)
             
     public execute(method: string, params: Vector<Any>): any = {}{
 var method = method
@@ -93,7 +93,7 @@ var params = params
 }
 
 
-                @Throws(XmlRpcException::class, IOException::class)
+                //@Throws(XmlRpcException::class, IOException::class)
             
     public execute(method: string, params: Vector<Any>, cryptInterface: CryptInterface): any = {}{
 var method = method

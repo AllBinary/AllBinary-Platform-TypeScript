@@ -59,12 +59,11 @@ var gameInput = gameInput
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
-    
                         if(currentSpeed ==  -1)
                         
                                     {
@@ -88,28 +87,25 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 
 
-    
                         if(ownerLayerInterface!.getXP() -currentSpeed <= 0)
                         
                                     {
-                                    this.reverse()
-this.drop()
+                                    this.this.reverse()
+this.this.drop()
 
                                     }
                                 
 
-    
                         if(ownerLayerInterface!.getX2() +currentSpeed > DisplayInfoSingleton.getInstance()!.getLastWidth())
                         
                                     {
-                                    this.reverse()
-this.accelerate()
-this.drop()
+                                    this.this.reverse()
+this.this.accelerate()
+this.this.drop()
 
                                     }
                                 
 
-    
                         if(currentRelativeAngle == 0)
                         
                                     {
@@ -118,7 +114,6 @@ this.drop()
                                     }
                                 
                              else 
-    
                         if(currentRelativeAngle == 180)
                         
                                     {
@@ -126,22 +121,20 @@ this.drop()
 
                                     }
                                 
-setPosition(x, ownerLayerInterface!.getYP(), ownerLayerInterface!.getZP())
+ownerLayerInterface!.setPosition(x, ownerLayerInterface!.getYP(), ownerLayerInterface!.getZP())
 
-    
                         if(currentRelativeAngle == 0)
                         
                                     {
-                                    processAI(Canvas.KEY_NUM0)
+                                    super.processAI(Canvas.KEY_NUM0)
 
                                     }
                                 
                              else 
-    
                         if(currentRelativeAngle == 180)
                         
                                     {
-                                    processAI(Canvas.KEY_POUND)
+                                    super.processAI(Canvas.KEY_POUND)
 
                                     }
                                 
@@ -150,7 +143,6 @@ setPosition(x, ownerLayerInterface!.getYP(), ownerLayerInterface!.getZP())
 
     reverse(){
 
-    
                         if(currentRelativeAngle == 180)
                         
                                     {
@@ -159,7 +151,6 @@ setPosition(x, ownerLayerInterface!.getYP(), ownerLayerInterface!.getZP())
                                     }
                                 
                              else 
-    
                         if(currentRelativeAngle == 0)
                         
                                     {
@@ -172,7 +163,6 @@ setPosition(x, ownerLayerInterface!.getYP(), ownerLayerInterface!.getZP())
 
     accelerate(){
 
-    
                         if(currentSpeed < 20)
                         
                                     {
@@ -195,7 +185,6 @@ setPosition(x, ownerLayerInterface!.getYP(), ownerLayerInterface!.getZP())
         
 
 
-    
                         if(ownerLayerInterface!.getY2() +ownerLayerInterface!.getHeight() > DisplayInfoSingleton.getInstance()!.getLastHeight())
                         
                                     {
@@ -208,7 +197,7 @@ setPosition(x, ownerLayerInterface!.getYP(), ownerLayerInterface!.getZP())
 
                         }
                             
-setPosition(ownerLayerInterface!.getXP(), y, ownerLayerInterface!.getZP())
+ownerLayerInterface!.setPosition(ownerLayerInterface!.getXP(), y, ownerLayerInterface!.getZP())
 }
 
 

@@ -45,7 +45,7 @@ public constructor ()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
     //var allBinaryLayerManager = allBinaryLayerManager
@@ -56,14 +56,13 @@ public constructor ()
         
         
 
-processInput(allBinaryLayerManager)
+gameInputInterface!.processInput(allBinaryLayerManager)
 }
 
 
     public isProcessorLayer(layerInterface: AllBinaryLayer): boolean{
     //var layerInterface = layerInterface
 
-    
                         if(layerInterface!.implmentsGameInputInterface())
                         
                                     {

@@ -76,7 +76,7 @@ list= BasicArrayList()
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(hashtable: Hashtable<Any, Any>, x: number, y: number, z: number): AllBinaryLayer{
     //var hashtable = hashtable
@@ -88,7 +88,7 @@ var z = z
         
         
 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(HASHTABLE_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, commonStrings!.GET_INSTANCE)
 
     var typeInteger: Integer = hashtable.get(Layer.ID as Object) as Integer;
@@ -111,7 +111,7 @@ put(StringMaker().
 
     public add(layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface){
     //var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
-add(layerInterfaceFactoryInterface)
+list.add(layerInterfaceFactoryInterface)
 }
 
 

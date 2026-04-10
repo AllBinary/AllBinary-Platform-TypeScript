@@ -47,7 +47,7 @@ public constructor (anyType: any = {})
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getStoreName(): string{
 
@@ -83,7 +83,6 @@ public constructor (anyType: any = {})
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
@@ -92,14 +91,14 @@ public constructor (anyType: any = {})
         
         
 
-put(commonStrings!.EXCEPTION, this, "getStoreName()", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "getStoreName()", e)
 
                                     }
                                 
 
 
 
-                            throw Exception(error)
+                            throw Error(error)
 }
 
 }

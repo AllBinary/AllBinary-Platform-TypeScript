@@ -97,7 +97,7 @@ public constructor (){
         
 index < inputAutomationModuleInterfaceArray!.length; index++)
         {
-onAdd(InputAutomationConfigurationUtil.getChangeEvent(inputAutomationModuleInterfaceArray[index]!))
+InputAutomationJFrame.getInstance()!.onAdd(InputAutomationConfigurationUtil.getChangeEvent(inputAutomationModuleInterfaceArray[index]!))
 }
 
 
@@ -108,7 +108,7 @@ onAdd(InputAutomationConfigurationUtil.getChangeEvent(inputAutomationModuleInter
     
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "visit", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "visit", e)
 
 
 

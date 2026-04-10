@@ -80,7 +80,6 @@ this.allowOnEmpty= allowOnEmpty
         
 
 
-    
                         if((textLength == 0 && this.allowOnEmpty) || textLength > this.min && textLength < this.max)
                         
                                     {
@@ -89,7 +88,6 @@ this.allowOnEmpty= allowOnEmpty
                                 
                         else {
                             
-    
                         if(textLength < this.min)
                         
                                     {
@@ -98,7 +96,6 @@ this.allowOnEmpty= allowOnEmpty
                                     }
                                 
                              else 
-    
                         if(textLength > this.max)
                         
                                     {
@@ -135,7 +132,6 @@ this.allowOnEmpty= allowOnEmpty
         
 
 
-    
                         if(textLength > this.min && textLength < this.max)
                         
                                     {
@@ -154,21 +150,19 @@ this.allowOnEmpty= allowOnEmpty
         
 
 
-    
                         if(textLength < this.min)
                         
                                     {
-                                    add(StringMaker().
+                                    list.add(StringMaker().
                             append(name)!.append(" is to short")!.toString())
 
                                     }
                                 
                              else 
-    
                         if(textLength > this.max)
                         
                                     {
-                                    add(StringMaker().
+                                    list.add(StringMaker().
                             append(name)!.append(" is to long")!.toString())
 
                                     }

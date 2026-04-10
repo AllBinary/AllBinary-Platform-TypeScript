@@ -53,13 +53,13 @@ export class LayerPartialCellPositionsUtil
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAll(geographicMapInterface: BasicGeographicMap, layerInterface: AllBinaryLayer, reusableList: BasicArrayList): BasicArrayList{
 var geographicMapInterface = geographicMapInterface
 var layerInterface = layerInterface
 var reusableList = reusableList
-clear()
+reusableList!.clear()
 
     var topLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtNoThrow(layerInterface!.getXP(), layerInterface!.getYP())!;
         
@@ -81,38 +81,34 @@ clear()
         
 
 
-    
                         if(topLeftGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
                                     {
-                                    add(topLeftGeographicMapCellPosition)
+                                    reusableList!.add(topLeftGeographicMapCellPosition)
 
                                     }
                                 
 
-    
                         if(topRightGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && topLeftGeographicMapCellPosition != topRightGeographicMapCellPosition)
                         
                                     {
-                                    add(topRightGeographicMapCellPosition)
+                                    reusableList!.add(topRightGeographicMapCellPosition)
 
                                     }
                                 
 
-    
                         if(bottomLeftGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && !reusableList!.contains(bottomLeftGeographicMapCellPosition))
                         
                                     {
-                                    add(bottomLeftGeographicMapCellPosition)
+                                    reusableList!.add(bottomLeftGeographicMapCellPosition)
 
                                     }
                                 
 
-    
                         if(bottomRightGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && !reusableList!.contains(bottomRightGeographicMapCellPosition))
                         
                                     {
-                                    add(bottomRightGeographicMapCellPosition)
+                                    reusableList!.add(bottomRightGeographicMapCellPosition)
 
                                     }
                                 
@@ -125,7 +121,7 @@ clear()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAll(geographicMapInterface: BasicGeographicMap, layerInterface: AllBinaryLayer, dx: number, dy: number, reusableList: BasicArrayList): BasicArrayList{
 var geographicMapInterface = geographicMapInterface
@@ -133,7 +129,7 @@ var layerInterface = layerInterface
 var dx = dx
 var dy = dy
 var reusableList = reusableList
-clear()
+reusableList!.clear()
 
     var topLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtNoThrow(layerInterface!.getXP() +dx, layerInterface!.getYP() +dy)!;
         
@@ -155,38 +151,34 @@ clear()
         
 
 
-    
                         if(topLeftGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
                                     {
-                                    add(topLeftGeographicMapCellPosition)
+                                    reusableList!.add(topLeftGeographicMapCellPosition)
 
                                     }
                                 
 
-    
                         if(topRightGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && topLeftGeographicMapCellPosition != topRightGeographicMapCellPosition)
                         
                                     {
-                                    add(topRightGeographicMapCellPosition)
+                                    reusableList!.add(topRightGeographicMapCellPosition)
 
                                     }
                                 
 
-    
                         if(bottomLeftGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && !reusableList!.contains(bottomLeftGeographicMapCellPosition))
                         
                                     {
-                                    add(bottomLeftGeographicMapCellPosition)
+                                    reusableList!.add(bottomLeftGeographicMapCellPosition)
 
                                     }
                                 
 
-    
                         if(bottomRightGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && !reusableList!.contains(bottomRightGeographicMapCellPosition))
                         
                                     {
-                                    add(bottomRightGeographicMapCellPosition)
+                                    reusableList!.add(bottomRightGeographicMapCellPosition)
 
                                     }
                                 

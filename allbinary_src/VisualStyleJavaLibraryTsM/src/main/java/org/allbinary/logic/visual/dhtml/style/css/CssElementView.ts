@@ -127,7 +127,6 @@ this.value= DomNodeHelper.getTextNodeValue(valueNode)
         
 
 
-    
                         if(titleValueNode != 
                                     null
                                 )
@@ -153,7 +152,6 @@ this.title= stringUtil!.EMPTY_STRING
         
 
 
-    
                         if(descriptionValueNode != 
                                     null
                                 )
@@ -169,11 +167,10 @@ this.title= stringUtil!.EMPTY_STRING
                         }
                             
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put(StringMaker().
+                                    logUtil!.put(StringMaker().
                             append("Value: ")!.append(this.value)!.append("\nTitle: ")!.append(this.title)!.append("\nDescription: ")!.append(this.description)!.toString(), this, commonStrings!.CONSTRUCTOR)
 
                                     }
@@ -184,11 +181,10 @@ this.title= stringUtil!.EMPTY_STRING
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Child Css Elements: " +cssElementStyleNodeVector!.length, this, "CssElementView()")
+                                    logUtil!.put("Child Css Elements: " +cssElementStyleNodeVector!.length, this, "CssElementView()")
 
                                     }
                                 
@@ -202,11 +198,10 @@ this.cssPropertyVector= CssPropertiesValidationFactory.getInstance(nodeList)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put(StringMaker().
+                                    logUtil!.put(StringMaker().
                             append("Value: ")!.append(this.value)!.append("\nTitle: ")!.append(this.title)!.append("\nDescription: ")!.append(this.description)!.toString(), this, this.commonStrings!.CONSTRUCTOR, e)
 
                                     }
@@ -214,7 +209,7 @@ this.cssPropertyVector= CssPropertiesValidationFactory.getInstance(nodeList)
 
 
 
-                            throw Exception("CssElementView")
+                            throw Error("CssElementView")
 }
 
 }
@@ -236,9 +231,9 @@ this.cssPropertyVector= CssPropertiesValidationFactory.getInstance(nodeList)
         
         
 
-put(DomData.VALUE, this.value)
-put(this.TITLE, this.title)
-put(this.DESCRIPTION, this.description)
+hashMap!.put(DomData.VALUE, this.value)
+hashMap!.put(this.TITLE, this.title)
+hashMap!.put(this.DESCRIPTION, this.description)
 
 
 
@@ -248,7 +243,7 @@ put(this.DESCRIPTION, this.description)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -258,11 +253,10 @@ var document = document
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("CssView HashMap: " +hashMap!.toString(), this, "toXmlNode")
+                                    logUtil!.put("CssView HashMap: " +hashMap!.toString(), this, "toXmlNode")
 
                                     }
                                 
@@ -291,7 +285,7 @@ index < size; index++)
         
         
 
-appendChild(cssPropertyDomNodeInterface!.toXmlNode(document))
+node.appendChild(cssPropertyDomNodeInterface!.toXmlNode(document))
 }
 
 
@@ -314,7 +308,7 @@ index < size2; index++)
         
         
 
-appendChild(cssElementDomNodeInterface!.toXmlNode(document))
+node.appendChild(cssElementDomNodeInterface!.toXmlNode(document))
 }
 
 

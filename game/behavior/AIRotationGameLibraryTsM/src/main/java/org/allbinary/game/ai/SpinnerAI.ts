@@ -53,22 +53,21 @@ this.direction= direction
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
-    
                         if(isEven)
                         
                                     {
-                                    processAI(this.direction[0]!)
+                                    super.processAI(this.direction[0]!)
 isEven= false
 
                                     }
                                 
                         else {
-                            processAI(Canvas.KEY_NUM1)
+                            super.processAI(Canvas.KEY_NUM1)
 isEven= true
 
                         }

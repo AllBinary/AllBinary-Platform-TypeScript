@@ -247,7 +247,6 @@ this.glVersionString= gl.glGetString(GL10.GL_VERSION)
 
 this.glShaderVersionString= gl.glGetString(GL_SHADING_LANGUAGE_VERSION)
 
-    
                         if(this.glShaderVersionString == 
                                     null
                                 )
@@ -260,7 +259,6 @@ this.glShaderVersionString= gl.glGetString(GL_SHADING_LANGUAGE_VERSION)
 
         try {
             
-    
                         if(this.glShaderVersionString != 
                                     null
                                  && this.glShaderVersionString!.indexOf('.') >= 0)
@@ -272,7 +270,6 @@ this.glShaderVersionString= gl.glGetString(GL_SHADING_LANGUAGE_VERSION)
         
 
 
-    
                         if(startIndex >= 0)
                         
                                     {
@@ -291,14 +288,13 @@ this.shaderVersion= Integer.parseInt(this.glShaderVersionString!.replace(CommonS
         
         
 
-put(commonStrings!.EXCEPTION, this, METHOD_NAME, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e)
 }
 
 this.glRenderer= gl.glGetString(GL10.GL_RENDERER)
 this.glVendor= gl.glGetString(GL10.GL_VENDOR)
 this.glExtensions= gl.glGetString(GL10.GL_EXTENSIONS)
 
-    
                         if(this.glExtensions!.indexOf(this.GL_EXT_GPU_SHADER_100) >= 0)
                         
                                     {
@@ -312,7 +308,6 @@ this.glExtensions= gl.glGetString(GL10.GL_EXTENSIONS)
                         }
                             
 
-    
                         if(this.glExtensions!.indexOf(this.GL_EXT_GPU_SHADER4) >= 0)
                         
                                     {
@@ -326,7 +321,6 @@ this.glExtensions= gl.glGetString(GL10.GL_EXTENSIONS)
                         }
                             
 
-    
                         if(this.glRenderer == 
                                     null
                                 )
@@ -337,7 +331,6 @@ this.glExtensions= gl.glGetString(GL10.GL_EXTENSIONS)
                                     }
                                 
 
-    
                         if(this.glRenderer!.lowercase()!.indexOf("pixelflinger") >= 0)
                         
                                     {
@@ -357,7 +350,6 @@ this.possiblyAccelerated= true
                             
 this.glExtensionDrawTexture= false
 
-    
                         if(this.glVersionString == 
                                     null
                                 )
@@ -369,7 +361,6 @@ this.glVersion= this.VERSION_UNK
                                     }
                                 
                              else 
-    
                         if(this.glVersionString!.indexOf(" 1.0") >= 0)
                         
                                     {
@@ -378,7 +369,6 @@ this.glVersion= this.VERSION_UNK
                                     }
                                 
                              else 
-    
                         if(this.glVersionString!.indexOf(" 1.1") >= 0)
                         
                                     {
@@ -392,7 +382,6 @@ this.glVersion= this.VERSION_UNK
                         }
                             
 
-    
                         if(gl is GL11)
                         
                                     {
@@ -401,7 +390,6 @@ this.glVersion= this.VERSION_UNK
                                     }
                                 
                              else 
-    
                         if(gl is GL10)
                         
                                     {
@@ -410,7 +398,6 @@ this.glVersion= this.VERSION_UNK
                                     }
                                 
 
-    
                         if(this.glVendor == 
                                     null
                                 )
@@ -421,7 +408,6 @@ this.glVersion= this.VERSION_UNK
                                     }
                                 
 
-    
                         if(this.glExtensions == 
                                     null
                                 )
@@ -432,28 +418,25 @@ this.glVersion= this.VERSION_UNK
                                     }
                                 
 
-    
                         if(this.possiblyAccelerated)
                         
                                     {
-                                    put(StringMaker().
+                                    PreLogUtil.put(StringMaker().
                             append("VBO:?")!.appendboolean((this.glInstanceVersion == this.VERSION_1_1))!.append("||")!.appendboolean(this.isExtension(openGLFeatureFactory!.OPENGL_VERTEX_BUFFER_OBJECT))!.toString(), this, METHOD_NAME)
 
-    
                         if((this.glInstanceVersion == this.VERSION_1_1 || this.isExtension(openGLFeatureFactory!.OPENGL_VERTEX_BUFFER_OBJECT)))
                         
                                     {
                                     
-    
                         if(AndroidUtil.isAndroid())
                         
                                     {
-                                    put("VBO implementation was detected, but disabled by default for Android", this, METHOD_NAME)
+                                    PreLogUtil.put("VBO implementation was detected, but disabled by default for Android", this, METHOD_NAME)
 
                                     }
                                 
                         else {
-                            put("VBO implementation was detected, but disabled for now", this, METHOD_NAME)
+                            PreLogUtil.put("VBO implementation was detected, but disabled for now", this, METHOD_NAME)
 
                         }
                             
@@ -469,25 +452,23 @@ this.glVersion= this.VERSION_UNK
         
 
 
-    
                         if(features.isDefault(openGLFeatureFactory!.OPENGL_AUTO_SELECT))
                         
                                     {
                                     
-    
                         if(this.vertexBufferObjectSupport)
                         
                                     {
-                                    setImageFactory(OpenGLESGL11VBOImageFactory())
+                                    openGLImageSpecificFactory!.setImageFactory(OpenGLESGL11VBOImageFactory())
 
                                     }
                                 
                         else {
-                            append("OpenGL is on but ")
-append(stringUtil!.toString(openGLFeatureFactory!.OPENGL_DRAW_TEXTURE))
-append(" was not available")
-put(stringBuffer!.toString(), this, METHOD_NAME)
-setImageFactory(OpenGLESGL10ImageFactory())
+                            stringBuffer!.append("OpenGL is on but ")
+stringBuffer!.append(stringUtil!.toString(openGLFeatureFactory!.OPENGL_DRAW_TEXTURE))
+stringBuffer!.append(" was not available")
+PreLogUtil.put(stringBuffer!.toString(), this, METHOD_NAME)
+openGLImageSpecificFactory!.setImageFactory(OpenGLESGL10ImageFactory())
 
                         }
                             
@@ -495,10 +476,10 @@ setImageFactory(OpenGLESGL10ImageFactory())
                                     }
                                 
                         else {
-                            append(stringUtil!.toString(openGLFeatureFactory!.OPENGL_AUTO_SELECT))
-append(" is not on")
-put(stringBuffer!.toString(), this, METHOD_NAME)
-setImageFactory(OpenGLESGL10ImageFactory())
+                            stringBuffer!.append(stringUtil!.toString(openGLFeatureFactory!.OPENGL_AUTO_SELECT))
+stringBuffer!.append(" is not on")
+PreLogUtil.put(stringBuffer!.toString(), this, METHOD_NAME)
+openGLImageSpecificFactory!.setImageFactory(OpenGLESGL10ImageFactory())
 
                         }
                             
@@ -507,7 +488,7 @@ setImageFactory(OpenGLESGL10ImageFactory())
         
         
 
-glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSizeArray, 0)
+gl.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSizeArray, 0)
 this.maxTextureSize= maxTextureSizeArray[0]!
 this.initialized= true
 } catch(e: Exception)
@@ -517,7 +498,7 @@ this.initialized= true
         
         
 
-put(commonStrings!.EXCEPTION, this, METHOD_NAME, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e)
 }
 
 }
@@ -531,7 +512,6 @@ var gameFeature = gameFeature
         
 
 
-    
                         if(index >= 0)
                         
                                     {
@@ -558,7 +538,7 @@ var gameFeature = gameFeature
 
 
     public isGlExtensionDrawTexture(): boolean{
-this.requireInitialization()
+this.this.requireInitialization()
 
 
 
@@ -579,7 +559,7 @@ this.requireInitialization()
 
 
     public isGlExtensionGPUShader4(): boolean{
-this.requireInitialization()
+this.this.requireInitialization()
 
 
 
@@ -590,7 +570,7 @@ this.requireInitialization()
 
 
     public getGlVersion(): string{
-this.requireInitialization()
+this.this.requireInitialization()
 
 
 
@@ -601,7 +581,7 @@ this.requireInitialization()
 
 
     public getGlVersionString(): string{
-this.requireInitialization()
+this.this.requireInitialization()
 
 
 
@@ -612,7 +592,7 @@ this.requireInitialization()
 
 
     public getGlShaderVersion(): string{
-this.requireInitialization()
+this.this.requireInitialization()
 
 
 
@@ -623,7 +603,7 @@ this.requireInitialization()
 
 
     public isGlThreedDrawTexture(): boolean{
-this.requireInitialization()
+this.this.requireInitialization()
 
 
 
@@ -634,7 +614,7 @@ this.requireInitialization()
 
 
     public getGlRenderer(): string{
-this.requireInitialization()
+this.this.requireInitialization()
 
 
 
@@ -645,7 +625,7 @@ this.requireInitialization()
 
 
     public isVertexBufferObjectSupport(): boolean{
-this.requireInitialization()
+this.this.requireInitialization()
 
 
 
@@ -657,9 +637,8 @@ this.requireInitialization()
 
     public isTextureSizeValid(widthAndHeight: number): boolean{
     //var widthAndHeight = widthAndHeight
-this.requireInitialization()
+this.this.requireInitialization()
 
-    
                         if(this.maxTextureSize >= widthAndHeight)
                         
                                     {
@@ -692,25 +671,25 @@ this.requireInitialization()
         
         
 
-append("GL_VERSION: ")
-append(this.glVersionString)
-append(" GL_SHADING_LANGUAGE_VERSION: ")
-append(this.glShaderVersionString)
-append(" GL_RENDERER: ")
-append(this.glRenderer)
-append(" GL_VENDOR: ")
-append(this.glVendor)
-append(commonSeps!.NEW_LINE)
-append(" Is Accelerated: ")
-append(this.acceleratedString)
-append(commonSeps!.NEW_LINE)
-append(" VBO Support: ")
-appendboolean(this.isVertexBufferObjectSupport())
-append(commonSeps!.NEW_LINE)
-append(" Max Texture Size: ")
-appendint(this.maxTextureSize)
-append(commonSeps!.NEW_LINE)
-append(" GL_EXTENSIONS: ")
+stringBuffer!.append("GL_VERSION: ")
+stringBuffer!.append(this.glVersionString)
+stringBuffer!.append(" GL_SHADING_LANGUAGE_VERSION: ")
+stringBuffer!.append(this.glShaderVersionString)
+stringBuffer!.append(" GL_RENDERER: ")
+stringBuffer!.append(this.glRenderer)
+stringBuffer!.append(" GL_VENDOR: ")
+stringBuffer!.append(this.glVendor)
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append(" Is Accelerated: ")
+stringBuffer!.append(this.acceleratedString)
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append(" VBO Support: ")
+stringBuffer!.appendboolean(this.isVertexBufferObjectSupport())
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append(" Max Texture Size: ")
+stringBuffer!.appendint(this.maxTextureSize)
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append(" GL_EXTENSIONS: ")
 
         try {
             
@@ -738,8 +717,8 @@ append(" GL_EXTENSIONS: ")
         
 index < size; index++)
         {
-append(commonSeps!.NEW_LINE)
-append(stringUtil!.toString(list.objectArray[index]!))
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append(stringUtil!.toString(list.objectArray[index]!))
 }
 
 } catch(e: Exception)
@@ -749,7 +728,7 @@ append(stringUtil!.toString(list.objectArray[index]!))
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e)
 }
 
 

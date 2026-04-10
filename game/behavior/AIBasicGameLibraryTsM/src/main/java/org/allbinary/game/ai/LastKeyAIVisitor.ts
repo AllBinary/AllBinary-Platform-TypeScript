@@ -62,11 +62,10 @@ var anyType = anyType
         
 
 
-    
                         if(key !=  -1)
                         
                                     {
-                                    processAI(key)
+                                    basicAI!.processAI(key)
 
                                     }
                                 
@@ -77,7 +76,7 @@ var anyType = anyType
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e)
 }
 
 

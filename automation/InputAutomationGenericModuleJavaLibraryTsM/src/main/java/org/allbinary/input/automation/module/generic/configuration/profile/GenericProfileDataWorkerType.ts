@@ -84,8 +84,8 @@ public constructor (name: string){
 
             super();
             var name = name
-this.setName(name)
-put(this.getName(), this)
+this.this.setName(name)
+hashMap!.put(this.getName(), this)
 }
 
 
@@ -105,7 +105,7 @@ this.name= name
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

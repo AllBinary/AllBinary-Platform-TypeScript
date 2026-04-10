@@ -61,16 +61,15 @@ var otherAngle = otherAngle
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(layer: AllBinaryGameLayer){
 var layer = layer
 
-    
                         if(timeDelayHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
                                     {
-                                    process(layer)
+                                    super.process(layer)
 
                                     }
                                 

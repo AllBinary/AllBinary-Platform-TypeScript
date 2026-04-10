@@ -76,11 +76,11 @@ this.layerInterface= layerInterface
         
         
 
-append("LayerManagerEvent: \n")
-append("LayerInterface: ")
-append(this.getLayerInterface()!.toString())
-append("\nCRUD: ")
-append(this.crud.toString())
+stringBuffer!.append("LayerManagerEvent: \n")
+stringBuffer!.append("LayerInterface: ")
+stringBuffer!.append(this.getLayerInterface()!.toString())
+stringBuffer!.append("\nCRUD: ")
+stringBuffer!.append(this.crud.toString())
 
 
 

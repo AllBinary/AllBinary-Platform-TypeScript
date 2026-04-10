@@ -65,7 +65,7 @@ this.speedBasicDecimal= speedBasicDecimal
         
         
 
-setVelocity(speedBasicDecimal, angleFactory!.getInstance(angle), angleFactory!.getInstance(otherAngle))
+basicVelocityProperties!.setVelocity(speedBasicDecimal, angleFactory!.getInstance(angle), angleFactory!.getInstance(otherAngle))
 }
 
 
@@ -94,11 +94,11 @@ var otherAngle = otherAngle
         
         
 
-move(xVector, yVector, zVector)
+layer.move(xVector, yVector, zVector)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(layer: AllBinaryGameLayer){
 var layer = layer
@@ -117,13 +117,12 @@ var layer = layer
         
         
 
-move(x, y, z)
+layer.move(x, y, z)
 
-    
                         if(x != 0 || y != 0 || z != 0)
                         
                                     {
-                                    onViewPositionChangeEvent()
+                                    layer.onViewPositionChangeEvent()
 
                                     }
                                 
@@ -131,7 +130,7 @@ move(x, y, z)
 
 
     public stop(){
-zero()
+this.basicVelocityProperties!.zero()
 }
 
 

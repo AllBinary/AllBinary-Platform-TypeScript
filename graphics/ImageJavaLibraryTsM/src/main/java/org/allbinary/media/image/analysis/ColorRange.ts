@@ -156,7 +156,6 @@ this.maxBlue= maxBlue
     public isInRange(color: Color): boolean{
 var color = color
 
-    
                         if(color.getRed() >= this.getMinRed() && color.getRed() <= this.getMaxRed() && color.getGreen() >= this.getMinGreen() && color.getGreen() <= this.getMaxGreen() && color.getBlue() >= this.getMinBlue() && color.getBlue() <= this.getMaxBlue())
                         
                                     {
@@ -188,23 +187,23 @@ var color = color
         
         
 
-append("getMinRed(): ")
-appendint(this.getMinRed())
-append(CommonSeps.getInstance()!.NEW_LINE)
-append("getMaxRed(): ")
-appendint(this.getMaxRed())
-append(CommonSeps.getInstance()!.NEW_LINE)
-append("getMinGreen(): ")
-appendint(this.getMinGreen())
-append(CommonSeps.getInstance()!.NEW_LINE)
-append("getMaxGreen(): ")
-appendint(this.getMaxGreen())
-append(CommonSeps.getInstance()!.NEW_LINE)
-append("getMinBlue(): ")
-appendint(this.getMinGreen())
-append(CommonSeps.getInstance()!.NEW_LINE)
-append("getMaxBlue(): ")
-appendint(this.getMaxBlue())
+stringBuffer!.append("getMinRed(): ")
+stringBuffer!.appendint(this.getMinRed())
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
+stringBuffer!.append("getMaxRed(): ")
+stringBuffer!.appendint(this.getMaxRed())
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
+stringBuffer!.append("getMinGreen(): ")
+stringBuffer!.appendint(this.getMinGreen())
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
+stringBuffer!.append("getMaxGreen(): ")
+stringBuffer!.appendint(this.getMaxGreen())
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
+stringBuffer!.append("getMinBlue(): ")
+stringBuffer!.appendint(this.getMinGreen())
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
+stringBuffer!.append("getMaxBlue(): ")
+stringBuffer!.appendint(this.getMaxBlue())
 
 
 

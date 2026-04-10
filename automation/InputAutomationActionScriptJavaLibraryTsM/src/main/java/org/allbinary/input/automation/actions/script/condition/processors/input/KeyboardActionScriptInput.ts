@@ -90,16 +90,15 @@ var integerArray = integerArray
         
 
 
-    
                         if(KeyUtil.isNormallyDisplayed(nextInteger))
                         
                                     {
-                                    append(KeyEvent.getKeyText(nextInteger))
+                                    stringBuffer!.append(KeyEvent.getKeyText(nextInteger))
 
                                     }
                                 
                         else {
-                            append("&#" +nextInteger +";")
+                            stringBuffer!.append("&#" +nextInteger +";")
 
                         }
                             
@@ -143,14 +142,13 @@ public constructor (node: Node)
 
                             //For kotlin this is before the body of the constructor.
                     
-put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 
     var actionNode: Node = DomSearchHelper.getNode(KeyboardActionScriptInputData.NAME, node.getChildNodes())!;
         
         
 
 
-    
                         if(actionNode != 
                                     null
                                 )
@@ -182,7 +180,6 @@ index < nodeList!.getLength(); index++)
         
 
 
-    
                         if(childNode!.getNodeName()!.startsWith(KeyboardActionScriptInputData.KEY))
                         
                                     {
@@ -191,12 +188,11 @@ index < nodeList!.getLength(); index++)
         
         
 
-add(keyString.valueOf())
+vector.add(keyString.valueOf())
 
                                     }
                                 
                              else 
-    
                         if(childNode!.getNodeName()!.compareTo(KeyboardActionScriptInputData.DELAY_BETWEEN_KEYS) == 0)
                         
                                     {
@@ -205,12 +201,11 @@ add(keyString.valueOf())
         
         
 
-this.setDelayBetweenKeys(Integer.valueOf(time)!.toInt())
+this.this.setDelayBetweenKeys(Integer.valueOf(time)!.toInt())
 
                                     }
                                 
                              else 
-    
                         if(childNode!.getNodeName()!.compareTo(KeyboardActionScriptInputData.PRESS) == 0)
                         
                                     {
@@ -219,14 +214,13 @@ this.setDelayBetweenKeys(Integer.valueOf(time)!.toInt())
         
         
 
-this.setPress(value.concatToString()
+this.this.setPress(value.concatToString()
 
                                     )
 
                                     }
                                 
                              else 
-    
                         if(childNode!.getNodeName()!.compareTo(KeyboardActionScriptInputData.RELEASE) == 0)
                         
                                     {
@@ -235,7 +229,7 @@ this.setPress(value.concatToString()
         
         
 
-this.setRelease(value.concatToString()
+this.this.setRelease(value.concatToString()
 
                                     )
 
@@ -245,13 +239,13 @@ this.setRelease(value.concatToString()
                             
 
 
-                            throw Exception("Action Script Input Unknown Node")
+                            throw Error("Action Script Input Unknown Node")
 
                         }
                             
 }
 
-this.setKeyArray(vector.toArray(new Array(vector.length)) as Array<Integer?>)
+this.this.setKeyArray(vector.toArray(new Array(vector.length)) as Array<Integer?>)
 
                                     }
                                 
@@ -259,17 +253,16 @@ this.setKeyArray(vector.toArray(new Array(vector.length)) as Array<Integer?>)
                             
 
 
-                            throw Exception("Action Script Input Node Null")
+                            throw Error("Action Script Input Node Null")
 
                         }
                             
-this.setAllowsChildren(false)
+this.this.setAllowsChildren(false)
 
-    
                         if(!this.isPress() && !this.isRelease())
                         
                                     {
-                                    this.setNormal()
+                                    this.this.setNormal()
 
                                     }
                                 
@@ -286,16 +279,15 @@ public constructor ()
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(!this.isPress() && !this.isRelease())
                         
                                     {
-                                    this.setNormal()
+                                    this.this.setNormal()
 
                                     }
                                 
-this.setAllowsChildren(false)
-this.setTime(120)
+this.this.setAllowsChildren(false)
+this.this.setTime(120)
 this.keyboardActionScriptInputJPanel= KeyboardActionScriptInputJPanel(this)
 }
 
@@ -359,8 +351,8 @@ this.release= release
 
 
     public setNormal(){
-this.setPress(true)
-this.setRelease(true)
+this.this.setPress(true)
+this.this.setRelease(true)
 }
 
 
@@ -377,7 +369,6 @@ this.setRelease(true)
     public setKeyArray(keyArray: Integer[]){
 var keyArray = keyArray
 
-    
                         if(keyArray != 
                                     null
                                 )
@@ -387,7 +378,7 @@ this.keyArray= keyArray
 
 
     public showDialog(){
-setVisible(true)
+this.keyboardActionScriptInputJPanel!.getKeyActionJDialog()!.setVisible(true)
 }
 
 
@@ -403,19 +394,19 @@ setVisible(true)
 
     public setText(text: string){
 var text = text
-put(CommonLabels.getInstance()!.START +text, this, "setText")
+logUtil!.put(CommonLabels.getInstance()!.START +text, this, "setText")
 
     var integerArray: Integer[] = this.integerArrayValue(text)!;
         
         
 
-this.setKeyArray(integerArray)
+this.this.setKeyArray(integerArray)
 }
 
 
     integerArrayValue(text: string): Integer[]{
 var text = text
-put(CommonLabels.getInstance()!.START +text, this, "integerArrayValue")
+logUtil!.put(CommonLabels.getInstance()!.START +text, this, "integerArrayValue")
 
     var vector: Vector = new Vector();
         
@@ -435,12 +426,10 @@ put(CommonLabels.getInstance()!.START +text, this, "integerArrayValue")
         
 
 
-    
                         if(aChar == '&')
                         
                                     {
                                     
-    
                         if(text[index +1] == '#')
                         
                                     {
@@ -450,7 +439,6 @@ put(CommonLabels.getInstance()!.START +text, this, "integerArrayValue")
         
 
 
-    
                         if(endIndex !=  -1)
                         
                                     {
@@ -459,8 +447,8 @@ put(CommonLabels.getInstance()!.START +text, this, "integerArrayValue")
         
         
 
-put("Next Char String: " +nextCharString, this, "integerArrayValue")
-add(substring.valueOf())
+logUtil!.put("Next Char String: " +nextCharString, this, "integerArrayValue")
+vector.add(substring.valueOf())
 index= index +nextCharString!.length +3
 
 
@@ -475,7 +463,7 @@ index= index +nextCharString!.length +3
 
                                     }
                                 
-add(KeySingletonFactory.getHashtable()!.get(aChar.concatToString()
+vector.add(KeySingletonFactory.getHashtable()!.get(aChar.concatToString()
 
                                     ))
 index++
@@ -511,13 +499,13 @@ index++
         
 index < this.getKeyArray()!.length; index++)
         {
-put(KeyboardActionScriptInputData.KEY +index, Integer.toString(this.getKeyArray()[index]!))
+hashMap!.put(KeyboardActionScriptInputData.KEY +index, Integer.toString(this.getKeyArray()[index]!))
 }
 
-put(KeyboardActionScriptInputData.DELAY_BETWEEN_KEYS, Integer.toString(this.getDelayBetweenKeys()))
-put(KeyboardActionScriptInputData.PRESS, Boolean.toString(this.isPress()))
-put(KeyboardActionScriptInputData.RELEASE, Boolean.toString(this.isRelease()))
-put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
+hashMap!.put(KeyboardActionScriptInputData.DELAY_BETWEEN_KEYS, Integer.toString(this.getDelayBetweenKeys()))
+hashMap!.put(KeyboardActionScriptInputData.PRESS, Boolean.toString(this.isPress()))
+hashMap!.put(KeyboardActionScriptInputData.RELEASE, Boolean.toString(this.isRelease()))
+logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
 
 
 
@@ -527,7 +515,7 @@ put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -536,7 +524,7 @@ var document = document
         
         
 
-appendChild(ModDomHelper.createNodeWithValueNodes(document, KeyboardActionScriptInputData.NAME, this.toHashMap()))
+node.appendChild(ModDomHelper.createNodeWithValueNodes(document, KeyboardActionScriptInputData.NAME, this.toHashMap()))
 
 
 
@@ -546,16 +534,16 @@ appendChild(ModDomHelper.createNodeWithValueNodes(document, KeyboardActionScript
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(frame: Long){
 var frame = frame
-process(this)
+KeyboardInputAutomationProcessor.process(this)
 }
 
 
     public log(){
-put(this.toString(), this, "log")
+logUtil!.put(this.toString(), this, "log")
 }
 
 
@@ -565,15 +553,15 @@ put(this.toString(), this, "log")
         
         
 
-append(super.toString())
-append(" Text: ")
-append(this.getText())
-append(" isPress: ")
-appendboolean(this.isPress())
-append(" isRelease: ")
-appendboolean(this.isRelease())
-append(" Between Key Delay: ")
-appendint(this.getDelayBetweenKeys())
+stringBuffer!.append(super.toString())
+stringBuffer!.append(" Text: ")
+stringBuffer!.append(this.getText())
+stringBuffer!.append(" isPress: ")
+stringBuffer!.appendboolean(this.isPress())
+stringBuffer!.append(" isRelease: ")
+stringBuffer!.appendboolean(this.isRelease())
+stringBuffer!.append(" Between Key Delay: ")
+stringBuffer!.appendint(this.getDelayBetweenKeys())
 
 
 

@@ -47,7 +47,7 @@ public constructor (delay: number){
             super();
                 //var delay = delay
 this.delay= delay
-this.setStartTime()
+this.this.setStartTime()
 }
 
 
@@ -58,7 +58,6 @@ this.setStartTime()
         
 
 
-    
                         if(currentTime -this.startTime > this.delay)
                         
                                     {
@@ -89,7 +88,6 @@ var delay = delay
         
 
 
-    
                         if(currentTime -this.startTime > delay)
                         
                                     {
@@ -115,7 +113,6 @@ var delay = delay
     public isTime(currentTime: number): boolean{
 var currentTime = currentTime
 
-    
                         if(currentTime -this.startTime > this.delay)
                         
                                     {
@@ -141,7 +138,6 @@ var currentTime = currentTime
     public isTimeWithoutReset(currentTime: number): boolean{
 var currentTime = currentTime
 
-    
                         if(currentTime -this.startTime > this.delay)
                         
                                     {
@@ -167,7 +163,6 @@ var currentTime = currentTime
 var delay = delay
 var currentTime = currentTime
 
-    
                         if(currentTime -this.startTime > this.delay)
                         
                                     {
@@ -215,7 +210,6 @@ var currentTime = currentTime
 var currentTime = currentTime
 var time = time
 
-    
                         if(this.getElapsed(currentTime) > time)
                         
                                     {
@@ -244,7 +238,6 @@ var time = time
     public isElapsed(time: number): boolean{
 var time = time
 
-    
                         if(this.getElapsed() > time)
                         
                                     {
@@ -299,13 +292,12 @@ this.startTime= Long.MAX_VALUE
 
     public resume(): boolean{
 
-    
                         if(this.elapsedTimeAtPause != Long.MIN_VALUE)
                         
                                     {
                                     this.startTime= System.currentTimeMillis() +this.elapsedTimeAtPause
 this.elapsedTimeAtPause= Long.MIN_VALUE
-this.setStartTime()
+this.this.setStartTime()
 
 
 
@@ -332,7 +324,6 @@ var currentTime = currentTime
         
 
 
-    
                         if(elapsed > 0)
                         
                                     {
@@ -381,7 +372,6 @@ var currentTime = currentTime
         
 
 
-    
                         if(elapsed > 0)
                         
                                     {

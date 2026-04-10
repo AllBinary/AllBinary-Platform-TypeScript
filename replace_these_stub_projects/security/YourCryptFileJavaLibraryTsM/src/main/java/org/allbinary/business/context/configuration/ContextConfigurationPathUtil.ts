@@ -16,7 +16,7 @@ export class ContextConfigurationPathUtil
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getAbFile(contextName: string): AbFile{
 var contextName = contextName
@@ -29,7 +29,7 @@ var contextName = contextName
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getAbPath(contextName: string): AbPath{
 var contextName = contextName
@@ -42,7 +42,7 @@ var contextName = contextName
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     static getPath(): string{
 

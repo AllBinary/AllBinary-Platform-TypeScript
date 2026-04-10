@@ -140,17 +140,16 @@ this.form= form
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processInput(key: number): number{
     //var key = key
 
-    
                         if(key == Canvas.LEFT || key == Canvas.RIGHT || key == Canvas.UP || key == Canvas.DOWN)
                         
                                     {
-                                    add(SelectSound.getInstance())
-processInput(key)
+                                    PrimaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance())
+this.form.processInput(key)
 
 
 
@@ -161,11 +160,10 @@ processInput(key)
                                     }
                                 
                              else 
-    
                         if(key == Canvas.FIRE)
                         
                                     {
-                                    add(SelectSound.getInstance())
+                                    PrimaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance())
 
 
 
@@ -199,7 +197,7 @@ processInput(key)
         
         
 
-put(command.toString(), this, PROCESS_COMMAND)
+logUtil!.put(command.toString(), this, PROCESS_COMMAND)
 
     var features: Features = Features.getInstance()!;
         
@@ -211,21 +209,20 @@ put(command.toString(), this, PROCESS_COMMAND)
         
 
 
-    
                         if(SWTUtil.isSWT && features.isFeature(openGLFeatureFactory!.OPENGL) && command != GameCommandsFactory.getInstance()!.EXIT_COMMAND)
                         
                                     {
-                                    run()
+                                    CommandRunnable(this, command).
+                            run()
 
                                     }
                                 
                         else {
-                            runTask(CommandRunnable(this, command))
+                            PrimaryThreadPool.getInstance()!.runTask(CommandRunnable(this, command))
 
                         }
                             
 
-    
                         if(command == GameCommandsFactory.getInstance()!.QUIT_COMMAND)
                         
                                     {
@@ -251,7 +248,7 @@ put(command.toString(), this, PROCESS_COMMAND)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processInput(): number{
 
@@ -292,12 +289,10 @@ index < size; index++)
 gameKeyEvent= list.objectArray[index]! as GameKeyEvent
 key= gameKeyEvent!.getKey()
 
-    
                         if(gameKeyEvent!.getSourceId() != MOTION_GESTURE_SOURCE_ID)
                         
                                     {
                                     
-    
                         if(this.processInput(key) == 1)
                         
                                     {
@@ -312,9 +307,8 @@ key= gameKeyEvent!.getKey()
                                 
 }
 
-this.clear()
+this.this.clear()
 
-    
                         if(size > 0 || motionInputsIndex >= 0)
                         
                                     {
@@ -339,7 +333,7 @@ this.clear()
                             
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.PROCESS_INPUT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.PROCESS_INPUT, e)
 
 
 
@@ -351,7 +345,7 @@ put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.PROCESS_INPUT, e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processMotionInputs(): number{
 
@@ -360,7 +354,6 @@ put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.PROCESS_INPUT, e)
         
 
 
-    
                         if(lastIndex >= 0)
                         
                                     {
@@ -369,11 +362,11 @@ put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.PROCESS_INPUT, e)
         
         
 
-this.processMotionInput(motionGestureEvent)
+this.this.processMotionInput(motionGestureEvent)
 
                                     }
                                 
-clear()
+motionGestureEventList!.clear()
 
 
 
@@ -383,7 +376,7 @@ clear()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     processMotionInput(motionGestureEvent: MotionGestureEvent){
     //var motionGestureEvent = motionGestureEvent
@@ -398,7 +391,6 @@ clear()
         
 
 
-    
                         if(motionGestureInput == touchMotionGestureFactory!.RELEASED)
                         
                                     {
@@ -408,7 +400,6 @@ clear()
         
 
 
-    
                         if(this.form.isInForm(point))
                         
                                     {
@@ -418,22 +409,19 @@ clear()
         
 
 
-    
                         if(index !=  -1)
                         
                                     {
-                                    add(SelectSound.getInstance())
+                                    PrimaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance())
 
-    
                         if(index == this.form.getSelectedIndex())
                         
                                     {
                                     
-    
                         if(this.clickTimeHelper!.isTime())
                         
                                     {
-                                    this.processCommand()
+                                    this.this.processCommand()
 
                                     }
                                 
@@ -441,7 +429,7 @@ clear()
                                     }
                                 
                         else {
-                            setSelectedIndex(index)
+                            this.form.setSelectedIndex(index)
 
                         }
                             
@@ -456,22 +444,20 @@ clear()
                                     }
                                 
 
-    
                         if(this.hasPressed)
                         
                                     {
                                     
-    
                         if(!this.doubleClickTimeHelper!.isTime())
                         
                                     {
-                                    put("Double Press", this, gameInputStrings!.PROCESS_MOTION_INPUT)
-this.processCommand()
+                                    logUtil!.put("Double Press", this, gameInputStrings!.PROCESS_MOTION_INPUT)
+this.this.processCommand()
 
                                     }
                                 
 this.doubleClickTimeHelper!.delay= DOUBLE_CLICK_DELAY
-setStartTime()
+this.doubleClickTimeHelper!.setStartTime()
 
                                     }
                                 
@@ -480,7 +466,6 @@ this.hasPressed= false
                                     }
                                 
                              else 
-    
                         if(motionGestureInput == touchMotionGestureFactory!.PRESSED)
                         
                                     {

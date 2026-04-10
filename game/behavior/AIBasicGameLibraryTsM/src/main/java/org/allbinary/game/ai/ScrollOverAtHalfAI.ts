@@ -47,7 +47,7 @@ var gameInput = gameInput
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -82,38 +82,34 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 
 
-    
                         if(x > displayInfo!.getLastWidth() -halfWidth)
                         
                                     {
-                                    setPosition(halfWidth +1, y, ownerLayerInterface!.getZP())
+                                    ownerLayerInterface!.setPosition(halfWidth +1, y, ownerLayerInterface!.getZP())
 
                                     }
                                 
 
-    
                         if(y > displayInfo!.getLastHeight() -halfHeight)
                         
                                     {
-                                    setPosition(x, halfHeight +1, ownerLayerInterface!.getZP())
+                                    ownerLayerInterface!.setPosition(x, halfHeight +1, ownerLayerInterface!.getZP())
 
                                     }
                                 
 
-    
                         if(x <  -halfWidth)
                         
                                     {
-                                    setPosition(displayInfo!.getLastWidth() -halfWidth, y, ownerLayerInterface!.getZP())
+                                    ownerLayerInterface!.setPosition(displayInfo!.getLastWidth() -halfWidth, y, ownerLayerInterface!.getZP())
 
                                     }
                                 
 
-    
                         if(y <  -halfHeight)
                         
                                     {
-                                    setPosition(x, displayInfo!.getLastHeight() -halfHeight, ownerLayerInterface!.getZP())
+                                    ownerLayerInterface!.setPosition(x, displayInfo!.getLastHeight() -halfHeight, ownerLayerInterface!.getZP())
 
                                     }
                                 

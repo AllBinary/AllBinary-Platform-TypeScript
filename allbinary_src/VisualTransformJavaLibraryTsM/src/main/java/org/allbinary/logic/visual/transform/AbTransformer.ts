@@ -121,23 +121,21 @@ this.uriResolver= uriResolver
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public translate(xmlDocumentStr: string): string{
 var xmlDocumentStr = xmlDocumentStr
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XMLLOGGING))
                         
                                     {
-                                    put("xml: \n" +xmlDocumentStr, this, "translate(String xmlDocumentStr)")
+                                    logUtil!.put("xml: \n" +xmlDocumentStr, this, "translate(String xmlDocumentStr)")
 
                                     }
                                 
 
-    
                         if(this.getURIResolver() == 
                                     null
                                 )
@@ -146,7 +144,7 @@ var xmlDocumentStr = xmlDocumentStr
                                     
 
 
-                            throw Exception("No URIResolver")
+                            throw Error("No URIResolver")
 
                                     }
                                 
@@ -156,11 +154,10 @@ var xmlDocumentStr = xmlDocumentStr
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGING))
                         
                                     {
-                                    put("translated xml: " +result, this, "translate(String xmlDocumentStr)")
+                                    logUtil!.put("translated xml: " +result, this, "translate(String xmlDocumentStr)")
 
                                     }
                                 
@@ -178,11 +175,10 @@ var xmlDocumentStr = xmlDocumentStr
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put(this.transformInfoInterface!.log(), this, "translate(document)", e)
+                                    logUtil!.put(this.transformInfoInterface!.log(), this, "translate(document)", e)
 
                                     }
                                 

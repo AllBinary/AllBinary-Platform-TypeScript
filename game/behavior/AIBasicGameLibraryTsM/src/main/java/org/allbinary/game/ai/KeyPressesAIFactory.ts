@@ -40,7 +40,7 @@ export class KeyPressesAIFactory
                 , ArtificialIntelligenceInterfaceFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(hashtable: Hashtable<Any, Any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 var hashtable = hashtable
@@ -52,7 +52,6 @@ var gameInput = gameInput
         
 
 
-    
                         if(isSingleKeyProcessing)
                         
                                     {

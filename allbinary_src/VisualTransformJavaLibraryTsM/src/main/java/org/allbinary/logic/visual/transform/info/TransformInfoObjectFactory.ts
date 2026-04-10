@@ -68,7 +68,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInterface{
     //var abeClientInformation = abeClientInformation
@@ -76,7 +76,6 @@ private constructor (){
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         
                                     {
@@ -85,7 +84,7 @@ private constructor (){
         
         
 
-put("Creating View: " +transformInfoInterface!.getName(), this, commonStrings!.GET_INSTANCE)
+logUtil!.put("Creating View: " +transformInfoInterface!.getName(), this, commonStrings!.GET_INSTANCE)
 
                                     }
                                 
@@ -109,14 +108,12 @@ params[0]= transformInfoInterface as Object
         
 
 
-    
                         if(anyType == 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(transformInfoInterface != 
                                     null
                                 )
@@ -127,14 +124,14 @@ params[0]= transformInfoInterface as Object
         
         
 
-append("\nNo Such View Name: ")
-append(transformInfoInterface!.getName())
-append("\nNo Such View Object: ")
-append(transformInfoInterface!.getObjectFile())
+stringBuffer!.append("\nNo Such View Name: ")
+stringBuffer!.append(transformInfoInterface!.getName())
+stringBuffer!.append("\nNo Such View Object: ")
+stringBuffer!.append(transformInfoInterface!.getObjectFile())
 
 
 
-                            throw Exception(stringBuffer!.toString())
+                            throw Error(stringBuffer!.toString())
 
                                     }
                                 
@@ -142,7 +139,7 @@ append(transformInfoInterface!.getObjectFile())
                             
 
 
-                            throw Exception("No Such View Object since transformInfo is null")
+                            throw Error("No Such View Object since transformInfo is null")
 
                         }
                             
@@ -163,7 +160,6 @@ append(transformInfoInterface!.getObjectFile())
         
 
 
-    
                         if(transformInfoInterface != 
                                     null
                                 )
@@ -174,7 +170,6 @@ append(transformInfoInterface!.getObjectFile())
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
@@ -183,7 +178,7 @@ append(transformInfoInterface!.getObjectFile())
         
         
 
-put(error, this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 
@@ -200,7 +195,6 @@ put(error, this, commonStrings!.GET_INSTANCE, e)
         
 
 
-    
                         if(transformInfoInterface != 
                                     null
                                 )
@@ -211,7 +205,6 @@ put(error, this, commonStrings!.GET_INSTANCE, e)
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
@@ -220,7 +213,7 @@ put(error, this, commonStrings!.GET_INSTANCE, e)
         
         
 
-put(error, this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 

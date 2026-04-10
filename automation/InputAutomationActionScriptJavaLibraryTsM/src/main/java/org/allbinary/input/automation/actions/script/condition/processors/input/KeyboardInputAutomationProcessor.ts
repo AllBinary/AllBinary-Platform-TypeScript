@@ -39,7 +39,7 @@ export class KeyboardInputAutomationProcessor
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static process(keyActionScriptInputInterface: KeyboardActionScriptInputInterface){
 var keyActionScriptInputInterface = keyActionScriptInputInterface
@@ -53,7 +53,7 @@ var keyActionScriptInputInterface = keyActionScriptInputInterface
         
         
 
-put(CommonLabels.getInstance()!.START +keyActionScriptInputInterface!.toString(), "KeyInputAutomationProcessor", commonStrings!.PROCESS)
+logUtil!.put(CommonLabels.getInstance()!.START +keyActionScriptInputInterface!.toString(), "KeyInputAutomationProcessor", commonStrings!.PROCESS)
 
     var inputRobotInterface: InputRobotInterface = keyActionScriptInputInterface!.getInputRobotInterface()!;
         
@@ -65,7 +65,6 @@ put(CommonLabels.getInstance()!.START +keyActionScriptInputInterface!.toString()
         
 
 
-    
                         if(keyActionScriptInputInterface!.getDelayBetweenKeys() == 0)
                         
                                     {
@@ -80,17 +79,16 @@ put(CommonLabels.getInstance()!.START +keyActionScriptInputInterface!.toString()
 index < keyActionScriptInputInterface!.getKeyArray()!.length; index++)
         {
 
-    
                         if(keyActionScriptInputInterface!.isPress())
                         
                                     {
-                                    keyPress(integer[index]!)
+                                    inputRobotInterface!.keyPress(integer[index]!)
 
                                     }
                                 
 }
 
-sleep(keyActionScriptInputInterface!.getTime())
+Thread.sleep(keyActionScriptInputInterface!.getTime())
 
 
 
@@ -102,11 +100,10 @@ sleep(keyActionScriptInputInterface!.getTime())
 index >= 0; index--)
         {
 
-    
                         if(keyActionScriptInputInterface!.isRelease())
                         
                                     {
-                                    keyRelease(integer[index]!)
+                                    inputRobotInterface!.keyRelease(integer[index]!)
 
                                     }
                                 
@@ -127,21 +124,19 @@ index >= 0; index--)
 index < keyActionScriptInputInterface!.getKeyArray()!.length; index++)
         {
 
-    
                         if(keyActionScriptInputInterface!.isPress())
                         
                                     {
-                                    keyPress(integer[index]!)
+                                    inputRobotInterface!.keyPress(integer[index]!)
 
                                     }
                                 
-sleep(keyActionScriptInputInterface!.getTime())
+Thread.sleep(keyActionScriptInputInterface!.getTime())
 
-    
                         if(keyActionScriptInputInterface!.isRelease())
                         
                                     {
-                                    keyRelease(integer[index]!)
+                                    inputRobotInterface!.keyRelease(integer[index]!)
 
                                     }
                                 
@@ -159,7 +154,7 @@ sleep(keyActionScriptInputInterface!.getTime())
         while(!timeHelper!.isTime() || toLong > 6000)
         {
 toLong++
-sleep(50)
+Thread.sleep(50)
 }
 
 }

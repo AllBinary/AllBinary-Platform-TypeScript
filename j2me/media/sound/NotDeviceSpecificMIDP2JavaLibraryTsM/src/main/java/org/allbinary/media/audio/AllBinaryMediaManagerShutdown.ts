@@ -34,7 +34,7 @@ export class AllBinaryMediaManagerShutdown
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
 var soundsFactoryInterface = soundsFactoryInterface
@@ -48,8 +48,8 @@ var soundsFactoryInterface = soundsFactoryInterface
         
         
 
-put(commonStrings!.START, instance, "shutdown")
-shutdown(soundsFactoryInterface)
+logUtil!.put(commonStrings!.START, instance, "shutdown")
+AllBinaryMediaManager.shutdown(soundsFactoryInterface)
 }
 
 

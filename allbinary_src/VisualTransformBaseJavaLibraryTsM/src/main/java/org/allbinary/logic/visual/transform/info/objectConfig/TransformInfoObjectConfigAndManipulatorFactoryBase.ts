@@ -44,7 +44,7 @@ export class TransformInfoObjectConfigAndManipulatorFactoryBase
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, objectConfigFileAbPath: AbPath): TransformInfoObjectConfigInterface{
     //var abeClientInformation = abeClientInformation
@@ -57,7 +57,7 @@ var objectConfigFileAbPath = objectConfigFileAbPath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigInterface{
     //var abeClientInformation = abeClientInformation
@@ -69,7 +69,7 @@ var transformInfoInterface = transformInfoInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, document: Document): TransformInfoObjectConfigInterface{
     //var abeClientInformation = abeClientInformation

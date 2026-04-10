@@ -22,7 +22,7 @@
 interface StoreWorkFlowInterface extends WorkFlowInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getStoreName(): string
 

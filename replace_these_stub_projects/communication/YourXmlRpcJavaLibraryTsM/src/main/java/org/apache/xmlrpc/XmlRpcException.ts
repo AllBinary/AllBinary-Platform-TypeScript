@@ -5,7 +5,7 @@
 
 
 
-export class XmlRpcException extends Exception {
+export class XmlRpcException extends Error {
         
 public constructor (code: number, message: string)                        
 

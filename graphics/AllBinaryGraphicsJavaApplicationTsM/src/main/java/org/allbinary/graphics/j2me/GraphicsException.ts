@@ -25,7 +25,7 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
     
 
-export class GraphicsException extends java.lang.Exception {
+export class GraphicsException extends java.lang.Error {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
@@ -49,8 +49,8 @@ var method = method
                     
 
         try {
-            showDialog(msg)
-put(msg, obj, method, this)
+            guiLog!.showDialog(msg)
+logUtil!.put(msg, obj, method, this)
 } catch(e: Exception)
             {
 }
@@ -71,8 +71,8 @@ var method = method
                     
 
         try {
-            showDialog(msg)
-put(msg, className, method, this)
+            guiLog!.showDialog(msg)
+logUtil!.put(msg, className, method, this)
 } catch(e: Exception)
             {
 }

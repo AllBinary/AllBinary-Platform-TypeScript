@@ -30,7 +30,7 @@ export class InputAutomationConfigurationUtil
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getChangeEvent(inputAutomationModuleInterface: InputAutomationModuleFactoryInterface): InputAutomationConfigurationModuleChangeEvent{
 var inputAutomationModuleInterface = inputAutomationModuleInterface

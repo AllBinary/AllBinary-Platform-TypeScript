@@ -77,7 +77,7 @@ this.allowedDistance= allowedDistance!.toInt()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -122,7 +122,6 @@ index < size; index++)
         
 
 
-    
                         if(allBinaryLayer!.getType() != WeaponLayer.getStaticType())
                         
                                     {
@@ -132,14 +131,12 @@ index < size; index++)
         
 
 
-    
                         if(distance > maxDistance)
                         
                                     {
                                     maxDistance= distance
 farAllbinaryLayer= allBinaryLayer
 
-    
                         if(distance > this.allowedDistance)
                         
                                     {
@@ -158,12 +155,10 @@ farAllbinaryLayer= allBinaryLayer
 }
 
 
-    
                         if(maxDistance > this.allowedDistance)
                         
                                     {
                                     
-    
                         if(farAllbinaryLayer != AllBinaryLayer.NULL_ALLBINARY_LAYER)
                         
                                     {
@@ -173,38 +168,34 @@ farAllbinaryLayer= allBinaryLayer
         
 
 
-    
                         if(farAllbinaryLayer!.getXP() < ownerLayerInterface!.getXP())
                         
                                     {
-                                    this.processAI(Canvas.LEFT)
+                                    this.this.processAI(Canvas.LEFT)
 
                                     }
                                 
                              else 
-    
                         if(farAllbinaryLayer!.getXP() > ownerLayerInterface!.getXP())
                         
                                     {
-                                    this.processAI(Canvas.RIGHT)
+                                    this.this.processAI(Canvas.RIGHT)
 
                                     }
                                 
                              else 
-    
                         if(farAllbinaryLayer!.getYP() > ownerLayerInterface!.getYP())
                         
                                     {
-                                    this.processAI(Canvas.UP)
+                                    this.this.processAI(Canvas.UP)
 
                                     }
                                 
                              else 
-    
                         if(farAllbinaryLayer!.getYP() < ownerLayerInterface!.getYP())
                         
                                     {
-                                    this.processAI(Canvas.DOWN)
+                                    this.this.processAI(Canvas.DOWN)
 
                                     }
                                 

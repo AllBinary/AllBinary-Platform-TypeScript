@@ -66,7 +66,7 @@ export class GenericProfileActionScriptJPanel extends javax.swing.JPanel
 public constructor (){
 
             super();
-            put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 initComponents()
 }
 
@@ -77,9 +77,9 @@ initComponents()
         
         
 
-setModel(defaultTreeModel)
-this.repaint()
-put("Updated UI", this, "updateJTree")
+this.getActionScriptJTree()!.setModel(defaultTreeModel)
+this.this.repaint()
+logUtil!.put("Updated UI", this, "updateJTree")
 }
 
 
@@ -119,8 +119,8 @@ this.actionScriptJTree= actionScriptJTree
 jScrollPane1= javax.swing.JScrollPane()
 actionScriptJTree= javax.swing.JTree()
 setLayout(java.awt.GridLayout(1, 0))
-setPreferredSize(java.awt.Dimension(500, 500))
-addMouseListener(object: java.awt.event.MouseAdapter()
+actionScriptJTree!.setPreferredSize(java.awt.Dimension(500, 500))
+actionScriptJTree!.addMouseListener(object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mouseClicked(evt: java.awt.event.MouseEvent){
@@ -135,7 +135,7 @@ actionScriptJTreeMouseReleased(evt)
 
                                 }
                             )
-setViewportView(actionScriptJTree)
+jScrollPane1!.setViewportView(actionScriptJTree)
 add(jScrollPane1)
 }
 
@@ -148,7 +148,6 @@ var evt = evt
         
 
 
-    
                         if(button == MouseEvent.BUTTON3)
                         
                                     {
@@ -158,7 +157,6 @@ var evt = evt
         
 
 
-    
                         if(treePath != 
                                     null
                                 )
@@ -170,7 +168,6 @@ var evt = evt
         
 
 
-    
                         if(anyType is CustomTreeNodeInterface)
                         
                                     {
@@ -184,7 +181,7 @@ var evt = evt
         
         
 
-show(evt.getSource() as JComponent, evt.getX(), evt.getY())
+jPopupMenu!.show(evt.getSource() as JComponent, evt.getX(), evt.getY())
 
                                     }
                                 

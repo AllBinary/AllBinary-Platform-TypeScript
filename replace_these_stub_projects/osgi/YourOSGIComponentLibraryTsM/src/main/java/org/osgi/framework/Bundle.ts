@@ -10,11 +10,11 @@ interface Bundle {
 
     public getSymbolicName(): string
 
-                @Throws(BundleException::class)
+                //@Throws(BundleException::class)
             
     public start()
 
-                @Throws(BundleException::class)
+                //@Throws(BundleException::class)
             
     public start(options: number)
 

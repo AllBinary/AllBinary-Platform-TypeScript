@@ -77,7 +77,6 @@ public constructor (node: Node)
         
 
 
-    
                         if(actionNode != 
                                     null
                                 )
@@ -104,7 +103,6 @@ index < nodeList!.getLength(); index++)
         
 
 
-    
                         if(childNode!.getNodeName()!.compareTo(TimeIntervalActionScriptConditionData.TIME) == 0)
                         
                                     {
@@ -113,7 +111,7 @@ index < nodeList!.getLength(); index++)
         
         
 
-this.setTimeDelayHelper(TimeDelayHelper(Integer(Integer.valueOf(interval))))
+this.this.setTimeDelayHelper(TimeDelayHelper(Integer(Integer.valueOf(interval))))
 
                                     }
                                 
@@ -121,7 +119,7 @@ this.setTimeDelayHelper(TimeDelayHelper(Integer(Integer.valueOf(interval))))
                             
 
 
-                            throw Exception("Time Interval Action Script Condition Unknown Node")
+                            throw Error("Time Interval Action Script Condition Unknown Node")
 
                         }
                             
@@ -134,11 +132,11 @@ this.setTimeDelayHelper(TimeDelayHelper(Integer(Integer.valueOf(interval))))
                             
 
 
-                            throw Exception("Time Interval Action Script Condition Node Null")
+                            throw Error("Time Interval Action Script Condition Node Null")
 
                         }
                             
-this.init()
+this.this.init()
 }
 
 public constructor ()                        
@@ -150,8 +148,8 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTimeDelayHelper(TimeDelayHelper(0))
-this.init()
+this.this.setTimeDelayHelper(TimeDelayHelper(0))
+this.this.init()
 }
 
 
@@ -161,7 +159,7 @@ this.timeIntervalActionScriptConditionJPanel= TimeIntervalActionScriptConditionJ
 
 
     public showDialog(){
-setVisible(true)
+this.timeIntervalActionScriptConditionJPanel!.getTimeIntervalActionJDialog()!.setVisible(true)
 }
 
 
@@ -171,8 +169,8 @@ setVisible(true)
         
         
 
-put(TimeIntervalActionScriptConditionData.TIME, Integer.toString(this.timeHelper!.delay))
-put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
+hashMap!.put(TimeIntervalActionScriptConditionData.TIME, Integer.toString(this.timeHelper!.delay))
+logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
 
 
 
@@ -182,7 +180,7 @@ put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -191,7 +189,7 @@ var document = document
         
         
 
-appendChild(ModDomHelper.createNodeWithValueNodes(document, TimeIntervalActionScriptConditionData.NAME, this.toHashMap()))
+node.appendChild(ModDomHelper.createNodeWithValueNodes(document, TimeIntervalActionScriptConditionData.NAME, this.toHashMap()))
 
 
 
@@ -202,7 +200,7 @@ appendChild(ModDomHelper.createNodeWithValueNodes(document, TimeIntervalActionSc
 
 
     public log(){
-put("Time Interval: " +this.timeHelper!.delay, this, "log")
+logUtil!.put("Time Interval: " +this.timeHelper!.delay, this, "log")
 }
 
 
@@ -222,7 +220,7 @@ this.timeHelper= timeHelper
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public shouldProcess(frame: Long): boolean{
 var frame = frame
@@ -232,11 +230,10 @@ var frame = frame
         
 
 
-    
                         if(timeHelper!.isTime())
                         
                                     {
-                                    setStartTime()
+                                    timeHelper!.setStartTime()
 
 
 

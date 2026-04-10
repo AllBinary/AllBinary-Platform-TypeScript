@@ -72,14 +72,14 @@ this.STRING_ARRAY[index]= stringUtil!.EMPTY_STRING
 
     public init(view: View){
 var view = view
-init()
+super.init()
 this.view= ViewWrapper(view)
 this.totalOnDraws= 0
 }
 
 
     public process(){
-postInvalidate()
+view.postInvalidate()
 }
 
 
@@ -142,7 +142,6 @@ STRING_ARRAY[13]= (this.totalOnDraws /totalTime).toString()
 
 totalTime= (totalTime /1000)
 
-    
                         if(totalTime > 0)
                         
                                     {
@@ -151,21 +150,20 @@ totalTime= (totalTime /1000)
         
         
 
-append(super.toString(totalTime))
+stringBuffer!.append(super.toString(totalTime))
 
-    
                         if(this.totalOnDraws > 0)
                         
                                     {
-                                    append(TOTAL_ONDRAWS)
-append(totalOnDraws.toString())
-append(ONDRAWS_RATE)
+                                    stringBuffer!.append(TOTAL_ONDRAWS)
+stringBuffer!.append(totalOnDraws.toString())
+stringBuffer!.append(ONDRAWS_RATE)
 
     var drawsOverTime: string = (this.totalOnDraws /totalTime).toString()!;
         
         
 
-append(drawsOverTime)
+stringBuffer!.append(drawsOverTime)
 
                                     }
                                 

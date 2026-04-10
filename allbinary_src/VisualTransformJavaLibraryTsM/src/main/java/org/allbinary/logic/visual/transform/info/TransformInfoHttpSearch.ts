@@ -53,18 +53,17 @@ public constructor (searchRequest: SearchRequest)
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(searchRequest!.getStoreFront()!.getName() != 
                                     null
                                 )
                         
                                     {
-                                    this.setStoreName(searchRequest!.getStoreFront()!.getName())
+                                    this.this.setStoreName(searchRequest!.getStoreFront()!.getName())
 
                                     }
                                 
                         else {
-                            this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING)
+                            this.this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING)
 
                         }
                             
@@ -73,11 +72,11 @@ public constructor (searchRequest: SearchRequest)
         
         
 
-this.setTemplateFile(dataFileName)
+this.this.setTemplateFile(dataFileName)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getPath(): string{
 
@@ -85,10 +84,10 @@ this.setTemplateFile(dataFileName)
         
         
 
-append(URLGLOBALS.getMainPath())
-append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-append(this.getStoreName())
-append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.append(URLGLOBALS.getMainPath())
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
+stringBuffer!.append(this.getStoreName())
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
 
 
 
@@ -98,7 +97,7 @@ append(AbPathData.getInstance()!.SEPARATOR)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getTemplateFilePath(): AbPath{
 
@@ -110,7 +109,7 @@ append(AbPathData.getInstance()!.SEPARATOR)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getObjectConfigFilePath(): AbPath{
 
@@ -122,7 +121,7 @@ append(AbPathData.getInstance()!.SEPARATOR)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDataFilePath(): AbPath{
 

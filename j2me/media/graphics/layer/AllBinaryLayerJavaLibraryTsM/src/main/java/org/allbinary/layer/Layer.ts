@@ -191,14 +191,13 @@ var graphics = graphics
         
         
 
-put(commonStrings!.NOT_IMPLEMENTED, this, canvasStrings!.PAINT)
+logUtil!.put(commonStrings!.NOT_IMPLEMENTED, this, canvasStrings!.PAINT)
 }
 
 
     setLayerWidth(width: number){
 var width = width
 
-    
                         if(width < 0)
                         
                                     {
@@ -216,7 +215,6 @@ this.width= width
     setLayerHeight(height: number){
 var height = height
 
-    
                         if(height < 0)
                         
                                     {

@@ -59,7 +59,6 @@ public constructor (parent: any = {}, geographicMapCellPosition: GeographicMapCe
                     
 this.pathFindingNodeCostInfoP= pathFindingNodeCostInfo
 
-    
                         if(this.geographicMapCellPosition == 
                                     null
                                 )
@@ -68,12 +67,11 @@ this.pathFindingNodeCostInfoP= pathFindingNodeCostInfo
                                     
 
 
-                            throw Exception("No GeographicMapCellPosition")
+                            throw Error("No GeographicMapCellPosition")
 
                                     }
                                 
 
-    
                         if(this.getPathFindingNodeCostInfo() == 
                                     null
                                 )
@@ -82,7 +80,7 @@ this.pathFindingNodeCostInfoP= pathFindingNodeCostInfo
                                     
 
 
-                            throw Exception("No PathFindingNodeCostInfo")
+                            throw Error("No PathFindingNodeCostInfo")
 
                                     }
                                 
@@ -122,11 +120,11 @@ var pathFindingNodeCost = pathFindingNodeCost
         
         
 
-append(this::class.toString()!)
-append(CommonLabels.getInstance()!.COLON_SEP)
-append(this.getPathFindingNodeCostInfo()!.toString())
-append(" Path: ")
-append(this.geographicMapCellPosition!.toString())
+stringBuffer!.append(this::class.toString()!)
+stringBuffer!.append(CommonLabels.getInstance()!.COLON_SEP)
+stringBuffer!.append(this.getPathFindingNodeCostInfo()!.toString())
+stringBuffer!.append(" Path: ")
+stringBuffer!.append(this.geographicMapCellPosition!.toString())
 
     var pathFindingNode: PathFindingNode = this.parent as PathFindingNode;
         
@@ -137,8 +135,8 @@ append(this.geographicMapCellPosition!.toString())
                                     null
                                 )
         {
-append(pathFindingNode!.geographicMapCellPosition!.toString())
-append(commonSeps!.SPACE)
+stringBuffer!.append(pathFindingNode!.geographicMapCellPosition!.toString())
+stringBuffer!.append(commonSeps!.SPACE)
 pathFindingNode= pathFindingNode!.parent as PathFindingNode
 }
 

@@ -58,7 +58,7 @@ var progressCanvas = progressCanvas
     public run(){
 
         try {
-            onDismissProgress(ZOOM_OUT_AND_IN)
+            this.midletActivity!.onDismissProgress(ZOOM_OUT_AND_IN)
 } catch(e: Exception)
             {
 
@@ -66,7 +66,7 @@ var progressCanvas = progressCanvas
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }

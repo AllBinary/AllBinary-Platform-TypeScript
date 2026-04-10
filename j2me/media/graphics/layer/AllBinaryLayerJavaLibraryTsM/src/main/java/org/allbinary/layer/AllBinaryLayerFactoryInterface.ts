@@ -22,7 +22,7 @@
 interface AllBinaryLayerFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getInstance(): AllBinaryLayer
 

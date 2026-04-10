@@ -60,7 +60,7 @@ public constructor (tileTypeToTileIdsMap: Hashtable<Any, Any>, maxTileId: number
         
         
 
-put(commonStrings!.START, this, commonStrings!.INIT)
+logUtil!.put(commonStrings!.START, this, commonStrings!.INIT)
 this.maxTileId= maxTileId
 GeographicMapCellType(0)
 
@@ -111,11 +111,10 @@ GeographicMapCellType(0)
         while(enumeration.hasMoreElements())
         {
 key= enumeration.nextElement()! as String
-put(key, this, commonStrings!.INIT)
+logUtil!.put(key, this, commonStrings!.INIT)
 idsWithTypeList= tileTypeToTileIdsMap!.get(key) as BasicArrayList
 basicPlatormGeographicMapCellType= BasicPlatormGeographicMapCellType(idsWithTypeList)
 
-    
                         if(key.equals(PLATFORM))
                         
                                     {
@@ -124,7 +123,6 @@ basicPlatormGeographicMapCellType= BasicPlatormGeographicMapCellType(idsWithType
                                     }
                                 
 
-    
                         if(key.equals(JUMP_TRHU))
                         
                                     {
@@ -133,7 +131,6 @@ basicPlatormGeographicMapCellType= BasicPlatormGeographicMapCellType(idsWithType
                                     }
                                 
 
-    
                         if(key.equals(LADDER))
                         
                                     {
@@ -184,7 +181,6 @@ GeographicMapCellType(this.maxTileId -2)
     public isPath(cellType: GeographicMapCellType): boolean{
     //var cellType = cellType
 
-    
                         if(cellType!.getType() == 0)
                         
                                     {

@@ -183,16 +183,15 @@ this.grid= Grid()
             this.workAreaJTreeJPanel= workAreaJTreeJPanel
 initComponents()
 initMyComponents()
-this.setSize(dimension)
-this.setCanvasSize(x, y)
+this.this.setSize(dimension)
+this.this.setCanvasSize(x, y)
 } catch(e: Exception)
             {
 
-    
                         if(LOGGING.contains(LOGGING.GRAPHICSCREATION))
                         
                                     {
-                                    put("Constructor Error", this, "contructor", e)
+                                    guiLog!.put("Constructor Error", this, "contructor", e)
 
                                     }
                                 
@@ -212,8 +211,8 @@ this.grid= Grid(canvasDom!.getGrid())
             this.workAreaJTreeJPanel= workAreaJTreeJPanel
 initComponents()
 initMyComponents()
-this.setSize(dimension)
-this.setCanvasSize(canvasDom!.getDimension()!.getWidth(), canvasDom!.getDimension()!.getHeight())
+this.this.setSize(dimension)
+this.this.setCanvasSize(canvasDom!.getDimension()!.getWidth(), canvasDom!.getDimension()!.getHeight())
 this.graphicItemHashMap= canvasDom!.getGraphicItemHashMap()
 
     var graphicItemArray: any = {}[] = graphicItemHashMap!.keys.toTypedArray()!;
@@ -241,22 +240,21 @@ index < size; index++)
         
         
 
-add(graphicItemTreeNode)
+canvasTreeNode!.add(graphicItemTreeNode)
 }
 
-this.repaint()
-this.setAngle(canvasDom!.getAngle())
-updateTree()
-expand()
-repaint()
+this.this.repaint()
+this.this.setAngle(canvasDom!.getAngle())
+this.workAreaJTreeJPanel!.updateTree()
+this.workAreaJTreeJPanel!.expand()
+this.workAreaJTreeJPanel!.repaint()
 } catch(e: Exception)
             {
 
-    
                         if(LOGGING.contains(LOGGING.GRAPHICSCREATION))
                         
                                     {
-                                    put("Constructor Error", this, "contructor", e)
+                                    guiLog!.put("Constructor Error", this, "contructor", e)
 
                                     }
                                 
@@ -265,24 +263,24 @@ repaint()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     initMyComponents(){
 this.frameLabel= CanvasTreeLabel("FrameLabel" +Integer(frame).
                             toString())
 this.canvasTreeNode= DefaultMutableTreeNode(this.frameLabel)
 frame++
-add(this.getTreeNode())
+this.workAreaJTreeJPanel!.add(this.getTreeNode())
 this.graphicItemHashMap= HashMap<Any, Any>()
 this.grid.grid= PointFactory.getInstance()!.getInstance(0, 0)
-this.setCanvasDimension(IntegerDimension(0, 0))
+this.this.setCanvasDimension(IntegerDimension(0, 0))
 this.selectedTool= 
                                         null
                                     
-this.addKeyListener(this)
-this.addMouseListener(this)
-this.addMouseMotionListener(this)
-addListener(this)
+this.this.addKeyListener(this)
+this.this.addMouseListener(this)
+this.this.addMouseMotionListener(this)
+MyGraphicItemEventService.addListener(this)
 }
 
 
@@ -301,14 +299,13 @@ setLayout(java.awt.GridLayout(1, 1))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setCanvasSize(x: number, y: number){
 var x = x
 var y = y
 this.grid.isGridPossible= true
 
-    
                         if(x <= 0)
                         
                                     {
@@ -321,7 +318,6 @@ this.grid.isGridPossible= true
                                     }
                                 
 
-    
                         if(y <= 0)
                         
                                     {
@@ -334,7 +330,6 @@ this.grid.isGridPossible= true
                                     }
                                 
 
-    
                         if(x > this.getWidth())
                         
                                     {
@@ -343,7 +338,6 @@ this.grid.isGridPossible= true
                                     }
                                 
 
-    
                         if(y > this.getHeight())
                         
                                     {
@@ -351,14 +345,14 @@ this.grid.isGridPossible= true
 
                                     }
                                 
-this.setCanvasDimension(IntegerDimension(x, y))
+this.this.setCanvasDimension(IntegerDimension(x, y))
 this.grid.isChanged= true
 }
 
 
     public setGrid(point: GPoint){
 var point = point
-this.setGrid(point.getX(), point.getY())
+this.this.setGrid(point.getX(), point.getY())
 }
 
 
@@ -368,7 +362,6 @@ var ySize = ySize
 
         try {
             
-    
                         if(xSize >= getCanvasDimension()!.getWidth() /2 || xSize < 1)
                         
                                     {
@@ -380,7 +373,6 @@ var ySize = ySize
                                     }
                                 
 
-    
                         if(ySize >= getCanvasDimension()!.getHeight() /2 || ySize < 1)
                         
                                     {
@@ -400,7 +392,7 @@ this.grid.isChanged= true
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setDefaultGrid(){
 
@@ -413,7 +405,7 @@ this.grid.isChanged= true
         
         
 
-this.setGrid(1, 1)
+this.this.setGrid(1, 1)
 this.grid.isChanged= true
 }
 
@@ -436,7 +428,7 @@ this.angle= angle
 
     public addAngle(angle: number){
 var angle = angle
-this.setAngle(this.angle +angle)
+this.this.setAngle(this.angle +angle)
 }
 
 
@@ -478,7 +470,6 @@ index < size; index++)
         
 
 
-    
                         if(graphicItem!.getName() == LinesGraphicItem.getStaticName())
                         
                                     {
@@ -501,7 +492,6 @@ index < size; index++)
         
 
 
-    
                         if(pointOne != 
                                     null
                                  && pointTwo != 
@@ -509,12 +499,12 @@ index < size; index++)
                                 )
                         
                                     {
-                                    addPoint(pointOne)
-addPoint(pointTwo)
+                                    newGraphicItem!.addPoint(pointOne)
+newGraphicItem!.addPoint(pointTwo)
 
                                     }
                                 
-add(newGraphicItem)
+newPoints!.add(newGraphicItem)
 }
 
 
@@ -542,17 +532,17 @@ index < size2; index++)
         
         
 
-add(newGraphicItem!.getTreeNode())
-put(newGraphicItem!.getTreeNode(), newGraphicItem)
+canvasTreeNode!.add(newGraphicItem!.getTreeNode())
+this.getGraphicItemHashMap()!.put(newGraphicItem!.getTreeNode(), newGraphicItem)
 }
 
-updateTree()
-expand()
-repaint()
+this.workAreaJTreeJPanel!.updateTree()
+this.workAreaJTreeJPanel!.expand()
+this.workAreaJTreeJPanel!.repaint()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public explode(howMuch: number, explosionType: number){
 var howMuch = howMuch
@@ -593,21 +583,21 @@ index < size; index++)
         
         
 
-addPoints(basicArrayList)
-setPointsInterface(newPoints)
+newPoints!.addPoints(basicArrayList)
+item.setPointsInterface(newPoints)
 
     var angleDelta: number = RandomRotationFactory.getInstance()!.getNextRandomAngle(howMuch)!;
         
         
 
-setAngle(angleDelta)
+item.setAngle(angleDelta)
 }
 
-this.repaint()
+this.this.repaint()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public mirror(){
 
@@ -651,36 +641,36 @@ index < size; index++)
         
         
 
-addPoints(basicArrayList)
-setPointsInterface(newPoints)
+newPoints!.addPoints(basicArrayList)
+item.setPointsInterface(newPoints)
 }
 
-this.repaint()
+this.this.repaint()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public center(){
-transform(this.getGraphicItemHashMap())
-this.repaint()
+VectorCenterGenerator().
+                            transform(this.getGraphicItemHashMap())
+this.this.repaint()
 }
 
 
     public setNewTool(){
 
         try {
-            setStatus("Tool Selected")
+            StatusFactory.getInstance()!.setStatus("Tool Selected")
 this.selectedTool= ToolFactory.getInstance()!.getSelectedToolFactory()!.getInstance(this)
 
     var newNode: MutableTreeNode = this.selectedTool!.getTreeNode()!;
         
         
 
-put(newNode, this.selectedTool)
-add(newNode)
+this.getGraphicItemHashMap()!.put(newNode, this.selectedTool)
+this.canvasTreeNode!.add(newNode)
 
-    
                         if(this.getSelectedTool() == 
                                     null
                                 )
@@ -700,7 +690,7 @@ add(newNode)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public duplicateGraphicItem(graphicItem: GraphicItemInterface){
 var graphicItem = graphicItem
@@ -709,12 +699,12 @@ var graphicItem = graphicItem
         
         
 
-put(graphicItemClone!.getTreeNode(), graphicItemClone)
-add(graphicItemClone!.getTreeNode())
+this.getGraphicItemHashMap()!.put(graphicItemClone!.getTreeNode(), graphicItemClone)
+canvasTreeNode!.add(graphicItemClone!.getTreeNode())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public duplicateGraphicItemHashMap(hashMap: HashMap<Any, Any>){
 var hashMap = hashMap
@@ -749,7 +739,7 @@ index < size; index++)
         
         
 
-this.duplicateGraphicItem(graphicItem)
+this.this.duplicateGraphicItem(graphicItem)
 }
 
 }
@@ -772,7 +762,6 @@ this.duplicateGraphicItem(graphicItem)
         
 
 
-    
                         if(this.getGrid()!.getZoom() == 1)
                         
                                     {
@@ -805,7 +794,6 @@ this.duplicateGraphicItem(graphicItem)
         
 
 
-    
                         if(this.getGrid()!.getZoom() == 1)
                         
                                     {
@@ -874,7 +862,7 @@ index < size; index++)
         
         
 
-paint(graphics, angleDouble, this.getCanvasDimension(), this.getXPixelsPerWorkAreaPixel(), this.getYPixelsPerWorkAreaPixel())
+item.paint(graphics, angleDouble, this.getCanvasDimension(), this.getXPixelsPerWorkAreaPixel(), this.getYPixelsPerWorkAreaPixel())
 }
 
 }
@@ -912,7 +900,7 @@ var graphics = graphics
         
         
 
-setColor(gridColor)
+graphics.setColor(gridColor)
 
 
 
@@ -923,7 +911,7 @@ setColor(gridColor)
         
 value <= this.getHeight() -yAdjust; )
         {
-drawLine(xLeft, value, xRight, value)
+graphics.drawLine(xLeft, value, xRight, value)
 }
 
 
@@ -936,7 +924,7 @@ drawLine(xLeft, value, xRight, value)
         
 value <= this.getWidth() -xAdjust; )
         {
-drawLine(value, yUpper, value, yLower)
+graphics.drawLine(value, yUpper, value, yLower)
 }
 
 }
@@ -947,24 +935,22 @@ var graphics = graphics
 
         try {
             
-    
                         if(this.getGrid()!.isChanged)
                         
                                     {
-                                    setColor(backgroundColor)
-fillRect(0, 0, getWidth(), getHeight())
+                                    graphics.setColor(backgroundColor)
+graphics.fillRect(0, 0, getWidth(), getHeight())
 
-    
                         if(this.getGrid()!.getZoom() > 2 && this.getGrid()!.isGridOn && this.getGrid()!.isGridPossible)
                         
                                     {
-                                    this.setDefaultGrid()
-this.drawGrid(graphics)
+                                    this.this.setDefaultGrid()
+this.this.drawGrid(graphics)
 
                                     }
                                 
-this.drawItems(graphics)
-drawString(Double(this.getAngle()).
+this.this.drawItems(graphics)
+graphics.drawString(Double(this.getAngle()).
                             toString(), this.getWidth() -75, this.getHeight() -15)
 this.grid.isChanged= false
 
@@ -979,7 +965,6 @@ this.grid.isChanged= false
 
     public repaint(){
 
-    
                         if(this.grid != 
                                     null
                                 )
@@ -989,11 +974,11 @@ this.grid.isChanged= false
 
                                     }
                                 
-repaint()
+super.repaint()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toDom(): Node{
 
@@ -1013,9 +998,8 @@ this.grid.isChanged= true
 
     public mouseClicked(mouseEvent: java.awt.event.MouseEvent){
 var mouseEvent = mouseEvent
-setStatusNoLog(MouseStrings.getInstance()!.MOUSE_CLICKED_LABEL +this.logMouseEvent(mouseEvent))
+StatusFactory.getInstance()!.setStatusNoLog(MouseStrings.getInstance()!.MOUSE_CLICKED_LABEL +this.logMouseEvent(mouseEvent))
 
-    
                         if(this.getSelectedTool() != 
                                     null
                                  && this.getSelectedTool()!.isActive())
@@ -1026,25 +1010,24 @@ setStatusNoLog(MouseStrings.getInstance()!.MOUSE_CLICKED_LABEL +this.logMouseEve
         
         
 
-mouseClicked(mouseEvent, this.getXPixelsPerWorkAreaPixel(), this.getYPixelsPerWorkAreaPixel())
+graphicItem!.mouseClicked(mouseEvent, this.getXPixelsPerWorkAreaPixel(), this.getYPixelsPerWorkAreaPixel())
 
                                     }
                                 
                         else {
-                            this.setNewTool()
+                            this.this.setNewTool()
 
     var graphicItem: GraphicItemInterface = this.getSelectedTool()!;
         
         
 
 
-    
                         if(graphicItem != 
                                     null
                                 )
                         
                                     {
-                                    mouseClicked(mouseEvent, this.getXPixelsPerWorkAreaPixel(), this.getYPixelsPerWorkAreaPixel())
+                                    graphicItem!.mouseClicked(mouseEvent, this.getXPixelsPerWorkAreaPixel(), this.getYPixelsPerWorkAreaPixel())
 
                                     }
                                 
@@ -1052,30 +1035,29 @@ mouseClicked(mouseEvent, this.getXPixelsPerWorkAreaPixel(), this.getYPixelsPerWo
                         }
                             
 this.grid.isChanged= true
-this.repaint()
-updateTree()
-expand()
-repaint()
+this.this.repaint()
+this.workAreaJTreeJPanel!.updateTree()
+this.workAreaJTreeJPanel!.expand()
+this.workAreaJTreeJPanel!.repaint()
 }
 
 
     public mouseEntered(mouseEvent: java.awt.event.MouseEvent){
 var mouseEvent = mouseEvent
-setStatusNoLog(this.logMouseEvent(mouseEvent))
+StatusFactory.getInstance()!.setStatusNoLog(this.logMouseEvent(mouseEvent))
 }
 
 
     public mouseExited(mouseEvent: java.awt.event.MouseEvent){
 var mouseEvent = mouseEvent
-setStatusNoLog(this.logMouseEvent(mouseEvent))
+StatusFactory.getInstance()!.setStatusNoLog(this.logMouseEvent(mouseEvent))
 }
 
 
     public mousePressed(mouseEvent: java.awt.event.MouseEvent){
 var mouseEvent = mouseEvent
-setStatusNoLog(MouseStrings.getInstance()!.MOUSE_PRESSED_LABEL +this.logMouseEvent(mouseEvent))
+StatusFactory.getInstance()!.setStatusNoLog(MouseStrings.getInstance()!.MOUSE_PRESSED_LABEL +this.logMouseEvent(mouseEvent))
 
-    
                         if(this.getSelectedTool() != 
                                     null
                                 )
@@ -1086,71 +1068,68 @@ setStatusNoLog(MouseStrings.getInstance()!.MOUSE_PRESSED_LABEL +this.logMouseEve
         
         
 
-mousePressed(mouseEvent, this.getXPixelsPerWorkAreaPixel(), this.getYPixelsPerWorkAreaPixel())
+graphicItem!.mousePressed(mouseEvent, this.getXPixelsPerWorkAreaPixel(), this.getYPixelsPerWorkAreaPixel())
 
                                     }
                                 
-this.requestFocus()
+this.this.requestFocus()
 this.grid.isChanged= true
-this.repaint()
+this.this.repaint()
 }
 
 
     public mouseReleased(mouseEvent: java.awt.event.MouseEvent){
 var mouseEvent = mouseEvent
-setStatusNoLog(MouseStrings.getInstance()!.MOUSE_RELEASED_LABEL +this.logMouseEvent(mouseEvent))
+StatusFactory.getInstance()!.setStatusNoLog(MouseStrings.getInstance()!.MOUSE_RELEASED_LABEL +this.logMouseEvent(mouseEvent))
 
     var graphicItem: GraphicItemInterface = this.getSelectedTool()!;
         
         
 
 
-    
                         if(graphicItem != 
                                     null
                                 )
                         
                                     {
-                                    mouseReleased(mouseEvent, this.getXPixelsPerWorkAreaPixel(), this.getYPixelsPerWorkAreaPixel())
+                                    graphicItem!.mouseReleased(mouseEvent, this.getXPixelsPerWorkAreaPixel(), this.getYPixelsPerWorkAreaPixel())
 
                                     }
                                 
-this.requestFocus()
+this.this.requestFocus()
 this.grid.isChanged= true
-this.repaint()
+this.this.repaint()
 }
 
 
     public mouseDragged(mouseEvent: java.awt.event.MouseEvent){
 var mouseEvent = mouseEvent
-setStatusNoLog(MouseStrings.getInstance()!.MOUSE_DRAGGED_LABEL +this.logMouseEvent(mouseEvent))
+StatusFactory.getInstance()!.setStatusNoLog(MouseStrings.getInstance()!.MOUSE_DRAGGED_LABEL +this.logMouseEvent(mouseEvent))
 
     var graphicItem: GraphicItemInterface = this.getSelectedTool()!;
         
         
 
 
-    
                         if(graphicItem != 
                                     null
                                 )
                         
                                     {
-                                    mouseDragged(mouseEvent, this.getXPixelsPerWorkAreaPixel(), this.getYPixelsPerWorkAreaPixel())
+                                    graphicItem!.mouseDragged(mouseEvent, this.getXPixelsPerWorkAreaPixel(), this.getYPixelsPerWorkAreaPixel())
 
                                     }
                                 
-this.requestFocus()
+this.this.requestFocus()
 this.grid.isChanged= true
-this.repaint()
+this.this.repaint()
 }
 
 
     public mouseMoved(mouseEvent: java.awt.event.MouseEvent){
 var mouseEvent = mouseEvent
-setStatusNoLog(MouseStrings.getInstance()!.MOUSE_MOVED_LABEL +this.logMouseEvent(mouseEvent))
+StatusFactory.getInstance()!.setStatusNoLog(MouseStrings.getInstance()!.MOUSE_MOVED_LABEL +this.logMouseEvent(mouseEvent))
 
-    
                         if(this.getSelectedTool() != 
                                     null
                                  && this.getSelectedTool()!.isActive())
@@ -1161,13 +1140,13 @@ setStatusNoLog(MouseStrings.getInstance()!.MOUSE_MOVED_LABEL +this.logMouseEvent
         
         
 
-mouseMoved(mouseEvent, this.getXPixelsPerWorkAreaPixel(), this.getYPixelsPerWorkAreaPixel())
+graphicItem!.mouseMoved(mouseEvent, this.getXPixelsPerWorkAreaPixel(), this.getYPixelsPerWorkAreaPixel())
 
                                     }
                                 
-this.requestFocus()
+this.this.requestFocus()
 this.grid.isChanged= true
-this.repaint()
+this.this.repaint()
 }
 
 
@@ -1178,11 +1157,11 @@ var mouseEvent = mouseEvent
         
         
 
-append(PositionStrings.getInstance()!.X_LABEL)
-append(mouseEvent!.getX() /this.getXPixelsPerWorkAreaPixel())
-append(CommonSeps.getInstance()!.SPACE)
-append(PositionStrings.getInstance()!.Y_LABEL)
-append(mouseEvent!.getY() /this.getYPixelsPerWorkAreaPixel())
+stringBuffer!.append(PositionStrings.getInstance()!.X_LABEL)
+stringBuffer!.append(mouseEvent!.getX() /this.getXPixelsPerWorkAreaPixel())
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(PositionStrings.getInstance()!.Y_LABEL)
+stringBuffer!.append(mouseEvent!.getY() /this.getYPixelsPerWorkAreaPixel())
 
 
 
@@ -1194,7 +1173,7 @@ append(mouseEvent!.getY() /this.getYPixelsPerWorkAreaPixel())
 
     public keyPressed(keyEvent: java.awt.event.KeyEvent){
 var keyEvent = keyEvent
-setStatus("Key Pressed")
+StatusFactory.getInstance()!.setStatus("Key Pressed")
 
         try {
             
@@ -1229,43 +1208,38 @@ index < size; index++)
         
 
 
-    
                         if(graphicItemInterface!.isActive())
                         
                                     {
                                     
-    
                         if(keyCode == keyEvent!.VK_UP)
                         
                                     {
-                                    translate(0,  -1)
+                                    graphicItemInterface!.translate(0,  -1)
 
                                     }
                                 
                              else 
-    
                         if(keyCode == keyEvent!.VK_DOWN)
                         
                                     {
-                                    translate(0, 1)
+                                    graphicItemInterface!.translate(0, 1)
 
                                     }
                                 
                              else 
-    
                         if(keyCode == keyEvent!.VK_LEFT)
                         
                                     {
-                                    translate( -1, 0)
+                                    graphicItemInterface!.translate( -1, 0)
 
                                     }
                                 
                              else 
-    
                         if(keyCode == keyEvent!.VK_RIGHT)
                         
                                     {
-                                    translate(1, 0)
+                                    graphicItemInterface!.translate(1, 0)
 
                                     }
                                 
@@ -1281,33 +1255,32 @@ index < size; index++)
         
         
 
-put(commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED, e)
 }
 
 
-    
                         if(this.getSelectedTool() != 
                                     null
                                  && this.getSelectedTool()!.isActive())
                         
                                     {
-                                    setStatus("Key Pressed for Tool")
+                                    StatusFactory.getInstance()!.setStatus("Key Pressed for Tool")
 
     var graphicItem: GraphicItemInterface = this.getSelectedTool()!;
         
         
 
-keyPressed(keyEvent)
+graphicItem!.keyPressed(keyEvent)
 
                                     }
                                 
                         else {
-                            this.setNewTool()
+                            this.this.setNewTool()
 
                         }
                             
 this.grid.isChanged= true
-this.repaint()
+this.this.repaint()
 }
 
 
@@ -1323,10 +1296,10 @@ var keyEvent = keyEvent
 
     public delete(evt: MyGraphicItemEvent){
 var evt = evt
-remove(evt.getTreeNode())
-updateTree()
-expand()
-repaint()
+this.getGraphicItemHashMap()!.remove(evt.getTreeNode())
+this.workAreaJTreeJPanel!.updateTree()
+this.workAreaJTreeJPanel!.expand()
+this.workAreaJTreeJPanel!.repaint()
 }
 
 
@@ -1338,15 +1311,14 @@ var evt = evt
         
 
 
-    
                         if(graphicItemInterface != 
                                     null
                                 )
                         
                                     {
-                                    setColor(Color.WHITE)
-deactivate()
-repaint()
+                                    graphicItemInterface!.setColor(Color.WHITE)
+graphicItemInterface!.deactivate()
+this.workAreaJTreeJPanel!.repaint()
 
                                     }
                                 
@@ -1361,22 +1333,21 @@ var evt = evt
         
 
 
-    
                         if(graphicItemInterface != 
                                     null
                                 )
                         
                                     {
-                                    setColor(Color.YELLOW)
-activate()
-repaint()
+                                    graphicItemInterface!.setColor(Color.YELLOW)
+graphicItemInterface!.activate()
+this.workAreaJTreeJPanel!.repaint()
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public duplicate(): CanvasJPanel{
 
@@ -1384,12 +1355,12 @@ repaint()
         
         
 
-setGrid(this.getGrid()!.getGrid())
-setAngle(this.getAngle())
-duplicateGraphicItemHashMap(this.getGraphicItemHashMap())
-updateTree()
-expand()
-repaint()
+newCanvasJPanel!.setGrid(this.getGrid()!.getGrid())
+newCanvasJPanel!.setAngle(this.getAngle())
+newCanvasJPanel!.duplicateGraphicItemHashMap(this.getGraphicItemHashMap())
+this.workAreaJTreeJPanel!.updateTree()
+this.workAreaJTreeJPanel!.expand()
+this.workAreaJTreeJPanel!.repaint()
 
 
 
@@ -1399,7 +1370,7 @@ repaint()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public duplicate(event: MyGraphicItemEvent){
 var event = event
@@ -1414,16 +1385,15 @@ var event = event
         
 
 
-    
                         if(graphicItem != 
                                     null
                                 )
                         
                                     {
-                                    this.duplicateGraphicItem(graphicItem)
-updateTree()
-expand()
-repaint()
+                                    this.this.duplicateGraphicItem(graphicItem)
+this.workAreaJTreeJPanel!.updateTree()
+this.workAreaJTreeJPanel!.expand()
+this.workAreaJTreeJPanel!.repaint()
 
                                     }
                                 
@@ -1443,13 +1413,12 @@ var event = event
         
 
 
-    
                         if(graphicItem != 
                                     null
                                 )
                         
                                     {
-                                    addAngle(event.getAngle())
+                                    graphicItem!.addAngle(event.getAngle())
 
                                     }
                                 

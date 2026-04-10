@@ -121,7 +121,6 @@ DEFAULT_FINISH_LINE_ROAD_CELL_TYPE= raceTrackGeographicMapCellTypes!.DEFAULT_FIN
     public isPath(cellType: GeographicMapCellType): boolean{
     //var cellType = cellType
 
-    
                         if(cellType != this.EMPTY_CELL_TYPE && cellType != this.EASY_CELL_TYPE)
                         
                                     {

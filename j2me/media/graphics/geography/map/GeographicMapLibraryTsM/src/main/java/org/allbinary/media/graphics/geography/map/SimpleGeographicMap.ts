@@ -68,8 +68,8 @@ this.id= id
 this.name= name
 this.cellTypeIdToGeographicMapCellType= cellTypeIdToGeographicMapCellType
 this.tiledLayer= tiledLayer
-this.setBackgroundBasicColor(backgroundBasicColor)
-this.setForegroundBasicColor(foregroundBasicColor)
+this.this.setBackgroundBasicColor(backgroundBasicColor)
+this.this.setForegroundBasicColor(foregroundBasicColor)
 }
 
 
@@ -111,7 +111,7 @@ this.setForegroundBasicColor(foregroundBasicColor)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getCellTypeAt(cellPosition: GeographicMapCellPosition): GeographicMapCellType{
     //var cellPosition = cellPosition
@@ -131,7 +131,6 @@ this.setForegroundBasicColor(foregroundBasicColor)
         
 
 
-    
                         if(cellTypeId < 0)
                         
                                     {

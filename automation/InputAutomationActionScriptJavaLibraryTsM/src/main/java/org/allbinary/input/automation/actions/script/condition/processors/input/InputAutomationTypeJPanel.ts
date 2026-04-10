@@ -47,21 +47,21 @@ this.inputAutomationTypeJComboBox= inputAutomationTypeJComboBox
     initComponents(){
 inputAutomationTypeJComboBox= javax.swing.JComboBox()
 jLabel1= javax.swing.JLabel()
-setModel(javax.swing.DefaultComboBoxModel(
+inputAutomationTypeJComboBox!.setModel(javax.swing.DefaultComboBoxModel(
                                                 [
                                                     "DirectX","DirectX 8","Low Level","Java Robot";
         
         
                                                 ]))
-setText("Input Type:")
+jLabel1!.setText("Input Type:")
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
         
         
 
-this.setLayout(layout)
-setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(inputAutomationTypeJComboBox, 0, 98, Short.MAX_VALUE)))
-setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel1)!.addComponent(inputAutomationTypeJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+this.this.setLayout(layout)
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(inputAutomationTypeJComboBox, 0, 98, Short.MAX_VALUE)))
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel1)!.addComponent(inputAutomationTypeJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
 }
 
 

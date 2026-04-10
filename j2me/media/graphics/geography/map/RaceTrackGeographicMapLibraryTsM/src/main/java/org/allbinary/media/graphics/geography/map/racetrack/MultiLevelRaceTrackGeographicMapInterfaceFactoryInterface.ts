@@ -22,7 +22,7 @@
 interface MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface extends RaceTrackGeographicMapInterfaceFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getFirstWaveWithTrack(track: number): number
 

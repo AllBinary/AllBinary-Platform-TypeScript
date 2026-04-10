@@ -184,13 +184,13 @@ var transformInfoObjectConfigInterface = transformInfoObjectConfigInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDataDocument(): Document{
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -268,7 +268,7 @@ var importUriPath = importUriPath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getKey(): any = {}{
 
@@ -280,7 +280,7 @@ var importUriPath = importUriPath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toVector(): Vector{
 
@@ -292,7 +292,7 @@ var importUriPath = importUriPath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toHashMap(): HashMap<Any, Any>{
 

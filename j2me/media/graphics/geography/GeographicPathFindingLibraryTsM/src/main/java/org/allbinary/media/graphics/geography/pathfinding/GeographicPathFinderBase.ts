@@ -38,7 +38,7 @@ export class GeographicPathFinderBase
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public search(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, totalPaths: number): BasicArrayList{
 var startPathFindingNodeList = startPathFindingNodeList
@@ -51,7 +51,7 @@ var totalPaths = totalPaths
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public searchN(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, totalPaths: number, multipassState: MultipassState): BasicArrayList{
 var startPathFindingNodeList = startPathFindingNodeList

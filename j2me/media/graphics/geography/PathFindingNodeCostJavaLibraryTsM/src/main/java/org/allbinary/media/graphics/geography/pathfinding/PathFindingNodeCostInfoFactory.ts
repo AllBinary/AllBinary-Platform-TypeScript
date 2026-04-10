@@ -38,7 +38,7 @@ this.pathFindingNodeCostInfoAdjacencyList= Array(max) { arrayOfNulls<PathFinding
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public create(geographicMapInterface: BasicGeographicMap, goingToGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number){
     //var geographicMapInterface = geographicMapInterface
@@ -46,11 +46,11 @@ this.pathFindingNodeCostInfoAdjacencyList= Array(max) { arrayOfNulls<PathFinding
     //var geographicMapCellPosition = geographicMapCellPosition
     //var costFromStart = costFromStart
     //var costToEnd = costToEnd
-this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition, costFromStart, costToEnd)
+this.this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition, costFromStart, costToEnd)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(goingToGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number): PathFindingNodeCostInfo{
     //var goingToGeographicMapCellPosition = goingToGeographicMapCellPosition
@@ -63,22 +63,21 @@ this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition, co
         
 
 
-    
                         if(pathFindingNodeCostInfo == 
                                     null
                                 )
                         
                                     {
                                     pathFindingNodeCostInfo= PathFindingNodeCostInfo(costFromStart, costToEnd)
-setTotalCost()
+pathFindingNodeCostInfo!.setTotalCost()
 this.pathFindingNodeCostInfoAdjacencyList[geographicMapCellPosition!.getId()]![goingToGeographicMapCellPosition!.getId()]= pathFindingNodeCostInfo
 
                                     }
                                 
                         else {
-                            setCostFromStart(costFromStart)
-setCostToEnd(costToEnd)
-setTotalCost()
+                            pathFindingNodeCostInfo!.setCostFromStart(costFromStart)
+pathFindingNodeCostInfo!.setCostToEnd(costToEnd)
+pathFindingNodeCostInfo!.setTotalCost()
 
                         }
                             

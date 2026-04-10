@@ -53,29 +53,28 @@ export class ConcurrentImageLoadingProcessor extends BaseImageLoadingProcessor {
     public run(){
 
         try {
-            this.setRunning(true)
-waitForLoadNow()
-loadImages()
-loadRemainingAnimations()
-this.setRunning(false)
+            this.this.setRunning(true)
+imageCache!.waitForLoadNow()
+imageCache!.loadImages()
+imageCache!.loadRemainingAnimations()
+this.this.setRunning(false)
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
 
 
-    
                         if(!progressCanvas!.inProgress)
                         
                                     {
-                                    endFromInitialLazyLoadingComplete()
+                                    progressCanvas!.endFromInitialLazyLoadingComplete()
 
                                     }
                                 
 } catch(e: Exception)
             {
-this.setRunning(false)
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+this.this.setRunning(false)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }
@@ -94,11 +93,10 @@ this.imageCache= imageCache
 
     public runTask(){
 
-    
                         if(!this.runnable.isRunning())
                         
                                     {
-                                    runTask(this.runnable)
+                                    ImageThreadPool.getInstance()!.runTask(this.runnable)
 
                                     }
                                 

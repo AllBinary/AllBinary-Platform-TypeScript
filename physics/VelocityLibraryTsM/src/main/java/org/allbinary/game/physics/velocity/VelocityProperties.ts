@@ -35,8 +35,8 @@ public constructor (maxForwardVelocity: number, maxReverseVelocity: number){
             super();
             var maxForwardVelocity = maxForwardVelocity
 var maxReverseVelocity = maxReverseVelocity
-this.setMaxForwardVelocity(maxForwardVelocity)
-this.setMaxReverseVelocity(maxReverseVelocity)
+this.this.setMaxForwardVelocity(maxForwardVelocity)
+this.this.setMaxReverseVelocity(maxReverseVelocity)
 }
 
 
@@ -73,32 +73,32 @@ this.maxReverseVelocity= maxReverseVelocity
 
 
     public limitMaxXYForwardVelocity(){
-this.limitMaxXYVelocity(this.getMaxForwardVelocity())
+this.this.limitMaxXYVelocity(this.getMaxForwardVelocity())
 }
 
 
     public limitMaxXYReverseVelocity(){
-this.limitMaxXYVelocity(this.getMaxReverseVelocity())
+this.this.limitMaxXYVelocity(this.getMaxReverseVelocity())
 }
 
 
     public limitMaxYForwardVelocity(){
-this.limitMaxYVelocity(this.getMaxForwardVelocity())
+this.this.limitMaxYVelocity(this.getMaxForwardVelocity())
 }
 
 
     public limitMaxYReverseVelocity(){
-this.limitMaxYVelocity(this.getMaxReverseVelocity())
+this.this.limitMaxYVelocity(this.getMaxReverseVelocity())
 }
 
 
     public limitMaxXForwardVelocity(){
-this.limitMaxXVelocity(this.getMaxForwardVelocity())
+this.this.limitMaxXVelocity(this.getMaxForwardVelocity())
 }
 
 
     public limitMaxXReverseVelocity(){
-this.limitMaxXVelocity(this.getMaxReverseVelocity())
+this.this.limitMaxXVelocity(this.getMaxReverseVelocity())
 }
 
 
@@ -123,26 +123,25 @@ this.limitMaxXVelocity(this.getMaxReverseVelocity())
 
 
     public limitXYToForwardAndReverseMaxVelocity(){
-this.limitMaxXYForwardVelocity()
-this.limitMaxXYReverseVelocity()
+this.this.limitMaxXYForwardVelocity()
+this.this.limitMaxXYReverseVelocity()
 }
 
 
     public limitMaxXYVelocity(maxVelocity: number){
 var maxVelocity = maxVelocity
-this.limitMaxXVelocity(maxVelocity)
-this.limitMaxYVelocity(maxVelocity)
+this.this.limitMaxXVelocity(maxVelocity)
+this.this.limitMaxYVelocity(maxVelocity)
 }
 
 
     public limitMaxPositiveYVelocity(maxVelocity: number){
 var maxVelocity = maxVelocity
 
-    
                         if(this.velocityYBasicDecimal!.getUnscaled() > maxVelocity)
                         
                                     {
-                                    set(maxVelocity)
+                                    this.velocityYBasicDecimal!.set(maxVelocity)
 
                                     }
                                 
@@ -152,11 +151,10 @@ var maxVelocity = maxVelocity
     public limitMaxNegativeYVelocity(maxVelocity: number){
 var maxVelocity = maxVelocity
 
-    
                         if(this.velocityYBasicDecimal!.getUnscaled() <  -maxVelocity)
                         
                                     {
-                                    set( -maxVelocity)
+                                    this.velocityYBasicDecimal!.set( -maxVelocity)
 
                                     }
                                 
@@ -165,28 +163,26 @@ var maxVelocity = maxVelocity
 
     public limitMaxYVelocity(maxVelocity: number){
 var maxVelocity = maxVelocity
-this.limitMaxPositiveYVelocity(maxVelocity)
-this.limitMaxNegativeYVelocity(maxVelocity)
+this.this.limitMaxPositiveYVelocity(maxVelocity)
+this.this.limitMaxNegativeYVelocity(maxVelocity)
 }
 
 
     public limitMaxXVelocity(maxVelocity: number){
 var maxVelocity = maxVelocity
 
-    
                         if(this.velocityXBasicDecimal!.getUnscaled() > maxVelocity)
                         
                                     {
-                                    set(maxVelocity)
+                                    this.velocityXBasicDecimal!.set(maxVelocity)
 
                                     }
                                 
 
-    
                         if(this.velocityXBasicDecimal!.getUnscaled() <  -maxVelocity)
                         
                                     {
-                                    set( -maxVelocity)
+                                    this.velocityXBasicDecimal!.set( -maxVelocity)
 
                                     }
                                 
@@ -196,7 +192,6 @@ var maxVelocity = maxVelocity
     public isOverXYMaxVelocity(maxVelocity: number): boolean{
 var maxVelocity = maxVelocity
 
-    
                         if(this.velocityXBasicDecimal!.getUnscaled() > maxVelocity)
                         
                                     {
@@ -210,7 +205,6 @@ var maxVelocity = maxVelocity
                                     }
                                 
 
-    
                         if(this.velocityXBasicDecimal!.getUnscaled() <  -maxVelocity)
                         
                                     {
@@ -224,7 +218,6 @@ var maxVelocity = maxVelocity
                                     }
                                 
 
-    
                         if(this.velocityYBasicDecimal!.getUnscaled() > maxVelocity)
                         
                                     {
@@ -238,7 +231,6 @@ var maxVelocity = maxVelocity
                                     }
                                 
 
-    
                         if(this.velocityYBasicDecimal!.getUnscaled() <  -maxVelocity)
                         
                                     {
@@ -264,8 +256,8 @@ var maxVelocity = maxVelocity
 var magnitude = magnitude
 var angle = angle
 var otherAngle = otherAngle
-setVelocity(magnitude, angle, otherAngle)
-this.limitXYToForwardAndReverseMaxVelocity()
+super.setVelocity(magnitude, angle, otherAngle)
+this.this.limitXYToForwardAndReverseMaxVelocity()
 }
 
 
@@ -273,8 +265,8 @@ this.limitXYToForwardAndReverseMaxVelocity()
 var magnitude = magnitude
 var angle = angle
 var otherAngle = otherAngle
-addVelocity(magnitude, angle, otherAngle)
-this.limitXYToForwardAndReverseMaxVelocity()
+super.addVelocity(magnitude, angle, otherAngle)
+this.this.limitXYToForwardAndReverseMaxVelocity()
 }
 
 

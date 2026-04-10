@@ -70,7 +70,6 @@ private constructor (){
         
 
 
-    
                         if(isNormalScaling)
                         
                                     {
@@ -104,7 +103,6 @@ index < size; index++)
         {
 name= list.get(index) as String
 
-    
                         if(imageName!.startsWith(name))
                         
                                     {
@@ -118,7 +116,6 @@ name= list.get(index) as String
                         }
                             
 
-    
                         if(isNormalScaling)
                         
                                     {

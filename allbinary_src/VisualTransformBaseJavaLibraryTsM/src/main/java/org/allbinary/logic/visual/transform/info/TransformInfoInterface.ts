@@ -39,7 +39,7 @@ interface TransformInfoInterface extends TableMappingInterface {
 
     public log(): string
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public override(hashMap: HashMap<Any, Any>)
 
@@ -53,7 +53,7 @@ interface TransformInfoInterface extends TableMappingInterface {
 
     public getObject(): any = {}
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getTemplateFilePath(): AbPath
 
@@ -61,13 +61,13 @@ interface TransformInfoInterface extends TableMappingInterface {
 
     public getTemplate(): string
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDataFilePath(): AbPath
 
     public getDataFile(): string
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDataDocument(): Document
 
@@ -77,11 +77,11 @@ interface TransformInfoInterface extends TableMappingInterface {
 
     public setObject(anyType: Object)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setObjectConfigInterface(transformInfoObjectConfigInterface: Object)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getObjectConfigInterface(): TransformInfoObjectConfigInterface
 

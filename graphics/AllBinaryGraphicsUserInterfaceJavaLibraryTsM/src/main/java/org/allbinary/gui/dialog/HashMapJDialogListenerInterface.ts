@@ -25,7 +25,7 @@ import { HashMap } from "../../../../java/util/HashMap.js";
 interface HashMapJDialogListenerInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     onHashMap(hashMap: HashMap<Any, Any>)
 

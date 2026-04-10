@@ -46,7 +46,7 @@ export class OpenGLESImageTranslate
     //var openGLESImage = openGLESImage
     //var x = x
     //var y = y
-translate(gl, x, y)
+openGLESImage!.imageProcessor!.translate(gl, x, y)
 }
 
 

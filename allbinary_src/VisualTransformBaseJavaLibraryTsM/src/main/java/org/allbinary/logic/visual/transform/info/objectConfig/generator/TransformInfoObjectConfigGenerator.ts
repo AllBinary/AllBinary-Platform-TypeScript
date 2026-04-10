@@ -32,7 +32,7 @@ export class TransformInfoObjectConfigGenerator
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(input: string): string{
 var input = input

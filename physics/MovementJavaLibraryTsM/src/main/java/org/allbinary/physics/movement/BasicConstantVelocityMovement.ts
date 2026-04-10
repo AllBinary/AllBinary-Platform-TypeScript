@@ -58,14 +58,14 @@ public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocit
             super();
             var basicDecimal = basicDecimal
 var velocityProperties = velocityProperties
-this.setSpeedBasicDecimal(basicDecimal)
+this.this.setSpeedBasicDecimal(basicDecimal)
 this.velocityProperties= velocityProperties
 }
 
 public constructor (){
 
             super();
-            this.setSpeedBasicDecimal(BasicDecimal.ZERO_BIGDECIMAL)
+            this.this.setSpeedBasicDecimal(BasicDecimal.ZERO_BIGDECIMAL)
 this.velocityProperties= BasicVelocityProperties()
 }
 
@@ -80,7 +80,7 @@ this.speedBasicDecimal= speedBasicDecimal
         
         
 
-setVelocity(speedBasicDecimal, angleFactory!.getInstance(angle), angleFactory!.getInstance(otherAngle))
+this.velocityProperties!.setVelocity(speedBasicDecimal, angleFactory!.getInstance(angle), angleFactory!.getInstance(otherAngle))
 }
 
 
@@ -109,15 +109,15 @@ var otherAngle = otherAngle
         
         
 
-move(xVector, yVector, zVector)
+layer.move(xVector, yVector, zVector)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(layer: AllBinaryGameLayer){
 var layer = layer
-move(this.velocityProperties!.getVelocityXBasicDecimalP()!.getScaled(), this.velocityProperties!.getVelocityYBasicDecimalP()!.getScaled(), this.velocityProperties!.getVelocityZBasicDecimalP()!.getScaled())
+layer.move(this.velocityProperties!.getVelocityXBasicDecimalP()!.getScaled(), this.velocityProperties!.getVelocityYBasicDecimalP()!.getScaled(), this.velocityProperties!.getVelocityZBasicDecimalP()!.getScaled())
 }
 
 
@@ -132,7 +132,7 @@ move(this.velocityProperties!.getVelocityXBasicDecimalP()!.getScaled(), this.vel
 
 
     public stop(){
-zero()
+this.velocityProperties!.zero()
 }
 
 

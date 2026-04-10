@@ -88,7 +88,6 @@ this.progressActivity= activity
 
     public isInitialized(): boolean{
 
-    
                         if(this.progressActivity != NullProgressActivity.NULL_PROGRESS_ACTIVITY)
                         
                                     {
@@ -117,12 +116,12 @@ this.progressActivity= activity
     public start(){
 
         try {
-            put(commonStrings!.START, this, commonStrings!.START_METHOD_NAME)
-start()
-runOnUiThread(showTitleProgressBarRunnable)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.START_METHOD_NAME)
+super.start()
+this.progressActivity!.runOnUiThread(showTitleProgressBarRunnable)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e)
 }
 
 }
@@ -131,12 +130,12 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e)
     public end(){
 
         try {
-            put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME)
-runOnUiThread(dismissTitleProgressBarRunnable)
-end()
+            logUtil!.put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME)
+this.progressActivity!.runOnUiThread(dismissTitleProgressBarRunnable)
+super.end()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME, e)
 }
 
 }
@@ -148,12 +147,12 @@ var text = text
 var index = index
 
         try {
-            addPortion(value, text, index)
+            super.addPortion(value, text, index)
 this.portion= value
-runOnUiThread(progressDialogPortionSetProgressRunnable)
+this.progressActivity!.runOnUiThread(progressDialogPortionSetProgressRunnable)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, ADD_PORTION, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e)
 }
 
 }
@@ -164,12 +163,12 @@ var value = value
 var text = text
 
         try {
-            addPortion(value, text)
+            super.addPortion(value, text)
 this.portion= value
-runOnUiThread(progressDialogPortionSetProgressRunnable)
+this.progressActivity!.runOnUiThread(progressDialogPortionSetProgressRunnable)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, ADD_PORTION, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e)
 }
 
 }
@@ -179,11 +178,11 @@ put(commonStrings!.EXCEPTION, this, ADD_PORTION, e)
 var value = value
 
         try {
-            setValue(value)
-runOnUiThread(progressDialogSetProgressRunnable)
+            super.setValue(value)
+this.progressActivity!.runOnUiThread(progressDialogSetProgressRunnable)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "setValue", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "setValue", e)
 }
 
 }
@@ -212,10 +211,10 @@ export inner class TitleProgressBarSetProgressRunnable
         
         
 
-onTitleProgressBarSetProgress(value)
+this@AndroidTitleProgressBar.progressActivity!.onTitleProgressBarSetProgress(value)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }
@@ -238,10 +237,10 @@ export inner class TitleProgressBarPortionSetProgressRunnable
         
         
 
-onTitleProgressBarSetProgress(value)
+this@AndroidTitleProgressBar.progressActivity!.onTitleProgressBarSetProgress(value)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }
@@ -264,10 +263,10 @@ export inner class ShowTitleProgressBarRunnable
         
         
 
-onShowTitleProgressBar(maxValue, false)
+this@AndroidTitleProgressBar.progressActivity!.onShowTitleProgressBar(maxValue, false)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }
@@ -285,10 +284,10 @@ export inner class DismissTitleProgressBarRunnable
     public run(){
 
         try {
-            onDismissTitleProgressBar()
+            this@AndroidTitleProgressBar.progressActivity!.onDismissTitleProgressBar()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }

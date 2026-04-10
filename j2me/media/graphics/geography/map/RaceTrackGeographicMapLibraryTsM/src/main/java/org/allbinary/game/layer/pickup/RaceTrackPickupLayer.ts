@@ -60,20 +60,19 @@ var tiledLayer = tiledLayer
         
         
 
-setTiledLayer(tiledLayer)
-addListener(this as AllBinaryLayer)
+viewPosition!.setTiledLayer(tiledLayer)
+viewPositionEventHandler!.addListener(this as AllBinaryLayer)
 }
 
 
     public setDestroyed(destroyed: boolean){
 var destroyed = destroyed
-setDestroyed(destroyed)
+super.setDestroyed(destroyed)
 
-    
                         if(this.isDestroyed())
                         
                                     {
-                                    removeListener(this)
+                                    viewPositionEventHandler!.removeListener(this)
 
                                     }
                                 

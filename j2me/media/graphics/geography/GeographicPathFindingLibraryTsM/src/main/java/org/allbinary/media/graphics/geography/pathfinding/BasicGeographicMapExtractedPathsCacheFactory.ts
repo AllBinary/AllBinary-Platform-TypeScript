@@ -44,7 +44,6 @@ private constructor (){
 var maxConcurrentPaths = maxConcurrentPaths
 var maxPaths = maxPaths
 
-    
                         if(maxConcurrentPaths != this.maxConcurrentPaths)
                         
                                     {
@@ -58,7 +57,7 @@ var maxPaths = maxPaths
         
 index >= this.maxConcurrentPaths; index--)
         {
-add(BasicArrayList(maxPaths))
+this.list.add(BasicArrayList(maxPaths))
 }
 
 this.maxConcurrentPaths= maxConcurrentPaths
@@ -71,7 +70,6 @@ this.maxPaths= maxPaths
 
     public getPaths(): BasicArrayList{
 
-    
                         if(this.list.size() > 0)
                         
                                     {
@@ -109,11 +107,11 @@ var list = list
         
 index >= 0; index--)
         {
-release(list.get(index) as BasicArrayList)
+BasicGeographicMapExtractedPathCacheFactory.getInstance()!.release(list.get(index) as BasicArrayList)
 }
 
-clear()
-add(list)
+list.clear()
+this.list.add(list)
 }
 
 

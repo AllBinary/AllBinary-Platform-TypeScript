@@ -27,7 +27,7 @@ export class InputAutomationRobotUtil
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getChangeEvent(inputRobotInterface: InputRobotInterface): InputAutomationRobotChangeEvent{
 var inputRobotInterface = inputRobotInterface

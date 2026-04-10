@@ -31,7 +31,6 @@ export class ImageFileFilter extends FileFilter {
     public accept(f: File): boolean{
 var f = f
 
-    
                         if(f.isDirectory())
                         
                                     {
@@ -55,7 +54,6 @@ var f = f
         
 
 
-    
                         if(i > 0 && i < s.length -1)
                         
                                     {
@@ -65,7 +63,6 @@ var f = f
         
 
 
-    
                         if(ext.equals("jpg") || ext.equals("jpeg"))
                         
 

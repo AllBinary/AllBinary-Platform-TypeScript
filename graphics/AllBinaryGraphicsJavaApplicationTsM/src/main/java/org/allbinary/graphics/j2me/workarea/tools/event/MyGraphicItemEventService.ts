@@ -51,18 +51,18 @@ export class MyGraphicItemEventService
 
     public static addListener(listener: MyGraphicItemEventListener){
 var listener = listener
-add(listener::class as Class<*>, listener as java.util.EventListener)
+listenerList!.add(listener::class as Class<*>, listener as java.util.EventListener)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static removeListener(listener: MyGraphicItemEventListener){
 var listener = listener
-remove(listener::class as Class<*>, listener as java.util.EventListener)
+listenerList!.remove(listener::class as Class<*>, listener as java.util.EventListener)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static fire(evt: MyGraphicItemEvent){
@@ -83,52 +83,56 @@ var evt = evt
 i < listeners.length; )
         {
 
-    
                         if(listeners[i] == listeners[i +1]!.::class)
                         
                                     {
                                     
-    
                         if(evt.getCommand()!.compareTo(SELECT) == 0)
                         
                                     {
-                                    highlight(evt)
+                                     = listeners[i +1]! as MyGraphicItemEventListener
+.
+                    highlight(evt)
 
                                     }
                                 
                              else 
-    
                         if(evt.getCommand()!.compareTo(DESELECT) == 0)
                         
                                     {
-                                    deselect(evt)
+                                     = listeners[i +1]! as MyGraphicItemEventListener
+.
+                    deselect(evt)
 
                                     }
                                 
                              else 
-    
                         if(evt.getCommand()!.compareTo(DELETE) == 0)
                         
                                     {
-                                    delete(evt)
+                                     = listeners[i +1]! as MyGraphicItemEventListener
+.
+                    delete(evt)
 
                                     }
                                 
                              else 
-    
                         if(evt.getCommand()!.compareTo(DUPLICATE) == 0)
                         
                                     {
-                                    duplicate(evt)
+                                     = listeners[i +1]! as MyGraphicItemEventListener
+.
+                    duplicate(evt)
 
                                     }
                                 
                              else 
-    
                         if(evt.getCommand()!.compareTo(ROTATE) == 0)
                         
                                     {
-                                    rotate(evt)
+                                     = listeners[i +1]! as MyGraphicItemEventListener
+.
+                    rotate(evt)
 
                                     }
                                 

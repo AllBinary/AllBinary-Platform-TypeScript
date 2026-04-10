@@ -31,7 +31,7 @@ export class AllBinaryMediaManagerShutdown
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
 var soundsFactoryInterface = soundsFactoryInterface
@@ -40,7 +40,7 @@ var soundsFactoryInterface = soundsFactoryInterface
         
         
 
-put("No Media Shutdown for Android Process", instance, "shutdown")
+logUtil!.put("No Media Shutdown for Android Process", instance, "shutdown")
 }
 
 

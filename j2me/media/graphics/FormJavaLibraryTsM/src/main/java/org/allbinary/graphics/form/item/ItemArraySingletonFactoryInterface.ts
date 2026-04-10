@@ -22,7 +22,7 @@
 interface ItemArraySingletonFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getItems(): CustomItem[]
 

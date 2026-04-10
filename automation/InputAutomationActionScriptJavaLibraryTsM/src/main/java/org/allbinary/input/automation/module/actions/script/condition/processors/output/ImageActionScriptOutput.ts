@@ -79,14 +79,13 @@ public constructor (node: Node)
 
                             //For kotlin this is before the body of the constructor.
                     
-put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 
     var actionNode: Node = DomSearchHelper.getNode(ImageActionScriptOutputData.NAME, node.getChildNodes())!;
         
         
 
 
-    
                         if(actionNode != 
                                     null
                                 )
@@ -113,7 +112,6 @@ index < nodeList!.getLength(); index++)
         
 
 
-    
                         if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.SAVE) == 0)
                         
                                     {
@@ -122,13 +120,12 @@ index < nodeList!.getLength(); index++)
         
         
 
-this.setSaved(.
+this.this.setSaved(.
                             )
 
                                     }
                                 
                              else 
-    
                         if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.DISPLAY) == 0)
                         
                                     {
@@ -137,17 +134,16 @@ this.setSaved(.
         
         
 
-this.setSaved(.
+this.this.setSaved(.
                             )
 
                                     }
                                 
                              else 
-    
                         if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.TYPES) == 0)
                         
                                     {
-                                    this.setImageTypes(ImageTypes(childNode))
+                                    this.this.setImageTypes(ImageTypes(childNode))
 
                                     }
                                 
@@ -155,7 +151,7 @@ this.setSaved(.
                             
 
 
-                            throw Exception("Action Script Output Unknown Node")
+                            throw Error("Action Script Output Unknown Node")
 
                         }
                             
@@ -168,11 +164,11 @@ this.setSaved(.
                             
 
 
-                            throw Exception("Action Script Output Node Null")
+                            throw Error("Action Script Output Node Null")
 
                         }
                             
-this.setAllowsChildren(false)
+this.this.setAllowsChildren(false)
 this.actionScriptOutputJPanel= ImageActionScriptOutputJPanel(this)
 }
 
@@ -185,8 +181,8 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setImageTypes(ImageTypes())
-this.setAllowsChildren(false)
+this.this.setImageTypes(ImageTypes())
+this.this.setAllowsChildren(false)
 this.actionScriptOutputJPanel= ImageActionScriptOutputJPanel(this)
 }
 
@@ -207,9 +203,9 @@ this.actionScriptOutputJPanel= ImageActionScriptOutputJPanel(this)
         
         
 
-put(ImageActionScriptOutputData.DISPLAY, Boolean.toString(this.isDisplay()))
-put(ImageActionScriptOutputData.SAVE, Boolean.toString(this.isSaved()))
-put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
+hashMap!.put(ImageActionScriptOutputData.DISPLAY, Boolean.toString(this.isDisplay()))
+hashMap!.put(ImageActionScriptOutputData.SAVE, Boolean.toString(this.isSaved()))
+logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
 
 
 
@@ -219,7 +215,7 @@ put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -233,8 +229,8 @@ var document = document
         
         
 
-appendChild(this.getImageTypes()!.toXmlNode(document))
-appendChild(newNode)
+newNode!.appendChild(this.getImageTypes()!.toXmlNode(document))
+node.appendChild(newNode)
 
 
 
@@ -244,16 +240,16 @@ appendChild(newNode)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(frame: Long){
 var frame = frame
-process(this, frame)
+ImageActionScriptOutputProcessor.process(this, frame)
 }
 
 
     public showDialog(){
-setVisible(true)
+this.actionScriptOutputJPanel!.getCapturedImageActionJDialog()!.setVisible(true)
 }
 
 
@@ -295,12 +291,12 @@ this.display= display
         
         
 
-append(" Is Save: ")
-appendboolean(this.isSaved())
-append(" Is Display: ")
-appendboolean(this.isDisplay())
-append(" ")
-append(this.getImageTypes()!.toString())
+stringBuffer!.append(" Is Save: ")
+stringBuffer!.appendboolean(this.isSaved())
+stringBuffer!.append(" Is Display: ")
+stringBuffer!.appendboolean(this.isDisplay())
+stringBuffer!.append(" ")
+stringBuffer!.append(this.getImageTypes()!.toString())
 
 
 
@@ -311,7 +307,7 @@ append(this.getImageTypes()!.toString())
 
 
     public log(){
-put(this.future_toString(), this, "log")
+logUtil!.put(this.future_toString(), this, "log")
 }
 
 

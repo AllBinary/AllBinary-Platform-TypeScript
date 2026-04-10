@@ -117,7 +117,7 @@ public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, text
                     
 this.openGLBitmap= bitmapFactory!.createBitmap(image)
 this.textureFactory= textureFactory
-init(this)
+OpenGLImageCacheFactory.getInstance()!.init(this)
 this.platformImage= OpenGLESPostLoadPlatformImage.getInstance()
 }
 
@@ -142,47 +142,45 @@ this.platformImage= OpenGLESPostLoadPlatformImage.getInstance()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public set(gl: GL){
 var gl = gl
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
     initTexture(gl: GL10): boolean{
 var gl = gl
 
-    
                         if(!texture2dList!.contains(this))
                         
                                     {
-                                    add(this)
+                                    texture2dList!.add(this)
 
     var textures: IntArray = IntArray(1);
         
         
 
-glEnable(GL10.GL_TEXTURE_2D)
+gl.glEnable(GL10.GL_TEXTURE_2D)
 
-    
                         if(this.openGLESImageProperties!.textureID !=  -1)
                         
                                     {
                                     textures[0]= this.openGLESImageProperties!.textureID
-glDeleteTextures(1, textures, 0)
+gl.glDeleteTextures(1, textures, 0)
 
                                     }
                                 
-glGenTextures(1, textures, 0)
+gl.glGenTextures(1, textures, 0)
 this.openGLESImageProperties!.textureID= textures[0]!
-glBindTexture(GL10.GL_TEXTURE_2D, this.openGLESImageProperties!.textureID)
-glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_MIN_FILTER, GL10.GL_NEAREST)
-glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_WRAP_S, GL10.GL_CLAMP_TO_EDGE)
-glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_WRAP_T, GL10.GL_CLAMP_TO_EDGE)
+gl.glBindTexture(GL10.GL_TEXTURE_2D, this.openGLESImageProperties!.textureID)
+gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_MIN_FILTER, GL10.GL_NEAREST)
+gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_WRAP_S, GL10.GL_CLAMP_TO_EDGE)
+gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_WRAP_T, GL10.GL_CLAMP_TO_EDGE)
 
 
 

@@ -56,16 +56,15 @@ ImageCacheFactory.getInstance()!.hasAnyLazyAnimationFactories= true
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
 
-    
                         if(this.animationInterfaceFactoryInterface!.getImage()!.isReady())
                         
                                     {
-                                    setInitialScale(scaleProperties)
+                                    this.animationInterfaceFactoryInterface!.setInitialScale(scaleProperties)
 
 
 

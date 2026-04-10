@@ -82,12 +82,11 @@ keys[index]= hashtable.get(objectArray[index]! as Object) as Integer
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
-    
                         if(on)
                         
                                     {
@@ -101,7 +100,7 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 index < keys.length; index++)
         {
-processAI(keys[index]!.toInt())
+super.processAI(keys[index]!.toInt())
 }
 
 
@@ -110,11 +109,10 @@ processAI(keys[index]!.toInt())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toggle(){
 
-    
                         if(isOn())
                         
                                     {
@@ -130,14 +128,14 @@ processAI(keys[index]!.toInt())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public disable(){
 setOn(false)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public enable(){
 setOn(true)

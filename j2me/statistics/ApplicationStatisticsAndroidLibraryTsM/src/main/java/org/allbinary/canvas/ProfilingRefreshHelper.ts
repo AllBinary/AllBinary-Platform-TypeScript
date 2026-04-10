@@ -59,7 +59,7 @@ private constructor (){
 
     public init(view: View){
 var view = view
-init(view)
+super.init(view)
 frameProcessingTimeElapsed= this.getTimeDelayHelper()!.getStartTime()
 bestFrameProcessingTime= Integer.MAX_VALUE
 worstFrameProcessingTime= 0
@@ -69,16 +69,13 @@ worstFrameProcessingTime= 0
     public nextFrame(){
 frameProcessingTimeElapsed= System.currentTimeMillis() -frameProcessingTimeElapsed
 
-    
                         if(firstTime != true)
                         
                                     {
                                     
-    
                         if(frameProcessingTimeElapsed > worstFrameProcessingTime)
                         worstFrameProcessingTime= frameProcessingTimeElapsed.toInt()
 
-    
                         if(frameProcessingTimeElapsed < bestFrameProcessingTime)
                         bestFrameProcessingTime= frameProcessingTimeElapsed.toInt()
 
@@ -89,7 +86,7 @@ frameProcessingTimeElapsed= System.currentTimeMillis() -frameProcessingTimeElaps
 
                         }
                             
-nextFrame()
+super.nextFrame()
 }
 
 

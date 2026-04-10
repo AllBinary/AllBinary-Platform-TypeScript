@@ -74,20 +74,18 @@ public constructor (node: Node)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("CssElementValidation", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("CssElementValidation", this, commonStrings!.IS_VALID)
 
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("CssElementValidation: " +valid, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("CssElementValidation: " +valid, this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -100,11 +98,10 @@ public constructor (node: Node)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate data", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate data", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -127,8 +124,8 @@ public constructor (node: Node)
         
         
 
-append(this.getValue())
-append(" Css Style is not valid.")
+stringBuffer!.append(this.getValue())
+stringBuffer!.append(" Css Style is not valid.")
 
 
 
@@ -138,11 +135,10 @@ append(" Css Style is not valid.")
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation info error", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation info error", this, "validationInfo()", e)
 
                                     }
                                 

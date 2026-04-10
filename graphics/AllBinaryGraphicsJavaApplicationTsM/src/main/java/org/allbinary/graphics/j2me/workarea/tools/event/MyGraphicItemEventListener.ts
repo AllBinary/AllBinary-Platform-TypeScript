@@ -24,7 +24,7 @@ interface MyGraphicItemEventListener {
 
     public delete(evt: MyGraphicItemEvent)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public duplicate(evt: MyGraphicItemEvent)
 

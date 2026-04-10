@@ -78,18 +78,18 @@ public constructor (){
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public start(context: BundleContext){
 var context = context
 
         try {
-            put(this.commonStrings!.START, this, "start")
+            logUtil!.put(this.commonStrings!.START, this, "start")
 AllBinaryPreloaderActivator.context= context
-this.registerAsService()
+this.this.registerAsService()
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "start", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "start", e)
 
 
 
@@ -99,7 +99,7 @@ put(this.commonStrings!.EXCEPTION, this, "start", e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public registerAsService(){
 
@@ -119,20 +119,19 @@ put(this.commonStrings!.EXCEPTION, this, "start", e)
 
 serviceReference= context.getServiceReference(CRYPT_REGISTRY_NAME)
 
-    
                         if(serviceReference == 
                                     null
                                 )
                         
-                                    throw Exception("No Such Service Reference")
+                                    throw Error("No Such Service Reference")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public stop(context: BundleContext){
 var context = context
-put(this.commonStrings!.START, this, "stop")
+logUtil!.put(this.commonStrings!.START, this, "stop")
 }
 
 

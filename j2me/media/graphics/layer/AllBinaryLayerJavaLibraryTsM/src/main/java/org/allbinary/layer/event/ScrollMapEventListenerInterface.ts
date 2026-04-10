@@ -25,7 +25,7 @@ import { EventListenerInterface } from "../../../../org/allbinary/logic/util/eve
 interface ScrollMapEventListenerInterface extends EventListenerInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     onMoveEvent(layerManagerEvent: ScrollMapEvent)
 

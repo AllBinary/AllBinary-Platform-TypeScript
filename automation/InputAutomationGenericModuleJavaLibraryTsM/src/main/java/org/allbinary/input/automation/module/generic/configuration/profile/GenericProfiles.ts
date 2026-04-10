@@ -103,7 +103,6 @@ this.fileName= fileName
 this.profilesDefaultListModelHelper= DefaultListModelHelper()
 this.hashMap= HashMap<Any, Any>()
 
-    
                         if(File(fileName).
                             isFile())
                         
@@ -143,15 +142,14 @@ this.hashMap= HashMap<Any, Any>()
         
         
 
-put("Number Of Profiles Specified: " +nodeList!.getLength(), this, "Contructor")
+logUtil!.put("Number Of Profiles Specified: " +nodeList!.getLength(), this, "Contructor")
 
-    
                         if(nodeList != 
                                     null
                                 )
                         
                                     {
-                                    this.initProfiles(nodeList!.item(0))
+                                    this.this.initProfiles(nodeList!.item(0))
 
                                     }
                                 
@@ -159,24 +157,24 @@ put("Number Of Profiles Specified: " +nodeList!.getLength(), this, "Contructor")
                             
 
 
-                            throw Exception(GenericProfileActionData.NAME +" Name Node Node Children")
+                            throw Error(GenericProfileActionData.NAME +" Name Node Node Children")
 
                         }
                             
-put("Loaded: " +this.hashMap!.size +" Configuration Profile Actions", this, "Contructor")
+logUtil!.put("Loaded: " +this.hashMap!.size +" Configuration Profile Actions", this, "Contructor")
 
                                     }
                                 
                         else {
-                            put("No Generic Profile: " +fileName, this, "Contructor")
+                            logUtil!.put("No Generic Profile: " +fileName, this, "Contructor")
 
                         }
                             
-initDefaultModelList()
+this.getDefaultListModelHelper()!.initDefaultModelList()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     initProfiles(node: Node){
 var node = node
@@ -201,7 +199,6 @@ index < nodeList!.getLength(); index++)
         
 
 
-    
                         if(profileNameNode!.getNodeName()!.compareTo(GenericProfileData.NAME) == 0)
                         
                                     {
@@ -210,8 +207,8 @@ index < nodeList!.getLength(); index++)
         
         
 
-put(genericProfile!.getName(), genericProfile)
-add(genericProfile!.getName())
+this.hashMap!.put(genericProfile!.getName(), genericProfile)
+this.getDefaultListModelHelper()!.add(genericProfile!.getName())
 
                                     }
                                 
@@ -230,7 +227,7 @@ add(genericProfile!.getName())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(name: string): GenericProfile{
 var name = name
@@ -240,7 +237,6 @@ var name = name
         
 
 
-    
                         if(genericProfile == 
                                     null
                                 )
@@ -251,7 +247,7 @@ var name = name
         
         
 
-put("No Generic Profile Named: " +name +" availability was: " +this.hashMap, this, commonStrings!.GET)
+logUtil!.put("No Generic Profile Named: " +name +" availability was: " +this.hashMap, this, commonStrings!.GET)
 
                                     }
                                 
@@ -264,29 +260,29 @@ put("No Generic Profile Named: " +name +" availability was: " +this.hashMap, thi
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public add(name: string){
 var name = name
-put(name, GenericProfile(name))
-add(name)
-initDefaultModelList()
-this.save()
+this.hashMap!.put(name, GenericProfile(name))
+this.getDefaultListModelHelper()!.add(name)
+this.getDefaultListModelHelper()!.initDefaultModelList()
+this.this.save()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public remove(name: string){
 var name = name
-remove(name)
-remove(name)
-initDefaultModelList()
-this.save()
+this.hashMap!.remove(name)
+this.getDefaultListModelHelper()!.remove(name)
+this.getDefaultListModelHelper()!.initDefaultModelList()
+this.this.save()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -326,7 +322,7 @@ index < size; index++)
         
         
 
-appendChild(genericProfile!.toXmlNode(document))
+node.appendChild(genericProfile!.toXmlNode(document))
 }
 
 
@@ -338,7 +334,7 @@ appendChild(genericProfile!.toXmlNode(document))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlDoc(): Document{
 
@@ -351,7 +347,7 @@ appendChild(genericProfile!.toXmlNode(document))
         
         
 
-appendChild(node)
+document.appendChild(node)
 
 
 
@@ -361,7 +357,7 @@ appendChild(node)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public save(){
 
@@ -379,7 +375,7 @@ appendChild(node)
         
         
 
-writeBytes(documentString)
+idOutData!.writeBytes(documentString)
 }
 
 

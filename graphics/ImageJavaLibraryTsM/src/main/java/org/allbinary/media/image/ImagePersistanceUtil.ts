@@ -83,7 +83,7 @@ export class ImagePersistanceUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public saveWithBatik(file: AbFile, bufferedImage: BufferedImage){
 var file = file
@@ -100,15 +100,15 @@ var bufferedImage = bufferedImage
 
 
         try {
-            writeImage(bufferedImage, fileOutputStream)
+            batikPNGImageWriter!.writeImage(bufferedImage, fileOutputStream)
 
          finally {
-            flush()
-close(fileOutputStream)
+            fileOutputStream!.flush()
+StreamUtil.getInstance()!.close(fileOutputStream)
 
          }
         
-put("Wrote Image: " +file.getAbsolutePath(), this, commonStrings!.SAVE)
+logUtil!.put("Wrote Image: " +file.getAbsolutePath(), this, commonStrings!.SAVE)
 }
 
 
@@ -144,11 +144,10 @@ var bufferedImage = bufferedImage
         
 
 
-    
                         if(!iter.hasNext())
                         
                                     {
-                                    put("Unable to save image to jpeg file type.", this, commonStrings!.SAVE)
+                                    logUtil!.put("Unable to save image to jpeg file type.", this, commonStrings!.SAVE)
 
 
 
@@ -160,71 +159,68 @@ var bufferedImage = bufferedImage
                                 
 writer= iter.next() as ImageWriter
 ios= ImageIO.createImageOutputStream(file)
-setOutput(ios)
+writer.setOutput(ios)
 
     var iwp: ImageWriteParam = writer.getDefaultWriteParam()!;
         
         
 
-setCompressionMode(ImageWriteParam.MODE_EXPLICIT)
-setCompressionQuality(0.95f)
-write(
+iwp.setCompressionMode(ImageWriteParam.MODE_EXPLICIT)
+iwp.setCompressionQuality(0.95f)
+writer.write(
                             null, IIOImage(bufferedImage, 
                             null, 
                             null), iwp)
-put("Wrote Image: " +file.getAbsolutePath(), this, commonStrings!.SAVE)
+logUtil!.put("Wrote Image: " +file.getAbsolutePath(), this, commonStrings!.SAVE)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e)
 }
 
          finally {
             
         try {
             
-    
                         if(ios != 
                                     null
                                 )
                         
                                     {
-                                    flush()
+                                    ios.flush()
 
         try {
             
-    
                         if(ios != 
                                     null
                                 )
                         
                                     {
-                                    put(ios.toString(), ios, commonStrings!.CLOSE)
-close()
+                                    logUtil!.put(ios.toString(), ios, commonStrings!.CLOSE)
+ios.close()
 
                                     }
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, ios, commonStrings!.CLOSE, e)
+logUtil!.put(commonStrings!.EXCEPTION, ios, commonStrings!.CLOSE, e)
 }
 
 
                                     }
                                 
 
-    
                         if(writer != 
                                     null
                                 )
                         
                                     {
-                                    dispose()
+                                    writer.dispose()
 
                                     }
                                 
 } catch(e2: IOException)
             {
-put(this.commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e2)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e2)
 }
 
 

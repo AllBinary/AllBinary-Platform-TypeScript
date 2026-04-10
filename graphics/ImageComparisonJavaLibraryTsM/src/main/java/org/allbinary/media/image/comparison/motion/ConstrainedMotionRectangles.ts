@@ -54,15 +54,15 @@ public constructor (motionRectangleConstraintsInterface: MotionRectangleConstrai
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setMotionRectangleConstraintsInterface(motionRectangleConstraintsInterface)
+this.this.setMotionRectangleConstraintsInterface(motionRectangleConstraintsInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public applyMotionRectangleConstraints(motionRectangles: MotionRectangles){
     //var motionRectangles = motionRectangles
-put("Start - Size Before: " +motionRectangles!.getVector()!.size(), this, "applyMotionRectangleConstraints")
+logUtil!.put("Start - Size Before: " +motionRectangles!.getVector()!.size(), this, "applyMotionRectangleConstraints")
 
     var bufferedImageArray: BufferedImage[] = motionRectangles!.getImageComparisonResult()!.getBufferedImages()!;
         
@@ -114,7 +114,6 @@ index < size; index++)
         
 
 
-    
                         if(isTooSmall)
                         
                                     {
@@ -131,7 +130,6 @@ index < size; index++)
         
 
 
-    
                         if(isAreaTooSmall)
                         
                                     {
@@ -148,7 +146,6 @@ index < size; index++)
         
 
 
-    
                         if(isTooBig)
                         
                                     {
@@ -165,7 +162,6 @@ index < size; index++)
         
 
 
-    
                         if(!isValid)
                         
                                     {
@@ -177,12 +173,11 @@ index < size; index++)
                                     }
                                 
 
-    
                         if(!isTooSmall && !isAreaTooSmall && !isTooBig && isValid)
                         vector.add(motionRectangle)
 }
 
-this.setVector(vector)
+this.this.setVector(vector)
 }
 
 

@@ -39,7 +39,7 @@ this.form= form
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics)
+this.form.paint(graphics)
 }
 
 

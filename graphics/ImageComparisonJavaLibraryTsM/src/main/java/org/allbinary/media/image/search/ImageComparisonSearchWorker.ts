@@ -82,14 +82,14 @@ this.imageSearchConstraintsInterface= imageSearchConstraintsInterface
 
     public onImageComparisonResultsEvent(imageComparisonResultsEvent: ImageComparisonResultsEvent){
 var imageComparisonResultsEvent = imageComparisonResultsEvent
-add(imageComparisonResultsEvent!.getImageComparisonResult())
-this.run()
+this.imageComparisonInfoVector!.add(imageComparisonResultsEvent!.getImageComparisonResult())
+this.this.run()
 }
 
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
 var allBinaryEventObject = allBinaryEventObject
-this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResultsEvent)
+this.this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResultsEvent)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -114,33 +114,33 @@ this.running= running
     public run(){
 
         try {
-            put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-this.setRunning(true)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
+this.this.setRunning(true)
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
         
 
-setStartTime()
+timeHelper!.setStartTime()
 
     var imageComparisonInfo: ImageComparisonResult = this.imageComparisonInfoVector!.get(0) as ImageComparisonResult;
         
         
 
-put(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN)
+logUtil!.put(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN)
 
     var latestBufferedImage: BufferedImage = imageComparisonInfo!.getBufferedImages()[1]!;
         
         
 
-remove(imageComparisonInfo)
+this.imageComparisonInfoVector!.remove(imageComparisonInfo)
 this.index++
-put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
-this.setRunning(false)
-put(this.commonStrings!.END, this, this.commonStrings!.RUN)
+logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
+this.this.setRunning(false)
+logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
 }
 
 }

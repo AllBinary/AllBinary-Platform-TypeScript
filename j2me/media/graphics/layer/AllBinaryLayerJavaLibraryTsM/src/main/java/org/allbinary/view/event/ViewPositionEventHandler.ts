@@ -69,11 +69,10 @@ private constructor (){
     public addListener(layerInterface: AllBinaryLayer){
 var layerInterface = layerInterface
 
-    
                         if(!list.contains(layerInterface))
                         
                                     {
-                                    add(layerInterface)
+                                    list.add(layerInterface)
 
                                     }
                                 
@@ -81,19 +80,19 @@ var layerInterface = layerInterface
 
 
     public removeAllListeners(){
-clear()
-removeAllListeners()
+this.list.clear()
+super.removeAllListeners()
 }
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-remove(eventListenerInterface)
-removeListener(eventListenerInterface)
+this.list.remove(eventListenerInterface)
+super.removeListener(eventListenerInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fireEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
@@ -114,19 +113,19 @@ var eventObject = eventObject
         
         
 
-onChangeEvent(eventObject as ViewPositionEvent)
+layerInterface!.onChangeEvent(eventObject as ViewPositionEvent)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
 }
 
 }
 
-fireEvent(eventObject)
+super.fireEvent(eventObject)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 var eventObject = eventObject
@@ -136,7 +135,7 @@ var eventListenerInterface = eventListenerInterface
         
         
 
-onChangeEvent(eventObject as ViewPositionEvent)
+viewPositionEventListenerInterface!.onChangeEvent(eventObject as ViewPositionEvent)
 }
 
 

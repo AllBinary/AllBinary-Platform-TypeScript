@@ -73,7 +73,7 @@ private constructor (){
     public getService(bundle: Bundle, registration: ServiceRegistration): any = {}{
     //var bundle = bundle
     //var registration = registration
-put(this.commonStrings!.START, this, "getService")
+logUtil!.put(this.commonStrings!.START, this, "getService")
 
 
 

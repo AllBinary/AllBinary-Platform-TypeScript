@@ -60,7 +60,7 @@ export class LayerCoveringCellPositionsUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAll(geographicMapInterface: BasicGeographicMap, layerInterface: AllBinaryLayer, x: number, y: number, reusableList: BasicArrayList): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
@@ -82,14 +82,14 @@ export class LayerCoveringCellPositionsUtil
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAll(geographicMapInterface: BasicGeographicMap, topLeftGeographicMapCellPosition: GeographicMapCellPosition, layerInterface: AllBinaryLayer, reusableList: BasicArrayList): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
     //var topLeftGeographicMapCellPosition = topLeftGeographicMapCellPosition
     //var layerInterface = layerInterface
     //var reusableList = reusableList
-clear()
+reusableList!.clear()
 
     var columns: number = layerInterface!.getWidth() /geographicMapInterface!.getAllBinaryTiledLayer()!.getCellWidth();
         
@@ -101,11 +101,9 @@ clear()
         
 
 
-    
                         if(columns == 0)
                         columns= 1
 
-    
                         if(rows == 0)
                         rows= 1
 

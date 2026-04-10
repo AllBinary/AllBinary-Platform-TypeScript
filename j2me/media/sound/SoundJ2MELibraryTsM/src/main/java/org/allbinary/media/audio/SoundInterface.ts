@@ -29,7 +29,7 @@ interface SoundInterface {
 
     getPlayerP(): Player
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init()
 

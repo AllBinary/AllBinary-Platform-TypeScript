@@ -66,24 +66,22 @@ public constructor (){
         
 
 this.baseNode= allbinaryNode
-appendChild(this.baseNode)
+document.appendChild(this.baseNode)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(this.log(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.log(), this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e)
 
                                     }
                                 
@@ -116,7 +114,7 @@ appendChild(this.baseNode)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public log(): string{
 
@@ -125,24 +123,23 @@ appendChild(this.baseNode)
         
 
 
-    
                         if(this.baseNode != 
                                     null
                                 )
                         
                                     {
-                                    append("BaseNode: ")
-append(this.baseNode!.getNodeName())
+                                    stringBuffer!.append("BaseNode: ")
+stringBuffer!.append(this.baseNode!.getNodeName())
 
                                     }
                                 
                         else {
-                            append("Log-Error: BaseNode is Null")
+                            stringBuffer!.append("Log-Error: BaseNode is Null")
 
                         }
                             
-append("\nDocument: ")
-append(DomDocumentHelper.toString(document))
+stringBuffer!.append("\nDocument: ")
+stringBuffer!.append(DomDocumentHelper.toString(document))
 
 
 

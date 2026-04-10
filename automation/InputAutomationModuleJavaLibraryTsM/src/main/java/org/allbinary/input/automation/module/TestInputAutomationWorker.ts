@@ -60,11 +60,11 @@ public constructor (){
 this.changedPixelsImageComparisonResultsWorker= SaveImageComparisonWorker()
 this.saveMotionRectanglesAsImagesWorker= SaveMotionRectanglesResultsWorker()
 this.moveMouseToFirstMotionRectanglesResultsWorker= TestInputForMotionRectanglesResultsWorker()
-addListener(this.saveMotionRectanglesAsImagesWorker)
-addListener(this.moveMouseToFirstMotionRectanglesResultsWorker)
-addListener(this.changedPixelsImageComparisonResultsWorker)
-addListener(this.motionRectanglesWorker)
-addListener(this.imageComparisonWorker)
+this.motionRectanglesWorker!.addListener(this.saveMotionRectanglesAsImagesWorker)
+this.motionRectanglesWorker!.addListener(this.moveMouseToFirstMotionRectanglesResultsWorker)
+this.imageComparisonWorker!.addListener(this.changedPixelsImageComparisonResultsWorker)
+this.imageComparisonWorker!.addListener(this.motionRectanglesWorker)
+this.captureWorker!.addListener(this.imageComparisonWorker)
 }
 
 

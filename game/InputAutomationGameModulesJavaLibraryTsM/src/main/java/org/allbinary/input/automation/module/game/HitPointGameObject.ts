@@ -65,21 +65,19 @@ var y = y
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(this.getRatios()[bufferedImage!.length -1]!.doubleValue() < 1.0F)
                         
                                     {
-                                    this.setDamaged(true)
+                                    this.this.setDamaged(true)
 
                                     }
                                 
                         else {
-                            this.setDamaged(false)
+                            this.this.setDamaged(false)
 
                         }
                             
 
-    
                         if(this.getRatios()[bufferedImage!.length -1]!.doubleValue() > 0.25F)
                         
                                     {
@@ -98,7 +96,6 @@ var y = y
     public isMoreThan(aFloat: number): boolean{
 var aFloat = aFloat
 
-    
                         if(this.getRatios()[this.getRatios()!.length -1]!.doubleValue() > aFloat)
                         
                                     {
@@ -167,14 +164,14 @@ this.damaged= damaged
         
         
 
-append(HP_LABEL)
-append(super.toString())
-append(commonSeps!.NEW_LINE)
-append(IS_DAMAGED_LABEL)
-appendboolean(this.isDamaged())
-append(commonSeps!.NEW_LINE)
-append(IS_CLOSE_DEATH_LABEL)
-appendboolean(this.isCloseDeath())
+stringBuffer!.append(HP_LABEL)
+stringBuffer!.append(super.toString())
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append(IS_DAMAGED_LABEL)
+stringBuffer!.appendboolean(this.isDamaged())
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append(IS_CLOSE_DEATH_LABEL)
+stringBuffer!.appendboolean(this.isCloseDeath())
 
 
 

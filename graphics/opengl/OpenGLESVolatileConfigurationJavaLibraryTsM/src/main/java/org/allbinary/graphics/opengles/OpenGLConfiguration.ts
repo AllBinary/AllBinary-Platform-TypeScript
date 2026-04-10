@@ -102,7 +102,7 @@ private constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(){
 
@@ -111,30 +111,27 @@ private constructor (){
         
 
 
-    
                         if(ChangedGameFeatureListener.getInstance()!.isChanged(MainFeatureFactory.getInstance()!.STATIC))
                         
                                     {
                                     
-    
                         if(this.isOpenGL())
                         
                                     {
                                     
-    
                         if(!features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
-                                    put("Turning on OpenGL", this, commonStrings!.INIT)
-addDefault(OpenGLFeatureFactory.getInstance()!.OPENGL)
-put("Using OpenGL Type Feature: " +this.getType(), this, commonStrings!.INIT)
-addDefault(this.getType())
-put("Using OpenGL ImageColor Feature: " +this.getImageColor(), this, commonStrings!.INIT)
-addDefault(this.getImageColor())
-put("Using OpenGL Color Feature: " +this.getColor(), this, commonStrings!.INIT)
-addDefault(this.getColor())
-put("Using OpenGL Version Selector Feature: " +this.getVersionSelector(), this, commonStrings!.INIT)
-addDefault(this.getVersionSelector())
+                                    logUtil!.put("Turning on OpenGL", this, commonStrings!.INIT)
+features.addDefault(OpenGLFeatureFactory.getInstance()!.OPENGL)
+logUtil!.put("Using OpenGL Type Feature: " +this.getType(), this, commonStrings!.INIT)
+features.addDefault(this.getType())
+logUtil!.put("Using OpenGL ImageColor Feature: " +this.getImageColor(), this, commonStrings!.INIT)
+features.addDefault(this.getImageColor())
+logUtil!.put("Using OpenGL Color Feature: " +this.getColor(), this, commonStrings!.INIT)
+features.addDefault(this.getColor())
+logUtil!.put("Using OpenGL Version Selector Feature: " +this.getVersionSelector(), this, commonStrings!.INIT)
+features.addDefault(this.getVersionSelector())
 
                                     }
                                 
@@ -142,7 +139,7 @@ addDefault(this.getVersionSelector())
                                     }
                                 
                         else {
-                            put("OpenGL is Off", this, commonStrings!.INIT)
+                            logUtil!.put("OpenGL is Off", this, commonStrings!.INIT)
 
                         }
                             
@@ -151,22 +148,21 @@ addDefault(this.getVersionSelector())
                                 
                         else {
                             
-    
                         if(this.isOpenGL() && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
-                                    put("OpenGL is set but not Enabled since Statics where not cleared (Reboot or Complete exit is Required)", this, commonStrings!.INIT)
+                                    PreLogUtil.put("OpenGL is set but not Enabled since Statics where not cleared (Reboot or Complete exit is Required)", this, commonStrings!.INIT)
 
                                     }
                                 
 
                         }
                             
-put(this.toString(), this, this.commonStrings!.INIT)
+PreLogUtil.put(this.toString(), this, this.commonStrings!.INIT)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(gameFeature: Feature, colorLocked: boolean){
     //var gameFeature = gameFeature
@@ -187,21 +183,18 @@ put(this.toString(), this, this.commonStrings!.INIT)
         
 
 
-    
                         if(gameFeature == openGLFeatureFactory!.OPENGL)
                         
                                     {
                                     
-    
                         if(features.isFeature(gameFeature))
                         
                                     {
                                     
-    
                         if(!this.isOpenGL())
                         
                                     {
-                                    this.setOpenGL(true)
+                                    this.this.setOpenGL(true)
 modified= true
 
                                     }
@@ -211,11 +204,10 @@ modified= true
                                 
                         else {
                             
-    
                         if(this.isOpenGL())
                         
                                     {
-                                    this.setOpenGL(false)
+                                    this.this.setOpenGL(false)
 modified= true
 
                                     }
@@ -227,21 +219,18 @@ modified= true
                                     }
                                 
 
-    
                         if(gameFeature == openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS || gameFeature == openGLFeatureFactory!.OPENGL_AS_GAME_THREAD)
                         
                                     {
                                     
-    
                         if(features.isFeature(gameFeature))
                         
                                     {
                                     
-    
                         if(gameFeature != this.getType())
                         
                                     {
-                                    this.setType(gameFeature as OpenGLFeature)
+                                    this.this.setType(gameFeature as OpenGLFeature)
 modified= true
 
                                     }
@@ -253,50 +242,43 @@ modified= true
                                     }
                                 
 
-    
                         if(gameFeature == openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444 || gameFeature == openGLFeatureFactory!.IMAGE_COLOR_DEPTH_565 || gameFeature == openGLFeatureFactory!.IMAGE_COLOR_DEPTH_8888)
                         
                                     {
                                     
-    
                         if(features.isFeature(gameFeature))
                         
                                     {
                                     
-    
                         if(this.getImageColor() != gameFeature)
                         
                                     {
-                                    this.setImageColor(gameFeature as OpenGLFeature)
+                                    this.this.setImageColor(gameFeature as OpenGLFeature)
 
-    
                         if(colorLocked)
                         
                                     {
                                     
-    
                         if(gameFeature == openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444)
                         
                                     {
-                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444)
+                                    this.this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444)
 
                                     }
                                 
                              else 
-    
                         if(gameFeature == openGLFeatureFactory!.IMAGE_COLOR_DEPTH_565)
                         
                                     {
-                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565)
+                                    this.this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565)
 
                                     }
                                 
                              else 
-    
                         if(gameFeature == openGLFeatureFactory!.IMAGE_COLOR_DEPTH_8888)
                         
                                     {
-                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888)
+                                    this.this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888)
 
                                     }
                                 
@@ -314,21 +296,18 @@ modified= true
                                     }
                                 
 
-    
                         if(gameFeature == openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444 || gameFeature == openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565 || gameFeature == openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888)
                         
                                     {
                                     
-    
                         if(features.isFeature(gameFeature))
                         
                                     {
                                     
-    
                         if(this.getColor() != gameFeature)
                         
                                     {
-                                    this.setColor(gameFeature as OpenGLFeature)
+                                    this.this.setColor(gameFeature as OpenGLFeature)
 modified= true
 
                                     }
@@ -340,16 +319,14 @@ modified= true
                                     }
                                 
 
-    
                         if(gameFeature == openGLFeatureFactory!.OPENGL_AUTO_SELECT || gameFeature == openGLFeatureFactory!.OPENGL_MINIMUM)
                         
                                     {
                                     
-    
                         if(features.isFeature(gameFeature))
                         
                                     {
-                                    this.setVersionSelector(gameFeature as OpenGLFeature)
+                                    this.this.setVersionSelector(gameFeature as OpenGLFeature)
 
                                     }
                                 
@@ -451,16 +428,16 @@ this.type= type
         
         
 
-append(" isOpenGL: ")
-appendboolean(this.isOpenGL())
-append(" VersionSelector: ")
-append(stringUtil!.toString(this.getVersionSelector()))
-append(" Type: ")
-append(stringUtil!.toString(this.getType()))
-append(" Image Color: ")
-append(stringUtil!.toString(this.getImageColor()))
-append(" Color: ")
-append(stringUtil!.toString(this.getColor()))
+stringBuffer!.append(" isOpenGL: ")
+stringBuffer!.appendboolean(this.isOpenGL())
+stringBuffer!.append(" VersionSelector: ")
+stringBuffer!.append(stringUtil!.toString(this.getVersionSelector()))
+stringBuffer!.append(" Type: ")
+stringBuffer!.append(stringUtil!.toString(this.getType()))
+stringBuffer!.append(" Image Color: ")
+stringBuffer!.append(stringUtil!.toString(this.getImageColor()))
+stringBuffer!.append(" Color: ")
+stringBuffer!.append(stringUtil!.toString(this.getColor()))
 
 
 

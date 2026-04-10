@@ -70,7 +70,6 @@ public constructor (){
     public isTooSmall(rectangle: Rectangle): boolean{
 var rectangle = rectangle
 
-    
                         if(rectangle.width < this.getMinDimension()!.width || rectangle.height < this.getMinDimension()!.height)
                         
                                     {
@@ -99,7 +98,6 @@ var rectangle = rectangle
     public isAreaTooSmall(rectangle: Rectangle): boolean{
 var rectangle = rectangle
 
-    
                         if(rectangle.width *rectangle.height < this.getMinArea())
                         
                                     {
@@ -128,7 +126,6 @@ var rectangle = rectangle
     public isTooBig(rectangle: Rectangle): boolean{
 var rectangle = rectangle
 
-    
                         if(rectangle.width > this.getMaxDimension()!.width || rectangle.height > this.getMaxDimension()!.height)
                         
                                     {
@@ -154,7 +151,7 @@ var rectangle = rectangle
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isValid(frame: Long, bufferedImage: BufferedImage, rectangle: Rectangle): boolean{
 var frame = frame

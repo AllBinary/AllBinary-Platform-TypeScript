@@ -101,7 +101,7 @@ this.workFlowDoc= DomDocumentHelper.create()
         
         
 
-appendChild(workFlowNode)
+this.workFlowDoc!.appendChild(workFlowNode)
 }
 
 public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
@@ -165,7 +165,7 @@ this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toVector(): Vector{
 
@@ -173,9 +173,9 @@ this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance
         
         
 
-add(this.workFlowName)
-add(this.storeName)
-add(DomDocumentHelper.toString(this.workFlowDoc))
+values.add(this.workFlowName)
+values.add(this.storeName)
+values.add(DomDocumentHelper.toString(this.workFlowDoc))
 
     var calendar: Calendar = Calendar.getInstance()!;
         
@@ -188,8 +188,8 @@ add(DomDocumentHelper.toString(this.workFlowDoc))
         
         
 
-add(time)
-add(time)
+values.add(time)
+values.add(time)
 
 
 
@@ -199,7 +199,7 @@ add(time)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toHashMap(): HashMap<Any, Any>{
 
@@ -207,9 +207,9 @@ add(time)
         
         
 
-put(WorkFlowData.getInstance()!.NAME, this.workFlowName)
-put(StoreFrontData.getInstance()!.NAME, this.storeName)
-put(WorkFlowData.getInstance()!.DATA, DomDocumentHelper.toString(this.workFlowDoc))
+hashMap!.put(WorkFlowData.getInstance()!.NAME, this.workFlowName)
+hashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
+hashMap!.put(WorkFlowData.getInstance()!.DATA, DomDocumentHelper.toString(this.workFlowDoc))
 
     var calendar: Calendar = Calendar.getInstance()!;
         
@@ -222,7 +222,7 @@ put(WorkFlowData.getInstance()!.DATA, DomDocumentHelper.toString(this.workFlowDo
         
         
 
-put(EntryData.getInstance()!.LASTMODIFIED, time)
+hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time)
 
 
 
@@ -282,7 +282,7 @@ index < size; index++)
         
         
 
-appendChild(ModDomHelper.createNameValueNodes(document, name, value))
+node.appendChild(ModDomHelper.createNameValueNodes(document, name, value))
 }
 
 
@@ -294,11 +294,10 @@ appendChild(ModDomHelper.createNameValueNodes(document, name, value))
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "toXmlNode()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode()", e)
 
                                     }
                                 
@@ -325,11 +324,10 @@ appendChild(ModDomHelper.createNameValueNodes(document, name, value))
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "toXmlDoc()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlDoc()", e)
 
                                     }
                                 
@@ -353,7 +351,6 @@ appendChild(ModDomHelper.createNameValueNodes(document, name, value))
         
 
 
-    
                         if(this.workFlowName == 
                                     null
                                 )
@@ -372,11 +369,10 @@ appendChild(ModDomHelper.createNameValueNodes(document, name, value))
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -400,7 +396,6 @@ appendChild(ModDomHelper.createNameValueNodes(document, name, value))
         
 
 
-    
                         if(this.workFlowName == 
                                     null
                                 )
@@ -414,11 +409,10 @@ appendChild(ModDomHelper.createNameValueNodes(document, name, value))
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 

@@ -24,7 +24,7 @@ export class MultiGeographicMapBehavior
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getCellTypeAt(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellType[]{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray

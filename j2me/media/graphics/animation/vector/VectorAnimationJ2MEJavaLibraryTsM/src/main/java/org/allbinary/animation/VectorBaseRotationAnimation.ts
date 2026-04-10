@@ -67,8 +67,8 @@ public constructor (angleInfo: AngleInfo, currentPoints: IntArray[][], basicColo
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setPoints(currentPoints)
-this.setBasicColorP(basicColor)
+this.this.setPoints(currentPoints)
+this.this.setBasicColorP(basicColor)
 }
 
 public constructor (angleInfo: AngleInfo, currentPoints: IntArray[], basicColor: BasicColor, animationBehavior: AnimationBehavior)                        
@@ -84,7 +84,7 @@ public constructor (angleInfo: AngleInfo, currentPoints: IntArray[], basicColor:
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setPoints(Array(1) { Array(currentPoints!.length) { IntArray(2) } })
+this.this.setPoints(Array(1) { Array(currentPoints!.length) { IntArray(2) } })
 
     var size: number = currentPoints!.length
                 ;
@@ -105,11 +105,11 @@ this.currentPoints[0]![index]![0]= currentPoints[index]![0]!
 this.currentPoints[0]![index]![1]= currentPoints[index]![1]!
 }
 
-this.setBasicColorP(basicColor)
+this.this.setBasicColorP(basicColor)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAnimationSize(): number{
 
@@ -133,17 +133,17 @@ this.setBasicColorP(basicColor)
 
     public setFrame(index: number){
 var index = index
-setIndex(index)
+this.circularIndexUtil!.setIndex(index)
 }
 
 
     public nextFrame(){
-next()
+this.circularIndexUtil!.next()
 }
 
 
     public previousFrame(){
-previous()
+this.circularIndexUtil!.previous()
 }
 
 
@@ -176,7 +176,7 @@ previous()
     //var graphics = graphics
     //var x = x
     //var y = y
-setBasicColorP(graphics, basicColor)
+this.basicSetColorUtil!.setBasicColorP(graphics, basicColor)
 
         try {
             
@@ -219,11 +219,10 @@ point= currentPointsFrame[index +1]!
 nextPointX= nextPoint[0]!
 nextPointY= nextPoint[1]!
 
-    
                         if(nextPointX != 1000)
                         
                                     {
-                                    drawLine(point[0] +x, point[1] +y, nextPointX +x, nextPointY +y)
+                                    graphics.drawLine(point[0] +x, point[1] +y, nextPointX +x, nextPointY +y)
 
                                     }
                                 
@@ -236,7 +235,7 @@ nextPointY= nextPoint[1]!
 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "paintVectors", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "paintVectors", e)
 }
 
 }

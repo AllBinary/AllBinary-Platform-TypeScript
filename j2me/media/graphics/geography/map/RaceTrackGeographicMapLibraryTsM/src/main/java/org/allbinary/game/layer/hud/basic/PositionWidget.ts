@@ -44,36 +44,33 @@ var position = position
         
         
 
-append(position.toString())
+stringBuffer!.append(position.toString())
 
-    
                         if(position == 1)
                         
                                     {
-                                    append("st")
+                                    stringBuffer!.append("st")
 
                                     }
                                 
                              else 
-    
                         if(position == 2)
                         
                                     {
-                                    append("nd")
+                                    stringBuffer!.append("nd")
 
                                     }
                                 
                              else 
-    
                         if(position == 3)
                         
                                     {
-                                    append("rd")
+                                    stringBuffer!.append("rd")
 
                                     }
                                 
                         else {
-                            append("th")
+                            stringBuffer!.append("th")
 
                         }
                             
@@ -126,7 +123,7 @@ this.positionString= PositionWidget.toString(this.get())
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics, positionString)
+super.paint(graphics, positionString)
 }
 
 

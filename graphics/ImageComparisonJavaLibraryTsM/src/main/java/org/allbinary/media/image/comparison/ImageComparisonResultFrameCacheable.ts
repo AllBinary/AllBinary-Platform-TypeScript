@@ -39,7 +39,7 @@ public constructor (imageComparisonResult: ImageComparisonResult, frame: Long){
             super();
             var imageComparisonResult = imageComparisonResult
 var frame = frame
-this.setImageComparisonResult(imageComparisonResult)
+this.this.setImageComparisonResult(imageComparisonResult)
 this.frame= frame
 }
 
@@ -92,9 +92,9 @@ this.imageComparisonResult= imageComparisonResult
         
         
 
-append(this::class.toString()!)
-append(" Frame: ")
-appendlong(this.getFrame())
+stringBuffer!.append(this::class.toString()!)
+stringBuffer!.append(" Frame: ")
+stringBuffer!.appendlong(this.getFrame())
 
 
 

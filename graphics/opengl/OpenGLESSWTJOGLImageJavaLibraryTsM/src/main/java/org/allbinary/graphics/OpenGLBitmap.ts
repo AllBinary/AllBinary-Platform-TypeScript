@@ -44,7 +44,6 @@ this.image= bitmap as Image
 
     public getDepth(): number{
 
-    
                         if(this.image.isMutable())
                         
                                     {
@@ -89,7 +88,6 @@ var y = y
 var width = width
 var height = height
 
-    
                         if(this.image.isMutable())
                         
                                     {
@@ -98,7 +96,7 @@ var height = height
         
         
 
-getRGB(pixels, offset, stride, x, y, width, height)
+mutableImage!.getRGB(pixels, offset, stride, x, y, width, height)
 
                                     }
                                 
@@ -108,7 +106,7 @@ getRGB(pixels, offset, stride, x, y, width, height)
         
         
 
-getRGB(pixels, offset, stride, x, y, width, height)
+immutableImage!.getRGB(pixels, offset, stride, x, y, width, height)
 
                         }
                             
@@ -123,7 +121,7 @@ var x = x
 var y = y
 var width = width
 var height = height
-setRGB2(pixels, offset, height, x, y, width, height)
+this.image.setRGB2(pixels, offset, height, x, y, width, height)
 }
 
 
@@ -148,7 +146,7 @@ setRGB2(pixels, offset, height, x, y, width, height)
 
 
     public recycle(){
-dispose(image)
+DisposalUtil.getInstance()!.dispose(image)
 }
 
 

@@ -69,7 +69,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, objectConfigFileAbPath: AbPath): TransformInfoObjectConfigInterface{
     //var abeClientInformation = abeClientInformation
@@ -92,11 +92,10 @@ private constructor (){
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Could Not Load Object Config", getInstance(), commonStrings!.GET_INSTANCE, e)
+                                    logUtil!.put("Could Not Load Object Config", getInstance(), commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 
@@ -109,7 +108,7 @@ private constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigInterface{
     //var abeClientInformation = abeClientInformation
@@ -122,7 +121,6 @@ var transformInfoInterface = transformInfoInterface
         
 
 
-    
                         if(transformInfoInterface != 
                                     null
                                  && !stringValidationUtil!.isEmpty(transformInfoInterface!.getStoreName()))
@@ -155,7 +153,6 @@ var transformInfoInterface = transformInfoInterface
         
 
 
-    
                         if(transformInfoInterface != 
                                     null
                                 )
@@ -166,11 +163,10 @@ var transformInfoInterface = transformInfoInterface
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, getInstance(), commonStrings!.GET_INSTANCE, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, getInstance(), commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 
@@ -183,7 +179,7 @@ var transformInfoInterface = transformInfoInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, document: Document): TransformInfoObjectConfigInterface{
     //var abeClientInformation = abeClientInformation
@@ -197,7 +193,6 @@ var transformInfoInterface = transformInfoInterface
         
 
 
-    
                         if(transformInfoInterface != 
                                     null
                                  && !stringValidationUtil!.isEmpty(transformInfoInterface!.getStoreName()))
@@ -230,7 +225,6 @@ var transformInfoInterface = transformInfoInterface
         
 
 
-    
                         if(transformInfoInterface != 
                                     null
                                 )
@@ -241,11 +235,10 @@ var transformInfoInterface = transformInfoInterface
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, getInstance(), "getInstance(document)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, getInstance(), "getInstance(document)", e)
 
                                     }
                                 

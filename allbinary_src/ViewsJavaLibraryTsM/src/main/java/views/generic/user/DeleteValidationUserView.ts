@@ -85,11 +85,10 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 this.userName= UserName(hashMap).
                             get()
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("User Name: " +this.userName, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("User Name: " +this.userName, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -100,13 +99,11 @@ this.userName= UserName(hashMap).
 
         try {
             
-    
                         if(UserName.getInstance()!.isValid(this.userName) == Boolean.TRUE)
                         
                                     {
                                     this.user= UserEntityFactory.getInstance()!.getUser(this.userName)
 
-    
                         if(user == 
                                     null
                                 )
@@ -120,7 +117,6 @@ this.userName= UserName(hashMap).
                                     }
                                 
                              else 
-    
                         if()
                         
 
@@ -132,11 +128,10 @@ this.userName= UserName(hashMap).
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -160,13 +155,11 @@ this.userName= UserName(hashMap).
         
 
 
-    
                         if(UserName.getInstance()!.isValid(this.userName) == Boolean.TRUE)
                         
                                     {
                                     this.user= UserEntityFactory.getInstance()!.getUser(this.userName)
 
-    
                         if(user == 
                                     null
                                 )
@@ -175,7 +168,6 @@ this.userName= UserName(hashMap).
                                     }
                                 
                              else 
-    
                         if()
                         
 
@@ -187,11 +179,10 @@ this.userName= UserName(hashMap).
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 

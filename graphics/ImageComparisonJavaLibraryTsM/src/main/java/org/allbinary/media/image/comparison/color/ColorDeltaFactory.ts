@@ -71,17 +71,17 @@ export class ColorDeltaFactory
 
 
         try {
-            put(commonStrings!.START, instance, STATIC_BLOCK)
+            logUtil!.put(commonStrings!.START, instance, STATIC_BLOCK)
 cacheInterface= CacheInterfaceFactory.getInstance(CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.THIRTY_MINUTES_TEN_THOUSAND_MAX) as AutomaticCacheInterface
-put(commonStrings!.END, instance, STATIC_BLOCK)
+logUtil!.put(commonStrings!.END, instance, STATIC_BLOCK)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e)
+logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e)
 }
 
 }
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(rgb1: number, rgb2: number): ColorDelta{
 var rgb1 = rgb1
@@ -92,7 +92,6 @@ var rgb2 = rgb2
         
 
 
-    
                         if(colorDelta == 
                                     null
                                 )

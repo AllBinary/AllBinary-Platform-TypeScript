@@ -66,7 +66,6 @@ var anyType = anyType
         
 
 
-    
                         if(isNotSmallDisplay || command.getPriority() == 1 || command == GameCommandsFactory.getInstance()!.EXIT_COMMAND || command == GameCommandsFactory.getInstance()!.EXIT_WITHOUT_PROGRESS_COMMAND)
                         
                                     {

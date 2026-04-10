@@ -100,13 +100,12 @@ public constructor (inputStream: InputStream){
             audioInputStream= AudioSystem.getAudioInputStream(inputStream)
 clip= this.create(audioInputStream)
 
-    
                         if(clip == 
                                     null
                                 )
                         
                                     {
-                                    put("Clip was null", this, commonStrings!.CONSTRUCTOR, Exception())
+                                    logUtil!.put("Clip was null", this, commonStrings!.CONSTRUCTOR, Error())
 
 
 
@@ -116,7 +115,7 @@ clip= this.create(audioInputStream)
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 this.audioInputStream= audioInputStream
@@ -125,7 +124,7 @@ this.clip= clip
 
 
     public close(){
-runTask(object: ARunnable()
+MusicThreadPool.getInstance()!.runTask(object: ARunnable()
                                 {
                                 
     public run(){
@@ -134,7 +133,7 @@ runTask(object: ARunnable()
             close2()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
 }
 
 }
@@ -144,12 +143,12 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     close2(){
-drain()
-flush()
-close()
+this.clip.drain()
+this.clip.flush()
+this.clip.close()
 }
 
 
@@ -163,11 +162,11 @@ close()
 }
 
 
-                @Throws(MediaException::class)
+                //@Throws(MediaException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public start(){
-runTask(object: ARunnable()
+MusicThreadPool.getInstance()!.runTask(object: ARunnable()
                                 {
                                 
     public run(){
@@ -176,7 +175,7 @@ runTask(object: ARunnable()
             start2()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
 }
 
 }
@@ -186,17 +185,17 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     start2(){
-setFramePosition(0)
-loop(this.getLoopCount())
-start()
-start()
+this.clip.setFramePosition(0)
+this.clip.loop(this.getLoopCount())
+this.clip.start()
+super.start()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     create(audioInputStream: AudioInputStream): Clip{
 var audioInputStream = audioInputStream
@@ -205,8 +204,8 @@ var audioInputStream = audioInputStream
         
         
 
-addLineListener(this)
-open(audioInputStream)
+clip.addLineListener(this)
+clip.open(audioInputStream)
 
 
 
@@ -216,11 +215,11 @@ open(audioInputStream)
 }
 
 
-                @Throws(MediaException::class)
+                //@Throws(MediaException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public stop(){
-runTask(object: ARunnable()
+MusicThreadPool.getInstance()!.runTask(object: ARunnable()
                                 {
                                 
     public run(){
@@ -229,7 +228,7 @@ runTask(object: ARunnable()
             stop2()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
 }
 
 }
@@ -239,11 +238,11 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     stop2(){
-stop()
-stop()
+clip.stop()
+super.stop()
 }
 
 
@@ -271,7 +270,7 @@ var controlType = controlType
     public setVolume(leftVolume: number, rightVolume: number){
     //var leftVolume = leftVolume
     //var rightVolume = rightVolume
-this.setVolume((leftVolume.toFloat()) /100.0f)
+this.this.setVolume((leftVolume.toFloat()) /100.0f)
 }
 
 
@@ -293,7 +292,6 @@ this.setVolume((leftVolume.toFloat()) /100.0f)
     setVolume(volume: number){
     //var volume = volume
 
-    
                         if(volume < 0f || volume > 1f)
                         
                                     {
@@ -309,7 +307,7 @@ this.setVolume((leftVolume.toFloat()) /100.0f)
         
         
 
-setValue(20f *Math.log10(volume).toFloat())
+masterGainFloatControl!.setValue(20f *Math.log10(volume).toFloat())
 }
 
 
@@ -326,7 +324,6 @@ setValue(20f *Math.log10(volume).toFloat())
     public update(event: LineEvent){
 var event = event
 
-    
                         if(event.getType()!.equals(LineEvent.Type.STOP))
                         
                                     {
@@ -350,7 +347,7 @@ index < size; index++)
         
         
 
-playerUpdate(this, PlayerListener.END_OF_MEDIA, 
+listener.playerUpdate(this, PlayerListener.END_OF_MEDIA, 
                             null)
 }
 

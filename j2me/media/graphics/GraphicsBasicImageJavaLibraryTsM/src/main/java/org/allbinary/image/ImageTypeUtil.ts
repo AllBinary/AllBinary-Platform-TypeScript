@@ -59,9 +59,9 @@ export class ImageTypeUtil
 private constructor (){
 
             super();
-            add(JPG)
-add(GIF)
-add(PNG)
+            list.add(JPG)
+list.add(GIF)
+list.add(PNG)
 }
 
 
@@ -84,7 +84,6 @@ index >= 0; index--)
         
 
 
-    
                         if(mediaFileType!.compareTo(name) == 0)
                         
                                     {

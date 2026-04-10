@@ -54,13 +54,13 @@ var gl = gl
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(){
 }

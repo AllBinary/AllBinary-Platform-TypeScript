@@ -43,16 +43,16 @@ import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js"
         
         
 
-append("APK Memory: Available: ")
-appendlong(maxUtilizedMemoryAvailable)
-append("/")
-appendlong(Runtime.getRuntime()!.maxMemory())
-append(" Used: ")
-appendlong(memoryUsed)
-append(" Free: ")
-appendlong(maxUtilizedMemoryAvailable -memoryUsed)
-append("/")
-appendlong(Runtime.getRuntime()!.maxMemory() -memoryUsed)
+stringBuffer!.append("APK Memory: Available: ")
+stringBuffer!.appendlong(maxUtilizedMemoryAvailable)
+stringBuffer!.append("/")
+stringBuffer!.appendlong(Runtime.getRuntime()!.maxMemory())
+stringBuffer!.append(" Used: ")
+stringBuffer!.appendlong(memoryUsed)
+stringBuffer!.append(" Free: ")
+stringBuffer!.appendlong(maxUtilizedMemoryAvailable -memoryUsed)
+stringBuffer!.append("/")
+stringBuffer!.appendlong(Runtime.getRuntime()!.maxMemory() -memoryUsed)
 
 
 

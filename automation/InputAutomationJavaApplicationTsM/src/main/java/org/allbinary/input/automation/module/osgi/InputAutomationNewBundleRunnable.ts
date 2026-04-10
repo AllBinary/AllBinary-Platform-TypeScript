@@ -126,7 +126,7 @@ this.fileBasicArrayList= BasicArrayList()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setThread(thread: Thread){
 var thread = thread
@@ -151,10 +151,10 @@ this.running= running
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     updateModules(){
-put(this.commonStrings!.START, this, "updateModules")
+logUtil!.put(this.commonStrings!.START, this, "updateModules")
 
     var list: BasicArrayList = this.findNewModules()!;
         
@@ -180,13 +180,12 @@ index < size; index++)
         {
 bundle= this.install(list.get(index) as URL)
 
-    
                         if(bundle != 
                                     null
                                 )
                         
                                     {
-                                    start(MODULES_START_LEVEL)
+                                    bundle.start(MODULES_START_LEVEL)
 
                                     }
                                 
@@ -195,10 +194,10 @@ bundle= this.install(list.get(index) as URL)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getAllJarSymbolicNameHashMap(): HashMap<Any, Any>{
-put(this.commonStrings!.START, this, "getAllJarSymbolicNameHashMap")
+logUtil!.put(this.commonStrings!.START, this, "getAllJarSymbolicNameHashMap")
 
     var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
         
@@ -209,7 +208,7 @@ put(this.commonStrings!.START, this, "getAllJarSymbolicNameHashMap")
         
         
 
-put("Jar Module Files: " +jarFileBasicArrayList, this, "getAllJarSymbolicNameHashMap")
+logUtil!.put("Jar Module Files: " +jarFileBasicArrayList, this, "getAllJarSymbolicNameHashMap")
 
     var size: number = jarFileBasicArrayList!.size()!;
         
@@ -230,7 +229,6 @@ index < size; index++)
         {
 file= jarFileBasicArrayList!.get(index) as File
 
-    
                         if(!file.isDirectory())
                         
                                     {
@@ -250,7 +248,6 @@ file= jarFileBasicArrayList!.get(index) as File
         
 
 
-    
                         if(manifest == 
                                     null
                                 )
@@ -266,7 +263,6 @@ file= jarFileBasicArrayList!.get(index) as File
         
 
 
-    
                         if(symbolicName != 
                                     null
                                 )
@@ -289,14 +285,13 @@ file= jarFileBasicArrayList!.get(index) as File
 
 
     getJarModuleFileBasicArrayList(): BasicArrayList{
-put(this.commonStrings!.START, this, "getJarModuleFileBasicArrayList")
+logUtil!.put(this.commonStrings!.START, this, "getJarModuleFileBasicArrayList")
 
     var baseJarPath: string = System.getProperty(JAR_DIR_PROP)!;
         
         
 
 
-    
                         if(baseJarPath!.startsWith(FILE))
                         
                                     {
@@ -314,13 +309,13 @@ put(this.commonStrings!.START, this, "getJarModuleFileBasicArrayList")
         
         
 
-put("Path: " +path, this, "getJarModuleFileBasicArrayList")
+logUtil!.put("Path: " +path, this, "getJarModuleFileBasicArrayList")
 
     var file: File = new File(path);
         
         
 
-put("File: " +file.getAbsolutePath() +" isDirectory: " +file.isDirectory(), this, "getJarModuleFileBasicArrayList")
+logUtil!.put("File: " +file.getAbsolutePath() +" isDirectory: " +file.isDirectory(), this, "getJarModuleFileBasicArrayList")
 
 
 
@@ -330,10 +325,10 @@ put("File: " +file.getAbsolutePath() +" isDirectory: " +file.isDirectory(), this
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getInstalledJarSymbolicNameBasicArrayList(): BasicArrayList{
-put(this.commonStrings!.START, this, "getInstalledJarSymbolicNameBasicArrayList")
+logUtil!.put(this.commonStrings!.START, this, "getInstalledJarSymbolicNameBasicArrayList")
 
     var vector: BasicArrayList = new BasicArrayList();
         
@@ -350,13 +345,12 @@ put(this.commonStrings!.START, this, "getInstalledJarSymbolicNameBasicArrayList"
         
 
 
-    
                         if(bundleArray != 
                                     null
                                 )
                         
                                     {
-                                    put("bundleArray: " +bundleArray!.length, this, "getInputAutomationModuleServices")
+                                    logUtil!.put("bundleArray: " +bundleArray!.length, this, "getInputAutomationModuleServices")
 
 
 
@@ -372,7 +366,7 @@ index < bundleArray!.length; index++)
         
         
 
-add(bundle.getSymbolicName())
+vector.add(bundle.getSymbolicName())
 }
 
 
@@ -387,11 +381,11 @@ add(bundle.getSymbolicName())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     isInstalled(symbolicName: string): boolean{
 var symbolicName = symbolicName
-put(CommonLabels.getInstance()!.START +symbolicName, this, "isInstalled")
+logUtil!.put(CommonLabels.getInstance()!.START +symbolicName, this, "isInstalled")
 
     var list: BasicArrayList = this.getInstalledJarSymbolicNameBasicArrayList()!;
         
@@ -417,7 +411,6 @@ index < size; index++)
         {
 nextSymbolicName= list.get(index) as String
 
-    
                         if(nextSymbolicName!.compareTo(symbolicName) == 0)
                         
                                     {
@@ -441,10 +434,10 @@ nextSymbolicName= list.get(index) as String
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     findNewModules(): BasicArrayList{
-put(this.commonStrings!.START, this, "findNewModules")
+logUtil!.put(this.commonStrings!.START, this, "findNewModules")
 
     var vector: BasicArrayList = new BasicArrayList();
         
@@ -455,7 +448,7 @@ put(this.commonStrings!.START, this, "findNewModules")
         
         
 
-put("All: " +hashMap, this, "findNewModules")
+logUtil!.put("All: " +hashMap, this, "findNewModules")
 
     var set: Set = hashMap!.keys!;
         
@@ -488,11 +481,10 @@ index < size; index++)
         
 
 
-    
                         if(!this.isInstalled(symbolicName))
                         
                                     {
-                                    add(hashMap!.get(symbolicName as Object))
+                                    vector.add(hashMap!.get(symbolicName as Object))
 
                                     }
                                 
@@ -507,11 +499,11 @@ index < size; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     install(url: URL): Bundle{
 var url = url
-put(CommonLabels.getInstance()!.START +url, this, "install")
+logUtil!.put(CommonLabels.getInstance()!.START +url, this, "install")
 
     var bundleContext: BundleContext = InputAutomationBundleActivator.getBundleContext()!;
         
@@ -529,8 +521,8 @@ put(CommonLabels.getInstance()!.START +url, this, "install")
     public run(){
 
         try {
-            put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-this.setRunning(true)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
+this.this.setRunning(true)
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
@@ -539,18 +531,18 @@ this.setRunning(true)
 
         while(this.isRunning())
         {
-setStartTime()
-put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
-this.updateModules()
+timeHelper!.setStartTime()
+logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
+this.this.updateModules()
 break;
 
                     
 }
 
-put(this.commonStrings!.END, this, this.commonStrings!.RUN)
+logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
 }
 
 }

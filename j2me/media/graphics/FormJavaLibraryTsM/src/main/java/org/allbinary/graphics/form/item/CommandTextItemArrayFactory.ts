@@ -73,7 +73,7 @@ var vector = vector
         
         
 
-clear()
+list.clear()
 
     var textItem: CommandTextItem
 
@@ -93,7 +93,6 @@ clear()
         
 
 
-    
                         if(!isLargeEnoughDisplayForBigMenu && size > 3)
                         
                                     {
@@ -116,7 +115,6 @@ index < size; index++)
         {
 command= vector.elementAt(index) as Command
 
-    
                         if(command.getPriority() < priorityLimit)
                         
                                     {
@@ -126,12 +124,11 @@ command= vector.elementAt(index) as Command
         
 
 
-    
                         if(aBoolean)
                         
                                     {
                                     textItem= CommandTextItem(command, ImageItem.LAYOUT_DEFAULT, StringUtil.getInstance()!.EMPTY_STRING, backgroundBasicColor, foregroundBasicColor)
-add(textItem)
+list.add(textItem)
 
                                     }
                                 

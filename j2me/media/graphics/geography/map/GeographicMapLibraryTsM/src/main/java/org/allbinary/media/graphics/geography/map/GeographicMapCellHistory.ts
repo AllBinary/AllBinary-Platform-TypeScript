@@ -97,7 +97,7 @@ public constructor (){
             super();
             this.list= BasicArrayList()
 this.visitedList= BasicArrayList()
-this.init()
+this.this.init()
 }
 
 
@@ -138,8 +138,8 @@ this.init()
         
         
 
-ensureCapacity(size)
-ensureCapacity(size)
+this.list.ensureCapacity(size)
+this.visitedList!.ensureCapacity(size)
 
     var geographicMapCellPosition: GeographicMapCellPosition
 
@@ -154,7 +154,7 @@ ensureCapacity(size)
 index < size; index++)
         {
 geographicMapCellPosition= list.get(index) as GeographicMapCellPosition
-this.track(geographicMapCellPosition)
+this.this.track(geographicMapCellPosition)
 }
 
 }
@@ -163,12 +163,11 @@ this.track(geographicMapCellPosition)
     public track(geographicMapCellPosition: GeographicMapCellPosition){
     //var geographicMapCellPosition = geographicMapCellPosition
 
-    
                         if(!this.list.contains(geographicMapCellPosition))
                         
                                     {
-                                    add(geographicMapCellPosition)
-add(booleanFactory!.FALSE)
+                                    this.list.add(geographicMapCellPosition)
+this.visitedList!.add(booleanFactory!.FALSE)
 
                                     }
                                 
@@ -208,7 +207,6 @@ var geographicMapCellPosition = geographicMapCellPosition
         
 
 
-    
                         if(localList!.size() > index +1)
                         
                                     {
@@ -261,7 +259,6 @@ index < size; index++)
         {
 value= this.visitedList!.get(index) as Boolean
 
-    
                         if(value == booleanFactory!.FALSE)
                         
                                     {
@@ -311,7 +308,6 @@ index < size; index++)
         {
 value= this.visitedList!.get(index) as Boolean
 
-    
                         if(value == booleanFactory!.FALSE)
                         
                                     {
@@ -367,11 +363,10 @@ index < size; index++)
         {
 geographicMapCellPosition= pathList!.get(index) as GeographicMapCellPosition
 
-    
                         if(!localList!.contains(geographicMapCellPosition))
                         
                                     {
-                                    add(geographicMapCellPosition)
+                                    inPathButNotTrackedList!.add(geographicMapCellPosition)
 
                                     }
                                 
@@ -394,7 +389,6 @@ geographicMapCellPosition= pathList!.get(index) as GeographicMapCellPosition
         
 
 
-    
                         if(index !=  -1)
                         
                                     {
@@ -404,7 +398,6 @@ geographicMapCellPosition= pathList!.get(index) as GeographicMapCellPosition
         
 
 
-    
                         if(value == booleanFactory!.TRUE)
                         
                                     {
@@ -444,7 +437,6 @@ geographicMapCellPosition= pathList!.get(index) as GeographicMapCellPosition
     var value: Boolean
 
 
-    
                         if(index !=  -1)
                         
                                     {
@@ -455,11 +447,10 @@ geographicMapCellPosition= pathList!.get(index) as GeographicMapCellPosition
         
 
 
-    
                         if(value != TRUE)
                         
                                     {
-                                    set(index, TRUE)
+                                    this.visitedList!.set(index, TRUE)
 this.totalVisited++
 
 
@@ -486,11 +477,10 @@ this.totalVisited++
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isAllVisited(): boolean{
 
-    
                         if(this.totalVisited == this.getSize() -1)
                         
                                     {
@@ -516,11 +506,10 @@ this.totalVisited++
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isAllVisited2(): boolean{
 
-    
                         if(this.totalVisited == this.getSize())
                         
                                     {
@@ -546,7 +535,7 @@ this.totalVisited++
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isVisited(basicDecimal: BasicDecimal): boolean{
     //var basicDecimal = basicDecimal
@@ -566,7 +555,6 @@ this.totalVisited++
         
 
 
-    
                         if(size -numberNotVisited > numberRequired)
                         
                                     {
@@ -592,7 +580,7 @@ this.totalVisited++
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public reset(){
 
@@ -620,7 +608,7 @@ this.totalVisited++
         
 index >= 0; index--)
         {
-set(index, localFalseBoolean)
+localVisitedList!.set(index, localFalseBoolean)
 }
 
 this.totalVisited= 0
@@ -642,7 +630,6 @@ this.totalVisited= 0
         
 
 
-    
                         if(halfWidth == 0)
                         
                                     {
@@ -660,7 +647,7 @@ this.totalVisited= 0
         
         
 
-paint(graphics, x +halfWidth, y +(height))
+this.animation.paint(graphics, x +halfWidth, y +(height))
 }
 
 
@@ -673,7 +660,7 @@ paint(graphics, x +halfWidth, y +(height))
     //var geographicMapInterface = geographicMapInterface
 
         try {
-            setColor(RED)
+            graphics.setColor(RED)
 
     var localVisitedList: BasicArrayList = this.visitedList;
         
@@ -703,11 +690,10 @@ paint(graphics, x +halfWidth, y +(height))
 geographicMapCellPosition= list.get(index) as GeographicMapCellPosition
 isCellVisitedBoolean= localVisitedList!.get(index) as Boolean
 
-    
                         if(!isCellVisitedBoolean)
                         
                                     {
-                                    this.paintNotVisited(graphics, geographicMapInterface!.getAllBinaryTiledLayer(), geographicMapCellPosition!.getPoint())
+                                    this.this.paintNotVisited(graphics, geographicMapInterface!.getAllBinaryTiledLayer(), geographicMapCellPosition!.getPoint())
 
                                     }
                                 
@@ -720,15 +706,15 @@ isCellVisitedBoolean= localVisitedList!.get(index) as Boolean
         
         
 
-put(commonStrings!.EXCEPTION, this, "paintNotVisited", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "paintNotVisited", e)
 }
 
 }
 
 
     public init(){
-clear()
-clear()
+this.list.clear()
+this.visitedList!.clear()
 this.totalVisited= 0
 }
 

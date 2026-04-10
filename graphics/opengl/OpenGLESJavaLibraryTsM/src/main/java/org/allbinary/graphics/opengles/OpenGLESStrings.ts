@@ -30,7 +30,7 @@ export class OpenGLESStrings
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public set(gl: GL10){
     //var gl = gl
@@ -52,7 +52,7 @@ export class OpenGLESStrings
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(gl: GL10, width: number, height: number){
     //var gl = gl

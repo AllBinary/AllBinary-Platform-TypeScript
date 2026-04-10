@@ -298,7 +298,7 @@ var animationInterface = animationInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public handleFinish(){
 

@@ -71,12 +71,12 @@ export class BufferedImagePoolSingleton
 
 
         try {
-            put(commonStrings!.START, instance, STATIC_BLOCK)
+            logUtil!.put(commonStrings!.START, instance, STATIC_BLOCK)
 poolInterface= PoolInterfaceFactory.getInstance(BufferedImageCacheableFactory(), PoolTypeFactory.getInstance()!.VECTOR_POOL, CachePolicyFactory.getInstance()!.MAX_TIME_THOUSAND_MAX)
-put(commonStrings!.END, instance, STATIC_BLOCK)
+logUtil!.put(commonStrings!.END, instance, STATIC_BLOCK)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e)
+logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e)
 }
 
 }

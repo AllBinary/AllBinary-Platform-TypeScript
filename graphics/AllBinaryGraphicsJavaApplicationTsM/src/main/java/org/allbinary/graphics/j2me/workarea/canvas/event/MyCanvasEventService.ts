@@ -59,18 +59,18 @@ export class MyCanvasEventService
 
     public static addListener(listener: MyCanvasEventListener){
 var listener = listener
-add(listener::class as Class<*>, listener as java.util.EventListener)
+listenerList!.add(listener::class as Class<*>, listener as java.util.EventListener)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static removeListener(listener: MyCanvasEventListener){
 var listener = listener
-remove(listener::class as Class<*>, listener as java.util.EventListener)
+listenerList!.remove(listener::class as Class<*>, listener as java.util.EventListener)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static fire(evt: MyCanvasEvent){
@@ -91,70 +91,76 @@ var evt = evt
 i < listeners.length; )
         {
 
-    
                         if(listeners[i] == listeners[i +1]!.::class)
                         
                                     {
                                     
-    
                         if(evt.getCommand()!.compareTo(DELETE) == 0)
                         
                                     {
-                                    delete(evt)
+                                     = listeners[i +1]! as MyCanvasEventListener
+.
+                    delete(evt)
 
                                     }
                                 
                              else 
-    
                         if(evt.getCommand()!.compareTo(DUPLICATE) == 0)
                         
                                     {
-                                    duplicate(evt)
+                                     = listeners[i +1]! as MyCanvasEventListener
+.
+                    duplicate(evt)
 
                                     }
                                 
                              else 
-    
                         if(evt.getCommand()!.compareTo(SELECT) == 0)
                         
                                     {
-                                    select(evt)
+                                     = listeners[i +1]! as MyCanvasEventListener
+.
+                    select(evt)
 
                                     }
                                 
                              else 
-    
                         if(evt.getCommand()!.compareTo(ROTATE) == 0)
                         
                                     {
-                                    rotate(evt)
+                                     = listeners[i +1]! as MyCanvasEventListener
+.
+                    rotate(evt)
 
                                     }
                                 
                              else 
-    
                         if(evt.getCommand()!.compareTo(EXPLODE) == 0)
                         
                                     {
-                                    explode(evt)
+                                     = listeners[i +1]! as MyCanvasEventListener
+.
+                    explode(evt)
 
                                     }
                                 
                              else 
-    
                         if(evt.getCommand()!.compareTo(AUTOEXPLODE) == 0)
                         
                                     {
-                                    autoExplode(evt)
+                                     = listeners[i +1]! as MyCanvasEventListener
+.
+                    autoExplode(evt)
 
                                     }
                                 
                              else 
-    
                         if(evt.getCommand()!.compareTo(CENTER) == 0)
                         
                                     {
-                                    center(evt)
+                                     = listeners[i +1]! as MyCanvasEventListener
+.
+                    center(evt)
 
                                     }
                                 

@@ -71,7 +71,7 @@ var aMuted = aMuted
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static init(soundsFactoryInterface: SoundsFactoryInterface){
 var soundsFactoryInterface = soundsFactoryInterface
@@ -85,19 +85,22 @@ var soundsFactoryInterface = soundsFactoryInterface
         
         
 
-put(commonString!.START, THIS, commonString!.INIT)
-addPortion(50, "Media Manager")
-init()
+logUtil!.put(commonString!.START, THIS, commonString!.INIT)
+ProgressCanvasFactory.getInstance()!.addPortion(50, "Media Manager")
+Sounds(soundsFactoryInterface).
+                            init()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
 var soundsFactoryInterface = soundsFactoryInterface
-stopAll()
-closeAll()
-gc()
+Sounds(soundsFactoryInterface).
+                            stopAll()
+Sounds(soundsFactoryInterface).
+                            closeAll()
+System.gc()
 }
 
 
@@ -114,7 +117,7 @@ var type = type
         
         
 
-put(commonString!.START, THIS, "creatPlayer(InputStream)")
+logUtil!.put(commonString!.START, THIS, "creatPlayer(InputStream)")
 
 
 
@@ -136,7 +139,7 @@ var locator = locator
         
         
 
-put(commonString!.START, THIS, "creatPlayer(locator)")
+logUtil!.put(commonString!.START, THIS, "creatPlayer(locator)")
 
 
 

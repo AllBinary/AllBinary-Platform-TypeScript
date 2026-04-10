@@ -38,8 +38,8 @@ public constructor (rectangle: Rectangle){
 
             super();
             var rectangle = rectangle
-this.setRectangle(rectangle)
-this.setPixelDeltaVector(Vector())
+this.this.setRectangle(rectangle)
+this.this.setPixelDeltaVector(Vector())
 }
 
 
@@ -81,7 +81,7 @@ this.pixelDeltaVector= pixelDeltaVector
         
         
 
-setPixelDeltaVector(this.getPixelDeltaVector()!.clone() as Vector)
+motionRectangle!.setPixelDeltaVector(this.getPixelDeltaVector()!.clone() as Vector)
 
 
 

@@ -58,7 +58,7 @@ public constructor (currentPoints: IntArray[], animationBehavior: AnimationBehav
 var graphics = graphics
 var x = x
 var y = y
-this.paintVectors(graphics, x, y)
+this.this.paintVectors(graphics, x, y)
 }
 
 

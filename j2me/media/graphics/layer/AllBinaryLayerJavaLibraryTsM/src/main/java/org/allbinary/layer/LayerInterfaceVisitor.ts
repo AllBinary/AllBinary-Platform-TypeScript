@@ -22,7 +22,7 @@
 interface LayerInterfaceVisitor {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     visit(layerInterface: AllBinaryLayer)
 

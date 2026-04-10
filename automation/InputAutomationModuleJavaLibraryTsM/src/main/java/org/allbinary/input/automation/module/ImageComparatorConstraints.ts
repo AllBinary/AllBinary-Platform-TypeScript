@@ -60,7 +60,7 @@ public constructor (doImageComparisonEveryNthFrame: number){
             super();
             var doImageComparisonEveryNthFrame = doImageComparisonEveryNthFrame
 this.doImageComparisonEveryNthFrame= doImageComparisonEveryNthFrame
-this.setAvoidVector(Vector())
+this.this.setAvoidVector(Vector())
 }
 
 
@@ -118,7 +118,6 @@ index < size; index++)
         
 
 
-    
                         if(RectangleCollisionUtil.isCollision(avoidRectangle, rectangle))
                         
                                     {
@@ -170,7 +169,6 @@ index < size; index++)
         
 
 
-    
                         if(RectangleCollisionUtil.isCollision(avoidRectangle, point))
                         
                                     {
@@ -221,9 +219,8 @@ var frame = frame
         
         
 
-put(" Frame: " +frame +" remainder: " +remainder +" this.doImageComparisonEveryNthFrame: " +this.doImageComparisonEveryNthFrame, this, "isCollisionWithAvoidRectangles")
+logUtil!.put(" Frame: " +frame +" remainder: " +remainder +" this.doImageComparisonEveryNthFrame: " +this.doImageComparisonEveryNthFrame, this, "isCollisionWithAvoidRectangles")
 
-    
                         if(remainder == 0)
                         
                                     {
@@ -249,7 +246,7 @@ put(" Frame: " +frame +" remainder: " +remainder +" this.doImageComparisonEveryN
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isImageValid(bufferedImage: BufferedImage): boolean{
 var bufferedImage = bufferedImage
@@ -286,7 +283,7 @@ index < size; index++)
         
         
 
-put("Avoid Rectangle: " +avoidRectangle, this, "log")
+logUtil!.put("Avoid Rectangle: " +avoidRectangle, this, "log")
 }
 
 }

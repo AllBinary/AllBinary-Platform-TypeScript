@@ -96,14 +96,14 @@ public constructor (){
 
     public onMotionRectanglesImageComparisonResultsEvent(motionRectanglesImageComparisonResultsEvent: MotionRectanglesResultsEvent){
 var motionRectanglesImageComparisonResultsEvent = motionRectanglesImageComparisonResultsEvent
-add(motionRectanglesImageComparisonResultsEvent!.getMotionRectangles())
-this.run()
+this.getMotionRectanglesVector()!.add(motionRectanglesImageComparisonResultsEvent!.getMotionRectangles())
+this.this.run()
 }
 
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
 var allBinaryEventObject = allBinaryEventObject
-this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as MotionRectanglesResultsEvent)
+this.this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as MotionRectanglesResultsEvent)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -128,14 +128,14 @@ this.running= running
     public run(){
 
         try {
-            put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-this.setRunning(true)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
+this.this.setRunning(true)
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
         
 
-setStartTime()
+timeHelper!.setStartTime()
 
     var motionRectangles: MotionRectangles = this.getMotionRectanglesVector()!.get(0) as MotionRectangles;
         
@@ -147,7 +147,6 @@ setStartTime()
         
 
 
-    
                         if(motionRectangleVector!.length > 0)
                         
                                     {
@@ -192,36 +191,35 @@ index < size; index++)
         
         
 
-mouseMoveToTarget(rectangle)
+inputRobotInterface!.mouseMoveToTarget(rectangle)
 
-    
                         if(inputRobotInterface!.getName()!.compareTo(TempInputRobotNames.DX_NAME) == 0)
                         
                                     {
-                                    mousePress(InputEvent.BUTTON1_MASK)
-sleep(300)
-mouseRelease(InputEvent.BUTTON1_MASK)
-mousePress(InputEvent.BUTTON2_MASK)
-sleep(300)
-mouseRelease(InputEvent.BUTTON2_MASK)
-mousePress(InputEvent.BUTTON3_MASK)
-sleep(300)
-mouseRelease(InputEvent.BUTTON3_MASK)
-keyPress(KeyEvent.VK_1)
-sleep(300)
-keyRelease(KeyEvent.VK_1)
-keyPress(KeyEvent.VK_2)
-sleep(300)
-keyRelease(KeyEvent.VK_2)
-keyPress(KeyEvent.VK_3)
-sleep(300)
-keyRelease(KeyEvent.VK_3)
-keyPress(KeyEvent.VK_4)
-sleep(300)
-keyRelease(KeyEvent.VK_4)
-keyPress(KeyEvent.VK_F1)
-sleep(300)
-keyRelease(KeyEvent.VK_F1)
+                                    inputRobotInterface!.mousePress(InputEvent.BUTTON1_MASK)
+Thread.sleep(300)
+inputRobotInterface!.mouseRelease(InputEvent.BUTTON1_MASK)
+inputRobotInterface!.mousePress(InputEvent.BUTTON2_MASK)
+Thread.sleep(300)
+inputRobotInterface!.mouseRelease(InputEvent.BUTTON2_MASK)
+inputRobotInterface!.mousePress(InputEvent.BUTTON3_MASK)
+Thread.sleep(300)
+inputRobotInterface!.mouseRelease(InputEvent.BUTTON3_MASK)
+inputRobotInterface!.keyPress(KeyEvent.VK_1)
+Thread.sleep(300)
+inputRobotInterface!.keyRelease(KeyEvent.VK_1)
+inputRobotInterface!.keyPress(KeyEvent.VK_2)
+Thread.sleep(300)
+inputRobotInterface!.keyRelease(KeyEvent.VK_2)
+inputRobotInterface!.keyPress(KeyEvent.VK_3)
+Thread.sleep(300)
+inputRobotInterface!.keyRelease(KeyEvent.VK_3)
+inputRobotInterface!.keyPress(KeyEvent.VK_4)
+Thread.sleep(300)
+inputRobotInterface!.keyRelease(KeyEvent.VK_4)
+inputRobotInterface!.keyPress(KeyEvent.VK_F1)
+Thread.sleep(300)
+inputRobotInterface!.keyRelease(KeyEvent.VK_F1)
 
                                     }
                                 
@@ -231,12 +229,12 @@ keyRelease(KeyEvent.VK_F1)
                                     }
                                 
 this.index++
-remove(motionRectangles)
-put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
-put(this.commonStrings!.END, this, this.commonStrings!.RUN)
+this.getMotionRectanglesVector()!.remove(motionRectangles)
+logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
+logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
 }
 
 }

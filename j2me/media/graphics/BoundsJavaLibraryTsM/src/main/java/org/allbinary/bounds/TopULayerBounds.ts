@@ -40,29 +40,26 @@ public constructor (rectangle: Rectangle)
     public visit(boundsVisitorInterface: BoundsVisitorInterface){
 var boundsVisitorInterface = boundsVisitorInterface
 
-    
                         if(boundsVisitorInterface!.getX() > this.rectangle.getMaxX())
                         
                                     {
-                                    maxX()
+                                    boundsVisitorInterface!.maxX()
 
                                     }
                                 
 
-    
                         if(boundsVisitorInterface!.getX() < this.rectangle.getPoint()!.getX())
                         
                                     {
-                                    minX()
+                                    boundsVisitorInterface!.minX()
 
                                     }
                                 
 
-    
                         if(boundsVisitorInterface!.getY() < this.rectangle.getPoint()!.getY())
                         
                                     {
-                                    minY()
+                                    boundsVisitorInterface!.minY()
 
                                     }
                                 

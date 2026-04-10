@@ -46,14 +46,14 @@ export class OpenGLESDeviceImageTranslate extends OpenGLESImageTranslate {
     //var openGLESImage = openGLESImage
     //var x = x
     //var y = y
-translate(gl, translateX +(openGLESImage!.openGLESImageProperties!.scaleX *x), translateY +(openGLESImage!.openGLESImageProperties!.scaleY *y))
+openGLESImage!.imageProcessor!.translate(gl, translateX +(openGLESImage!.openGLESImageProperties!.scaleX *x), translateY +(openGLESImage!.openGLESImageProperties!.scaleY *y))
 }
 
 
     public translate2(gl: GL10, openGLESImage: OpenGLESImage){
     //var gl = gl
     //var openGLESImage = openGLESImage
-translate(gl, translateX2, translateY2)
+openGLESImage!.imageProcessor!.translate(gl, translateX2, translateY2)
 }
 
 

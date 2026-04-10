@@ -66,11 +66,10 @@ private constructor (){
     public addListener(miniMapLayer: MiniMapLayer){
 var miniMapLayer = miniMapLayer
 
-    
                         if(!list.contains(miniMapLayer))
                         
                                     {
-                                    add(miniMapLayer)
+                                    list.add(miniMapLayer)
 
                                     }
                                 
@@ -78,19 +77,19 @@ var miniMapLayer = miniMapLayer
 
 
     public removeAllListeners(){
-clear()
-removeAllListeners()
+this.list.clear()
+super.removeAllListeners()
 }
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-remove(eventListenerInterface)
-removeListener(eventListenerInterface)
+this.list.remove(eventListenerInterface)
+super.removeListener(eventListenerInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fireEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
@@ -111,19 +110,19 @@ var eventObject = eventObject
         
         
 
-onGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent)
+miniMapLayer!.onGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
 }
 
 }
 
-fireEvent(eventObject)
+super.fireEvent(eventObject)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public fireRemoveEvent(eventObject: AllBinaryEventObject){
@@ -150,10 +149,10 @@ var eventObject = eventObject
         
         
 
-onRemoveGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent)
+miniMapLayer!.onRemoveGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
 }
 
 }
@@ -183,10 +182,10 @@ index < size; index++)
         try {
             eventListenerInterface= list.get(index) as EventListenerInterface
 geographicMapCellPositionEventListenerInterface= (eventListenerInterface as GeographicMapCellPositionEventListenerInterface)
-onRemoveGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent)
+geographicMapCellPositionEventListenerInterface!.onRemoveGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
 }
 
 }
@@ -194,7 +193,7 @@ put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 var eventObject = eventObject
@@ -204,7 +203,7 @@ var eventListenerInterface = eventListenerInterface
         
         
 
-onGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent)
+geographicMapCellPositionEventListenerInterface!.onGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent)
 }
 
 

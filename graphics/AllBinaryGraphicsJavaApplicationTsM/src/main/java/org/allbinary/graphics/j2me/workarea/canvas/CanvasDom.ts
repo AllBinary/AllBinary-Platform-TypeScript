@@ -129,7 +129,6 @@ this.dimension= IntegerDimension(0, 0)
         
 
 
-    
                         if(name.compareTo(FRAME) == 0)
                         
                                     {
@@ -150,7 +149,7 @@ this.dimension= IntegerDimension(0, 0)
         
         
 
-this.setAngle(angle)
+this.this.setAngle(angle)
 
     var sizeNode: Node = DomHelper.getInstance()!.searchNodeList(this.SIZE, canvasNode!.getChildNodes())!;
         
@@ -188,7 +187,7 @@ this.setAngle(angle)
         
         
 
-this.setWorkArea(x, y)
+this.this.setWorkArea(x, y)
 
     var zoomNode: Node = DomHelper.getInstance()!.searchNodeList(this.ZOOM, canvasNode!.getChildNodes())!;
         
@@ -199,7 +198,7 @@ this.setWorkArea(x, y)
         
         
 
-setZoom(Integer(zoomTextNode!.getNodeValue()).
+this.grid.setZoom(Integer(zoomTextNode!.getNodeValue()).
                             toInt())
 
     var gridNode: Node = DomHelper.getInstance()!.searchNodeList(this.GRID, canvasNode!.getChildNodes())!;
@@ -243,7 +242,7 @@ setZoom(Integer(zoomTextNode!.getNodeValue()).
         
         
 
-this.setGrid(gridX, gridY)
+this.this.setGrid(gridX, gridY)
 
     var enableNode: Node = DomHelper.getInstance()!.searchNodeList(this.ENABLED, gridNode!.getChildNodes())!;
         
@@ -254,7 +253,7 @@ this.setGrid(gridX, gridY)
         
         
 
-showGrid(.
+this.grid.showGrid(.
                             )
 
     var possibleNode: Node = DomHelper.getInstance()!.searchNodeList(this.POSSIBLE, gridNode!.getChildNodes())!;
@@ -274,7 +273,6 @@ this.grid.isGridPossible= .
         
 
 
-    
                         if(graphicItemNodeList != 
                                     null
                                 )
@@ -291,7 +289,7 @@ this.grid.isGridPossible= .
                             
 
 
-                            throw Exception("Frame Element Not Found but Found: " +name)
+                            throw Error("Frame Element Not Found but Found: " +name)
 
                         }
                             
@@ -335,16 +333,16 @@ this.angle= angle
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setWorkArea(x: number, y: number){
 var x = x
 var y = y
-this.setDimension(IntegerDimension(x, y))
+this.this.setDimension(IntegerDimension(x, y))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setGrid(gridX: number, gridY: number){
 var gridX = gridX
@@ -376,7 +374,7 @@ var pointName = pointName
         
         
 
-appendChild(xTextNode)
+xNode!.appendChild(xTextNode)
 
     var yNode: Node = document.createElement(this.Y) as Node;
         
@@ -387,9 +385,9 @@ appendChild(xTextNode)
         
         
 
-appendChild(yTextNode)
-appendChild(xNode)
-appendChild(yNode)
+yNode!.appendChild(yTextNode)
+pointNode!.appendChild(xNode)
+pointNode!.appendChild(yNode)
 
 
 
@@ -399,7 +397,7 @@ appendChild(yNode)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toDom(): Node{
 
@@ -423,7 +421,7 @@ appendChild(yNode)
         
         
 
-appendChild(angleTextNode)
+angleNode!.appendChild(angleTextNode)
 
     var sizeNode: Node = this.getPointNode(PointFactory.getInstance()!.getInstance(this.getDimension()!.getWidth(), this.getDimension()!.getHeight()), this.SIZE) as Node;
         
@@ -440,7 +438,7 @@ appendChild(angleTextNode)
         
         
 
-appendChild(zoomTextNode)
+zoomNode!.appendChild(zoomTextNode)
 
     var gridNode: Node = document.createElement(this.GRID) as Node;
         
@@ -451,7 +449,7 @@ appendChild(zoomTextNode)
         
         
 
-appendChild(gridSizeNode)
+gridNode!.appendChild(gridSizeNode)
 
     var enableNode: Node = document.createElement(this.ENABLED) as Node;
         
@@ -463,8 +461,8 @@ appendChild(gridSizeNode)
         
         
 
-appendChild(enableTextNode)
-appendChild(enableNode)
+enableNode!.appendChild(enableTextNode)
+gridNode!.appendChild(enableNode)
 
     var possibleNode: Node = document.createElement(this.POSSIBLE) as Node;
         
@@ -476,8 +474,8 @@ appendChild(enableNode)
         
         
 
-appendChild(possibleTextNode)
-appendChild(possibleNode)
+possibleNode!.appendChild(possibleTextNode)
+gridNode!.appendChild(possibleNode)
 
     var realSizeNode: Node = document.createElement(REAL_SIZE) as Node;
         
@@ -488,7 +486,7 @@ appendChild(possibleNode)
         
         
 
-calculate(this.getGraphicItemHashMap())
+vectorCenterGenerator!.calculate(this.getGraphicItemHashMap())
 
     var widthNode: Node = document.createElement(WIDTH) as Node;
         
@@ -499,8 +497,8 @@ calculate(this.getGraphicItemHashMap())
         
         
 
-appendChild(widthTextNode)
-appendChild(widthNode)
+widthNode!.appendChild(widthTextNode)
+realSizeNode!.appendChild(widthNode)
 
     var heightNode: Node = document.createElement(HEIGHT) as Node;
         
@@ -511,13 +509,13 @@ appendChild(widthNode)
         
         
 
-appendChild(heightTextNode)
-appendChild(heightNode)
-appendChild(angleNode)
-appendChild(sizeNode)
-appendChild(zoomNode)
-appendChild(gridNode)
-appendChild(realSizeNode)
+heightNode!.appendChild(heightTextNode)
+realSizeNode!.appendChild(heightNode)
+frameNode!.appendChild(angleNode)
+frameNode!.appendChild(sizeNode)
+frameNode!.appendChild(zoomNode)
+frameNode!.appendChild(gridNode)
+frameNode!.appendChild(realSizeNode)
 
     var graphicItemNode: Node = document.createElement(this.GRAPHICITEMS) as Node;
         
@@ -550,16 +548,14 @@ index < size; index++)
         
 
 
-    
                         if(item.getName() == LinesGraphicItem.getStaticName())
                         
                                     {
                                     
-    
                         if(item.isValid())
                         
                                     {
-                                    appendChild(item.toDom(this))
+                                    graphicItemNode!.appendChild(item.toDom(this))
 
                                     }
                                 
@@ -568,7 +564,7 @@ index < size; index++)
                                 
 }
 
-appendChild(graphicItemNode)
+frameNode!.appendChild(graphicItemNode)
 
 
 

@@ -73,14 +73,14 @@ public constructor (){
 
     public onMotionRectanglesImageComparisonResultsEvent(motionRectanglesResultsEvent: MotionRectanglesResultsEvent){
 var motionRectanglesResultsEvent = motionRectanglesResultsEvent
-add(motionRectanglesResultsEvent)
-this.run()
+this.getMotionRectanglesVector()!.add(motionRectanglesResultsEvent)
+this.this.run()
 }
 
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
 var allBinaryEventObject = allBinaryEventObject
-this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as MotionRectanglesResultsEvent)
+this.this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as MotionRectanglesResultsEvent)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -105,14 +105,14 @@ this.running= running
     public run(){
 
         try {
-            put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-this.setRunning(true)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
+this.this.setRunning(true)
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
         
 
-setStartTime()
+timeHelper!.setStartTime()
 
     var motionRectanglesResultsEvent: MotionRectanglesResultsEvent = this.getMotionRectanglesVector()!.get(0) as MotionRectanglesResultsEvent;
         
@@ -123,13 +123,14 @@ setStartTime()
         
         
 
-save(motionRectangles, motionRectanglesResultsEvent!.getFrame())
-remove(motionRectangles)
-put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
-put(this.commonStrings!.END, this, this.commonStrings!.RUN)
+MotionRectanglesImageInputOutput().
+                            save(motionRectangles, motionRectanglesResultsEvent!.getFrame())
+this.getMotionRectanglesVector()!.remove(motionRectangles)
+logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
+logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
 }
 
 }

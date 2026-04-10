@@ -36,7 +36,7 @@ export class CaptureWorkerUtil
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static processProfileActionConditions(vector: Vector, frame: Long){
 var vector = vector
@@ -51,7 +51,7 @@ var frame = frame
         
         
 
-put(commonStrings!.START, "CaptureWorkerUtil", "processProfileActionConditions")
+logUtil!.put(commonStrings!.START, "CaptureWorkerUtil", "processProfileActionConditions")
 
     var size: number = vector.length!;
         
@@ -73,11 +73,10 @@ index < size; index++)
         
 
 
-    
                         if(profileActionConditionInterface!.shouldProcess(frame))
                         
                                     {
-                                    process(frame)
+                                    profileActionConditionInterface!.process(frame)
 
                                     }
                                 

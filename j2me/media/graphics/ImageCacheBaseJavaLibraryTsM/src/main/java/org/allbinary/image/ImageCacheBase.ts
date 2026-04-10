@@ -126,7 +126,6 @@ availableListOfList[index]= BasicArrayList()
         
 
 
-    
                         if(imageCanBeNull == 
                                     null
                                 )
@@ -161,11 +160,11 @@ availableListOfList[index]= BasicArrayList()
         
 index >= 0; index--)
         {
-clear()
-addAll(listOfList[index]!)
+availableListOfList[index]!.clear()
+availableListOfList[index]!.addAll(listOfList[index]!)
 }
 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("ImageCache: ")!.append(this.toString())!.toString(), this, "releaseAll")
 }
 
@@ -195,7 +194,6 @@ put(StringMaker().
 index < size; index++)
         {
 
-    
                         if(widths[index] == width && heights[index] == height)
                         
                                     {
@@ -225,12 +223,10 @@ index < size; index++)
     //var width = width
     //var height = height
 
-    
                         if(foundIndex !=  -1)
                         
                                     {
                                     
-    
                         if(availableListOfList[foundIndex]!.size() > 0)
                         
                                     {
@@ -260,7 +256,7 @@ index < size; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(anyType: any = {}, width: number, height: number): Image{
     //var anyType = anyType
@@ -275,7 +271,7 @@ index < size; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(caller: string, width: number, height: number): Image{
     //var caller = caller
@@ -288,7 +284,7 @@ index < size; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(key: any = {}): Image{
     //var key = key
@@ -299,7 +295,7 @@ index < size; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createImage(caller: string, width: number, height: number): Image{
     //var caller = caller
@@ -314,7 +310,7 @@ index < size; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createImage(key: any = {}, inputStream: InputStream): Image{
     //var key = key
@@ -369,15 +365,15 @@ index >= 0; index--)
         
         
 
-append(" w: ")
-appendint(width)
-append(" h: ")
-appendint(height)
-append(CommonSeps.getInstance()!.SPACE)
-append(CommonLabels.getInstance()!.TOTAL_LABEL)
-appendint(total)
-append(" available: ")
-appendint(totalAvailable)
+stringBuffer!.append(" w: ")
+stringBuffer!.appendint(width)
+stringBuffer!.append(" h: ")
+stringBuffer!.appendint(height)
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(CommonLabels.getInstance()!.TOTAL_LABEL)
+stringBuffer!.appendint(total)
+stringBuffer!.append(" available: ")
+stringBuffer!.appendint(totalAvailable)
 }
 
 

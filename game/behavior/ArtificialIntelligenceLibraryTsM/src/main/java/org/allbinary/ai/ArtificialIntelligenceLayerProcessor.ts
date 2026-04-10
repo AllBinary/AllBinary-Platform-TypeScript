@@ -42,7 +42,7 @@ public constructor ()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -53,16 +53,15 @@ var index = index
         
         
 
-processAI(allBinaryLayerManager)
+artificialIntelligenceCompositeInterface!.getArtificialIntelligenceInterface()!.processAI(allBinaryLayerManager)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isProcessorLayer(layerInterface: AllBinaryLayer): boolean{
 var layerInterface = layerInterface
 
-    
                         if(layerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {

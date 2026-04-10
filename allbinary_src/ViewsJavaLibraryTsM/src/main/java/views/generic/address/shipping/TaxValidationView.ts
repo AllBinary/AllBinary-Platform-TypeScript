@@ -74,7 +74,6 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
 
 
-    
                         if(streetAddressList == 
                                     null
                                 )
@@ -110,7 +109,6 @@ index < size; index++)
         
 
 
-    
                         if(aStreetAddress!.getName()!.compareTo(ShippingAddressData.TAX) == 0)
                         
                                     {

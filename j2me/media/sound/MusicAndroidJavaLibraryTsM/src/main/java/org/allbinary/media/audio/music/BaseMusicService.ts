@@ -76,7 +76,7 @@ export class BaseMusicService extends Service {
 
     public onBind(intent: Intent): IBinder?{
     //var intent = intent
-put(commonStrings!.START, this, commonStateStrings!.BIND)
+logUtil!.put(commonStrings!.START, this, commonStateStrings!.BIND)
 
 
 
@@ -87,21 +87,20 @@ put(commonStrings!.START, this, commonStateStrings!.BIND)
 
 
     public onCreate(){
-put(commonStrings!.START, this, commonStateStrings!.CREATE)
+logUtil!.put(commonStrings!.START, this, commonStateStrings!.CREATE)
 }
 
 
     public onDestroy(){
-put(commonStrings!.START, this, commonStateStrings!.DESTROY)
+logUtil!.put(commonStrings!.START, this, commonStateStrings!.DESTROY)
 
-    
                         if(player != NullAndroidCanvas.NULL_MEDIA_PLAYER)
                         
                                     {
-                                    put(commonStrings!.START, this, commonStateStrings!.PAUSE)
-stop()
-reset()
-release()
+                                    logUtil!.put(commonStrings!.START, this, commonStateStrings!.PAUSE)
+player.stop()
+player.reset()
+player.release()
 
                                     }
                                 
@@ -110,12 +109,11 @@ release()
 
     public pause(){
 
-    
                         if(player != NullAndroidCanvas.NULL_MEDIA_PLAYER)
                         
                                     {
-                                    put(commonStrings!.START, this, commonStateStrings!.PAUSE)
-pause()
+                                    logUtil!.put(commonStrings!.START, this, commonStateStrings!.PAUSE)
+player.pause()
 
                                     }
                                 
@@ -124,12 +122,11 @@ pause()
 
     public resume(){
 
-    
                         if(player != NullAndroidCanvas.NULL_MEDIA_PLAYER && !player.isPlaying())
                         
                                     {
-                                    put(commonStrings!.START, this, commonStateStrings!.RESUME)
-start()
+                                    logUtil!.put(commonStrings!.START, this, commonStateStrings!.RESUME)
+player.start()
 
                                     }
                                 
@@ -138,9 +135,9 @@ start()
 
     public start(){
 player= MediaPlayer.create(this, songId)
-setVolume((leftVolume.toFloat()) /100.0f, (rightVolume.toFloat()) /100.0f)
-setLooping(false)
-start()
+player.setVolume((leftVolume.toFloat()) /100.0f, (rightVolume.toFloat()) /100.0f)
+player.setLooping(false)
+player.start()
 }
 
 
@@ -148,7 +145,7 @@ start()
     //var intent = intent
     //var startid = startid
 onStartCommand(intent)
-put(commonStrings!.START, this, commonStateStrings!.START)
+logUtil!.put(commonStrings!.START, this, commonStateStrings!.START)
 }
 
 
@@ -168,14 +165,13 @@ onStartCommand(intent)
 
     public onStartCommand(intent: Intent){
     //var intent = intent
-put(commonStrings!.START, this, commonStateStrings!.ON_START_COMMAND)
+logUtil!.put(commonStrings!.START, this, commonStateStrings!.ON_START_COMMAND)
 
     var musicStrings: MusicStrings = MusicStrings.getInstance()!;
         
         
 
 
-    
                         if(intent != 
                                     null
                                 )
@@ -186,13 +182,12 @@ put(commonStrings!.START, this, commonStateStrings!.ON_START_COMMAND)
         
         
 
-put(CommonLabels.getInstance()!.COMMAND_LABEL +command, this, commonStateStrings!.ON_START_COMMAND)
+logUtil!.put(CommonLabels.getInstance()!.COMMAND_LABEL +command, this, commonStateStrings!.ON_START_COMMAND)
 
-    
                         if(command == 1)
                         
                                     {
-                                    this.pause()
+                                    this.this.pause()
 
 
 
@@ -203,11 +198,10 @@ put(CommonLabels.getInstance()!.COMMAND_LABEL +command, this, commonStateStrings
                                     }
                                 
                              else 
-    
                         if(command == 2)
                         
                                     {
-                                    this.resume()
+                                    this.this.resume()
 
 
 
@@ -236,13 +230,11 @@ this.rightVolume= intent.getIntExtra(musicStrings!.RIGHT_VOLUME,  -1)
                         }
                             
 
-    
                         if(songId !=  -1)
                         
                                     {
-                                    gc()
+                                    System.gc()
 
-    
                         if(player != NullAndroidCanvas.NULL_MEDIA_PLAYER && player.isPlaying())
                         
                                     {
@@ -251,7 +243,7 @@ this.rightVolume= intent.getIntExtra(musicStrings!.RIGHT_VOLUME,  -1)
         
         
 
-put(ALREADY_PLAYING, this, commonStateStrings!.ON_START_COMMAND)
+logUtil!.put(ALREADY_PLAYING, this, commonStateStrings!.ON_START_COMMAND)
 
     var runnable: Runnable = new object: ARunnable()
                                 {
@@ -262,14 +254,14 @@ put(ALREADY_PLAYING, this, commonStateStrings!.ON_START_COMMAND)
             
         while(player.isPlaying())
         {
-put(WAITING_FOR_MUSIC_TO_END, this, commonStateStrings!.ON_START_COMMAND)
-sleep(1200)
+logUtil!.put(WAITING_FOR_MUSIC_TO_END, this, commonStateStrings!.ON_START_COMMAND)
+Thread.sleep(1200)
 }
 
 onStartCommand(intent)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStateStrings!.ON_START_COMMAND, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStateStrings!.ON_START_COMMAND, e)
 }
 
 }
@@ -284,7 +276,7 @@ put(commonStrings!.EXCEPTION, this, commonStateStrings!.ON_START_COMMAND, e)
         
         
 
-start()
+thread.start()
 
 
 
@@ -294,7 +286,7 @@ start()
 
                                     }
                                 
-this.start()
+this.this.start()
 
                                     }
                                 

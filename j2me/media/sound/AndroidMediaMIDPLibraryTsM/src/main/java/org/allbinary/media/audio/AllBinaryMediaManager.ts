@@ -87,7 +87,7 @@ var aMuted = aMuted
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static init(soundsFactoryInterface: SoundsFactoryInterface){
     //var soundsFactoryInterface = soundsFactoryInterface
@@ -101,16 +101,17 @@ var aMuted = aMuted
         
         
 
-put(commonString!.START, THIS, commonString!.INIT)
-shutdown(soundsFactoryInterface)
-addPortion(50, "Media Manager")
-gc()
-init()
-put(commonString!.END, THIS, commonString!.INIT)
+logUtil!.put(commonString!.START, THIS, commonString!.INIT)
+AllBinaryMediaManager.shutdown(soundsFactoryInterface)
+ProgressCanvasFactory.getInstance()!.addPortion(50, "Media Manager")
+System.gc()
+Sounds(soundsFactoryInterface).
+                            init()
+logUtil!.put(commonString!.END, THIS, commonString!.INIT)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
     //var soundsFactoryInterface = soundsFactoryInterface
@@ -124,13 +125,13 @@ put(commonString!.END, THIS, commonString!.INIT)
         
         
 
-put(commonString!.START, THIS, "shutdown")
+logUtil!.put(commonString!.START, THIS, "shutdown")
 
-    
                         if(soundsFactoryInterface!.isInitialized())
                         
                                     {
-                                    stopAll()
+                                    Sounds(soundsFactoryInterface).
+                            stopAll()
 
     var soundInterfaceArray: Sound[] = soundsFactoryInterface!.getSoundInterfaceArray()!;
         
@@ -156,7 +157,6 @@ put(commonString!.START, THIS, "shutdown")
 i < soundInterfaceArray!.length; i++)
         {
 
-    
                         if(soundInterfaceArray[i] != 
                                     null
                                 )
@@ -164,7 +164,6 @@ i < soundInterfaceArray!.length; i++)
                                     {
                                     player= soundInterfaceArray[i]!.getPlayerP()
 
-    
                         if(player != 
                                     null
                                 )
@@ -173,12 +172,11 @@ i < soundInterfaceArray!.length; i++)
                                     player2= 
                                     (player as PlayerComposite).getPlayerP()
 
-    
                         if(player2 is AndroidMediaPlayerWrapper)
                         
                                     {
                                     androidMediaPlayerWrapper= player2 as AndroidMediaPlayerWrapper
-wait(androidMediaPlayerWrapper!.getMediaPlayer())
+MediaPlayerUtil.getInstance()!.wait(androidMediaPlayerWrapper!.getMediaPlayer())
 
                                     }
                                 
@@ -186,7 +184,7 @@ wait(androidMediaPlayerWrapper!.getMediaPlayer())
                             
 
 
-                            throw Exception("Unknown Property Player: " +player::class.toString()!)
+                            throw Error("Unknown Property Player: " +player::class.toString()!)
 
                         }
                             
@@ -198,18 +196,19 @@ wait(androidMediaPlayerWrapper!.getMediaPlayer())
                                 
 }
 
-closeAll()
-gc()
-setInitialized(false)
+Sounds(soundsFactoryInterface).
+                            closeAll()
+System.gc()
+soundsFactoryInterface!.setInitialized(false)
 mostUsedTotal= 0
 
                                     }
                                 
-put(commonString!.START, THIS, "shutdown")
+logUtil!.put(commonString!.START, THIS, "shutdown")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static createPlayer(resource: string): Player{
 var resource = resource
@@ -220,7 +219,6 @@ mostUsedTotal++
         
 
 
-    
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.SOUND))
                         
                                     {
@@ -234,7 +232,7 @@ mostUsedTotal++
     
 } catch(e: Exception)
             {
-put("Could not create AndroidMediaPlayerWrapper using NoPlayer at " +CommonLabels.getInstance()!.TOTAL_LABEL +mostUsedTotal, THIS, "createPlayer", e)
+logUtil!.put("Could not create AndroidMediaPlayerWrapper using NoPlayer at " +CommonLabels.getInstance()!.TOTAL_LABEL +mostUsedTotal, THIS, "createPlayer", e)
 
 
 
@@ -259,7 +257,7 @@ put("Could not create AndroidMediaPlayerWrapper using NoPlayer at " +CommonLabel
 }
 
 
-                @Throws(IOException::class, MediaException::class)
+                //@Throws(IOException::class, MediaException::class)
             
     public static createPlayer(stream: InputStream, type: string): Player{
 var stream = stream
@@ -271,7 +269,7 @@ var type = type
 }
 
 
-                @Throws(MediaException::class)
+                //@Throws(MediaException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static playTone(frequency: number, time: number, volume: number){

@@ -11,11 +11,11 @@ import { AllBinaryTiledLayer } from "../../../../../../../org/allbinary/game/lay
 interface AllBinaryTiledLayerFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getInstance(raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData): AllBinaryTiledLayer
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getMiniInstance(raceTrackData: RaceTrackData): AllBinaryTiledLayer
 

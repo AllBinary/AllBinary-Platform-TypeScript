@@ -50,7 +50,7 @@ export class PointsUtil
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public doTransforms(pointVector: BasicArrayList, angle: Double, fulcrumPoint: GPoint): BasicArrayList{
 var pointVector = pointVector

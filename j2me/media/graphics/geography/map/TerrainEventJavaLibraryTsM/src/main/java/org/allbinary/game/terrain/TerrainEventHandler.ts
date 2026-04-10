@@ -60,14 +60,13 @@ TerrainEventHandler.hashtable= Hashtable<Any, Any>()
         
 
 
-    
                         if(eventHandlerCanBeNull == 
                                     null
                                 )
                         
                                     {
                                     eventHandlerCanBeNull= TerrainEventHandler()
-put(anyType, eventHandlerCanBeNull)
+TerrainEventHandler.hashtable.put(anyType, eventHandlerCanBeNull)
 
                                     }
                                 
@@ -92,11 +91,10 @@ private constructor (){
     public addListener(terrainEventListener: TerrainEventListener){
     //var terrainEventListener = terrainEventListener
 
-    
                         if(!list.contains(terrainEventListener))
                         
                                     {
-                                    add(terrainEventListener)
+                                    list.add(terrainEventListener)
 
                                     }
                                 
@@ -104,19 +102,19 @@ private constructor (){
 
 
     public removeAllListeners(){
-clear()
-removeAllListeners()
+this.list.clear()
+super.removeAllListeners()
 }
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
-remove(eventListenerInterface)
-removeListener(eventListenerInterface)
+this.list.remove(eventListenerInterface)
+super.removeListener(eventListenerInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fireEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
@@ -137,19 +135,19 @@ removeListener(eventListenerInterface)
         
         
 
-onTerrainEvent(eventObject as TerrainEvent)
+terrainEventListener!.onTerrainEvent(eventObject as TerrainEvent)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
 }
 
 }
 
-fireEvent(eventObject)
+super.fireEvent(eventObject)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject
@@ -159,7 +157,7 @@ fireEvent(eventObject)
         
         
 
-onTerrainEvent(eventObject as TerrainEvent)
+terrainEventListenerInterface!.onTerrainEvent(eventObject as TerrainEvent)
 }
 
 

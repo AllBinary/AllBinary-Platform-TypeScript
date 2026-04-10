@@ -66,12 +66,12 @@ export class ColorCacheFactory
 
 
         try {
-            put(commonStrings!.START, ColorCacheFactory::class, STATIC_BLOCK)
+            logUtil!.put(commonStrings!.START, ColorCacheFactory::class, STATIC_BLOCK)
 cacheInterface= AutomaticCacheInterfaceFactory.getInstance(ColorCacheableFactory(), CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.THIRTY_MINUTES_TEN_THOUSAND_MAX)
-put(commonStrings!.END, ColorCacheFactory::class, STATIC_BLOCK)
+logUtil!.put(commonStrings!.END, ColorCacheFactory::class, STATIC_BLOCK)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, ColorCacheFactory::class, STATIC_BLOCK, e)
+logUtil!.put(commonStrings!.EXCEPTION, ColorCacheFactory::class, STATIC_BLOCK, e)
 }
 
 }

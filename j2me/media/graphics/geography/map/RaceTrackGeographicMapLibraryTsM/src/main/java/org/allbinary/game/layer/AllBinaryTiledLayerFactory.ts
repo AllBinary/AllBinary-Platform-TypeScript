@@ -46,7 +46,7 @@ export class AllBinaryTiledLayerFactory
                 , AllBinaryTiledLayerFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData): AllBinaryTiledLayer{
     //var raceTrackInfo = raceTrackInfo
@@ -61,7 +61,7 @@ export class AllBinaryTiledLayerFactory
         
 
 allbinaryTiledLayer= AllBinaryJ2METiledLayer(raceTrackData!.getId(), tiledLayer, raceTrackData!.getMapArray(), BasicColorFactory.getInstance()!.RED.toInt())
-setCells(raceTrackData!.getMapArray())
+allbinaryTiledLayer!.setCells(raceTrackData!.getMapArray())
 
 
 
@@ -71,7 +71,7 @@ setCells(raceTrackData!.getMapArray())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getMiniInstance(raceTrackData: RaceTrackData): AllBinaryTiledLayer{
 var raceTrackData = raceTrackData
@@ -91,7 +91,7 @@ var raceTrackData = raceTrackData
         
         
 
-setCells(raceTrackData!.getMapArray())
+allbinaryTiledLayer!.setCells(raceTrackData!.getMapArray())
 
 
 

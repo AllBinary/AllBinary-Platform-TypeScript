@@ -37,7 +37,7 @@ public constructor (geographicMapCellHistoryArray: GeographicMapCellHistory[]){
             super();
                 //var geographicMapCellHistoryArray = geographicMapCellHistoryArray
 this.geographicMapCellHistoryArray= geographicMapCellHistoryArray
-this.init()
+this.this.init()
 }
 
 
@@ -77,7 +77,6 @@ index < size; index++)
 totalVisited= geographicMapCellHistoryArray[index]!.getTotalVisited()
 currentTotalVisited= this.totalVisitedArray[index]!
 
-    
                         if(currentTotalVisited < totalVisited)
                         
                                     {

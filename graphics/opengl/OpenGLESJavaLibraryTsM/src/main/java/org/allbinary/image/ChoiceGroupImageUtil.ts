@@ -73,7 +73,6 @@ export class ChoiceGroupImageUtil
         
 
 
-    
                         if(features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
@@ -101,7 +100,7 @@ index < size; index++)
 imageArray[index]= preResourceImageUtil!.encapsulate(imageArray[index]!)
 }
 
-init(imageArray)
+choiceGroupFactory!.init(imageArray)
 
                                     }
                                 
@@ -126,7 +125,6 @@ var gl = gl
         
 
 
-    
                         if(features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
@@ -151,13 +149,13 @@ var gl = gl
         
 index < size; index++)
         {
-update(gl, imageArray[index]!)
+preResourceImageUtil!.update(gl, imageArray[index]!)
 }
 
 
                                     }
                                 
-init(imageArray)
+choiceGroupFactory!.init(imageArray)
 }
 
 
@@ -179,7 +177,6 @@ var graphics = graphics
         
 
 
-    
                         if(features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
@@ -204,13 +201,13 @@ var graphics = graphics
         
 index < size; index++)
         {
-update(graphics, imageArray[index]!)
+preResourceImageUtil!.update(graphics, imageArray[index]!)
 }
 
 
                                     }
                                 
-init(imageArray)
+choiceGroupFactory!.init(imageArray)
 }
 
 

@@ -59,7 +59,7 @@ private constructor (){
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDirectionFromCellPositionToAdjacentCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): Direction{
 var fromGeographicMapCellPosition = fromGeographicMapCellPosition
@@ -90,7 +90,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
         
 
 
-    
                         if(fromColumn -1 == goColumn)
                         
                                     {
@@ -104,7 +103,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromColumn +1 == goColumn)
                         
                                     {
@@ -118,7 +116,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromRow -1 == goRow)
                         
                                     {
@@ -132,7 +129,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromRow +1 == goRow)
                         
                                     {
@@ -146,7 +142,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromGeographicMapCellPosition == toGeographicMapCellPosition)
                         
                                     {
@@ -160,14 +155,13 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromRow == goRow && fromColumn == goColumn)
                         
                                     {
                                     
 
 
-                            throw Exception(MESSAGE)
+                            throw Error(MESSAGE)
 
                                     }
                                 
@@ -180,7 +174,7 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getEightDirectionFromCellPositionToAdjacentCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): Direction{
 var fromGeographicMapCellPosition = fromGeographicMapCellPosition
@@ -211,12 +205,10 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
         
 
 
-    
                         if(fromRow == goRow)
                         
                                     {
                                     
-    
                         if(fromColumn -1 == goColumn)
                         
                                     {
@@ -230,7 +222,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromColumn +1 == goColumn)
                         
                                     {
@@ -247,12 +238,10 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromRow -1 == goRow)
                         
                                     {
                                     
-    
                         if(fromColumn == goColumn)
                         
                                     {
@@ -266,7 +255,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
 
-    
                         if(fromColumn -1 == goColumn)
                         
                                     {
@@ -280,7 +268,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromColumn +1 == goColumn)
                         
                                     {
@@ -297,12 +284,10 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromRow +1 == goRow)
                         
                                     {
                                     
-    
                         if(fromColumn == goColumn)
                         
                                     {
@@ -316,7 +301,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
 
-    
                         if(fromColumn -1 == goColumn)
                         
                                     {
@@ -330,7 +314,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromColumn +1 == goColumn)
                         
                                     {
@@ -347,7 +330,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromGeographicMapCellPosition == toGeographicMapCellPosition)
                         
                                     {
@@ -361,14 +343,13 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromRow == goRow && fromColumn == goColumn)
                         
                                     {
                                     
 
 
-                            throw Exception(MESSAGE)
+                            throw Error(MESSAGE)
 
                                     }
                                 
@@ -381,7 +362,7 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDirectionFromCellPositionToCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): Direction{
 var fromGeographicMapCellPosition = fromGeographicMapCellPosition
@@ -412,7 +393,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
         
 
 
-    
                         if(fromColumn > goColumn)
                         
                                     {
@@ -426,7 +406,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromColumn < goColumn)
                         
                                     {
@@ -440,7 +419,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromRow > goRow)
                         
                                     {
@@ -454,7 +432,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromRow < goRow)
                         
                                     {
@@ -477,11 +454,11 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
         
         
 
-delete(0, stringMaker!.length())
+stringMaker!.delete(0, stringMaker!.length())
 
 
 
-                            throw Exception(stringMaker!.append("Error: ")!.append(string)!.toString())
+                            throw Error(stringMaker!.append("Error: ")!.append(string)!.toString())
 }
 
 
@@ -493,7 +470,7 @@ delete(0, stringMaker!.length())
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getEightDirectionFromCellPositionToCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): Direction{
 var fromGeographicMapCellPosition = fromGeographicMapCellPosition
@@ -524,7 +501,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
         
 
 
-    
                         if(fromGeographicMapCellPosition == toGeographicMapCellPosition)
                         
                                     {
@@ -538,12 +514,10 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromRow == goRow)
                         
                                     {
                                     
-    
                         if(fromColumn > goColumn)
                         
                                     {
@@ -557,7 +531,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromColumn < goColumn)
                         
                                     {
@@ -574,12 +547,10 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromRow > goRow)
                         
                                     {
                                     
-    
                         if(fromColumn > goColumn)
                         
                                     {
@@ -593,7 +564,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromColumn < goColumn)
                         
                                     {
@@ -607,7 +577,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromColumn == goColumn)
                         
                                     {
@@ -624,12 +593,10 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromRow < goRow)
                         
                                     {
                                     
-    
                         if(fromColumn > goColumn)
                         
                                     {
@@ -643,7 +610,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromColumn < goColumn)
                         
                                     {
@@ -657,7 +623,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     }
                                 
                              else 
-    
                         if(fromColumn == goColumn)
                         
                                     {
@@ -678,14 +643,14 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
         
         
 
-append(ERROR)
-append(CellPosition.toString(fromGeographicMapCellPosition))
-append(EQUAL)
-append(CellPosition.toString(toGeographicMapCellPosition))
+stringBuffer!.append(ERROR)
+stringBuffer!.append(CellPosition.toString(fromGeographicMapCellPosition))
+stringBuffer!.append(EQUAL)
+stringBuffer!.append(CellPosition.toString(toGeographicMapCellPosition))
 
 
 
-                            throw Exception(stringBuffer!.toString())
+                            throw Error(stringBuffer!.toString())
 }
 
 

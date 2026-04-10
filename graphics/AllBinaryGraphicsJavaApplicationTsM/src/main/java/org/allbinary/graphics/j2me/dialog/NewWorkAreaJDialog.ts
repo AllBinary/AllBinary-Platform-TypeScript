@@ -50,7 +50,8 @@ export class NewWorkAreaJDialog extends javax.swing.JDialog {
 var args = args
 
         try {
-            show()
+            NewWorkAreaJDialog(MyFrame(), true, Dimension(100, 100), "testing").
+                            show()
 } catch(e: Exception)
             {
 }
@@ -93,7 +94,7 @@ this.dimension= dimension
         
         
 
-addActionListener(object: ActionListener()
+submitButton!.addActionListener(object: ActionListener()
                                 {
                                 
     public actionPerformed(evt: ActionEvent){
@@ -109,18 +110,18 @@ var evt = evt
 
                                 }
                             )
-this.setSize(150, 100)
-setLayout(GridLayout(5, 2))
-add(JLabel("Please enter"))
-add(JLabel(" the size."))
-add(JLabel("Name:"))
-add(nameJTextField)
-add(JLabel("X: "))
-add(xSizeJTextField)
-add(JLabel("Y: "))
-add(ySizeJTextField)
-add(submitButton)
-this.show()
+this.this.setSize(150, 100)
+this.getContentPane()!.setLayout(GridLayout(5, 2))
+this.getContentPane()!.add(JLabel("Please enter"))
+this.getContentPane()!.add(JLabel(" the size."))
+this.getContentPane()!.add(JLabel("Name:"))
+this.getContentPane()!.add(nameJTextField)
+this.getContentPane()!.add(JLabel("X: "))
+this.getContentPane()!.add(xSizeJTextField)
+this.getContentPane()!.add(JLabel("Y: "))
+this.getContentPane()!.add(ySizeJTextField)
+this.getContentPane()!.add(submitButton)
+this.this.show()
 } catch(e: Exception)
             {
 
@@ -132,7 +133,7 @@ this.show()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     disposeNewDialog(){
 
@@ -153,7 +154,6 @@ this.show()
         
 
 
-    
                         if(newName == 
                                     null
                                 )
@@ -164,9 +164,9 @@ this.show()
         
         
 
-setLayout(GridLayout(1, 1))
-add(workAreaJPanel as WorkAreaJPanelInterface)
-this.dispose()
+workAreaJPanel!.setLayout(GridLayout(1, 1))
+parent.add(workAreaJPanel as WorkAreaJPanelInterface)
+this.this.dispose()
 } catch(e: Exception)
             {
 

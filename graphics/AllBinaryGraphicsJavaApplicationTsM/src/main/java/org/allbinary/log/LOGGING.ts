@@ -124,7 +124,7 @@ private constructor (value: string){
             super();
             var value = value
 this.name= value
-add(value)
+logging.add(value)
 }
 
 

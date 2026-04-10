@@ -122,10 +122,10 @@ pointBasicArrayList= BasicArrayList(size2)
         
 index < size2; index++)
         {
-add(pointFactory!.getInstance(nextPoints[index]![0]!, nextPoints[index]![1]!))
+pointBasicArrayList!.add(pointFactory!.getInstance(nextPoints[index]![0]!, nextPoints[index]![1]!))
 }
 
-add(pointBasicArrayList)
+pointsBasicArrayList!.add(pointBasicArrayList)
 }
 
 
@@ -138,7 +138,7 @@ add(pointBasicArrayList)
         
 index < points.length; index++)
         {
-add(getInstance(pointsBasicArrayList!.objectArray[index]! as BasicArrayList, width))
+pointsBasicArrayList!.add(getInstance(pointsBasicArrayList!.objectArray[index]! as BasicArrayList, width))
 }
 
 
@@ -159,7 +159,7 @@ add(getInstance(pointsBasicArrayList!.objectArray[index]! as BasicArrayList, wid
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 
 
 
@@ -171,7 +171,7 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(pointBasicArrayList: BasicArrayList, width: number): BasicArrayList{
 var pointBasicArrayList = pointBasicArrayList
@@ -181,8 +181,8 @@ var width = width
         
         
 
-createMatrix()
-mirror(width)
+graphicsPipe!.createMatrix()
+graphicsPipe!.mirror(width)
 
 
 

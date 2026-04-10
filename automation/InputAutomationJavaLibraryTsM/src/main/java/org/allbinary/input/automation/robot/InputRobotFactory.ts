@@ -67,7 +67,7 @@ export class InputRobotFactory
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(): InputRobotFactory{
 
@@ -79,7 +79,7 @@ export class InputRobotFactory
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static loadLibraries(collection: Collection){
 var collection = collection
@@ -88,7 +88,7 @@ var collection = collection
         
         
 
-put("Loading Libraries", "InputRobotFactory", "loadLibraries")
+logUtil!.put("Loading Libraries", "InputRobotFactory", "loadLibraries")
 
     var iterator: Iterator = collection.iterator()!;
         
@@ -103,7 +103,7 @@ loadLibrary(iterator.next() as InputRobotInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static loadLibrary(inputRobotInterface: InputRobotInterface){
     //var inputRobotInterface = inputRobotInterface
@@ -113,17 +113,16 @@ loadLibrary(iterator.next() as InputRobotInterface)
         
 
 
-    
                         if(InterfaceUtil.isImplemented(SecuredNativeLibraryInterface::class, inputRobotInterface))
                         
                                     {
-                                    put("Loading Library: " +inputRobotInterface!.getName(), "InputRobotFactory", "loadLibraries")
+                                    logUtil!.put("Loading Library: " +inputRobotInterface!.getName(), "InputRobotFactory", "loadLibraries")
 
     var securedNativeLibraryInterface: SecuredNativeLibraryInterface = inputRobotInterface as SecuredNativeLibraryInterface;
         
         
 
-load()
+securedNativeLibraryInterface!.load()
 
                                     }
                                 
@@ -172,14 +171,14 @@ private constructor (){
 i < screens.length; i++)
         {
 inputRobotInterface= InputRobot(screens[i]!) as InputRobotInterface
-put("Adding Robot: " +inputRobotInterface!.getName(), this, "getRobots")
-put(inputRobotInterface!.getName(), inputRobotInterface)
+logUtil!.put("Adding Robot: " +inputRobotInterface!.getName(), this, "getRobots")
+this.get()!.put(inputRobotInterface!.getName(), inputRobotInterface)
 }
 
-put("Number Of Robots: " +this.hashtable.length, this, "getRobots")
+logUtil!.put("Number Of Robots: " +this.hashtable.length, this, "getRobots")
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR)
 }
 
 }
@@ -191,33 +190,30 @@ this.helpSetListenerInterface= helpSetListenerInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public add(inputRobotInterface: InputRobotInterface){
     //var inputRobotInterface = inputRobotInterface
-put("Adding InputRobotInterface: " +inputRobotInterface!.getName(), this, "add")
-put(inputRobotInterface!.getName(), inputRobotInterface)
+logUtil!.put("Adding InputRobotInterface: " +inputRobotInterface!.getName(), this, "add")
+this.get()!.put(inputRobotInterface!.getName(), inputRobotInterface)
 
     var helpSet: HelpSet = inputRobotInterface!.getHelpSet()!;
         
         
 
 
-    
                         if(this.helpSetListenerInterface != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(helpSet != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(!JavaHelpSetNotifier.isNotified(helpSet))
                         
                                     {
@@ -226,7 +222,7 @@ put(inputRobotInterface!.getName(), inputRobotInterface)
         
         
 
-helpSetAdded(helpSetEvent)
+this.helpSetListenerInterface!.helpSetAdded(helpSetEvent)
 
                                     }
                                 
@@ -234,7 +230,7 @@ helpSetAdded(helpSetEvent)
                                     }
                                 
                         else {
-                            put("Null HelpSet For: " +inputRobotInterface!.getName(), this, "add")
+                            logUtil!.put("Null HelpSet For: " +inputRobotInterface!.getName(), this, "add")
 
                         }
                             
@@ -242,14 +238,14 @@ helpSetAdded(helpSetEvent)
                                     }
                                 
                         else {
-                            put("No HelpSet Listener", this, "add")
+                            logUtil!.put("No HelpSet Listener", this, "add")
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public loadLibraries(){
 
@@ -257,7 +253,7 @@ helpSetAdded(helpSetEvent)
         
         
 
-put("Loading Libraries", this, "loadLibraries")
+logUtil!.put("Loading Libraries", this, "loadLibraries")
 
     var nameArray: any = {}[] = set.toArray()!;
         
@@ -290,10 +286,10 @@ loadLibrary(inputRobotInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public unloadLibraries(){
-put("Unloading Libraries", this, "unloadLibraries")
+logUtil!.put("Unloading Libraries", this, "unloadLibraries")
 
     var set: Set = this.get()!.keySet()!;
         
@@ -325,17 +321,16 @@ index < size; index++)
         {
 inputRobotInterface= this.get(inputRobotArray[index]! as String)
 
-    
                         if(InterfaceUtil.isImplemented(SecuredNativeLibraryInterface::class, inputRobotInterface))
                         
                                     {
-                                    put("Unloading Library: " +inputRobotInterface!.getName(), this, "unloadLibraries")
+                                    logUtil!.put("Unloading Library: " +inputRobotInterface!.getName(), this, "unloadLibraries")
 
     var securedNativeLibraryInterface: SecuredNativeLibraryInterface = inputRobotInterface as SecuredNativeLibraryInterface;
         
         
 
-unload()
+securedNativeLibraryInterface!.unload()
 
                                     }
                                 
@@ -344,7 +339,7 @@ unload()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(): Hashtable<Any, Any>{
 
@@ -358,7 +353,7 @@ unload()
 
     public get(name: string): InputRobotInterface{
     //var name = name
-put("Getting Robot: " +name, this, "getRobots")
+logUtil!.put("Getting Robot: " +name, this, "getRobots")
 
 
 

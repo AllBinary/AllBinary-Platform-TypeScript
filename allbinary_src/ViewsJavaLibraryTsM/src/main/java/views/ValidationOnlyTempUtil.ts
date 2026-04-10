@@ -59,7 +59,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(validationComponentInterface: ValidationComponentInterface): string{
 var validationComponentInterface = validationComponentInterface
@@ -71,11 +71,10 @@ var validationComponentInterface = validationComponentInterface
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("View Name: " +validationComponentInterface!.getTransformInfoInterface()!.getName(), this, "view()")
+                                    logUtil!.put("View Name: " +validationComponentInterface!.getTransformInfoInterface()!.getName(), this, "view()")
 
                                     }
                                 
@@ -88,11 +87,10 @@ var validationComponentInterface = validationComponentInterface
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 

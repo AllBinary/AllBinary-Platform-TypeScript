@@ -111,7 +111,6 @@ var gameInput = gameInput
                     
 this.sound= hashtable.get(SOUND as Object) as Sound
 
-    
                         if(this.sound == 
                                     null
                                 )
@@ -120,20 +119,19 @@ this.sound= hashtable.get(SOUND as Object) as Sound
                                     
 
 
-                            throw Exception("No Sound Provided!!")
+                            throw Error("No Sound Provided!!")
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
-processAI(this.keyDirection)
+super.processAI(this.keyDirection)
 
-    
                         if(timeDelayHelper!.isTime())
                         
                                     {
@@ -148,7 +146,6 @@ processAI(this.keyDirection)
         
 
 
-    
                         if(currentOwnerLayerX <  -layerInterface!.getWidth())
                         
                                     {
@@ -157,19 +154,18 @@ processAI(this.keyDirection)
         
         
 
-setPosition(displayInfoSingleton!.getLastWidth() +layerInterface!.getWidth() +50, y, layerInterface!.getZP())
+layerInterface!.setPosition(displayInfoSingleton!.getLastWidth() +layerInterface!.getWidth() +50, y, layerInterface!.getZP())
 firedIndex= 0
 this.firingX= displayInfoSingleton!.getLastHalfWidth() +MyRandomFactory.getInstance()!.getNextInt(displayInfoSingleton!.getLastHalfWidth())
-add(this.sound)
+secondaryPlayerQueue!.add(this.sound)
 
                                     }
                                 
 
-    
                         if(currentOwnerLayerX < this.firingX && currentOwnerLayerX >  -layerInterface!.getWidth())
                         
                                     {
-                                    processAI(Canvas.KEY_NUM1)
+                                    super.processAI(Canvas.KEY_NUM1)
 
     var gameLayerManager: AllBinaryGameLayerManager = allBinaryLayerManager as AllBinaryGameLayerManager;
         
@@ -181,7 +177,6 @@ add(this.sound)
         
 
 
-    
                         if(FIRE > MAX_FIRE)
                         
                                     {
@@ -190,7 +185,6 @@ add(this.sound)
                                     }
                                 
 
-    
                         if(firedIndex > FIRE)
                         
                                     {

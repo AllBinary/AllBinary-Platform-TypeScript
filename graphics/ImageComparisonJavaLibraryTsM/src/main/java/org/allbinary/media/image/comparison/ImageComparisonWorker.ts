@@ -102,13 +102,12 @@ this.running= running
 
     public onCaptureEvent(capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent){
     //var capturedImageWorkerResultsEvent = capturedImageWorkerResultsEvent
-add(capturedImageWorkerResultsEvent)
+this.bufferedImageVector!.add(capturedImageWorkerResultsEvent)
 
-    
                         if(this.bufferedImageVector!.length > 1)
                         
                                     {
-                                    this.run()
+                                    this.this.run()
 
                                     }
                                 
@@ -118,23 +117,22 @@ add(capturedImageWorkerResultsEvent)
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
     //var allBinaryEventObject = allBinaryEventObject
-this.onCaptureEvent(allBinaryEventObject as CapturedImageWorkerResultsEvent)
+this.this.onCaptureEvent(allBinaryEventObject as CapturedImageWorkerResultsEvent)
 }
 
 
     public run(){
 
         try {
-            put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-this.setRunning(true)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
+this.this.setRunning(true)
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
         
 
-setStartTime()
+timeHelper!.setStartTime()
 
-    
                         if(this.imageComparatorConstraintsInterface!.isFrameAllowed(index2))
                         
                                     {
@@ -146,7 +144,6 @@ setStartTime()
 capturedImageWorkerResultsEvent[0]= this.bufferedImageVector!.get(0) as CapturedImageWorkerResultsEvent
 capturedImageWorkerResultsEvent[1]= this.bufferedImageVector!.get(1) as CapturedImageWorkerResultsEvent
 
-    
                         if(this.imageComparatorConstraintsInterface!.isImageValid(capturedImageWorkerResultsEvent[0]!.getBufferedImage()) && this.imageComparatorConstraintsInterface!.isImageValid(capturedImageWorkerResultsEvent[1]!.getBufferedImage()))
                         
                                     {
@@ -165,22 +162,22 @@ capturedImageWorkerResultsEvent[1]= this.bufferedImageVector!.get(1) as Captured
         
         
 
-add(imageComparisonResultFrameCacheable)
-this.fireEvent(ImageComparisonResultsEvent(this, imageComparisonResult))
-put(StringMaker().
+ImageComparisonResultCacheSingleton.getInstance()!.add(imageComparisonResultFrameCacheable)
+this.this.fireEvent(ImageComparisonResultsEvent(this, imageComparisonResult))
+logUtil!.put(StringMaker().
                             append("Image Comparison Result: ")!.append(imageComparisonResult!.toString())!.append(" for frame: ")!.appendlong(frame)!.toString(), this, this.commonStrings!.RUN)
 
                                     }
                                 
                         else {
-                            put("An Image Was Not Valid: Image Worker Event Processing terminated", this, this.commonStrings!.RUN)
+                            logUtil!.put("An Image Was Not Valid: Image Worker Event Processing terminated", this, this.commonStrings!.RUN)
 
                         }
                             
 
                                     }
                                 
-remove(0)
+this.bufferedImageVector!.remove(0)
 index2++
 
     var message: string = StringMaker().
@@ -188,12 +185,12 @@ index2++
         
         
 
-put(message, this, this.commonStrings!.RUN)
-this.setRunning(false)
-put(this.commonStrings!.END, this, this.commonStrings!.RUN)
+logUtil!.put(message, this, this.commonStrings!.RUN)
+this.this.setRunning(false)
+logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
 }
 
 }

@@ -80,14 +80,14 @@ this.motionRectangleConstraintsInterface= motionRectangleConstraintsInterface
 
     public onImageComparisonResultsEvent(imageComparisonResultsEvent: ImageComparisonResultsEvent){
     //var imageComparisonResultsEvent = imageComparisonResultsEvent
-add(imageComparisonResultsEvent)
-this.run()
+this.imageComparisonInfoVector!.add(imageComparisonResultsEvent)
+this.this.run()
 }
 
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
     //var allBinaryEventObject = allBinaryEventObject
-this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResultsEvent)
+this.this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResultsEvent)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -112,14 +112,14 @@ this.running= running
     public run(){
 
         try {
-            put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-this.setRunning(true)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
+this.this.setRunning(true)
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
         
 
-setStartTime()
+timeHelper!.setStartTime()
 
     var imageComparisonResultsEvent: ImageComparisonResultsEvent = this.imageComparisonInfoVector!.get(0) as ImageComparisonResultsEvent;
         
@@ -130,35 +130,35 @@ setStartTime()
         
         
 
-put(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN)
+logUtil!.put(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN)
 
     var allMotionRectangles: AllMotionRectangles = new AllMotionRectangles(imageComparisonInfo);
         
         
 
-add(MotionRectanglesResultsFrameCacheable(allMotionRectangles, imageComparisonInfo!.getFrameTwo()))
+AllMotionRectanglesResultsCacheSingleton.getInstance()!.add(MotionRectanglesResultsFrameCacheable(allMotionRectangles, imageComparisonInfo!.getFrameTwo()))
 
     var consolidatedMotionRectangles: ConsolidateMotionRectangles = new ConsolidateMotionRectangles(allMotionRectangles);
         
         
 
-add(MotionRectanglesResultsFrameCacheable(consolidatedMotionRectangles, imageComparisonInfo!.getFrameTwo()))
+ConsolidatedMotionRectanglesResultsCacheSingleton.getInstance()!.add(MotionRectanglesResultsFrameCacheable(consolidatedMotionRectangles, imageComparisonInfo!.getFrameTwo()))
 
     var constrainedMotionRectangles: ConstrainedMotionRectangles = new ConstrainedMotionRectangles(this.motionRectangleConstraintsInterface, consolidatedMotionRectangles);
         
         
 
-applyMotionRectangleConstraints(consolidatedMotionRectangles)
-add(MotionRectanglesResultsFrameCacheable(constrainedMotionRectangles, imageComparisonInfo!.getFrameTwo()))
-this.fireEvent(MotionRectanglesResultsEvent(this, imageComparisonInfo!.getFrameTwo(), constrainedMotionRectangles as MotionRectangles))
-remove(imageComparisonResultsEvent)
+constrainedMotionRectangles!.applyMotionRectangleConstraints(consolidatedMotionRectangles)
+ConstrainedMotionRectanglesResultsCacheSingleton.getInstance()!.add(MotionRectanglesResultsFrameCacheable(constrainedMotionRectangles, imageComparisonInfo!.getFrameTwo()))
+this.this.fireEvent(MotionRectanglesResultsEvent(this, imageComparisonInfo!.getFrameTwo(), constrainedMotionRectangles as MotionRectangles))
+this.imageComparisonInfoVector!.remove(imageComparisonResultsEvent)
 this.index++
-put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
-this.setRunning(false)
-put(this.commonStrings!.END, this, this.commonStrings!.RUN)
+logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
+this.this.setRunning(false)
+logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
 }
 
 }

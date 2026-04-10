@@ -47,7 +47,7 @@ export class AllBinaryThreedTiledLayerFactory
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData): AllBinaryTiledLayer{
 var raceTrackInfo = raceTrackInfo
@@ -55,7 +55,7 @@ var raceTrackData = raceTrackData
 
 
 
-                            throw Exception("No Threed")
+                            throw Error("No Threed")
 }
 
 

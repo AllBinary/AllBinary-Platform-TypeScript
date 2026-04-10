@@ -101,11 +101,11 @@ protected constructor (){
 
 
     init(){
-clear()
+this.list.clear()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isDropAllowedAt(geographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -120,7 +120,6 @@ clear()
         
 
 
-    
                         if(raceTrackGeographicMapCellType == raceTrackGeographicMapCellTypeFactory!.HORIZONTAL_STRAIGHT_ROAD_CELL_TYPE || raceTrackGeographicMapCellType == raceTrackGeographicMapCellTypeFactory!.VERTICAL_STRAIGHT_ROAD_CELL_TYPE)
                         
                                     {
@@ -142,12 +141,12 @@ clear()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
     //var geographicMapInterface = geographicMapInterface
-this.init()
+this.this.init()
 
     var baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap = geographicMapInterface as BaseRaceTrackGeographicMap;
         
@@ -197,11 +196,10 @@ ahead= index
         {
 total++
 
-    
                         if(total > STRAIGHTAWAY)
                         
                                     {
-                                    add(geographicMapCellPosition)
+                                    this.list.add(geographicMapCellPosition)
 break;
 
                     
@@ -210,7 +208,6 @@ break;
                                 
 ahead++
 
-    
                         if(ahead > lastIndex)
                         
                                     {
@@ -239,7 +236,7 @@ ahead++
         
 index >= 0; index--)
         {
-this.drop(allBinaryGameLayerManager, index)
+this.this.drop(allBinaryGameLayerManager, index)
 }
 
 }
@@ -249,12 +246,11 @@ this.drop(allBinaryGameLayerManager, index)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
 
-    
                         if(timeDelayHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
                                     {
@@ -263,14 +259,14 @@ this.drop(allBinaryGameLayerManager, index)
         
         
 
-this.drop(allBinaryLayerManager, index)
+this.this.drop(allBinaryLayerManager, index)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     drop(allBinaryLayerManager: AllBinaryLayerManager, index: number){
     //var allBinaryLayerManager = allBinaryLayerManager
@@ -278,7 +274,7 @@ this.drop(allBinaryLayerManager, index)
 
 
 
-                            throw Exception(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
+                            throw Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
 }
 
 

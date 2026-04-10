@@ -70,7 +70,7 @@ index < anyType!.length; index++)
         
         
 
-add(imageType)
+imageTypes!.getVector()!.add(imageType)
 }
 
 
@@ -115,7 +115,6 @@ index < nodeList!.getLength(); index++)
         
 
 
-    
                         if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.TYPE) == 0)
                         
                                     {
@@ -124,7 +123,7 @@ index < nodeList!.getLength(); index++)
         
         
 
-add(InputImageType.getInstance(nextImageTypeString))
+this.getVector()!.add(InputImageType.getInstance(nextImageTypeString))
 
                                     }
                                 
@@ -132,7 +131,7 @@ add(InputImageType.getInstance(nextImageTypeString))
                             
 
 
-                            throw Exception("ImageTypes Unknown Node")
+                            throw Error("ImageTypes Unknown Node")
 
                         }
                             
@@ -151,7 +150,7 @@ add(InputImageType.getInstance(nextImageTypeString))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -180,7 +179,7 @@ index < size; index++)
         
         
 
-appendChild(ModDomHelper.createTextNode(document, ImageActionScriptOutputData.TYPE, imageType!.getName()))
+newNode!.appendChild(ModDomHelper.createTextNode(document, ImageActionScriptOutputData.TYPE, imageType!.getName()))
 }
 
 
@@ -198,7 +197,7 @@ appendChild(ModDomHelper.createTextNode(document, ImageActionScriptOutputData.TY
         
         
 
-append("ImageTypes: ")
+stringBuffer!.append("ImageTypes: ")
 
     var size: number = vector.length!;
         
@@ -219,9 +218,8 @@ index < size; index++)
         
         
 
-append(imageType!.getName())
+stringBuffer!.append(imageType!.getName())
 
-    
                         if(index < size -1)
                         stringBuffer!.append(", ")
 }

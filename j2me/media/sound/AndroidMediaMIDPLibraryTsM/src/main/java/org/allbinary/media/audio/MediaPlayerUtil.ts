@@ -48,7 +48,7 @@ export class MediaPlayerUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public wait(mediaPlayer: MediaPlayer){
 var mediaPlayer = mediaPlayer
@@ -70,8 +70,8 @@ var mediaPlayer = mediaPlayer
 
         while(mediaPlayer!.isPlaying() && index < 50)
         {
-put(MESSAGE, this, METHOD_NAME)
-sleep(100)
+logUtil!.put(MESSAGE, this, METHOD_NAME)
+Thread.sleep(100)
 index++
 }
 

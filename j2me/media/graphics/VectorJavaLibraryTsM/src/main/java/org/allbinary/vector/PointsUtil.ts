@@ -81,7 +81,6 @@ newPoints[index]= Array(size2) { IntArray(2) }
 index2 < size2; index2++)
         {
 
-    
                         if(points[index]![index2]![0] != 1000)
                         
                                     {
@@ -141,7 +140,6 @@ var y = y
 index2 < points.length; index2++)
         {
 
-    
                         if(points[index2]![0] != 1000)
                         
                                     {

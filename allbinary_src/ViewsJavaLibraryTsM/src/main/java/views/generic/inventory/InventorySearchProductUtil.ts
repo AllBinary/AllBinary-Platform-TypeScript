@@ -95,7 +95,7 @@ export class InventorySearchProductUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getProduct(abeClientInformation: AbeClientInformationInterface, searchRequest: SearchRequest, product: string): string{
     //var abeClientInformation = abeClientInformation
@@ -114,7 +114,6 @@ var product = product
         
 
 
-    
                         if(itemInterface != 
                                     null
                                 )
@@ -125,7 +124,7 @@ var product = product
         
         
 
-appendChild(BasicItemView(itemInterface, Vector()).
+viewDocumentInterface!.getBaseNode()!.appendChild(BasicItemView(itemInterface, Vector()).
                             toXmlNode(viewDocumentInterface!.getDoc()))
 
     var success: string = DomDocumentHelper.toString(viewDocumentInterface!.getDoc())!;
@@ -160,18 +159,17 @@ appendChild(BasicItemView(itemInterface, Vector()).
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "getProduct", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "getProduct", e)
 
                                     }
                                 
 
 
 
-                            throw Exception("Failed to getProduct")
+                            throw Error("Failed to getProduct")
 }
 
 }

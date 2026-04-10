@@ -43,7 +43,6 @@ export class OpenGLImageCacheFactory
 
     public static init(){
 
-    
                         if(IMAGE_CACHE == 
                                     null
                                 )

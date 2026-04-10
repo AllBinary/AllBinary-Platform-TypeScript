@@ -82,7 +82,6 @@ public constructor (resource: string){
         
 
 
-    
                         if(mediaPlayer == 
                                     null
                                 )
@@ -91,16 +90,16 @@ public constructor (resource: string){
                                     
 
 
-                            throw Exception(StringMaker().
+                            throw Error(StringMaker().
                             append("Failed to create media player for: ")!.append(resource)!.append(" with id: ")!.append(resourceUtil!.getResourceId(resource)!.toString())!.toString())
 
                                     }
                                 
-this.setMediaPlayer(mediaPlayer)
-setLooping(false)
+this.this.setMediaPlayer(mediaPlayer)
+this.mediaPlayer!.setLooping(false)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.CONSTRUCTOR, e)
 
 
 
@@ -112,20 +111,18 @@ put(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.CONSTRUCTOR, 
 
     public setLoopCount(count: number){
 var count = count
-setLoopCount(count)
+super.setLoopCount(count)
 
-    
                         if(this.mediaPlayer != NullAndroidCanvas.NULL_MEDIA_PLAYER && this.mediaPlayer != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(count == 0)
                         
                                     {
-                                    setLooping(false)
+                                    this.mediaPlayer!.setLooping(false)
 
                                     }
                                 
@@ -142,19 +139,18 @@ setLoopCount(count)
 
     public addPlayerListener(playerListener: PlayerListener){
 var playerListener = playerListener
-addPlayerListener(playerListener)
+super.addPlayerListener(playerListener)
 }
 
 
     public removePlayerListener(playerListener: PlayerListener){
 var playerListener = playerListener
-removePlayerListener(playerListener)
+super.removePlayerListener(playerListener)
 }
 
 
     public getState(): number{
 
-    
                         if(this.mediaPlayer!.isPlaying())
                         
                                     {
@@ -183,54 +179,53 @@ removePlayerListener(playerListener)
     public close(){
 
         try {
-            release()
+            this.mediaPlayer!.release()
 this.mediaPlayer= NullAndroidCanvas.NULL_MEDIA_PLAYER
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e)
 }
 
 }
 
 
-                @Throws(MediaException::class)
+                //@Throws(MediaException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public start(){
 
         try {
             
-    
                         if(this.mediaPlayer!.isPlaying())
                         
                                     {
-                                    pause()
-seekTo(0)
+                                    this.mediaPlayer!.pause()
+this.mediaPlayer!.seekTo(0)
 
                                     }
                                 
-start()
-start()
+this.mediaPlayer!.start()
+super.start()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e)
 }
 
 }
 
 
-                @Throws(MediaException::class)
+                //@Throws(MediaException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public stop(){
 
         try {
-            stop()
-prepare()
-stop()
+            this.mediaPlayer!.stop()
+this.mediaPlayer!.prepare()
+super.stop()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "stop", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "stop", e)
 }
 
 }
@@ -238,7 +233,7 @@ put(commonStrings!.EXCEPTION, this, "stop", e)
 
     public update(event: string){
 var event = event
-put("LineEvent: " +event, this, commonStrings!.UPDATE)
+logUtil!.put("LineEvent: " +event, this, commonStrings!.UPDATE)
 
     var size: number = this.listenersList!.size()!;
         
@@ -259,7 +254,7 @@ index < size; index++)
         
         
 
-playerUpdate(this, event, NullUtil.getInstance()!.NULL_OBJECT)
+listener.playerUpdate(this, event, NullUtil.getInstance()!.NULL_OBJECT)
 }
 
 }
@@ -268,7 +263,7 @@ playerUpdate(this, event, NullUtil.getInstance()!.NULL_OBJECT)
     public setVolume(leftVolume: number, rightVolume: number){
     //var leftVolume = leftVolume
     //var rightVolume = rightVolume
-setVolume((leftVolume.toFloat()) /100.0f, (rightVolume.toFloat()) /100.0f)
+this.mediaPlayer!.setVolume((leftVolume.toFloat()) /100.0f, (rightVolume.toFloat()) /100.0f)
 }
 
 

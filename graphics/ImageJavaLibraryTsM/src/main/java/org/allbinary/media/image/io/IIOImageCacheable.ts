@@ -60,7 +60,7 @@ this.key= key
 
     public setBufferedImage(bufferedImage: BufferedImage){
 var bufferedImage = bufferedImage
-this.setIioImage(IIOImage(bufferedImage, 
+this.this.setIioImage(IIOImage(bufferedImage, 
                             null, 
                             null))
 }
@@ -88,8 +88,8 @@ this.iioImage= iioImage
         
         
 
-append(this::class.toString()!)
-append(" Reusable IIOImage")
+stringBuffer!.append(this::class.toString()!)
+stringBuffer!.append(" Reusable IIOImage")
 
 
 

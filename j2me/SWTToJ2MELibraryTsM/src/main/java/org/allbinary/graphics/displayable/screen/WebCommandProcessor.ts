@@ -81,11 +81,10 @@ export class WebCommandProcessor
 
         try {
             
-    
                         if(Desktop.isDesktopSupported() && Desktop.getDesktop()!.isSupported(Desktop.Action.BROWSE))
                         
                                     {
-                                    browse(URI(list.remove(0) as String))
+                                    Desktop.getDesktop()!.browse(URI(list.remove(0) as String))
 
                                     }
                                 
@@ -96,7 +95,7 @@ export class WebCommandProcessor
         
         
 
-put(commonStrings!.EXCEPTION, this, "process", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "process", e)
 }
 
 }

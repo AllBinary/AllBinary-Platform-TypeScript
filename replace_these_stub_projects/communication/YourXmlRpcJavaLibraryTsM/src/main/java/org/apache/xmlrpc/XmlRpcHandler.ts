@@ -11,7 +11,7 @@ import { Vector } from "../../../java/util/Vector.js";
 interface XmlRpcHandler {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public execute(method: string, params: Vector<Any>): any = {}
 

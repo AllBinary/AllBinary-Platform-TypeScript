@@ -69,11 +69,11 @@ export class InputAutomationRobotBundleActivator
 public constructor (){
 
             super();
-            this.init()
+            this.this.init()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(){
 
@@ -83,15 +83,15 @@ public constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public registerAsService(bundleContext: BundleContext){
 var bundleContext = bundleContext
-registerAsService(bundleContext, getServiceFactory(), InputAutomationRobotServiceInterface::class.toString()!)
+OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAutomationRobotServiceInterface::class.toString()!)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getInputAutomationRobotChangeListener(context: BundleContext): InputAutomationRobotChangeListener{
 var context = context
@@ -101,7 +101,6 @@ var context = context
         
 
 
-    
                         if(serviceReference != 
                                     null
                                 )
@@ -113,12 +112,11 @@ var context = context
         
 
 
-    
                         if(inputAutomationRobotChangeListener == 
                                     null
                                 )
                         
-                                    throw Exception("No Service For ServiceReference")
+                                    throw Error("No Service For ServiceReference")
 
 
 
@@ -129,7 +127,7 @@ var context = context
                                     }
                                 
                         else {
-                            put("No ServiceReference: " +InputAutomationRobotChangeListener::class.toString()!, this, "getInputAutomationRobotChangeListener")
+                            logUtil!.put("No ServiceReference: " +InputAutomationRobotChangeListener::class.toString()!, this, "getInputAutomationRobotChangeListener")
 
 
 
@@ -146,14 +144,13 @@ var context = context
 var context = context
 
         try {
-            put(this.commonStrings!.START, this, "addRobots")
+            logUtil!.put(this.commonStrings!.START, this, "addRobots")
 
     var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = this.getInputAutomationRobotChangeListener(context)!;
         
         
 
 
-    
                         if(inputAutomationRobotChangeListener != 
                                     null
                                 )
@@ -174,7 +171,7 @@ index < this.getInputRobotInterface()!.length; index++)
         
         
 
-onAdd(inputAutomationRobotChangeEvent)
+inputAutomationRobotChangeListener!.onAdd(inputAutomationRobotChangeEvent)
 }
 
 
@@ -182,7 +179,7 @@ onAdd(inputAutomationRobotChangeEvent)
                                 
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "addModules")
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "addModules")
 }
 
 }
@@ -192,14 +189,13 @@ put(this.commonStrings!.EXCEPTION, this, "addModules")
 var context = context
 
         try {
-            put(this.commonStrings!.START, this, "removeRobots")
+            logUtil!.put(this.commonStrings!.START, this, "removeRobots")
 
     var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = this.getInputAutomationRobotChangeListener(context)!;
         
         
 
 
-    
                         if(inputAutomationRobotChangeListener != 
                                     null
                                 )
@@ -220,7 +216,7 @@ index < this.getInputRobotInterface()!.length; index++)
         
         
 
-onRemove(inputAutomationRobotChangeEvent)
+inputAutomationRobotChangeListener!.onRemove(inputAutomationRobotChangeEvent)
 }
 
 
@@ -228,28 +224,28 @@ onRemove(inputAutomationRobotChangeEvent)
                                 
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "removeRobots")
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "removeRobots")
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public start(context: BundleContext){
 var context = context
-put(this.commonStrings!.START, this, this.commonStrings!.START)
-this.addRobots(context)
-this.registerAsService(context)
+logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.START)
+this.this.addRobots(context)
+this.this.registerAsService(context)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public stop(context: BundleContext){
 var context = context
-put("Stop", this, this.commonStrings!.START)
-this.removeRobots(context)
+logUtil!.put("Stop", this, this.commonStrings!.START)
+this.this.removeRobots(context)
 }
 
 

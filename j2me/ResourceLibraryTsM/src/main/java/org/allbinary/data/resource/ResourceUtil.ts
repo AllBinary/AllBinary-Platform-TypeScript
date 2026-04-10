@@ -68,13 +68,13 @@ private constructor (){
 
     public setClassLoader(classLoader: ClassLoader){
     //var classLoader = classLoader
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Resource Loader: ")!.append(classLoader!::class.toString()!)!.toString(), this, "setClassLoader")
 ResourceUtil.classLoader= classLoader
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getResourceAsStream(resource: string): InputStream{
     //var resource = resource
@@ -84,7 +84,6 @@ ResourceUtil.classLoader= classLoader
         
 
 
-    
                         if(inputStream == 
                                     null
                                 )
@@ -92,7 +91,6 @@ ResourceUtil.classLoader= classLoader
                                     {
                                     inputStream= this.getResourceAsStream(resource, 1)
 
-    
                         if(inputStream == 
                                     null
                                 )
@@ -101,7 +99,7 @@ ResourceUtil.classLoader= classLoader
                                     
 
 
-                            throw Exception(StringMaker().
+                            throw Error(StringMaker().
                             append("Unable to obtain: ")!.append(resource)!.toString())
 
                                     }
@@ -118,7 +116,7 @@ ResourceUtil.classLoader= classLoader
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getResourceAsStream(resource: string, startIndex: number): InputStream{
     //var resource = resource
@@ -144,7 +142,6 @@ ResourceUtil.classLoader= classLoader
         
 
 
-    
                         if(inputStream != 
                                     null
                                 )
@@ -166,7 +163,6 @@ ResourceUtil.classLoader= classLoader
 
 inputStream= classLoader!.getResourceAsStream(resourcePath)
 
-    
                         if(inputStream != 
                                     null
                                 )
@@ -183,7 +179,6 @@ inputStream= classLoader!.getResourceAsStream(resourcePath)
                                 
 inputStream= Thread.currentThread()!.getContextClassLoader()!.getResourceAsStream(resourcePath)
 
-    
                         if(inputStream != 
                                     null
                                 )

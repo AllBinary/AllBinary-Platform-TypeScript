@@ -61,12 +61,12 @@ public constructor (currentPoints: IntArray[][], basicColor: BasicColor, animati
     //var basicColor = basicColor
     //var animationBehaviorFactory = animationBehaviorFactory
 this.currentPoints= currentPoints
-this.setBasicColorP(basicColor)
+this.this.setBasicColorP(basicColor)
 this.animationBehaviorFactory= animationBehaviorFactory
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

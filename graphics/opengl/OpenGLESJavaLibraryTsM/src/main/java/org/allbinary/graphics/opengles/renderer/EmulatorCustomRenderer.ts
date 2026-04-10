@@ -57,14 +57,13 @@ export class EmulatorCustomRenderer
     public onSurfaceCreated(gl: GL10, eglConfig: EGLConfig){
     //var gl = gl
     //var eglConfig = eglConfig
-put(commonStrings!.START, this, this.renderStrings!.ON_SURFACE_CREATED)
+logUtil!.put(commonStrings!.START, this, this.renderStrings!.ON_SURFACE_CREATED)
 
     var initEmulatorFactory: InitEmulatorFactory = InitEmulatorFactory.getInstance()!;
         
         
 
 
-    
                         if(!initEmulatorFactory!.isInitEmulator())
                         
                                     {
@@ -78,13 +77,13 @@ put(commonStrings!.START, this, this.renderStrings!.ON_SURFACE_CREATED)
 
         while(!initEmulatorFactory!.isInitEmulator())
         {
-put(WAIT_FOR_EMULATOR, this, this.renderStrings!.ON_SURFACE_CREATED)
-sleep(180)
+PreLogUtil.put(WAIT_FOR_EMULATOR, this, this.renderStrings!.ON_SURFACE_CREATED)
+Thread.sleep(180)
 }
 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e)
 }
 
 

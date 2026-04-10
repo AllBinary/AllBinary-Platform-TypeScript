@@ -34,7 +34,7 @@ interface GenericProfileDataWorkerTypeInterface {
 
     toString(): string
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     toXmlNode(document: Document): Node
 

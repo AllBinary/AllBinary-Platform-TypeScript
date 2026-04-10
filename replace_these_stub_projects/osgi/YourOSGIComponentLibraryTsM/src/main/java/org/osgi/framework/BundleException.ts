@@ -5,7 +5,7 @@
 
 
 
-export class BundleException extends Exception {
+export class BundleException extends Error {
         
 
 }

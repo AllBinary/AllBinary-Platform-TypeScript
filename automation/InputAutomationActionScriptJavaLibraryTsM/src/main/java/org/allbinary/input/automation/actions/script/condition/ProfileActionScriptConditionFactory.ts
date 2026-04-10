@@ -30,7 +30,7 @@ export class ProfileActionScriptConditionFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(node: Node): ProfileActionScriptConditionInterface{
 var node = node
@@ -42,7 +42,6 @@ var node = node
         
 
 
-    
                         if(DomSearchHelper.getNodeNoThrow(ColorAtActionScriptConditionData.NAME, node.getChildNodes()) != 
                                     null
                                 )
@@ -53,7 +52,6 @@ var node = node
                                     }
                                 
                              else 
-    
                         if(DomSearchHelper.getNodeNoThrow(TimeIntervalActionScriptConditionData.NAME, node.getChildNodes()) != 
                                     null
                                 )
@@ -64,7 +62,6 @@ var node = node
                                     }
                                 
                              else 
-    
                         if(DomSearchHelper.getNodeNoThrow(AlwaysActionScriptConditionData.NAME, node.getChildNodes()) != 
                                     null
                                 )

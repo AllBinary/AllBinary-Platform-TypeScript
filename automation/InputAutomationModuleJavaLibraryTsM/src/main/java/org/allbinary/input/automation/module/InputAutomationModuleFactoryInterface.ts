@@ -63,7 +63,7 @@ export class InputAutomationModuleFactoryInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(): RunnableInterface{
 

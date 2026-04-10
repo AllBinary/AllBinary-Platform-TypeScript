@@ -95,7 +95,7 @@ var document = document
         
         
 
-appendChild(ModDomHelper.createNameValueNodes(document, StreetAddressData.STATE, option))
+node.appendChild(ModDomHelper.createNameValueNodes(document, StreetAddressData.STATE, option))
 }
 
 
@@ -107,11 +107,10 @@ appendChild(ModDomHelper.createNameValueNodes(document, StreetAddressData.STATE,
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
 
                                     }
                                 

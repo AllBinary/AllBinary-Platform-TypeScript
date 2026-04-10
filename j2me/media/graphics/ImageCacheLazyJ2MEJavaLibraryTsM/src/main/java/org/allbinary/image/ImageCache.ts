@@ -168,7 +168,7 @@ export inner class NotHTMLProcessor extends Processor {
 
 
     public process(){
-runTask()
+concurrentImageLoadingProcessor!.runTask()
 }
 
 
@@ -186,7 +186,7 @@ export inner class NotHTMLEndProcessor extends Processor {
         
         
 
-endIfPaintedSinceStart()
+progressCanvas!.endIfPaintedSinceStart()
 }
 
 
@@ -208,7 +208,6 @@ export inner class HTMLEndProcessor extends Processor {
                     //Otherwise - statement - EmptyStmt
 
 
-    
                         if(size == 0)
                         
                                     {
@@ -217,12 +216,11 @@ export inner class HTMLEndProcessor extends Processor {
         
         
 
-endIfPaintedSinceStart()
+progressCanvas!.endIfPaintedSinceStart()
 
                                     }
                                 
                              else 
-    
                         if(totalLoaded > size /12)
                         
                                     {
@@ -231,7 +229,7 @@ endIfPaintedSinceStart()
         
         
 
-endIfPaintedSinceStart()
+progressCanvas!.endIfPaintedSinceStart()
 endProcessor= NotHTMLEndProcessor()
 
                                     }
@@ -254,7 +252,6 @@ export inner class FirstProcessor extends Processor {
         
 
 
-    
                         if(isHTML)
                         
                                     {
@@ -271,7 +268,7 @@ endProcessor= NotHTMLEndProcessor()
             runTask()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME)
 }
 
 
@@ -301,11 +298,10 @@ var renderer = renderer
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public waitForLoadNow(){
 
-    
                         if(firstTime)
                         
                                     {
@@ -322,7 +318,7 @@ var renderer = renderer
 
         while(loadNowList!.isEmpty() && (!abCanvas!.isInitialized() || (abCanvas!.isInitialized() && this.hasAnyLazyAnimationFactories)) && !this.progressEnded)
         {
-sleep(120)
+Thread.sleep(120)
 }
 
 firstTime= false
@@ -336,7 +332,7 @@ firstTime= false
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public loadImageForAnimation(){
 
@@ -354,23 +350,19 @@ firstTime= false
         //mutex.withLock
         {
 
-    
                         if(loadNowList!.isEmpty())
                         
                                     {
-                                    process()
+                                    this.endProcessor!.process()
 
-    
                         if(loadSoonList!.isEmpty())
                         
                                     {
                                     
-    
                         if(this.loadAfterList!.isEmpty())
                         
                                     {
                                     
-    
                         if(firstTime)
                         
                                     {
@@ -378,7 +370,6 @@ firstTime= false
                                     }
                                 
                              else 
-    
                         if(gameGlobalsFactory!.newCanvas)
                         
                                     {
@@ -402,11 +393,10 @@ firstTime= false
                         else {
                             lazyImageRotationAnimation= this.loadAfterList!.get(0) as LazyImageRotationAnimation
 
-    
                         if(this.loadImageForAnimation(lazyImageRotationAnimation))
                         
                                     {
-                                    remove(lazyImageRotationAnimation)
+                                    loadAfterList!.remove(lazyImageRotationAnimation)
 
                                     }
                                 
@@ -419,11 +409,10 @@ firstTime= false
                         else {
                             lazyImageRotationAnimation= this.loadSoonList!.get(0) as LazyImageRotationAnimation
 
-    
                         if(this.loadImageForAnimation(lazyImageRotationAnimation))
                         
                                     {
-                                    remove(lazyImageRotationAnimation)
+                                    loadSoonList!.remove(lazyImageRotationAnimation)
 
                                     }
                                 
@@ -443,7 +432,6 @@ lazyImageRotationAnimation= loadNowList!.get(0) as LazyImageRotationAnimation
 }
 
 
-    
                         if(this.loadImageForAnimation(lazyImageRotationAnimation))
                         
                                     {
@@ -454,11 +442,10 @@ lazyImageRotationAnimation= loadNowList!.get(0) as LazyImageRotationAnimation
 
         //mutex.withLock
         {
-remove(lazyImageRotationAnimation)
+loadNowList!.remove(lazyImageRotationAnimation)
 }
 
 
-    
                         if(lazyImageRotationAnimation!.layoutIndex != 0)
                         
                                     {
@@ -480,11 +467,10 @@ remove(lazyImageRotationAnimation)
         
 
 
-    
                         if(size > 0)
                         
                                     {
-                                    addAll(list)
+                                    loadSoonList!.addAll(list)
 
                                     }
                                 
@@ -504,21 +490,19 @@ remove(lazyImageRotationAnimation)
         
 
 
-    
                         if(this.loadNowList!.isEmpty() && (!isHTML || this.firstTime))
                         
                                     {
-                                    endFromInitialLazyLoadingComplete()
+                                    progressCanvas!.endFromInitialLazyLoadingComplete()
 
                                     }
                                 
                         else {
                             
-    
                         if(this.totalLoaded % 10 == 0)
                         
                                     {
-                                    addPortion(1, LOAD_IMAGE_FOR_ANIMATION)
+                                    progressCanvas!.addPortion(1, LOAD_IMAGE_FOR_ANIMATION)
 
                                     }
                                 
@@ -531,7 +515,7 @@ remove(lazyImageRotationAnimation)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public loadImages(){
 
@@ -544,7 +528,7 @@ loadImage()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public loadImageForAnimations(){
 
@@ -556,7 +540,7 @@ loadImageForAnimation()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public loadRemainingAnimations(){
 
@@ -583,19 +567,17 @@ loadImageForAnimation()
         //mutex.withLock
         {
 
-    
                         if(!this.loadAfterList!.isEmpty())
                         lazyImageRotationAnimation= this.loadAfterList!.remove(0) as LazyImageRotationAnimation
 }
 
 
-    
                         if(lazyImageRotationAnimation != 
                                     null
                                 )
                         
                                     {
-                                    this.loadImageForAnimation(lazyImageRotationAnimation)
+                                    this.this.loadImageForAnimation(lazyImageRotationAnimation)
 
                                     }
                                 
@@ -604,7 +586,7 @@ loadImageForAnimation()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     loadImageForAnimation(lazyImageRotationAnimation: LazyImageRotationAnimation): boolean{
     //var lazyImageRotationAnimation = lazyImageRotationAnimation
@@ -614,11 +596,10 @@ loadImageForAnimation()
         
 
 
-    
                         if(this.loadImage(image))
                         
                                     {
-                                    setRealAnimation()
+                                    lazyImageRotationAnimation!.setRealAnimation()
 
 
 
@@ -637,7 +618,7 @@ loadImageForAnimation()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     loadImage(){
 
@@ -655,7 +636,6 @@ loadImageForAnimation()
         //mutex.withLock
         {
 
-    
                         if(loadList!.size() == 0)
                         
                                     {
@@ -671,16 +651,15 @@ loadImageForAnimation()
 image= loadList!.remove(0) as Image
 }
 
-this.loadImage(image)
+this.this.loadImage(image)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     loadImage(image: Image): boolean{
     //var image = image
 
-    
                         if(image.isReady())
                         
                                     {
@@ -695,14 +674,12 @@ this.loadImage(image)
                                 
                         else {
                             
-    
                         if(image.getImage() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(image.setReady())
                         
                                     {
@@ -731,11 +708,10 @@ this.loadImage(image)
         
 
 
-    
                         if(image2.isReady())
                         
                                     {
-                                    this.init(image, image2)
+                                    this.this.init(image, image2)
 
 
 
@@ -746,7 +722,7 @@ this.loadImage(image)
                                     }
                                 
                         else {
-                            setImage(image2.getImage())
+                            image.setImage(image2.getImage())
 
                         }
                             
@@ -765,16 +741,16 @@ this.loadImage(image)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(image: Image, image2: Image){
     //var image = image
     //var image2 = image2
-init(image2.getImage())
+image.init(image2.getImage())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     creatImage(key: string): Image{
     //var key = key
@@ -788,7 +764,7 @@ init(image2.getImage())
         
         
 
-setName(key)
+image.setName(key)
 
 
 
@@ -798,7 +774,7 @@ setName(key)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(caller: string, width: number, height: number): Image{
     //var caller = caller
@@ -815,29 +791,25 @@ setName(key)
         
 
 
-    
                         if(image == NullCanvas.NULL_IMAGE)
                         
                                     {
                                     volume += width *height
 
-    
                         if(volume > 32000)
                         
                                     {
-                                    gc()
+                                    System.gc()
 volume= 0
 
                                     }
                                 
 image= this.createImage(caller, width, height)
 
-    
                         if(nextIndex > widths.length -1)
                         
                                     {
                                     
-    
                         if(foundIndex ==  -1)
                         
                                     {
@@ -848,7 +820,7 @@ nextIndex++
 
                                     }
                                 
-add(image)
+listOfList[foundIndex]!.add(image)
 
                                     }
                                 
@@ -864,7 +836,7 @@ add(image)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(key: any = {}): Image{
     //var key = key
@@ -874,7 +846,6 @@ add(image)
         
 
 
-    
                         if(image == NullCanvas.NULL_IMAGE)
                         
                                     {
@@ -890,17 +861,17 @@ add(image)
             image= this.createImage(key, inputStream)
 } catch(e: Exception)
             {
-put("Exception: Trying Again After GC", this, commonStrings!.GET, e)
-put(StringMaker().
+logUtil!.put("Exception: Trying Again After GC", this, commonStrings!.GET, e)
+logUtil!.put(StringMaker().
                             append("InputStream: ")!.append(StringUtil.getInstance()!.toString(inputStream))!.toString(), this, commonStrings!.GET)
-gc()
-gc()
-put(Memory.getInfo(), this, commonStrings!.GET)
-sleep(100)
+System.gc()
+System.gc()
+logUtil!.put(Memory.getInfo(), this, commonStrings!.GET)
+Thread.sleep(100)
 image= this.createImage(key, inputStream)
 }
 
-put(key, image)
+this.hashtable.put(key, image)
 
                                     }
                                 
@@ -942,7 +913,6 @@ put(key, image)
 index < size; index++)
         {
 
-    
                         if(resourceStringArray[index] == key)
                         
                                     {
@@ -957,7 +927,7 @@ index < size; index++)
                                 
 }
 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("unable to find key: ")!.append(StringUtil.getInstance()!.toString(key))!.toString(), this, commonStrings!.RUN)
 
 
@@ -966,7 +936,7 @@ put(StringMaker().
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createImage(key: any = {}, inputStream: InputStream): Image{
     //var key = key
@@ -998,7 +968,6 @@ put(StringMaker().
 index < size; index++)
         {
 
-    
                         if(key == resourceStringArray[index])
                         
                                     {
@@ -1013,7 +982,7 @@ index < size; index++)
                                 
 }
 
-this.runTask()
+this.this.runTask()
 
     var index: number = this.getIndex(key)!;
         
@@ -1041,7 +1010,7 @@ this.runTask()
 
         //mutex.withLock
         {
-add(image)
+loadList!.add(image)
 }
 
 
@@ -1053,7 +1022,7 @@ add(image)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createImageLater(key: string, width: number, height: number): Image{
     //var key = key
@@ -1106,11 +1075,10 @@ index < size; index++)
         {
 lazyImageRotationAnimation2= this.loadAfterList!.get(index) as LazyImageRotationAnimation
 
-    
                         if(lazyImageRotationAnimation2!.instanceId == lazyImageRotationAnimation!.instanceId)
                         
                                     {
-                                    add(lazyImageRotationAnimation2)
+                                    list.add(lazyImageRotationAnimation2)
 
                                     }
                                 
@@ -1131,7 +1099,7 @@ lazyImageRotationAnimation2= this.loadAfterList!.get(index) as LazyImageRotation
         
 index < size2; index++)
         {
-remove(list.get(index))
+this.loadAfterList!.remove(list.get(index))
 }
 
 }
@@ -1154,18 +1122,17 @@ remove(list.get(index))
 
         //mutex.withLock
         {
-add(lazyImageRotationAnimation)
+this.loadAfterList!.add(lazyImageRotationAnimation)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public insertFirst(lazyImageRotationAnimation: LazyImageRotationAnimation){
     //var lazyImageRotationAnimation = lazyImageRotationAnimation
 
-    
                         if(this.loadNowList!.contains(lazyImageRotationAnimation))
                         
                                     {
@@ -1180,14 +1147,14 @@ add(lazyImageRotationAnimation)
 
         //mutex.withLock
         {
-add(lazyImageRotationAnimation)
-remove(lazyImageRotationAnimation)
+this.loadNowList!.add(lazyImageRotationAnimation)
+this.loadAfterList!.remove(lazyImageRotationAnimation)
 }
 
 
                         }
                             
-this.runTask()
+this.this.runTask()
 }
 
 
@@ -1196,16 +1163,15 @@ this.progressEnded= true
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public runTask(){
-process()
+this.processor.process()
 }
 
 
     public initProgress(){
 
-    
                         if(firstTime)
                         
                                     {

@@ -33,41 +33,41 @@ interface TransformInfoObjectConfigInterface extends DomDocumentMappingInterface
 
     containsView(transformInfoInterface: TransformInfoInterface): boolean
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getName(): string
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getTransformsGroup(group: string): Vector
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getTransforms(): Vector
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getParentTransforms(): Vector
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getGroupTransforms(): Vector
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getOutputTypeName(): string
 
     setOutputTypeName(value: string)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getInputOutputTypeName(): string
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getInputOutputTypeFile(): string
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getImportUriPath(): string
 

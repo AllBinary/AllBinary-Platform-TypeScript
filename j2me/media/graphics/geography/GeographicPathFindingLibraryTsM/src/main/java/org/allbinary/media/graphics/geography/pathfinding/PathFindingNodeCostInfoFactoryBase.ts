@@ -35,7 +35,7 @@ export class PathFindingNodeCostInfoFactoryBase
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public create(geographicMapInterface: BasicGeographicMap, comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number){
     //var geographicMapInterface = geographicMapInterface
@@ -50,7 +50,7 @@ export class PathFindingNodeCostInfoFactoryBase
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getTotalCost(geographicMapInterface: BasicGeographicMap, comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition): number{
     //var geographicMapInterface = geographicMapInterface

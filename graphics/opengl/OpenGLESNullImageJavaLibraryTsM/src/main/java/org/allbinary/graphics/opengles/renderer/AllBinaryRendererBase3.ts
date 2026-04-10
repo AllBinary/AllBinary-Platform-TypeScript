@@ -40,7 +40,7 @@ export class AllBinaryRendererBase3
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     update(gl: GL10){
     //var gl = gl
@@ -53,13 +53,12 @@ export class AllBinaryRendererBase3
         
 
 
-    
                         if(openGLESImage != 
                                     null
                                 )
                         
                                     {
-                                    set(gl)
+                                    openGLESImage!.set(gl)
 
                                     }
                                 
@@ -70,7 +69,7 @@ export class AllBinaryRendererBase3
 
     public add(image: Image){
     //var image = image
-add(image)
+this.list.add(image)
 }
 
 

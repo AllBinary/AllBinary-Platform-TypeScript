@@ -22,7 +22,7 @@
 interface CompositeTransformInfoInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getTransformInfoInterface(): TransformInfoInterface
 

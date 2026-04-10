@@ -114,25 +114,25 @@ this.animationInterface= CircleFilledAnimation(this.allBinaryTiledLayer!.getCell
 this.list= BasicArrayList()
 this.basicColorList= BasicArrayList()
 this.positionList= BasicArrayList()
-addListener(this)
-this.init()
+GeographicMapCellPositionEventHandler.getInstance()!.addListener(this)
+this.this.init()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(){
-setPosition(this.x, this.y, this.z)
+allBinaryTiledLayer!.setPosition(this.x, this.y, this.z)
 }
 
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onRemoveGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent){
@@ -148,20 +148,19 @@ log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
         
 
 
-    
                         if(index >= 0)
                         
                                     {
-                                    remove(index)
-remove(index)
-remove(index)
+                                    this.list.remove(index)
+this.basicColorList!.remove(index)
+this.positionList!.remove(index)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent){
@@ -196,7 +195,6 @@ index < size; index++)
         {
 nextColorCompositeInterface= list.get(index) as ColorCompositeInterface
 
-    
                         if(nextColorCompositeInterface == colorCompositeInterface)
                         
                                     {
@@ -220,24 +218,23 @@ break;
         
 
 
-    
                         if(layerIndex ==  -1)
                         
                                     {
-                                    add(colorCompositeInterface)
+                                    this.list.add(colorCompositeInterface)
 
     var basicColor: BasicColor = colorCompositeInterface!.getBasicColorP()!;
         
         
 
-add(basicColor)
-add(point)
+this.basicColorList!.add(basicColor)
+this.positionList!.add(point)
 layerIndex= this.basicColorList!.size() -1
 
                                     }
                                 
                         else {
-                            set(layerIndex, point)
+                            this.positionList!.set(layerIndex, point)
 
                         }
                             
@@ -279,9 +276,9 @@ var graphics = graphics
         {
 point= localPositionList!.get(index) as GPoint
 basicColor= localBasicColorList!.get(index) as BasicColor
-setColor(basicColor!.toInt())
-setBasicColorP(basicColor)
-paint(graphics, point.getX() +this.x, point.getY() +this.y)
+graphics.setColor(basicColor!.toInt())
+this.animationInterface!.setBasicColorP(basicColor)
+this.animationInterface!.paint(graphics, point.getX() +this.x, point.getY() +this.y)
 }
 
 }
@@ -289,8 +286,8 @@ paint(graphics, point.getX() +this.x, point.getY() +this.y)
 
     public paint(graphics: Graphics){
     //var graphics = graphics
-paint(graphics)
-this.paintDots(graphics)
+allBinaryTiledLayer!.paint(graphics)
+this.this.paintDots(graphics)
 }
 
 

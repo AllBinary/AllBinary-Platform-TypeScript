@@ -43,7 +43,7 @@ var otherAngle = otherAngle
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(layer: AllBinaryGameLayer){
 var layer = layer

@@ -62,11 +62,11 @@ this.columns= this.tiledLayer!.getColumns()
 this.rows= this.tiledLayer!.getRows()
 this.geographicMapCellPositionArray= Array(rows) { arrayOfNulls<GeographicMapCellPosition?>(columns) }
                                                             
-this.init()
+this.this.init()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(){
 
@@ -114,7 +114,7 @@ column < columns; column++)
         
 row < rows; row++)
         {
-this.createInstance(column, row, width, height)
+this.this.createInstance(column, row, width, height)
 }
 
 }
@@ -122,7 +122,7 @@ this.createInstance(column, row, width, height)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public visit(geographicMapCelPositionFactoryInitVisitorInterface: GeographicMapCellPositionFactoryInitVisitorInterface){
     //var geographicMapCelPositionFactoryInitVisitorInterface = geographicMapCelPositionFactoryInitVisitorInterface
@@ -167,7 +167,7 @@ column < columns; column++)
 row < rows; row++)
         {
 cellPosition= this.getInstance(column, row)
-visit(tiledLayer, cellPosition)
+geographicMapCelPositionFactoryInitVisitorInterface!.visit(tiledLayer, cellPosition)
 }
 
 }
@@ -179,7 +179,7 @@ visit(tiledLayer, cellPosition)
         
         
 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(commonSeps!.BRACKET_OPEN)!.appendint(rows)!.append(commonSeps!.BRACKET_CLOSE)!.append(commonSeps!.BRACKET_OPEN)!.appendint(columns)!.append(commonSeps!.BRACKET_CLOSE)!.toString(), this, "visit", e)
 
 
@@ -190,7 +190,7 @@ put(StringMaker().
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(i_column: number, i_row: number): GeographicMapCellPosition{
     //var i_column = i_column
@@ -204,7 +204,7 @@ put(StringMaker().
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(anotherMapGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
     //var anotherMapGeographicMapCellPosition = anotherMapGeographicMapCellPosition
@@ -217,7 +217,7 @@ put(StringMaker().
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createInstance(i_column: number, i_row: number, width: number, height: number): GeographicMapCellPosition{
     //var i_column = i_column
@@ -230,7 +230,6 @@ put(StringMaker().
         
 
 
-    
                         if(cellPositionCanBeNull == 
                                     null
                                 )

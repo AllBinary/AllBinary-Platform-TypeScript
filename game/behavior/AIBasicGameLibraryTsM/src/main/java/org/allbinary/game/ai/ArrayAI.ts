@@ -51,7 +51,7 @@ this.artificialIntelligenceInterfaceArray= artificialIntelligenceInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -71,7 +71,7 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 index < size; index++)
         {
-processAI(allBinaryLayerManager)
+this.artificialIntelligenceInterfaceArray[index]!.processAI(allBinaryLayerManager)
 }
 
 }

@@ -79,7 +79,7 @@ this.frame= frame
 
     public addInfo(infoString: string){
 var infoString = infoString
-append(infoString)
+this.infoStringBuffer!.append(infoString)
 }
 
 
@@ -100,7 +100,7 @@ var vectorOfStrings = vectorOfStrings
         
 index < size; index++)
         {
-this.addAction(vectorOfStrings!.get(index) as String)
+this.this.addAction(vectorOfStrings!.get(index) as String)
 }
 
 }
@@ -108,12 +108,12 @@ this.addAction(vectorOfStrings!.get(index) as String)
 
     public addAction(action: string){
 var action = action
-append(action)
-append(CommonSeps.getInstance()!.NEW_LINE)
+this.actionsStringBuffer!.append(action)
+this.actionsStringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public write(){
 
@@ -121,9 +121,9 @@ append(CommonSeps.getInstance()!.NEW_LINE)
         
         
 
-append(ImageOutputData.SAVE_PATH)
-append(LongUtil.fillIn(frame.toString()))
-append(".txt")
+filePathStringBuffer!.append(ImageOutputData.SAVE_PATH)
+filePathStringBuffer!.append(LongUtil.fillIn(frame.toString()))
+filePathStringBuffer!.append(".txt")
 
     var filePath: string = filePathStringBuffer!.toString()!;
         
@@ -134,15 +134,15 @@ append(".txt")
         
         
 
-write(frameBytes)
-write(getFrame()!.toString()!.encodeToByteArray())
-write('\n')
-write(info)
-write(infoStringBuffer!.toString()!.encodeToByteArray())
-write('\n')
-write(actions)
-write(actionsStringBuffer!.toString()!.encodeToByteArray())
-close()
+fileOutputStream!.write(frameBytes)
+fileOutputStream!.write(getFrame()!.toString()!.encodeToByteArray())
+fileOutputStream!.write('\n')
+fileOutputStream!.write(info)
+fileOutputStream!.write(infoStringBuffer!.toString()!.encodeToByteArray())
+fileOutputStream!.write('\n')
+fileOutputStream!.write(actions)
+fileOutputStream!.write(actionsStringBuffer!.toString()!.encodeToByteArray())
+fileOutputStream!.close()
 }
 
 

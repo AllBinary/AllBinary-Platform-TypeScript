@@ -57,9 +57,9 @@ var y = y
         
         
 
-append(CommonSeps.getInstance()!.NEW_LINE)
-append(MP_LABEL)
-append(super.toString())
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
+stringBuffer!.append(MP_LABEL)
+stringBuffer!.append(super.toString())
 
 
 

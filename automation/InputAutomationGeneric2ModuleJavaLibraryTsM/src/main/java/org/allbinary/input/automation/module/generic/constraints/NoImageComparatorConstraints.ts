@@ -42,7 +42,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setMaxNonMatchingPixelDeltas(.MAX_VALUE())
+this.this.setMaxNonMatchingPixelDeltas(.MAX_VALUE())
 }
 
 

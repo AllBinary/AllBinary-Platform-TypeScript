@@ -28,11 +28,11 @@ import { GeographicMapCellPosition } from "../../../../../../org/allbinary/media
 interface PathFindingNodeCostInfoFactoryBaseInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     create(geographicMapInterface: BasicGeographicMap, comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getTotalCost(geographicMapInterface: BasicGeographicMap, comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition): number
 

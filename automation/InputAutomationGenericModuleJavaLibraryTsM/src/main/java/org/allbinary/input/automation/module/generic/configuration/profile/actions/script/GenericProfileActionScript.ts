@@ -92,14 +92,13 @@ var node = node
                             //For kotlin this is before the body of the constructor.
                     
 this.genericProfileActionJPanel= genericProfileActionJPanel
-this.setProfileActionConditionInterfaceVector(Vector())
+this.this.setProfileActionConditionInterfaceVector(Vector())
 
     var actionScriptNode: Node = DomSearchHelper.getNode(GenericProfileActionData.SCRIPT, node.getChildNodes())!;
         
         
 
 
-    
                         if(actionScriptNode != 
                                     null
                                 )
@@ -126,11 +125,10 @@ index < nodeList!.getLength(); index++)
         
 
 
-    
                         if(actionConditionNode!.getNodeType() == Node.ELEMENT_NODE)
                         
                                     {
-                                    this.addCondition(ProfileActionScriptConditionFactory.getInstance(actionConditionNode))
+                                    this.this.addCondition(ProfileActionScriptConditionFactory.getInstance(actionConditionNode))
 
                                     }
                                 
@@ -143,7 +141,7 @@ index < nodeList!.getLength(); index++)
                             
 
 
-                            throw Exception("Profile Action Script Node Null")
+                            throw Error("Profile Action Script Node Null")
 
                         }
                             
@@ -154,23 +152,23 @@ public constructor (genericProfileActionJPanel: GenericProfileActionJPanel){
             super();
             var genericProfileActionJPanel = genericProfileActionJPanel
 this.genericProfileActionJPanel= genericProfileActionJPanel
-this.setProfileActionConditionInterfaceVector(Vector())
+this.this.setProfileActionConditionInterfaceVector(Vector())
 }
 
 
     public addCondition(profileActionScriptNodeInterface: ProfileActionScriptNodeInterface){
 var profileActionScriptNodeInterface = profileActionScriptNodeInterface
-put(this.commonStrings!.START, this, "addCondition")
-add(profileActionScriptNodeInterface)
-this.add(profileActionScriptNodeInterface)
+logUtil!.put(this.commonStrings!.START, this, "addCondition")
+this.getProfileActionConditionInterfaceVector()!.add(profileActionScriptNodeInterface)
+this.this.add(profileActionScriptNodeInterface)
 }
 
 
     public removeCondition(profileActionScriptNodeInterface: ProfileActionScriptNodeInterface){
 var profileActionScriptNodeInterface = profileActionScriptNodeInterface
-put(this.commonStrings!.START, this, "removeCondition")
-remove(profileActionScriptNodeInterface)
-this.remove(profileActionScriptNodeInterface)
+logUtil!.put(this.commonStrings!.START, this, "removeCondition")
+this.getProfileActionConditionInterfaceVector()!.remove(profileActionScriptNodeInterface)
+this.this.remove(profileActionScriptNodeInterface)
 }
 
 
@@ -180,7 +178,7 @@ this.remove(profileActionScriptNodeInterface)
         
         
 
-put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
+logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
 
 
 
@@ -206,7 +204,7 @@ this.profileActionConditionInterfaceVector= profileActionConditionInterfaceVecto
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -240,7 +238,7 @@ index < size; index++)
         
         
 
-appendChild(profileActionConditionInterface!.toXmlNode(document))
+node.appendChild(profileActionConditionInterface!.toXmlNode(document))
 }
 
 

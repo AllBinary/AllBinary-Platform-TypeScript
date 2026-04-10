@@ -35,12 +35,12 @@ export class GameFeatureImageCacheFactory
 
 
     public static init(){
-init()
+ImageCacheFactory.init()
 }
 
 
     public static releaseAll(){
-releaseAll()
+ImageCacheFactory.getInstance()!.releaseAll()
 }
 
 

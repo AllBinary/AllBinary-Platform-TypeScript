@@ -60,11 +60,10 @@ public constructor (node: Node){
             super();
             var node = node
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Constructing TransformInfo From TransformInfoDomNode: " +node.getNodeName(), this, "TransformInfoDomNode(Node node)")
+                                    logUtil!.put("Constructing TransformInfo From TransformInfoDomNode: " +node.getNodeName(), this, "TransformInfoDomNode(Node node)")
 
                                     }
                                 
@@ -94,12 +93,10 @@ public constructor (node: Node){
         
 
 
-    
                         if(nodeList!.getLength() > 1)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -108,12 +105,12 @@ public constructor (node: Node){
         
         
 
-append("Constructing Complete TransformInfo Node For: ")
-append(name)
-append(" with ")
-appendint(nodeList!.getLength())
-append(" children")
-put(stringBuffer!.toString(), this, "TransformInfoObjectConfigComponent(Node node)")
+stringBuffer!.append("Constructing Complete TransformInfo Node For: ")
+stringBuffer!.append(name)
+stringBuffer!.append(" with ")
+stringBuffer!.appendint(nodeList!.getLength())
+stringBuffer!.append(" children")
+logUtil!.put(stringBuffer!.toString(), this, "TransformInfoObjectConfigComponent(Node node)")
 
                                     }
                                 
@@ -163,7 +160,6 @@ this.transformInfoInterface= TransformInfo(name, objectFileName, objectConfigFil
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -172,12 +168,12 @@ this.transformInfoInterface= TransformInfo(name, objectFileName, objectConfigFil
         
         
 
-append("Constructing Partial TransformInfo Node For: ")
-append(name)
-append(" with ")
-appendint(nodeList!.getLength())
-append(" children")
-put(stringBuffer!.toString(), this, "TransformInfoObjectConfigComponent(Node node)")
+stringBuffer!.append("Constructing Partial TransformInfo Node For: ")
+stringBuffer!.append(name)
+stringBuffer!.append(" with ")
+stringBuffer!.appendint(nodeList!.getLength())
+stringBuffer!.append(" children")
+logUtil!.put(stringBuffer!.toString(), this, "TransformInfoObjectConfigComponent(Node node)")
 
                                     }
                                 
@@ -191,7 +187,6 @@ this.transformInfoInterface= TransformInfo(name) as TransformInfoInterface
         
 
 
-    
                         if(templateAttrNode != 
                                     null
                                 )
@@ -261,20 +256,19 @@ this.mappedName= mappedName
         
         
 
-append("<transform:component name=\"")
-append("body")
-append("\"/>")
+stringBuffer!.append("<transform:component name=\"")
+stringBuffer!.append("body")
+stringBuffer!.append("\"/>")
 
     var key: string = stringBuffer!.toString()!;
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Component Key: " +key, this, "getReplaceKey()")
+                                    logUtil!.put("Component Key: " +key, this, "getReplaceKey()")
 
                                     }
                                 

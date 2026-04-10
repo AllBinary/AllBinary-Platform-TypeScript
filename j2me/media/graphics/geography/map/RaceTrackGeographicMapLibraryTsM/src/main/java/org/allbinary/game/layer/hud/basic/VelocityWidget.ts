@@ -109,7 +109,7 @@ this.offset= myFont!.stringWidth(this.primitiveLongUtil!.getMaxDigits()) +myFont
 
     public add(value: number){
 var value = value
-this.set(this.velocity +value)
+this.this.set(this.velocity +value)
 }
 
 
@@ -122,7 +122,6 @@ var value = value
 
 this.velocity= value
 
-    
                         if(this.velocity > this.maxVelocity)
                         
                                     {
@@ -131,13 +130,11 @@ this.velocity= value
                                     }
                                 
 
-    
                         if(lastVelocity != this.velocity)
                         
                                     {
                                     this.string= primitiveLongUtil!.getCharArray(this.velocity *18)
 
-    
                         if(OpenGLFeatureUtil.getInstance()!.isAnyThreed())
                         
                                     {
@@ -164,13 +161,13 @@ this.offset2= this.offset -myFont!.stringWidth(this.totalDigits) -myFont!.string
 
     public reduce(value: number){
 var value = value
-this.set(this.velocity -value)
+this.this.set(this.velocity -value)
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics, string, 0, this.totalDigits, KILOMETERS_PER_HOUR_STR, 0, this.totalChars, offset2, offset)
+super.paint(graphics, string, 0, this.totalDigits, KILOMETERS_PER_HOUR_STR, 0, this.totalChars, offset2, offset)
 }
 
 

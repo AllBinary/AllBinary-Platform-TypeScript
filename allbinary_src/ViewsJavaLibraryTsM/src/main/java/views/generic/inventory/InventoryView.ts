@@ -84,18 +84,17 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Starting", this, "toXmlNode")
+                                    logUtil!.put("Starting", this, "toXmlNode")
 
                                     }
                                 
@@ -114,7 +113,7 @@ var document = document
         
         
 
-appendChild(ModDomHelper.createNameValueNodes(document, SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, Integer(itemVector!.length).
+inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, Integer(itemVector!.length).
                             toString()))
 
     var size: number = itemVector!.length!;
@@ -137,7 +136,6 @@ index < size; index++)
         
 
 
-    
                         if(itemInterface != 
                                     null
                                 )
@@ -149,12 +147,12 @@ index < size; index++)
         
         
 
-appendChild(node)
+inventoryNode!.appendChild(node)
 
                                     }
                                 
                         else {
-                            put("Inventory", this, "toXmlNode")
+                            logUtil!.put("Inventory", this, "toXmlNode")
 
                         }
                             
@@ -169,11 +167,10 @@ appendChild(node)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
 
                                     }
                                 
@@ -187,14 +184,14 @@ appendChild(node)
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface)
+this.this.addDomNodeInterface(this as DomNodeInterface)
 }
 
 
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.this.addDomNodeInterfaces()
 
 
 
@@ -209,11 +206,10 @@ this.addDomNodeInterface(this as DomNodeInterface)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 

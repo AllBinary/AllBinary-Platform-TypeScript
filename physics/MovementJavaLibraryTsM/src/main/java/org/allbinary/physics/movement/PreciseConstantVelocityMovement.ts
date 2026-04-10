@@ -53,7 +53,7 @@ public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocit
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(layer: AllBinaryGameLayer){
     //var layer = layer
@@ -70,9 +70,8 @@ public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocit
 accumulatedX= (accumulatedX +velocityProperties!.getVelocityXBasicDecimalP()!.getUnscaled()).toInt()
 accumulatedY= (accumulatedY +velocityProperties!.getVelocityYBasicDecimalP()!.getUnscaled()).toInt()
 accumulatedZ= (accumulatedZ +velocityProperties!.getVelocityZBasicDecimalP()!.getUnscaled()).toInt()
-move(accumulatedX /factorValue, accumulatedY /factorValue, accumulatedZ /factorValue)
+layer.move(accumulatedX /factorValue, accumulatedY /factorValue, accumulatedZ /factorValue)
 
-    
                         if(mathUtil!.abs(accumulatedX) > factorValue)
                         
                                     {
@@ -81,7 +80,6 @@ move(accumulatedX /factorValue, accumulatedY /factorValue, accumulatedZ /factorV
                                     }
                                 
 
-    
                         if(mathUtil!.abs(accumulatedY) > factorValue)
                         
                                     {
@@ -90,7 +88,6 @@ move(accumulatedX /factorValue, accumulatedY /factorValue, accumulatedZ /factorV
                                     }
                                 
 
-    
                         if(mathUtil!.abs(accumulatedZ) > factorValue)
                         
                                     {

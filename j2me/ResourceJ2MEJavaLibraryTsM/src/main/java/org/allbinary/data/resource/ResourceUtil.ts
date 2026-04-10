@@ -59,7 +59,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getResourceAsStream(resource: string): InputStream{
 var resource = resource
@@ -69,7 +69,6 @@ var resource = resource
         
 
 
-    
                         if(inputStream == 
                                     null
                                 )
@@ -77,7 +76,6 @@ var resource = resource
                                     {
                                     inputStream= this.getResourceAsStream(resource, 2)
 
-    
                         if(inputStream == 
                                     null
                                 )
@@ -85,7 +83,6 @@ var resource = resource
                                     {
                                     inputStream= this.getResourceAsStream(resource, 1)
 
-    
                         if(inputStream == 
                                     null
                                 )
@@ -108,7 +105,6 @@ var resource = resource
 
 inputStream= resource.javaClass.getResourceAsStream(resourcePath)
 
-    
                         if(inputStream == 
                                     null
                                 )
@@ -117,7 +113,6 @@ inputStream= resource.javaClass.getResourceAsStream(resourcePath)
                                     resourcePath= resource.substring(index)
 inputStream= resource.javaClass.getResourceAsStream(resourcePath)
 
-    
                         if(inputStream == 
                                     null
                                 )
@@ -131,13 +126,12 @@ inputStream= resource.javaClass.getResourceAsStream(resourcePath)
 resourcePath= stringMaker!.append(RES)!.append(resource.substring(index))!.toString()
 inputStream= resource.javaClass.getResourceAsStream(resourcePath)
 
-    
                         if(inputStream == 
                                     null
                                 )
                         
                                     {
-                                    delete(0, stringMaker!.length())
+                                    stringMaker!.delete(0, stringMaker!.length())
 resourcePath= stringMaker!.append("/")!.append(RES)!.append(resource.substring(index))!.toString()
 inputStream= resource.javaClass.getResourceAsStream(resourcePath)
 
@@ -146,27 +140,24 @@ inputStream= resource.javaClass.getResourceAsStream(resourcePath)
         
 
 
-    
                         if(inputStream == 
                                     null
                                 )
                         
                                     {
-                                    delete(0, stringMaker!.length())
+                                    stringMaker!.delete(0, stringMaker!.length())
 resourcePath= stringMaker!.append(RES)!.append(COLON)!.append(resource.substring(index))!.toString()
 inputStream= resource.javaClass.getResourceAsStream(resourcePath)
 
-    
                         if(inputStream == 
                                     null
                                 )
                         
                                     {
-                                    delete(0, stringMaker!.length())
+                                    stringMaker!.delete(0, stringMaker!.length())
 resourcePath= stringMaker!.append(RES)!.append(COLON)!.append(resource.substring(index +1))!.toString()
 inputStream= resource.javaClass.getResourceAsStream(resourcePath)
 
-    
                         if(inputStream == 
                                     null
                                 )
@@ -177,31 +168,29 @@ inputStream= resource.javaClass.getResourceAsStream(resourcePath)
         
         
 
-delete(0, stringMaker!.length())
+stringMaker!.delete(0, stringMaker!.length())
 resourcePath= stringMaker!.append(RESOURCE_STRING)!.append(COLON)!.append(resource.substring(index))!.toString()
 inputStream= resource.javaClass.getResourceAsStream(resourcePath)
 
-    
                         if(inputStream == 
                                     null
                                 )
                         
                                     {
-                                    delete(0, stringMaker!.length())
+                                    stringMaker!.delete(0, stringMaker!.length())
 resourcePath= stringMaker!.append(RESOURCE_STRING)!.append(COLON)!.append(resource.substring(index +1))!.toString()
 inputStream= resource.javaClass.getResourceAsStream(resourcePath)
 
-    
                         if(inputStream == 
                                     null
                                 )
                         
                                     {
-                                    delete(0, stringMaker!.length())
+                                    stringMaker!.delete(0, stringMaker!.length())
 
 
 
-                            throw Exception(stringMaker!.append("Unable to obtain: ")!.append(resource)!.toString())
+                            throw Error(stringMaker!.append("Unable to obtain: ")!.append(resource)!.toString())
 
                                     }
                                 
@@ -244,7 +233,7 @@ inputStream= resource.javaClass.getResourceAsStream(resourcePath)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getResourceAsStream(resource: string, startIndex: number): InputStream{
 var resource = resource
@@ -270,7 +259,6 @@ var startIndex = startIndex
         
 
 
-    
                         if(inputStream != 
                                     null
                                 )

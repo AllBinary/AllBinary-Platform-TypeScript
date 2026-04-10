@@ -129,8 +129,8 @@ var height = height
 var graphics = graphics
 var x = x
 var y = y
-setPosition(x, y, this.tiledLayer!.getZP())
-paint(graphics)
+this.tiledLayer!.setPosition(x, y, this.tiledLayer!.getZP())
+this.tiledLayer!.paint(graphics)
 }
 
 

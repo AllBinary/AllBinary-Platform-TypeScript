@@ -60,7 +60,7 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public collide(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
@@ -75,7 +75,6 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
         
 
 
-    
                         if(collisionType == collisionTypeFactory!.PICKUP)
                         
                                     {
@@ -84,21 +83,20 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
         
         
 
-doPickup(collidableInterfaceCompositeInterface as PickedUpLayerInterface)
+collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickup(collidableInterfaceCompositeInterface as PickedUpLayerInterface)
 
                                     }
                                 
                              else 
-    
                         if(collisionType == collisionTypeFactory!.COLLISION)
                         
                                     {
-                                    collide(collidableInterfaceCompositeInterface)
+                                    super.collide(collidableInterfaceCompositeInterface)
 
                                     }
                                 
                         else {
-                            this.collide(collidableInterfaceCompositeInterface as VehiclePropertiesCompositeInterface)
+                            this.this.collide(collidableInterfaceCompositeInterface as VehiclePropertiesCompositeInterface)
 
                         }
                             
@@ -107,7 +105,7 @@ doPickup(collidableInterfaceCompositeInterface as PickedUpLayerInterface)
 
     public collide(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
-log("Don't Use Interface Version It Is Slower", this)
+ForcedLogUtil.log("Don't Use Interface Version It Is Slower", this)
 }
 
 
@@ -143,13 +141,12 @@ log("Don't Use Interface Version It Is Slower", this)
         
 
 
-    
                         if(impactVelocityX != 0L)
                         
                                     {
                                     halfImpactVelocityX= (impactVelocityX shr 1)
-add(halfImpactVelocityX)
-add(halfImpactVelocityX)
+ownerVehicleProperties!.getVelocityProperties()!.getVelocityXBasicDecimalP()!.add(halfImpactVelocityX)
+vehicleProperties!.getVelocityProperties()!.getVelocityXBasicDecimalP()!.add(halfImpactVelocityX)
 
                                     }
                                 
@@ -158,13 +155,12 @@ add(halfImpactVelocityX)
                         }
                             
 
-    
                         if(impactVelocityY != 0L)
                         
                                     {
                                     halfImpactVelocityY= (impactVelocityY shr 1)
-add(halfImpactVelocityY)
-add(halfImpactVelocityY)
+ownerVehicleProperties!.getVelocityProperties()!.getVelocityYBasicDecimalP()!.add(halfImpactVelocityY)
+vehicleProperties!.getVelocityProperties()!.getVelocityXBasicDecimalP()!.add(halfImpactVelocityY)
 
                                     }
                                 
@@ -172,8 +168,8 @@ add(halfImpactVelocityY)
                             
                         }
                             
-this.collideFriction(ownerVehicleLayerInterface)
-this.collideFriction(vehiclePropertiesCompositeInterface)
+this.this.collideFriction(ownerVehicleLayerInterface)
+this.this.collideFriction(vehiclePropertiesCompositeInterface)
 totalImpactVelocity= impactVelocityX +impactVelocityY
 }
 
@@ -185,7 +181,7 @@ totalImpactVelocity= impactVelocityX +impactVelocityY
         
         
 
-friction(vehiclePropertiesCompositeInterface!.getVehicleProperties()!.getVelocityProperties(), vehicleFrictionProperties!.getCrashFrictionNominator())
+vehiclePropertiesCompositeInterface!.getVehicleProperties()!.getVehicleFrictionProperties()!.friction(vehiclePropertiesCompositeInterface!.getVehicleProperties()!.getVelocityProperties(), vehicleFrictionProperties!.getCrashFrictionNominator())
 }
 
 

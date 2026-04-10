@@ -72,19 +72,19 @@ public constructor (title: string, items: CustomItem[], rectangle: Rectangle, fo
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setSelectedIndex(0)
+this.this.setSelectedIndex(0)
 
         try {
-            this.init(rectangle, formType)
+            this.this.init(rectangle, formType)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(rectangle: Rectangle, formType: FormType){
     //var rectangle = rectangle

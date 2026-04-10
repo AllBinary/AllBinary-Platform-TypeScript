@@ -65,7 +65,6 @@ var pageContext = pageContext
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -74,15 +73,15 @@ var pageContext = pageContext
         
         
 
-append("Database HashMap: ")
-append(databaseHashMap!.toString())
-append("\nProperties HashMap: ")
-append(propertiesHashMap!.toString())
-put(stringBuffer!.toString(), this, this.commonStrings!.CONSTRUCTOR)
+stringBuffer!.append("Database HashMap: ")
+stringBuffer!.append(databaseHashMap!.toString())
+stringBuffer!.append("\nProperties HashMap: ")
+stringBuffer!.append(propertiesHashMap!.toString())
+logUtil!.put(stringBuffer!.toString(), this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
-this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING)
+this.this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING)
 }
 
 public constructor (propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext)                        
@@ -97,19 +96,18 @@ var pageContext = pageContext
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Properties HashMap: " +propertiesHashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Properties HashMap: " +propertiesHashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
-this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING)
+this.this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getPath(): string{
 
@@ -117,11 +115,11 @@ this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING)
         
         
 
-append(URLGLOBALS.getMainPath())
-append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-append(FREEBLISKET_PATH_GLOBALS.getInstance()!.INSTALLPATH)
-append(this.getStoreName())
-append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.append(URLGLOBALS.getMainPath())
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.INSTALLPATH)
+stringBuffer!.append(this.getStoreName())
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
 
 
 
@@ -131,7 +129,7 @@ append(AbPathData.getInstance()!.SEPARATOR)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getTemplateFilePath(): AbPath{
 
@@ -143,7 +141,7 @@ append(AbPathData.getInstance()!.SEPARATOR)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getObjectConfigFilePath(): AbPath{
 
@@ -155,7 +153,7 @@ append(AbPathData.getInstance()!.SEPARATOR)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDataFilePath(): AbPath{
 

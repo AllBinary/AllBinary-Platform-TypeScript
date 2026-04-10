@@ -38,7 +38,7 @@ export class ImageTool
 
     public static main(args: string[]){
 var args = args
-invokeLater(object: ARunnable()
+java.awt.EventQueue.invokeLater(object: ARunnable()
                                 {
                                 
     public run(){
@@ -54,11 +54,12 @@ invokeLater(object: ARunnable()
 
 
         try {
-            put(commonStrings!.START, this, commonStrings!.RUN)
-setVisible(true)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.RUN)
+ImageToolJFrame().
+                            setVisible(true)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }

@@ -112,7 +112,6 @@ this.point= Point(0, 0)
         
 
 
-    
                         if(actionNode != 
                                     null
                                 )
@@ -139,7 +138,6 @@ index < nodeList!.getLength(); index++)
         
 
 
-    
                         if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.LOCATION_X) == 0)
                         
                                     {
@@ -153,7 +151,6 @@ this.point.x= Integer(Integer.valueOf(locationX))
                                     }
                                 
                              else 
-    
                         if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.LOCATION_Y) == 0)
                         
                                     {
@@ -167,7 +164,6 @@ this.point.y= Integer(Integer.valueOf(locationY))
                                     }
                                 
                              else 
-    
                         if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.MIN_RED) == 0)
                         
                                     {
@@ -176,12 +172,11 @@ this.point.y= Integer(Integer.valueOf(locationY))
         
         
 
-setMinRed(string.valueOf())
+this.getColorRangeInterface()!.setMinRed(string.valueOf())
 
                                     }
                                 
                              else 
-    
                         if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.MAX_RED) == 0)
                         
                                     {
@@ -190,12 +185,11 @@ setMinRed(string.valueOf())
         
         
 
-setMaxRed(string.valueOf())
+this.getColorRangeInterface()!.setMaxRed(string.valueOf())
 
                                     }
                                 
                              else 
-    
                         if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.MIN_GREEN) == 0)
                         
                                     {
@@ -204,12 +198,11 @@ setMaxRed(string.valueOf())
         
         
 
-setMinGreen(string.valueOf())
+this.getColorRangeInterface()!.setMinGreen(string.valueOf())
 
                                     }
                                 
                              else 
-    
                         if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.MAX_GREEN) == 0)
                         
                                     {
@@ -218,12 +211,11 @@ setMinGreen(string.valueOf())
         
         
 
-setMaxGreen(string.valueOf())
+this.getColorRangeInterface()!.setMaxGreen(string.valueOf())
 
                                     }
                                 
                              else 
-    
                         if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.MIN_BLUE) == 0)
                         
                                     {
@@ -232,12 +224,11 @@ setMaxGreen(string.valueOf())
         
         
 
-setMinBlue(string.valueOf())
+this.getColorRangeInterface()!.setMinBlue(string.valueOf())
 
                                     }
                                 
                              else 
-    
                         if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.MAX_BLUE) == 0)
                         
                                     {
@@ -246,7 +237,7 @@ setMinBlue(string.valueOf())
         
         
 
-setMaxBlue(string.valueOf())
+this.getColorRangeInterface()!.setMaxBlue(string.valueOf())
 
                                     }
                                 
@@ -259,11 +250,11 @@ setMaxBlue(string.valueOf())
                             
 
 
-                            throw Exception("Color At Action Script Condition Node Null")
+                            throw Error("Color At Action Script Condition Node Null")
 
                         }
                             
-this.init()
+this.this.init()
 }
 
 public constructor ()                        
@@ -276,7 +267,7 @@ public constructor ()
                             //For kotlin this is before the body of the constructor.
                     
 this.point= Point(0, 0)
-this.init()
+this.this.init()
 }
 
 
@@ -302,7 +293,7 @@ this.point= point
 
 
     public showDialog(){
-setVisible(true)
+this.colorAtActionScriptConditionJPanel!.getColorAtActionJDialog()!.setVisible(true)
 }
 
 
@@ -312,15 +303,15 @@ setVisible(true)
         
         
 
-put(ColorAtActionScriptConditionData.LOCATION_X, Integer.toString(this.getPoint()!.x))
-put(ColorAtActionScriptConditionData.LOCATION_Y, Integer.toString(this.getPoint()!.y))
-put(ColorAtActionScriptConditionData.MIN_RED, Integer.toString(this.getColorRangeInterface()!.getMinRed()))
-put(ColorAtActionScriptConditionData.MAX_RED, Integer.toString(this.getColorRangeInterface()!.getMaxRed()))
-put(ColorAtActionScriptConditionData.MIN_GREEN, Integer.toString(this.getColorRangeInterface()!.getMinGreen()))
-put(ColorAtActionScriptConditionData.MAX_GREEN, Integer.toString(this.getColorRangeInterface()!.getMaxGreen()))
-put(ColorAtActionScriptConditionData.MIN_BLUE, Integer.toString(this.getColorRangeInterface()!.getMinBlue()))
-put(ColorAtActionScriptConditionData.MAX_BLUE, Integer.toString(this.getColorRangeInterface()!.getMaxBlue()))
-put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
+hashMap!.put(ColorAtActionScriptConditionData.LOCATION_X, Integer.toString(this.getPoint()!.x))
+hashMap!.put(ColorAtActionScriptConditionData.LOCATION_Y, Integer.toString(this.getPoint()!.y))
+hashMap!.put(ColorAtActionScriptConditionData.MIN_RED, Integer.toString(this.getColorRangeInterface()!.getMinRed()))
+hashMap!.put(ColorAtActionScriptConditionData.MAX_RED, Integer.toString(this.getColorRangeInterface()!.getMaxRed()))
+hashMap!.put(ColorAtActionScriptConditionData.MIN_GREEN, Integer.toString(this.getColorRangeInterface()!.getMinGreen()))
+hashMap!.put(ColorAtActionScriptConditionData.MAX_GREEN, Integer.toString(this.getColorRangeInterface()!.getMaxGreen()))
+hashMap!.put(ColorAtActionScriptConditionData.MIN_BLUE, Integer.toString(this.getColorRangeInterface()!.getMinBlue()))
+hashMap!.put(ColorAtActionScriptConditionData.MAX_BLUE, Integer.toString(this.getColorRangeInterface()!.getMaxBlue()))
+logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
 
 
 
@@ -330,7 +321,7 @@ put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -339,7 +330,7 @@ var document = document
         
         
 
-appendChild(ModDomHelper.createNodeWithValueNodes(document, ColorAtActionScriptConditionData.NAME, this.toHashMap()))
+node.appendChild(ModDomHelper.createNodeWithValueNodes(document, ColorAtActionScriptConditionData.NAME, this.toHashMap()))
 
 
 
@@ -349,7 +340,7 @@ appendChild(ModDomHelper.createNodeWithValueNodes(document, ColorAtActionScriptC
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public shouldProcess(frame: number): boolean{
 var frame = frame
@@ -385,7 +376,6 @@ var frame = frame
         
 
 
-    
                         if(this.colorRangeInterface!.isInRange(color))
                         
                                     {
@@ -414,7 +404,7 @@ var frame = frame
         
         
 
-put(message, this, "log")
+logUtil!.put(message, this, "log")
 }
 
 

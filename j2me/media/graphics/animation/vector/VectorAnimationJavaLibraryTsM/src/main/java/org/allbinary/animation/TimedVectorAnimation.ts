@@ -65,11 +65,10 @@ public constructor (currentPoints: IntArray[], basicColor: BasicColor, animation
 
     public nextFrame(){
 
-    
                         if(this.timeElapsedHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
                                     {
-                                    nextFrame()
+                                    super.nextFrame()
 
                                     }
                                 

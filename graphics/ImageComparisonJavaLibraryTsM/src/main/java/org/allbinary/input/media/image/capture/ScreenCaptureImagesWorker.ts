@@ -83,7 +83,7 @@ this.running= running
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setThread(thread: Thread){
 var thread = thread
@@ -93,7 +93,7 @@ var thread = thread
     public run(){
 
         try {
-            put(this.commonStrings!.START, this, this.commonStrings!.RUN)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
 setRunning(true)
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
@@ -103,7 +103,7 @@ setRunning(true)
 
         while(isRunning())
         {
-setStartTime()
+timeHelper!.setStartTime()
 
     var bufferedImage: BufferedImage = screenScavangerRobot!.getScreenAsBufferedImages()[0]!;
         
@@ -115,21 +115,21 @@ setStartTime()
         
 
 index++
-add(BufferedImageFrameCacheable(bufferedImage, frame))
+CapturedBufferedImagesCacheSingleton.getInstance()!.add(BufferedImageFrameCacheable(bufferedImage, frame))
 
     var capturedImageEvent: CapturedImageWorkerResultsEvent = new CapturedImageWorkerResultsEvent(this, frame, bufferedImage);
         
         
 
 fireEvent(capturedImageEvent)
-put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
+logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
 setRunning(false)
 }
 
-put(this.commonStrings!.END, this, this.commonStrings!.RUN)
+logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
 }
 
 }

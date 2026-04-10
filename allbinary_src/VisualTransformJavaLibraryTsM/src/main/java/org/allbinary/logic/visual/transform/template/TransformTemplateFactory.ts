@@ -71,7 +71,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, templateName: string, propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext): TransformTemplateInterface{
     //var abeClientInformation = abeClientInformation
@@ -104,11 +104,10 @@ var pageContext = pageContext
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
-                                    put(error +templateName +"->TemplateFactory", this, "getInstance(viewName, HashMap, PageContext)", e)
+                                    logUtil!.put(error +templateName +"->TemplateFactory", this, "getInstance(viewName, HashMap, PageContext)", e)
 
                                     }
                                 

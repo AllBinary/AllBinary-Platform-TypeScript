@@ -112,7 +112,7 @@ public constructor (imageProcessorInput: ImageProcessorInput){
             super();
                 //var imageProcessorInput = imageProcessorInput
 initComponents()
-this.setImageProcessorInput(imageProcessorInput)
+this.this.setImageProcessorInput(imageProcessorInput)
 }
 
 
@@ -176,14 +176,14 @@ index < bufferedImageArray!.length; index++)
         
 
 this.icon[index]= ImageIconUnique(iconBufferedImage, index)
-addElement(this.icon[index]!)
+defaultListModel!.addElement(this.icon[index]!)
 }
 
-setModel(defaultListModel)
-this.updateOnPropertiesChange()
+this.imageJList!.setModel(defaultListModel)
+this.this.updateOnPropertiesChange()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e)
 }
 
 }
@@ -242,7 +242,6 @@ tempBufferedImageArray[index]= bufferedImage
         
 
 
-    
                         if(averageRatioString!.length > 4)
                         
                                     {
@@ -250,29 +249,27 @@ tempBufferedImageArray[index]= bufferedImage
 
                                     }
                                 
-setText(averageRatioString)
-setEnabled(false)
+this.avgRatioJTextField!.setText(averageRatioString)
+this.fudgeItJButton!.setEnabled(false)
 
-    
                         if(!imagesRatioUtil!.isEqual(tempBufferedImageArray, totalImages))
                         
                                     {
                                     
-    
                         if(isImageFillIn)
                         
                                     {
-                                    setEnabled(true)
+                                    this.fudgeItJButton!.setEnabled(true)
 
                                     }
                                 
 
                                     }
                                 
-this.updateImage(tempBufferedImageArray)
+this.this.updateImage(tempBufferedImageArray)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "updateImage", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "updateImage", e)
 }
 
 }
@@ -329,10 +326,10 @@ tempBufferedImageArray[index]= bufferedImage
         
         
 
-this.updateImage(fudgedBufferedImageArray)
+this.this.updateImage(fudgedBufferedImageArray)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "updateImageWithFudgedImages", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "updateImageWithFudgedImages", e)
 }
 
 }
@@ -351,26 +348,25 @@ this.result= ImageUnifierUtil.getInstance()!.getImage(tempBufferedImageArray, th
         
         
 
-add(label)
-this.updateUI()
+this.jScrollPane2!.getViewport()!.add(label)
+this.this.updateUI()
 }
 
 
     updateOnPropertiesChange(){
 
-    
                         if(this.rowsJTextField!.getText()!.length() > 0 && this.columnsJTextField!.getText()!.length() > 0 && this.cellWidthJTextField!.getText()!.length() > 0 && this.cellHeightJTextField!.getText()!.length() > 0)
                         
                                     {
                                     this.imageUnifierProperties= ImageUnifierProperties()
-setRows(Integer(this.rowsJTextField!.getText()))
-setColumns(Integer(this.columnsJTextField!.getText()))
+imageUnifierProperties!.setRows(Integer(this.rowsJTextField!.getText()))
+imageUnifierProperties!.setColumns(Integer(this.columnsJTextField!.getText()))
 
     var imageUnifierCell: ImageUnifierCell = new ImageUnifierCell(Integer(this.cellWidthJTextField!.getText()), Integer(this.cellHeightJTextField!.getText()));
         
         
 
-setImageUnifierCell(imageUnifierCell)
+imageUnifierProperties!.setImageUnifierCell(imageUnifierCell)
 
     var cellRatio: number = (imageUnifierCell!.getWidth().toDouble() /imageUnifierCell!.getHeight());
         
@@ -383,7 +379,6 @@ setImageUnifierCell(imageUnifierCell)
         
 
 
-    
                         if(cellRatioString!.length > 4)
                         
                                     {
@@ -391,8 +386,8 @@ setImageUnifierCell(imageUnifierCell)
 
                                     }
                                 
-setText(cellRatioString)
-this.updateImage()
+this.cellRatioJTextField!.setText(cellRatioString)
+this.this.updateImage()
 
                                     }
                                 
@@ -429,10 +424,10 @@ jButton2= javax.swing.JButton()
 jButtonOrder= javax.swing.JButton()
 setMinimumSize(java.awt.Dimension(500, 375))
 setPreferredSize(java.awt.Dimension(0, 0))
-setMinimumSize(java.awt.Dimension(50, 0))
-setViewportView(imageJList)
-setText("Save")
-addActionListener(object: java.awt.event.ActionListener()
+imageJList!.setMinimumSize(java.awt.Dimension(50, 0))
+jScrollPane1!.setViewportView(imageJList)
+jButton1!.setText("Save")
+jButton1!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -442,8 +437,8 @@ jButton1ActionPerformed(evt)
 
                                 }
                             )
-setText("Up")
-addActionListener(object: java.awt.event.ActionListener()
+upJButton!.setText("Up")
+upJButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -453,8 +448,8 @@ upJButtonActionPerformed(evt)
 
                                 }
                             )
-setText("Down")
-addActionListener(object: java.awt.event.ActionListener()
+downJButton!.setText("Down")
+downJButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -464,8 +459,8 @@ downJButtonActionPerformed(evt)
 
                                 }
                             )
-setText("Fudge It!")
-addActionListener(object: java.awt.event.ActionListener()
+fudgeItJButton!.setText("Fudge It!")
+fudgeItJButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -475,9 +470,9 @@ fudgeItJButtonActionPerformed(evt)
 
                                 }
                             )
-setText("Columns:")
-setText(commonPhoneStrings!.TWO)
-addActionListener(object: java.awt.event.ActionListener()
+jLabel2!.setText("Columns:")
+columnsJTextField!.setText(commonPhoneStrings!.TWO)
+columnsJTextField!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -487,7 +482,7 @@ columnsJTextFieldActionPerformed(evt)
 
                                 }
                             )
-addPropertyChangeListener(object: java.beans.PropertyChangeListener()
+columnsJTextField!.addPropertyChangeListener(object: java.beans.PropertyChangeListener()
                                 {
                                 
     public propertyChange(evt: java.beans.PropertyChangeEvent){
@@ -497,7 +492,7 @@ columnsJTextFieldPropertyChange(evt)
 
                                 }
                             )
-addKeyListener(object: java.awt.event.KeyAdapter()
+columnsJTextField!.addKeyListener(object: java.awt.event.KeyAdapter()
                                 {
                                 
     public keyPressed(evt: java.awt.event.KeyEvent){
@@ -512,9 +507,9 @@ columnsJTextFieldKeyTyped(evt)
 
                                 }
                             )
-setText("Rows:")
-setText(commonPhoneStrings!.TWO)
-addActionListener(object: java.awt.event.ActionListener()
+jLabel1!.setText("Rows:")
+rowsJTextField!.setText(commonPhoneStrings!.TWO)
+rowsJTextField!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -524,9 +519,9 @@ rowsJTextFieldActionPerformed(evt)
 
                                 }
                             )
-setText("Cell Width:")
-setText("200")
-addActionListener(object: java.awt.event.ActionListener()
+jLabel3!.setText("Cell Width:")
+cellWidthJTextField!.setText("200")
+cellWidthJTextField!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -536,9 +531,9 @@ cellWidthJTextFieldActionPerformed(evt)
 
                                 }
                             )
-setText("Cell Height:")
-setText("150")
-addActionListener(object: java.awt.event.ActionListener()
+jLabel4!.setText("Cell Height:")
+cellHeightJTextField!.setText("150")
+cellHeightJTextField!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -548,12 +543,12 @@ cellHeightJTextFieldActionPerformed(evt)
 
                                 }
                             )
-setText("Cell Ratio:")
-setEditable(false)
-setText("Avg Image Ratio:")
-setEditable(false)
-setText(commonStrings!.UPDATE)
-addActionListener(object: java.awt.event.ActionListener()
+jLabel5!.setText("Cell Ratio:")
+cellRatioJTextField!.setEditable(false)
+jLabel6!.setText("Avg Image Ratio:")
+avgRatioJTextField!.setEditable(false)
+jButton2!.setText(commonStrings!.UPDATE)
+jButton2!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -563,8 +558,8 @@ jButton2ActionPerformed(evt)
 
                                 }
                             )
-setText("Order")
-addActionListener(object: java.awt.event.ActionListener()
+jButtonOrder!.setText("Order")
+jButtonOrder!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -579,23 +574,23 @@ jButtonOrderActionPerformed(evt)
         
         
 
-setLayout(jPanel1Layout)
-setHorizontalGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout!.createSequentialGroup()!.addContainerGap()!.addGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)!.addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addGroup(jPanel1Layout!.createSequentialGroup()!.addComponent(upJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)!.addComponent(downJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))!.addComponent(fudgeItJButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout!.createSequentialGroup()!.addComponent(jLabel3)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, javax.swing.GroupLayout.PREFERRED_SIZE))!.addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout!.createSequentialGroup()!.addComponent(jLabel4)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, javax.swing.GroupLayout.PREFERRED_SIZE))!.addComponent(avgRatioJTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addComponent(cellRatioJTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addComponent(cellHeightJTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addComponent(cellWidthJTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addComponent(jButton2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout!.createSequentialGroup()!.addGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(jLabel2)!.addComponent(jLabel1))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(rowsJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)!.addGroup(jPanel1Layout!.createSequentialGroup()!.addComponent(columnsJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE)!.addGap(1, 1, 1))))!.addComponent(jButtonOrder, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE))!.addContainerGap()))
-setVerticalGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(jPanel1Layout!.createSequentialGroup()!.addContainerGap()!.addComponent(jButton1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(upJButton)!.addComponent(downJButton))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jButtonOrder)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(fudgeItJButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel2)!.addComponent(columnsJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel1)!.addComponent(rowsJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jLabel3)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(cellWidthJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jLabel4)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(cellHeightJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jButton2)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jLabel5)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addComponent(cellRatioJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addGap(7, 7, 7)!.addComponent(jLabel6)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(avgRatioJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addGap(66, 66, 66)))
+jPanel1!.setLayout(jPanel1Layout)
+jPanel1Layout!.setHorizontalGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout!.createSequentialGroup()!.addContainerGap()!.addGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)!.addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addGroup(jPanel1Layout!.createSequentialGroup()!.addComponent(upJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)!.addComponent(downJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))!.addComponent(fudgeItJButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout!.createSequentialGroup()!.addComponent(jLabel3)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, javax.swing.GroupLayout.PREFERRED_SIZE))!.addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout!.createSequentialGroup()!.addComponent(jLabel4)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, javax.swing.GroupLayout.PREFERRED_SIZE))!.addComponent(avgRatioJTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addComponent(cellRatioJTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addComponent(cellHeightJTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addComponent(cellWidthJTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addComponent(jButton2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout!.createSequentialGroup()!.addGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(jLabel2)!.addComponent(jLabel1))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(rowsJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)!.addGroup(jPanel1Layout!.createSequentialGroup()!.addComponent(columnsJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE)!.addGap(1, 1, 1))))!.addComponent(jButtonOrder, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE))!.addContainerGap()))
+jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(jPanel1Layout!.createSequentialGroup()!.addContainerGap()!.addComponent(jButton1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(upJButton)!.addComponent(downJButton))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jButtonOrder)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(fudgeItJButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel2)!.addComponent(columnsJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel1)!.addComponent(rowsJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jLabel3)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(cellWidthJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jLabel4)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(cellHeightJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jButton2)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jLabel5)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addComponent(cellRatioJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addGap(7, 7, 7)!.addComponent(jLabel6)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(avgRatioJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addGap(66, 66, 66)))
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
         
         
 
-this.setLayout(layout)
-setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 527, Short.MAX_VALUE)))
-setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)!.addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, 0, 445, Short.MAX_VALUE)!.addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 445, Short.MAX_VALUE)!.addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 445, Short.MAX_VALUE))!.addContainerGap()))
+this.this.setLayout(layout)
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 527, Short.MAX_VALUE)))
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)!.addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, 0, 445, Short.MAX_VALUE)!.addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 445, Short.MAX_VALUE)!.addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 445, Short.MAX_VALUE))!.addContainerGap()))
 }
 
 
     jButton2ActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.updateOnPropertiesChange()
+this.this.updateOnPropertiesChange()
 }
 
 
@@ -616,31 +611,31 @@ var evt = evt
 
     fudgeItJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.updateImageWithFudgedImages()
+this.this.updateImageWithFudgedImages()
 }
 
 
     cellHeightJTextFieldActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.updateOnPropertiesChange()
+this.this.updateOnPropertiesChange()
 }
 
 
     cellWidthJTextFieldActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.updateOnPropertiesChange()
+this.this.updateOnPropertiesChange()
 }
 
 
     columnsJTextFieldActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.updateOnPropertiesChange()
+this.this.updateOnPropertiesChange()
 }
 
 
     rowsJTextFieldActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.updateOnPropertiesChange()
+this.this.updateOnPropertiesChange()
 }
 
 
@@ -670,16 +665,16 @@ var evt = evt
 
 filePath= StringMaker().
                             append(filePath!.substring(0, extensionIndex))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.appendint(this.imageUnifierProperties!.getColumns())!.append("_By_")!.appendint(this.imageUnifierProperties!.getRows())!.append("_Unified")!.append(imageStrings!.PNG_EXTENSION)!.toString()
-put("New File Path: " +filePath, this, StringUtil.getInstance()!.EMPTY_STRING)
+logUtil!.put("New File Path: " +filePath, this, StringUtil.getInstance()!.EMPTY_STRING)
 
     var outputFile: File = new File(filePath);
         
         
 
-saveWithBatik(FileWrapperUtil.wrapFile(outputFile), this.result)
+ImagePersistanceUtil.getInstance()!.saveWithBatik(FileWrapperUtil.wrapFile(outputFile), this.result)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "jButton1ActionPerformed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "jButton1ActionPerformed", e)
 }
 
 }
@@ -698,7 +693,6 @@ var evt = evt
         
 
 
-    
                         if(index >= 0 && index +1 < defaultListModel!.size())
                         
                                     {
@@ -707,9 +701,9 @@ var evt = evt
         
         
 
-insertElementAt(indexedImageIcon, index +1)
-setSelectedIndex(index +1)
-this.updateImage()
+defaultListModel!.insertElementAt(indexedImageIcon, index +1)
+this.imageJList!.setSelectedIndex(index +1)
+this.this.updateImage()
 
                                     }
                                 
@@ -724,7 +718,6 @@ var evt = evt
         
 
 
-    
                         if(index > 0)
                         
                                     {
@@ -738,9 +731,9 @@ var evt = evt
         
         
 
-insertElementAt(indexedImageIcon, index -1)
-setSelectedIndex(index -1)
-this.updateImage()
+defaultListModel!.insertElementAt(indexedImageIcon, index -1)
+this.imageJList!.setSelectedIndex(index -1)
+this.this.updateImage()
 
                                     }
                                 
@@ -779,16 +772,15 @@ index >= 0; index--)
         
         
 
-insertElementAt(indexedImageIcon, last -index)
+defaultListModel!.insertElementAt(indexedImageIcon, last -index)
 }
 
 
-    
                         if(size > 0)
                         
                                     {
-                                    setSelectedIndex(0)
-this.updateImage()
+                                    this.imageJList!.setSelectedIndex(0)
+this.this.updateImage()
 
                                     }
                                 
@@ -852,7 +844,7 @@ this.updateImage()
     public setImageProcessorInput(imageProcessorInput: ImageProcessorInput){
 var imageProcessorInput = imageProcessorInput
 this.imageProcessorInput= imageProcessorInput
-this.init()
+this.this.init()
 }
 
 

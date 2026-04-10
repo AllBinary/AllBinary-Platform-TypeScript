@@ -37,7 +37,7 @@ interface TransformInterface extends DomDocumentMappingInterface, CompositeTrans
 
     public getTransformDocumentInterface(): TransformDocumentInterface
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string
 

@@ -61,7 +61,6 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
 this.streetAddressList= billingAddressesEntity!.get()
 
-    
                         if(this.streetAddressList == 
                                     null
                                 )
@@ -97,18 +96,16 @@ index < size; index++)
         
 
 
-    
                         if(streetAddress!.isValid() == Boolean.FALSE)
                         
                                     {
-                                    remove(streetAddress)
+                                    streetAddressList!.remove(streetAddress)
 
                                     }
                                 
 }
 
 
-    
                         if(this.streetAddressList!.size() < 1)
                         
                                     {

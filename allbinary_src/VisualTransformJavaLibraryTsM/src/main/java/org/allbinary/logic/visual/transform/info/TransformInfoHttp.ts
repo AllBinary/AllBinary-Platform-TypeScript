@@ -84,15 +84,14 @@ var crud = crud
                     
 this.abContext= AbContext(propertiesHashMap, pageContext)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Properties HashMap: " +propertiesHashMap!.toString(), this, "Constructor(HashMap, PageContext, boolean)")
+                                    logUtil!.put("Properties HashMap: " +propertiesHashMap!.toString(), this, "Constructor(HashMap, PageContext, boolean)")
 
                                     }
                                 
-this.override(propertiesHashMap)
+this.this.override(propertiesHashMap)
 }
 
 public constructor (request: HttpServletRequest, propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext)                        
@@ -109,17 +108,16 @@ var pageContext = pageContext
                     
 this.abContext= AbContext(propertiesHashMap, pageContext)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Properties HashMap: " +propertiesHashMap!.toString(), this, "Constructor(HttpServletRequest, HashMap, PageContext)")
+                                    logUtil!.put("Properties HashMap: " +propertiesHashMap!.toString(), this, "Constructor(HttpServletRequest, HashMap, PageContext)")
 
                                     }
                                 
-this.set(RequestParams(request as HttpServletRequest).
+this.this.set(RequestParams(request as HttpServletRequest).
                             toHashMap())
-this.override(propertiesHashMap)
+this.this.override(propertiesHashMap)
 }
 
 public constructor (databaseHashMap: HashMap<Any, Any>, propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext)                        
@@ -136,15 +134,14 @@ var pageContext = pageContext
                     
 this.abContext= AbContext(propertiesHashMap, pageContext)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Properties HashMap: " +propertiesHashMap!.toString(), this, "Constructor(HashMap, HashMap, PageContext)")
+                                    logUtil!.put("Properties HashMap: " +propertiesHashMap!.toString(), this, "Constructor(HashMap, HashMap, PageContext)")
 
                                     }
                                 
-this.set(databaseHashMap)
+this.this.set(databaseHashMap)
 }
 
 public constructor (propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext)                        
@@ -160,15 +157,14 @@ var pageContext = pageContext
                     
 this.abContext= AbContext(propertiesHashMap, pageContext)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Properties HashMap: " +propertiesHashMap!.toString(), this, "Constructor(HashMap, PageContext)")
+                                    logUtil!.put("Properties HashMap: " +propertiesHashMap!.toString(), this, "Constructor(HashMap, PageContext)")
 
                                     }
                                 
-this.set(propertiesHashMap)
+this.this.set(propertiesHashMap)
 }
 
 public constructor (parentViewOfThisTransformInfoInterface: TransformInfoHttp)                        
@@ -185,16 +181,15 @@ this.abContext= AbContext(parentViewOfThisTransformInfoInterface!.getPropertiesH
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     set(hashMap: HashMap<Any, Any>){
 var hashMap = hashMap
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Properties HashMap: " +hashMap!.toString(), this, "set()")
+                                    logUtil!.put("Properties HashMap: " +hashMap!.toString(), this, "set()")
 
                                     }
                                 
@@ -203,10 +198,10 @@ var hashMap = hashMap
         
         
 
-this.setName(hashMap!.get(transformInfoData!.NAME) as String)
-this.setStoreName(hashMap!.get(StoreFrontData.getInstance()!.NAME) as String)
-this.setObjectFile(hashMap!.get(transformInfoData!.OBJECTFILENAME) as String)
-this.setObject(hashMap!.get(transformInfoData!.OBJECT) as String)
+this.this.setName(hashMap!.get(transformInfoData!.NAME) as String)
+this.this.setStoreName(hashMap!.get(StoreFrontData.getInstance()!.NAME) as String)
+this.this.setObjectFile(hashMap!.get(transformInfoData!.OBJECTFILENAME) as String)
+this.this.setObject(hashMap!.get(transformInfoData!.OBJECT) as String)
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
@@ -218,39 +213,36 @@ this.setObject(hashMap!.get(transformInfoData!.OBJECT) as String)
         
 
 
-    
                         if(stringValidationUtil!.isValidRequired(objectConfigString, 10, AbSqlData.MAXBLOB))
                         
                                     {
-                                    this.setObjectConfig(objectConfigString)
+                                    this.this.setObjectConfig(objectConfigString)
 
                                     }
                                 
                         else {
-                            this.setObjectConfig(TransformInfoObjectConfig(this).
+                            this.this.setObjectConfig(TransformInfoObjectConfig(this).
                             toString())
 
                         }
                             
 
-    
                         if(!stringValidationUtil!.isEmpty(hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as String))
                         
                                     {
-                                    this.setObjectConfigFile(hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as String)
+                                    this.this.setObjectConfigFile(hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as String)
 
                                     }
                                 
-this.setTemplateFile(hashMap!.get(transformInfoData!.TEMPLATEFILENAME) as String)
-this.setTemplate(hashMap!.get(transformInfoData!.TEMPLATE) as String)
-this.setDataFile(hashMap!.get(transformInfoData!.DATAFILENAME) as String)
-this.setData(hashMap!.get(transformInfoData!.DATA) as String)
+this.this.setTemplateFile(hashMap!.get(transformInfoData!.TEMPLATEFILENAME) as String)
+this.this.setTemplate(hashMap!.get(transformInfoData!.TEMPLATE) as String)
+this.this.setDataFile(hashMap!.get(transformInfoData!.DATAFILENAME) as String)
+this.this.setData(hashMap!.get(transformInfoData!.DATA) as String)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         
                                     {
-                                    put(this.log(), this, "set()")
+                                    logUtil!.put(this.log(), this, "set()")
 
                                     }
                                 
@@ -287,7 +279,7 @@ this.setData(hashMap!.get(transformInfoData!.DATA) as String)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getTemplateFilePath(): AbPath{
 
@@ -299,7 +291,7 @@ this.setData(hashMap!.get(transformInfoData!.DATA) as String)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getObjectConfigFilePath(): AbPath{
 
@@ -311,7 +303,7 @@ this.setData(hashMap!.get(transformInfoData!.DATA) as String)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDataFilePath(): AbPath{
 

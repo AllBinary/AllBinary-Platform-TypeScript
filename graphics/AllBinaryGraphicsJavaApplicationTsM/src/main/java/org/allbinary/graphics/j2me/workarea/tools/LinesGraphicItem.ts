@@ -163,7 +163,7 @@ public constructor (){
 this.active= true
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 }
@@ -210,9 +210,8 @@ index < numberOfLines; index++)
         
         
 
-this.addPoint(pointOneNode!.getChildNodes())
+this.this.addPoint(pointOneNode!.getChildNodes())
 
-    
                         if(index == numberOfLines -1)
                         
                                     {
@@ -221,52 +220,51 @@ this.addPoint(pointOneNode!.getChildNodes())
         
         
 
-this.addPoint(pointTwoNode!.getChildNodes())
+this.this.addPoint(pointTwoNode!.getChildNodes())
 
                                     }
                                 
 }
 
 
-    
                         if(numberOfLines == 0)
                         
                                     {
                                     
 
 
-                            throw Exception("Lines node does not contain a line")
+                            throw Error("Lines node does not contain a line")
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(){
 this.treeNode= DefaultMutableTreeNode(PointsDomUtil.getInstance()!.LINES +item)
 item++
-init()
+this.points.init()
 this.pointTreeNodeVector= Vector()
 this.fulcrumPoint= PointFactory.getInstance()!.getInstance(0, 0)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public translate(x: number, y: number){
 var x = x
 var y = y
-setStatus("Translating: " +this.points.getPoints())
+StatusFactory.getInstance()!.setStatus("Translating: " +this.points.getPoints())
 
     var basicGraphicsPipeline: BasicGraphicsPipeline = new BasicGraphicsPipeline(this.points.getPoints());
         
         
 
-translate(x, y)
+basicGraphicsPipeline!.translate(x, y)
 this.points= Points()
-addPoints(basicGraphicsPipeline!.getMatrix())
+this.points.addPoints(basicGraphicsPipeline!.getMatrix())
 }
 
 
@@ -290,19 +288,19 @@ this.theta= theta
 
     public addRotate(theta: number){
 var theta = theta
-this.setRotate(this.theta +theta)
+this.this.setRotate(this.theta +theta)
 }
 
 
     public setAngle(angle: number){
 var angle = angle
-this.setRotate(Math.toRadians(angle))
+this.this.setRotate(Math.toRadians(angle))
 }
 
 
     public addAngle(angle: number){
 var angle = angle
-this.setRotate(this.theta +Math.toRadians(angle))
+this.this.setRotate(this.theta +Math.toRadians(angle))
 }
 
 
@@ -326,7 +324,7 @@ this.setRotate(this.theta +Math.toRadians(angle))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     addPoint(pointNodes: NodeList){
@@ -371,17 +369,17 @@ var pointNodes = pointNodes
         
         
 
-this.addPoint(point)
+this.this.addPoint(point)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addPoint(point: GPoint){
 var point = point
-add(point)
-put(point.toString(), this, "addPoint")
-add(DefaultMutableTreeNode(point.toString()))
-add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1) as DefaultMutableTreeNode)
+this.points.getPoints()!.add(point)
+logUtil!.put(point.toString(), this, "addPoint")
+this.pointTreeNodeVector!.add(DefaultMutableTreeNode(point.toString()))
+this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1) as DefaultMutableTreeNode)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -395,7 +393,6 @@ add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1) as Defaul
         
 
 
-    
                         if(this.points.getSize() > 0)
                         
                                     {
@@ -411,12 +408,11 @@ point= this.points.getPoints()!.remove(lastPoint) as GPoint
         
 
 
-    
                         if(index > 0)
                         
                                     {
-                                    remove(this.pointTreeNodeVector!.get(index) as DefaultMutableTreeNode)
-remove(index)
+                                    this.treeNode!.remove(this.pointTreeNodeVector!.get(index) as DefaultMutableTreeNode)
+this.pointTreeNodeVector!.remove(index)
 
                                     }
                                 
@@ -452,7 +448,7 @@ this.active= true
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public duplicatePoints(list: BasicArrayList){
 var list = list
@@ -477,15 +473,14 @@ index < size; index++)
         
 
 
-    
                         if(point != 
                                     null
                                 )
                         
                                     {
-                                    add(PointFactory.getInstance()!.getInstance(point.getX(), point.getY()))
-add(DefaultMutableTreeNode(point.toString()))
-add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1) as DefaultMutableTreeNode)
+                                    this.points.getPoints()!.add(PointFactory.getInstance()!.getInstance(point.getX(), point.getY()))
+this.pointTreeNodeVector!.add(DefaultMutableTreeNode(point.toString()))
+this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1) as DefaultMutableTreeNode)
 
                                     }
                                 
@@ -494,7 +489,7 @@ add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1) as Defaul
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public duplicate(): GraphicItemInterface{
 
@@ -502,8 +497,8 @@ add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1) as Defaul
         
         
 
-duplicatePoints(this.points.getPoints())
-deactivate()
+linesGraphicItem!.duplicatePoints(this.points.getPoints())
+linesGraphicItem!.deactivate()
 
 
 
@@ -542,16 +537,15 @@ var y = y
         
         
 
-setColor(getColor())
-setStroke(BasicStroke(x))
+graphics.setColor(getColor())
+graphics.setStroke(BasicStroke(x))
 
-    
                         if(this.isActive() && this.currentMousePoint != 
                                     null
                                 )
                         
                                     {
-                                    add(this.currentMousePoint)
+                                    this.points.getPoints()!.add(this.currentMousePoint)
 
                                     }
                                 
@@ -561,7 +555,6 @@ setStroke(BasicStroke(x))
         
 
 
-    
                         if(this.isActive() && this.currentMousePoint != 
                                     null
                                 )
@@ -584,7 +577,6 @@ setStroke(BasicStroke(x))
         
 
 
-    
                         if(size > 0)
                         
                                     {
@@ -607,19 +599,19 @@ index < size; index++)
         
         
 
-drawLine((firstPoint!.getX() *x) -(x /4), (firstPoint!.getY() *y) -(y /4), (secondPoint!.getX() *x) -(x /4), (secondPoint!.getY() *y) -(y /4))
+graphics.drawLine((firstPoint!.getX() *x) -(x /4), (firstPoint!.getY() *y) -(y /4), (secondPoint!.getX() *x) -(x /4), (secondPoint!.getY() *y) -(y /4))
 firstPoint= secondPoint
 }
 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "mouseMoved", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "mouseMoved", e)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toDom(canvasDom: CanvasDom): Node{
 var canvasDom = canvasDom
@@ -686,7 +678,6 @@ var y = y
         
 
 
-    
                         if((mouseEvent!.getModifiers() and mouseEvent!.BUTTON1_MASK) == mouseEvent!.BUTTON1_MASK)
                         
                                     {
@@ -695,25 +686,24 @@ var y = y
         
         
 
-setStatus("Line Point Added: " +point.toString())
-this.addPoint(point)
+StatusFactory.getInstance()!.setStatus("Line Point Added: " +point.toString())
+this.this.addPoint(point)
 
                                     }
                                 
                              else 
-    
                         if((mouseEvent!.getModifiers() and mouseEvent!.BUTTON3_MASK) == mouseEvent!.BUTTON3_MASK)
                         
                                     {
-                                    setStatus("Line Point Removed")
-this.removePoint()
+                                    StatusFactory.getInstance()!.setStatus("Line Point Removed")
+this.this.removePoint()
 
                                     }
                                 
 this.currentMousePoint= mousePoint
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "mouseMoved", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "mouseMoved", e)
 }
 
 }
@@ -769,7 +759,7 @@ var y = y
 this.currentMousePoint= point
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "mouseMoved", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "mouseMoved", e)
 }
 
 }
@@ -785,54 +775,49 @@ var keyEvent = keyEvent
         
 
 
-    
                         if(keyCode == keyEvent!.VK_ESCAPE)
                         
                                     {
-                                    setStatus("Deactivated")
-this.deactivate()
+                                    StatusFactory.getInstance()!.setStatus("Deactivated")
+this.this.deactivate()
 
                                     }
                                 
                              else 
-    
                         if(keyCode == keyEvent!.VK_UP)
                         
                                     {
-                                    this.translate(0,  -1)
+                                    this.this.translate(0,  -1)
 
                                     }
                                 
                              else 
-    
                         if(keyCode == keyEvent!.VK_DOWN)
                         
                                     {
-                                    this.translate(0, 1)
+                                    this.this.translate(0, 1)
 
                                     }
                                 
                              else 
-    
                         if(keyCode == keyEvent!.VK_LEFT)
                         
                                     {
-                                    this.translate( -1, 0)
+                                    this.this.translate( -1, 0)
 
                                     }
                                 
                              else 
-    
                         if(keyCode == keyEvent!.VK_RIGHT)
                         
                                     {
-                                    this.translate(1, 0)
+                                    this.this.translate(1, 0)
 
                                     }
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED, e)
 }
 
 }

@@ -120,7 +120,6 @@ private constructor ()
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(AvianUtil.isAvian())
                         
                                     {
@@ -156,7 +155,6 @@ this.widthScale= (this.scale == 2)
 
         try {
             
-    
                         if(this.fontImage == OpenGLESImage.NULL_OPENGL_IMAGE)
                         
                                     {
@@ -171,7 +169,6 @@ this.widthScale= (this.scale == 2)
         
 
 
-    
                         if(openGLCapabilities!.isTextureSizeValid(1024) && this.scale == 2)
                         
                                     {
@@ -185,13 +182,12 @@ this.widthScale= (this.scale == 2)
         
         
 
-setName(canvasStrings!.FONT_ATLAS)
+image.setName(canvasStrings!.FONT_ATLAS)
 this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage
 
                                     }
                                 
                              else 
-    
                         if(openGLCapabilities!.isTextureSizeValid(512))
                         
                                     {
@@ -205,7 +201,7 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage
         
         
 
-setName(canvasStrings!.FONT_ATLAS)
+image.setName(canvasStrings!.FONT_ATLAS)
 this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage
 
                                     }
@@ -221,7 +217,7 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage
         
         
 
-setName(canvasStrings!.FONT_ATLAS)
+image.setName(canvasStrings!.FONT_ATLAS)
 this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage
 
                         }
@@ -252,7 +248,7 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e)
 
 
 
@@ -288,7 +284,7 @@ imageLoader!.data=
         
         
                                                 ]
-save(CommonSeps.getInstance()!.PERIOD +CanvasStrings.getInstance()!.FONT_ATLAS, SWT.IMAGE_PNG)
+imageLoader!.save(CommonSeps.getInstance()!.PERIOD +CanvasStrings.getInstance()!.FONT_ATLAS, SWT.IMAGE_PNG)
 }
 
 
@@ -336,7 +332,7 @@ save(CommonSeps.getInstance()!.PERIOD +CanvasStrings.getInstance()!.FONT_ATLAS, 
         
         
 
-setColor(basicColor!.toInt())
+graphics.setColor(basicColor!.toInt())
 
     var biggestHeight: number = 0;
         
@@ -366,7 +362,6 @@ index < size; index++)
 characterArray[0]= pattern[index]
 _characterWidth[index]= bounds.getMaxX()
 
-    
                         if(bounds.getMaxY() -bounds.getPoint()!.getX() > biggestHeight)
                         biggestHeight= bounds.getMaxY() -bounds.getPoint()!.getX()
 x= (index % CELLS_PER_ROW) *cellSize
@@ -374,36 +369,29 @@ x += (cellSize shr 1)
 x -= (_characterWidth[index] shr 1)
 y=  -(cellSize shr 1)
 
-    
                         if(index >= CELLS_PER_ROW)
                         y += cellSize
 
-    
                         if(index >= cellsPerRow2)
                         y += cellSize
 
-    
                         if(index >= cellsPerRow3)
                         y += cellSize
 
-    
                         if(index >= cellsPerRow4)
                         y += cellSize
 
-    
                         if(index >= cellsPerRow5)
                         y += cellSize
 
-    
                         if(index >= cellsPerRow6)
                         y += cellSize
 
-    
                         if(index >= cellsPerRow7)
                         y += cellSize
 y += cellSize
 y -= (cellSize shr 2)
-drawChar(characterArray[0]!, x, y, 0)
+graphics.drawChar(characterArray[0]!, x, y, 0)
 }
 
 
@@ -435,7 +423,6 @@ index < size; index++)
         {
 characterArray[0]= pattern[index]
 
-    
                         if(characterArray[0] == ' ')
                         
                                     {
@@ -456,27 +443,21 @@ characterArray[0]= pattern[index]
 
 _characterWidth[index]= w.toInt()
 
-    
                         if(characterArray[0] == '.' || characterArray[0] == '1')
                         _characterWidth[index] += 4
 
-    
                         if(characterArray[0] >= 'a' && characterArray[0] < 'k')
                         _characterWidth[index] -= 2
 
-    
                         if(characterArray[0] >= 'k' && characterArray[0] < 'v')
                         _characterWidth[index] -= 4
 
-    
                         if(characterArray[0] >= 'v' && characterArray[0] < 'z')
                         _characterWidth[index] -= 8
 
-    
                         if(characterArray[0] == 'D')
                         _characterWidth[index] -= 4
 
-    
                         if(characterArray[0] >= 'A' && characterArray[0] <= 'Z')
                         _characterWidth[index] -= 2
 

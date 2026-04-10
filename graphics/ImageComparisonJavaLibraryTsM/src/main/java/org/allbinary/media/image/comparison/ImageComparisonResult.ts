@@ -97,7 +97,7 @@ this.bufferedImages[0]= bufferedImage
 this.bufferedImages[1]= bufferedImage2
 this.frameOne= frameOne
 this.frameTwo= frameTwo
-this.setTolerance(0)
+this.this.setTolerance(0)
 
     var imageHeight: number = bufferedImage!.getHeight()!;
         
@@ -109,13 +109,11 @@ this.setTolerance(0)
         
 
 
-    
                         if(bufferedImage!.getHeight() != bufferedImage2!.getHeight())
                         
                                     {
                                     isSameHeight= false
 
-    
                         if(imageHeight > bufferedImage2!.getHeight())
                         
                                     {
@@ -132,13 +130,11 @@ this.setTolerance(0)
                         }
                             
 
-    
                         if(bufferedImage!.getWidth() != bufferedImage2!.getWidth())
                         
                                     {
                                     isSameWidth= false
 
-    
                         if(imageWidth > bufferedImage2!.getWidth())
                         
                                     {
@@ -157,7 +153,6 @@ this.setTolerance(0)
 this.imageWidth= imageWidth
 this.imageHeight= imageHeight
 
-    
                         if(!isSameWidth || !isSameHeight)
                         
                                     {
@@ -166,9 +161,9 @@ this.imageHeight= imageHeight
         
         
 
-put("Images were not the same size? Most likely a resolution change.", this, this.commonStrings!.CONSTRUCTOR)
-put("1: " +imageUtil!.toString(bufferedImage), this, this.commonStrings!.CONSTRUCTOR)
-put("2: " +imageUtil!.toString(bufferedImage2), this, this.commonStrings!.CONSTRUCTOR)
+logUtil!.put("Images were not the same size? Most likely a resolution change.", this, this.commonStrings!.CONSTRUCTOR)
+logUtil!.put("1: " +imageUtil!.toString(bufferedImage), this, this.commonStrings!.CONSTRUCTOR)
+logUtil!.put("2: " +imageUtil!.toString(bufferedImage2), this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -177,7 +172,6 @@ put("2: " +imageUtil!.toString(bufferedImage2), this, this.commonStrings!.CONSTR
 
     public getMatchingPercent(): number{
 
-    
                         if(this.matchingPercent ==  -1)
                         
                                     {
@@ -196,7 +190,7 @@ put("2: " +imageUtil!.toString(bufferedImage2), this, this.commonStrings!.CONSTR
 
     public add(pixel: PixelDelta){
 var pixel = pixel
-add(pixel)
+this.nonMatchingPixelVector!.add(pixel)
 }
 
 

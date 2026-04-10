@@ -82,12 +82,11 @@ this.visitor= visitor
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
-    
                         if(this.inputProbability!.getTimeDelayHelper()!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
                                     {
@@ -103,7 +102,6 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 
 
-    
                         if(this.getLastKey() !=  -1 && repeatLikelyhoodIntegerArray[this.getLastKey()]!.toInt() >= i_random)
                         
                                     {
@@ -112,7 +110,6 @@ var allBinaryLayerManager = allBinaryLayerManager
                                     }
                                 
 
-    
                         if(!repeat)
                         
                                     {
@@ -148,18 +145,16 @@ index < size; index++)
 
 likelyhoodIntegerKeyArray= likelyhoodIntegerArray[key]!
 
-    
                         if(likelyhoodIntegerArray!.length >= key && likelyhoodIntegerKeyArray[0] != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(i_random >= likelyhoodIntegerKeyArray[0]!.toInt() && i_random < likelyhoodIntegerKeyArray[1]!.toInt())
                         
                                     {
-                                    this.setLastKey(key)
+                                    this.this.setLastKey(key)
 break;
 
                     
@@ -174,7 +169,7 @@ break;
 
                                     }
                                 
-visit(this)
+this.visitor.visit(this)
 
                                     }
                                 

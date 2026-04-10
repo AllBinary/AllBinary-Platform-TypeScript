@@ -41,7 +41,7 @@ this.layerManager= layerManager
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -50,18 +50,18 @@ var index = index
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isProcessorLayer(layerInterface: AllBinaryLayer): boolean{
 var layerInterface = layerInterface
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -75,7 +75,7 @@ var layerInterface = layerInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -99,7 +99,7 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 index < size; index++)
         {
-this.process(allBinaryLayerManager, layerManager!.getLayerAt(index) as AllBinaryLayer, index)
+this.this.process(allBinaryLayerManager, layerManager!.getLayerAt(index) as AllBinaryLayer, index)
 }
 
 }

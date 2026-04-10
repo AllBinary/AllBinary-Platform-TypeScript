@@ -246,16 +246,15 @@ this.foregroundBasicColor= foregroundBasicColor
 this.backgroundBasicColor= backgroundBasicColor
 this.foregroundColor= foregroundBasicColor!.toInt()
 this.backgroundColor= backgroundBasicColor!.toInt()
-this.initCommands(cmdListener)
+this.this.initCommands(cmdListener)
 
-    
                         if(cmdListener != NullCommandListener.NULL_COMMAND_LISTENER)
                         
                                     {
                                     
         try {
-            this.initMenu()
-process()
+            this.this.initMenu()
+repaintProcessor!.process()
 } catch(e: Exception)
             {
 
@@ -272,7 +271,7 @@ process()
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
@@ -280,17 +279,17 @@ log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
     //var displayChangeEvent = displayChangeEvent
 
         try {
-            put(commonStrings!.START, this, canvasStrings!.ON_DISPLAY_CHANGE_EVENT)
+            logUtil!.put(commonStrings!.START, this, canvasStrings!.ON_DISPLAY_CHANGE_EVENT)
 
     var rectangle: Rectangle = this.createRectangle(this.menuForm!.size())!;
         
         
 
-init(rectangle, FormTypeFactory.getInstance()!.VERTICAL_CENTER_FORM)
-this.update()
+this.menuForm!.init(rectangle, FormTypeFactory.getInstance()!.VERTICAL_CENTER_FORM)
+this.this.update()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "onResize", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "onResize", e)
 }
 
 }
@@ -298,13 +297,13 @@ put(commonStrings!.EXCEPTION, this, "onResize", e)
 
     public initCommands(cmdListener: CommandListener){
     //var cmdListener = cmdListener
-this.removeAllCommands()
-this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.setCommandListener(cmdListener)
+this.this.removeAllCommands()
+this.this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS)
+this.this.setCommandListener(cmdListener)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     initMenu(){
 
@@ -314,20 +313,19 @@ this.setCommandListener(cmdListener)
 
 this.menuForm= form
 
-    
                         if(form != ScrollSelectionFormNoneFactory.getInstance())
                         
                                     {
-                                    this.setMenuInputProcessor(ImmediateCommandFormInputProcessor(BasicArrayList(),  -1, this, form))
+                                    this.this.setMenuInputProcessor(ImmediateCommandFormInputProcessor(BasicArrayList(),  -1, this, form))
 this.menuPaintable= FormPaintable(form)
 
                                     }
                                 
-onChangeRepaint(this)
+this.repaintBehavior!.onChangeRepaint(this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createForm(): ScrollSelectionForm{
 
@@ -382,25 +380,25 @@ onChangeRepaint(this)
 
 
     public open(){
-put(commonStrings!.START, this, "open")
-addListener(this.getMenuInputProcessor())
-addListener(this.getMenuInputProcessor())
-addListener(this)
+logUtil!.put(commonStrings!.START, this, "open")
+BasicMotionGesturesHandler.getInstance()!.addListener(this.getMenuInputProcessor())
+GameKeyEventHandler.getInstance()!.addListener(this.getMenuInputProcessor())
+DisplayChangeEventHandler.getInstance()!.addListener(this)
 }
 
 
     public close(){
-put(commonStrings!.START, this, commonStrings!.CLOSE)
-removeListener(this.getMenuInputProcessor())
-removeListener(this.getMenuInputProcessor())
-removeListener(this)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CLOSE)
+BasicMotionGesturesHandler.getInstance()!.removeListener(this.getMenuInputProcessor())
+GameKeyEventHandler.getInstance()!.removeListener(this.getMenuInputProcessor())
+DisplayChangeEventHandler.getInstance()!.removeListener(this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(){
-process()
+this.repaintProcessor!.process()
 }
 
 
@@ -416,35 +414,35 @@ process()
 
     public keyPressed(keyCode: number){
     //var keyCode = keyCode
-this.keyPressed(keyCode, 0)
+this.this.keyPressed(keyCode, 0)
 }
 
 
     public keyReleased(keyCode: number){
     //var keyCode = keyCode
-this.keyReleased(keyCode, 0)
+this.this.keyReleased(keyCode, 0)
 }
 
 
     public keyRepeated(keyCode: number){
     //var keyCode = keyCode
-this.keyRepeated(keyCode, 0)
+this.this.keyRepeated(keyCode, 0)
 }
 
 
     public keyPressed(keyCode: number, deviceId: number){
     //var keyCode = keyCode
     //var deviceId = deviceId
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, gameInputStrings!.KEY_PRESSED)
-this.addGameKeyEvent(keyCode, 0, false)
+this.this.addGameKeyEvent(keyCode, 0, false)
 }
 
 
     public keyReleased(keyCode: number, deviceId: number){
     //var keyCode = keyCode
     //var deviceId = deviceId
-this.removeGameKeyEvent(keyCode, deviceId, false)
+this.this.removeGameKeyEvent(keyCode, deviceId, false)
 }
 
 
@@ -452,11 +450,10 @@ this.removeGameKeyEvent(keyCode, deviceId, false)
     //var keyCode = keyCode
     //var deviceId = deviceId
 
-    
                         if(this.isSingleKeyRepeatableProcessing)
                         
                                     {
-                                    this.addGameKeyEvent(keyCode, deviceId, true)
+                                    this.this.addGameKeyEvent(keyCode, deviceId, true)
 
                                     }
                                 
@@ -475,7 +472,6 @@ this.removeGameKeyEvent(keyCode, deviceId, false)
         
 
 
-    
                         if(gameKey != this.gameKeyFactory!.NONE)
                         
                                     {
@@ -484,20 +480,20 @@ this.removeGameKeyEvent(keyCode, deviceId, false)
         
         
 
-fireEvent(gameKeyEvent)
-fireEvent(gameKeyEvent)
+downGameKeyEventHandler!.fireEvent(gameKeyEvent)
+downGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent)
 
                                     }
                                 
                         else {
-                            put(StringMaker().
+                            logUtil!.put(StringMaker().
                             append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT)
 
                         }
                             
 } catch(e: Exception)
             {
-put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
+logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
 }
 
 }
@@ -515,7 +511,6 @@ put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
         
 
 
-    
                         if(gameKey != this.gameKeyFactory!.NONE)
                         
                                     {
@@ -524,20 +519,20 @@ put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
         
         
 
-fireEvent(gameKeyEvent)
-fireEvent(gameKeyEvent)
+upGameKeyEventHandler!.fireEvent(gameKeyEvent)
+upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent)
 
                                     }
                                 
                         else {
-                            put(StringMaker().
+                            logUtil!.put(StringMaker().
                             append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.REMOVE_KEY_EVENT)
 
                         }
                             
 } catch(e: Exception)
             {
-put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e)
+logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e)
 }
 
 }
@@ -545,8 +540,8 @@ put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e)
 
     public paint(graphics: Graphics){
     //var graphics = graphics
-paint(graphics)
-repaint(this)
+this.menuPaintable!.paint(graphics)
+this.repaintBehavior!.repaint(this)
 }
 
 

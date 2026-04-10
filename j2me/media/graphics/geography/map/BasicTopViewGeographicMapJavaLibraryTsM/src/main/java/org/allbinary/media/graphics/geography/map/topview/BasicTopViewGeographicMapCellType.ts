@@ -61,7 +61,6 @@ public constructor (name: string, type: number, cost: number){
     //var type = type
     //var cost = cost
 
-    
                         if(GeographicMapCellTypeFactory.getInstance()!.getGeographicMapCellTypeArray()[type] == 
                                     null
                                 )
@@ -108,7 +107,6 @@ index < size; index++)
         {
 type= types[index]!
 
-    
                         if(GeographicMapCellTypeFactory.getInstance()!.getGeographicMapCellTypeArray()[type] == 
                                     null
                                 )
@@ -164,7 +162,6 @@ index < size; index++)
 typeAsInteger= (types.get(index) as Integer)
 type= typeAsInteger!.toInt()
 
-    
                         if(GeographicMapCellTypeFactory.getInstance()!.getGeographicMapCellTypeArray()[type] == 
                                     null
                                 )
@@ -217,7 +214,6 @@ this.types= typeArray
 index < size; index++)
         {
 
-    
                         if(types[index] == type)
                         
                                     {
@@ -273,7 +269,7 @@ index < size; index++)
         
 index < size; index++)
         {
-append(CommonSeps.getInstance()!.COMMA)
+stringMaker!.appendint(types[index]!)!.append(CommonSeps.getInstance()!.COMMA)
 }
 
 

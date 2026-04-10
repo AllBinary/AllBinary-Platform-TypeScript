@@ -56,7 +56,7 @@ var progressCanvas = progressCanvas
         
         
 
-onSetProgress((this.progressCanvas!.getValue() +this.progressCanvas!.getMaxValue() /progressCanvas!.getPortion()).toInt(), this.progressCanvas!.getText())
+this.midletActivity!.onSetProgress((this.progressCanvas!.getValue() +this.progressCanvas!.getMaxValue() /progressCanvas!.getPortion()).toInt(), this.progressCanvas!.getText())
 } catch(e: Exception)
             {
 
@@ -64,7 +64,7 @@ onSetProgress((this.progressCanvas!.getValue() +this.progressCanvas!.getMaxValue
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }

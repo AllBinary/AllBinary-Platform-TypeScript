@@ -59,10 +59,10 @@ public constructor (){
         
 
 inputAutomationModuleInterfaceArray[0]= GenericModuleFactory()
-this.setInputAutomationModuleInterfaceArray(inputAutomationModuleInterfaceArray)
+this.this.setInputAutomationModuleInterfaceArray(inputAutomationModuleInterfaceArray)
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e)
 }
 
 }

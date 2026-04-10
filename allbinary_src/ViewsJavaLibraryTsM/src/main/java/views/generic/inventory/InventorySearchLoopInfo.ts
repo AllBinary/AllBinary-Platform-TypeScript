@@ -61,12 +61,12 @@ export class InventorySearchLoopInfo
         
         
 
-append(CURRENT)
-appendint(currentPage)
-append(NUM)
-appendint(numberOfResults)
-append(LAST)
-appendint(lastPage)
+stringBuffer!.append(CURRENT)
+stringBuffer!.appendint(currentPage)
+stringBuffer!.append(NUM)
+stringBuffer!.appendint(numberOfResults)
+stringBuffer!.append(LAST)
+stringBuffer!.appendint(lastPage)
 
 
 

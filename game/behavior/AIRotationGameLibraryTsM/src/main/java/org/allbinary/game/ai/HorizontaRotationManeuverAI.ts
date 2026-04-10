@@ -112,7 +112,7 @@ this.velocityInterface= baseVelocityInterface as VelocityInterface
         
         
 
-setFrame(angleIncrementInfo!.RIGHT_FRAME.toInt())
+rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT_FRAME.toInt())
 }
 
 
@@ -132,17 +132,17 @@ setFrame(angleIncrementInfo!.RIGHT_FRAME.toInt())
         
         
 
-setFrame(angleIncrementInfo!.RIGHT_FRAME.toInt())
+rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT_FRAME.toInt())
 
     var allbinaryLayer: AllBinaryLayer = this.getOwnerLayerInterface()!;
         
         
 
-setPosition(allbinaryLayer!.getXP(), 1, allbinaryLayer!.getZP())
+allbinaryLayer!.setPosition(allbinaryLayer!.getXP(), 1, allbinaryLayer!.getZP())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
@@ -167,12 +167,11 @@ setPosition(allbinaryLayer!.getXP(), 1, allbinaryLayer!.getZP())
         
 
 
-    
                         if(ownerLayerInterface!.getXP() -ownerLayerInterface!.getWidth() <= 0 && frame == angleIncrementInfo!.LEFT_FRAME.toInt())
                         
                                     {
-                                    this.reverse()
-this.drop()
+                                    this.this.reverse()
+this.this.drop()
 
                                     }
                                 
@@ -182,13 +181,12 @@ this.drop()
         
 
 
-    
                         if(ownerLayerInterface!.getX2() +ownerLayerInterface!.getWidth() > displayInfo!.getLastWidth() && frame == angleIncrementInfo!.RIGHT_FRAME.toInt())
                         
                                     {
-                                    this.reverse()
-this.accelerate()
-this.drop()
+                                    this.this.reverse()
+this.this.accelerate()
+this.this.drop()
 
                                     }
                                 
@@ -198,31 +196,28 @@ this.drop()
         
 
 
-    
                         if(index % this.currentSpeedDivisor == 0 && index % 2 == 0)
                         
                                     {
-                                    processAI(Canvas.UP)
-limitMaxXYVelocity(this.velocityInterface!.getMaxForwardVelocity() /this.currentSpeedDivisor)
+                                    super.processAI(Canvas.UP)
+velocityInterface!.limitMaxXYVelocity(this.velocityInterface!.getMaxForwardVelocity() /this.currentSpeedDivisor)
 
                                     }
                                 
-next()
+this.circularIndexUtil!.next()
 
-    
                         if(frame == angleIncrementInfo!.LEFT_FRAME.toInt())
                         
                                     {
-                                    processAI(Canvas.KEY_NUM0)
+                                    super.processAI(Canvas.KEY_NUM0)
 
                                     }
                                 
                              else 
-    
                         if(frame == angleIncrementInfo!.RIGHT_FRAME.toInt())
                         
                                     {
-                                    processAI(Canvas.KEY_POUND)
+                                    super.processAI(Canvas.KEY_POUND)
 
                                     }
                                 
@@ -246,7 +241,6 @@ next()
         
 
 
-    
                         if(frame == angleIncrementInfo!.LEFT_FRAME.toInt())
                         
                                     {
@@ -255,13 +249,12 @@ next()
         
         
 
-setFrame(angleIncrementInfo!.RIGHT_FRAME.toInt())
-zero()
+rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT_FRAME.toInt())
+this.baseVelocityInterface!.zero()
 
                                     }
                                 
                              else 
-    
                         if(frame == angleIncrementInfo!.RIGHT_FRAME.toInt())
                         
                                     {
@@ -270,8 +263,8 @@ zero()
         
         
 
-setFrame(angleIncrementInfo!.LEFT_FRAME.toInt())
-zero()
+rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.LEFT_FRAME.toInt())
+this.baseVelocityInterface!.zero()
 
                                     }
                                 
@@ -280,7 +273,6 @@ zero()
 
     accelerate(){
 
-    
                         if(currentSpeedDivisor > 1)
                         
                                     {
@@ -308,7 +300,6 @@ zero()
         
 
 
-    
                         if(ownerLayerInterface!.getY2() +ownerLayerInterface!.getHeight() > displayInfo!.getLastHeight())
                         
                                     {
@@ -321,7 +312,7 @@ zero()
 
                         }
                             
-setPosition(ownerLayerInterface!.getXP(), y, ownerLayerInterface!.getZP())
+ownerLayerInterface!.setPosition(ownerLayerInterface!.getXP(), y, ownerLayerInterface!.getZP())
 }
 
 

@@ -43,21 +43,21 @@ geographicMapCellPositionEvent= GeographicMapCellPositionEvent(anyType, CellPosi
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(geographicMapCellPositionTracking: GeographicMapCellPositionTracking){
 var geographicMapCellPositionTracking = geographicMapCellPositionTracking
-setGeographicMapCellPosition(geographicMapCellPositionTracking!.getCurrentGeographicMapCellPosition())
-fireEvent(geographicMapCellPositionEvent)
+geographicMapCellPositionEvent!.setGeographicMapCellPosition(geographicMapCellPositionTracking!.getCurrentGeographicMapCellPosition())
+geographicMapCellPositionEventHandler!.fireEvent(geographicMapCellPositionEvent)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public remove(geographicMapCellPositionTracking: GeographicMapCellPositionTracking){
 var geographicMapCellPositionTracking = geographicMapCellPositionTracking
-setGeographicMapCellPosition(geographicMapCellPositionTracking!.getCurrentGeographicMapCellPosition())
-fireRemoveEvent(geographicMapCellPositionEvent)
+geographicMapCellPositionEvent!.setGeographicMapCellPosition(geographicMapCellPositionTracking!.getCurrentGeographicMapCellPosition())
+geographicMapCellPositionEventHandler!.fireRemoveEvent(geographicMapCellPositionEvent)
 }
 
 

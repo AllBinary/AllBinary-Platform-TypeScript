@@ -25,11 +25,11 @@ import { EventListenerInterface } from "../../../../org/allbinary/logic/util/eve
 interface LayerManagerEventListenerInterface extends EventListenerInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     onCreateLayerManagerEvent(layerManagerEvent: LayerManagerEvent)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     onDeleteLayerManagerEvent(layerManagerEvent: LayerManagerEvent)
 

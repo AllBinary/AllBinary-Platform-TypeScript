@@ -36,7 +36,7 @@ export class MouseInputAutomationProcessor
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static process(mouseActionScriptInputInterface: MouseActionScriptInputInterface){
 var mouseActionScriptInputInterface = mouseActionScriptInputInterface
@@ -50,7 +50,7 @@ var mouseActionScriptInputInterface = mouseActionScriptInputInterface
         
         
 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Start - Processing Mouse Input at: ")!.append(mouseActionScriptInputInterface!.getPoint()!.toString())!.append(" clicks: ")!.appendint(mouseActionScriptInputInterface!.getButtonClicks())!.toString(), "MouseInputAutomationProcessor", commonStrings!.PROCESS)
 
     var inputRobotInterface: InputRobotInterface = mouseActionScriptInputInterface!.getInputRobotInterface()!;
@@ -58,27 +58,25 @@ put(StringMaker().
         
 
 
-    
                         if(mouseActionScriptInputInterface!.getPoint()!.x !=  -1 && mouseActionScriptInputInterface!.getPoint()!.y !=  -1)
                         
                                     {
-                                    mouseMove(mouseActionScriptInputInterface!.getPoint())
+                                    inputRobotInterface!.mouseMove(mouseActionScriptInputInterface!.getPoint())
 
                                     }
                                 
-sleep(mouseActionScriptInputInterface!.getTime())
+Thread.sleep(mouseActionScriptInputInterface!.getTime())
 
-    
                         if(mouseActionScriptInputInterface!.getButtonClicks() != 0)
                         
                                     {
-                                    mousePress(mouseActionScriptInputInterface!.getButtonClicks())
-sleep(mouseActionScriptInputInterface!.getTime())
-mouseRelease(mouseActionScriptInputInterface!.getButtonClicks())
+                                    inputRobotInterface!.mousePress(mouseActionScriptInputInterface!.getButtonClicks())
+Thread.sleep(mouseActionScriptInputInterface!.getTime())
+inputRobotInterface!.mouseRelease(mouseActionScriptInputInterface!.getButtonClicks())
 
                                     }
                                 
-sleep(mouseActionScriptInputInterface!.getTime())
+Thread.sleep(mouseActionScriptInputInterface!.getTime())
 }
 
 private constructor (){

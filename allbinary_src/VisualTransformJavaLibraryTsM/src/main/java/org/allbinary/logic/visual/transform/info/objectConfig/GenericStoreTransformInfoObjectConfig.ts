@@ -105,7 +105,7 @@ public constructor (abeClientInformation: Object, transformInfoInterface: Object
                             //For kotlin this is before the body of the constructor.
                     
 this.abeClientInformation= abeClientInformation
-this.setDocument(this.generate(this.toXmlDoc()))
+this.this.setDocument(this.generate(this.toXmlDoc()))
 }
 
 public constructor (abeClientInformation: Object, transformInfoInterface: Object, name: string, type: string)                        
@@ -122,16 +122,15 @@ public constructor (abeClientInformation: Object, transformInfoInterface: Object
                             //For kotlin this is before the body of the constructor.
                     
 this.abeClientInformation= abeClientInformation
-this.setDocument(this.generate(this.toXmlDoc()))
+this.this.setDocument(this.generate(this.toXmlDoc()))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     generate(objectConfigDocument: Document): Document{
     //var objectConfigDocument = objectConfigDocument
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -140,24 +139,23 @@ this.setDocument(this.generate(this.toXmlDoc()))
         
         
 
-append("TransformInfo: ")
+stringBuffer!.append("TransformInfo: ")
 
-    
                         if(this.getTransformInfoInterface() != 
                                     null
                                 )
                         
                                     {
-                                    append(this.getTransformInfoInterface()!.getName())
+                                    stringBuffer!.append(this.getTransformInfoInterface()!.getName())
 
                                     }
                                 
                         else {
-                            append("No Owner!?#@")
+                            stringBuffer!.append("No Owner!?#@")
 
                         }
                             
-put(stringBuffer!.toString(), this, "generate()")
+logUtil!.put(stringBuffer!.toString(), this, "generate()")
 
                                     }
                                 
@@ -185,7 +183,7 @@ put(stringBuffer!.toString(), this, "generate()")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createReplaceHashMap(transformInfoHttpStoreInterface: TransformInfoHttp, objectConfigDocumentString: string): HashMap<Any, Any>{
     //var transformInfoHttpStoreInterface = transformInfoHttpStoreInterface
@@ -205,13 +203,13 @@ put(stringBuffer!.toString(), this, "generate()")
         
         
 
-put(transformInfoObjectConfigData!.VARKEY +StoreFrontData.getInstance()!.NAME, storeName)
+hashMap!.put(transformInfoObjectConfigData!.VARKEY +StoreFrontData.getInstance()!.NAME, storeName)
 
     var pageName: string = TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(this.getTransformInfoInterface()!.getName(), storeName)!;
         
         
 
-put(transformInfoObjectConfigData!.VARKEY +TransformInfoData.getInstance()!.PARTIAL, pageName)
+hashMap!.put(transformInfoObjectConfigData!.VARKEY +TransformInfoData.getInstance()!.PARTIAL, pageName)
 
 
 
@@ -221,7 +219,7 @@ put(transformInfoObjectConfigData!.VARKEY +TransformInfoData.getInstance()!.PART
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createHashMap(transformInfoHttpStoreInterface: TransformInfoHttp, objectConfigDocumentString: string): HashMap<Any, Any>{
     //var transformInfoHttpStoreInterface = transformInfoHttpStoreInterface
@@ -247,11 +245,10 @@ put(transformInfoObjectConfigData!.VARKEY +TransformInfoData.getInstance()!.PART
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("TemplateNameOverride: " +templateNameOverride, this, "generate()")
+                                    logUtil!.put("TemplateNameOverride: " +templateNameOverride, this, "generate()")
 
                                     }
                                 
@@ -260,17 +257,16 @@ put(transformInfoObjectConfigData!.VARKEY +TransformInfoData.getInstance()!.PART
         
         
 
-append(storeName)
-append(templateNameOverride)
-append(CommonSeps.getInstance()!.SPACE)
-append(RootTransformInfoData.NAME)
+templateNameStringBuffer!.append(storeName)
+templateNameStringBuffer!.append(templateNameOverride)
+templateNameStringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+templateNameStringBuffer!.append(RootTransformInfoData.NAME)
 
     var templateNameKey: string = TransformInfoObjectConfigData.getInstance()!.VARKEY +TransformInfoData.getInstance()!.OWNER;
         
         
 
 
-    
                         if(objectConfigDocumentString!.indexOf(templateNameKey) !=  -1)
                         
                                     {
@@ -284,7 +280,7 @@ append(RootTransformInfoData.NAME)
         
         
 
-put(templateNameKey, selectedTemplate)
+hashMap!.put(templateNameKey, selectedTemplate)
 
                                     }
                                 
@@ -297,7 +293,7 @@ put(templateNameKey, selectedTemplate)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     generate(objectConfigDocumentString: string, hashMap: HashMap<Any, Any>): Document{
 var objectConfigDocumentString = objectConfigDocumentString
@@ -313,11 +309,10 @@ var hashMap = hashMap
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Final ObjectConfig: " +DomDocumentHelper.toString(newObjectConfigDocument), this, "generate()")
+                                    logUtil!.put("Final ObjectConfig: " +DomDocumentHelper.toString(newObjectConfigDocument), this, "generate()")
 
                                     }
                                 

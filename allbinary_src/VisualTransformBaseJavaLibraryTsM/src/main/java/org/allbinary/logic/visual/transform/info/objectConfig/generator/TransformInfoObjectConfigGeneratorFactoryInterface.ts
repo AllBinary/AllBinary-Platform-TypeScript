@@ -25,7 +25,7 @@ import { TransformInfoInterface } from "../../../../../../../../org/allbinary/lo
 interface TransformInfoObjectConfigGeneratorFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getInstance(transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigGenerator
 

@@ -58,7 +58,6 @@ this.startTime= System.currentTimeMillis()
 
     public loop(){
 
-    
                         if(this.lastStartTime == Long.MIN_VALUE)
                         
                                     {

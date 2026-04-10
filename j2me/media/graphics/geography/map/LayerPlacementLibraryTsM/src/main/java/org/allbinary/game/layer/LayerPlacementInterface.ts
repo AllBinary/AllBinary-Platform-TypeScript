@@ -31,7 +31,7 @@ interface LayerPlacementInterface {
 
     getLayerType(): LayerPlacementType
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getInstance(): Hashtable<Any, Any>
 

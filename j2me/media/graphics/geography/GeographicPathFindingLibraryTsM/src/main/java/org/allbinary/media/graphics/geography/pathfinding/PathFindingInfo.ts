@@ -97,13 +97,13 @@ this.endPathFindingNodeList= BasicArrayList(1)
 
     public addStartPathFindingNode(startPathFindingNode: PathFindingNode){
 var startPathFindingNode = startPathFindingNode
-add(startPathFindingNode)
+this.startPathFindingNodeList!.add(startPathFindingNode)
 }
 
 
     public addEndPathFindingNode(endPathFindingNode: PathFindingNode){
 var endPathFindingNode = endPathFindingNode
-add(endPathFindingNode)
+this.endPathFindingNodeList!.add(endPathFindingNode)
 }
 
 

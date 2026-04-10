@@ -65,11 +65,11 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.update()
+this.this.update()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -80,7 +80,7 @@ var allBinaryLayerManager = allBinaryLayerManager
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     update(){
 
@@ -100,7 +100,6 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 
 
-    
                         if(isOn())
                         
                                     {
@@ -120,11 +119,10 @@ index < size; index++)
         
 
 
-    
                         if(key !=  -1)
                         
                                     {
-                                    add(gameKeyEventFactory!.getInstance(this, key))
+                                    gameInput!.add(gameKeyEventFactory!.getInstance(this, key))
 
                                     }
                                 
@@ -150,11 +148,10 @@ index < size; index++)
         
 
 
-    
                         if(key !=  -1)
                         
                                     {
-                                    addForRemoval(gameKeyEventFactory!.getInstance(this, key))
+                                    gameInput!.addForRemoval(gameKeyEventFactory!.getInstance(this, key))
 
                                     }
                                 
@@ -166,48 +163,45 @@ index < size; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toggle(){
 
-    
                         if(this.toggleTimeHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
                         
                                     {
-                                    toggle()
-this.update()
+                                    super.toggle()
+this.this.update()
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public disable(){
 
-    
                         if(this.toggleTimeHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
                         
                                     {
-                                    disable()
-this.update()
+                                    super.disable()
+this.this.update()
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public enable(){
 
-    
                         if(this.toggleTimeHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
                         
                                     {
-                                    enable()
-this.update()
+                                    super.enable()
+this.this.update()
 
                                     }
                                 

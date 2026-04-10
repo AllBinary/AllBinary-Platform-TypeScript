@@ -68,7 +68,7 @@ public constructor (title: string, items: CustomItem[], formPaintableFactory: It
                             //For kotlin this is before the body of the constructor.
                     
 this.moveForSmallScreen= moveForSmallScreen
-this.init()
+this.this.init()
 }
 
 public constructor (title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
@@ -89,17 +89,17 @@ public constructor (title: string, items: CustomItem[], rectangle: Rectangle, fo
                             //For kotlin this is before the body of the constructor.
                     
 this.moveForSmallScreen= moveForSmallScreen
-this.init()
+this.this.init()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(rectangle: Rectangle, formType: FormType){
     //var rectangle = rectangle
     //var formType = formType
-init(rectangle, formType)
-this.init()
+super.init(rectangle, formType)
+this.this.init()
 }
 
 
@@ -110,7 +110,6 @@ this.init()
         
 
 
-    
                         if(this.formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
                         
                                     {
@@ -120,7 +119,6 @@ dy= y
                                     }
                                 
                              else 
-    
                         if(this.formType == formTypeFactory!.HORIZONTAL_FORM)
                         
                                     {
@@ -155,7 +153,6 @@ totalWidth += item.getMinimumWidth() +border
 dx= x +(this.rectangle.getWidth() shr 1) -(totalWidth shr 1)
 dy= y +(this.rectangle.getHeight() shr 1)
 
-    
                         if(this.moveForSmallScreen)
                         
                                     {
@@ -165,7 +162,6 @@ dy= y +(this.rectangle.getHeight() shr 1)
         
 
 
-    
                         if(dy < maxTitleHeight)
                         
                                     {
@@ -180,7 +176,6 @@ dy= y +(this.rectangle.getHeight() shr 1)
                                     }
                                 
                              else 
-    
                         if(this.formType == formTypeFactory!.VERTICAL_CENTER_FORM)
                         
                                     {
@@ -210,7 +205,6 @@ index < size; index++)
         
 
 
-    
                         if(maxWidth < item2.getMinimumWidth())
                         
                                     {
@@ -223,13 +217,11 @@ totalHeight += item2.getMinimumHeight() +border
 
 dx= ((this.rectangle.getWidth() -maxWidth) /2)
 
-    
                         if(this.size() > 0)
                         
                                     {
                                     dy= y +((this.rectangle.getHeight() -totalHeight) /2)
 
-    
                         if(this.moveForSmallScreen)
                         
                                     {
@@ -239,7 +231,6 @@ dx= ((this.rectangle.getWidth() -maxWidth) /2)
         
 
 
-    
                         if(dy < maxTitleHeight)
                         
                                     {
@@ -262,7 +253,7 @@ dx= ((this.rectangle.getWidth() -maxWidth) /2)
                                     }
                                 
                         else {
-                            put(formTypeFactory!.UNK, this, commonStrings!.INIT)
+                            logUtil!.put(formTypeFactory!.UNK, this, commonStrings!.INIT)
 
                         }
                             
@@ -319,7 +310,6 @@ index < size; index++)
         
 
 
-    
                         if(this.formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
                         
                                     {
@@ -328,7 +318,6 @@ index < size; index++)
                                     }
                                 
                              else 
-    
                         if(this.formType == formTypeFactory!.HORIZONTAL_FORM)
                         
                                     {
@@ -336,7 +325,6 @@ index < size; index++)
                                     }
                                 
                              else 
-    
                         if(this.formType == formTypeFactory!.VERTICAL_CENTER_FORM)
                         
                                     {
@@ -348,28 +336,26 @@ index < size; index++)
                             
 
 
-                            throw Exception(formTypeFactory!.UNK)
+                            throw Error(formTypeFactory!.UNK)
 
                         }
                             
 
-    
                         if(index == this.getSelectedIndex())
                         
                                     {
                                     delta= this.paintItem(graphics, index, item, deltaX +diffX, deltaY)
-paint(graphics, index, deltaX +diffX, deltaY)
+this.paintable.paint(graphics, index, deltaX +diffX, deltaY)
 
                                     }
                                 
                         else {
                             delta= this.paintUnselectedItem(graphics, index, item, deltaX +diffX, deltaY)
-paint(graphics, index, deltaX +diffX, deltaY)
+this.paintable.paint(graphics, index, deltaX +diffX, deltaY)
 
                         }
                             
 
-    
                         if(this.formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
                         
                                     {
@@ -377,7 +363,6 @@ paint(graphics, index, deltaX +diffX, deltaY)
                                     }
                                 
                              else 
-    
                         if(this.formType == formTypeFactory!.HORIZONTAL_FORM)
                         
                                     {
@@ -386,7 +371,6 @@ paint(graphics, index, deltaX +diffX, deltaY)
                                     }
                                 
                              else 
-    
                         if(this.formType == formTypeFactory!.VERTICAL_CENTER_FORM)
                         
                                     {
@@ -398,7 +382,7 @@ paint(graphics, index, deltaX +diffX, deltaY)
                             
 
 
-                            throw Exception(formTypeFactory!.UNK)
+                            throw Error(formTypeFactory!.UNK)
 
                         }
                             
@@ -406,7 +390,7 @@ paint(graphics, index, deltaX +diffX, deltaY)
 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e)
 }
 
 }

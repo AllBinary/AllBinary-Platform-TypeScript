@@ -41,7 +41,7 @@ public constructor (){
     public friction(velocityProperties: VelocityProperties, nominator: number){
 var velocityProperties = velocityProperties
 var nominator = nominator
-reduce(velocityProperties, nominator, FrictionData.getFrictionDenominator())
+DragVelocityBehavior.instance.reduce(velocityProperties, nominator, FrictionData.getFrictionDenominator())
 }
 
 

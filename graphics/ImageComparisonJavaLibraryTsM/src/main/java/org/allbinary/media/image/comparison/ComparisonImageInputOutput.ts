@@ -71,7 +71,7 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public save(frame: Long){
     //var frame = frame
@@ -81,7 +81,6 @@ public constructor (){
         
 
 
-    
                         if(frame > 0)
                         
                                     {
@@ -92,7 +91,6 @@ public constructor (){
         
 
 
-    
                         if(imageComparisonResultFrameCacheable != 
                                     null
                                 )
@@ -103,12 +101,12 @@ public constructor (){
         
         
 
-this.save(imageComparisonResult, imageComparisonResultFrameCacheable!.getFrame())
+this.this.save(imageComparisonResult, imageComparisonResultFrameCacheable!.getFrame())
 
                                     }
                                 
                         else {
-                            put("Comparison Results Not Available for Output: " +frame, this, commonStrings!.SAVE)
+                            logUtil!.put("Comparison Results Not Available for Output: " +frame, this, commonStrings!.SAVE)
 
                         }
                             
@@ -116,14 +114,14 @@ this.save(imageComparisonResult, imageComparisonResultFrameCacheable!.getFrame()
                                     }
                                 
                         else {
-                            put("No Comparison Results: for first frame: " +frame, this, commonStrings!.SAVE)
+                            logUtil!.put("No Comparison Results: for first frame: " +frame, this, commonStrings!.SAVE)
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public save(imageComparisonResult: ImageComparisonResult, frame: Long){
     //var imageComparisonResult = imageComparisonResult
@@ -138,17 +136,17 @@ this.save(imageComparisonResult, imageComparisonResultFrameCacheable!.getFrame()
         
         
 
-append(ImageOutputData.SAVE_PATH)
-append(LongUtil.fillIn(frame.toString()))
-append(ROOT_NAME)
+filePathStringBuffer!.append(ImageOutputData.SAVE_PATH)
+filePathStringBuffer!.append(LongUtil.fillIn(frame.toString()))
+filePathStringBuffer!.append(ROOT_NAME)
 
     var filePathStringBuffer1: StringMaker = new StringMaker();
         
         
 
-append(filePathStringBuffer!.toString())
-append("_1")
-append(MediaDataFactory.getInstance()!.JPG.getExtension())
+filePathStringBuffer1!.append(filePathStringBuffer!.toString())
+filePathStringBuffer1!.append("_1")
+filePathStringBuffer1!.append(MediaDataFactory.getInstance()!.JPG.getExtension())
 
     var filePath1: string = filePathStringBuffer1!.toString()!;
         
@@ -159,9 +157,9 @@ append(MediaDataFactory.getInstance()!.JPG.getExtension())
         
         
 
-append(filePathStringBuffer!.toString())
-append("_2")
-append(MediaDataFactory.getInstance()!.JPG.getExtension())
+filePathStringBuffer2!.append(filePathStringBuffer!.toString())
+filePathStringBuffer2!.append("_2")
+filePathStringBuffer2!.append(MediaDataFactory.getInstance()!.JPG.getExtension())
 
     var filePath2: string = filePathStringBuffer2!.toString()!;
         
@@ -172,8 +170,8 @@ append(MediaDataFactory.getInstance()!.JPG.getExtension())
         
         
 
-put("Comparison Image File Path 1: " +filePath1, this, commonStrings!.SAVE)
-put("Comparison Image File Path 2: " +filePath2, this, commonStrings!.SAVE)
+logUtil!.put("Comparison Image File Path 1: " +filePath1, this, commonStrings!.SAVE)
+logUtil!.put("Comparison Image File Path 2: " +filePath2, this, commonStrings!.SAVE)
 
     var bufferedImageArray: BufferedImage[] = new Array(2);
         
@@ -186,8 +184,8 @@ bufferedImageArray[1]= bufferedImageCacheables[1]!.getBufferedImage()
         
         
 
-saveWithImageIO(filePath1, bufferedImageArray[0]!)
-saveWithImageIO(filePath2, bufferedImageArray[1]!)
+imagePersistanceUtil!.saveWithImageIO(filePath1, bufferedImageArray[0]!)
+imagePersistanceUtil!.saveWithImageIO(filePath2, bufferedImageArray[1]!)
 }
 
 

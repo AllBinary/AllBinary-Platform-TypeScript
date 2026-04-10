@@ -22,7 +22,7 @@
 interface ProfileActionScriptItemInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(frame: Long)
 

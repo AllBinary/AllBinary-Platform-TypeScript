@@ -13,7 +13,7 @@ interface BundleContext {
 
     public getBundles(): Bundle[]
 
-                @Throws(BundleException::class)
+                //@Throws(BundleException::class)
             
     public installBundle(location: string): Bundle
 
@@ -21,7 +21,7 @@ interface BundleContext {
 
     public getService(reference: ServiceReference): any = {}
 
-                @Throws(InvalidSyntaxException::class)
+                //@Throws(InvalidSyntaxException::class)
             
     public getServiceReferences(clazz: string, filter: string): ServiceReference[]
 

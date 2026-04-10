@@ -57,7 +57,7 @@ private constructor (){
 
 
     public clear(){
-clear()
+list.clear()
 }
 
 
@@ -87,7 +87,7 @@ clear()
 
     public add(layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface){
 var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
-add(layerInterfaceFactoryInterface)
+list.add(layerInterfaceFactoryInterface)
 }
 
 

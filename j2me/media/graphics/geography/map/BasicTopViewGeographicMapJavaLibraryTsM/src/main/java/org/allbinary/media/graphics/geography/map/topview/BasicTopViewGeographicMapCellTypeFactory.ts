@@ -128,7 +128,7 @@ public constructor (tileTypeToTileIdsMap: Hashtable<Any, Any>, maxTileId: number
         
         
 
-put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 this.maxTileId= maxTileId
 
     var basicTopViewGeographicMapStrings: BasicTopViewGeographicMapStrings = BasicTopViewGeographicMapStrings.getInstance()!;
@@ -151,7 +151,6 @@ this.maxTileId= maxTileId
         
 
 
-    
                         if(geographicMapCellTypeArray[type] == 
                                     null
                                 )
@@ -233,7 +232,6 @@ index < size; index++)
 key= keyArray[index]! as String
 idsWithTypeList= tileTypeToTileIdsMap!.get(key) as BasicArrayList
 
-    
                         if(key.equals(basicTopViewGeographicMapStrings!.WALL))
                         
                                     {
@@ -243,7 +241,6 @@ BLOCK_CELL_TYPE= basicPlatormGeographicMapCellType
                                     }
                                 
                              else 
-    
                         if(key.equals(basicTopViewGeographicMapStrings!.OFF_MAP))
                         
                                     {
@@ -253,7 +250,6 @@ OFF_MAP_CELL_TYPE= basicPlatormGeographicMapCellType
                                     }
                                 
                              else 
-    
                         if(key.equals(basicTopViewGeographicMapStrings!.FLOOR))
                         
                                     {
@@ -263,7 +259,6 @@ FLOOR_CELL_TYPE= basicPlatormGeographicMapCellType
                                     }
                                 
                              else 
-    
                         if(key.equals(basicTopViewGeographicMapStrings!.DOOR))
                         
                                     {
@@ -273,7 +268,6 @@ DOOR_CELL_TYPE= basicPlatormGeographicMapCellType
                                     }
                                 
                              else 
-    
                         if(key.equals(basicTopViewGeographicMapStrings!.STAIRS_UP))
                         
                                     {
@@ -283,7 +277,6 @@ STAIRS_UP_CELL_TYPE= basicPlatormGeographicMapCellType
                                     }
                                 
                              else 
-    
                         if(key.equals(basicTopViewGeographicMapStrings!.STAIRS_DOWN))
                         
                                     {
@@ -293,7 +286,6 @@ STAIRS_DOWN_CELL_TYPE= basicPlatormGeographicMapCellType
                                     }
                                 
                              else 
-    
                         if(key.equals(basicTopViewGeographicMapStrings!.OTHER))
                         
                                     {
@@ -313,7 +305,6 @@ this.STAIRS_DOWN_CELL_TYPE= STAIRS_DOWN_CELL_TYPE
 this.OTHER_CELL_TYPE= OTHER_CELL_TYPE
 type= this.maxTileId -1
 
-    
                         if(geographicMapCellTypeArray[type] == 
                                     null
                                 )
@@ -329,7 +320,6 @@ type= this.maxTileId -1
                             
 type= this.maxTileId -2
 
-    
                         if(geographicMapCellTypeArray[type] == 
                                     null
                                 )
@@ -379,7 +369,6 @@ type= this.maxTileId -2
     public isPath(cellType: GeographicMapCellType): boolean{
 var cellType = cellType
 
-    
                         if(this.FLOOR_CELL_TYPE.isType(cellType))
                         
                                     {

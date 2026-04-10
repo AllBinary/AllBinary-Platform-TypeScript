@@ -52,11 +52,11 @@ var vectorAnimationFactoryInterface = vectorAnimationFactoryInterface
 this.vectorInfo= vectorInfo
 this.basicColor= basicColor
 this.vectorAnimationFactoryInterface= vectorAnimationFactoryInterface
-this.init()
+this.this.init()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(){
 framePoints= VectorRotationGenerator.getInstance()!.getInstance(this.vectorInfo)
@@ -67,7 +67,7 @@ framePoints= VectorRotationGenerator.getInstance()!.getInstance(this.vectorInfo)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(animationInterface: Animation): Animation{
 var animationInterface = animationInterface
@@ -77,7 +77,6 @@ var animationInterface = animationInterface
         
 
 
-    
                         if(animationInterface != 
                                     null
                                 )

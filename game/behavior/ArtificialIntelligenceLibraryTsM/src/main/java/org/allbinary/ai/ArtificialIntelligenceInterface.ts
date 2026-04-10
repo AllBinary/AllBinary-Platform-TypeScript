@@ -28,7 +28,7 @@ import { AllBinaryLayerManager } from "../../../org/allbinary/layer/AllBinaryLay
 interface ArtificialIntelligenceInterface extends IdentifierInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     processAI(layerManager: AllBinaryLayerManager)
 

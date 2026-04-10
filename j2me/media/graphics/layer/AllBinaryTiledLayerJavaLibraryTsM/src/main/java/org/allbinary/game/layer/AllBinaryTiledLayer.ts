@@ -73,9 +73,9 @@ public constructor (dataId: Integer, width: number, height: number, cellWidth: n
                             //For kotlin this is before the body of the constructor.
                     
 this.dataId= dataId
-this.setLayerWidth(width)
-this.setLayerHeight(height)
-setPosition(0, 0, 0)
+this.this.setLayerWidth(width)
+this.this.setLayerHeight(height)
+super.setPosition(0, 0, 0)
 this.cellWidth= cellWidth
 this.cellHeight= cellHeight
 this.halfWidth= (this.getWidth() shr 1)
@@ -92,15 +92,15 @@ this.halfCellHeight= (cellHeight shr 1)
         
         
 
-append("Start: r: ")
-appendint(mapTwoDArray!.length)
-append(" c: ")
-appendint(mapTwoDArray[0]!.length)
-append(" rows: ")
-appendint(this.getRows())
-append(" columns: ")
-appendint(this.getColumns())
-put(stringBuffer!.toString(), this, "setCells")
+stringBuffer!.append("Start: r: ")
+stringBuffer!.appendint(mapTwoDArray!.length)
+stringBuffer!.append(" c: ")
+stringBuffer!.appendint(mapTwoDArray[0]!.length)
+stringBuffer!.append(" rows: ")
+stringBuffer!.appendint(this.getRows())
+stringBuffer!.append(" columns: ")
+stringBuffer!.appendint(this.getColumns())
+logUtil!.put(stringBuffer!.toString(), this, "setCells")
 
     var rows: number = this.getRows()!;
         
@@ -131,7 +131,7 @@ col < columns; col++)
         
 row < rows; row++)
         {
-this.setCell(col, row, mapTwoDArray[row]![col]!)
+this.this.setCell(col, row, mapTwoDArray[row]![col]!)
 }
 
 }
@@ -174,12 +174,11 @@ col < columns; col++)
 row < rows; row++)
         {
 
-    
                         if(fromTileId == mapTwoDArray[row]![col])
                         
                                     {
                                     mapTwoDArray[row]![col]= toTileId
-this.setCell(col, row, mapTwoDArray[row]![col]!)
+this.this.setCell(col, row, mapTwoDArray[row]![col]!)
 
                                     }
                                 
@@ -353,7 +352,6 @@ this.setCell(col, row, mapTwoDArray[row]![col]!)
     //var column = column
     //var row = row
 
-    
                         if(this.getColumns() > column && this.getRows() > row && row >= 0 && column >= 0)
                         
                                     {

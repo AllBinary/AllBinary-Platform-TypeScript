@@ -146,7 +146,7 @@ export class InventorySearchUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getBasicItemIdColumn(searchRequest: SearchRequest): Vector{
 var searchRequest = searchRequest
@@ -171,11 +171,10 @@ var searchRequest = searchRequest
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    put("Number Of Items Found: " +column.length, this, "search")
+                                    logUtil!.put("Number Of Items Found: " +column.length, this, "search")
 
                                     }
                                 
@@ -209,15 +208,14 @@ index < size; index++)
         
         
 
-addAll(substoreIdColumn)
+column.addAll(substoreIdColumn)
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    put("Number Of Items Found Including SubStores: " +column.length, this, "search")
+                                    logUtil!.put("Number Of Items Found Including SubStores: " +column.length, this, "search")
 
                                     }
                                 
@@ -230,24 +228,23 @@ addAll(substoreIdColumn)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getNoResults(viewDocumentInterface: TransformDocumentInterface, inventoryNode: Node): string{
 var viewDocumentInterface = viewDocumentInterface
 var inventoryNode = inventoryNode
-appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_PAGES, commonPhoneStrings!.ZERO))
-appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_ITEMS, commonPhoneStrings!.ZERO))
+inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_PAGES, commonPhoneStrings!.ZERO))
+inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_ITEMS, commonPhoneStrings!.ZERO))
 
     var success: string = DomDocumentHelper.toString(viewDocumentInterface!.getDoc())!;
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    put("No Results Xml: " +success, this, "search")
+                                    logUtil!.put("No Results Xml: " +success, this, "search")
 
                                     }
                                 
@@ -308,7 +305,6 @@ var column = column
         
 
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(keyword))
                         
                                     {
@@ -327,12 +323,10 @@ var column = column
         
 
 
-    
                         if(startPage >= 0)
                         
                                     {
                                     
-    
                         if(pageLength == 0)
                         
                                     {
@@ -391,17 +385,16 @@ keyword= keyword.uppercase()
         
         
 
-appendChild(inventoryNode)
-appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.PAGE, Integer(startPage).
+viewDocumentInterface!.getBaseNode()!.appendChild(inventoryNode)
+inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.PAGE, Integer(startPage).
                             toString()))
 
-    
                         if(searchRequest!.getFileBaseName() != 
                                     null
                                 )
                         
                                     {
-                                    appendChild(searchRequest!.getFileBaseNameNode(viewDocumentInterface!.getDoc()))
+                                    inventoryNode!.appendChild(searchRequest!.getFileBaseNameNode(viewDocumentInterface!.getDoc()))
 
                                     }
                                 
@@ -430,12 +423,10 @@ appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), S
 
 keywords= keywords.uppercase()
 
-    
                         if(keywords.indexOf(keyword) !=  -1)
                         
                                     {
                                     
-    
                         if(currentPage +1 >= startPage && currentPage +1 <= endPage)
                         
                                     {
@@ -445,41 +436,38 @@ keywords= keywords.uppercase()
         
         
 
-appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), BasketData.ITEMTOTALINBASKET, commonPhoneStrings!.ONE))
-appendChild(itemNode!.cloneNode(true))
+itemNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), BasketData.ITEMTOTALINBASKET, commonPhoneStrings!.ONE))
+inventoryNode!.appendChild(itemNode!.cloneNode(true))
 
                                     }
                                 
 currentPage= ((numberOfResults +1) /pageLength) -1
 numberOfResultsOnCurrentPage++
 
-    
                         if(lastPage < currentPage)
                         
                                     {
                                     
-    
                         if(currentPage >= startPage && currentPage <= endPage)
                         
                                     {
-                                    appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, Integer(numberOfResultsOnCurrentPage).
+                                    inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, Integer(numberOfResultsOnCurrentPage).
                             toString()))
 documents[currentPage]= viewDocumentInterface!.getDoc()
 inventoryNodes[currentPage]= inventoryNode
 savedPagesInRange++
 viewDocumentInterface= TransformStoreDocumentFactory.getInstance(searchRequest)
 inventoryNode= viewDocumentInterface!.getDoc()!.createElement(InventoryData.INVENTORY)
-appendChild(inventoryNode)
-appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.PAGE, Integer(currentPage +1).
+viewDocumentInterface!.getBaseNode()!.appendChild(inventoryNode)
+inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.PAGE, Integer(currentPage +1).
                             toString()))
 
-    
                         if(searchRequest!.getFileBaseName() != 
                                     null
                                 )
                         
                                     {
-                                    appendChild(searchRequest!.getFileBaseNameNode(viewDocumentInterface!.getDoc()))
+                                    inventoryNode!.appendChild(searchRequest!.getFileBaseNameNode(viewDocumentInterface!.getDoc()))
 
                                     }
                                 
@@ -493,7 +481,6 @@ numberOfResultsOnCurrentPage= 0
                                 
 numberOfResults++
 
-    
                         if(lastPage >= MAXPAGES -1)
                         
                                     {
@@ -509,11 +496,10 @@ numberOfResults++
 }
 
 
-    
                         if(numberOfResultsOnCurrentPage > 0 && (currentPage +1 >= startPage && currentPage +1 <= endPage))
                         
                                     {
-                                    appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, Integer(numberOfResultsOnCurrentPage -1).
+                                    inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, Integer(numberOfResultsOnCurrentPage -1).
                             toString()))
 documents[lastPage +1]= viewDocumentInterface!.getDoc()
 inventoryNodes[lastPage +1]= inventoryNode
@@ -522,7 +508,6 @@ savedPagesInRange++
                                     }
                                 
 
-    
                         if(numberOfResultsOnCurrentPage > 0)
                         
                                     {
@@ -531,7 +516,6 @@ savedPagesInRange++
                                     }
                                 
 
-    
                         if(endPage > MAXPAGES -1)
                         
                                     {
@@ -550,7 +534,6 @@ savedPagesInRange++
 index <= endPage; index++)
         {
 
-    
                         if(index <= lastPage)
                         
                                     {
@@ -559,9 +542,9 @@ index <= endPage; index++)
         
         
 
-appendChild(ModDomHelper.createNameValueNodes(tempDocument, SearchData.TOTAL_NUMBER_PAGES, Integer(lastPage +1).
+inventoryNodes[index]!.appendChild(ModDomHelper.createNameValueNodes(tempDocument, SearchData.TOTAL_NUMBER_PAGES, Integer(lastPage +1).
                             toString()))
-appendChild(ModDomHelper.createNameValueNodes(tempDocument, SearchData.TOTAL_NUMBER_ITEMS, Integer(numberOfResults).
+inventoryNodes[index]!.appendChild(ModDomHelper.createNameValueNodes(tempDocument, SearchData.TOTAL_NUMBER_ITEMS, Integer(numberOfResults).
                             toString()))
 
 
@@ -573,28 +556,26 @@ appendChild(ModDomHelper.createNameValueNodes(tempDocument, SearchData.TOTAL_NUM
         
 pageIndex <= lastPage; pageIndex++)
         {
-delete(0, stringBuffer!.length())
-append(searchRequest!.getFileBaseName())
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(searchRequest!.getFileBaseName())
 
-    
                         if(stringBuffer!.length() > 0)
                         
                                     {
                                     
-    
                         if(pageIndex != 0)
                         
                                     {
-                                    append(pageIndex.toString())
+                                    stringBuffer!.append(pageIndex.toString())
 
                                     }
                                 
-appendChild(ModDomHelper.createNameValueNodes(tempDocument, SearchData.PAGE_INFO, pageIndex.toString(), stringBuffer!.toString()))
+inventoryNodes[index]!.appendChild(ModDomHelper.createNameValueNodes(tempDocument, SearchData.PAGE_INFO, pageIndex.toString(), stringBuffer!.toString()))
 
                                     }
                                 
                         else {
-                            appendChild(ModDomHelper.createNameValueNodes(tempDocument, SearchData.PAGE_INFO, pageIndex.toString(), SearchData.SEARCH))
+                            inventoryNodes[index]!.appendChild(ModDomHelper.createNameValueNodes(tempDocument, SearchData.PAGE_INFO, pageIndex.toString(), SearchData.SEARCH))
 
                         }
                             
@@ -613,7 +594,6 @@ productListingPages[index]= StoreTransformer(abeClientInformation, TransformInfo
 }
 
 
-    
                         if(savedPagesInRange == 0)
                         
                                     {
@@ -649,11 +629,10 @@ productListingPages[0]= StoreTransformer(abeClientInformation, TransformInfoHttp
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "search", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "search", e)
 
                                     }
                                 

@@ -68,7 +68,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isValid(): Boolean{
 this.streetAddress= StreetAddress(this.getRequest())
@@ -78,7 +78,6 @@ this.streetAddress= StreetAddress(this.getRequest())
         
 
 
-    
                         if(TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!.isValid(this.streetAddress, storeFrontInterface) == Boolean.FALSE)
                         
                                     {
@@ -102,7 +101,6 @@ this.streetAddress= StreetAddress(this.getRequest())
         
 
 
-    
                         if(streetAddressList == 
                                     null
                                 )
@@ -143,7 +141,6 @@ index < size; index++)
         
 
 
-    
                         if(aStreetAddress!.getName()!.compareTo(ShippingAddressData.TAX) == 0)
                         
                                     {
@@ -154,7 +151,6 @@ index < size; index++)
 }
 
 
-    
                         if(count != 1)
                         
 

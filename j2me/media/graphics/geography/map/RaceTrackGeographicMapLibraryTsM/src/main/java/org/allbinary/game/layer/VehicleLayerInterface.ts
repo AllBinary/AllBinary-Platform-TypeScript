@@ -56,7 +56,7 @@ interface VehicleLayerInterface extends LayerInterface, VehiclePropertiesComposi
 
     getFinalPosition(): number
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     handleFinish()
 

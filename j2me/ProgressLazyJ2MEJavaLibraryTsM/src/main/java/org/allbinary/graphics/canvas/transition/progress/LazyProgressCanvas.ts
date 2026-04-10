@@ -56,7 +56,7 @@ protected constructor (title: string, backgroundBasicColor: BasicColor, foregrou
 
 
     public start(){
-start()
+super.start()
 this.hasPainted= false
 }
 
@@ -64,14 +64,14 @@ this.hasPainted= false
     public end(){
 
         try {
-            put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME)
-this.endActual()
+            logUtil!.put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME)
+this.this.endActual()
 this.paintable= GAUGE_PAINTABLE
-runTask()
-progressEnded()
+ImageCacheFactory.getInstance()!.runTask()
+ImageCacheFactory.getInstance()!.progressEnded()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME)
 }
 
 }
@@ -83,18 +83,17 @@ inGameProcessor= Processor.getInstance()
 
 
     public endFromInitialLazyLoadingComplete(){
-endFromInitialLazyLoadingComplete()
+super.endFromInitialLazyLoadingComplete()
 this.paintable= NullPaintable.getInstance()
 }
 
 
     public endIfPaintedSinceStart(){
 
-    
                         if(this.paintable == GAUGE_PAINTABLE && this.hasPainted)
                         
                                     {
-                                    this.endFromInitialLazyLoadingComplete()
+                                    this.this.endFromInitialLazyLoadingComplete()
 
                                     }
                                 

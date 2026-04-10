@@ -35,12 +35,12 @@ this.view= view
 
 
     public invalidate(){
-invalidate()
+this.view.invalidate()
 }
 
 
     public postInvalidate(){
-postInvalidate()
+this.view.postInvalidate()
 }
 
 

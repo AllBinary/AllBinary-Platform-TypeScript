@@ -30,7 +30,7 @@ export class ProfileActionScriptInputFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(node: Node): ProfileActionScriptInputInterface{
 var node = node
@@ -42,7 +42,6 @@ var node = node
         
 
 
-    
                         if(DomSearchHelper.getNodeNoThrow(KeyboardActionScriptInputData.NAME, node.getChildNodes()) != 
                                     null
                                 )
@@ -53,7 +52,6 @@ var node = node
                                     }
                                 
                              else 
-    
                         if(DomSearchHelper.getNodeNoThrow(MouseActionScriptInputData.NAME, node.getChildNodes()) != 
                                     null
                                 )
@@ -67,7 +65,7 @@ var node = node
                             
 
 
-                            throw Exception("No Such ActionScript Input")
+                            throw Error("No Such ActionScript Input")
 
                         }
                             

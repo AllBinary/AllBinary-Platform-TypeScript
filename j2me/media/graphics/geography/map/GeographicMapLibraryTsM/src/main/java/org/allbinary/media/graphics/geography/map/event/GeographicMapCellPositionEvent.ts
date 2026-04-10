@@ -73,7 +73,7 @@ var key = key
 
     public init(anyType: any = {}){
 var anyType = anyType
-this.setSource(anyType)
+this.this.setSource(anyType)
 }
 
 
@@ -99,9 +99,9 @@ this.geographicMapCellPosition= geographicMapCellPosition
         
         
 
-append("CellPositionEvent: ")
-append("\nGeographicMapCellPosition: ")
-append(StringUtil.getInstance()!.toString(this.getGeographicMapCellPosition()))
+stringBuffer!.append("CellPositionEvent: ")
+stringBuffer!.append("\nGeographicMapCellPosition: ")
+stringBuffer!.append(StringUtil.getInstance()!.toString(this.getGeographicMapCellPosition()))
 
 
 

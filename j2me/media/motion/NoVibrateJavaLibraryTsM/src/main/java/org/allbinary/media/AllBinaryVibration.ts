@@ -41,7 +41,6 @@ export class AllBinaryVibration extends AllBinaryVibrationME {
 
     public static init(){
 
-    
                         if(GameConfigurationCentral.getInstance()!.VIBRATION.getValue()!.toInt() == 0)
                         
                                     {

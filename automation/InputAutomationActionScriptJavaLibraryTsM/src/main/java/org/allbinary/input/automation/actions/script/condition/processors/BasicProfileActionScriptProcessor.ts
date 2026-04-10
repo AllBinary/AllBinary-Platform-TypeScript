@@ -68,14 +68,12 @@ public constructor (label: string)
 
     public actionPerformed(actionEvent: ActionEvent){
 var actionEvent = actionEvent
-actionPerformed(actionEvent)
+super.actionPerformed(actionEvent)
 
-    
                         if(actionEvent!.getActionCommand()!.compareTo(DELETE) == 0)
                         
                                     {
                                     
-    
                         if(this.getParent() is ProfileActionScriptConditionInterface)
                         
                                     {
@@ -84,8 +82,8 @@ actionPerformed(actionEvent)
         
         
 
-removeProcessor(this as ProfileActionScriptProcessorInterface)
-updateJTree()
+profileActionScriptConditionInterface!.removeProcessor(this as ProfileActionScriptProcessorInterface)
+JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.updateJTree()
 
                                     }
                                 
@@ -95,7 +93,7 @@ updateJTree()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

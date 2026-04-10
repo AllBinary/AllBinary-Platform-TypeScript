@@ -33,8 +33,8 @@ public constructor (jList: JList, listModel: ListModel){
             super();
             var jList = jList
 var listModel = listModel
-this.setJList(jList)
-this.setListModel(listModel)
+this.this.setJList(jList)
+this.this.setListModel(listModel)
 }
 
 
@@ -49,7 +49,7 @@ this.setListModel(listModel)
 
 
     done(){
-setModel(this.getListModel())
+this.getJList()!.setModel(this.getListModel())
 }
 
 

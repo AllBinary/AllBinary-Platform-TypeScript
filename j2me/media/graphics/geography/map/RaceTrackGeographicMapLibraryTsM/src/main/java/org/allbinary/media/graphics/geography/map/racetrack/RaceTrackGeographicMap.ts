@@ -86,7 +86,7 @@ public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isValid(geographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -96,7 +96,6 @@ public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, 
         
 
 
-    
                         if(geographicMapCellPosition!.getColumn() >= customMapArray[0]!.length)
                         
                                     {
@@ -105,13 +104,12 @@ public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, 
         
         
 
-append("Column: ")
-appendint(geographicMapCellPosition!.getColumn())
-append(" not in: ")
-appendint(customMapArray[0]!.length)
-put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+stringBuffer!.append("Column: ")
+stringBuffer!.appendint(geographicMapCellPosition!.getColumn())
+stringBuffer!.append(" not in: ")
+stringBuffer!.appendint(customMapArray[0]!.length)
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
 
-    
                         if(geographicMapCellPosition!.getColumn() == customMapArray[0]!.length)
                         
                                     {
@@ -138,7 +136,6 @@ put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
                                     }
                                 
                              else 
-    
                         if(geographicMapCellPosition!.getRow() > customMapArray!.length)
                         
                                     {
@@ -147,13 +144,12 @@ put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
         
         
 
-append("Row: ")
-appendint(geographicMapCellPosition!.getRow())
-append(" not in: ")
-appendint(customMapArray!.length)
-put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+stringBuffer!.append("Row: ")
+stringBuffer!.appendint(geographicMapCellPosition!.getRow())
+stringBuffer!.append(" not in: ")
+stringBuffer!.appendint(customMapArray!.length)
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
 
-    
                         if(geographicMapCellPosition!.getRow() == customMapArray!.length)
                         
                                     {

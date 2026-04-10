@@ -68,11 +68,10 @@ var pageContext = pageContext
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Properties HashMap: " +propertiesHashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Properties HashMap: " +propertiesHashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -91,7 +90,6 @@ var pageContext = pageContext
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -100,15 +98,15 @@ var pageContext = pageContext
         
         
 
-append("Database HashMap: ")
-append(databaseHashMap!.toString())
-append("\nProperties HashMap: ")
-append(propertiesHashMap!.toString())
-put(stringBuffer!.toString(), this, "Constructor(HashMap, HashMap , PageContext)")
+stringBuffer!.append("Database HashMap: ")
+stringBuffer!.append(databaseHashMap!.toString())
+stringBuffer!.append("\nProperties HashMap: ")
+stringBuffer!.append(propertiesHashMap!.toString())
+logUtil!.put(stringBuffer!.toString(), this, "Constructor(HashMap, HashMap , PageContext)")
 
                                     }
                                 
-this.setStoreName(databaseHashMap!.get(StoreFrontData.getInstance()!.NAME) as String)
+this.this.setStoreName(databaseHashMap!.get(StoreFrontData.getInstance()!.NAME) as String)
 }
 
 public constructor (storeFrontInterface: StoreFrontInterface, propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext)                        
@@ -124,19 +122,18 @@ var pageContext = pageContext
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Properties HashMap: " +propertiesHashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Properties HashMap: " +propertiesHashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
-this.setStoreName(storeFrontInterface!.getName())
+this.this.setStoreName(storeFrontInterface!.getName())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getPath(): string{
 
@@ -144,10 +141,10 @@ this.setStoreName(storeFrontInterface!.getName())
         
         
 
-append(URLGLOBALS.getMainPath())
-append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-append(this.getStoreName())
-append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.append(URLGLOBALS.getMainPath())
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
+stringBuffer!.append(this.getStoreName())
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
 
 
 
@@ -157,7 +154,7 @@ append(AbPathData.getInstance()!.SEPARATOR)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getTemplateFilePath(): AbPath{
 
@@ -169,7 +166,7 @@ append(AbPathData.getInstance()!.SEPARATOR)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getObjectConfigFilePath(): AbPath{
 
@@ -181,7 +178,7 @@ append(AbPathData.getInstance()!.SEPARATOR)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDataFilePath(): AbPath{
 

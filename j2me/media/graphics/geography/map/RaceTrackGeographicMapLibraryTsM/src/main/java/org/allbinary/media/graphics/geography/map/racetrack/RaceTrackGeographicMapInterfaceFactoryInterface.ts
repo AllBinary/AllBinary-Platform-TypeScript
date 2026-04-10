@@ -22,11 +22,11 @@
 interface RaceTrackGeographicMapInterfaceFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getLevelInstance(id: Integer): RaceTrackGeographicMap
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getTrackInstance(id: Integer): RaceTrackGeographicMap
 

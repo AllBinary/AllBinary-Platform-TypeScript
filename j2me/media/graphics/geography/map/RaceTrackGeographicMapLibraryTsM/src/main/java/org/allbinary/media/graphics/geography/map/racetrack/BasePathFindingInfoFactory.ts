@@ -61,7 +61,7 @@ export class BasePathFindingInfoFactory
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: IntArray[]){
     //var geographicMapInterface = geographicMapInterface
@@ -90,7 +90,7 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public visit(tiledLayer: AllBinaryTiledLayer, cellPosition: GeographicMapCellPosition){
     //var tiledLayer = tiledLayer
@@ -118,30 +118,27 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType()
         
 
 
-    
                         if(geographicCellType == startLineId)
                         
                                     {
-                                    this.addStartPathFindingNode(pathFindingInfo, cellPosition)
+                                    this@BasePathFindingInfoFactory.this.addStartPathFindingNode(pathFindingInfo, cellPosition)
 
                                     }
                                 
 
-    
                         if(geographicCellType == finishLineId)
                         
                                     {
                                     
-    
                         if(geographicCellType == startLineId)
                         
                                     {
-                                    this.addEndPathFindingNode(pathFindingInfo, geographicMapInterface!.getGeographicMapCellPositionFactoryInterface()!.getInstance(geographicMapInterface, cellPosition!.getColumn(), cellPosition!.getRow(), tiledLayer!.getColumns(), tiledLayer!.getRows(), tiledLayer!.getCellWidth(), tiledLayer!.getCellHeight()))
+                                    this@BasePathFindingInfoFactory.this.addEndPathFindingNode(pathFindingInfo, geographicMapInterface!.getGeographicMapCellPositionFactoryInterface()!.getInstance(geographicMapInterface, cellPosition!.getColumn(), cellPosition!.getRow(), tiledLayer!.getColumns(), tiledLayer!.getRows(), tiledLayer!.getCellWidth(), tiledLayer!.getCellHeight()))
 
                                     }
                                 
                         else {
-                            this.addEndPathFindingNode(pathFindingInfo, cellPosition)
+                            this@BasePathFindingInfoFactory.this.addEndPathFindingNode(pathFindingInfo, cellPosition)
 
                         }
                             
@@ -159,11 +156,10 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType()
         
 
 
-    
                         if(raceTrackGeographicMapCellTypeFactory!.isPath(geographicMapCellTypeFactory!.getInstance(geographicCellType)))
                         
                                     {
-                                    track(cellPosition)
+                                    RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance()!.track(cellPosition)
 
                                     }
                                 
@@ -178,7 +174,7 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType()
         
         
 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(commonSeps!.BRACKET_OPEN)!.appendint(row)!.append(commonSeps!.BRACKET_CLOSE)!.append(commonSeps!.BRACKET_OPEN)!.appendint(column)!.append("] in [")!.appendint(mapArray!.length)!.append(commonSeps!.BRACKET_CLOSE)!.append(commonSeps!.BRACKET_OPEN)!.appendint(mapArray[0]!.length)!.append(commonSeps!.BRACKET_CLOSE)!.toString(), this, "visit", e)
 
 
@@ -192,25 +188,25 @@ put(StringMaker().
 }
                 
             
-visit(RaceTrackGeographicMapCellPositionFactoryInitVisitor())
+geographicMapInterface!.getGeographicMapCellPositionFactory()!.visit(RaceTrackGeographicMapCellPositionFactoryInitVisitor())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     addStartPathFindingNode(pathFindingInfo: PathFindingInfo, startGeographicMapCellPosition: GeographicMapCellPosition){
     //var pathFindingInfo = pathFindingInfo
     //var startGeographicMapCellPosition = startGeographicMapCellPosition
-addStartPathFindingNode(PathFindingNode(NullUtil.getInstance()!.NULL_OBJECT, startGeographicMapCellPosition))
+pathFindingInfo!.addStartPathFindingNode(PathFindingNode(NullUtil.getInstance()!.NULL_OBJECT, startGeographicMapCellPosition))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     addEndPathFindingNode(pathFindingInfo: PathFindingInfo, endGeographicMapCellPosition: GeographicMapCellPosition){
     //var pathFindingInfo = pathFindingInfo
     //var endGeographicMapCellPosition = endGeographicMapCellPosition
-addEndPathFindingNode(PathFindingNode(NullUtil.getInstance()!.NULL_OBJECT, endGeographicMapCellPosition))
+pathFindingInfo!.addEndPathFindingNode(PathFindingNode(NullUtil.getInstance()!.NULL_OBJECT, endGeographicMapCellPosition))
 }
 
 

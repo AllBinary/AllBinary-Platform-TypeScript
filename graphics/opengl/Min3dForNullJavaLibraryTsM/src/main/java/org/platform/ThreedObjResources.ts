@@ -53,7 +53,6 @@ export class ThreedObjResources
         
 
 
-    
                         if(resourceName2 != 
                                     null
                                 )

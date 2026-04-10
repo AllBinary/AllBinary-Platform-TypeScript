@@ -24,7 +24,7 @@ interface SoundsFactoryInterface {
 
     init()
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getSoundInterfaceArray(): Sound[]
 

@@ -65,7 +65,7 @@ export class CapturedImageInputOutput
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public save(frame: Long){
 var frame = frame
@@ -80,7 +80,7 @@ var frame = frame
         
         
 
-put(("Saving: " +capturedBufferedImageCacheable!.toString()), this, commonStrings!.SAVE)
+logUtil!.put(("Saving: " +capturedBufferedImageCacheable!.toString()), this, commonStrings!.SAVE)
 save(capturedBufferedImageCacheable!.getBufferedImage(), frame)
 }
 
@@ -103,21 +103,21 @@ var frame = frame
         
         
 
-append(ImageOutputData.SAVE_PATH)
-append(LongUtil.fillIn(frame.toString()))
-append(MediaDataFactory.getInstance()!.JPG.getExtension())
+filePathStringBuffer!.append(ImageOutputData.SAVE_PATH)
+filePathStringBuffer!.append(LongUtil.fillIn(frame.toString()))
+filePathStringBuffer!.append(MediaDataFactory.getInstance()!.JPG.getExtension())
 
     var filePath: string = filePathStringBuffer!.toString()!;
         
         
 
-put(("Image File Path: " +filePath +imageUtil!.toString(bufferedImage)), this, commonStrings!.SAVE)
+logUtil!.put(("Image File Path: " +filePath +imageUtil!.toString(bufferedImage)), this, commonStrings!.SAVE)
 
     var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;
         
         
 
-saveWithImageIO(filePath, bufferedImage)
+imagePersistanceUtil!.saveWithImageIO(filePath, bufferedImage)
 }
 
 

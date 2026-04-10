@@ -68,7 +68,7 @@ public constructor (poolName: string, numThreads: number)
 
     public runTask(task: Runnable){
 var task = task
-runTask(task)
+super.runTask(task)
 }
 
 

@@ -38,9 +38,9 @@ export class ColorAverage
 public constructor (){
 
             super();
-            this.setAvgRed(0)
-this.setAvgGreen(0)
-this.setAvgBlue(0)
+            this.this.setAvgRed(0)
+this.this.setAvgGreen(0)
+this.this.setAvgBlue(0)
 }
 
 
@@ -50,15 +50,15 @@ this.setAvgBlue(0)
         
         
 
-append("getAvgRed(): ")
-appendfloat(this.getAvgRed())
-append(CommonSeps.getInstance()!.NEW_LINE)
-append("getAvgRed(): ")
-appendfloat(this.getAvgRed())
-append(CommonSeps.getInstance()!.NEW_LINE)
-append("getAvgGreen(): ")
-appendfloat(this.getAvgGreen())
-append(CommonSeps.getInstance()!.NEW_LINE)
+stringBuffer!.append("getAvgRed(): ")
+stringBuffer!.appendfloat(this.getAvgRed())
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
+stringBuffer!.append("getAvgRed(): ")
+stringBuffer!.appendfloat(this.getAvgRed())
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
+stringBuffer!.append("getAvgGreen(): ")
+stringBuffer!.appendfloat(this.getAvgGreen())
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
 
 
 

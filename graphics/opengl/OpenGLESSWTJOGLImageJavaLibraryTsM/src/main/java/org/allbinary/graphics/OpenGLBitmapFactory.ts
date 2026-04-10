@@ -74,7 +74,7 @@ var config = config
 }
 
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public decodeStream(inputStream: InputStream): OpenGLBitmap{
 var inputStream = inputStream

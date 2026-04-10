@@ -33,7 +33,7 @@ public constructor (inputAutomationModuleInterfaceArray: InputAutomationModuleFa
 
             super();
             var inputAutomationModuleInterfaceArray = inputAutomationModuleInterfaceArray
-this.setInputAutomationModuleInterfaceArray(inputAutomationModuleInterfaceArray)
+this.this.setInputAutomationModuleInterfaceArray(inputAutomationModuleInterfaceArray)
 }
 
 

@@ -47,7 +47,7 @@ export class BaseDropCellPositionGenerator
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -55,7 +55,7 @@ export class BaseDropCellPositionGenerator
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isDropAllowedAt(geographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -68,7 +68,7 @@ export class BaseDropCellPositionGenerator
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager

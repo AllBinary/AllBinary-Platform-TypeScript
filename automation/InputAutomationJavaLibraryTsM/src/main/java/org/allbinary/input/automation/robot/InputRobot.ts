@@ -98,7 +98,7 @@ this.robot= Robot(graphicsDevice)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public mouseMoveToTarget(rectangle: Rectangle, x: Integer, y: Integer){
     //var rectangle = rectangle
@@ -109,42 +109,42 @@ this.robot= Robot(graphicsDevice)
         
         
 
-mouseMove(point.x +x, point.y +y)
+this.robot.mouseMove(point.x +x, point.y +y)
 
     var message: string = StringMaker().
                             append("Moved Mouse To: x: ")!.appendint(point.x)!.append(" y: ")!.appendint(point.y)!.append(" in the middle of: ")!.append(StringUtil.getInstance()!.toString(rectangle))!.toString()!;
         
         
 
-put(message, this, "moveMouseToTarget")
+logUtil!.put(message, this, "moveMouseToTarget")
 }
 
 
     public mouseMove(point: Point){
 var point = point
-this.mouseMove(point.x, point.y)
+this.this.mouseMove(point.x, point.y)
 }
 
 
     public mouseMove(x: number, y: number){
     //var x = x
     //var y = y
-mouseMove(x, y)
+this.robot.mouseMove(x, y)
 
     var message: string = StringMaker().
                             append("Moved Mouse To: x: ")!.appendint(x)!.append(" y: ")!.appendint(y)!.toString()!;
         
         
 
-put(message, this, "moveMouse")
+logUtil!.put(message, this, "moveMouse")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public mouseMoveToTarget(rectangle: Rectangle){
 var rectangle = rectangle
-this.mouseMoveToTarget(rectangle, 0, 0)
+this.this.mouseMoveToTarget(rectangle, 0, 0)
 }
 
 
@@ -161,7 +161,7 @@ var screenRect = screenRect
 
     public delay(ms: Integer){
 var ms = ms
-delay(ms)
+this.robot.delay(ms)
 }
 
 
@@ -199,50 +199,50 @@ var y = y
 
     public keyPress(keycode: Integer){
 var keycode = keycode
-keyPress(keycode)
+this.robot.keyPress(keycode)
 }
 
 
     public keyRelease(keycode: Integer){
 var keycode = keycode
-keyRelease(keycode)
+this.robot.keyRelease(keycode)
 }
 
 
     public mouseMove(x: Integer, y: Integer){
 var x = x
 var y = y
-mouseMove(x, y)
+this.robot.mouseMove(x, y)
 }
 
 
     public mousePress(buttons: Integer){
 var buttons = buttons
-mousePress(buttons)
+this.robot.mousePress(buttons)
 }
 
 
     public mouseRelease(buttons: Integer){
 var buttons = buttons
-mouseRelease(buttons)
+this.robot.mouseRelease(buttons)
 }
 
 
     public mouseWheel(wheelAmt: Integer){
 var wheelAmt = wheelAmt
-mouseWheel(wheelAmt)
+this.robot.mouseWheel(wheelAmt)
 }
 
 
     public setAutoDelay(ms: Integer){
 var ms = ms
-setAutoDelay(ms)
+this.robot.setAutoDelay(ms)
 }
 
 
     public setAutoWaitForIdle(isOn: boolean){
 var isOn = isOn
-setAutoWaitForIdle(isOn)
+this.robot.setAutoWaitForIdle(isOn)
 }
 
 
@@ -257,7 +257,7 @@ setAutoWaitForIdle(isOn)
 
 
     public waitForIdle(){
-waitForIdle()
+this.robot.waitForIdle()
 }
 
 

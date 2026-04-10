@@ -64,17 +64,16 @@ var y = y
         
 
 
-    
                         if(stringComponent != 
                                     null
                                 )
                         
                                     {
-                                    setColor(stringComponent!.getForegroundBasicColor()!.toInt())
+                                    graphics.setColor(stringComponent!.getForegroundBasicColor()!.toInt())
 
                                     }
                                 
-drawString(this.getLabel(), x +2, y, 0)
+graphics.drawString(this.getLabel(), x +2, y, 0)
 }
 
 

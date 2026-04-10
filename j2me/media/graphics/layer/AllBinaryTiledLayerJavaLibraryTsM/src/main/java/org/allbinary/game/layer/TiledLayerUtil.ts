@@ -57,7 +57,6 @@ var mapBorderBufferWidth = mapBorderBufferWidth
         
 
 
-    
                         if(x +width > maxRight)
                         
                                     {
@@ -66,7 +65,6 @@ var mapBorderBufferWidth = mapBorderBufferWidth
                                     }
                                 
 
-    
                         if(x < mapBorderBufferWidth)
                         
                                     {
@@ -99,7 +97,6 @@ var mapBorderBufferHeight = mapBorderBufferHeight
         
 
 
-    
                         if(y +height > maxBottom)
                         
                                     {
@@ -108,7 +105,6 @@ var mapBorderBufferHeight = mapBorderBufferHeight
                                     }
                                 
 
-    
                         if(y < mapBorderBufferHeight)
                         
                                     {
@@ -140,7 +136,6 @@ var width = width
         
 
 
-    
                         if(x >= maxRight)
                         
                                     {
@@ -149,7 +144,6 @@ var width = width
                                     }
                                 
 
-    
                         if(x < 0)
                         
                                     {
@@ -181,7 +175,6 @@ var height = height
         
 
 
-    
                         if(y >= maxBottom)
                         
                                     {
@@ -190,7 +183,6 @@ var height = height
                                     }
                                 
 
-    
                         if(y < 0)
                         
                                     {

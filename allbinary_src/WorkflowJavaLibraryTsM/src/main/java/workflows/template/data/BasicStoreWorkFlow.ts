@@ -48,7 +48,7 @@ var pageContext = pageContext
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getStoreName(): string{
 

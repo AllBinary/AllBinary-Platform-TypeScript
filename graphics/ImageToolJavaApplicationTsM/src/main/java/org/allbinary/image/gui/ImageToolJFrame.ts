@@ -93,15 +93,15 @@ public constructor (){
         
         
 
-this.setSize(640, 480)
-setText("255")
-setText("255")
-setText("255")
-setText(commonPhoneStrings!.ZERO)
-setText(commonPhoneStrings!.ZERO)
-setText(commonPhoneStrings!.ZERO)
+this.this.setSize(640, 480)
+this.getMaxRedJTextField()!.setText("255")
+this.getMaxGreenJTextField()!.setText("255")
+this.getMaxBlueJTextField()!.setText("255")
+this.getMinRedJTextField()!.setText(commonPhoneStrings!.ZERO)
+this.getMinGreenJTextField()!.setText(commonPhoneStrings!.ZERO)
+this.getMinBlueJTextField()!.setText(commonPhoneStrings!.ZERO)
 fileJDialog= FileJDialog()
-addFinishedListener(this)
+fileJDialog!.addFinishedListener(this)
 }
 
 
@@ -136,16 +136,16 @@ mirrorJMenuItem= javax.swing.JMenuItem()
 scaleImagesJMenuItem= javax.swing.JMenuItem()
 canvasImagesJMenuItem= javax.swing.JMenuItem()
 createIconImagesJMenuItem= javax.swing.JMenuItem()
-setMinimumSize(java.awt.Dimension(350, 250))
-setText("              Color At Action Options            ")
-setText("Color Range")
-setText("Red:")
-setText("Minimum")
-setText("Maximum")
-setText("Green:")
-setText("Blue:")
-setText("OK")
-addActionListener(object: java.awt.event.ActionListener()
+analysisActionJDialog!.setMinimumSize(java.awt.Dimension(350, 250))
+titleJLabel!.setText("              Color At Action Options            ")
+colorRangeJLabel!.setText("Color Range")
+redJLabel!.setText("Red:")
+minJLabel!.setText("Minimum")
+maxJLabel!.setText("Maximum")
+greenJLabel!.setText("Green:")
+blueJLabel!.setText("Blue:")
+okJButton!.setText("OK")
+okJButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -160,15 +160,15 @@ okJButtonActionPerformed(evt)
         
         
 
-setLayout(analysisActionJDialogLayout)
-setHorizontalGroup(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(analysisActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(analysisActionJDialogLayout!.createSequentialGroup()!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(blueJLabel)!.add(greenJLabel)!.add(redJLabel)!.add(colorRangeJLabel))!.add(29, 29, 29)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(org.jdesktop.layout.GroupLayout.TRAILING, minJLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)!.add(org.jdesktop.layout.GroupLayout.LEADING, minBlueJTextField)!.add(org.jdesktop.layout.GroupLayout.LEADING, minGreenJTextField)!.add(org.jdesktop.layout.GroupLayout.LEADING, minRedJTextField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)!.add(org.jdesktop.layout.GroupLayout.LEADING, okJButton)))!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)!.add(org.jdesktop.layout.GroupLayout.LEADING, analysisActionJDialogLayout!.createSequentialGroup()!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)!.add(org.jdesktop.layout.GroupLayout.LEADING, maxRedJTextField)!.add(org.jdesktop.layout.GroupLayout.LEADING, analysisActionJDialogLayout!.createSequentialGroup()!.add(1, 1, 1)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(maxBlueJTextField)!.add(maxGreenJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 43, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 17, Short.MAX_VALUE))!.add(org.jdesktop.layout.GroupLayout.LEADING, maxJLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE))!.addContainerGap())!.add(org.jdesktop.layout.GroupLayout.TRAILING, analysisActionJDialogLayout!.createSequentialGroup()!.add(titleJLabel)!.add(25, 25, 25)))))
-setVerticalGroup(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(analysisActionJDialogLayout!.createSequentialGroup()!.add(titleJLabel)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)!.add(minJLabel)!.add(colorRangeJLabel)!.add(maxJLabel))!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)!.add(redJLabel)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)!.add(minRedJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.add(maxRedJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)!.add(greenJLabel)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)!.add(minGreenJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.add(maxGreenJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)!.add(blueJLabel)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)!.add(minBlueJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.add(maxBlueJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))!.add(16, 16, 16)!.add(okJButton)!.addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+analysisActionJDialog!.getContentPane()!.setLayout(analysisActionJDialogLayout)
+analysisActionJDialogLayout!.setHorizontalGroup(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(analysisActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(analysisActionJDialogLayout!.createSequentialGroup()!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(blueJLabel)!.add(greenJLabel)!.add(redJLabel)!.add(colorRangeJLabel))!.add(29, 29, 29)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(org.jdesktop.layout.GroupLayout.TRAILING, minJLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)!.add(org.jdesktop.layout.GroupLayout.LEADING, minBlueJTextField)!.add(org.jdesktop.layout.GroupLayout.LEADING, minGreenJTextField)!.add(org.jdesktop.layout.GroupLayout.LEADING, minRedJTextField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)!.add(org.jdesktop.layout.GroupLayout.LEADING, okJButton)))!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)!.add(org.jdesktop.layout.GroupLayout.LEADING, analysisActionJDialogLayout!.createSequentialGroup()!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)!.add(org.jdesktop.layout.GroupLayout.LEADING, maxRedJTextField)!.add(org.jdesktop.layout.GroupLayout.LEADING, analysisActionJDialogLayout!.createSequentialGroup()!.add(1, 1, 1)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(maxBlueJTextField)!.add(maxGreenJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 43, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 17, Short.MAX_VALUE))!.add(org.jdesktop.layout.GroupLayout.LEADING, maxJLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE))!.addContainerGap())!.add(org.jdesktop.layout.GroupLayout.TRAILING, analysisActionJDialogLayout!.createSequentialGroup()!.add(titleJLabel)!.add(25, 25, 25)))))
+analysisActionJDialogLayout!.setVerticalGroup(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(analysisActionJDialogLayout!.createSequentialGroup()!.add(titleJLabel)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)!.add(minJLabel)!.add(colorRangeJLabel)!.add(maxJLabel))!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)!.add(redJLabel)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)!.add(minRedJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.add(maxRedJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)!.add(greenJLabel)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)!.add(minGreenJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.add(maxGreenJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)!.add(blueJLabel)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)!.add(minBlueJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.add(maxBlueJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))!.add(16, 16, 16)!.add(okJButton)!.addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE)
-setLayout(java.awt.GridLayout(1, 0))
-setLayout(java.awt.GridLayout(1, 0))
-add(jPanel1)
-setText("File")
-addActionListener(object: java.awt.event.ActionListener()
+getContentPane()!.setLayout(java.awt.GridLayout(1, 0))
+jPanel1!.setLayout(java.awt.GridLayout(1, 0))
+getContentPane()!.add(jPanel1)
+fileJMenu!.setText("File")
+fileJMenu!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -178,8 +178,8 @@ fileJMenuActionPerformed(evt)
 
                                 }
                             )
-setText("Open")
-addActionListener(object: java.awt.event.ActionListener()
+openImageJMenuItem!.setText("Open")
+openImageJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -189,10 +189,10 @@ openImageJMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(openImageJMenuItem)
-add(fileJMenu)
-setText("Processing")
-addActionListener(object: java.awt.event.ActionListener()
+fileJMenu!.add(openImageJMenuItem)
+mainJMenuBar!.add(fileJMenu)
+processingJMenu!.setText("Processing")
+processingJMenu!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -202,8 +202,8 @@ processingJMenuActionPerformed(evt)
 
                                 }
                             )
-setText("Image Analyze")
-addActionListener(object: java.awt.event.ActionListener()
+analyzeJMenuItem!.setText("Image Analyze")
+analyzeJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -213,9 +213,9 @@ analyzeJMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(analyzeJMenuItem)
-setText("Mirror Sprite Generator")
-addActionListener(object: java.awt.event.ActionListener()
+processingJMenu!.add(analyzeJMenuItem)
+generateMirrorSpriteMenuItem!.setText("Mirror Sprite Generator")
+generateMirrorSpriteMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -225,9 +225,9 @@ generateMirrorSpriteMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(generateMirrorSpriteMenuItem)
-setText("Rotation Sprite Generator")
-addActionListener(object: java.awt.event.ActionListener()
+processingJMenu!.add(generateMirrorSpriteMenuItem)
+generateRotationSpriteJMenuItem!.setText("Rotation Sprite Generator")
+generateRotationSpriteJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -237,9 +237,9 @@ generateRotationSpriteJMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(generateRotationSpriteJMenuItem)
-setText("Sprite Splitter Generator")
-addActionListener(object: java.awt.event.ActionListener()
+processingJMenu!.add(generateRotationSpriteJMenuItem)
+generateSpriteSplitterMenuItem!.setText("Sprite Splitter Generator")
+generateSpriteSplitterMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -249,9 +249,9 @@ generateSpriteSplitterMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(generateSpriteSplitterMenuItem)
-setText("Rotate Image Generator")
-addActionListener(object: java.awt.event.ActionListener()
+processingJMenu!.add(generateSpriteSplitterMenuItem)
+generateRotationMenuItem!.setText("Rotate Image Generator")
+generateRotationMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -261,9 +261,9 @@ generateRotationMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(generateRotationMenuItem)
-setText("Multi Image Unifier")
-addActionListener(object: java.awt.event.ActionListener()
+processingJMenu!.add(generateRotationMenuItem)
+createStripImageJMenuItem!.setText("Multi Image Unifier")
+createStripImageJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -273,9 +273,9 @@ createStripImageJMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(createStripImageJMenuItem)
-setText("Mirror Image(s)")
-addActionListener(object: java.awt.event.ActionListener()
+processingJMenu!.add(createStripImageJMenuItem)
+mirrorJMenuItem!.setText("Mirror Image(s)")
+mirrorJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -285,9 +285,9 @@ mirrorJMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(mirrorJMenuItem)
-setText("Scale Image(s)")
-addActionListener(object: java.awt.event.ActionListener()
+processingJMenu!.add(mirrorJMenuItem)
+scaleImagesJMenuItem!.setText("Scale Image(s)")
+scaleImagesJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -297,9 +297,9 @@ scaleImagesJMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(scaleImagesJMenuItem)
-setText("Canvas Image(s)")
-addActionListener(object: java.awt.event.ActionListener()
+processingJMenu!.add(scaleImagesJMenuItem)
+canvasImagesJMenuItem!.setText("Canvas Image(s)")
+canvasImagesJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -309,9 +309,9 @@ canvasImagesJMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(canvasImagesJMenuItem)
-setText("Create Icon Image(s)")
-addActionListener(object: java.awt.event.ActionListener()
+processingJMenu!.add(canvasImagesJMenuItem)
+createIconImagesJMenuItem!.setText("Create Icon Image(s)")
+createIconImagesJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -321,8 +321,8 @@ createIconsJMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(createIconImagesJMenuItem)
-add(processingJMenu)
+processingJMenu!.add(createIconImagesJMenuItem)
+mainJMenuBar!.add(processingJMenu)
 setJMenuBar(mainJMenuBar)
 pack()
 }
@@ -337,13 +337,13 @@ var evt = evt
         
         
 
-removeAll()
-add(imageUnifierJPanel)
-updateUI()
+this.jPanel1!.removeAll()
+this.jPanel1!.add(imageUnifierJPanel)
+this.jPanel1!.updateUI()
 imageProcessorInputCompositeInterface= imageUnifierJPanel
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "createStripImageJMenuItemActionPerformed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "createStripImageJMenuItemActionPerformed", e)
 }
 
 }
@@ -353,22 +353,22 @@ put(commonStrings!.EXCEPTION, this, "createStripImageJMenuItemActionPerformed", 
 var evt = evt
 
         try {
-            put("Starting", this, "okJButtonActionPerformed")
+            logUtil!.put("Starting", this, "okJButtonActionPerformed")
 
     var imageAnalysisResultsArray: ImageAnalysisResults[] = ImageAnalysis.getInstance()!.process(imageProcessorInput!.getBufferedImageArray(), this.getColorRangeInterface())!;
         
         
 
-removeAll()
-add(ImageAnalysisResultsJPanel(imageAnalysisResultsArray))
-updateUI()
-setVisible(false)
+this.jPanel1!.removeAll()
+this.jPanel1!.add(ImageAnalysisResultsJPanel(imageAnalysisResultsArray))
+this.jPanel1!.updateUI()
+this.analysisActionJDialog!.setVisible(false)
 imageProcessorInputCompositeInterface= 
                                         null
                                     
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "okJButtonActionPerformed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "okJButtonActionPerformed", e)
 }
 
 }
@@ -383,11 +383,11 @@ var evt = evt
 var evt = evt
 
         try {
-            put("Starting", this, "openImageJMenuItemActionPerformed")
-setVisible(true)
+            logUtil!.put("Starting", this, "openImageJMenuItemActionPerformed")
+fileJDialog!.setVisible(true)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "openImageJMenuItemActionPerformed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "openImageJMenuItemActionPerformed", e)
 }
 
 }
@@ -397,8 +397,8 @@ put(commonStrings!.EXCEPTION, this, "openImageJMenuItemActionPerformed", e)
 var files = files
 
         try {
-            put("Reading " +files.length +" files.", this, "onFiles")
-sort(files, object: Comparator<File>()
+            logUtil!.put("Reading " +files.length +" files.", this, "onFiles")
+Arrays.sort(files, object: Comparator<File>()
                                 {
                                 
     public compare(file1: File, file2: File): number{
@@ -479,7 +479,6 @@ index < files.length; index++)
         {
 bufferedImageArray[index]= ImageIO.read(files[index]!)
 
-    
                         if(bufferedImageArray[index] == 
                                     null
                                 )
@@ -488,28 +487,27 @@ bufferedImageArray[index]= ImageIO.read(files[index]!)
                                     
 
 
-                            throw Exception("Unable to read file: " +files[index]!.getPath())
+                            throw Error("Unable to read file: " +files[index]!.getPath())
 
                                     }
                                 
 }
 
 this.imageProcessorInput= ImageProcessorInput(files, bufferedImageArray)
-setVisible(false)
+this.fileJDialog!.setVisible(false)
 
-    
                         if(imageProcessorInputCompositeInterface != 
                                     null
                                 )
                         
                                     {
-                                    setImageProcessorInput(this.imageProcessorInput)
+                                    imageProcessorInputCompositeInterface!.setImageProcessorInput(this.imageProcessorInput)
 
                                     }
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "onFiles", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "onFiles", e)
 }
 
 }
@@ -524,11 +522,11 @@ var evt = evt
 var evt = evt
 
         try {
-            put("Starting", this, "analyzeJMenuItemActionPerformed")
-setVisible(true)
+            logUtil!.put("Starting", this, "analyzeJMenuItemActionPerformed")
+this.analysisActionJDialog!.setVisible(true)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "analyzeJMenuItemActionPerformed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "analyzeJMenuItemActionPerformed", e)
 }
 
 }
@@ -538,19 +536,19 @@ put(commonStrings!.EXCEPTION, this, "analyzeJMenuItemActionPerformed", e)
 var evt = evt
 
         try {
-            put("Starting", this, "generateRotationSpriteJMenuItemActionPerformed")
+            logUtil!.put("Starting", this, "generateRotationSpriteJMenuItemActionPerformed")
 
     var spriteImageJPanel: RotationSpriteImageJPanel = new RotationSpriteImageJPanel(this.imageProcessorInput);
         
         
 
-removeAll()
-add(spriteImageJPanel)
-updateUI()
+this.jPanel1!.removeAll()
+this.jPanel1!.add(spriteImageJPanel)
+this.jPanel1!.updateUI()
 imageProcessorInputCompositeInterface= spriteImageJPanel
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "generateRotationSpriteJMenuItemActionPerformed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "generateRotationSpriteJMenuItemActionPerformed", e)
 }
 
 }
@@ -560,19 +558,19 @@ put(commonStrings!.EXCEPTION, this, "generateRotationSpriteJMenuItemActionPerfor
 var evt = evt
 
         try {
-            put("Starting", this, "generateRotationSpriteJMenuItemActionPerformed")
+            logUtil!.put("Starting", this, "generateRotationSpriteJMenuItemActionPerformed")
 
     var imageJPanel: SpriteSplitterImageJPanel = new SpriteSplitterImageJPanel(this.imageProcessorInput);
         
         
 
-removeAll()
-add(imageJPanel)
-updateUI()
+this.jPanel1!.removeAll()
+this.jPanel1!.add(imageJPanel)
+this.jPanel1!.updateUI()
 imageProcessorInputCompositeInterface= imageJPanel
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "generateRotationMenuItemActionPerformed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "generateRotationMenuItemActionPerformed", e)
 }
 
 }
@@ -582,19 +580,19 @@ put(commonStrings!.EXCEPTION, this, "generateRotationMenuItemActionPerformed", e
 var evt = evt
 
         try {
-            put("Starting", this, "generateRotationSpriteJMenuItemActionPerformed")
+            logUtil!.put("Starting", this, "generateRotationSpriteJMenuItemActionPerformed")
 
     var rotationImageJPanel: RotationImageJPanel = new RotationImageJPanel(this.imageProcessorInput);
         
         
 
-removeAll()
-add(rotationImageJPanel)
-updateUI()
+this.jPanel1!.removeAll()
+this.jPanel1!.add(rotationImageJPanel)
+this.jPanel1!.updateUI()
 imageProcessorInputCompositeInterface= rotationImageJPanel
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "generateRotationMenuItemActionPerformed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "generateRotationMenuItemActionPerformed", e)
 }
 
 }
@@ -604,19 +602,19 @@ put(commonStrings!.EXCEPTION, this, "generateRotationMenuItemActionPerformed", e
 var evt = evt
 
         try {
-            put(this.commonStrings!.START, this, "scaleImagesJMenuItemActionPerformed")
+            logUtil!.put(this.commonStrings!.START, this, "scaleImagesJMenuItemActionPerformed")
 
     var resizeImageJPanel: ResizeImageJPanel = new ResizeImageJPanel(this.imageProcessorInput);
         
         
 
-removeAll()
-add(resizeImageJPanel)
-updateUI()
+this.jPanel1!.removeAll()
+this.jPanel1!.add(resizeImageJPanel)
+this.jPanel1!.updateUI()
 imageProcessorInputCompositeInterface= resizeImageJPanel
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerformed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerformed", e)
 }
 
 }
@@ -626,19 +624,19 @@ put(commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerformed", e)
 var evt = evt
 
         try {
-            put(this.commonStrings!.START, this, "createIconsJMenuItemActionPerformed")
+            logUtil!.put(this.commonStrings!.START, this, "createIconsJMenuItemActionPerformed")
 
     var createIconImagesJPanel: CreateIconImagesJPanel = new CreateIconImagesJPanel(this.imageProcessorInput);
         
         
 
-removeAll()
-add(createIconImagesJPanel)
-updateUI()
+this.jPanel1!.removeAll()
+this.jPanel1!.add(createIconImagesJPanel)
+this.jPanel1!.updateUI()
 imageProcessorInputCompositeInterface= createIconImagesJPanel
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerformed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerformed", e)
 }
 
 }
@@ -648,19 +646,19 @@ put(commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerformed", e)
 var evt = evt
 
         try {
-            put(this.commonStrings!.START, this, "canvasImagesJMenuItemActionPerformed")
+            logUtil!.put(this.commonStrings!.START, this, "canvasImagesJMenuItemActionPerformed")
 
     var resizeImageJPanel: CanvasImageJPanel = new CanvasImageJPanel(this.imageProcessorInput);
         
         
 
-removeAll()
-add(resizeImageJPanel)
-updateUI()
+this.jPanel1!.removeAll()
+this.jPanel1!.add(resizeImageJPanel)
+this.jPanel1!.updateUI()
 imageProcessorInputCompositeInterface= resizeImageJPanel
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerformed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerformed", e)
 }
 
 }
@@ -670,19 +668,19 @@ put(commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerformed", e)
 var evt = evt
 
         try {
-            put("Starting", this, "generateMirrorSpriteJMenuItemActionPerformed")
+            logUtil!.put("Starting", this, "generateMirrorSpriteJMenuItemActionPerformed")
 
     var spriteImageJPanel: MirrorSpriteImageJPanel = new MirrorSpriteImageJPanel(this.imageProcessorInput);
         
         
 
-removeAll()
-add(spriteImageJPanel)
-updateUI()
+this.jPanel1!.removeAll()
+this.jPanel1!.add(spriteImageJPanel)
+this.jPanel1!.updateUI()
 imageProcessorInputCompositeInterface= spriteImageJPanel
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "generateMirrorSpriteJMenuItemActionPerformed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "generateMirrorSpriteJMenuItemActionPerformed", e)
 }
 
 }
@@ -692,19 +690,19 @@ put(commonStrings!.EXCEPTION, this, "generateMirrorSpriteJMenuItemActionPerforme
 var evt = evt
 
         try {
-            put("Starting", this, "generateMirrorJMenuItemActionPerformed")
+            logUtil!.put("Starting", this, "generateMirrorJMenuItemActionPerformed")
 
     var mirrorImageJPanel: MirrorImageJPanel = new MirrorImageJPanel(this.imageProcessorInput);
         
         
 
-removeAll()
-add(mirrorImageJPanel)
-updateUI()
+this.jPanel1!.removeAll()
+this.jPanel1!.add(mirrorImageJPanel)
+this.jPanel1!.updateUI()
 imageProcessorInputCompositeInterface= mirrorImageJPanel
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "generateMirrorJMenuItemActionPerformed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "generateMirrorJMenuItemActionPerformed", e)
 }
 
 }
@@ -716,17 +714,17 @@ put(commonStrings!.EXCEPTION, this, "generateMirrorJMenuItemActionPerformed", e)
         
         
 
-setMinRed(Integer(this.getMinRedJTextField()!.getText()).
+colorRangeInterface!.setMinRed(Integer(this.getMinRedJTextField()!.getText()).
                             toInt())
-setMaxRed(Integer(this.getMaxRedJTextField()!.getText()).
+colorRangeInterface!.setMaxRed(Integer(this.getMaxRedJTextField()!.getText()).
                             toInt())
-setMinGreen(Integer(this.getMinGreenJTextField()!.getText()).
+colorRangeInterface!.setMinGreen(Integer(this.getMinGreenJTextField()!.getText()).
                             toInt())
-setMaxGreen(Integer(this.getMaxGreenJTextField()!.getText()).
+colorRangeInterface!.setMaxGreen(Integer(this.getMaxGreenJTextField()!.getText()).
                             toInt())
-setMinBlue(Integer(this.getMinBlueJTextField()!.getText()).
+colorRangeInterface!.setMinBlue(Integer(this.getMinBlueJTextField()!.getText()).
                             toInt())
-setMaxBlue(Integer(this.getMaxBlueJTextField()!.getText()).
+colorRangeInterface!.setMaxBlue(Integer(this.getMaxBlueJTextField()!.getText()).
                             toInt())
 
 

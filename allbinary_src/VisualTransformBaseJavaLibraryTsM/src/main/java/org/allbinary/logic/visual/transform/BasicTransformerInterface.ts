@@ -44,7 +44,7 @@ interface BasicTransformerInterface extends CompositeTransformInfoInterface {
 
     public getURIResolver(): URIResolver
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public translate(xmlDocumentStr: string): string
 

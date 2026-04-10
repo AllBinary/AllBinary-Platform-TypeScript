@@ -70,7 +70,6 @@ this.numberOfLaps++
 
     public isDone(): boolean{
 
-    
                         if(this.numberOfLaps >= this.totalLaps)
                         
                                     {
@@ -98,12 +97,12 @@ this.numberOfLaps++
         
         
 
-append("isDone: ")
-appendboolean(this.isDone())
-append(" CurrentLap: ")
-appendint(this.getCurrentLap())
-append(" Total Laps: ")
-appendint(this.getTotalLaps())
+stringBuffer!.append("isDone: ")
+stringBuffer!.appendboolean(this.isDone())
+stringBuffer!.append(" CurrentLap: ")
+stringBuffer!.appendint(this.getCurrentLap())
+stringBuffer!.append(" Total Laps: ")
+stringBuffer!.appendint(this.getTotalLaps())
 
 
 

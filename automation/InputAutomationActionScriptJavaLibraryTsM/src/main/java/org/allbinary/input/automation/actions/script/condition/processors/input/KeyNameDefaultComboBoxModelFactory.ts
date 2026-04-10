@@ -59,7 +59,7 @@ index < keyArray!.length; index++)
         
         
 
-addElement(keyAsString)
+defaultComboBoxModel!.addElement(keyAsString)
 }
 
 

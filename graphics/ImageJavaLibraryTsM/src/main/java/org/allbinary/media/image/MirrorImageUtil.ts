@@ -70,7 +70,7 @@ private constructor (){
 var bufferedImage = bufferedImage
 var verticle = verticle
 var horizontal = horizontal
-put("Starting", this, "getImage")
+logUtil!.put("Starting", this, "getImage")
 
     var newBufferedImage: BufferedImage = this.imageUtil!.create(bufferedImage!.getWidth(
                             null), bufferedImage!.getHeight(
@@ -84,7 +84,6 @@ put("Starting", this, "getImage")
         
 
 
-    
                         if(verticle)
                         
                                     {
@@ -93,7 +92,7 @@ put("Starting", this, "getImage")
         
         
 
-translate(0,  -bufferedImage!.getHeight(
+tx.translate(0,  -bufferedImage!.getHeight(
                             null))
 
     var op: AffineTransformOp = new AffineTransformOp(tx, AffineTransformOp.TYPE_NEAREST_NEIGHBOR);
@@ -106,7 +105,6 @@ bufferedImage= op.filter(bufferedImage,
                                     }
                                 
 
-    
                         if(horizontal)
                         
                                     {
@@ -115,7 +113,7 @@ bufferedImage= op.filter(bufferedImage,
         
         
 
-translate( -bufferedImage!.getWidth(
+tx.translate( -bufferedImage!.getWidth(
                             null), 0)
 
     var op: AffineTransformOp = new AffineTransformOp(tx, AffineTransformOp.TYPE_NEAREST_NEIGHBOR);
@@ -127,11 +125,11 @@ bufferedImage= op.filter(bufferedImage,
 
                                     }
                                 
-drawImage(bufferedImage, 0, 0, bufferedImage!.getWidth(
+g.drawImage(bufferedImage, 0, 0, bufferedImage!.getWidth(
                             null), bufferedImage!.getHeight(
                             null), 
                             null)
-dispose()
+g.dispose()
 
 
 
@@ -176,14 +174,12 @@ var horizontal = horizontal
         
 
 
-    
                         if(verticle)
                         numberOfFrames *= 2
 
-    
                         if(horizontal)
                         numberOfFrames *= 2
-put("numberOfFramesPerOrientation: " +numberOfFramesPerOrientation +" numberOfFrames: " +numberOfFrames, this, "getImages")
+logUtil!.put("numberOfFramesPerOrientation: " +numberOfFramesPerOrientation +" numberOfFrames: " +numberOfFrames, this, "getImages")
 
     var bufferedImageArray: BufferedImage[] = new Array(numberOfFrames);
         

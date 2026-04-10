@@ -33,7 +33,7 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(){
 
@@ -41,8 +41,8 @@ public constructor (){
         
         
 
-this.setInputAutomationModuleInterface(inputAutomationGenericModuleServiceFactory!.getInputAutomationModuleInterfaceArray())
-this.setServiceFactory(inputAutomationGenericModuleServiceFactory)
+this.this.setInputAutomationModuleInterface(inputAutomationGenericModuleServiceFactory!.getInputAutomationModuleInterfaceArray())
+this.this.setServiceFactory(inputAutomationGenericModuleServiceFactory)
 }
 
 

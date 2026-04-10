@@ -83,7 +83,6 @@ this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperti
 
     public minX(){
 
-    
                         if(this.velocityInterface!.getVelocityXBasicDecimalP()!.getUnscaled() < 0)
                         this.velocityInterface!.getVelocityXBasicDecimalP()!.multiply( -1)
 }
@@ -91,7 +90,6 @@ this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperti
 
     public maxX(){
 
-    
                         if(this.velocityInterface!.getVelocityXBasicDecimalP()!.getUnscaled() > 0)
                         this.velocityInterface!.getVelocityXBasicDecimalP()!.multiply( -1)
 }
@@ -99,7 +97,6 @@ this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperti
 
     public minY(){
 
-    
                         if(this.velocityInterface!.getVelocityYBasicDecimalP()!.getUnscaled() < 0)
                         this.velocityInterface!.getVelocityYBasicDecimalP()!.multiply( -1)
 }
@@ -107,7 +104,6 @@ this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperti
 
     public maxY(){
 
-    
                         if(this.velocityInterface!.getVelocityYBasicDecimalP()!.getUnscaled() > 0)
                         this.velocityInterface!.getVelocityYBasicDecimalP()!.multiply( -1)
 }

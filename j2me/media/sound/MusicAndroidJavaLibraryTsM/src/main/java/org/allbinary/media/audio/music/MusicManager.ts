@@ -71,8 +71,8 @@ var musicServiceClass = musicServiceClass
         
         
 
-putExtra(commonStateStrings!.ON_START_COMMAND, 1)
-startService(musicPauseIntent)
+musicPauseIntent!.putExtra(commonStateStrings!.ON_START_COMMAND, 1)
+activity.startService(musicPauseIntent)
 }
 
 
@@ -80,7 +80,6 @@ startService(musicPauseIntent)
     //var activity = activity
 var musicServiceClass = musicServiceClass
 
-    
                         if(AndroidServicesUtil.getInstance()!.isServiceRunning(musicServiceClass!.toString()!))
                         
                                     {
@@ -94,8 +93,8 @@ var musicServiceClass = musicServiceClass
         
         
 
-putExtra(commonStateStrings!.ON_START_COMMAND, 2)
-startService(musicResumeIntent)
+musicResumeIntent!.putExtra(commonStateStrings!.ON_START_COMMAND, 2)
+activity.startService(musicResumeIntent)
 
                                     }
                                 
@@ -172,7 +171,7 @@ public constructor (musicServiceClass: KClass<*>, songList: BasicArrayList){
             super();
                 //var musicServiceClass = musicServiceClass
     //var songList = songList
-put(commonStateStrings!.CONTEXT +resourceUtil!.getContext(), this, commonStrings!.CONSTRUCTOR)
+PreLogUtil.put(commonStateStrings!.CONTEXT +resourceUtil!.getContext(), this, commonStrings!.CONSTRUCTOR)
 this.musicServiceClass= musicServiceClass
 currentIntent= Intent(resourceUtil!.getContext(), musicServiceClass::class.java)
 this.songList= songList
@@ -184,7 +183,6 @@ var nextSongSound = nextSongSound
     //var leftVolume = leftVolume
     //var rightVolume = rightVolume
 
-    
                         if(nextSongSound == 
                                     null
                                 )
@@ -197,7 +195,7 @@ var nextSongSound = nextSongSound
 this.nextSongSound= nextSongSound
 this.leftVolume= leftVolume
 this.rightVolume= rightVolume
-this.reset()
+this.this.reset()
 }
 
 
@@ -208,7 +206,6 @@ this.timeDelayHelper!.delay= 0
 
     public process(){
 
-    
                         if(this.songList!.size() == 0)
                         
                                     {
@@ -222,11 +219,10 @@ this.timeDelayHelper!.delay= 0
                                     }
                                 
 
-    
                         if(this.timeDelayHelper!.isTime(gameTickTimeDelayHelper!.startTime))
                         
                                     {
-                                    this.startNewSong()
+                                    this.this.startNewSong()
 
 
 
@@ -237,12 +233,10 @@ this.timeDelayHelper!.delay= 0
                                     }
                                 
 
-    
                         if(timeDelayHelper2!.isTime(this.gameTickTimeDelayHelper!.startTime))
                         
                                     {
                                     
-    
                         if(androidServicesUtil!.isServiceRunning(this.musicServiceClass!.toString()!))
                         
                                     {
@@ -250,7 +244,7 @@ this.timeDelayHelper!.delay= 0
                                     }
                                 
                         else {
-                            this.startNewSong()
+                            this.this.startNewSong()
 
                         }
                             
@@ -281,7 +275,7 @@ this.timeDelayHelper!.delay= 0
         
         
 
-put(StringBuilder().
+PreLogUtil.put(StringBuilder().
                             append(PLAY)!.append(sound.getResource())!.append(FOR)!.append(duration)!.toString(), this, commonStrings!.PROCESS)
 }
 
@@ -291,9 +285,8 @@ put(StringBuilder().
     public startNewSong(){
 
         try {
-            stopService(this.currentIntent)
+            this.resourceUtil!.getContext()!.stopService(this.currentIntent)
 
-    
                         if(this.nextSongSound == NoSound.getInstance())
                         
                                     {
@@ -312,13 +305,13 @@ this.nextSongSound= NoSound.getInstance()
         
         
 
-put(StringBuilder().
+PreLogUtil.put(StringBuilder().
                             append(PLAY)!.append(this.currentSongSound!.getResource())!.append(FOR)!.append(duration)!.toString(), this, commonStrings!.PROCESS)
 this.timeDelayHelper!.delay= duration.toInt()
-putExtra(musicStrings!.SONG_EXTRA, this.resourceUtil!.getResourceId(this.currentSongSound!.getResource())!.toInt())
-putExtra(musicStrings!.LEFT_VOLUME, leftVolume)
-putExtra(musicStrings!.RIGHT_VOLUME, rightVolume)
-startService(this.currentIntent)
+this.currentIntent!.putExtra(musicStrings!.SONG_EXTRA, this.resourceUtil!.getResourceId(this.currentSongSound!.getResource())!.toInt())
+this.currentIntent!.putExtra(musicStrings!.LEFT_VOLUME, leftVolume)
+this.currentIntent!.putExtra(musicStrings!.RIGHT_VOLUME, rightVolume)
+this.resourceUtil!.getContext()!.startService(this.currentIntent)
 } catch(e: Exception)
             {
 
@@ -327,7 +320,6 @@ startService(this.currentIntent)
         
 
 
-    
                         if(currentSongSound != 
                                     null
                                 )
@@ -337,16 +329,16 @@ startService(this.currentIntent)
 
                                     }
                                 
-put(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.PROCESS, e)
+PreLogUtil.put(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.PROCESS, e)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public stop(){
-stopService(this.currentIntent)
+this.resourceUtil!.getContext()!.stopService(this.currentIntent)
 }
 
 

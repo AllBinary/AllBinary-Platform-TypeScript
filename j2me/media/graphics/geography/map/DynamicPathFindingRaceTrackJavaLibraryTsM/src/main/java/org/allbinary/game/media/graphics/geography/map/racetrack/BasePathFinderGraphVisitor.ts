@@ -64,7 +64,7 @@ this.maxPathWeight= maxPathWeight
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public visit(graph: SimpleWeightedGraph, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
 var graph = graph
@@ -73,7 +73,7 @@ var endPathFindingNodeList = endPathFindingNodeList
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fixPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, pathList: BasicArrayList){
 var startPathFindingNodeList = startPathFindingNodeList
@@ -94,8 +94,8 @@ index >= 0; index--)
         
         
 
-remove(startPathFindingNode!.geographicMapCellPosition)
-add(0, startPathFindingNode!.geographicMapCellPosition)
+pathList!.remove(startPathFindingNode!.geographicMapCellPosition)
+pathList!.add(0, startPathFindingNode!.geographicMapCellPosition)
 }
 
 }
@@ -104,7 +104,6 @@ add(0, startPathFindingNode!.geographicMapCellPosition)
     public isValid(graphPath: GraphPath): boolean{
 var graphPath = graphPath
 
-    
                         if(graphPath!.getEdgeList()!.size() > edgeMinimum && graphPath!.getWeight() < maxPathWeight && graphPath!.getWeight() > minPathWeight)
                         
                                     {
@@ -138,29 +137,26 @@ var graphPath = graphPath
         
 
 
-    
                         if(graphPath!.getEdgeList()!.size() < edgeMinimum)
                         
                                     {
-                                    append("Ignoring Small: " +graphPath!.getEdgeList()!.size())
+                                    stringBuffer!.append("Ignoring Small: " +graphPath!.getEdgeList()!.size())
 
                                     }
                                 
 
-    
                         if(graphPath!.getWeight() <= minPathWeight)
                         
                                     {
-                                    append(" Low Weighted Path: " +graphPath!.getWeight())
+                                    stringBuffer!.append(" Low Weighted Path: " +graphPath!.getWeight())
 
                                     }
                                 
 
-    
                         if(graphPath!.getWeight() >= maxPathWeight)
                         
                                     {
-                                    append(" To High Weighted Path: " +graphPath!.getWeight())
+                                    stringBuffer!.append(" To High Weighted Path: " +graphPath!.getWeight())
 
                                     }
                                 

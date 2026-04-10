@@ -77,7 +77,7 @@ public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, text
 
                             //For kotlin this is before the body of the constructor.
                     
-this.onDisplayChangeEvent(
+this.this.onDisplayChangeEvent(
                             null)
 rectangle= intArrayOf(0,this.getHeight(), this.getWidth(),  -this.getHeight();
         
@@ -89,11 +89,11 @@ rectangle= intArrayOf(0,this.getHeight(), this.getWidth(),  -this.getHeight();
     //var displayChangeEvent = displayChangeEvent
 
         try {
-            put(commonStrings!.START, this, "onResize")
+            logUtil!.put(commonStrings!.START, this, "onResize")
 this.a= DisplayInfoSingleton.getInstance()!.getLastHeight() -this.getHeight()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "onResize", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "onResize", e)
 }
 
 }
@@ -101,7 +101,7 @@ put(commonStrings!.EXCEPTION, this, "onResize", e)
 
     public set(gl: GL){
     //var gl = gl
-this.onDisplayChangeEvent(
+this.this.onDisplayChangeEvent(
                             null)
 
     var gl11: GL11 = gl as GL11;
@@ -109,14 +109,13 @@ this.onDisplayChangeEvent(
         
 
 
-    
                         if(super.initTexture(gl11))
                         
                                     {
-                                    load(gl11, GL10.GL_TEXTURE_2D, 0, this, 0, true)
-glTexParameteriv(GL10.GL_TEXTURE_2D, GL11Ext.GL_TEXTURE_CROP_RECT_OES, rectangle, 0)
-glDisable(GL10.GL_TEXTURE_2D)
-logError(gl11, this)
+                                    this.textureFactory!.load(gl11, GL10.GL_TEXTURE_2D, 0, this, 0, true)
+gl11.glTexParameteriv(GL10.GL_TEXTURE_2D, GL11Ext.GL_TEXTURE_CROP_RECT_OES, rectangle, 0)
+gl11.glDisable(GL10.GL_TEXTURE_2D)
+OpenGLLogUtil.getInstance()!.logError(gl11, this)
 
                                     }
                                 
@@ -128,10 +127,12 @@ logError(gl11, this)
     //var x = x
     //var y = y
     //var z = z
-glEnable(GL10.GL_TEXTURE_2D)
-glBindTexture(GL10.GL_TEXTURE_2D, openGLESImageProperties!.textureID)
-glDrawTexfOES(x, a -y, z, this.getWidth(), this.getHeight())
-glDisable(GL10.GL_TEXTURE_2D)
+gl.glEnable(GL10.GL_TEXTURE_2D)
+gl.glBindTexture(GL10.GL_TEXTURE_2D, openGLESImageProperties!.textureID)
+gl = glgl as GL11Ext
+gl.
+                    glDrawTexfOES(x, a -y, z, this.getWidth(), this.getHeight())
+gl.glDisable(GL10.GL_TEXTURE_2D)
 }
 
 

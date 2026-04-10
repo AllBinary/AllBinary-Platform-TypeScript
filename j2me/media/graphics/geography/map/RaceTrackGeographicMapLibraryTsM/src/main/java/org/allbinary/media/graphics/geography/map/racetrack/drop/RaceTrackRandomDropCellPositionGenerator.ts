@@ -98,12 +98,12 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
 var allBinaryGameLayerManager = allBinaryGameLayerManager
 var geographicMapInterface = geographicMapInterface
-update(allBinaryGameLayerManager, geographicMapInterface)
+super.update(allBinaryGameLayerManager, geographicMapInterface)
 
     var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
         
@@ -114,7 +114,7 @@ this.cellHeight= tiledLayer!.getCellHeight() /this.cellsPerRowOrColumn
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     drop(allBinaryLayerManager: AllBinaryLayerManager, index: number){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -169,8 +169,8 @@ var index = index
         
         
 
-setTiledLayer(tiledLayer)
-append(pickupLayer)
+pickupLayer!.setTiledLayer(tiledLayer)
+allBinaryLayerManager!.append(pickupLayer)
 }
 
 

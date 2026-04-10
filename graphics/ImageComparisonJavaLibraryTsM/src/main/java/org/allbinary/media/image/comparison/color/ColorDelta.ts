@@ -60,8 +60,8 @@ public constructor (rgb1: number, rgb2: number){
             super();
             var rgb1 = rgb1
 var rgb2 = rgb2
-this.setRgb1(rgb1)
-this.setRgb2(rgb2)
+this.this.setRgb1(rgb1)
+this.this.setRgb2(rgb2)
 this.key= ColorDelta.getKey(rgb1, rgb2)
 }
 

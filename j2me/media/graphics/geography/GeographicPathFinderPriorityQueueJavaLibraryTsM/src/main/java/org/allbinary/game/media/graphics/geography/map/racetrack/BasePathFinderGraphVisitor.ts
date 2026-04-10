@@ -58,7 +58,7 @@ this.maxPathWeight= maxPathWeight
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public visit(graph: any = {}, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
     //var graph = graph
@@ -67,7 +67,7 @@ this.maxPathWeight= maxPathWeight
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fixPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, pathList: BasicArrayList){
     //var startPathFindingNodeList = startPathFindingNodeList
@@ -87,8 +87,8 @@ this.maxPathWeight= maxPathWeight
 index >= 0; index--)
         {
 startPathFindingNode= startPathFindingNodeList!.get(index) as PathFindingNode
-remove(startPathFindingNode!.geographicMapCellPosition)
-add(0, startPathFindingNode!.geographicMapCellPosition)
+pathList!.remove(startPathFindingNode!.geographicMapCellPosition)
+pathList!.add(0, startPathFindingNode!.geographicMapCellPosition)
 }
 
 }

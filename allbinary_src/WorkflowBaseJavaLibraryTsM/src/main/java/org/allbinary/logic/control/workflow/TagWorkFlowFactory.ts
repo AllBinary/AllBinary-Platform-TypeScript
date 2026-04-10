@@ -74,7 +74,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class, LicensingException::class)
+                //@Throws(Error::class, LicensingException::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext): WorkFlowInterface{
     //var abeClientInformation = abeClientInformation
@@ -110,7 +110,6 @@ params[1]= pageContext as Object
 } catch(e: LicensingException)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
@@ -124,16 +123,16 @@ params[1]= pageContext as Object
         
         
 
-append("Failed To Get Instance: ")
-append(workFlowClassName)
-append("->")
-append(instance::class.toString()!)
+stringBuffer!.append("Failed To Get Instance: ")
+stringBuffer!.append(workFlowClassName)
+stringBuffer!.append("->")
+stringBuffer!.append(instance::class.toString()!)
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
 
-put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 
@@ -145,7 +144,6 @@ put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e)
  catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
@@ -159,16 +157,16 @@ put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e)
         
         
 
-append("Failed To Get Instance: ")
-append(workFlowClassName)
-append("->")
-append(instance::class.toString()!)
+stringBuffer!.append("Failed To Get Instance: ")
+stringBuffer!.append(workFlowClassName)
+stringBuffer!.append("->")
+stringBuffer!.append(instance::class.toString()!)
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
 
-put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 

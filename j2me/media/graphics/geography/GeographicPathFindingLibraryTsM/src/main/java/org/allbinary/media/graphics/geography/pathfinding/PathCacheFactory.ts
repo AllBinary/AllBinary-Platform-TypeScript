@@ -73,36 +73,35 @@ private constructor (){
     public add(pathId: Integer, list: BasicArrayList){
     //var pathId = pathId
     //var list = list
-put(pathId, list)
+this.hashtable.put(pathId, list)
 }
 
 
     public remove(pathId: Integer){
     //var pathId = pathId
-remove(pathId)
+this.hashtable.remove(pathId)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public removeAll(){
-clear()
+this.hashtable.clear()
 
-    
                         if(this.hashtable.length > 0)
                         
                                     {
                                     
 
 
-                            throw Exception("Did not clear")
+                            throw Error("Did not clear")
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(pathIdInteger: Integer): BasicArrayList{
     //var pathIdInteger = pathIdInteger
@@ -112,7 +111,6 @@ clear()
         
 
 
-    
                         if(listCanBeNull == 
                                     null
                                 )

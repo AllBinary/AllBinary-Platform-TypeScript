@@ -36,7 +36,7 @@ export class CssElementsValidationFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(cssElementStyleNodeList: Vector): Vector{
     //var cssElementStyleNodeList = cssElementStyleNodeList
@@ -68,7 +68,7 @@ index < size; index++)
         {
 cssElementStyleNode= cssElementStyleNodeList!.get(index) as Node
 cssValidationInterface= CssElementValidationFactory.getInstance(cssElementStyleNode) as ValidationInterface
-add(cssValidationInterface)
+styles.add(cssValidationInterface)
 }
 
 

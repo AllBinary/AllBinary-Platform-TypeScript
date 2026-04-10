@@ -36,12 +36,11 @@ export class InputImageIOInterfaceFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(imageType: InputImageType): ImageIOInterface{
 var imageType = imageType
 
-    
                         if(imageType == InputImageType.CAPTURE)
                         
                                     {
@@ -55,7 +54,6 @@ var imageType = imageType
                                     }
                                 
                              else 
-    
                         if(imageType == InputImageType.COMPARISON)
                         
                                     {
@@ -69,7 +67,6 @@ var imageType = imageType
                                     }
                                 
                              else 
-    
                         if(imageType == InputImageType.MOTION)
                         
                                     {
@@ -86,7 +83,7 @@ var imageType = imageType
                             
 
 
-                            throw Exception("No ImageIOInterface for: " +imageType!.toString())
+                            throw Error("No ImageIOInterface for: " +imageType!.toString())
 
                         }
                             

@@ -27,7 +27,7 @@ export class PathFinderGraphVisitorBase
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public visit(graph: any = {}, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
     //var graph = graph
@@ -40,7 +40,7 @@ export class PathFinderGraphVisitorBase
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fixPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, pathList: BasicArrayList){
     //var startPathFindingNodeList = startPathFindingNodeList

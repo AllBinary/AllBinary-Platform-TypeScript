@@ -72,7 +72,6 @@ var node = node
         
 
 
-    
                         if(actionNameNode != 
                                     null
                                 )
@@ -86,11 +85,11 @@ var node = node
                             
 
 
-                            throw Exception("Profile Action Name Node Null")
+                            throw Error("Profile Action Name Node Null")
 
                         }
                             
-this.setGenericProfileActionScript(GenericProfileActionScript(this.genericProfileActionJPanel, node))
+this.this.setGenericProfileActionScript(GenericProfileActionScript(this.genericProfileActionJPanel, node))
 }
 
 public constructor (name: string){
@@ -98,7 +97,7 @@ public constructor (name: string){
             super();
             var name = name
 this.name= name
-this.setGenericProfileActionScript(GenericProfileActionScript(this.genericProfileActionJPanel))
+this.this.setGenericProfileActionScript(GenericProfileActionScript(this.genericProfileActionJPanel))
 }
 
 
@@ -124,8 +123,8 @@ this.name= name
         
         
 
-put(GenericProfileActionData.NAME, this.name)
-put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
+hashMap!.put(GenericProfileActionData.NAME, this.name)
+logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
 
 
 
@@ -135,7 +134,7 @@ put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -144,7 +143,7 @@ var document = document
         
         
 
-appendChild(getGenericProfileActionScript()!.toXmlNode(document))
+node.appendChild(getGenericProfileActionScript()!.toXmlNode(document))
 
 
 

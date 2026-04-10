@@ -37,7 +37,7 @@ public constructor (){
 
 
     public init(){
-clear()
+this.pointVector!.clear()
 }
 
 
@@ -53,13 +53,12 @@ clear()
 
     public addPoints(vector: BasicArrayList){
 var vector = vector
-addAll2(vector)
+this.pointVector!.addAll2(vector)
 }
 
 
     public isValid(): boolean{
 
-    
                         if(this.pointVector!.size() > 1)
                         
                                     {

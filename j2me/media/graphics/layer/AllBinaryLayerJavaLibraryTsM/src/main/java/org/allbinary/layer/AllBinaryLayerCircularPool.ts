@@ -33,7 +33,7 @@ protected constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterface, total: number){
 var allbinaryLayerFactoryInterface = allbinaryLayerFactoryInterface

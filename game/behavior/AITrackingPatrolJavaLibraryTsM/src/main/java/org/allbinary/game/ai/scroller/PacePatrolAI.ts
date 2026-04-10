@@ -90,16 +90,16 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-addListener(this)
+TrackingEventHandler.getInstance()!.addListener(this)
 this.trackingList= BasicArrayList()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
-this.update()
+this.this.update()
 
     var direction: Direction = this.setFiringDirectionForTargetIfInRange()!;
         
@@ -111,49 +111,45 @@ this.update()
         
 
 
-    
                         if(direction == directionFactory!.LEFT)
                         
                                     {
                                     
-    
                         if(this.lastKeyDirection != keyDirection || !this.isFollowLimitedByTerrain)
                         
                                     {
-                                    processAI(Canvas.LEFT)
+                                    super.processAI(Canvas.LEFT)
 
                                     }
                                 
 keyDirection= Canvas.LEFT
 this.lastKeyDirection= keyDirection
 xTotalDistance= 0
-processAI(Canvas.KEY_NUM1)
+super.processAI(Canvas.KEY_NUM1)
 
                                     }
                                 
                              else 
-    
                         if(direction == directionFactory!.RIGHT)
                         
                                     {
                                     
-    
                         if(this.lastKeyDirection != keyDirection || !this.isFollowLimitedByTerrain)
                         
                                     {
-                                    processAI(Canvas.RIGHT)
+                                    super.processAI(Canvas.RIGHT)
 
                                     }
                                 
 keyDirection= Canvas.RIGHT
 this.lastKeyDirection= keyDirection
 xTotalDistance= 0
-processAI(Canvas.KEY_NUM1)
+super.processAI(Canvas.KEY_NUM1)
 
                                     }
                                 
                         else {
-                            processAI(this.keyDirection)
+                            super.processAI(this.keyDirection)
 
                         }
                             
@@ -233,18 +229,15 @@ lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
         
 
 
-    
                         if(absYDistance <= 100)
                         
                                     {
                                     
-    
                         if(absXDistance < getFiringDistance() /2)
                         
                                     {
                                     directionCompositeInterface= this.getOwnerLayerInterface() as DirectionCompositeInterface
 
-    
                         if(xDistance < 0 && directionCompositeInterface!.getDirection() == directionFactory!.RIGHT)
                         
                                     {
@@ -253,7 +246,6 @@ lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
                                     }
                                 
                              else 
-    
                         if(xDistance > 0 && directionCompositeInterface!.getDirection() == directionFactory!.LEFT)
                         
                                     {
@@ -284,14 +276,14 @@ lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
     public onMovement(trackingEvent: TrackingEvent){
 var trackingEvent = trackingEvent
-clear()
-add(trackingEvent)
+this.trackingList!.clear()
+this.trackingList!.add(trackingEvent)
 }
 
 

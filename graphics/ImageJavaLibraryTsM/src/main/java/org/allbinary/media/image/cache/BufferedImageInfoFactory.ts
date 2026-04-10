@@ -43,9 +43,9 @@ var type = type
         
         
 
-appendint(width)
-appendint(height)
-appendint(type)
+stringbuffer.appendint(width)
+stringbuffer.appendint(height)
+stringbuffer.appendint(type)
 
     var key: string = stringbuffer.toString()!;
         
@@ -57,14 +57,13 @@ appendint(type)
         
 
 
-    
                         if(bufferedImageInfo == 
                                     null
                                 )
                         
                                     {
                                     bufferedImageInfo= BufferedImageInfo(width, height, type)
-put(key, bufferedImageInfo)
+hashMap!.put(key, bufferedImageInfo)
 
                                     }
                                 

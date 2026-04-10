@@ -51,7 +51,7 @@ createMotionRectangles(imageComparisonResult)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createMotionRectangles(imageComparisonInfo: ImageComparisonResult){
 var imageComparisonInfo = imageComparisonInfo
@@ -86,7 +86,7 @@ addPixelDeltaToAMotionRectangle(pixelDelta)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     addPixelDeltaToExistingMotionRectangle(pixelDelta: PixelDelta): boolean{
 var pixelDelta = pixelDelta
@@ -116,7 +116,6 @@ index < size; index++)
         
 
 
-    
                         if(shouldPixelDeltaPartOfMotionRectangle(motionRectangle, pixelDelta))
                         
                                     {
@@ -131,7 +130,6 @@ index < size; index++)
         
 
 
-    
                         if(newWidth < motionRectangle!.getRectangle()!.width)
                         
                                     {
@@ -140,7 +138,6 @@ index < size; index++)
                                     }
                                 
 
-    
                         if(newHeight < motionRectangle!.getRectangle()!.height)
                         
                                     {
@@ -148,7 +145,7 @@ index < size; index++)
 
                                     }
                                 
-setSize(newWidth, newHeight)
+motionRectangle!.getRectangle()!.setSize(newWidth, newHeight)
 
 
 
@@ -169,12 +166,11 @@ setSize(newWidth, newHeight)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     addPixelDeltaToAMotionRectangle(pixelDelta: PixelDelta){
 var pixelDelta = pixelDelta
 
-    
                         if(!addPixelDeltaToExistingMotionRectangle(pixelDelta))
                         
                                     {
@@ -188,15 +184,15 @@ var pixelDelta = pixelDelta
         
         
 
-add(pixelDelta)
-add(motionRectangle)
+motionRectangle!.getPixelDeltaVector()!.add(pixelDelta)
+this.getVector()!.add(motionRectangle)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     shouldPixelDeltaPartOfMotionRectangle(motionRectangle: MotionRectangle, pixelDelta: PixelDelta): boolean{
 var motionRectangle = motionRectangle
@@ -207,19 +203,17 @@ var pixelDelta = pixelDelta
         
 
 
-    
                         if(motionRectangle!.getRectangle()!.y > pixelDelta!.getPoint()!.getY())
                         
                                     {
                                     
 
 
-                            throw Exception("PixelAboveTheRectangle")
+                            throw Error("PixelAboveTheRectangle")
 
                                     }
                                 
 
-    
                         if(motionRectangle!.getRectangle()!.x > pixelDelta!.getPoint()!.getX())
                         
                                     {
@@ -228,7 +222,6 @@ var pixelDelta = pixelDelta
                                     }
                                 
 
-    
                         if(!isPixelLeftOfTheRectangle)
                         
                                     {
@@ -250,7 +243,7 @@ var pixelDelta = pixelDelta
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     isPixelDeltaLikelyPartOfMotionRectangle(motionRectangle: MotionRectangle, pixelDelta: PixelDelta): boolean{
 var motionRectangle = motionRectangle
@@ -276,7 +269,6 @@ var pixelDelta = pixelDelta
         
 
 
-    
                         if(horizontalDistance < MAX_PIXEL_DISTANCE_THRESHOLD && verticalDistance < MAX_PIXEL_DISTANCE_THRESHOLD)
                         
                                     {

@@ -113,8 +113,8 @@ var node = node
 
                             //For kotlin this is before the body of the constructor.
                     
-this.init()
-put("Label: " +label, this, this.commonStrings!.CONSTRUCTOR)
+this.this.init()
+logUtil!.put("Label: " +label, this, this.commonStrings!.CONSTRUCTOR)
 }
 
 public constructor (label: string)                        
@@ -127,8 +127,8 @@ public constructor (label: string)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.init()
-put("Label: " +label, this, this.commonStrings!.CONSTRUCTOR)
+this.this.init()
+logUtil!.put("Label: " +label, this, this.commonStrings!.CONSTRUCTOR)
 }
 
 
@@ -144,14 +144,14 @@ setJPopupMenu(JPopupMenu())
         
         
 
-addActionListener(this)
-addActionListener(this)
-add(jMenuItemEdit)
-add(jMenuItemDelete)
+jMenuItemEdit!.addActionListener(this)
+jMenuItemDelete!.addActionListener(this)
+getJPopupMenu()!.add(jMenuItemEdit)
+getJPopupMenu()!.add(jMenuItemDelete)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(frame: Long){
 var frame = frame
@@ -183,11 +183,10 @@ var frame = frame
     public actionPerformed(actionEvent: ActionEvent){
 var actionEvent = actionEvent
 
-    
                         if(actionEvent!.getActionCommand()!.compareTo(EDIT) == 0)
                         
                                     {
-                                    this.showDialog()
+                                    this.this.showDialog()
 
                                     }
                                 

@@ -55,16 +55,15 @@ public constructor (parent: any = {}, geographicMapCellPosition: GeographicMapCe
                 //var parent = parent
     //var geographicMapCellPosition = geographicMapCellPosition
 this.parent= parent
-this.setGeographicMapCellPositionP(geographicMapCellPosition)
+this.this.setGeographicMapCellPositionP(geographicMapCellPosition)
 
-    
                         if(this.geographicMapCellPosition == SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
                                     {
                                     
 
 
-                            throw Exception("No GeographicMapCellPosition")
+                            throw Error("No GeographicMapCellPosition")
 
                                     }
                                 
@@ -93,10 +92,10 @@ this.geographicMapCellPosition= geographicMapCellPosition
         
         
 
-append(this::class.toString()!)
-append(CommonLabels.getInstance()!.COLON_SEP)
-append(" Path: ")
-append(this.geographicMapCellPosition!.toString())
+stringBuffer!.append(this::class.toString()!)
+stringBuffer!.append(CommonLabels.getInstance()!.COLON_SEP)
+stringBuffer!.append(" Path: ")
+stringBuffer!.append(this.geographicMapCellPosition!.toString())
 
     var pathFindingNode: PathFindingNode = this.getParentP()!;
         
@@ -107,8 +106,8 @@ append(this.geographicMapCellPosition!.toString())
                                     null
                                 )
         {
-append(pathFindingNode!.geographicMapCellPosition!.toString())
-append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(pathFindingNode!.geographicMapCellPosition!.toString())
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
 pathFindingNode= pathFindingNode!.getParentP()
 }
 

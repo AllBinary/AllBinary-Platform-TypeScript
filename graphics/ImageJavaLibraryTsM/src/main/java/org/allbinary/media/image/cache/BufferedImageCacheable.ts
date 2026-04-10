@@ -42,7 +42,7 @@ public constructor (key: BufferedImageInfo){
             super();
             var key = key
 this.key= key
-this.setBufferedImage(BufferedImage(key.getWidth(), key.getHeight(), key.getType()))
+this.this.setBufferedImage(BufferedImage(key.getWidth(), key.getHeight(), key.getType()))
 }
 
 
@@ -78,9 +78,9 @@ this.bufferedImage= bufferedImage
         
         
 
-append(this::class.toString()!)
-append(" ")
-append(this.getKey()!.toString())
+stringBuffer!.append(this::class.toString()!)
+stringBuffer!.append(" ")
+stringBuffer!.append(this.getKey()!.toString())
 
 
 

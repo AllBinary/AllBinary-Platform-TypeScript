@@ -57,7 +57,7 @@ export class AnyRandomDropCellPositionGenerator extends BaseDropCellPositionGene
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -106,11 +106,10 @@ randomColumn= randomFactory!.getAbsoluteNextInt(tiledLayer!.getColumns())
 randomRow= randomFactory!.getAbsoluteNextInt(tiledLayer!.getRows())
 geographicMapCellPosition= basicGeographicMapCellPositionFactory!.getInstance(randomColumn, randomRow)
 
-    
                         if(this.isDropAllowedAt(geographicMapCellPosition))
                         
                                     {
-                                    add(geographicMapCellPosition)
+                                    this.list.add(geographicMapCellPosition)
 
                                     }
                                 
@@ -119,7 +118,7 @@ geographicMapCellPosition= basicGeographicMapCellPositionFactory!.getInstance(ra
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager

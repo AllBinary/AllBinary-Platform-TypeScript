@@ -81,11 +81,11 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 this.request= this.getPageContext()!.getRequest() as HttpServletRequest
-this.getFormData()
+this.this.getFormData()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getFormData(){
 
@@ -94,7 +94,6 @@ this.getFormData()
         
 
 
-    
                         if(id == 
                                     null
                                 )
@@ -105,7 +104,7 @@ this.getFormData()
                                     }
                                 
 this.order= Order(Basket())
-setId(id)
+this.order.setId(id)
 }
 
 
@@ -123,8 +122,8 @@ var document = document
         
         
 
-appendChild(basketReview!.toXmlNode(document))
-appendChild(orderHistoryNode)
+orderHistoryNode!.appendChild(basketReview!.toXmlNode(document))
+node.appendChild(orderHistoryNode)
 
 
 
@@ -134,11 +133,10 @@ appendChild(orderHistoryNode)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
 
                                     }
                                 
@@ -154,16 +152,16 @@ appendChild(orderHistoryNode)
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface)
+this.this.addDomNodeInterface(this as DomNodeInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.this.addDomNodeInterfaces()
 
 
 
@@ -173,11 +171,10 @@ this.addDomNodeInterface(this as DomNodeInterface)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 

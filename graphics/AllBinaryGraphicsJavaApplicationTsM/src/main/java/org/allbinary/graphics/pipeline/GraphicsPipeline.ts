@@ -43,7 +43,7 @@ public constructor (points: BasicArrayList)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public rotateTheta(aTheta: number){
 var aTheta = aTheta
@@ -87,7 +87,7 @@ index < size; index++)
         
         
 
-add(point)
+newVector!.add(point)
 }
 
 this.pointBasicArrayList= newVector

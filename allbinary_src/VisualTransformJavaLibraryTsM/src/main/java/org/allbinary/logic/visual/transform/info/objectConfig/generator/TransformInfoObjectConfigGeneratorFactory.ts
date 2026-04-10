@@ -60,7 +60,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigGenerator{
 var transformInfoInterface = transformInfoInterface
@@ -70,7 +70,6 @@ var transformInfoInterface = transformInfoInterface
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -79,12 +78,11 @@ var transformInfoInterface = transformInfoInterface
         
         
 
-put("Generating Instance for type: " +type, this, commonStrings!.GET_INSTANCE)
+logUtil!.put("Generating Instance for type: " +type, this, commonStrings!.GET_INSTANCE)
 
                                     }
                                 
 
-    
                         if(type == 
                                     null
                                  || type.compareTo(InputOutputTypeData.getInstance()!.RESPONSE) == 0 || transformInfoInterface!.isChild())
@@ -100,7 +98,6 @@ put("Generating Instance for type: " +type, this, commonStrings!.GET_INSTANCE)
                                     }
                                 
                              else 
-    
                         if(type.compareTo(InputOutputTypeData.getInstance()!.FILE) == 0)
                         
                                     {
@@ -117,7 +114,7 @@ put("Generating Instance for type: " +type, this, commonStrings!.GET_INSTANCE)
                             
 
 
-                            throw Exception("No Such TransformInfoObjectConfigGenerator Type")
+                            throw Error("No Such TransformInfoObjectConfigGenerator Type")
 
                         }
                             

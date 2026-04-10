@@ -69,7 +69,7 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(caller: string, width: number, height: number): Image{
     //var caller = caller
@@ -86,24 +86,21 @@ public constructor (){
         
 
 
-    
                         if(image == NullCanvas.NULL_IMAGE)
                         
                                     {
                                     volume += width *height
 
-    
                         if(volume > 32000)
                         
                                     {
-                                    gc()
+                                    System.gc()
 volume= 0
 
                                     }
                                 
 image= this.createImage(caller, width, height)
 
-    
                         if(foundIndex ==  -1)
                         
                                     {
@@ -114,7 +111,7 @@ nextIndex++
 
                                     }
                                 
-add(image)
+listOfList[foundIndex]!.add(image)
 
                                     }
                                 
@@ -127,7 +124,7 @@ add(image)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(key: any = {}): Image{
     //var key = key
@@ -147,7 +144,6 @@ add(image)
         
 
 
-    
                         if(image == NullCanvas.NULL_IMAGE)
                         
                                     {
@@ -160,21 +156,21 @@ add(image)
 
 
         try {
-            put(Memory.getInfo(), this, commonStrings!.GET)
+            logUtil!.put(Memory.getInfo(), this, commonStrings!.GET)
 image= this.createImage(key, inputStream)
 } catch(e: Exception)
             {
-put("Exception: Trying Again After GC", this, commonStrings!.GET, e)
-put(StringMaker().
+logUtil!.put("Exception: Trying Again After GC", this, commonStrings!.GET, e)
+logUtil!.put(StringMaker().
                             append("InputStream: ")!.append(inputStream!.toString())!.toString(), this, commonStrings!.GET)
-gc()
-gc()
-put(Memory.getInfo(), this, commonStrings!.GET)
-sleep(100)
+System.gc()
+System.gc()
+logUtil!.put(Memory.getInfo(), this, commonStrings!.GET)
+Thread.sleep(100)
 image= this.createImage(key, inputStream)
 }
 
-put(resourceId, image)
+this.hashtable.put(resourceId, image)
 
                                     }
                                 
@@ -216,7 +212,6 @@ put(resourceId, image)
 index < size; index++)
         {
 
-    
                         if(resourceStringArray[index] == key)
                         
                                     {
@@ -231,7 +226,7 @@ index < size; index++)
                                 
 }
 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("unable to find key: ")!.append(StringUtil.getInstance()!.toString(key))!.toString(), this, commonStrings!.RUN)
 
 
@@ -240,7 +235,7 @@ put(StringMaker().
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createImage(key: any = {}, inputStream: InputStream): Image{
     //var key = key

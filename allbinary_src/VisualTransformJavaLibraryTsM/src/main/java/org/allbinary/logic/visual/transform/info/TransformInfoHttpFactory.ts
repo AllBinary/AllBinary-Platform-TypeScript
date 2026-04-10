@@ -48,7 +48,7 @@ export class TransformInfoHttpFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext): TransformInfoInterface{
 var propertiesHashMap = propertiesHashMap
@@ -66,7 +66,6 @@ var pageContext = pageContext
         
 
 
-    
                         if(!StringValidationUtil.getInstance()!.isEmpty(weblisketSession!.getStoreName()))
                         
                                     {
@@ -76,7 +75,6 @@ var pageContext = pageContext
         
 
 
-    
                         if(storeFrontInterface != 
                                     null
                                 )
@@ -95,7 +93,7 @@ var pageContext = pageContext
                             
 
 
-                            throw Exception("No StoreFront with: " +weblisketSession!.getStoreName())
+                            throw Error("No StoreFront with: " +weblisketSession!.getStoreName())
 
                         }
                             
@@ -115,7 +113,6 @@ var pageContext = pageContext
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
@@ -124,7 +121,7 @@ var pageContext = pageContext
         
         
 
-put(commonStrings!.EXCEPTION, "TransformInfoFactory", commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, "TransformInfoFactory", commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 

@@ -58,7 +58,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, transfo
         
         
 
-this.setURIResolver(CustomUriResolver(transformInfoObjectConfigInterface!.getImportUriPath(), this.getURIResolver() as BasicUriResolver) as URIResolver)
+this.this.setURIResolver(CustomUriResolver(transformInfoObjectConfigInterface!.getImportUriPath(), this.getURIResolver() as BasicUriResolver) as URIResolver)
 }
 
 

@@ -135,10 +135,10 @@ this.workAreaJTreeJPanel= WorkAreaJTreeJPanel(this.name)
         
         
 
-add(canvasJPanel)
+this.canvasJPanelList!.add(canvasJPanel)
 this.selectedFrame= 0
-set(this.workAreaJTreeJPanel)
-add(canvasJPanel as Component)
+this.propertiesJPanel!.set(this.workAreaJTreeJPanel)
+this.canvasHolderJPanel!.add(canvasJPanel as Component)
 } catch(e: Exception)
             {
 
@@ -189,20 +189,19 @@ index < numberOfFrames; index++)
         
         
 
-add(canvasJPanel)
+this.canvasJPanelList!.add(canvasJPanel)
 }
 
 this.selectedFrame= 0
-add(this.getCurrentFrame() as Component)
-set(this.workAreaJTreeJPanel)
+this.canvasHolderJPanel!.add(this.getCurrentFrame() as Component)
+this.propertiesJPanel!.set(this.workAreaJTreeJPanel)
 } catch(e: Exception)
             {
 
-    
                         if(LOGGING.contains(LOGGING.LOADINGERROR))
                         
                                     {
-                                    put("Constructor Error", this, "WorkAreaJPanel", e)
+                                    logUtil!.put("Constructor Error", this, "WorkAreaJPanel", e)
 
                                     }
                                 
@@ -219,9 +218,9 @@ set(this.workAreaJTreeJPanel)
 var dimension = dimension
 this.workAreaJTreeJPanel= WorkAreaJTreeJPanel(this.name)
 this.canvasHolderJPanel= JPanel()
-setSize(dimension)
-setLayout(GridLayout(1, 1))
-this.setSize(dimension)
+this.canvasHolderJPanel!.setSize(dimension)
+this.canvasHolderJPanel!.setLayout(GridLayout(1, 1))
+this.this.setSize(dimension)
 this.canvasJPanelList= LinkedList()
 
     var gridBagLayout: GridBagLayout = new GridBagLayout();
@@ -233,7 +232,7 @@ this.canvasJPanelList= LinkedList()
         
         
 
-setLayout(gridBagLayout)
+this.innerJPanel!.setLayout(gridBagLayout)
 gridBagConstraints!.gridx= 0
 gridBagConstraints!.gridy= 0
 gridBagConstraints!.gridwidth= 1
@@ -245,8 +244,8 @@ gridBagConstraints!.weighty= .05
         
         
 
-setConstraints(toolJPanel, gridBagConstraints)
-add(toolJPanel)
+gridBagLayout!.setConstraints(toolJPanel, gridBagConstraints)
+this.innerJPanel!.add(toolJPanel)
 gridBagConstraints= GridBagConstraints()
 gridBagConstraints!.gridx= 1
 gridBagConstraints!.gridy= 0
@@ -254,8 +253,8 @@ gridBagConstraints!.gridwidth= 6
 gridBagConstraints!.fill= java.awt.GridBagConstraints.BOTH
 gridBagConstraints!.weightx= 1
 gridBagConstraints!.weighty= 1
-setConstraints(canvasHolderJPanel, gridBagConstraints)
-add(canvasHolderJPanel)
+gridBagLayout!.setConstraints(canvasHolderJPanel, gridBagConstraints)
+this.innerJPanel!.add(canvasHolderJPanel)
 gridBagConstraints= GridBagConstraints()
 gridBagConstraints!.gridx= 8
 gridBagConstraints!.gridy= 0
@@ -264,9 +263,9 @@ gridBagConstraints!.fill= java.awt.GridBagConstraints.BOTH
 gridBagConstraints!.weightx= .1
 gridBagConstraints!.weighty= .1
 propertiesJPanel= PropertiesJPanel()
-setConstraints(propertiesJPanel, gridBagConstraints)
-add(propertiesJPanel)
-addListener(this as MyCanvasEventListener)
+gridBagLayout!.setConstraints(propertiesJPanel, gridBagConstraints)
+this.innerJPanel!.add(propertiesJPanel)
+MyCanvasEventService.addListener(this as MyCanvasEventListener)
 }
 
 
@@ -296,7 +295,7 @@ index < size; index++)
         
         
 
-put(canvasJPanel!.getTreeNode(), Integer(index))
+canvasJPanelHashMap!.put(canvasJPanel!.getTreeNode(), Integer(index))
 }
 
 
@@ -348,24 +347,23 @@ this.name= value
 
 
     public disableCanvas(){
-removeAll()
+this.canvasHolderJPanel!.removeAll()
 }
 
 
     public enableCanvas(){
-add(this.getCurrentFrame() as Component)
+this.canvasHolderJPanel!.add(this.getCurrentFrame() as Component)
 }
 
 
     public deselect(){
-setVisible(false)
+super.setVisible(false)
 }
 
 
     public select(){
-setVisible(true)
+super.setVisible(true)
 
-    
                         if(this.canvasHolderJPanel!.getComponentCount() == 1)
                         
                                     {
@@ -375,13 +373,12 @@ setVisible(true)
         
 
 
-    
                         if(component != 
                                     null
                                 )
                         
                                     {
-                                    repaint()
+                                    component.repaint()
 
                                     }
                                 
@@ -413,7 +410,7 @@ index < size; index++)
         
         
 
-setZoom(canvasJPanel!.getGrid()!.getZoom() +factor)
+canvasJPanel!.getGrid()!.setZoom(canvasJPanel!.getGrid()!.getZoom() +factor)
 }
 
 }
@@ -432,21 +429,20 @@ setZoom(canvasJPanel!.getGrid()!.getZoom() +factor)
     initDuplicate(newCanvasJPanel: CanvasJPanel){
 var newCanvasJPanel = newCanvasJPanel
 
-    
                         if(newCanvasJPanel != 
                                     null
                                 )
                         
                                     {
-                                    add(newCanvasJPanel)
-this.select(this.canvasJPanelList!.size() -1)
+                                    this.canvasJPanelList!.add(newCanvasJPanel)
+this.this.select(this.canvasJPanelList!.size() -1)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     duplicate(treeNode: MutableTreeNode){
 var treeNode = treeNode
@@ -456,7 +452,6 @@ var treeNode = treeNode
         
 
 
-    
                         if(canvasJPanelHashMap!.containsKey(treeNode))
                         
                                     {
@@ -477,7 +472,7 @@ initDuplicate(canvasJPanel!.duplicate())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public autoRotate(increments: number, totalAngle: number){
 var increments = increments
@@ -507,7 +502,7 @@ index < increments; index++)
         
         
 
-setAngle(incrementAngle *index)
+newCanvasJPanel!.setAngle(incrementAngle *index)
 initDuplicate(newCanvasJPanel)
 }
 
@@ -520,11 +515,11 @@ initDuplicate(newCanvasJPanel)
         
         
 
-explodeAll()
+canvasJPanel!.explodeAll()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public autoExplode(numberOfFrames: number, explodeType: number){
 var numberOfFrames = numberOfFrames
@@ -549,14 +544,14 @@ index < numberOfFrames; index++)
         
         
 
-explode(index +1, explodeType)
+newCanvasJPanel!.explode(index +1, explodeType)
 initDuplicate(newCanvasJPanel)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public autoMirror(){
 
@@ -569,7 +564,7 @@ initDuplicate(newCanvasJPanel)
         
         
 
-mirror()
+newCanvasJPanel!.mirror()
 initDuplicate(newCanvasJPanel)
 }
 
@@ -578,7 +573,6 @@ initDuplicate(newCanvasJPanel)
     select(index: number){
 var index = index
 
-    
                         if(index < this.canvasJPanelList!.size())
                         
                                     {
@@ -588,18 +582,17 @@ var index = index
         
 
 
-    
                         if(canvasJPanel != 
                                     null
                                 )
                         
                                     {
-                                    removeAll()
-add(canvasJPanel)
+                                    this.canvasHolderJPanel!.removeAll()
+this.canvasHolderJPanel!.add(canvasJPanel)
 this.selectedFrame= index
-changed()
-repaint()
-repaint()
+canvasJPanel!.changed()
+this.canvasHolderJPanel!.repaint()
+canvasJPanel!.repaint()
 
                                     }
                                 
@@ -622,20 +615,19 @@ var treeNode = treeNode
         
 
 
-    
                         if(frameInteger != 
                                     null
                                 )
                         
                                     {
-                                    this.select(frameInteger!.toInt())
+                                    this.this.select(frameInteger!.toInt())
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toDocument(): Document{
 document= DomHelper.getInstance()!.createDocument()
@@ -654,7 +646,7 @@ document= DomHelper.getInstance()!.createDocument()
         
         
 
-appendChild(nameTextNode)
+nameNode!.appendChild(nameTextNode)
 
     var framesNode: Node = document.createElement(WorkAreaDom.FRAMES)!;
         
@@ -680,12 +672,12 @@ index < size; index++)
         
         
 
-appendChild(canvasJPanel!.toDom())
+framesNode!.appendChild(canvasJPanel!.toDom())
 }
 
-appendChild(nameNode)
-appendChild(framesNode)
-appendChild(workAreaNode)
+workAreaNode!.appendChild(nameNode)
+workAreaNode!.appendChild(framesNode)
+document.appendChild(workAreaNode)
 
 
 
@@ -698,7 +690,7 @@ appendChild(workAreaNode)
     initComponents(){
 innerJPanel= javax.swing.JPanel()
 setLayout(java.awt.GridLayout(1, 1))
-addKeyListener(object: java.awt.event.KeyAdapter()
+innerJPanel!.addKeyListener(object: java.awt.event.KeyAdapter()
                                 {
                                 
     public keyTyped(evt: java.awt.event.KeyEvent){
@@ -724,25 +716,25 @@ add(innerJPanel)
 
     innerJPanelKeyReleased(evt: java.awt.event.KeyEvent){
 var evt = evt
-setStatus("Key Pressed1")
+StatusFactory.getInstance()!.setStatus("Key Pressed1")
 }
 
 
     innerJPanelKeyPressed(evt: java.awt.event.KeyEvent){
 var evt = evt
-setStatus("Key Pressed2")
+StatusFactory.getInstance()!.setStatus("Key Pressed2")
 }
 
 
     innerJPanelKeyTyped(evt: java.awt.event.KeyEvent){
 var evt = evt
-setStatus("Key Pressed3")
+StatusFactory.getInstance()!.setStatus("Key Pressed3")
 }
 
 
     public keyPressed(keyEvent: java.awt.event.KeyEvent){
 var keyEvent = keyEvent
-keyPressed(keyEvent)
+this.getCurrentFrame()!.keyPressed(keyEvent)
 }
 
 
@@ -764,36 +756,35 @@ var evt = evt
         
 
 
-    
                         if(canvasJPanelHashMap!.containsKey(evt.getTreeNode()))
                         
                                     {
-                                    removeAll()
+                                    this.canvasHolderJPanel!.removeAll()
 
     var frameInt: Integer = canvasJPanelHashMap!.get(evt.getTreeNode()) as Integer;
         
         
 
-remove(frameInt!.toInt())
-this.select(frameInt!.toInt())
+this.canvasJPanelList!.remove(frameInt!.toInt())
+this.this.select(frameInt!.toInt())
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public duplicate(evt: MyCanvasEvent){
 var evt = evt
-this.duplicate(evt.getTreeNode())
+this.this.duplicate(evt.getTreeNode())
 }
 
 
     public select(evt: MyCanvasEvent){
 var evt = evt
-this.select(evt.getTreeNode())
-setStatus("Frame Selected")
+this.this.select(evt.getTreeNode())
+StatusFactory.getInstance()!.setStatus("Frame Selected")
 }
 
 
@@ -820,36 +811,35 @@ var evt = evt
         
 
 
-    
                         if(canvasJPanel != 
                                     null
                                 )
                         
                                     {
-                                    addAngle(evt.getAngle())
-this.select(frameInt!.toInt())
+                                    canvasJPanel!.addAngle(evt.getAngle())
+this.this.select(frameInt!.toInt())
 
                                     }
                                 
-setStatus("Canvas Rotated")
+StatusFactory.getInstance()!.setStatus("Canvas Rotated")
 }
 
 
     public explode(evt: MyCanvasEvent){
 var evt = evt
-this.explodeAll()
+this.this.explodeAll()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public autoExplode(evt: MyCanvasEvent){
 var evt = evt
-this.autoExplode(10, 0)
+this.this.autoExplode(10, 0)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public center(){
 
@@ -857,15 +847,15 @@ this.autoExplode(10, 0)
         
         
 
-center()
+canvasJPanel!.center()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public center(evt: MyCanvasEvent){
 var evt = evt
-this.center()
+this.this.center()
 }
 
 
@@ -876,7 +866,6 @@ this.center()
         while(true)
         {
 
-    
                         if(this.isPlaying())
                         
                                     {
@@ -896,7 +885,6 @@ this.center()
 index < size; index++)
         {
 
-    
                         if(!this.isPlaying())
                         
                                     {
@@ -906,19 +894,19 @@ index < size; index++)
 
                                     }
                                 
-this.select(index)
-sleep(100)
+this.this.select(index)
+Thread.sleep(100)
 }
 
 
                                     }
                                 
                         else {
-                            sleep(500)
+                            Thread.sleep(500)
 
                         }
                             
-sleep(250)
+Thread.sleep(250)
 }
 
 } catch(e: Exception)

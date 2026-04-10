@@ -115,7 +115,6 @@ var var = var
         
 
 
-    
                         if(osName!.compareTo(operatingSystems!.LINUX) == 0)
                         
                                     {
@@ -124,7 +123,6 @@ var var = var
                                     }
                                 
                              else 
-    
                         if(osName!.indexOf(operatingSystems!.WINDOWS) >= 0)
                         
                                     {
@@ -133,7 +131,6 @@ var var = var
                                     }
                                 
                              else 
-    
                         if(osName!.compareTo(operatingSystems!.SOLARIS) == 0)
                         
                                     {
@@ -145,7 +142,7 @@ var var = var
                             
 
 
-                            throw Exception()
+                            throw Error()
 
                         }
                             
@@ -182,7 +179,7 @@ var var = var
         
         
 
-put(key, value)
+environmentVariables!.put(key, value)
 }
 
 
@@ -194,11 +191,10 @@ put(key, value)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "get()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e)
 
                                     }
                                 
@@ -225,11 +221,10 @@ put(key, value)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getTempDir()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getTempDir()", e)
 
                                     }
                                 
@@ -256,11 +251,10 @@ put(key, value)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getLibraryPath()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getLibraryPath()", e)
 
                                     }
                                 
@@ -287,11 +281,10 @@ put(key, value)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getClassPath()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getClassPath()", e)
 
                                     }
                                 
@@ -315,15 +308,14 @@ var libPath = libPath
         
         
 
-setProperty("java.library.path", libPath +":" +existingPath)
+System.setProperty("java.library.path", libPath +":" +existingPath)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "updateLibraryPath()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "updateLibraryPath()", e)
 
                                     }
                                 
@@ -344,11 +336,10 @@ setProperty("java.library.path", libPath +":" +existingPath)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getUserHome()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getUserHome()", e)
 
                                     }
                                 
@@ -375,11 +366,10 @@ setProperty("java.library.path", libPath +":" +existingPath)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getUserDir()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getUserDir()", e)
 
                                     }
                                 
@@ -400,11 +390,10 @@ setProperty("java.library.path", libPath +":" +existingPath)
             } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "get()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e)
 
                                     }
                                 
@@ -442,19 +431,17 @@ var val = val
         
 
 
-    
                         if(osName!.compareTo(operatingSystems!.LINUX) == 0)
                         
                                     {
                                     
 
 
-                            throw Exception()
+                            throw Error()
 
                                     }
                                 
                              else 
-    
                         if(osName!.indexOf(operatingSystems!.WINDOWS) >= 0)
                         
                                     {
@@ -463,14 +450,13 @@ var val = val
                                     }
                                 
                              else 
-    
                         if(osName!.compareTo(operatingSystems!.SOLARIS) == 0)
                         
                                     {
                                     
 
 
-                            throw Exception()
+                            throw Error()
 
                                     }
                                 
@@ -478,18 +464,17 @@ var val = val
                             
 
 
-                            throw Exception()
+                            throw Error()
 
                         }
                             
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "setVariable()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setVariable()", e)
 
                                     }
                                 

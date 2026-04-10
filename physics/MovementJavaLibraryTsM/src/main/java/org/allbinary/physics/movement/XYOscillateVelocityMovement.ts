@@ -55,44 +55,41 @@ this.oscillateMax= oscillateMax
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(layer: AllBinaryGameLayer){
 var layer = layer
-process(layer)
+super.process(layer)
 
-    
                         if(this.oscillate < this.oscillateMin)
                         
                                     {
                                     this.oscillatePositive= true
-add(3000)
+this.getVelocityProperties()!.getVelocityYBasicDecimalP()!.add(3000)
 
                                     }
                                 
                              else 
-    
                         if(this.oscillate > this.oscillateMax)
                         
                                     {
                                     this.oscillatePositive= false
-subtract(3000)
+this.getVelocityProperties()!.getVelocityYBasicDecimalP()!.subtract(3000)
 
                                     }
                                 
 
-    
                         if(this.oscillatePositive)
                         
                                     {
                                     this.oscillate++
-add(5000)
+this.getVelocityProperties()!.getVelocityXBasicDecimalP()!.add(5000)
 
                                     }
                                 
                         else {
                             this.oscillate--
-subtract(5000)
+this.getVelocityProperties()!.getVelocityXBasicDecimalP()!.subtract(5000)
 
                         }
                             

@@ -40,7 +40,7 @@ public constructor (motionRectangles: MotionRectangles, frame: Long){
             var motionRectangles = motionRectangles
 var frame = frame
 this.frame= frame
-this.setMotionRectangles(motionRectangles)
+this.this.setMotionRectangles(motionRectangles)
 }
 
 
@@ -76,9 +76,9 @@ this.motionRectangles= motionRectangles
         
         
 
-append(this::class.toString()!)
-append(" Frame: ")
-append(this.getKey()!.toString())
+stringBuffer!.append(this::class.toString()!)
+stringBuffer!.append(" Frame: ")
+stringBuffer!.append(this.getKey()!.toString())
 
 
 

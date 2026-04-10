@@ -62,7 +62,6 @@ public constructor (type: number, reset: number){
     //var reset = reset
 this.type= type
 
-    
                         if(type != Integer.MIN_VALUE)
                         
                                     {
@@ -77,7 +76,6 @@ this.type= type
         
 
 
-    
                         if(geographicMapCellTypeArray[type] == 
                                     null
                                  || reset == 1)
@@ -89,7 +87,6 @@ this.type= type
                                 
                         else {
                             
-    
                         if(reset !=  -1)
                         
                                     {

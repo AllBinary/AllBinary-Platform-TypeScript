@@ -22,7 +22,7 @@
 interface ImageIOInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     save(frame: Long)
 

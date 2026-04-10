@@ -43,7 +43,7 @@ export class GraphicsAnalysisUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getNominator(bufferedImage: BufferedImage, min_x: Integer, max_x: Integer, y: Integer): number{
 var bufferedImage = bufferedImage
@@ -81,7 +81,6 @@ index > min_x.toInt(); )
         
 
 
-    
                         if(color.getRed() < MAX && color.getGreen() < MAX && color.getBlue() < MAX)
                         
                                     {

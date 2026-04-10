@@ -103,13 +103,12 @@ var value = value
         
 
 
-    
                         if(textLength > 0 && textLength < maxChars)
                         
                                     {
                                     
         try {
-            parseInt(this.textFieldItem!.getString())
+            Integer.parseInt(this.textFieldItem!.getString())
 } catch(e: NumberFormatException)
             {
 result= BooleanFactory.getInstance()!.FALSE
@@ -120,7 +119,6 @@ result= BooleanFactory.getInstance()!.FALSE
                                 
                         else {
                             
-    
                         if(textLength < 1)
                         
                                     {
@@ -129,7 +127,6 @@ result= BooleanFactory.getInstance()!.FALSE
                                     }
                                 
                              else 
-    
                         if(textLength > maxChars)
                         
                                     {
@@ -186,7 +183,6 @@ result= BooleanFactory.getInstance()!.FALSE
         
 
 
-    
                         if(textLength > 0 && textLength < maxChars)
                         
                                     {
@@ -198,29 +194,27 @@ result= BooleanFactory.getInstance()!.FALSE
         
 
 
-    
                         if(number.toInt() > min)
                         
                                     {
-                                    delete(0, stringMaker!.length())
-add(stringMaker!.append(name)!.append(" is to small")!.toString())
+                                    stringMaker!.delete(0, stringMaker!.length())
+list.add(stringMaker!.append(name)!.append(" is to small")!.toString())
 
                                     }
                                 
                              else 
-    
                         if(number.toInt() > max)
                         
                                     {
-                                    delete(0, stringMaker!.length())
-add(stringMaker!.append(name)!.append(" is to large")!.toString())
+                                    stringMaker!.delete(0, stringMaker!.length())
+list.add(stringMaker!.append(name)!.append(" is to large")!.toString())
 
                                     }
                                 
 } catch(e: NumberFormatException)
             {
-delete(0, stringMaker!.length())
-add(stringMaker!.append(name)!.append(" is not a number")!.toString())
+stringMaker!.delete(0, stringMaker!.length())
+list.add(stringMaker!.append(name)!.append(" is not a number")!.toString())
 }
 
 
@@ -228,22 +222,20 @@ add(stringMaker!.append(name)!.append(" is not a number")!.toString())
                                 
                         else {
                             
-    
                         if(textLength < 1)
                         
                                     {
-                                    delete(0, stringMaker!.length())
-add(stringMaker!.append(name)!.append(" is to short")!.toString())
+                                    stringMaker!.delete(0, stringMaker!.length())
+list.add(stringMaker!.append(name)!.append(" is to short")!.toString())
 
                                     }
                                 
                              else 
-    
                         if(textLength > maxChars)
                         
                                     {
-                                    delete(0, stringMaker!.length())
-add(stringMaker!.append(name)!.append(" is to long")!.toString())
+                                    stringMaker!.delete(0, stringMaker!.length())
+list.add(stringMaker!.append(name)!.append(" is to long")!.toString())
 
                                     }
                                 

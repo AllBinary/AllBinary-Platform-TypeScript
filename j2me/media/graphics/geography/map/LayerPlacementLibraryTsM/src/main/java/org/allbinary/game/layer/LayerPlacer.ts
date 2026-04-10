@@ -61,7 +61,7 @@ this.dimension= dimension
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(list: BasicArrayList){
     //var list = list
@@ -84,13 +84,13 @@ this.dimension= dimension
 index < size; index++)
         {
 layerPlacementInterface= list.objectArray[index]! as LayerPlacementInterface
-this.process(layerPlacementInterface)
+this.this.process(layerPlacementInterface)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(layerPlacementInterface: LayerPlacementInterface){
     //var layerPlacementInterface = layerPlacementInterface
@@ -141,13 +141,13 @@ x= point.getX() +relativePoint!.getX()
 y= point.getY() +relativePoint!.getY()
 z= point.getZ() +relativePoint!.getZ()
 layerInterface= layerInterfaceFactory!.getInstance(layerHashtable, x, y, z)
-visit(layerInterface)
+layerInterfaceVisitor!.visit(layerInterface)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getPoint(layerPlacementInterface: LayerPlacementInterface): GPoint{
     //var layerPlacementInterface = layerPlacementInterface
@@ -157,7 +157,6 @@ visit(layerInterface)
         
 
 
-    
                         if(layerPlacementType == LayerPlacementTypeFactory.getInstance()!.MAP)
                         
                                     {
@@ -191,7 +190,6 @@ visit(layerInterface)
                                     }
                                 
                              else 
-    
                         if(layerPlacementType == LayerPlacementTypeFactory.getInstance()!.UP)
                         
                                     {
@@ -228,7 +226,7 @@ visit(layerInterface)
                             
 
 
-                            throw Exception("PlacementType Not Recognized")
+                            throw Error("PlacementType Not Recognized")
 
                         }
                             

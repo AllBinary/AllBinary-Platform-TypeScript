@@ -64,7 +64,6 @@ public constructor (document: Document){
         
 
 
-    
                         if(workAreaNodeList != 
                                     null
                                 )
@@ -76,7 +75,6 @@ public constructor (document: Document){
         
 
 
-    
                         if(numberOfworkAreas == 1)
                         
                                     {
@@ -103,7 +101,7 @@ this.name= nameTextNode!.getNodeValue()
                             
 
 
-                            throw Exception("Wrong Number of WorkAreas: " +numberOfworkAreas)
+                            throw Error("Wrong Number of WorkAreas: " +numberOfworkAreas)
 
                         }
                             
@@ -115,7 +113,7 @@ this.canvasNodeList= DomHelper.getInstance()!.getChildrenWithoutTextNodes(this.F
                             
 
 
-                            throw Exception("workArea Node Not Found")
+                            throw Error("workArea Node Not Found")
 
                         }
                             

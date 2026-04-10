@@ -84,7 +84,7 @@ this.pathFinder= PathFinder()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(geographicMapInterface: BasicGeographicMap, mapArray: IntArray[]): PathFindingInfo{
     //var geographicMapInterface = geographicMapInterface
@@ -94,10 +94,10 @@ this.pathFinder= PathFinder()
         
         
 
-init()
-this.init(geographicMapInterface, pathFindingInfo, mapArray)
-init(geographicMapInterface)
-setPathFinder(pathFinder)
+RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance()!.init()
+this.this.init(geographicMapInterface, pathFindingInfo, mapArray)
+this.pathFinder!.init(geographicMapInterface)
+pathFindingInfo!.setPathFinder(pathFinder)
 
 
 
@@ -107,18 +107,18 @@ setPathFinder(pathFinder)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: IntArray[]){
     //var geographicMapInterface = geographicMapInterface
     //var pathFindingInfo = pathFindingInfo
     //var mapArray = mapArray
-init(geographicMapInterface, pathFindingInfo, mapArray)
-this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray)
+super.init(geographicMapInterface, pathFindingInfo, mapArray)
+this.this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     buildPathFindingNodes(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: IntArray[], cellPosition: GeographicMapCellPosition){
     //var geographicMapInterface = geographicMapInterface
@@ -128,7 +128,7 @@ this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     buildPathFindingNodes(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: IntArray[]){
     //var geographicMapInterface = geographicMapInterface
@@ -174,7 +174,7 @@ column < totalColumns; column++)
         
 row < totalRows; row++)
         {
-this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray, geographicMapCellPositionFactory!.getInstance(column, row))
+this.this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray, geographicMapCellPositionFactory!.getInstance(column, row))
 }
 
 }

@@ -70,7 +70,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(list: BasicArrayList, howMuch: number, type: VectorExplosionType): BasicArrayList{
 var list = list
@@ -114,7 +114,7 @@ points[index]![1]= point.getY()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(points: IntArray[], howMuch: number, type: VectorExplosionType): IntArray[][]{
 var points = points
@@ -144,7 +144,7 @@ var type = type
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(points: IntArray[], howMuch: number, type: VectorExplosionType, startFrame: boolean): BasicArrayList{
 var points = points
@@ -158,7 +158,7 @@ var startFrame = startFrame
         
         
 
-add(createPointsBasicArrayList(points))
+pointsBasicArrayList!.add(createPointsBasicArrayList(points))
 
     var frameIndex: number = 0;
         
@@ -177,16 +177,15 @@ add(createPointsBasicArrayList(points))
         
         
 
-add(pointBasicArrayList)
+pointsBasicArrayList!.add(pointBasicArrayList)
 frameIndex++
 }
 
 
-    
                         if(!startFrame)
                         
                                     {
-                                    remove(0)
+                                    pointsBasicArrayList!.remove(0)
 
                                     }
                                 
@@ -211,7 +210,7 @@ frameIndex++
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getInstance(tempBasicArrayList: BasicArrayList, points: IntArray[], howMuch: number, type: VectorExplosionType): BasicArrayList{
 var tempBasicArrayList = tempBasicArrayList
@@ -239,10 +238,9 @@ var type = type
 
         while(points[index]![0] != 1000)
         {
-add(tempBasicArrayList!.objectArray[index]!)
+sectionBasicArrayList!.add(tempBasicArrayList!.objectArray[index]!)
 index++
 
-    
                         if(index >= points.length)
                         
                                     {
@@ -256,7 +254,6 @@ index++
 
 sectionBasicArrayList= RandomTranslation.getInstance(sectionBasicArrayList, howMuch)
 
-    
                         if(type == ROTATION)
                         
                                     {
@@ -279,11 +276,10 @@ sectionBasicArrayList= RandomTranslation.getInstance(sectionBasicArrayList, howM
         
 index2 < size; index2++)
         {
-add(sectionBasicArrayList!.objectArray[index2]!)
+pointBasicArrayList!.add(sectionBasicArrayList!.objectArray[index2]!)
 }
 
 
-    
                         if(index >= points.length)
                         
                                     {
@@ -294,11 +290,10 @@ add(sectionBasicArrayList!.objectArray[index2]!)
                                     }
                                 
                              else 
-    
                         if(points[index]![0] == 1000)
                         
                                     {
-                                    add(tempBasicArrayList!.objectArray[index]!)
+                                    pointBasicArrayList!.add(tempBasicArrayList!.objectArray[index]!)
 index++
 
                                     }
@@ -314,19 +309,18 @@ index++
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createPointsBasicArrayList(points: IntArray[]): BasicArrayList{
 var points = points
 
-    
                         if(points.length == 0)
                         
                                     {
                                     
 
 
-                            throw Exception("Not Points Provided")
+                            throw Error("Not Points Provided")
 
                                     }
                                 
@@ -345,7 +339,7 @@ var points = points
         
 index < points.length; index++)
         {
-add(PointFactory.getInstance()!.getInstance(points[index]![0]!, points[index]![1]!))
+firstPointBasicArrayList!.add(PointFactory.getInstance()!.getInstance(points[index]![0]!, points[index]![1]!))
 }
 
 

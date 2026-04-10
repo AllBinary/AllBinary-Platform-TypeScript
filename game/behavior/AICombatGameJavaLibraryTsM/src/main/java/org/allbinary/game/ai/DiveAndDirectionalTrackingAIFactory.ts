@@ -43,7 +43,7 @@ export class DiveAndDirectionalTrackingAIFactory
                 , ArtificialIntelligenceInterfaceFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(hashtable: Hashtable<Any, Any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
     //var hashtable = hashtable
@@ -55,7 +55,6 @@ var gameInput = gameInput
         
 
 
-    
                         if(visitorCanBeNull == 
                                     null
                                 )
@@ -71,7 +70,7 @@ var gameInput = gameInput
         
         
 
-put(BasicAI.AI_VISITOR, LastKeyAIVisitorFactory.getInstance())
+hashtable2.put(BasicAI.AI_VISITOR, LastKeyAIVisitorFactory.getInstance())
 
     var artificialIntelligenceInterface: ArtificialIntelligenceInterface = BasicRandomAIFactory().
                             getInstance(hashtable2, ownerLayerInterface, gameInput)!;

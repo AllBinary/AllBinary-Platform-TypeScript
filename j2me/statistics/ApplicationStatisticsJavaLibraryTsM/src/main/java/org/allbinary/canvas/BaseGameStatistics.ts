@@ -70,7 +70,7 @@ public constructor (){
 
 
     public init(){
-setStartTime()
+this.timeDelayHelper!.setStartTime()
 this.totalRefreshes= 0
 this.totalFrames= 0
 }
@@ -106,7 +106,6 @@ this.totalRefreshes++
         
 
 
-    
                         if(elapsed > 1)
                         
                                     {
@@ -199,7 +198,6 @@ this.totalRefreshes++
 
 totalTime= (totalTime shr DEFAULT_SCALE_FACTOR)
 
-    
                         if(totalTime > 0 && updateDelayHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
                         
                                     {
@@ -209,7 +207,6 @@ totalTime= (totalTime shr DEFAULT_SCALE_FACTOR)
         
 
 
-    
                         if(framesPerSec < 10)
                         
                                     {
@@ -219,7 +216,6 @@ CHAR_ARRAY[1]![1]= primitiveLongSingleton!.NUMBER_CHAR_ARRAY[framesPerSec]!
                                     }
                                 
                              else 
-    
                         if(framesPerSec < 100)
                         
                                     {
@@ -250,7 +246,6 @@ CHAR_ARRAY[1]![1]= PLUS_CHAR
         
 
 
-    
                         if(refreshesPerSec < 10)
                         
                                     {
@@ -260,7 +255,6 @@ CHAR_ARRAY[3]![1]= primitiveLongSingleton!.NUMBER_CHAR_ARRAY[refreshesPerSec]!
                                     }
                                 
                              else 
-    
                         if(refreshesPerSec < 100)
                         
                                     {
@@ -305,7 +299,6 @@ CHAR_ARRAY[3]![1]= PLUS_CHAR
 
 totalTime= (totalTime /10000)
 
-    
                         if(totalTime > 0)
                         
                                     {
@@ -347,22 +340,21 @@ var totalTime = totalTime
         
         
 
-append(STRING_ARRAY[0]!)
-appendlong(totalTime)
-append(STRING_ARRAY[2]!)
-appendlong(this.totalFrames)
-append(STRING_ARRAY[4]!)
-appendlong(this.totalFrames /totalTime)
+stringBuffer!.append(STRING_ARRAY[0]!)
+stringBuffer!.appendlong(totalTime)
+stringBuffer!.append(STRING_ARRAY[2]!)
+stringBuffer!.appendlong(this.totalFrames)
+stringBuffer!.append(STRING_ARRAY[4]!)
+stringBuffer!.appendlong(this.totalFrames /totalTime)
 
-    
                         if(this.totalRefreshes > 0)
                         
                                     {
-                                    append(STRING_ARRAY[6]!)
-appendlong(this.totalRefreshes)
-append(STRING_ARRAY[8]!)
-appendlong(this.totalRefreshes /totalTime)
-append(CommonSeps.getInstance()!.NEW_LINE)
+                                    stringBuffer!.append(STRING_ARRAY[6]!)
+stringBuffer!.appendlong(this.totalRefreshes)
+stringBuffer!.append(STRING_ARRAY[8]!)
+stringBuffer!.appendlong(this.totalRefreshes /totalTime)
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
 
                                     }
                                 
@@ -383,7 +375,6 @@ append(CommonSeps.getInstance()!.NEW_LINE)
 
 totalTime= (totalTime /1000)
 
-    
                         if(totalTime > 0)
                         
                                     {

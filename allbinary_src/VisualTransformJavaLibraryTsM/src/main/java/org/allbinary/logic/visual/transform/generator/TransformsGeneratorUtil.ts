@@ -68,18 +68,17 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public generateComponentsFromObjectConfig(abeClientInformation: Object, transformInfoInterface: Object, group: string): string{
     //var abeClientInformation = abeClientInformation
     //var transformInfoInterface = transformInfoInterface
 var group = group
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Started Group: " +group, this, "generateComponentsFromObjectConfig(2)")
+                                    logUtil!.put("Started Group: " +group, this, "generateComponentsFromObjectConfig(2)")
 
                                     }
                                 
@@ -94,11 +93,10 @@ var group = group
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("End Group: " +group, this, "generateComponentsFromObjectConfig(2)")
+                                    logUtil!.put("End Group: " +group, this, "generateComponentsFromObjectConfig(2)")
 
                                     }
                                 
@@ -111,7 +109,7 @@ var group = group
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public generateComponentsFromObjectConfig(abeClientInformation: Object, transformInfoObjectConfigInterface: Object, transformInfoInterface: Object, group: string): string{
     //var abeClientInformation = abeClientInformation
@@ -119,11 +117,10 @@ var group = group
     //var transformInfoInterface = transformInfoInterface
 var group = group
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Started Group: " +group, this, "generateComponentsFromObjectConfig()")
+                                    logUtil!.put("Started Group: " +group, this, "generateComponentsFromObjectConfig()")
 
                                     }
                                 
@@ -133,7 +130,6 @@ var group = group
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -142,23 +138,22 @@ var group = group
         
         
 
-append("Processing ")
-appendint(transformInfoObjectConfigComponentVector!.length)
-append(" Components Group: ")
-append(group)
-put(stringBuffer!.toString(), this, "generateComponentsFromObjectConfig()")
+stringBuffer!.append("Processing ")
+stringBuffer!.appendint(transformInfoObjectConfigComponentVector!.length)
+stringBuffer!.append(" Components Group: ")
+stringBuffer!.append(group)
+logUtil!.put(stringBuffer!.toString(), this, "generateComponentsFromObjectConfig()")
 
                                     }
                                 
 
-    
                         if(transformInfoObjectConfigComponentVector!.length < 1)
                         
                                     {
                                     
 
 
-                            throw Exception("No Pages Generated For Template.")
+                            throw Error("No Pages Generated For Template.")
 
                                     }
                                 
@@ -182,15 +177,14 @@ index < size; index++)
         
         
 
-generate(abeClientInformation, transformInfoObjectConfigComponent, transformInfoInterface)
+TransformGeneratorUtil.getInstance()!.generate(abeClientInformation, transformInfoObjectConfigComponent, transformInfoInterface)
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Done Group: " +group, this, "generateComponentsFromObjectConfig()")
+                                    logUtil!.put("Done Group: " +group, this, "generateComponentsFromObjectConfig()")
 
                                     }
                                 
@@ -199,9 +193,9 @@ generate(abeClientInformation, transformInfoObjectConfigComponent, transformInfo
         
         
 
-append("<!-- Generated all template views successfully for View: ")
-append(transformInfoInterface!.getName())
-append("-->")
+stringBuffer!.append("<!-- Generated all template views successfully for View: ")
+stringBuffer!.append(transformInfoInterface!.getName())
+stringBuffer!.append("-->")
 
 
 

@@ -101,11 +101,11 @@ this.hashMap= HashMap<Any, Any>()
         while(iterator.hasNext())
         {
 inputAutomationModuleConfiguration= iterator.next() as InputAutomationModuleConfiguration
-this.add(inputAutomationModuleConfiguration)
+this.this.add(inputAutomationModuleConfiguration)
 }
 
-initDefaultModelList()
-put("Loaded " +this.hashMap!.size +"/" +this.defaultListModelHelper!.getListModel()!.getSize() +" Input Automation Modules", this, "Contructor")
+this.defaultListModelHelper!.initDefaultModelList()
+logUtil!.put("Loaded " +this.hashMap!.size +"/" +this.defaultListModelHelper!.getListModel()!.getSize() +" Input Automation Modules", this, "Contructor")
 }
 
 
@@ -116,15 +116,14 @@ put("Loaded " +this.hashMap!.size +"/" +this.defaultListModelHelper!.getListMode
         
         
 
-put(inputAutomationModuleConfiguration!.getName(), inputAutomationModuleInterface)
-add(inputAutomationModuleConfiguration!.getName())
+this.hashMap!.put(inputAutomationModuleConfiguration!.getName(), inputAutomationModuleInterface)
+this.defaultListModelHelper!.add(inputAutomationModuleConfiguration!.getName())
 
     var helpSet: HelpSet = inputAutomationModuleInterface!.getHelpSet()!;
         
         
 
 
-    
                         if(!JavaHelpSetNotifier.isNotified(helpSet))
                         
                                     {
@@ -133,7 +132,7 @@ add(inputAutomationModuleConfiguration!.getName())
         
         
 
-helpSetAdded(helpSetEvent)
+this.helpSetListenerInterface!.helpSetAdded(helpSetEvent)
 
                                     }
                                 
@@ -157,20 +156,19 @@ helpSetAdded(helpSetEvent)
         
         
 
-put("Getting Module: " +moduleName, this, commonStrings!.GET_INSTANCE)
+logUtil!.put("Getting Module: " +moduleName, this, commonStrings!.GET_INSTANCE)
 
     var inputAutomationModuleFactoryInterface: InputAutomationModuleFactoryInterface = this.hashMap!.get(moduleName as Object) as InputAutomationModuleFactoryInterface;
         
         
 
 
-    
                         if(inputAutomationModuleFactoryInterface == 
                                     null
                                 )
                         
                                     {
-                                    put("Module: " +moduleName +" was null", this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Module: " +moduleName +" was null", this, commonStrings!.GET_INSTANCE)
 
                                     }
                                 

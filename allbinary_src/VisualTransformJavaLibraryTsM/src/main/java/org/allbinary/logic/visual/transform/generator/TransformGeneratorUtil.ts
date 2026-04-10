@@ -74,7 +74,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public generate(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, ownerTransformInfoInterface: TransformInfoInterface){
     //var abeClientInformation = abeClientInformation
@@ -83,11 +83,10 @@ private constructor (){
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Generating View: " +transformInfoInterface!.getName(), this, "generate()")
+                                    logUtil!.put("Generating View: " +transformInfoInterface!.getName(), this, "generate()")
 
                                     }
                                 
@@ -112,28 +111,27 @@ private constructor (){
         
 
 
-    
                         if(result.indexOf("<HTML>") >= 0)
                         
                                     {
-                                    put(inputOutputTypeData!.NAME, inputOutputTypeData!.DEFAULT)
+                                    httpTransformInfoInterface!.getPropertiesHashMap()!.put(inputOutputTypeData!.NAME, inputOutputTypeData!.DEFAULT)
 
                                     }
                                 
                         else {
-                            put(inputOutputTypeData!.NAME, inputOutputTypeData!.DEFAULT_FRAGMENT)
+                            httpTransformInfoInterface!.getPropertiesHashMap()!.put(inputOutputTypeData!.NAME, inputOutputTypeData!.DEFAULT_FRAGMENT)
 
                         }
                             
-process(result)
+StoreFileGenerator(componentInterface!.getTransformInfoInterface()).
+                            process(result)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to generate a view", this, "generate()", e)
+                                    logUtil!.put("Failed to generate a view", this, "generate()", e)
 
                                     }
                                 
@@ -146,7 +144,7 @@ process(result)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public generate(abeClientInformation: AbeClientInformationInterface, transformInfoDomNode: TransformInfoDomNode, ownerTransformInfoInterface: TransformInfoInterface){
     //var abeClientInformation = abeClientInformation

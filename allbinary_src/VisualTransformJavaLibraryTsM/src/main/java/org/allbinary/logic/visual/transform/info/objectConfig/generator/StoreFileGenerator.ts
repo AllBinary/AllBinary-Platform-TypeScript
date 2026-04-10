@@ -117,9 +117,9 @@ public constructor (transformInfoInterface: TransformInfoInterface){
         
         
 
-append(URLGLOBALS.getWebappPath())
-append(weblisketSession!.getStoreName())
-append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.append(URLGLOBALS.getWebappPath())
+stringBuffer!.append(weblisketSession!.getStoreName())
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
 
     var abPath: AbPath = new AbPath(stringBuffer!.toString());
         
@@ -136,7 +136,6 @@ append(AbPathData.getInstance()!.SEPARATOR)
         
 
 
-    
                         if(stringValidationUtil!.isEmpty(fileName))
                         
                                     {
@@ -151,9 +150,9 @@ fileName= transformInfoInterface!.getName()!.substring(transformInfoHttpStoreInt
         
         
 
-put(TransformInfosData.getInstance()!.PREVIEW, "Preview")
-put(TransformInfosData.getInstance()!.SMALL_PREVIEW, "SmallPreview")
-put(CommonSeps.getInstance()!.SPACE, StringUtil.getInstance()!.EMPTY_STRING)
+outputMappingHashMap!.put(TransformInfosData.getInstance()!.PREVIEW, "Preview")
+outputMappingHashMap!.put(TransformInfosData.getInstance()!.SMALL_PREVIEW, "SmallPreview")
+outputMappingHashMap!.put(CommonSeps.getInstance()!.SPACE, StringUtil.getInstance()!.EMPTY_STRING)
 
     var replace: Replace = new Replace(outputMappingHashMap);
         
@@ -164,14 +163,13 @@ fileName= replace.all(fileName)
                                     }
                                 
 
-    
                         if(stringValidationUtil!.isEmpty(fileName))
                         
                                     {
                                     
 
 
-                            throw Exception("TransformInfoObjectConfigGenerator FileName Not Specified")
+                            throw Error("TransformInfoObjectConfigGenerator FileName Not Specified")
 
                                     }
                                 
@@ -181,7 +179,6 @@ fileName= replace.all(fileName)
         
 
 
-    
                         if(stringValidationUtil!.isEmpty(tempOutput))
                         
                                     {
@@ -191,60 +188,55 @@ fileName= replace.all(fileName)
                                 
 this.output= tempOutput
 
-    
                         if(stringValidationUtil!.isEmpty(this.output))
                         
                                     {
                                     
 
 
-                            throw Exception("TransformInfoObjectConfigGenerator Output=extension Not Specified")
+                            throw Error("TransformInfoObjectConfigGenerator Output=extension Not Specified")
 
                                     }
                                 
 stringBuffer= StringMaker()
-append(fileName)
-append(AbPathData.getInstance()!.EXTENSION_SEP)
-append(this.output)
+stringBuffer!.append(fileName)
+stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP)
+stringBuffer!.append(this.output)
 abPath= AbPath(abPath!.toString(), stringBuffer!.toString())
 this.fileAbPath= abPath
 this.file= AbFile(this.fileAbPath)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("File: " +this.fileAbPath!.toString(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("File: " +this.fileAbPath!.toString(), this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(input: string): string{
 var input = input
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Processing", this, commonStrings!.PROCESS)
+                                    logUtil!.put("Processing", this, commonStrings!.PROCESS)
 
                                     }
                                 
 
-    
                         if(!this.file.exists())
                         
                                     {
-                                    createNewFile()
+                                    this.file.createNewFile()
 
                                     }
                                 
 
-    
                         if(this.file.exists())
                         
                                     {
@@ -253,7 +245,7 @@ var input = input
         
         
 
-write(inputStream, this.file)
+FileUtil.getInstance()!.write(inputStream, this.file)
 
                                     }
                                 
@@ -261,16 +253,15 @@ write(inputStream, this.file)
                             
 
 
-                            throw Exception("Could Not Create: " +this.fileAbPath!.toString())
+                            throw Error("Could Not Create: " +this.fileAbPath!.toString())
 
                         }
                             
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Processed", this, commonStrings!.PROCESS)
+                                    logUtil!.put("Processed", this, commonStrings!.PROCESS)
 
                                     }
                                 

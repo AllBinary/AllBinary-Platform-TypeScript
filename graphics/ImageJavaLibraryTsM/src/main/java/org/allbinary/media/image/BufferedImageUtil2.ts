@@ -53,7 +53,6 @@ export class BufferedImageUtil2
         
 
 
-    
                         if(bufferedImageArray!.length < columns)
                         
                                     {
@@ -63,7 +62,6 @@ export class BufferedImageUtil2
                                 
 rows= (bufferedImageArray!.length /columns)
 
-    
                         if(bufferedImageArray!.length % columns != 0)
                         
                                     {
@@ -104,7 +102,6 @@ rows= (bufferedImageArray!.length /columns)
 index < bufferedImageArray!.length; index++)
         {
 
-    
                         if(index /max != 0 && index % max == 0)
                         
                                     {
@@ -113,7 +110,7 @@ columnIndex= 0
 
                                     }
                                 
-drawImage(bufferedImageArray[index]!, bufferedImageArray[index]!.getWidth(
+g.drawImage(bufferedImageArray[index]!, bufferedImageArray[index]!.getWidth(
                             null) *columnIndex, bufferedImageArray[index]!.getHeight(
                             null) *rowIndex, bufferedImageArray[index]!.getWidth(
                             null), bufferedImageArray[index]!.getHeight(
@@ -122,7 +119,7 @@ drawImage(bufferedImageArray[index]!, bufferedImageArray[index]!.getWidth(
 columnIndex++
 }
 
-dispose()
+g.dispose()
 
 
 

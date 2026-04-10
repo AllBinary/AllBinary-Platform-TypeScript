@@ -102,7 +102,7 @@ index= ProcessingFrameIndexFactory.next()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setThread(thread: Thread){
 var thread = thread
@@ -130,8 +130,8 @@ this.running= running
     public run(){
 
         try {
-            put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-this.setRunning(true)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
+this.this.setRunning(true)
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
@@ -140,7 +140,7 @@ this.setRunning(true)
 
         while(this.isRunning())
         {
-setStartTime()
+timeHelper!.setStartTime()
 
     var frame: Long = new index as Long;
         
@@ -151,22 +151,21 @@ setStartTime()
         
         
 
-append(this.savedCaptureGenericProfileDataWorkerType!.getPath())
-append(LongUtil.fillIn(frame.toString()))
-append(MediaDataFactory.getInstance()!.JPG.getExtension())
+filePathStringBuffer!.append(this.savedCaptureGenericProfileDataWorkerType!.getPath())
+filePathStringBuffer!.append(LongUtil.fillIn(frame.toString()))
+filePathStringBuffer!.append(MediaDataFactory.getInstance()!.JPG.getExtension())
 
     var filePath: string = filePathStringBuffer!.toString()!;
         
         
 
-put("Loading Image File Path: " +filePath, this, this.commonStrings!.RUN)
+logUtil!.put("Loading Image File Path: " +filePath, this, this.commonStrings!.RUN)
 
     var file: File = new File(filePath);
         
         
 
 
-    
                         if(file.isFile())
                         
                                     {
@@ -176,29 +175,29 @@ put("Loading Image File Path: " +filePath, this, this.commonStrings!.RUN)
         
 
 index++
-add(BufferedImageFrameCacheable(bufferedImage, frame))
+CapturedBufferedImagesCacheSingleton.getInstance()!.add(BufferedImageFrameCacheable(bufferedImage, frame))
 
     var capturedImageEvent: CapturedImageWorkerResultsEvent = new CapturedImageWorkerResultsEvent(this, frame, bufferedImage);
         
         
 
-this.fireEvent(capturedImageEvent)
+this.this.fireEvent(capturedImageEvent)
 
                                     }
                                 
                         else {
-                            put("Could Not Load File: " +filePath, this, this.commonStrings!.RUN)
+                            logUtil!.put("Could Not Load File: " +filePath, this, this.commonStrings!.RUN)
 
                         }
                             
-put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
-this.setRunning(false)
+logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
+this.this.setRunning(false)
 }
 
-put(this.commonStrings!.END, this, this.commonStrings!.RUN)
+logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
 }
 
 }

@@ -76,11 +76,11 @@ export class StaticPathGenerator
 protected constructor (){
 
             super();
-            put("Using Static Path Finding", this, CommonStrings.getInstance()!.CONSTRUCTOR)
+            PreLogUtil.put("Using Static Path Finding", this, CommonStrings.getInstance()!.CONSTRUCTOR)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(geographicMapInterface: any = {}, totalPaths: number){
     //var geographicMapInterface = geographicMapInterface
@@ -88,7 +88,7 @@ protected constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getGeographicMapCellPositionListFromBasicGeographicMapCellPositionList(geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory, pathList: BasicArrayList): BasicArrayList{
     //var geographicMapCellPositionFactory = geographicMapCellPositionFactory
@@ -121,7 +121,7 @@ index < size; index++)
         {
 basicGeographicMapCellPosition= pathList!.get(index) as CellPosition
 geographicMapCellPosition= geographicMapCellPositionFactory!.getInstance(basicGeographicMapCellPosition!.getColumn(), basicGeographicMapCellPosition!.getRow())
-add(geographicMapCellPosition)
+list.add(geographicMapCellPosition)
 }
 
 
@@ -133,7 +133,7 @@ add(geographicMapCellPosition)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(geographicMapInterface: BasicGeographicMap, geographicMapCellHistory: GeographicMapCellHistory, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
@@ -163,7 +163,6 @@ add(geographicMapCellPosition)
         
 
 
-    
                         if(list == basicArrayListUtil!.getImmutableInstance())
                         
                                     {
@@ -207,15 +206,15 @@ add(geographicMapCellPosition)
 index < size; index++)
         {
 pathList= this.getGeographicMapCellPositionListFromBasicGeographicMapCellPositionList(geographicMapCellPositionFactory, basicList!.get(index) as BasicArrayList)
-add(pathList)
+list.add(pathList)
 }
 
-add(mapIdInteger, list)
-remove(smallIntegerSingletonFactory!.getInstance(id))
+pathCacheFactory!.add(mapIdInteger, list)
+pathCacheFactory!.remove(smallIntegerSingletonFactory!.getInstance(id))
 
                                     }
                                 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Using Cached Path(s): ")!.append(StringUtil.getInstance()!.toString(list))!.toString(), this, commonStrings!.GET_INSTANCE)
 
 
@@ -225,7 +224,7 @@ put(StringMaker().
     
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 
 
 

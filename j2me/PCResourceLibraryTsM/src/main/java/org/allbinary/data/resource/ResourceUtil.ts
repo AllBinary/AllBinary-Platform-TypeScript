@@ -95,7 +95,7 @@ this.ext= ext
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getResourceAsStream(resource: string): InputStream{
     //var resource = resource
@@ -105,7 +105,6 @@ this.ext= ext
         
 
 
-    
                         if(inputStream == 
                                     null
                                 )
@@ -113,7 +112,6 @@ this.ext= ext
                                     {
                                     inputStream= this.getResourceAsStream(resource, 1)
 
-    
                         if(inputStream == 
                                     null
                                 )
@@ -122,7 +120,7 @@ this.ext= ext
                                     
 
 
-                            throw Exception(StringMaker().
+                            throw Error(StringMaker().
                             append("Unable to obtain: ")!.append(resource)!.toString())
 
                                     }
@@ -139,7 +137,7 @@ this.ext= ext
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getResourceAsStream(resource: string, startIndex: number): InputStream{
     //var resource = resource
@@ -161,7 +159,6 @@ this.ext= ext
         
 
 
-    
                         if(inputStream != 
                                     null
                                 )
@@ -172,7 +169,7 @@ this.ext= ext
         
         
 
-getByteArray(inputStream, ByteArrayOutputStream(), byteArray)
+StreamUtil.getInstance()!.getByteArray(inputStream, ByteArrayOutputStream(), byteArray)
 
 
 

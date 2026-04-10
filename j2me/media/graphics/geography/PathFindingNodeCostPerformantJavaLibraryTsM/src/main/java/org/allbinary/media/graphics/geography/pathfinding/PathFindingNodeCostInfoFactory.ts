@@ -40,7 +40,7 @@ public constructor (max: number){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public create(geographicMapInterface: BasicGeographicMap, goingToGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number){
     //var geographicMapInterface = geographicMapInterface
@@ -51,7 +51,7 @@ public constructor (max: number){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getTotalCost(geographicMapInterface: BasicGeographicMap, comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition): number{
     //var geographicMapInterface = geographicMapInterface

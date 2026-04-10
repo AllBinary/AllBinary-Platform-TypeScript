@@ -59,7 +59,7 @@ var anyType = anyType
         
         
 
-processAI(Canvas.UP)
+basicAI!.processAI(Canvas.UP)
 } catch(e: Exception)
             {
 
@@ -67,7 +67,7 @@ processAI(Canvas.UP)
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e)
 }
 
 

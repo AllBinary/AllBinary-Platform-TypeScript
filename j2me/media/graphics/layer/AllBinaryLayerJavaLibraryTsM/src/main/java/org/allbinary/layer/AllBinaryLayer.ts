@@ -115,7 +115,6 @@ public constructor (name: string, rectangle: Rectangle, viewPosition: ViewPositi
     var localName: string
 
 
-    
                         if(name == 
                                     null
                                 )
@@ -137,15 +136,15 @@ this.name= localName
         
         
 
-this.setPosition(point.getX(), point.getY(), point.getZ())
-this.setHalfWidth((this.getWidth() shr 1))
-this.setHalfHeight((this.getHeight() shr 1))
+this.this.setPosition(point.getX(), point.getY(), point.getZ())
+this.this.setHalfWidth((this.getWidth() shr 1))
+this.this.setHalfHeight((this.getHeight() shr 1))
 this.viewPosition= viewPosition
-setAllbinaryLayer(this)
+this.viewPosition!.setAllbinaryLayer(this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onChangeEvent(layerManagerEvent: ViewPositionEvent){
     //var layerManagerEvent = layerManagerEvent
@@ -352,25 +351,25 @@ this.viewPosition= viewPosition
         
         
 
-append(this.getName())
-append(commonSeps!.COLON)
-append(TYPE)
-appendint(this.getType())
-append(commonSeps!.SPACE)
-append(positionStrings!.X_LABEL)
-appendint(this.getXP())
-append(commonSeps!.SPACE)
-append(positionStrings!.Y_LABEL)
-appendint(this.getYP())
-append(commonSeps!.SPACE)
-append(positionStrings!.Z_LABEL)
-appendint(this.getZP())
-append(commonSeps!.SPACE)
-append(commonLabels!.WIDTH_LABEL)
-appendint(this.getWidth())
-append(commonSeps!.SPACE)
-append(commonLabels!.HEIGHT_LABEL)
-appendint(this.getHeight())
+stringBuffer!.append(this.getName())
+stringBuffer!.append(commonSeps!.COLON)
+stringBuffer!.append(TYPE)
+stringBuffer!.appendint(this.getType())
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(positionStrings!.X_LABEL)
+stringBuffer!.appendint(this.getXP())
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(positionStrings!.Y_LABEL)
+stringBuffer!.appendint(this.getYP())
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(positionStrings!.Z_LABEL)
+stringBuffer!.appendint(this.getZP())
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(commonLabels!.WIDTH_LABEL)
+stringBuffer!.appendint(this.getWidth())
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(commonLabels!.HEIGHT_LABEL)
+stringBuffer!.appendint(this.getHeight())
 }
 
 
@@ -380,7 +379,7 @@ appendint(this.getHeight())
         
         
 
-this.toString(stringBuffer)
+this.this.toString(stringBuffer)
 
 
 

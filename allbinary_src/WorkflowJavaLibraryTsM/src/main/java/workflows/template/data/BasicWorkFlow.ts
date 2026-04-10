@@ -81,11 +81,10 @@ public constructor (propertiesHashMap: HashMap<Any, Any>, pageContext: PageConte
             var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.WORKFLOW))
                         
                                     {
-                                    put("Properties: " +propertiesHashMap!.toString(), this, "BasicWorkFlow()")
+                                    logUtil!.put("Properties: " +propertiesHashMap!.toString(), this, "BasicWorkFlow()")
 
                                     }
                                 
@@ -95,7 +94,7 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(abe
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getName(): string{
 
@@ -127,24 +126,22 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(abe
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(): Integer{
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.WORKFLOW))
                         
                                     {
-                                    put(this.commonStrings!.START, this, commonStrings!.PROCESS)
+                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.PROCESS)
 
                                     }
                                 
 
-    
                         if(this.validationDomNodeInterface!.isValid())
                         
                                     {
-                                    print(this.validationDomNodeInterface!.view())
+                                    pageContext!.getOut()!.print(this.validationDomNodeInterface!.view())
 
 
 
@@ -155,7 +152,7 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(abe
                                     }
                                 
                         else {
-                            print(this.validationDomNodeInterface!.validationInfo())
+                            pageContext!.getOut()!.print(this.validationDomNodeInterface!.validationInfo())
 
 
 

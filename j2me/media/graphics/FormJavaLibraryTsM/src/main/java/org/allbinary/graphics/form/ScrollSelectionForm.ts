@@ -146,7 +146,7 @@ this.halfBorder= (border shr 1)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getSelectedItem(point: GPoint): CustomItem{
     //var point = point
@@ -156,7 +156,6 @@ this.halfBorder= (border shr 1)
         
 
 
-    
                         if(index !=  -1)
                         
                                     {
@@ -182,7 +181,7 @@ this.halfBorder= (border shr 1)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getItemIndex(item: CustomItem): number{
     //var item = item
@@ -207,7 +206,6 @@ index < size; index++)
         
 
 
-    
                         if(nextItem == item)
                         
                                     {
@@ -241,7 +239,7 @@ index < size; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getSelectedIndex(point: GPoint): number{
     //var point = point
@@ -280,12 +278,12 @@ index < size; index++)
         
         
 
-append(commonLabels!.START_LABEL)
-appendint(start)
-append(CommonSeps.getInstance()!.SPACE)
-append(commonLabels!.TOTAL_LABEL)
-appendint(size)
-put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
+stringBuffer!.append(commonLabels!.START_LABEL)
+stringBuffer!.appendint(start)
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(commonLabels!.TOTAL_LABEL)
+stringBuffer!.appendint(size)
+logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
 
     var item: CustomItemInterface
 
@@ -314,7 +312,6 @@ height= item.getMinimumHeight()
         
 
 
-    
                         if(this.formType == formTypeFactory!.HORIZONTAL_FORM)
                         
                                     {
@@ -323,7 +320,6 @@ height= item.getMinimumHeight()
                                     }
                                 
                              else 
-    
                         if(this.formType == formTypeFactory!.VERTICAL_CENTER_FORM || this.formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
                         
                                     {
@@ -335,22 +331,21 @@ height= item.getMinimumHeight()
                             
 
 
-                            throw Exception(formTypeFactory!.UNK)
+                            throw Error(formTypeFactory!.UNK)
 
                         }
                             
 
-    
                         if(rectangleCollisionUtil!.isInside(diffX, dy -this.halfBorder, diffX +width +this.border, dy +height +this.halfBorder +1, point.getX(), point.getY()))
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-append(commonLabels!.ITEM_LABEL)
-append(item.getLabel())
-append(CommonSeps.getInstance()!.SPACE)
-append(commonLabels!.INDEX_LABEL)
-appendint(index)
-put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(commonLabels!.ITEM_LABEL)
+stringBuffer!.append(item.getLabel())
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(commonLabels!.INDEX_LABEL)
+stringBuffer!.appendint(index)
+logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
 
 
 
@@ -361,13 +356,11 @@ put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
                                     }
                                 
 
-    
                         if(this.formType == formTypeFactory!.HORIZONTAL_FORM)
                         
                                     {
                                     dx= dx +width +border
 
-    
                         if(dx > this.rectangle.getMaxX())
                         
                                     {
@@ -381,13 +374,11 @@ put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
                                     }
                                 
                              else 
-    
                         if(this.formType == formTypeFactory!.VERTICAL_CENTER_FORM)
                         
                                     {
                                     dy= dy +height +border
 
-    
                         if(dy > this.rectangle.getMaxY())
                         
                                     {
@@ -404,7 +395,7 @@ put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
                             
 
 
-                            throw Exception(formTypeFactory!.UNK)
+                            throw Error(formTypeFactory!.UNK)
 
                         }
                             
@@ -419,7 +410,7 @@ put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processInput(gameKeyCode: number): number{
     //var gameKeyCode = gameKeyCode
@@ -429,7 +420,6 @@ put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
         
 
 
-    
                         if(this.size() == 0)
                         
                                     {
@@ -448,12 +438,10 @@ put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
         
 
 
-    
                         if(this.formType == formTypeFactory!.HORIZONTAL_FORM || this.formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
                         
                                     {
                                     
-    
                         if(gameKeyCode == Canvas.RIGHT)
                         
                                     {
@@ -462,7 +450,6 @@ put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
                                     }
                                 
                              else 
-    
                         if(gameKeyCode == Canvas.LEFT)
                         
                                     {
@@ -474,12 +461,10 @@ put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
                                     }
                                 
                              else 
-    
                         if(this.formType == formTypeFactory!.VERTICAL_CENTER_FORM)
                         
                                     {
                                     
-    
                         if(gameKeyCode == Canvas.DOWN)
                         
                                     {
@@ -488,7 +473,6 @@ put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
                                     }
                                 
                              else 
-    
                         if(gameKeyCode == Canvas.UP)
                         
                                     {
@@ -503,7 +487,7 @@ put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
                             
 
 
-                            throw Exception(formTypeFactory!.UNK)
+                            throw Error(formTypeFactory!.UNK)
 
                         }
                             
@@ -513,25 +497,23 @@ put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
         
 
 
-    
                         if(index < 0)
                         
                                     {
-                                    this.setSelectedIndex(0)
+                                    this.this.setSelectedIndex(0)
 
                                     }
                                 
                              else 
-    
                         if(index > max)
                         
                                     {
-                                    this.setSelectedIndex(max)
+                                    this.this.setSelectedIndex(max)
 
                                     }
                                 
                         else {
-                            this.setSelectedIndex(index)
+                            this.this.setSelectedIndex(index)
 
                         }
                             
@@ -547,11 +529,10 @@ put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
     public isInForm(point: GPoint): boolean{
     //var point = point
 
-    
                         if(rectangleCollisionUtil!.isInside(x, y -halfBorder, this.rectangle.getMaxX() +border, this.rectangle.getMaxY() +border, point.getX(), point.getY()))
                         
                                     {
-                                    put(StringMaker().
+                                    logUtil!.put(StringMaker().
                             append(StringUtil.getInstance()!.toString(point))!.append(INSIDE_FORM)!.toString(), this, IS_IN_FORM)
 
 
@@ -571,7 +552,7 @@ put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public paintItem(graphics: Graphics, index: number, item: CustomItemInterface, x: number, y: number): number{
     //var graphics = graphics
@@ -594,16 +575,15 @@ put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
         
         
 
-paint(graphics, x, y)
-setColor(this.getButtonBasicColor()!.toInt())
+item.paint(graphics, x, y)
+graphics.setColor(this.getButtonBasicColor()!.toInt())
 
     var adjustedBorder: number = 3;
         
         
 
-drawRect(x -halfBorder -adjustedBorder, y -halfBorder -adjustedBorder, width +border -adjustedBorder, height +border -adjustedBorder)
+graphics.drawRect(x -halfBorder -adjustedBorder, y -halfBorder -adjustedBorder, width +border -adjustedBorder, height +border -adjustedBorder)
 
-    
                         if(this.formType == formTypeFactory!.HORIZONTAL_FORM)
                         
                                     {
@@ -617,7 +597,6 @@ drawRect(x -halfBorder -adjustedBorder, y -halfBorder -adjustedBorder, width +bo
                                     }
                                 
                              else 
-    
                         if(this.formType == formTypeFactory!.VERTICAL_CENTER_FORM)
                         
                                     {
@@ -631,7 +610,6 @@ drawRect(x -halfBorder -adjustedBorder, y -halfBorder -adjustedBorder, width +bo
                                     }
                                 
                              else 
-    
                         if(this.formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
                         
                                     {
@@ -648,14 +626,14 @@ drawRect(x -halfBorder -adjustedBorder, y -halfBorder -adjustedBorder, width +bo
                             
 
 
-                            throw Exception(formTypeFactory!.UNK)
+                            throw Error(formTypeFactory!.UNK)
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public paintUnselectedItem(graphics: Graphics, index: number, item: CustomItemInterface, x: number, y: number): number{
     //var graphics = graphics
@@ -673,15 +651,14 @@ drawRect(x -halfBorder -adjustedBorder, y -halfBorder -adjustedBorder, width +bo
         
         
 
-setColor(this.getButtonBasicColor()!.toInt())
-paintUnselected(graphics, x, y)
+graphics.setColor(this.getButtonBasicColor()!.toInt())
+item.paintUnselected(graphics, x, y)
 
     var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
         
         
 
 
-    
                         if(this.formType == formTypeFactory!.HORIZONTAL_FORM)
                         
                                     {
@@ -695,7 +672,6 @@ paintUnselected(graphics, x, y)
                                     }
                                 
                              else 
-    
                         if(this.formType == formTypeFactory!.VERTICAL_CENTER_FORM)
                         
                                     {
@@ -709,7 +685,6 @@ paintUnselected(graphics, x, y)
                                     }
                                 
                              else 
-    
                         if(this.formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
                         
                                     {
@@ -726,7 +701,7 @@ paintUnselected(graphics, x, y)
                             
 
 
-                            throw Exception(formTypeFactory!.UNK)
+                            throw Error(formTypeFactory!.UNK)
 
                         }
                             

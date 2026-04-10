@@ -40,7 +40,7 @@ protected constructor (geographicMapInterface: BasicGeographicMap)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createInstance(i_column: number, i_row: number, width: number, height: number): GeographicMapCellPosition{
     //var i_column = i_column
@@ -63,7 +63,6 @@ protected constructor (geographicMapInterface: BasicGeographicMap)
         
 
 
-    
                         if(cellPositionCanBeNull == 
                                     null
                                 )
@@ -71,7 +70,7 @@ protected constructor (geographicMapInterface: BasicGeographicMap)
                                     {
                                     cellPositionCanBeNull= this.geographicMapCellPositionFactoryInterface!.getInstance(this.geographicMapInterface, i_column, i_row, this.getColumns(), this.getRows(), width, height)
 geographicMapCellPositionArray[i_row]![i_column]= cellPositionCanBeNull as GeographicMapCellPosition
-put(cellPositionKey, cellPositionCanBeNull)
+hashtable.put(cellPositionKey, cellPositionCanBeNull)
 
                                     }
                                 

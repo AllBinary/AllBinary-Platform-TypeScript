@@ -71,7 +71,6 @@ export class PlayerStateUtil
     public convert(state: number): string{
     //var state = state
 
-    
                         if(state == Player.UNREALIZED)
                         
                                     {
@@ -85,7 +84,6 @@ export class PlayerStateUtil
                                     }
                                 
                              else 
-    
                         if(state == Player.REALIZED)
                         
                                     {
@@ -99,7 +97,6 @@ export class PlayerStateUtil
                                     }
                                 
                              else 
-    
                         if(state == Player.PREFETCHED)
                         
                                     {
@@ -113,7 +110,6 @@ export class PlayerStateUtil
                                     }
                                 
                              else 
-    
                         if(state == Player.STARTED)
                         
                                     {
@@ -127,7 +123,6 @@ export class PlayerStateUtil
                                     }
                                 
                              else 
-    
                         if(state == Player.CLOSED)
                         
                                     {

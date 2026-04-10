@@ -108,18 +108,17 @@ numberStringArray[index]= index.toString()
         
 
 
-    
                         if(araster == 
                                     null
                                 )
                         
                                     {
-                                    println("there is no Alpha channel!!!!!!!!!")
+                                    System.out.println("there is no Alpha channel!!!!!!!!!")
 
                                     }
                                 
                         else {
-                            println("Alpha channel found !")
+                            System.out.println("Alpha channel found !")
 
                         }
                             
@@ -127,7 +126,147 @@ numberStringArray[index]= index.toString()
 
 
     public process(){
-start()
+object: Thread()
+                                {
+                                
+    public run(){
+
+        try {
+            
+    var imageUtil: ImageUtil = ImageUtil.getInstance()!;
+        
+        
+
+
+    var stringMaker: StringMaker = new StringMaker();
+        
+        
+
+
+    var imageProcessorInput: ImageProcessorInput = this@CreateIconImagesJPanel.getImageProcessorInput()!;
+        
+        
+
+
+    var files: File[] = imageProcessorInput!.getFiles()!;
+        
+        
+
+
+    var iconWidthList: BasicArrayList = new BasicArrayList();
+        
+        
+
+
+    var iconHeightList: BasicArrayList = new BasicArrayList();
+        
+        
+
+iconWidthList!.add(864)
+iconHeightList!.add(864)
+
+    var ANDROID: string = "android-icon-";
+        
+        
+
+
+    var IOS: string = "ios-icon-";
+        
+        
+
+
+    var size: number = iconWidthList!.size()!;
+        
+        
+
+
+    var width: number = 0;
+        
+        
+
+
+    var height: number = 0;
+        
+        
+
+
+
+
+
+                        for (
+    var index2: number = 0;
+        
+        
+index2 < size; index2++)
+        {
+width= get = iconWidthList!.get(index2)get as Integer
+get.
+                    toInt()
+height= get = iconHeightList!.get(index2)get as Integer
+get.
+                    toInt()
+
+    var generatedBufferedImageArray: BufferedImage[] = imageUtil!.createBufferedImage(imageProcessorInput!.getBufferedImageArray(), width, height, true)!;
+        
+        
+
+
+    var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;
+        
+        
+
+
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < generatedBufferedImageArray!.length; index++)
+        {
+
+    var filePath: string = files[index]!.getAbsolutePath()!;
+        
+        
+
+
+    var endIndex: number = filePath!.lastIndexOf('\\')!;
+        
+        
+
+
+    var path: string = filePath!.substring(0, endIndex +1)!;
+        
+        
+
+stringMaker!.delete(0, stringMaker!.length())
+stringMaker!.append(path)!.append(ANDROID)!.appendint(width)!.append(CanvasStrings.getInstance()!._PNG)
+
+    var newFilePath: string = stringMaker!.toString()!;
+        
+        
+
+imagePersistanceUtil!.saveWithBatik(AbFile(newFilePath), generatedBufferedImageArray[index]!)
+stringMaker!.delete(0, stringMaker!.length())
+stringMaker!.append(path)!.append(IOS)!.appendint(width)!.append(CanvasStrings.getInstance()!._PNG)
+newFilePath= stringMaker!.toString()
+imagePersistanceUtil!.saveWithBatik(AbFile(newFilePath), generatedBufferedImageArray[index]!)
+}
+
+}
+
+this@CreateIconImagesJPanel.getParent()!.repaint()
+} catch(e: Exception)
+            {
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+}
+
+}
+
+                                }
+                            .
+                            start()
 }
 
 
@@ -149,8 +288,8 @@ this.imageProcessorInput= imageProcessorInput
 
     initComponents(){
 aboveJButton= javax.swing.JButton()
-setText("Process")
-addActionListener(object: java.awt.event.ActionListener()
+aboveJButton!.setText("Process")
+aboveJButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -165,15 +304,15 @@ aboveJButtonActionPerformed(evt)
         
         
 
-this.setLayout(layout)
-setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(aboveJButton)!.addGap(0, 335, Short.MAX_VALUE)))
-setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addContainerGap()!.addComponent(aboveJButton)!.addContainerGap(286, Short.MAX_VALUE)))
+this.this.setLayout(layout)
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(aboveJButton)!.addGap(0, 335, Short.MAX_VALUE)))
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addContainerGap()!.addComponent(aboveJButton)!.addContainerGap(286, Short.MAX_VALUE)))
 }
 
 
     aboveJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.process()
+this.this.process()
 }
 
 

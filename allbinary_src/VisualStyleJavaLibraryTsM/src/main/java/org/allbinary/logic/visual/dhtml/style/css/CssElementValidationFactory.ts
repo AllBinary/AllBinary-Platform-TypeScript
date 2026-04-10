@@ -30,7 +30,7 @@ export class CssElementValidationFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(node: Node): ValidationInterface{
 var node = node

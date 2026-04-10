@@ -69,10 +69,10 @@ this.soundsFactoryInterface= soundsFactoryInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(){
-put(commonStrings!.START, this, commonStrings!.INIT)
+logUtil!.put(commonStrings!.START, this, commonStrings!.INIT)
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
         
@@ -83,7 +83,7 @@ put(commonStrings!.START, this, commonStrings!.INIT)
         
         
 
-init()
+soundsFactoryInterface!.init()
 
     var soundInterfaceArray: Sound[] = soundsFactoryInterface!.getSoundInterfaceArray()!;
         
@@ -121,7 +121,6 @@ i < soundInterfaceArray!.length; i++)
         
 
 
-    
                         if(soundInterface != 
                                     null
                                 )
@@ -129,29 +128,29 @@ i < soundInterfaceArray!.length; i++)
                                     {
                                     indexInteger= smallIntegerSingletonFactory!.getInstance(i)
 indexString= indexInteger!.toString()
-delete(0, stringBuffer!.length())
-append(commonLabels!.INDEX_LABEL)
-append(indexString)
-append(this.soundStrings!.SOUND)
-append(soundInterface!::class.toString()!)
-put(stringBuffer!.toString(), this, commonStrings!.INIT)
-init()
-addPortion(100, StringMaker().
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(commonLabels!.INDEX_LABEL)
+stringBuffer!.append(indexString)
+stringBuffer!.append(this.soundStrings!.SOUND)
+stringBuffer!.append(soundInterface!::class.toString()!)
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT)
+soundInterface!.init()
+progressCanvas!.addPortion(100, StringMaker().
                             append(this.soundStrings!.INIT_SOUND)!.append(indexString)!.toString())
 
                                     }
                                 
 }
 
-setInitialized(true)
-put(commonStrings!.END, this, commonStrings!.INIT)
+soundsFactoryInterface!.setInitialized(true)
+logUtil!.put(commonStrings!.END, this, commonStrings!.INIT)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public stopAll(){
-put(commonStrings!.START, this, this.soundStrings!.STOP_ALL)
+logUtil!.put(commonStrings!.START, this, this.soundStrings!.STOP_ALL)
 
     var soundInterfaceArray: Sound[] = soundsFactoryInterface!.getSoundInterfaceArray()!;
         
@@ -176,7 +175,6 @@ put(commonStrings!.START, this, this.soundStrings!.STOP_ALL)
 index < soundInterfaceArray!.length; index++)
         {
 
-    
                         if(soundInterfaceArray[index] != 
                                     null
                                 )
@@ -184,14 +182,13 @@ index < soundInterfaceArray!.length; index++)
                                     {
                                     player= soundInterfaceArray[index]!.getPlayerP()
 
-    
                         if(player != 
                                     null
                                 )
                         
                                     {
-                                    stop()
-addPortion(100, this.soundStrings!.STOPPING_SOUND, index)
+                                    player.stop()
+progressCanvas!.addPortion(100, this.soundStrings!.STOPPING_SOUND, index)
 
                                     }
                                 
@@ -203,10 +200,10 @@ addPortion(100, this.soundStrings!.STOPPING_SOUND, index)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public closeAll(){
-put(commonStrings!.START, this, this.soundStrings!.CLOSE_ALL)
+logUtil!.put(commonStrings!.START, this, this.soundStrings!.CLOSE_ALL)
 
     var soundInterfaceArray: Sound[] = soundsFactoryInterface!.getSoundInterfaceArray()!;
         
@@ -231,7 +228,6 @@ put(commonStrings!.START, this, this.soundStrings!.CLOSE_ALL)
 index < soundInterfaceArray!.length; index++)
         {
 
-    
                         if(soundInterfaceArray[index] != 
                                     null
                                 )
@@ -239,14 +235,13 @@ index < soundInterfaceArray!.length; index++)
                                     {
                                     player= soundInterfaceArray[index]!.getPlayerP()
 
-    
                         if(player != 
                                     null
                                 )
                         
                                     {
-                                    close()
-addPortion(100, this.soundStrings!.CLOSING_SOUND, index)
+                                    player.close()
+progressCanvas!.addPortion(100, this.soundStrings!.CLOSING_SOUND, index)
 
                                     }
                                 

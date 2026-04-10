@@ -163,8 +163,8 @@ var foregroundBasicColor = foregroundBasicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-this.init()
-addListener(this)
+this.this.init()
+DisplayChangeEventHandler.getInstance()!.addListener(this)
 
     var size: number = IMAGE.length
                 ;
@@ -191,19 +191,18 @@ IMAGE[index]= NullCanvas.NULL_IMAGE
 
         try {
             
-    
                         if(AndroidBasicTitleProgressBar.background != 0)
                         
                                     {
-                                    addResource(RESOURCE, Integer(AndroidBasicTitleProgressBar.background))
-init()
+                                    ResourceUtil.getInstance()!.addResource(RESOURCE, Integer(AndroidBasicTitleProgressBar.background))
+GameFeatureImageCacheFactory.init()
 this.image= ImageCacheFactory.getInstance()!.get(RESOURCE)
 
                                     }
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
 }
 
 }
@@ -214,7 +213,6 @@ var activity = activity
 
         try {
             
-    
                         if(this.midletActivity != activity)
                         
                                     {
@@ -223,14 +221,14 @@ this.showTitleProgressBarRunnable= ShowTitleProgressBarRunnable(this.midletActiv
 this.dismissTitleProgressBarRunnable= DismissTitleProgressBarRunnable(this.midletActivity, this)
 this.titleProgressDialogSetProgressRunnable= TitleProgressBarSetProgressRunnable(this.midletActivity, this)
 this.titleProgressDialogPortionSetProgressRunnable= TitleProgressBarPortionSetProgressRunnable(this.midletActivity, this)
-this.loadProgressImages()
+this.this.loadProgressImages()
 
                                     }
                                 
-this.updateCurrent()
+this.this.updateCurrent()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
 }
 
 }
@@ -240,7 +238,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
 
         try {
             
-    
                         if(!this.isBackground())
                         
                                     {
@@ -249,7 +246,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
                                     }
                                 
                              else 
-    
                         if(AndroidBasicTitleProgressBar.background != 0)
                         
                                     {
@@ -262,7 +258,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
     var currentImage: Image
 
 
-    
                         if(displayInfo!.isPortrait())
                         
                                     {
@@ -276,7 +271,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
                         }
                             
 
-    
                         if(currentImage == 
                                     null
                                 )
@@ -296,7 +290,7 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
 }
 
 }
@@ -304,7 +298,7 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
@@ -312,11 +306,11 @@ log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 var displayChangeEvent = displayChangeEvent
 
         try {
-            this.loadProgressImages()
-this.updateCurrent()
+            this.this.loadProgressImages()
+this.this.updateCurrent()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION_LABEL +ExceptionUtil.getInstance()!.getStackTrace(e), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT)
+logUtil!.put(commonStrings!.EXCEPTION_LABEL +ExceptionUtil.getInstance()!.getStackTrace(e), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT)
 this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0)
 }
 
@@ -342,27 +336,26 @@ this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0)
         
 
 
-    
                         if(displayInfo!.isPortrait(lastWidth, lastHeight))
                         
                                     {
-                                    this.setImages(0, lastWidth, lastHeight)
+                                    this.this.setImages(0, lastWidth, lastHeight)
 
                                     }
                                 
                         else {
-                            this.setImages(2, lastWidth, lastHeight)
+                            this.this.setImages(2, lastWidth, lastHeight)
 
                         }
                             
 } catch(e: IllegalArgumentException)
             {
-put("IllegalArgumentException " +ExceptionUtil.getInstance()!.getStackTrace(e), this, "loadProgressImages")
+logUtil!.put("IllegalArgumentException " +ExceptionUtil.getInstance()!.getStackTrace(e), this, "loadProgressImages")
 this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0)
 }
  catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION_LABEL +ExceptionUtil.getInstance()!.getStackTrace(e), this, "loadProgressImages")
+logUtil!.put(commonStrings!.EXCEPTION_LABEL +ExceptionUtil.getInstance()!.getStackTrace(e), this, "loadProgressImages")
 this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0)
 }
 
@@ -371,7 +364,6 @@ this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0)
 
     public isInitialized(): boolean{
 
-    
                         if(this.midletActivity != AndroidUtil.NULL_ACTIVITY)
                         
                                     {
@@ -400,12 +392,12 @@ this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0)
     public start(){
 
         try {
-            put(commonStrings!.START, this, commonStrings!.START_METHOD_NAME)
-start()
-runOnUiThread(showTitleProgressBarRunnable)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.START_METHOD_NAME)
+super.start()
+this.midletActivity!.runOnUiThread(showTitleProgressBarRunnable)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e)
 }
 
 }
@@ -414,12 +406,12 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e)
     public end(){
 
         try {
-            put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME)
-runOnUiThread(dismissTitleProgressBarRunnable)
-end()
+            logUtil!.put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME)
+this.midletActivity!.runOnUiThread(dismissTitleProgressBarRunnable)
+super.end()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME, e)
 }
 
 }
@@ -432,19 +424,18 @@ var index = index
 
         try {
             this.portion= value
-addEarlyPortion(value, text, index)
+super.addEarlyPortion(value, text, index)
 
-    
                         if(this.midletActivity != AndroidUtil.NULL_ACTIVITY)
                         
                                     {
-                                    runOnUiThread(titleProgressDialogPortionSetProgressRunnable)
+                                    this.midletActivity!.runOnUiThread(titleProgressDialogPortionSetProgressRunnable)
 
                                     }
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, ADD_PORTION, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e)
 }
 
 }
@@ -457,11 +448,11 @@ var index = index
 
         try {
             this.portion= value
-addPortion(value, text, index)
-runOnUiThread(titleProgressDialogPortionSetProgressRunnable)
+super.addPortion(value, text, index)
+this.midletActivity!.runOnUiThread(titleProgressDialogPortionSetProgressRunnable)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, ADD_PORTION, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e)
 }
 
 }
@@ -473,11 +464,11 @@ var text = text
 
         try {
             this.portion= value
-addPortion(value, text)
-runOnUiThread(titleProgressDialogPortionSetProgressRunnable)
+super.addPortion(value, text)
+this.midletActivity!.runOnUiThread(titleProgressDialogPortionSetProgressRunnable)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, ADD_PORTION, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e)
 }
 
 }
@@ -487,11 +478,11 @@ put(commonStrings!.EXCEPTION, this, ADD_PORTION, e)
 var value = value
 
         try {
-            setValue(value)
-runOnUiThread(titleProgressDialogSetProgressRunnable)
+            super.setValue(value)
+this.midletActivity!.runOnUiThread(titleProgressDialogSetProgressRunnable)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "setValue", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "setValue", e)
 }
 
 }
@@ -501,7 +492,7 @@ put(commonStrings!.EXCEPTION, this, "setValue", e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     setImages(index: number, lastWidth: number, lastHeight: number){
 var index = index
@@ -513,17 +504,14 @@ var lastHeight = lastHeight
         
 
 
-    
                         if(image != NullCanvas.NULL_IMAGE)
                         
                                     {
                                     
-    
                         if(Features.getInstance()!.isFeature(MainFeatureFactory.getInstance()!.FULL_SCREEN))
                         
                                     {
                                     
-    
                         if(this.IMAGE[index] == NullCanvas.NULL_IMAGE)
                         
                                     {
@@ -541,7 +529,6 @@ var lastHeight = lastHeight
         
 
 
-    
                         if(this.IMAGE[nextIndex] == NullCanvas.NULL_IMAGE)
                         
                                     {
@@ -558,11 +545,11 @@ var lastHeight = lastHeight
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public initOpenGL(graphics: Graphics){
 var graphics = graphics
-put(commonStrings!.START, this, commonStrings!.INIT)
+logUtil!.put(commonStrings!.START, this, commonStrings!.INIT)
 this.image= GameFeatureImageCacheFactory.getInstance()!.get(RESOURCE)
 
     var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;
@@ -586,7 +573,6 @@ this.image= GameFeatureImageCacheFactory.getInstance()!.get(RESOURCE)
 index < size; index++)
         {
 
-    
                         if(this.IMAGE[index] != NullCanvas.NULL_IMAGE)
                         
                                     {
@@ -596,16 +582,16 @@ index < size; index++)
                                 
 }
 
-this.updateCurrent()
+this.this.updateCurrent()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(graphics: Graphics){
 var graphics = graphics
-put(commonStrings!.START, this, commonStrings!.UPDATE)
-this.initOpenGL(graphics)
+logUtil!.put(commonStrings!.START, this, commonStrings!.UPDATE)
+this.this.initOpenGL(graphics)
 this.image= GameFeatureImageCacheFactory.getInstance()!.get(RESOURCE)
 
     var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;
@@ -629,11 +615,10 @@ this.image= GameFeatureImageCacheFactory.getInstance()!.get(RESOURCE)
 index < size; index++)
         {
 
-    
                         if(this.IMAGE[index] != NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    update(graphics, this.IMAGE[index]!)
+                                    preResourceImageUtil!.update(graphics, this.IMAGE[index]!)
 
                                     }
                                 
@@ -642,7 +627,7 @@ index < size; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getImage(index: number): Image{
 var index = index
@@ -652,7 +637,6 @@ var index = index
         
 
 
-    
                         if(Features.getInstance()!.isFeature(MainFeatureFactory.getInstance()!.FULL_SCREEN))
                         
                                     {
@@ -678,11 +662,11 @@ var index = index
 var graphics = graphics
 
         try {
-            paint(graphics, 0, 20)
-paint2(graphics)
+            animation.paint(graphics, 0, 20)
+super.paint2(graphics)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e)
 }
 
 }
@@ -690,8 +674,8 @@ put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e)
 
     setBackground(background: boolean){
 var background = background
-setBackground(background)
-this.updateCurrent()
+super.setBackground(background)
+this.this.updateCurrent()
 }
 
 

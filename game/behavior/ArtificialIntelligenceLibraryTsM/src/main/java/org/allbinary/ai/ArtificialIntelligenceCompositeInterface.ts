@@ -22,7 +22,7 @@
 interface ArtificialIntelligenceCompositeInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getArtificialIntelligenceInterface(): ArtificialIntelligenceInterface
 

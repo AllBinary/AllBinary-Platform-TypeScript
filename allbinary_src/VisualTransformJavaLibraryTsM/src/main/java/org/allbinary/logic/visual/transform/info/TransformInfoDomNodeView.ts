@@ -89,7 +89,7 @@ public constructor (name: string)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -108,15 +108,14 @@ var document = document
         
         
 
-setValue(this.getTransformInfoInterface()!.getName())
+viewNameAttr!.setValue(this.getTransformInfoInterface()!.getName())
 
     var componentNodeAttributes: NamedNodeMap = subViewNode!.getAttributes()!;
         
         
 
-setNamedItem(viewNameAttr)
+componentNodeAttributes!.setNamedItem(viewNameAttr)
 
-    
                         if(this.getMappedName() != 
                                     null
                                 )
@@ -127,8 +126,8 @@ setNamedItem(viewNameAttr)
         
         
 
-setValue(this.getMappedName())
-setNamedItem(mappedNameAttr)
+mappedNameAttr!.setValue(this.getMappedName())
+componentNodeAttributes!.setNamedItem(mappedNameAttr)
 
                                     }
                                 

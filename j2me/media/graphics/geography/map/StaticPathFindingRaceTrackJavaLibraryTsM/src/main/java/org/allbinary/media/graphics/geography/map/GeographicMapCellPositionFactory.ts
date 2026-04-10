@@ -55,7 +55,7 @@ export class GeographicMapCellPositionFactory extends GeographicMapCellPositionB
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(geographicMapInterface: BasicGeographicMap): BasicGeographicMapCellPositionFactory{
     //var geographicMapInterface = geographicMapInterface
@@ -75,16 +75,15 @@ export class GeographicMapCellPositionFactory extends GeographicMapCellPositionB
         
 
 
-    
                         if(geographicMapCellPositionFactoryCanBeNull == 
                                     null
                                 )
                         
                                     {
-                                    put(StringMaker().
+                                    logUtil!.put(StringMaker().
                             append("Creating GeographicMapCellPositionFactory for TileLayer: ")!.appendint(allBinaryTiledLayer!.getDataId()!.toInt())!.toString(), this, commonStrings!.GET_INSTANCE)
 geographicMapCellPositionFactoryCanBeNull= BasicGeographicMapCellPositionFactory(geographicMapInterface)
-put(allBinaryTiledLayer!.getDataId(), geographicMapCellPositionFactoryCanBeNull)
+hashtable.put(allBinaryTiledLayer!.getDataId(), geographicMapCellPositionFactoryCanBeNull)
 
 
 
@@ -95,7 +94,7 @@ put(allBinaryTiledLayer!.getDataId(), geographicMapCellPositionFactoryCanBeNull)
                                     }
                                 
                         else {
-                            put(StringMaker().
+                            logUtil!.put(StringMaker().
                             append("Reusing GeographicMapCellPositionFactory for TileLayer: ")!.appendint(allBinaryTiledLayer!.getDataId()!.toInt())!.toString(), this, commonStrings!.GET_INSTANCE)
 
 

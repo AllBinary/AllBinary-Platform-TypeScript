@@ -41,7 +41,6 @@ private constructor (){
 var maxConcurrentPaths = maxConcurrentPaths
 var maxPaths = maxPaths
 
-    
                         if(maxConcurrentPaths != this.maxConcurrentPaths)
                         
                                     {
@@ -55,7 +54,7 @@ var maxPaths = maxPaths
         
 index >= this.maxConcurrentPaths; index--)
         {
-add(BasicArrayList(maxPaths))
+this.list.add(BasicArrayList(maxPaths))
 }
 
 this.maxConcurrentPaths= maxConcurrentPaths
@@ -68,7 +67,6 @@ this.maxPaths= maxPaths
 
     public getPath(): BasicArrayList{
 
-    
                         if(this.list.size() > 0)
                         
                                     {
@@ -96,8 +94,8 @@ this.maxPaths= maxPaths
 
     public release(list: BasicArrayList){
 var list = list
-clear()
-add(list)
+list.clear()
+this.list.add(list)
 }
 
 

@@ -60,7 +60,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(imageComparisonInfo: ImageComparisonResult, point: GPoint){
     //var imageComparisonInfo = imageComparisonInfo
@@ -71,7 +71,6 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface
         
 
 
-    
                         if(!isCollsionWithAvoidRectangles)
                         
                                     {
@@ -121,12 +120,10 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface
         
 
 
-    
                         if(this.imageComparatorConstraintsInterface!.isColorAllowed(0, point, color) || this.imageComparatorConstraintsInterface!.isColorAllowed(1, point, color2))
                         
                                     {
                                     
-    
                         if(Math.abs(rgb1 -rgb2) <= imageComparisonInfo!.getTolerance())
                         
                                     {
@@ -135,7 +132,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface
                                     }
                                 
                         else {
-                            add(PixelDeltaFactory.getInstance(point.getX(), point.getY(), rgb1, rgb2))
+                            imageComparisonInfo!.add(PixelDeltaFactory.getInstance(point.getX(), point.getY(), rgb1, rgb2))
 
                         }
                             
@@ -153,7 +150,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public compare(bufferedImage1: BufferedImage, bufferedImage2: BufferedImage, frameOne: Long, frameTwo: Long, tolerance: number): ImageComparisonResult{
     //var bufferedImage1 = bufferedImage1
@@ -170,7 +167,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public compare(bufferedImage1: BufferedImage, bufferedImage2: BufferedImage, frameOne: Long, frameTwo: Long, tolerance: number, name: string): ImageComparisonResult{
     //var bufferedImage1 = bufferedImage1
@@ -180,7 +177,6 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface
     //var tolerance = tolerance
     //var name = name
 
-    
                         if(bufferedImage1 == 
                                     null
                                  || bufferedImage2 == 
@@ -191,7 +187,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface
                                     
 
 
-                            throw Exception("Input images must not be null.")
+                            throw Error("Input images must not be null.")
 
                                     }
                                 
@@ -220,9 +216,8 @@ indexY < imageComparisonInfo!.imageHeight; indexY++)
         
 indexX < imageComparisonInfo!.imageWidth; indexX++)
         {
-this.process(imageComparisonInfo, PointFactory.getInstance()!.getInstance(indexX, indexY))
+this.this.process(imageComparisonInfo, PointFactory.getInstance()!.getInstance(indexX, indexY))
 
-    
                         if(imageComparisonInfo!.getNonMatchingPixelVector()!.size() > this.imageComparatorConstraintsInterface!.getMaxNonMatchingPixelDeltas())
                         
                                     {

@@ -42,7 +42,7 @@ public constructor (helpSet: HelpSet){
 
             super();
             var helpSet = helpSet
-this.setHelpSet(helpSet)
+this.this.setHelpSet(helpSet)
 }
 
 
@@ -58,12 +58,12 @@ this.setHelpSet(helpSet)
 
     public mouseMove(point: Point){
 var point = point
-this.mouseMove(point.x, point.y)
-put("Moved Mouse To: x: " +point.x +" y: " +point.y, this, "moveMouse")
+this.this.mouseMove(point.x, point.y)
+logUtil!.put("Moved Mouse To: x: " +point.x +" y: " +point.y, this, "moveMouse")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public mouseMoveToTarget(rectangle: Rectangle, x: Integer, y: Integer){
 var rectangle = rectangle
@@ -74,16 +74,16 @@ var y = y
         
         
 
-this.mouseMove(point.x +x, point.y +y)
-put("Moved Mouse To: x: " +point.x +" y: " +point.y +" in the middle of: " +rectangle, this, "moveMouseToTarget")
+this.this.mouseMove(point.x +x, point.y +y)
+logUtil!.put("Moved Mouse To: x: " +point.x +" y: " +point.y +" in the middle of: " +rectangle, this, "moveMouseToTarget")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public mouseMoveToTarget(rectangle: Rectangle){
 var rectangle = rectangle
-this.mouseMoveToTarget(rectangle, 0, 0)
+this.this.mouseMoveToTarget(rectangle, 0, 0)
 }
 
 

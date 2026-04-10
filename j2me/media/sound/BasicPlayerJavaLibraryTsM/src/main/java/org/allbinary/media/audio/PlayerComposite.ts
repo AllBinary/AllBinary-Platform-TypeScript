@@ -87,23 +87,23 @@ this.timeElapsedHelper!.delay= repeatTime
 
     public addPlayerListener(playerListener: PlayerListener){
 var playerListener = playerListener
-addPlayerListener(playerListener)
+this.player.addPlayerListener(playerListener)
 }
 
 
     public removePlayerListener(playerListener: PlayerListener){
 var playerListener = playerListener
-removePlayerListener(playerListener)
+this.player.removePlayerListener(playerListener)
 }
 
 
     public close(){
-close()
+this.player.close()
 }
 
 
     public deallocate(){
-deallocate()
+this.player.deallocate()
 }
 
 
@@ -140,10 +140,10 @@ deallocate()
     public prefetch(){
 
         try {
-            prefetch()
+            this.player.prefetch()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "prefetch", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "prefetch", e)
 }
 
 }
@@ -152,10 +152,10 @@ put(commonStrings!.EXCEPTION, this, "prefetch", e)
     public realize(){
 
         try {
-            realize()
+            this.player.realize()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "realize", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "realize", e)
 }
 
 }
@@ -173,7 +173,7 @@ put(commonStrings!.EXCEPTION, this, "realize", e)
 
     public setLoopCount(count: number){
 var count = count
-setLoopCount(count)
+this.player.setLoopCount(count)
 }
 
 
@@ -189,7 +189,7 @@ var now = now
     
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "setMediaTime", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "setMediaTime", e)
 
 
 
@@ -209,17 +209,16 @@ put(commonStrings!.EXCEPTION, this, "setMediaTime", e)
 
         try {
             
-    
                         if(timeElapsedHelper!.isTime(gameTickTimeDelayHelper!.startTime))
                         
                                     {
-                                    start()
+                                    this.player.start()
 
                                     }
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e)
 }
 
 }
@@ -228,10 +227,10 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e)
     public stop(){
 
         try {
-            stop()
+            this.player.stop()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "stop", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "stop", e)
 }
 
 }
@@ -266,7 +265,7 @@ var controlType = controlType
         
         
 
-setVolume(leftVolume, rightVolume)
+controllable2.setVolume(leftVolume, rightVolume)
 }
 
 

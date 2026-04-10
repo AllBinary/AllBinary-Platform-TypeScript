@@ -47,7 +47,7 @@ var gameInput = gameInput
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -92,38 +92,34 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 
 
-    
                         if(x2 > displayInfo!.getLastWidth())
                         
                                     {
-                                    setPosition(0, y, ownerLayerInterface!.getZP())
+                                    ownerLayerInterface!.setPosition(0, y, ownerLayerInterface!.getZP())
 
                                     }
                                 
 
-    
                         if(y2 > displayInfo!.getLastHeight())
                         
                                     {
-                                    setPosition(x, displayInfo!.getLastHeight() -height, ownerLayerInterface!.getZP())
+                                    ownerLayerInterface!.setPosition(x, displayInfo!.getLastHeight() -height, ownerLayerInterface!.getZP())
 
                                     }
                                 
 
-    
                         if(x < 0)
                         
                                     {
-                                    setPosition(displayInfo!.getLastWidth() -width, y, ownerLayerInterface!.getZP())
+                                    ownerLayerInterface!.setPosition(displayInfo!.getLastWidth() -width, y, ownerLayerInterface!.getZP())
 
                                     }
                                 
 
-    
                         if(y < 0)
                         
                                     {
-                                    setPosition(x, 0, ownerLayerInterface!.getZP())
+                                    ownerLayerInterface!.setPosition(x, 0, ownerLayerInterface!.getZP())
 
                                     }
                                 

@@ -47,10 +47,10 @@ public constructor (colorAtActionScriptConditionInterface: ColorAtActionScriptCo
 
             super();
             var colorAtActionScriptConditionInterface = colorAtActionScriptConditionInterface
-put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 initComponents()
 this.colorAtActionScriptConditionInterface= colorAtActionScriptConditionInterface
-this.set()
+this.this.set()
 }
 
 
@@ -60,15 +60,15 @@ this.set()
         
         
 
-setText(colorRangeInterface!.getMinRed().toString())
-setText(colorRangeInterface!.getMaxRed().toString())
-setText(colorRangeInterface!.getMinGreen().toString())
-setText(colorRangeInterface!.getMaxGreen().toString())
-setText(colorRangeInterface!.getMinBlue().toString())
-setText(colorRangeInterface!.getMaxBlue().toString())
-setText(this.colorAtActionScriptConditionInterface!.getPoint()!.x.toString())
-setText(this.colorAtActionScriptConditionInterface!.getPoint()!.y.toString())
-log()
+this.getMinRedJTextField()!.setText(colorRangeInterface!.getMinRed().toString())
+this.getMaxRedJTextField()!.setText(colorRangeInterface!.getMaxRed().toString())
+this.getMinGreenJTextField()!.setText(colorRangeInterface!.getMinGreen().toString())
+this.getMaxGreenJTextField()!.setText(colorRangeInterface!.getMaxGreen().toString())
+this.getMinBlueJTextField()!.setText(colorRangeInterface!.getMinBlue().toString())
+this.getMaxBlueJTextField()!.setText(colorRangeInterface!.getMaxBlue().toString())
+this.getColorAtXJTextField()!.setText(this.colorAtActionScriptConditionInterface!.getPoint()!.x.toString())
+this.getColorAtYJTextField()!.setText(this.colorAtActionScriptConditionInterface!.getPoint()!.y.toString())
+this.colorAtActionScriptConditionInterface!.log()
 }
 
 
@@ -78,19 +78,18 @@ log()
         
         
 
-setMinRed(Integer.valueOf(this.getMinRedJTextField()!.getText())!.toInt())
-setMaxRed(Integer.valueOf(this.getMaxRedJTextField()!.getText())!.toInt())
-setMinGreen(Integer.valueOf(this.getMinGreenJTextField()!.getText())!.toInt())
-setMaxGreen(Integer.valueOf(this.getMaxGreenJTextField()!.getText())!.toInt())
-setMinBlue(Integer.valueOf(this.getMinBlueJTextField()!.getText())!.toInt())
-setMaxBlue(Integer.valueOf(this.getMaxBlueJTextField()!.getText())!.toInt())
+colorRangeInterface!.setMinRed(Integer.valueOf(this.getMinRedJTextField()!.getText())!.toInt())
+colorRangeInterface!.setMaxRed(Integer.valueOf(this.getMaxRedJTextField()!.getText())!.toInt())
+colorRangeInterface!.setMinGreen(Integer.valueOf(this.getMinGreenJTextField()!.getText())!.toInt())
+colorRangeInterface!.setMaxGreen(Integer.valueOf(this.getMaxGreenJTextField()!.getText())!.toInt())
+colorRangeInterface!.setMinBlue(Integer.valueOf(this.getMinBlueJTextField()!.getText())!.toInt())
+colorRangeInterface!.setMaxBlue(Integer.valueOf(this.getMaxBlueJTextField()!.getText())!.toInt())
 
     var xString: string = this.getColorAtXJTextField()!.getText()!;
         
         
 
 
-    
                         if(!StringValidationUtil.getInstance()!.isEmpty(xString) && StringValidationUtil.getInstance()!.isNumber(xString))
                         
                                     {
@@ -104,7 +103,6 @@ setMaxBlue(Integer.valueOf(this.getMaxBlueJTextField()!.getText())!.toInt())
         
 
 
-    
                         if(!StringValidationUtil.getInstance()!.isEmpty(yString) && StringValidationUtil.getInstance()!.isNumber(yString))
                         
                                     {
@@ -112,7 +110,7 @@ setMaxBlue(Integer.valueOf(this.getMaxBlueJTextField()!.getText())!.toInt())
 
                                     }
                                 
-log()
+this.colorAtActionScriptConditionInterface!.log()
 }
 
 
@@ -299,19 +297,19 @@ okJButton= javax.swing.JButton()
 minGreenJTextField= javax.swing.JTextField()
 colorAtActionJButton= javax.swing.JButton()
 jLabel1= javax.swing.JLabel()
-setMinimumSize(java.awt.Dimension(350, 250))
-setText("              Color At Action Options            ")
-setText("Location:")
-setText("X:")
-setText("Y:")
-setText("Color Range")
-setText("Red:")
-setText("Minimum")
-setText("Maximum")
-setText("Green:")
-setText("Blue:")
-setText("OK")
-addActionListener(object: java.awt.event.ActionListener()
+colorAtActionJDialog!.setMinimumSize(java.awt.Dimension(350, 250))
+titleJLabel!.setText("              Color At Action Options            ")
+locationJLabel!.setText("Location:")
+xJLabel!.setText("X:")
+yJLabel!.setText("Y:")
+colorRangeJLabel!.setText("Color Range")
+redJLabel!.setText("Red:")
+minJLabel!.setText("Minimum")
+maxJLabel!.setText("Maximum")
+greenJLabel!.setText("Green:")
+blueJLabel!.setText("Blue:")
+okJButton!.setText("OK")
+okJButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -326,12 +324,12 @@ okJButtonActionPerformed(evt)
         
         
 
-setLayout(colorAtActionJDialogLayout)
-setHorizontalGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(colorAtActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(colorAtActionJDialogLayout!.createSequentialGroup()!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)!.addComponent(okJButton)!.addGroup(colorAtActionJDialogLayout!.createSequentialGroup()!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)!.addGroup(colorAtActionJDialogLayout!.createSequentialGroup()!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(blueJLabel)!.addComponent(greenJLabel)!.addComponent(redJLabel)!.addComponent(colorRangeJLabel))!.addGap(29, 29, 29))!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, colorAtActionJDialogLayout!.createSequentialGroup()!.addComponent(locationJLabel)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addComponent(xJLabel)!.addGap(18, 18, 18)))!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(minBlueJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)!.addComponent(minGreenJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)!.addComponent(minJLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addComponent(minRedJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)!.addComponent(colorAtXJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE))!.addGap(16, 16, 16)))!.addGap(6, 6, 6)!.addComponent(yJLabel)!.addGap(24, 24, 24)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)!.addComponent(maxJLabel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addGroup(javax.swing.GroupLayout.Alignment.LEADING, colorAtActionJDialogLayout!.createSequentialGroup()!.addGap(1, 1, 1)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)!.addComponent(maxBlueJTextField, javax.swing.GroupLayout.Alignment.TRAILING)!.addComponent(maxRedJTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)!.addComponent(maxGreenJTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))!.addComponent(colorAtYJTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE))!.addGap(22, 22, 22))!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, colorAtActionJDialogLayout!.createSequentialGroup()!.addComponent(titleJLabel)!.addGap(33, 33, 33)))))
-setVerticalGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(colorAtActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addComponent(titleJLabel)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(colorAtActionJDialogLayout!.createSequentialGroup()!.addGap(15, 15, 15)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(xJLabel)!.addComponent(locationJLabel)!.addComponent(colorAtXJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addComponent(yJLabel))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(minJLabel)!.addComponent(colorRangeJLabel))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(minRedJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addComponent(redJLabel))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(greenJLabel)!.addComponent(minGreenJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(blueJLabel)!.addComponent(minBlueJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)!.addComponent(okJButton))!.addGroup(colorAtActionJDialogLayout!.createSequentialGroup()!.addGap(14, 14, 14)!.addComponent(colorAtYJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(maxJLabel)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(maxRedJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(maxGreenJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(maxBlueJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))!.addContainerGap()))
+colorAtActionJDialog!.getContentPane()!.setLayout(colorAtActionJDialogLayout)
+colorAtActionJDialogLayout!.setHorizontalGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(colorAtActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(colorAtActionJDialogLayout!.createSequentialGroup()!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)!.addComponent(okJButton)!.addGroup(colorAtActionJDialogLayout!.createSequentialGroup()!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)!.addGroup(colorAtActionJDialogLayout!.createSequentialGroup()!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(blueJLabel)!.addComponent(greenJLabel)!.addComponent(redJLabel)!.addComponent(colorRangeJLabel))!.addGap(29, 29, 29))!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, colorAtActionJDialogLayout!.createSequentialGroup()!.addComponent(locationJLabel)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addComponent(xJLabel)!.addGap(18, 18, 18)))!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(minBlueJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)!.addComponent(minGreenJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)!.addComponent(minJLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addComponent(minRedJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)!.addComponent(colorAtXJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE))!.addGap(16, 16, 16)))!.addGap(6, 6, 6)!.addComponent(yJLabel)!.addGap(24, 24, 24)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)!.addComponent(maxJLabel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addGroup(javax.swing.GroupLayout.Alignment.LEADING, colorAtActionJDialogLayout!.createSequentialGroup()!.addGap(1, 1, 1)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)!.addComponent(maxBlueJTextField, javax.swing.GroupLayout.Alignment.TRAILING)!.addComponent(maxRedJTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)!.addComponent(maxGreenJTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))!.addComponent(colorAtYJTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE))!.addGap(22, 22, 22))!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, colorAtActionJDialogLayout!.createSequentialGroup()!.addComponent(titleJLabel)!.addGap(33, 33, 33)))))
+colorAtActionJDialogLayout!.setVerticalGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(colorAtActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addComponent(titleJLabel)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(colorAtActionJDialogLayout!.createSequentialGroup()!.addGap(15, 15, 15)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(xJLabel)!.addComponent(locationJLabel)!.addComponent(colorAtXJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addComponent(yJLabel))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(minJLabel)!.addComponent(colorRangeJLabel))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(minRedJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addComponent(redJLabel))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(greenJLabel)!.addComponent(minGreenJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(blueJLabel)!.addComponent(minBlueJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)!.addComponent(okJButton))!.addGroup(colorAtActionJDialogLayout!.createSequentialGroup()!.addGap(14, 14, 14)!.addComponent(colorAtYJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(maxJLabel)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(maxRedJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(maxGreenJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(maxBlueJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))!.addContainerGap()))
 setPreferredSize(java.awt.Dimension(100, 0))
-setText("Edit")
-addActionListener(object: java.awt.event.ActionListener()
+colorAtActionJButton!.setText("Edit")
+colorAtActionJButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -341,28 +339,28 @@ colorAtActionJButtonActionPerformed(evt)
 
                                 }
                             )
-setText("Color At:")
+jLabel1!.setText("Color At:")
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
         
         
 
-this.setLayout(layout)
-setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)!.addComponent(colorAtActionJButton)))
-setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel1)!.addComponent(colorAtActionJButton)))
+this.this.setLayout(layout)
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)!.addComponent(colorAtActionJButton)))
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel1)!.addComponent(colorAtActionJButton)))
 }
 
 
     okJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.update()
-setVisible(false)
+this.this.update()
+this.getColorAtActionJDialog()!.setVisible(false)
 }
 
 
     colorAtActionJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-setVisible(true)
+this.getColorAtActionJDialog()!.setVisible(true)
 }
 
 

@@ -71,7 +71,7 @@ this.delay= delay
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -81,11 +81,10 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 
 
-    
                         if(this.maxFireDelayTimeHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime) && timeFiredInterface!.getLastFireTime() +this.maxFireDelayTimeHelper!.delay < this.maxFireDelayTimeHelper!.getStartTime())
                         
                                     {
-                                    processAI(Canvas.KEY_NUM1)
+                                    super.processAI(Canvas.KEY_NUM1)
 this.maxFireDelayTimeHelper!.delay= delay
 
                                     }

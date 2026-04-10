@@ -65,7 +65,7 @@ public constructor (node: Node)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isValid(): Boolean{
 
@@ -76,20 +76,18 @@ public constructor (node: Node)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("FontFamilyValidation", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("FontFamilyValidation", this, commonStrings!.IS_VALID)
 
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("CssValidation: " +valid, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("CssValidation: " +valid, this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -102,11 +100,10 @@ public constructor (node: Node)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate data", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate data", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -121,7 +118,7 @@ public constructor (node: Node)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public validationInfo(): string{
 
@@ -131,7 +128,7 @@ public constructor (node: Node)
         
         
 
-append("Css Font Family Property Validation Error")
+stringBuffer!.append("Css Font Family Property Validation Error")
 
 
 
@@ -141,11 +138,10 @@ append("Css Font Family Property Validation Error")
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation info error", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation info error", this, "validationInfo()", e)
 
                                     }
                                 
@@ -160,7 +156,7 @@ append("Css Font Family Property Validation Error")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toValidationInfoDoc(): Document{
 
@@ -172,7 +168,7 @@ append("Css Font Family Property Validation Error")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document

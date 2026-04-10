@@ -54,7 +54,6 @@ export class OpenGLLogUtil
         
 
 
-    
                         if(error != GL10.GL_NO_ERROR)
                         
                                     {
@@ -63,35 +62,33 @@ export class OpenGLLogUtil
         
         
 
-append(OpenGLStrings.getInstance()!.GL_ERROR_LABEL)
-appendint(error)
+stringBuffer!.append(OpenGLStrings.getInstance()!.GL_ERROR_LABEL)
+stringBuffer!.appendint(error)
 
-    
                         if(error == 1281)
                         
                                     {
-                                    append(MAX_TEXTURE)
+                                    stringBuffer!.append(MAX_TEXTURE)
 
     var maxTextureSize: IntArray = IntArray(1);
         
         
 
-glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSize, 0)
-appendint(maxTextureSize[0]!)
+gl.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSize, 0)
+stringBuffer!.appendint(maxTextureSize[0]!)
 
                                     }
                                 
 
-    
                         if(error == 1280)
                         
                                     {
-                                    put(stringBuffer!.toString(), this, OpenGLStrings.getInstance()!.SET)
+                                    PreLogUtil.put(stringBuffer!.toString(), this, OpenGLStrings.getInstance()!.SET)
 
                                     }
                                 
                         else {
-                            log(stringBuffer!.toString(), this)
+                            ForcedLogUtil.log(stringBuffer!.toString(), this)
 
                         }
                             
@@ -118,7 +115,6 @@ appendint(maxTextureSize[0]!)
         
 
 
-    
                         if(error != GL10.GL_NO_ERROR)
                         
                                     {
@@ -127,27 +123,26 @@ appendint(maxTextureSize[0]!)
         
         
 
-append(OpenGLStrings.getInstance()!.GL_ERROR_LABEL)
-appendint(error)
+stringBuffer!.append(OpenGLStrings.getInstance()!.GL_ERROR_LABEL)
+stringBuffer!.appendint(error)
 
-    
                         if(error == 1281)
                         
                                     {
-                                    append(MAX_TEXTURE)
+                                    stringBuffer!.append(MAX_TEXTURE)
 
     var maxTextureSize: IntArray = IntArray(1);
         
         
 
-glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSize, 0)
-appendint(maxTextureSize[0]!)
+gl.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSize, 0)
+stringBuffer!.appendint(maxTextureSize[0]!)
 
                                     }
                                 
-append(IMAGE)
-append(image.toString())
-put(stringBuffer!.toString(), this, LOG_ERROR)
+stringBuffer!.append(IMAGE)
+stringBuffer!.append(image.toString())
+PreLogUtil.put(stringBuffer!.toString(), this, LOG_ERROR)
 
                                     }
                                 

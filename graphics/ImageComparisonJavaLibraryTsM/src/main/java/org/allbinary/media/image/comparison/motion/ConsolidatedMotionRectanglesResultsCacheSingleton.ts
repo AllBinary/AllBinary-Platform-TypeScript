@@ -71,12 +71,12 @@ export class ConsolidatedMotionRectanglesResultsCacheSingleton
 
 
         try {
-            put(commonStrings!.START, instance, STATIC_BLOCK)
+            logUtil!.put(commonStrings!.START, instance, STATIC_BLOCK)
 cacheInterface= CacheInterfaceFactory.getInstance(CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.ONE_MINUTE_FIVE_MAX)
-put(commonStrings!.END, instance, STATIC_BLOCK)
+logUtil!.put(commonStrings!.END, instance, STATIC_BLOCK)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e)
+logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e)
 }
 
 }

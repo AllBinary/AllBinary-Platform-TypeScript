@@ -83,7 +83,7 @@ export class PointsDomUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toDom(canvasDom: CanvasDom, pointVector: BasicArrayList): Node{
 var canvasDom = canvasDom
@@ -133,7 +133,6 @@ var pointVector = pointVector
         
 
 
-    
                         if(index < size && index < size2)
                         
                                     {
@@ -181,13 +180,13 @@ index++
         
         
 
-appendChild(pointOneNode)
-appendChild(pointTwoNode)
-appendChild(rotatedPointOneNode)
-appendChild(rotatedPointTwoNode)
+lineNode!.appendChild(pointOneNode)
+lineNode!.appendChild(pointTwoNode)
+lineNode!.appendChild(rotatedPointOneNode)
+lineNode!.appendChild(rotatedPointTwoNode)
 firstPoint= secondPoint
 rotatedFirstPoint= rotatedSecondPoint
-appendChild(lineNode)
+linesNode!.appendChild(lineNode)
 index++
 }
 
@@ -223,7 +222,7 @@ var pointName = pointName
         
         
 
-appendChild(xTextNode)
+xNode!.appendChild(xTextNode)
 
     var yNode: Node = document.createElement(PositionStrings.getInstance()!.Y) as Node;
         
@@ -234,9 +233,9 @@ appendChild(xTextNode)
         
         
 
-appendChild(yTextNode)
-appendChild(xNode)
-appendChild(yNode)
+yNode!.appendChild(yTextNode)
+pointNode!.appendChild(xNode)
+pointNode!.appendChild(yNode)
 
 
 

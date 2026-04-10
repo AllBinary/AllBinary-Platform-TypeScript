@@ -30,7 +30,7 @@ interface TimeBaseInterface {
 
     public getTimeBase(): TimeBase
 
-                @Throws(MediaException::class)
+                //@Throws(MediaException::class)
             
     public setTimeBase(timeBase: TimeBase)
 

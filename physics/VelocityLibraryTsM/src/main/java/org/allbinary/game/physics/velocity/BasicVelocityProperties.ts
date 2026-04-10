@@ -78,9 +78,9 @@ this.velocityZBasicDecimal= BasicDecimal()
 
 
     public zero(){
-set(0)
-set(0)
-set(0)
+this.velocityXBasicDecimal!.set(0)
+this.velocityYBasicDecimal!.set(0)
+this.velocityZBasicDecimal!.set(0)
 }
 
 
@@ -132,7 +132,7 @@ set(0)
         
         
 
-this.setVelocity(magnitudeBasicDecimal, angle, otherAngle)
+this.this.setVelocity(magnitudeBasicDecimal, angle, otherAngle)
 }
 
 
@@ -150,7 +150,7 @@ this.setVelocity(magnitudeBasicDecimal, angle, otherAngle)
         
         
 
-this.setVelocity(magnitude, angle, otherAngle)
+this.this.setVelocity(magnitude, angle, otherAngle)
 }
 
 
@@ -168,7 +168,7 @@ this.setVelocity(magnitude, angle, otherAngle)
         
         
 
-this.addVelocity(magnitudeBasicDecimal, angle, otherAngle)
+this.this.addVelocity(magnitudeBasicDecimal, angle, otherAngle)
 }
 
 
@@ -186,7 +186,7 @@ this.addVelocity(magnitudeBasicDecimal, angle, otherAngle)
         
         
 
-this.addVelocity(magnitude, angle, otherAngle)
+this.this.addVelocity(magnitude, angle, otherAngle)
 }
 
 
@@ -199,7 +199,7 @@ this.addVelocity(magnitude, angle, otherAngle)
         
         
 
-this.setVelocity(magnitude, angle, otherAngle)
+this.this.setVelocity(magnitude, angle, otherAngle)
 }
 
 
@@ -212,7 +212,7 @@ this.setVelocity(magnitude, angle, otherAngle)
         
         
 
-this.addVelocity(magnitude, angle, otherAngle)
+this.this.addVelocity(magnitude, angle, otherAngle)
 }
 
 
@@ -220,7 +220,7 @@ this.addVelocity(magnitude, angle, otherAngle)
     //var magnitude = magnitude
     //var angle = angle
     //var otherAngle = otherAngle
-this.setVelocity(magnitude, angle.getValue().toInt(), otherAngle!.getValue().toInt())
+this.this.setVelocity(magnitude, angle.getValue().toInt(), otherAngle!.getValue().toInt())
 }
 
 
@@ -228,7 +228,7 @@ this.setVelocity(magnitude, angle.getValue().toInt(), otherAngle!.getValue().toI
     //var magnitude = magnitude
     //var angle = angle
     //var otherAngle = otherAngle
-this.addVelocity(magnitude, angle.getValue().toInt(), otherAngle!.getValue().toInt())
+this.this.addVelocity(magnitude, angle.getValue().toInt(), otherAngle!.getValue().toInt())
 }
 
 
@@ -251,9 +251,9 @@ this.addVelocity(magnitude, angle.getValue().toInt(), otherAngle!.getValue().toI
         
         
 
-set(xVector)
-set(yVector)
-set(zVector)
+velocityXBasicDecimal!.set(xVector)
+velocityYBasicDecimal!.set(yVector)
+velocityZBasicDecimal!.set(zVector)
 }
 
 
@@ -276,9 +276,9 @@ set(zVector)
         
         
 
-add(xVector)
-add(yVector)
-add(zVector)
+velocityXBasicDecimal!.add(xVector)
+velocityYBasicDecimal!.add(yVector)
+velocityZBasicDecimal!.add(zVector)
 }
 
 
@@ -303,15 +303,15 @@ add(zVector)
         
         
 
-append("Velocity ")
-append(positionStrings!.X_LABEL)
-append(stringUtil!.toString(this.velocityXBasicDecimal))
-append(commonSeps!.SPACE)
-append(positionStrings!.Y_LABEL)
-append(stringUtil!.toString(this.velocityYBasicDecimal))
-append(commonSeps!.SPACE)
-append(positionStrings!.Z_LABEL)
-append(stringUtil!.toString(this.velocityZBasicDecimal))
+stringBuffer!.append("Velocity ")
+stringBuffer!.append(positionStrings!.X_LABEL)
+stringBuffer!.append(stringUtil!.toString(this.velocityXBasicDecimal))
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(positionStrings!.Y_LABEL)
+stringBuffer!.append(stringUtil!.toString(this.velocityYBasicDecimal))
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(positionStrings!.Z_LABEL)
+stringBuffer!.append(stringUtil!.toString(this.velocityZBasicDecimal))
 
 
 

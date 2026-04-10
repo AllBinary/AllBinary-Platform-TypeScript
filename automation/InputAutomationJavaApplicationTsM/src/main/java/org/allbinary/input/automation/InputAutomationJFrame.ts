@@ -134,22 +134,22 @@ export class InputAutomationJFrame extends javax.swing.JFrame
 
 
     public static destroy(){
-setVisible(false)
+INPUTAUTOMATION_JFRAME.setVisible(false)
 }
 
 
     public static create(inputAutomationBundleActivatorListenerInterface: InputAutomationBundleActivatorListenerInterface){
     //var inputAutomationBundleActivatorListenerInterface = inputAutomationBundleActivatorListenerInterface
-getInstance()
+LogConfigTypeFactory.getInstance()
 
     var appUrlGlobals: AppUrlGlobals = new AppUrlGlobals();
         
         
 
-setWebappPath("G:/mnt/bc/mydev/work_automation/automation/run/")
-init(appUrlGlobals)
-setLoader(appUrlGlobals!::class.java.classLoader)
-invokeLater(object: ARunnable()
+appUrlGlobals!.setWebappPath("G:/mnt/bc/mydev/work_automation/automation/run/")
+URLGLOBALS.init(appUrlGlobals)
+WebappClassLoaderInfo.setLoader(appUrlGlobals!::class.java.classLoader)
+java.awt.EventQueue.invokeLater(object: ARunnable()
                                 {
                                 
     public run(){
@@ -165,25 +165,24 @@ invokeLater(object: ARunnable()
 
 
         try {
-            put("Running", this, commonStrings!.RUN)
+            logUtil!.put("Running", this, commonStrings!.RUN)
 INPUTAUTOMATION_JFRAME= InputAutomationJFrame()
-addListener(InputAutomationJFrame.getInstance())
+InputRobotFactory.getInstance()!.addListener(InputAutomationJFrame.getInstance())
 
-    
                         if(inputAutomationBundleActivatorListenerInterface != 
                                     null
                                 )
                         
                                     {
-                                    registerAsService()
-useServices()
+                                    inputAutomationBundleActivatorListenerInterface!.registerAsService()
+inputAutomationBundleActivatorListenerInterface!.useServices()
 
                                     }
                                 
-setVisible(true)
+INPUTAUTOMATION_JFRAME.setVisible(true)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }
@@ -193,11 +192,11 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static main(args: string[]){
 var args = args
-create(
+InputAutomationJFrame.create(
                             null)
 }
 
@@ -232,7 +231,7 @@ public constructor (){
         
         
 
-put("URL: " +url, this, this.commonStrings!.CONSTRUCTOR)
+logUtil!.put("URL: " +url, this, this.commonStrings!.CONSTRUCTOR)
 helpSet= JavaHelpUtil.getInstance()!.getHelpSet(url)
 url= this::class.getResource("/resources/allbinaryicon8bit.jpg")
 
@@ -240,31 +239,33 @@ url= this::class.getResource("/resources/allbinaryicon8bit.jpg")
         
         
 
-this.setIconImage(imageIcon!.getImage())
-this.init()
+this.this.setIconImage(imageIcon!.getImage())
+this.this.init()
 }
 
 
     public helpSetAdded(helpSetEvent: HelpSetEvent){
     //var helpSetEvent = helpSetEvent
-add(helpSetEvent!.getHelpSet())
+this.helpSet!.add(helpSetEvent!.getHelpSet())
 }
 
 
     public helpSetRemoved(helpSetEvent: HelpSetEvent){
     //var helpSetEvent = helpSetEvent
-remove(helpSetEvent!.getHelpSet())
+this.helpSet!.remove(helpSetEvent!.getHelpSet())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(){
-init(InputAutomationClientInformationFactory.getInstance())
+InputAutomationConfigurationFactory.init(InputAutomationClientInformationFactory.getInstance())
 this.inputAutomationModuleFactory= InputAutomationModuleFactoryFactory(this)
-execute()
-setEnabledAt(1, false)
-setSelectedIndex(0)
+ = 
+.
+                    execute()
+this.gameRobotJTabbedPane!.setEnabledAt(1, false)
+this.gameRobotJTabbedPane!.setSelectedIndex(0)
 }
 
 
@@ -288,16 +289,16 @@ updatesJMenuItem= javax.swing.JMenuItem()
 subscriptionJMenuItem= javax.swing.JMenuItem()
 modulesJMenuItem= javax.swing.JMenuItem()
 aboutJMenuItem= javax.swing.JMenuItem()
-setMinimumSize(java.awt.Dimension(200, 100))
-setText("Please Select A Module")
+noModuleSelectedJDialog!.setMinimumSize(java.awt.Dimension(200, 100))
+noModuleSelectedJLabel!.setText("Please Select A Module")
 
     var noModuleSelectedJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(noModuleSelectedJDialog!.getContentPane());
         
         
 
-setLayout(noModuleSelectedJDialogLayout)
-setHorizontalGroup(noModuleSelectedJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(noModuleSelectedJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addComponent(noModuleSelectedJLabel)!.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-setVerticalGroup(noModuleSelectedJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(noModuleSelectedJLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE))
+noModuleSelectedJDialog!.getContentPane()!.setLayout(noModuleSelectedJDialogLayout)
+noModuleSelectedJDialogLayout!.setHorizontalGroup(noModuleSelectedJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(noModuleSelectedJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addComponent(noModuleSelectedJLabel)!.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+noModuleSelectedJDialogLayout!.setVerticalGroup(noModuleSelectedJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(noModuleSelectedJLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE))
 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE)
 setMinimumSize(java.awt.Dimension(325, 215))
 setResizable(false)
@@ -331,9 +332,9 @@ formFocusLost(evt)
 
                                 }
                             )
-setMinimumSize(java.awt.Dimension(320, 200))
-setMinimumSize(java.awt.Dimension(200, 0))
-addListSelectionListener(object: javax.swing.event.ListSelectionListener()
+gameRobotJTabbedPane!.setMinimumSize(java.awt.Dimension(320, 200))
+inputAutomationModuleJList!.setMinimumSize(java.awt.Dimension(200, 0))
+inputAutomationModuleJList!.addListSelectionListener(object: javax.swing.event.ListSelectionListener()
                                 {
                                 
     public valueChanged(evt: javax.swing.event.ListSelectionEvent){
@@ -343,29 +344,29 @@ inputAutomationModuleJListValueChanged(evt)
 
                                 }
                             )
-setViewportView(inputAutomationModuleJList)
+jScrollPane1!.setViewportView(inputAutomationModuleJList)
 
     var inputAutomationModuleJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(inputAutomationModuleJPanel);
         
         
 
-setLayout(inputAutomationModuleJPanelLayout)
-setHorizontalGroup(inputAutomationModuleJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(inputAutomationModuleJPanelLayout!.createSequentialGroup()!.addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)!.addContainerGap(367, Short.MAX_VALUE)))
-setVerticalGroup(inputAutomationModuleJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(inputAutomationModuleJPanelLayout!.createSequentialGroup()!.addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)!.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-addTab("Modules", inputAutomationModuleJPanel)
+inputAutomationModuleJPanel!.setLayout(inputAutomationModuleJPanelLayout)
+inputAutomationModuleJPanelLayout!.setHorizontalGroup(inputAutomationModuleJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(inputAutomationModuleJPanelLayout!.createSequentialGroup()!.addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)!.addContainerGap(367, Short.MAX_VALUE)))
+inputAutomationModuleJPanelLayout!.setVerticalGroup(inputAutomationModuleJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(inputAutomationModuleJPanelLayout!.createSequentialGroup()!.addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)!.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+gameRobotJTabbedPane!.addTab("Modules", inputAutomationModuleJPanel)
 
     var automationModuleConfigurationJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(automationModuleConfigurationJPanel);
         
         
 
-setLayout(automationModuleConfigurationJPanelLayout)
-setHorizontalGroup(automationModuleConfigurationJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 566, Short.MAX_VALUE))
-setVerticalGroup(automationModuleConfigurationJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 334, Short.MAX_VALUE))
-addTab("Configuration", automationModuleConfigurationJPanel)
-setText("Processing")
-setToolTipText("Set module processing state")
-setText(this.commonStrings!.START)
-addActionListener(object: java.awt.event.ActionListener()
+automationModuleConfigurationJPanel!.setLayout(automationModuleConfigurationJPanelLayout)
+automationModuleConfigurationJPanelLayout!.setHorizontalGroup(automationModuleConfigurationJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 566, Short.MAX_VALUE))
+automationModuleConfigurationJPanelLayout!.setVerticalGroup(automationModuleConfigurationJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 334, Short.MAX_VALUE))
+gameRobotJTabbedPane!.addTab("Configuration", automationModuleConfigurationJPanel)
+processingJMenu!.setText("Processing")
+processingJMenu!.setToolTipText("Set module processing state")
+startJMenuItem!.setText(this.commonStrings!.START)
+startJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -375,9 +376,9 @@ startJMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(startJMenuItem)
-setText("Stop")
-addActionListener(object: java.awt.event.ActionListener()
+processingJMenu!.add(startJMenuItem)
+stopJMenuItem!.setText("Stop")
+stopJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -387,10 +388,10 @@ stopJMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(stopJMenuItem)
-add(processingJMenu)
-setText("Options")
-addActionListener(object: java.awt.event.ActionListener()
+processingJMenu!.add(stopJMenuItem)
+mainJMenuBar!.add(processingJMenu)
+optionsJMenu!.setText("Options")
+optionsJMenu!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -400,10 +401,10 @@ optionsJMenuActionPerformed(evt)
 
                                 }
                             )
-setSelected(true)
-setEnabled(false)
-setLabel("Stop Module On Focus")
-addActionListener(object: java.awt.event.ActionListener()
+stopOnFocusJCheckBoxMenuItem!.setSelected(true)
+stopOnFocusJCheckBoxMenuItem!.setEnabled(false)
+stopOnFocusJCheckBoxMenuItem!.setLabel("Stop Module On Focus")
+stopOnFocusJCheckBoxMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -413,11 +414,11 @@ stopOnFocusJCheckBoxMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(stopOnFocusJCheckBoxMenuItem)
-add(optionsJMenu)
-setText("Help")
-setText("Help")
-addActionListener(object: java.awt.event.ActionListener()
+optionsJMenu!.add(stopOnFocusJCheckBoxMenuItem)
+mainJMenuBar!.add(optionsJMenu)
+toolsJMenu!.setText("Help")
+helpJMenuItem!.setText("Help")
+helpJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -427,9 +428,9 @@ helpJMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(helpJMenuItem)
-setText("Updates")
-addActionListener(object: java.awt.event.ActionListener()
+toolsJMenu!.add(helpJMenuItem)
+updatesJMenuItem!.setText("Updates")
+updatesJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -439,9 +440,9 @@ updatesJMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(updatesJMenuItem)
-setText("Subscription")
-addActionListener(object: java.awt.event.ActionListener()
+toolsJMenu!.add(updatesJMenuItem)
+subscriptionJMenuItem!.setText("Subscription")
+subscriptionJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -451,9 +452,9 @@ subscriptionJMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(subscriptionJMenuItem)
-setText("Module Manager")
-addActionListener(object: java.awt.event.ActionListener()
+toolsJMenu!.add(subscriptionJMenuItem)
+modulesJMenuItem!.setText("Module Manager")
+modulesJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -463,9 +464,9 @@ modulesJMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(modulesJMenuItem)
-setText("About")
-addActionListener(object: java.awt.event.ActionListener()
+toolsJMenu!.add(modulesJMenuItem)
+aboutJMenuItem!.setText("About")
+aboutJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -475,17 +476,17 @@ aboutJMenuItemActionPerformed(evt)
 
                                 }
                             )
-add(aboutJMenuItem)
-add(toolsJMenu)
+toolsJMenu!.add(aboutJMenuItem)
+mainJMenuBar!.add(toolsJMenu)
 setJMenuBar(mainJMenuBar)
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(getContentPane());
         
         
 
-setLayout(layout)
-setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(gameRobotJTabbedPane, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 571, Short.MAX_VALUE))
-setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(gameRobotJTabbedPane, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 359, Short.MAX_VALUE))
+getContentPane()!.setLayout(layout)
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(gameRobotJTabbedPane, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 571, Short.MAX_VALUE))
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(gameRobotJTabbedPane, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 359, Short.MAX_VALUE))
 pack()
 }
 
@@ -494,10 +495,10 @@ pack()
 var evt = evt
 
         try {
-            browse(uri)
+            Desktop.getDesktop()!.browse(uri)
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "subscriptionJMenuItemActionPerformed", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "subscriptionJMenuItemActionPerformed", e)
 }
 
 }
@@ -507,10 +508,10 @@ put(this.commonStrings!.EXCEPTION, this, "subscriptionJMenuItemActionPerformed",
 var evt = evt
 
         try {
-            browse(uri)
+            Desktop.getDesktop()!.browse(uri)
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "updatesJMenuItemActionPerformed", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "updatesJMenuItemActionPerformed", e)
 }
 
 }
@@ -523,8 +524,8 @@ var evt = evt
         
         
 
-setVisible(true)
-setLocationRelativeTo(this)
+textJDialog!.setVisible(true)
+textJDialog!.setLocationRelativeTo(this)
 }
 
 
@@ -532,10 +533,11 @@ setLocationRelativeTo(this)
 var evt = evt
 
         try {
-            start()
+            DesktopBundle().
+                            start()
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "modulesJMenuItemActionPerformed", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "modulesJMenuItemActionPerformed", e)
 }
 
 }
@@ -543,7 +545,7 @@ put(this.commonStrings!.EXCEPTION, this, "modulesJMenuItemActionPerformed", e)
 
     helpJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-show(helpSet)
+JavaHelpUtil.getInstance()!.show(helpSet)
 }
 
 
@@ -559,26 +561,24 @@ var evt = evt
 
     formWindowLostFocus(evt: java.awt.event.WindowEvent){
 var evt = evt
-put("Nothing", this, "focusLost")
+logUtil!.put("Nothing", this, "focusLost")
 }
 
 
     formWindowGainedFocus(evt: java.awt.event.WindowEvent){
 var evt = evt
 
-    
                         if(this.stopOnFocusJCheckBoxMenuItem!.isSelected())
                         
                                     {
-                                    put("Stopping", this, "focusGained")
+                                    logUtil!.put("Stopping", this, "focusGained")
 
-    
                         if(this.runnableInterface != 
                                     null
                                 )
                         
                                     {
-                                    setRunning(false)
+                                    this.runnableInterface!.setRunning(false)
 
                                     }
                                 
@@ -608,35 +608,34 @@ var evt = evt
         
 
 
-    
                         if(gameAutomationRobotModuleNameString != 
                                     null
                                 )
                         
                                     {
                                     this.inputAutomationModuleInterface= this.inputAutomationModuleFactory!.getInstance(gameAutomationRobotModuleNameString)
-removeAll()
+this.getAutomationModuleConfigurationJPanel()!.removeAll()
 
     var layout: javax.swing.GroupLayout = this.getAutomationModuleConfigurationJPanel()!.getLayout() as javax.swing.GroupLayout;
         
         
 
-setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(inputAutomationModuleInterface!.getConfigurationJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 256, Short.MAX_VALUE)!.addComponent(inputAutomationModuleInterface!.getConfigurationJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-setEnabledAt(1, true)
-put("Setting Module: " +gameAutomationRobotModuleNameString +" and Configuration JPanel", this, "gameAutomationRobotModuleJListValueChanged")
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(inputAutomationModuleInterface!.getConfigurationJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 256, Short.MAX_VALUE)!.addComponent(inputAutomationModuleInterface!.getConfigurationJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+this.gameRobotJTabbedPane!.setEnabledAt(1, true)
+logUtil!.put("Setting Module: " +gameAutomationRobotModuleNameString +" and Configuration JPanel", this, "gameAutomationRobotModuleJListValueChanged")
 
                                     }
                                 
                         else {
-                            put("Module name was null", this, "gameAutomationRobotModuleJListValueChanged")
-setEnabledAt(1, false)
+                            logUtil!.put("Module name was null", this, "gameAutomationRobotModuleJListValueChanged")
+this.gameRobotJTabbedPane!.setEnabledAt(1, false)
 
                         }
                             
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "gameAutomationRobotModuleJListValueChanged", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "gameAutomationRobotModuleJListValueChanged", e)
 }
 
 }
@@ -645,19 +644,18 @@ put(this.commonStrings!.EXCEPTION, this, "gameAutomationRobotModuleJListValueCha
     stopJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
 
-    
                         if(this.runnableInterface != 
                                     null
                                 )
                         
                                     {
-                                    setRunning(false)
+                                    this.runnableInterface!.setRunning(false)
 
                                     }
                                 
                         else {
-                            setVisible(true)
-setLocationRelativeTo(this)
+                            this.noModuleSelectedJDialog!.setVisible(true)
+this.noModuleSelectedJDialog!.setLocationRelativeTo(this)
 
                         }
                             
@@ -668,9 +666,8 @@ setLocationRelativeTo(this)
 var evt = evt
 
         try {
-            put("Starting", this, "startJMenuItemActionPerformed")
+            logUtil!.put("Starting", this, "startJMenuItemActionPerformed")
 
-    
                         if(inputAutomationModuleInterface != 
                                     null
                                 )
@@ -678,22 +675,21 @@ var evt = evt
                                     {
                                     this.runnableInterface= inputAutomationModuleInterface!.getInstance()
 
-    
                         if(this.runnableInterface != 
                                     null
                                 )
                         
                                     {
                                     this.thread= Thread(this.runnableInterface)
-setPriority(Thread.MIN_PRIORITY +1)
-start()
+thread.setPriority(Thread.MIN_PRIORITY +1)
+thread.start()
 
                                     }
                                 
                         else {
-                            put("Runnnable was null", this, "startJMenuItemActionPerformed")
-setVisible(true)
-setLocationRelativeTo(this)
+                            logUtil!.put("Runnnable was null", this, "startJMenuItemActionPerformed")
+this.noModuleSelectedJDialog!.setVisible(true)
+this.noModuleSelectedJDialog!.setLocationRelativeTo(this)
 
                         }
                             
@@ -701,15 +697,15 @@ setLocationRelativeTo(this)
                                     }
                                 
                         else {
-                            put("InputAutomationModuleInterface was null", this, "startJMenuItemActionPerformed")
-setVisible(true)
-setLocationRelativeTo(this)
+                            logUtil!.put("InputAutomationModuleInterface was null", this, "startJMenuItemActionPerformed")
+this.noModuleSelectedJDialog!.setVisible(true)
+this.noModuleSelectedJDialog!.setLocationRelativeTo(this)
 
                         }
                             
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "startJMenuItemActionPerformed", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "startJMenuItemActionPerformed", e)
 }
 
 }
@@ -735,11 +731,11 @@ this.automationModuleConfigurationJPanel= automationModuleConfigurationJPanel
 var inputAutomationRobotChangeEvent = inputAutomationRobotChangeEvent
 
         try {
-            put(this.commonStrings!.START, this, "onAdd")
-add(inputAutomationRobotChangeEvent!.getInputAutomationRobotInterfaceWrapper()!.getInputRobotInterface())
+            logUtil!.put(this.commonStrings!.START, this, "onAdd")
+InputRobotFactory.getInstance()!.add(inputAutomationRobotChangeEvent!.getInputAutomationRobotInterfaceWrapper()!.getInputRobotInterface())
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "onAdd", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "onAdd", e)
 }
 
 }
@@ -749,11 +745,11 @@ put(this.commonStrings!.EXCEPTION, this, "onAdd", e)
 var inputAutomationRobotChangeEvent = inputAutomationRobotChangeEvent
 
         try {
-            put(this.commonStrings!.START, this, "onRemove")
-add(inputAutomationRobotChangeEvent!.getInputAutomationRobotInterfaceWrapper()!.getInputRobotInterface())
+            logUtil!.put(this.commonStrings!.START, this, "onRemove")
+InputRobotFactory.getInstance()!.add(inputAutomationRobotChangeEvent!.getInputAutomationRobotInterfaceWrapper()!.getInputRobotInterface())
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "onRemove", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "onRemove", e)
 }
 
 }
@@ -763,17 +759,17 @@ put(this.commonStrings!.EXCEPTION, this, "onRemove", e)
     //var inputAutomationConfigurationChangeEvent = inputAutomationConfigurationChangeEvent
 
         try {
-            put(this.commonStrings!.START, this, "onAdd")
+            logUtil!.put(this.commonStrings!.START, this, "onAdd")
 
     var inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = InputAutomationModuleConfigurationsSingletonFactory.getInstance()!;
         
         
 
-add(inputAutomationConfigurationChangeEvent!.getInputAutomationModuleConfiguration())
-this.init()
+inputAutomationModuleConfigurations!.add(inputAutomationConfigurationChangeEvent!.getInputAutomationModuleConfiguration())
+this.this.init()
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "onAdd", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "onAdd", e)
 }
 
 }
@@ -783,7 +779,7 @@ put(this.commonStrings!.EXCEPTION, this, "onAdd", e)
 var inputAutomationConfigurationChangeEvent = inputAutomationConfigurationChangeEvent
 
         try {
-            put(this.commonStrings!.START, this, "onRemove")
+            logUtil!.put(this.commonStrings!.START, this, "onRemove")
 
     var inputAutomationConfiguration: InputAutomationConfiguration = InputAutomationConfigurationFactory.getInstance()!;
         
@@ -794,11 +790,11 @@ var inputAutomationConfigurationChangeEvent = inputAutomationConfigurationChange
         
         
 
-remove(inputAutomationConfigurationChangeEvent!.getInputAutomationModuleConfiguration())
-this.init()
+inputAutomationModuleConfigurations!.remove(inputAutomationConfigurationChangeEvent!.getInputAutomationModuleConfiguration())
+this.this.init()
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "onRemove", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "onRemove", e)
 }
 
 }

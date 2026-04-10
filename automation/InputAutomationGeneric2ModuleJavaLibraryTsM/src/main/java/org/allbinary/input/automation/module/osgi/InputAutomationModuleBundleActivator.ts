@@ -75,11 +75,11 @@ export class InputAutomationModuleBundleActivator
 public constructor (){
 
             super();
-            this.init()
+            this.this.init()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(){
 
@@ -89,7 +89,7 @@ public constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getInputAutomationConfigurationModuleChangeListener(context: BundleContext): InputAutomationConfigurationModuleChangeListener{
 var context = context
@@ -99,7 +99,6 @@ var context = context
         
 
 
-    
                         if(serviceReference != 
                                     null
                                 )
@@ -111,12 +110,11 @@ var context = context
         
 
 
-    
                         if(inputAutomationConfigurationModuleChangeListener == 
                                     null
                                 )
                         
-                                    throw Exception("No Service For ServiceReference")
+                                    throw Error("No Service For ServiceReference")
 
 
 
@@ -127,7 +125,7 @@ var context = context
                                     }
                                 
                         else {
-                            put("No ServiceReference: " +InputAutomationConfigurationModuleChangeListener::class.toString()!, this, "addModules")
+                            logUtil!.put("No ServiceReference: " +InputAutomationConfigurationModuleChangeListener::class.toString()!, this, "addModules")
 
 
 
@@ -144,14 +142,13 @@ var context = context
 var context = context
 
         try {
-            put(this.commonStrings!.START, this, "addModules")
+            logUtil!.put(this.commonStrings!.START, this, "addModules")
 
     var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = this.getInputAutomationConfigurationModuleChangeListener(context)!;
         
         
 
 
-    
                         if(inputAutomationConfigurationModuleChangeListener != 
                                     null
                                 )
@@ -172,7 +169,7 @@ index < this.getInputAutomationModuleInterface()!.length; index++)
         
         
 
-onAdd(inputAutomationConfigurationModuleChangeEvent)
+inputAutomationConfigurationModuleChangeListener!.onAdd(inputAutomationConfigurationModuleChangeEvent)
 }
 
 
@@ -180,17 +177,17 @@ onAdd(inputAutomationConfigurationModuleChangeEvent)
                                 
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "addModules")
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "addModules")
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public registerAsService(bundleContext: BundleContext){
 var bundleContext = bundleContext
-registerAsService(bundleContext, getServiceFactory(), InputAutomationModuleServiceInterface::class.toString()!)
+OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAutomationModuleServiceInterface::class.toString()!)
 }
 
 
@@ -198,14 +195,13 @@ registerAsService(bundleContext, getServiceFactory(), InputAutomationModuleServi
 var context = context
 
         try {
-            put(this.commonStrings!.START, this, "removeModules")
+            logUtil!.put(this.commonStrings!.START, this, "removeModules")
 
     var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = this.getInputAutomationConfigurationModuleChangeListener(context)!;
         
         
 
 
-    
                         if(inputAutomationConfigurationModuleChangeListener != 
                                     null
                                 )
@@ -226,7 +222,7 @@ index < this.getInputAutomationModuleInterface()!.length; index++)
         
         
 
-onRemove(inputAutomationConfigurationModuleChangeEvent)
+inputAutomationConfigurationModuleChangeListener!.onRemove(inputAutomationConfigurationModuleChangeEvent)
 }
 
 
@@ -234,28 +230,28 @@ onRemove(inputAutomationConfigurationModuleChangeEvent)
                                 
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "removeModules")
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "removeModules")
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public start(context: BundleContext){
 var context = context
-put(this.commonStrings!.START, this, this.commonStrings!.START)
-this.addModules(context)
-this.registerAsService(context)
+logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.START)
+this.this.addModules(context)
+this.this.registerAsService(context)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public stop(context: BundleContext){
 var context = context
-put(this.commonStrings!.START, this, "stop")
-this.removeModules(context)
+logUtil!.put(this.commonStrings!.START, this, "stop")
+this.this.removeModules(context)
 }
 
 

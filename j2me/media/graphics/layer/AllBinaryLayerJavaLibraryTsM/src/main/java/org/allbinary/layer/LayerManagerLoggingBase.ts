@@ -24,7 +24,7 @@ export class LayerManagerLoggingBase
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public append(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface

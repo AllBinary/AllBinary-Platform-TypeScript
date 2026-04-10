@@ -84,20 +84,20 @@ export class InputAutomationBundleActivator
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public start(bundleContext: BundleContext){
     //var bundleContext = bundleContext
 
         try {
-            put(this.commonStrings!.START, this, this.commonStrings!.START)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.START)
 this.bundleContext= bundleContext
 moduleManagementThread= Thread(InputAutomationNewBundleRunnable(this))
-start()
-create(this)
+moduleManagementThread!.start()
+InputAutomationJFrame.create(this)
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START, e)
 
 
 
@@ -107,40 +107,41 @@ put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START, e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public registerAsService(){
-registerAsService(this.getBundleContext(), InputAutomationServiceFactory.getInstance(), InputAutomationConfigurationModuleChangeListener::class.toString()!)
-registerAsService(this.getBundleContext(), InputAutomationServiceFactory.getInstance(), InputAutomationRobotChangeListener::class.toString()!)
+OSGIActivatorUtil.registerAsService(this.getBundleContext(), InputAutomationServiceFactory.getInstance(), InputAutomationConfigurationModuleChangeListener::class.toString()!)
+OSGIActivatorUtil.registerAsService(this.getBundleContext(), InputAutomationServiceFactory.getInstance(), InputAutomationRobotChangeListener::class.toString()!)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public useServices(){
-process()
-process()
+InputAutomationRobotServiceConsumer(this.getBundleContext()).
+                            process()
+InputAutomationModuleServiceConsumer(this.getBundleContext()).
+                            process()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public stop(context: BundleContext){
     //var context = context
-put(this.commonStrings!.START, this, "stop")
+logUtil!.put(this.commonStrings!.START, this, "stop")
 
-    
                         if(InputAutomationJFrame.getInstance() != 
                                     null
                                 )
                         
                                     {
-                                    destroy()
+                                    InputAutomationJFrame.destroy()
 
                                     }
                                 
                         else {
-                            put("Nothing to stop", this, "stop")
+                            logUtil!.put("Nothing to stop", this, "stop")
 
                         }
                             

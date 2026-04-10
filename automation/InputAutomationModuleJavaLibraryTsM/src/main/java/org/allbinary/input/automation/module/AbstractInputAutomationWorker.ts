@@ -77,7 +77,7 @@ public constructor (inputAutomationActionInterface: InputAutomationActionInterfa
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setThread(thread: Thread){
 var thread = thread
@@ -105,7 +105,6 @@ this.running= running
 
     isAnyDataWorkerRunning(): boolean{
 
-    
                         if(captureThread != 
                                     null
                                  && (captureThread!.isAlive() || this.getCaptureWorker()!.isRunning() || this.getMotionRectanglesWorker()!.isRunning() || this.getImageComparisonWorker()!.isRunning()))
@@ -129,46 +128,45 @@ this.running= running
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     startDataWorkers(){
 
-    
                         if(!isAnyDataWorkerRunning())
                         
                                     {
                                     captureThread= Thread(this.getCaptureWorker())
-put("Starting CaptureWorkers - Need more images - Thread State: " +captureThread!.getState()!.toString(), this, "startCaptureWorkers")
-start()
+logUtil!.put("Starting CaptureWorkers - Need more images - Thread State: " +captureThread!.getState()!.toString(), this, "startCaptureWorkers")
+captureThread!.start()
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     waitForDataWorkers(){
 
         while(isAnyDataWorkerRunning())
         {
-put("Waiting", this, this.commonStrings!.RUN)
-sleep(250)
+logUtil!.put("Waiting", this, this.commonStrings!.RUN)
+Thread.sleep(250)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     stopDataWorkers(){
-setRunning(false)
+this.getCaptureWorker()!.setRunning(false)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
 
@@ -181,8 +179,8 @@ setRunning(false)
     public run(){
 
         try {
-            put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-this.setRunning(true)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
+this.this.setRunning(true)
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
@@ -191,18 +189,18 @@ this.setRunning(true)
 
         while(this.isRunning())
         {
-setStartTime()
-this.process()
+timeHelper!.setStartTime()
+this.this.process()
 this.index++
-put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed() +" Index: " +this.index, this, this.commonStrings!.RUN)
+logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed() +" Index: " +this.index, this, this.commonStrings!.RUN)
 }
 
-this.stopDataWorkers()
-this.waitForDataWorkers()
-put(this.commonStrings!.END, this, this.commonStrings!.RUN)
+this.this.stopDataWorkers()
+this.this.waitForDataWorkers()
+logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
 }
 
 }

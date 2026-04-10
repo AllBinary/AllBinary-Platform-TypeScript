@@ -92,40 +92,39 @@ export class LayerManagerLogging extends LayerManagerLoggingBase {
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public append(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
-delete(0, stringBuilder!.length())
-put(stringBuilder!.appendint(this.hashCode())!.append(APPEND_)!.append(layerInterface!.getName())!.toString(), this, APPEND)
+stringBuilder!.delete(0, stringBuilder!.length())
+logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(APPEND_)!.append(layerInterface!.getName())!.toString(), this, APPEND)
 }
 
 
     public append(layerInterface: AllBinaryLayer, index: number){
     //var layerInterface = layerInterface
     //var index = index
-delete(0, stringBuilder!.length())
-put(stringBuilder!.appendint(this.hashCode())!.append(APPEND_)!.append(layerInterface!.getName())!.append(_AT_)!.appendint(index)!.toString(), this, APPEND)
+stringBuilder!.delete(0, stringBuilder!.length())
+logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(APPEND_)!.append(layerInterface!.getName())!.append(_AT_)!.appendint(index)!.toString(), this, APPEND)
 }
 
 
     public remove(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
 
-    
                         if(layerInterface == 
                                     null
                                 )
                         
                                     {
-                                    delete(0, stringBuilder!.length())
-put(stringBuilder!.appendint(this.hashCode())!.append(ATTEMPT_REMOVE_)!.append(StringUtil.getInstance()!.toString(layerInterface))!.toString(), this, REMOVE)
+                                    stringBuilder!.delete(0, stringBuilder!.length())
+logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(ATTEMPT_REMOVE_)!.append(StringUtil.getInstance()!.toString(layerInterface))!.toString(), this, REMOVE)
 
                                     }
                                 
                         else {
-                            delete(0, stringBuilder!.length())
-put(stringBuilder!.appendint(this.hashCode())!.append(ATTEMPT_REMOVE_)!.append(layerInterface!.getName())!.toString(), this, REMOVE)
+                            stringBuilder!.delete(0, stringBuilder!.length())
+logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(ATTEMPT_REMOVE_)!.append(layerInterface!.getName())!.toString(), this, REMOVE)
 
                         }
                             
@@ -137,29 +136,26 @@ put(stringBuilder!.appendint(this.hashCode())!.append(ATTEMPT_REMOVE_)!.append(l
     //var layerInterface = layerInterface
     //var result = result
 
-    
                         if(layerInterface == 
                                     null
                                 )
                         
                                     {
-                                    delete(0, stringBuilder!.length())
-put(stringBuilder!.appendint(this.hashCode())!.append(REMOVE_)!.append(StringUtil.getInstance()!.toString(layerInterface))!.toString(), this, REMOVE)
+                                    stringBuilder!.delete(0, stringBuilder!.length())
+logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(REMOVE_)!.append(StringUtil.getInstance()!.toString(layerInterface))!.toString(), this, REMOVE)
 
                                     }
                                 
                              else 
-    
                         if(result)
                         
                                     {
                                     
-    
                         if(LayerManagerLogging.removeFailed)
                         
                                     {
-                                    delete(0, stringBuilder!.length())
-put(stringBuilder!.appendint(this.hashCode())!.append(REMOVE_)!.append(layerInterface!.getName())!.toString(), this, REMOVE)
+                                    stringBuilder!.delete(0, stringBuilder!.length())
+logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(REMOVE_)!.append(layerInterface!.getName())!.toString(), this, REMOVE)
 
                                     }
                                 
@@ -167,8 +163,8 @@ put(stringBuilder!.appendint(this.hashCode())!.append(REMOVE_)!.append(layerInte
                                     }
                                 
                         else {
-                            delete(0, stringBuilder!.length())
-put(stringBuilder!.appendint(this.hashCode())!.append(DID_NOT_REMOVE)!.append(layerInterface!.getName())!.toString(), this, REMOVE)
+                            stringBuilder!.delete(0, stringBuilder!.length())
+logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(DID_NOT_REMOVE)!.append(layerInterface!.getName())!.toString(), this, REMOVE)
 LayerManagerLogging.removeFailed= true
 
                         }
@@ -178,7 +174,7 @@ LayerManagerLogging.removeFailed= true
 
     log(layerManager: LayerManager){
     //var layerManager = layerManager
-delete(0, stringBuilder!.length())
+stringBuilder!.delete(0, stringBuilder!.length())
 
     var size: number = layerManager!.getSize()!;
         
@@ -189,8 +185,8 @@ delete(0, stringBuilder!.length())
         
         
 
-append(commonSeps!.COLON_SEP)
-append(commonSeps!.COLON_SEP)
+stringBuilder!.append(Integer.toHexString(layerManager!.hashCode()))!.append(commonSeps!.COLON_SEP)
+stringBuilder!.appendint(size)!.append(commonSeps!.COLON_SEP)
 
     var allBinaryLayer: AllBinaryLayer
 
@@ -205,16 +201,16 @@ append(commonSeps!.COLON_SEP)
 index < size; index++)
         {
 allBinaryLayer= (layerManager!.getLayerAt(index) as AllBinaryLayer)
-append(commonSeps!.COMMA)
+stringBuilder!.append(allBinaryLayer!.getName())!.append(commonSeps!.COMMA)
 }
 
-put(stringBuilder!.toString(), this, REMOVE)
+logUtil!.put(stringBuilder!.toString(), this, REMOVE)
 }
 
 
     public clear(){
-delete(0, stringBuilder!.length())
-put(stringBuilder!.appendint(this.hashCode())!.append(CLEAR)!.toString(), this, CLEAR)
+stringBuilder!.delete(0, stringBuilder!.length())
+logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(CLEAR)!.toString(), this, CLEAR)
 }
 
 

@@ -73,7 +73,7 @@
         <module>../../allbinary_src/logging/BasicLogConfigTypeJavaLibraryTsM</module>
         <module>../../allbinary_src/logging/LogConfigTypeGameClientJavaLibraryTsM</module>
 
-        <module>../../allbinary_src/hardware/HardwareLibraryPOTsM</module>
+        <module>../../allbinary_src/hardware/HardwareLibraryPOMTs</module>
 
         <module>../lib/TrigBaseLibraryTsM</module>        
 

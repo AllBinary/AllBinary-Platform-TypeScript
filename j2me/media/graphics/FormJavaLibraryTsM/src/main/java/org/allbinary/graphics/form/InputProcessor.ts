@@ -37,10 +37,10 @@ this.playerGameInputCompositeInterface= playerGameInputCompositeInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
-update()
+this.playerGameInputCompositeInterface!.getPlayerGameInput()!.update()
 }
 
 

@@ -31,7 +31,7 @@ var x = x
 var y = y
 var width = width
 var height = height
-getPixels(pixels, offset, stride, x, y, width, height)
+this.bitmap.getPixels(pixels, offset, stride, x, y, width, height)
 }
 
 
@@ -43,7 +43,7 @@ var x = x
 var y = y
 var width = width
 var height = height
-setPixels(pixels, offset, stride, x, y, width, height)
+this.bitmap.setPixels(pixels, offset, stride, x, y, width, height)
 }
 
 
@@ -68,7 +68,7 @@ setPixels(pixels, offset, stride, x, y, width, height)
 
 
     public recycle(){
-recycle()
+this.bitmap.recycle()
 }
 
 

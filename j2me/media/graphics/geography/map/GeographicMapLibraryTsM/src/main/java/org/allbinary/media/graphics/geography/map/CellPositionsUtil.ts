@@ -47,7 +47,7 @@ export class CellPositionsUtil
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAll(geographicMapInterface: BasicGeographicMap, topRightGeographicMapCellPosition: GeographicMapCellPosition, columns: number, rows: number, reusableList: BasicArrayList): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
@@ -55,7 +55,7 @@ export class CellPositionsUtil
     //var columns = columns
     //var rows = rows
     //var reusableList = reusableList
-clear()
+reusableList!.clear()
 
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;
         
@@ -72,7 +72,6 @@ clear()
         
 
 
-    
                         if((columns > 1 && lastColumn > geographicMapInterface!.getAllBinaryTiledLayer()!.getColumns()) || (rows > 1 && lastRow > geographicMapInterface!.getAllBinaryTiledLayer()!.getRows()))
                         
                                     {
@@ -110,7 +109,7 @@ columnIndex < columns; columnIndex++)
         
         
 
-add(geographicMapCellPosition)
+reusableList!.add(geographicMapCellPosition)
 }
 
 }
@@ -128,13 +127,13 @@ add(geographicMapCellPosition)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAllSurrounding(geographicMapInterface: BasicGeographicMap, occupyList: BasicArrayList, reusableList: BasicArrayList): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
     //var occupyList = occupyList
     //var reusableList = reusableList
-clear()
+reusableList!.clear()
 
 
 
@@ -171,11 +170,10 @@ index2 >= 0; index2--)
         
 
 
-    
                         if(!reusableList!.contains(geographicMapCellPosition) && !occupyList!.contains(geographicMapCellPosition))
                         
                                     {
-                                    add(geographicMapCellPosition)
+                                    reusableList!.add(geographicMapCellPosition)
 
                                     }
                                 
@@ -207,13 +205,13 @@ index2 >= 0; index2--)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAllSurrounding(geographicMapInterface: BasicGeographicMap, layerGeographicMapCellPosition: GeographicMapCellPosition, reusableSurroundingList: BasicArrayList): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
     //var layerGeographicMapCellPosition = layerGeographicMapCellPosition
     //var reusableSurroundingList = reusableSurroundingList
-clear()
+reusableSurroundingList!.clear()
 
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;
         
@@ -243,7 +241,6 @@ index < 8; index++)
 column= layerGeographicMapCellPosition!.getColumn() +surroundArray[index]![0]
 row= layerGeographicMapCellPosition!.getRow() +surroundArray[index]![1]
 
-    
                         if(tiledLayer!.isOnTileLayer(column, row))
                         
                                     {
@@ -252,7 +249,7 @@ row= layerGeographicMapCellPosition!.getRow() +surroundArray[index]![1]
         
         
 
-add(geographicMapCellPosition)
+reusableSurroundingList!.add(geographicMapCellPosition)
 
                                     }
                                 

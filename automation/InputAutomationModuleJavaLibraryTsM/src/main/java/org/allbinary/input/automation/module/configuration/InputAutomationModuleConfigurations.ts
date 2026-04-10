@@ -70,7 +70,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, file: F
             super();
                 //var abeClientInformation = abeClientInformation
     //var file = file
-this.setHashMap(HashMap<Any, Any>())
+this.this.setHashMap(HashMap<Any, Any>())
 
     var bytes: ByteArray = ByteArray(100000);
         
@@ -107,7 +107,6 @@ this.setHashMap(HashMap<Any, Any>())
         
 
 
-    
                         if(nodeList!.getLength() > 0)
                         
                                     {
@@ -116,7 +115,7 @@ this.setHashMap(HashMap<Any, Any>())
         
         
 
-put("Number Of Module(s) Specified: " +nameNodeList!.getLength(), this, "Contructor")
+logUtil!.put("Number Of Module(s) Specified: " +nameNodeList!.getLength(), this, "Contructor")
 
 
 
@@ -132,7 +131,7 @@ index < nameNodeList!.getLength(); index++)
         
         
 
-this.add(InputAutomationModuleConfiguration(abeClientInformation, node))
+this.this.add(InputAutomationModuleConfiguration(abeClientInformation, node))
 }
 
 
@@ -145,13 +144,13 @@ public constructor (abeClientInformation: AbeClientInformationInterface, documen
             super();
                 //var abeClientInformation = abeClientInformation
     //var document = document
-this.setHashMap(HashMap<Any, Any>())
+this.this.setHashMap(HashMap<Any, Any>())
 
     var nameNodeList: NodeList = document.getElementsByTagName(InputAutomationModuleData.NAME)!;
         
         
 
-put("Number Of Module(s) Specified: " +nameNodeList!.getLength(), this, "Contructor")
+logUtil!.put("Number Of Module(s) Specified: " +nameNodeList!.getLength(), this, "Contructor")
 
 
 
@@ -167,7 +166,7 @@ index < nameNodeList!.getLength(); index++)
         
         
 
-this.add(InputAutomationModuleConfiguration(abeClientInformation, node))
+this.this.add(InputAutomationModuleConfiguration(abeClientInformation, node))
 }
 
 }
@@ -176,7 +175,7 @@ public constructor (inputAutomationModuleConfigurationList: List<InputAutomation
 
             super();
                 //var inputAutomationModuleConfigurationList = inputAutomationModuleConfigurationList
-this.setHashMap(HashMap<Any, Any>())
+this.this.setHashMap(HashMap<Any, Any>())
 
     var size: number = inputAutomationModuleConfigurationList!.size!;
         
@@ -196,7 +195,7 @@ this.setHashMap(HashMap<Any, Any>())
 index < size; index++)
         {
 inputAutomationModuleConfiguration= inputAutomationModuleConfigurationList!.get(index)
-this.add(inputAutomationModuleConfiguration)
+this.this.add(inputAutomationModuleConfiguration)
 }
 
 }
@@ -204,19 +203,19 @@ this.add(inputAutomationModuleConfiguration)
 public constructor (){
 
             super();
-            this.setHashMap(HashMap<Any, Any>())
+            this.this.setHashMap(HashMap<Any, Any>())
 }
 
 
     public add(inputAutomationModuleConfiguration: InputAutomationModuleConfiguration){
     //var inputAutomationModuleConfiguration = inputAutomationModuleConfiguration
-put(inputAutomationModuleConfiguration!.getClassName(), inputAutomationModuleConfiguration)
+this.getHashMap()!.put(inputAutomationModuleConfiguration!.getClassName(), inputAutomationModuleConfiguration)
 }
 
 
     public remove(inputAutomationModuleConfiguration: InputAutomationModuleConfiguration){
     //var inputAutomationModuleConfiguration = inputAutomationModuleConfiguration
-remove(inputAutomationModuleConfiguration!.getClassName())
+this.getHashMap()!.remove(inputAutomationModuleConfiguration!.getClassName())
 }
 
 

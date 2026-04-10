@@ -69,7 +69,7 @@ this.canvas= gameCanvas
 
     public onMotionGestureEvent(motionGestureEvent: MotionGestureEvent){
 var motionGestureEvent = motionGestureEvent
-add(motionGestureEvent)
+motionGestureEventList!.add(motionGestureEvent)
 }
 
 
@@ -89,7 +89,7 @@ this.canvas= canvas
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processInput(): number{
 

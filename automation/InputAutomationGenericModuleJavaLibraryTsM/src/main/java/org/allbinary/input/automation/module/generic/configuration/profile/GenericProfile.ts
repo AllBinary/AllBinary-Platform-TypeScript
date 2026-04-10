@@ -61,14 +61,14 @@ public constructor (node: Node){
 
             super();
             var node = node
-this.setName(DomNodeHelper.getTextNodeValue(node))
+this.this.setName(DomNodeHelper.getTextNodeValue(node))
 this.vector= Vector()
 
     var nodeList: NodeList = node.getChildNodes()!;
         
         
 
-put("Name: " +this.getName() +" Child Nodes: " +nodeList!.getLength(), this, "Contructor")
+logUtil!.put("Name: " +this.getName() +" Child Nodes: " +nodeList!.getLength(), this, "Contructor")
 
 
 
@@ -85,7 +85,6 @@ index < nodeList!.getLength(); index++)
         
 
 
-    
                         if(profileNode!.getNodeName()!.compareTo(GenericProfileDataWorkerData.NAME) == 0)
                         
                                     {
@@ -94,8 +93,8 @@ index < nodeList!.getLength(); index++)
         
         
 
-put("Adding GenericProfileDataWorkerType: " +genericProfileDataWorkerType!.toString(), this, "Contructor")
-add(genericProfileDataWorkerType)
+logUtil!.put("Adding GenericProfileDataWorkerType: " +genericProfileDataWorkerType!.toString(), this, "Contructor")
+this.vector.add(genericProfileDataWorkerType)
 
                                     }
                                 
@@ -107,7 +106,7 @@ public constructor (name: string){
 
             super();
             var name = name
-this.setName(name)
+this.this.setName(name)
 this.vector= Vector()
 }
 
@@ -125,7 +124,6 @@ this.vector= Vector()
     public add(genericProfileDataWorkerType: GenericProfileDataWorkerType){
 var genericProfileDataWorkerType = genericProfileDataWorkerType
 
-    
                         if(!this.vector.contains(genericProfileDataWorkerType))
                         this.vector.add(genericProfileDataWorkerType)
 }
@@ -133,11 +131,11 @@ var genericProfileDataWorkerType = genericProfileDataWorkerType
 
     public remove(genericProfileDataWorkerType: GenericProfileDataWorkerType){
 var genericProfileDataWorkerType = genericProfileDataWorkerType
-remove(genericProfileDataWorkerType)
+this.vector.remove(genericProfileDataWorkerType)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -166,7 +164,7 @@ index < size; index++)
         
         
 
-appendChild(genericProfileDataWorkerType!.toXmlNode(document))
+node.appendChild(genericProfileDataWorkerType!.toXmlNode(document))
 }
 
 

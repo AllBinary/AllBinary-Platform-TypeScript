@@ -80,19 +80,19 @@ var maxPathWeight = maxPathWeight
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public visit(graph: SimpleWeightedGraph, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
 var graph = graph
 var startPathFindingNodeList = startPathFindingNodeList
 var endPathFindingNodeList = endPathFindingNodeList
-this.fixStart(graph, startPathFindingNodeList)
-this.fixEnd(graph, endPathFindingNodeList)
-this.fixOverPassEdges(graph)
+this.this.fixStart(graph, startPathFindingNodeList)
+this.this.fixEnd(graph, endPathFindingNodeList)
+this.this.fixOverPassEdges(graph)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     fixStart(graph: SimpleWeightedGraph<CellPosition, DefaultWeightedEdge>, startPathFindingNodeList: BasicArrayList){
 var graph = graph
@@ -143,7 +143,6 @@ index >= 0; index--)
         
 
 
-    
                         if(tiledLayer!.isOnTileLayer(column, nextRow))
                         
                                     {
@@ -152,7 +151,7 @@ index >= 0; index--)
         
         
 
-removeEdge(geographicMapCellPosition, geographicMapCellPositionNeighbor)
+graph.removeEdge(geographicMapCellPosition, geographicMapCellPositionNeighbor)
 
                                     }
                                 
@@ -161,7 +160,7 @@ removeEdge(geographicMapCellPosition, geographicMapCellPositionNeighbor)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     fixEnd(graph: SimpleWeightedGraph<CellPosition, DefaultWeightedEdge>, endPathFindingNodeList: BasicArrayList){
 var graph = graph
@@ -196,7 +195,7 @@ index >= 0; index--)
         
         
 
-addVertex(geographicMapCellPosition)
+graph.addVertex(geographicMapCellPosition)
 
     var column: number = geographicMapCellPosition!.getColumn()!;
         
@@ -213,7 +212,6 @@ addVertex(geographicMapCellPosition)
         
 
 
-    
                         if(tiledLayer!.isOnTileLayer(column, nextRow))
                         
                                     {
@@ -222,7 +220,7 @@ addVertex(geographicMapCellPosition)
         
         
 
-addEdge(geographicMapCellPosition, geographicMapCellPositionNeighbor)
+graph.addEdge(geographicMapCellPosition, geographicMapCellPositionNeighbor)
 
                                     }
                                 
@@ -231,7 +229,7 @@ addEdge(geographicMapCellPosition, geographicMapCellPositionNeighbor)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     fixOverPassEdges(graph: SimpleWeightedGraph<CellPosition, DefaultWeightedEdge>){
 var graph = graph
@@ -265,7 +263,7 @@ index >= 0; index--)
         
         
 
-put("Fixing Over Pass: " +overPassGeographicMapCellPosition!.getColumn() +", " +overPassGeographicMapCellPosition!.getRow(), this, "fixOverPassEdges")
+logUtil!.put("Fixing Over Pass: " +overPassGeographicMapCellPosition!.getColumn() +", " +overPassGeographicMapCellPosition!.getRow(), this, "fixOverPassEdges")
 
     var underPassGeographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getInstance(overPassGeographicMapCellPosition!.getColumn(), overPassGeographicMapCellPosition!.getRow())!;
         
@@ -281,17 +279,17 @@ put("Fixing Over Pass: " +overPassGeographicMapCellPosition!.getColumn() +", " +
         
         
 
-removeEdge(underPassGeographicMapCellPosition, rightUnderPassGeographicMapCellPosition)
-removeEdge(underPassGeographicMapCellPosition, leftUnderPassGeographicMapCellPosition)
-addVertex(overPassGeographicMapCellPosition)
-addEdge(overPassGeographicMapCellPosition, rightUnderPassGeographicMapCellPosition)
-addEdge(overPassGeographicMapCellPosition, leftUnderPassGeographicMapCellPosition)
+graph.removeEdge(underPassGeographicMapCellPosition, rightUnderPassGeographicMapCellPosition)
+graph.removeEdge(underPassGeographicMapCellPosition, leftUnderPassGeographicMapCellPosition)
+graph.addVertex(overPassGeographicMapCellPosition)
+graph.addEdge(overPassGeographicMapCellPosition, rightUnderPassGeographicMapCellPosition)
+graph.addEdge(overPassGeographicMapCellPosition, leftUnderPassGeographicMapCellPosition)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fixPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, pathList: BasicArrayList){
 var startPathFindingNodeList = startPathFindingNodeList
@@ -318,17 +316,15 @@ index >= 0; index--)
         
 
 
-    
                         if(BasicGeographicMapUtil.getInstance()!.isSameCellPosition(startPathFindingNode!.geographicMapCellPosition, endPathFindingNode!.geographicMapCellPosition))
                         
                                     {
                                     
-    
                         if(pathList!.remove(endPathFindingNode!.geographicMapCellPosition))
                         
                                     {
-                                    remove(startPathFindingNode!.geographicMapCellPosition)
-add(0, startPathFindingNode!.geographicMapCellPosition)
+                                    pathList!.remove(startPathFindingNode!.geographicMapCellPosition)
+pathList!.add(0, startPathFindingNode!.geographicMapCellPosition)
 
                                     }
                                 
@@ -337,11 +333,11 @@ add(0, startPathFindingNode!.geographicMapCellPosition)
                                 
 }
 
-this.removeOverPassEdges(pathList)
+this.this.removeOverPassEdges(pathList)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     removeOverPassEdges(pathList: BasicArrayList){
 var pathList = pathList
@@ -386,11 +382,10 @@ index >= 0; index--)
         
 
 
-    
                         if(indexOf !=  -1)
                         
                                     {
-                                    set(indexOf, underPassGeographicMapCellPosition)
+                                    pathList!.set(indexOf, underPassGeographicMapCellPosition)
 
                                     }
                                 
@@ -402,7 +397,6 @@ index >= 0; index--)
     public isValid(graphPath: GraphPath): boolean{
 var graphPath = graphPath
 
-    
                         if(graphPath!.getEdgeList()!.size() > edgeMinimum && graphPath!.getWeight() < maxPathWeight && graphPath!.getWeight() > minPathWeight)
                         
                                     {

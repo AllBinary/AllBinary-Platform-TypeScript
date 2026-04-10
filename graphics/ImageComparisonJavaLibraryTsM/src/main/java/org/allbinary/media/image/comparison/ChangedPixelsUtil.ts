@@ -68,7 +68,7 @@ export class ChangedPixelsUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static generateBufferedImageChacheables(imageComparisonInfo: ImageComparisonResult): BufferedImageCacheable[]{
 var imageComparisonInfo = imageComparisonInfo
@@ -107,7 +107,7 @@ index < bufferedImageCacheables!.length; index++)
         
 
 bufferedImageCacheables[index]= bufferedImageCacheable
-setRGB(START_X, START_Y, bufferedImageInfo!.getWidth(), bufferedImageInfo!.getHeight(), CLEAR_INT_ARRAY, OFFSET, SCAN_SIZE)
+bufferedImageCacheables[index]!.getBufferedImage()!.setRGB(START_X, START_Y, bufferedImageInfo!.getWidth(), bufferedImageInfo!.getHeight(), CLEAR_INT_ARRAY, OFFSET, SCAN_SIZE)
 }
 
 
@@ -136,19 +136,18 @@ index < size; index++)
         
 
 
-    
                         if(pixelDelta!.getColorDelta() == 
                                     null
                                 )
                         
                                     {
-                                    print("ColorDelta")
-exit(0)
+                                    System.out.print("ColorDelta")
+System.exit(0)
 
                                     }
                                 
-setRGB(pixelDelta!.getPoint()!.getX(), pixelDelta!.getPoint()!.getY(), pixelDelta!.getColorDelta()!.getRgb1())
-setRGB(pixelDelta!.getPoint()!.getX(), pixelDelta!.getPoint()!.getY(), pixelDelta!.getColorDelta()!.getRgb2())
+bufferedImageCacheables[0]!.getBufferedImage()!.setRGB(pixelDelta!.getPoint()!.getX(), pixelDelta!.getPoint()!.getY(), pixelDelta!.getColorDelta()!.getRgb1())
+bufferedImageCacheables[1]!.getBufferedImage()!.setRGB(pixelDelta!.getPoint()!.getX(), pixelDelta!.getPoint()!.getY(), pixelDelta!.getColorDelta()!.getRgb2())
 }
 
 

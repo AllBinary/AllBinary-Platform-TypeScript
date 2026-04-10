@@ -73,7 +73,6 @@ export class ColorFromEventUtil
         
 
 
-    
                         if(geographicMapInterface != 
                                     null
                                 )

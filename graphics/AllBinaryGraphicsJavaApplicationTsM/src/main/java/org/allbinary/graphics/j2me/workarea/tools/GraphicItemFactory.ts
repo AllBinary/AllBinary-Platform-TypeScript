@@ -59,7 +59,7 @@ private constructor (){
 
             super();
             graphicItems= HashMap<Any, Any>()
-put(LinesGraphicItem.getStaticName(), LinesGraphicItemFactory())
+graphicItems!.put(LinesGraphicItem.getStaticName(), LinesGraphicItemFactory())
 }
 
 
@@ -71,7 +71,6 @@ var itemName = itemName
         
 
 
-    
                         if(graphicsItemInterfaceFactoryInterface == 
                                     null
                                 )
@@ -90,7 +89,7 @@ var itemName = itemName
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(graphicItemNodeList: BasicArrayList): HashMap<Any, Any>{
 var graphicItemNodeList = graphicItemNodeList
@@ -105,7 +104,6 @@ var graphicItemNodeList = graphicItemNodeList
         
 
 
-    
                         if(LOGGING.contains(LOGGING.MENUEVENT))
                         
                                     {
@@ -127,7 +125,7 @@ index < numberOfItems; index++)
         
         
 
-put(graphicItem!.getTreeNode(), graphicItem)
+graphicItemHashMap!.put(graphicItem!.getTreeNode(), graphicItem)
 }
 
 

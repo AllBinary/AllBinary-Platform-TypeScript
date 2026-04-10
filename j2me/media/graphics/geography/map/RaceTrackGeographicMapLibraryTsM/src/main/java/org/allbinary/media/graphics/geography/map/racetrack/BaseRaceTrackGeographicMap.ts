@@ -81,7 +81,6 @@ this.miniGeographicMap= miniGeographicMap
         
 
 
-    
                         if(miniTiledLayer!.getColumns() != this.getGeographicMapCellPositionFactory()!.getColumns())
                         
                                     {
@@ -96,16 +95,15 @@ this.miniGeographicMap= miniGeographicMap
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR)
 
 
 
-                            throw Exception(error)
+                            throw Error(error)
 
                                     }
                                 
 
-    
                         if(miniTiledLayer!.getRows() != this.getGeographicMapCellPositionFactory()!.getRows())
                         
                                     {
@@ -119,11 +117,11 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR)
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR)
 
 
 
-                            throw Exception(error)
+                            throw Error(error)
 
                                     }
                                 

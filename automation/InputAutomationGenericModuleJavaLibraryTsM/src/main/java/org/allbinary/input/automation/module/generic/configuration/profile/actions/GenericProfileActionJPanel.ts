@@ -58,24 +58,24 @@ public constructor (){
 
 
     public updateProfileActionUI(){
-removeAll()
+this.blankProfileActionScriptJPanel!.removeAll()
 
     var genericProfileActionScriptJPanel: GenericProfileActionScriptJPanel = new GenericProfileActionScriptJPanel();
         
         
 
-set(genericProfileActionScriptJPanel)
-this.setGenericProfileActionScriptJPanel(genericProfileActionScriptJPanel)
-setGenericProfileActionScript(this.getGenericProfileAction()!.getGenericProfileActionScript())
-updateJTree()
+JTreeInterfaceFactory.getInstance()!.set(genericProfileActionScriptJPanel)
+this.this.setGenericProfileActionScriptJPanel(genericProfileActionScriptJPanel)
+this.getGenericProfileActionScriptJPanel()!.setGenericProfileActionScript(this.getGenericProfileAction()!.getGenericProfileActionScript())
+this.getGenericProfileActionScriptJPanel()!.updateJTree()
 
     var layout: javax.swing.GroupLayout = this.blankProfileActionScriptJPanel!.getLayout() as javax.swing.GroupLayout;
         
         
 
-setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(this.getGenericProfileActionScriptJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 256, Short.MAX_VALUE)!.addComponent(this.getGenericProfileActionScriptJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-put("Updated UI", this, "updateUI")
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(this.getGenericProfileActionScriptJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 256, Short.MAX_VALUE)!.addComponent(this.getGenericProfileActionScriptJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+logUtil!.put("Updated UI", this, "updateUI")
 }
 
 
@@ -120,20 +120,20 @@ newTimeIntervalJButton= javax.swing.JButton()
 newAlwaysJButton= javax.swing.JButton()
 setMinimumSize(java.awt.Dimension(440, 275))
 setPreferredSize(java.awt.Dimension(440, 275))
-setPreferredSize(java.awt.Dimension(474, 270))
-setMinimumSize(java.awt.Dimension(400, 200))
+genericProfileActionScriptJScrollPane!.setPreferredSize(java.awt.Dimension(474, 270))
+blankProfileActionScriptJPanel!.setMinimumSize(java.awt.Dimension(400, 200))
 
     var blankProfileActionScriptJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(blankProfileActionScriptJPanel);
         
         
 
-setLayout(blankProfileActionScriptJPanelLayout)
-setHorizontalGroup(blankProfileActionScriptJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 9996, Short.MAX_VALUE))
-setVerticalGroup(blankProfileActionScriptJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 9967, Short.MAX_VALUE))
-setViewportView(blankProfileActionScriptJPanel)
-setText("Conditions:")
-setText("Color Range At")
-addActionListener(object: java.awt.event.ActionListener()
+blankProfileActionScriptJPanel!.setLayout(blankProfileActionScriptJPanelLayout)
+blankProfileActionScriptJPanelLayout!.setHorizontalGroup(blankProfileActionScriptJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 9996, Short.MAX_VALUE))
+blankProfileActionScriptJPanelLayout!.setVerticalGroup(blankProfileActionScriptJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 9967, Short.MAX_VALUE))
+genericProfileActionScriptJScrollPane!.setViewportView(blankProfileActionScriptJPanel)
+ifJLabel!.setText("Conditions:")
+newColorAtJButton!.setText("Color Range At")
+newColorAtJButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -143,8 +143,8 @@ newColorAtJButtonActionPerformed(evt)
 
                                 }
                             )
-setText("Time Interval")
-addActionListener(object: java.awt.event.ActionListener()
+newTimeIntervalJButton!.setText("Time Interval")
+newTimeIntervalJButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -154,8 +154,8 @@ newTimeIntervalJButtonActionPerformed(evt)
 
                                 }
                             )
-setText("Always On/Off")
-addActionListener(object: java.awt.event.ActionListener()
+newAlwaysJButton!.setText("Always On/Off")
+newAlwaysJButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -170,33 +170,33 @@ newAlwaysJButtonActionPerformed(evt)
         
         
 
-this.setLayout(layout)
-setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(ifJLabel)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(newColorAtJButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(newTimeIntervalJButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(newAlwaysJButton)!.addContainerGap(61, Short.MAX_VALUE))!.addComponent(genericProfileActionScriptJScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 440, Short.MAX_VALUE))
-setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(ifJLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)!.addComponent(newColorAtJButton)!.addComponent(newTimeIntervalJButton)!.addComponent(newAlwaysJButton))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(genericProfileActionScriptJScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)))
+this.this.setLayout(layout)
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(ifJLabel)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(newColorAtJButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(newTimeIntervalJButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(newAlwaysJButton)!.addContainerGap(61, Short.MAX_VALUE))!.addComponent(genericProfileActionScriptJScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 440, Short.MAX_VALUE))
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(ifJLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)!.addComponent(newColorAtJButton)!.addComponent(newTimeIntervalJButton)!.addComponent(newAlwaysJButton))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(genericProfileActionScriptJScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)))
 }
 
 
     newTimeIntervalJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-put("New Time Interval Action Condition", this, "newTimeIntervalJButtonActionPerformed")
-addCondition(TimeIntervalActionScriptCondition() as ProfileActionScriptConditionInterface)
-this.updateProfileActionUI()
+logUtil!.put("New Time Interval Action Condition", this, "newTimeIntervalJButtonActionPerformed")
+getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition(TimeIntervalActionScriptCondition() as ProfileActionScriptConditionInterface)
+this.this.updateProfileActionUI()
 }
 
 
     newAlwaysJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-put("New EveryTime Action Condition", this, "newEveryTimeJButtonActionPerformed")
-addCondition(AlwaysActionScriptCondition() as ProfileActionScriptConditionInterface)
-this.updateProfileActionUI()
+logUtil!.put("New EveryTime Action Condition", this, "newEveryTimeJButtonActionPerformed")
+getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition(AlwaysActionScriptCondition() as ProfileActionScriptConditionInterface)
+this.this.updateProfileActionUI()
 }
 
 
     newColorAtJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-put("New Color At Action Condition", this, "newColorAtJButtonActionPerformed")
-addCondition(ColorAtActionScriptCondition() as ProfileActionScriptConditionInterface)
-this.updateProfileActionUI()
+logUtil!.put("New Color At Action Condition", this, "newColorAtJButtonActionPerformed")
+getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition(ColorAtActionScriptCondition() as ProfileActionScriptConditionInterface)
+this.this.updateProfileActionUI()
 }
 
 

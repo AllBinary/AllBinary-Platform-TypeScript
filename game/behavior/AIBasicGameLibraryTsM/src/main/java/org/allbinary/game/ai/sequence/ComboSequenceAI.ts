@@ -48,7 +48,7 @@ var gameInput = gameInput
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -73,8 +73,8 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 index < size; index++)
         {
-this.setIndex(index)
-processAI(allBinaryLayerManager)
+this.this.setIndex(index)
+super.processAI(allBinaryLayerManager)
 }
 
 }

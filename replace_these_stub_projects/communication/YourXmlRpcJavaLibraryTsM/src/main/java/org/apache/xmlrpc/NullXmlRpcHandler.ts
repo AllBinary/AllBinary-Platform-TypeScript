@@ -35,7 +35,7 @@ export class NullXmlRpcHandler
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public execute(method: string, params: Vector<Any>): any = {}{
 var method = method

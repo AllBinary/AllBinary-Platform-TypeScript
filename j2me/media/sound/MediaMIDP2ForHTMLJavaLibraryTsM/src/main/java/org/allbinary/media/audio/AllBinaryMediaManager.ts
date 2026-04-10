@@ -77,7 +77,7 @@ var aMuted = aMuted
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static init(soundsFactoryInterface: SoundsFactoryInterface){
 var soundsFactoryInterface = soundsFactoryInterface
@@ -91,33 +91,34 @@ var soundsFactoryInterface = soundsFactoryInterface
         
         
 
-put(commonString!.START, THIS, commonString!.INIT)
-addPortion(50, "Media Manager")
-init()
+logUtil!.put(commonString!.START, THIS, commonString!.INIT)
+ProgressCanvasFactory.getInstance()!.addPortion(50, "Media Manager")
+Sounds(soundsFactoryInterface).
+                            init()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
 var soundsFactoryInterface = soundsFactoryInterface
-stopAll()
-closeAll()
-gc()
+Sounds(soundsFactoryInterface).
+                            stopAll()
+Sounds(soundsFactoryInterface).
+                            closeAll()
+System.gc()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static createPlayer(resource: string): Player{
 var resource = resource
 
-    
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.SOUND))
                         
                                     {
                                     
-    
                         if(resource.compareTo(Manager.TONE_DEVICE_LOCATOR) == 0)
                         
                                     {
@@ -156,7 +157,7 @@ var resource = resource
 }
 
 
-                @Throws(MediaException::class)
+                //@Throws(MediaException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static playTone(frequency: number, time: number, volume: number){
@@ -164,11 +165,10 @@ var frequency = frequency
 var time = time
 var volume = volume
 
-    
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.SOUND))
                         
                                     {
-                                    playTone(frequency, time, volume)
+                                    Manager.playTone(frequency, time, volume)
 
                                     }
                                 

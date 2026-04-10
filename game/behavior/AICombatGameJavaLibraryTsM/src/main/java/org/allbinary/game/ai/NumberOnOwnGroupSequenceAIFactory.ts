@@ -52,7 +52,7 @@ export class NumberOnOwnGroupSequenceAIFactory
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(hashtable: Hashtable<Any, Any>, artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
     //var hashtable = hashtable
@@ -85,7 +85,6 @@ index < integerArray!.length; index++)
         
 
 
-    
                         if(integerCanBeNull == 
                                     null
                                 )
@@ -97,7 +96,7 @@ index < integerArray!.length; index++)
 
                                     }
                                 
-add(integerCanBeNull)
+list.add(integerCanBeNull)
 }
 
 
@@ -105,38 +104,36 @@ add(integerCanBeNull)
         
         
 
-append("Total AI Properties: ")
-appendint(list.size())
-append(" == Total AI: ")
-appendint(artificialIntelligenceInterface!.length)
-append(" + 1")
+stringBuffer!.append("Total AI Properties: ")
+stringBuffer!.appendint(list.size())
+stringBuffer!.append(" == Total AI: ")
+stringBuffer!.appendint(artificialIntelligenceInterface!.length)
+stringBuffer!.append(" + 1")
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
 
-put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE)
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE)
 
-    
                         if(artificialIntelligenceInterface!.length -1 > list.size())
                         
                                     {
                                     
 
 
-                            throw Exception("Not enough AI properties.")
+                            throw Error("Not enough AI properties.")
 
                                     }
                                 
 
-    
                         if(artificialIntelligenceInterface!.length -1 < list.size())
                         
                                     {
                                     
 
 
-                            throw Exception("Too Many AI properties.")
+                            throw Error("Too Many AI properties.")
 
                                     }
                                 

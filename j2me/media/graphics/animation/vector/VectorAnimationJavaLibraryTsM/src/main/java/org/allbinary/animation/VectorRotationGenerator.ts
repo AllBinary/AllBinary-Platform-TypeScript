@@ -141,7 +141,7 @@ var frames = frames
         
 index < size; index++)
         {
-add(pointFactory!.getInstance(points[index]![0]!, points[index]![1]!))
+pointBasicArrayList!.add(pointFactory!.getInstance(points[index]![0]!, points[index]![1]!))
 }
 
 
@@ -152,7 +152,7 @@ add(pointFactory!.getInstance(points[index]![0]!, points[index]![1]!))
 
         while(index < totalAngle)
         {
-add(getInstance(width, height, pointBasicArrayList, this.angleFactory!.getInstance(index)))
+pointsBasicArrayList!.add(getInstance(width, height, pointBasicArrayList, this.angleFactory!.getInstance(index)))
 index += angleIncrement
 }
 
@@ -174,7 +174,7 @@ index += angleIncrement
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 
 
 
@@ -186,7 +186,7 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(width: number, height: number, pointBasicArrayList: BasicArrayList, angle: Angle): BasicArrayList{
 var width = width
@@ -198,10 +198,10 @@ var angle = angle
         
         
 
-createMatrix()
-translate( -(width shr 1),  -(height shr 1))
-rotate(angle)
-translate((width shr 1), (height shr 1))
+graphicsPipe!.createMatrix()
+graphicsPipe!.translate( -(width shr 1),  -(height shr 1))
+graphicsPipe!.rotate(angle)
+graphicsPipe!.translate((width shr 1), (height shr 1))
 
 
 

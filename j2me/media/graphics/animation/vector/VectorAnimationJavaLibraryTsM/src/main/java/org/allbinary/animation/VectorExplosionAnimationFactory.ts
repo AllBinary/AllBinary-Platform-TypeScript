@@ -54,7 +54,7 @@ public constructor (basicColor: BasicColor, animationBehaviorFactory: AnimationB
                 //var basicColor = basicColor
     //var animationBehaviorFactory = animationBehaviorFactory
 this.animationBehaviorFactory= animationBehaviorFactory
-this.setBasicColorP(basicColor)
+this.this.setBasicColorP(basicColor)
 }
 
 
@@ -62,7 +62,7 @@ this.setBasicColorP(basicColor)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(animationInterface: Animation): Animation{
     //var animationInterface = animationInterface

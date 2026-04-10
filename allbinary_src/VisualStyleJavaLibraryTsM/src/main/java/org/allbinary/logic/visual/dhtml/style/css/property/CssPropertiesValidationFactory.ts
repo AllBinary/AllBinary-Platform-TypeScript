@@ -39,7 +39,7 @@ export class CssPropertiesValidationFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(nodeList: NodeList): Vector{
 var nodeList = nodeList
@@ -64,7 +64,6 @@ index < nodeList!.getLength(); index++)
         
 
 
-    
                         if(node.getNodeName()!.compareTo(CssPropertyData.getInstance()!.NAME) == 0)
                         
                                     {
@@ -73,7 +72,7 @@ index < nodeList!.getLength(); index++)
         
         
 
-add(cssPropertyValidationInterface)
+propertiesVector!.add(cssPropertyValidationInterface)
 
                                     }
                                 

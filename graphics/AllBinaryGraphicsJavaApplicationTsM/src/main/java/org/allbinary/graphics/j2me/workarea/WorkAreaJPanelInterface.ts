@@ -35,15 +35,15 @@ interface WorkAreaJPanelInterface extends java.awt.event.KeyListener {
 
     public explodeAll()
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public autoRotate(increments: number, totalAngle: number)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public autoExplode(numberOfFrames: number, explodeType: number)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     autoMirror()
 
@@ -53,7 +53,7 @@ interface WorkAreaJPanelInterface extends java.awt.event.KeyListener {
 
     public isPlaying(): boolean
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toDocument(): Document
 

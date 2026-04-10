@@ -138,7 +138,7 @@ private constructor ()
         
         
 
-put(path, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(path, this, commonStrings!.CONSTRUCTOR)
 
     var fos: FileOutputStream = new FileOutputStream(path);
         
@@ -150,7 +150,7 @@ put(path, this, commonStrings!.CONSTRUCTOR)
         
         
 
-compress(Bitmap.CompressFormat.PNG, 100, fos)
+bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos)
 } catch(e: Exception)
             {
 
@@ -158,7 +158,7 @@ compress(Bitmap.CompressFormat.PNG, 100, fos)
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e)
 }
 
 }
@@ -170,7 +170,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e)
     //var cellSize = cellSize
     //var basicColor = basicColor
 
-    
                         if(this.fontImage == OpenGLESImage.NULL_OPENGL_IMAGE)
                         
                                     {
@@ -229,10 +228,10 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e)
         
         
 
-setTypeface(typeface)
-setTextSize(realFontSize.toFloat())
-setAlpha(basicColor!.alpha.toInt())
-setColor(basicColor!.toInt())
+paint.setTypeface(typeface)
+paint.setTextSize(realFontSize.toFloat())
+paint.setAlpha(basicColor!.alpha.toInt())
+paint.setColor(basicColor!.toInt())
 
     var biggestHeight: number = 0;
         
@@ -260,10 +259,9 @@ setColor(basicColor!.toInt())
 index < size; index++)
         {
 characterArray[0]= pattern[index]
-getTextBounds(characterArray, 0, 1, bounds)
+paint.getTextBounds(characterArray, 0, 1, bounds)
 _characterWidth[index]= bounds.right
 
-    
                         if(bounds.bottom -bounds.top > biggestHeight)
                         
                                     {
@@ -276,7 +274,6 @@ x += (cellSize shr 1)
 x -= (_characterWidth[index] shr 1)
 y= 0
 
-    
                         if(index >= CELLS_PER_ROW)
                         
                                     {
@@ -285,7 +282,6 @@ y= 0
                                     }
                                 
 
-    
                         if(index >= cellsPerRow2)
                         
                                     {
@@ -294,7 +290,6 @@ y= 0
                                     }
                                 
 
-    
                         if(index >= cellsPerRow3)
                         
                                     {
@@ -303,7 +298,6 @@ y= 0
                                     }
                                 
 
-    
                         if(index >= cellsPerRow4)
                         
                                     {
@@ -312,7 +306,6 @@ y= 0
                                     }
                                 
 
-    
                         if(index >= cellsPerRow5)
                         
                                     {
@@ -321,7 +314,6 @@ y= 0
                                     }
                                 
 
-    
                         if(index >= cellsPerRow6)
                         
                                     {
@@ -330,7 +322,6 @@ y= 0
                                     }
                                 
 
-    
                         if(index >= cellsPerRow7)
                         
                                     {
@@ -340,10 +331,10 @@ y= 0
                                 
 y += cellSize
 y -= (cellSize shr 2)
-drawText(characterArray, 0, 1, x.toFloat() -3, y.toFloat() -6, paint)
+canvas.drawText(characterArray, 0, 1, x.toFloat() -3, y.toFloat() -6, paint)
 }
 
-save()
+canvas.save()
 
     var image: Image = AndroidImmutableImage.create(bitmap)!;
         
@@ -385,9 +376,9 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage
         
         
 
-setTypeface(typeface)
-setTextSize(fontSize.toFloat())
-setARGB(255, 255, 255, 255)
+paint.setTypeface(typeface)
+paint.setTextSize(fontSize.toFloat())
+paint.setARGB(255, 255, 255, 255)
 
     var bounds: Rect = new Rect();
         
@@ -404,14 +395,12 @@ setARGB(255, 255, 255, 255)
 index < size; index++)
         {
 characterArray[0]= pattern[index]
-getTextBounds(characterArray, 0, 1, bounds)
+paint.getTextBounds(characterArray, 0, 1, bounds)
 
-    
                         if(index < lastCapIndex)
                         
                                     {
                                     
-    
                         if(characterArray[0] == '1')
                         
                                     {
@@ -420,7 +409,6 @@ getTextBounds(characterArray, 0, 1, bounds)
                                     }
                                 
                              else 
-    
                         if(characterArray[0] == 'J' || characterArray[0] == 'V' || characterArray[0] == '2' || characterArray[0] == '9' || characterArray[0] == 'I' || characterArray[0] == 'N' || characterArray[0] == 'U')
                         
                                     {
@@ -429,7 +417,6 @@ getTextBounds(characterArray, 0, 1, bounds)
                                     }
                                 
                              else 
-    
                         if(characterArray[0] == '4' || characterArray[0] == 'C' || characterArray[0] == 'E' || characterArray[0] == 'O')
                         
                                     {
@@ -438,7 +425,6 @@ getTextBounds(characterArray, 0, 1, bounds)
                                     }
                                 
                              else 
-    
                         if(characterArray[0] == 'B' || characterArray[0] == 'D' || characterArray[0] == 'G' || characterArray[0] == 'H' || characterArray[0] == 'T' || characterArray[0] == 'W')
                         
                                     {
@@ -447,7 +433,6 @@ getTextBounds(characterArray, 0, 1, bounds)
                                     }
                                 
                              else 
-    
                         if(characterArray[0] == 'A' || characterArray[0] == 'Q' || characterArray[0] == 'R')
                         
                                     {
@@ -456,7 +441,6 @@ getTextBounds(characterArray, 0, 1, bounds)
                                     }
                                 
                              else 
-    
                         if(characterArray[0] == 'M')
                         
                                     {
@@ -465,7 +449,6 @@ getTextBounds(characterArray, 0, 1, bounds)
                                     }
                                 
                              else 
-    
                         if(characterArray[0] == 'm')
                         
                                     {
@@ -483,7 +466,6 @@ getTextBounds(characterArray, 0, 1, bounds)
                                 
                         else {
                             
-    
                         if(characterArray[0] == ' ')
                         
                                     {
@@ -492,7 +474,6 @@ getTextBounds(characterArray, 0, 1, bounds)
                                     }
                                 
                              else 
-    
                         if(characterArray[0] == 'l' || characterArray[0] == 'i' || characterArray[0] == 'j' || characterArray[0] == '.' || characterArray[0] == '!' || characterArray[0] == '|')
                         
                                     {
@@ -501,7 +482,6 @@ getTextBounds(characterArray, 0, 1, bounds)
                                     }
                                 
                              else 
-    
                         if(characterArray[0] == 'f' || characterArray[0] == 't' || characterArray[0] == 'u' || characterArray[0] == 'v')
                         
                                     {
@@ -510,7 +490,6 @@ getTextBounds(characterArray, 0, 1, bounds)
                                     }
                                 
                              else 
-    
                         if(characterArray[0] == 'r')
                         
                                     {
@@ -519,7 +498,6 @@ getTextBounds(characterArray, 0, 1, bounds)
                                     }
                                 
                              else 
-    
                         if(characterArray[0] == 'a' || characterArray[0] == 'b' || characterArray[0] == 'g' || characterArray[0] == 'u')
                         
                                     {
@@ -528,7 +506,6 @@ getTextBounds(characterArray, 0, 1, bounds)
                                     }
                                 
                              else 
-    
                         if(characterArray[0] == 'o' || characterArray[0] == 'e')
                         
                                     {
@@ -537,7 +514,6 @@ getTextBounds(characterArray, 0, 1, bounds)
                                     }
                                 
                              else 
-    
                         if(characterArray[0] == 'm')
                         
                                     {

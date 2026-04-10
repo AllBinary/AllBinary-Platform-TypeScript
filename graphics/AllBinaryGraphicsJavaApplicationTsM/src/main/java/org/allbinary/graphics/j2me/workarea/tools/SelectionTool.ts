@@ -162,7 +162,7 @@ var point = point
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public translate(x: number, y: number){
 var x = x
@@ -255,27 +255,24 @@ index < size; index++)
         
 
 
-    
                         if(item.getName() == LinesGraphicItem.getStaticName())
                         
                                     {
                                     
-    
                         if(RectangleCollisionPointUtil.allPointsInside(xRect, yRect, xRect2, yRect2, item.getPointsInterface()!.getPoints(), this.canvasJPanel!.getXPixelsPerWorkAreaPixel(), this.canvasJPanel!.getYPixelsPerWorkAreaPixel()))
                         
                                     {
-                                    setColor(Color.YELLOW)
-activate()
+                                    item.setColor(Color.YELLOW)
+item.activate()
 
                                     }
                                 
                              else 
-    
                         if(!this.controlIdDown)
                         
                                     {
-                                    setColor(Color.WHITE)
-deactivate()
+                                    item.setColor(Color.WHITE)
+item.deactivate()
 
                                     }
                                 
@@ -303,7 +300,6 @@ deactivate()
         
 
 
-    
                         if(xDiff < 0)
                         
                                     {
@@ -332,7 +328,6 @@ deactivate()
         
 
 
-    
                         if(yDiff < 0)
                         
                                     {
@@ -355,7 +350,7 @@ var canvasAngle = canvasAngle
 var dimension = dimension
 var x = x
 var y = y
-setColor(this.rectColor)
+g.setColor(this.rectColor)
 
     var xRect: number = this.getXRect()!;
         
@@ -376,11 +371,11 @@ setColor(this.rectColor)
         
         
 
-drawRect(xRect, yRect, width, height)
+g.drawRect(xRect, yRect, width, height)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toDom(canvasDom: CanvasDom): Node{
 var canvasDom = canvasDom
@@ -454,7 +449,7 @@ var mouseEvent = mouseEvent
 var mouseEvent = mouseEvent
 var xPixelsPerCell = xPixelsPerCell
 var yPixelsPerCell = yPixelsPerCell
-put(commonStrings!.START, this, MouseStrings.getInstance()!.MOUSE_PRESSED)
+logUtil!.put(commonStrings!.START, this, MouseStrings.getInstance()!.MOUSE_PRESSED)
 this.startPoint= PointFactory.getInstance()!.getInstance(mouseEvent!.getX(), mouseEvent!.getY())
 this.endPoint= this.startPoint
 }
@@ -464,10 +459,10 @@ this.endPoint= this.startPoint
 var mouseEvent = mouseEvent
 var xPixelsPerCell = xPixelsPerCell
 var yPixelsPerCell = yPixelsPerCell
-put(commonStrings!.START, this, MouseStrings.getInstance()!.MOUSE_RELEASED)
+logUtil!.put(commonStrings!.START, this, MouseStrings.getInstance()!.MOUSE_RELEASED)
 this.endPoint= PointFactory.getInstance()!.getInstance(mouseEvent!.getX(), mouseEvent!.getY())
 this.active= false
-this.makeSelection()
+this.this.makeSelection()
 }
 
 
@@ -482,7 +477,6 @@ this.endPoint= PointFactory.getInstance()!.getInstance(mouseEvent!.getX(), mouse
     public keyPressed(keyEvent: java.awt.event.KeyEvent){
 var keyEvent = keyEvent
 
-    
                         if(keyEvent!.getKeyCode() == keyEvent!.VK_CONTROL)
                         
                                     {
@@ -496,7 +490,6 @@ var keyEvent = keyEvent
     public keyReleased(keyEvent: java.awt.event.KeyEvent){
 var keyEvent = keyEvent
 
-    
                         if(keyEvent!.getKeyCode() == keyEvent!.VK_CONTROL)
                         
                                     {
@@ -512,7 +505,7 @@ var keyEvent = keyEvent
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public duplicate(): GraphicItemInterface{
 

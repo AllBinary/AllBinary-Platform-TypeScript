@@ -54,7 +54,7 @@ export class BasicGeographicMapUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getBorderingRow(direction: number, oldGeographicMapCellPosition: GeographicMapCellPosition): number{
     //var direction = direction
@@ -98,7 +98,7 @@ export class BasicGeographicMapUtil
 else -> {
 
 
-                            throw Exception("Only Four Directions")
+                            throw Error("Only Four Directions")
 }
 
         }       
@@ -107,7 +107,7 @@ else -> {
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getBorderingColumn(direction: number, oldGeographicMapCellPosition: GeographicMapCellPosition): number{
     //var direction = direction
@@ -151,7 +151,7 @@ else -> {
 else -> {
 
 
-                            throw Exception("Only Four Directions")
+                            throw Error("Only Four Directions")
 }
 
         }       
@@ -160,7 +160,7 @@ else -> {
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isSameCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var fromGeographicMapCellPosition = fromGeographicMapCellPosition
@@ -186,7 +186,6 @@ else -> {
         
 
 
-    
                         if(fromColumn == goColumn && fromRow == goRow)
                         
                                     {
@@ -293,7 +292,7 @@ tiledLayerArray[count++]= geographicMapInterface!.getAllBinaryTiledLayer()
 --index >= 0; )
         {
 geographicMapInterface= geographicMapInterfaceArray[index]!
-move(dx, dy)
+geographicMapInterface!.getAllBinaryTiledLayer()!.move(dx, dy)
 }
 
 }
@@ -323,7 +322,7 @@ move(dx, dy)
 --index >= 0; )
         {
 geographicMapInterface= geographicMapInterfaceArray[index]!
-setPosition(x, y, geographicMapInterface!.getAllBinaryTiledLayer()!.getZP())
+geographicMapInterface!.getAllBinaryTiledLayer()!.setPosition(x, y, geographicMapInterface!.getAllBinaryTiledLayer()!.getZP())
 }
 
 }

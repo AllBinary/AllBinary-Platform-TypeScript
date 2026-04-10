@@ -46,7 +46,7 @@ public constructor (layerManagerLogging: LayerManagerLogging){
 
             super();
                 //var layerManagerLogging = layerManagerLogging
-put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 this.layerManagerLogging= layerManagerLogging
 }
 
@@ -68,7 +68,7 @@ public constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public insert(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
@@ -92,11 +92,10 @@ index < size; index++)
         {
 nextLayerInterface= this.list.get(index) as AllBinaryLayer
 
-    
                         if(layerInterface!.getZP() > nextLayerInterface!.getZP())
                         
                                     {
-                                    this.append(layerInterface, index)
+                                    this.this.append(layerInterface, index)
 
 
 
@@ -108,30 +107,30 @@ nextLayerInterface= this.list.get(index) as AllBinaryLayer
                                 
 }
 
-this.append(layerInterface)
+this.this.append(layerInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public append(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
-append(layerInterface)
-add(layerInterface)
+this.layerManagerLogging!.append(layerInterface)
+this.list.add(layerInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public append(layerInterface: AllBinaryLayer, index: number){
     //var layerInterface = layerInterface
     //var index = index
-append(layerInterface, index)
-add(index, layerInterface)
+this.layerManagerLogging!.append(layerInterface, index)
+this.list.add(index, layerInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public remove(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
@@ -142,13 +141,13 @@ add(index, layerInterface)
 
         //mutex.withLock
         {
-remove(layerInterface)
+this.layerManagerLogging!.remove(layerInterface)
 
     var result: boolean = this.list.remove(layerInterface)!;
         
         
 
-remove(this, layerInterface, result)
+this.layerManagerLogging!.remove(this, layerInterface, result)
 }
 
 }
@@ -175,7 +174,7 @@ remove(this, layerInterface, result)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public cleanup(){
 
@@ -185,10 +184,10 @@ remove(this, layerInterface, result)
 
         //mutex.withLock
         {
-clear()
-clear()
-gc()
-gc()
+this.list.clear()
+this.layerManagerLogging!.clear()
+System.gc()
+System.gc()
 }
 
 }
@@ -220,13 +219,12 @@ var y = y
         {
 comp= list.objectArray[index]! as Layer
 
-    
                         if(comp != 
                                     null
                                  && comp.isVisible())
                         
                                     {
-                                    paint(g)
+                                    comp.paint(g)
 
                                     }
                                 

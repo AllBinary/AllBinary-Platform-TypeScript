@@ -74,7 +74,7 @@ this.player= player
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(){
 }
@@ -93,7 +93,7 @@ this.player= player
     public run(){
 
         try {
-            start()
+            this.player.start()
 } catch(e: Exception)
             {
 
@@ -101,7 +101,7 @@ this.player= player
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN)
 }
 
 }

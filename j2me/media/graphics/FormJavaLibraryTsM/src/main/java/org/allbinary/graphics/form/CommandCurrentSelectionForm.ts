@@ -85,8 +85,8 @@ public constructor (title: string, items: CustomItem[], rectangle: Rectangle, fo
 
                             //For kotlin this is before the body of the constructor.
                     
-this.initAnimations()
-this.update(items)
+this.this.initAnimations()
+this.this.update(items)
 }
 
 
@@ -140,7 +140,7 @@ this.unSelectedAnimationArray[index]= nullAnimation
         
 --index >= 0; )
         {
-this.update(index, items[index]!)
+this.this.update(index, items[index]!)
 }
 
 }
@@ -185,7 +185,6 @@ this.update(index, items[index]!)
         
 
 
-    
                         if(J2MEUtil.isJ2ME())
                         
                                     {
@@ -200,7 +199,6 @@ this.update(index, items[index]!)
                             
 adjustedBorder= 4
 
-    
                         if(J2MEUtil.isJ2ME())
                         
                                     {
@@ -243,7 +241,7 @@ adjustedBorder= 4
         
         
 
-this.update(result, item)
+this.this.update(result, item)
 
 
 
@@ -255,31 +253,31 @@ this.update(result, item)
 
     public delete(itemNum: number){
     //var itemNum = itemNum
-delete(itemNum)
+super.delete(itemNum)
 }
 
 
     public deleteAll(){
-this.initAnimations()
-deleteAll()
+this.this.initAnimations()
+super.deleteAll()
 }
 
 
     public insert(itemNum: number, item: CustomItem){
     //var itemNum = itemNum
     //var item = item
-insert(itemNum, item)
+super.insert(itemNum, item)
 }
 
 
     public set(itemNum: number, item: CustomItem){
     //var itemNum = itemNum
     //var item = item
-set(itemNum, item)
+super.set(itemNum, item)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public paintItem(graphics: Graphics, index: number, item: CustomItemInterface, x: number, y: number): number{
     //var graphics = graphics
@@ -287,7 +285,7 @@ set(itemNum, item)
     //var item = item
     //var x = x
     //var y = y
-paint(graphics, x, y)
+this.selectedAnimationArray[index]!.paint(graphics, x, y)
 
 
 
@@ -297,7 +295,7 @@ paint(graphics, x, y)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public paintUnselectedItem(graphics: Graphics, index: number, item: CustomItemInterface, x: number, y: number): number{
     //var graphics = graphics
@@ -305,7 +303,7 @@ paint(graphics, x, y)
     //var item = item
     //var x = x
     //var y = y
-paint(graphics, x, y)
+this.unSelectedAnimationArray[index]!.paint(graphics, x, y)
 
 
 

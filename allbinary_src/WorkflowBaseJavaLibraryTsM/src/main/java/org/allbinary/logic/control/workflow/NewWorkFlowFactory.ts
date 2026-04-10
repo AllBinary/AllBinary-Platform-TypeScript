@@ -74,7 +74,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class, LicensingException::class)
+                //@Throws(Error::class, LicensingException::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<Any, Any>, pageContext: PageContext): WorkFlowInterface{
     //var abeClientInformation = abeClientInformation
@@ -115,7 +115,6 @@ params[1]= pageContext as Object
 } catch(e: LicensingException)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
@@ -124,7 +123,7 @@ params[1]= pageContext as Object
         
         
 
-put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e)
 
                                     }
                                 
@@ -136,7 +135,6 @@ put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e)
  catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
@@ -145,7 +143,7 @@ put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e)
         
         
 
-put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e)
 
                                     }
                                 
@@ -158,7 +156,7 @@ put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e)
 }
 
 
-                @Throws(Exception::class, LicensingException::class)
+                //@Throws(Error::class, LicensingException::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, className: string): WorkFlowInterface{
     //var abeClientInformation = abeClientInformation
@@ -171,7 +169,6 @@ put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e)
         
 
 
-    
                         if(className != 
                                     null
                                  && className!.compareTo(stringUtil!.EMPTY_STRING) != 0)
@@ -194,13 +191,11 @@ put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e)
                                     }
                                 
                              else 
-    
                         if()
                         
 } catch(e: LicensingException)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
@@ -209,7 +204,7 @@ put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e)
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 
@@ -221,7 +216,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
  catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
@@ -230,7 +224,7 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 

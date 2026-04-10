@@ -53,7 +53,6 @@ public constructor (){
         
 
 
-    
                         if(bundleContext != 
                                     null
                                 )
@@ -85,7 +84,6 @@ index < bundleArray!.length; index++)
         
 
 
-    
                         if(symbolicName!.compareTo(DESKTOP_SYMBOLIC_NAME) == 0)
                         
                                     {
@@ -104,17 +102,17 @@ index < bundleArray!.length; index++)
         
         
 
-setVisible(true)
+textJDialog!.setVisible(true)
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public start(){
-start()
+this.bundle.start()
 }
 
 

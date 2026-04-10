@@ -44,23 +44,23 @@ var pageContext = pageContext
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     setObjectConfigFile(value: string){
 var value = value
-this.setObjectConfigFileName(value)
-this.setObjectConfigInterface(TransformInfoObjectConfigNoManipulationFactory.getInstance()!.getInstance(this, this.getObjectConfigFilePath()))
+this.this.setObjectConfigFileName(value)
+this.this.setObjectConfigInterface(TransformInfoObjectConfigNoManipulationFactory.getInstance()!.getInstance(this, this.getObjectConfigFilePath()))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     setObjectConfig(value: string){
 var value = value
 
 
 
-                            throw Exception("Should not set from config")
+                            throw Error("Should not set from config")
 }
 
 

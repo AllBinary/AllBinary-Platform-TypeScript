@@ -27,7 +27,7 @@ export class GraphicItemBuilder
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(node: Node): GraphicItemInterface{
 var node = node
@@ -37,7 +37,6 @@ var node = node
         
 
 
-    
                         if(graphicItemName!.compareTo(PointsDomUtil.getInstance()!.LINES) == 0)
                         
                                     {
@@ -54,7 +53,7 @@ var node = node
                             
 
 
-                            throw Exception("Graphic Item Does Not Exist: " +graphicItemName)
+                            throw Error("Graphic Item Does Not Exist: " +graphicItemName)
 
                         }
                             

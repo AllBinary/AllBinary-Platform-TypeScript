@@ -55,7 +55,7 @@ export class CanvasExpandUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(imageProcessorInput: ImageProcessorInput, increaseX: number, increaseY: number, visitor: ImageProcessedVisitor){
     //var imageProcessorInput = imageProcessorInput
@@ -98,7 +98,7 @@ index < size; index++)
         {
 bufferedImage= bufferedImageArray[index]!
 subBufferedImageArray[index]= imageUtil!.createBufferedImage(bufferedImage, bufferedImage!.getWidth() +increaseX, bufferedImage!.getHeight() +increaseY, false)
-visit(subBufferedImageArray[index]!, stringUtil!.EMPTY_STRING, index)
+visitor.visit(subBufferedImageArray[index]!, stringUtil!.EMPTY_STRING, index)
 }
 
 }

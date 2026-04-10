@@ -71,7 +71,6 @@ export class FormTypeFactory
     var formType: FormType
 
 
-    
                         if(displayInfo!.isPortrait())
                         
                                     {

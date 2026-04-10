@@ -47,7 +47,7 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager

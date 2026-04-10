@@ -70,11 +70,11 @@ public constructor (bufferedImage: BufferedImage[], minX: Object, maxX: Object, 
 var minX = minX
 var maxX = maxX
 var y = y
-this.setRatios(new Array(bufferedImage!.length))
-this.setMinX(minX)
-this.setMaxX(maxX)
-this.setY(y)
-this.setSize(maxX -minX)
+this.this.setRatios(new Array(bufferedImage!.length))
+this.this.setMinX(minX)
+this.this.setMaxX(maxX)
+this.this.setY(y)
+this.this.setSize(maxX -minX)
 
 
 
@@ -94,30 +94,28 @@ this.getRatios()[index]= Double(nominator /this.getSize())
 }
 
 
-    
                         if(this.getRatios()[bufferedImage!.length -1]!.doubleValue() > 0.93F)
                         
                                     {
-                                    this.setGood(true)
+                                    this.this.setGood(true)
 
                                     }
                                 
                         else {
-                            this.setGood(false)
+                            this.this.setGood(false)
 
                         }
                             
 
-    
                         if(this.getRatios()[bufferedImage!.length -1]!.doubleValue() < this.getRatios()[0]!.doubleValue())
                         
                                     {
-                                    this.setDropping(true)
+                                    this.this.setDropping(true)
 
                                     }
                                 
                         else {
-                            this.setDropping(false)
+                            this.this.setDropping(false)
 
                         }
                             
@@ -177,8 +175,8 @@ this.dropping= dropping
         
         
 
-append(commonSeps!.NEW_LINE)
-append(RATIOS_LABEL)
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append(RATIOS_LABEL)
 
 
 
@@ -189,24 +187,23 @@ append(RATIOS_LABEL)
         
 index < this.getRatios()!.length; index++)
         {
-append(this.getRatios()[index]!.toString())
+stringBuffer!.append(this.getRatios()[index]!.toString())
 
-    
                         if(index < this.getRatios()!.length -1)
                         
                                     {
-                                    append(commonSeps!.COMMA_SEP)
+                                    stringBuffer!.append(commonSeps!.COMMA_SEP)
 
                                     }
                                 
 }
 
-append(commonSeps!.NEW_LINE)
-append(IS_GOOD_LABEL)
-appendboolean(this.isGood())
-append(commonSeps!.NEW_LINE)
-append(IS_DROPPPING_LABEL)
-appendboolean(this.isDropping())
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append(IS_GOOD_LABEL)
+stringBuffer!.appendboolean(this.isGood())
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append(IS_DROPPPING_LABEL)
+stringBuffer!.appendboolean(this.isDropping())
 
 
 

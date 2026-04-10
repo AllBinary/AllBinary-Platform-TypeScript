@@ -22,11 +22,11 @@
 interface InputAutomationBundleActivatorListenerInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     registerAsService()
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     useServices()
 

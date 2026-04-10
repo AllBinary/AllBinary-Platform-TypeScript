@@ -55,13 +55,13 @@ public constructor (dataId: Integer, tiledLayer: TiledLayer, mapTwoDArray: IntAr
                     
 this.tiledLayerP= tiledLayer
 this.debugColor= debugColor
-this.setCells(mapTwoDArray)
+this.this.setCells(mapTwoDArray)
 }
 
 
     public paint(graphics: Graphics){
     //var graphics = graphics
-paint(graphics)
+this.tiledLayerP!.paint(graphics)
 }
 
 
@@ -76,8 +76,8 @@ paint(graphics)
         
         
 
-setFont(font2)
-setColor(debugColor)
+graphics.setFont(font2)
+graphics.setColor(debugColor)
 
     var x: number = this.tiledLayerP!.getX()!;
         
@@ -161,7 +161,6 @@ columnIndex < totalColumns; columnIndex++)
         {
 tile= this.tiledLayerP!.getCell(columnIndex, rowIndex)
 
-    
                         if(tile < 0)
                         
                                     {
@@ -170,7 +169,6 @@ tile= this.tiledLayerP!.getCell(columnIndex, rowIndex)
                                     }
                                 
 
-    
                         if(tile == 0)
                         
                                     {
@@ -182,21 +180,21 @@ tile= this.tiledLayerP!.getCell(columnIndex, rowIndex)
                                     }
                                 
 tile--
-delete(0, stringMaker!.length())
-drawString(stringMaker!.appendint(columnIndex)!.append(commonSeps!.COMMA)!.appendint(rowIndex)!.append(commonSeps!.COLON)!.appendint(tile)!.toString(), x +5, y +10, 0)
+stringMaker!.delete(0, stringMaker!.length())
+graphics.drawString(stringMaker!.appendint(columnIndex)!.append(commonSeps!.COMMA)!.appendint(rowIndex)!.append(commonSeps!.COLON)!.appendint(tile)!.toString(), x +5, y +10, 0)
 }
 
 }
 
-setFont(font)
+graphics.setFont(font)
 }
 
 
     public move(dx: number, dy: number){
     //var dx = dx
     //var dy = dy
-move(dx, dy)
-move( -dx,  -dy)
+this.tiledLayerP!.move(dx, dy)
+super.move( -dx,  -dy)
 }
 
 
@@ -204,8 +202,8 @@ move( -dx,  -dy)
     //var x = x
     //var y = y
     //var z = z
-setPosition(x, y)
-setPosition( -x,  -y, z)
+this.tiledLayerP!.setPosition(x, y)
+super.setPosition( -x,  -y, z)
 }
 
 
@@ -275,7 +273,7 @@ setPosition( -x,  -y, z)
     //var col = col
     //var row = row
     //var index = index
-setCell(col, row, index)
+this.tiledLayerP!.setCell(col, row, index)
 }
 
 

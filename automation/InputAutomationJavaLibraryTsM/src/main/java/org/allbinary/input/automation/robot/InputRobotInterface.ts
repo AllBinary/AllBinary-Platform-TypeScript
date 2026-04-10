@@ -69,11 +69,11 @@ interface InputRobotInterface {
 
     mouseMove(point: Point)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     mouseMoveToTarget(rectangle: Rectangle)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     mouseMoveToTarget(rectangle: Rectangle, x: Integer, y: Integer)
 

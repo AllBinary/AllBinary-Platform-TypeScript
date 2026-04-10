@@ -60,7 +60,7 @@ var viewPosition = viewPosition
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(){
 
@@ -83,8 +83,8 @@ this.image= PaintableToImageUtil.getImage(allBinaryTiledLayer, aWidth, aHeight)
 
     public paint(graphics: Graphics){
 var graphics = graphics
-drawImage(image, x, y, anchor)
-this.paintDots(graphics)
+graphics.drawImage(image, x, y, anchor)
+this.this.paintDots(graphics)
 }
 
 

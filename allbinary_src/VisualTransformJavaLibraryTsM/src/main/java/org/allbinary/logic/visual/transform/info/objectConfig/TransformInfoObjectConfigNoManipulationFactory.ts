@@ -65,7 +65,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(transformInfoInterface: TransformInfoInterface, objectConfigFileAbPath: AbPath): TransformInfoObjectConfigInterface{
 var transformInfoInterface = transformInfoInterface
@@ -97,11 +97,10 @@ var objectConfigFileAbPath = objectConfigFileAbPath
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Could Not Load Object Config", this, commonStrings!.GET_INSTANCE, e)
+                                    logUtil!.put("Could Not Load Object Config", this, commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 

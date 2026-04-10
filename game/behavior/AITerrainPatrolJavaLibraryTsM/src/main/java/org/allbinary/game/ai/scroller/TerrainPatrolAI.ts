@@ -81,14 +81,14 @@ public constructor (hashtable: Hashtable<Any, Any>, ownerLayerInterface: AllBina
 
                             //For kotlin this is before the body of the constructor.
                     
-addListener(this.terrainEventListener)
-onTerrainEvent(TerrainEventCircularStaticPool.getInstance()!.getInstance(this.CLIFF))
+TerrainEventHandler.getInstance(ownerLayerInterface)!.addListener(this.terrainEventListener)
+this.terrainEventListener!.onTerrainEvent(TerrainEventCircularStaticPool.getInstance()!.getInstance(this.CLIFF))
 }
 
 
     update(){
-update()
-this.changeDirectionIfCliffReached()
+super.update()
+this.this.changeDirectionIfCliffReached()
 }
 
 
@@ -129,17 +129,15 @@ index < size; index++)
         
 
 
-    
                         if(angle == DOWN)
                         
                                     {
-                                    this.nextDirection()
+                                    this.this.nextDirection()
 
-    
                         if(!this.isFollowLimitedByTerrain)
                         
                                     {
-                                    put("Following Limited", this, "onTerrainEvent")
+                                    logUtil!.put("Following Limited", this, "onTerrainEvent")
 this.isFollowLimitedByTerrain= true
 
                                     }

@@ -66,16 +66,16 @@ var p_c = p_c
         
         
 
-order(ByteOrder.nativeOrder())
+b.order(ByteOrder.nativeOrder())
 
     var buffer: FloatBuffer = b.asFloatBuffer()!;
         
         
 
-put(p_a)
-put(p_b)
-put(p_c)
-this.position(buffer, 0)
+buffer.put(p_a)
+buffer.put(p_b)
+buffer.put(p_c)
+this.this.position(buffer, 0)
 
 
 
@@ -95,17 +95,17 @@ var p_d = p_d
         
         
 
-order(ByteOrder.nativeOrder())
+b.order(ByteOrder.nativeOrder())
 
     var buffer: FloatBuffer = b.asFloatBuffer()!;
         
         
 
-put(p_a)
-put(p_b)
-put(p_c)
-put(p_d)
-this.position(buffer, 0)
+buffer.put(p_a)
+buffer.put(p_b)
+buffer.put(p_c)
+buffer.put(p_d)
+this.this.position(buffer, 0)
 
 
 
@@ -122,7 +122,7 @@ this.position(buffer, 0)
         
         
 
-order(ByteOrder.nativeOrder())
+b.order(ByteOrder.nativeOrder())
 
     var buffer: FloatBuffer = b.asFloatBuffer()!;
         
@@ -139,10 +139,10 @@ order(ByteOrder.nativeOrder())
         {
 unsigned= byteBuffer!.get() and 0xFF
 v= (unsigned.toFloat()) /255f
-put(v)
+buffer.put(v)
 }
 
-this.position(buffer, 0)
+this.this.position(buffer, 0)
 
 
 

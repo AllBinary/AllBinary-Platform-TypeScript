@@ -33,7 +33,7 @@ export class InputAutomationTypeDefaultComboBoxModelFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(): DefaultComboBoxModel{
 
@@ -67,7 +67,7 @@ export class InputAutomationTypeDefaultComboBoxModelFactory
         
 index < size; index++)
         {
-addElement(nameArray[index]! as String)
+defaultComboBoxModel!.addElement(nameArray[index]! as String)
 }
 
 

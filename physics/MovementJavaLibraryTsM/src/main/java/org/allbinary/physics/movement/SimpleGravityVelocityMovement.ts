@@ -50,12 +50,12 @@ public constructor (speedBasicDecimal: BasicDecimal)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(layer: AllBinaryGameLayer){
 var layer = layer
-process(this.getVelocityProperties())
-process(layer)
+gravityUtil!.process(this.getVelocityProperties())
+super.process(layer)
 }
 
 

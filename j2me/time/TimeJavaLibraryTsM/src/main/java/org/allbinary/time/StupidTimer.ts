@@ -71,7 +71,7 @@ export class StupidTimer
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public visit(visitorInterface: Visitor, timeDelayHelper: TimeDelayHelper){
     //var visitorInterface = visitorInterface
@@ -86,7 +86,7 @@ export class StupidTimer
         
         
 
-put(StringMaker().
+PreLogUtil.put(StringMaker().
                             append(WAITING_FOR)!.append(StringUtil.getInstance()!.toString(visitorInterface))!.toString(), this, commonStrings!.VISIT)
 
     var index: number = 0;
@@ -97,11 +97,10 @@ put(StringMaker().
         while(this.visitBool(visitorInterface))
         {
 
-    
                         if(index % 10 == 0)
                         
                                     {
-                                    put(StringMaker().
+                                    PreLogUtil.put(StringMaker().
                             append(WAITING_FOR)!.appendint(index)!.toString(), this, commonStrings!.VISIT)
 
                                     }
@@ -114,11 +113,10 @@ index++
 
         //mutex.withLock
         {
-waitObject(this, 1800)
+this.threadObjectUtil!.waitObject(this, 1800)
 }
 
 
-    
                         if(timeDelayHelper!.isTime())
                         
                                     {
@@ -132,24 +130,23 @@ break;
 }
 
 
-    
                         if(tookTooLong)
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, Exception(StringMaker().
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, Error(StringMaker().
                             append("Took Too Long: ")!.append(StringUtil.getInstance()!.toString(visitorInterface))!.toString()))
 
                                     }
                                 
                         else {
-                            put(timeDelayHelper!.toString(), this, commonStrings!.VISIT)
+                            PreLogUtil.put(timeDelayHelper!.toString(), this, commonStrings!.VISIT)
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public stopWaiting(){
 
@@ -159,7 +156,7 @@ break;
 
         //mutex.withLock
         {
-notifyObject(this)
+this.threadObjectUtil!.notifyObject(this)
 }
 
 }

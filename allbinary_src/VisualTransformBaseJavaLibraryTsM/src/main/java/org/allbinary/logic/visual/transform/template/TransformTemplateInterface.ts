@@ -22,7 +22,7 @@
 interface TransformTemplateInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getName(): string
 

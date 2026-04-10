@@ -60,7 +60,7 @@ export class VectorCenterGenerator
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static translate(list: BasicArrayList, x: number, y: number): BasicArrayList{
 var list = list
@@ -71,8 +71,8 @@ var y = y
         
         
 
-createMatrix()
-translate(x, y)
+graphicsPipe!.createMatrix()
+graphicsPipe!.translate(x, y)
 
 
 
@@ -123,7 +123,7 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public calculate(hashMap: HashMap<Any, Any>){
 var hashMap = hashMap
@@ -154,17 +154,16 @@ index < size; index++)
         
 
 
-    
                         if(item.getName() == LinesGraphicItem.getStaticName())
                         
                                     {
-                                    this.getInstance(item.getPointsInterface()!.getPoints())
+                                    this.this.getInstance(item.getPointsInterface()!.getPoints())
 
                                     }
                                 
 }
 
-put("minX: " +minX +" minY: " +minY +" maxX: " +maxX +" maxY: " +maxY, this, commonStrings!.GET_INSTANCE)
+logUtil!.put("minX: " +minX +" minY: " +minY +" maxX: " +maxX +" maxY: " +maxY, this, commonStrings!.GET_INSTANCE)
 setWidth(maxX -minX)
 setHeight(maxY -minY)
 
@@ -173,7 +172,6 @@ setHeight(maxY -minY)
         
 
 
-    
                         if(getHeight() > max)
                         
                                     {
@@ -197,7 +195,7 @@ setHeight(maxY -minY)
         
         
 
-put(s, this, commonStrings!.GET_INSTANCE)
+logUtil!.put(s, this, commonStrings!.GET_INSTANCE)
 
     var currentMiddleX: number = minX +getWidth() /2;
         
@@ -213,12 +211,12 @@ dy= middle -currentMiddleY
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public transform(hashMap: HashMap<Any, Any>){
 var hashMap = hashMap
-this.calculate(hashMap)
-put(StringMaker().
+this.this.calculate(hashMap)
+logUtil!.put(StringMaker().
                             append(" dx: ")!.appendint(dx)!.append(" dy: ")!.appendint(dy)!.toString(), this, commonStrings!.GET_INSTANCE)
 
     var graphicItemArray: any = {}[] = hashMap!.keys.toTypedArray()!;
@@ -256,14 +254,14 @@ index < size; index++)
         
         
 
-addPoints(list)
-setPointsInterface(newPoints)
+newPoints!.addPoints(list)
+item.setPointsInterface(newPoints)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getInstance(pointVector: BasicArrayList){
 var pointVector = pointVector
@@ -295,7 +293,6 @@ index < size; index++)
         
 
 
-    
                         if(point.getX() < minX)
                         
                                     {
@@ -304,7 +301,6 @@ index < size; index++)
                                     }
                                 
 
-    
                         if(point.getX() > maxX)
                         
                                     {
@@ -313,7 +309,6 @@ index < size; index++)
                                     }
                                 
 
-    
                         if(point.getY() < minY)
                         
                                     {
@@ -322,7 +317,6 @@ index < size; index++)
                                     }
                                 
 
-    
                         if(point.getY() > maxY)
                         
                                     {
@@ -334,7 +328,7 @@ index < size; index++)
 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 
 
 

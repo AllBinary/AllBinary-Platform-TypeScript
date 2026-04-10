@@ -59,7 +59,7 @@ export class ImageAnalysis
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static process(bufferedImage: BufferedImage, colorRangeInterface: ColorRangeInterface): ImageAnalysisResults{
 var bufferedImage = bufferedImage
@@ -138,9 +138,9 @@ blueTotal += color.getBlue()
         
         
 
-setAvgRed(redTotal.toFloat() /totalPixels)
-setAvgGreen(greenTotal.toFloat() /totalPixels)
-setAvgBlue(blueTotal.toFloat() /totalPixels)
+colorAverage!.setAvgRed(redTotal.toFloat() /totalPixels)
+colorAverage!.setAvgGreen(greenTotal.toFloat() /totalPixels)
+colorAverage!.setAvgBlue(blueTotal.toFloat() /totalPixels)
 
 
 
@@ -155,11 +155,10 @@ var imageAnalysisResults = imageAnalysisResults
 var colorRangeInterface = colorRangeInterface
 var color = color
 
-    
                         if(colorRangeInterface!.isInRange(color))
                         
                                     {
-                                    addMatchingPixelsChecked()
+                                    imageAnalysisResults!.getImageColorRangeResults()!.addMatchingPixelsChecked()
 
                                     }
                                 
@@ -167,7 +166,7 @@ var color = color
                             
                         }
                             
-addTotalPixelsChecked()
+imageAnalysisResults!.getImageColorRangeResults()!.addTotalPixelsChecked()
 }
 
 
@@ -176,56 +175,50 @@ var imageColorResults = imageColorResults
 var colorRangeInterface = colorRangeInterface
 var color = color
 
-    
                         if(color.getRed() < imageColorResults!.getColorRange()!.getMinRed())
                         
                                     {
-                                    setMinRed(color.getRed())
+                                    imageColorResults!.getColorRange()!.setMinRed(color.getRed())
 
                                     }
                                 
 
-    
                         if(color.getGreen() < imageColorResults!.getColorRange()!.getMinGreen())
                         
                                     {
-                                    setMinGreen(color.getGreen())
+                                    imageColorResults!.getColorRange()!.setMinGreen(color.getGreen())
 
                                     }
                                 
 
-    
                         if(color.getBlue() < imageColorResults!.getColorRange()!.getMinBlue())
                         
                                     {
-                                    setMinBlue(color.getBlue())
+                                    imageColorResults!.getColorRange()!.setMinBlue(color.getBlue())
 
                                     }
                                 
 
-    
                         if(color.getRed() > imageColorResults!.getColorRange()!.getMaxRed())
                         
                                     {
-                                    setMaxRed(color.getRed())
+                                    imageColorResults!.getColorRange()!.setMaxRed(color.getRed())
 
                                     }
                                 
 
-    
                         if(color.getGreen() > imageColorResults!.getColorRange()!.getMaxGreen())
                         
                                     {
-                                    setMaxGreen(color.getGreen())
+                                    imageColorResults!.getColorRange()!.setMaxGreen(color.getGreen())
 
                                     }
                                 
 
-    
                         if(color.getBlue() > imageColorResults!.getColorRange()!.getMaxBlue())
                         
                                     {
-                                    setMaxBlue(color.getBlue())
+                                    imageColorResults!.getColorRange()!.setMaxBlue(color.getBlue())
 
                                     }
                                 
@@ -241,7 +234,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(bufferedImageArray: BufferedImage[], colorRangeInterface: ColorRangeInterface): ImageAnalysisResults[]{
 var bufferedImageArray = bufferedImageArray
@@ -251,7 +244,7 @@ var colorRangeInterface = colorRangeInterface
         
         
 
-put(CommonLabels.getInstance()!.START +colorRangeInterface!.toString(), this, commonStrings!.PROCESS)
+logUtil!.put(CommonLabels.getInstance()!.START +colorRangeInterface!.toString(), this, commonStrings!.PROCESS)
 
     var imageAnalysisResultsArray: ImageAnalysisResults[] = new Array(bufferedImageArray!.length);
         

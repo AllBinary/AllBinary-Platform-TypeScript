@@ -39,7 +39,7 @@ export class CommandCurrentSelectionFormFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ScrollSelectionForm{
     //var title = title
@@ -51,7 +51,6 @@ export class CommandCurrentSelectionFormFactory
     //var backgroundBasicColor = backgroundBasicColor
     //var foregroundBasicColor = foregroundBasicColor
 
-    
                         if(Features.getInstance()!.isFeature(TouchFeatureFactory.getInstance()!.TOUCH_ENABLED))
                         
                                     {

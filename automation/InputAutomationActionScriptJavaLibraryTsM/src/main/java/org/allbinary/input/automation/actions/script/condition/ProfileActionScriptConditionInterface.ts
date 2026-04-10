@@ -35,7 +35,7 @@ interface ProfileActionScriptConditionInterface extends ProfileActionScriptNodeI
 
     removeProcessor(profileActionProcessorInterface: ProfileActionScriptProcessorInterface)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     shouldProcess(frame: Long): boolean
 

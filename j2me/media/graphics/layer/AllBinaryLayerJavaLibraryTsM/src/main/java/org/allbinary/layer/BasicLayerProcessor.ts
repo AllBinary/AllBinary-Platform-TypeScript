@@ -53,25 +53,24 @@ protected constructor (){
     public add(layerInterface: AllBinaryLayer){
 var layerInterface = layerInterface
 
-    
                         if(!list.contains(layerInterface))
                         
                                     {
-                                    add(layerInterface)
+                                    list.add(layerInterface)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
 
 
-                            throw Exception(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
+                            throw Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
 }
 
 

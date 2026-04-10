@@ -12,7 +12,7 @@ export class NullMIDlet extends MIDlet {
         
         
 
-                @Throws(MIDletStateChangeException::class)
+                //@Throws(MIDletStateChangeException::class)
             
     startApp(){
 }
@@ -22,7 +22,7 @@ export class NullMIDlet extends MIDlet {
 }
 
 
-                @Throws(MIDletStateChangeException::class)
+                //@Throws(MIDletStateChangeException::class)
             
     destroyApp(unconditional: boolean){
 var unconditional = unconditional

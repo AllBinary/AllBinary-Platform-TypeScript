@@ -47,7 +47,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, transfo
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setURIResolver(ContextUriResolver(this.getURIResolver() as BasicUriResolver) as URIResolver)
+this.this.setURIResolver(ContextUriResolver(this.getURIResolver() as BasicUriResolver) as URIResolver)
 }
 
 

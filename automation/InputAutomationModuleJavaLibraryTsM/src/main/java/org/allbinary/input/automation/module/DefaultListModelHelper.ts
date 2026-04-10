@@ -63,7 +63,7 @@ index < size; index++)
         
         
 
-addElement(moduleName)
+this.defaultListModel!.addElement(moduleName)
 }
 
 }
@@ -81,13 +81,13 @@ addElement(moduleName)
 
     public add(string: string){
 var string = string
-add(string)
+this.vector.add(string)
 }
 
 
     public remove(string: string){
 var string = string
-remove(string)
+this.vector.remove(string)
 }
 
 

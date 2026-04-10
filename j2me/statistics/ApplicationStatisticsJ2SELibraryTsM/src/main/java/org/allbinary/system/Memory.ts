@@ -33,12 +33,12 @@ import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js"
         
         
 
-append("Memory: Free: ")
-appendlong(Runtime.getRuntime()!.freeMemory())
-append(" Max: ")
-appendlong(Runtime.getRuntime()!.maxMemory())
-append(" Total: ")
-appendlong(Runtime.getRuntime()!.totalMemory())
+stringBuffer!.append("Memory: Free: ")
+stringBuffer!.appendlong(Runtime.getRuntime()!.freeMemory())
+stringBuffer!.append(" Max: ")
+stringBuffer!.appendlong(Runtime.getRuntime()!.maxMemory())
+stringBuffer!.append(" Total: ")
+stringBuffer!.appendlong(Runtime.getRuntime()!.totalMemory())
 
 
 

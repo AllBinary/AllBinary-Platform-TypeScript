@@ -23,7 +23,7 @@ var encryptedExtension = encryptedExtension
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public write(fileAbPath: AbPath, document: Document){
 var fileAbPath = fileAbPath

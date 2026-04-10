@@ -78,11 +78,10 @@ public constructor (node: Node){
 
 this.propertyName= DomNodeHelper.getTextNodeValue(propertyNode)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STYLE))
                         
                                     {
-                                    put("Name: " +this.getName(), this, "CssProperty()")
+                                    logUtil!.put("Name: " +this.getName(), this, "CssProperty()")
 
                                     }
                                 
@@ -111,7 +110,7 @@ this.cssPropertyValues= CssPropertyValues(propertyValuesNode)
         
         
 
-put(CssPropertyData.getInstance()!.NAME, this.propertyName)
+hashMap!.put(CssPropertyData.getInstance()!.NAME, this.propertyName)
 
 
 
@@ -121,7 +120,7 @@ put(CssPropertyData.getInstance()!.NAME, this.propertyName)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -131,11 +130,10 @@ var document = document
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("CssView HashMap: " +hashMap!.toString(), this, "toXmlNode()")
+                                    logUtil!.put("CssView HashMap: " +hashMap!.toString(), this, "toXmlNode()")
 
                                     }
                                 
@@ -144,7 +142,7 @@ var document = document
         
         
 
-appendChild(this.cssPropertyValues!.toXmlNode(document))
+node.appendChild(this.cssPropertyValues!.toXmlNode(document))
 
 
 

@@ -74,7 +74,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class, LicensingException::class)
+                //@Throws(Error::class, LicensingException::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext): StoreWorkFlowInterface{
     //var abeClientInformation = abeClientInformation
@@ -88,7 +88,6 @@ private constructor (){
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         
                                     {
@@ -97,16 +96,16 @@ private constructor (){
         
         
 
-append("Creating WorkFlow: ")
-append(workFlowClassName)
-append("->")
-append(instance::class.toString()!)
+stringBuffer!.append("Creating WorkFlow: ")
+stringBuffer!.append(workFlowClassName)
+stringBuffer!.append("->")
+stringBuffer!.append(instance::class.toString()!)
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
 
-put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE)
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE)
 
                                     }
                                 
@@ -133,7 +132,6 @@ params[1]= pageContext as Object
 } catch(e: LicensingException)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
@@ -147,16 +145,16 @@ params[1]= pageContext as Object
         
         
 
-append("Error Creating WorkFlow: ")
-append(workFlowClassName)
-append("->")
-append(instance::class.toString()!)
+stringBuffer!.append("Error Creating WorkFlow: ")
+stringBuffer!.append(workFlowClassName)
+stringBuffer!.append("->")
+stringBuffer!.append(instance::class.toString()!)
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
 
-put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 
@@ -168,7 +166,6 @@ put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e)
  catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
@@ -182,16 +179,16 @@ put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e)
         
         
 
-append("Error Creating WorkFlow: ")
-append(workFlowClassName)
-append("->")
-append(instance::class.toString()!)
+stringBuffer!.append("Error Creating WorkFlow: ")
+stringBuffer!.append(workFlowClassName)
+stringBuffer!.append("->")
+stringBuffer!.append(instance::class.toString()!)
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
 
-put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 

@@ -88,11 +88,10 @@ this.propertyValueVector= Vector()
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STYLE))
                         
                                     {
-                                    put("Number Of Properties: " +cssPropertyNodeVector!.length, this, "CssProperties()")
+                                    logUtil!.put("Number Of Properties: " +cssPropertyNodeVector!.length, this, "CssProperties()")
 
                                     }
                                 
@@ -127,11 +126,10 @@ index < size; index++)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STYLE))
                         
                                     {
-                                    put("Property Value: " +propertyValue, this, "CssProperties()")
+                                    logUtil!.put("Property Value: " +propertyValue, this, "CssProperties()")
 
                                     }
                                 
@@ -145,7 +143,7 @@ index < size; index++)
         
         
 
-put(indexValue, propertyValue)
+indexPropertyValueHashMap!.put(indexValue, propertyValue)
 }
 
 
@@ -173,7 +171,7 @@ index < size2; index++)
         
         
 
-add(propertyValue)
+this.propertyValueVector!.add(propertyValue)
 }
 
 }
@@ -220,12 +218,12 @@ index < size; index++)
         
         
 
-delete(0, stringBuffer!.length())
-append(cssPropertyValueData!.NAME)
-append(commonSeps!.BRACKET_OPEN)
-appendint(index)
-append(commonSeps!.BRACKET_CLOSE)
-put(stringBuffer!.toString(), value)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(cssPropertyValueData!.NAME)
+stringBuffer!.append(commonSeps!.BRACKET_OPEN)
+stringBuffer!.appendint(index)
+stringBuffer!.append(commonSeps!.BRACKET_CLOSE)
+hashMap!.put(stringBuffer!.toString(), value)
 index++
 }
 
@@ -238,12 +236,11 @@ index++
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -252,7 +249,7 @@ var document = document
         
         
 
-put("CssPropertyValues HashMap: " +hashMap!.toString(), this, "toXmlNode()")
+logUtil!.put("CssPropertyValues HashMap: " +hashMap!.toString(), this, "toXmlNode()")
 
                                     }
                                 

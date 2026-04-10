@@ -65,8 +65,8 @@ export class BasicPlayer
 public constructor (){
 
             super();
-            this.setLoopCount(0)
-this.setState(Player.UNREALIZED)
+            this.this.setLoopCount(0)
+this.this.setState(Player.UNREALIZED)
 }
 
 
@@ -109,11 +109,10 @@ var controlType = controlType
     public addPlayerListener(playerListener: PlayerListener){
 var playerListener = playerListener
 
-    
                         if(!this.listenersList!.contains(playerListener))
                         
                                     {
-                                    add(playerListener)
+                                    this.listenersList!.add(playerListener)
 
                                     }
                                 
@@ -122,7 +121,7 @@ var playerListener = playerListener
 
     public removePlayerListener(playerListener: PlayerListener){
 var playerListener = playerListener
-remove(playerListener)
+this.listenersList!.remove(playerListener)
 }
 
 
@@ -167,13 +166,13 @@ this.state= state
 }
 
 
-                @Throws(MediaException::class)
+                //@Throws(MediaException::class)
             
     public prefetch(){
 }
 
 
-                @Throws(MediaException::class)
+                //@Throws(MediaException::class)
             
     public realize(){
 }
@@ -196,7 +195,7 @@ this.loopCount= count
 }
 
 
-                @Throws(MediaException::class)
+                //@Throws(MediaException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setMediaTime(now: number): number{
@@ -210,19 +209,19 @@ var now = now
 }
 
 
-                @Throws(MediaException::class)
+                //@Throws(MediaException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public start(){
-this.setState(Player.STARTED)
+this.this.setState(Player.STARTED)
 }
 
 
-                @Throws(MediaException::class)
+                //@Throws(MediaException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public stop(){
-this.setState(Player.PREFETCHED)
+this.this.setState(Player.PREFETCHED)
 }
 
 
