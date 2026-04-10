@@ -1,0 +1,84 @@
+
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor.js";
+
+    
+import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
+
+    
+
+export class IntPermutationVisitor extends Visitor {
+        
+
+    readonly data: IntArray
+public constructor (data: IntArray){
+
+            super();
+            var data = data
+this.data= data
+}
+
+
+    private stringBuilder: StringBuilder = new StringBuilder();
+        
+        
+
+    public visit(anyType: any = {}): any = {}{
+var anyType = anyType
+delete(0, stringBuilder!.length())
+this.print(data, stringBuilder)
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return null;
+    
+}
+
+
+    public print(data: IntArray){
+var data = data
+
+    var stringBuilder: StringBuilder = new StringBuilder();
+        
+        
+
+this.print(data, stringBuilder)
+}
+
+
+    public print(data: IntArray, stringBuilder: StringBuilder){
+var data = data
+var stringBuilder = stringBuilder
+
+    var size: number = data.length
+                ;
+        
+        
+
+
+
+
+
+                        for (
+    var i: number = 0;
+        
+        
+i < size; i++)
+        {
+append(data[i]!)
+append(CommonSeps.getInstance()!.SPACE)
+}
+
+println(stringBuilder!.toString())
+}
+
+
+}
+                
+            
+

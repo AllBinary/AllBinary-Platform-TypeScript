@@ -1,0 +1,46 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { ArtificialIntelligence } from "../../../../org/allbinary/ai/ArtificialIntelligence.js";
+
+    
+import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+
+    
+
+export class NullAI extends ArtificialIntelligence {
+        
+public constructor (){
+
+            super();
+            }
+
+
+                @Throws(Exception::class)
+            
+    public processAI(allBinaryLayerManager: AllBinaryLayerManager){
+var allBinaryLayerManager = allBinaryLayerManager
+}
+
+
+}
+                
+            
+

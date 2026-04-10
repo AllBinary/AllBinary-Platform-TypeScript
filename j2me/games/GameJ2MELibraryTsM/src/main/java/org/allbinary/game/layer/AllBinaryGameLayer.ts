@@ -1,0 +1,289 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { GL } from "../../../../javax/microedition/khronos/opengles/GL.js";
+
+    
+import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+
+    
+import { Rectangle } from "../../../../org/allbinary/graphics/Rectangle.js";
+
+    
+import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+
+    
+import { BasicColorFactory } from "../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+
+    
+import { BasicColorSetUtil } from "../../../../org/allbinary/graphics/color/BasicColorSetUtil.js";
+
+    
+import { NullPaintable } from "../../../../org/allbinary/graphics/paint/NullPaintable.js";
+
+    
+import { Paintable } from "../../../../org/allbinary/graphics/paint/Paintable.js";
+
+    
+import { OpenGLSurfaceChangedInterface } from "../../../../org/allbinary/image/opengles/OpenGLSurfaceChangedInterface.js";
+
+    
+import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+
+    
+import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+
+    
+import { ForcedLogUtil } from "../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
+
+    
+import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+
+    
+import { EventStrings } from "../../../../org/allbinary/logic/util/event/EventStrings.js";
+
+    
+import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+
+    
+import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+
+    
+import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
+
+    
+import { ViewPositionEvent } from "../../../../org/allbinary/view/event/ViewPositionEvent.js";
+
+    
+import { ViewPositionEventListenerInterface } from "../../../../org/allbinary/view/event/ViewPositionEventListenerInterface.js";
+
+    
+
+export class AllBinaryGameLayer extends AllBinaryLayer
+                , ViewPositionEventListenerInterface
+                , OpenGLSurfaceChangedInterface {
+        
+
+    readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+        
+        
+
+    readonly RED: BasicColor = BasicColorFactory.getInstance()!.RED;
+        
+        
+
+    readonly basicSetColorUtil: BasicColorSetUtil = BasicColorSetUtil.getInstance()!;
+        
+        
+
+    private readonly paintable: Paintable = SWTUtil.isSWT
+                        ?       
+                                object: Paintable()
+                                {
+                                
+    var private readonly BLACK: BasicColor = BasicColorFactory.getInstance()!.BLACK;
+        
+        
+
+    public paint(graphics: Graphics){
+var graphics = graphics
+setBasicColorP(graphics, BLACK)
+}
+
+                                }
+                            
+                                :
+
+                            NullPaintable.getInstance();
+
+    ;
+        
+        
+
+    private readonly gameKeyEventList: BasicArrayList = new BasicArrayList();
+        
+        
+public constructor (layerInfo: Rectangle)                        
+
+                            : this(layerInfo, ViewPosition()){
+
+            super();
+                //var layerInfo = layerInfo
+
+
+                            //For kotlin this is before the body of the constructor.
+                    
+}
+
+public constructor (layerInfo: Rectangle, viewPosition: ViewPosition)                        
+
+                            : super(layerInfo, viewPosition){
+
+            super();
+                //var layerInfo = layerInfo
+    //var viewPosition = viewPosition
+
+
+                            //For kotlin this is before the body of the constructor.
+                    
+}
+
+public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition)                        
+
+                            : super(name, layerInfo, viewPosition){
+
+            super();
+                //var name = name
+    //var layerInfo = layerInfo
+    //var viewPosition = viewPosition
+
+
+                            //For kotlin this is before the body of the constructor.
+                    
+}
+
+
+                @Throws(Exception::class)
+            
+    public set(gl: GL){
+    //var gl = gl
+
+
+
+                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+}
+
+
+    public move(){
+}
+
+
+    public getGameKeyEventList(): BasicArrayList{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return gameKeyEventList;
+    
+}
+
+
+                @Throws(Exception::class)
+            
+    public processInput(allBinaryLayerManager: AllBinaryLayerManager){
+    //var allBinaryLayerManager = allBinaryLayerManager
+
+
+
+                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+}
+
+
+                @Throws(Exception::class)
+            
+    public processTick(allBinaryLayerManager: AllBinaryLayerManager){
+    //var allBinaryLayerManager = allBinaryLayerManager
+
+
+
+                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+}
+
+
+    public onEvent(eventObject: AllBinaryEventObject){
+    //var eventObject = eventObject
+log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+}
+
+
+                @Throws(Exception::class)
+            
+    public onViewPositionChangeEvent(){
+this.onChangeEvent(this.viewPositionEvent)
+}
+
+
+                @Throws(Exception::class)
+            
+    public onChangeEvent(layerManagerEvent: ViewPositionEvent){
+    //var layerManagerEvent = layerManagerEvent
+
+    
+                        if(GameLayerUtil.isOnScreen(this))
+                        
+                                    {
+                                    this.setVisible(true)
+
+                                    }
+                                
+                        else {
+                            this.setVisible(false)
+
+                        }
+                            
+}
+
+
+    public paintFirst(graphics: Graphics){
+    //var graphics = graphics
+paint(graphics)
+}
+
+
+    public paintDebug(graphics: Graphics){
+    //var graphics = graphics
+
+    var viewPosition: ViewPosition = this.getViewPosition()!;
+        
+        
+
+
+    var viewX: number = viewPosition!.getX()!;
+        
+        
+
+
+    var viewY: number = viewPosition!.getY()!;
+        
+        
+
+setBasicColorP(graphics, RED)
+drawRect(viewX, viewY, this.getWidth(), this.getHeight())
+}
+
+
+    public setWidth(width: number){
+    //var width = width
+setLayerWidth(width)
+this.setHalfWidth(width shr 1)
+}
+
+
+    public setHeight(height: number){
+    //var height = height
+setLayerHeight(height)
+this.setHalfHeight(height shr 1)
+}
+
+
+}
+                
+            
+

@@ -1,0 +1,140 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { Constructor } from "../../../../../java/lang/reflect/Constructor.js";
+
+    
+import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+
+    
+import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
+
+    
+
+export class ConstructorUtil
+            extends Object
+         {
+        
+
+    public static viewAll(myClass: KClass<*>, lineBreak: string): string{
+    //var myClass = myClass
+    //var lineBreak = lineBreak
+
+    var stringBuffer: StringMaker = new StringMaker();
+        
+        
+
+
+    var constructor: Constructor[] = myClass!.getConstructors()!;
+        
+        
+
+append("Constructors: ")
+append(lineBreak)
+
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < constructor.length; index++)
+        {
+append(ConstructorUtil.view(constructor[index]!, lineBreak))
+}
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return stringBuffer!.toString();
+    
+}
+
+
+    public static view(constructor: Constructor, lineBreak: string): string{
+    //var constructor = constructor
+    //var lineBreak = lineBreak
+
+    
+                        if(constructor != 
+                                    null
+                                )
+                        
+                                    {
+                                    
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
+        
+        
+
+
+    var stringBuffer: StringMaker = new StringMaker();
+        
+        
+
+append(constructor.getName())
+
+    var classes: KClass<*>[] = constructor.getParameterTypes()!;
+        
+        
+
+
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < classes.length; index++)
+        {
+append(commonSeps!.SPACE)
+append(classes[index]!.getName())
+append(commonSeps!.COLON)
+appendint(index)
+}
+
+append(lineBreak)
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return stringBuffer!.toString();
+    
+
+                                    }
+                                
+                             else 
+    
+                        if()
+                        
+}
+
+private constructor (){
+
+            super();
+            }
+
+
+}
+                
+            
+

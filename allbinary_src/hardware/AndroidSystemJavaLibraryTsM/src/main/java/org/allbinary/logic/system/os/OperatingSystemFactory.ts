@@ -1,0 +1,137 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { AndroidOperatingSystemFactory } from "../../../../../org/allbinary/logic/system/os/android/AndroidOperatingSystemFactory.js";
+
+    
+import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+
+    
+import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+
+    
+import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+
+    
+
+export class OperatingSystemFactory
+            extends Object
+         {
+        
+
+    private static readonly instance: OperatingSystemFactory = new OperatingSystemFactory();
+        
+        
+
+    public static getInstance(): OperatingSystemFactory{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return instance;
+    
+}
+
+
+    readonly logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+
+    private genericOperatingSystem: GenericOperatingSystem = NoOperatingSystem.NO_OPERATING_SYSTEM;
+        
+        
+
+    private hasDetected: boolean = false;
+        
+        
+private constructor (){
+
+            super();
+            }
+
+@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+
+    public getOperatingSystemInstance(): GenericOperatingSystem{
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
+        
+        
+
+
+        try {
+            
+    var systemProperties: SystemProperties = SystemProperties.getInstance()!;
+        
+        
+
+
+    var osName: string = systemProperties!.getName()!;
+        
+        
+
+
+    
+                        if(!hasDetected)
+                        
+                                    {
+                                    hasDetected= true
+
+    
+                        if(osName!.indexOf(OperatingSystems.getInstance()!.ANDROID) >= 0)
+                        
+                                    {
+                                    put("Found a Linux OS", this, commonStrings!.GET_INSTANCE)
+genericOperatingSystem= AndroidOperatingSystemFactory.getInstance()!.getOperatingSystemInstance()
+put(StringMaker().
+                            append("Operating System Info: ")!.append(genericOperatingSystem!.toString())!.toString(), this, commonStrings!.GET_INSTANCE)
+
+                                    }
+                                
+                        else {
+                            
+
+
+                            throw Exception(StringMaker().
+                            append("OS Not Supported: ")!.append(osName)!.toString())
+
+                        }
+                            
+
+                                    }
+                                
+} catch(e: Exception)
+            {
+genericOperatingSystem= NoOperatingSystem.NO_OPERATING_SYSTEM
+put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+}
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return genericOperatingSystem;
+    
+}
+
+
+}
+                
+            
+

@@ -1,0 +1,84 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { Rectangle } from "../../../org/allbinary/graphics/Rectangle.js";
+
+    
+
+export class RectangleLayerBounds extends LayerBounds {
+        
+public constructor (rectangle: Rectangle)                        
+
+                            : super(rectangle){
+
+            super();
+            var rectangle = rectangle
+
+
+                            //For kotlin this is before the body of the constructor.
+                    
+}
+
+
+    public visit(boundsVisitorInterface: BoundsVisitorInterface){
+var boundsVisitorInterface = boundsVisitorInterface
+
+    
+                        if(boundsVisitorInterface!.getX() > this.rectangle.getMaxX())
+                        
+                                    {
+                                    maxX()
+
+                                    }
+                                
+
+    
+                        if(boundsVisitorInterface!.getY() > this.rectangle.getMaxY())
+                        
+                                    {
+                                    maxY()
+
+                                    }
+                                
+
+    
+                        if(boundsVisitorInterface!.getX() < this.rectangle.getPoint()!.getX())
+                        
+                                    {
+                                    minX()
+
+                                    }
+                                
+
+    
+                        if(boundsVisitorInterface!.getY() < this.rectangle.getPoint()!.getY())
+                        
+                                    {
+                                    minY()
+
+                                    }
+                                
+}
+
+
+}
+                
+            
+

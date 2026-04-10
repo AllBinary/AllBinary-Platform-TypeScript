@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary</groupId>
+    <artifactId>AllBinaryAndroidLibraryPOMTs</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>AllBinaryAndroidLibraryPOMTs</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+
+        <!--
+        <module>../../../android/AndroidAPI3AndUpJavaLibraryTsM</module>
+        -->
+                
+        <!--
+        <module>../AndroidToJ2MELibraryTsM</module>
+        -->
+        <module>../../android/AndroidUtilJavaLibraryTsM</module>
+        <!--
+        <module>../../OpenGLAndroidJavaLibraryTsM</module>
+        <module>../../AndroidBaseJavaLibraryTsM</module>
+        <module>../../android/AndroidAPI5AndUpJavaLibraryTsM</module>
+        <module>../../android/AndroidThroughAPI2JavaLibraryTsM</module>
+        <module>../../android/AndroidThroughAPI4JavaLibraryTsM</module>
+        -->
+
+        <!--
+        <module>../../AndroidToAllBinaryJavaLibraryTsM</module>
+        -->
+        
+        <!--
+        <module>../../input/android/MotionInputAndroidResourcesJavaLibraryTsM</module>
+        -->
+        
+        <!--
+        <module>../../../../working/j2me/AndroidToJ2MELibraryTsM</module>
+        -->
+
+        <!--
+        <module>../../android/VirtualKeyboardDynamicJavaLibraryTsM</module>
+        -->
+        
+        <!-- Several Move to PostPlatforms -->
+        
+        <module>../../media/sound/MusicJ2MEJavaLibraryTsM</module>
+        <module>../../media/sound/NullMusicAndroidJavaLibraryTsM</module>
+        <module>../../media/sound/MusicAndroidJavaLibraryTsM</module>
+
+        <!--
+        <module>../../media/graphics/ImageCacheAndroidJavaLibraryTsM</module>
+        -->
+                
+        <!-- ../../../../working/allbinary_src/logic/data/file/FileAndroidJavaLibraryM -->
+        <module>../../../allbinary_src/logic/data/file/FileAndroidJavaLibraryTsM</module>
+        
+        <module>../../input/platform/android/MotionInputAndroidResourcesJavaLibraryTsM</module>
+                
+    </modules>
+
+</project>
+

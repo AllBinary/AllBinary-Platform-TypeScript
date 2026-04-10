@@ -1,0 +1,164 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
+
+    
+import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+
+    
+import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+
+    
+
+export class Log
+            extends Object
+         {
+        
+
+    private readonly nullUtil: NullUtil = NullUtil.getInstance()!;
+        
+        
+
+    private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
+        
+        
+
+    private readonly specialMessage: string
+
+    private readonly anyType: any = {}
+
+    private readonly functionName: string
+
+    private readonly exception: any = {}
+public constructor (){
+
+            super();
+            
+    var stringUtil: StringUtil = StringUtil.getInstance()!;
+        
+        
+
+this.specialMessage= stringUtil!.EMPTY_STRING
+this.anyType= nullUtil!.NULL_OBJECT
+this.functionName= stringUtil!.EMPTY_STRING
+this.exception= nullUtil!.NULL_OBJECT
+}
+
+public constructor (specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
+
+            super();
+                //var specialMessage = specialMessage
+    //var anyType = anyType
+    //var functionName = functionName
+    //var exception = exception
+this.specialMessage= specialMessage
+this.anyType= anyType
+this.functionName= functionName
+this.exception= exception
+}
+
+public constructor (specialMessage: string, anyType: any = {}, functionName: string){
+
+            super();
+                //var specialMessage = specialMessage
+    //var anyType = anyType
+    //var functionName = functionName
+this.specialMessage= specialMessage
+this.anyType= anyType
+this.functionName= functionName
+this.exception= nullUtil!.NULL_OBJECT
+}
+
+
+    public getSpecialMessage(): string{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return specialMessage;
+    
+}
+
+
+    public getObject(): any = {}{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return anyType;
+    
+}
+
+
+    public getFunctionName(): string{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return functionName;
+    
+}
+
+
+    public getThrowable(): any = {}{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return exception;
+    
+}
+
+
+    public toString(): string{
+
+    var className: string = CommonStrings.getInstance()!.EMPTY;
+        
+        
+
+
+    var clazz: KClass<*> = anyType!::class!;
+        
+        
+
+
+                        if(clazz.toString()! != 
+                                    null
+                                )
+                        
+                                    {
+                                    className= clazz.toString()!
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return logFormatUtil!.get(className, this.functionName, this.specialMessage, this.exception);
+    
+}
+
+
+}
+                
+            
+

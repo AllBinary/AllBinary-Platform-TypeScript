@@ -1,0 +1,101 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+
+    
+
+export class Orientation
+            extends Object
+         {
+        
+
+    public NONE: Orientation = new Orientation(0, 0, 0);
+        
+        
+
+    private SINGLETON: Orientation = new Orientation(0, 0, 0);
+        
+        
+
+    public static getInstance(yaw: number, pitch: number, roll: number): Orientation{
+var yaw = yaw
+var pitch = pitch
+var roll = roll
+set(yaw)
+set(pitch)
+set(roll)
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return SINGLETON;
+    
+}
+
+
+    public yaw: BasicDecimal = new BasicDecimal();
+        
+        
+
+    public pitch: BasicDecimal = new BasicDecimal();
+        
+        
+
+    public roll: BasicDecimal = new BasicDecimal();
+        
+        
+private constructor (yaw: number, pitch: number, roll: number){
+
+            super();
+            var yaw = yaw
+var pitch = pitch
+var roll = roll
+set(yaw)
+set(pitch)
+set(roll)
+}
+
+
+    public toString(): string{
+
+    var stringBuffer: StringMaker = new StringMaker();
+        
+        
+
+append("Y: ")
+append(yaw.toString())
+append(" P: ")
+append(pitch.toString())
+append(" R: ")
+append(roll.toString())
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return stringBuffer!.toString();
+    
+}
+
+
+}
+                
+            
+

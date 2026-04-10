@@ -1,0 +1,176 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+
+    
+import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+
+    
+import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+
+    
+import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+
+    
+
+export class TouchScreenFactory
+            extends Object
+         {
+        
+
+    private static readonly SINGLETON: TouchScreenFactory = new TouchScreenFactory();
+        
+        
+
+    public static getInstance(): TouchScreenFactory{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return SINGLETON;
+    
+}
+
+
+    readonly logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+
+    private touch: boolean= false
+
+    private multiTouch: boolean= false
+
+    private multiTouchDistinct: boolean= false
+
+    private touchScreenType: TouchScreenType = TouchScreenTypesFactory.getInstance()!.NOTOUCH;
+        
+        
+private constructor (){
+
+            super();
+            
+        try {
+            this.setTouch(true)
+this.setMultiTouch(false)
+} catch(e: Exception)
+            {
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
+        
+        
+
+put(commonStrings!.EXCEPTION, SINGLETON, commonStrings!.GET_INSTANCE, e)
+}
+
+}
+
+
+    public setMultiTouch(multiTouch: boolean){
+var multiTouch = multiTouch
+this.multiTouch= multiTouch
+}
+
+
+    public isMultiTouch(): boolean{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return multiTouch;
+    
+}
+
+
+    public setTouch(touch: boolean){
+var touch = touch
+this.touch= touch
+}
+
+
+    public isTouch(): boolean{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return touch;
+    
+}
+
+
+    public setMultiTouchDistinct(multiTouchDistinct: boolean){
+var multiTouchDistinct = multiTouchDistinct
+this.multiTouchDistinct= multiTouchDistinct
+}
+
+
+    public isMultiTouchDistinct(): boolean{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return multiTouchDistinct;
+    
+}
+
+
+    public setTouchScreenType(touchScreenType: TouchScreenType){
+var touchScreenType = touchScreenType
+this.touchScreenType= touchScreenType
+}
+
+
+    public getTouchScreenType(): TouchScreenType{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return touchScreenType;
+    
+}
+
+
+    public toString(): string{
+
+    var stringBuffer: StringMaker = new StringMaker();
+        
+        
+
+append("TouchScreen: ")
+appendboolean(this.isTouch())
+append(" MultiTouch: ")
+appendboolean(this.isMultiTouch())
+append(" Distinct MultiTouch: ")
+appendboolean(this.isMultiTouchDistinct())
+append(" TouchScreenType: ")
+append(StringUtil.getInstance()!.toString(this.getTouchScreenType()))
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return stringBuffer!.toString();
+    
+}
+
+
+}
+                
+            
+

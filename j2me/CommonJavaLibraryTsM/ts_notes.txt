@@ -1,0 +1,4 @@
+generate package.json:
+npm init
+generate tsconfig.json:
+tsc --init

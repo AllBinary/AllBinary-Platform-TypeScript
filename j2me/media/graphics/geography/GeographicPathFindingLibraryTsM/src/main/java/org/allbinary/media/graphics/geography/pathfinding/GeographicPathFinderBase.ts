@@ -1,0 +1,71 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+
+    
+import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+
+    
+
+export class GeographicPathFinderBase
+            extends Object
+         {
+        
+
+    public static readonly NULL_GEOGRAPHIC_PATH_FINDER_BASE: GeographicPathFinderBase = new GeographicPathFinderBase();
+        
+        
+
+    readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+        
+        
+
+                @Throws(Exception::class)
+            
+    public search(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, totalPaths: number): BasicArrayList{
+var startPathFindingNodeList = startPathFindingNodeList
+var endPathFindingNodeList = endPathFindingNodeList
+var totalPaths = totalPaths
+
+
+
+                            throw RuntimeException()
+}
+
+
+                @Throws(Exception::class)
+            
+    public searchN(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, totalPaths: number, multipassState: MultipassState): BasicArrayList{
+var startPathFindingNodeList = startPathFindingNodeList
+var endPathFindingNodeList = endPathFindingNodeList
+var totalPaths = totalPaths
+    //var multipassState = multipassState
+
+
+
+                            throw RuntimeException()
+}
+
+
+}
+                
+            
+

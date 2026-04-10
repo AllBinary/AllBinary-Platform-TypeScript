@@ -1,0 +1,144 @@
+
+        /*
+                *  
+                *  AllBinary Open License Version 1 
+                *  Copyright (c) 2011 AllBinary 
+                *   
+                *  By agreeing to this license you and any business entity you represent are 
+                *  legally bound to the AllBinary Open License Version 1 legal agreement. 
+                *   
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from 
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository. 
+                *   
+                *  Created By: Travis Berthelot    
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { HashMap } from "../../../../../../../java/util/HashMap.js";
+
+    
+import { HttpServletRequest } from "../../../../../../../javax/servlet/http/HttpServletRequest.js";
+
+    
+import { ContextConfiguration } from "../../../../../../../org/allbinary/business/context/configuration/ContextConfiguration.js";
+
+    
+import { ContextConfigurationData } from "../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationData.js";
+
+    
+import { ContextConfigurationDomDocumentMapping } from "../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationDomDocumentMapping.js";
+
+    
+import { ContextConfigurationInterface } from "../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js";
+
+    
+import { ContextConfigurationInterfaceFactory } from "../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterfaceFactory.js";
+
+    
+import { ContextConfigurationPathUtil } from "../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationPathUtil.js";
+
+    
+import { RequestParams } from "../../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js";
+
+    
+import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+
+    
+import { CryptFileWriter } from "../../../../../../../org/allbinary/logic/control/crypt/file/CryptFileWriter.js";
+
+    
+import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
+
+    
+
+export class AdminConfiguration
+            extends Object
+        
+                , AdminConfigurationInterface {
+        
+
+    readonly logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+
+    private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+        
+        
+
+    private contextConfigurationInterface: ContextConfigurationInterface
+public constructor (){
+
+            super();
+            put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+this.contextConfigurationInterface= ContextConfigurationInterfaceFactory.getInstance()!.getInstance(AdminConfigurationData.CONTEXTNAME)
+}
+
+public constructor (request: HttpServletRequest){
+
+            super();
+            var request = request
+put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+this.getFormData(RequestParams(request).
+                            toHashMap())
+}
+
+public constructor (storeHashMap: HashMap<Any, Any>){
+
+            super();
+            var storeHashMap = storeHashMap
+put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+this.getFormData(storeHashMap)
+}
+
+
+                @Throws(Exception::class)
+            
+    getFormData(storeHashMap: HashMap<Any, Any>){
+var storeHashMap = storeHashMap
+put(commonStrings!.START, this, "getFormData")
+this.setContextConfigurationInterface(ContextConfiguration(storeHashMap) as ContextConfigurationInterface)
+}
+
+
+                @Throws(Exception::class)
+            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+
+    public write(){
+
+    var contextConfigurationDomDocumentMapping: ContextConfigurationDomDocumentMapping = new ContextConfigurationDomDocumentMapping(this.getContextConfigurationInterface());
+        
+        
+
+
+    var cryptFileWriter: CryptFileWriter = new CryptFileWriter(ContextConfigurationData.getInstance()!.UNCRYPTED_EXTENSION, ContextConfigurationData.getInstance()!.ENCRYPTED_EXTENSION);
+        
+        
+
+write(ContextConfigurationPathUtil.getAbPath(AdminConfigurationData.CONTEXTNAME), contextConfigurationDomDocumentMapping!.toXmlDoc())
+}
+
+
+    public getContextConfigurationInterface(): ContextConfigurationInterface{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return contextConfigurationInterface;
+    
+}
+
+
+    public setContextConfigurationInterface(contextConfigurationInterface: ContextConfigurationInterface){
+var contextConfigurationInterface = contextConfigurationInterface
+this.contextConfigurationInterface= contextConfigurationInterface
+}
+
+
+}
+                
+            
+

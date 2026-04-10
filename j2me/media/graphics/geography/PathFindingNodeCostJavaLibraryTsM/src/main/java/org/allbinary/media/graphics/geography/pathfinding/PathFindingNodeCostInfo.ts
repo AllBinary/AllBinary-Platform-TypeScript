@@ -1,0 +1,134 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2006 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+
+    
+import { CommonLabels } from "../../../../../../org/allbinary/string/CommonLabels.js";
+
+    
+
+export class PathFindingNodeCostInfo
+            extends Object
+        
+                , Comparable<PathFindingNodeCostInfo> {
+        
+
+    private readonly pathFindingNodeCostInfoData: PathFindingNodeCostInfoData = PathFindingNodeCostInfoData.getInstance()!;
+        
+        
+
+    public costFromStartP: number
+
+    public costToEndP: number
+
+    public totalCostP: number= 0
+public constructor (costFromStart: number, costToGoal: number){
+
+            super();
+                //var costFromStart = costFromStart
+    //var costToGoal = costToGoal
+this.costFromStartP= costFromStart
+this.costToEndP= costToGoal
+this.setTotalCost()
+}
+
+
+    public setCostToEnd(costToEnd: number){
+    //var costToEnd = costToEnd
+this.costToEndP= costToEnd
+}
+
+
+    public setTotalCost(totalCost: number){
+    //var totalCost = totalCost
+this.totalCostP= totalCost
+}
+
+
+                @Throws(Exception::class)
+            
+    public setTotalCost(){
+this.totalCostP= costFromStartP +costToEndP
+
+    
+                        if(this.totalCostP > pathFindingNodeCostInfoData!.MAX_NODE_COST)
+                        
+                                    {
+                                    
+
+
+                            throw Exception("Max Cost Exceeded")
+
+                                    }
+                                
+}
+
+
+    public setCostFromStart(cost: number){
+    //var cost = cost
+this.costFromStartP= cost
+}
+
+
+    public addCostFromStart(cost: number){
+    //var cost = cost
+this.costFromStartP += cost
+}
+
+
+    public compareTo(pathFindingNodeCostInfo: PathFindingNodeCostInfo): number{
+var pathFindingNodeCostInfo = pathFindingNodeCostInfo
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return java.lang.Long.compare(this.totalCostP, pathFindingNodeCostInfo!.totalCostP);
+    
+}
+
+
+    public toString(): string{
+
+    var stringBuffer: StringMaker = new StringMaker();
+        
+        
+
+append(this::class.toString()!)
+append(CommonLabels.getInstance()!.COLON_SEP)
+append("CostFromStart: ")
+appendlong(this.costFromStartP)
+append(" CostToEnd: ")
+appendlong(this.costToEndP)
+append(" TotalCost: ")
+appendlong(this.totalCostP)
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return stringBuffer!.toString();
+    
+}
+
+
+}
+                
+            
+

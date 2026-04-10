@@ -1,0 +1,281 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { RequestDispatcher } from "../../../../../../javax/servlet/RequestDispatcher.js";
+
+    
+import { ServletException } from "../../../../../../javax/servlet/ServletException.js";
+
+    
+import { HttpServletRequest } from "../../../../../../javax/servlet/http/HttpServletRequest.js";
+
+    
+import { HttpServletResponse } from "../../../../../../javax/servlet/http/HttpServletResponse.js";
+
+    
+import { JspTagException } from "../../../../../../javax/servlet/jsp/JspTagException.js";
+
+    
+import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js";
+
+    
+import { FREEBLISKET_PATH_GLOBALS } from "../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js";
+
+    
+import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+
+    
+import { LogConfigTypeFactory } from "../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js";
+
+    
+import { LogConfigTypes } from "../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js";
+
+    
+
+export class AbResponseHandler
+            extends Object
+         {
+        
+
+                @Throws(JspTagException::class)
+            
+    public static sendJspTagRedirect(pageContext: PageContext, e: Exception){
+var pageContext = pageContext
+var e = e
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+
+
+        try {
+            
+    
+                        if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
+                        
+                                    {
+                                    put("Jsp Tag Exception", "AbResponseHandler", "sendJspRedirect()", e)
+
+                                    }
+                                
+sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance()!.ERRORPAGE)
+} catch(e2: Exception)
+            {
+
+    
+                        if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
+                        
+                                    {
+                                    put("Exception in Redirect Handling", "AbResponseHandler", "sendJspRedirect", e)
+
+                                    }
+                                
+
+
+
+                            throw JspTagException()
+}
+
+}
+
+
+                @Throws(ServletException::class)
+            
+    public static sendServletRedirect(pageContext: PageContext, e: Exception){
+var pageContext = pageContext
+var e = e
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+
+
+        try {
+            
+    
+                        if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
+                        
+                                    {
+                                    put("Jsp Tag Exception", "AbResponseHandler", "sendJspRedirect()", e)
+
+                                    }
+                                
+sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance()!.ERRORPAGE)
+} catch(e2: Exception)
+            {
+
+    
+                        if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
+                        
+                                    {
+                                    put("Exception in Redirect Handling", "AbResponseHandler", "sendJspRedirect", e)
+
+                                    }
+                                
+
+
+
+                            throw ServletException()
+}
+
+}
+
+
+                @Throws(JspTagException::class)
+            
+    public static sendJspTagLicensingRedirect(pageContext: PageContext, e: Exception){
+var pageContext = pageContext
+var e = e
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+
+
+        try {
+            
+    
+                        if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
+                        
+                                    {
+                                    put("Licensing Exception", "AbResponseHandler", "sendJspTagLicensingRedirect()", e)
+
+                                    }
+                                
+sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance()!.LICENSEERRORPAGE)
+} catch(e2: Exception)
+            {
+
+    
+                        if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
+                        
+                                    {
+                                    put("Exception in Redirect Handling", "AbResponseHandler", "sendJspTagLicensingRedirect", e)
+
+                                    }
+                                
+
+
+
+                            throw JspTagException()
+}
+
+}
+
+
+                @Throws(ServletException::class)
+            
+    public static sendServletLicensingRedirect(pageContext: PageContext, e: Exception){
+var pageContext = pageContext
+var e = e
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+
+
+        try {
+            
+    
+                        if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
+                        
+                                    {
+                                    put("Licensing Exception", "AbResponseHandler", "sendServletLicensingRedirect()", e)
+
+                                    }
+                                
+sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance()!.LICENSEERRORPAGE)
+} catch(e2: Exception)
+            {
+
+    
+                        if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
+                        
+                                    {
+                                    put("Exception in Redirect Handling", "AbResponseHandler", "sendServletLicensingRedirect", e)
+
+                                    }
+                                
+
+
+
+                            throw ServletException()
+}
+
+}
+
+
+                @Throws(Exception::class)
+            
+    public static sendRedirect(pageContext: PageContext, page: string){
+var pageContext = pageContext
+var page = page
+
+    var request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;
+        
+        
+
+
+    var response: HttpServletResponse = pageContext!.getResponse() as HttpServletResponse;
+        
+        
+
+
+    var requestDispatcher: RequestDispatcher = request.getRequestDispatcher(page)!;
+        
+        
+
+
+    
+                        if(response.isCommitted())
+                        
+                                    {
+                                    sendRedirect(page)
+
+                                    }
+                                
+                        else {
+                            
+        try {
+            forward(request, response)
+} catch(e: Exception)
+            {
+print("Error: " +page)
+}
+
+
+                        }
+                            
+}
+
+
+    readonly logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+private constructor (){
+
+            super();
+            }
+
+
+}
+                
+            
+

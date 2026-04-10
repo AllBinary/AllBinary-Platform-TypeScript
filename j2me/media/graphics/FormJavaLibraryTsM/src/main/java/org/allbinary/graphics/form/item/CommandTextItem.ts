@@ -1,0 +1,73 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { Command } from "../../../../../javax/microedition/lcdui/Command.js";
+
+    
+import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicColor.js";
+
+    
+
+export class CommandTextItem extends TextItem {
+        
+
+    private readonly command: Command
+public constructor (command: Command, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
+
+                            : super(command.getLabel(), layout, altText, backgroundBasicColor, foregroundBasicColor){
+
+            super();
+            var command = command
+var layout = layout
+var altText = altText
+var backgroundBasicColor = backgroundBasicColor
+var foregroundBasicColor = foregroundBasicColor
+
+
+                            //For kotlin this is before the body of the constructor.
+                    
+this.command= command
+}
+
+
+    public isFocusable(): boolean{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return true;
+    
+}
+
+
+    public getCommand(): Command{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return command;
+    
+}
+
+
+}
+                
+            
+

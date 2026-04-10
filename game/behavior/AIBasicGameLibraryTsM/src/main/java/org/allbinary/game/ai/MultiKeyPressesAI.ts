@@ -1,0 +1,220 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { Hashtable } from "../../../../java/util/Hashtable.js";
+
+    
+import { GameInput } from "../../../../org/allbinary/game/input/GameInput.js";
+
+    
+import { GameKeyEventFactory } from "../../../../org/allbinary/game/input/event/GameKeyEventFactory.js";
+
+    
+import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+
+    
+import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+
+    
+import { GameTickTimeDelayHelper } from "../../../../org/allbinary/time/GameTickTimeDelayHelper.js";
+
+    
+import { GameTickTimeDelayHelperFactory } from "../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js";
+
+    
+import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.js";
+
+    
+
+export class MultiKeyPressesAI extends KeyPressesAI {
+        
+
+    private readonly toggleTimeHelper: TimeDelayHelper = new TimeDelayHelper(600);
+        
+        
+
+    private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
+        
+        
+public constructor (hashtable: Hashtable<Any, Any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
+
+                            : super(hashtable, ownerLayerInterface, gameInput){
+
+            super();
+            var hashtable = hashtable
+var ownerLayerInterface = ownerLayerInterface
+var gameInput = gameInput
+
+
+                            //For kotlin this is before the body of the constructor.
+                    
+this.update()
+}
+
+
+                @Throws(Exception::class)
+            
+    public processAI(allBinaryLayerManager: AllBinaryLayerManager){
+var allBinaryLayerManager = allBinaryLayerManager
+}
+
+
+    private readonly gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
+        
+        
+
+                @Throws(Exception::class)
+            
+    update(){
+
+    var gameInput: GameInput = this.getGameInput()!;
+        
+        
+
+
+    var keys: Integer[] = this.keys;
+        
+        
+
+
+    var size: number = keys.length
+                ;
+        
+        
+
+
+    
+                        if(isOn())
+                        
+                                    {
+                                    
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < size; index++)
+        {
+
+    var key: number = keys[index]!.toInt()!;
+        
+        
+
+
+    
+                        if(key !=  -1)
+                        
+                                    {
+                                    add(gameKeyEventFactory!.getInstance(this, key))
+
+                                    }
+                                
+}
+
+
+                                    }
+                                
+                        else {
+                            
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < size; index++)
+        {
+
+    var key: number = keys[index]!.toInt()!;
+        
+        
+
+
+    
+                        if(key !=  -1)
+                        
+                                    {
+                                    addForRemoval(gameKeyEventFactory!.getInstance(this, key))
+
+                                    }
+                                
+}
+
+
+                        }
+                            
+}
+
+
+                @Throws(Exception::class)
+            
+    public toggle(){
+
+    
+                        if(this.toggleTimeHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
+                        
+                                    {
+                                    toggle()
+this.update()
+
+                                    }
+                                
+}
+
+
+                @Throws(Exception::class)
+            
+    public disable(){
+
+    
+                        if(this.toggleTimeHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
+                        
+                                    {
+                                    disable()
+this.update()
+
+                                    }
+                                
+}
+
+
+                @Throws(Exception::class)
+            
+    public enable(){
+
+    
+                        if(this.toggleTimeHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
+                        
+                                    {
+                                    enable()
+this.update()
+
+                                    }
+                                
+}
+
+
+}
+                
+            
+

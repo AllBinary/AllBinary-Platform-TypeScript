@@ -1,0 +1,245 @@
+
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
+
+    
+import { RenderedImage } from "../../../../../java/awt/image/RenderedImage.js";
+
+    
+import { HashMap } from "../../../../../java/util/HashMap.js";
+
+    
+import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+
+    
+import { LogConfigTypeFactory } from "../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js";
+
+    
+import { LogConfigTypes } from "../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js";
+
+    
+import { AbFile } from "../../../../../org/allbinary/logic/io/file/AbFile.js";
+
+    
+import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+
+    
+import { ImageUtil } from "../../../../../org/allbinary/media/image/ImageUtil.js";
+
+    
+import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.js";
+
+    
+
+export class MediaUtil
+            extends Object
+         {
+        
+
+    private static readonly instance: MediaUtil = new MediaUtil();
+        
+        
+
+    public static getInstance(): MediaUtil{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return instance;
+    
+}
+
+
+    static getImageBufferPropertyHashMap(bufferedImage: BufferedImage): HashMap<Any, Any>{
+    //var bufferedImage = bufferedImage
+
+    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+        
+        
+
+
+    var propertyStringArray: string[] = bufferedImage!.getPropertyNames()!;
+        
+        
+
+
+    
+                        if(propertyStringArray != 
+                                    null
+                                )
+                        
+                                    {
+                                    
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < propertyStringArray!.length; index++)
+        {
+
+    var propertyObject: any = {} = bufferedImage!.getProperty(propertyStringArray[index]!)!;
+        
+        
+
+put(propertyStringArray[index]!, propertyObject!.toString())
+}
+
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return hashMap;
+    
+}
+
+
+    readonly logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+private constructor (){
+
+            super();
+            }
+
+
+                @Throws(Exception::class)
+            
+    public saveImageFile(originalImageFile: AbFile, newImageFileName: string, category: string, mediaData: MediaData, newWidth: number, newHeight: number){
+var originalImageFile = originalImageFile
+var newImageFileName = newImageFileName
+var category = category
+var mediaData = mediaData
+var newWidth = newWidth
+var newHeight = newHeight
+
+    
+                        if(originalImageFile == 
+                                    null
+                                 || !originalImageFile!.isFile())
+                        
+                                    {
+                                    
+
+
+                            throw Exception("Original Image File Does Not Exist.")
+
+                                    }
+                                
+
+    var bufferedImage: BufferedImage = ImageIOUtil.read(originalImageFile)!;
+        
+        
+
+
+    
+                        if(bufferedImage == 
+                                    null
+                                )
+                        
+                                    {
+                                    
+
+
+                            throw Exception("Unable to find ImageReader for this file.")
+
+                                    }
+                                
+
+    
+                        if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.VIEW))
+                        
+                                    {
+                                    
+    var hashMap: HashMap<Any, Any> = this.getImageBufferPropertyHashMap(bufferedImage)!;
+        
+        
+
+put("Image Properties: " +hashMap!.toString(), this, "saveImageFile()")
+
+                                    }
+                                
+
+    var imageFile: AbFile = new AbFile(category +newImageFileName);
+        
+        
+
+createNewFile()
+
+    var imageUtil: ImageUtil = ImageUtil.getInstance()!;
+        
+        
+
+
+    var newBufferedImage: BufferedImage = imageUtil!.createBufferedImage(bufferedImage, newWidth, newHeight)!;
+        
+        
+
+
+    var isWritten: boolean = ImageIOUtil.write(newBufferedImage as RenderedImage, mediaData!.getName(), imageFile)!;
+        
+        
+
+
+    
+                        if(!isWritten)
+                        
+                                    {
+                                    
+
+
+                            throw Exception("Unable to write.")
+
+                                    }
+                                
+
+    
+                        if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.VIEW))
+                        
+                                    {
+                                    
+    var commonLabels: CommonLabels = CommonLabels.getInstance()!;
+        
+        
+
+
+    var stringBuffer: StringMaker = new StringMaker();
+        
+        
+
+append("Get Path: ")
+append(originalImageFile!.getPath())
+append("\nNewImageFileName: ")
+append(newImageFileName)
+append("\nCategory: ")
+append(category)
+append("\nSave File Type: ")
+append(mediaData!.getName())
+append(commonLabels!.WIDTH_LABEL)
+appendint(newWidth)
+append(commonLabels!.HEIGHT_LABEL)
+appendint(newHeight)
+append("\nFile Length: ")
+appendlong(originalImageFile!.length())
+append("\nNew File Length: ")
+appendlong(imageFile!.length())
+put(stringBuffer!.toString(), this, "saveImageFile()")
+
+                                    }
+                                
+}
+
+
+}
+                
+            
+

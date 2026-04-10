@@ -1,0 +1,65 @@
+
+        /*
+                *  
+                *  AllBinary Open License Version 1 
+                *  Copyright (c) 2022 AllBinary 
+                *   
+                *  By agreeing to this license you and any business entity you represent are 
+                *  legally bound to the AllBinary Open License Version 1 legal agreement. 
+                *   
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from 
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository. 
+                *   
+                *  Created By: Travis Berthelot    
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+
+    
+import { CommonLabels } from "../../../org/allbinary/string/CommonLabels.js";
+
+    
+
+export class ScaleProperties
+            extends Object
+         {
+        
+
+    public static readonly instance: ScaleProperties = new ScaleProperties();
+        
+        
+
+    public scaleX: number = 1.0f;
+        
+        
+
+    public scaleY: number = 1.0f;
+        
+        
+
+    public scaleWidth: number= 0
+
+    public scaleHeight: number= 0
+
+    public shouldScale: boolean= false
+
+    public toString(): string{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return StringMaker().
+                            append(CommonLabels.getInstance()!.COLON_SEP)!.appendboolean(this.shouldScale)!.append("scaleX: ")!.appendfloat(this.scaleX)!.append("scaleY: ")!.appendfloat(this.scaleY)!.append("scaleWidth: ")!.appendint(this.scaleWidth)!.append("scaleHeight: ")!.appendint(this.scaleHeight)!.toString();
+    
+}
+
+
+}
+                
+            
+

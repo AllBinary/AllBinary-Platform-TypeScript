@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary</groupId>
+    <artifactId>InputAutomationToolsTs</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>InputAutomationToolsTs</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+    
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+        <!--
+        <module>../AllBinaryCoreJavaLibraryTsM</module>        
+        -->
+
+        <module>../../replace_these_stub_projects/osgi/YourOSGIComponentLibraryTsM</module>
+        <module>../../allbinary_src/AllBinaryOSGIJavaLibraryTsM</module>
+
+        <module>../../graphics/ColorJavaLibraryTsM</module>
+        <module>../../graphics/ImageJavaLibraryTsM</module>
+        <module>../../graphics/ImageComparisonJavaLibraryTsM</module>
+        <module>../../graphics/AdvancedImageJ2SEJavaLibraryTsM</module>
+        
+        <module>../InputAutomationModuleJavaLibraryTsM</module>
+        
+        <module>../InputAutomationActionScriptJavaLibraryTsM</module>
+        <module>../InputAutomationGenericModuleJavaLibraryTsM</module>
+        <module>../InputAutomationGeneric2ModuleJavaLibraryTsM</module>
+
+        <module>../../allbinary_src/HelpJavaLibraryTsM</module>
+        <module>../InputAutomationJavaLibraryTsM</module>
+
+        <module>../InputAutomationJavaApplicationTsM</module>
+        
+        <module>../../game/InputAutomationGameModulesJavaLibraryTsM</module>
+        
+        <module>../AllBinaryCoreJavaLibraryTsM</module>
+    </modules>
+
+</project>
+

@@ -1,0 +1,244 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot   
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
+
+    
+import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+
+    
+import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+
+    
+
+export class Tokenizer
+            extends Object
+         {
+        
+
+    private sep: string
+
+    private endSep: string = StringUtil.getInstance()!.EMPTY_STRING;
+        
+        
+public constructor (sep: string){
+
+            super();
+            var sep = sep
+
+    
+                        if(sep == 
+                                    null
+                                 || sep.compareTo(StringUtil.getInstance()!.EMPTY_STRING) == 0)
+                        
+                                    {
+                                    
+
+
+                            throw Exception("Sep provided is not valid")
+
+                                    }
+                                
+this.sep= sep
+}
+
+
+    public setSep(sep: string){
+var sep = sep
+this.sep= sep
+}
+
+
+    public setEndSep(endSep: string){
+var endSep = endSep
+this.endSep= endSep
+}
+
+
+    public getInsideSep(string: string): BasicArrayList{
+var string = string
+
+    var tokenList: BasicArrayList = new BasicArrayList();
+        
+        
+
+
+    var index: number = 0;
+        
+        
+
+
+    var size: number = string.length!;
+        
+        
+
+
+        while(index < size)
+        {
+index= string.indexOf(sep, index)
+
+    
+                        if(index !=  -1)
+                        
+                                    {
+                                    
+    var end: number = string.indexOf(endSep, index +sep.length)!;
+        
+        
+
+
+    
+                        if(end !=  -1)
+                        
+                                    {
+                                    add(string.substring(index +sep.length, end -(endSep!.length -1)))
+index= end +endSep!.length
+
+                                    }
+                                
+                        else {
+                            
+                        }
+                            
+
+                                    }
+                                
+                        else {
+                            break;
+
+                    
+
+                        }
+                            
+}
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return tokenList;
+    
+}
+
+
+    public getTokens(string: string, tokenVector: BasicArrayList): BasicArrayList{
+var string = string
+var tokenVector = tokenVector
+
+    var index: number = 0;
+        
+        
+
+
+    var end: number = 0;
+        
+        
+
+
+        while(index < string.length)
+        {
+end= string.indexOf(sep, index)
+
+    
+                        if(end !=  -1)
+                        
+                                    {
+                                    add(string.substring(index, end))
+index= end +sep.length
+
+                                    }
+                                
+                        else {
+                            add(string.substring(index, string.length))
+break;
+
+                    
+
+                        }
+                            
+}
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return tokenVector;
+    
+}
+
+
+    public getTokens(stringVector: BasicArrayList): Hashtable<Any, Any>{
+var stringVector = stringVector
+
+    var tokenHashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+        
+        
+
+
+    var string: string = StringUtil.getInstance()!.EMPTY_STRING;
+        
+        
+
+
+    var end: number = 0;
+        
+        
+
+
+    var size: number = stringVector!.size()!;
+        
+        
+
+
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < size; index++)
+        {
+string= stringVector!.objectArray[index]! as String
+end= string.indexOf(sep)
+
+    
+                        if(end >= 0)
+                        
+                                    {
+                                    put(string.substring(0, end), string.substring(end +1, string.length))
+
+                                    }
+                                
+}
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return tokenHashtable;
+    
+}
+
+
+}
+                
+            
+

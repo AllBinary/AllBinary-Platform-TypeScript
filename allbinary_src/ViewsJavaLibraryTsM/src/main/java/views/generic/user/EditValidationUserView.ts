@@ -1,0 +1,254 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { UserName } from "../../../org/allbinary/business/user/username/UserName.js";
+
+    
+import { UserEntityFactory } from "../../../org/allbinary/data/tables/user/UserEntityFactory.js";
+
+    
+import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+
+    
+import { ValidationComponentInterface } from "../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js";
+
+    
+import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+
+    
+import { TransformInfoInterface } from "../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+
+    
+import { Document } from "../../../org/w3c/dom/Document.js";
+
+    
+import { Node } from "../../../org/w3c/dom/Node.js";
+
+    
+
+export class EditValidationUserView extends UserView
+                , ValidationComponentInterface {
+        
+
+    readonly logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+
+    private userName: string
+public constructor (transformInfoInterface: TransformInfoInterface)                        
+
+                            : super(transformInfoInterface){
+
+            super();
+            var transformInfoInterface = transformInfoInterface
+
+
+                            //For kotlin this is before the body of the constructor.
+                    
+this.userName= this.getWeblisketSession()!.getUserName()
+}
+
+
+    public isValid(): Boolean{
+
+        try {
+            
+    
+                        if(UserName.getInstance()!.isValid(this.userName) == Boolean.TRUE)
+                        
+                                    {
+                                    this.user= UserEntityFactory.getInstance()!.getUser(this.userName)
+
+    
+                        if(user == 
+                                    null
+                                )
+                        
+                                    {
+                                    
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return Boolean.FALSE;
+    
+
+                                    }
+                                
+
+                                    }
+                                
+                             else 
+    
+                        if()
+                        
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.user.isValid();
+    
+} catch(e: Exception)
+            {
+
+    
+                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
+                        
+                                    {
+                                    put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return Boolean.FALSE;
+    
+}
+
+}
+
+
+    public validationInfo(): string{
+
+        try {
+            
+    var stringBuffer: StringMaker = new StringMaker();
+        
+        
+
+
+    
+                        if(UserName.getInstance()!.isValid(this.userName))
+                        
+                                    {
+                                    
+    
+                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
+                        
+                                    {
+                                    put("User Name is valid", this, "validationInfo()")
+
+                                    }
+                                
+this.user= UserEntityFactory.getInstance()!.getUser(this.userName)
+
+    
+                        if(user == 
+                                    null
+                                )
+                        
+                                    {
+                                    append("User does not exist.<br />")
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return stringBuffer!.toString();
+    
+
+                                    }
+                                
+
+                                    }
+                                
+                        else {
+                            append("User Name is not valid.<br />")
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return stringBuffer!.toString();
+    
+
+                        }
+                            
+
+    
+                        if(this.user.isValid() == Boolean.FALSE)
+                        
+                                    {
+                                    
+    
+                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
+                        
+                                    {
+                                    put("User exists but is invalid - Probably manually modified", this, "validationInfo()")
+
+                                    }
+                                
+append("User data is not valid - Please call administrator.<br />")
+append(this.user.validationInfo())
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return stringBuffer!.toString();
+    
+} catch(e: Exception)
+            {
+
+    
+                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
+                        
+                                    {
+                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return "Error Validating Form";
+    
+}
+
+}
+
+
+    public toValidationInfoDoc(): Document{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return null;
+    
+}
+
+
+    public toValidationInfoNode(document: Document): Node{
+var document = document
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return null;
+    
+}
+
+
+}
+                
+            
+

@@ -1,0 +1,127 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+
+export class ColorTemperatureUtil
+            extends Object
+         {
+        
+
+    private static readonly instance: ColorTemperatureUtil = new ColorTemperatureUtil();
+        
+        
+
+    public static getInstance(): ColorTemperatureUtil{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return instance;
+    
+}
+
+
+    private readonly basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
+        
+        
+
+    public getBasicColor(thirdTemp: number): BasicColor{
+var thirdTemp = thirdTemp
+
+    var basicColor: BasicColor = basicColorFactory!.RED;
+        
+        
+
+
+    
+                        if(thirdTemp > 3700)
+                        
+                                    {
+                                    basicColor= basicColorFactory!.PURPLE
+
+                                    }
+                                
+                             else 
+    
+                        if(thirdTemp > 3200)
+                        
+                                    {
+                                    basicColor= basicColorFactory!.BLUE
+
+                                    }
+                                
+                             else 
+    
+                        if(thirdTemp > 2700)
+                        
+                                    {
+                                    basicColor= basicColorFactory!.PUCE
+
+                                    }
+                                
+                             else 
+    
+                        if(thirdTemp > 2200)
+                        
+                                    {
+                                    basicColor= basicColorFactory!.WHITE
+
+                                    }
+                                
+                             else 
+    
+                        if(thirdTemp > 1700)
+                        
+                                    {
+                                    basicColor= basicColorFactory!.GREEN
+
+                                    }
+                                
+                             else 
+    
+                        if(thirdTemp > 1200)
+                        
+                                    {
+                                    basicColor= basicColorFactory!.YELLOW
+
+                                    }
+                                
+                             else 
+    
+                        if(thirdTemp > 700)
+                        
+                                    {
+                                    basicColor= basicColorFactory!.ORANGE
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return basicColor;
+    
+}
+
+
+}
+                
+            
+

@@ -1,0 +1,53 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { Input } from "../../../../../org/allbinary/game/input/Input.js";
+
+    
+import { InputFactory } from "../../../../../org/allbinary/game/input/InputFactory.js";
+
+    
+
+export class MotionGestureInput extends Input {
+        
+public constructor (id: number, name: string)                        
+
+                            : super(id, name){
+
+            super();
+            var id = id
+var name = name
+
+
+                            //For kotlin this is before the body of the constructor.
+                    
+
+    var inputFactory: InputFactory = InputFactory.getInstance()!;
+        
+        
+
+add(this.getId(), this)
+}
+
+
+}
+                
+            
+

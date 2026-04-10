@@ -1,0 +1,91 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { HashMap } from "../../../../java/util/HashMap.js";
+
+    
+import { AbPathData } from "../../../../org/allbinary/logic/io/path/AbPathData.js";
+
+    
+import { CommonPhoneStrings } from "../../../../org/allbinary/string/CommonPhoneStrings.js";
+
+    
+import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
+
+    
+
+export class SpecialCharacterUtil
+            extends Object
+         {
+        
+
+    public static getHashMap(): HashMap<Any, Any>{
+
+    var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
+        
+        
+
+
+    var stringUtil: StringUtil = StringUtil.getInstance()!;
+        
+        
+
+
+    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+        
+        
+
+put("!", stringUtil!.EMPTY_STRING)
+put("@", stringUtil!.EMPTY_STRING)
+put(commonPhoneStrings!.POUND, stringUtil!.EMPTY_STRING)
+put("$", stringUtil!.EMPTY_STRING)
+put("%", stringUtil!.EMPTY_STRING)
+put("^", stringUtil!.EMPTY_STRING)
+put(CommonSeps.getInstance()!.AMPERSAND, stringUtil!.EMPTY_STRING)
+put(commonPhoneStrings!.STAR, stringUtil!.EMPTY_STRING)
+put("(", stringUtil!.EMPTY_STRING)
+put(")", stringUtil!.EMPTY_STRING)
+put("-", stringUtil!.EMPTY_STRING)
+put("_", stringUtil!.EMPTY_STRING)
+put("+", stringUtil!.EMPTY_STRING)
+put("=", stringUtil!.EMPTY_STRING)
+put("\\", stringUtil!.EMPTY_STRING)
+put("|", stringUtil!.EMPTY_STRING)
+put(AbPathData.getInstance()!.EXTENSION_SEP, stringUtil!.EMPTY_STRING)
+put(",", stringUtil!.EMPTY_STRING)
+put("<", stringUtil!.EMPTY_STRING)
+put(">", stringUtil!.EMPTY_STRING)
+put("?", stringUtil!.EMPTY_STRING)
+put(AbPathData.getInstance()!.SEPARATOR, stringUtil!.EMPTY_STRING)
+put("~", stringUtil!.EMPTY_STRING)
+put("`", stringUtil!.EMPTY_STRING)
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return hashMap;
+    
+}
+
+
+}
+                
+            
+

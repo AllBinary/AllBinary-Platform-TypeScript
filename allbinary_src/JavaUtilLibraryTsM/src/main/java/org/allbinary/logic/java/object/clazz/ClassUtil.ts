@@ -1,0 +1,139 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { ConstructorUtil } from "../../../../../../org/allbinary/logic/java/anyType/ConstructorUtil.js";
+
+    
+import { InterfaceUtil } from "../../../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js";
+
+    
+import { MethodUtil } from "../../../../../../org/allbinary/logic/java/anyType/MethodUtil.js";
+
+    
+import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+
+    
+
+export class ClassUtil
+            extends Object
+         {
+        
+
+    public static viewAll(anyType: any = {}, lineBreak: string): string{
+var anyType = anyType
+var lineBreak = lineBreak
+
+    
+                        if(anyType != 
+                                    null
+                                )
+                        
+                                    {
+                                    
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return ClassUtil.viewAll(anyType!::class, lineBreak);
+    
+
+                                    }
+                                
+                             else 
+    
+                        if()
+                        
+}
+
+
+    public static viewAll(myClass: KClass<*>, lineBreak: string): string{
+var myClass = myClass
+var lineBreak = lineBreak
+
+    
+                        if(myClass != 
+                                    null
+                                )
+                        
+                                    {
+                                    
+    var stringBuffer: StringMaker = new StringMaker();
+        
+        
+
+
+    var classes: KClass<*>[] = myClass!.getClasses()!;
+        
+        
+
+append(lineBreak)
+append("Class: ")
+append(myClass!.toString()!)
+append(" uses ")
+appendint(classes.length)
+append(" other classes")
+append(lineBreak)
+append(lineBreak)
+append("Classes: ")
+append(lineBreak)
+
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < classes.length; index++)
+        {
+append("Class: ")
+append(classes[index]!.getName())
+append(lineBreak)
+}
+
+append(InterfaceUtil.viewAll(myClass::class.java, lineBreak))
+append(lineBreak)
+append(ConstructorUtil.viewAll(myClass::class.java, lineBreak))
+append(lineBreak)
+append(MethodUtil.viewAll(myClass::class.java, lineBreak))
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return stringBuffer!.toString();
+    
+
+                                    }
+                                
+                             else 
+    
+                        if()
+                        
+}
+
+private constructor (){
+
+            super();
+            }
+
+
+}
+                
+            
+

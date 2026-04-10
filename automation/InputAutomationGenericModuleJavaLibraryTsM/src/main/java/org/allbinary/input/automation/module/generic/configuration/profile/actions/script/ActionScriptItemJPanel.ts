@@ -1,0 +1,154 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+
+export class ActionScriptItemJPanel extends javax.swing.JPanel {
+        
+public constructor (){
+
+            super();
+            initComponents()
+}
+
+
+    public getNewActionScriptInputJPanel(): javax.swing.JPanel{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return newActionScriptInputJPanel;
+    
+}
+
+
+    public setNewActionScriptInputJPanel(newActionScriptInputJPanel: javax.swing.JPanel){
+var newActionScriptInputJPanel = newActionScriptInputJPanel
+this.newActionScriptInputJPanel= newActionScriptInputJPanel
+}
+
+
+    public getRemoveJPanel(): javax.swing.JPanel{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return removeJPanel;
+    
+}
+
+
+    public setRemoveJPanel(removeJPanel: javax.swing.JPanel){
+var removeJPanel = removeJPanel
+this.removeJPanel= removeJPanel
+}
+
+
+    public getScriptItemJPanel(): javax.swing.JPanel{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return scriptItemJPanel;
+    
+}
+
+
+    public setScriptItemJPanel(scriptItemJPanel: javax.swing.JPanel){
+var scriptItemJPanel = scriptItemJPanel
+this.scriptItemJPanel= scriptItemJPanel
+}
+
+
+    public getNewActionScriptConditionJPanel(): javax.swing.JPanel{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return newActionScriptConditionJPanel;
+    
+}
+
+
+    public setNewActionScriptConditionJPanel(newActionScriptConditionJPanel: javax.swing.JPanel){
+var newActionScriptConditionJPanel = newActionScriptConditionJPanel
+this.newActionScriptConditionJPanel= newActionScriptConditionJPanel
+}
+
+
+    public getChildActionScriptConditionJPanel(): javax.swing.JPanel{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return childActionScriptConditionJPanel;
+    
+}
+
+
+    public setChildActionScriptConditionJPanel(childActionScriptConditionJPanel: javax.swing.JPanel){
+var childActionScriptConditionJPanel = childActionScriptConditionJPanel
+this.childActionScriptConditionJPanel= childActionScriptConditionJPanel
+}
+
+
+    initComponents(){
+newActionScriptInputJPanel= javax.swing.JPanel()
+childActionScriptConditionJPanel= javax.swing.JPanel()
+newActionScriptConditionJPanel= javax.swing.JPanel()
+scriptItemJPanel= javax.swing.JPanel()
+removeJPanel= javax.swing.JPanel()
+setLayout(java.awt.GridLayout(1, 0))
+
+    var childActionScriptConditionJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(childActionScriptConditionJPanel);
+        
+        
+
+setLayout(childActionScriptConditionJPanelLayout)
+setHorizontalGroup(childActionScriptConditionJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 229, Short.MAX_VALUE))
+setVerticalGroup(childActionScriptConditionJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 8, Short.MAX_VALUE))
+setLayout(java.awt.GridLayout(1, 0))
+setLayout(java.awt.GridLayout(1, 1))
+setLayout(java.awt.GridLayout(1, 1))
+setMinimumSize(java.awt.Dimension(30, 20))
+
+    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
+        
+        
+
+this.setLayout(layout)
+setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(scriptItemJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(removeJPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE))!.addComponent(newActionScriptInputJPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 229, Short.MAX_VALUE)!.addComponent(newActionScriptConditionJPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 229, Short.MAX_VALUE)!.addComponent(childActionScriptConditionJPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(scriptItemJPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)!.addComponent(removeJPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(childActionScriptConditionJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(newActionScriptConditionJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(newActionScriptInputJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+}
+
+
+    private childActionScriptConditionJPanel: javax.swing.JPanel
+
+    private newActionScriptConditionJPanel: javax.swing.JPanel
+
+    private newActionScriptInputJPanel: javax.swing.JPanel
+
+    private removeJPanel: javax.swing.JPanel
+
+    private scriptItemJPanel: javax.swing.JPanel
+
+}
+                
+            
+

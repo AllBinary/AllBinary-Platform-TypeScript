@@ -1,0 +1,211 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
+
+    
+import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+
+    
+import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+
+    
+import { J2SEImmutableImage } from "../../../../org/microemu/device/j2se/J2SEImmutableImage.js";
+
+    
+import { J2SEMutableImage } from "../../../../org/microemu/device/j2se/J2SEMutableImage.js";
+
+    
+
+export class ImageRotationUtil
+            extends Object
+         {
+        
+
+    private static readonly instance: ImageRotationUtil = new ImageRotationUtil();
+        
+        
+
+    public static getInstance(): ImageRotationUtil{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return instance;
+    
+}
+
+
+    private readonly imageJ2SERotationUtil: ImageJ2SERotationUtil = ImageJ2SERotationUtil.getInstance()!;
+        
+        
+private constructor (){
+
+            super();
+            }
+
+
+    public rotateImage(originalImage: Image, image: Image, totalAngle: number){
+    //var originalImage = originalImage
+    //var image = image
+    //var totalAngle = totalAngle
+
+    
+                        if(image.isMutable())
+                        
+                                    {
+                                    
+    var j2seImage: J2SEMutableImage = image as J2SEMutableImage;
+        
+        
+
+
+    var newBufferedImage: BufferedImage = j2seImage!.getImage() as BufferedImage;
+        
+        
+
+
+    var originalAwtImage: java.awt.Image = 
+                null
+            ;
+        
+        
+
+
+    
+                        if(originalImage!.isMutable())
+                        
+                                    {
+                                    
+    var originalJ2SEImage: J2SEMutableImage = originalImage as J2SEMutableImage;
+        
+        
+
+originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image
+
+                                    }
+                                
+                        else {
+                            
+    var originalJ2SEImage: J2SEImmutableImage = originalImage as J2SEImmutableImage;
+        
+        
+
+originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image
+
+                        }
+                            
+rotateImage(originalAwtImage, newBufferedImage, totalAngle)
+
+                                    }
+                                
+                        else {
+                            put("Not Mutable", this, "getRotatedImage", Exception())
+
+                        }
+                            
+}
+
+
+                @Throws(Exception::class)
+            
+    public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
+var originalImage = originalImage
+var rotationInDegrees = rotationInDegrees
+
+    var image: Image = ImageCreationUtil.getInstance()!.getInstance(originalImage!.getWidth(), originalImage!.getHeight())!;
+        
+        
+
+
+    
+                        if(image.isMutable())
+                        
+                                    {
+                                    
+    var originalAwtImage: java.awt.Image = 
+                null
+            ;
+        
+        
+
+
+    
+                        if(originalImage!.isMutable())
+                        
+                                    {
+                                    
+    var originalJ2SEImage: J2SEMutableImage = originalImage as J2SEMutableImage;
+        
+        
+
+originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image
+
+                                    }
+                                
+                        else {
+                            
+    var originalJ2SEImage: J2SEImmutableImage = originalImage as J2SEImmutableImage;
+        
+        
+
+originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image
+
+                        }
+                            
+
+    var j2seImage: J2SEMutableImage = image as J2SEMutableImage;
+        
+        
+
+
+    var newBufferedImage: BufferedImage = j2seImage!.getImage() as BufferedImage;
+        
+        
+
+
+    var bufferedImage: BufferedImage = imageJ2SERotationUtil!.getRotatedImage(originalAwtImage, newBufferedImage, rotationInDegrees)!;
+        
+        
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return image;
+    
+
+                                    }
+                                
+                        else {
+                            
+
+
+                            throw Exception("Not Mutable")
+
+                        }
+                            
+}
+
+
+}
+                
+            
+

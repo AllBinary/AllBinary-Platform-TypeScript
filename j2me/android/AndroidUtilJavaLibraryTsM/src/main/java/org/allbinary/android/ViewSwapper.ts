@@ -1,0 +1,153 @@
+
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { Activity } from "../../../android/app/Activity.js";
+
+    
+import { View } from "../../../android/view/View.js";
+
+    
+import { ViewGroup } from "../../../android/view/ViewGroup.js";
+
+    
+
+export class ViewSwapper
+            extends Object
+         {
+        
+
+    public static readonly NULL_VIEW_ARRAY: View[] = new Array(0);
+        
+        
+
+    private readonly rootViewId: number
+
+    private readonly activity: Activity
+
+    private currentMainViewId: number =  -1;
+        
+        
+
+    private mainViewArray: View[] = NULL_VIEW_ARRAY;
+        
+        
+
+    private topViewArray: View[] = NULL_VIEW_ARRAY;
+        
+        
+public constructor (activity: Activity, rootViewId: number){
+
+            super();
+            var activity = activity
+var rootViewId = rootViewId
+this.activity= activity
+this.rootViewId= rootViewId
+}
+
+
+    public setMainViews(viewArray: View[]){
+var viewArray = viewArray
+this.mainViewArray= viewArray
+}
+
+
+    public setTopViewArray(topViewArray: View[]){
+var topViewArray = topViewArray
+this.topViewArray= topViewArray
+}
+
+
+    public setMainView(id: number){
+var id = id
+
+    var viewGroup: ViewGroup = this.activity.findViewById(rootViewId) as ViewGroup;
+        
+        
+
+
+    
+                        if(id != this.currentMainViewId)
+                        
+                                    {
+                                    
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < this.topViewArray!.length; index++)
+        {
+removeView(this.topViewArray[index]!)
+}
+
+
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < this.mainViewArray!.length; index++)
+        {
+
+    
+                        if(id != this.mainViewArray[index]!.getId())
+                        
+                                    {
+                                    removeView(this.mainViewArray[index]!)
+
+                                    }
+                                
+}
+
+
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < this.mainViewArray!.length; index++)
+        {
+
+    
+                        if(id == this.mainViewArray[index]!.getId())
+                        
+                                    {
+                                    addView(this.mainViewArray[index]!)
+this.currentMainViewId= id
+
+                                    }
+                                
+}
+
+
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < this.topViewArray!.length; index++)
+        {
+addView(this.topViewArray[index]!)
+}
+
+
+                                    }
+                                
+}
+
+
+}
+                
+            
+

@@ -1,0 +1,151 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { Transformer } from "../../../../../../javax/xml/transform/Transformer.js";
+
+    
+import { TransformerFactory } from "../../../../../../javax/xml/transform/TransformerFactory.js";
+
+    
+import { DOMSource } from "../../../../../../javax/xml/transform/dom/DOMSource.js";
+
+    
+import { StreamResult } from "../../../../../../javax/xml/transform/stream/StreamResult.js";
+
+    
+import { AbDataOutputStream } from "../../../../../../org/allbinary/logic/io/AbDataOutputStream.js";
+
+    
+import { AbFileInputStream } from "../../../../../../org/allbinary/logic/io/AbFileInputStream.js";
+
+    
+import { DataOutputStreamFactory } from "../../../../../../org/allbinary/logic/io/DataOutputStreamFactory.js";
+
+    
+import { StreamUtil } from "../../../../../../org/allbinary/logic/io/StreamUtil.js";
+
+    
+import { AbFile } from "../../../../../../org/allbinary/logic/io/file/AbFile.js";
+
+    
+import { Document } from "../../../../../../org/w3c/dom/Document.js";
+
+    
+
+export class DomDocumentFileHelper
+            extends Object
+         {
+        
+
+                @Throws(Exception::class)
+            
+    public static create(xmlFile: AbFile): Document{
+var xmlFile = xmlFile
+
+        try {
+            
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return DomDocumentHelper.create(AbFileInputStream(xmlFile));
+    
+} catch(e: Exception)
+            {
+
+
+
+                            throw e
+}
+
+}
+
+
+                @Throws(Exception::class)
+            
+    public static save(file: AbFile, document: Document){
+var file = file
+var document = document
+
+    var dataOutputStream: AbDataOutputStream = 
+                null
+            ;
+        
+        
+
+
+        try {
+            
+    var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;
+        
+        
+
+
+    var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;
+        
+        
+
+
+    var domSource: DOMSource = new DOMSource(document);
+        
+        
+
+
+    
+                        if(file.isFile())
+                        
+                                    {
+                                    delete()
+
+                                    }
+                                
+createNewFile()
+dataOutputStream= DataOutputStreamFactory.getInstance()!.getInstance(file)
+
+    var streamResult: StreamResult = new StreamResult(dataOutputStream);
+        
+        
+
+transform(domSource, streamResult)
+flush()
+} catch(e: Exception)
+            {
+
+
+
+                            throw e
+}
+
+         finally {
+            close(dataOutputStream)
+
+         }
+        
+}
+
+private constructor (){
+
+            super();
+            }
+
+
+}
+                
+            
+

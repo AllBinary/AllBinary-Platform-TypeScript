@@ -1,0 +1,209 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
+
+    
+import { Vector } from "../../../../../../../../../java/util/Vector.js";
+
+    
+import { StoreFrontInterface } from "../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
+
+    
+import { OrderHistoryInterface } from "../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryInterface.js";
+
+    
+import { Money } from "../../../../../../../../../org/allbinary/business/user/commerce/money/Money.js";
+
+    
+import { OrderHistoryEntityFactory } from "../../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityFactory.js";
+
+    
+import { OrderHistoryEntityInterface } from "../../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityInterface.js";
+
+    
+
+export class StoreFrontOrdersHistoryStatistics
+            extends Object
+        
+                , StoreFrontOrdersHistoryStatisticsInterface {
+        
+
+    private numberOfOrdersLong: Long
+
+    private subTotalMoney: Money
+
+    private shippingCostMoney: Money
+
+    private taxesMoney: Money
+
+    private totalMoney: Money
+public constructor (storeFrontInterface: StoreFrontInterface){
+
+            super();
+            var storeFrontInterface = storeFrontInterface
+this.subTotalMoney= Money()
+this.shippingCostMoney= Money()
+this.taxesMoney= Money()
+this.totalMoney= Money()
+
+    var orderHistoryEntityInterface: OrderHistoryEntityInterface = OrderHistoryEntityFactory.getInstance()!;
+        
+        
+
+
+    var orderHistoryInterfaceVector: Vector = orderHistoryEntityInterface!.getStoreOrders(storeFrontInterface)!;
+        
+        
+
+
+    var numberOfOrders: number = 0;
+        
+        
+
+
+    var orderHistoryInterface: OrderHistoryInterface
+
+
+    var size: number = orderHistoryInterfaceVector!.length!;
+        
+        
+
+
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < size; index++)
+        {
+orderHistoryInterface= orderHistoryInterfaceVector!.get(index) as OrderHistoryInterface
+numberOfOrders= numberOfOrders +1
+add(orderHistoryInterface!.getSubTotal())
+add(orderHistoryInterface!.getShippingCost())
+add(orderHistoryInterface!.getTaxes())
+add(orderHistoryInterface!.getTotal())
+}
+
+this.numberOfOrdersLong= numberOfOrders as Long
+}
+
+
+    public getNumberOfOrders(): Long{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.numberOfOrdersLong;
+    
+}
+
+
+    public getSubTotal(): Money{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.subTotalMoney;
+    
+}
+
+
+    public getShippingCost(): Money{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.shippingCostMoney;
+    
+}
+
+
+    public getTaxes(): Money{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.taxesMoney;
+    
+}
+
+
+    public getTotal(): Money{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.totalMoney;
+    
+}
+
+
+    public toHashMap(): HashMap<Any, Any>{
+
+    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+        
+        
+
+
+    var storeFrontOrdersHistoryStatisticsData: StoreFrontOrdersHistoryStatisticsData = StoreFrontOrdersHistoryStatisticsData.getInstance()!;
+        
+        
+
+put(storeFrontOrdersHistoryStatisticsData!.NUMBEROFORDERS, this.getNumberOfOrders()!.toString())
+put(storeFrontOrdersHistoryStatisticsData!.SUBTOTAL, this.getSubTotal()!.toString())
+put(storeFrontOrdersHistoryStatisticsData!.SHIPPINGCOST, this.getShippingCost()!.toString())
+put(storeFrontOrdersHistoryStatisticsData!.TAXES, this.getTaxes()!.toString())
+put(storeFrontOrdersHistoryStatisticsData!.TOTAL, this.getTotal()!.toString())
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return hashMap;
+    
+}
+
+
+    public toVector(): Vector{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return null;
+    
+}
+
+
+    public getKey(): any = {}{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return null;
+    
+}
+
+
+}
+                
+            
+

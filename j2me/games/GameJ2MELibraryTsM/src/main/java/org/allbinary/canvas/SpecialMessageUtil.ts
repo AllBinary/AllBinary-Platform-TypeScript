@@ -1,0 +1,93 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { Features } from "../../../org/allbinary/game/configuration/feature/Features.js";
+
+    
+import { OpenGLFeatureFactory } from "../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js";
+
+    
+import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+
+    
+import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
+
+    
+import { Memory } from "../../../org/allbinary/system/Memory.js";
+
+    
+
+export class SpecialMessageUtil
+            extends Object
+         {
+        
+
+    private static readonly SINGLETON: SpecialMessageUtil = new SpecialMessageUtil();
+        
+        
+
+    public static getInstance(): SpecialMessageUtil{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return SINGLETON;
+    
+}
+
+
+    public get(): string{
+
+    var stringBuffer: StringMaker = new StringMaker();
+        
+        
+
+append(Memory.getInfo())
+append(CommonSeps.getInstance()!.SPACE)
+append(GameStatisticsFactory.getInstance()!.toString())
+append(CommonSeps.getInstance()!.SPACE)
+append(" Option: ")
+
+    
+                        if(Features.getInstance()!.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL_AUTO_SELECT))
+                        
+                                    {
+                                    append(OpenGLFeatureFactory.getInstance()!.OPENGL_AUTO_SELECT.getName())
+
+                                    }
+                                
+                        else {
+                            append(OpenGLFeatureFactory.getInstance()!.OPENGL_MINIMUM.getName())
+
+                        }
+                            
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return stringBuffer!.toString();
+    
+}
+
+
+}
+                
+            
+

@@ -1,0 +1,193 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.allbinary</groupId>
+  <artifactId>GameJ2MELibraryPOMTs</artifactId>
+  <packaging>pom</packaging>
+  <!-- AllBinary Platform Version Start -->
+  <version>1.0.0-SNAPSHOT</version>
+  <!-- AllBinary Platform Version End -->
+
+  <name>GameJ2MELibraryPOMTs</name>
+  <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+
+        <!--
+        NoGyroSensorLibrary
+
+        -->
+
+        <module>../../../allbinary_src/security/SimpleCryptLibraryTsM</module>
+        <!--
+        <module>../../../../working_thirdparty/security/BouncyCastleDESJavaLibraryTsM</module>
+        <module>../../../../working_thirdparty/communication/XmlRpc/XmlRpcJavaLibraryTsM</module>
+        -->
+        <module>../../../allbinary_src/TokenizerJavaLibraryTsM</module>
+        <module>../../../allbinary_src/security/BasicSecurityJavaLibraryTsM</module>
+        <module>../../../replace_these_stub_projects/security/YourCryptFileJavaLibraryTsM</module>
+        <module>../../../replace_these_stub_projects/security/YourSecurityJavaLibraryTsM</module>
+        <module>../../../replace_these_stub_projects/communication/YourXmlRpcJavaLibraryTsM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MEOnlyJavaLibraryTsM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MECompatibilityJavaLibraryTsM</module>
+
+        <module>../../DebugJavaLibraryTsM</module>             
+        <module>../../ResourceLibraryTsM</module>
+        <module>../../ResourceJ2MEJavaLibraryTsM</module>
+        <module>../../AndroidResourceLibraryTsM</module>
+        <module>../../../allbinary_src/hardware/AndroidSystemJavaLibraryTsM</module>
+
+        <module>../../../game/behavior/ArtificialIntelligenceLibraryTsM</module>
+
+        <module>../../media/graphics/PlatformNullImageJavaLibraryTsM</module>
+        <module>../../media/graphics/ImageCacheBaseJavaLibraryTsM</module>
+        <module>../../media/graphics/ImageCacheJ2MEJavaLibraryTsM</module>
+        <module>../../../graphics/opengl/OpenGLJ2MENoneJavaLibraryTsM</module>
+        <module>../../../graphics/opengl/OpenGLNoneJavaLibraryTsM</module>
+        <module>../../../graphics/opengl/OpenGLNoneOtherJavaLibraryTsM</module>
+        <module>../../../graphics/opengl/OpenGLESBaseJ2MEJavaLibraryTsM</module>
+
+        <module>../../media/graphics/animation/AnimationLibraryTsM</module>
+        <module>../../media/graphics/animation/RotationAnimationJavaLibraryTsM</module>
+
+        <module>../../games/GameInputLibraryTsM</module>
+
+        <module>../../games/GameScoresBaseJavaLibraryTsM</module>
+        <module>../../games/GameScoresBaseJ2MELibraryTsM</module>
+
+        <module>../../statistics/ApplicationStatisticsHTMLLibraryTsM</module>
+        <!--
+        <module>../../games/GameConfigurationHTMLJavaLibraryTsM</module>
+        -->
+        <module>../../games/GameConfigurationJ2MEJavaLibraryTsM</module>   
+        <module>../../games/GameConfigurationJavaLibraryTsM</module>
+
+        <module>../../games/GameIntermissionLibraryTsM</module>
+
+        <module>../../GroupLibraryTsM</module>
+
+        <module>../../input/NoSensorJavaLibraryTsM</module>
+
+        <module>../../input/AllBinarySensorJavaLibraryTsM</module>
+
+        <module>../../input/platform/me/GameInputMEJavaLibraryTsM</module>
+        <module>../../input/platform/me/GameInputMEKeyOnlyJavaLibraryTsM</module>
+        <module>../../input/platform/me/GameInputMEMotionJavaLibraryTsM</module>
+        <module>../../input/platform/pc/GameInputPCJavaLibraryTsM</module>
+        <module>../../input/platform/pc/GameInputPCKeyOnlyJavaLibraryTsM</module>
+        <module>../../input/platform/pc/GameInputPCMotionJavaLibraryTsM</module>
+        <module>../../input/platform/pc/GameInputSwtJavaLibraryTsM</module>
+
+        <module>../../input/AllBinaryGyroSensorJavaLibraryTsM</module>
+        <module>../../input/MotionGestureJavaLibraryTsM</module>
+        
+        <module>../../input/MotionGestureBaseJavaLibraryTsM</module>
+
+        <module>../../games/GameInputPersistanceLibraryTsM</module>
+        <module>../../games/GameInputNoPersistanceLibraryTsM</module>
+        
+        <module>../../lib/VectorThreeDimensionalLibraryTsM</module>
+        <module>../../input/AllBinaryAccelerometerSensorJavaLibraryTsM</module>
+        <module>../../input/NoGyroSensorJavaLibraryTsM</module>
+        <module>../../input/JSEGyroSensorJavaLibraryTsM</module>
+        <!--
+        <module>../../input/android/</module>
+        <module>../../input/platform/android/GameInputAndroidBaseJavaLibraryTsM</module>
+        -->
+
+        <module>../../media/sound/BasicPlayerJavaLibraryTsM</module>
+        <module>../../media/sound/BasicPlayerMIDP2JavaLibraryTsM</module>
+        <module>../../media/sound/NoPlayerJavaLibraryTsM</module>
+        <module>../../media/sound/SoundJ2MELibraryTsM</module>
+
+        <module>../../media/motion/AllBinaryVibrationJavaLibraryTsM</module>
+        <module>../../media/motion/NoVibrateJavaLibraryTsM</module>
+        <module>../../media/motion/VibrateAndroidJavaLibraryTsM</module>
+
+        <module>../../media/graphics/NullCustomUIJavaLibraryTsM</module>
+        <module>../../media/graphics/NullCustomUIBaseJavaLibraryTsM</module>
+
+        <module>../../media/graphics/FormValidationJavaLibraryTsM</module>
+        
+        <module>../../media/graphics/FormJavaLibraryTsM</module>
+        <module>../../media/graphics/FormBaseJavaLibraryTsM</module>
+        <!--
+        <module>../../media/graphics/FormJMEJavaLibraryTsM</module>
+        -->
+        <module>../../../j2me/media/graphics/FormJMEJavaLibraryTsM</module>
+
+        <module>../../media/graphics/animation/AnimationResourceJavaLibraryTsM</module>
+        <module>../../media/graphics/animation/TransitionAnimationJavaLibraryTsM</module>
+        <module>../../media/graphics/animation/NoTransitionAnimationJavaLibraryTsM</module>
+        <!--
+        AndroidTransitionAnimationJavaLibraryM
+        -->
+        <module>../../media/graphics/animation/GameAnimationJavaLibraryTsM</module>
+        <module>../../games/GameResourceJavaLibraryTsM</module>
+        <module>../../games/GameSoundsJavaLibraryTsM</module>
+
+        <module>../../input/TouchInputLibraryTsP</module>
+
+        <module>../../media/MediaDataTsM</module>
+        <module>../../media/sound/NotDeviceSpecificNoMediaMIDP1LibraryTsM</module>
+
+        <module>../../../allbinary_src/content/ContentNoneJavaLibraryTsM</module>
+        <module>../../../allbinary_src/content/ContentAndroidJavaLibraryTsM</module>
+
+        <module>../../games/GameConfigurationFormJavaLibraryTsM</module>
+
+        <module>../../FullScreenNoneJavaLibraryTsM</module>
+        <!--
+        <module>../../FullScreenJavaLibraryTsM</module>
+        -->
+
+        <module>../../lib/Basic2DVectorLibraryTsM</module>
+
+        <module>../../../physics/VelocityLibraryTsM</module>
+
+        <module>../../games/weapon/SoundsBasicWeaponsJavaLibraryTsM</module>
+
+        <module>../../lib/TrigJ2MELibraryTsM</module>
+
+        <module>../../media/graphics/geography/map/LayerPlacementLibraryTsM</module>
+        <module>../../media/graphics/layer/AllBinaryLayerJavaLibraryTsM</module>
+
+        <module>../../ScreenCaptureNoneJavaLibraryTsM</module>
+        
+        <module>../licensing/GameLicensingNullJavaLibraryTsM</module>
+        
+        <module>../../business/advertisement/AllBinaryAdvertisementClientJavaLibraryTsM</module>
+        <module>../../business/advertisement/AdvertisementClientNoneJavaLibraryTsM</module>
+
+        <module>../GameNotificationJavaLibraryTsM</module>
+
+        <module>../../../graphics/opengl/NoSWTJavaLibraryTsM</module>
+        <module>../../../graphics/opengl/SWTWithoutJOGLJavaLibraryTsM</module>
+        <module>../SWTJavaLibraryTsM</module>
+        <module>../GameJ2MELibraryTsM</module>
+        
+        <!--
+        <module>../GameJ2MEOptionalLibraryPOTsM</module>
+        -->
+    
+    </modules>
+
+</project>
+

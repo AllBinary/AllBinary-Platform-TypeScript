@@ -1,0 +1,51 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { GameFeature } from "../../../../../../../org/allbinary/game/configuration/feature/GameFeature.js";
+
+    
+
+export class RaceTrackGameFeature extends GameFeature {
+        
+
+    public static readonly MINI_MAP: GameFeature = new RaceTrackGameFeature("Mini Map");
+        
+        
+
+    public static readonly AUTO_FINISH_AI: GameFeature = new RaceTrackGameFeature("Auto Finish AI");
+        
+        
+protected constructor (name: string)                        
+
+                            : super(name){
+
+            super();
+            var name = name
+
+
+                            //For kotlin this is before the body of the constructor.
+                    
+}
+
+
+}
+                
+            
+

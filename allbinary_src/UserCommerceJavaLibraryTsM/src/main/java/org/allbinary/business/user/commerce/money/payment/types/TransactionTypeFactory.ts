@@ -1,0 +1,68 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+
+export class TransactionTypeFactory
+            extends Object
+         {
+        
+
+    private static readonly instance: TransactionTypeFactory = new TransactionTypeFactory();
+        
+        
+
+    public static getInstance(): TransactionTypeFactory{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return instance;
+    
+}
+
+
+    public readonly SALE: TransactionType = new TransactionType("Sale");
+        
+        
+
+    public readonly CREDIT: TransactionType = new TransactionType("Credit");
+        
+        
+
+    public readonly AUTHORIZATION: TransactionType = new TransactionType("Authorization");
+        
+        
+
+    public readonly DELAYEDCAPTURE: TransactionType = new TransactionType("Delayed Capture");
+        
+        
+
+    public readonly VOID: TransactionType = new TransactionType("Void");
+        
+        
+
+    public readonly INQUIRY: TransactionType = new TransactionType("Inquiry");
+        
+        
+
+}
+                
+            
+

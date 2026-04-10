@@ -1,0 +1,63 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { AllBinaryEventObject } from "../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+
+    
+
+export class ImageComparisonSearchResultsEvent extends AllBinaryEventObject {
+        
+
+    private imageComparisonSearch: ImageComparisonSearch
+public constructor (anyType: any = {}, imageComparisonSearch: ImageComparisonSearch)                        
+
+                            : super(anyType){
+
+            super();
+            var anyType = anyType
+var imageComparisonSearch = imageComparisonSearch
+
+
+                            //For kotlin this is before the body of the constructor.
+                    
+this.setImageComparisonSearch(imageComparisonSearch)
+}
+
+
+    public getImageComparisonSearch(): ImageComparisonSearch{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return imageComparisonSearch;
+    
+}
+
+
+    setImageComparisonSearch(imageComparisonSearch: ImageComparisonSearch){
+var imageComparisonSearch = imageComparisonSearch
+this.imageComparisonSearch= imageComparisonSearch
+}
+
+
+}
+                
+            
+

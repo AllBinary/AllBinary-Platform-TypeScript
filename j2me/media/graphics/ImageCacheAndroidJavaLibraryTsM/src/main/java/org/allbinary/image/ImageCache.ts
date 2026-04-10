@@ -1,0 +1,257 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { InputStream } from "../../../java/io/InputStream.js";
+
+    
+import { Image } from "../../../javax/microedition/lcdui/Image.js";
+
+    
+import { NullCanvas } from "../../../javax/microedition/lcdui/NullCanvas.js";
+
+    
+import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+
+    
+import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+
+    
+import { ResourceUtil } from "../../../org/allbinary/data/resource/ResourceUtil.js";
+
+    
+import { GDResources } from "../../../org/allbinary/game/gd/resource/GDResources.js";
+
+    
+import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
+
+    
+import { Memory } from "../../../org/allbinary/system/Memory.js";
+
+    
+
+export class ImageCache extends ImageCacheBase {
+        
+
+    public static readonly NULL_IMAGE_CACHE: ImageCache = new ImageCache();
+        
+        
+
+    readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+        
+        
+public constructor (){
+
+            super();
+            }
+
+
+    public addListener(renderer: any = {}){
+var renderer = renderer
+}
+
+
+    public getIndex(key: any = {}): number{
+    //var key = key
+
+    var gdResources: GDResources = GDResources.getInstance()!;
+        
+        
+
+
+    var resourceStringArray: string[] = gdResources!.resourceStringArray;
+        
+        
+
+
+    var size: number = resourceStringArray!.length
+                ;
+        
+        
+
+
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < size; index++)
+        {
+
+    
+                        if(resourceStringArray[index] == key)
+                        
+                                    {
+                                    
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return index;
+    
+
+                                    }
+                                
+}
+
+put(StringMaker().
+                            append("unable to find key: ")!.append(StringUtil.getInstance()!.toString(key))!.toString(), this, commonStrings!.RUN)
+
+
+
+                            throw RuntimeException()
+}
+
+
+                @Throws(Exception::class)
+            
+    public get(caller: string, width: number, height: number): Image{
+    //var caller = caller
+    //var width = width
+    //var height = height
+
+    var foundIndex: number = this.getIndex(width, height)!;
+        
+        
+
+
+    var image: Image = this.getFromAvailable(foundIndex, width, height)!;
+        
+        
+
+
+    
+                        if(image == NullCanvas.NULL_IMAGE)
+                        
+                                    {
+                                    volume += width *height
+
+    
+                        if(volume > 32000)
+                        
+                                    {
+                                    gc()
+volume= 0
+
+                                    }
+                                
+image= this.createImage(caller, width, height)
+
+    
+                        if(foundIndex ==  -1)
+                        
+                                    {
+                                    foundIndex= nextIndex
+widths[nextIndex]= width
+heights[nextIndex]= height
+nextIndex++
+
+                                    }
+                                
+add(image)
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return image;
+    
+}
+
+
+                @Throws(Exception::class)
+            
+    public get(key: any = {}): Image{
+    //var key = key
+
+    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
+        
+        
+
+
+    var resourceId: Integer = resourceUtil!.getResourceId(key as String)!;
+        
+        
+
+
+    var image: Image = this.getImage(resourceId)!;
+        
+        
+
+
+    
+                        if(image == NullCanvas.NULL_IMAGE)
+                        
+                                    {
+                                    
+    var inputStream: InputStream = resourceUtil!.getResourceAsStream(key as String)!;
+        
+        
+
+
+        try {
+            put(Memory.getInfo(), this, commonStrings!.GET)
+image= this.createImage(key, inputStream)
+} catch(e: Exception)
+            {
+put("Exception: Trying Again After GC", this, commonStrings!.GET, e)
+put(StringMaker().
+                            append("InputStream: ")!.append(StringUtil.getInstance()!.toString(inputStream))!.toString(), this, commonStrings!.GET)
+gc()
+gc()
+put(Memory.getInfo(), this, commonStrings!.GET)
+sleep(100)
+image= this.createImage(key, inputStream)
+}
+
+close()
+put(resourceId, image)
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return image;
+    
+}
+
+
+    public runTask(){
+}
+
+
+    public isLazy(): boolean{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return false;
+    
+}
+
+
+}
+                
+            
+

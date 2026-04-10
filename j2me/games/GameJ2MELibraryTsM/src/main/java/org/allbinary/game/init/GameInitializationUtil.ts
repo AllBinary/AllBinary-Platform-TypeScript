@@ -1,0 +1,168 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { ChangedGameFeatureListener } from "../../../../org/allbinary/game/configuration/event/ChangedGameFeatureListener.js";
+
+    
+import { GameInitializedEvent } from "../../../../org/allbinary/game/configuration/event/GameInitializedEvent.js";
+
+    
+import { GameInitializedEventHandler } from "../../../../org/allbinary/game/configuration/event/GameInitializedEventHandler.js";
+
+    
+import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
+
+    
+import { MainFeatureFactory } from "../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js";
+
+    
+import { ResourceLoadingLevelFactory } from "../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js";
+
+    
+import { MyCanvas } from "../../../../org/allbinary/graphics/displayable/MyCanvas.js";
+
+    
+import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+
+    
+
+export class GameInitializationUtil
+            extends Object
+         {
+        
+
+    private static readonly instance: GameInitializationUtil = new GameInitializationUtil();
+        
+        
+
+    public static getInstance(): GameInitializationUtil{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return instance;
+    
+}
+
+
+    public readonly EVENT: GameInitializedEvent = new GameInitializedEvent(this);
+        
+        
+
+                @Throws(Exception::class)
+            
+    public initDemo(abeClientInformation: AbeClientInformationInterface, canvas: MyCanvas, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory){
+    //var abeClientInformation = abeClientInformation
+    //var canvas = canvas
+    //var gameInitializationInterfaceFactoryInterface = gameInitializationInterfaceFactoryInterface
+
+    var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;
+        
+        
+
+
+    
+                        if(ChangedGameFeatureListener.getInstance()!.isChanged(mainFeatureFactory!.STATIC))
+                        
+                                    {
+                                    
+    var gameInitializationInterface: GameInitializationInterface = gameInitializationInterfaceFactoryInterface!.getInstance()!;
+        
+        
+
+
+    var features: Features = Features.getInstance()!;
+        
+        
+
+
+    
+                        if(features.isFeature(mainFeatureFactory!.LOAD_ALL))
+                        
+                                    {
+                                    this.initGame(abeClientInformation, canvas, gameInitializationInterfaceFactoryInterface)
+
+                                    }
+                                
+                             else 
+    
+                        if(features.isFeature(mainFeatureFactory!.LOAD_ONDEMAND))
+                        
+                                    {
+                                    
+    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
+        
+        
+
+init(abeClientInformation, canvas.getCustomCommandListener(), resourceLoadingLevelFactory!.LOAD_EARLY.getLevel())
+setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_EARLY)
+
+                                    }
+                                
+                        else {
+                            
+
+
+                            throw Exception("No Loading Feature Available")
+
+                        }
+                            
+fireEvent(EVENT)
+
+                                    }
+                                
+}
+
+
+                @Throws(Exception::class)
+            
+    public initGame(abeClientInformation: AbeClientInformationInterface, canvas: MyCanvas, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory){
+    //var abeClientInformation = abeClientInformation
+    //var canvas = canvas
+    //var gameInitializationInterfaceFactoryInterface = gameInitializationInterfaceFactoryInterface
+
+    
+                        if(ChangedGameFeatureListener.getInstance()!.isChanged(MainFeatureFactory.getInstance()!.STATIC))
+                        
+                                    {
+                                    
+    var gameInitializationInterface: GameInitializationInterface = gameInitializationInterfaceFactoryInterface!.getInstance()!;
+        
+        
+
+
+    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
+        
+        
+
+init(abeClientInformation, canvas.getCustomCommandListener(), resourceLoadingLevelFactory!.LOAD_ALL.getLevel())
+setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_ALL)
+fireEvent(EVENT)
+remove(MainFeatureFactory.getInstance()!.STATIC)
+
+                                    }
+                                
+}
+
+
+}
+                
+            
+

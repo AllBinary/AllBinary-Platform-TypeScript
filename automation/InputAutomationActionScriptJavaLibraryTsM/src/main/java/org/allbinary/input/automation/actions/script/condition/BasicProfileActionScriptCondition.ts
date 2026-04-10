@@ -1,0 +1,667 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { ActionEvent } from "../../../../../../../java/awt/event/ActionEvent.js";
+
+    
+import { Vector } from "../../../../../../../java/util/Vector.js";
+
+    
+import { swing } from "../../../../../../../javax/swing.js";
+
+    
+import { TreePath } from "../../../../../../../javax/swing/tree/TreePath.js";
+
+    
+import { JTreeInterfaceFactory } from "../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterfaceFactory.js";
+
+    
+import { ProfileActionScriptItem } from "../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItem.js";
+
+    
+import { ProfileActionScriptNodeInterface } from "../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptNodeInterface.js";
+
+    
+import { ProfileActionScriptProcessorInterface } from "../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/ProfileActionScriptProcessorInterface.js";
+
+    
+import { GenericProfileActionScriptInputData } from "../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/GenericProfileActionScriptInputData.js";
+
+    
+import { KeyboardActionScriptInput } from "../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/KeyboardActionScriptInput.js";
+
+    
+import { MouseActionScriptInput } from "../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/MouseActionScriptInput.js";
+
+    
+import { ProfileActionScriptInputFactory } from "../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/ProfileActionScriptInputFactory.js";
+
+    
+import { GenericProfileActionScriptOutputData } from "../../../../../../../org/allbinary/input/automation/module/actions/script/condition/processors/output/GenericProfileActionScriptOutputData.js";
+
+    
+import { ImageActionScriptOutput } from "../../../../../../../org/allbinary/input/automation/module/actions/script/condition/processors/output/ImageActionScriptOutput.js";
+
+    
+import { ProfileActionScriptOutputFactory } from "../../../../../../../org/allbinary/input/automation/module/actions/script/condition/processors/output/ProfileActionScriptOutputFactory.js";
+
+    
+import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+
+    
+import { StringMaker } from "../../../../../../../org/allbinary/logic/string/StringMaker.js";
+
+    
+import { Document } from "../../../../../../../org/w3c/dom/Document.js";
+
+    
+import { Node } from "../../../../../../../org/w3c/dom/Node.js";
+
+    
+import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
+
+    
+
+export class BasicProfileActionScriptCondition extends ProfileActionScriptItem
+                , ProfileActionScriptConditionInterface {
+        
+
+    readonly logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+
+    private profileActionProcessorInterfaceVector: Vector
+
+    private profileActionConditionInterfaceVector: Vector
+public constructor (label: string, node: Node)                        
+
+                            : super(label, node){
+
+            super();
+            var label = label
+var node = node
+
+
+                            //For kotlin this is before the body of the constructor.
+                    
+this.init()
+
+    var nodeList: NodeList = node.getChildNodes()!;
+        
+        
+
+
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < nodeList!.getLength(); index++)
+        {
+
+    var actionItemNode: Node = nodeList!.item(index)!;
+        
+        
+
+
+    
+                        if(actionItemNode!.getNodeType() == Node.ELEMENT_NODE)
+                        
+                                    {
+                                    
+    
+                        if(actionItemNode!.getNodeName()!.compareTo(GenericProfileActionScriptConditionData.NAME) == 0)
+                        
+                                    {
+                                    this.addCondition(ProfileActionScriptConditionFactory.getInstance(actionItemNode))
+
+                                    }
+                                
+                             else 
+    
+                        if(actionItemNode!.getNodeName()!.compareTo(GenericProfileActionScriptInputData.NAME) == 0)
+                        
+                                    {
+                                    this.addProcessor(ProfileActionScriptInputFactory.getInstance(actionItemNode))
+
+                                    }
+                                
+                             else 
+    
+                        if(actionItemNode!.getNodeName()!.compareTo(GenericProfileActionScriptOutputData.NAME) == 0)
+                        
+                                    {
+                                    this.addProcessor(ProfileActionScriptOutputFactory.getInstance(actionItemNode))
+
+                                    }
+                                
+
+                                    }
+                                
+}
+
+}
+
+
+                @Throws(Exception::class)
+            
+    public addProcessorNodes(node: Node){
+var node = node
+
+    var nodeList: NodeList = node.getChildNodes()!;
+        
+        
+
+
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < nodeList!.getLength(); index++)
+        {
+
+    var processorActionItemNode: Node = nodeList!.item(index)!;
+        
+        
+
+
+    
+                        if(processorActionItemNode!.getNodeName()!.compareTo(GenericProfileActionScriptInputData.NAME) == 0)
+                        
+                                    {
+                                    this.addProcessor(ProfileActionScriptInputFactory.getInstance(processorActionItemNode))
+
+                                    }
+                                
+                             else 
+    
+                        if(processorActionItemNode!.getNodeName()!.compareTo(GenericProfileActionScriptOutputData.NAME) == 0)
+                        
+                                    {
+                                    this.addProcessor(ProfileActionScriptOutputFactory.getInstance(processorActionItemNode))
+
+                                    }
+                                
+}
+
+}
+
+public constructor (label: string)                        
+
+                            : super(label){
+
+            super();
+            var label = label
+
+
+                            //For kotlin this is before the body of the constructor.
+                    
+this.init()
+}
+
+
+    init(){
+this.setProfileActionProcessorInterfaceVector(Vector())
+this.setProfileActionConditionInterfaceVector(Vector())
+add(this.getConditionJPopupMenu())
+add(this.getInputJPopupMenu())
+add(this.getOutputJPopupMenu())
+}
+
+
+    getConditionJPopupMenu(): JMenu{
+
+    var jMenu: JMenu = new JMenu(NEW_CONDITION);
+        
+        
+
+
+    var jMenuItemColorAt: JMenuItem = new JMenuItem(NEW_COLOR_AT);
+        
+        
+
+
+    var jMenuItemAlways: JMenuItem = new JMenuItem(NEW_ALWAYS);
+        
+        
+
+
+    var jMenuItemTimeInterval: JMenuItem = new JMenuItem(NEW_TIME_INTERVAL);
+        
+        
+
+addActionListener(this)
+addActionListener(this)
+addActionListener(this)
+add(jMenuItemColorAt)
+add(jMenuItemAlways)
+add(jMenuItemTimeInterval)
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return jMenu;
+    
+}
+
+
+    getInputJPopupMenu(): JMenu{
+
+    var jMenu: JMenu = new JMenu(NEW_INPUT);
+        
+        
+
+
+    var jMenuItemKey: JMenuItem = new JMenuItem(NEW_KEY_INPUT);
+        
+        
+
+
+    var jMenuItemMouse: JMenuItem = new JMenuItem(NEW_MOUSE_INPUT);
+        
+        
+
+
+    var jMenuItemJoystick: JMenuItem = new JMenuItem(NEW_JOYSTICK_INPUT);
+        
+        
+
+addActionListener(this)
+addActionListener(this)
+addActionListener(this)
+add(jMenuItemKey)
+add(jMenuItemMouse)
+add(jMenuItemJoystick)
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return jMenu;
+    
+}
+
+
+    getOutputJPopupMenu(): JMenu{
+
+    var jMenu: JMenu = new JMenu(NEW_OUTPUT);
+        
+        
+
+
+    var jMenuItemImage: JMenuItem = new JMenuItem(NEW_IMAGE_OUTPUT);
+        
+        
+
+addActionListener(this)
+add(jMenuItemImage)
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return jMenu;
+    
+}
+
+
+    public addProcessor(profileActionProcessorInterface: ProfileActionScriptProcessorInterface){
+var profileActionProcessorInterface = profileActionProcessorInterface
+put(this.commonStrings!.START, this, "addInput")
+add(profileActionProcessorInterface)
+this.add(profileActionProcessorInterface)
+}
+
+
+    public removeProcessor(profileActionProcessorInterface: ProfileActionScriptProcessorInterface){
+var profileActionProcessorInterface = profileActionProcessorInterface
+put(this.commonStrings!.START, this, "removeInput")
+remove(profileActionProcessorInterface)
+this.remove(profileActionProcessorInterface)
+}
+
+
+    public removeCondition(profileActionScriptNodeInterface: ProfileActionScriptNodeInterface){
+var profileActionScriptNodeInterface = profileActionScriptNodeInterface
+put(this.commonStrings!.START, this, "removeCondition")
+remove(profileActionScriptNodeInterface)
+this.remove(profileActionScriptNodeInterface)
+}
+
+
+    public addCondition(profileActionScriptNodeInterface: ProfileActionScriptNodeInterface){
+var profileActionScriptNodeInterface = profileActionScriptNodeInterface
+put(this.commonStrings!.START, this, "addCondition")
+add(profileActionScriptNodeInterface)
+this.add(profileActionScriptNodeInterface)
+}
+
+
+                @Throws(Exception::class)
+            
+    public toXmlNode(document: Document): Node{
+var document = document
+
+    var node: Node = document.createElement(GenericProfileActionScriptConditionData.NAME)!;
+        
+        
+
+
+    var profileActionConditionInterfaceVector: Vector = this.getProfileActionConditionInterfaceVector()!;
+        
+        
+
+
+    var size: number = profileActionConditionInterfaceVector!.length!;
+        
+        
+
+
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < size; index++)
+        {
+
+    var profileActionConditionInterface: ProfileActionScriptConditionInterface = profileActionConditionInterfaceVector!.get(index) as ProfileActionScriptConditionInterface;
+        
+        
+
+appendChild(profileActionConditionInterface!.toXmlNode(document))
+}
+
+
+    var profileActionProcessorInterfaceVector: Vector = this.getProfileActionProcessorInterfaceVector()!;
+        
+        
+
+
+    var size2: number = profileActionProcessorInterfaceVector!.length!;
+        
+        
+
+
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < size2; index++)
+        {
+
+    var profileActionProcessorInterface: ProfileActionScriptProcessorInterface = profileActionProcessorInterfaceVector!.get(index) as ProfileActionScriptProcessorInterface;
+        
+        
+
+appendChild(profileActionProcessorInterface!.toXmlNode(document))
+}
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return node;
+    
+}
+
+
+    public getProfileActionConditionInterfaceVector(): Vector{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return profileActionConditionInterfaceVector;
+    
+}
+
+
+    public setProfileActionConditionInterfaceVector(profileActionConditionInterfaceVector: Vector){
+var profileActionConditionInterfaceVector = profileActionConditionInterfaceVector
+this.profileActionConditionInterfaceVector= profileActionConditionInterfaceVector
+}
+
+
+    public actionPerformed(actionEvent: ActionEvent){
+var actionEvent = actionEvent
+
+        try {
+            actionPerformed(actionEvent)
+
+    
+                        if(actionEvent!.getActionCommand()!.compareTo(DELETE) == 0)
+                        
+                                    {
+                                    
+    
+                        if(this.getParent() is ProfileActionScriptNodeInterface)
+                        
+                                    {
+                                    
+    var profileActionScriptNodeInterface: ProfileActionScriptNodeInterface = this.getParent() as ProfileActionScriptNodeInterface;
+        
+        
+
+removeCondition(this)
+updateJTree()
+
+                                    }
+                                
+
+                                    }
+                                
+                             else 
+    
+                        if(actionEvent!.getActionCommand()!.compareTo(NEW_COLOR_AT) == 0)
+                        
+                                    {
+                                    this.addCondition(ColorAtActionScriptCondition())
+this.updateTree()
+
+                                    }
+                                
+                             else 
+    
+                        if(actionEvent!.getActionCommand()!.compareTo(NEW_ALWAYS) == 0)
+                        
+                                    {
+                                    this.addCondition(AlwaysActionScriptCondition())
+this.updateTree()
+
+                                    }
+                                
+                             else 
+    
+                        if(actionEvent!.getActionCommand()!.compareTo(NEW_TIME_INTERVAL) == 0)
+                        
+                                    {
+                                    this.addCondition(TimeIntervalActionScriptCondition())
+this.updateTree()
+
+                                    }
+                                
+                             else 
+    
+                        if(actionEvent!.getActionCommand()!.compareTo(NEW_KEY_INPUT) == 0)
+                        
+                                    {
+                                    this.addProcessor(KeyboardActionScriptInput())
+this.updateTree()
+
+                                    }
+                                
+                             else 
+    
+                        if(actionEvent!.getActionCommand()!.compareTo(NEW_MOUSE_INPUT) == 0)
+                        
+                                    {
+                                    this.addProcessor(MouseActionScriptInput())
+this.updateTree()
+
+                                    }
+                                
+                             else 
+    
+                        if(actionEvent!.getActionCommand()!.compareTo(NEW_IMAGE_OUTPUT) == 0)
+                        
+                                    {
+                                    this.addProcessor(ImageActionScriptOutput())
+this.updateTree()
+
+                                    }
+                                
+} catch(e: Exception)
+            {
+put("Error", this, "actionPerformed", e)
+}
+
+}
+
+
+    public getProfileActionProcessorInterfaceVector(): Vector{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return profileActionProcessorInterfaceVector;
+    
+}
+
+
+    public setProfileActionProcessorInterfaceVector(profileActionProcessorInterfaceVector: Vector){
+var profileActionProcessorInterfaceVector = profileActionProcessorInterfaceVector
+this.profileActionProcessorInterfaceVector= profileActionProcessorInterfaceVector
+}
+
+
+    updateTree(){
+updateJTree()
+
+    var treePath: TreePath = new TreePath(this);
+        
+        
+
+expandPath(treePath)
+}
+
+
+                @Throws(Exception::class)
+            
+    public shouldProcess(frame: Long): boolean{
+var frame = frame
+
+    var profileActionConditionInterfaceVector: Vector = this.getProfileActionConditionInterfaceVector()!;
+        
+        
+
+
+    var size: number = profileActionConditionInterfaceVector!.length!;
+        
+        
+
+
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < size; index++)
+        {
+
+    var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface = profileActionConditionInterfaceVector!.get(index) as ProfileActionScriptConditionInterface;
+        
+        
+
+
+    
+                        if(!profileActionScriptConditionInterface!.shouldProcess(frame))
+                        
+                                    {
+                                    
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return false;
+    
+
+                                    }
+                                
+}
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return true;
+    
+}
+
+
+                @Throws(Exception::class)
+            
+    public process(frame: Long){
+var frame = frame
+put(StringMaker().
+                            append("Start - Processing ")!.appendint(this.getProfileActionProcessorInterfaceVector()!.size())!.append(" inputs")!.toString(), this, commonStrings!.PROCESS)
+
+    var profileActionProcessorInterfaceVector: Vector = this.getProfileActionProcessorInterfaceVector()!;
+        
+        
+
+
+    var size: number = profileActionProcessorInterfaceVector!.length!;
+        
+        
+
+
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < size; index++)
+        {
+
+    var profileActionScriptProcessorInterface: ProfileActionScriptProcessorInterface = profileActionProcessorInterfaceVector!.get(index) as ProfileActionScriptProcessorInterface;
+        
+        
+
+process(frame)
+}
+
+}
+
+
+}
+                
+            
+

@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary</groupId>
+    <artifactId>AllBinaryBaseLibraryPOMTs</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>AllBinaryBaseLibraryPOMTs</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+    
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+        <module>../CommonJavaLibraryTsM</module>
+        
+        <module>../../allbinary_src/LogTsM</module>
+        <module>../../allbinary_src/allbinary_src_designpatterns_srcTsM</module>
+        <module>../../allbinary_src/data/BaseDataJavaLibraryTsM</module>
+        <module>../../allbinary_src/cache/BaseCacheJavaLibraryTsM</module>
+        <module>../../allbinary_src/logic/BasePreloaderJavaLibraryTsM</module>
+        <module>../../allbinary_src/logic/BasePreloaderJ2MEJavaLibraryTsM</module>
+
+        <module>../ExceptionHTMLJavaLibraryTsM</module>
+        <module>../J2MEExceptionLibraryTsM</module>
+        <module>../../allbinary_src/J2SEExceptionLibraryTsM</module>
+        <module>../J2MEUtilJavaLibraryTsM</module>
+        <module>../J2MEColorJavaLibraryTsM</module>
+        <module>../EventJ2MELibraryTsM</module>
+
+        <module>../../allbinary_src/LogJ2MEJavaLibraryTsM</module>
+        <module>../../allbinary_src/LogAndroidJavaLibraryTsM</module>
+        <module>../logging/LoggingNoneTsM</module>
+        <module>../logging/LoggingJ2MEAllTsM</module>
+        <module>../logging/LoggingJ2MEExceptionTsM</module>
+        <module>../logging/LoggingAndroidAllTsM</module>
+        <!--
+        //While it is a possible dependency option it really does not fit here
+        //as such it is actually build in the final POM builds instead
+        <module>../logging/LoggingRemoteExceptionTsM</module>  
+        -->
+        
+        <module>../J2MEWindowingJavaLibraryTsM</module>
+        
+        <module>../lib/BasicMathLibraryTsM</module>
+        
+        <module>../../allbinary_src/ThreadLibraryTsM</module>
+        <module>../../allbinary_src/ThreadHTMLLibraryTsM</module>
+        <module>../../allbinary_src/ThreadJ2MELibraryTsM</module>
+        <module>../time/TimeJavaLibraryTsM</module>
+
+        <module>../statistics/ApplicationStatisticsJ2SELibraryTsM</module>
+        <module>../statistics/ApplicationStatisticsJ2MELibraryTsM</module>
+        <module>../statistics/ApplicationStatisticsJavaLibraryTsM</module>
+
+        <module>../../allbinary_src/logging/BasicLogConfigTypeJavaLibraryTsM</module>
+        <module>../../allbinary_src/logging/LogConfigTypeGameClientJavaLibraryTsM</module>
+
+        <module>../../allbinary_src/hardware/HardwareLibraryPOTsM</module>
+
+        <module>../lib/TrigBaseLibraryTsM</module>        
+
+    </modules>
+
+</project>
+

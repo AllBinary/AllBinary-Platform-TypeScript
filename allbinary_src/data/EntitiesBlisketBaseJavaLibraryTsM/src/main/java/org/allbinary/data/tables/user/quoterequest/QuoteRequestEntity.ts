@@ -1,0 +1,270 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { HashMap } from "../../../../../../java/util/HashMap.js";
+
+    
+import { Vector } from "../../../../../../java/util/Vector.js";
+
+    
+import { EntryData } from "../../../../../../org/allbinary/business/entry/EntryData.js";
+
+    
+import { UserDbInitInfo } from "../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js";
+
+    
+import { QuoteRequestData } from "../../../../../../org/allbinary/business/quoterequest/QuoteRequestData.js";
+
+    
+import { UserData } from "../../../../../../org/allbinary/business/user/UserData.js";
+
+    
+import { QuoteRequest } from "../../../../../../org/allbinary/business/user/quoterequest/QuoteRequest.js";
+
+    
+import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+
+    
+import { AbSqlBean } from "../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js";
+
+    
+import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+
+    
+
+export class QuoteRequestEntity extends AbSqlBean
+                , QuoteRequestEntityInterface {
+        
+
+    readonly logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+
+    private readonly tableName: string = "quoterequest";
+        
+        
+public constructor ()                        
+
+                            : super(UserDbInitInfo()){
+
+            super();
+            
+
+                            //For kotlin this is before the body of the constructor.
+                    
+this.setTableName(tableName)
+}
+
+
+    public insert(values: Vector){
+var values = values
+
+        try {
+            insert(values)
+
+    
+                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
+                        
+                                    {
+                                    put(this.commonStrings!.SUCCESS, this, INSERT)
+
+                                    }
+                                
+} catch(e: Exception)
+            {
+
+    
+                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
+                        
+                                    {
+                                    put(this.commonStrings!.FAILURE, this, INSERT, e)
+
+                                    }
+                                
+}
+
+}
+
+
+                @Throws(Exception::class)
+            
+    public get(userName: string, id: number): QuoteRequest{
+var userName = userName
+var id = id
+
+    var row: HashMap<Any, Any> = new HashMap<Any, Any>();
+        
+        
+
+put(UserData.USERNAME, userName)
+put(QuoteRequestData.getInstance()!.ID, id.toString())
+
+    var quoteRequestHashMap: HashMap<Any, Any> = super.getRow(row)!;
+        
+        
+
+
+    
+                        if(quoteRequestHashMap != 
+                                    null
+                                )
+                        
+                                    {
+                                    
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return org.allbinary.business.user.quoterequest.QuoteRequest(quoteRequestHashMap);
+    
+
+                                    }
+                                
+                        else {
+                            
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return null;
+    
+
+                        }
+                            
+}
+
+
+    public getIds(userName: string): Vector{
+var userName = userName
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getColumnWhere(QuoteRequestData.getInstance()!.ID, UserData.USERNAME, userName);
+    
+}
+
+
+    public deleteWhere(key: string, value: string){
+var key = key
+var value = value
+
+        try {
+            deleteWhere(key, value)
+
+    
+                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
+                        
+                                    {
+                                    put(this.commonStrings!.SUCCESS, this, "deleteWhere")
+
+                                    }
+                                
+} catch(e: Exception)
+            {
+
+    
+                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
+                        
+                                    {
+                                    put(this.commonStrings!.FAILURE, this, "deleteWhere", e)
+
+                                    }
+                                
+}
+
+}
+
+
+    public createTableStatement(): string{
+
+    var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
+        
+        
+
+
+    var stringBuffer: StringMaker = new StringMaker();
+        
+        
+
+append(this.sqlStrings!.START)
+append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
+append(UserData.USERNAME)
+append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+append(quoteRequestData!.PROJECT_INFO)
+append(this.sqlTypeStrings!.BLOB_NOT_NULL)
+append(quoteRequestData!.CUSTOMER_COMMENTS)
+append(this.sqlTypeStrings!.BLOB_NOT_NULL)
+append(quoteRequestData!.BUDGET)
+append(this.sqlTypeStrings!.BLOB_NOT_NULL)
+append(quoteRequestData!.TIMEFRAME)
+append(this.sqlTypeStrings!.BLOB_NOT_NULL)
+append(quoteRequestData!.COMMENTS)
+append(this.sqlTypeStrings!.BLOB_NOT_NULL)
+append(EntryData.getInstance()!.TIMECREATED)
+append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
+append(EntryData.getInstance()!.LASTMODIFIED)
+append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
+append(this.sqlStrings!.PRIMARY_KEY)
+append(quoteRequestData!.ID)
+append(this.sqlStrings!.END)
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return stringBuffer!.toString();
+    
+}
+
+
+    public createTable(): string{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.createTable(this.createTableStatement());
+    
+}
+
+
+    public dropTable(): string{
+
+    var result: string = new dropTable.toCharArray();
+        
+        
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return result;
+    
+}
+
+
+    public update(userName: string, updatedValues: HashMap<Any, Any>){
+var userName = userName
+var updatedValues = updatedValues
+updateWhere(UserData.USERNAME, userName, updatedValues)
+}
+
+
+}
+                
+            
+

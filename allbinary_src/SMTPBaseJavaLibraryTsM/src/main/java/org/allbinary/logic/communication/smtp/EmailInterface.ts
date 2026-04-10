@@ -1,0 +1,45 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { MimeMessage } from "../../../../../javax/mail/internet/MimeMessage.js";
+
+    
+import { DomNodeInterface } from "../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+
+    
+import { DomDocumentMappingInterface } from "../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js";
+
+    
+
+interface EmailInterface extends DomNodeInterface, DomDocumentMappingInterface {
+        
+
+    public getDebugInfo(): string
+
+    public getMimeMessage(): MimeMessage
+
+                @Throws(Exception::class)
+            
+    public log(): string
+
+}
+                
+            
+

@@ -1,0 +1,173 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+
+    
+import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
+
+    
+import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
+
+    
+import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+
+    
+
+export class HighScores
+            extends Object
+        
+                , HighScoresInterface {
+        
+
+    private orderedHighScoresList: BasicArrayList = new BasicArrayList();
+        
+        
+
+    private readonly name: string
+
+    private readonly heading: string
+
+    private readonly columnOneHeading: string = "Name";
+        
+        
+
+    private readonly columnTwoHeading: string
+public constructor (name: string, heading: string, columnTwoHeading: string){
+
+            super();
+            var name = name
+var heading = heading
+var columnTwoHeading = columnTwoHeading
+this.name= name
+this.heading= heading
+this.columnTwoHeading= columnTwoHeading
+}
+
+
+    public setList(orderedHighScoresList: BasicArrayList){
+var orderedHighScoresList = orderedHighScoresList
+this.orderedHighScoresList= orderedHighScoresList
+}
+
+
+    public getList(): BasicArrayList{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return orderedHighScoresList;
+    
+}
+
+
+    public getName(): string{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return name;
+    
+}
+
+
+    public getTotal(): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.getList()!.size();
+    
+}
+
+
+    public addHighScore(newHighScore: HighScore){
+var newHighScore = newHighScore
+add(newHighScore)
+}
+
+
+    public getHeading(): string{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return heading;
+    
+}
+
+
+    public getColumnOneHeading(): string{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return columnOneHeading;
+    
+}
+
+
+    public getColumnTwoHeading(): string{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return columnTwoHeading;
+    
+}
+
+
+                @Throws(Exception::class)
+            
+    public isBestScore(newHighScore: HighScore): boolean{
+var newHighScore = newHighScore
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return false;
+    
+}
+
+
+    public toString(): string{
+
+    var stringBuffer: StringMaker = new StringMaker();
+        
+        
+
+append("HighScores: ")
+append(this.heading)
+append(CommonSeps.getInstance()!.SPACE)
+append(CommonLabels.getInstance()!.TOTAL_LABEL)
+appendint(this.orderedHighScoresList!.size())
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return stringBuffer!.toString();
+    
+}
+
+
+}
+                
+            
+

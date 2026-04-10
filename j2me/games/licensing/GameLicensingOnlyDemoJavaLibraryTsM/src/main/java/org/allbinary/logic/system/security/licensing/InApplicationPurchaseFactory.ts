@@ -1,0 +1,121 @@
+
+        /*
+                *  
+                *  To change this license header, choose License Headers in Project Properties. 
+                *  To change this template file, choose Tools | Templates  and open the template in the editor.  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
+
+    
+
+export class InApplicationPurchaseFactory
+            extends Object
+         {
+        
+
+    private static readonly instance: InApplicationPurchaseFactory = new InApplicationPurchaseFactory();
+        
+        
+
+    public static getInstance(): InApplicationPurchaseFactory{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return instance;
+    
+}
+
+private constructor (){
+
+            super();
+            }
+
+
+    public init(anyType: any = {}, stateObject: any = {}){
+var anyType = anyType
+var stateObject = stateObject
+}
+
+
+    public onCreate(anyType: any = {}, stateObject: any = {}){
+var anyType = anyType
+var stateObject = stateObject
+}
+
+
+    public onStart(){
+}
+
+
+    public onResult(requestCode: number, resultCode: number, data: any = {}){
+    //var requestCode = requestCode
+    //var resultCode = resultCode
+    //var data = data
+}
+
+
+    public onSaveState(anyType: any = {}){
+    //var anyType = anyType
+}
+
+
+    public onStop(){
+}
+
+
+    public onDestroy(){
+}
+
+
+    public purchase(lockableFeature: LockableFeature){
+var lockableFeature = lockableFeature
+}
+
+
+    public isPurchased(lockableFeature: LockableFeature): boolean{
+var lockableFeature = lockableFeature
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return false;
+    
+}
+
+
+    public add(lockableFeature: LockableFeature){
+var lockableFeature = lockableFeature
+}
+
+
+    public getUserName(): string{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return StringUtil.getInstance()!.EMPTY_STRING;
+    
+}
+
+
+    public isEnabled(): boolean{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return false;
+    
+}
+
+
+}
+                
+            
+

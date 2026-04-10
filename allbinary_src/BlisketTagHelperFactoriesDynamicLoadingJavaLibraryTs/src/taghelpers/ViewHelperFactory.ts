@@ -1,0 +1,73 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { HashMap } from "../java/util/HashMap.js";
+
+    
+import { PageContext } from "../javax/servlet/jsp/PageContext.js";
+
+    
+import { HelperFactory } from "../admin/taghelpers/HelperFactory.js";
+
+    
+import { LicensingException } from "../org/allbinary/logic/system/security/licensing/LicensingException.js";
+
+    
+import { TagHelperFactoryInterface } from "../admin/taghelpers/TagHelperFactoryInterface.js";
+
+    
+
+export class ViewHelperFactory
+            extends Object
+        
+                , TagHelperFactoryInterface {
+        
+
+    private static readonly CLASSNAME: string = "taghelpers.ViewHelper";
+        
+        
+
+    private static readonly FACTORYNAME: string = "taghelpers.ViewHelperFactory";
+        
+        
+public constructor (){
+
+            super();
+            }
+
+
+                @Throws(Exception::class, LicensingException::class)
+            
+    public getInstance(propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext): any = {}{
+var propertiesHashMap = propertiesHashMap
+var pageContext = pageContext
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return HelperFactory.getInstance(FACTORYNAME, CLASSNAME, propertiesHashMap, pageContext);
+    
+}
+
+
+}
+                
+            
+

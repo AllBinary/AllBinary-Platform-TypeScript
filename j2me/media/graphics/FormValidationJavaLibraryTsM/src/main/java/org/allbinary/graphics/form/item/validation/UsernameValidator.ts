@@ -1,0 +1,46 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { TextFieldItem } from "../../../../../../org/allbinary/graphics/form/item/TextFieldItem.js";
+
+    
+
+export class UsernameValidator extends TextFieldItemValidator {
+        
+public constructor (textFieldItem: TextFieldItem, min: number, max: number, allowOnEmpty: boolean)                        
+
+                            : super(textFieldItem, min, max, allowOnEmpty){
+
+            super();
+            var textFieldItem = textFieldItem
+var min = min
+var max = max
+var allowOnEmpty = allowOnEmpty
+
+
+                            //For kotlin this is before the body of the constructor.
+                    
+}
+
+
+}
+                
+            
+

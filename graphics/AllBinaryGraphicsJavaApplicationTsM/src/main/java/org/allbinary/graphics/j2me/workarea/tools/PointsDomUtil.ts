@@ -1,0 +1,252 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { GPoint } from "../../../../../../org/allbinary/graphics/GPoint.js";
+
+    
+import { PointFactory } from "../../../../../../org/allbinary/graphics/PointFactory.js";
+
+    
+import { WorkAreaJPanel } from "../../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js";
+
+    
+import { CanvasDom } from "../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js";
+
+    
+import { PositionStrings } from "../../../../../../org/allbinary/math/PositionStrings.js";
+
+    
+import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+
+    
+import { Node } from "../../../../../../org/w3c/dom/Node.js";
+
+    
+
+export class PointsDomUtil
+            extends Object
+         {
+        
+
+    private static readonly instance: PointsDomUtil = new PointsDomUtil();
+        
+        
+
+    public static getInstance(): PointsDomUtil{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return instance;
+    
+}
+
+
+    public readonly LINES: string = "lines";
+        
+        
+
+    public readonly POINTONE: string = "pointOne";
+        
+        
+
+    public readonly POINTTWO: string = "pointTwo";
+        
+        
+
+    private readonly ROTATEDPOINTONE: string = "rotatedPointOne";
+        
+        
+
+    private readonly ROTATEDPOINTTWO: string = "rotatedPointTwo";
+        
+        
+
+    private readonly LINE: string = "line";
+        
+        
+
+                @Throws(Exception::class)
+            
+    public toDom(canvasDom: CanvasDom, pointVector: BasicArrayList): Node{
+var canvasDom = canvasDom
+var pointVector = pointVector
+
+    var tempPointVector: BasicArrayList = PointsUtil.getInstance()!.doTransforms(pointVector, Double(canvasDom!.getAngle()), PointFactory.getInstance()!.getInstance(canvasDom!.getDimension()!.getWidth(), canvasDom!.getDimension()!.getHeight()))!;
+        
+        
+
+
+    var document: org.w3c.dom.Document = WorkAreaJPanel.getDocument()!;
+        
+        
+
+
+    var linesNode: Node = document.createElement(LINES) as Node;
+        
+        
+
+
+    var size2: number = tempPointVector!.size()!;
+        
+        
+
+
+    var size: number = pointVector!.size()!;
+        
+        
+
+
+    var firstPoint: GPoint = 
+                null
+            ;
+        
+        
+
+
+    var rotatedFirstPoint: GPoint = 
+                null
+            ;
+        
+        
+
+
+    var index: number = 0;
+        
+        
+
+
+    
+                        if(index < size && index < size2)
+                        
+                                    {
+                                    rotatedFirstPoint= tempPointVector!.get(index) as GPoint
+firstPoint= pointVector!.get(index) as GPoint
+index++
+
+                                    }
+                                
+
+        while(index < size && index < size2)
+        {
+
+    var lineNode: Node = document.createElement(LINE) as Node;
+        
+        
+
+
+    var rotatedSecondPoint: GPoint = tempPointVector!.get(index) as GPoint;
+        
+        
+
+
+    var secondPoint: GPoint = pointVector!.get(index) as GPoint;
+        
+        
+
+
+    var pointOneNode: Node = this.getPointNode(firstPoint, this.POINTONE)!;
+        
+        
+
+
+    var pointTwoNode: Node = this.getPointNode(secondPoint, this.POINTTWO)!;
+        
+        
+
+
+    var rotatedPointOneNode: Node = this.getPointNode(rotatedFirstPoint, this.ROTATEDPOINTONE)!;
+        
+        
+
+
+    var rotatedPointTwoNode: Node = this.getPointNode(rotatedSecondPoint, this.ROTATEDPOINTTWO)!;
+        
+        
+
+appendChild(pointOneNode)
+appendChild(pointTwoNode)
+appendChild(rotatedPointOneNode)
+appendChild(rotatedPointTwoNode)
+firstPoint= secondPoint
+rotatedFirstPoint= rotatedSecondPoint
+appendChild(lineNode)
+index++
+}
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return linesNode;
+    
+}
+
+
+    getPointNode(point: GPoint, pointName: string): Node{
+var point = point
+var pointName = pointName
+
+    var document: org.w3c.dom.Document = WorkAreaJPanel.getDocument()!;
+        
+        
+
+
+    var pointNode: Node = document.createElement(pointName) as Node;
+        
+        
+
+
+    var xNode: Node = document.createElement(PositionStrings.getInstance()!.X) as Node;
+        
+        
+
+
+    var xTextNode: Node = document.createTextNode(Integer.toString(point.getX())) as Node;
+        
+        
+
+appendChild(xTextNode)
+
+    var yNode: Node = document.createElement(PositionStrings.getInstance()!.Y) as Node;
+        
+        
+
+
+    var yTextNode: Node = document.createTextNode(Integer.toString(point.getY())) as Node;
+        
+        
+
+appendChild(yTextNode)
+appendChild(xNode)
+appendChild(yNode)
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return pointNode;
+    
+}
+
+
+}
+                
+            
+

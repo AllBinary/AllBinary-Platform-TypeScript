@@ -1,0 +1,114 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { HashMap } from "../../../../java/util/HashMap.js";
+
+    
+import { EntryData } from "../../../../org/allbinary/business/entry/EntryData.js";
+
+    
+import { TableMappingInterface } from "../../../../org/allbinary/data/tables/TableMappingInterface.js";
+
+    
+import { DomNodeInterface } from "../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+
+    
+import { ModDomHelper } from "../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
+
+    
+import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+
+    
+import { Document } from "../../../../org/w3c/dom/Document.js";
+
+    
+import { Node } from "../../../../org/w3c/dom/Node.js";
+
+    
+
+export class UserDomNode
+            extends Object
+        
+                , DomNodeInterface {
+        
+
+    private dataMappingInterface: TableMappingInterface
+public constructor (dataMappingInterface: TableMappingInterface){
+
+            super();
+            var dataMappingInterface = dataMappingInterface
+this.dataMappingInterface= dataMappingInterface
+}
+
+
+                @Throws(Exception::class)
+            
+    public toXmlNode(document: Document): Node{
+var document = document
+
+    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
+        
+        
+
+
+    var hashMap: HashMap<Any, Any> = dataMappingInterface!.toHashMap()!;
+        
+        
+
+put(EntryData.getInstance()!.LASTMODIFIED, EMPTY_STRING)
+put(EntryData.getInstance()!.ENCRYPTION, EMPTY_STRING)
+put(UserData.PASSWORD, EMPTY_STRING)
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return ModDomHelper.createNameValueNodes(document, UserData.NAME, hashMap);
+    
+}
+
+
+                @Throws(Exception::class)
+            
+    public toXmlDoc(): Document{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return null;
+    
+}
+
+
+                @Throws(Exception::class)
+            
+    public view(): string{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return null;
+    
+}
+
+
+}
+                
+            
+

@@ -1,0 +1,308 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
+
+    
+import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+
+    
+import { LockedFeatureNotificationUtil } from "../../../../org/allbinary/logic/system/security/licensing/LockedFeatureNotificationUtil.js";
+
+    
+import { LockedUtil } from "../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js";
+
+    
+import { Processor } from "../../../../org/allbinary/canvas/Processor.js";
+
+    
+import { AllBinaryGameCanvas } from "../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js";
+
+    
+import { PreGameSelectorPaintable } from "../../../../org/allbinary/game/displayable/canvas/PreGameSelectorPaintable.js";
+
+    
+import { GameInputProcessorComposite } from "../../../../org/allbinary/game/input/GameInputProcessorComposite.js";
+
+    
+import { GameInputProcessorInterface } from "../../../../org/allbinary/game/input/GameInputProcessorInterface.js";
+
+    
+import { PlayerGameInput } from "../../../../org/allbinary/game/input/PlayerGameInput.js";
+
+    
+import { PlayerGameInputCompositeInterface } from "../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js";
+
+    
+import { GameKeyEventHandler } from "../../../../org/allbinary/game/input/event/GameKeyEventHandler.js";
+
+    
+import { GameKeyEventUtil } from "../../../../org/allbinary/game/input/event/GameKeyEventUtil.js";
+
+    
+import { GameState } from "../../../../org/allbinary/game/state/GameState.js";
+
+    
+import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+
+    
+import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+
+    
+import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+
+    
+import { SecondaryPlayerQueueFactory } from "../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js";
+
+    
+import { SelectSound } from "../../../../org/allbinary/media/audio/SelectSound.js";
+
+    
+import { ABRunnable } from "../../../../org/allbinary/thread/ABRunnable.js";
+
+    
+import { SecondaryThreadPool } from "../../../../org/allbinary/thread/SecondaryThreadPool.js";
+
+    
+import { SoundThreadPool } from "../../../../org/allbinary/thread/SoundThreadPool.js";
+
+    
+import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.js";
+
+    
+
+export class PreGameSelectionGameInputProcessor extends Processor
+                , GameInputProcessorInterface
+                , PlayerGameInputCompositeInterface {
+        
+
+    readonly logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+
+    private readonly gameCanvas: AllBinaryGameCanvas
+
+    private readonly preGameSelectorPaintable: PreGameSelectorPaintable
+
+    private readonly inputTimeHelper: TimeDelayHelper = new TimeDelayHelper(650);
+        
+        
+
+    private readonly nextGameState: GameState
+
+    private readonly playerGameInput: PlayerGameInput
+
+    private readonly lockedIndex: number
+
+    private readonly abRunnable: ABRunnable = new object: ABRunnable()
+                                {
+                                
+    public run(){
+
+        try {
+            this.setRunning(true)
+add(SelectSound.getInstance())
+setGameState(nextGameState)
+removeListener(getPlayerGameInput())
+this.setRunning(false)
+} catch(e: Exception)
+            {
+this.setRunning(false)
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
+        
+        
+
+put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+}
+
+}
+
+                                }
+                            ;
+        
+        
+public constructor (gameCanvas: AllBinaryGameCanvas, preGameSelectorPaintable: PreGameSelectorPaintable, nextGameState: GameState, lockedIndex: number){
+
+            super();
+            var gameCanvas = gameCanvas
+var preGameSelectorPaintable = preGameSelectorPaintable
+var nextGameState = nextGameState
+var lockedIndex = lockedIndex
+this.gameCanvas= gameCanvas
+this.preGameSelectorPaintable= preGameSelectorPaintable
+this.nextGameState= nextGameState
+this.playerGameInput= GameInputProcessorComposite("Pre Game Selection", this)
+this.lockedIndex= lockedIndex
+}
+
+
+                @Throws(Exception::class)
+            
+    public process(){
+update()
+}
+
+
+                @Throws(Exception::class)
+            
+    public onInput(list: BasicArrayList){
+var list = list
+
+    var size: number = list.size()!;
+        
+        
+
+
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < size; index++)
+        {
+
+    var anyType: any = {} = list.get(index)!;
+        
+        
+
+
+    var key: number = GameKeyEventUtil.getKey(anyType)!;
+        
+        
+
+
+    
+                        if(key == Canvas.LEFT || key == Canvas.RIGHT || key == Canvas.UP || key == Canvas.DOWN)
+                        
+                                    {
+                                    
+    
+                        if(inputTimeHelper!.isTime())
+                        
+                                    {
+                                    add(SelectSound.getInstance())
+processInput(key)
+break;
+
+                    
+
+                                    }
+                                
+
+                                    }
+                                
+                             else 
+    
+                        if(key == Canvas.KEY_NUM0)
+                        
+                                    {
+                                    
+    var selectedIndex: number = this.preGameSelectorPaintable!.getPreGameSelectionForm()!.getSelectedIndex()!;
+        
+        
+
+
+    
+                        if(selectedIndex < this.lockedIndex || !LockedUtil.getInstance()!.isLockedFeature())
+                        
+                                    {
+                                    
+    
+                        if(!abRunnable!.isRunning())
+                        
+                                    {
+                                    setRunning(true)
+
+    var thread: Thread = new Thread(abRunnable);
+        
+        
+
+start()
+
+                                    }
+                                
+break;
+
+                    
+
+                                    }
+                                
+                        else {
+                            fire()
+
+                        }
+                            
+
+                                    }
+                                
+}
+
+clear()
+}
+
+
+    public getPreGameSelectorPaintable(): PreGameSelectorPaintable{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return preGameSelectorPaintable;
+    
+}
+
+
+                @Throws(Exception::class)
+            
+    public processInput(layerManager: AllBinaryLayerManager){
+var layerManager = layerManager
+}
+
+
+    public initInputProcessors(){
+}
+
+
+    public getName(): string{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.toString();
+    
+}
+
+
+    public getPlayerGameInput(): PlayerGameInput{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return playerGameInput;
+    
+}
+
+
+}
+                
+            
+
