@@ -97,7 +97,7 @@ public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
             super();
                 //var allBinaryGameCanvas = allBinaryGameCanvas
 this.allBinaryGameCanvas= allBinaryGameCanvas
-init(this.allBinaryGameCanvas)
+this.inputToGameKeyMapping!.init(this.allBinaryGameCanvas)
 }
 
 
@@ -120,7 +120,6 @@ init(this.allBinaryGameCanvas)
         
 
 
-    
                         if(gameKey != NONE)
                         
                                     {
@@ -129,13 +128,13 @@ init(this.allBinaryGameCanvas)
         
         
 
-fireEvent(gameKeyEvent)
-fireEvent(gameKeyEvent)
+downGameKeyEventHandler!.fireEvent(gameKeyEvent)
+downGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent)
 
                                     }
                                 
                         else {
-                            put(StringMaker().
+                            logUtil!.put(StringMaker().
                             append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT)
 
                         }
@@ -145,11 +144,11 @@ fireEvent(gameKeyEvent)
         
         
 
-fireEvent(keyCodeAsInteger)
-fireEvent(keyCodeAsInteger)
+downKeyEventHandler!.fireEvent(keyCodeAsInteger)
+downKeyEventHandler!.getInstance(deviceId)!.fireEvent(keyCodeAsInteger)
 } catch(e: Exception)
             {
-put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
+logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
 }
 
 }
@@ -159,7 +158,7 @@ put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
     //var canvas = canvas
     //var keyCode = keyCode
     //var deviceId = deviceId
-this.removeGameKeyEvent(canvas, keyCode, deviceId, false)
+this.this.removeGameKeyEvent(canvas, keyCode, deviceId, false)
 }
 
 
@@ -176,7 +175,6 @@ this.removeGameKeyEvent(canvas, keyCode, deviceId, false)
         
 
 
-    
                         if(gameKey != NONE)
                         
                                     {
@@ -185,20 +183,20 @@ this.removeGameKeyEvent(canvas, keyCode, deviceId, false)
         
         
 
-fireEvent(gameKeyEvent)
-fireEvent(gameKeyEvent)
+upGameKeyEventHandler!.fireEvent(gameKeyEvent)
+upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent)
 
                                     }
                                 
                         else {
-                            put(StringMaker().
+                            logUtil!.put(StringMaker().
                             append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.REMOVE_KEY_EVENT)
 
                         }
                             
 } catch(e: Exception)
             {
-put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e)
+logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e)
 }
 
 }

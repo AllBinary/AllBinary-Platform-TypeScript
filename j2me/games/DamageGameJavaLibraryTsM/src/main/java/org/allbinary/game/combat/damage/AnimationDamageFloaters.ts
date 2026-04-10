@@ -77,7 +77,7 @@ this.animationInterfaceArray= animationInterfaceArray
         
 index >= 0; index--)
         {
-setFrame(this.animationInterfaceArray[index]!.getSize() -1)
+this.animationInterfaceArray[index]!.setFrame(this.animationInterfaceArray[index]!.getSize() -1)
 }
 
 this.layerInterface= layerInterface
@@ -94,8 +94,8 @@ var damage = damage
         
         
 
-setFrame(0)
-next()
+animationInterfaceArray[i]!.setFrame(0)
+this.circularIndexUtil!.next()
 }
 
 
@@ -134,7 +134,6 @@ index < this.animationInterfaceArray!.length; index++)
         
 
 
-    
                         if(animationInterface!.getFrame() < animationInterface!.getAnimationSize() -1)
                         
                                     {
@@ -143,8 +142,8 @@ index < this.animationInterfaceArray!.length; index++)
         
         
 
-paint(graphics, x +dx, y -delta +dy)
-nextFrame()
+animationInterface!.paint(graphics, x +dx, y -delta +dy)
+animationInterface!.nextFrame()
 
                                     }
                                 
@@ -162,7 +161,7 @@ nextFrame()
         
         
 
-put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e)
 }
 
 }

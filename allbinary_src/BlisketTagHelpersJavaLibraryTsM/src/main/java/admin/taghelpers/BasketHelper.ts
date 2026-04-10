@@ -74,7 +74,6 @@ this.pageContext= pageContext
         
 
 
-    
                         if(storeName != 
                                     null
                                 )
@@ -97,7 +96,6 @@ this.weblisketSession= WeblisketSession(hashMap, pageContext)
         
 
 
-    
                         if(basket.getNumberOfItems()!.toInt() <= 0)
                         
                                     {
@@ -123,11 +121,10 @@ this.weblisketSession= WeblisketSession(hashMap, pageContext)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "isBasketEmpty()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isBasketEmpty()", e)
 
                                     }
                                 

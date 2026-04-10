@@ -49,7 +49,7 @@ protected constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var allbinaryLayerManager = allbinaryLayerManager
@@ -57,7 +57,7 @@ protected constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processReleased(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var allbinaryLayerManager = allbinaryLayerManager
@@ -65,7 +65,7 @@ protected constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent, analogValue: number){
     //var allbinaryLayerManager = allbinaryLayerManager
@@ -74,7 +74,7 @@ protected constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, keyAsInteger: Integer){
     //var allbinaryLayerManager = allbinaryLayerManager
@@ -82,7 +82,7 @@ protected constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processReleased(allbinaryLayerManager: AllBinaryLayerManager, keyAsInteger: Integer){
     //var allbinaryLayerManager = allbinaryLayerManager

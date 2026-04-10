@@ -34,7 +34,7 @@ export class TestRemoteLogUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static main(args: string[]){
 var args = args
@@ -44,7 +44,7 @@ TestRemoteLogUtil()
 public constructor (){
 
             super();
-            init(this::class.java.classLoader, PATH)
+            Globals.getInstance()!.init(this::class.java.classLoader, PATH)
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
@@ -55,7 +55,7 @@ public constructor (){
         
         
 
-put(commonStrings!.EXCEPTION, "Test", "TestClass", Exception("Pretend Exception"))
+logUtil!.put(commonStrings!.EXCEPTION, "Test", "TestClass", Error("Pretend Exception"))
 }
 
 

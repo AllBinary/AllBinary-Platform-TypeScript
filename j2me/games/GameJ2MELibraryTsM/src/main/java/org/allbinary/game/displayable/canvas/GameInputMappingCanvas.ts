@@ -139,9 +139,8 @@ public constructor (abeClientInformation: AbeClientInformationInterface, command
 
                             //For kotlin this is before the body of the constructor.
                     
-put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
-    
                         if(helpPaintable == 
                                     null
                                 )
@@ -150,7 +149,7 @@ put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
                                     
 
 
-                            throw Exception("Help Paintable Exception")
+                            throw Error("Help Paintable Exception")
 
                                     }
                                 
@@ -163,47 +162,47 @@ this.colorFillPaintable= ColorFillPaintableFactory.getInstance()!.getInstance(al
 
 
     public close(){
-close()
-process()
+super.close()
+this.paintable.process()
 this.selectedGameKey= NONE
 this.selectedInput= NONE
-this.update()
+this.this.update()
 }
 
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-this.removeAllCommands()
-this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.addCommand(GameInputMappingCanvas.DEFAULT)
-this.addCommand(GameInputMappingInstructionsCanvas.DISPLAY)
-this.setCommandListener(cmdListener)
+this.this.removeAllCommands()
+this.this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS)
+this.this.addCommand(GameInputMappingCanvas.DEFAULT)
+this.this.addCommand(GameInputMappingInstructionsCanvas.DISPLAY)
+this.this.setCommandListener(cmdListener)
 }
 
 
     public keyPressed(keyCode: number){
 var keyCode = keyCode
-this.keyPressed(keyCode, 0)
+this.this.keyPressed(keyCode, 0)
 }
 
 
     public keyReleased(keyCode: number){
 var keyCode = keyCode
-this.keyReleased(keyCode, 0)
+this.this.keyReleased(keyCode, 0)
 }
 
 
     public keyRepeated(keyCode: number){
 var keyCode = keyCode
-this.keyRepeated(keyCode, 0)
+this.this.keyRepeated(keyCode, 0)
 }
 
 
     public keyPressed(keyCode: number, deviceId: number){
 var keyCode = keyCode
 var deviceId = deviceId
-this.addGameKeyEvent(keyCode, false)
-keyPressed(keyCode, 0)
+this.this.addGameKeyEvent(keyCode, false)
+super.keyPressed(keyCode, 0)
 }
 
 
@@ -216,7 +215,7 @@ var keyCode = keyCode
 var repeated = repeated
 
         try {
-            put(StringMaker().
+            logUtil!.put(StringMaker().
                             append("Raw Device Key Code: ")!.append(Integer.toHexString(keyCode))!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT)
 
     var gameKey: GameKey = this.inputToGameKeyMapping!.getInstance(this, keyCode)!;
@@ -228,16 +227,16 @@ var repeated = repeated
         
         
 
-this.process(gameKey, input)
+this.this.process(gameKey, input)
 } catch(e: Exception)
             {
-put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
+logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(gameKey: GameKey, input: Input){
     //var gameKey = gameKey
@@ -247,22 +246,21 @@ put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
         
         
 
-append("Start Passed GameKey: ")
-append(this.stringUtil!.toString(gameKey))
-append(" Input: ")
-append(this.stringUtil!.toString(input))
-put(stringBuffer!.toString(), this, commonStrings!.PROCESS)
+stringBuffer!.append("Start Passed GameKey: ")
+stringBuffer!.append(this.stringUtil!.toString(gameKey))
+stringBuffer!.append(" Input: ")
+stringBuffer!.append(this.stringUtil!.toString(input))
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.PROCESS)
 
-    
                         if(this.selectedGameKey != NONE)
                         
                                     {
-                                    this.gameActionCrud(gameKey, input)
+                                    this.this.gameActionCrud(gameKey, input)
 
                                     }
                                 
                         else {
-                            this.setSelectedAction(gameKey)
+                            this.this.setSelectedAction(gameKey)
 
                         }
                             
@@ -271,16 +269,16 @@ put(stringBuffer!.toString(), this, commonStrings!.PROCESS)
 
     setSelectedAction(gameKey: GameKey){
 var gameKey = gameKey
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Selected GameKey: ")!.append(this.stringUtil!.toString(gameKey))!.toString(), this, "setSelectedAction")
 this.selectedGameKey= gameKey
 this.selectedInput= NONE
-update(this.selectedGameKey, this.selectedInput)
-onChangeRepaint(this)
+this.helpPaintable!.update(this.selectedGameKey, this.selectedInput)
+this.repaintBehavior!.onChangeRepaint(this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     gameActionCrud(gameKey: GameKey, input: Input){
     //var gameKey = gameKey
@@ -290,13 +288,12 @@ onChangeRepaint(this)
         
         
 
-append("Start GameKey: ")
-append(this.stringUtil!.toString(this.selectedGameKey))
-append(" Input: ")
-append(this.stringUtil!.toString(this.selectedInput))
-put(stringBuffer!.toString(), this, "gameActionCrud")
+stringBuffer!.append("Start GameKey: ")
+stringBuffer!.append(this.stringUtil!.toString(this.selectedGameKey))
+stringBuffer!.append(" Input: ")
+stringBuffer!.append(this.stringUtil!.toString(this.selectedInput))
+logUtil!.put(stringBuffer!.toString(), this, "gameActionCrud")
 
-    
                         if(this.selectedInput == NONE)
                         
                                     {
@@ -311,20 +308,19 @@ put(stringBuffer!.toString(), this, "gameActionCrud")
         
 
 
-    
                         if(isInputAlreadyMappedToSelectedAction)
                         
                                     {
-                                    put(StringMaker().
+                                    logUtil!.put(StringMaker().
                             append("Already Mapped Input: ")!.append(this.stringUtil!.toString(input))!.toString(), this, "gameActionCrud")
 this.selectedInput= input
-update(this.selectedGameKey, this.selectedInput)
-onChangeRepaint(this)
+this.helpPaintable!.update(this.selectedGameKey, this.selectedInput)
+this.repaintBehavior!.onChangeRepaint(this)
 
                                     }
                                 
                         else {
-                            this.addNewMapping(gameKey, input)
+                            this.this.addNewMapping(gameKey, input)
 
                         }
                             
@@ -332,23 +328,22 @@ onChangeRepaint(this)
                                     }
                                 
                              else 
-    
                         if(this.inputMapping!.isDelete(input))
                         
                                     {
-                                    this.deleteCurrentMapping()
+                                    this.this.deleteCurrentMapping()
 
                                     }
                                 
                         else {
-                            this.setSelectedAction(gameKey)
+                            this.this.setSelectedAction(gameKey)
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     addNewMapping(gameKey: GameKey, input: Input){
     //var gameKey = gameKey
@@ -358,14 +353,13 @@ onChangeRepaint(this)
         
         
 
-put(commonStrings!.START, this, METHOD_NAME)
+logUtil!.put(commonStrings!.START, this, METHOD_NAME)
 
     var isInputAlreadyMapped: boolean = inputMapping!.getInputMapping()!.isMapped(input)!;
         
         
 
 
-    
                         if(!isInputAlreadyMapped && !this.inputMapping!.isSystemInput(input))
                         
                                     {
@@ -374,27 +368,27 @@ put(commonStrings!.START, this, METHOD_NAME)
         
         
 
-append("Add Key Mapping : GameKey: ")
-append(this.stringUtil!.toString(this.selectedGameKey))
-append(" Input: ")
-append(this.stringUtil!.toString(this.selectedInput))
-put(stringBuffer!.toString(), this, METHOD_NAME)
-add(this.selectedGameKey, input)
+stringBuffer!.append("Add Key Mapping : GameKey: ")
+stringBuffer!.append(this.stringUtil!.toString(this.selectedGameKey))
+stringBuffer!.append(" Input: ")
+stringBuffer!.append(this.stringUtil!.toString(this.selectedInput))
+logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME)
+inputMapping!.getInputMapping()!.add(this.selectedGameKey, input)
 this.selectedInput= input
-this.update()
+this.this.update()
 
                                     }
                                 
                         else {
-                            put("Unable to add Mapping since one already exists or is MENU, HOME, or BACK key and setting selected action to what it is already mapped to", this, METHOD_NAME)
-this.setSelectedAction(gameKey)
+                            logUtil!.put("Unable to add Mapping since one already exists or is MENU, HOME, or BACK key and setting selected action to what it is already mapped to", this, METHOD_NAME)
+this.this.setSelectedAction(gameKey)
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     deleteCurrentMapping(){
 
@@ -408,7 +402,6 @@ this.setSelectedAction(gameKey)
         
 
 
-    
                         if(list.size() > 1)
                         
                                     {
@@ -417,50 +410,50 @@ this.setSelectedAction(gameKey)
         
         
 
-append("Start GameKey: ")
-append("Remove Key Mapping: GameKey: ")
-append(stringUtil!.toString(this.selectedGameKey))
-append(" Input: ")
-append(stringUtil!.toString(this.selectedInput))
-put(stringBuffer!.toString(), this, METHOD_NAME)
-remove(this.selectedGameKey, this.selectedInput)
+stringBuffer!.append("Start GameKey: ")
+stringBuffer!.append("Remove Key Mapping: GameKey: ")
+stringBuffer!.append(stringUtil!.toString(this.selectedGameKey))
+stringBuffer!.append(" Input: ")
+stringBuffer!.append(stringUtil!.toString(this.selectedInput))
+logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME)
+inputMapping!.getInputMapping()!.remove(this.selectedGameKey, this.selectedInput)
 this.selectedInput= NONE
-this.update()
+this.this.update()
 
                                     }
                                 
                         else {
-                            put("Can't Remove Last Key Mapping", this, METHOD_NAME)
+                            logUtil!.put("Can't Remove Last Key Mapping", this, METHOD_NAME)
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setDefault(){
-setDefault(abeClientInformation)
-update(NONE, NONE)
-onChangeRepaint(this)
+inputMapping!.setDefault(abeClientInformation)
+this.helpPaintable!.update(NONE, NONE)
+this.repaintBehavior!.onChangeRepaint(this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(){
-update(abeClientInformation)
-update(this.selectedGameKey, this.selectedInput)
-onChangeRepaint(this)
+inputMapping!.update(abeClientInformation)
+this.helpPaintable!.update(this.selectedGameKey, this.selectedInput)
+this.repaintBehavior!.onChangeRepaint(this)
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics)
-paint(graphics)
-paint(graphics)
-paint(graphics)
+this.colorFillPaintable!.paint(graphics)
+this.helpPaintable!.paint(graphics)
+this.paintable.paint(graphics)
+super.paint(graphics)
 }
 
 

@@ -82,7 +82,7 @@ this.body= GenericBodyValidation(requestHashMap)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlDoc(): Document{
 
@@ -98,11 +98,10 @@ this.body= GenericBodyValidation(requestHashMap)
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Started Validation", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Started Validation", this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -112,11 +111,10 @@ this.body= GenericBodyValidation(requestHashMap)
         
 
 
-    
                         if(isValid == Boolean.TRUE)
                         
                                     {
-                                    insert(this.getTransformInfoInterface(), this.body as DomNodeInterface)
+                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.body as DomNodeInterface)
 
                                     }
                                 
@@ -129,11 +127,10 @@ this.body= GenericBodyValidation(requestHashMap)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -156,7 +153,7 @@ this.body= GenericBodyValidation(requestHashMap)
         
         
 
-append(this.body.validationInfo())
+stringBuffer!.append(this.body.validationInfo())
 
 
 
@@ -166,11 +163,10 @@ append(this.body.validationInfo())
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 
@@ -206,7 +202,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
@@ -220,11 +216,10 @@ var document = document
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 

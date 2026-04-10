@@ -31,7 +31,7 @@ export class HealLayerFactory
                 , AllBinaryLayerFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(): AllBinaryLayer{
 

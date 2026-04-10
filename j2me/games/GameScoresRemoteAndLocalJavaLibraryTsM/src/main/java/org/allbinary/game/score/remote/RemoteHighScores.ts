@@ -98,14 +98,13 @@ export class RemoteHighScores extends HighScores {
         
 
 
-    
                         if(highScores == 
                                     null
                                 )
                         
                                     {
                                     highScores= RemoteHighScores(abeClientInformation, softwareInformation, gameInfo, heading, columnTwoHeading, isAscending, preload)
-put(gameInfo, highScores)
+hashTable!.put(gameInfo, highScores)
 
                                     }
                                 
@@ -122,7 +121,7 @@ put(gameInfo, highScores)
         
         
 
-put(commonStrings!.EXCEPTION, RemoteErrorHighScoresSingletonFactory.getInstance(), commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, RemoteErrorHighScoresSingletonFactory.getInstance(), commonStrings!.GET_INSTANCE, e)
 
 
 
@@ -165,13 +164,12 @@ private constructor (abeClientInformation: AbeClientInformationInterface, softwa
                     
 this.abeClientInformation= abeClientInformation
 this.softwareInformation= softwareInformation
-this.setAscending(ascending)
+this.this.setAscending(ascending)
 
-    
                         if(preload)
                         
                                     {
-                                    process(this, this.abeClientInformation, gameInfo)
+                                    RemoteHighScoresProcessorFactory.getInstance()!.process(this, this.abeClientInformation, gameInfo)
 
                                     }
                                 
@@ -180,20 +178,19 @@ this.setAscending(ascending)
 
     public addHighScore(newHighScore: HighScore){
     //var newHighScore = newHighScore
-process(this, this.abeClientInformation, newHighScore)
+RemoteHighScoresSubmissionProcessorFactory.getInstance()!.process(this, this.abeClientInformation, newHighScore)
 }
 
 
     public update(hashtable: Hashtable<Any, Any>){
     //var hashtable = hashtable
-clear()
+this.getList()!.clear()
 
     var vector: Vector = hashtable.get(RemoteHighScoresData.getInstance()!.HIGH_SCORES as Object) as Vector;
         
         
 
 
-    
                         if(vector != 
                                     null
                                 )
@@ -240,7 +237,7 @@ index < size; index++)
         
         
 
-add(highScore)
+this.getList()!.add(highScore)
 }
 
 
@@ -264,7 +261,7 @@ add(highScore)
         while(enumeration.hasMoreElements())
         {
 nextElement= enumeration.nextElement()!
-put("NextElement: " +nextElement, this, commonStrings!.PROCESS)
+logUtil!.put("NextElement: " +nextElement, this, commonStrings!.PROCESS)
 }
 
 

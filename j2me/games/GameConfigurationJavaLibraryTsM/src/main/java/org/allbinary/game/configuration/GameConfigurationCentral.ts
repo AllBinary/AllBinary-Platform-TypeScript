@@ -150,15 +150,14 @@ MAX_LAYERS= GameConfiguration("Max Layers", smallIntegerSingletonFactory!.getIns
         
         
 
-clear()
-loadAll(abeClientInformation)
+keyValuePersistance!.clear()
+keyValuePersistance!.loadAll(abeClientInformation)
 
     var list: BasicArrayList = keyValuePersistance!.getIds()!;
         
         
 
 
-    
                         if(list.size() > 0)
                         
                                     {
@@ -177,18 +176,18 @@ loadAll(abeClientInformation)
         
         
 
-setValue(smallIntegerSingletonFactory!.getInstance(Integer.valueOf(value)!.toInt()))
+this.SCALE.setValue(smallIntegerSingletonFactory!.getInstance(Integer.valueOf(value)!.toInt()))
 
                                     }
                                 
                         else {
-                            put("No Game Configuration To Load", this, commonStrings!.LOAD)
+                            logUtil!.put("No Game Configuration To Load", this, commonStrings!.LOAD)
 
                         }
                             
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e)
 }
 
 }
@@ -221,58 +220,58 @@ this.gameControlFidelity= gameControlFidelity
         
         
 
-append(commonStrings!.COMMA_SEP)
-append(this.SCALE.getName())
-append(commonStrings!.EQUALS)
-appendint(this.SCALE.getValue()!.toInt())
-append(commonStrings!.COMMA_SEP)
-append(this.ORIENTATION.getName())
-append(commonStrings!.EQUALS)
-appendint(this.ORIENTATION.getValue()!.toInt())
-append(commonStrings!.COMMA_SEP)
-append(this.SENSOR_UPDATE_RATE.getName())
-append(commonStrings!.EQUALS)
-appendint(this.SENSOR_UPDATE_RATE.getValue()!.toInt())
-append(commonStrings!.COMMA_SEP)
-append(this.VIBRATION.getName())
-append(commonStrings!.EQUALS)
-appendint(this.VIBRATION.getValue()!.toInt())
-append(commonStrings!.COMMA_SEP)
-append(this.CHALLENGE_LEVEL.getName())
-append(commonStrings!.EQUALS)
-appendint(this.CHALLENGE_LEVEL.getValue()!.toInt())
-append(commonStrings!.COMMA_SEP)
-append(this.COLLIDE_DAMAGE.getName())
-append(commonStrings!.EQUALS)
-appendint(this.COLLIDE_DAMAGE.getValue()!.toInt())
-append(commonStrings!.COMMA_SEP)
-append(this.DURABILITY_CHALLENGE_LEVEL.getName())
-append(commonStrings!.EQUALS)
-appendint(this.DURABILITY_CHALLENGE_LEVEL.getValue()!.toInt())
-append(commonStrings!.COMMA_SEP)
-append(this.SPEED_CHALLENGE_LEVEL.getName())
-append(commonStrings!.EQUALS)
-appendint(this.SPEED_CHALLENGE_LEVEL.getValue()!.toInt())
-append(commonStrings!.COMMA_SEP)
-append(this.ATTACK_CHALLENGE_LEVEL.getName())
-append(commonStrings!.EQUALS)
-appendint(this.ATTACK_CHALLENGE_LEVEL.getValue()!.toInt())
-append(commonStrings!.COMMA_SEP)
-append(this.CONTROL_LEVEL.getName())
-append(commonStrings!.EQUALS)
-appendint(this.CONTROL_LEVEL.getValue()!.toInt())
-append(commonStrings!.COMMA_SEP)
-append(this.SPEED.getName())
-append(commonStrings!.EQUALS)
-appendint(this.SPEED.getValue()!.toInt())
-append(commonStrings!.COMMA_SEP)
-append(this.MAX_GAME_OBJECTS.getName())
-append(commonStrings!.EQUALS)
-appendint(this.MAX_GAME_OBJECTS.getValue()!.toInt())
-append(commonStrings!.COMMA_SEP)
-append(this.MAX_LAYERS.getName())
-append(commonStrings!.EQUALS)
-appendint(this.MAX_LAYERS.getValue()!.toInt())
+stringBuffer!.append(commonStrings!.COMMA_SEP)
+stringBuffer!.append(this.SCALE.getName())
+stringBuffer!.append(commonStrings!.EQUALS)
+stringBuffer!.appendint(this.SCALE.getValue()!.toInt())
+stringBuffer!.append(commonStrings!.COMMA_SEP)
+stringBuffer!.append(this.ORIENTATION.getName())
+stringBuffer!.append(commonStrings!.EQUALS)
+stringBuffer!.appendint(this.ORIENTATION.getValue()!.toInt())
+stringBuffer!.append(commonStrings!.COMMA_SEP)
+stringBuffer!.append(this.SENSOR_UPDATE_RATE.getName())
+stringBuffer!.append(commonStrings!.EQUALS)
+stringBuffer!.appendint(this.SENSOR_UPDATE_RATE.getValue()!.toInt())
+stringBuffer!.append(commonStrings!.COMMA_SEP)
+stringBuffer!.append(this.VIBRATION.getName())
+stringBuffer!.append(commonStrings!.EQUALS)
+stringBuffer!.appendint(this.VIBRATION.getValue()!.toInt())
+stringBuffer!.append(commonStrings!.COMMA_SEP)
+stringBuffer!.append(this.CHALLENGE_LEVEL.getName())
+stringBuffer!.append(commonStrings!.EQUALS)
+stringBuffer!.appendint(this.CHALLENGE_LEVEL.getValue()!.toInt())
+stringBuffer!.append(commonStrings!.COMMA_SEP)
+stringBuffer!.append(this.COLLIDE_DAMAGE.getName())
+stringBuffer!.append(commonStrings!.EQUALS)
+stringBuffer!.appendint(this.COLLIDE_DAMAGE.getValue()!.toInt())
+stringBuffer!.append(commonStrings!.COMMA_SEP)
+stringBuffer!.append(this.DURABILITY_CHALLENGE_LEVEL.getName())
+stringBuffer!.append(commonStrings!.EQUALS)
+stringBuffer!.appendint(this.DURABILITY_CHALLENGE_LEVEL.getValue()!.toInt())
+stringBuffer!.append(commonStrings!.COMMA_SEP)
+stringBuffer!.append(this.SPEED_CHALLENGE_LEVEL.getName())
+stringBuffer!.append(commonStrings!.EQUALS)
+stringBuffer!.appendint(this.SPEED_CHALLENGE_LEVEL.getValue()!.toInt())
+stringBuffer!.append(commonStrings!.COMMA_SEP)
+stringBuffer!.append(this.ATTACK_CHALLENGE_LEVEL.getName())
+stringBuffer!.append(commonStrings!.EQUALS)
+stringBuffer!.appendint(this.ATTACK_CHALLENGE_LEVEL.getValue()!.toInt())
+stringBuffer!.append(commonStrings!.COMMA_SEP)
+stringBuffer!.append(this.CONTROL_LEVEL.getName())
+stringBuffer!.append(commonStrings!.EQUALS)
+stringBuffer!.appendint(this.CONTROL_LEVEL.getValue()!.toInt())
+stringBuffer!.append(commonStrings!.COMMA_SEP)
+stringBuffer!.append(this.SPEED.getName())
+stringBuffer!.append(commonStrings!.EQUALS)
+stringBuffer!.appendint(this.SPEED.getValue()!.toInt())
+stringBuffer!.append(commonStrings!.COMMA_SEP)
+stringBuffer!.append(this.MAX_GAME_OBJECTS.getName())
+stringBuffer!.append(commonStrings!.EQUALS)
+stringBuffer!.appendint(this.MAX_GAME_OBJECTS.getValue()!.toInt())
+stringBuffer!.append(commonStrings!.COMMA_SEP)
+stringBuffer!.append(this.MAX_LAYERS.getName())
+stringBuffer!.append(commonStrings!.EQUALS)
+stringBuffer!.appendint(this.MAX_LAYERS.getValue()!.toInt())
 
 
 

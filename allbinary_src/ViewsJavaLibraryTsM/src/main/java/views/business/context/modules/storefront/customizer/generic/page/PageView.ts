@@ -45,18 +45,17 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("View Name: " +transformInfoInterface!.getName(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
@@ -70,11 +69,10 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 

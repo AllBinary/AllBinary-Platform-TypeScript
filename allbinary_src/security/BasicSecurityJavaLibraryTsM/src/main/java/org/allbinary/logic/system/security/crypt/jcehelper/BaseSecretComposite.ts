@@ -31,7 +31,7 @@ export class BaseSecretComposite
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public encrypt(array: ByteArray): ByteArray{
     //var array = array
@@ -44,7 +44,7 @@ export class BaseSecretComposite
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public decrypt(array: ByteArray): ByteArray{
 var array = array

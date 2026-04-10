@@ -67,31 +67,31 @@ var foregroundBasicColor = foregroundBasicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 this.list= list
-this.update()
-this.initCommands(commandListener)
+this.this.update()
+this.this.initCommands(commandListener)
 
     var gameDifficultyFactory: GameDifficultyFactory = GameDifficultyFactory.getInstance()!;
         
         
 
-this.setSelectedId(gameDifficultyFactory!.getLevel())
+this.this.setSelectedId(gameDifficultyFactory!.getLevel())
 }
 
 
     public open(){
-open()
+super.open()
 }
 
 
     public close(){
-close()
-this.save()
+super.close()
+this.this.save()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public save(){
 
@@ -99,7 +99,7 @@ this.save()
         
         
 
-setLevel(this.getSelectedId())
+gameDifficultyFactory!.setLevel(this.getSelectedId())
 }
 
 
@@ -110,18 +110,18 @@ var cmdListener = cmdListener
         
         
 
-this.removeAllCommands()
-this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.setCommandListener(cmdListener)
+this.this.removeAllCommands()
+this.this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS)
+this.this.setCommandListener(cmdListener)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(){
-this.deleteAll()
-this.add(list, "Difficulty", Choice.EXCLUSIVE)
-update()
+this.this.deleteAll()
+this.this.add(list, "Difficulty", Choice.EXCLUSIVE)
+super.update()
 }
 
 
@@ -135,15 +135,14 @@ var option = option
         
 
 
-    
                         if(list.size() > 0)
                         
                                     {
-                                    setSelectedIndex(0, true)
+                                    choiceGroup!.setSelectedIndex(0, true)
 
                                     }
                                 
-this.append(choiceGroup)
+this.this.append(choiceGroup)
 }
 
 
@@ -186,9 +185,9 @@ index < size; index++)
         
         
 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(NAME)!.append(anyType!.toString())!.toString(), this, METHOD_NAME)
-append(anyType!.toString(), NullCanvas.NULL_IMAGE)
+choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE)
 }
 
 
@@ -207,7 +206,7 @@ var id = id
         
         
 
-setSelectedIndex(id, true)
+choiceGroup!.setSelectedIndex(id, true)
 }
 
 

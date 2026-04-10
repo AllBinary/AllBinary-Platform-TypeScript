@@ -44,7 +44,7 @@ export class InventoryHelperFactory
         
         
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public static getInstance(hashMap: HashMap<Any, Any>, pageContext: PageContext): any = {}{
 var hashMap = hashMap

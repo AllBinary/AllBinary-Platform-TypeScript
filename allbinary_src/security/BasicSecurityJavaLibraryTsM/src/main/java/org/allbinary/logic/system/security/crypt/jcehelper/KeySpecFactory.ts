@@ -76,7 +76,6 @@ var keyData = keyData
 
         try {
             
-    
                         if(algorithm.compareTo(this.DES) == 0)
                         
                                     {
@@ -90,7 +89,6 @@ var keyData = keyData
                                     }
                                 
                              else 
-    
                         if(algorithm.compareTo(this.DESEDE) == 0)
                         
                                     {
@@ -118,7 +116,7 @@ var keyData = keyData
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 
 
 

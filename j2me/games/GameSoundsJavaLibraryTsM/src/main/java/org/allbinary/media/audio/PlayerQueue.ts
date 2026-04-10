@@ -65,17 +65,16 @@ var sound = sound
 
         try {
             
-    
                         if(!list.contains(sound))
                         
                                     {
-                                    add(sound)
+                                    list.add(sound)
 
                                     }
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.ADD)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD)
 }
 
 }
@@ -95,26 +94,24 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.ADD)
         
 
 
-    
                         if(list.size() > 0)
                         
                                     {
                                     sound= list.remove(0) as Sound
 
-    
                         if(sound != 
                                     null
                                 )
                         
                                     {
-                                    start()
+                                    sound.getPlayerP()!.start()
 
                                     }
                                 
 
         while(list.size() > max)
         {
-remove(0)
+list.remove(0)
 }
 
 played= true
@@ -135,7 +132,6 @@ played= true
         
 
 
-    
                         if(sound != 
                                     null
                                 )
@@ -145,7 +141,7 @@ played= true
 
                                     }
                                 
-put(StringMaker().
+PreLogUtil.put(StringMaker().
                             append(commonStrings!.EXCEPTION_LABEL)!.append(resource)!.toString(), this, commonStrings!.PROCESS)
 
 
@@ -159,7 +155,7 @@ put(StringMaker().
 
 
     public clear(){
-clear()
+this.list.clear()
 }
 
 

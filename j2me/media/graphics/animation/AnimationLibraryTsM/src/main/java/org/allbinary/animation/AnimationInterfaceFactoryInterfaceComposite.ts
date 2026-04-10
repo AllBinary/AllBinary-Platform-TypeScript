@@ -37,7 +37,7 @@ this.animationInterfaceFactoryInterfaceArray= basicAnimationInterfaceFactoryInte
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

@@ -59,9 +59,9 @@ var permanent = permanent
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setString(string)
+this.this.setString(string)
 this.seconds= seconds
-this.setBasicColorP(basicColor)
+this.this.setBasicColorP(basicColor)
 this.removeable= permanent
 }
 

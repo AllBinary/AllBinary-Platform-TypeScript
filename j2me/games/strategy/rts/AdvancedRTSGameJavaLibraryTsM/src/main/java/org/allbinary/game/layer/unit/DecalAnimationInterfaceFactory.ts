@@ -56,7 +56,7 @@ export class DecalAnimationInterfaceFactory
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(basicGameResources: BasicGameResources, basicColor: BasicColor): AnimationInterfaceFactoryInterface{
 var basicGameResources = basicGameResources
@@ -65,7 +65,6 @@ var basicColor = basicColor
     var animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface
 
 
-    
                         if(basicColor == BasicColorFactory.getInstance()!.RED)
                         
                                     {

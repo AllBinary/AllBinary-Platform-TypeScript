@@ -64,7 +64,7 @@ URLGLOBALS.urlGlobalsInterface= urlGlobalsInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getMainPath(): string{
 

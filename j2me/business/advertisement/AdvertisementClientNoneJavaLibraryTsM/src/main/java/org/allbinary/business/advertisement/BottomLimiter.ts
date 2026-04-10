@@ -77,7 +77,6 @@ this.higher= higher
         
 
 
-    
                         if(gameAdState!.isShowingAt())
                         
                                     {

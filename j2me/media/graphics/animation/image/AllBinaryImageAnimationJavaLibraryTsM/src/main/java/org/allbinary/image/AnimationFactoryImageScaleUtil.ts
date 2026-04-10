@@ -57,7 +57,7 @@ export class AnimationFactoryImageScaleUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage(image: Image, width: number, height: number, scaleWidth: number, scaleHeight: number): Image{
     //var image = image
@@ -69,7 +69,6 @@ export class AnimationFactoryImageScaleUtil
     var scaledImage: Image
 
 
-    
                         if(scaleWidth != 0 && scaleHeight != 0)
                         
                                     {
@@ -84,7 +83,6 @@ export class AnimationFactoryImageScaleUtil
         
 
 
-    
                         if((scaleX == 1.0f && scaleY == 1.0f) || (scaleX == 0.0f || scaleY == 0.0f))
                         
                                     {
@@ -114,7 +112,7 @@ export class AnimationFactoryImageScaleUtil
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAdjust(baseImageAnimationFactory: BaseImageAnimationFactory){
     //var baseImageAnimationFactory = baseImageAnimationFactory
@@ -124,7 +122,6 @@ export class AnimationFactoryImageScaleUtil
         
 
 
-    
                         if(scaleProperties!.scaleWidth != 0 && scaleProperties!.scaleHeight != 0)
                         
                                     {
@@ -144,7 +141,6 @@ export class AnimationFactoryImageScaleUtil
         
 
 
-    
                         if((scaleX == 1.0f && scaleY == 1.0f) || (scaleX == 0.0f || scaleY == 0.0f))
                         
                                     {

@@ -53,7 +53,6 @@ export class UploadMediaSingleton
 
     public static getInstance(): UploadMediaSingleton{
 
-    
                         if(UploadMediaSingleton.uploadMedia == 
                                     null
                                 )
@@ -129,7 +128,7 @@ index < size; index++)
         
         
 
-put(mediaData!.getName(), mediaData!.getType())
+this.readerFileTypesHashMap!.put(mediaData!.getName(), mediaData!.getType())
 }
 
 
@@ -157,7 +156,7 @@ put(mediaData!.getName(), mediaData!.getType())
         
 index < readerFileTypes!.length; index++)
         {
-put(readerFileTypes[index]!, RESIZABLE_MEDIA)
+this.readerFileTypesHashMap!.put(readerFileTypes[index]!, RESIZABLE_MEDIA)
 }
 
 
@@ -175,11 +174,10 @@ put(readerFileTypes[index]!, RESIZABLE_MEDIA)
         
 index < writerFileTypes!.length; index++)
         {
-put(writerFileTypes[index]!, RESIZABLE_MEDIA)
+this.writerFileTypesHashMap!.put(writerFileTypes[index]!, RESIZABLE_MEDIA)
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
@@ -188,11 +186,11 @@ put(writerFileTypes[index]!, RESIZABLE_MEDIA)
         
         
 
-append("Supported Media Readers: ")
-append(this.readerFileTypesHashMap!.toString())
-append(" Writers: ")
-append(this.writerFileTypesHashMap!.toString())
-put(stringBuffer!.toString(), this, this.commonStrings!.CONSTRUCTOR)
+stringBuffer!.append("Supported Media Readers: ")
+stringBuffer!.append(this.readerFileTypesHashMap!.toString())
+stringBuffer!.append(" Writers: ")
+stringBuffer!.append(this.writerFileTypesHashMap!.toString())
+logUtil!.put(stringBuffer!.toString(), this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -273,7 +271,6 @@ var mediaFileType = mediaFileType
 var aMediaType = aMediaType
 var hashMap = hashMap
 
-    
                         if(hashMap!.containsKey(mediaFileType))
                         
                                     {
@@ -283,7 +280,6 @@ var hashMap = hashMap
         
 
 
-    
                         if(mediaType!.compareTo(aMediaType) == 0)
                         
                                     {

@@ -46,8 +46,8 @@ export class ConstructorUtil
         
         
 
-append("Constructors: ")
-append(lineBreak)
+stringBuffer!.append("Constructors: ")
+stringBuffer!.append(lineBreak)
 
 
 
@@ -58,7 +58,7 @@ append(lineBreak)
         
 index < constructor.length; index++)
         {
-append(ConstructorUtil.view(constructor[index]!, lineBreak))
+stringBuffer!.append(ConstructorUtil.view(constructor[index]!, lineBreak))
 }
 
 
@@ -74,7 +74,6 @@ append(ConstructorUtil.view(constructor[index]!, lineBreak))
     //var constructor = constructor
     //var lineBreak = lineBreak
 
-    
                         if(constructor != 
                                     null
                                 )
@@ -90,7 +89,7 @@ append(ConstructorUtil.view(constructor[index]!, lineBreak))
         
         
 
-append(constructor.getName())
+stringBuffer!.append(constructor.getName())
 
     var classes: KClass<*>[] = constructor.getParameterTypes()!;
         
@@ -106,13 +105,13 @@ append(constructor.getName())
         
 index < classes.length; index++)
         {
-append(commonSeps!.SPACE)
-append(classes[index]!.getName())
-append(commonSeps!.COLON)
-appendint(index)
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(classes[index]!.getName())
+stringBuffer!.append(commonSeps!.COLON)
+stringBuffer!.appendint(index)
 }
 
-append(lineBreak)
+stringBuffer!.append(lineBreak)
 
 
 
@@ -123,7 +122,6 @@ append(lineBreak)
                                     }
                                 
                              else 
-    
                         if()
                         
 }

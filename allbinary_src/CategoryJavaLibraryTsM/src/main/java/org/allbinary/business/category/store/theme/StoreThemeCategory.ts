@@ -110,7 +110,7 @@ var level = level
                     
 this.transformInfoInterface= transformInfoInterface
 this.themeVector= Vector()
-this.addThemes(node)
+this.this.addThemes(node)
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, node: Node, rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface)                        
@@ -129,7 +129,7 @@ var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
                     
 this.transformInfoInterface= transformInfoInterface
 this.themeVector= Vector()
-this.addThemes(node)
+this.this.addThemes(node)
 }
 
 
@@ -143,7 +143,7 @@ this.addThemes(node)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public addThemes(node: Node){
 var node = node
@@ -173,11 +173,10 @@ index < nodeList!.getLength(); index++)
         
 
 
-    
                         if(themeNode!.getNodeName()!.compareTo(ThemeData.getInstance()!.NAME) == 0)
                         
                                     {
-                                    add(ThemeValidation(this, themeNode))
+                                    this.themeVector!.add(ThemeValidation(this, themeNode))
 
                                     }
                                 
@@ -188,7 +187,7 @@ index < nodeList!.getLength(); index++)
 
     public addTheme(themeValidation: ThemeValidation){
 var themeValidation = themeValidation
-add(themeValidation)
+this.themeVector!.add(themeValidation)
 }
 
 
@@ -202,11 +201,10 @@ add(themeValidation)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isValid(): Boolean{
 
-    
                         if(!super.isValid())
                         
                                     {
@@ -228,7 +226,7 @@ add(themeValidation)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toHashMap(): HashMap<Any, Any>{
 
@@ -236,7 +234,7 @@ add(themeValidation)
         
         
 
-put(ThemesData.getInstance()!.NAME, this.themeVector)
+categoryHashMap!.put(ThemesData.getInstance()!.NAME, this.themeVector)
 
 
 
@@ -246,7 +244,7 @@ put(ThemesData.getInstance()!.NAME, this.themeVector)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toVector(): Vector{
 

@@ -86,7 +86,6 @@ colorIndex++
 index < SIZE; index++)
         {
 
-    
                         if(INDEX_TO_COLOR[index] == colorAsInt)
                         
                                     {
@@ -107,7 +106,7 @@ index < SIZE; index++)
         
 
 basicColor= BasicColor(colorAsInt and ALPHA_MASK, colorAsInt and 0x00FFFFFF, StringUtil.getInstance()!.EMPTY_STRING)
-this.add(basicColor)
+this.this.add(basicColor)
 
 
 

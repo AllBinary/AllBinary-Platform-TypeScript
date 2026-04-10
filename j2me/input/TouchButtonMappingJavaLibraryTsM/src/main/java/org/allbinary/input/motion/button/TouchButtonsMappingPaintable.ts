@@ -59,7 +59,7 @@ public constructor (basicColor: BasicColor){
             super();
             var basicColor = basicColor
 this.foregroundColor= basicColor!.toInt()
-this.init()
+this.this.init()
 }
 
 
@@ -74,13 +74,13 @@ this.init()
         
         
 
-put(commonStrings!.EXCEPTION, this, "updateRectangle", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createPaintableTable(): Paintable[][]{
 
@@ -175,7 +175,7 @@ index >= 0; index--)
         
 rowIndex >= 0; rowIndex--)
         {
-paint(graphics)
+paintableTable[index]![rowIndex]!.paint(graphics)
 }
 
 }

@@ -24,7 +24,7 @@ export class TouchButtonVisitor
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(touchButtonInput: TouchButtonInput, string: string){
 var touchButtonInput = touchButtonInput

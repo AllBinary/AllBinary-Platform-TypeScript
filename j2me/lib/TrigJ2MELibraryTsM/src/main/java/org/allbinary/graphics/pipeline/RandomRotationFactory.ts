@@ -55,7 +55,7 @@ export class RandomRotationFactory
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(vector: BasicArrayList, howMuch: number): BasicArrayList{
 var vector = vector
@@ -65,8 +65,8 @@ var howMuch = howMuch
         
         
 
-createMatrix()
-rotate(angleFactory!.getInstance(getNextRandomAngle(howMuch)))
+graphicsPipe!.createMatrix()
+graphicsPipe!.rotate(angleFactory!.getInstance(getNextRandomAngle(howMuch)))
 
 
 

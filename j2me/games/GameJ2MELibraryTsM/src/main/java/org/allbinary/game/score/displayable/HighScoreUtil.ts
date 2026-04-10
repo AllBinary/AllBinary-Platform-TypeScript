@@ -120,19 +120,19 @@ this.gameInfo= gameInfo
     //var highScoresArray = highScoresArray
 this.highScoresArray= highScoresArray
 firstTime= false
-this.saveHighScore()
+this.this.saveHighScore()
 }
 
 
     public update(name: string){
     //var name = name
-save(abeClientInformation, gameInfo, name)
-setName(name)
+HighScoreNamePersistanceSingleton.getInstance()!.save(abeClientInformation, gameInfo, name)
+this.highScore!.setName(name)
 }
 
 
     public saveHighScore(){
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(commonStrings!.START)!.append(StringUtil.getInstance()!.toString(this.highScore))!.toString(), this, "saveHighScore")
 
     var size: number = this.highScoresArray!.length
@@ -141,12 +141,11 @@ put(StringMaker().
         
 
 
-    
                         if(firstTime && size == 0)
                         
                                     {
-                                    put("Games canvas did not give us any HighScores", this, "saveHighScore")
-fetchHighScores(gameInfo, this)
+                                    logUtil!.put("Games canvas did not give us any HighScores", this, "saveHighScore")
+highScoresFactoryInterface!.fetchHighScores(gameInfo, this)
 
 
 
@@ -173,13 +172,13 @@ fetchHighScores(gameInfo, this)
 index < size; index++)
         {
 highScores= highScoresArray[index]!
-addHighScore(this.highScore)
+highScores!.addHighScore(this.highScore)
 highScoresAsString= highScores!.toString()
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Added/Adding Score: ")!.append(highScoresAsString)!.toString(), this, "saveHighScore")
 }
 
-setHighScoresArray(highScoresArray)
+this.highScoresHelper!.setHighScoresArray(highScoresArray)
 }
 
 
@@ -190,7 +189,7 @@ setHighScoresArray(highScoresArray)
         
         
 
-commandAction(SUBMIT_TEXTBOX_COMMAND, myCanvas)
+commandListener!.commandAction(SUBMIT_TEXTBOX_COMMAND, myCanvas)
 }
 
 

@@ -61,20 +61,19 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
     public getFormData(request: HttpServletRequest){
 var request = request
-getFormData(request)
+super.getFormData(request)
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(this.getPaymentGatewayPrimaryKey()!.getName()))
                         
                                     {
-                                    setName(this.getWeblisketSession()!.getPaymentMethod())
+                                    this.getPaymentGatewayPrimaryKey()!.setName(this.getWeblisketSession()!.getPaymentMethod())
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
@@ -94,11 +93,10 @@ getFormData(request)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "edit()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "edit()", e)
 
                                     }
                                 

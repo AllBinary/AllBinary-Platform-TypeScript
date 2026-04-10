@@ -55,12 +55,12 @@ export class StoreFrontsTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(StoreFrontsHelperFactory())
-this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory())
+            this.this.setTagHelperFactory(StoreFrontsHelperFactory())
+this.this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory())
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     generateSelect(): string{
 
@@ -103,11 +103,10 @@ this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory())
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "generateSelect()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "generateSelect()", e)
 
                                     }
                                 
@@ -122,7 +121,7 @@ this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory())
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     install(): string{
 
@@ -165,11 +164,10 @@ this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory())
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "generateSelect()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "generateSelect()", e)
 
                                     }
                                 
@@ -184,7 +182,7 @@ this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory())
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     sendStoreCreatedEmails(): string{
 
@@ -227,11 +225,10 @@ this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory())
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "sendStoreCreatedEmails()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "sendStoreCreatedEmails()", e)
 
                                     }
                                 
@@ -246,18 +243,16 @@ this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory())
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.isEnabled())
                         
                                     {
                                     
-    
                         if(this.getCommand() != 
                                     null
                                 )
@@ -269,23 +264,20 @@ this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory())
         
 
 
-    
                         if(this.getCommand()!.compareTo(storeFrontData!.SELECT) == 0)
                         
                                     {
-                                    print(this.generateSelect())
+                                    this.pageContext!.getOut()!.print(this.generateSelect())
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(storeFrontData!.INSTALL) == 0)
                         
                                     {
-                                    put("current", this.getCurrent())
-put("total", this.getTotal())
+                                    this.getPropertiesHashMap()!.put("current", this.getCurrent())
+this.getPropertiesHashMap()!.put("total", this.getTotal())
 
-    
                         if(this.getCurrent()!.toInt() == this.getTotal()!.toInt())
                         
                                     {
@@ -298,16 +290,15 @@ put("total", this.getTotal())
 
                                     }
                                 
-this.install()
+this.this.install()
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(storeFrontData!.INSTALL_COMPLETE) == 0)
                         
                                     {
-                                    this.sendStoreCreatedEmails()
+                                    this.this.sendStoreCreatedEmails()
 
                                     }
                                 
@@ -335,7 +326,7 @@ this.install()
     
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -345,7 +336,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

@@ -70,7 +70,7 @@ export class CommandUriAction
     public add(command: Command, url: string){
 var command = command
 var url = url
-put(command, url)
+hashtable.put(command, url)
 }
 
 
@@ -83,7 +83,7 @@ var command = command
         
         
 
-startActivity(intent)
+ResourceUtil.getInstance()!.getContext()!.startActivity(intent)
 } catch(e: Exception)
             {
 
@@ -91,7 +91,7 @@ startActivity(intent)
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
 }
 
 }

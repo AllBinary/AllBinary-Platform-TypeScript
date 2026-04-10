@@ -102,7 +102,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -131,7 +131,7 @@ i < size; i++)
         
         
 
-appendChild(themeDomNodeInterface!.toXmlNode(document))
+node.appendChild(themeDomNodeInterface!.toXmlNode(document))
 }
 
 

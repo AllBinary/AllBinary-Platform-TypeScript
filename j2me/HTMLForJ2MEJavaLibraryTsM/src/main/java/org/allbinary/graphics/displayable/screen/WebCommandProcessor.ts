@@ -77,7 +77,7 @@ export class WebCommandProcessor
     //var canvas = canvas
 
         try {
-            openURL(list.remove(0) as String)
+            PlayN.openURL(list.remove(0) as String)
 } catch(e: Exception)
             {
 
@@ -85,7 +85,7 @@ export class WebCommandProcessor
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
 }
 
 }

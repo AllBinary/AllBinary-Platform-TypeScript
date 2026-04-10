@@ -135,10 +135,9 @@ hardDriveInterfaceVector= Vector()
 macInterfaceVector= Vector()
 monitorInterfaceVector= Vector()
 
-    
                         if(componentInterfaceVector!.length < MINHARDWARE)
                         
-                                    throw Exception("Not Enough Data For A Valid License On Windows")
+                                    throw Error("Not Enough Data For A Valid License On Windows")
 } catch(e: Exception)
             {
 
@@ -153,7 +152,6 @@ monitorInterfaceVector= Vector()
     getComponentType(component: string): string{
 var component = component
 
-    
                         if(component.indexOf(this.componentFactory!.ETHERNET.toString()) >= 0)
                         
                                     {
@@ -167,7 +165,6 @@ var component = component
                                     }
                                 
                              else 
-    
                         if(component.indexOf(this.componentFactory!.BRIDGE.toString()) >= 0)
                         
                                     {
@@ -181,7 +178,6 @@ var component = component
                                     }
                                 
                              else 
-    
                         if(component.indexOf(this.componentFactory!.IDE.toString()) >= 0)
                         
                                     {
@@ -195,7 +191,6 @@ var component = component
                                     }
                                 
                              else 
-    
                         if(component.indexOf(this.componentFactory!.MULTIMEDIA.toString()) >= 0)
                         
                                     {
@@ -209,7 +204,6 @@ var component = component
                                     }
                                 
                              else 
-    
                         if(component.indexOf(this.componentFactory!.SCSI.toString()) >= 0)
                         
                                     {
@@ -223,7 +217,6 @@ var component = component
                                     }
                                 
                              else 
-    
                         if(component.indexOf(this.componentFactory!.USB.toString()) >= 0)
                         
                                     {
@@ -237,7 +230,6 @@ var component = component
                                     }
                                 
                              else 
-    
                         if(component.indexOf(this.componentFactory!.VGA.toString()) >= 0)
                         
                                     {
@@ -251,7 +243,6 @@ var component = component
                                     }
                                 
                              else 
-    
                         if()
                         
 }
@@ -415,8 +406,8 @@ index < size; index++)
         
         
 
-append(componentInterface!.toString())
-append(CommonSeps.getInstance()!.NEW_LINE)
+hardwareBuffer!.append(componentInterface!.toString())
+hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
 }
 
 

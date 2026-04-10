@@ -49,8 +49,8 @@ public constructor (filterStringBasicArrayList: BasicArrayList){
 
             super();
             var filterStringBasicArrayList = filterStringBasicArrayList
-this.setFilterStringBasicArrayList(filterStringBasicArrayList)
-put("Filter BasicArrayList: " +this.getFilterStringBasicArrayList()!.toString(), this, this.commonStrings!.CONSTRUCTOR)
+this.this.setFilterStringBasicArrayList(filterStringBasicArrayList)
+PreLogUtil.put("Filter BasicArrayList: " +this.getFilterStringBasicArrayList()!.toString(), this, this.commonStrings!.CONSTRUCTOR)
 }
 
 
@@ -92,7 +92,6 @@ index < size; index++)
         {
 nextFileFilterString= list.get(index) as String
 
-    
                         if(this.visit(file, nextFileFilterString))
                         
                                     {

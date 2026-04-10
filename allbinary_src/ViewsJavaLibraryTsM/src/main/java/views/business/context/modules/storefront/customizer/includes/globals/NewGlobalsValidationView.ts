@@ -63,7 +63,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlDoc(): Document{
 
@@ -81,7 +81,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
             
 
                             {
-                            insert(this.getTransformInfoInterface(), this as DomNodeInterface)
+                            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this as DomNodeInterface)
 
                             }
                     
@@ -94,11 +94,10 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -130,11 +129,10 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 
@@ -170,7 +168,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 

@@ -94,7 +94,7 @@ export class SelectionHudPaintable extends InitUpdatePaintable {
 protected constructor (){
 
             super();
-            this.update()
+            this.this.update()
 this.primitiveLongUtil= PrimitiveLongUtil(10000)
 }
 
@@ -114,7 +114,7 @@ this.x= CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +touchButtonLocationHe
 this.textX= this.getX() +4
 this.width= displayInfoSingleton!.getLastWidth() -this.getX() *2
 this.imageX= this.getWidth() +touchButtonLocationHelper!.getColumnsRemainderHalf() -10
-this.setHeight(CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +myFont!.DEFAULT_CHAR_HEIGHT)
+this.this.setHeight(CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +myFont!.DEFAULT_CHAR_HEIGHT)
 }
 
 
@@ -132,10 +132,10 @@ this.setHeight(CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +myFont!.DEFAUL
 
     public paint(graphics: Graphics){
 var graphics = graphics
-setColor(backgroundColor)
-drawRect(this.getX(), y, this.getWidth(), this.getHeight())
-setColor(this.getColor())
-drawString(getName(), this.textX, y, 0)
+graphics.setColor(backgroundColor)
+graphics.drawRect(this.getX(), y, this.getWidth(), this.getHeight())
+graphics.setColor(this.getColor())
+graphics.drawString(getName(), this.textX, y, 0)
 }
 
 
@@ -184,7 +184,7 @@ this.name= name
     public setBasicColorP(basicColor: BasicColor){
 var basicColor = basicColor
 this.basicColor= basicColor
-this.setColor(basicColor!.toInt())
+this.this.setColor(basicColor!.toInt())
 }
 
 

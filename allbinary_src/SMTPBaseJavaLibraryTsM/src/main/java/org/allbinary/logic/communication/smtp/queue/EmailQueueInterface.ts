@@ -25,11 +25,11 @@ import { EmailInterface } from "../../../../../../org/allbinary/logic/communicat
 interface EmailQueueInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public offer(emailInterface: EmailInterface): boolean
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public remove(): EmailInterface
 

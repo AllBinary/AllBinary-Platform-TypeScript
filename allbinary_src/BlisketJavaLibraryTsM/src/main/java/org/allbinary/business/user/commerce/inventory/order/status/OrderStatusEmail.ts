@@ -107,25 +107,24 @@ this.user= UserEntityFactory.getInstance()!.getUser(orderHistory!.getUserName())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
-this.notifyStoreAdmin()
-this.notifyUser()
+this.this.notifyStoreAdmin()
+this.this.notifyUser()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     notifyStoreAdmin(){
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put("Order Email", this, "emailStoreAdmin")
+                                    logUtil!.put("Order Email", this, "emailStoreAdmin")
 
                                     }
                                 
@@ -174,16 +173,15 @@ this.notifyUser()
         
         
 
-receiveEmailInfo(userEmailEventNameData, storeAdminEmailInfo)
-receiveEmailInfo(userEmailEventNameData, adminEmailInfo)
+storeAdminUserEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, storeAdminEmailInfo)
+adminUserEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, adminEmailInfo)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.EXCEPTION, this, "emailAdmin", e)
+                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "emailAdmin", e)
 
                                     }
                                 
@@ -192,17 +190,16 @@ receiveEmailInfo(userEmailEventNameData, adminEmailInfo)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     notifyUser(){
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put("Email User", this, "notifyUser()")
+                                    logUtil!.put("Email User", this, "notifyUser()")
 
                                     }
                                 
@@ -236,15 +233,14 @@ receiveEmailInfo(userEmailEventNameData, adminEmailInfo)
         
         
 
-receiveEmailInfo(userEmailEventNameData, emailInfo)
+userEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, emailInfo)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.EXCEPTION, this, "notifyUser", e)
+                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "notifyUser", e)
 
                                     }
                                 

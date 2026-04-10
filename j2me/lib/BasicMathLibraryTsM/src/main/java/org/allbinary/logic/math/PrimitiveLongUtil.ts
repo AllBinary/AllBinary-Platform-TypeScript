@@ -62,11 +62,10 @@ public constructor (powerOfTen: number)
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(powerOfTen % 10 != 0)
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, Exception("Max must be power of 10"))
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, Error("Max must be power of 10"))
 
                                     }
                                 
@@ -87,11 +86,10 @@ this.charArray= new Array(this.maxDigits)
     public getCharArray(value: number): string[]{
 var value = value
 
-    
                         if(value < 10)
                         
                                     {
-                                    this.setCurrentTotalDigits(1)
+                                    this.this.setCurrentTotalDigits(1)
 
 
 
@@ -102,11 +100,10 @@ var value = value
                                     }
                                 
 
-    
                         if(value > maxValue)
                         
                                     {
-                                    this.setCurrentTotalDigits(3)
+                                    this.this.setCurrentTotalDigits(3)
 
 
 
@@ -140,12 +137,10 @@ var value = value
         
 
 
-    
                         if(digit >= 0 && digit < 10)
                         
                                     {
                                     
-    
                         if(digit == 0 && index == 0)
                         
                                     {
@@ -164,7 +159,7 @@ lastValue += digit *div
 div= div /10
 }
 
-this.setCurrentTotalDigits(index)
+this.this.setCurrentTotalDigits(index)
 
 
 

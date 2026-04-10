@@ -210,8 +210,8 @@ public constructor (remoteInfo: RemoteInfo, groupInterface: Group[], rootName: s
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setCollidableInferface(CollidableRTSBehavior(this, true))
-setWaypoint(Waypoint(this, SelectSound.getInstance()))
+this.this.setCollidableInferface(CollidableRTSBehavior(this, true))
+this.getWaypointBehavior()!.setWaypoint(Waypoint(this, SelectSound.getInstance()))
 
     var damageFloaters: DamageFloaters = DamageFloaters.getInstance()!;
         
@@ -223,7 +223,6 @@ setWaypoint(Waypoint(this, SelectSound.getInstance()))
         
 
 
-    
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.DAMAGE_FLOATERS))
                         
                                     {
@@ -245,7 +244,6 @@ this.damageFloatersPaintableInterface= damageFloatersPaintableInterface
         
 
 
-    
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.HEALTH_BARS))
                         
                                     {
@@ -255,12 +253,12 @@ this.damageFloatersPaintableInterface= damageFloatersPaintableInterface
                                 
 this.healthBar= healthBar
 this.pathsHashtable= Hashtable<Any, Any>()
-this.setMaxLevel(30)
-this.setProductivity(1)
-this.setEfficiency(this.calculateEfficiency())
+this.this.setMaxLevel(30)
+this.this.setProductivity(1)
+this.this.setEfficiency(this.calculateEfficiency())
 this.efficiencyPerLevel= 10000 /this.getMaxLevel() +10000 % this.getMaxLevel()
 this.efficiency= this.efficiencyPerLevel
-this.generateMoveOutOfBuildAreaPaths()
+this.this.generateMoveOutOfBuildAreaPaths()
 this.trackingEvent= TrackingEvent(this)
 }
 
@@ -273,8 +271,8 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setCollidableInferface(CollidableRTSBehavior(this, true))
-setWaypoint(Waypoint(this, SelectSound.getInstance()))
+this.this.setCollidableInferface(CollidableRTSBehavior(this, true))
+this.getWaypointBehavior()!.setWaypoint(Waypoint(this, SelectSound.getInstance()))
 this.efficiencyPerLevel= 0
 this.efficiency= 0
 this.trackingEvent= TrackingEvent()
@@ -295,12 +293,11 @@ this.pathsHashtable= NullUtil.getInstance()!.NULL_TABLE
         
 
 
-    
                         if(advancedRTSPlayerLayerInterface!.isLocalPlayer())
                         
                                     {
                                     this.local= true
-this.addVisibility()
+this.this.addVisibility()
 
                                     }
                                 
@@ -309,16 +306,16 @@ this.addVisibility()
 
                         }
                             
-initVisibility(rtsPlayerLayerInterface)
+super.initVisibility(rtsPlayerLayerInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-construct(rtsPlayerLayerInterface)
-addListener(this)
+super.construct(rtsPlayerLayerInterface)
+TrackingEventHandler.getInstance()!.addListener(this)
 }
 
 
@@ -332,17 +329,16 @@ addListener(this)
         
 
 
-    
                         if(layerInterface!.getGroupInterface()[0] != this.getGroupInterface()[0])
                         
                                     {
-                                    onMovementFound(this.trackingEvent)
+                                    layerInterface!.onMovementFound(this.trackingEvent)
 
                                     }
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "onMovement", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "onMovement", e)
 }
 
 }
@@ -352,26 +348,23 @@ put(commonStrings!.EXCEPTION, this, "onMovement", e)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processBuiltTick(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
-    
                         if(this.getHealthInterface()!.isDamaged())
                         
                                     {
-                                    this.setAnimationInterface(this.destroyAnimationInterface)
+                                    this.this.setAnimationInterface(this.destroyAnimationInterface)
 
                                     }
                                 
 
-    
                         if(!this.getHealthInterface()!.isAlive())
                         
                                     {
                                     
-    
                         if(this.isReadyForExplosion())
                         
                                     {
@@ -386,16 +379,14 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 
 
-    
                         if(currentFrame == size && !this.timeDelayHelper!.isTime())
                         
                                     {
                                     
-    
                         if(!this.getHealthInterface()!.isAlive())
                         
                                     {
-                                    this.setDestroyed(true)
+                                    this.this.setDestroyed(true)
 
                                     }
                                 
@@ -403,7 +394,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                                     }
                                 
                         else {
-                            nextFrame()
+                            this.destroyAnimationInterface!.nextFrame()
 
                         }
                             
@@ -411,12 +402,12 @@ var allBinaryLayerManager = allBinaryLayerManager
                                     }
                                 
                         else {
-                            this.setAnimationInterface(this.destroyAnimationInterface)
-add(ExplosionBasicSound.getInstance())
-onSmallShakeEvent()
-vibrate(duration, 0, 0)
-setStartTime()
-this.setReadyForExplosion(true)
+                            this.this.setAnimationInterface(this.destroyAnimationInterface)
+SecondaryPlayerQueueFactory.getInstance()!.add(ExplosionBasicSound.getInstance())
+this.shakeListener!.onSmallShakeEvent()
+vibration.vibrate(duration, 0, 0)
+this.timeDelayHelper!.setStartTime()
+this.this.setReadyForExplosion(true)
 
                         }
                             
@@ -424,11 +415,11 @@ this.setReadyForExplosion(true)
                                     }
                                 
                         else {
-                            processBuiltTick(allBinaryLayerManager)
+                            super.processBuiltTick(allBinaryLayerManager)
 
                         }
                             
-nextFrame()
+this.indexedButShouldBeRotationAnimationInterface!.nextFrame()
 }
 
 
@@ -463,7 +454,7 @@ nextFrame()
         
         
 
-put("Cost: " +downgradeCost, this, "getDowngradeCost")
+logUtil!.put("Cost: " +downgradeCost, this, "getDowngradeCost")
 
 
 
@@ -489,18 +480,18 @@ put("Cost: " +downgradeCost, this, "getDowngradeCost")
 
 
     public downgrade(){
-downgrade()
-this.setProductivity(this.getProductivity() -1)
-this.setEfficiency(this.getEfficiency() -this.calculateEfficiency())
-setMaxHealth(this.getHealthInterface()!.getMaxHealth() -((this.getLevel() +1) *100))
+super.downgrade()
+this.this.setProductivity(this.getProductivity() -1)
+this.this.setEfficiency(this.getEfficiency() -this.calculateEfficiency())
+this.getHealthInterface()!.setMaxHealth(this.getHealthInterface()!.getMaxHealth() -((this.getLevel() +1) *100))
 }
 
 
     public upgrade(){
-upgrade()
-this.setProductivity(this.getProductivity() +1)
-this.setEfficiency(this.getEfficiency() +this.calculateEfficiency())
-setMaxHealth(this.getHealthInterface()!.getMaxHealth() +(this.getLevel() *100))
+super.upgrade()
+this.this.setProductivity(this.getProductivity() +1)
+this.this.setEfficiency(this.getEfficiency() +this.calculateEfficiency())
+this.getHealthInterface()!.setMaxHealth(this.getHealthInterface()!.getMaxHealth() +(this.getLevel() *100))
 }
 
 
@@ -552,7 +543,7 @@ this.efficiency= efficiency
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     generateMoveOutOfBuildAreaPaths(){
 
@@ -611,19 +602,18 @@ index >= 0; index--)
         {
 surroundGeographicMapCellPosition= surroundList!.get(index) as GeographicMapCellPosition
 
-    
                         if(geographicMapDirectionUtil!.getEightDirectionFromCellPositionToAdjacentCellPosition(surroundGeographicMapCellPosition, occupyGeographicMapCellPosition) != NO_DIRECTION)
                         
                                     {
                                     list= BasicArrayList(1)
-add(surroundGeographicMapCellPosition)
-add(list)
+list.add(surroundGeographicMapCellPosition)
+pathsList!.add(list)
 
                                     }
                                 
 }
 
-put(occupyGeographicMapCellPosition, pathsList)
+this.pathsHashtable!.put(occupyGeographicMapCellPosition, pathsList)
 }
 
 }
@@ -668,34 +658,32 @@ put(occupyGeographicMapCellPosition, pathsList)
     public paint(graphics: Graphics){
     //var graphics = graphics
 
-    
                         if(this.isVisible())
                         
                                     {
-                                    paint(graphics)
-paint(graphics)
-paint(graphics)
+                                    super.paint(graphics)
+this.damageFloatersPaintableInterface!.paint(graphics)
+this.healthBar!.paint(graphics)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public damage(damage: number, damageType: number){
     //var damage = damage
     //var damageType = damageType
-damage(damage, damageType)
-add(damage)
+super.damage(damage, damageType)
+this.damageFloaters!.add(damage)
 
-    
                         if(damage > 0)
                         this.getHealthInterface()!.damage(damage)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDamage(damageType: number): number{
 var damageType = damageType
@@ -719,13 +707,13 @@ var damageType = damageType
         
         
 
-addStationaryCellPositions(occupyList)
+VisibleCellPositionsSingleton.getInstance()!.addStationaryCellPositions(occupyList)
 
     var surroundList: BasicArrayList = geographicMapCellPositionArea!.getSurroundingGeographicMapCellPositionList()!;
         
         
 
-addStationaryCellPositions(surroundList)
+VisibleCellPositionsSingleton.getInstance()!.addStationaryCellPositions(surroundList)
 }
 
 
@@ -735,39 +723,36 @@ addStationaryCellPositions(surroundList)
         
         
 
-removeStationaryCellPositions(occupyList)
+VisibleCellPositionsSingleton.getInstance()!.removeStationaryCellPositions(occupyList)
 
     var surroundList: BasicArrayList = this.geographicMapCellPositionAreaBase!.getSurroundingGeographicMapCellPositionList()!;
         
         
 
-removeStationaryCellPositions(surroundList)
+VisibleCellPositionsSingleton.getInstance()!.removeStationaryCellPositions(surroundList)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setDestroyed(destroyed: boolean){
 var destroyed = destroyed
-setDestroyed(destroyed)
+super.setDestroyed(destroyed)
 
-    
                         if(this.isDestroyed())
                         
                                     {
-                                    remove(this)
-removeListener(this)
+                                    DropCellPositionHistory.getInstance()!.remove(this)
+TrackingEventHandler.getInstance()!.removeListener(this)
 
-    
                         if(this.local)
                         
                                     {
-                                    this.removeVisibility()
+                                    this.this.removeVisibility()
 
                                     }
                                 
 
-    
                         if(!this.getHealthInterface()!.isAlive())
                         
                                     {
@@ -777,38 +762,34 @@ removeListener(this)
         
 
 
-    
                         if(damage > 10)
                         
                                     {
-                                    add(ExplosionBasicSound.getInstance())
+                                    SecondaryPlayerQueueFactory.getInstance()!.add(ExplosionBasicSound.getInstance())
 
-    
                         if(damage < 100)
                         
                                     {
-                                    onSmallShakeEvent()
-vibrate(duration, 0, 0)
+                                    this.shakeListener!.onSmallShakeEvent()
+vibration.vibrate(duration, 0, 0)
 
                                     }
                                 
                              else 
-    
                         if(damage < 1000)
                         
                                     {
-                                    onMediumShakeEvent()
-vibrate(duration *2, 0, 0)
+                                    this.shakeListener!.onMediumShakeEvent()
+vibration.vibrate(duration *2, 0, 0)
 
                                     }
                                 
                              else 
-    
                         if(damage < 3000)
                         
                                     {
-                                    onLargeShakeEvent()
-vibrate(duration *4, 0, 0)
+                                    this.shakeListener!.onLargeShakeEvent()
+vibration.vibrate(duration *4, 0, 0)
 
                                     }
                                 
@@ -830,8 +811,8 @@ vibrate(duration *4, 0, 0)
         
         
 
-setBasicColorP(this.allBinaryGameLayerManagerP!.getForegroundBasicColor())
-setRtsLayer(this)
+buildingInfoHudPaintable!.setBasicColorP(this.allBinaryGameLayerManagerP!.getForegroundBasicColor())
+buildingInfoHudPaintable!.setRtsLayer(this)
 
 
 

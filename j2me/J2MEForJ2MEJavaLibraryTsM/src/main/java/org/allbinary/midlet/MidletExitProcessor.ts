@@ -37,7 +37,7 @@ this.midlet= midlet
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
 }

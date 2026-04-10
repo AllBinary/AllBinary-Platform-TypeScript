@@ -127,11 +127,11 @@ this.ownerLayer= ownerLayer
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
         
@@ -148,7 +148,6 @@ setAllBinaryGameLayerManager(allBinaryGameLayerManager)
         
 
 
-    
                         if(paths != basicArrayListUtil!.NULL_ARRAY_OF_ARRAY)
                         
                                     {
@@ -194,11 +193,10 @@ this.paths= Array(tiledLayer!.getColumns()) { arrayOfNulls<BasicArrayList?>(tile
         
 
 
-    
                         if(pathsList != basicArrayListUtil!.getImmutableInstance())
                         
                                     {
-                                    release(pathsList)
+                                    BasicGeographicMapExtractedPathsCacheFactory.getInstance()!.release(pathsList)
 
                                     }
                                 
@@ -209,7 +207,7 @@ this.paths= Array(tiledLayer!.getColumns()) { arrayOfNulls<BasicArrayList?>(tile
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getPathsListFromCacheOnly(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -222,7 +220,7 @@ this.paths= Array(tiledLayer!.getColumns()) { arrayOfNulls<BasicArrayList?>(tile
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getPathsList(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -232,7 +230,6 @@ this.paths= Array(tiledLayer!.getColumns()) { arrayOfNulls<BasicArrayList?>(tile
         
 
 
-    
                         if(pathsList == basicArrayListUtil!.getImmutableInstance())
                         
                                     {
@@ -258,7 +255,6 @@ this.paths[geographicMapCellPosition!.getColumn()]![geographicMapCellPosition!.g
         
 
 
-    
                         if(startGeographicMapCellPosition == endGeographicMapCellPosition)
                         
                                     {
@@ -274,7 +270,6 @@ index >= 0; index--)
         {
 endGeographicMapCellPosition= this.endList!.get(index) as GeographicMapCellPosition
 
-    
                         if(startGeographicMapCellPosition != endGeographicMapCellPosition)
                         
                                     {
@@ -298,12 +293,11 @@ endGeographicMapCellPosition= this.endList!.get(index) as GeographicMapCellPosit
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createPaths(startGeographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
     //var startGeographicMapCellPosition = startGeographicMapCellPosition
 
-    
                         if(this.endList!.size() == 0)
                         
                                     {
@@ -322,7 +316,6 @@ endGeographicMapCellPosition= this.endList!.get(index) as GeographicMapCellPosit
         
 
 
-    
                         if(endGeographicMapCellPosition == 
                                     null
                                 )
@@ -338,12 +331,10 @@ endGeographicMapCellPosition= this.endList!.get(index) as GeographicMapCellPosit
                                     }
                                 
 
-    
                         if(startGeographicMapCellPosition == endGeographicMapCellPosition)
                         
                                     {
                                     
-    
                         if(this.ownerLayer!.shouldHandleStartSameAsEnd())
                         
                                     {
@@ -360,7 +351,7 @@ endGeographicMapCellPosition= this.endList!.get(index) as GeographicMapCellPosit
                             
 
 
-                            throw Exception("Start should not be End: " +this.endList!.size())
+                            throw Error("Start should not be End: " +this.endList!.size())
 
                         }
                             
@@ -392,7 +383,7 @@ endGeographicMapCellPosition= this.endList!.get(index) as GeographicMapCellPosit
         
         
 
-copyMapIntoCustomMap()
+customMapGenerator!.copyMapIntoCustomMap()
 
     var customMapArray: IntArray[] = customMapGenerator!.getCustomMapArray()!;
         
@@ -411,14 +402,13 @@ customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosi
         
 
 
-    
                         if(list.size() < 1)
                         
                                     {
                                     
 
 
-                            throw Exception("Path may have been cleared by clearing caching")
+                            throw Error("Path may have been cleared by clearing caching")
 
                                     }
                                 
@@ -433,11 +423,11 @@ customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosi
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onBuildingEvent(event: RTSLayerEvent){
     //var event = event
@@ -472,17 +462,16 @@ this.paths[columnIndex]![rowIndex]= basicArrayListUtil!.getImmutableInstance()
 
 
     public reset(){
-clear()
-this.releaseCachedPaths()
+this.getConnectedWaypointList()!.clear()
+this.this.releaseCachedPaths()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public visit(unitLayer: PathFindingLayerInterface){
     //var unitLayer = unitLayer
 
-    
                         if(unitLayer!.getGroupInterface()[0] != this.ownerLayer!.getGroupInterface()[0])
                         
                                     {
@@ -501,7 +490,6 @@ this.releaseCachedPaths()
         
 
 
-    
                         if(size > 0)
                         
                                     {
@@ -519,17 +507,16 @@ this.releaseCachedPaths()
         
 
 
-    
                         if(rtsLayer!.isDestroyed())
                         
                                     {
-                                    remove(rtsLayer)
+                                    this.getConnectedWaypointList()!.remove(rtsLayer)
 
                                     }
                                 
                         else {
-                            handleCost(this.ownerLayer)
-insertWaypoint(0, rtsLayer)
+                            unitLayer!.handleCost(this.ownerLayer)
+unitWaypointBehavior!.insertWaypoint(0, rtsLayer)
 break;
 
                     

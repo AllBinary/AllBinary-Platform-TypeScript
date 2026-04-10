@@ -22,7 +22,7 @@
 interface AutomaticCacheInterface extends CacheInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     get(key: any = {}): CacheableInterface
 

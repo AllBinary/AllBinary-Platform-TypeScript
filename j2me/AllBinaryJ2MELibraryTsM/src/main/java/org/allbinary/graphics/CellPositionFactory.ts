@@ -86,11 +86,11 @@ this.rows= rows
         
         
 
-append("Init: columns: ")
-appendint(columns)
-append(" rows: ")
-appendint(rows)
-put(stringBuffer!.toString(), this, commonStrings!.INIT)
+stringBuffer!.append("Init: columns: ")
+stringBuffer!.appendint(columns)
+stringBuffer!.append(" rows: ")
+stringBuffer!.appendint(rows)
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT)
 
 
 
@@ -111,7 +111,7 @@ column < columns; column++)
         
 row < rows; row++)
         {
-this.createInstance(column, row)
+this.this.createInstance(column, row)
 }
 
 }
@@ -137,7 +137,7 @@ var i_row = i_row
         
         
 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("columns: ")!.appendint(this.getColumns())!.append(" rows: ")!.appendint(this.getRows())!.append(" col: ")!.appendint(i_column)!.append(" row: ")!.appendint(i_row)!.toString(), this, commonStrings!.GET_INSTANCE, e)
 
 
@@ -159,7 +159,6 @@ var i_row = i_row
         
 
 
-    
                         if(cellPositionCanBeNull == 
                                     null
                                 )

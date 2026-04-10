@@ -70,36 +70,35 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public waitFor(image: Image, name: string){
     //var image = image
     //var name = name
-setStartTime()
-this.waitFor(image, name, this.timeDelayHelper)
+this.timeDelayHelper!.setStartTime()
+this.this.waitFor(image, name, this.timeDelayHelper)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public handleTimeout(name: string){
     //var name = name
 
-    
                         if(timeDelayHelper!.isTime())
                         
                                     {
                                     
 
 
-                            throw Exception("isReady: Timeout Waiting or GameHtmlHasLoadedResourcesProcessor does not have this Image: " +name)
+                            throw Error("isReady: Timeout Waiting or GameHtmlHasLoadedResourcesProcessor does not have this Image: " +name)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     waitFor(image: Image, name: string, timeDelayHelper: TimeDelayHelper){
     //var image = image
@@ -119,35 +118,33 @@ this.waitFor(image, name, this.timeDelayHelper)
         while(!playnCoreImage!.isReady() || playnCoreImage!.width() +playnCoreImage!.height() <= 0)
         {
 
-    
                         if(timeDelayHelper!.isTime())
                         
                                     {
                                     
 
 
-                            throw Exception("waitFor: Timeout Waiting or GameHtmlHasLoadedResourcesProcessor does not have this Image: " +name)
+                            throw Error("waitFor: Timeout Waiting or GameHtmlHasLoadedResourcesProcessor does not have this Image: " +name)
 
                                     }
                                 
 }
 
 
-    
                         if(!image.isReady())
                         
                                     {
-                                    init(image.getImage())
+                                    image.init(image.getImage())
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public waitForAll(){
-setStartTime()
+this.allTimeDelayHelper!.setStartTime()
 
     var hashtable: Hashtable<Any, Any> = GameFeatureImageCacheFactory.getInstance()!.getHashtableP()!;
         
@@ -164,7 +161,7 @@ setStartTime()
         
         
 
-put("Image Total: " +size, this, "waitForAll")
+PreLogUtil.put("Image Total: " +size, this, "waitForAll")
 
 
 
@@ -175,7 +172,7 @@ put("Image Total: " +size, this, "waitForAll")
         
 index < size; index++)
         {
-this.waitFor(hashtable.get(objectArray[index]!) as Image, objectArray[index]! as String, this.allTimeDelayHelper)
+this.this.waitFor(hashtable.get(objectArray[index]!) as Image, objectArray[index]! as String, this.allTimeDelayHelper)
 }
 
 }

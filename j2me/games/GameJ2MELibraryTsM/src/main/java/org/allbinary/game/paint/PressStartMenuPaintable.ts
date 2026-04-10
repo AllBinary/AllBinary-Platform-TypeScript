@@ -74,7 +74,6 @@ public constructor (){
 
             super();
             
-    
                         if(TouchScreenFactory.getInstance()!.isTouch())
                         
                                     {
@@ -83,7 +82,6 @@ public constructor (){
                                     }
                                 
                              else 
-    
                         if(AppletUtil.isAppletLoader(this))
                         
                                     {
@@ -106,21 +104,19 @@ public constructor (){
     public paint(graphics: Graphics){
 var graphics = graphics
 
-    
                         if(timeDelayHelper!.isTime())
                         
                                     {
                                     
-    
                         if(this.isFlash())
                         
                                     {
-                                    this.setFlash(false)
+                                    this.this.setFlash(false)
 
                                     }
                                 
                         else {
-                            this.setFlash(true)
+                            this.this.setFlash(true)
 
                         }
                             
@@ -128,7 +124,6 @@ var graphics = graphics
                                     }
                                 
 
-    
                         if(this.isFlash())
                         
                                     {
@@ -152,7 +147,7 @@ var graphics = graphics
         
         
 
-drawString(startString, displayInfo!.getLastHalfWidth() -beginWidth, displayInfo!.getLastHeight() -line, anchor)
+graphics.drawString(startString, displayInfo!.getLastHalfWidth() -beginWidth, displayInfo!.getLastHeight() -line, anchor)
 
                                     }
                                 

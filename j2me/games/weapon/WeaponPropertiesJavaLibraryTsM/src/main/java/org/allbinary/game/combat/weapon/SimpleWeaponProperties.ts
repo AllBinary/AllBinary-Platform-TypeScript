@@ -32,9 +32,9 @@ export class SimpleWeaponProperties
 
     public set(simpleWeaponProperties: SimpleWeaponProperties){
 var simpleWeaponProperties = simpleWeaponProperties
-this.setDamage(simpleWeaponProperties!.getDamage())
-this.setDissipation(simpleWeaponProperties!.getDissipation())
-this.setRange(simpleWeaponProperties!.getRange())
+this.this.setDamage(simpleWeaponProperties!.getDamage())
+this.this.setDissipation(simpleWeaponProperties!.getDissipation())
+this.this.setRange(simpleWeaponProperties!.getRange())
 }
 
 

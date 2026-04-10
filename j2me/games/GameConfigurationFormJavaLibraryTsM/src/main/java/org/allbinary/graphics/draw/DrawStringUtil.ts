@@ -95,7 +95,6 @@ export class DrawStringUtil
         
 
 
-    
                         if(J2MEUtil.isHTML())
                         
                                     {
@@ -104,13 +103,11 @@ export class DrawStringUtil
                                     }
                                 
                              else 
-    
                         if(openGLFeatureUtil!.isAnyThreed())
                         
                                     {
                                     charHeight += 2
 
-    
                         if(AndroidUtil.isAndroid())
                         
                                     {
@@ -150,7 +147,6 @@ index >= 0; index--)
         {
 aChar= string[index]
 
-    
                         if(openGLFeatureUtil!.isAnyThreed())
                         
                                     {
@@ -158,7 +154,7 @@ aChar= string[index]
 
                                     }
                                 
-drawChar(aChar, x +offsetX, y +(charHeight *index) +offsetY, anchor)
+graphics.drawChar(aChar, x +offsetX, y +(charHeight *index) +offsetY, anchor)
 }
 
 }
@@ -182,10 +178,10 @@ var y = y
 
 
         try {
-            drawSubstring(string, offset, length, x -width, y, anchor)
+            graphics.drawSubstring(string, offset, length, x -width, y, anchor)
 } catch(e: Exception)
             {
-put(StringMaker().
+PreLogUtil.put(StringMaker().
                             append("Exception: stringLength: ")!.appendint(string.length)!.append(" offset: ")!.appendint(offset)!.append(" currentLength: ")!.appendint(length)!.toString(), this, "drawCenterString")
 }
 
@@ -233,7 +229,6 @@ index < stringArray!.length; index++)
         
 
 
-    
                         if(string != EMPTY_STRING)
                         
                                     {
@@ -248,7 +243,6 @@ index < stringArray!.length; index++)
         
 
 
-    
                         if(width > maxWidth)
                         
                                     {
@@ -280,7 +274,6 @@ index < stringArray!.length; index++)
         while(offset < size)
         {
 
-    
                         if(offset +currentLength > size)
                         
                                     {
@@ -289,7 +282,6 @@ index < stringArray!.length; index++)
                                     }
                                 
 
-    
                         if(offset +currentLength != size)
                         
                                     {
@@ -300,7 +292,6 @@ currentLength--
 }
 
 
-    
                         if(currentLength <= 4)
                         
                                     {
@@ -311,7 +302,7 @@ currentLength--
 
                                     }
                                 
-this.drawCenterString(graphics, string, offset, currentLength, x, y +((index +extraLines++) *charHeight))
+this.this.drawCenterString(graphics, string, offset, currentLength, x, y +((index +extraLines++) *charHeight))
 offset= offset +currentLength
 currentLength= linePortion
 }

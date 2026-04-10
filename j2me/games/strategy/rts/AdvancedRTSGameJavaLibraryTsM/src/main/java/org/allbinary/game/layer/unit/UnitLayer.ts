@@ -598,12 +598,11 @@ protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInte
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setCollidableInferface(CollidableUnitBehavior(this, true))
+this.this.setCollidableInferface(CollidableUnitBehavior(this, true))
 this.waypointLayerInterfaceFactoryInterface= waypointLayerInterfaceFactoryInterface
 this.maxResourceLoad= maxResourceLoad!.toShort()
 this.moveSoundInterface= moveSoundInterface
 
-    
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.DAMAGE_FLOATERS))
                         
                                     {
@@ -619,7 +618,6 @@ this.damageFloaters= DamageFloaters()
                         }
                             
 
-    
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.HEALTH_BARS))
                         
                                     {
@@ -634,27 +632,27 @@ this.damageFloaters= DamageFloaters()
                             
 this.decalAnimation= decalAnimationInterfaceFactoryInterface!.getInstance(0) as RotationAnimation
 this.initResourceAnimation= resourceAnimationInterfaceFactoryInterface!.getInstance(0) as RotationAnimation
-setFrame(direction)
-setFrame(direction)
+this.initResourceAnimation!.setFrame(direction)
+this.decalAnimation!.setFrame(direction)
 this.rotationAnimationInterfaceP= this.indexedButShouldBeRotationAnimationInterface as RotationAnimation
-setFrame(direction)
-this.setMaxLevel(12)
+this.rotationAnimationInterfaceP!.setFrame(direction)
+this.this.setMaxLevel(12)
 this.vehicleProperties= vehicleProperties
 this.trackingEvent= TrackingEvent(this)
 this.initPathAnimation= PathAnimation(this, LinePathRelativeAnimation.getInstance())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-setAllBinaryGameLayerManager(allBinaryGameLayerManager)
-setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+this.initPathAnimation!.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public updateWaypointBehavior(geographicMapInterface: BasicGeographicMap){
     //var geographicMapInterface = geographicMapInterface
@@ -663,10 +661,10 @@ setAllBinaryGameLayerManager(allBinaryGameLayerManager)
         
         
 
-put(Group.ID, this.getGroupInterface())
-put(Layer.ID, this)
-put(AllBinaryGameLayerManager.ID, allBinaryGameLayerManagerP)
-this.setWaypointBehavior(UnitWaypointBehavior2(this, waypointLayerInterfaceFactoryInterface!.getInstance(hashtable, x, y, z) as AdvancedRTSGameLayer))
+hashtable.put(Group.ID, this.getGroupInterface())
+hashtable.put(Layer.ID, this)
+hashtable.put(AllBinaryGameLayerManager.ID, allBinaryGameLayerManagerP)
+this.this.setWaypointBehavior(UnitWaypointBehavior2(this, waypointLayerInterfaceFactoryInterface!.getInstance(hashtable, x, y, z) as AdvancedRTSGameLayer))
 
     var features: Features = Features.getInstance()!;
         
@@ -684,23 +682,23 @@ this.setWaypointBehavior(UnitWaypointBehavior2(this, waypointLayerInterfaceFacto
         
         
 
-setWaypoint(waypoint)
-updateWaypointBehavior(geographicMapInterface)
-this.initRangeHack()
+this.getWaypointBehavior()!.setWaypoint(waypoint)
+super.updateWaypointBehavior(geographicMapInterface)
+this.this.initRangeHack()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-construct(rtsPlayerLayerInterface)
-addListener(this)
-addListener(this.getUnitWaypointBehavior())
-addListener(this)
-setCurrentPathGeographicMapCellPosition(this.getCurrentGeographicMapCellPosition())
-this.updateSensorGeographicMapCellPositionList()
-setLastPathGeographicMapCellPosition(this.getUnitWaypointBehavior()!.getCurrentPathGeographicMapCellPosition())
+super.construct(rtsPlayerLayerInterface)
+TrackingEventHandler.getInstance()!.addListener(this)
+WaypointEventHandlerFactory.getInstance(this.getGroupInterface()[0]!)!.addListener(this.getUnitWaypointBehavior())
+BuildingEventHandler.getInstance()!.addListener(this)
+this.getUnitWaypointBehavior()!.setCurrentPathGeographicMapCellPosition(this.getCurrentGeographicMapCellPosition())
+this.this.updateSensorGeographicMapCellPositionList()
+this.getUnitWaypointBehavior()!.setLastPathGeographicMapCellPosition(this.getUnitWaypointBehavior()!.getCurrentPathGeographicMapCellPosition())
 }
 
 
@@ -708,11 +706,10 @@ setLastPathGeographicMapCellPosition(this.getUnitWaypointBehavior()!.getCurrentP
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public updateSensorGeographicMapCellPositionList(){
 
-    
                         if(VisibleCellPositionsSingleton.getInstance()!.shouldProcess())
                         
                                     {
@@ -721,8 +718,8 @@ setLastPathGeographicMapCellPosition(this.getUnitWaypointBehavior()!.getCurrentP
         
         
 
-clear()
-add(currentGeographicMapCellPosition)
+this.sensorGeographicMapCellPositionList!.clear()
+this.sensorGeographicMapCellPositionList!.add(currentGeographicMapCellPosition)
 
     var sensorRange: number = weaponRange *SENSOR_RANGE_MULTIPLIER;
         
@@ -774,7 +771,6 @@ add(currentGeographicMapCellPosition)
         
 
 
-    
                         if(lastColumn > tiledLayer!.getColumns())
                         
                                     {
@@ -783,7 +779,6 @@ add(currentGeographicMapCellPosition)
                                     }
                                 
 
-    
                         if(lastRow > tiledLayer!.getRows())
                         
                                     {
@@ -802,7 +797,6 @@ add(currentGeographicMapCellPosition)
         
 
 
-    
                         if(firstColumn < 0)
                         
                                     {
@@ -811,7 +805,6 @@ add(currentGeographicMapCellPosition)
                                     }
                                 
 
-    
                         if(firstRow < 0)
                         
                                     {
@@ -845,11 +838,10 @@ index2 >= firstRow; index2--)
         
 
 
-    
                         if(!this.sensorGeographicMapCellPositionList!.contains(geographicMapCellPosition))
                         
                                     {
-                                    add(geographicMapCellPosition)
+                                    this.sensorGeographicMapCellPositionList!.add(geographicMapCellPosition)
 
                                     }
                                 
@@ -875,26 +867,24 @@ index2 >= firstRow; index2--)
 
     public select(){
 this.pathAnimation= this.initPathAnimation
-select()
+super.select()
 }
 
 
     public deselect(){
 this.pathAnimation= NullAnimationFactory.getFactoryInstance()!.getInstance(0)
-deselect()
+super.deselect()
 }
 
 
     setSelected(selected: boolean){
 var selected = selected
-setSelected(selected)
+super.setSelected(selected)
 
-    
                         if(selected)
                         
                                     {
                                     
-    
                         if(this.debug)
                         
                                     {
@@ -908,7 +898,6 @@ this.rtsLayer2LogHelper= RTSLayer2SelectedLogHelper.getInstance()
                                 
                         else {
                             
-    
                         if(this.debug)
                         
                                     {
@@ -923,11 +912,11 @@ this.rtsLayer2LogHelper= RTSLayer2LogHelper.getInstance()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setClosestGeographicMapCellHistory(pathsList: BasicArrayList){
     //var pathsList = pathsList
-setClosestGeographicMapCellHistory(this, pathsList)
+this.rtsLogHelper!.setClosestGeographicMapCellHistory(this, pathsList)
 
     var closestIndex: number =  -1;
         
@@ -965,7 +954,6 @@ index >= 0; index--)
 
 currentDistance= layerDistanceUtil!.getDistance(this, geographicMapCellPosition!.getMidPoint())
 
-    
                         if(currentDistance < shortestDistance)
                         
                                     {
@@ -977,7 +965,6 @@ closestIndex= index
 }
 
 
-    
                         if(closestIndex >= 0)
                         
                                     {
@@ -991,19 +978,19 @@ closestIndex= index
         
         
 
-this.teleportTo(geographicMapCellPosition)
+this.this.teleportTo(geographicMapCellPosition)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(geographicMapCellHistory: GeographicMapCellHistory, geographicMapCellPositionBasicArrayList: BasicArrayList){
     //var geographicMapCellHistory = geographicMapCellHistory
     //var geographicMapCellPositionBasicArrayList = geographicMapCellPositionBasicArrayList
-track(geographicMapCellPositionBasicArrayList)
+geographicMapCellHistory!.track(geographicMapCellPositionBasicArrayList)
 }
 
 
@@ -1017,24 +1004,23 @@ track(geographicMapCellPositionBasicArrayList)
         
 
 
-    
                         if(layerInterface!.getGroupInterface()[0] != this.getGroupInterface()[0])
                         
                                     {
-                                    add(layerInterface)
-onMovementFound(this.getTrackingEvent())
+                                    this.getUnitWaypointBehavior()!.getPossibleTargetList()!.add(layerInterface)
+layerInterface!.onMovementFound(this.getTrackingEvent())
 
                                     }
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "onMovement", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "onMovement", e)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onMovementFound(trackingEvent: TrackingEvent){
     //var trackingEvent = trackingEvent
@@ -1044,11 +1030,10 @@ put(commonStrings!.EXCEPTION, this, "onMovement", e)
         
 
 
-    
                         if(layerInterface!.getGroupInterface()[0] != this.getGroupInterface()[0])
                         
                                     {
-                                    add(layerInterface)
+                                    this.getUnitWaypointBehavior()!.getPossibleTargetList()!.add(layerInterface)
 
                                     }
                                 
@@ -1074,22 +1059,20 @@ this.initRangeAnimation= AdjustedCircleAnimation(weaponRange, weaponRange, this.
         
 
 this.initSensorRangeAnimation= AdjustedCircleAnimation(sensorRange, sensorRange, this.getWidth(), this.basicColorFactory!.RED)
-initRange(weaponRange)
+this.getUnitWaypointBehavior()!.initRange(weaponRange)
 this.fireTimeHelper!.delay= (weaponProperties!.getReloadTime().toInt())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processBuiltTick(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
 
-    
                         if(!this.getHealthInterface()!.isAlive())
                         
                                     {
                                     
-    
                         if(this.isReadyForExplosion())
                         
                                     {
@@ -1104,16 +1087,14 @@ this.fireTimeHelper!.delay= (weaponProperties!.getReloadTime().toInt())
         
 
 
-    
                         if(currentFrame == size)
                         
                                     {
                                     
-    
                         if(!this.getHealthInterface()!.isAlive())
                         
                                     {
-                                    this.setDestroyed(true)
+                                    this.this.setDestroyed(true)
 
                                     }
                                 
@@ -1121,7 +1102,7 @@ this.fireTimeHelper!.delay= (weaponProperties!.getReloadTime().toInt())
                                     }
                                 
                         else {
-                            nextFrame()
+                            this.destroyAnimationInterface!.nextFrame()
 
                         }
                             
@@ -1129,11 +1110,11 @@ this.fireTimeHelper!.delay= (weaponProperties!.getReloadTime().toInt())
                                     }
                                 
                         else {
-                            this.setAnimationInterface(this.destroyAnimationInterface)
-add(ExplosionBasicSound.getInstance())
-onSmallShakeEvent()
-vibrate(duration, 0, 0)
-this.setReadyForExplosion(true)
+                            this.this.setAnimationInterface(this.destroyAnimationInterface)
+SecondaryPlayerQueueFactory.getInstance()!.add(ExplosionBasicSound.getInstance())
+this.shakeListener!.onSmallShakeEvent()
+vibration.vibrate(duration, 0, 0)
+this.this.setReadyForExplosion(true)
 
                         }
                             
@@ -1141,12 +1122,12 @@ this.setReadyForExplosion(true)
                                     }
                                 
                         else {
-                            processBuiltTick(allBinaryLayerManager)
+                            super.processBuiltTick(allBinaryLayerManager)
 
                         }
                             
-tick()
-processTick(allBinaryLayerManager)
+this.captionAnimationHelper!.tick()
+this.getUnitWaypointBehavior()!.processTick(allBinaryLayerManager)
 }
 
 
@@ -1157,11 +1138,11 @@ processTick(allBinaryLayerManager)
         
         
 
-this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getHalfHeight(), this.z)
+this.this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getHalfHeight(), this.z)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getCurrentGeographicMapCellPosition(): GeographicMapCellPosition{
 
@@ -1185,14 +1166,13 @@ this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getHalfHe
         
 
 
-    
                         if(!raceTrackGeographicMap!.isValid(geographicMapCellPosition))
                         
                                     {
                                     
 
 
-                            throw Exception("Position is not really on the map: " +geographicMapCellPosition)
+                            throw Error("Position is not really on the map: " +geographicMapCellPosition)
 
                                     }
                                 
@@ -1205,43 +1185,42 @@ this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getHalfHe
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fire(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
     //var gameKeyEvent = gameKeyEvent
 
-    
                         if(this.fireTimeHelper!.isTime())
                         
                                     {
-                                    this.fireAll(layerManager)
+                                    this.this.fireAll(layerManager)
 
                                     }
                                 
                         else {
-                            this.reload()
+                            this.this.reload()
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public left(){
-previousRotation()
-previousRotation()
-previousRotation()
+this.initResourceAnimation!.previousRotation()
+this.decalAnimation!.previousRotation()
+this.rotationAnimationInterfaceP!.previousRotation()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public right(){
-nextRotation()
-nextRotation()
-nextRotation()
+this.initResourceAnimation!.nextRotation()
+this.decalAnimation!.nextRotation()
+this.rotationAnimationInterfaceP!.nextRotation()
 }
 
 
@@ -1252,11 +1231,10 @@ nextRotation()
         
 
 
-    
                         if(!velocityProperties!.isOverXYMaxForwardVelocity())
                         
                                     {
-                                    this.accelerate(this.decelerationBasicDecimal)
+                                    this.this.accelerate(this.decelerationBasicDecimal)
 
                                     }
                                 
@@ -1270,11 +1248,10 @@ nextRotation()
         
 
 
-    
                         if(!velocityProperties!.isOverXYMaxForwardVelocity())
                         
                                     {
-                                    this.accelerate(this.accelerationBasicDecimal)
+                                    this.this.accelerate(this.accelerationBasicDecimal)
 
                                     }
                                 
@@ -1288,11 +1265,11 @@ this.inputProcessorArray[Canvas.KEY_NUM0]= SpecialFireGameInputProcessor(this)
 this.inputProcessorArray[Canvas.KEY_POUND]= this.inputProcessorArray[Canvas.KEY_NUM0]!
 this.inputProcessorArray[Canvas.DOWN]= SpecialDownGameInputProcessor(this)
 this.inputProcessorArray[Canvas.UP]= SpecialUpGameInputProcessor(this)
-initInputProcessors()
+super.initInputProcessors()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processInput(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager
@@ -1326,22 +1303,22 @@ index < size; index++)
         
         
 
-process(layerManager, GameKeyEvent.NONE)
+this.inputProcessorArray[key]!.process(layerManager, GameKeyEvent.NONE)
 }
 
-clear()
-this.groundFriction()
-this.move()
+list.clear()
+this.this.groundFriction()
+this.this.move()
 }
 
 
     public accelerate(accelerate: BasicDecimal){
     //var accelerate = accelerate
-addVelocity(accelerate.getUnscaled(), this.rotationAnimationInterfaceP!.getAngleInfoP()!.getAngle().toInt(), 90)
+this.getVehicleProperties()!.getVelocityProperties()!.addVelocity(accelerate.getUnscaled(), this.rotationAnimationInterfaceP!.getAngleInfoP()!.getAngle().toInt(), 90)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     fireAll(layerManager: AllBinaryLayerManager){
     //var layerManager = layerManager
@@ -1355,23 +1332,22 @@ addVelocity(accelerate.getUnscaled(), this.rotationAnimationInterfaceP!.getAngle
         
         
 
-put(SmallIntegerSingletonFactory.getInstance()!.getInstance(1), SmallIntegerSingletonFactory.getInstance()!.getInstance(AngleFactory.getInstance()!.getInstance(angle)!.getValue().toInt()))
+hashtable.put(SmallIntegerSingletonFactory.getInstance()!.getInstance(1), SmallIntegerSingletonFactory.getInstance()!.getInstance(AngleFactory.getInstance()!.getInstance(angle)!.getValue().toInt()))
 
     var salvoInterface: SalvoInterface = this.getPartInterfaceArray()[0]! as SalvoInterface;
         
         
 
-process(layerManager, angle.toShort(), 90.toShort())
+salvoInterface!.process(layerManager, angle.toShort(), 90.toShort())
 }
 
 
     public downgrade(){
 
-    
                         if(getLevel() > 1)
                         
                                     {
-                                    downgrade()
+                                    super.downgrade()
 
                                     }
                                 
@@ -1379,8 +1355,8 @@ process(layerManager, angle.toShort(), 90.toShort())
 
 
     public upgrade(){
-upgrade()
-this.initRangeHack()
+super.upgrade()
+this.this.initRangeHack()
 }
 
 
@@ -1390,11 +1366,11 @@ this.initRangeHack()
         
         
 
-friction(this.getVehicleProperties()!.getVelocityProperties(), vehicleFrictionProperties!.getTireFrictionNominator())
+this.getVehicleProperties()!.getVehicleFrictionProperties()!.friction(this.getVehicleProperties()!.getVelocityProperties(), vehicleFrictionProperties!.getTireFrictionNominator())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public trackTo(reason: string){
     //var reason = reason
@@ -1423,12 +1399,12 @@ friction(this.getVehicleProperties()!.getVelocityProperties(), vehicleFrictionPr
         
         
 
-trackTo(this, nextUnvisitedPathGeographicMapCellPosition, dx, dy, reason)
-this.trackTo(dx, dy)
+this.rtsLogHelper!.trackTo(this, nextUnvisitedPathGeographicMapCellPosition, dx, dy, reason)
+this.this.trackTo(dx, dy)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public trackTo(dx: number, dy: number){
     //var dx = dx
@@ -1438,11 +1414,11 @@ this.trackTo(dx, dy)
         
         
 
-this.trackTo(dx, dy, angleOfTarget)
+this.this.trackTo(dx, dy, angleOfTarget)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     turnTo(dx: number, dy: number, targetAngle: number): boolean{
     //var dx = dx
@@ -1464,11 +1440,10 @@ var targetAngle = targetAngle
         
 
 
-    
                         if(this.getUnitWaypointBehavior()!.getSensorAction() == SensorActionFactory.getInstance()!.EVADE)
                         
                                     {
-                                    evade(this)
+                                    this.rtsLogHelper!.evade(this)
 evading= true
 targetAngle += 180
 
@@ -1484,18 +1459,17 @@ targetAngle += 180
         
         
 
-turnTo(this, dx, dy, angleInfo, angle, movementAngle, evading, targetAngle)
+this.rtsLogHelper!.turnTo(this, dx, dy, angleInfo, angle, movementAngle, evading, targetAngle)
 
     var gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
         
         
 
 
-    
                         if(dx == 0 && dy == 0)
                         
                                     {
-                                    doneMoving(this)
+                                    this.rtsLogHelper!.doneMoving(this)
 
 
 
@@ -1506,16 +1480,14 @@ turnTo(this, dx, dy, angleInfo, angle, movementAngle, evading, targetAngle)
                                     }
                                 
                              else 
-    
                         if((this.movementAngle!.getValue().toInt()) == angle)
                         
                                     {
                                     
-    
                         if(dx > 0 && this.movementAngle == this.angleFactory!.LEFT)
                         
                                     {
-                                    movingLeft(this)
+                                    this.rtsLogHelper!.movingLeft(this)
 
 
 
@@ -1526,11 +1498,10 @@ turnTo(this, dx, dy, angleInfo, angle, movementAngle, evading, targetAngle)
                                     }
                                 
 
-    
                         if(dx < 0 && this.movementAngle == this.angleFactory!.RIGHT)
                         
                                     {
-                                    movingRight(this)
+                                    this.rtsLogHelper!.movingRight(this)
 
 
 
@@ -1541,11 +1512,10 @@ turnTo(this, dx, dy, angleInfo, angle, movementAngle, evading, targetAngle)
                                     }
                                 
 
-    
                         if(dy > 0 && this.movementAngle == this.angleFactory!.UP)
                         
                                     {
-                                    movingUp(this)
+                                    this.rtsLogHelper!.movingUp(this)
 
 
 
@@ -1556,11 +1526,10 @@ turnTo(this, dx, dy, angleInfo, angle, movementAngle, evading, targetAngle)
                                     }
                                 
 
-    
                         if(dy < 0 && this.movementAngle == this.angleFactory!.DOWN)
                         
                                     {
-                                    movingDown(this)
+                                    this.rtsLogHelper!.movingDown(this)
 
 
 
@@ -1570,22 +1539,20 @@ turnTo(this, dx, dy, angleInfo, angle, movementAngle, evading, targetAngle)
 
                                     }
                                 
-currentMoveEnded(this)
+this.rtsLogHelper!.currentMoveEnded(this)
 
-    
                         if(this.movementAngle == this.angleFactory!.LEFT || this.movementAngle == this.angleFactory!.RIGHT)
                         
                                     {
-                                    this.handleDeltalY(dx, dy)
+                                    this.this.handleDeltalY(dx, dy)
 
                                     }
                                 
                              else 
-    
                         if(this.movementAngle == this.angleFactory!.UP || this.movementAngle == this.angleFactory!.DOWN)
                         
                                     {
-                                    this.handleDeltalX(dx, dy)
+                                    this.this.handleDeltalX(dx, dy)
 
                                     }
                                 
@@ -1600,35 +1567,31 @@ currentMoveEnded(this)
                                 
                         else {
                             
-    
                         if(nextUnvisitedPathGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
                                     {
                                     
-    
                         if(this.steeringInsideGeographicMapCellPosition != nextUnvisitedPathGeographicMapCellPosition)
                         
                                     {
                                     
-    
                         if(Math.abs(dx) > Math.abs(dy) && dy != 0)
                         
                                     {
-                                    this.handleDeltalY(dx, dy)
+                                    this.this.handleDeltalY(dx, dy)
 
                                     }
                                 
                              else 
-    
                         if(dx != 0)
                         
                                     {
-                                    this.handleDeltalX(dx, dy)
+                                    this.this.handleDeltalX(dx, dy)
 
                                     }
                                 
                         else {
-                            this.handleDeltalY(dx, dy)
+                            this.this.handleDeltalY(dx, dy)
 
                         }
                             
@@ -1641,18 +1604,17 @@ currentMoveEnded(this)
         
 
 
-    
                         if(deltaAngle2 > 0)
                         
                                     {
-                                    rotateRight(this)
-add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT))
+                                    this.rtsLogHelper!.rotateRight(this)
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT))
 
                                     }
                                 
                         else {
-                            rotateLeft(this)
-add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
+                            this.rtsLogHelper!.rotateLeft(this)
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
 
                         }
                             
@@ -1666,7 +1628,7 @@ add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
                                     }
                                 
                         else {
-                            noRotation(this)
+                            this.rtsLogHelper!.noRotation(this)
 
                         }
                             
@@ -1696,7 +1658,6 @@ add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
         
 
 
-    
                         if(dx > 0)
                         
                                     {
@@ -1711,7 +1672,7 @@ this.steeringInsideGeographicMapCellPosition= nextUnvisitedPathGeographicMapCell
 
                         }
                             
-handle(this, this.movementAngle)
+this.rtsLogHelper!.handle(this, this.movementAngle)
 }
 
 
@@ -1729,7 +1690,6 @@ handle(this, this.movementAngle)
         
 
 
-    
                         if(dy > 0)
                         
                                     {
@@ -1744,11 +1704,11 @@ this.steeringInsideGeographicMapCellPosition= nextUnvisitedPathGeographicMapCell
 
                         }
                             
-handle(this, this.movementAngle)
+this.rtsLogHelper!.handle(this, this.movementAngle)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     trackTo(dx: number, dy: number, targetAngle: number){
     //var dx = dx
@@ -1760,7 +1720,6 @@ handle(this, this.movementAngle)
         
 
 
-    
                         if(list.size() > 0)
                         
                                     {
@@ -1785,35 +1744,33 @@ index >= 0; index--)
         
 
 
-    
                         if(anyType == 
                                     null
                                 )
                         
                                     {
-                                    remove(index)
+                                    list.remove(index)
 
                                     }
                                 
 }
 
-this.fireOrMove()
+this.this.fireOrMove()
 
                                     }
                                 
                              else 
-    
                         if(!this.turnTo(dx, dy, targetAngle))
                         
                                     {
-                                    this.fireOrMove()
+                                    this.this.fireOrMove()
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     fireOrMove(){
 
@@ -1822,30 +1779,28 @@ this.fireOrMove()
         
 
 
-    
                         if(this.getUnitWaypointBehavior()!.needToMove())
                         
                                     {
-                                    steeringUp(this)
+                                    this.rtsLayer2LogHelper!.steeringUp(this)
 
-    
                         if(this.showMoreCaptionStates && !this.captionAnimationHelper!.isShowing())
                         
                                     {
-                                    update(MOVE, this.basicColorFactory!.GREEN)
+                                    this.captionAnimationHelper!.update(MOVE, this.basicColorFactory!.GREEN)
 
                                     }
                                 
-add(gameKeyEventFactory!.getInstance(this, Canvas.UP))
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.UP))
 
                                     }
                                 
                         else {
-                            update(CommonPhoneStrings.getInstance()!.FIRE, this.basicColorFactory!.RED)
-steeringFireOrStop(this)
-this.allStop()
-add(gameKeyEventFactory!.getInstance(this, Canvas.KEY_NUM0))
-fireEvent(this.getTrackingEvent())
+                            this.captionAnimationHelper!.update(CommonPhoneStrings.getInstance()!.FIRE, this.basicColorFactory!.RED)
+this.rtsLayer2LogHelper!.steeringFireOrStop(this)
+this.this.allStop()
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.KEY_NUM0))
+TrackingEventHandler.getInstance()!.fireEvent(this.getTrackingEvent())
 
                         }
                             
@@ -1870,13 +1825,12 @@ fireEvent(this.getTrackingEvent())
         
         
 
-move()
+this.getUnitWaypointBehavior()!.move()
 
-    
                         if(velocityXScaled != 0L || velocityYScaled != 0L)
                         
                                     {
-                                    setMoving(true)
+                                    this.getUnitWaypointBehavior()!.setMoving(true)
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
         
@@ -1887,14 +1841,13 @@ move()
         
         
 
-getAll(geographicMapInterface, this, velocityXScaled.toInt(), velocityYScaled.toInt(), getPartialpositionlist())
+layerPartialCellPositionsUtil!.getAll(geographicMapInterface, this, velocityXScaled.toInt(), velocityYScaled.toInt(), getPartialpositionlist())
 
     var cellPosition: GeographicMapCellPosition = DropCellPositionHistory.getInstance()!.getCellPositionWithDrop(getPartialpositionlist()) as GeographicMapCellPosition;
         
         
 
 
-    
                         if(cellPosition == cellPositionFactory!.NONE)
                         
                                     {
@@ -1920,7 +1873,7 @@ getAll(geographicMapInterface, this, velocityXScaled.toInt(), velocityYScaled.to
 
 x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, this.getWidth())
 y= tiledLayerUtil!.keepOnMapY(tiledLayer, y, this.getHeight())
-this.setPosition(x, y, this.z)
+this.this.setPosition(x, y, this.z)
 
                                     }
                                 
@@ -1930,8 +1883,8 @@ this.setPosition(x, y, this.z)
         
         
 
-setMovingFromStopped(false)
-addBuildingChase(allbinaryLayer, cellPosition)
+this.getUnitWaypointBehavior()!.setMovingFromStopped(false)
+this.getUnitWaypointBehavior()!.addBuildingChase(allbinaryLayer, cellPosition)
 
                         }
                             
@@ -1939,31 +1892,29 @@ addBuildingChase(allbinaryLayer, cellPosition)
                                     }
                                 
 
-    
                         if(this.getUnitWaypointBehavior()!.isMoving())
                         
                                     {
-                                    fireEvent(this.getTrackingEvent())
+                                    TrackingEventHandler.getInstance()!.fireEvent(this.getTrackingEvent())
 
                                     }
                                 
                         else {
-                            setMovingFromStopped(false)
+                            this.getUnitWaypointBehavior()!.setMovingFromStopped(false)
 
                         }
                             
 
-    
                         if(this.getUnitWaypointBehavior()!.isMovingFromStopped() && this.isVisible())
                         
                                     {
-                                    add(this.moveSoundInterface)
+                                    SecondaryPlayerQueueFactory.getInstance()!.add(this.moveSoundInterface)
 
                                     }
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "move", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "move", e)
 }
 
 }
@@ -1975,19 +1926,18 @@ put(commonStrings!.EXCEPTION, this, "move", e)
         
         
 
-set(0)
-set(0)
+velocityProperties!.getVelocityXBasicDecimalP()!.set(0)
+velocityProperties!.getVelocityYBasicDecimalP()!.set(0)
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
 
-    
                         if(this.isVisible())
                         
                                     {
-                                    paint(graphics)
+                                    super.paint(graphics)
 
     var viewPosition: ViewPosition = this.getViewPosition()!;
         
@@ -2003,21 +1953,21 @@ var graphics = graphics
         
         
 
-paint(graphics, viewX, viewY)
-paint(graphics, viewX, viewY)
-paint(graphics, viewX, viewY)
-paint(graphics)
-paint(graphics)
-paint(graphics, viewX, viewY)
-paint(graphics, viewX, viewY)
-paint(graphics, viewX, viewY)
+this.decalAnimation!.paint(graphics, viewX, viewY)
+this.rangeAnimation!.paint(graphics, viewX, viewY)
+this.sensorRangeAnimation!.paint(graphics, viewX, viewY)
+this.damageFloatersPaintableInterface!.paint(graphics)
+this.healthBar!.paint(graphics)
+this.captionAnimationHelper!.paint(graphics, viewX, viewY)
+this.pathAnimation!.paint(graphics, viewX, viewY)
+this.resourceAnimation!.paint(graphics, viewX, viewY)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onBuildingEvent(event: RTSLayerEvent){
 var event = event
@@ -2026,7 +1976,7 @@ var event = event
         
         
 
-moveAwayFromBuilding(buildingLayer)
+this.getUnitWaypointBehavior()!.moveAwayFromBuilding(buildingLayer)
 }
 
 
@@ -2040,26 +1990,25 @@ moveAwayFromBuilding(buildingLayer)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public damage(damage: number, damageType: number){
     //var damage = damage
     //var damageType = damageType
-damage(damage, damageType)
-add(damage)
+super.damage(damage, damageType)
+this.damageFloaters!.add(damage)
 
-    
                         if(damage > 0)
                         
                                     {
-                                    damage(damage)
+                                    this.getHealthInterface()!.damage(damage)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDamage(damageType: number): number{
     //var damageType = damageType
@@ -2072,22 +2021,20 @@ add(damage)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setDestroyed(destroyed: boolean){
     //var destroyed = destroyed
-put(commonStrings!.START, this, "setDestroyed")
-setDestroyed(destroyed)
+logUtil!.put(commonStrings!.START, this, "setDestroyed")
+super.setDestroyed(destroyed)
 
-    
                         if(this.isDestroyed())
                         
                                     {
-                                    removeListener(this.getUnitWaypointBehavior())
-removeListener(this)
-removeListener(this)
+                                    WaypointEventHandlerFactory.getInstance(this.getGroupInterface()[0]!)!.removeListener(this.getUnitWaypointBehavior())
+TrackingEventHandler.getInstance()!.removeListener(this)
+BuildingEventHandler.getInstance()!.removeListener(this)
 
-    
                         if(!this.getHealthInterface()!.isAlive())
                         
                                     {
@@ -2097,38 +2044,34 @@ removeListener(this)
         
 
 
-    
                         if(damage > 10)
                         
                                     {
-                                    add(ExplosionBasicSound.getInstance())
+                                    SecondaryPlayerQueueFactory.getInstance()!.add(ExplosionBasicSound.getInstance())
 
-    
                         if(damage < 100)
                         
                                     {
-                                    onSmallShakeEvent()
-vibrate(duration, 0, 0)
+                                    this.shakeListener!.onSmallShakeEvent()
+vibration.vibrate(duration, 0, 0)
 
                                     }
                                 
                              else 
-    
                         if(damage < 1000)
                         
                                     {
-                                    onMediumShakeEvent()
-vibrate(duration *2, 0, 0)
+                                    this.shakeListener!.onMediumShakeEvent()
+vibration.vibrate(duration *2, 0, 0)
 
                                     }
                                 
                              else 
-    
                         if(damage < 3000)
                         
                                     {
-                                    onLargeShakeEvent()
-vibrate(duration *4, 0, 0)
+                                    this.shakeListener!.onLargeShakeEvent()
+vibration.vibrate(duration *4, 0, 0)
 
                                     }
                                 
@@ -2154,19 +2097,18 @@ vibrate(duration *4, 0, 0)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public clearResourceAnimation(){
 this.resourceAnimation= NullIndexedAnimationFactory.getFactoryInstance()!.getInstance(0) as IndexedAnimation
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setLoad(resource: number){
 var resource = resource
 
-    
                         if(resource > 0)
                         
                                     {
@@ -2175,7 +2117,7 @@ var resource = resource
                                     }
                                 
                         else {
-                            this.clearResourceAnimation()
+                            this.this.clearResourceAnimation()
 
                         }
                             
@@ -2193,18 +2135,17 @@ this.resourceLoad += resource
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public handleCost(ownerLayer: PathFindingLayerInterface){
 var ownerLayer = ownerLayer
 
-    
                         if(this.getLoad() > 0)
                         
                                     {
-                                    setValue(this.getLoad())
-fireEvent(CAPITAL_EVENT)
-this.setLoad(0)
+                                    CAPITAL_EVENT.setValue(this.getLoad())
+CapitalEventHandlerFactory.getInstance(ownerLayer!.getGroupInterface()[0]!)!.fireEvent(CAPITAL_EVENT)
+this.this.setLoad(0)
 
                                     }
                                 
@@ -2217,8 +2158,8 @@ this.setLoad(0)
         
         
 
-setBasicColorP(this.allBinaryGameLayerManagerP!.getForegroundBasicColor())
-setRtsLayer(this)
+rtsLayerHudPaintable!.setBasicColorP(this.allBinaryGameLayerManagerP!.getForegroundBasicColor())
+rtsLayerHudPaintable!.setRtsLayer(this)
 
 
 

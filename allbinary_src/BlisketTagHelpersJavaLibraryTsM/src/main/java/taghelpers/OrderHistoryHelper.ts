@@ -111,7 +111,6 @@ this.request= pageContext!.getRequest() as HttpServletRequest
 
 this.newStatus= propertiesHashMap!.get(OrderHistoryData.STATUS) as String
 
-    
                         if(storeName != 
                                     null
                                 )
@@ -121,7 +120,7 @@ this.newStatus= propertiesHashMap!.get(OrderHistoryData.STATUS) as String
 
                                     }
                                 
-this.getFormData()
+this.this.getFormData()
 }
 
 
@@ -129,7 +128,6 @@ this.getFormData()
 this.id= request.getParameter(OrderData.ID)
 this.groupId= request.getParameter(ShippingMethodData.GROUP)
 
-    
                         if(this.newStatus == 
                                     null
                                 )
@@ -161,7 +159,6 @@ this.groupId= request.getParameter(ShippingMethodData.GROUP)
         
 
 
-    
                         if(status.compareTo(OrderHistoryData.CANCELLED) == 0)
                         
                                     {
@@ -175,7 +172,6 @@ this.groupId= request.getParameter(ShippingMethodData.GROUP)
                                     }
                                 
                              else 
-    
                         if(status.compareTo(OrderHistoryData.SHIPPED) == 0)
                         
                                     {
@@ -189,7 +185,6 @@ this.groupId= request.getParameter(ShippingMethodData.GROUP)
                                     }
                                 
                              else 
-    
                         if(status.compareTo(OrderHistoryData.PREPROCESSING) == 0)
                         
                                     {
@@ -203,7 +198,6 @@ this.groupId= request.getParameter(ShippingMethodData.GROUP)
                                     }
                                 
                              else 
-    
                         if(status.compareTo(OrderHistoryData.PARTIALLYSHIPPED) == 0)
                         
                                     {
@@ -217,7 +211,6 @@ this.groupId= request.getParameter(ShippingMethodData.GROUP)
                                     }
                                 
                              else 
-    
                         if(status.compareTo(OrderHistoryData.PROCESSING) == 0)
                         
                                     {
@@ -226,7 +219,7 @@ this.groupId= request.getParameter(ShippingMethodData.GROUP)
         
         
 
-setStatus(id, this.newStatus)
+orderHistoryEntityInterface!.setStatus(id, this.newStatus)
 
 
 
@@ -237,11 +230,10 @@ setStatus(id, this.newStatus)
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "setOrderStatus()")
+                                    logUtil!.put(success, this, "setOrderStatus()")
 
                                     }
                                 
@@ -259,11 +251,10 @@ setStatus(id, this.newStatus)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "setOrderStatus()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus()", e)
 
                                     }
                                 

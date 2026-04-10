@@ -24,15 +24,15 @@ interface SimpleProgressActivityInterface {
 
     runOnUiThread(action: Runnable)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     onSetProgress(value: number, text: string)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     onDismissProgress(animationSequence: IntArray)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     onShowProgress(indeterminate: boolean, animationSequence: IntArray)
 

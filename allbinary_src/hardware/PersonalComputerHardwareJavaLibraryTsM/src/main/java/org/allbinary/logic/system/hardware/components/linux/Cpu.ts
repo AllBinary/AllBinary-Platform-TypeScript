@@ -91,17 +91,17 @@ public constructor (filePath: string){
 
             super();
             var filePath = filePath
-this.init(filePath)
+this.this.init(filePath)
 }
 
 public constructor (){
 
             super();
-            this.init(CPUFILE)
+            this.this.init(CPUFILE)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(filePath: string){
 var filePath = filePath
@@ -118,11 +118,10 @@ var filePath = filePath
 } catch(e: Exception)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
                         
                                     {
-                                    put(StringMaker().
+                                    logUtil!.put(StringMaker().
                             append("Cpu Data: ")!.append(this.toString())!.toString(), this, this.commonStrings!.CONSTRUCTOR, e)
 
                                     }
@@ -136,7 +135,7 @@ var filePath = filePath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(lineNumberReader: LineNumberReader, filePath: string){
 var lineNumberReader = lineNumberReader
@@ -151,7 +150,6 @@ var filePath = filePath
 lineNumberReader= LineNumberReader(fileReader)
 cpuHashMap= HashMap<Any, Any>()
 
-    
                         if(lineNumberReader == 
                                     null
                                 )
@@ -163,17 +161,15 @@ cpuHashMap= HashMap<Any, Any>()
         
 
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
                         
                                     {
-                                    put(StringMaker().
+                                    logUtil!.put(StringMaker().
                             append("Cpu File Vector Size: ")!.appendint(fileVector!.size())!.toString(), this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
 
-    
                         if(!fileVector!.isEmpty())
                         
                                     {
@@ -190,7 +186,6 @@ lineNumberReader= LineNumberReader(FileReader(file.getPath()))
                                     }
                                 
 
-    
                         if(lineNumberReader != 
                                     null
                                 )
@@ -214,7 +209,6 @@ lineNumberReader= LineNumberReader(FileReader(file.getPath()))
         
 
 
-    
                         if(index >= 0)
                         
                                     {
@@ -234,35 +228,27 @@ lineNumberReader= LineNumberReader(FileReader(file.getPath()))
         
 
 
-    
                         if(key.indexOf(CpuInfo.PROCESSOR.toString()) >= 0)
                         cpuHashMap!.put(CpuInfo.PROCESSOR, value)
 
-    
                         if(key.indexOf(CpuInfo.VENDORID.toString()) >= 0)
                         cpuHashMap!.put(CpuInfo.VENDORID, value)
 
-    
                         if(key.indexOf(CpuInfo.CPUFAMILY.toString()) >= 0)
                         cpuHashMap!.put(CpuInfo.CPUFAMILY, value)
 
-    
                         if(key.indexOf(CpuInfo.MODEL.toString()) >= 0)
                         cpuHashMap!.put(CpuInfo.MODEL, value)
 
-    
                         if(key.indexOf(CpuInfo.MODELNAME.toString()) >= 0)
                         cpuHashMap!.put(CpuInfo.MODELNAME, value)
 
-    
                         if(key.indexOf(CpuInfo.STEPPING.toString()) >= 0)
                         cpuHashMap!.put(CpuInfo.STEPPING, value)
 
-    
                         if(key.indexOf(CpuInfo.CPUMHZ.toString()) >= 0)
                         cpuHashMap!.put(CpuInfo.CPUMHZ, value)
 
-    
                         if(key.indexOf(CpuInfo.CACHESIZE.toString()) >= 0)
                         cpuHashMap!.put(CpuInfo.CACHESIZE, value)
 
@@ -277,7 +263,6 @@ nextLine= lineNumberReader!.readLine()
 
          finally {
             
-    
                         if(lineNumberReader != 
                                     null
                                 )
@@ -406,21 +391,21 @@ var componentInterface = componentInterface
         
         
 
-append(this.getProcessor())
-append(commonSeps!.NEW_LINE)
-append(this.getVendorId())
-append(commonSeps!.NEW_LINE)
-append(this.getCpuFamily())
-append(commonSeps!.NEW_LINE)
-append(this.getModel())
-append(commonSeps!.NEW_LINE)
-append(this.getModelName())
-append(commonSeps!.NEW_LINE)
-append(this.getStepping())
-append(commonSeps!.NEW_LINE)
-append(this.getCpuSpeed())
-append(commonSeps!.NEW_LINE)
-append(this.getCacheSize())
+stringMaker!.append(CpuInfo.PROCESSOR.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getProcessor())
+stringMaker!.append(commonSeps!.NEW_LINE)
+stringMaker!.append(CpuInfo.VENDORID.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getVendorId())
+stringMaker!.append(commonSeps!.NEW_LINE)
+stringMaker!.append(CpuInfo.CPUFAMILY.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getCpuFamily())
+stringMaker!.append(commonSeps!.NEW_LINE)
+stringMaker!.append(CpuInfo.MODEL.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getModel())
+stringMaker!.append(commonSeps!.NEW_LINE)
+stringMaker!.append(CpuInfo.MODELNAME.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getModelName())
+stringMaker!.append(commonSeps!.NEW_LINE)
+stringMaker!.append(CpuInfo.STEPPING.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getStepping())
+stringMaker!.append(commonSeps!.NEW_LINE)
+stringMaker!.append(CpuInfo.CPUMHZ.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getCpuSpeed())
+stringMaker!.append(commonSeps!.NEW_LINE)
+stringMaker!.append(CpuInfo.CACHESIZE.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getCacheSize())
 
 
 

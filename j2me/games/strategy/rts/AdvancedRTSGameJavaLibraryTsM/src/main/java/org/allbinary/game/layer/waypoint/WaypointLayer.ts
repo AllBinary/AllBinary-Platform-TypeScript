@@ -89,27 +89,26 @@ protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInte
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setCollidableInferface(CollidableWaypointBehavior(this, true))
-setWaypoint(Waypoint(this, AttackSound.getInstance()))
-this.setAnimationInterface(this.indexedButShouldBeRotationAnimationInterface)
+this.this.setCollidableInferface(CollidableWaypointBehavior(this, true))
+this.getWaypointBehavior()!.setWaypoint(Waypoint(this, AttackSound.getInstance()))
+this.this.setAnimationInterface(this.indexedButShouldBeRotationAnimationInterface)
 }
 
 
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 this.percentCompleteP= 100
-this.initVisibility(rtsPlayerLayerInterface)
+this.this.initVisibility(rtsPlayerLayerInterface)
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
 
-    
                         if(this.isVisible())
                         
                                     {
-                                    paint(graphics)
+                                    super.paint(graphics)
 
                                     }
                                 
@@ -120,10 +119,10 @@ var graphics = graphics
 var allBinaryLayerManager = allBinaryLayerManager
 
         try {
-            nextFrame()
+            this.indexedButShouldBeRotationAnimationInterface!.nextFrame()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "processTick", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "processTick", e)
 }
 
 }
@@ -135,7 +134,7 @@ var damageType = damageType
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDamage(damageType: number): number{
 var damageType = damageType
@@ -148,17 +147,16 @@ var damageType = damageType
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setDestroyed(destroyed: boolean){
 var destroyed = destroyed
-setDestroyed(destroyed)
+super.setDestroyed(destroyed)
 
-    
                         if(this.isDestroyed())
                         
                                     {
-                                    remove(this)
+                                    WaypointCellPositionHistory.getInstance()!.remove(this)
 
                                     }
                                 

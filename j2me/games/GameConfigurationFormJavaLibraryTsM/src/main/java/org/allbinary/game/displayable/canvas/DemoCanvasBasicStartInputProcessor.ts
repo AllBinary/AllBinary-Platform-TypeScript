@@ -59,7 +59,7 @@ var gameCanvas = gameCanvas
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processInput(): number{
 
@@ -86,11 +86,11 @@ var gameCanvas = gameCanvas
 index < size; index++)
         {
 gameKeyEvent= list.objectArray[index]! as GameKeyEvent
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Start GameKey: ")!.append(StringUtil.getInstance()!.toString(gameKeyEvent))!.toString(), this, GameInputStrings.getInstance()!.PROCESS_INPUT)
 }
 
-commandAction(GameCommandsFactory.getInstance()!.START_COMMAND, NullCanvas.NULL_CANVAS)
+this.getCanvas()!.getCustomCommandListener()!.commandAction(GameCommandsFactory.getInstance()!.START_COMMAND, NullCanvas.NULL_CANVAS)
 
 
 

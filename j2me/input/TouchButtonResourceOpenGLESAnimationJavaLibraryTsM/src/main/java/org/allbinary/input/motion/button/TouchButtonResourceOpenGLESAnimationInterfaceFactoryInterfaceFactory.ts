@@ -42,17 +42,16 @@ public constructor ()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(level: number){
 var level = level
-init(OpenGLImageCacheFactory.getInstance(), level)
+super.init(OpenGLImageCacheFactory.getInstance(), level)
 }
 
 
     public isFeature(): boolean{
 
-    
                         if(Features.getInstance()!.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {

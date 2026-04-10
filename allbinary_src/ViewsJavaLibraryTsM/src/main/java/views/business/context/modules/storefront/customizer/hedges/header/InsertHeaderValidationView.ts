@@ -101,12 +101,12 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
         
 
-put(LogoData.getInstance()!.IMAGEPATH, fullPath)
+multipartRequestHashMap!.put(LogoData.getInstance()!.IMAGEPATH, fullPath)
 this.heading= HeadingValidation(multipartRequestHashMap)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlDoc(): Document{
 
@@ -122,11 +122,10 @@ this.heading= HeadingValidation(multipartRequestHashMap)
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("topbarValidation", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("topbarValidation", this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -136,11 +135,10 @@ this.heading= HeadingValidation(multipartRequestHashMap)
         
 
 
-    
                         if(isValid == Boolean.TRUE)
                         
                                     {
-                                    insert(this.getTransformInfoInterface(), this as DomNodeInterface)
+                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this as DomNodeInterface)
 
                                     }
                                 
@@ -153,11 +151,10 @@ this.heading= HeadingValidation(multipartRequestHashMap)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -180,7 +177,7 @@ this.heading= HeadingValidation(multipartRequestHashMap)
         
         
 
-append(this.heading.validationInfo())
+stringBuffer!.append(this.heading.validationInfo())
 
 
 
@@ -190,11 +187,10 @@ append(this.heading.validationInfo())
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 

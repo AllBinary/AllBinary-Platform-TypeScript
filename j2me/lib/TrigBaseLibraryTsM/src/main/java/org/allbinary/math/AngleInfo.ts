@@ -72,7 +72,7 @@ var frame = frame
         
         
 
-this.setAngle(frameUtil!.adjustAngleToFrameAngle(newAngle).toShort())
+this.this.setAngle(frameUtil!.adjustAngleToFrameAngle(newAngle).toShort())
 }
 
 
@@ -108,10 +108,10 @@ this.angle= angle
         
         
 
-append(ANGLE)
-appendshort(this.angle)
-append(CommonSeps.getInstance()!.SPACE)
-append(StringUtil.getInstance()!.toString(this.getAngleIncrementInfo()))
+stringBuffer!.append(ANGLE)
+stringBuffer!.appendshort(this.angle)
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(StringUtil.getInstance()!.toString(this.getAngleIncrementInfo()))
 
 
 

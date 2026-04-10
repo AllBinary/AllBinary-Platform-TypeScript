@@ -36,25 +36,23 @@ public constructor (){
             }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.setName("Validation Gateway View")
-this.setObjectFile("views.admin.payment.gateway.GatewayValidationView")
+                                    this.this.setName("Validation Gateway View")
+this.this.setObjectFile("views.admin.payment.gateway.GatewayValidationView")
 
                                     }
                                 
@@ -62,7 +60,7 @@ this.setObjectFile("views.admin.payment.gateway.GatewayValidationView")
                             
 
 
-                            throw Exception("No Such View Command: " +this.getCommand())
+                            throw Error("No Such View Command: " +this.getCommand())
 
                         }
                             
@@ -78,10 +76,10 @@ this.setObjectFile("views.admin.payment.gateway.GatewayValidationView")
 
 
 
-                            throw Exception("Command Null")
+                            throw Error("Command Null")
 } catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

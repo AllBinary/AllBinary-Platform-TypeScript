@@ -71,7 +71,6 @@ var endIndex: number= 0
 beginIndex= this.string.indexOf(start)
 endIndex= this.string.indexOf(end)
 
-    
                         if(endIndex > beginIndex && beginIndex >= 0 && endIndex >= 0 && beginIndex < 10 && endIndex < 525)
                         
                                     {
@@ -90,7 +89,7 @@ endIndex= this.string.indexOf(end)
         
         
 
-writeBytes(text)
+idOutData!.writeBytes(text)
 
 
 
@@ -109,11 +108,10 @@ writeBytes(text)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "deleteAtStart", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "deleteAtStart", e)
 
                                     }
                                 
@@ -141,7 +139,6 @@ var endIndex: number= 0
 beginIndex= this.string.indexOf(start)
 endIndex= this.string.indexOf(end)
 
-    
                         if(endIndex > beginIndex && beginIndex >= 0 && endIndex >= 0 && beginIndex < 50 && endIndex < 425)
                         
                                     {
@@ -165,7 +162,7 @@ endIndex= this.string.indexOf(end)
         
         
 
-writeBytes(newStart +newText +text)
+idOutData!.writeBytes(newStart +newText +text)
 
 
 
@@ -184,11 +181,10 @@ writeBytes(newStart +newText +text)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "deleteAtStart", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "deleteAtStart", e)
 
                                     }
                                 

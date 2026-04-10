@@ -92,7 +92,7 @@ this.offsetY= offsetY
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public gravity(velocityProperties: VelocityProperties, geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition){
     //var velocityProperties = velocityProperties
@@ -100,26 +100,24 @@ this.offsetY= offsetY
     //var geographicMapCellTypeArray = geographicMapCellTypeArray
     //var geographicMapCellPosition = geographicMapCellPosition
 
-    
                         if(geographicMapCellPosition != 
                                     null
                                 )
                         
                                     {
-                                    getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, geographicMapCellPosition)
+                                    geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, geographicMapCellPosition)
 
     var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;
         
         
 
 
-    
                         if(!hasSolidBlock)
                         
                                     {
-                                    process(velocityProperties)
-limitXYToForwardAndReverseMaxVelocity()
-this.gravity()
+                                    gravityUtil!.process(velocityProperties)
+velocityProperties!.limitXYToForwardAndReverseMaxVelocity()
+this.this.gravity()
 
                                     }
                                 
@@ -133,7 +131,7 @@ this.gravity()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getPositionTopLeft(geographicMapInterfaceArray: BasicGeographicMap[], layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -159,7 +157,7 @@ this.gravity()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getPositionTopRight(geographicMapInterfaceArray: BasicGeographicMap[], layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -185,7 +183,7 @@ this.gravity()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getPositionBottomLeft(geographicMapInterfaceArray: BasicGeographicMap[], layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -211,7 +209,7 @@ this.gravity()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getPositionBottomRight(geographicMapInterfaceArray: BasicGeographicMap[], layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -237,7 +235,7 @@ this.gravity()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getLeftPosition(geographicMapInterfaceArray: BasicGeographicMap[], layer: AllBinaryLayer): GeographicMapCellPosition{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -261,7 +259,7 @@ this.gravity()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getRightPosition(geographicMapInterfaceArray: BasicGeographicMap[], layer: AllBinaryLayer): GeographicMapCellPosition{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -285,7 +283,7 @@ this.gravity()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -308,7 +306,6 @@ var y = y
 
 geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray, geographicMapCellTypeArray, topLeftGeographicMapCellPosition, velocityProperties, layer)
 
-    
                         if(geographicMapCellPosition == 
                                     null
                                 )
@@ -330,7 +327,6 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
 
 geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray, geographicMapCellTypeArray, topRightGeographicMapCellPosition, velocityProperties, layer)
 
-    
                         if(geographicMapCellPosition == 
                                     null
                                 )
@@ -352,7 +348,6 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
 
 geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray, geographicMapCellTypeArray, bottomLeftGeographicMapCellPosition, velocityProperties, layer)
 
-    
                         if(geographicMapCellPosition == 
                                     null
                                 )
@@ -374,7 +369,6 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
 
 geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray, geographicMapCellTypeArray, bottomRightGeographicMapCellPosition, velocityProperties, layer)
 
-    
                         if(geographicMapCellPosition == 
                                     null
                                 )
@@ -396,7 +390,7 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition, velocityProperties: VelocityProperties, layer: AllBinaryLayer): GeographicMapCellPosition{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -405,7 +399,6 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
     //var velocityProperties = velocityProperties
     //var layer = layer
 
-    
                         if(geographicMapCellPosition != 
                                     null
                                 )
@@ -422,11 +415,10 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
         
 
 
-    
                         if(possibleStepGeographicMapCellPosition!.getColumn() > 0 && possibleStepGeographicMapCellPosition!.getRow() > 0 && possibleStepGeographicMapCellPosition!.getColumn() < tiledLayer!.getColumns() && possibleStepGeographicMapCellPosition!.getRow() < tiledLayer!.getRows())
                         
                                     {
-                                    getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleStepGeographicMapCellPosition)
+                                    geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleStepGeographicMapCellPosition)
 
     var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;
         
@@ -438,7 +430,6 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
         
 
 
-    
                         if(hasSolidBlock || hasOffMap)
                         
                                     {
@@ -487,7 +478,7 @@ this.previousGeographicMapCellPosition=
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public moveAndLand(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition, velocityProperties: VelocityProperties, layer: AllBinaryLayer, x: number, y: number){
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -498,13 +489,14 @@ this.previousGeographicMapCellPosition=
     //var x = x
     //var y = y
 
-    
                         if(geographicMapCellPosition != 
                                     null
                                 )
                         
                                     {
-                                    terrainMove(geographicMapInterfaceArray, geographicMapCellTypeArray, x, y)
+                                    layer = layerlayer as TopViewCharacterInterface
+layer.
+                    terrainMove(geographicMapInterfaceArray, geographicMapCellTypeArray, x, y)
 
                                     }
                                 
@@ -515,7 +507,7 @@ this.previousGeographicMapCellPosition=
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public move(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer, x: number, y: number): boolean{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -529,9 +521,8 @@ this.previousGeographicMapCellPosition=
         
         
 
-this.moveAndLand(geographicMapInterfaceArray, geographicMapCellTypeArray, geographicMapCellPosition, velocityProperties, layer, x, y)
+this.this.moveAndLand(geographicMapInterfaceArray, geographicMapCellTypeArray, geographicMapCellPosition, velocityProperties, layer, x, y)
 
-    
                         if(geographicMapCellPosition == 
                                     null
                                 )
@@ -559,7 +550,7 @@ this.moveAndLand(geographicMapInterfaceArray, geographicMapCellTypeArray, geogra
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public left(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer){
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -572,7 +563,6 @@ this.moveAndLand(geographicMapInterfaceArray, geographicMapCellTypeArray, geogra
         
 
 
-    
                         if(geographicMapCellPosition != 
                                     null
                                 )
@@ -583,28 +573,28 @@ this.moveAndLand(geographicMapInterfaceArray, geographicMapCellTypeArray, geogra
         
         
 
-getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleStepGeographicMapCellPosition)
+geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleStepGeographicMapCellPosition)
 
     var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;
         
         
 
 
-    
                         if(hasSolidBlock)
                         
                                     {
                                     
-    
                         if(this.autoStepBlocks)
                         
                                     {
-                                    leftp()
+                                    layer = layerlayer as TopViewCharacterInterface
+layer.
+                    leftp()
 
                                     }
                                 
                         else {
-                            set(0)
+                            velocityProperties!.getVelocityXBasicDecimalP()!.set(0)
 
                         }
                             
@@ -612,7 +602,9 @@ getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleS
                                     }
                                 
                         else {
-                            leftp()
+                            layer = layerlayer as TopViewCharacterInterface
+layer.
+                    leftp()
 
                         }
                             
@@ -622,7 +614,7 @@ getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleS
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public right(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer){
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -635,7 +627,6 @@ getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleS
         
 
 
-    
                         if(geographicMapCellPosition != 
                                     null
                                 )
@@ -646,28 +637,28 @@ getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleS
         
         
 
-getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleStepGeographicMapCellPosition)
+geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleStepGeographicMapCellPosition)
 
     var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;
         
         
 
 
-    
                         if(hasSolidBlock)
                         
                                     {
                                     
-    
                         if(this.autoStepBlocks)
                         
                                     {
-                                    rightp()
+                                    layer = layerlayer as TopViewCharacterInterface
+layer.
+                    rightp()
 
                                     }
                                 
                         else {
-                            set(0)
+                            velocityProperties!.getVelocityXBasicDecimalP()!.set(0)
 
                         }
                             
@@ -675,7 +666,9 @@ getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleS
                                     }
                                 
                         else {
-                            rightp()
+                            layer = layerlayer as TopViewCharacterInterface
+layer.
+                    rightp()
 
                         }
                             

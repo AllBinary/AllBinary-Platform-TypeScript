@@ -57,7 +57,7 @@ public constructor (combatGameCanvas: AllBinaryGameCanvas)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setAllBinaryGameCanvas(combatGameCanvas)
+this.this.setAllBinaryGameCanvas(combatGameCanvas)
 }
 
 
@@ -99,11 +99,11 @@ this.allBinaryLayerInterface= allBinaryLayerInterface
         
         
 
-append("DestroyedEvent: \n")
-append("AllBinaryLayerInterface: ")
-append(this.allBinaryLayerInterface!.toString())
-append("\nAllBinaryGameCanvas: ")
-append(StringUtil.getInstance()!.toString(this.getAllBinaryGameCanvas()))
+stringBuffer!.append("DestroyedEvent: \n")
+stringBuffer!.append("AllBinaryLayerInterface: ")
+stringBuffer!.append(this.allBinaryLayerInterface!.toString())
+stringBuffer!.append("\nAllBinaryGameCanvas: ")
+stringBuffer!.append(StringUtil.getInstance()!.toString(this.getAllBinaryGameCanvas()))
 
 
 

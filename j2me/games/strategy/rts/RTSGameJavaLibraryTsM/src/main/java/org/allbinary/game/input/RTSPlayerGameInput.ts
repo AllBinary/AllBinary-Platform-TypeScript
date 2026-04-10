@@ -164,18 +164,17 @@ public constructor (gameCanvas: AllBinaryGameCanvas, inputList: BasicArrayList, 
 
                             //For kotlin this is before the body of the constructor.
                     
-this.initInputProcessors()
+this.this.initInputProcessors()
 this.gameCanvas= gameCanvas
 this.inputList= inputList
 this.towerInfoPaintable= towerInfoPaintable
 this.rtsPlayerLayerInterface= rtsPlayerLayerInterface
 this.selectedRTSLayerPlayerGameInput= SelectedRTSLayersPlayerGameInput(this.getRTSLayerInfoPaintable(), this.getRtsPlayerLayerInterface(), this.inputList, playerInputId, selectRTSLayerVisitorFactoryInterface)
 
-    
                         if(this.rtsPlayerLayerInterface != NullRTSLayer.NULL_RTS_LAYER)
                         
                                     {
-                                    this.setSelectedRtsFormInput(this.rtsPlayerLayerInterface!.getRTSFormInput())
+                                    this.this.setSelectedRtsFormInput(this.rtsPlayerLayerInterface!.getRTSFormInput())
 
                                     }
                                 
@@ -194,17 +193,16 @@ this.layerPositionFinderInterface= layerPositionFinderInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+this.selectedRTSLayerPlayerGameInput!.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
 
-    
                         if(this.selectedRtsFormInput != NullRTSFormInputFactory.getInstance())
                         
                                     {
-                                    setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+                                    this.selectedRtsFormInput!.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
 
                                     }
                                 
@@ -215,27 +213,27 @@ setAllBinaryGameLayerManager(allBinaryGameLayerManager)
 var displayChangeEvent = displayChangeEvent
 
         try {
-            put(commonStrings!.START, this, "onDisplayChangeEvent")
-update()
+            logUtil!.put(commonStrings!.START, this, "onDisplayChangeEvent")
+this.getRTSLayerInfoPaintable()!.update()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "onDisplayChangeEvent", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "onDisplayChangeEvent", e)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     left(){
-processInput(Canvas.LEFT)
+this.rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!.processInput(Canvas.LEFT)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     right(){
-processInput(Canvas.RIGHT)
+this.rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!.processInput(Canvas.RIGHT)
 }
 
 
@@ -251,18 +249,18 @@ this.removeInputProcessorArray[Canvas.LEFT]= this.removeInputProcessorArray[Canv
 this.removeInputProcessorArray[Canvas.RIGHT]= this.removeInputProcessorArray[Canvas.KEY_NUM1]!
 this.removeInputProcessorArray[Canvas.KEY_NUM0]= this.removeInputProcessorArray[Canvas.KEY_NUM1]!
 this.removeInputProcessorArray[Canvas.KEY_POUND]= this.removeInputProcessorArray[Canvas.KEY_NUM1]!
-init(this.inputProcessorArray)
-init(this.removeInputProcessorArray)
+GameInputProcessorUtil.init(this.inputProcessorArray)
+GameInputProcessorUtil.init(this.removeInputProcessorArray)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processInput(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager
 
         try {
-            this.processMotionInput(layerManager)
+            this.this.processMotionInput(layerManager)
 
     var size: number = inputList!.size()!;
         
@@ -289,42 +287,41 @@ index < size; index++)
         
 
 key= gameKeyEvent!.getKey()
-processInput(key)
-processInput(key)
-process(layerManager, gameKeyEvent)
-process(layerManager, gameKeyEvent)
+this.getScrollPlayerGameInput()!.processInput(key)
+this.getSelectedBuildingPlayerGameInput()!.processInput(key)
+this.inputProcessorArray[key]!.process(layerManager, gameKeyEvent)
+this.removeInputProcessorArray[key]!.process(layerManager, gameKeyEvent)
 }
 
 
-    
                         if(isIsSingleKeyProcessing())
                         
                                     {
-                                    this.clear()
+                                    this.this.clear()
 
                                     }
                                 
                         else {
-                            this.update()
+                            this.this.update()
 
                         }
                             
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processMotionInput(layerManager: AllBinaryLayerManager){
     //var layerManager = layerManager
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     select(motionGestureEvent: MotionGestureEvent){
     //var motionGestureEvent = motionGestureEvent
@@ -364,18 +361,16 @@ put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e)
         
 
 
-    
                         if(geographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
                                     {
-                                    add(SelectSound.getInstance())
+                                    SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance())
 
     var layer: AllBinaryLayer = this.layerPositionFinderInterface!.getLayerInterface(geographicMapCellPosition)!;
         
         
 
 
-    
                         if(layer == AllBinaryLayer.NULL_ALLBINARY_LAYER)
                         
                                     {
@@ -393,7 +388,7 @@ put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e)
         
         
 
-this.setSelectedRTSLayer(foundRTSLayer, geographicMapCellPosition)
+this.this.setSelectedRTSLayer(foundRTSLayer, geographicMapCellPosition)
 
                                     }
                                 
@@ -403,7 +398,7 @@ this.setSelectedRTSLayer(foundRTSLayer, geographicMapCellPosition)
         
         
 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Off Of Map -")!.append(commonLabels!.WIDTH_LABEL)!.appendint(allBinaryTiledLayer!.getWidth())!.append(commonLabels!.HEIGHT_LABEL)!.appendint(allBinaryTiledLayer!.getHeight())!.toString(), this, "select")
 
                         }
@@ -411,12 +406,12 @@ put(StringMaker().
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setSelectedRTSLayer(rtsLayer: CollidableDestroyableDamageableLayer, geographicMapCellPosition: GeographicMapCellPosition){
 var rtsLayer = rtsLayer
 var geographicMapCellPosition = geographicMapCellPosition
-setSelectedRTSLayer(rtsLayer)
+this.getSelectedBuildingPlayerGameInput()!.setSelectedRTSLayer(rtsLayer)
 }
 
 
@@ -442,7 +437,7 @@ var graphics = graphics
         
         
 
-setColor(BasicColorFactory.getInstance()!.GREEN.toInt())
+graphics.setColor(BasicColorFactory.getInstance()!.GREEN.toInt())
 
     var list: BasicArrayList = this.getSelectedBuildingPlayerGameInput()!.getPaintSelectedRTSLayersList()!;
         
@@ -459,7 +454,6 @@ setColor(BasicColorFactory.getInstance()!.GREEN.toInt())
         
 
 
-    
                         if(list.size() > 0)
                         
                                     {
@@ -480,14 +474,13 @@ index >= 0; index--)
 
 width= rtsLayer!.getWidth()
 height= rtsLayer!.getHeight()
-drawRect(rtsLayer!.getXP() -allBinaryTiledLayer!.getXP(), rtsLayer!.getYP() -allBinaryTiledLayer!.getYP(), width, height)
+graphics.drawRect(rtsLayer!.getXP() -allBinaryTiledLayer!.getXP(), rtsLayer!.getYP() -allBinaryTiledLayer!.getYP(), width, height)
 }
 
 
                                     }
                                 
                              else 
-    
                         if(geographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
                                     {
@@ -498,7 +491,7 @@ drawRect(rtsLayer!.getXP() -allBinaryTiledLayer!.getXP(), rtsLayer!.getYP() -all
 
 width= allBinaryTiledLayer!.getCellWidth()
 height= allBinaryTiledLayer!.getCellHeight()
-drawRect(point.getX() -allBinaryTiledLayer!.getXP(), point.getY() -allBinaryTiledLayer!.getYP(), width, height)
+graphics.drawRect(point.getX() -allBinaryTiledLayer!.getXP(), point.getY() -allBinaryTiledLayer!.getYP(), width, height)
 
                                     }
                                 
@@ -531,7 +524,7 @@ drawRect(point.getX() -allBinaryTiledLayer!.getXP(), point.getY() -allBinaryTile
 
     public setSelectedRtsFormInput(selectedRtsFormInput: RTSFormInput){
 var selectedRtsFormInput = selectedRtsFormInput
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("RTSFormInput: ")!.append(StringUtil.getInstance()!.toString(selectedRtsFormInput))!.toString(), this, "setSelectedRtsFormInput")
 this.selectedRtsFormInput= selectedRtsFormInput
 }

@@ -56,7 +56,7 @@ this.context= context
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getFileInputStreamInstance(path: string, fileName: string): AbFileInputStream{
     //var path = path
@@ -70,7 +70,7 @@ this.context= context
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getFileOutputStreamInstance(path: string, fileName: string): AbFileOutputStream{
     //var path = path
@@ -80,7 +80,7 @@ this.context= context
         
         
 
-deleteFile(fileName)
+context.deleteFile(fileName)
 
 
 
@@ -90,12 +90,12 @@ deleteFile(fileName)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public delete(path: string, fileName: string){
     //var path = path
     //var fileName = fileName
-deleteFile(fileName)
+this.getContext()!.deleteFile(fileName)
 }
 
 

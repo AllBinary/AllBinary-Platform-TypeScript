@@ -49,9 +49,9 @@ public constructor (rtsLayer: PathFindingLayerInterface)
         
         
 
-append("RTSLayerEvent: \n")
-append("RTSLayer: ")
-append(this.getRtsLayer()!.toString())
+stringBuffer!.append("RTSLayerEvent: \n")
+stringBuffer!.append("RTSLayer: ")
+stringBuffer!.append(this.getRtsLayer()!.toString())
 
 
 

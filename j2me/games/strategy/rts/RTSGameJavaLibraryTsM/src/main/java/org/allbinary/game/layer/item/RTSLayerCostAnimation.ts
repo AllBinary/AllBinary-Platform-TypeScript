@@ -98,13 +98,13 @@ public constructor (image: Image, layerInterfaceFactoryInterface: CostLayerInter
 var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
 this.image= image
 this.layerInterfaceFactoryInterface= layerInterfaceFactoryInterface
-this.update()
+this.this.update()
 }
 
 
     public onEvent(event: AllBinaryEventObject){
 var event = event
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
@@ -112,7 +112,7 @@ log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 var event = event
 
         try {
-            this.update()
+            this.this.update()
 } catch(e: Exception)
             {
 
@@ -120,13 +120,13 @@ var event = event
         
         
 
-put(commonStrings!.EXCEPTION, this, "onTechEvent", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "onTechEvent", e)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(){
 this.len= 0
@@ -139,7 +139,7 @@ this.len= this.primitiveLongUtil!.getCurrentTotalDigits()
 var graphics = graphics
 var x = x
 var y = y
-paint(graphics, x, y)
+super.paint(graphics, x, y)
 
     var adjustedCostY: number = image.getHeight() -myFont!.DEFAULT_CHAR_HEIGHT;
         
@@ -150,8 +150,8 @@ paint(graphics, x, y)
         
         
 
-drawString(DOLLAR, xa, y +adjustedCostY, 0)
-drawChars(costString, 0, this.len, x +adjustedCostX, y +adjustedCostY, 0)
+graphics.drawString(DOLLAR, xa, y +adjustedCostY, 0)
+graphics.drawChars(costString, 0, this.len, x +adjustedCostX, y +adjustedCostY, 0)
 }
 
 

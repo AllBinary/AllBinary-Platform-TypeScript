@@ -41,13 +41,13 @@ public constructor (){
 
 
     public update(){
-update()
+this.initUpdatePaintable!.update()
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics)
+this.initUpdatePaintable!.paint(graphics)
 }
 
 
@@ -59,7 +59,7 @@ this.initUpdatePaintable= hudPaintable
 
     public updateRTSLayerInfo(hudPaintable: SelectionHudPaintable){
 var hudPaintable = hudPaintable
-updateSelectionInfo()
+hudPaintable!.updateSelectionInfo()
 this.initUpdatePaintable= hudPaintable
 }
 

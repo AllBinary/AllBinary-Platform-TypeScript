@@ -43,7 +43,7 @@ this.gameCanvas= gameCanvas
 
     public paint(graphics: Graphics){
 var graphics = graphics
-draw(graphics)
+this.gameCanvas!.draw(graphics)
 }
 
 

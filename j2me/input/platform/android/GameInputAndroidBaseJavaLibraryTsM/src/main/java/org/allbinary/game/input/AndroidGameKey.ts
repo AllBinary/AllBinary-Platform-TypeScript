@@ -19,7 +19,6 @@ var keyCode = keyCode
         
 
 
-    
                         if(input != 
                                     null
                                 )

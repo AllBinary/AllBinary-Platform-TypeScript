@@ -37,7 +37,7 @@ export class PaintableToImageUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getImage(paintableInterface: PaintableInterface, width: number, height: number): Image{
 var paintableInterface = paintableInterface
@@ -53,7 +53,7 @@ var height = height
         
         
 
-paint(graphics)
+paintableInterface!.paint(graphics)
 
 
 

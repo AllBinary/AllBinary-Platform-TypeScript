@@ -30,7 +30,7 @@ interface BasicEventHandlerInterface {
 
     addListener(eventListenerInterface: EventListenerInterface)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     fireEvent(eventObject: AllBinaryEventObject)
 

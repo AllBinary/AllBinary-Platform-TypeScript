@@ -90,11 +90,10 @@ var categoryName = categoryName
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "getInstance(String)")
+                                    logUtil!.put(this.commonStrings!.START, this, "getInstance(String)")
 
                                     }
                                 
@@ -112,11 +111,10 @@ var categoryName = categoryName
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getInstance(String, int)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(String, int)", e)
 
                                     }
                                 
@@ -138,11 +136,10 @@ var categoryName = categoryName
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "getInstance(CategoryInterface, CategoryInterface, String)")
+                                    logUtil!.put(this.commonStrings!.START, this, "getInstance(CategoryInterface, CategoryInterface, String)")
 
                                     }
                                 
@@ -160,11 +157,10 @@ var categoryName = categoryName
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getInstance(CategoryInterface, CategoryInterface , String, int)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(CategoryInterface, CategoryInterface , String, int)", e)
 
                                     }
                                 
@@ -184,11 +180,10 @@ var node = node
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "getInstance(Node)")
+                                    logUtil!.put(this.commonStrings!.START, this, "getInstance(Node)")
 
                                     }
                                 
@@ -206,11 +201,10 @@ var node = node
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getInstance(Node, int)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(Node, int)", e)
 
                                     }
                                 
@@ -232,11 +226,10 @@ var node = node
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "getInstance(CategoryInterface, CategoryInterface, Node)")
+                                    logUtil!.put(this.commonStrings!.START, this, "getInstance(CategoryInterface, CategoryInterface, Node)")
 
                                     }
                                 
@@ -254,11 +247,10 @@ var node = node
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getInstance(CategoryInterface, CategoryInterface, Node, int)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(CategoryInterface, CategoryInterface, Node, int)", e)
 
                                     }
                                 
@@ -280,11 +272,10 @@ var categoryPropertiesHashMap = categoryPropertiesHashMap
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "getInstance(CategoryInterface, CategoryInterface, HashMap)")
+                                    logUtil!.put(this.commonStrings!.START, this, "getInstance(CategoryInterface, CategoryInterface, HashMap)")
 
                                     }
                                 
@@ -302,11 +293,10 @@ var categoryPropertiesHashMap = categoryPropertiesHashMap
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORYERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getInstance(CategoryInterface, CategoryInterface, HashMap)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(CategoryInterface, CategoryInterface, HashMap)", e)
 
                                     }
                                 

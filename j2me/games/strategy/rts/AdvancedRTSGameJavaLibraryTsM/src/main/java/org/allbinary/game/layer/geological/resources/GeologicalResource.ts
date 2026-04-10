@@ -32,12 +32,12 @@ public constructor (initTotal: number){
             super();
             var initTotal = initTotal
 this.initTotal= initTotal
-this.init()
+this.this.init()
 }
 
 
     public init(){
-this.setTotal(this.initTotal)
+this.this.setTotal(this.initTotal)
 }
 
 
@@ -49,16 +49,15 @@ var value = value
         
 
 
-    
                         if(this.getTotal() +value > max)
                         
                                     {
-                                    this.setTotal(max)
+                                    this.this.setTotal(max)
 
                                     }
                                 
                         else {
-                            this.setTotal(this.getTotal() +value)
+                            this.this.setTotal(this.getTotal() +value)
 
                         }
                             
@@ -68,16 +67,15 @@ var value = value
     public remove(value: number){
 var value = value
 
-    
                         if(this.getTotal() -value < 0)
                         
                                     {
-                                    this.setTotal(0)
+                                    this.this.setTotal(0)
 
                                     }
                                 
                         else {
-                            this.setTotal(this.getTotal() -value)
+                            this.this.setTotal(this.getTotal() -value)
 
                         }
                             

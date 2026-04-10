@@ -46,7 +46,7 @@ public constructor (){
             }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public getInstance(hashMap: HashMap<Any, Any>, pageContext: PageContext): any = {}{
 var hashMap = hashMap
@@ -62,11 +62,10 @@ var pageContext = pageContext
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 
@@ -81,7 +80,7 @@ var pageContext = pageContext
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public getInstance(hashMap: HashMap<Any, Any>, httpServletRequest: HttpServletRequest): any = {}{
 var hashMap = hashMap
@@ -97,11 +96,10 @@ var httpServletRequest = httpServletRequest
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 

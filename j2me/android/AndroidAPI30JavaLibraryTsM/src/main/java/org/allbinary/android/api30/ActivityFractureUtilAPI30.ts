@@ -66,8 +66,8 @@ export class ActivityFractureUtilAPI30 extends ActivityFractureUtilAPI5 {
         
         
 
-hide(WindowInsetsCompat.Type.systemBars())
-setSystemBarsBehavior(WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE)
+windowInsetsController!.hide(WindowInsetsCompat.Type.systemBars())
+windowInsetsController!.setSystemBarsBehavior(WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE)
 }
 
 

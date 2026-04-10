@@ -104,7 +104,7 @@ index < size; index++)
         
         
 
-addUserEmailEventConfiguration(userEmailEventConfigurationView!.getUserEmailEventConfigurationInterface())
+this.userEmailEventsConfigurationInterface!.addUserEmailEventConfiguration(userEmailEventConfigurationView!.getUserEmailEventConfigurationInterface())
 }
 
 }
@@ -127,7 +127,7 @@ this.userEmailEventsConfigurationInterface= userEmailEventsConfigurationInterfac
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -152,11 +152,10 @@ var document = document
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put("Number Of Email Events Specified in file: " +set.size(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Number Of Email Events Specified in file: " +set.size(), this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -196,7 +195,7 @@ index < size; index++)
         
         
 
-appendChild(userEmailEventConfigurationView!.toXmlNode(document))
+node.appendChild(userEmailEventConfigurationView!.toXmlNode(document))
 }
 
 

@@ -34,7 +34,7 @@ export class GeologicalGeographicMapCellPositionFactoryInitVisitor
                 , GeographicMapCellPositionFactoryInitVisitorInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public visit(tiledLayer: AllBinaryTiledLayer, cellPosition: GeographicMapCellPosition){
 var tiledLayer = tiledLayer
@@ -44,7 +44,7 @@ var cellPosition = cellPosition
         
         
 
-init()
+geologicalGeographicMapCellPosition!.getGeologicalResource()!.init()
 }
 
 

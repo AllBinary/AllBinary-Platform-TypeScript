@@ -153,7 +153,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.this.setTableName(tableName)
 }
 
 
@@ -231,26 +231,26 @@ var order = order
         
         
 
-add(shippingCost!.toString())
-add(subTotal!.toString())
-add(total.toString())
-multiply(taxRate)
-add(tax.toString())
+total.add(shippingCost!.toString())
+total.add(subTotal!.toString())
+tax.add(total.toString())
+tax.multiply(taxRate)
+total.add(tax.toString())
 
     var empty: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
 
-add(OrderHistoryIdGenerator().
+vector.add(OrderHistoryIdGenerator().
                             getNext())
 
     var ZERO: string = TableDataFactory.getInstance()!.ZERO_STRING;
         
         
 
-add(order.getId())
-add(userName)
-add(order.getStoreName())
+vector.add(order.getId())
+vector.add(userName)
+vector.add(order.getStoreName())
 
     var calendar: Calendar = Calendar.getInstance()!;
         
@@ -263,124 +263,119 @@ add(order.getStoreName())
         
         
 
-add(ZERO)
-add(time)
-add(ZERO)
-add(ZERO)
-add(OrderHistoryData.PREPROCESSING)
-add(order.getPaymentMethod())
+vector.add(ZERO)
+vector.add(time)
+vector.add(ZERO)
+vector.add(ZERO)
+vector.add(OrderHistoryData.PREPROCESSING)
+vector.add(order.getPaymentMethod())
 
-    
                         if(paymentInterface != 
                                     null
                                 )
                         
                                     {
-                                    add(paymentInterface!.getName())
-add(paymentInterface!.getType())
-add(paymentInterface!.getExpiration())
+                                    vector.add(paymentInterface!.getName())
+vector.add(paymentInterface!.getType())
+vector.add(paymentInterface!.getExpiration())
 
     var random: number = Random().
                             nextInt(SuperCrypt.KEYMAX)!;
         
         
 
-add(SuperCrypt(random).
+vector.add(SuperCrypt(random).
                             encrypt(paymentInterface!.getNumber()))
-add(Integer(random).
+vector.add(Integer(random).
                             toString())
 
                                     }
                                 
                         else {
-                            add(empty)
-add(empty)
-add(empty)
-add(empty)
-add(ZERO)
+                            vector.add(empty)
+vector.add(empty)
+vector.add(empty)
+vector.add(empty)
+vector.add(ZERO)
 
                         }
                             
 
-    
                         if(billingAddress != 
                                     null
                                 )
                         
                                     {
-                                    add(billingAddress!.getName())
-add(billingAddress!.getStreet())
-add(billingAddress!.getCity())
-add(billingAddress!.getState())
-add(billingAddress!.getCode())
-add(billingAddress!.getCountry())
+                                    vector.add(billingAddress!.getName())
+vector.add(billingAddress!.getStreet())
+vector.add(billingAddress!.getCity())
+vector.add(billingAddress!.getState())
+vector.add(billingAddress!.getCode())
+vector.add(billingAddress!.getCountry())
 
                                     }
                                 
                         else {
-                            add(empty)
-add(empty)
-add(empty)
-add(empty)
-add(empty)
-add(empty)
+                            vector.add(empty)
+vector.add(empty)
+vector.add(empty)
+vector.add(empty)
+vector.add(empty)
+vector.add(empty)
 
                         }
                             
 
-    
                         if(shippingAddress != 
                                     null
                                 )
                         
                                     {
-                                    add(shippingAddress!.getName())
-add(shippingAddress!.getStreet())
-add(shippingAddress!.getCity())
-add(shippingAddress!.getState())
-add(shippingAddress!.getCode())
-add(shippingAddress!.getCountry())
+                                    vector.add(shippingAddress!.getName())
+vector.add(shippingAddress!.getStreet())
+vector.add(shippingAddress!.getCity())
+vector.add(shippingAddress!.getState())
+vector.add(shippingAddress!.getCode())
+vector.add(shippingAddress!.getCountry())
 
                                     }
                                 
                         else {
-                            add(empty)
-add(empty)
-add(empty)
-add(empty)
-add(empty)
-add(empty)
+                            vector.add(empty)
+vector.add(empty)
+vector.add(empty)
+vector.add(empty)
+vector.add(empty)
+vector.add(empty)
 
                         }
                             
-add(order.getShippingMethod())
-add(subTotal!.toString())
-add(shippingCost!.toString())
-add(tax.toString())
-add(total.toString())
-add(order.getSpecial())
-add(order.getUserComments())
-add(order.getUserCancelComments())
-add(order.getStoreComments())
-add(order.getStoreCancelComments())
-this.insert(vector)
+vector.add(order.getShippingMethod())
+vector.add(subTotal!.toString())
+vector.add(shippingCost!.toString())
+vector.add(tax.toString())
+vector.add(total.toString())
+vector.add(order.getSpecial())
+vector.add(order.getUserComments())
+vector.add(order.getUserCancelComments())
+vector.add(order.getStoreComments())
+vector.add(order.getStoreCancelComments())
+this.this.insert(vector)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, INSERT)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT)
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put("Command Failed: " +vector, this, INSERT, e)
+                                    logUtil!.put("Command Failed: " +vector, this, INSERT, e)
 
                                     }
                                 
@@ -393,24 +388,22 @@ this.insert(vector)
 var values = values
 
         try {
-            insert(values)
+            super.insert(values)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, INSERT)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT)
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, INSERT, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e)
 
                                     }
                                 
@@ -441,34 +434,31 @@ var status = status
         
         
 
-put(OrderHistoryData.STATUS, status)
+updateHashMap!.put(OrderHistoryData.STATUS, status)
 
-    
                         if(status.compareTo(OrderHistoryData.CANCELLED) == 0)
                         
                                     {
-                                    put(OrderHistoryData.CANCELDATE, time)
+                                    updateHashMap!.put(OrderHistoryData.CANCELDATE, time)
 
                                     }
                                 
                              else 
-    
                         if(status.compareTo(OrderHistoryData.SHIPPED) == 0)
                         
                                     {
-                                    put(OrderHistoryData.SHIPPEDDATE, time)
+                                    updateHashMap!.put(OrderHistoryData.SHIPPEDDATE, time)
 
                                     }
                                 
-updateWhere(OrderData.ID, orderId, updateHashMap)
+super.updateWhere(OrderData.ID, orderId, updateHashMap)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "setStatus", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "setStatus", e)
 
                                     }
                                 
@@ -499,17 +489,16 @@ var paymentMethod = paymentMethod
         
         
 
-put(PaymentData.METHOD, paymentMethod)
-put(OrderHistoryData.TRANSDATE, time)
-updateWhere(OrderData.ID, orderId, updateHashMap)
+updateHashMap!.put(PaymentData.METHOD, paymentMethod)
+updateHashMap!.put(OrderHistoryData.TRANSDATE, time)
+super.updateWhere(OrderData.ID, orderId, updateHashMap)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "setPaymentMethod", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "setPaymentMethod", e)
 
                                     }
                                 
@@ -518,7 +507,7 @@ updateWhere(OrderData.ID, orderId, updateHashMap)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getStoreOrders(storeFrontInterface: StoreFrontInterface): Vector{
 var storeFrontInterface = storeFrontInterface
@@ -532,7 +521,7 @@ var storeFrontInterface = storeFrontInterface
         
         
 
-put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getName())
+whereHashMap!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getName())
 
     var orderHashMapVector: Vector = super.getRows(whereHashMap)!;
         
@@ -563,7 +552,7 @@ i < size; i++)
         
         
 
-add(orderReview)
+orderReviewVector!.add(orderReview)
 }
 
 
@@ -575,7 +564,7 @@ add(orderReview)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getOrders(userName: string): Vector{
 var userName = userName
@@ -589,7 +578,7 @@ var userName = userName
         
         
 
-put(UserData.USERNAME, userName)
+whereHashMap!.put(UserData.USERNAME, userName)
 
     var orderHashMapVector: Vector = super.getRows(whereHashMap)!;
         
@@ -620,7 +609,7 @@ index < size; index++)
         
         
 
-add(orderReview)
+orderReviewVector!.add(orderReview)
 }
 
 
@@ -632,7 +621,7 @@ add(orderReview)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getOrders(status: string, fromDate: string, toDate: string): Vector{
 var status = status
@@ -648,7 +637,7 @@ var toDate = toDate
         
         
 
-put(OrderHistoryData.STATUS, status)
+whereHashMap!.put(OrderHistoryData.STATUS, status)
 
     var orderHashMapVector: Vector = super.getRowsWhereBetween(whereHashMap, OrderHistoryData.ORDERDATE, fromDate, toDate)!;
         
@@ -679,7 +668,7 @@ index < size; index++)
         
         
 
-add(orderReview)
+orderReviewVector!.add(orderReview)
 }
 
 
@@ -691,7 +680,7 @@ add(orderReview)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getOrders(fromDate: string, toDate: string): Vector{
 var fromDate = fromDate
@@ -731,7 +720,7 @@ index < size; index++)
         
         
 
-add(orderReview)
+orderReviewVector!.add(orderReview)
 }
 
 
@@ -743,7 +732,7 @@ add(orderReview)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getOrder(id: string): OrderHistory{
 var id = id
@@ -752,14 +741,13 @@ var id = id
         
         
 
-put(OrderData.ID, id)
+whereHashMap!.put(OrderData.ID, id)
 
     var orderReviewHashMap: HashMap<Any, Any> = super.getRow(whereHashMap)!;
         
         
 
 
-    
                         if(orderReviewHashMap != 
                                     null
                                 )
@@ -803,86 +791,86 @@ put(OrderData.ID, id)
         
         
 
-append("CREATE TABLE ")
-append(tableName)
-append(" (")
-append(entryData!.ID)
-append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-append(OrderData.ID)
-append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-append(UserData.USERNAME)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(StoreFrontData.getInstance()!.NAME)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(OrderHistoryData.SHIPPEDDATE)
-append(" BIGINT(19) UNSIGNED ,")
-append(OrderHistoryData.ORDERDATE)
-append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-append(OrderHistoryData.TRANSDATE)
-append(" BIGINT(19) UNSIGNED ,")
-append(OrderHistoryData.CANCELDATE)
-append(" BIGINT(19) UNSIGNED ,")
-append(OrderHistoryData.STATUS)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentData.METHOD)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentData.NAME)
-append(" VARCHAR(255) ,")
-append(PaymentData.TYPE)
-append(" VARCHAR(255) ,")
-append(PaymentData.EXPIRATION)
-append(" VARCHAR(255) ,")
-append(PaymentData.NUMBER)
-append(" VARCHAR(255) ,")
-append(entryData!.ENCRYPTION)
-append(" BIGINT(19) UNSIGNED ,")
-append(BillingAddressData.NAME)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BillingAddressData.STREET)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BillingAddressData.CITY)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BillingAddressData.STATE)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BillingAddressData.CODE)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BillingAddressData.COUNTRY)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(ShippingAddressData.NAME)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(ShippingAddressData.STREET)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(ShippingAddressData.CITY)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(ShippingAddressData.STATE)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(ShippingAddressData.CODE)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(ShippingAddressData.COUNTRY)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(ShippingMethodData.NAME)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(OrderHistoryData.SUBTOTAL)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(OrderHistoryData.SHIPPINGCOST)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(OrderHistoryData.TAX)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(OrderHistoryData.TOTAL)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(entryData!.SPECIAL)
-append(" VARCHAR(255) ,")
-append(OrderData.CUSTOMERCOMMENT)
-append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-append(OrderData.CUSTOMERCANCELCOMMENT)
-append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-append(OrderData.STORECOMMENT)
-append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-append(OrderData.STORECANCELCOMMENT)
-append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-append("PRIMARY KEY(")
-append(entryData!.ID)
-append(") )")
+stringBuffer!.append("CREATE TABLE ")
+stringBuffer!.append(tableName)
+stringBuffer!.append(" (")
+stringBuffer!.append(entryData!.ID)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
+stringBuffer!.append(OrderData.ID)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
+stringBuffer!.append(UserData.USERNAME)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(StoreFrontData.getInstance()!.NAME)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(OrderHistoryData.SHIPPEDDATE)
+stringBuffer!.append(" BIGINT(19) UNSIGNED ,")
+stringBuffer!.append(OrderHistoryData.ORDERDATE)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
+stringBuffer!.append(OrderHistoryData.TRANSDATE)
+stringBuffer!.append(" BIGINT(19) UNSIGNED ,")
+stringBuffer!.append(OrderHistoryData.CANCELDATE)
+stringBuffer!.append(" BIGINT(19) UNSIGNED ,")
+stringBuffer!.append(OrderHistoryData.STATUS)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentData.METHOD)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentData.NAME)
+stringBuffer!.append(" VARCHAR(255) ,")
+stringBuffer!.append(PaymentData.TYPE)
+stringBuffer!.append(" VARCHAR(255) ,")
+stringBuffer!.append(PaymentData.EXPIRATION)
+stringBuffer!.append(" VARCHAR(255) ,")
+stringBuffer!.append(PaymentData.NUMBER)
+stringBuffer!.append(" VARCHAR(255) ,")
+stringBuffer!.append(entryData!.ENCRYPTION)
+stringBuffer!.append(" BIGINT(19) UNSIGNED ,")
+stringBuffer!.append(BillingAddressData.NAME)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BillingAddressData.STREET)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BillingAddressData.CITY)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BillingAddressData.STATE)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BillingAddressData.CODE)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BillingAddressData.COUNTRY)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(ShippingAddressData.NAME)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(ShippingAddressData.STREET)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(ShippingAddressData.CITY)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(ShippingAddressData.STATE)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(ShippingAddressData.CODE)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(ShippingAddressData.COUNTRY)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(ShippingMethodData.NAME)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(OrderHistoryData.SUBTOTAL)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(OrderHistoryData.SHIPPINGCOST)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(OrderHistoryData.TAX)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(OrderHistoryData.TOTAL)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(entryData!.SPECIAL)
+stringBuffer!.append(" VARCHAR(255) ,")
+stringBuffer!.append(OrderData.CUSTOMERCOMMENT)
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
+stringBuffer!.append(OrderData.CUSTOMERCANCELCOMMENT)
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
+stringBuffer!.append(OrderData.STORECOMMENT)
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
+stringBuffer!.append(OrderData.STORECANCELCOMMENT)
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
+stringBuffer!.append("PRIMARY KEY(")
+stringBuffer!.append(entryData!.ID)
+stringBuffer!.append(") )")
 
 
 
@@ -912,7 +900,7 @@ append(") )")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(whereHashMap: HashMap<Any, Any>, orderHashMap: HashMap<Any, Any>){
 var whereHashMap = whereHashMap

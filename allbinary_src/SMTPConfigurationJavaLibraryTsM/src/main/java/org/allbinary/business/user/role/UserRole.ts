@@ -64,7 +64,7 @@ this.userFactoryInterface= aUserFactoryInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getUserFactory(): UserFactoryInterface{
 

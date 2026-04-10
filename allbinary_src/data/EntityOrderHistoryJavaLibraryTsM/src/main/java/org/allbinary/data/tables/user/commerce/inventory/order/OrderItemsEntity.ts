@@ -117,7 +117,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.this.setTableName(tableName)
 }
 
 
@@ -188,70 +188,68 @@ i < itemsSize; i++)
         
 
 vector= Vector()
-add(OrderItemIdGenerator().
+vector.add(OrderItemIdGenerator().
                             getNext())
-add(order.getId())
-add(TableDataFactory.getInstance()!.INTEGER_MAX_VALUE_STRING)
-add(userName)
-add(order.getStoreName())
-add(itemInterface!.getId())
-add(basket.getNumberOf(item)!.toString())
-add(itemInterface!.getNewOrUsed())
-add(itemInterface!.getSummary())
-add(itemInterface!.getDistributor())
-add(itemInterface!.getIdUsedByDistributor())
-add(itemInterface!.getProducedBy())
-add(itemInterface!.getProductionDate())
-add(itemInterface!.getStartProductionDate())
-add(itemInterface!.getDescription())
-add(itemInterface!.getKeywords())
-add(itemInterface!.getCategory())
-add(itemInterface!.getType())
-add(itemInterface!.getSmallImage())
-add(itemInterface!.getMediumImage())
-add(itemInterface!.getLargeImage())
-add(itemInterface!.getWeight())
-add(itemInterface!.getPrice()!.toString())
-add(itemInterface!.getComment())
-add(itemInterface!.getCustoms())
-add(itemInterface!.getDownloads())
-add(EMPTY_STRING)
-add(EMPTY_STRING)
-add(EMPTY_STRING)
-add(EMPTY_STRING)
-add(EMPTY_STRING)
-add(EMPTY_STRING)
-add(EMPTY_STRING)
-add(EMPTY_STRING)
-add(EMPTY_STRING)
-add(EMPTY_STRING)
-add(EMPTY_STRING)
-add(EMPTY_STRING)
-add(EMPTY_STRING)
-add(ZERO_STRING)
-add(ZERO_STRING)
-add(ZERO_STRING)
-add(ZERO_STRING)
-this.insert(vector)
+vector.add(order.getId())
+vector.add(TableDataFactory.getInstance()!.INTEGER_MAX_VALUE_STRING)
+vector.add(userName)
+vector.add(order.getStoreName())
+vector.add(itemInterface!.getId())
+vector.add(basket.getNumberOf(item)!.toString())
+vector.add(itemInterface!.getNewOrUsed())
+vector.add(itemInterface!.getSummary())
+vector.add(itemInterface!.getDistributor())
+vector.add(itemInterface!.getIdUsedByDistributor())
+vector.add(itemInterface!.getProducedBy())
+vector.add(itemInterface!.getProductionDate())
+vector.add(itemInterface!.getStartProductionDate())
+vector.add(itemInterface!.getDescription())
+vector.add(itemInterface!.getKeywords())
+vector.add(itemInterface!.getCategory())
+vector.add(itemInterface!.getType())
+vector.add(itemInterface!.getSmallImage())
+vector.add(itemInterface!.getMediumImage())
+vector.add(itemInterface!.getLargeImage())
+vector.add(itemInterface!.getWeight())
+vector.add(itemInterface!.getPrice()!.toString())
+vector.add(itemInterface!.getComment())
+vector.add(itemInterface!.getCustoms())
+vector.add(itemInterface!.getDownloads())
+vector.add(EMPTY_STRING)
+vector.add(EMPTY_STRING)
+vector.add(EMPTY_STRING)
+vector.add(EMPTY_STRING)
+vector.add(EMPTY_STRING)
+vector.add(EMPTY_STRING)
+vector.add(EMPTY_STRING)
+vector.add(EMPTY_STRING)
+vector.add(EMPTY_STRING)
+vector.add(EMPTY_STRING)
+vector.add(EMPTY_STRING)
+vector.add(EMPTY_STRING)
+vector.add(EMPTY_STRING)
+vector.add(ZERO_STRING)
+vector.add(ZERO_STRING)
+vector.add(ZERO_STRING)
+vector.add(ZERO_STRING)
+this.this.insert(vector)
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put("Command Success Added: " +items.length, this, INSERT)
+                                    logUtil!.put("Command Success Added: " +items.length, this, INSERT)
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put("Command Failed: " +vector.toString(), this, INSERT, e)
+                                    logUtil!.put("Command Failed: " +vector.toString(), this, INSERT, e)
 
                                     }
                                 
@@ -276,18 +274,17 @@ var status = status
         
         
 
-put(OrderData.ID, orderId)
-put(ShippingMethodData.GROUP, groupId)
-put(OrderHistoryData.STATUS, status)
-updateWhere(whereHashMap, updateHashMap)
+whereHashMap!.put(OrderData.ID, orderId)
+whereHashMap!.put(ShippingMethodData.GROUP, groupId)
+updateHashMap!.put(OrderHistoryData.STATUS, status)
+super.updateWhere(whereHashMap, updateHashMap)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "setStatus", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "setStatus", e)
 
                                     }
                                 
@@ -319,7 +316,6 @@ var orderId = orderId
         
 
 
-    
                         if(status.compareTo(OrderHistoryData.SHIPPED) != 0)
                         
                                     {
@@ -343,11 +339,10 @@ var orderId = orderId
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "isEverythingShipped", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "isEverythingShipped", e)
 
                                     }
                                 
@@ -376,7 +371,7 @@ var orderId = orderId
         
         
 
-put(OrderData.ID, orderId)
+keyValues!.put(OrderData.ID, orderId)
 
     var items: Vector = super.getRows(keyValues)!;
         
@@ -388,7 +383,6 @@ put(OrderData.ID, orderId)
         
 
 
-    
                         if(items != 
                                     null
                                  && items.length > 0)
@@ -425,20 +419,20 @@ i < itemsSize; i++)
         
         
 
-put(BasicItemData.INBASKETS, EMPTY_STRING)
-put(entryData!.ENABLE, EMPTY_STRING)
-put(entryData!.TIMECREATED, EMPTY_STRING)
-put(entryData!.LASTMODIFIED, EMPTY_STRING)
-put(BasicItemData.GROUPS, EMPTY_STRING)
-put(BasicItemData.OPTIONS, EMPTY_STRING)
-put(BasicItemData.PERMISSIONS, EMPTY_STRING)
-put(BasicItemData.SPECIALS, EMPTY_STRING)
+itemHashMap!.put(BasicItemData.INBASKETS, EMPTY_STRING)
+itemHashMap!.put(entryData!.ENABLE, EMPTY_STRING)
+itemHashMap!.put(entryData!.TIMECREATED, EMPTY_STRING)
+itemHashMap!.put(entryData!.LASTMODIFIED, EMPTY_STRING)
+itemHashMap!.put(BasicItemData.GROUPS, EMPTY_STRING)
+itemHashMap!.put(BasicItemData.OPTIONS, EMPTY_STRING)
+itemHashMap!.put(BasicItemData.PERMISSIONS, EMPTY_STRING)
+itemHashMap!.put(BasicItemData.SPECIALS, EMPTY_STRING)
 
     var item: Item = new Item(itemHashMap);
         
         
 
-addItem(item)
+basketReview!.addItem(item)
 }
 
 
@@ -463,11 +457,10 @@ addItem(item)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "getBasketReview", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "getBasketReview", e)
 
                                     }
                                 
@@ -493,98 +486,98 @@ addItem(item)
         
         
 
-append("CREATE TABLE ")
-append(tableName)
-append(" (")
-append(entryData!.ID)
-append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-append(OrderData.ID)
-append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-append(ShippingMethodData.GROUP)
-append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-append(UserData.USERNAME)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(StoreFrontData.getInstance()!.NAME)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BasicItemData.ID)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BasicItemData.NUMBER)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BasicItemData.NEWORUSED)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BasicItemData.SUMMARY)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BasicItemData.DISTRIBUTOR)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BasicItemData.IDUSEDBYDISTRIBUTOR)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BasicItemData.PRODUCEDBY)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BasicItemData.PRODUCTIONDATE)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BasicItemData.STARTPRODUCTIONDATE)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BasicItemData.DESCRIPTION)
-append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-append(BasicItemData.KEYWORDS)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BasicItemData.CATEGORY)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BasicItemData.TYPE)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BasicItemData.SMALLIMAGE)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BasicItemData.MEDIUMIMAGE)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BasicItemData.LARGEIMAGE)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BasicItemData.WEIGHT)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(BasicItemData.PRICE)
-append(" VARCHAR(20) NOT NULL,")
-append(BasicItemData.COMMENT)
-append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-append(BasicItemData.CUSTOMS)
-append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-append(BasicItemData.DOWNLOADS)
-append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-append(ShippingMethodData.COST)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(OrderHistoryData.TAX)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(ShippingAddressData.NAME)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(ShippingAddressData.STREET)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(ShippingAddressData.CITY)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(ShippingAddressData.STATE)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(ShippingAddressData.CODE)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(ShippingAddressData.COUNTRY)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(ShippingMethodData.NAME)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(entryData!.SPECIAL)
-append(" VARCHAR(255) ,")
-append(OrderHistoryData.STATUS)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(OrderHistoryData.CANCELINFO)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(OrderHistoryData.CANCELTYPE)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(OrderHistoryData.SHIPPEDDATE)
-append(" BIGINT(19) UNSIGNED ,")
-append(OrderHistoryData.ORDERDATE)
-append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-append(OrderHistoryData.TRANSDATE)
-append(" BIGINT(19) UNSIGNED ,")
-append(OrderHistoryData.CANCELDATE)
-append(" BIGINT(19) UNSIGNED ,")
-append("PRIMARY KEY(")
-append(entryData!.ID)
-append(") )")
+stringBuffer!.append("CREATE TABLE ")
+stringBuffer!.append(tableName)
+stringBuffer!.append(" (")
+stringBuffer!.append(entryData!.ID)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
+stringBuffer!.append(OrderData.ID)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
+stringBuffer!.append(ShippingMethodData.GROUP)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
+stringBuffer!.append(UserData.USERNAME)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(StoreFrontData.getInstance()!.NAME)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BasicItemData.ID)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BasicItemData.NUMBER)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BasicItemData.NEWORUSED)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BasicItemData.SUMMARY)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BasicItemData.DISTRIBUTOR)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BasicItemData.IDUSEDBYDISTRIBUTOR)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BasicItemData.PRODUCEDBY)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BasicItemData.PRODUCTIONDATE)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BasicItemData.STARTPRODUCTIONDATE)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BasicItemData.DESCRIPTION)
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
+stringBuffer!.append(BasicItemData.KEYWORDS)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BasicItemData.CATEGORY)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BasicItemData.TYPE)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BasicItemData.SMALLIMAGE)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BasicItemData.MEDIUMIMAGE)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BasicItemData.LARGEIMAGE)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BasicItemData.WEIGHT)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(BasicItemData.PRICE)
+stringBuffer!.append(" VARCHAR(20) NOT NULL,")
+stringBuffer!.append(BasicItemData.COMMENT)
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
+stringBuffer!.append(BasicItemData.CUSTOMS)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
+stringBuffer!.append(BasicItemData.DOWNLOADS)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
+stringBuffer!.append(ShippingMethodData.COST)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(OrderHistoryData.TAX)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(ShippingAddressData.NAME)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(ShippingAddressData.STREET)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(ShippingAddressData.CITY)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(ShippingAddressData.STATE)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(ShippingAddressData.CODE)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(ShippingAddressData.COUNTRY)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(ShippingMethodData.NAME)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(entryData!.SPECIAL)
+stringBuffer!.append(" VARCHAR(255) ,")
+stringBuffer!.append(OrderHistoryData.STATUS)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(OrderHistoryData.CANCELINFO)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(OrderHistoryData.CANCELTYPE)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(OrderHistoryData.SHIPPEDDATE)
+stringBuffer!.append(" BIGINT(19) UNSIGNED ,")
+stringBuffer!.append(OrderHistoryData.ORDERDATE)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
+stringBuffer!.append(OrderHistoryData.TRANSDATE)
+stringBuffer!.append(" BIGINT(19) UNSIGNED ,")
+stringBuffer!.append(OrderHistoryData.CANCELDATE)
+stringBuffer!.append(" BIGINT(19) UNSIGNED ,")
+stringBuffer!.append("PRIMARY KEY(")
+stringBuffer!.append(entryData!.ID)
+stringBuffer!.append(") )")
 
 
 

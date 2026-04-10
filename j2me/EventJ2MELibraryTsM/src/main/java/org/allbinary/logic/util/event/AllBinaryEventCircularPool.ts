@@ -38,7 +38,7 @@ this.circularIndexUtil= CircularIndexUtil.getInstance(max)
 
     public init(allBinaryEventObjectFactoryInterface: AllBinaryEventObjectFactoryInterface){
 var allBinaryEventObjectFactoryInterface = allBinaryEventObjectFactoryInterface
-setIndex(0)
+this.circularIndexUtil!.setIndex(0)
 
     var size: number = this.circularIndexUtil!.getSize()!;
         

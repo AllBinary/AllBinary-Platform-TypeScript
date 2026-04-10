@@ -28,7 +28,7 @@ export class TestRemoteHighScoresNotFinished
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static main(args: string[]){
 var args = args

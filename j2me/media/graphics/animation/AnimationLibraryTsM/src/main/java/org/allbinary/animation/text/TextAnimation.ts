@@ -80,11 +80,11 @@ public constructor (text: string, animationBehavior: AnimationBehavior)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setText(text)
+this.this.setText(text)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public nextFrame(){
 }
@@ -94,7 +94,7 @@ this.setText(text)
 var graphics = graphics
 var x = x
 var y = y
-setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
 
     var height: number = this.getHeight()!;
         
@@ -116,7 +116,7 @@ setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
         
 index < size; index++)
         {
-drawString(textArrayP[index]!, x, y +(index *height), anchor)
+graphics.drawString(textArrayP[index]!, x, y +(index *height), anchor)
 }
 
 }
@@ -130,7 +130,6 @@ var text = text
         
 
 
-    
                         if(text != 
                                     null
                                 )
@@ -158,7 +157,6 @@ startIndex= index
 index= text.indexOf('\n', startIndex)
 endIndex= index
 
-    
                         if(index < 0)
                         
                                     {
@@ -166,9 +164,8 @@ endIndex= index
 
                                     }
                                 
-add(text.substring(startIndex, endIndex))
+list.add(text.substring(startIndex, endIndex))
 
-    
                         if(index < 0)
                         
                                     {
@@ -185,7 +182,6 @@ index++
                                     }
                                 
 
-    
                         if(list.size() > 0)
                         
                                     {

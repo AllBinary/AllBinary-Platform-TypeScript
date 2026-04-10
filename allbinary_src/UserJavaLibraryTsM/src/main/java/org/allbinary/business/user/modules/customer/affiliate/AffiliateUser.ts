@@ -63,14 +63,14 @@ this.affiliateSales= AffiliateSales()
 
     public validateSession(weblisketSession: WeblisketSessionInterface){
 var weblisketSession = weblisketSession
-validateSession(weblisketSession)
-this.updateSession(weblisketSession)
+super.validateSession(weblisketSession)
+this.this.updateSession(weblisketSession)
 }
 
 
     public updateSession(weblisketSession: WeblisketSessionInterface){
 var weblisketSession = weblisketSession
-setStoreName(this.getPermissions())
+weblisketSession!.setStoreName(this.getPermissions())
 }
 
 

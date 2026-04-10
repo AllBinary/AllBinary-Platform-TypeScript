@@ -63,7 +63,7 @@ this.status= value
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     setOrderStatus(): string{
 
@@ -112,11 +112,10 @@ this.status= value
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "setOrderStatus()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus()", e)
 
                                     }
                                 
@@ -131,32 +130,29 @@ this.status= value
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
-            this.setName("Basic Order History View")
-this.setObjectFile("views.generic.order.history.ValidationView")
+            this.this.setName("Basic Order History View")
+this.this.setObjectFile("views.generic.order.history.ValidationView")
 
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getCommand()!.compareTo(OrderHistoryData.SETSTATUS) == 0)
                         
                                     {
-                                    put(OrderHistoryData.STATUS, this.status)
-print(this.setOrderStatus())
+                                    this.getPropertiesHashMap()!.put(OrderHistoryData.STATUS, this.status)
+pageContext!.getOut()!.print(this.setOrderStatus())
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
@@ -167,7 +163,7 @@ print(this.setOrderStatus())
                             
 
 
-                            throw Exception("No Such View Command: " +this.getCommand())
+                            throw Error("No Such View Command: " +this.getCommand())
 
                         }
                             
@@ -183,10 +179,10 @@ print(this.setOrderStatus())
 
 
 
-                            throw Exception("Command Null")
+                            throw Error("Command Null")
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -196,7 +192,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

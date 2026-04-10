@@ -157,7 +157,7 @@ this.inventory= InventoryEntity()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getHashSet(storeFront: StoreFrontInterface): HashSet{
 var storeFront = storeFront
@@ -201,7 +201,7 @@ index < size; index++)
         
         
 
-addAll(substoreKeywords)
+keywords.addAll(substoreKeywords)
 }
 
 
@@ -223,17 +223,16 @@ addAll(substoreKeywords)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     savePage(file: string, data: string){
 var file = file
 var data = data
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STATICPAGEGENERATIONLOGGING))
                         
                                     {
-                                    put("Creating File: " +file, this, "generateAll()")
+                                    logUtil!.put("Creating File: " +file, this, "generateAll()")
 
                                     }
                                 
@@ -243,17 +242,15 @@ var data = data
         
 
 
-    
                         if(newFile!.exists())
                         
                                     {
-                                    delete()
+                                    newFile!.delete()
 
                                     }
                                 
-createNewFile()
+newFile!.createNewFile()
 
-    
                         if(newFile!.exists())
                         
                                     {
@@ -262,15 +259,14 @@ createNewFile()
         
         
 
-writeBytes(data)
-flush()
-close(idOutData)
+idOutData!.writeBytes(data)
+idOutData!.flush()
+StreamUtil.getInstance()!.close(idOutData)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STATICPAGEGENERATIONLOGGING))
                         
                                     {
-                                    put("Wrote Total Bytes: " +newFile!.length(), this, "generateAll()")
+                                    logUtil!.put("Wrote Total Bytes: " +newFile!.length(), this, "generateAll()")
 
                                     }
                                 
@@ -281,14 +277,14 @@ close(idOutData)
                             
 
 
-                            throw Exception("Could Not Create: " +file)
+                            throw Error("Could Not Create: " +file)
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     create(keywordData: string, keywordFilenameHashMap: HashMap<Any, Any>, vector: Vector, staticPath: AbPath){
 var keywordData = keywordData
@@ -305,7 +301,7 @@ var staticPath = staticPath
         
         
 
-put(CommonSeps.getInstance()!.SPACE, StringUtil.getInstance()!.EMPTY_STRING)
+hashMap!.put(CommonSeps.getInstance()!.SPACE, StringUtil.getInstance()!.EMPTY_STRING)
 
     var pageName: string = Replace(hashMap).
                             all(keywordData)!;
@@ -317,10 +313,10 @@ put(CommonSeps.getInstance()!.SPACE, StringUtil.getInstance()!.EMPTY_STRING)
         
         
 
-add(BasicItemData.KEYWORDS, keywordData)
-setStartPage(CommonPhoneStrings.getInstance()!.ZERO)
-setParams(searchParams)
-setFileBaseName(pageName)
+searchParams!.add(BasicItemData.KEYWORDS, keywordData)
+searchParams!.setStartPage(CommonPhoneStrings.getInstance()!.ZERO)
+this.searchRequest!.setParams(searchParams)
+this.searchRequest!.setFileBaseName(pageName)
 
     var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
         
@@ -347,7 +343,6 @@ setFileBaseName(pageName)
 index < productListingPages!.length; index++)
         {
 
-    
                         if(productListingPages[index] == 
                                     null
                                 )
@@ -360,11 +355,10 @@ index < productListingPages!.length; index++)
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STATICPAGEGENERATIONLOGGING))
                         
                                     {
-                                    put("Saving Listing: " +index, this, "generateAll()")
+                                    logUtil!.put("Saving Listing: " +index, this, "generateAll()")
 
                                     }
                                 
@@ -374,7 +368,6 @@ index < productListingPages!.length; index++)
         
 
 
-    
                         if(index > 0)
                         
                                     {
@@ -383,31 +376,30 @@ index < productListingPages!.length; index++)
 
                                     }
                                 
-put(keywordData, pageName +indexStr)
-delete(0, stringBuffer!.length())
-append(staticPath!.toString())
-append(pageName)
-append(indexStr)
-append(AbPathData.getInstance()!.EXTENSION_SEP)
-append(InputOutputTypeData.getInstance()!.DEFAULT)
+keywordFilenameHashMap!.put(keywordData, pageName +indexStr)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(staticPath!.toString())
+stringBuffer!.append(pageName)
+stringBuffer!.append(indexStr)
+stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP)
+stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT)
 
     var file: string = stringBuffer!.toString()!;
         
         
 
 
-    
                         if(!this.directory.create(staticPath))
                         
                                     {
                                     
 
 
-                            throw Exception("Could Not Create Directory: " +staticPath)
+                            throw Error("Could Not Create Directory: " +staticPath)
 
                                     }
                                 
-this.savePage(file, productListingPages[index]!)
+this.this.savePage(file, productListingPages[index]!)
 }
 
 }
@@ -457,16 +449,16 @@ index < size; index++)
         
         
 
-add(storeFront!.getName())
-add(keywordData)
-add(fileName)
-insert(insertVector)
+insertVector!.add(storeFront!.getName())
+insertVector!.add(keywordData)
+insertVector!.add(fileName)
+this.staticPages!.insert(insertVector)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public generateAll(): string{
 
@@ -481,21 +473,20 @@ insert(insertVector)
         
         
 
-append(URLGLOBALS.getWebappPath())
-append(storeFront!.getName())
-append(AbPathData.getInstance()!.SEPARATOR)
-append(storeFront!.getStaticPath())
+stringBuffer!.append(URLGLOBALS.getWebappPath())
+stringBuffer!.append(storeFront!.getName())
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.append(storeFront!.getStaticPath())
 
     var staticPath: AbPath = new AbPath(stringBuffer!.toString());
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STATICPAGEGENERATIONLOGGING))
                         
                                     {
-                                    put("Store Static Pages Path: " +staticPath, this, "generateAll()")
+                                    logUtil!.put("Store Static Pages Path: " +staticPath, this, "generateAll()")
 
                                     }
                                 
@@ -521,14 +512,13 @@ append(storeFront!.getStaticPath())
         
 
 
-    
                         if(size == 0)
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-append("Products For ")
-append(storeFront!.getName())
-append(" Store Not Found")
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("Products For ")
+stringBuffer!.append(storeFront!.getName())
+stringBuffer!.append(" Store Not Found")
 
 
 
@@ -564,23 +554,22 @@ index < size; index++)
         
 
 
-    
                         if(keywordData!.length > 1)
                         
                                     {
-                                    this.create(keywordData, keywordFilenameHashMap, vector, staticPath)
+                                    this.this.create(keywordData, keywordFilenameHashMap, vector, staticPath)
 
                                     }
                                 
 }
 
-this.addStaticPageInfoToDatabase(storeFront, keywordFilenameHashMap)
-delete(0, stringBuffer!.length())
-append("Static Files Generated Successfully For ")
-append(storeFront!.getName())
-append(" it used packages ")
-append(storeFront!.getPackageLocation())
-append(INVENTORY)
+this.this.addStaticPageInfoToDatabase(storeFront, keywordFilenameHashMap)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("Static Files Generated Successfully For ")
+stringBuffer!.append(storeFront!.getName())
+stringBuffer!.append(" it used packages ")
+stringBuffer!.append(storeFront!.getPackageLocation())
+stringBuffer!.append(INVENTORY)
 
 
 
@@ -598,7 +587,7 @@ append(INVENTORY)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public generateAll(storeName: string): string{
 var storeName = storeName
@@ -610,20 +599,18 @@ var storeName = storeName
         
 
 
-    
                         if(storeName != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(storeName!.compareTo(GLOBALS2.GENERATEALLSTORES) != 0)
                         
                                     {
-                                    setStoreFront(this.storeFronts!.getStoreFrontInterface(storeName))
-append(this.generateAll())
-append("<br />")
+                                    this.searchRequest!.setStoreFront(this.storeFronts!.getStoreFrontInterface(storeName))
+stringBuffer!.append(this.generateAll())
+stringBuffer!.append("<br />")
 
                                     }
                                 
@@ -649,9 +636,9 @@ append("<br />")
 index < size; index++)
         {
 storeName= storeFrontVector!.get(index) as String
-setStoreFront(this.storeFronts!.getStoreFrontInterface(storeName))
-append(this.generateAll())
-append("<br />")
+this.searchRequest!.setStoreFront(this.storeFronts!.getStoreFrontInterface(storeName))
+stringBuffer!.append(this.generateAll())
+stringBuffer!.append("<br />")
 }
 
 
@@ -670,7 +657,7 @@ append("<br />")
 
                         }
                             
-append("All Static Pages Generated<br/>")
+stringBuffer!.append("All Static Pages Generated<br/>")
 
 
 

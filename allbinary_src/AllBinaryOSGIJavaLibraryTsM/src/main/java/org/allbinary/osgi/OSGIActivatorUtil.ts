@@ -39,17 +39,17 @@ export class OSGIActivatorUtil
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string){
     //var bundleContext = bundleContext
     //var anyType = anyType
     //var serviceName = serviceName
-registerAsService(bundleContext, anyType, serviceName, Hashtable<Any, Any>())
+OSGIActivatorUtil.registerAsService(bundleContext, anyType, serviceName, Hashtable<Any, Any>())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string, properties: Hashtable<Any, Any>){
     //var bundleContext = bundleContext
@@ -68,14 +68,13 @@ registerAsService(bundleContext, anyType, serviceName, Hashtable<Any, Any>())
 
 serviceReference= bundleContext!.getServiceReference(serviceName)
 
-    
                         if(serviceReference == NullServiceReferenceFactory.getInstance()!.NULL_SERVICE_REFERENCE)
                         
                                     {
                                     
 
 
-                            throw Exception("No Such Service Reference")
+                            throw Error("No Such Service Reference")
 
                                     }
                                 

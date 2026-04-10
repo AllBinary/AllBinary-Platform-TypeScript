@@ -102,13 +102,12 @@ this.filePath= filePath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public write(initData: LicenseInitInfo){
 var initData = initData
 
-    
                         if(this.filePath == stringUtil!.EMPTY_STRING)
                         
                                     {
@@ -129,13 +128,13 @@ var initData = initData
         
         
 
-writeUTF(DatabaseEncoder.encode(licenseIdCrypted))
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(licenseIdCrypted))
 
     var numberOfLicenseServers: number = initData!.getNumberOfServers()!;
         
         
 
-writeInt(numberOfLicenseServers)
+dataOutputStream!.writeInt(numberOfLicenseServers)
 
     var licenseServerCrypted: ByteArray
 
@@ -151,13 +150,13 @@ index < numberOfLicenseServers; index++)
         {
 licenseServerCrypted= WeakCrypt(3).
                             encrypt(initData!.getServer(index))!.encodeToByteArray()
-writeUTF(DatabaseEncoder.encode(licenseServerCrypted))
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(licenseServerCrypted))
 }
 
 } catch(e: Exception)
             {
-put("Command Failed: " +INITFILENAME, this, "write", e)
-delete(this.filePath, INITFILENAME)
+logUtil!.put("Command Failed: " +INITFILENAME, this, "write", e)
+FileStreamFactory.getInstance()!.delete(this.filePath, INITFILENAME)
 
 
 
@@ -167,7 +166,7 @@ delete(this.filePath, INITFILENAME)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public read(): LicenseInitInfo{
@@ -180,7 +179,7 @@ delete(this.filePath, INITFILENAME)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public readAgain(initializeCounter: number): LicenseInitInfo{
@@ -191,7 +190,6 @@ var initializeCounter = initializeCounter
         
 
 
-    
                         if(this.filePath == stringUtil!.EMPTY_STRING)
                         
                                     {
@@ -201,7 +199,7 @@ var initializeCounter = initializeCounter
                                 
 
         try {
-            put("LicenseInitInfo File: " +INITFILENAME, this, METHOD_NAME)
+            logUtil!.put("LicenseInitInfo File: " +INITFILENAME, this, METHOD_NAME)
 
     var fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
         
@@ -213,7 +211,6 @@ var initializeCounter = initializeCounter
         
 
 
-    
                         if(iFile != 
                                     null
                                 )
@@ -239,7 +236,7 @@ var initializeCounter = initializeCounter
         
         
 
-setLicenseId(WeakCrypt(1).
+initInfo!.setLicenseId(WeakCrypt(1).
                             decrypt(licenseIdDecoded))
 
     var numberOfLicenseServers: number = iData!.readInt()!;
@@ -266,9 +263,9 @@ index < numberOfLicenseServers; index++)
         {
 decodedByteArray= DatabaseEncoder.decode(iData!.readUTF())
 licenseServerDecoded= decodedByteArray.decodeToString()
-setServer(WeakCrypt(3).
+initInfo!.setServer(WeakCrypt(3).
                             decrypt(licenseServerDecoded), index)
-put(NEXT_FILE +initInfo!.getServer(index), this, METHOD_NAME)
+logUtil!.put(NEXT_FILE +initInfo!.getServer(index), this, METHOD_NAME)
 }
 
 
@@ -284,7 +281,7 @@ put(NEXT_FILE +initInfo!.getServer(index), this, METHOD_NAME)
                             
 
 
-                            throw Exception("Could Not Load License InitInfo: " +INITFILENAME)
+                            throw Error("Could Not Load License InitInfo: " +INITFILENAME)
 
                         }
                             
@@ -292,16 +289,16 @@ put(NEXT_FILE +initInfo!.getServer(index), this, METHOD_NAME)
             {
 
         try {
-            put("Command Failed: " +INITFILENAME, this, METHOD_NAME, e)
+            logUtil!.put("Command Failed: " +INITFILENAME, this, METHOD_NAME, e)
 } catch(se: Exception)
             {
-put("LicenseInitInfo Read Retry: " +INITFILENAME, this, "readAgain()", se)
+logUtil!.put("LicenseInitInfo Read Retry: " +INITFILENAME, this, "readAgain()", se)
 }
 
 
 
 
-                            throw Exception("LicenseInitInfo Read Error: " +INITFILENAME)
+                            throw Error("LicenseInitInfo Read Error: " +INITFILENAME)
 }
 
 }

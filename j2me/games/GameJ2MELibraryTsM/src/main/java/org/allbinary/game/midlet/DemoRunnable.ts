@@ -66,18 +66,18 @@ this.startDemoGameMidletEvent= DemoGameMidletEvent(this.demoGameMidlet, DemoGame
     public run(){
 
         try {
-            put(StringMaker().
+            logUtil!.put(StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append("GameCanvasRunnableInterface")!.toString(), this, commonStrings!.RUN)
-commandAction(MyCommandsFactory.getInstance()!.SET_DISPLAYABLE, ProgressCanvasFactory.getInstance())
-setGameCanvasRunnableInterface(this.demoGameMidlet!.createDemoGameCanvasRunnableInterface())
-demoSetup()
-fireEvent(this.startDemoGameMidletEvent)
-startGameCanvasRunnableInterface()
-postDemoSetup()
-put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN)
+this.demoGameMidlet!.commandAction(MyCommandsFactory.getInstance()!.SET_DISPLAYABLE, ProgressCanvasFactory.getInstance())
+this.demoGameMidlet!.setGameCanvasRunnableInterface(this.demoGameMidlet!.createDemoGameCanvasRunnableInterface())
+this.demoGameMidlet!.demoSetup()
+DemoGameMidletEventHandler.getInstance()!.fireEvent(this.startDemoGameMidletEvent)
+this.demoGameMidlet!.startGameCanvasRunnableInterface()
+this.demoGameMidlet!.postDemoSetup()
+logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }

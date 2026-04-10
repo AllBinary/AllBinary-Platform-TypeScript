@@ -67,7 +67,6 @@ private constructor (){
     //var image = image
     //var totalAngle = totalAngle
 
-    
                         if(image.isMutable())
                         
                                     {
@@ -89,7 +88,6 @@ private constructor (){
         
 
 
-    
                         if(originalImage!.isMutable())
                         
                                     {
@@ -112,19 +110,19 @@ originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image
 
                         }
                             
-rotateImage(originalAwtImage, newBufferedImage, totalAngle)
+imageJ2SERotationUtil!.rotateImage(originalAwtImage, newBufferedImage, totalAngle)
 
                                     }
                                 
                         else {
-                            put("Not Mutable", this, "getRotatedImage", Exception())
+                            PreLogUtil.put("Not Mutable", this, "getRotatedImage", Error())
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
 var originalImage = originalImage
@@ -135,7 +133,6 @@ var rotationInDegrees = rotationInDegrees
         
 
 
-    
                         if(image.isMutable())
                         
                                     {
@@ -147,7 +144,6 @@ var rotationInDegrees = rotationInDegrees
         
 
 
-    
                         if(originalImage!.isMutable())
                         
                                     {
@@ -198,7 +194,7 @@ originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image
                             
 
 
-                            throw Exception("Not Mutable")
+                            throw Error("Not Mutable")
 
                         }
                             

@@ -43,9 +43,9 @@ export class InterfaceUtil
         
         
 
-append(lineBreak)
-append("Interfaces: ")
-append(lineBreak)
+stringBuffer!.append(lineBreak)
+stringBuffer!.append("Interfaces: ")
+stringBuffer!.append(lineBreak)
 
 
 
@@ -56,9 +56,9 @@ append(lineBreak)
         
 index < interfaces.length; index++)
         {
-append("Interface: ")
-append(interfaces[index]!.getName())
-append(lineBreak)
+stringBuffer!.append("Interface: ")
+stringBuffer!.append(interfaces[index]!.getName())
+stringBuffer!.append(lineBreak)
 }
 
 
@@ -74,7 +74,6 @@ append(lineBreak)
     //var interfaceName = interfaceName
     //var interfaces = interfaces
 
-    
                         if(interfaceName != 
                                     null
                                  && interfaces != 
@@ -93,7 +92,6 @@ append(lineBreak)
 index < interfaces.length; index++)
         {
 
-    
                         if(interfaces[index]!.getName()!.indexOf(interfaceName) >= 0)
                         
                                     {
@@ -139,7 +137,6 @@ var anyType = anyType
 index < classes.length; index++)
         {
 
-    
                         if(clazz.toString()!.compareTo(classes[index]!.getName()) == 0)
                         
 
@@ -177,7 +174,6 @@ var anyType = anyType
 index < classes.length; index++)
         {
 
-    
                         if(classes[index]!.getName()!.indexOf(className) == 0)
                         
                                     {
@@ -214,7 +210,7 @@ var anyType = anyType
         
         
 
-append("isImplementedView: \n")
+stringBuffer!.append("isImplementedView: \n")
 
 
 
@@ -225,11 +221,11 @@ append("isImplementedView: \n")
         
 index < classes.length; index++)
         {
-append(clazz.toString()!)
-append(" should be = ")
-append(classes[index]!.getName())
-append(classes[index]!.getName())
-append(CommonSeps.getInstance()!.NEW_LINE)
+stringBuffer!.append(clazz.toString()!)
+stringBuffer!.append(" should be = ")
+stringBuffer!.append(classes[index]!.getName())
+stringBuffer!.append(classes[index]!.getName())
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
 }
 
 

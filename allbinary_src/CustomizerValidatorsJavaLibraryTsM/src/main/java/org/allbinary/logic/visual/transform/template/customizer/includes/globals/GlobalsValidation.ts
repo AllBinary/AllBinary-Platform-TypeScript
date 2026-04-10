@@ -72,7 +72,7 @@ public constructor (document: Document){
 
 
 
-                            throw Exception(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
+                            throw Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
 }
 
 
@@ -93,11 +93,10 @@ public constructor (document: Document){
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -129,11 +128,10 @@ public constructor (document: Document){
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 
@@ -169,7 +167,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -178,7 +176,7 @@ var document = document
         
         
 
-appendChild(StoreFrontView(this.storeFrontInterface).
+node.appendChild(StoreFrontView(this.storeFrontInterface).
                             toXmlNode(document))
 
 

@@ -96,7 +96,6 @@ INTEGER_ARRAY[index]=  -index as Long
 }
 
 
-    
                         if(lastMin < value)
                         
                                     {
@@ -106,7 +105,6 @@ MIN= value
                                     }
                                 
 
-    
                         if(lastNegativeMin < negativeValue)
                         
                                     {
@@ -119,14 +117,12 @@ MIN= value
 
     public init(){
 
-    
                         if(INTEGER_ARRAY[0] == 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(lastMin < POSITIVE_MAX || lastNegativeMin < NEGATIVE_MAX)
                         
                                     {
@@ -175,7 +171,6 @@ private constructor (){
     public getInstanceNoThrow(index: number): Long{
 var index = index
 
-    
                         if(index +NEGATIVE_MAX > this.INTEGER_ARRAY.length -1)
                         
                                     {
@@ -205,7 +200,6 @@ var index = index
         
 
 
-    
                         if(STRING_ARRAY[i] == 
                                     null
                                 )

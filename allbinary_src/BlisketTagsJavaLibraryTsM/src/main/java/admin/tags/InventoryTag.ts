@@ -50,8 +50,8 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTagHelperFactory(InventoryHelperFactory())
-this.setTagRequestHelperFactory(InventoryRequestHelperFactory())
+this.this.setTagHelperFactory(InventoryHelperFactory())
+this.this.setTagRequestHelperFactory(InventoryRequestHelperFactory())
 }
 
 
@@ -61,25 +61,22 @@ this.storeName= value
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.isEnabled())
                         
                                     {
                                     
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.BACKUP) != 0 && this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.RESTORE) != 0 && this.getCommand()!.compareTo(this.commonStrings!.CREATE) != 0 && this.getCommand()!.compareTo(this.commonStrings!.DROP) != 0)
                         
                                     {
@@ -88,9 +85,9 @@ this.storeName= value
         
         
 
-isValid(this, parentTag)
-put(AbTagData.PARENT, parentTag)
-put(StoreFrontData.getInstance()!.NAME, this.storeName)
+ParentInventoryTagHelper.getInstance()!.isValid(this, parentTag)
+this.getPropertiesHashMap()!.put(AbTagData.PARENT, parentTag)
+this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
 
                                     }
                                 
@@ -114,7 +111,7 @@ put(StoreFrontData.getInstance()!.NAME, this.storeName)
     
 } catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

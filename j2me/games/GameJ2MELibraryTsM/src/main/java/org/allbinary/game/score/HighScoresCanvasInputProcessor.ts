@@ -63,24 +63,24 @@ this.highScoresCanvas= highScoresCanvas
 
     public onPressGameKeyEvent(gameKeyEvent: GameKeyEvent){
 var gameKeyEvent = gameKeyEvent
-onPressGameKeyEvent(gameKeyEvent)
-this.update()
+super.onPressGameKeyEvent(gameKeyEvent)
+this.this.update()
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onDownGameKeyEvent(gameKeyEvent: GameKeyEvent){
 var gameKeyEvent = gameKeyEvent
-onDownGameKeyEvent(gameKeyEvent)
-this.update()
+super.onDownGameKeyEvent(gameKeyEvent)
+this.this.update()
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onUpGameKeyEvent(gameKeyEvent: GameKeyEvent){
 var gameKeyEvent = gameKeyEvent
-onUpGameKeyEvent(gameKeyEvent)
-this.update()
+super.onUpGameKeyEvent(gameKeyEvent)
+this.this.update()
 }
 
 

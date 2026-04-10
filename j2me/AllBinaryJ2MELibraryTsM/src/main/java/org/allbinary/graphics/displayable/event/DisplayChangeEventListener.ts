@@ -25,7 +25,7 @@ import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/
 interface DisplayChangeEventListener extends EventListenerInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent)
 

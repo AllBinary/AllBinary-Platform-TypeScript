@@ -106,7 +106,7 @@ var transformInfoFactoryInterface = transformInfoFactoryInterface
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.this.setTableName(tableName)
 this.transformInfoObjectConfigGeneratorFactoryInterface= transformInfoObjectConfigGeneratorFactoryInterface
 this.transformInfoObjectConfigAndManipulatorFactoryInterface= transformInfoObjectConfigAndManipulatorFactoryInterface
 this.transformInfoFactoryInterface= transformInfoFactoryInterface
@@ -117,24 +117,22 @@ this.transformInfoFactoryInterface= transformInfoFactoryInterface
 var values = values
 
         try {
-            insert(values)
+            super.insert(values)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, INSERT)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT)
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, INSERT, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e)
 
                                     }
                                 
@@ -147,24 +145,22 @@ var values = values
 var value = value
 
         try {
-            deleteWhere(TransformInfoData.getInstance()!.NAME, value)
+            super.deleteWhere(TransformInfoData.getInstance()!.NAME, value)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, commonStrings!.delete)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, commonStrings!.delete)
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
 
                                     }
                                 
@@ -173,7 +169,7 @@ var value = value
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(name: string, propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext): TransformInfoInterface{
 var name = name
@@ -189,14 +185,13 @@ var pageContext = pageContext
         
         
 
-put(transformInfoData!.NAME, name)
+keysAndValues!.put(transformInfoData!.NAME, name)
 
     var hashMap: HashMap<Any, Any> = super.getRow(keysAndValues)!;
         
         
 
 
-    
                         if(hashMap != 
                                     null
                                 )
@@ -208,7 +203,6 @@ put(transformInfoData!.NAME, name)
         
 
 
-    
                         if(anyType != 
                                     null
                                 )
@@ -219,7 +213,7 @@ put(transformInfoData!.NAME, name)
         
         
 
-put(transformInfoData!.OBJECTCONFIG, decode.toCharArray())
+hashMap!.put(transformInfoData!.OBJECTCONFIG, decode.toCharArray())
 
                                     }
                                 
@@ -229,7 +223,6 @@ put(transformInfoData!.OBJECTCONFIG, decode.toCharArray())
         
 
 
-    
                         if(objectData != 
                                     null
                                 )
@@ -240,7 +233,7 @@ put(transformInfoData!.OBJECTCONFIG, decode.toCharArray())
         
         
 
-put(transformInfoData!.DATA, decode.toCharArray())
+hashMap!.put(transformInfoData!.DATA, decode.toCharArray())
 
                                     }
                                 
@@ -266,7 +259,7 @@ put(transformInfoData!.DATA, decode.toCharArray())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getObjectConfigs(storeName: string): Vector{
 var storeName = storeName
@@ -301,7 +294,7 @@ i < size; i++)
         
 
 objectConfigString= decode.toCharArray()
-add(this.transformInfoObjectConfigAndManipulatorFactoryInterface!.getInstance(abeClientInformation, this as TransformInfoInterface, DomDocumentHelper.create(objectConfigString)))
+objectConfigVector!.add(this.transformInfoObjectConfigAndManipulatorFactoryInterface!.getInstance(abeClientInformation, this as TransformInfoInterface, DomDocumentHelper.create(objectConfigString)))
 }
 
 
@@ -313,7 +306,7 @@ add(this.transformInfoObjectConfigAndManipulatorFactoryInterface!.getInstance(ab
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getNames(storeName: string): Vector{
 var storeName = storeName
@@ -347,7 +340,7 @@ i < size; i++)
         
         
 
-add(viewNameString)
+viewNameVector!.add(viewNameString)
 }
 
 
@@ -370,35 +363,35 @@ add(viewNameString)
         
         
 
-append(this.sqlStrings!.CREATE_TABLE)
-append(tableName)
-append(this.sqlStrings!.START)
-append(transformInfoData!.NAME)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(StoreFrontData.getInstance()!.NAME)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(transformInfoData!.OBJECTFILENAME)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(transformInfoData!.OBJECT)
-append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-append(transformInfoData!.OBJECTCONFIGFILENAME)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(transformInfoData!.OBJECTCONFIG)
-append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-append(transformInfoData!.TEMPLATEFILENAME)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(transformInfoData!.TEMPLATE)
-append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-append(transformInfoData!.DATAFILENAME)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(transformInfoData!.DATA)
-append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-append(EntryData.getInstance()!.LASTMODIFIED)
-append(EntryData.getInstance()!.TIMECREATED)
-append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-append(this.sqlStrings!.PRIMARY_KEY)
-append(transformInfoData!.NAME)
-append(this.sqlStrings!.END)
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)
+stringBuffer!.append(tableName)
+stringBuffer!.append(this.sqlStrings!.START)
+stringBuffer!.append(transformInfoData!.NAME)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(StoreFrontData.getInstance()!.NAME)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(transformInfoData!.OBJECTFILENAME)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(transformInfoData!.OBJECT)
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
+stringBuffer!.append(transformInfoData!.OBJECTCONFIGFILENAME)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(transformInfoData!.OBJECTCONFIG)
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
+stringBuffer!.append(transformInfoData!.TEMPLATEFILENAME)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(transformInfoData!.TEMPLATE)
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
+stringBuffer!.append(transformInfoData!.DATAFILENAME)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(transformInfoData!.DATA)
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
+stringBuffer!.append(EntryData.getInstance()!.LASTMODIFIED)
+stringBuffer!.append(EntryData.getInstance()!.TIMECREATED)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
+stringBuffer!.append(this.sqlStrings!.PRIMARY_KEY)
+stringBuffer!.append(transformInfoData!.NAME)
+stringBuffer!.append(this.sqlStrings!.END)
 
 
 
@@ -420,7 +413,7 @@ append(this.sqlStrings!.END)
 
     public update(updatedValues: HashMap<Any, Any>){
 var updatedValues = updatedValues
-updateWhere(TransformInfoData.getInstance()!.NAME, updatedValues!.get(TransformInfoData.getInstance()!.NAME) as String, updatedValues)
+super.updateWhere(TransformInfoData.getInstance()!.NAME, updatedValues!.get(TransformInfoData.getInstance()!.NAME) as String, updatedValues)
 }
 
 

@@ -43,7 +43,7 @@ this.categoryInterface= categoryInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -85,7 +85,7 @@ i < size; i++)
         
         
 
-appendChild(childCategoryNode)
+node.appendChild(childCategoryNode)
 }
 
 

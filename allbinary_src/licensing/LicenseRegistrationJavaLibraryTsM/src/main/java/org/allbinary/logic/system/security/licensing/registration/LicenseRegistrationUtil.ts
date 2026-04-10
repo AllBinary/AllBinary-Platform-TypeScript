@@ -53,20 +53,21 @@ export class LicenseRegistrationUtil
         
         
 
-put(CommonLabels.getInstance()!.START_LABEL +"License Registration", "LicenseRegistrationUtil", commonStrings!.PROCESS)
-setRegistrationCode(registrationId)
-write()
+PreLogUtil.put(CommonLabels.getInstance()!.START_LABEL +"License Registration", "LicenseRegistrationUtil", commonStrings!.PROCESS)
+RegistrationConfiguration.getInstance()!.setRegistrationCode(registrationId)
+RegistrationConfiguration.getInstance()!.write()
 
     var hashtable: Hashtable<Any, Any> = abeClientInformation!.toHashtable()!;
         
         
 
-put(RegistrationConfiguration.getInstance()!.NAME, registrationId)
-put("message", SpecialMessageUtil.getInstance()!.get())
-get(hashtable)
+hashtable.put(RegistrationConfiguration.getInstance()!.NAME, registrationId)
+hashtable.put("message", SpecialMessageUtil.getInstance()!.get())
+XmlRpcRemoteLicenseRegistrationClient(abeClientInformation).
+                            get(hashtable)
 } catch(e: Exception)
             {
-put("License Registration Exception", "LicenseRegistrationUtil", "License Registration", e)
+PreLogUtil.put("License Registration Exception", "LicenseRegistrationUtil", "License Registration", e)
 }
 
 }

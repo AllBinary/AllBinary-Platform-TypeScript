@@ -59,11 +59,10 @@ public constructor (propertiesHashMap: HashMap<Any, Any>, pageContext: PageConte
             var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Properties HashMap: " +propertiesHashMap!.toString(), this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Properties HashMap: " +propertiesHashMap!.toString(), this, commonStrings!.CONSTRUCTOR)
 
                                     }
                                 

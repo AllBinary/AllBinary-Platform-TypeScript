@@ -76,12 +76,12 @@ private constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setAvailable(available: boolean){
 var available = available
 this.available= available
-fireEvent(analogControllerConfigurationEvent)
+AnalogControllerConfigurationEventHandler.getInstance()!.fireEvent(analogControllerConfigurationEvent)
 }
 
 

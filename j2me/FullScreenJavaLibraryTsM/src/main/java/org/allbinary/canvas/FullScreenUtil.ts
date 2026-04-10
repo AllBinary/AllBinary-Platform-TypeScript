@@ -50,20 +50,21 @@ export class FullScreenUtil
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(fullScreenInterface: Canvas, commandListener: CommandListener){
     //var fullScreenInterface = fullScreenInterface
     //var commandListener = commandListener
-waitOnNotify(0)
+fullScreenInterface = fullScreenInterfacefullScreenInterface as RunnableCanvas
+fullScreenInterface.
+                    waitOnNotify(0)
 
-    
                         if(commandListener != 
                                     null
                                 )
                         
                                     {
-                                    this.init(fullScreenInterface)
+                                    this.this.init(fullScreenInterface)
 
                                     }
                                 
@@ -83,16 +84,15 @@ waitOnNotify(0)
         
 
 
-    
                         if(features.isFeature(mainFeatureFactory!.FULL_SCREEN))
                         
                                     {
-                                    setFullScreenMode(true)
+                                    fullScreenInterface!.setFullScreenMode(true)
 
                                     }
                                 
                         else {
-                            setFullScreenMode(false)
+                            fullScreenInterface!.setFullScreenMode(false)
 
                         }
                             
@@ -112,7 +112,6 @@ var isFullScreen = isFullScreen
         
 
 
-    
                         if(features.isFeature(mainFeatureFactory!.FULL_SCREEN) != isFullScreen)
                         
                                     {

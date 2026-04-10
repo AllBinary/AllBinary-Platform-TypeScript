@@ -100,7 +100,7 @@ this.orderedHighScoresList= orderedHighScoresList
 
     public addHighScore(newHighScore: HighScore){
 var newHighScore = newHighScore
-add(newHighScore)
+this.orderedHighScoresList!.add(newHighScore)
 }
 
 
@@ -134,7 +134,7 @@ add(newHighScore)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isBestScore(newHighScore: HighScore): boolean{
 var newHighScore = newHighScore
@@ -153,11 +153,11 @@ var newHighScore = newHighScore
         
         
 
-append("HighScores: ")
-append(this.heading)
-append(CommonSeps.getInstance()!.SPACE)
-append(CommonLabels.getInstance()!.TOTAL_LABEL)
-appendint(this.orderedHighScoresList!.size())
+stringBuffer!.append("HighScores: ")
+stringBuffer!.append(this.heading)
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(CommonLabels.getInstance()!.TOTAL_LABEL)
+stringBuffer!.appendint(this.orderedHighScoresList!.size())
 
 
 

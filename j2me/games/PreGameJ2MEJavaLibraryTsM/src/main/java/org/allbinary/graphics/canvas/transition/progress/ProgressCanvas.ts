@@ -142,10 +142,10 @@ paint2(graphics)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
-runAPriorityTask()
+pathFindingThreadPool!.runAPriorityTask()
 }
 
                                 }
@@ -181,7 +181,7 @@ this.allbinaryMidlet= gameMidlet
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(graphics: Graphics){
 var graphics = graphics
@@ -204,12 +204,12 @@ var cmdListener = cmdListener
 
 
     public start(){
-put(commonStrings!.START, this, commonStrings!.START_METHOD_NAME)
-this.setBackground(true)
-setHeight(30)
-setLabel(commonStrings!.PLEASE_WAIT)
-this.setText(TEXT)
-this.setValue(0)
+logUtil!.put(commonStrings!.START, this, commonStrings!.START_METHOD_NAME)
+this.this.setBackground(true)
+this.gauge.setHeight(30)
+this.gauge.setLabel(commonStrings!.PLEASE_WAIT)
+this.this.setText(TEXT)
+this.this.setValue(0)
 this.inGameProcessor= Processor.getInstance()
 this.paintable= GAUGE_PAINTABLE
 this.inProgress= true
@@ -226,26 +226,26 @@ this.inProgress= true
 
     public startBackground(background: boolean){
 var background = background
-put(commonStrings!.START, this, START_BACKGROUND)
+logUtil!.put(commonStrings!.START, this, START_BACKGROUND)
 
     var myFont: MyFont = MyFont.getInstance()!;
         
         
 
-this.setBackground(background)
-setHeight(myFont!.DEFAULT_CHAR_HEIGHT +2)
-setLabel(backgroundLabel)
-this.setText(TEXT)
-this.setValue(0)
+this.this.setBackground(background)
+this.gauge.setHeight(myFont!.DEFAULT_CHAR_HEIGHT +2)
+this.gauge.setLabel(backgroundLabel)
+this.this.setText(TEXT)
+this.this.setValue(0)
 this.inGameProcessor= Processor.getInstance()
 this.paintable= GAUGE_PAINTABLE
 }
 
 
     public endActual(){
-commandAction(GameCommandsFactory.getInstance()!.SHOW_GAME_CANVAS, NullCanvas.NULL_CANVAS)
+this.allbinaryMidlet!.commandAction(GameCommandsFactory.getInstance()!.SHOW_GAME_CANVAS, NullCanvas.NULL_CANVAS)
 this.inProgress= false
-this.inGame()
+this.this.inGame()
 }
 
 
@@ -255,15 +255,15 @@ this.inGameProcessor= IN_GAME_PROCESSOR
 
 
     public end(){
-put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME)
-setValue(this.getMaxValue())
-this.endActual()
+logUtil!.put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME)
+this.gauge.setValue(this.getMaxValue())
+this.this.endActual()
 this.paintable= NullPaintable.getInstance()
 }
 
 
     public endFromInitialLazyLoadingComplete(){
-setValue(this.getMaxValue())
+this.gauge.setValue(this.getMaxValue())
 this.inGameProcessor= IN_GAME_PROCESSOR
 }
 
@@ -284,9 +284,9 @@ this.inGameProcessor= IN_GAME_PROCESSOR
 var value = value
 var text = text
 var index = index
-this.setText(StringMaker().
+this.this.setText(StringMaker().
                             append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getInstance(index)!.toString())!.toString())
-setValue(this.gauge.getValue() +this.getMaxValue() /value)
+this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value)
 }
 
 
@@ -294,10 +294,10 @@ setValue(this.gauge.getValue() +this.getMaxValue() /value)
 var value = value
 var text = text
 var index = index
-this.setText(StringMaker().
+this.this.setText(StringMaker().
                             append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getInstance(index)!.toString())!.toString())
-put(this.text, this, ADD_PORTION)
-setValue(this.gauge.getValue() +this.getMaxValue() /value)
+PreLogUtil.put(this.text, this, ADD_PORTION)
+this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value)
 }
 
 
@@ -305,29 +305,28 @@ setValue(this.gauge.getValue() +this.getMaxValue() /value)
 var value = value
 var text = text
 
-    
                         if(this.text != text)
                         
                                     {
-                                    put(text, this, ADD_PORTION)
+                                    PreLogUtil.put(text, this, ADD_PORTION)
 
                                     }
                                 
-this.setText(text)
-setValue(this.gauge.getValue() +this.getMaxValue() /value)
+this.this.setText(text)
+this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value)
 }
 
 
     setValue(value: number){
 var value = value
 this.value= value.toFloat()
-setValue(value.toFloat())
+this.gauge.setValue(value.toFloat())
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics)
+this.paintable.paint(graphics)
 }
 
 
@@ -338,9 +337,9 @@ var graphics = graphics
         
         
 
-setColor(backgroundBasicColor!.toInt())
-fillRect(0, 0, displayInfoSingleton!.getLastWidth(), displayInfoSingleton!.getLastHeight())
-paint(graphics, 0, 0)
+graphics.setColor(backgroundBasicColor!.toInt())
+graphics.fillRect(0, 0, displayInfoSingleton!.getLastWidth(), displayInfoSingleton!.getLastHeight())
+gauge.paint(graphics, 0, 0)
 hasPainted= true
 }
 

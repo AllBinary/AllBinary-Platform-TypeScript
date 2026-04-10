@@ -25,7 +25,7 @@ import { NamedInterface } from "../../../../../org/allbinary/layer/NamedInterfac
 interface DestroyableInterface extends NamedInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     isDestroyed(): boolean
 

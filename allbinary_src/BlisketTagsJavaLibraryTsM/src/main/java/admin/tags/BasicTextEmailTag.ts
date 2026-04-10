@@ -76,8 +76,8 @@ this.body= value
         
         
 
-put("Subject", this.subject)
-put("Body", this.body)
+propertiesHashMap!.put("Subject", this.subject)
+propertiesHashMap!.put("Body", this.body)
 
     var anyType: any = {} = BasicTextEmailHelperFactory().
                             getInstance(propertiesHashMap, this.pageContext)!;
@@ -90,7 +90,7 @@ put("Body", this.body)
         
         
 
-invoke(anyType, 
+method.invoke(anyType, 
                             null)
 
 
@@ -106,11 +106,10 @@ invoke(anyType,
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "send()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "send()", e)
 
                                     }
                                 
@@ -125,12 +124,12 @@ invoke(anyType,
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
-            print(this.send())
+            this.pageContext!.getOut()!.print(this.send())
 
 
 
@@ -139,7 +138,7 @@ invoke(anyType,
     
 } catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

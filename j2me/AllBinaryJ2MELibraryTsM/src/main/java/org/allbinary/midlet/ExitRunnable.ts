@@ -65,21 +65,21 @@ this.processor= processor
     public run(){
 
         try {
-            put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN)
-destroyApp(false, this.isProgress)
-setDisplay(NullCanvas.NULL_CANVAS)
-notifyDestroyed()
-put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN)
-process()
+            logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN)
+this.midlet.destroyApp(false, this.isProgress)
+this.midlet.setDisplay(NullCanvas.NULL_CANVAS)
+this.midlet.notifyDestroyed()
+logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN)
+processor.process()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 
         try {
-            process()
+            processor.process()
 } catch(e2: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }

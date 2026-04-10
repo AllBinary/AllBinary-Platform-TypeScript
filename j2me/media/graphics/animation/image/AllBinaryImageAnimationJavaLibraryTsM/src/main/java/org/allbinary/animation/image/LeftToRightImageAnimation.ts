@@ -52,11 +52,10 @@ public constructor (image: Image, sequenceArray: IntArray, animationBehavior: An
                     
 this.currentWidth= 0
 
-    
                         if(this.getSequence()[0] ==  -1)
                         
                                     {
-                                    this.setFrame(this.getSize() -1)
+                                    this.this.setFrame(this.getSize() -1)
 
                                     }
                                 
@@ -65,46 +64,44 @@ this.currentWidth= 0
 
     public nextFrame(){
 
-    
                         if(this.getSequence()[0] ==  -1)
                         
                                     {
-                                    previousFrame()
+                                    super.previousFrame()
 
                                     }
                                 
                         else {
-                            nextFrame()
+                            super.nextFrame()
 
                         }
                             
-this.update()
+this.this.update()
 }
 
 
     public previousFrame(){
 
-    
                         if(this.getSequence()[0] ==  -1)
                         
                                     {
-                                    nextFrame()
+                                    super.nextFrame()
 
                                     }
                                 
                         else {
-                            previousFrame()
+                            super.previousFrame()
 
                         }
                             
-this.update()
+this.this.update()
 }
 
 
     public setFrame(index: number){
 var index = index
-setFrame(index)
-this.update()
+super.setFrame(index)
+this.this.update()
 }
 
 
@@ -121,7 +118,7 @@ this.currentWidth= this.getDrawWidth() *this.getFrame() /this.getSize()
     //var graphics = graphics
     //var x = x
     //var y = y
-drawRegion(this.getImage(), this.getStartX(), this.getStartY(), this.currentWidth, this.getDrawHeight(), Sprite.TRANS_NONE, x, y, anchor)
+graphics.drawRegion(this.getImage(), this.getStartX(), this.getStartY(), this.currentWidth, this.getDrawHeight(), Sprite.TRANS_NONE, x, y, anchor)
 }
 
 

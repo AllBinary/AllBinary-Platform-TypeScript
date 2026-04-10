@@ -104,28 +104,26 @@ this.END_EVENT= AllBinaryEventObject(this)
 
 this.timeDelayHelper= TimeDelayHelper(timePerFrame)
 this.player= player
-start()
+this.player.start()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public nextFrame(){
 
-    
                         if(this.timeDelayHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
                                     {
-                                    nextFrame()
+                                    this.movieIndexedAnimationInterface!.nextFrame()
 
                                     }
                                 
 
-    
                         if(this.isLastFrame())
                         
                                     {
-                                    fireEvent(this.END_EVENT)
+                                    AnimationEventHandler.getInstance()!.fireEvent(this.END_EVENT)
 
                                     }
                                 
@@ -134,7 +132,6 @@ start()
 
     public isLastFrame(): boolean{
 
-    
                         if(this.movieIndexedAnimationInterface!.getFrame() == this.getSize() -1)
                         
                                     {
@@ -161,13 +158,13 @@ start()
 
 
     public previousFrame(){
-previousFrame()
+this.movieIndexedAnimationInterface!.previousFrame()
 }
 
 
     public setFrame(index: number){
 var index = index
-setFrame(index)
+this.movieIndexedAnimationInterface!.setFrame(index)
 }
 
 
@@ -210,8 +207,8 @@ var sequence = sequence
     //var graphics = graphics
     //var x = x
     //var y = y
-paint(graphics, x +this.captionDx, y +this.captionDy)
-paint(graphics, x +this.captionDx +dx, y +this.captionDy +dy)
+this.animationInterface!.paint(graphics, x +this.captionDx, y +this.captionDy)
+this.movieIndexedAnimationInterface!.paint(graphics, x +this.captionDx +dx, y +this.captionDy +dy)
 }
 
 
@@ -220,8 +217,8 @@ paint(graphics, x +this.captionDx +dx, y +this.captionDy +dy)
     //var x = x
     //var y = y
     //var z = z
-paintThreed(graphics, x +this.captionDx, y +this.captionDy, z)
-paintThreed(graphics, x +this.captionDx +dx, y +this.captionDy +dy, z)
+this.animationInterface!.paintThreed(graphics, x +this.captionDx, y +this.captionDy, z)
+this.movieIndexedAnimationInterface!.paintThreed(graphics, x +this.captionDx +dx, y +this.captionDy +dy, z)
 }
 
 

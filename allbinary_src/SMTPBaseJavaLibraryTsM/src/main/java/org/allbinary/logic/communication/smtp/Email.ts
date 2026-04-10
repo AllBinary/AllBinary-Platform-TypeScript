@@ -157,7 +157,7 @@ init(from, to, subject, server, textBody, htmlAttachment, contentBase)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(from: string, to: string, subject: string, server: string, textBody: string, htmlAttachment: string, contentBase: string){
 var from = from
@@ -182,9 +182,8 @@ var contentBase = contentBase
         
 
 mimeBodyParts[0]= MimeBodyPart()
-setText(textBody)
+mimeBodyParts[0]!.setText(textBody)
 
-    
                         if(!stringValidationUtil!.isEmpty(htmlAttachment))
                         
                                     {
@@ -193,13 +192,12 @@ setText(textBody)
         
         
 
-addHeader("Content-Type", "text/html")
+internetHeaders!.addHeader("Content-Type", "text/html")
 
-    
                         if(!stringValidationUtil!.isEmpty(contentBase))
                         
                                     {
-                                    addHeader("Content-Base", contentBase)
+                                    internetHeaders!.addHeader("Content-Base", contentBase)
 
                                     }
                                 
@@ -221,7 +219,6 @@ init(server, null as Authenticator,
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
@@ -230,7 +227,7 @@ init(server, null as Authenticator,
         
         
 
-put(commonStrings!.EXCEPTION, this, "emailConstructor", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "emailConstructor", e)
 
                                     }
                                 
@@ -243,7 +240,7 @@ put(commonStrings!.EXCEPTION, this, "emailConstructor", e)
 }
 
 
-                @Throws(MessagingException::class)
+                //@Throws(MessagingException::class)
             
     public init(server: string, authenticator: Authenticator, addresses_from: InternetAddress[], addresses_to: InternetAddress[], addresses_cc: InternetAddress[], addresses_bcc: InternetAddress[], subject: string, mimeBodyParts: MimeBodyPart[]){
 var server = server
@@ -255,7 +252,7 @@ var addresses_bcc = addresses_bcc
 var subject = subject
 var mimeBodyParts = mimeBodyParts
 this.properties= Properties()
-put(SMTP_HOST, server)
+this.properties.put(SMTP_HOST, server)
 
         try {
             
@@ -264,43 +261,39 @@ put(SMTP_HOST, server)
         
 
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(hostName))
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    put("Unable to get HostName so using fake", this, "init()")
+                                    logUtil!.put("Unable to get HostName so using fake", this, "init()")
 
                                     }
                                 
-put(SMTP_LOCAL_HOST, "FakeHostName")
+this.properties.put(SMTP_LOCAL_HOST, "FakeHostName")
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    put("Continuing on Exception: Unable to get HostName", this, "init()", e)
+                                    logUtil!.put("Continuing on Exception: Unable to get HostName", this, "init()", e)
 
                                     }
                                 
-put(SMTP_LOCAL_HOST, "FakeHostName")
+this.properties.put(SMTP_LOCAL_HOST, "FakeHostName")
 }
 
 
-    
                         if(isDebug)
                         
                                     {
-                                    put(DEBUG, "true")
+                                    this.properties.put(DEBUG, "true")
 
                                     }
                                 
@@ -310,27 +303,26 @@ put(SMTP_LOCAL_HOST, "FakeHostName")
         
 
 
-    
                         if(isDebug)
                         
                                     {
-                                    setDebug(true)
+                                    session.setDebug(true)
 bs= ByteArrayOutputStream()
 
     var printStream: PrintStream = new PrintStream(bs);
         
         
 
-setDebugOut(printStream)
+session.setDebugOut(printStream)
 
                                     }
                                 
 msg= MimeMessage(session)
-addFrom(addresses_from)
-setRecipients(Message.RecipientType.TO, addresses_to)
-setRecipients(Message.RecipientType.CC, addresses_cc)
-setRecipients(Message.RecipientType.BCC, addresses_bcc)
-setSubject(subject)
+msg.addFrom(addresses_from)
+msg.setRecipients(Message.RecipientType.TO, addresses_to)
+msg.setRecipients(Message.RecipientType.CC, addresses_cc)
+msg.setRecipients(Message.RecipientType.BCC, addresses_bcc)
+msg.setSubject(subject)
 
     var mimeMultipart: MimeMultipart = new MimeMultipart();
         
@@ -346,10 +338,10 @@ setSubject(subject)
         
 i < mimeBodyParts!.length; i++)
         {
-addBodyPart(mimeBodyParts[i]!)
+mimeMultipart!.addBodyPart(mimeBodyParts[i]!)
 }
 
-setContent(mimeMultipart)
+msg.setContent(mimeMultipart)
 }
 
 
@@ -365,7 +357,6 @@ setContent(mimeMultipart)
 
     public getDebugInfo(): string{
 
-    
                         if(isDebug)
                         
                                     {
@@ -393,7 +384,7 @@ setContent(mimeMultipart)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public log(): string{
 
@@ -405,7 +396,7 @@ setContent(mimeMultipart)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toHashMap(): HashMap<Any, Any>{
 
@@ -415,14 +406,13 @@ setContent(mimeMultipart)
         
         
 
-put(EmailData.SERVER, properties.get(SMTP_HOST) as String)
+hashMap!.put(EmailData.SERVER, properties.get(SMTP_HOST) as String)
 
     var addresses: Address[] = msg.getFrom()!;
         
         
 
 
-    
                         if(addresses != 
                                     null
                                 )
@@ -438,7 +428,7 @@ put(EmailData.SERVER, properties.get(SMTP_HOST) as String)
         
 index < addresses.length; index++)
         {
-put(EmailData.FROM, addresses[index]!.toString())
+hashMap!.put(EmailData.FROM, addresses[index]!.toString())
 }
 
 
@@ -446,7 +436,6 @@ put(EmailData.FROM, addresses[index]!.toString())
                                 
 addresses= msg.getRecipients(Message.RecipientType.TO)
 
-    
                         if(addresses != 
                                     null
                                 )
@@ -462,7 +451,7 @@ addresses= msg.getRecipients(Message.RecipientType.TO)
         
 index < addresses.length; index++)
         {
-put(EmailData.TO, addresses[index]!.toString())
+hashMap!.put(EmailData.TO, addresses[index]!.toString())
 }
 
 
@@ -470,7 +459,6 @@ put(EmailData.TO, addresses[index]!.toString())
                                 
 addresses= msg.getRecipients(Message.RecipientType.CC)
 
-    
                         if(addresses != 
                                     null
                                 )
@@ -486,7 +474,7 @@ addresses= msg.getRecipients(Message.RecipientType.CC)
         
 index < addresses.length; index++)
         {
-put(EmailData.CC, addresses[index]!.toString())
+hashMap!.put(EmailData.CC, addresses[index]!.toString())
 }
 
 
@@ -494,7 +482,6 @@ put(EmailData.CC, addresses[index]!.toString())
                                 
 addresses= msg.getRecipients(Message.RecipientType.BCC)
 
-    
                         if(addresses != 
                                     null
                                 )
@@ -510,20 +497,19 @@ addresses= msg.getRecipients(Message.RecipientType.BCC)
         
 index < addresses.length; index++)
         {
-put(EmailData.BCC, addresses[index]!.toString())
+hashMap!.put(EmailData.BCC, addresses[index]!.toString())
 }
 
 
                                     }
                                 
-put(EmailData.SUBJECT, msg.getSubject())
+hashMap!.put(EmailData.SUBJECT, msg.getSubject())
 
     var mimeMultipart: MimeMultipart = msg.getContent() as MimeMultipart;
         
         
 
 
-    
                         if(mimeMultipart != 
                                     null
                                 )
@@ -544,7 +530,7 @@ index < mimeMultipart!.getCount(); index++)
         
         
 
-put(EmailData.CONTENT, content)
+hashMap!.put(EmailData.CONTENT, content)
 }
 
 
@@ -559,11 +545,10 @@ put(EmailData.CONTENT, content)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "toHashMap()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toHashMap()", e)
 
                                     }
                                 
@@ -576,7 +561,7 @@ put(EmailData.CONTENT, content)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -594,13 +579,13 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlDoc(): Document{
 
 
 
-                            throw Exception(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
+                            throw Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
 }
 
 

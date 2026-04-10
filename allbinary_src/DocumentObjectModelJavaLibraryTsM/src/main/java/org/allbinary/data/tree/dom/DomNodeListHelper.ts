@@ -52,7 +52,7 @@ var nodeList = nodeList
         
 index < size; index++)
         {
-add(DomNodeHelper.getTextNodeValue(nodeList!.item(index)))
+vector.add(DomNodeHelper.getTextNodeValue(nodeList!.item(index)))
 }
 
 

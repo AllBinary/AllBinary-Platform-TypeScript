@@ -88,11 +88,10 @@ public constructor (){
 
             super();
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -110,11 +109,10 @@ public constructor (document: Document){
             super();
             var document = document
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put(this.commonStrings!.CONSTRUCTOR, this, "Constructor(document)")
+                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, "Constructor(document)")
 
                                     }
                                 
@@ -151,16 +149,14 @@ this.body= DomNodeHelper.getTextNodeValue(aBodyValueNode)
 
 this.titleValidation= TitleNotRequiredValidation(titleNode)
 
-    
                         if(index > 1)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("To Many Body Nodes", this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("To Many Body Nodes", this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -176,19 +172,18 @@ public constructor (hashMap: HashMap<Any, Any>){
             super();
             var hashMap = hashMap
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "Constructor(hashmap)")
+                                    logUtil!.put(this.commonStrings!.START, this, "Constructor(hashmap)")
 
                                     }
                                 
-this.getFormData(hashMap)
+this.this.getFormData(hashMap)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getFormData(hashMap: HashMap<Any, Any>){
 var hashMap = hashMap
@@ -206,16 +201,14 @@ this.titleValidation= TitleNotRequiredValidation(hashMap)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("TitleBodyValidation", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("TitleBodyValidation", this, commonStrings!.IS_VALID)
 
                                     }
                                 
 
-    
                         if(!StringValidationUtil.getInstance()!.isValidNotRequired(this.body, BodyData.getInstance()!.MIN, AbSqlData.MAXBLOB))
                         
                                     {
@@ -224,7 +217,6 @@ this.titleValidation= TitleNotRequiredValidation(hashMap)
                                     }
                                 
 
-    
                         if(!this.titleValidation!.isValid())
                         
                                     {
@@ -233,11 +225,10 @@ this.titleValidation= TitleNotRequiredValidation(hashMap)
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("TitleBodyValidation: " +isValid, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("TitleBodyValidation: " +isValid, this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -250,11 +241,10 @@ this.titleValidation= TitleNotRequiredValidation(hashMap)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -280,10 +270,10 @@ this.titleValidation= TitleNotRequiredValidation(hashMap)
 
 
                             {
-                            append("Error: Data submitted is < ")
-appendint(BodyData.getInstance()!.MIN)
-append(" or > ")
-appendint(AbSqlData.MAXBLOB)
+                            stringBuffer!.append("Error: Data submitted is < ")
+stringBuffer!.appendint(BodyData.getInstance()!.MIN)
+stringBuffer!.append(" or > ")
+stringBuffer!.appendint(AbSqlData.MAXBLOB)
 
                             }
                     
@@ -296,11 +286,10 @@ appendint(AbSqlData.MAXBLOB)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 
@@ -336,16 +325,15 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Title Body: " +this.body, this, "toXmlNode(document)")
+                                    logUtil!.put("Title Body: " +this.body, this, "toXmlNode(document)")
 
                                     }
                                 
@@ -354,7 +342,7 @@ var document = document
         
         
 
-appendChild(this.titleValidation!.toXmlNode(document))
+node.appendChild(this.titleValidation!.toXmlNode(document))
 
 
 

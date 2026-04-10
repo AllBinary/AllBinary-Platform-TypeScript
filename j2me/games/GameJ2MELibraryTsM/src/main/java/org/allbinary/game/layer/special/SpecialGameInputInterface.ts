@@ -31,51 +31,51 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 interface SpecialGameInputInterface extends PaintableInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     up()
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     down()
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     right()
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     left()
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     strafeLeft()
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     strafeRight()
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     fire(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     special1(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     special2(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     special3(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     special4(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     special5(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
 

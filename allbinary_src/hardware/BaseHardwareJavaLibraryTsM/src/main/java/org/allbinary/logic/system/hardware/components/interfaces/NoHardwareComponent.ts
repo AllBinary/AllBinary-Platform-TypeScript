@@ -45,7 +45,6 @@ export class NoHardwareComponent
     public compareTo(componentInterface: HardwareComponentInterface): boolean{
 var componentInterface = componentInterface
 
-    
                         if(this == componentInterface)
                         
                                     {

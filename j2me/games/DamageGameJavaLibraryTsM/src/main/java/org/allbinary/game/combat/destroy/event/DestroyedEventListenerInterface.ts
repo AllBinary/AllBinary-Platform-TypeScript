@@ -25,7 +25,7 @@ import { EventListenerInterface } from "../../../../../../org/allbinary/logic/ut
 interface DestroyedEventListenerInterface extends EventListenerInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onDestroyed(destroyedEvent: DestroyedEvent)
 

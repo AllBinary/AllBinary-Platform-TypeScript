@@ -35,8 +35,8 @@ export class BasicGroupItemsTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(BasicGroupItemsHelperFactory())
-this.setTagRequestHelperFactory(BasicGroupItemsRequestHelperFactory())
+            this.this.setTagHelperFactory(BasicGroupItemsHelperFactory())
+this.this.setTagRequestHelperFactory(BasicGroupItemsRequestHelperFactory())
 }
 
 

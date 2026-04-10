@@ -103,15 +103,15 @@ this.rawRectangle= rawRectangle
 this.cellPosition= cellPosition
 this.xBorder= xBorder
 this.yBorder= yBorder
-this.updateRectangle()
-put(StringMaker().
+this.this.updateRectangle()
+logUtil!.put(StringMaker().
                             append("Created: ")!.append(this.toString())!.toString(), this, this.commonStrings!.CONSTRUCTOR)
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics, animationX, animationY)
+this.animationInterface!.paint(graphics, animationX, animationY)
 }
 
 
@@ -138,7 +138,7 @@ this.animationX= point.getX()
 this.animationY= point.getY()
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "updateRectangle", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateRectangle", e)
 }
 
 }
@@ -185,14 +185,14 @@ put(this.commonStrings!.EXCEPTION, this, "updateRectangle", e)
         
         
 
-append("TouchButton: ")
-append(stringUtil!.toString(this.rectangle))
-append(" CellPosition: ")
-append(stringUtil!.toString(this.cellPosition))
-append(" xBorder: ")
-appendint(this.xBorder)
-append(" yBorder: ")
-appendint(this.yBorder)
+stringBuffer!.append("TouchButton: ")
+stringBuffer!.append(stringUtil!.toString(this.rectangle))
+stringBuffer!.append(" CellPosition: ")
+stringBuffer!.append(stringUtil!.toString(this.cellPosition))
+stringBuffer!.append(" xBorder: ")
+stringBuffer!.appendint(this.xBorder)
+stringBuffer!.append(" yBorder: ")
+stringBuffer!.appendint(this.yBorder)
 
 
 

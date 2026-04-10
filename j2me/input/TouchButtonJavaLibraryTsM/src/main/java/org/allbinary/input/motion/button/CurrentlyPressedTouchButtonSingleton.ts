@@ -106,7 +106,7 @@ var touchButtonInput = touchButtonInput
 
     public add(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-add(touchButtonInput)
+this.list.add(touchButtonInput)
 }
 
 

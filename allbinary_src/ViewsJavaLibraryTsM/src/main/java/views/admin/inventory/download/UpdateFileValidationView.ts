@@ -130,16 +130,14 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
 
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(command) || command.compareTo(this.commonStrings!.UPDATE) != 0)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Invalid AdminCommand=" +command, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Invalid AdminCommand=" +command, this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -163,29 +161,26 @@ this.itemInterface= inventoryEntity!.getItem(id)
 } catch(e: MoneyException)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Existing Item With MoneyException", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Existing Item With MoneyException", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
 }
 
 
-    
                         if(this.itemInterface == 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Item Does Not Exist", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Item Does Not Exist", this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -199,17 +194,15 @@ this.itemInterface= inventoryEntity!.getItem(id)
                                     }
                                 
 
-    
                         if(BasicItemValidation(this.itemInterface).
                             isValid() == Boolean.FALSE)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("BasicItem is not valid", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("BasicItem is not valid", this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -239,16 +232,14 @@ this.itemInterface= inventoryEntity!.getItem(id)
         
 
 
-    
                         if(!categoryFile!.isDirectory())
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Category Does Not Exist: " +fullCategory, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Category Does Not Exist: " +fullCategory, this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -267,7 +258,6 @@ this.itemInterface= inventoryEntity!.getItem(id)
         
 
 
-    
                         if(HttpFileUploadUtil.getInstance()!.isValid(downloadableFileObject))
                         
                                     {
@@ -286,9 +276,8 @@ this.itemInterface= inventoryEntity!.getItem(id)
         
         
 
-log(fileItem)
+HttpFileUploadUtil.log(fileItem)
 
-    
                         if(this.isValid(fileName, size) == Boolean.FALSE)
                         
                                     {
@@ -302,8 +291,8 @@ log(fileItem)
                                     }
                                 
                         else {
-                            this.processFile(fileItem)
-put(DownloadItemData.SIZE, (size).toString())
+                            this.this.processFile(fileItem)
+this.getRequestHashMap()!.put(DownloadItemData.SIZE, (size).toString())
 
                         }
                             
@@ -311,7 +300,7 @@ put(DownloadItemData.SIZE, (size).toString())
                                     }
                                 
                         else {
-                            remove(DownloadItemData.FILE)
+                            this.getRequestHashMap()!.remove(DownloadItemData.FILE)
 
                         }
                             
@@ -321,7 +310,6 @@ put(DownloadItemData.SIZE, (size).toString())
         
 
 
-    
                         if(HttpFileUploadUtil.getInstance()!.isValid(licenseFileObject))
                         
                                     {
@@ -340,9 +328,8 @@ put(DownloadItemData.SIZE, (size).toString())
         
         
 
-log(fileItem)
+HttpFileUploadUtil.log(fileItem)
 
-    
                         if(this.isValid(fileName, size) == Boolean.FALSE)
                         
                                     {
@@ -350,7 +337,7 @@ log(fileItem)
                                     }
                                 
                         else {
-                            this.processFile(fileItem)
+                            this.this.processFile(fileItem)
 
                         }
                             
@@ -358,7 +345,7 @@ log(fileItem)
                                     }
                                 
                         else {
-                            remove(DownloadItemData.LICENSE_FILE)
+                            this.getRequestHashMap()!.remove(DownloadItemData.LICENSE_FILE)
 
                         }
                             
@@ -368,7 +355,6 @@ log(fileItem)
         
 
 
-    
                         if(HttpFileUploadUtil.getInstance()!.isValid(extraFilesObject))
                         
                                     {
@@ -387,9 +373,8 @@ log(fileItem)
         
         
 
-log(fileItem)
+HttpFileUploadUtil.log(fileItem)
 
-    
                         if(this.isValid(fileName, size) == Boolean.FALSE)
                         
                                     {
@@ -397,8 +382,8 @@ log(fileItem)
                                     }
                                 
                         else {
-                            this.processFile(fileItem)
-this.unzip(fileItem)
+                            this.this.processFile(fileItem)
+this.this.unzip(fileItem)
 
                         }
                             
@@ -406,7 +391,7 @@ this.unzip(fileItem)
                                     }
                                 
                         else {
-                            remove(DownloadItemData.EXTRA_FILES)
+                            this.getRequestHashMap()!.remove(DownloadItemData.EXTRA_FILES)
 
                         }
                             
@@ -415,26 +400,25 @@ this.unzip(fileItem)
         
         
 
-put(BasicItemData.ID, this.itemInterface!.getId())
+hashMap!.put(BasicItemData.ID, this.itemInterface!.getId())
 
     var licenseObject: any = {} = hashMap!.get(DownloadItemData.LICENSE_FILE)!;
         
         
 
 
-    
                         if(licenseObject != 
                                     null
                                 )
                         
                                     {
-                                    put(DownloadItemData.LICENSE_FILE, 
+                                    hashMap!.put(DownloadItemData.LICENSE_FILE, 
                                     (licenseObject as FileItem).getName())
 
                                     }
                                 
                         else {
-                            put(DownloadItemData.LICENSE_FILE, StringUtil.getInstance()!.EMPTY_STRING)
+                            hashMap!.put(DownloadItemData.LICENSE_FILE, StringUtil.getInstance()!.EMPTY_STRING)
 
                         }
                             
@@ -444,19 +428,18 @@ put(BasicItemData.ID, this.itemInterface!.getId())
         
 
 
-    
                         if(fileObject != 
                                     null
                                 )
                         
                                     {
-                                    put(DownloadItemData.FILE, 
+                                    hashMap!.put(DownloadItemData.FILE, 
                                     (fileObject as FileItem).getName())
 
                                     }
                                 
                         else {
-                            put(DownloadItemData.FILE, StringUtil.getInstance()!.EMPTY_STRING)
+                            hashMap!.put(DownloadItemData.FILE, StringUtil.getInstance()!.EMPTY_STRING)
 
                         }
                             
@@ -467,16 +450,14 @@ this.downloadableItem= DownloadableItem(hashMap)
         
 
 
-    
                         if(downloadableItemValidation!.isValid() == Boolean.FALSE)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("DownloadableItem is not valid", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("DownloadableItem is not valid", this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -498,11 +479,10 @@ this.downloadableItem= DownloadableItem(hashMap)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Exception in validation", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Exception in validation", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -552,7 +532,6 @@ var document = document
         
 
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(command) || command.compareTo(this.commonStrings!.UPDATE) != 0)
                         
                                     {
@@ -566,7 +545,6 @@ var document = document
                                     }
                                 
 
-    
                         if(this.itemInterface == 
                                     null
                                 )
@@ -578,11 +556,10 @@ var document = document
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put(ITEM_NOT_FOUND, this, "validationInfo()")
+                                    logUtil!.put(ITEM_NOT_FOUND, this, "validationInfo()")
 
                                     }
                                 
@@ -601,12 +578,11 @@ var document = document
         
 
 
-    
                         if(basicItemValidation!.isValid() == Boolean.FALSE)
                         
                                     {
-                                    append(basicItemValidation!.validationInfo())
-append("<br/>")
+                                    stringBuffer!.append(basicItemValidation!.validationInfo())
+stringBuffer!.append("<br/>")
 
                                     }
                                 
@@ -622,11 +598,10 @@ append("<br/>")
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Category: " +fullCategory, this, "validationInfo()")
+                                    logUtil!.put("Category: " +fullCategory, this, "validationInfo()")
 
                                     }
                                 
@@ -636,14 +611,13 @@ append("<br/>")
         
 
 
-    
                         if(!categoryFile!.isDirectory())
                         
                                     {
-                                    append("Category ")
-append(this.itemInterface!.getCategory())
-append(" does not exist.")
-append("<br />")
+                                    stringBuffer!.append("Category ")
+stringBuffer!.append(this.itemInterface!.getCategory())
+stringBuffer!.append(" does not exist.")
+stringBuffer!.append("<br />")
 
                                     }
                                 
@@ -653,7 +627,6 @@ append("<br />")
         
 
 
-    
                         if(HttpFileUploadUtil.getInstance()!.isValid(downloadableFileObject))
                         
                                     {
@@ -672,13 +645,13 @@ append("<br />")
         
         
 
-this.validationInfo(stringBuffer, fileName, size)
+this.this.validationInfo(stringBuffer, fileName, size)
 
                                     }
                                 
                         else {
-                            append("Download File Missing")
-append("<br/>")
+                            stringBuffer!.append("Download File Missing")
+stringBuffer!.append("<br/>")
 
                         }
                             
@@ -688,7 +661,6 @@ append("<br/>")
         
 
 
-    
                         if(HttpFileUploadUtil.getInstance()!.isValid(licenseFileObject))
                         
                                     {
@@ -707,7 +679,7 @@ append("<br/>")
         
         
 
-this.validationInfo(stringBuffer, fileName, size)
+this.this.validationInfo(stringBuffer, fileName, size)
 
                                     }
                                 
@@ -721,7 +693,6 @@ this.validationInfo(stringBuffer, fileName, size)
         
 
 
-    
                         if(HttpFileUploadUtil.getInstance()!.isValid(extraFilesObject))
                         
                                     {
@@ -740,7 +711,7 @@ this.validationInfo(stringBuffer, fileName, size)
         
         
 
-this.validationInfo(stringBuffer, fileName, size)
+this.this.validationInfo(stringBuffer, fileName, size)
 
                                     }
                                 
@@ -749,7 +720,6 @@ this.validationInfo(stringBuffer, fileName, size)
                         }
                             
 
-    
                         if(this.downloadableItem != 
                                     null
                                 )
@@ -761,7 +731,6 @@ this.validationInfo(stringBuffer, fileName, size)
         
 
 
-    
                         if(downloadableItemValidation!.isValid() == Boolean.FALSE)
                         
                                     {
@@ -771,16 +740,15 @@ this.validationInfo(stringBuffer, fileName, size)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put(log, this, commonStrings!.IS_VALID)
+                                    logUtil!.put(log, this, commonStrings!.IS_VALID)
 
                                     }
                                 
-append(log)
-append("<br/>")
+stringBuffer!.append(log)
+stringBuffer!.append("<br/>")
 
                                     }
                                 
@@ -796,11 +764,10 @@ append("<br/>")
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 
@@ -815,7 +782,7 @@ append("<br/>")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     isValid(fileName: string, size: number): Boolean{
 var fileName = fileName
@@ -826,22 +793,18 @@ var size = size
         
 
 
-    
                         if(size > fileData!.MINDOWNLOADABLEFILESIZE)
                         
                                     {
                                     
-    
                         if(size < fileData!.MAXDOWNLOADABLEFILESIZE)
                         
                                     {
                                     
-    
                         if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN))
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -850,9 +813,9 @@ var size = size
         
         
 
-append("File name is not valid: ")
-append(fileName)
-put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+stringBuffer!.append("File name is not valid: ")
+stringBuffer!.append(fileName)
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -874,7 +837,6 @@ put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -883,11 +845,11 @@ put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
         
         
 
-append("File Size To Large: ")
-appendlong(size)
-append(">")
-appendint(fileData!.MAXDOWNLOADABLEFILESIZE)
-put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+stringBuffer!.append("File Size To Large: ")
+stringBuffer!.appendlong(size)
+stringBuffer!.append(">")
+stringBuffer!.appendint(fileData!.MAXDOWNLOADABLEFILESIZE)
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -905,7 +867,6 @@ put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -914,11 +875,11 @@ put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
         
         
 
-append("File Size To Small: ")
-appendlong(size)
-append(">")
-appendint(fileData!.MINDOWNLOADABLEFILESIZE)
-put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+stringBuffer!.append("File Size To Small: ")
+stringBuffer!.appendlong(size)
+stringBuffer!.append(">")
+stringBuffer!.appendint(fileData!.MINDOWNLOADABLEFILESIZE)
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -950,27 +911,24 @@ var size = size
         
 
 
-    
                         if(size > fileData!.MINDOWNLOADABLEFILESIZE)
                         
                                     {
                                     
-    
                         if(size < fileData!.MAXDOWNLOADABLEFILESIZE)
                         
                                     {
                                     
-    
                         if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN))
                         
                                     {
-                                    append("File Name must be more than ")
-appendint(fileData!.MINLEN)
-append(" and less than ")
-appendint(fileData!.MAXLEN)
-append(" characters in length: ")
-append(fileName)
-append("<br/>")
+                                    stringBuffer!.append("File Name must be more than ")
+stringBuffer!.appendint(fileData!.MINLEN)
+stringBuffer!.append(" and less than ")
+stringBuffer!.appendint(fileData!.MAXLEN)
+stringBuffer!.append(" characters in length: ")
+stringBuffer!.append(fileName)
+stringBuffer!.append("<br/>")
 
                                     }
                                 
@@ -982,11 +940,11 @@ append("<br/>")
                                     }
                                 
                         else {
-                            append("File Is Not The Right Size. ")
-appendint(fileData!.MINDOWNLOADABLEFILESIZE)
-append("< >")
-appendint(fileData!.MAXDOWNLOADABLEFILESIZE)
-append("<br/>")
+                            stringBuffer!.append("File Is Not The Right Size. ")
+stringBuffer!.appendint(fileData!.MINDOWNLOADABLEFILESIZE)
+stringBuffer!.append("< >")
+stringBuffer!.appendint(fileData!.MAXDOWNLOADABLEFILESIZE)
+stringBuffer!.append("<br/>")
 
                         }
                             

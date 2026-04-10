@@ -40,8 +40,8 @@ public constructor (id: number, name: string){
             super();
             var id = id
 var name = name
-this.setId(id)
-this.setName(name)
+this.this.setId(id)
+this.this.setName(name)
 }
 
 
@@ -83,10 +83,10 @@ this.name= keyName
         
         
 
-append("Name: ")
-append(this.getName())
-append(" Id: ")
-appendint(this.getId())
+stringBuffer!.append("Name: ")
+stringBuffer!.append(this.getName())
+stringBuffer!.append(" Id: ")
+stringBuffer!.appendint(this.getId())
 
 
 

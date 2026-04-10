@@ -69,7 +69,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.this.setTableName(tableName)
 }
 
 
@@ -77,24 +77,22 @@ this.setTableName(tableName)
 var values = values
 
         try {
-            insert(values)
+            super.insert(values)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, INSERT)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT)
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, INSERT, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e)
 
                                     }
                                 
@@ -103,7 +101,7 @@ var values = values
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(userName: string, id: number): QuoteRequest{
 var userName = userName
@@ -113,15 +111,14 @@ var id = id
         
         
 
-put(UserData.USERNAME, userName)
-put(QuoteRequestData.getInstance()!.ID, id.toString())
+row.put(UserData.USERNAME, userName)
+row.put(QuoteRequestData.getInstance()!.ID, id.toString())
 
     var quoteRequestHashMap: HashMap<Any, Any> = super.getRow(row)!;
         
         
 
 
-    
                         if(quoteRequestHashMap != 
                                     null
                                 )
@@ -165,24 +162,22 @@ var key = key
 var value = value
 
         try {
-            deleteWhere(key, value)
+            super.deleteWhere(key, value)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, "deleteWhere")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "deleteWhere")
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "deleteWhere", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "deleteWhere", e)
 
                                     }
                                 
@@ -202,27 +197,27 @@ var value = value
         
         
 
-append(this.sqlStrings!.START)
-append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-append(UserData.USERNAME)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(quoteRequestData!.PROJECT_INFO)
-append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-append(quoteRequestData!.CUSTOMER_COMMENTS)
-append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-append(quoteRequestData!.BUDGET)
-append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-append(quoteRequestData!.TIMEFRAME)
-append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-append(quoteRequestData!.COMMENTS)
-append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-append(EntryData.getInstance()!.TIMECREATED)
-append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-append(EntryData.getInstance()!.LASTMODIFIED)
-append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-append(this.sqlStrings!.PRIMARY_KEY)
-append(quoteRequestData!.ID)
-append(this.sqlStrings!.END)
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)
+stringBuffer!.append(quoteRequestData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
+stringBuffer!.append(UserData.USERNAME)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(quoteRequestData!.PROJECT_INFO)
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
+stringBuffer!.append(quoteRequestData!.CUSTOMER_COMMENTS)
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
+stringBuffer!.append(quoteRequestData!.BUDGET)
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
+stringBuffer!.append(quoteRequestData!.TIMEFRAME)
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
+stringBuffer!.append(quoteRequestData!.COMMENTS)
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
+stringBuffer!.append(EntryData.getInstance()!.TIMECREATED)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
+stringBuffer!.append(EntryData.getInstance()!.LASTMODIFIED)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
+stringBuffer!.append(this.sqlStrings!.PRIMARY_KEY)
+stringBuffer!.append(quoteRequestData!.ID)
+stringBuffer!.append(this.sqlStrings!.END)
 
 
 
@@ -260,7 +255,7 @@ append(this.sqlStrings!.END)
     public update(userName: string, updatedValues: HashMap<Any, Any>){
 var userName = userName
 var updatedValues = updatedValues
-updateWhere(UserData.USERNAME, userName, updatedValues)
+super.updateWhere(UserData.USERNAME, userName, updatedValues)
 }
 
 

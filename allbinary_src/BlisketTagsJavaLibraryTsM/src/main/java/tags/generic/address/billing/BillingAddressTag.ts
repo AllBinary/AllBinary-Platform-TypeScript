@@ -42,85 +42,77 @@ public constructor (){
             }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.setName("Basic Billing Address View")
-this.setObjectFile("views.generic.address.billing.ValidationView")
+                                    this.this.setName("Basic Billing Address View")
+this.this.setObjectFile("views.generic.address.billing.ValidationView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.EDIT) == 0)
                         
                                     {
-                                    this.setName("Basic Billing Address View")
-this.setObjectFile("views.generic.address.billing.EditValidationView")
+                                    this.this.setName("Basic Billing Address View")
+this.this.setObjectFile("views.generic.address.billing.EditValidationView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.NEW) == 0)
                         
                                     {
-                                    this.setName("Basic Billing Address View")
-this.setObjectFile("views.generic.address.billing.NewValidationView")
+                                    this.this.setName("Basic Billing Address View")
+this.this.setObjectFile("views.generic.address.billing.NewValidationView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
                         
                                     {
-                                    this.setName("Basic Billing Address View")
-this.setObjectFile("views.generic.address.billing.AddValidationView")
+                                    this.this.setName("Basic Billing Address View")
+this.this.setObjectFile("views.generic.address.billing.AddValidationView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(this.commonStrings!.DELETE) == 0)
                         
                                     {
-                                    this.setName("Basic Billing Address View")
-this.setObjectFile("views.generic.address.billing.DeleteValidationView")
+                                    this.this.setName("Basic Billing Address View")
+this.this.setObjectFile("views.generic.address.billing.DeleteValidationView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(BillingAddressData.SELECT) == 0)
                         
                                     {
-                                    this.setName("Basic Billing Address View")
-this.setObjectFile("views.generic.address.billing.SelectValidationView")
+                                    this.this.setName("Basic Billing Address View")
+this.this.setObjectFile("views.generic.address.billing.SelectValidationView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(BillingAddressData.SETTOSHIPPINGADDRESS) == 0)
                         
                                     {
-                                    this.setName("Basic Billing Address View")
-this.setObjectFile("views.generic.address.billing.SetValidationView")
+                                    this.this.setName("Basic Billing Address View")
+this.this.setObjectFile("views.generic.address.billing.SetValidationView")
 
                                     }
                                 
@@ -128,7 +120,7 @@ this.setObjectFile("views.generic.address.billing.SetValidationView")
                             
 
 
-                            throw Exception("No Such View Command: " +this.getCommand())
+                            throw Error("No Such View Command: " +this.getCommand())
 
                         }
                             
@@ -144,10 +136,10 @@ this.setObjectFile("views.generic.address.billing.SetValidationView")
 
 
 
-                            throw Exception("Command Null")
+                            throw Error("Command Null")
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -157,7 +149,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

@@ -35,7 +35,6 @@ export class CollidableHelperFactory
 
     public static getInstance(): CollisionHelper{
 
-    
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.COLLISIONS_WITH_SOURCE))
                         
                                     {

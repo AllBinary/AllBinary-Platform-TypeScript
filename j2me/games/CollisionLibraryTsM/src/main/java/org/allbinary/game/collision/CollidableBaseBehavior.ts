@@ -99,14 +99,14 @@ this.collidable= collidable
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public collide(allbinaryCollidableLayer: CollidableCompositeLayer){
 var allbinaryCollidableLayer = allbinaryCollidableLayer
 
 
 
-                            throw Exception(StringMaker().
+                            throw Error(StringMaker().
                             append(commonStrings!.NOT_IMPLEMENTED)!.append(CommonLabels.getInstance()!.COLON_SEP)!.append(this::class.toString()!)!.toString())
 }
 
@@ -137,14 +137,14 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public collide(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 

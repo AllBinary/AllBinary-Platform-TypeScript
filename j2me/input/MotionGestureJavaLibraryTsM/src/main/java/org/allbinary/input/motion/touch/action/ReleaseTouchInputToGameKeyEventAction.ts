@@ -74,8 +74,8 @@ private constructor ()
                     
 
         try {
-            this.setGameKey(NONE)
-this.setGameKeyEvent(GameKeyEventFactory.getInstance()!.getInstance(this, NONE))
+            this.this.setGameKey(NONE)
+this.this.setGameKeyEvent(GameKeyEventFactory.getInstance()!.getInstance(this, NONE))
 } catch(e: Exception)
             {
 
@@ -83,7 +83,7 @@ this.setGameKeyEvent(GameKeyEventFactory.getInstance()!.getInstance(this, NONE))
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 }

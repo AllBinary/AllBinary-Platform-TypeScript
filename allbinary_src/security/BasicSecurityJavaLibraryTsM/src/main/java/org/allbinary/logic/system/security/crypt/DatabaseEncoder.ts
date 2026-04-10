@@ -72,14 +72,13 @@ var value = value
         
 index < array.length; index++)
         {
-append(array[index]!.
+stringBuffer!.append(array[index]!.
                             toString())
 
-    
                         if(index < array.length -1)
                         
                                     {
-                                    append(CommonSeps.getInstance()!.SPACE)
+                                    stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
 
                                     }
                                 
@@ -98,7 +97,7 @@ append(array[index]!.
         
         
 
-put(commonStrings!.EXCEPTION, "DatabaseEncoder", "decode", e)
+PreLogUtil.put(commonStrings!.EXCEPTION, "DatabaseEncoder", "decode", e)
 
 
 
@@ -148,7 +147,7 @@ var value = value
 index < size; index++)
         {
 byteOfData= vector.objectArray[index]! as String
-add(byteOfData.toByte())
+byteVector!.add(byteOfData.toByte())
 }
 
 
@@ -192,7 +191,7 @@ decodeIndex++
         
         
 
-put(commonStrings!.EXCEPTION, "DatabaseEncoder", "decode", e)
+PreLogUtil.put(commonStrings!.EXCEPTION, "DatabaseEncoder", "decode", e)
 
 
 

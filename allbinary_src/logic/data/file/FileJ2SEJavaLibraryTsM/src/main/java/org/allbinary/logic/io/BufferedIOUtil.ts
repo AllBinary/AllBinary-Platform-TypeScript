@@ -45,7 +45,7 @@ export class BufferedIOUtil
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static copy(backupFile: AbFile, backupFileBak: AbFile){
 var backupFile = backupFile
@@ -70,7 +70,6 @@ var backupFileBak = backupFileBak
         {
 line= tmpIn!.readLine()
 
-    
                         if(line == 
                                     null
                                 )
@@ -82,11 +81,11 @@ line= tmpIn!.readLine()
 
                                     }
                                 
-write(line, 0, line.length)
-newLine()
+tmpOut!.write(line, 0, line.length)
+tmpOut!.newLine()
 }
 
-flush()
+tmpOut!.flush()
 }
 
 

@@ -49,7 +49,7 @@ this.categoryPropertiesInterface= categoryPropertiesInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -63,7 +63,7 @@ var document = document
         
         
 
-setAttribute(CategoryData.getInstance()!.LABEL, this.categoryPropertiesInterface!.getValue())
+newCategoryNode!.setAttribute(CategoryData.getInstance()!.LABEL, this.categoryPropertiesInterface!.getValue())
 
 
 

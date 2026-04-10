@@ -52,7 +52,7 @@ this.file= file
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getKey(): any = {}{
 
@@ -64,7 +64,7 @@ this.file= file
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toVector(): Vector{
 
@@ -72,11 +72,11 @@ this.file= file
         
         
 
-add(file.getAbsolutePath())
-add(file.getCanonicalPath())
-add(file.getName())
-add(file.getParent())
-add(file.getPath())
+filePropertyVector!.add(file.getAbsolutePath())
+filePropertyVector!.add(file.getCanonicalPath())
+filePropertyVector!.add(file.getName())
+filePropertyVector!.add(file.getParent())
+filePropertyVector!.add(file.getPath())
 
 
 
@@ -86,7 +86,7 @@ add(file.getPath())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toHashMap(): HashMap<Any, Any>{
 
@@ -109,16 +109,16 @@ add(file.getPath())
         
         
 
-put(fileData!.ROOT_NAME, rootFileName)
-put(fileData!.ISFILE, Boolean.valueOf(file.isFile())!.toString())
-put(fileData!.ISDIRECTORY, Boolean.valueOf(file.isDirectory())!.toString())
-put(fileData!.ISHIDDEN, Boolean.valueOf(file.isHidden())!.toString())
-put(fileData!.ISABSOLUTE, Boolean.valueOf(file.isAbsolute())!.toString())
-put(fileData!.ABSOLUTE_PATH, file.getAbsolutePath())
-put(fileData!.CANONICAL_PATH, file.getCanonicalPath())
-put(fileData!.NAME, file.getName())
-put(fileData!.PARENT, file.getParent())
-put(fileData!.PATH, file.getPath())
+filePropertyHashMap!.put(fileData!.ROOT_NAME, rootFileName)
+filePropertyHashMap!.put(fileData!.ISFILE, Boolean.valueOf(file.isFile())!.toString())
+filePropertyHashMap!.put(fileData!.ISDIRECTORY, Boolean.valueOf(file.isDirectory())!.toString())
+filePropertyHashMap!.put(fileData!.ISHIDDEN, Boolean.valueOf(file.isHidden())!.toString())
+filePropertyHashMap!.put(fileData!.ISABSOLUTE, Boolean.valueOf(file.isAbsolute())!.toString())
+filePropertyHashMap!.put(fileData!.ABSOLUTE_PATH, file.getAbsolutePath())
+filePropertyHashMap!.put(fileData!.CANONICAL_PATH, file.getCanonicalPath())
+filePropertyHashMap!.put(fileData!.NAME, file.getName())
+filePropertyHashMap!.put(fileData!.PARENT, file.getParent())
+filePropertyHashMap!.put(fileData!.PATH, file.getPath())
 
 
 

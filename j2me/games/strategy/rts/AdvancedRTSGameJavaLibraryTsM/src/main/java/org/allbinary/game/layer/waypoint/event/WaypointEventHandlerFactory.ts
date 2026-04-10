@@ -56,7 +56,7 @@ export class WaypointEventHandlerFactory
         
 index >= 0; index--)
         {
-removeAllListeners()
+eventHandlerArray[index]!.removeAllListeners()
 }
 
 }

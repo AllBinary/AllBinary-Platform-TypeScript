@@ -28,7 +28,7 @@ protected constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(){
 }

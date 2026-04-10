@@ -30,7 +30,7 @@ export class PaymentGatewayEntityFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(): PaymentGatewayEntity{
 
@@ -54,11 +54,10 @@ export class PaymentGatewayEntityFactory
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, "PaymentGatewayEntityFactory", commonStrings!.GET_INSTANCE, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, "PaymentGatewayEntityFactory", commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 

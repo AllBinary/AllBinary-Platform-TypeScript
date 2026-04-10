@@ -93,7 +93,7 @@ this.scoreString= (this.score).toString()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAsBytes(): ByteArray{
 
@@ -106,8 +106,8 @@ this.scoreString= (this.score).toString()
         
         
 
-writeUTF(this.getName())
-writeLong(this.getScore())
+outputStream!.writeUTF(this.getName())
+outputStream!.writeLong(this.getScore())
 
 
 

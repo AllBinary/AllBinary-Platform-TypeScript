@@ -66,7 +66,7 @@ public constructor (){
 
     public addItem(item: Item){
 var item = item
-add(item)
+items.add(item)
 }
 
 
@@ -109,11 +109,10 @@ index < size; index++)
         
 
 
-    
                         if(item.getId()!.compareTo(id) == 0)
                         
                                     {
-                                    remove(item)
+                                    items.remove(item)
 
                                     }
                                 
@@ -152,11 +151,10 @@ index < size; index++)
         
 
 
-    
                         if(item.getId()!.compareTo(id) == 0)
                         
                                     {
-                                    setNumber(num)
+                                    item.setNumber(num)
 
                                     }
                                 
@@ -253,7 +251,7 @@ index < size; index++)
         
         
 
-add(item.getId())
+idSet!.add(item.getId())
 }
 
 
@@ -294,7 +292,6 @@ index < size; index++)
         
 
 
-    
                         if(item.getId()!.compareTo(id) == 0)
                         
                                     {
@@ -318,7 +315,7 @@ index < size; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -353,7 +350,7 @@ index < size; index++)
         
         
 
-appendChild(ItemView(item, Vector()).
+node.appendChild(ItemView(item, Vector()).
                             toXmlNode(document))
 }
 

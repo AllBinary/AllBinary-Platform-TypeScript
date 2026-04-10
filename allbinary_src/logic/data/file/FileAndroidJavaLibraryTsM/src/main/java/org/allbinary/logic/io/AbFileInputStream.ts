@@ -48,7 +48,7 @@ this.fileInputStream= fileInputStream
 
     public mark(readlimit: number){
 var readlimit = readlimit
-mark(readlimit)
+this.fileInputStream!.mark(readlimit)
 }
 
 
@@ -62,15 +62,15 @@ mark(readlimit)
 }
 
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public reset(){
-reset()
+this.fileInputStream!.reset()
 }
 
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public available(): number{
 
@@ -83,7 +83,7 @@ reset()
 
 
     public close(){
-close()
+this.fileInputStream!.close()
 }
 
 
@@ -97,7 +97,7 @@ close()
 }
 
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public read(): number{
 
@@ -109,7 +109,7 @@ close()
 }
 
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public read(b: ByteArray): number{
 var b = b
@@ -122,7 +122,7 @@ var b = b
 }
 
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public read(buffer: ByteArray, offset: number, count: number): number{
 var buffer = buffer
@@ -137,7 +137,7 @@ var count = count
 }
 
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public skip(n: number): number{
 var n = n

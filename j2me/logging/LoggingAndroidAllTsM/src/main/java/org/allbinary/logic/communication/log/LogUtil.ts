@@ -51,6 +51,10 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
         
         
 
+    private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
+        
+        
+
     private readonly LABEL: string = "org.allbinary";
         
         
@@ -82,7 +86,7 @@ private constructor (){
         
         
 
-this.put(specialMessage, anyType, functionName, exception)
+this.this.put(specialMessage, anyType, functionName, exception)
 }
 
 
@@ -90,7 +94,7 @@ this.put(specialMessage, anyType, functionName, exception)
     //var specialMessage = specialMessage
     //var anyType = anyType
 var functionName = functionName
-this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT)
+this.this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT)
 }
 
 
@@ -108,11 +112,11 @@ className= StringMaker().
                             append(anyType!::class.toString()!)!.append(commonSeps!.COLON)!.append(Integer.toHexString(anyType!.hashCode()))!.toString().toCharArray().concatToString()
                                 
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
+    var message: string = logFormatUtil!.get(className, functionName, specialMessage, exception)!;
         
         
 
-i(LABEL, message)
+android.util.Log.i(LABEL, message)
 }
 
 

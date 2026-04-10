@@ -82,7 +82,7 @@ private constructor (){
 
 
     public update(){
-update()
+super.update()
 
     var myFont: MyFont = MyFont.getInstance()!;
         
@@ -102,7 +102,6 @@ this.percentCompleteX2= this.imageX +CommonButtons.getInstance()!.STANDARD_BUTTO
         
 
 
-    
                         if(displayInfoSingleton!.getLastWidth() > 320)
                         
                                     {
@@ -124,9 +123,9 @@ this.percentCompleteX2= this.imageX +CommonButtons.getInstance()!.STANDARD_BUTTO
         
         
 
-update(rtsLayer)
-this.setAnimationInterface(rtsLayer!.getVerticleBuildAnimationInterface())
-this.setName(rtsLayer!.getName())
+this.rtsLayerCompositePaintableLateInit!.update(rtsLayer)
+this.this.setAnimationInterface(rtsLayer!.getVerticleBuildAnimationInterface())
+this.this.setName(rtsLayer!.getName())
 }
 
 
@@ -148,7 +147,6 @@ this.setName(rtsLayer!.getName())
 
 this.percentComplete= rtsLayer!.getPercentComplete()
 
-    
                         if(percentComplete < 10)
                         
                                     {
@@ -157,7 +155,6 @@ this.percentComplete= rtsLayer!.getPercentComplete()
                                     }
                                 
                              else 
-    
                         if(percentComplete < 100)
                         
                                     {
@@ -177,11 +174,11 @@ this.currentTotalDigits= this.getPrimitiveLongUtil()!.getCurrentTotalDigits()
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics)
-paint(graphics)
-drawChars(percentCompleteArray, 0, this.currentTotalDigits, this.imageX +this.percentCompleteX, costY, 0)
-drawString(this.PERCENT, this.percentCompleteX2, costY, 0)
-paint(graphics, this.imageX, y)
+super.paint(graphics)
+this.rtsLayerCompositePaintableLateInit!.paint(graphics)
+graphics.drawChars(percentCompleteArray, 0, this.currentTotalDigits, this.imageX +this.percentCompleteX, costY, 0)
+graphics.drawString(this.PERCENT, this.percentCompleteX2, costY, 0)
+this.getAnimationInterface()!.paint(graphics, this.imageX, y)
 }
 
 

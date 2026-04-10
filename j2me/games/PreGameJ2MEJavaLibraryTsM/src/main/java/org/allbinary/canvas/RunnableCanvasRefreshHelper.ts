@@ -35,7 +35,7 @@ this.runnableCanvas= runnableCanvas
 
 
     public process(){
-repaint()
+this.runnableCanvas!.repaint()
 }
 
 

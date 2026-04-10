@@ -62,14 +62,13 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(os: GenericOperatingSystem): HardwareInterface{
 var os = os
 
         try {
             
-    
                         if(os.getName()!.compareTo(OperatingSystems.getInstance()!.ANDROID) == 0)
                         
                                     {
@@ -85,7 +84,7 @@ var os = os
 
 
 
-                            throw Exception("No Hardware Imp for: " +os.getName())
+                            throw Error("No Hardware Imp for: " +os.getName())
 } catch(e: Exception)
             {
 
@@ -93,7 +92,7 @@ var os = os
         
         
 
-put("Ignoring Exception Returning NoHardware", this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put("Ignoring Exception Returning NoHardware", this, commonStrings!.GET_INSTANCE, e)
 
 
 

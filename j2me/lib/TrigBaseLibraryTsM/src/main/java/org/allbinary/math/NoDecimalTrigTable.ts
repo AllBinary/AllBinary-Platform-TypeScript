@@ -1199,7 +1199,7 @@ var angle = angle
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public antiTan(dx: number, dy: number): number{
 var dx = dx
@@ -1220,7 +1220,6 @@ var dy = dy
         
 
 
-    
                         if(dy != 0)
                         
                                     {
@@ -1231,7 +1230,6 @@ var dy = dy
 
 ratio= SCALE *dxl /dy
 
-    
                         if(dx <= 0 && dy < 0)
                         
                                     {
@@ -1243,7 +1241,6 @@ ratio= SCALE *dxl /dy
                                     }
                                 
 
-    
                         if((dx >= 0 && dy < 0))
                         
                                     {
@@ -1258,12 +1255,10 @@ ratio= SCALE *dxl /dy
 index > 90; index--)
         {
 
-    
                         if(ratio <= noDecimalTan[index])
                         
                                     {
                                     
-    
                         if(ratio > noDecimalTan[index -1])
                         
                                     {
@@ -1277,7 +1272,6 @@ index > 90; index--)
                                     }
                                 
                              else 
-    
                         if(noDecimalTan[index -1] == MAX_VALUE && ratio > MIN_VALUE)
                         
                                     {
@@ -1299,7 +1293,6 @@ index > 90; index--)
                                     }
                                 
                              else 
-    
                         if((dx < 0 && dy <= 0))
                         
                                     {
@@ -1314,7 +1307,6 @@ index > 90; index--)
 index > 180; index--)
         {
 
-    
                         if(ratio < noDecimalTan[index] && ratio >= noDecimalTan[index -1])
                         
                                     {
@@ -1333,7 +1325,6 @@ index > 180; index--)
                                     }
                                 
                              else 
-    
                         if((dx < 0 && dy > 0))
                         
                                     {
@@ -1348,12 +1339,10 @@ index > 180; index--)
 index > 270; index--)
         {
 
-    
                         if(ratio < noDecimalTan[index])
                         
                                     {
                                     
-    
                         if(ratio >= noDecimalTan[index -1])
                         
                                     {
@@ -1367,7 +1356,6 @@ index > 270; index--)
                                     }
                                 
                              else 
-    
                         if(noDecimalTan[index -1] == MAX_VALUE && ratio >= MIN_VALUE)
                         
                                     {
@@ -1389,7 +1377,6 @@ index > 270; index--)
                                     }
                                 
                              else 
-    
                         if((dx >= 0 && dy >= 0))
                         
                                     {
@@ -1404,7 +1391,6 @@ index > 270; index--)
 index > 0; index--)
         {
 
-    
                         if(ratio < noDecimalTan[index] && ratio >= noDecimalTan[index -1])
                         
                                     {
@@ -1427,22 +1413,22 @@ index > 0; index--)
         
         
 
-append("Invalid Ratio: ")
-appendlong(ratio)
-append(CommonSeps.getInstance()!.SPACE)
-append(PositionStrings.getInstance()!.DX_LABEL)
-appendint(dx)
-append(CommonSeps.getInstance()!.SPACE)
-append(PositionStrings.getInstance()!.DX_LABEL)
-appendint(dy)
+stringBuffer!.append("Invalid Ratio: ")
+stringBuffer!.appendlong(ratio)
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(PositionStrings.getInstance()!.DX_LABEL)
+stringBuffer!.appendint(dx)
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(PositionStrings.getInstance()!.DX_LABEL)
+stringBuffer!.appendint(dy)
 
 
 
-                            throw Exception(stringBuffer!.toString())
+                            throw Error(stringBuffer!.toString())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public antiTanDebug(screenX: number, screenY: number, targetX: number, targetY: number): number{
 var screenX = screenX
@@ -1464,7 +1450,7 @@ var targetY = targetY
         
         
 
-put(stringMaker!.append("screenX: ")!.appendint(screenX)!.append(" screenY: ")!.appendint(screenY)!.append(" targetX: ")!.appendint(targetX)!.append(" targetY: ")!.appendint(targetY)!.toString(), this, METHOD_NAME)
+PreLogUtil.put(stringMaker!.append("screenX: ")!.appendint(screenX)!.append(" screenY: ")!.appendint(screenY)!.append(" targetX: ")!.appendint(targetX)!.append(" targetY: ")!.appendint(targetY)!.toString(), this, METHOD_NAME)
 
     var targetX2: number =  -targetX.toInt();
         
@@ -1536,8 +1522,8 @@ index2 < dy.length; index2++)
         {
 angleOfTarget= this.antiTan(dx[index]!, dy[index2]!)
 angle= angleFactory!.getInstance(angleOfTarget.toInt())
-delete(0, stringMaker!.length())
-put(stringMaker!.append(CommonLabels.getInstance()!.INDEX_LABEL)!.appendint(index)!.append(" index2: ")!.appendint(index2)!.append(PositionStrings.getInstance()!.DX_LABEL)!.appendint(dx[index]!)!.append(PositionStrings.getInstance()!.DY_LABEL)!.appendint(dy[index2]!)!.append(TARGET_ANGLE)!.appendshort(angleOfTarget)!.append(CommonSeps.getInstance()!.EQUALS)!.appendshort(angle.getValue())!.toString(), this, METHOD_NAME)
+stringMaker!.delete(0, stringMaker!.length())
+PreLogUtil.put(stringMaker!.append(CommonLabels.getInstance()!.INDEX_LABEL)!.appendint(index)!.append(" index2: ")!.appendint(index2)!.append(PositionStrings.getInstance()!.DX_LABEL)!.appendint(dx[index]!)!.append(PositionStrings.getInstance()!.DY_LABEL)!.appendint(dy[index2]!)!.append(TARGET_ANGLE)!.appendshort(angleOfTarget)!.append(CommonSeps.getInstance()!.EQUALS)!.appendshort(angle.getValue())!.toString(), this, METHOD_NAME)
 }
 
 }

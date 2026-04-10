@@ -35,7 +35,7 @@ interface EmailInterface extends DomNodeInterface, DomDocumentMappingInterface {
 
     public getMimeMessage(): MimeMessage
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public log(): string
 

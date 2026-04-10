@@ -69,7 +69,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(TABLENAME)
+this.this.setTableName(TABLENAME)
 }
 
 
@@ -77,24 +77,22 @@ this.setTableName(TABLENAME)
 var values = values
 
         try {
-            insert(values)
+            super.insert(values)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, INSERT)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT)
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, INSERT, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e)
 
                                     }
                                 
@@ -111,8 +109,8 @@ var keywords = keywords
         
         
 
-put(StoreFrontData.getInstance()!.NAME, store)
-put(BasicItemData.KEYWORDS, keywords)
+whereHashMap!.put(StoreFrontData.getInstance()!.NAME, store)
+whereHashMap!.put(BasicItemData.KEYWORDS, keywords)
 
     var file: string = super.getField(whereHashMap, SearchData.PAGE)!;
         
@@ -129,7 +127,7 @@ put(BasicItemData.KEYWORDS, keywords)
 
     public delete(keywords: string){
 var keywords = keywords
-deleteWhere(BasicItemData.KEYWORDS, keywords)
+super.deleteWhere(BasicItemData.KEYWORDS, keywords)
 }
 
 
@@ -150,7 +148,7 @@ deleteWhere(BasicItemData.KEYWORDS, keywords)
 
     public update(updatedValues: HashMap<Any, Any>){
 var updatedValues = updatedValues
-updateWhere(BasicItemData.KEYWORDS, updatedValues!.get(BasicItemData.KEYWORDS) as String, updatedValues)
+super.updateWhere(BasicItemData.KEYWORDS, updatedValues!.get(BasicItemData.KEYWORDS) as String, updatedValues)
 }
 
 
@@ -160,7 +158,7 @@ updateWhere(BasicItemData.KEYWORDS, updatedValues!.get(BasicItemData.KEYWORDS) a
         
         
 
-append(this.sqlStrings!.END)
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(TABLENAME)!.append(this.sqlStrings!.START)!.append(StoreFrontData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.SIXTY_CHAR_COLUMN_NOT_NULL)!.append(BasicItemData.KEYWORDS)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(SearchData.PAGE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(StoreFrontData.getInstance()!.NAME)!.append(CommonSeps.getInstance()!.COMMA_SEP)!.append(BasicItemData.KEYWORDS)!.append(this.sqlStrings!.END)
 
 
 

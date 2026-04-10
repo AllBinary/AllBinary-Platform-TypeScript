@@ -55,11 +55,10 @@ export class UrlGlobalsViewFactory
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, "GlobalsViewFactory", commonStrings!.GET_INSTANCE, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, "GlobalsViewFactory", commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 

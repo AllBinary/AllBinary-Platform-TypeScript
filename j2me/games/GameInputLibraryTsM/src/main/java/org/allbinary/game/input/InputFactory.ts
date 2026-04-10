@@ -112,7 +112,6 @@ this.inputIntegerArray[id]= input
     public getInstance(id: number): Input{
 var id = id
 
-    
                         if(id < 0)
                         
                                     {
@@ -121,11 +120,10 @@ var id = id
                                     }
                                 
 
-    
                         if(id > inputIntegerArray!.length)
                         
                                     {
-                                    put(StringMaker().
+                                    logUtil!.put(StringMaker().
                             append("Warning id: ")!.appendint(id)!.toString(), this, commonStrings!.GET_INSTANCE)
 
 

@@ -44,7 +44,6 @@ export class CustomGameMenuUtil
         
 
 
-    
                         if(AppletUtil.isAppletLoader(canvas))
                         
                                     {
@@ -52,7 +51,6 @@ export class CustomGameMenuUtil
                                     }
                                 
                              else 
-    
                         if(J2MEUtil.isHTML())
                         
                                     {
@@ -60,7 +58,7 @@ export class CustomGameMenuUtil
                                     }
                                 
                         else {
-                            addCommand(gameCommandsFactory!.EXIT_COMMAND)
+                            canvas.addCommand(gameCommandsFactory!.EXIT_COMMAND)
 
                         }
                             

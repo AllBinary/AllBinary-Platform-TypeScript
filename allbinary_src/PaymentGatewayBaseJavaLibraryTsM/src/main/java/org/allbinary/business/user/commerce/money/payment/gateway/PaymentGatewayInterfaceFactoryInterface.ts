@@ -25,7 +25,7 @@ import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 interface PaymentGatewayInterfaceFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(hashMap: HashMap<Any, Any>): PaymentGatewayInterface
 

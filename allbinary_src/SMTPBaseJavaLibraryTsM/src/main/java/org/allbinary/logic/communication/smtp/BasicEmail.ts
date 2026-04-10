@@ -88,7 +88,7 @@ this.email= AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.getS
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public log(): string{
 
@@ -100,7 +100,7 @@ this.email= AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.getS
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toHashMap(): HashMap<Any, Any>{
 
@@ -112,7 +112,7 @@ this.email= AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.getS
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -125,7 +125,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlDoc(): Document{
 

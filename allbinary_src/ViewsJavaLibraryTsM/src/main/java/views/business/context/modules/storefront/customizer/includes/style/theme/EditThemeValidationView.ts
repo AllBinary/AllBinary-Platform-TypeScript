@@ -124,22 +124,21 @@ isValid= this.validationInterface!.isValid()
         
         
 
-appendChild(domNodeInterface!.toXmlNode(document))
+document.appendChild(domNodeInterface!.toXmlNode(document))
 
     var documentString: string = DomDocumentHelper.toString(document)!;
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Setting Data: " +documentString, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Setting Data: " +documentString, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
-setData(documentString)
+this.getTransformInfoInterface()!.setData(documentString)
 
 
 
@@ -149,11 +148,10 @@ setData(documentString)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -176,7 +174,7 @@ setData(documentString)
         
         
 
-append(this.validationInterface!.validationInfo())
+stringBuffer!.append(this.validationInterface!.validationInfo())
 
 
 
@@ -186,11 +184,10 @@ append(this.validationInterface!.validationInfo())
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 

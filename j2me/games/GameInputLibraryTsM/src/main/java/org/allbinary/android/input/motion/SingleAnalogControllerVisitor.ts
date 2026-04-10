@@ -48,7 +48,7 @@ this.playerInputId= playerInputId
         
         
 
-process(allbinaryLayerManager, analogLocationInput)
+analogLocationInputProcessor!.process(allbinaryLayerManager, analogLocationInput)
 }
 
 

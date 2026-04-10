@@ -47,7 +47,7 @@ export class AnimationFrameToImageUtil
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstanceTranslate(width: number, height: number, animationInterface: Animation): Image{
 var width = width
@@ -73,9 +73,9 @@ var animationInterface = animationInterface
         
         
 
-translate(tranlateX, tranlateY)
-paint(graphics, 0, 0)
-translate( -tranlateX,  -tranlateY)
+graphics.translate(tranlateX, tranlateY)
+animationInterface!.paint(graphics, 0, 0)
+graphics.translate( -tranlateX,  -tranlateY)
 
 
 
@@ -85,7 +85,7 @@ translate( -tranlateX,  -tranlateY)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(width: number, height: number, animationInterface: Animation): Image{
 var width = width
@@ -101,7 +101,7 @@ var animationInterface = animationInterface
         
         
 
-paint(graphics, 0, 0)
+animationInterface!.paint(graphics, 0, 0)
 
 
 

@@ -141,18 +141,18 @@ index < size; index++)
         
         
 
-put(key.toCharArray()
+hashMap!.put(key.toCharArray()
                                         .slice(0, ).join('')
                                     , .toCharArray())
-delete(0, stringBuffer!.length())
-append("key: ")
-append(key)
-append(" Value: ")
-append(values[0]!)
-put(stringBuffer!.toString(), this, "getFormData()")
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("key: ")
+stringBuffer!.append(key)
+stringBuffer!.append(" Value: ")
+stringBuffer!.append(values[0]!)
+logUtil!.put(stringBuffer!.toString(), this, "getFormData()")
 }
 
-this.getFormData(abeClientInformation, hashMap)
+this.this.getFormData(abeClientInformation, hashMap)
 }
 
 public constructor (abeClientInformation: AbeClientInformationInterface, initHashMap: HashMap<Any, Any>){
@@ -160,7 +160,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, initHas
             super();
                 //var abeClientInformation = abeClientInformation
     //var initHashMap = initHashMap
-this.getFormData(abeClientInformation, initHashMap)
+this.this.getFormData(abeClientInformation, initHashMap)
 }
 
 
@@ -190,17 +190,17 @@ setAdminPort(hashMap!.get(initializerData!.ADMINPORT) as String)
         
         
 
-setJdbcDriver(getAdminJdbcDriver())
-setName(adminDbName)
-setUserName(getAdminDbUserName())
-setPassword(getAdminDbPassword())
-setSchema(getAdminSchema())
-setServer(getAdminServer())
-setPort(getAdminPort())
+dbConnectionInfo!.setJdbcDriver(getAdminJdbcDriver())
+dbConnectionInfo!.setName(adminDbName)
+dbConnectionInfo!.setUserName(getAdminDbUserName())
+dbConnectionInfo!.setPassword(getAdminDbPassword())
+dbConnectionInfo!.setSchema(getAdminSchema())
+dbConnectionInfo!.setServer(getAdminServer())
+dbConnectionInfo!.setPort(getAdminPort())
 this.initDb= DynamicInitDb(abeClientInformation, dbConnectionInfo as DatabaseConnectionInfoInterface)
 } catch(e: Exception)
             {
-put("Unable to get form data", this, "getFormData()", e)
+logUtil!.put("Unable to get form data", this, "getFormData()", e)
 }
 
 }
@@ -210,7 +210,7 @@ put("Unable to get form data", this, "getFormData()", e)
 var jdbcDriverClassPathString = jdbcDriverClassPathString
 
         try {
-            newInstance()
+            Class.forName(jdbcDriverClassPathString)!.newInstance()
 
 
 
@@ -220,7 +220,6 @@ var jdbcDriverClassPathString = jdbcDriverClassPathString
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
@@ -229,7 +228,7 @@ var jdbcDriverClassPathString = jdbcDriverClassPathString
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -251,7 +250,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
         
 
 
-    
                         if(!this.isJdbcDriverValid(this.adminJdbcDriver))
                         
                                     {
@@ -265,7 +263,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
         
 
 
-    
                         if(!stringValidationUtil!.isValidRequired(adminDbUserName, MIN, MAX))
                         
                                     {
@@ -274,7 +271,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(adminDbPassword, MINPASSWORD, MAX))
                         
                                     {
@@ -298,9 +294,9 @@ var jdbcDriver = jdbcDriver
         
         
 
-append("The JDBC driver (")
-append(jdbcDriver)
-append(") you have provided is not valid.<br/>")
+stringBuffer!.append("The JDBC driver (")
+stringBuffer!.append(jdbcDriver)
+stringBuffer!.append(") you have provided is not valid.<br/>")
 
 
 
@@ -327,12 +323,11 @@ append(") you have provided is not valid.<br/>")
         
 
 
-    
                         if(!this.isJdbcDriverValid(this.adminJdbcDriver))
                         
                                     {
                                     isJdbcDriversValid= false
-append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver()))
+stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver()))
 
                                     }
                                 
@@ -342,29 +337,26 @@ append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver()))
         
 
 
-    
                         if(!stringValidationUtil!.isValidRequired(adminDbUserName, MIN, MAX))
                         
                                     {
-                                    append("Admin username should be < " +MAX +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("Admin username should be < " +MAX +" and > " +MIN +" characters in length.<br />")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(adminDbPassword, MINPASSWORD, MAX))
                         
                                     {
-                                    append("Admin password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />")
+                                    stringBuffer!.append("Admin password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />")
 
                                     }
                                 
 
-    
                         if(!isJdbcDriversValid)
                         
                                     {
-                                    append(InitializerData.getInstance()!.getJdbcDriverSolutionInfo())
+                                    stringBuffer!.append(InitializerData.getInstance()!.getJdbcDriverSolutionInfo())
 
                                     }
                                 
@@ -380,7 +372,7 @@ append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver()))
     public createUsers(): boolean{
 
         try {
-            addUsers()
+            initDb!.addUsers()
 
 
 
@@ -389,7 +381,7 @@ append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver()))
     
 } catch(e: Exception)
             {
-put("Unable to Create Users", this, "createUsers()", e)
+logUtil!.put("Unable to Create Users", this, "createUsers()", e)
 
 
 
@@ -404,7 +396,7 @@ put("Unable to Create Users", this, "createUsers()", e)
     public createDatabases(): boolean{
 
         try {
-            addDatabases()
+            initDb!.addDatabases()
 
 
 
@@ -413,7 +405,7 @@ put("Unable to Create Users", this, "createUsers()", e)
     
 } catch(e: Exception)
             {
-put("Unable to Create Databases", this, "createDatabases()", e)
+logUtil!.put("Unable to Create Databases", this, "createDatabases()", e)
 
 
 
@@ -428,7 +420,7 @@ put("Unable to Create Databases", this, "createDatabases()", e)
     public createTables(): boolean{
 
         try {
-            addTables()
+            initDb!.addTables()
 
 
 
@@ -437,7 +429,7 @@ put("Unable to Create Databases", this, "createDatabases()", e)
     
 } catch(e: Exception)
             {
-put("Unable to Create Tables", this, "createTables()", e)
+logUtil!.put("Unable to Create Tables", this, "createTables()", e)
 
 
 

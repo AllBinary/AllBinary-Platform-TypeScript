@@ -235,16 +235,15 @@ this.angleIncrement= angleIncrement
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
 
-    
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
                         
                                     {
-                                    processAdjust(this)
+                                    animationFactoryImageScaleUtil!.processAdjust(this)
 
 
 

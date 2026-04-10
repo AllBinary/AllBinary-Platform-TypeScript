@@ -73,14 +73,14 @@ public constructor (signed: CompleteMotionGestureListenerInterface){
 
             super();
             var signed = signed
-put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 this.signed= signed
 }
 
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-log(commonStrings!.NOT_IMPLEMENTED, this)
+ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this)
 }
 
 
@@ -134,7 +134,7 @@ onMotionGestureEvent(ev)
 
     public onPressedMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-add(ev.getMotionGesture())
+touchGestureCollection!.add(ev.getMotionGesture())
 }
 
 
@@ -142,9 +142,9 @@ add(ev.getMotionGesture())
 var ev = ev
 
         try {
-            add(ev.getMotionGesture())
-onMotionGestureCompleted(touchGestureCollection)
-clear()
+            touchGestureCollection!.add(ev.getMotionGesture())
+signed.onMotionGestureCompleted(touchGestureCollection)
+touchGestureCollection!.clear()
 } catch(e: Exception)
             {
 
@@ -152,9 +152,9 @@ clear()
         
         
 
-append(commonStrings!.EXCEPTION_LABEL)
-append(StringUtil.getInstance()!.toString(ev.getMotionGesture()))
-put(stringBuffer!.toString(), this, "release", e)
+stringBuffer!.append(commonStrings!.EXCEPTION_LABEL)
+stringBuffer!.append(StringUtil.getInstance()!.toString(ev.getMotionGesture()))
+logUtil!.put(stringBuffer!.toString(), this, "release", e)
 }
 
 }
@@ -170,28 +170,26 @@ var ev = ev
         
 
 
-    
                         if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.PRESSED)
                         
                                     {
-                                    this.onPressedMotionGestureEvent(ev)
+                                    this.this.onPressedMotionGestureEvent(ev)
 
                                     }
                                 
                              else 
-    
                         if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.RELEASED)
                         
                                     {
-                                    this.released(ev)
+                                    this.this.released(ev)
 
                                     }
                                 
                         else {
-                            add(motionGestureInput)
-onMotionGestureCompleted(motionGestureCollection)
-clear()
-clear()
+                            motionGestureCollection!.add(motionGestureInput)
+signed.onMotionGestureCompleted(motionGestureCollection)
+motionGestureCollection!.clear()
+touchGestureCollection!.clear()
 
                         }
                             
@@ -202,9 +200,9 @@ clear()
         
         
 
-append(commonStrings!.EXCEPTION_LABEL)
-append(StringUtil.getInstance()!.toString(ev.getMotionGesture()))
-put(stringBuffer!.toString(), this, "onMotionGestureEvent", e)
+stringBuffer!.append(commonStrings!.EXCEPTION_LABEL)
+stringBuffer!.append(StringUtil.getInstance()!.toString(ev.getMotionGesture()))
+logUtil!.put(stringBuffer!.toString(), this, "onMotionGestureEvent", e)
 }
 
 }

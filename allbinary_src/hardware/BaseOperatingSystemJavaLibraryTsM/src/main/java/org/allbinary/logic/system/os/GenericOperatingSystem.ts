@@ -72,7 +72,6 @@ public constructor (){
         
 
 
-    
                         if(stringValidationUtil!.isEmpty(systemProperties!.getName()))
                         
                                     {
@@ -86,7 +85,6 @@ public constructor (){
                         }
                             
 
-    
                         if(stringValidationUtil!.isEmpty(systemProperties!.getArch()))
                         
                                     {
@@ -100,7 +98,6 @@ public constructor (){
                         }
                             
 
-    
                         if(stringValidationUtil!.isEmpty(systemProperties!.getVersion()))
                         
                                     {
@@ -217,15 +214,15 @@ public constructor (){
         
         
 
-append("Operating System Info: \n")
-append(this.getName())
-append(NEW_LINE)
-append(this.getArch())
-append(NEW_LINE)
-append(this.getVersion())
-append(NEW_LINE)
-append(StringUtil.getInstance()!.toString(this.getCharacterSet()))
-append(NEW_LINE)
+osBuffer!.append("Operating System Info: \n")
+osBuffer!.append(this.getName())
+osBuffer!.append(NEW_LINE)
+osBuffer!.append(this.getArch())
+osBuffer!.append(NEW_LINE)
+osBuffer!.append(this.getVersion())
+osBuffer!.append(NEW_LINE)
+osBuffer!.append(StringUtil.getInstance()!.toString(this.getCharacterSet()))
+osBuffer!.append(NEW_LINE)
 
 
 

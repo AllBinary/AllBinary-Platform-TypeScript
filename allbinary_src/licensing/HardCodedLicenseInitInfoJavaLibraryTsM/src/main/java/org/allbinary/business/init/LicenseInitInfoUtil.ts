@@ -65,7 +65,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public write(initData: LicenseInitInfo){
@@ -73,7 +73,7 @@ var initData = initData
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public read(): LicenseInitInfo{
@@ -86,7 +86,7 @@ var initData = initData
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public readAgain(initializeCounter: number): LicenseInitInfo{
@@ -96,8 +96,8 @@ var initializeCounter = initializeCounter
         
         
 
-clearServers()
-addServer(OFFICIAL_ALLBINARY_SERVICES_SERVER)
+licenseInitInfo!.clearServers()
+licenseInitInfo!.addServer(OFFICIAL_ALLBINARY_SERVICES_SERVER)
 
 
 

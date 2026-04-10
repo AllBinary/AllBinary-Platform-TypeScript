@@ -44,7 +44,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, x: number, y: number, z: number): PickedUpLayerInterface{
 var pickedUpLayerInterfaceFactoryInterface = pickedUpLayerInterfaceFactoryInterface
@@ -56,8 +56,8 @@ var z = z
         
         
 
-init(x, y, z)
-init(pickedUpLayerInterfaceFactoryInterface, pickedUpLayerInterfaceFactoryInterface!.getAnimationInterface())
+pickupLayer!.init(x, y, z)
+pickupLayer!.init(pickedUpLayerInterfaceFactoryInterface, pickedUpLayerInterfaceFactoryInterface!.getAnimationInterface())
 
 
 

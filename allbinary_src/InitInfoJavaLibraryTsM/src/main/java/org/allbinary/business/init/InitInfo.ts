@@ -95,7 +95,7 @@ private constructor (){
             }
 
 
-                @Throws(InitException::class)
+                //@Throws(InitException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public set(){
@@ -107,43 +107,39 @@ private constructor (){
         
 
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    put("created entity", "InitInfo", "set()")
+                                    PreLogUtil.put("created entity", "InitInfo", "set()")
 
                                     }
                                 
 
-    
                         if(!initInfoEntity!.is())
                         
                                     {
                                     
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    put("adding", "InitInfo", "set()")
+                                    PreLogUtil.put("adding", "InitInfo", "set()")
 
                                     }
                                 
-add()
+initInfoEntity!.add()
 
                                     }
                                 
                         else {
                             
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    put("update", "InitInfo", "set()")
+                                    PreLogUtil.put("update", "InitInfo", "set()")
 
                                     }
                                 
-update()
+initInfoEntity!.update()
 
                         }
                             
@@ -151,11 +147,10 @@ hasRead= false
 } catch(e: Exception)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    put("error", "InitInfo", "set()", e)
+                                    PreLogUtil.put("error", "InitInfo", "set()", e)
 
                                     }
                                 
@@ -175,11 +170,10 @@ testHtmlPath= AbPath(hashMap!.get(TESTHTMLPATH as Object) as String)
 } catch(e: Exception)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    put("error", "InitInfo", "set()", e)
+                                    PreLogUtil.put("error", "InitInfo", "set()", e)
 
                                     }
                                 
@@ -206,15 +200,14 @@ testHtmlPath=
         
         
 
-get()
+initInfoEntity!.get()
 } catch(e: Exception)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    put("error", "InitInfo", "set()", e)
+                                    PreLogUtil.put("error", "InitInfo", "set()", e)
 
                                     }
                                 
@@ -241,23 +234,21 @@ hasRead= value
 
         try {
             
-    
                         if(!hasRead)
                         
                                     {
                                     hasRead= true
-this.get()
+this.this.get()
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    put("error", "InitInfo", "updateIfNeeded()", e)
+                                    PreLogUtil.put("error", "InitInfo", "updateIfNeeded()", e)
 
                                     }
                                 
@@ -275,7 +266,7 @@ this.get()
     public isTesting(): boolean{
 
         try {
-            this.updateIfNeeded()
+            this.this.updateIfNeeded()
 
 
 
@@ -285,11 +276,10 @@ this.get()
 } catch(e: Exception)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    put("error", "InitInfo", "updateIfNeeded()", e)
+                                    PreLogUtil.put("error", "InitInfo", "updateIfNeeded()", e)
 
                                     }
                                 
@@ -305,7 +295,7 @@ this.get()
 
 
     public getTesting(): string{
-this.updateIfNeeded()
+this.this.updateIfNeeded()
 
 
 
@@ -316,9 +306,8 @@ this.updateIfNeeded()
 
 
     public getTestHtmlPath(): string{
-this.updateIfNeeded()
+this.this.updateIfNeeded()
 
-    
                         if(testHtmlPath != 
                                     null
                                 )
@@ -347,9 +336,8 @@ this.updateIfNeeded()
 
 
     public getMainPath(): string{
-this.updateIfNeeded()
+this.this.updateIfNeeded()
 
-    
                         if(mainPath != 
                                     null
                                 )
@@ -417,7 +405,7 @@ var abPath = abPath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isTestingValid(testing: string): boolean{
 var testing = testing
@@ -436,9 +424,9 @@ var testing = testing
         
         
 
-put(TESTING, this.getTesting())
-put(MAINPATH, this.getMainPath())
-put(TESTHTMLPATH, this.getTestHtmlPath())
+hashMap!.put(TESTING, this.getTesting())
+hashMap!.put(MAINPATH, this.getMainPath())
+hashMap!.put(TESTHTMLPATH, this.getTestHtmlPath())
 
 
 

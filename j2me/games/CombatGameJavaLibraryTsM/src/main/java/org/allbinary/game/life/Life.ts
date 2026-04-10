@@ -49,14 +49,13 @@ public constructor (lives: number, maxlives: number){
 var maxlives = maxlives
 this.maxlives= maxlives
 
-    
                         if(lives > this.maxlives)
                         
                                     {
                                     
 
 
-                            throw Exception("To Many Lives")
+                            throw Error("To Many Lives")
 
                                     }
                                 
@@ -89,12 +88,10 @@ this.lives= this.startLives
     public add(lives: number){
 var lives = lives
 
-    
                         if(!this.reachedLimit())
                         
                                     {
                                     
-    
                         if(this.lives +lives <= this.getMaxlives())
                         
                                     {
@@ -115,7 +112,6 @@ var lives = lives
 
     public isAlive(): boolean{
 
-    
                         if(this.lives <= 0)
                         
                                     {
@@ -153,7 +149,6 @@ var lives = lives
 
     reachedLimit(): boolean{
 
-    
                         if(this.lives > this.maxlives || this.lives < 0)
                         
                                     {
@@ -182,12 +177,10 @@ var lives = lives
     public deaths(lives: number){
 var lives = lives
 
-    
                         if(!this.reachedLimit())
                         
                                     {
                                     
-    
                         if(this.lives -lives >= 0)
                         
                                     {

@@ -52,7 +52,7 @@ public constructor (widthAndHeight: number, basicColor: BasicColor){
 var basicColor = basicColor
 this.width= widthAndHeight
 this.height= widthAndHeight
-this.setBasicColorP(basicColor)
+this.this.setBasicColorP(basicColor)
 }
 
 public constructor (width: number, height: number, basicColor: BasicColor){
@@ -63,7 +63,7 @@ var height = height
 var basicColor = basicColor
 this.width= width
 this.height= height
-this.setBasicColorP(basicColor)
+this.this.setBasicColorP(basicColor)
 }
 
 
@@ -75,8 +75,8 @@ this.setBasicColorP(basicColor)
 var graphics = graphics
 var x = x
 var y = y
-setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
-drawArc(x, y, width, height, 0, TOTAL_ANGLE)
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
+graphics.drawArc(x, y, width, height, 0, TOTAL_ANGLE)
 }
 
 

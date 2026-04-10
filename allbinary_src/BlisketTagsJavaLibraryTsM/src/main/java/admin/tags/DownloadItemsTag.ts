@@ -39,30 +39,27 @@ export class DownloadItemsTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(DownloadItemsHelperFactory())
-this.setTagRequestHelperFactory(DownloadItemsRequestHelperFactory())
+            this.this.setTagHelperFactory(DownloadItemsHelperFactory())
+this.this.setTagRequestHelperFactory(DownloadItemsRequestHelperFactory())
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.isEnabled())
                         
                                     {
                                     
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.BACKUP) != 0 && this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.RESTORE) != 0 && this.getCommand()!.compareTo(this.commonStrings!.CREATE) != 0 && this.getCommand()!.compareTo(this.commonStrings!.DROP) != 0)
                         
                                     {
@@ -71,8 +68,8 @@ this.setTagRequestHelperFactory(DownloadItemsRequestHelperFactory())
         
         
 
-isValid(this, parentTag)
-put(AbTagData.PARENT, parentTag)
+ParentInventoryTagHelper.getInstance()!.isValid(this, parentTag)
+this.getPropertiesHashMap()!.put(AbTagData.PARENT, parentTag)
 
                                     }
                                 
@@ -96,7 +93,7 @@ put(AbTagData.PARENT, parentTag)
     
 } catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

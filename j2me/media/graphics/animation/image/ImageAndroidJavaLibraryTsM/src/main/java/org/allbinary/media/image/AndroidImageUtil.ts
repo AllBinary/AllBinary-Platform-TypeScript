@@ -63,14 +63,14 @@ export class AndroidImageUtil
     //var bitmap = bitmap
     //var originalBitmap = originalBitmap
     //var paint = paint
-eraseColor(Color.TRANSPARENT)
+bitmap.eraseColor(Color.TRANSPARENT)
 
     var canvas: Canvas = new android.graphics.Canvas();
         
         
 
-setBitmap(bitmap)
-drawBitmap(originalBitmap, 0.0f, 0.0f, paint)
+canvas.setBitmap(bitmap)
+canvas.drawBitmap(originalBitmap, 0.0f, 0.0f, paint)
 }
 
 
@@ -83,7 +83,7 @@ drawBitmap(originalBitmap, 0.0f, 0.0f, paint)
         
         
 
-eraseColor(Color.TRANSPARENT)
+androidImage!.getBitmap()!.eraseColor(Color.TRANSPARENT)
 
     var canvas: Canvas = androidImage!.getCanvas()!;
         
@@ -94,7 +94,7 @@ eraseColor(Color.TRANSPARENT)
         
         
 
-drawBitmap(originalAndroidImage!.getBitmap(), 0.0f, 0.0f, paint)
+canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0f, 0.0f, paint)
 }
 
 
@@ -108,19 +108,19 @@ drawBitmap(originalAndroidImage!.getBitmap(), 0.0f, 0.0f, paint)
         
         
 
-eraseColor(Color.TRANSPARENT)
+androidImage!.getBitmap()!.eraseColor(Color.TRANSPARENT)
 
     var canvas: Canvas = androidImage!.getCanvas()!;
         
         
 
-concat(matrix)
+canvas.concat(matrix)
 
     var originalAndroidImage: AndroidImageInterface = originalImage as AndroidImageInterface;
         
         
 
-drawBitmap(originalAndroidImage!.getBitmap(), 0.0f, 0.0f, paint)
+canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0f, 0.0f, paint)
 }
 
 

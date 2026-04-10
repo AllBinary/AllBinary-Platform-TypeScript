@@ -81,7 +81,6 @@ var speed = speed
 var damage = damage
 var dissipation = dissipation
 
-    
                         if(speed < MAX && speed != 0L && !messageSent)
                         
                                     {
@@ -95,19 +94,18 @@ var dissipation = dissipation
         
         
 
-put(StringMaker().
+PreLogUtil.put(StringMaker().
                             append(MESSAGE)!.appendlong(speed)!.toString(), this, commonStrings!.CONSTRUCTOR)
 messageSent= true
 
                                     }
                                 
-this.setReloadTime(reloadTime)
-this.setTargetingTime(targetingTime)
-this.setDamage(damage)
-this.setDissipation(dissipation)
-this.setSpeed(BasicDecimal(speed))
+this.this.setReloadTime(reloadTime)
+this.this.setTargetingTime(targetingTime)
+this.this.setDamage(damage)
+this.this.setDissipation(dissipation)
+this.this.setSpeed(BasicDecimal(speed))
 
-    
                         if(dissipation != ZERO)
                         
                                     {
@@ -126,7 +124,7 @@ this.setSpeed(BasicDecimal(speed))
         
         
 
-this.setRange((value *9).toInt() /10)
+this.this.setRange((value *9).toInt() /10)
 
                                     }
                                 
@@ -223,9 +221,9 @@ var range = range
         
 
 stringArray[index++]= stringBuffer!.append(DAMAGE)!.appendint(this.getDamage())!.toString()
-delete(0, stringBuffer!.length())
+stringBuffer!.delete(0, stringBuffer!.length())
 stringArray[index++]= stringBuffer!.append(RANGE)!.appendint(this.getRange())!.toString()
-delete(0, stringBuffer!.length())
+stringBuffer!.delete(0, stringBuffer!.length())
 stringArray[index++]= stringBuffer!.append(RELOAD)!.appendlong(this.getReloadTime())!.toString()
 
 
@@ -242,11 +240,11 @@ stringArray[index++]= stringBuffer!.append(RELOAD)!.appendlong(this.getReloadTim
         
         
 
-appendint(this.getDamage())
-append(CommonSeps.getInstance()!.SPACE)
-appendint(this.getRange())
-append(CommonSeps.getInstance()!.SPACE)
-appendlong(this.getReloadTime())
+stringBuffer!.append(DAMAGE)!.appendint(this.getDamage())
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(RANGE)!.appendint(this.getRange())
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(RELOAD)!.appendlong(this.getReloadTime())
 
 
 

@@ -50,19 +50,18 @@ export class FullScreenUtil
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(fullScreenInterface: Canvas, commandListener: CommandListener){
     //var fullScreenInterface = fullScreenInterface
     //var commandListener = commandListener
 
-    
                         if(commandListener != 
                                     null
                                 )
                         
                                     {
-                                    this.init(fullScreenInterface)
+                                    this.this.init(fullScreenInterface)
 
                                     }
                                 
@@ -87,7 +86,6 @@ export class FullScreenUtil
         
 
 
-    
                         if(features.isFeature(mainFeatureFactory!.FULL_SCREEN) != isFullScreen)
                         
                                     {

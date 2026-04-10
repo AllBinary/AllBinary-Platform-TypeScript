@@ -109,8 +109,8 @@ index >= 0; index--)
         
         
 
-setRtsLayer(waypointLayer)
-onWaypointEvent(WAYPOINT_EVENT)
+WAYPOINT_EVENT.setRtsLayer(waypointLayer)
+unitWaypointBehavior!.onWaypointEvent(WAYPOINT_EVENT)
 }
 
 
@@ -119,12 +119,11 @@ onWaypointEvent(WAYPOINT_EVENT)
         
 
 
-    
                         if(waypointLayer != NullPathFindingLayer.NULL_PATH_FINDING_LAYER)
                         
                                     {
-                                    setRtsLayer(waypointLayer)
-onWaypointEvent(WAYPOINT_EVENT)
+                                    WAYPOINT_EVENT.setRtsLayer(waypointLayer)
+unitWaypointBehavior!.onWaypointEvent(WAYPOINT_EVENT)
 
                                     }
                                 
@@ -135,7 +134,7 @@ onWaypointEvent(WAYPOINT_EVENT)
         
         
 
-put(commonStrings!.EXCEPTION, this, "set", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "set", e)
 }
 
 }

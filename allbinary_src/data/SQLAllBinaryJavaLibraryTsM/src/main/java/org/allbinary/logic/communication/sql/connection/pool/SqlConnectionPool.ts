@@ -114,13 +114,12 @@ private constructor (){
             }
 
 
-                @Throws(SQLException::class)
+                //@Throws(SQLException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public get(url: string): Connection{
 var url = url
 
-    
                         if(this.connectionHashMap == 
                                     null
                                 )
@@ -128,11 +127,10 @@ var url = url
                                     {
                                     this.connectionHashMap= HashMap<Any, Any>()
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGPOOL))
                         
                                     {
-                                    put(FIRST_NEW_CONNECTION_CREATED +url, this, METHOD_GET)
+                                    logUtil!.put(FIRST_NEW_CONNECTION_CREATED +url, this, METHOD_GET)
 
                                     }
                                 
@@ -152,7 +150,6 @@ var url = url
         
 
 
-    
                         if(connectionVector == 
                                     null
                                 )
@@ -160,7 +157,6 @@ var url = url
                                     {
                                     connectionVector= Vector()
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGPOOL))
                         
                                     {
@@ -169,11 +165,11 @@ var url = url
         
         
 
-append(FIRST)
-append(NEW_CONNECTION_FOR)
-append(url)
-append(CREATED)
-put(stringBuffer!.toString(), this, METHOD_GET)
+stringBuffer!.append(FIRST)
+stringBuffer!.append(NEW_CONNECTION_FOR)
+stringBuffer!.append(url)
+stringBuffer!.append(CREATED)
+logUtil!.put(stringBuffer!.toString(), this, METHOD_GET)
 
                                     }
                                 
@@ -187,16 +183,14 @@ put(stringBuffer!.toString(), this, METHOD_GET)
                                     }
                                 
                              else 
-    
                         if(connectionVector!.length == 0)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGPOOL))
                         
                                     {
-                                    put(StringBuilder().
+                                    logUtil!.put(StringBuilder().
                             append(NEW_CONNECTION_FOR)!.append(url)!.append(CREATED)!.toString(), this, METHOD_GET)
 
                                     }
@@ -237,24 +231,22 @@ i < size; i++)
         
 
 
-    
                         if(!sqlConnection!.isClosed())
                         
                                     {
-                                    remove(sqlConnection)
-put(url, connectionVector)
+                                    connectionVector!.remove(sqlConnection)
+this.connectionHashMap!.put(url, connectionVector)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGPOOL))
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-append(NUMBER_OF_SQL_CONNECTIONS_FOR)
-append(url)
-append(IS)
-appendint(connectionVector!.length)
-put(NUMBER_OF_SQL_CONNECTION_VECTORS +this.connectionHashMap!.size, this, METHOD_GET)
-put(stringBuffer!.toString(), this, METHOD_GET)
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(NUMBER_OF_SQL_CONNECTIONS_FOR)
+stringBuffer!.append(url)
+stringBuffer!.append(IS)
+stringBuffer!.appendint(connectionVector!.length)
+logUtil!.put(NUMBER_OF_SQL_CONNECTION_VECTORS +this.connectionHashMap!.size, this, METHOD_GET)
+logUtil!.put(stringBuffer!.toString(), this, METHOD_GET)
 
                                     }
                                 
@@ -276,7 +268,6 @@ put(stringBuffer!.toString(), this, METHOD_GET)
                         }
                             
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGPOOL))
                         
                                     {
@@ -285,10 +276,10 @@ put(stringBuffer!.toString(), this, METHOD_GET)
         
         
 
-append(NEW_CONNECTION_FOR)
-append(url)
-append(CREATED)
-put(stringBuffer!.toString(), this, METHOD_GET)
+stringBuffer!.append(NEW_CONNECTION_FOR)
+stringBuffer!.append(url)
+stringBuffer!.append(CREATED)
+logUtil!.put(stringBuffer!.toString(), this, METHOD_GET)
 
                                     }
                                 
@@ -301,14 +292,13 @@ put(stringBuffer!.toString(), this, METHOD_GET)
 }
 
 
-                @Throws(SQLException::class)
+                //@Throws(SQLException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public add(url: string, sqlConnection: Connection){
 var url = url
 var sqlConnection = sqlConnection
 
-    
                         if(!sqlConnection!.isClosed())
                         
                                     {
@@ -316,7 +306,6 @@ var sqlConnection = sqlConnection
     var connectionVector: Vector
 
 
-    
                         if(this.connectionHashMap == 
                                     null
                                 )
@@ -324,14 +313,13 @@ var sqlConnection = sqlConnection
                                     {
                                     this.connectionHashMap= HashMap<Any, Any>()
 connectionVector= Vector()
-add(sqlConnection)
+connectionVector!.add(sqlConnection)
 
                                     }
                                 
                         else {
                             connectionVector= this.connectionHashMap!.get(url as Object) as Vector
 
-    
                         if(connectionVector == 
                                     null
                                 )
@@ -341,13 +329,12 @@ add(sqlConnection)
 
                                     }
                                 
-add(sqlConnection)
-put(url, connectionVector)
+connectionVector!.add(sqlConnection)
+this.connectionHashMap!.put(url, connectionVector)
 
                         }
                             
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGPOOL))
                         
                                     {
@@ -356,12 +343,12 @@ put(url, connectionVector)
         
         
 
-append(NUMBER_OF_SQL_CONNECTIONS_FOR)
-append(url)
-append(IS)
-appendint(connectionVector!.length)
-put(NUMBER_OF_SQL_CONNECTION_VECTORS +this.connectionHashMap!.size, this, METHOD_ADD)
-put(stringBuffer!.toString(), this, METHOD_ADD)
+stringBuffer!.append(NUMBER_OF_SQL_CONNECTIONS_FOR)
+stringBuffer!.append(url)
+stringBuffer!.append(IS)
+stringBuffer!.appendint(connectionVector!.length)
+logUtil!.put(NUMBER_OF_SQL_CONNECTION_VECTORS +this.connectionHashMap!.size, this, METHOD_ADD)
+logUtil!.put(stringBuffer!.toString(), this, METHOD_ADD)
 
                                     }
                                 
@@ -369,11 +356,10 @@ put(stringBuffer!.toString(), this, METHOD_ADD)
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGPOOL))
                         
                                     {
-                                    put(CONNECTION_ALLREADY_CLOSED, this, METHOD_ADD)
+                                    logUtil!.put(CONNECTION_ALLREADY_CLOSED, this, METHOD_ADD)
 
                                     }
                                 

@@ -49,7 +49,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(width: number, height: number): Image{
     //var width = width
@@ -68,7 +68,7 @@ private constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage(width: number, height: number, maxScaleX: number, maxScaleY: number): Image{
     //var width = width

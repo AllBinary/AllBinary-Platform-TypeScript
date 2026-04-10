@@ -39,7 +39,7 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(sourceLayerInterface: AllBinaryLayer, x: number, y: number, z: number, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreable: ScoreableInterface): WeaponLayer{
 var sourceLayerInterface = sourceLayerInterface
@@ -55,8 +55,8 @@ var scoreable = scoreable
         
         
 
-init(x, y, z)
-init(sourceLayerInterface, angle, otherAngle, weaponProperties, scoreable)
+weaponLayer!.init(x, y, z)
+weaponLayer!.init(sourceLayerInterface, angle, otherAngle, weaponProperties, scoreable)
 
 
 

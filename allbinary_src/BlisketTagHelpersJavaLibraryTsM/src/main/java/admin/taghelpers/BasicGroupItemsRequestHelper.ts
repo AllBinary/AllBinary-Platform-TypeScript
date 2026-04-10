@@ -89,7 +89,7 @@ public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
             var hashMap = hashMap
 var pageContext = pageContext
 this.request= pageContext!.getRequest() as HttpServletRequest
-this.getFormData()
+this.this.getFormData()
 }
 
 
@@ -116,17 +116,17 @@ this.lastModified= request.getParameter(EntryData.getInstance()!.LASTMODIFIED)
         
         
 
-put(BasicItemData.ID, id)
-put(BasicGroupItemData.ITEM_ONE, this.itemOne)
-put(BasicGroupItemData.ITEM_TWO, this.itemTwo)
-put(BasicGroupItemData.ITEM_THREE, this.itemThree)
-put(BasicGroupItemData.ITEM_FOUR, this.itemFour)
-put(BasicGroupItemData.ITEM_FIVE, this.itemFive)
-put(BasicGroupItemData.ITEM_SIX, this.itemSix)
-put(BasicGroupItemData.ITEM_SEVEN, this.itemSeven)
-put(BasicGroupItemData.ITEM_EIGHT, this.itemEight)
-put(BasicGroupItemData.ITEM_NINE, this.itemNine)
-put(BasicGroupItemData.ITEM_TEN, this.itemTen)
+values.put(BasicItemData.ID, id)
+values.put(BasicGroupItemData.ITEM_ONE, this.itemOne)
+values.put(BasicGroupItemData.ITEM_TWO, this.itemTwo)
+values.put(BasicGroupItemData.ITEM_THREE, this.itemThree)
+values.put(BasicGroupItemData.ITEM_FOUR, this.itemFour)
+values.put(BasicGroupItemData.ITEM_FIVE, this.itemFive)
+values.put(BasicGroupItemData.ITEM_SIX, this.itemSix)
+values.put(BasicGroupItemData.ITEM_SEVEN, this.itemSeven)
+values.put(BasicGroupItemData.ITEM_EIGHT, this.itemEight)
+values.put(BasicGroupItemData.ITEM_NINE, this.itemNine)
+values.put(BasicGroupItemData.ITEM_TEN, this.itemTen)
 
     var calendar: Calendar = Calendar.getInstance()!;
         
@@ -139,7 +139,7 @@ put(BasicGroupItemData.ITEM_TEN, this.itemTen)
         
         
 
-put(EntryData.getInstance()!.LASTMODIFIED, time)
+values.put(EntryData.getInstance()!.LASTMODIFIED, time)
 
 
 
@@ -169,31 +169,30 @@ put(EntryData.getInstance()!.LASTMODIFIED, time)
         
         
 
-add(this.id)
-add(this.itemOne)
-add(this.itemTwo)
-add(this.itemThree)
-add(this.itemFour)
-add(this.itemFive)
-add(this.itemSix)
-add(this.itemSeven)
-add(this.itemEight)
-add(this.itemNine)
-add(this.itemTen)
-add(time)
-add(time)
-insert(values)
+values.add(this.id)
+values.add(this.itemOne)
+values.add(this.itemTwo)
+values.add(this.itemThree)
+values.add(this.itemFour)
+values.add(this.itemFive)
+values.add(this.itemSix)
+values.add(this.itemSeven)
+values.add(this.itemEight)
+values.add(this.itemNine)
+values.add(this.itemTen)
+values.add(time)
+values.add(time)
+BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.insert(values)
 
     var success: string = "Successfully inserted " +id +" into items table";
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "insert()")
+                                    logUtil!.put(success, this, "insert()")
 
                                     }
                                 
@@ -211,11 +210,10 @@ insert(values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "inserts()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "inserts()", e)
 
                                     }
                                 
@@ -233,18 +231,17 @@ insert(values)
     public delete(): string{
 
         try {
-            delete(id)
+            BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.delete(id)
 
     var success: string = "Successfully deleted";
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "delete()")
+                                    logUtil!.put(success, this, "delete()")
 
                                     }
                                 
@@ -262,11 +259,10 @@ insert(values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "delete()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e)
 
                                     }
                                 
@@ -294,13 +290,12 @@ insert(values)
         
         
 
-update(values)
+BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.update(values)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(id +" " +success, this, "update()")
+                                    logUtil!.put(id +" " +success, this, "update()")
 
                                     }
                                 
@@ -318,11 +313,10 @@ update(values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
 
                                     }
                                 

@@ -28,8 +28,8 @@ expect export class ExceptionUtil
     public static getInstance(): ExceptionUtil
 
 
-    public readonly PRETEND_EXCEPTION: Exception
-    public getStackTrace(e: Throwable): string
+    public readonly PRETEND_EXCEPTION: Error
+    public getStackTrace(e: Error): string
 
 }
                 

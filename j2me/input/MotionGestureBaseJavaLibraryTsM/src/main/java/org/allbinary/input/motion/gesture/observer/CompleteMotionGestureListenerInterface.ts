@@ -25,7 +25,7 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 interface CompleteMotionGestureListenerInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onMotionGestureCompleted(list: BasicArrayList)
 

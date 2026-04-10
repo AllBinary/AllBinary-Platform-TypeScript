@@ -22,11 +22,11 @@
 interface SecuredNativeLibraryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     load()
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     unload()
 

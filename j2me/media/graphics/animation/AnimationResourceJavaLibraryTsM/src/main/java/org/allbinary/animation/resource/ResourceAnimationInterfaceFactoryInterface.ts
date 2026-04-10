@@ -25,7 +25,7 @@ import { BasicAnimationInterfaceFactoryInterface } from "../../../../org/allbina
 interface ResourceAnimationInterfaceFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getBasicAnimationInterfaceFactoryInstance(resource: string): BasicAnimationInterfaceFactoryInterface
 

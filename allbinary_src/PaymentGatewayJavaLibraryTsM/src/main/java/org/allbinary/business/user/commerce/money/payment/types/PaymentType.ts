@@ -55,7 +55,7 @@ this.paymentTransactionInterfaceFactoryInterface=
 this.paymentProcessorInterfaceFactoryInterface= 
                                         null
                                     
-add(this)
+PaymentTypeUtil.getInstance()!.add(this)
 }
 
 protected constructor (basicPaymentType: BasicPaymentType, paymentTransactionInterfaceFactoryInterface: PaymentTransactionInterfaceFactoryInterface, paymentProcessorInterfaceFactoryInterface: PaymentProcessorInterfaceFactoryInterface){
@@ -67,15 +67,14 @@ var paymentProcessorInterfaceFactoryInterface = paymentProcessorInterfaceFactory
 this.basicPaymentType= basicPaymentType
 this.paymentTransactionInterfaceFactoryInterface= paymentTransactionInterfaceFactoryInterface
 this.paymentProcessorInterfaceFactoryInterface= paymentProcessorInterfaceFactoryInterface
-add(this)
+PaymentTypeUtil.getInstance()!.add(this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getPaymentTransactionInterfaceFactoryInterface(): PaymentTransactionInterfaceFactoryInterface{
 
-    
                         if(this.paymentTransactionInterfaceFactoryInterface == 
                                     null
                                 )
@@ -84,7 +83,7 @@ add(this)
                                     
 
 
-                            throw Exception("PaymentTransactionInterfaceFactoryInterface is Null")
+                            throw Error("PaymentTransactionInterfaceFactoryInterface is Null")
 
                                     }
                                 
@@ -97,11 +96,10 @@ add(this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getPaymentProcessorInterfaceFactoryInterface(): PaymentProcessorInterfaceFactoryInterface{
 
-    
                         if(this.paymentProcessorInterfaceFactoryInterface == 
                                     null
                                 )
@@ -110,7 +108,7 @@ add(this)
                                     
 
 
-                            throw Exception("PaymentProcessorInterfaceFactoryInterface is Null")
+                            throw Error("PaymentProcessorInterfaceFactoryInterface is Null")
 
                                     }
                                 
@@ -129,26 +127,24 @@ add(this)
         
         
 
-addAll(this.getBasicPaymentType()!.toVector())
+vector.addAll(this.getBasicPaymentType()!.toVector())
 
-    
                         if(this.paymentTransactionInterfaceFactoryInterface != 
                                     null
                                 )
                         
                                     {
-                                    add(this.paymentTransactionInterfaceFactoryInterface!.::class.toString()!)
+                                    vector.add(this.paymentTransactionInterfaceFactoryInterface!.::class.toString()!)
 
                                     }
                                 
 
-    
                         if(this.paymentProcessorInterfaceFactoryInterface != 
                                     null
                                 )
                         
                                     {
-                                    add(this.paymentProcessorInterfaceFactoryInterface!.::class.toString()!)
+                                    vector.add(this.paymentProcessorInterfaceFactoryInterface!.::class.toString()!)
 
                                     }
                                 
@@ -167,26 +163,24 @@ addAll(this.getBasicPaymentType()!.toVector())
         
         
 
-putAll(this.getBasicPaymentType()!.toHashMap())
+hashMap!.putAll(this.getBasicPaymentType()!.toHashMap())
 
-    
                         if(this.paymentTransactionInterfaceFactoryInterface != 
                                     null
                                 )
                         
                                     {
-                                    put(PaymentGatewayData.PAYMENTTRANSACTIONINTERFACEFACTORYINTERFACE.toString(), this.paymentTransactionInterfaceFactoryInterface!.::class.toString()!)
+                                    hashMap!.put(PaymentGatewayData.PAYMENTTRANSACTIONINTERFACEFACTORYINTERFACE.toString(), this.paymentTransactionInterfaceFactoryInterface!.::class.toString()!)
 
                                     }
                                 
 
-    
                         if(this.paymentProcessorInterfaceFactoryInterface != 
                                     null
                                 )
                         
                                     {
-                                    put(PaymentGatewayData.PAYMENTPROCESSORINTERFACEFACTORYINTERFACE.toString(), this.paymentProcessorInterfaceFactoryInterface!.::class.toString()!)
+                                    hashMap!.put(PaymentGatewayData.PAYMENTPROCESSORINTERFACEFACTORYINTERFACE.toString(), this.paymentProcessorInterfaceFactoryInterface!.::class.toString()!)
 
                                     }
                                 

@@ -74,11 +74,10 @@ this.portion= Portion(hashMap)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e)
 
                                     }
                                 
@@ -110,11 +109,10 @@ this.portion= Portion(hashMap)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "create()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "create()", e)
 
                                     }
                                 
@@ -148,11 +146,10 @@ this.portion= Portion(hashMap)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "restore()")
+                                    logUtil!.put(success, this, "restore()")
 
                                     }
                                 
@@ -170,11 +167,10 @@ this.portion= Portion(hashMap)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "restore()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "restore()", e)
 
                                     }
                                 
@@ -203,11 +199,10 @@ this.portion= Portion(hashMap)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "backup()")
+                                    logUtil!.put(success, this, "backup()")
 
                                     }
                                 
@@ -225,11 +220,10 @@ this.portion= Portion(hashMap)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "backup()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "backup()", e)
 
                                     }
                                 

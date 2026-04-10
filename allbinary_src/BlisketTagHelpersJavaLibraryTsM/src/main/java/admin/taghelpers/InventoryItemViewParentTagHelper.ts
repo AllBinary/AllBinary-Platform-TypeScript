@@ -59,18 +59,17 @@ export class InventoryItemViewParentTagHelper
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInventoryItemView(inventoryTag: HelperTag): InventoryItemView{
 var inventoryTag = inventoryTag
 
-    
                         if(inventoryTag != 
                                     null
                                 )
                         
                                     {
-                                    this.checkForValidationViewHelper(inventoryTag!.getHelper())
+                                    this.this.checkForValidationViewHelper(inventoryTag!.getHelper())
 
     var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;
         
@@ -82,7 +81,6 @@ var inventoryTag = inventoryTag
         
 
 
-    
                         if(viewObject!.getTypeId() != InventoryItemView.TYPE_ID)
                         
                                     {
@@ -91,13 +89,13 @@ var inventoryTag = inventoryTag
         
         
 
-append("Must have ")
-append("InventoryItemView and not: ")
-append(inventoryTag!.getHelper()!.::class.toString()!)
+stringBuffer!.append("Must have ")
+stringBuffer!.append("InventoryItemView and not: ")
+stringBuffer!.append(inventoryTag!.getHelper()!.::class.toString()!)
 
 
 
-                            throw Exception(stringBuffer!.toString())
+                            throw Error(stringBuffer!.toString())
 
                                     }
                                 
@@ -114,25 +112,24 @@ append(inventoryTag!.getHelper()!.::class.toString()!)
                             
 
 
-                            throw Exception("Must have parent tag.")
+                            throw Error("Must have parent tag.")
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDownloadableInventoryItemView(inventoryTag: HelperTag): DownloadableInventoryItemView{
 var inventoryTag = inventoryTag
 
-    
                         if(inventoryTag != 
                                     null
                                 )
                         
                                     {
-                                    this.checkForValidationViewHelper(inventoryTag!.getHelper())
+                                    this.this.checkForValidationViewHelper(inventoryTag!.getHelper())
 
     var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;
         
@@ -144,7 +141,6 @@ var inventoryTag = inventoryTag
         
 
 
-    
                         if(viewObject!.getTypeId() != DownloadableInventoryItemView.TYPE_ID)
                         
                                     {
@@ -153,13 +149,13 @@ var inventoryTag = inventoryTag
         
         
 
-append("Must have ")
-append("DownloadableInventoryItemView and not: ")
-append(inventoryTag!.getHelper()!.::class.toString()!)
+stringBuffer!.append("Must have ")
+stringBuffer!.append("DownloadableInventoryItemView and not: ")
+stringBuffer!.append(inventoryTag!.getHelper()!.::class.toString()!)
 
 
 
-                            throw Exception(stringBuffer!.toString())
+                            throw Error(stringBuffer!.toString())
 
                                     }
                                 
@@ -176,25 +172,24 @@ append(inventoryTag!.getHelper()!.::class.toString()!)
                             
 
 
-                            throw Exception("Must have parent tag.")
+                            throw Error("Must have parent tag.")
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getRequestMapInterface(inventoryTag: HelperTag): RequestMapInterface{
 var inventoryTag = inventoryTag
 
-    
                         if(inventoryTag != 
                                     null
                                 )
                         
                                     {
-                                    this.checkForValidationViewHelper(inventoryTag!.getHelper())
+                                    this.this.checkForValidationViewHelper(inventoryTag!.getHelper())
 
     var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;
         
@@ -206,7 +201,6 @@ var inventoryTag = inventoryTag
         
 
 
-    
                         if(viewObject!.getTypeId() != InventoryItemView.TYPE_ID && viewObject!.getTypeId() != DownloadableInventoryItemView.TYPE_ID)
                         
                                     {
@@ -215,13 +209,13 @@ var inventoryTag = inventoryTag
         
         
 
-append("Must have ")
-append("specific TYPE_ID and not: ")
-append(inventoryTag!.getHelper()!.::class.toString()!)
+stringBuffer!.append("Must have ")
+stringBuffer!.append("specific TYPE_ID and not: ")
+stringBuffer!.append(inventoryTag!.getHelper()!.::class.toString()!)
 
 
 
-                            throw Exception(stringBuffer!.toString())
+                            throw Error(stringBuffer!.toString())
 
                                     }
                                 
@@ -238,19 +232,18 @@ append(inventoryTag!.getHelper()!.::class.toString()!)
                             
 
 
-                            throw Exception("Must have parent tag.")
+                            throw Error("Must have parent tag.")
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public checkForValidationViewHelper(helperObject: any = {}){
 var helperObject = helperObject
 
-    
                         if(!(helperObject is ValidationViewHelper))
                         
                                     {
@@ -259,14 +252,14 @@ var helperObject = helperObject
         
         
 
-append("Must have ")
-append("ValidationViewHelper")
-append("and not: ")
-append(helperObject!::class.toString()!)
+stringBuffer!.append("Must have ")
+stringBuffer!.append("ValidationViewHelper")
+stringBuffer!.append("and not: ")
+stringBuffer!.append(helperObject!::class.toString()!)
 
 
 
-                            throw Exception(stringBuffer!.toString())
+                            throw Error(stringBuffer!.toString())
 
                                     }
                                 

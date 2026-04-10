@@ -92,7 +92,7 @@ export class PartnerIdentifierFileUtil
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e)
 
 
 

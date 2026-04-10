@@ -77,7 +77,7 @@ var pageContext = pageContext
 this.request= pageContext!.getRequest() as HttpServletRequest
 this.weblisketSession= WeblisketSession(hashMap, pageContext)
 this.portion= Portion(hashMap)
-this.getFormData()
+this.this.getFormData()
 }
 
 
@@ -104,14 +104,13 @@ this.value= request.getParameter("VALUE")
         
         
 
-add(this.weblisketSession!.getUserName(), paymentInterface)
-setDefault(this.weblisketSession!.getUserName(), Integer(paymentEntity!.getLastId(this.weblisketSession!.getUserName())))
+paymentEntity!.add(this.weblisketSession!.getUserName(), paymentInterface)
+paymentEntity!.setDefault(this.weblisketSession!.getUserName(), Integer(paymentEntity!.getLastId(this.weblisketSession!.getUserName())))
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "addPayment()")
+                                    logUtil!.put(success, this, "addPayment()")
 
                                     }
                                 
@@ -129,11 +128,10 @@ setDefault(this.weblisketSession!.getUserName(), Integer(paymentEntity!.getLastI
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "addPayment()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "addPayment()", e)
 
                                     }
                                 
@@ -161,13 +159,12 @@ setDefault(this.weblisketSession!.getUserName(), Integer(paymentEntity!.getLastI
         
         
 
-setDefault(this.weblisketSession!.getUserName(), Integer(this.value))
+paymentEntity!.setDefault(this.weblisketSession!.getUserName(), Integer(this.value))
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "selectPayment()")
+                                    logUtil!.put(success, this, "selectPayment()")
 
                                     }
                                 
@@ -185,11 +182,10 @@ setDefault(this.weblisketSession!.getUserName(), Integer(this.value))
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "selectPayment()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "selectPayment()", e)
 
                                     }
                                 
@@ -217,29 +213,27 @@ setDefault(this.weblisketSession!.getUserName(), Integer(this.value))
         
         
 
-remove(this.weblisketSession!.getUserName(), Integer(this.value))
+paymentEntity!.remove(this.weblisketSession!.getUserName(), Integer(this.value))
 
     var paymentInterface: PaymentInterface = paymentEntity!.getDefault(this.weblisketSession!.getUserName())!;
         
         
 
 
-    
                         if(paymentInterface == 
                                     null
                                 )
                         
                                     {
-                                    setDefault(this.weblisketSession!.getUserName(), Integer(paymentEntity!.getLastId(this.weblisketSession!.getUserName())))
+                                    paymentEntity!.setDefault(this.weblisketSession!.getUserName(), Integer(paymentEntity!.getLastId(this.weblisketSession!.getUserName())))
 
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "removePayment()")
+                                    logUtil!.put(success, this, "removePayment()")
 
                                     }
                                 
@@ -257,11 +251,10 @@ remove(this.weblisketSession!.getUserName(), Integer(this.value))
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "removePayment()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "removePayment()", e)
 
                                     }
                                 
@@ -290,11 +283,10 @@ remove(this.weblisketSession!.getUserName(), Integer(this.value))
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, commonStrings!.DROP)
+                                    logUtil!.put(success, this, commonStrings!.DROP)
 
                                     }
                                 
@@ -312,11 +304,10 @@ remove(this.weblisketSession!.getUserName(), Integer(this.value))
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e)
 
                                     }
                                 
@@ -345,11 +336,10 @@ remove(this.weblisketSession!.getUserName(), Integer(this.value))
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "create()")
+                                    logUtil!.put(success, this, "create()")
 
                                     }
                                 
@@ -367,11 +357,10 @@ remove(this.weblisketSession!.getUserName(), Integer(this.value))
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "create()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "create()", e)
 
                                     }
                                 
@@ -400,11 +389,10 @@ remove(this.weblisketSession!.getUserName(), Integer(this.value))
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "restore()")
+                                    logUtil!.put(success, this, "restore()")
 
                                     }
                                 
@@ -422,11 +410,10 @@ remove(this.weblisketSession!.getUserName(), Integer(this.value))
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "restore()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "restore()", e)
 
                                     }
                                 
@@ -455,11 +442,10 @@ remove(this.weblisketSession!.getUserName(), Integer(this.value))
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "backup()")
+                                    logUtil!.put(success, this, "backup()")
 
                                     }
                                 
@@ -477,11 +463,10 @@ remove(this.weblisketSession!.getUserName(), Integer(this.value))
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "backup()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "backup()", e)
 
                                     }
                                 
@@ -496,7 +481,7 @@ remove(this.weblisketSession!.getUserName(), Integer(this.value))
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public update(): string{
 

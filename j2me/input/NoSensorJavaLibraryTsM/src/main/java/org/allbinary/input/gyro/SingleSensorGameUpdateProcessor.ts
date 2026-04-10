@@ -22,14 +22,14 @@
 export class SingleSensorGameUpdateProcessor extends SensorGameUpdateProcessor {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(anyType: any = {}){
 var anyType = anyType
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public sendNotifications(anyType: any = {}){
 var anyType = anyType

@@ -45,7 +45,7 @@ export class ActivityFractureUtilAPI1 extends ActivityFractureUtil {
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(activity: Activity){
     //var activity = activity
@@ -54,7 +54,7 @@ export class ActivityFractureUtilAPI1 extends ActivityFractureUtil {
 
     public setFullScreen(activity: Activity){
     //var activity = activity
-setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+activity.getWindow()!.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
 }
 
 

@@ -69,7 +69,7 @@ export class CloudImageServlet extends HttpServlet {
         
         
 
-                @Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException::class, IOException::class)
             
     processRequest(request: HttpServletRequest, response: HttpServletResponse){
     //var request = request
@@ -83,7 +83,7 @@ export class CloudImageServlet extends HttpServlet {
 
 
         try {
-            init(request)
+            BlisketServletUtil.getInstance()!.init(request)
 
     var requestURI: string = request.getRequestURI()!;
         
@@ -105,29 +105,27 @@ inputStream= CloudStreamUtil.getInstance()!.getFile(file)
         
         
 
-setContentType("image/jpeg;charset=utf-8")
-write(byteArray)
+response.setContentType("image/jpeg;charset=utf-8")
+response.getOutputStream()!.write(byteArray)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put(this.commonStrings!.EXCEPTION, this, "processRequest()", e)
+                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "processRequest()", e)
 
                                     }
                                 
 }
 
          finally {
-            close(response.getOutputStream())
+            StreamUtil.getInstance()!.close(response.getOutputStream())
 
-    
                         if(!StreamUtil.getInstance()!.close(inputStream))
                         
                                     {
-                                    sendError(HttpServletResponse.SC_NOT_FOUND)
+                                    response.sendError(HttpServletResponse.SC_NOT_FOUND)
 
                                     }
                                 
@@ -137,7 +135,7 @@ write(byteArray)
 }
 
 
-                @Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException::class, IOException::class)
             
     doGet(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
@@ -146,7 +144,7 @@ processRequest(request, response)
 }
 
 
-                @Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException::class, IOException::class)
             
     doPost(request: HttpServletRequest, response: HttpServletResponse){
 var request = request

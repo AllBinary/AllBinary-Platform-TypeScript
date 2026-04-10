@@ -39,12 +39,11 @@ export class CreateUserFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(hashMap: HashMap<Any, Any>): UserInterface{
 var hashMap = hashMap
 
-    
                         if(hashMap != 
                                     null
                                 )
@@ -56,7 +55,6 @@ var hashMap = hashMap
         
 
 
-    
                         if(!StringValidationUtil.getInstance()!.isEmpty(roleString))
                         
                                     {
@@ -78,7 +76,7 @@ var hashMap = hashMap
                             
 
 
-                            throw Exception("No Role Specified")
+                            throw Error("No Role Specified")
 
                         }
                             
@@ -89,7 +87,7 @@ var hashMap = hashMap
                             
 
 
-                            throw Exception("Null HashMap")
+                            throw Error("Null HashMap")
 
                         }
                             

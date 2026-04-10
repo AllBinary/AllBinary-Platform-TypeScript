@@ -35,11 +35,11 @@ interface AbFileInterface {
 
     canWrite(): boolean
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     createNewFile(): boolean
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     delete(): boolean
 
@@ -49,7 +49,7 @@ interface AbFileInterface {
 
     getAbsolutePath(): string
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     getCanonicalPath(): string
 

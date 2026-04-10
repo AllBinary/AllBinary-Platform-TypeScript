@@ -194,7 +194,6 @@ export class RTSLayer extends MultiPlayerGameLayer
     public static isRTSLayer(layerInterface: AllBinaryLayer): boolean{
     //var layerInterface = layerInterface
 
-    
                         if(layerInterface!.getType() >= RTSLayer.getMinStaticType() && layerInterface!.getType() <= RTSLayer.getMaxStaticType())
                         
                                     {
@@ -370,11 +369,11 @@ protected constructor (remoteInfo: RemoteInfo, groupInterface: Group[], rootName
 
                             //For kotlin this is before the body of the constructor.
                     
-this.initInputProcessors()
+this.this.initInputProcessors()
 this.rootName= rootName
 this.healthInterface= healthInterface
 this.rtsFormInput= rtsFormInput
-this.setPosition(x, y, z)
+this.this.setPosition(x, y, z)
 this.verticleBuildAnimationInterface= verticleBuildAnimationInterfaceFactoryInterface!.getInstance(0) as IndexedAnimation
 this.buildAnimationInterface= buildAnimationInterfaceFactoryInterface!.getInstance(0)
 this.baseAnimationInterface= baseAnimationInterfaceFactoryInterface!.getInstance(0)
@@ -405,7 +404,7 @@ protected constructor (remoteInfo: RemoteInfo)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.initInputProcessors()
+this.this.initInputProcessors()
 this.rtsFormInput= NullRTSFormInputFactory.getInstance()
 
     var animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
@@ -434,11 +433,11 @@ this.geographicMapCellPositionAreaBase= GeographicMapCellPositionAreaBase.NULL_G
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
         
@@ -459,24 +458,24 @@ setAllBinaryGameLayerManager(allBinaryGameLayerManager)
         
         
 
-setTiledLayer(tiledLayer)
-this.updateWaypointBehavior(geographicMapInterface)
+viewPosition2!.setTiledLayer(tiledLayer)
+this.this.updateWaypointBehavior(geographicMapInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public updateWaypointBehavior(geographicMapInterface: BasicGeographicMap){
     //var geographicMapInterface = geographicMapInterface
-update(geographicMapInterface)
+this.geographicMapCellPositionAreaBase!.update(geographicMapInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-addListener(this as AllBinaryLayer)
+ViewPositionEventHandler.getInstance()!.addListener(this as AllBinaryLayer)
 this.animationInterface= this.buildAnimationInterface
 this.hackVerticleBuild= 0
 }
@@ -485,7 +484,7 @@ this.hackVerticleBuild= 0
     public select(){
 this.rangeAnimation= this.initRangeAnimation
 this.sensorRangeAnimation= this.initSensorRangeAnimation
-this.setSelected(true)
+this.this.setSelected(true)
 }
 
 
@@ -497,7 +496,7 @@ this.setSelected(true)
 
 this.rangeAnimation= animation
 this.sensorRangeAnimation= animation
-this.setSelected(false)
+this.this.setSelected(false)
 }
 
 
@@ -538,11 +537,11 @@ this.selected= selected
 
 
     public initInputProcessors(){
-init(this.inputProcessorArray)
+GameInputProcessorUtil.init(this.inputProcessorArray)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processBuiltTick(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
@@ -555,28 +554,27 @@ this.animationInterface= this.indexedButShouldBeRotationAnimationInterface
 
         try {
             
-    
                         if(this.isCompleted())
                         
                                     {
-                                    this.processBuiltTick(allBinaryLayerManager)
+                                    this.this.processBuiltTick(allBinaryLayerManager)
 
                                     }
                                 
                         else {
-                            this.build()
+                            this.this.build()
 
                         }
                             
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "processTick", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "processTick", e)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processInput(layerManager: AllBinaryLayerManager){
     //var layerManager = layerManager
@@ -592,7 +590,7 @@ put(commonStrings!.EXCEPTION, this, "processTick", e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onMovementFound(trackingEvent: TrackingEvent){
     //var trackingEvent = trackingEvent
@@ -601,7 +599,7 @@ put(commonStrings!.EXCEPTION, this, "processTick", e)
 
     public paint(graphics: Graphics){
     //var graphics = graphics
-paintFirst(graphics)
+super.paintFirst(graphics)
 
     var viewPosition: ViewPosition = this.getViewPosition()!;
         
@@ -617,11 +615,11 @@ paintFirst(graphics)
         
         
 
-paint(graphics, viewX, viewY)
+this.getAnimationInterface()!.paint(graphics, viewX, viewY)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public damage(damage: number, damageType: number){
     //var damage = damage
@@ -644,18 +642,17 @@ paint(graphics, viewX, viewY)
         
 
     public downgrade(){
-downgrade(this)
+rtsLayerUtil!.downgrade(this)
 }
 
 
     public upgrade(){
-upgrade(this)
+rtsLayerUtil!.upgrade(this)
 }
 
 
     public isCompleted(): boolean{
 
-    
                         if(this.hackVerticleBuild < BUILD_VALUE)
                         
                                     {
@@ -681,22 +678,21 @@ upgrade(this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     build(){
 
-    
                         if(this.buildFrameTimeHelper!.isTime())
                         
                                     {
                                     this.animationInterface= this.buildAnimationInterface
-nextFrame()
+this.verticleBuildAnimationInterface!.nextFrame()
 this.hackVerticleBuild++
 
                                     }
                                 
 this.percentCompleteP= 100 *this.hackVerticleBuild /BUILD_VALUE
-updateInfo()
+this.getHudPaintable()!.updateInfo()
 }
 
 
@@ -742,7 +738,6 @@ updateInfo()
 
     public isUpgradeable(): boolean{
 
-    
                         if(this.getLevel() < this.getMaxLevel())
                         
                                     {
@@ -770,7 +765,6 @@ updateInfo()
 
     public isDowngradeable(): boolean{
 
-    
                         if(this.getLevel() > 1)
                         
                                     {
@@ -842,7 +836,7 @@ this.animationInterface= animationInterface
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setTarget(targetGameLayer: PathFindingLayerInterface){
     //var targetGameLayer = targetGameLayer
@@ -856,7 +850,7 @@ this.animationInterface= animationInterface
         
         
 
-setTarget(targetGameLayer as PathFindingLayerInterface, anotherTargetDistance)
+waypointBehaviorBase!.setTarget(targetGameLayer as PathFindingLayerInterface, anotherTargetDistance)
 }
 
 
@@ -918,7 +912,7 @@ this.healthInterface= healthInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isDestroyed(): boolean{
 
@@ -930,18 +924,17 @@ this.healthInterface= healthInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setDestroyed(destroyed: boolean){
     //var destroyed = destroyed
 this.destroyed= destroyed
 
-    
                         if(this.isDestroyed())
                         
                                     {
-                                    add(this)
-removeListener(this)
+                                    DestroyedLayerProcessor.getInstance()!.add(this)
+ViewPositionEventHandler.getInstance()!.removeListener(this)
 
                                     }
                                 
@@ -978,7 +971,7 @@ removeListener(this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public handleCost(ownerLayer: PathFindingLayerInterface){
 var ownerLayer = ownerLayer
@@ -1069,7 +1062,7 @@ var ownerLayer = ownerLayer
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(geographicMapCellHistory: GeographicMapCellHistory, geographicMapCellPositionBasicArrayList: BasicArrayList){
     //var geographicMapCellHistory = geographicMapCellHistory
@@ -1077,7 +1070,7 @@ var ownerLayer = ownerLayer
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getCurrentGeographicMapCellPosition(): GeographicMapCellPosition{
 
@@ -1087,7 +1080,7 @@ var ownerLayer = ownerLayer
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getTopLeftGeographicMapCellPosition(): GeographicMapCellPosition{
 
@@ -1106,7 +1099,7 @@ var ownerLayer = ownerLayer
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setClosestGeographicMapCellHistory(pathsList: BasicArrayList){
     //var pathsList = pathsList
@@ -1118,14 +1111,14 @@ var ownerLayer = ownerLayer
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setLoad(resource: number){
 var resource = resource
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getSurroundingGeographicMapCellPositionList(): BasicArrayList{
 
@@ -1135,14 +1128,14 @@ var resource = resource
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public trackTo(reason: string){
     //var reason = reason
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public trackTo(dx: number, dy: number){
     //var dx = dx
@@ -1168,7 +1161,7 @@ var resource = resource
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public buildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition): boolean{
     //var allbinaryLayer = allbinaryLayer
@@ -1228,7 +1221,7 @@ var resource = resource
 
     public setFrame(index: number){
 var index = index
-setFrame(index)
+this.getRotationAnimationInterface()!.setFrame(index)
 }
 
 

@@ -75,7 +75,7 @@ protected constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(){
 }
@@ -92,12 +92,12 @@ protected constructor (){
 
 
     public shutdown(){
-put(commonStrings!.START, this, "shutdown")
+logUtil!.put(commonStrings!.START, this, "shutdown")
 }
 
 
     public onSensorChange(){
-log(commonStrings!.NOT_IMPLEMENTED, this)
+ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this)
 }
 
 

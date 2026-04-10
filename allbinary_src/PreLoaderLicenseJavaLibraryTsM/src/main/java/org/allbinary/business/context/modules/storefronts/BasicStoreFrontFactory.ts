@@ -53,7 +53,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(storeName: string): BasicStoreFrontInterface{
 var storeName = storeName
@@ -73,7 +73,6 @@ var storeName = storeName
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
                                     {
@@ -82,7 +81,7 @@ var storeName = storeName
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 

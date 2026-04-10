@@ -76,7 +76,7 @@ public constructor (gameCanvas: AllBinaryGameCanvas){
 
 
 
-                            throw Exception("No Longer Used")
+                            throw Error("No Longer Used")
 }
 
 
@@ -86,9 +86,9 @@ public constructor (gameCanvas: AllBinaryGameCanvas){
         
         
 
-draw(this.offScreenImage[this.circularIndexUtil!.getIndex()]!.getGraphics())
-next()
-next()
+myCanvas!.draw(this.offScreenImage[this.circularIndexUtil!.getIndex()]!.getGraphics())
+this.circularIndexUtil!.next()
+this.drawCircularIndexUtil!.next()
 }
 
 
@@ -99,7 +99,7 @@ next()
     public paint(graphics: Graphics){
 var graphics = graphics
 this.previousImage= this.offScreenImage[this.drawCircularIndexUtil!.getIndex()]!
-drawImage(this.previousImage, 0, 0, anchor)
+graphics.drawImage(this.previousImage, 0, 0, anchor)
 }
 
 

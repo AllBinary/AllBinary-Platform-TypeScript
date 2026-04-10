@@ -33,7 +33,7 @@ export class KeyFactoryInitializer extends Init {
         
 
     public init(){
-put(this.commonStrings!.START, this, this.commonStrings!.INIT)
+logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.INIT)
 }
 
 

@@ -53,7 +53,7 @@ this.animationBehaviorFactory= animationBehaviorFactory
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

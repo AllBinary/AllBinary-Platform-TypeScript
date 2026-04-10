@@ -63,11 +63,11 @@ private constructor (id: number){
 
             super();
             var id = id
-init(MotionEventFactory(eventPool, id))
+eventPool!.init(MotionEventFactory(eventPool, id))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getInstance(motionGestureInput: MotionGestureInput): MotionGestureEvent{

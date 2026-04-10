@@ -66,10 +66,10 @@ this.type= type
         
         
 
-append("CacheType: Vendor: ")
-append(this.getVendor())
-append(" Type: ")
-append(this.getType())
+stringBuffer!.append("CacheType: Vendor: ")
+stringBuffer!.append(this.getVendor())
+stringBuffer!.append(" Type: ")
+stringBuffer!.append(this.getType())
 
 
 

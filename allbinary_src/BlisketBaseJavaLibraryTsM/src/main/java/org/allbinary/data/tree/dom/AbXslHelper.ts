@@ -53,7 +53,7 @@ export class AbXslHelper
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public translate(xslFile: AbFile, xmlFile: AbFile): string{
     //var xslFile = xslFile
@@ -67,7 +67,7 @@ export class AbXslHelper
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public translate(xslPath: AbPath, xmlPath: AbPath): string{
     //var xslPath = xslPath
@@ -81,7 +81,7 @@ export class AbXslHelper
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public translate(xsltFilePath: string, xmlFilePath: string): string{
     //var xsltFilePath = xsltFilePath

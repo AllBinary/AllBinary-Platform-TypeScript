@@ -55,13 +55,13 @@ public constructor (poolName: string, numThreads: number, priority: number)
 
     public runTaskWithPriority(task: PriorityRunnable){
     //var task = task
-runTaskWithPriority(task)
+super.runTaskWithPriority(task)
 }
 
 
     public runTask(task: Runnable){
 var task = task
-runTask(task)
+super.runTask(task)
 }
 
 

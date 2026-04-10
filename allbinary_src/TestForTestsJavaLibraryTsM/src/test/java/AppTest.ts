@@ -19,7 +19,7 @@ export class AppTest
         
 
     testAddition(){
-assertEquals(2, 1 +1)
+Assertions.assertEquals(2, 1 +1)
 }
 
 
@@ -34,13 +34,13 @@ assertEquals(2, 1 +1)
         
         
 
-assertEquals(expected, actual)
+Assertions.assertEquals(expected, actual)
 }
 
 
     testBooleanAssertions(){
-assertTrue(true)
-assertFalse(false)
+Assertions.assertTrue(true)
+Assertions.assertFalse(false)
 }
 
 

@@ -121,7 +121,6 @@ this.file= hashMap!.get(DownloadItemData.FILE) as String
         
 
 
-    
                         if(!StringValidationUtil.getInstance()!.isEmpty(value))
                         
                                     {
@@ -140,7 +139,6 @@ this.file= hashMap!.get(DownloadItemData.FILE) as String
         
 
 
-    
                         if(!StringValidationUtil.getInstance()!.isEmpty(validTime))
                         
                                     {
@@ -209,21 +207,21 @@ this.retries= hashMap!.get(DownloadItemData.RETRIES) as String
         
         
 
-add(getId())
-add(this.basicItemId)
-add(this.enabled)
-add(this.getSpecialName())
-add(this.getVersion())
-add(this.getChanges())
-add(this.getSystem())
-add(this.getPlatform())
-add(this.getLicenseFile())
-add(this.getFile())
-add(this.getSize()!.toString())
-add(this.getValidTime()!.toString())
-add(this.getRetries())
-add(time)
-add(time)
+values.add(getId())
+values.add(this.basicItemId)
+values.add(this.enabled)
+values.add(this.getSpecialName())
+values.add(this.getVersion())
+values.add(this.getChanges())
+values.add(this.getSystem())
+values.add(this.getPlatform())
+values.add(this.getLicenseFile())
+values.add(this.getFile())
+values.add(this.getSize()!.toString())
+values.add(this.getValidTime()!.toString())
+values.add(this.getRetries())
+values.add(time)
+values.add(time)
 
 
 
@@ -239,19 +237,19 @@ add(time)
         
         
 
-put(DownloadItemData.ID, this.getId())
-put(BasicItemData.ID, this.basicItemId)
-put(EntryData.getInstance()!.ENABLE, this.enabled)
-put(DownloadItemData.SYSTEM, this.getSystem())
-put(DownloadItemData.PLATFORM, this.getPlatform())
-put(DownloadItemData.SPECIAL_NAME, this.getSpecialName())
-put(DownloadItemData.VERSION, this.getVersion())
-put(DownloadItemData.CHANGES, this.getChanges())
-put(DownloadItemData.LICENSE_FILE, this.getLicenseFile())
-put(DownloadItemData.FILE, this.getFile())
-put(DownloadItemData.SIZE, this.getSize()!.toString())
-put(DownloadItemData.VALID_TIME, this.getValidTime()!.toString())
-put(DownloadItemData.RETRIES, this.getRetries())
+values.put(DownloadItemData.ID, this.getId())
+values.put(BasicItemData.ID, this.basicItemId)
+values.put(EntryData.getInstance()!.ENABLE, this.enabled)
+values.put(DownloadItemData.SYSTEM, this.getSystem())
+values.put(DownloadItemData.PLATFORM, this.getPlatform())
+values.put(DownloadItemData.SPECIAL_NAME, this.getSpecialName())
+values.put(DownloadItemData.VERSION, this.getVersion())
+values.put(DownloadItemData.CHANGES, this.getChanges())
+values.put(DownloadItemData.LICENSE_FILE, this.getLicenseFile())
+values.put(DownloadItemData.FILE, this.getFile())
+values.put(DownloadItemData.SIZE, this.getSize()!.toString())
+values.put(DownloadItemData.VALID_TIME, this.getValidTime()!.toString())
+values.put(DownloadItemData.RETRIES, this.getRetries())
 
     var calendar: Calendar = Calendar.getInstance()!;
         
@@ -264,7 +262,7 @@ put(DownloadItemData.RETRIES, this.getRetries())
         
         
 
-put(EntryData.getInstance()!.LASTMODIFIED, time)
+values.put(EntryData.getInstance()!.LASTMODIFIED, time)
 
 
 

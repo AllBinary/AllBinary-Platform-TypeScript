@@ -54,8 +54,8 @@ this.demoCanvas= demoCanvas
     public run(){
 
         try {
-            setStartTime(gameTickTimeDelayHelper!.setStartTime())
-processGame()
+            demoCanvas!.getLoopTimeHelperP()!.setStartTime(gameTickTimeDelayHelper!.setStartTime())
+demoCanvas!.processGame()
 } catch(e: Exception)
             {
 
@@ -63,16 +63,16 @@ processGame()
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processLoopSleep(){
-processLoopSleep()
+demoCanvas!.processLoopSleep()
 }
 
 

@@ -86,7 +86,6 @@ private constructor (){
         
 
 
-    
                         if(SDK_VERSION > 22)
                         
                                     {
@@ -144,7 +143,6 @@ private constructor (){
         
 
 
-    
                         if(notificationBuilder == 
                                     null
                                 )
@@ -155,7 +153,7 @@ private constructor (){
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.NOT_IMPLEMENTED)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.NOT_IMPLEMENTED)
 
 
 
@@ -165,7 +163,7 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.NOT_IMPLEMENTED)
 
                                     }
                                 
-build(context, command, message, integer, pendingIntent)
+notificationBuilder!.build(context, command, message, integer, pendingIntent)
 }
 
 

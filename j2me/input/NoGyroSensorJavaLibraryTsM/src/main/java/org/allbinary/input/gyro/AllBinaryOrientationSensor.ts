@@ -53,13 +53,13 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getOrientation(): Orientation{
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 

@@ -49,7 +49,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 var eventObject = eventObject
@@ -59,7 +59,7 @@ var eventListenerInterface = eventListenerInterface
         
         
 
-onTechEvent(eventObject)
+techEventListenerInterface!.onTechEvent(eventObject)
 }
 
 

@@ -68,13 +68,13 @@ export class AnimationFactoryInitializationVisitor
         
         
 
-appendfloat(this.dx.toFloat())
-appendfloat(this.dy.toFloat())
-append(commonLabels!.WIDTH_LABEL)
-appendint(width)
-append(commonSeps!.SPACE)
-append(commonLabels!.HEIGHT_LABEL)
-appendint(height)
+stringBuffer!.append(PositionStrings.getInstance()!.DX_LABEL)!.appendfloat(this.dx.toFloat())
+stringBuffer!.append(PositionStrings.getInstance()!.DY_LABEL)!.appendfloat(this.dy.toFloat())
+stringBuffer!.append(commonLabels!.WIDTH_LABEL)
+stringBuffer!.appendint(width)
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(commonLabels!.HEIGHT_LABEL)
+stringBuffer!.appendint(height)
 
 
 

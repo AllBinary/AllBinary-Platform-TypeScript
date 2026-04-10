@@ -50,7 +50,7 @@ var readAheadIndex = readAheadIndex
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public readLine(): string{
 

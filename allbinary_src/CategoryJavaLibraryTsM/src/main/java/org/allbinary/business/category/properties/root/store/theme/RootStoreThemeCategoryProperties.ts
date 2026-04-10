@@ -112,7 +112,7 @@ var categoryPropertiesHashMap = categoryPropertiesHashMap
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public initPath(){
 
@@ -130,11 +130,11 @@ var categoryPropertiesHashMap = categoryPropertiesHashMap
         
         
 
-append(AbPathData.getInstance()!.SEPARATOR)
-append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-append(storeFrontInterface!.getName())
-append(AbPathData.getInstance()!.SEPARATOR)
-append(FREEBLISKET_PATH_GLOBALS.getInstance()!.THEMEPATH)
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
+stringBuffer!.append(storeFrontInterface!.getName())
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.THEMEPATH)
 
     var abPath: AbPath = new AbPath(stringBuffer!.toString());
         
@@ -146,7 +146,7 @@ append(FREEBLISKET_PATH_GLOBALS.getInstance()!.THEMEPATH)
         
 
 this.webAppAbPath= AbPath(httpServletRequest!.getContextPath() +abPath!.toString())
-this.setRootFilePath(AbPath(URLGLOBALS.getMainPath() +abPath!.toString()))
+this.this.setRootFilePath(AbPath(URLGLOBALS.getMainPath() +abPath!.toString()))
 }
 
 

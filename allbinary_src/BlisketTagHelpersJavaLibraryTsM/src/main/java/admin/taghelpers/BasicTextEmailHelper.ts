@@ -69,7 +69,7 @@ this.hashMap= hashMap
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public send(){
 
@@ -97,7 +97,7 @@ this.hashMap= hashMap
         
         
 
-receiveEmailInfo(UserEmailEventNameData.INSTALLER, adminEmailInfo)
+adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.INSTALLER, adminEmailInfo)
 }
 
 

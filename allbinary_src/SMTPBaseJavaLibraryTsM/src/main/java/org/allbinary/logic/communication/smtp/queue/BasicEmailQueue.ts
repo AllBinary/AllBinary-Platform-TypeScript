@@ -44,7 +44,6 @@ export class BasicEmailQueue extends BasicQueue
 
     public static getInstance(): BasicEmailQueue{
 
-    
                         if(BasicEmailQueue.basicEmailQueue == 
                                     null
                                 )
@@ -72,13 +71,13 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public offer(emailInterface: EmailInterface): boolean{
 var emailInterface = emailInterface
-this.offer(emailInterface as Object)
-this.post(emailInterface)
+this.this.offer(emailInterface as Object)
+this.this.post(emailInterface)
 
 
 
@@ -91,7 +90,7 @@ this.post(emailInterface)
 
     remove(emailInterface: EmailInterface){
 var emailInterface = emailInterface
-this.remove(emailInterface as Object)
+this.this.remove(emailInterface as Object)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -106,17 +105,16 @@ this.remove(emailInterface as Object)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     post(emailInterface: EmailInterface){
 var emailInterface = emailInterface
 
-    
                         if(this.send(emailInterface))
                         
                                     {
-                                    this.remove(emailInterface)
+                                    this.this.remove(emailInterface)
 processAllUnsent()
 
                                     }
@@ -124,7 +122,7 @@ processAllUnsent()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     processAllUnsent(){
@@ -149,11 +147,10 @@ index < size; index++)
         
 
 
-    
                         if(this.send(emailInterface))
                         
                                     {
-                                    this.remove(emailInterface)
+                                    this.this.remove(emailInterface)
 processAllUnsent()
 
                                     }
@@ -169,21 +166,19 @@ var emailInterface = emailInterface
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put("Sending: " +emailInterface!.log(), this, "send")
+                                    logUtil!.put("Sending: " +emailInterface!.log(), this, "send")
 
                                     }
                                 
-send(emailInterface!.getMimeMessage())
+Transport.send(emailInterface!.getMimeMessage())
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put("Email Send Debug: " +emailInterface!.getDebugInfo(), this, "send")
+                                    logUtil!.put("Email Send Debug: " +emailInterface!.getDebugInfo(), this, "send")
 
                                     }
                                 
@@ -196,11 +191,10 @@ send(emailInterface!.getMimeMessage())
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put("Failed Email Send Debug: " +emailInterface!.getDebugInfo(), this, "send", e)
+                                    logUtil!.put("Failed Email Send Debug: " +emailInterface!.getDebugInfo(), this, "send", e)
 
                                     }
                                 

@@ -62,7 +62,7 @@ public constructor (adConfiguration: AdConfiguration){
             super();
             var adConfiguration = adConfiguration
 this.adConfiguration= adConfiguration
-addListener(this)
+VirtualKeyboardEventHandler.getInstance()!.addListener(this)
 }
 
 
@@ -73,7 +73,7 @@ var viewArray = viewArray
 
     public init(anyType: any = {}){
 var anyType = anyType
-this.init()
+this.this.init()
 }
 
 
@@ -112,11 +112,11 @@ var location = location
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onVirtualKeyboardEvent(virtualKeyboardEvent: VirtualKeyboardEvent){
 var virtualKeyboardEvent = virtualKeyboardEvent
@@ -133,13 +133,13 @@ var gameType = gameType
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public playingAdState(){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public notPlayingAdState(){
 }

@@ -77,11 +77,10 @@ public constructor (){
 
             super();
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -94,16 +93,14 @@ this.enabled= enabled
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isEnabled(): boolean{
 
-    
                         if(!StringValidationUtil.getInstance()!.isEmpty(this.enabled))
                         
                                     {
                                     
-    
                         if(BooleanUtil.getInstance()!.getFromString(this.enabled) || this.enabled.compareTo("on") == 0)
                         
                                     {
@@ -192,7 +189,7 @@ this.total= total
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public drop(): string{
 
@@ -233,11 +230,10 @@ this.total= total
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e)
 
                                     }
                                 
@@ -252,7 +248,7 @@ this.total= total
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public create(): string{
 
@@ -293,11 +289,10 @@ this.total= total
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "create()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "create()", e)
 
                                     }
                                 
@@ -312,7 +307,7 @@ this.total= total
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public restore(): string{
 
@@ -353,11 +348,10 @@ this.total= total
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "restore()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "restore()", e)
 
                                     }
                                 
@@ -372,7 +366,7 @@ this.total= total
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public backup(): string{
 
@@ -413,11 +407,10 @@ this.total= total
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "backup()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "backup()", e)
 
                                     }
                                 
@@ -432,7 +425,7 @@ this.total= total
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public insert(): string{
 
@@ -468,11 +461,10 @@ this.total= total
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "insert()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insert()", e)
 
                                     }
                                 
@@ -487,7 +479,7 @@ this.total= total
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public delete(): string{
 
@@ -523,11 +515,10 @@ this.total= total
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "delete()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e)
 
                                     }
                                 
@@ -542,7 +533,7 @@ this.total= total
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public update(): string{
 
@@ -578,11 +569,10 @@ this.total= total
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
 
                                     }
                                 
@@ -597,13 +587,12 @@ this.total= total
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
@@ -617,27 +606,25 @@ this.total= total
         
         
 
-append("TableTag Helper: ")
-append(this.getTagHelperFactoryInterface()!.::class.toString()!)
-append(" Request URI: ")
-append(request.getRequestURI())
-put(stringBuffer!.toString(), this, "doStartTag()")
+stringBuffer!.append("TableTag Helper: ")
+stringBuffer!.append(this.getTagHelperFactoryInterface()!.::class.toString()!)
+stringBuffer!.append(" Request URI: ")
+stringBuffer!.append(request.getRequestURI())
+logUtil!.put(stringBuffer!.toString(), this, "doStartTag()")
 
                                     }
                                 
 
-    
                         if(this.getTagRequestHelperFactoryInterface() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("TableTag RequestHelper: " +this.getTagRequestHelperFactoryInterface()!.::class.toString()!, this, "doStartTag()")
+                                    logUtil!.put("TableTag RequestHelper: " +this.getTagRequestHelperFactoryInterface()!.::class.toString()!, this, "doStartTag()")
 
                                     }
                                 
@@ -646,11 +633,10 @@ put(stringBuffer!.toString(), this, "doStartTag()")
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("TableTag RequestHelper: null", this, "doStartTag()")
+                                    logUtil!.put("TableTag RequestHelper: null", this, "doStartTag()")
 
                                     }
                                 
@@ -658,28 +644,24 @@ put(stringBuffer!.toString(), this, "doStartTag()")
                         }
                             
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("TableTag this.getCommand(): " +this.getCommand(), this, "doStartTag()")
+                                    logUtil!.put("TableTag this.getCommand(): " +this.getCommand(), this, "doStartTag()")
 
                                     }
                                 
 
-    
                         if(this.isEnabled())
                         
                                     {
                                     
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getCommand()!.compareTo(commonStrings!.INSERT) == 0 || this.getCommand()!.compareTo(SqlStrings.getInstance()!.INSERT_INTO) == 0 || this.getCommand()!.compareTo(commonStrings!.DELETE) == 0 || this.getCommand()!.compareTo(commonStrings!.UPDATE) == 0 || this.getCommand()!.compareTo(SqlStrings.getInstance()!.UPDATE) == 0)
                         
                                     {
@@ -688,34 +670,30 @@ put(stringBuffer!.toString(), this, "doStartTag()")
                                     }
                                 
 
-    
                         if(this.getCommand()!.compareTo(commonStrings!.INSERT) == 0 || this.getCommand()!.compareTo(SqlStrings.getInstance()!.INSERT_INTO) == 0)
                         
                                     {
-                                    this.insert()
+                                    this.this.insert()
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(commonStrings!.DELETE) == 0)
                         
                                     {
-                                    this.delete()
+                                    this.this.delete()
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(commonStrings!.UPDATE) == 0 || this.getCommand()!.compareTo(SqlStrings.getInstance()!.UPDATE) == 0)
                         
                                     {
-                                    this.update()
+                                    this.this.update()
 
                                     }
                                 
 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.BACKUP) == 0)
                         
                                     {
@@ -725,11 +703,10 @@ put(stringBuffer!.toString(), this, "doStartTag()")
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    print(output +"<br />")
+                                    this.pageContext!.getOut()!.print(output +"<br />")
 
                                     }
                                 
@@ -743,23 +720,21 @@ put(stringBuffer!.toString(), this, "doStartTag()")
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.RESTORE) == 0)
                         
                                     {
-                                    put("current", this.getCurrent())
-put("total", this.getTotal())
+                                    this.getPropertiesHashMap()!.put("current", this.getCurrent())
+this.getPropertiesHashMap()!.put("total", this.getTotal())
 
     var output: string = this.restore()!;
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    print(output +"<br />")
+                                    this.pageContext!.getOut()!.print(output +"<br />")
 
                                     }
                                 
@@ -773,7 +748,6 @@ put("total", this.getTotal())
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(commonStrings!.DROP) == 0)
                         
                                     {
@@ -783,11 +757,10 @@ put("total", this.getTotal())
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    print(output +"<br />")
+                                    this.pageContext!.getOut()!.print(output +"<br />")
 
                                     }
                                 
@@ -801,7 +774,6 @@ put("total", this.getTotal())
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(commonStrings!.CREATE) == 0)
                         
                                     {
@@ -811,11 +783,10 @@ put("total", this.getTotal())
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    print(output +"<br />")
+                                    this.pageContext!.getOut()!.print(output +"<br />")
 
                                     }
                                 
@@ -829,7 +800,6 @@ put("total", this.getTotal())
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(commonStrings!.INSERT) == 0)
                         
                                     {
@@ -839,11 +809,10 @@ put("total", this.getTotal())
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    print(output +"<br />")
+                                    this.pageContext!.getOut()!.print(output +"<br />")
 
                                     }
                                 
@@ -851,7 +820,6 @@ put("total", this.getTotal())
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(commonStrings!.DELETE) == 0)
                         
                                     {
@@ -861,11 +829,10 @@ put("total", this.getTotal())
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    print(output +"<br />")
+                                    this.pageContext!.getOut()!.print(output +"<br />")
 
                                     }
                                 
@@ -873,7 +840,6 @@ put("total", this.getTotal())
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(commonStrings!.UPDATE) == 0)
                         
                                     {
@@ -883,11 +849,10 @@ put("total", this.getTotal())
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    print(output +"<br />")
+                                    this.pageContext!.getOut()!.print(output +"<br />")
 
                                     }
                                 
@@ -908,7 +873,7 @@ put("total", this.getTotal())
     
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -918,7 +883,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

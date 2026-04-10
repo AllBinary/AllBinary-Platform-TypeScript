@@ -57,7 +57,6 @@ var anyType = anyType
         
 
 
-    
                         if(value.length < 2)
                         
                                     {
@@ -72,7 +71,6 @@ var anyType = anyType
         
 
 
-    
                         if(stringValidationUtil!.isNumber(value))
                         
                                     {
@@ -86,7 +84,6 @@ var anyType = anyType
                                     }
                                 
                              else 
-    
                         if(this.isLetter(charValue))
                         
                                     {
@@ -102,7 +99,7 @@ var anyType = anyType
                         else {
                             
         try {
-            fireError("Only Letters & Numbers Allowed")
+            TextNotificationUtil.getInstance()!.fireError("Only Letters & Numbers Allowed")
 } catch(e: Exception)
             {
 
@@ -110,7 +107,7 @@ var anyType = anyType
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e)
 }
 
 

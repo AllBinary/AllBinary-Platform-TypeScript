@@ -54,7 +54,7 @@ this.width= width
 this.height= height
 this.offsetX= offsetX
 this.offsetY= offsetY
-this.setBasicColorP(basicColor)
+this.this.setBasicColorP(basicColor)
 }
 
 
@@ -66,8 +66,8 @@ this.setBasicColorP(basicColor)
 var graphics = graphics
 var x = x
 var y = y
-setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
-drawRect(x +this.offsetX, y +this.offsetY, width, height)
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
+graphics.drawRect(x +this.offsetX, y +this.offsetY, width, height)
 }
 
 

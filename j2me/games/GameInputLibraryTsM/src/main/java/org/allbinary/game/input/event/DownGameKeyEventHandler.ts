@@ -86,7 +86,7 @@ private constructor (){
 
 
     public removeAllListeners(){
-removeAllListeners()
+super.removeAllListeners()
 
 
 
@@ -97,7 +97,7 @@ removeAllListeners()
         
 index >= 0; index--)
         {
-removeAllListeners()
+instanceArray[index]!.removeAllListeners()
 }
 
 }
@@ -105,7 +105,7 @@ removeAllListeners()
 
     public removeListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-removeListenerSingleThreaded(eventListenerInterface)
+super.removeListenerSingleThreaded(eventListenerInterface)
 
 
 
@@ -116,7 +116,7 @@ removeListenerSingleThreaded(eventListenerInterface)
         
 index >= 0; index--)
         {
-removeListenerSingleThreaded(eventListenerInterface)
+instanceArray[index]!.removeListenerSingleThreaded(eventListenerInterface)
 }
 
 }
@@ -125,7 +125,7 @@ removeListenerSingleThreaded(eventListenerInterface)
 
     public removeListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-removeListener(eventListenerInterface)
+super.removeListener(eventListenerInterface)
 
 
 
@@ -136,7 +136,7 @@ removeListener(eventListenerInterface)
         
 index >= 0; index--)
         {
-removeListener(eventListenerInterface)
+instanceArray[index]!.removeListener(eventListenerInterface)
 }
 
 }

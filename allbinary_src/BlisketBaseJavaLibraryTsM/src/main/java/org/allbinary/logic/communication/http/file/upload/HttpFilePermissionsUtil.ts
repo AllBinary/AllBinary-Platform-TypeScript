@@ -44,7 +44,7 @@ export class HttpFilePermissionsUtil
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public create(path: AbPath){
 var path = path
@@ -54,11 +54,10 @@ var path = path
         
 
 
-    
                         if(!file.isFile())
                         
                                     {
-                                    createNewFile()
+                                    file.createNewFile()
 
                                     }
                                 

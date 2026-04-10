@@ -118,18 +118,16 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
 
 
-    
                         if(command == 
                                     null
                                  || command.compareTo(UPDATEPRODUCT) != 0)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Invalid AdminCommand=" +command, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Invalid AdminCommand=" +command, this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -143,17 +141,15 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                                     }
                                 
 
-    
                         if(BasicItemValidation(this.itemInterface).
                             isValid() == Boolean.FALSE)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("BasicItem is not valid", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("BasicItem is not valid", this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -176,9 +172,9 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
         
 
-append(URLGLOBALS.getWebappPath())
-append(storeFrontInterface!.getCurrentHostNamePath())
-append(this.itemInterface!.getCategory())
+stringBuffer!.append(URLGLOBALS.getWebappPath())
+stringBuffer!.append(storeFrontInterface!.getCurrentHostNamePath())
+stringBuffer!.append(this.itemInterface!.getCategory())
 
     var fullCategory: string = stringBuffer!.toString()!;
         
@@ -190,16 +186,14 @@ append(this.itemInterface!.getCategory())
         
 
 
-    
                         if(!categoryFile!.isDirectory())
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Category Does Not Exist: " +fullCategory, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Category Does Not Exist: " +fullCategory, this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -218,7 +212,6 @@ append(this.itemInterface!.getCategory())
         
 
 
-    
                         if(inventoryEntity!.getItem(this.itemInterface!.getId()) == 
                                     null
                                 )
@@ -239,7 +232,6 @@ append(this.itemInterface!.getCategory())
         
 
 
-    
                         if(HttpFileUploadUtil.getInstance()!.isValid(anyType))
                         
                                     {
@@ -258,9 +250,8 @@ append(this.itemInterface!.getCategory())
         
         
 
-log(fileItem)
+HttpFileUploadUtil.log(fileItem)
 
-    
                         if(this.isValid(fileName, size) == Boolean.FALSE)
                         
                                     {
@@ -285,11 +276,10 @@ log(fileItem)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Exception in validation", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Exception in validation", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -325,7 +315,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public validationInfo(): string{
 
@@ -339,7 +329,6 @@ var document = document
         
 
 
-    
                         if(command == 
                                     null
                                  || command.compareTo(UPDATEPRODUCT) != 0)
@@ -354,7 +343,7 @@ var document = document
 
                                     }
                                 
-append(BasicItemValidation(this.itemInterface).
+stringBuffer!.append(BasicItemValidation(this.itemInterface).
                             validationInfo())
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;
@@ -367,35 +356,32 @@ append(BasicItemValidation(this.itemInterface).
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Category: " +fullCategory, this, "validationInfo()")
+                                    logUtil!.put("Category: " +fullCategory, this, "validationInfo()")
 
                                     }
                                 
 
         try {
             
-    
                         if(InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.getItem(this.itemInterface!.getId()) == 
                                     null
                                 )
                         
                                     {
-                                    append("Item does not exist.<br>")
+                                    stringBuffer!.append("Item does not exist.<br>")
 
                                     }
                                 
 } catch(e: MoneyException)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Existing Item With MoneyException", this, "validationInfo()")
+                                    logUtil!.put("Existing Item With MoneyException", this, "validationInfo()")
 
                                     }
                                 
@@ -407,7 +393,6 @@ append(BasicItemValidation(this.itemInterface).
         
 
 
-    
                         if(HttpFileUploadUtil.getInstance()!.isValid(anyType))
                         
                                     {
@@ -431,7 +416,7 @@ append(BasicItemValidation(this.itemInterface).
         
         
 
-this.validationInfo(stringBuffer, fileName, fileItemFieldName, size)
+this.this.validationInfo(stringBuffer, fileName, fileItemFieldName, size)
 
                                     }
                                 
@@ -444,7 +429,7 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     isValid(fileName: string, size: number): Boolean{
 var fileName = fileName
@@ -455,17 +440,14 @@ var size = size
         
 
 
-    
                         if(size > fileData!.MINIMAGEFILESIZE)
                         
                                     {
                                     
-    
                         if(size < fileData!.MAXIMAGEFILESIZE)
                         
                                     {
                                     
-    
                         if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN))
                         
                                     {
@@ -483,7 +465,6 @@ var size = size
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -492,11 +473,11 @@ var size = size
         
         
 
-append("File Size To Large: ")
-appendlong(size)
-append(">")
-appendint(fileData!.MAXIMAGEFILESIZE)
-put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+stringBuffer!.append("File Size To Large: ")
+stringBuffer!.appendlong(size)
+stringBuffer!.append(">")
+stringBuffer!.appendint(fileData!.MAXIMAGEFILESIZE)
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -509,7 +490,7 @@ put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
 
                         }
                             
-this.processImageFiles()
+this.this.processImageFiles()
 
                                     }
                                 
@@ -533,30 +514,26 @@ var size = size
         
 
 
-    
                         if(size > fileData!.MINIMAGEFILESIZE)
                         
                                     {
                                     
-    
                         if(fileItemFieldName!.compareTo(BasicItemData.IMAGE) == 0)
                         
                                     {
                                     
-    
                         if(size < fileData!.MAXIMAGEFILESIZE)
                         
                                     {
                                     
-    
                         if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN))
                         
                                     {
-                                    append("FileName must be >")
-appendint(fileData!.MINLEN)
-append("and <")
-appendint(fileData!.MAXLEN)
-append("<br />")
+                                    stringBuffer!.append("FileName must be >")
+stringBuffer!.appendint(fileData!.MINLEN)
+stringBuffer!.append("and <")
+stringBuffer!.appendint(fileData!.MAXLEN)
+stringBuffer!.append("<br />")
 
                                     }
                                 
@@ -564,11 +541,11 @@ append("<br />")
                                     }
                                 
                         else {
-                            append("Image File Is Not The Right Size. ")
-appendint(fileData!.MINIMAGEFILESIZE)
-append("< > ")
-appendint(fileData!.MAXIMAGEFILESIZE)
-append("<br />")
+                            stringBuffer!.append("Image File Is Not The Right Size. ")
+stringBuffer!.appendint(fileData!.MINIMAGEFILESIZE)
+stringBuffer!.append("< > ")
+stringBuffer!.appendint(fileData!.MAXIMAGEFILESIZE)
+stringBuffer!.append("<br />")
 
                         }
                             

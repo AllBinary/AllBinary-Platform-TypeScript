@@ -73,7 +73,6 @@ public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFac
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(lastImage != NullCanvas.NULL_IMAGE)
                         
                                     {
@@ -82,7 +81,7 @@ public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFac
         
         
 
-recycle()
+androidImageInterface!.getBitmap()!.recycle()
 
                                     }
                                 
@@ -95,7 +94,7 @@ lastImage= ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactor
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

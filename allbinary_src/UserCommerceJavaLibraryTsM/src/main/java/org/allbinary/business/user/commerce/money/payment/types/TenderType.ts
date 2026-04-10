@@ -36,7 +36,6 @@ this.name= name
     public isEqual(tenderType: TenderType): boolean{
 var tenderType = tenderType
 
-    
                         if(this.toString()!.compareTo(tenderType!.toString()) == 0)
                         
                                     {

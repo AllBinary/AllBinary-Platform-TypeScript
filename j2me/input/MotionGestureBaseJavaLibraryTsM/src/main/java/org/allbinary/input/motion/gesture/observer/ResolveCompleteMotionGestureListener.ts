@@ -63,12 +63,12 @@ public constructor (){
         
         
 
-put("MotionGesture to CompleteMotionGesture Reciever", this, commonStrings!.CONSTRUCTOR)
-addListener(GameKeyFromMotionGestureEventListener())
+logUtil!.put("MotionGesture to CompleteMotionGesture Reciever", this, commonStrings!.CONSTRUCTOR)
+CompleteMotionGestureInputEventHandler.getInstance()!.addListener(GameKeyFromMotionGestureEventListener())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onMotionGestureCompleted(list: BasicArrayList){
 var list = list
@@ -103,7 +103,6 @@ index >= 0; index--)
         
 
 
-    
                         if(association.isMotionGestureArrayEquals(list) == true)
                         
                                     {
@@ -112,7 +111,7 @@ index >= 0; index--)
         
         
 
-fireEvent(completeMotionGestureInputEvent)
+CompleteMotionGestureInputEventHandler.getInstance()!.fireEvent(completeMotionGestureInputEvent)
 break;
 
                     

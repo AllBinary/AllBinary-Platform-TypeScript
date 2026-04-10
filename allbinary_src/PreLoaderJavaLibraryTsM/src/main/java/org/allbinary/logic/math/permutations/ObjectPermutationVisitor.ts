@@ -29,8 +29,8 @@ this.data= data
 
     public visit(anyType: any = {}): any = {}{
 var anyType = anyType
-delete(0, stringBuilder!.length())
-this.print(data, stringBuilder)
+stringBuilder!.delete(0, stringBuilder!.length())
+this.this.print(data, stringBuilder)
 
 
 
@@ -47,7 +47,7 @@ var data = data
         
         
 
-this.print(data, stringBuilder)
+this.this.print(data, stringBuilder)
 }
 
 
@@ -70,11 +70,11 @@ var stringBuilder = stringBuilder
         
 i < size; i++)
         {
-append(data[i]!.hashCode())
-append(CommonSeps.getInstance()!.SPACE)
+stringBuilder!.append(data[i]!.hashCode())
+stringBuilder!.append(CommonSeps.getInstance()!.SPACE)
 }
 
-println(stringBuilder!.toString())
+System.out.println(stringBuilder!.toString())
 }
 
 

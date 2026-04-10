@@ -70,7 +70,7 @@ export class LogConfigTypeFactory
 private constructor (){
 
             super();
-            add(this.INIT_SERVER)
+            LogConfigTypes.LOGGING.add(this.INIT_SERVER)
 }
 
 

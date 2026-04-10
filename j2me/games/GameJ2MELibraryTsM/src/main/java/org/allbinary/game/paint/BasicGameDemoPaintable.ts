@@ -50,7 +50,7 @@ public constructor (mainDemoStatePaintable: Paintable, ownershipPaintable: Paint
 var ownershipPaintable = ownershipPaintable
 var helpPaintableInterface = helpPaintableInterface
 this.mainDemoStatePaintable= mainDemoStatePaintable
-this.setCurrentStatePaintable(NullPaintable.getInstance())
+this.this.setCurrentStatePaintable(NullPaintable.getInstance())
 this.ownershipPaintable= ownershipPaintable
 this.helpPaintableInterface= helpPaintableInterface
 }
@@ -59,25 +59,23 @@ this.helpPaintableInterface= helpPaintableInterface
     public setState(state: number){
 var state = state
 
-    
                         if(state == 0)
                         
                                     {
-                                    this.setCurrentStatePaintable(this.getMainDemoStatePaintable())
+                                    this.this.setCurrentStatePaintable(this.getMainDemoStatePaintable())
 
                                     }
                                 
                              else 
-    
                         if(state == 1)
                         
                                     {
-                                    this.setCurrentStatePaintable(this.helpPaintableInterface)
+                                    this.this.setCurrentStatePaintable(this.helpPaintableInterface)
 
                                     }
                                 
                         else {
-                            this.setCurrentStatePaintable(this.ownershipPaintable)
+                            this.this.setCurrentStatePaintable(this.ownershipPaintable)
 
                         }
                             
@@ -86,7 +84,7 @@ var state = state
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics)
+this.getCurrentStatePaintable()!.paint(graphics)
 }
 
 

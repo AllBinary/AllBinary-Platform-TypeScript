@@ -82,11 +82,11 @@ public constructor (hashMap: HashMap<Any, Any>){
 
             super();
             var hashMap = hashMap
-this.getFormData(hashMap)
+this.this.getFormData(hashMap)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getFormData(hashMap: HashMap<Any, Any>){
 var hashMap = hashMap
@@ -102,20 +102,18 @@ var hashMap = hashMap
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put(this.commonStrings!.START, this, commonStrings!.IS_VALID)
+                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.IS_VALID)
 
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("End: " +isValid, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("End: " +isValid, this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -128,11 +126,10 @@ var hashMap = hashMap
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -164,11 +161,10 @@ var hashMap = hashMap
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 
@@ -204,7 +200,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

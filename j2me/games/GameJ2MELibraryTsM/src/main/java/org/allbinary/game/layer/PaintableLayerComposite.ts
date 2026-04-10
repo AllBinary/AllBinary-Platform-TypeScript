@@ -56,7 +56,7 @@ this.paintableArray= paintableArray
         
 --index >= 0; )
         {
-paint(graphics)
+this.paintableArray[index]!.paint(graphics)
 }
 
 }
@@ -79,7 +79,7 @@ paint(graphics)
 --index >= 0; )
         {
 paintableInterface= this.paintableArray[index]! as PaintableInterface
-paintThreed(graphics)
+paintableInterface!.paintThreed(graphics)
 }
 
 }

@@ -82,25 +82,24 @@ this.newPassword= newPassword
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
-this.notifyStoreAdmin()
-this.notifyUser()
+this.this.notifyStoreAdmin()
+this.this.notifyUser()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     notifyStoreAdmin(){
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put("notifyStoreAdmin", this, "notifyStoreAdmin")
+                                    logUtil!.put("notifyStoreAdmin", this, "notifyStoreAdmin")
 
                                     }
                                 
@@ -129,15 +128,14 @@ this.notifyUser()
         
         
 
-receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emailInfo)
+adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emailInfo)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.EXCEPTION, this, "emailAdmin", e)
+                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "emailAdmin", e)
 
                                     }
                                 
@@ -146,17 +144,16 @@ receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emailInfo)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     notifyUser(){
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put("Email User", this, "notifyUser()")
+                                    logUtil!.put("Email User", this, "notifyUser()")
 
                                     }
                                 
@@ -185,15 +182,14 @@ receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emailInfo)
         
         
 
-receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emailInfo)
+userEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emailInfo)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.EXCEPTION, this, "notifyUser", e)
+                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "notifyUser", e)
 
                                     }
                                 

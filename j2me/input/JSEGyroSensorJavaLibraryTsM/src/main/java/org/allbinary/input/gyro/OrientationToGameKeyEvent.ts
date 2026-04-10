@@ -42,7 +42,6 @@ public constructor (){
 
             super();
             
-    
                         if(Features.getInstance()!.isFeature(SensorFeatureFactory.getInstance()!.NO_ORIENTATION))
                         
                                     {
@@ -54,7 +53,7 @@ public constructor (){
                             
 
 
-                            throw Exception("Not Such Feature")
+                            throw Error("Not Such Feature")
 
                         }
                             
@@ -77,13 +76,13 @@ this.allBinaryGyroSensor= allBinaryGyroSensor
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     updateGameKeyEvents(orientation: Orientation, yaw: number, pitch: number, roll: number){
 var orientation = orientation

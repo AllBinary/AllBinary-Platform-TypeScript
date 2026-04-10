@@ -76,9 +76,9 @@ public constructor (viewPosition: ViewPosition)
 var x = x
 var y = y
 var z = z
-this.setPosition(x +5, y +5, z)
-addListener(this as AllBinaryLayer)
-add(DropWeaponSound.getInstance())
+this.this.setPosition(x +5, y +5, z)
+this.viewPositionEventHandler!.addListener(this as AllBinaryLayer)
+SecondaryPlayerQueueFactory.getInstance()!.add(DropWeaponSound.getInstance())
 }
 
 
@@ -91,7 +91,7 @@ this.totalDamage= this.getInitDamage() +1
 
     public getDamage(damageType: number): number{
 var damageType = damageType
-getDamage(damageType)
+super.getDamage(damageType)
 
 
 
@@ -103,13 +103,12 @@ getDamage(damageType)
 
     public setDestroyed(destroyed: boolean){
 var destroyed = destroyed
-setDestroyed(destroyed)
+super.setDestroyed(destroyed)
 
-    
                         if(this.isDestroyed())
                         
                                     {
-                                    removeListener(this)
+                                    this.viewPositionEventHandler!.removeListener(this)
 
                                     }
                                 

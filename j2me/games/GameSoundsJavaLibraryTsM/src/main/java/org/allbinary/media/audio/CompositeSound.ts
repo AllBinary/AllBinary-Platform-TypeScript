@@ -34,10 +34,10 @@ protected constructor (resource: string)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(){
-this.setPlayerP(PlayerComposite(AllBinaryMediaManager.createPlayer(this.getResource())))
+this.this.setPlayerP(PlayerComposite(AllBinaryMediaManager.createPlayer(this.getResource())))
 }
 
 

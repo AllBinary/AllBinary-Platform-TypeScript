@@ -92,9 +92,9 @@ var touchButtonInput = touchButtonInput
         
         
 
-append(touchButtonInput!.toString())
-append(CommonSeps.getInstance()!.SPACE)
-append(append)
+stringBuffer!.append(touchButtonInput!.toString())
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(append)
 this.append= stringBuffer!.toString()
 this.string= StringMaker().
                             append(listString)!.append(this.append)!.toString()
@@ -121,37 +121,37 @@ this.string= StringMaker().
 
 
     public releaseAndNotFired(){
-this.append(RELEASED_AND_NOT_FIRED)
+this.this.append(RELEASED_AND_NOT_FIRED)
 }
 
 
     public releaseAndFired(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.append(RELEASED_AND_FIRED, touchButtonInput)
+this.this.append(RELEASED_AND_FIRED, touchButtonInput)
 }
 
 
     public releaseAndFired2(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.append(RELEASED_AND_FIRED_2, touchButtonInput)
+this.this.append(RELEASED_AND_FIRED_2, touchButtonInput)
 }
 
 
     public releaseAndFiredAssociated(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.append(ASSOCIATED_RELEASED_AND_FIRED, touchButtonInput)
+this.this.append(ASSOCIATED_RELEASED_AND_FIRED, touchButtonInput)
 }
 
 
     public pressedAndFired(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.append(PRESSED_AND_FIRED, touchButtonInput)
+this.this.append(PRESSED_AND_FIRED, touchButtonInput)
 }
 
 
     public pressedAndNotFired(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.append(PRESSED_AND_NOT_FIRED, touchButtonInput)
+this.this.append(PRESSED_AND_NOT_FIRED, touchButtonInput)
 }
 
 
@@ -195,7 +195,7 @@ this.string= StringMaker().
 
     public add(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-add(touchButtonInput)
+super.add(touchButtonInput)
 this.listString= list.toString()
 this.string= StringMaker().
                             append(listString)!.append(this.append)!.toString()

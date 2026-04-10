@@ -36,7 +36,7 @@ export class EarlySoundsFactory extends BaseSoundsFactory {
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getSoundInterfaceArray(): Sound[]{
 

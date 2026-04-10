@@ -218,12 +218,12 @@ public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterfa
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setVisible(false)
-this.setWaypointBehavior(WaypointBehaviorBase())
+this.this.setVisible(false)
+this.this.setWaypointBehavior(WaypointBehaviorBase())
 this.shakeListener= ShakeAnimationListenerFactory.getInstance()
 this.vibration= AllBinaryVibration.getInstance()
 this.duration= GameConfigurationCentral.getInstance()!.VIBRATION.getValue()!.toInt() *100
-this.setParentLayer(parentLayer)
+this.this.setParentLayer(parentLayer)
 }
 
 public constructor ()                        
@@ -235,20 +235,20 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setWaypointBehavior(WaypointBehaviorBase())
+this.this.setWaypointBehavior(WaypointBehaviorBase())
 this.shakeListener= NoShakeAnimationListener.NO_SHAKE_ANIMATION_LISTENER
 this.vibration= AllBinaryNoVibration.NO_VIBRATION
 this.duration= 0
-this.setParentLayer(NullPathFindingLayer.NULL_PATH_FINDING_LAYER)
+this.this.setParentLayer(NullPathFindingLayer.NULL_PATH_FINDING_LAYER)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public updateWaypointBehavior(geographicMapInterface: BasicGeographicMap){
     //var geographicMapInterface = geographicMapInterface
-updateWaypointBehavior(geographicMapInterface)
-setAllBinaryGameLayerManager(this.allBinaryGameLayerManagerP)
+super.updateWaypointBehavior(geographicMapInterface)
+this.getWaypointBehavior()!.getWaypoint()!.setAllBinaryGameLayerManager(this.allBinaryGameLayerManagerP)
 }
 
 
@@ -260,46 +260,44 @@ var rtsPlayerLayerInterface = rtsPlayerLayerInterface
         
 
 
-    
                         if(advancedRTSPlayerLayerInterface!.isLocalPlayer() || advancedRTSPlayerLayerInterface!.getGameType() == GameTypeFactory.getInstance()!.BOT)
                         
                                     {
-                                    this.setVisible(true)
+                                    this.this.setVisible(true)
 
                                     }
                                 
                         else {
-                            this.setVisible(false)
+                            this.this.setVisible(false)
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-construct(rtsPlayerLayerInterface)
-this.initVisibility(rtsPlayerLayerInterface)
-addListener(this.getWaypointBehavior()!.getWaypoint())
+super.construct(rtsPlayerLayerInterface)
+this.this.initVisibility(rtsPlayerLayerInterface)
+BuildingEventHandler.getInstance()!.addListener(this.getWaypointBehavior()!.getWaypoint())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setDestroyed(destroyed: boolean){
 var destroyed = destroyed
-setDestroyed(destroyed)
+super.setDestroyed(destroyed)
 
-    
                         if(this.isDestroyed())
                         
                                     {
-                                    removeListener(this.getWaypointBehavior()!.getWaypoint())
-removeListener(this)
-addListener(this)
-destroyAndClear(this.getWaypointBehavior()!.getOwnedWaypointList())
+                                    BuildingEventHandler.getInstance()!.removeListener(this.getWaypointBehavior()!.getWaypoint())
+BuildingEventHandler.getInstance()!.removeListener(this)
+DestroyedEventHandler.getInstance()!.addListener(this)
+RTSLayerUtil.getInstance()!.destroyAndClear(this.getWaypointBehavior()!.getOwnedWaypointList())
 
                                     }
                                 
@@ -370,7 +368,6 @@ this.waypointBehaviorBase= unitWaypointHelper
 
     public shouldAddWaypointFromBuilding(): boolean{
 
-    
                         if(this.parentLayer != NullPathFindingLayer.NULL_PATH_FINDING_LAYER)
                         
                                     {
@@ -380,7 +377,6 @@ this.waypointBehaviorBase= unitWaypointHelper
         
 
 
-    
                         if(parentAdvancedRTSGameLayer!.getType() != UnitLayer.getStaticType())
                         
                                     {
@@ -407,7 +403,6 @@ this.waypointBehaviorBase= unitWaypointHelper
 
     public isWaypointListEmptyOrOnlyTargets(): boolean{
 
-    
                         if(this.getType() != UnitLayer.getStaticType())
                         
                                     {
@@ -429,7 +424,7 @@ this.waypointBehaviorBase= unitWaypointHelper
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public buildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition): boolean{
     //var allbinaryLayer = allbinaryLayer
@@ -460,20 +455,17 @@ this.waypointBehaviorBase= unitWaypointHelper
         
 
 
-    
                         if(buildingDirection == DirectionFactory.getInstance()!.UP)
                         
                                     {
-                                    buildingAbove(this)
+                                    this.rtsLayer2LogHelper!.buildingAbove(this)
 
-    
                         if(angle > 180 && angle < 360)
                         
                                     {
-                                    buildingChaseLeft(this, angle)
-add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
+                                    this.rtsLayer2LogHelper!.buildingChaseLeft(this, angle)
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
 
-    
                         if(angle <= 190)
                         
                                     {
@@ -490,10 +482,9 @@ add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
                                     }
                                 
                         else {
-                            buildingChaseRight(this, angle)
-add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT))
+                            this.rtsLayer2LogHelper!.buildingChaseRight(this, angle)
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT))
 
-    
                         if(angle >= 170)
                         
                                     {
@@ -513,20 +504,17 @@ add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT))
                                     }
                                 
                              else 
-    
                         if(buildingDirection == DirectionFactory.getInstance()!.DOWN)
                         
                                     {
-                                    buildingDown(this)
+                                    this.rtsLayer2LogHelper!.buildingDown(this)
 
-    
                         if(angle > 180 && angle < 360)
                         
                                     {
-                                    buildingChaseLeft(this, angle)
-add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT))
+                                    this.rtsLayer2LogHelper!.buildingChaseLeft(this, angle)
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT))
 
-    
                         if(angle > 315)
                         
                                     {
@@ -543,10 +531,9 @@ add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT))
                                     }
                                 
                         else {
-                            buildingChaseRight(this, angle)
-add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
+                            this.rtsLayer2LogHelper!.buildingChaseRight(this, angle)
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
 
-    
                         if(angle < 45)
                         
                                     {
@@ -566,20 +553,17 @@ add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
                                     }
                                 
                              else 
-    
                         if(buildingDirection == DirectionFactory.getInstance()!.LEFT)
                         
                                     {
-                                    buildingLeft()
+                                    this.rtsLayer2LogHelper!.buildingLeft()
 
-    
                         if(angle > 90 && angle < 270)
                         
                                     {
-                                    buildingChaseDown(this, angle)
-add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
+                                    this.rtsLayer2LogHelper!.buildingChaseDown(this, angle)
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
 
-    
                         if(angle < 135)
                         
                                     {
@@ -596,10 +580,9 @@ add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
                                     }
                                 
                         else {
-                            buildingChaseUp(this, angle)
-add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT))
+                            this.rtsLayer2LogHelper!.buildingChaseUp(this, angle)
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT))
 
-    
                         if(angle > 45)
                         
                                     {
@@ -619,20 +602,17 @@ add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT))
                                     }
                                 
                              else 
-    
                         if(buildingDirection == DirectionFactory.getInstance()!.RIGHT)
                         
                                     {
-                                    buildingRight()
+                                    this.rtsLayer2LogHelper!.buildingRight()
 
-    
                         if(angle > 90 && angle < 270)
                         
                                     {
-                                    buildingChaseDown(this, angle)
-add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT))
+                                    this.rtsLayer2LogHelper!.buildingChaseDown(this, angle)
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT))
 
-    
                         if(angle > 225)
                         
                                     {
@@ -649,10 +629,9 @@ add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT))
                                     }
                                 
                         else {
-                            buildingChaseUp(this, angle)
-add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
+                            this.rtsLayer2LogHelper!.buildingChaseUp(this, angle)
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
 
-    
                         if(angle < 315 && angle > 180)
                         
                                     {
@@ -690,7 +669,7 @@ add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getSurroundingGeographicMapCellPositionList(): BasicArrayList{
 
@@ -703,7 +682,7 @@ add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
         
         
 
-update(geographicMapInterface)
+this.geographicMapCellPositionAreaBase!.update(geographicMapInterface)
 
 
 
@@ -715,14 +694,12 @@ update(geographicMapInterface)
 
     setSelected(selected: boolean){
 var selected = selected
-setSelected(selected)
+super.setSelected(selected)
 
-    
                         if(this.debug)
                         
                                     {
                                     
-    
                         if(selected)
                         
                                     {
@@ -755,23 +732,22 @@ var destroyedEvent = destroyedEvent
         
 
 
-    
                         if(layerInterface == this)
                         
                                     {
-                                    removeListener(this)
+                                    DestroyedEventHandler.getInstance()!.removeListener(this)
 
     var waypoint: WaypointBase = this.getWaypointBehavior()!.getWaypoint() as WaypointBase;
         
         
 
-reset()
+waypoint.reset()
 
                                     }
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "onDestroyed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "onDestroyed", e)
 }
 
 }

@@ -50,7 +50,7 @@ protected constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject
@@ -60,7 +60,7 @@ protected constructor (){
         
         
 
-onMotionGestureEvent(eventObject as MotionGestureEvent)
+baseMotionGestureEventListener!.onMotionGestureEvent(eventObject as MotionGestureEvent)
 }
 
 

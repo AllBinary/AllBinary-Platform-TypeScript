@@ -83,29 +83,27 @@ private constructor (){
 
             super();
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): UserEmailEventHandler{
     //var abeClientInformation = abeClientInformation
 var userEmailEventNameData = userEmailEventNameData
 var userInterface = userInterface
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.START, this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.GET_INSTANCE)
 
                                     }
                                 
@@ -115,18 +113,16 @@ var userInterface = userInterface
         
 
 
-    
                         if(userEmailEventHandler == 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put("Creating New Named UserEmailEventHandler", this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Creating New Named UserEmailEventHandler", this, commonStrings!.GET_INSTANCE)
 
                                     }
                                 
@@ -140,9 +136,9 @@ var userInterface = userInterface
         
         
 
-addListener(vector)
-addListener(LogUserEmailEventListenerModule())
-put(userEmailEventNameData, newUserEmailEventHandler)
+newUserEmailEventHandler!.addListener(vector)
+newUserEmailEventHandler!.addListener(LogUserEmailEventListenerModule())
+this.userEmailEventHandlerHashMap!.put(userEmailEventNameData, newUserEmailEventHandler)
 
 
 
@@ -154,11 +150,10 @@ put(userEmailEventNameData, newUserEmailEventHandler)
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put("Returning existing UserEmailEventHandler", this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Returning existing UserEmailEventHandler", this, commonStrings!.GET_INSTANCE)
 
                                     }
                                 

@@ -65,7 +65,6 @@ export class BooleanFactory
     public toString(bool: boolean): string{
 var bool = bool
 
-    
                         if(bool)
                         
                                     {

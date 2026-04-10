@@ -57,7 +57,6 @@ index < numberOfNodes; index++)
         
 
 
-    
                         if(node.getNodeName()!.compareTo(nodeName) == 0)
                         
                                     {
@@ -81,7 +80,7 @@ index < numberOfNodes; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getNode(nodeName: string, nodeList: NodeList): Node{
 var nodeName = nodeName
@@ -92,7 +91,6 @@ var nodeList = nodeList
         
 
 
-    
                         if(node != 
                                     null
                                 )
@@ -111,14 +109,14 @@ var nodeList = nodeList
                             
 
 
-                            throw Exception(nodeName +" Node Not Found in search")
+                            throw Error(nodeName +" Node Not Found in search")
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getChildNodeList(nodeName: string, nodeList: NodeList): NodeList{
 var nodeName = nodeName
@@ -137,7 +135,7 @@ var nodeList = nodeList
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getAllNodes(nodeName: string, nodeList: NodeList): Vector{
 var nodeName = nodeName
@@ -148,7 +146,6 @@ var nodeList = nodeList
         
 
 
-    
                         if(vector == 
                                     null
                                 )
@@ -157,7 +154,7 @@ var nodeList = nodeList
                                     
 
 
-                            throw Exception(nodeName +" Node Not Found in search")
+                            throw Error(nodeName +" Node Not Found in search")
 
                                     }
                                 
@@ -203,11 +200,10 @@ index < numberOfNodes; index++)
         
 
 
-    
                         if(node.getNodeName()!.compareTo(nodeName) == 0)
                         
                                     {
-                                    add(node)
+                                    nodeVector!.add(node)
 
                                     }
                                 

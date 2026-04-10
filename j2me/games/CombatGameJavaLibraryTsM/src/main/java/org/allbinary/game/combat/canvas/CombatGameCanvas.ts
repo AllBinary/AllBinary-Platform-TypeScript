@@ -88,24 +88,24 @@ public constructor (cmdListener: CommandListener, gameLayerManager: AllBinaryGam
 
 
     CombatGameCanvas_init(){
-init(this)
-addPortion(50, "Destroy Events")
+DestroyEventCircularStaticPool.getInstance()!.init(this)
+ProgressCanvasFactory.getInstance()!.addPortion(50, "Destroy Events")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-this.CombatGameCanvas_init()
-init(abeClientInformation)
+this.this.CombatGameCanvas_init()
+super.init(abeClientInformation)
 }
 
 
     initConfigurable(portion: number){
     //var portion = portion
-init()
-addPortion(portion, "Basic Processors")
+DestroyedLayerProcessor.init()
+ProgressCanvasFactory.getInstance()!.addPortion(portion, "Basic Processors")
 
     var features: Features = Features.getInstance()!;
         
@@ -117,7 +117,6 @@ addPortion(portion, "Basic Processors")
         
 
 
-    
                         if(features.isFeature(gameFeatureFactory!.DROPPED_ITEMS) && features.isFeature(gameFeatureFactory!.DROPPED_ITEMS_FROM_DEATH))
                         
                                     {
@@ -136,10 +135,10 @@ basicLayerProcessor[0]= DestroyedLayerProcessor.getInstance()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     processPlayingGame(){
-processPlayingGame()
+super.processPlayingGame()
 
 
 
@@ -151,16 +150,16 @@ processPlayingGame()
         
 --index >= 0; )
         {
-process(this.gameLayerManager)
+basicLayerProcessor[index]!.process(this.gameLayerManager)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     cleanupGame(){
-cleanupGame()
+super.cleanupGame()
 
 
 
@@ -172,20 +171,20 @@ cleanupGame()
         
 --index >= 0; )
         {
-clear()
+basicLayerProcessor[index]!.getList()!.clear()
 }
 
-clear()
-log()
-removeAllListeners()
-this.cleanupManager()
+GroupLayerManagerListener.getInstance()!.clear()
+GroupLayerManagerListener.getInstance()!.log()
+DestroyedEventHandler.getInstance()!.removeAllListeners()
+this.this.cleanupManager()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     cleanupManager(){
-cleanup()
+this.gameLayerManager!.cleanup()
 }
 
 

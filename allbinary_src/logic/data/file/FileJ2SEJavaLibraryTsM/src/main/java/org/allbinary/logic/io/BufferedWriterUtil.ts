@@ -50,7 +50,7 @@ export class BufferedWriterUtil
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public overwrite(path: string, data: string){
     //var path = path
@@ -61,37 +61,35 @@ export class BufferedWriterUtil
         
 
 
-    
                         if(abFile!.exists())
                         
                                     {
-                                    delete()
+                                    abFile!.delete()
 
                                     }
                                 
-this.write(abFile, data)
+this.this.write(abFile, data)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public overwrite(abFile: AbFile, data: string){
     //var abFile = abFile
     //var data = data
 
-    
                         if(abFile!.exists())
                         
                                     {
-                                    delete()
+                                    abFile!.delete()
 
                                     }
                                 
-this.write(abFile, data)
+this.this.write(abFile, data)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public write(abFile: AbFile, data: string){
     //var abFile = abFile
@@ -101,9 +99,9 @@ this.write(abFile, data)
         
         
 
-write(data, 0, data.length)
-newLine()
-flush()
+fileOut!.write(data, 0, data.length)
+fileOut!.newLine()
+fileOut!.flush()
 }
 
 

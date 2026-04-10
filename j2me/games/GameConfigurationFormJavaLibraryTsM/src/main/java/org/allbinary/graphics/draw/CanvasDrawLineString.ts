@@ -60,7 +60,7 @@ var line = line
         
         
 
-drawCenterString(graphics, string, 0, string.length, x, y +(line *myFont!.DEFAULT_CHAR_HEIGHT))
+drawStringUtil!.drawCenterString(graphics, string, 0, string.length, x, y +(line *myFont!.DEFAULT_CHAR_HEIGHT))
 }
 
 

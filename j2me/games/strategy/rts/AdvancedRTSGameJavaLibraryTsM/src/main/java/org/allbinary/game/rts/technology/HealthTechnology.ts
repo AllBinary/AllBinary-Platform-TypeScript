@@ -125,7 +125,6 @@ this.maxLevel= maxLevel
 
     public isUpgradeable(): boolean{
 
-    
                         if(this.getLevel() < this.getMaxLevel())
                         
                                     {
@@ -158,7 +157,7 @@ this.level++
         
         
 
-setHealth(unitTechnologySingletonFactory!.getHealth() +(this.getLevel() *100))
+unitTechnologySingletonFactory!.setHealth(unitTechnologySingletonFactory!.getHealth() +(this.getLevel() *100))
 }
 
 

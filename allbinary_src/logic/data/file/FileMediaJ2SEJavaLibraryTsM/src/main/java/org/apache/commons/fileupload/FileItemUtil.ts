@@ -53,7 +53,7 @@ export class FileItemUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getString(byteArray: ByteArray): string{
 var byteArray = byteArray
@@ -66,7 +66,7 @@ var byteArray = byteArray
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getString(fileItem: FileItemStream): string{
 var fileItem = fileItem
@@ -81,7 +81,7 @@ var fileItem = fileItem
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getBytes(fileItem: FileItemStream): ByteArray{
 var fileItem = fileItem
@@ -109,11 +109,10 @@ var fileItem = fileItem
             inputStream= fileItem!.openStream()
 outputStream= ByteArrayOutputStream()
 
-    
                         if(fileItem!.isFormField())
                         
                                     {
-                                    put("FileItemStream FieldName: " +fileItem!.getFieldName(), this, "write()")
+                                    logUtil!.put("FileItemStream FieldName: " +fileItem!.getFieldName(), this, "write()")
 
                                     }
                                 
@@ -123,11 +122,11 @@ outputStream= ByteArrayOutputStream()
         
         
 
-append("Uploaded File FieldName: ")
-append(fileItem!.getFieldName())
-append(" name = ")
-append(fileItem!.getName())
-put(stringBuffer!.toString(), this, "write()")
+stringBuffer!.append("Uploaded File FieldName: ")
+stringBuffer!.append(fileItem!.getFieldName())
+stringBuffer!.append(" name = ")
+stringBuffer!.append(fileItem!.getName())
+logUtil!.put(stringBuffer!.toString(), this, "write()")
 
                         }
                             
@@ -140,20 +139,20 @@ outputStream= streamUtil!.get(inputStream, outputStream, ByteArray(16384)) as By
     
 
          finally {
-            close(outputStream)
-close(inputStream)
+            streamUtil!.close(outputStream)
+streamUtil!.close(inputStream)
 
          }
         
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public write(fileItem: FileItem, file: AbFile){
 var fileItem = fileItem
 var file = file
-write(AbFileNativeUtil.get(file))
+fileItem!.write(AbFileNativeUtil.get(file))
 }
 
 

@@ -71,7 +71,7 @@ export class EmailEventHandlerUtil
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getUserEmailEventListenerVector(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): Vector{
     //var abeClientInformation = abeClientInformation
@@ -102,7 +102,7 @@ export class EmailEventHandlerUtil
         
         
 
-add(userEmailEventListenerInterface)
+vector.add(userEmailEventListenerInterface)
 
 
 
@@ -121,14 +121,13 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getEventHandler(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userVector: Vector): UserEmailEventHandler{
     //var abeClientInformation = abeClientInformation
     //var userEmailEventNameData = userEmailEventNameData
     //var userVector = userVector
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -137,10 +136,10 @@ private constructor (){
         
         
 
-append("Returning UserEmailEventHandler for ")
-appendint(userVector!.length)
-append(" users.")
-put(stringBuffer!.toString(), this, "getEventHandler")
+stringBuffer!.append("Returning UserEmailEventHandler for ")
+stringBuffer!.appendint(userVector!.length)
+stringBuffer!.append(" users.")
+logUtil!.put(stringBuffer!.toString(), this, "getEventHandler")
 
                                     }
                                 
@@ -149,7 +148,7 @@ put(stringBuffer!.toString(), this, "getEventHandler")
         
         
 
-addListener(LogUserEmailEventListenerModule())
+userEmailEventHandler!.addListener(LogUserEmailEventListenerModule())
 
     var size: number = userVector!.length!;
         
@@ -175,7 +174,7 @@ index < size; index++)
         
         
 
-addListener(vector)
+userEmailEventHandler!.addListener(vector)
 }
 
 

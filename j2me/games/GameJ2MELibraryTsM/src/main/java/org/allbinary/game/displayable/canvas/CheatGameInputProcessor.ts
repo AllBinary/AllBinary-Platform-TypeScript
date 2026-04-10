@@ -119,11 +119,10 @@ index < size; index++)
         
 
 
-    
                         if(key == gameKeyFactory!.LEVEL_DOWN.getId())
                         
                                     {
-                                    strafeLeft()
+                                    inputProcessor!.strafeLeft()
 break;
 
                     
@@ -131,11 +130,10 @@ break;
                                     }
                                 
                              else 
-    
                         if(key == gameKeyFactory!.LEVEL_UP.getId())
                         
                                     {
-                                    strafeRight()
+                                    inputProcessor!.strafeRight()
 break;
 
                     
@@ -143,11 +141,10 @@ break;
                                     }
                                 
 
-    
                         if(key == gameKeyFactory!.LEFT.getId())
                         
                                     {
-                                    left()
+                                    inputProcessor!.left()
 break;
 
                     
@@ -155,11 +152,10 @@ break;
                                     }
                                 
                              else 
-    
                         if(key == gameKeyFactory!.RIGHT.getId())
                         
                                     {
-                                    right()
+                                    inputProcessor!.right()
 break;
 
                     
@@ -167,11 +163,10 @@ break;
                                     }
                                 
                              else 
-    
                         if(key == gameKeyFactory!.UP.getId())
                         
                                     {
-                                    up()
+                                    inputProcessor!.up()
 break;
 
                     
@@ -179,11 +174,10 @@ break;
                                     }
                                 
                              else 
-    
                         if(key == gameKeyFactory!.DOWN.getId())
                         
                                     {
-                                    down()
+                                    inputProcessor!.down()
 break;
 
                     
@@ -191,11 +185,10 @@ break;
                                     }
                                 
                              else 
-    
                         if(key == gameKeyFactory!.KEY_NUM1.getId())
                         
                                     {
-                                    special1(gameLayerManager, GameKeyEvent.NONE)
+                                    inputProcessor!.special1(gameLayerManager, GameKeyEvent.NONE)
 break;
 
                     
@@ -203,11 +196,10 @@ break;
                                     }
                                 
                              else 
-    
                         if(key == gameKeyFactory!.KEY_NUM3.getId())
                         
                                     {
-                                    special2(gameLayerManager, GameKeyEvent.NONE)
+                                    inputProcessor!.special2(gameLayerManager, GameKeyEvent.NONE)
 break;
 
                     
@@ -216,10 +208,10 @@ break;
                                 
 }
 
-clear()
+list.clear()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
 }
 
 }

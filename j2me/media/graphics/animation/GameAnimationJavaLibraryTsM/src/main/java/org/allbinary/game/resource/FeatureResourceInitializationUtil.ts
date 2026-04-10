@@ -51,7 +51,7 @@ export class FeatureResourceInitializationUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(level: number){
 var level = level
@@ -60,14 +60,14 @@ var level = level
         
         
 
-put(commonStrings!.START, this, commonStrings!.INIT)
+logUtil!.put(commonStrings!.START, this, commonStrings!.INIT)
 
     var featuredResourceFactory: FeaturedResourceFactory = FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!;
         
         
 
-init(level)
-init(level)
+featuredResourceFactory!.init(level)
+FeaturedResourceRelativeRelationshipFactory.getInstance()!.init(level)
 }
 
 

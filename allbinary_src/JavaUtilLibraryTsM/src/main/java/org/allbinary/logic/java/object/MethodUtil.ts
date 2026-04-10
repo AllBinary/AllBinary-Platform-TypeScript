@@ -43,8 +43,8 @@ var lineBreak = lineBreak
         
         
 
-append("Methods: ")
-append(lineBreak)
+stringBuffer!.append("Methods: ")
+stringBuffer!.append(lineBreak)
 
 
 
@@ -55,13 +55,13 @@ append(lineBreak)
         
 index < method.length; index++)
         {
-append(method[index]!.getReturnType()!.getName())
-append(" ")
-append(method[index]!.getName())
-append("(")
-viewParams(method[index]!.getParameterTypes())
-append(")")
-append(lineBreak)
+stringBuffer!.append(method[index]!.getReturnType()!.getName())
+stringBuffer!.append(" ")
+stringBuffer!.append(method[index]!.getName())
+stringBuffer!.append("(")
+ParamsUtil.viewParams(method[index]!.getParameterTypes())
+stringBuffer!.append(")")
+stringBuffer!.append(lineBreak)
 }
 
 

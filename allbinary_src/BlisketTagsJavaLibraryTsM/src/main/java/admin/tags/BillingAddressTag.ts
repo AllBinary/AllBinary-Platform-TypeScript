@@ -51,8 +51,8 @@ export class BillingAddressTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(BillingAddressHelperFactory())
-this.setTagRequestHelperFactory(BillingAddressHelperFactory())
+            this.this.setTagHelperFactory(BillingAddressHelperFactory())
+this.this.setTagRequestHelperFactory(BillingAddressHelperFactory())
 }
 
 
@@ -62,7 +62,7 @@ this.value= value
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     set(): string{
 
@@ -111,11 +111,10 @@ this.value= value
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "set()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "set()", e)
 
                                     }
                                 
@@ -130,7 +129,7 @@ this.value= value
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     setToShippingAddress(): string{
 
@@ -179,11 +178,10 @@ this.value= value
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "setToShippingAddress()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setToShippingAddress()", e)
 
                                     }
                                 
@@ -198,25 +196,22 @@ this.value= value
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.isEnabled())
                         
                                     {
                                     
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getCommand()!.compareTo(BillingAddressData.SELECT) == 0)
                         
                                     {
@@ -231,7 +226,6 @@ this.value= value
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(BillingAddressData.SETTOSHIPPINGADDRESS) == 0)
                         
                                     {
@@ -263,7 +257,7 @@ this.value= value
     
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -273,7 +267,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

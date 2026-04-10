@@ -34,7 +34,7 @@ this.library= library
 
 
     public load(){
-loadLibrary(library)
+System.loadLibrary(library)
 }
 
 

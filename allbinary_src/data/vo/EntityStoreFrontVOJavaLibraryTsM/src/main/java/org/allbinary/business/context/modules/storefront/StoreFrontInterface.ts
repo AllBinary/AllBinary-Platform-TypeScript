@@ -73,7 +73,7 @@ interface StoreFrontInterface extends TableMappingInterface {
 
     public getCategoryPath(): string
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getSubStores(): BasicArrayList
 
@@ -113,37 +113,37 @@ interface StoreFrontInterface extends TableMappingInterface {
 
     public setHomeHostName(value: string)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setHomeHostNamePath(value: string)
 
     public setHostName(value: string)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setHostNamePath(value: string)
 
     public setTestHomeHostName(value: string)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setTestHomeHostNamePath(value: string)
 
     public setTestHostName(value: string)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setTestHostNamePath(value: string)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setImagePath(value: string)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setStaticPath(value: string)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setCategoryPath(value: string)
 
@@ -153,7 +153,7 @@ interface StoreFrontInterface extends TableMappingInterface {
 
     public setFtp(value: string)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setFtpPath(value: string)
 
@@ -163,7 +163,7 @@ interface StoreFrontInterface extends TableMappingInterface {
 
     public setTestFtp(value: string)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setTestFtpPath(value: string)
 
@@ -175,7 +175,7 @@ interface StoreFrontInterface extends TableMappingInterface {
 
     public setLastModified(value: string)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public install(current: number, total: number)
 

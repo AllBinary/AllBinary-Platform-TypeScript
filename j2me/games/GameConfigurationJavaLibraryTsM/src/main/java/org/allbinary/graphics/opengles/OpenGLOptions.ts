@@ -40,7 +40,6 @@ export class OpenGLOptions
         
 
 
-    
                         if(Features.getInstance()!.isFeature(openGLFeatureFactory!.OPENGL_OPTIONS))
                         
                                     {
@@ -49,24 +48,24 @@ export class OpenGLOptions
         
         
 
-add(openGLFeatureFactory!.OPENGL)
-add("OpenGL (Complete Restart)", openGLMultipleList)
+openGLMultipleList!.add(openGLFeatureFactory!.OPENGL)
+GameFeatureChoiceGroups.getMultipleInstance()!.add("OpenGL (Complete Restart)", openGLMultipleList)
 
     var openGLVersionSelectorMultipleList: BasicArrayList = new BasicArrayList();
         
         
 
-add(openGLFeatureFactory!.OPENGL_AUTO_SELECT)
-add(openGLFeatureFactory!.OPENGL_MINIMUM)
-add("OpenGL Version Selector", openGLVersionSelectorMultipleList)
+openGLVersionSelectorMultipleList!.add(openGLFeatureFactory!.OPENGL_AUTO_SELECT)
+openGLVersionSelectorMultipleList!.add(openGLFeatureFactory!.OPENGL_MINIMUM)
+GameFeatureChoiceGroups.getExclusiveInstance()!.add("OpenGL Version Selector", openGLVersionSelectorMultipleList)
 
     var openGLImageColorMultipleList: BasicArrayList = new BasicArrayList();
         
         
 
-add(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444)
-add(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_8888)
-add("OpenGL Image Color RGBA", openGLImageColorMultipleList)
+openGLImageColorMultipleList!.add(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444)
+openGLImageColorMultipleList!.add(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_8888)
+GameFeatureChoiceGroups.getExclusiveInstance()!.add("OpenGL Image Color RGBA", openGLImageColorMultipleList)
 
                                     }
                                 

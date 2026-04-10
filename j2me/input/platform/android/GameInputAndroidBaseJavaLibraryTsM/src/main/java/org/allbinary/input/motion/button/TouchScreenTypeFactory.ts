@@ -78,18 +78,16 @@ var activity = activity
         
 
 
-    
                         if(touchScreen == Configuration.TOUCHSCREEN_FINGER)
                         
                                     {
-                                    setTouchScreenType(touchScreenTypesFactory!.FINGER)
+                                    touchScreenFactory!.setTouchScreenType(touchScreenTypesFactory!.FINGER)
 
-    
                         if(!touchScreenFactory!.isTouch())
                         
                                     {
-                                    put("Not Really Exception: This indicates that a touch screen does exist but is not API8 so we will try it", this, commonStrings!.PROCESS)
-setTouch(true)
+                                    PreLogUtil.put("Not Really Exception: This indicates that a touch screen does exist but is not API8 so we will try it", this, commonStrings!.PROCESS)
+touchScreenFactory!.setTouch(true)
 
                                     }
                                 
@@ -97,18 +95,16 @@ setTouch(true)
                                     }
                                 
                              else 
-    
                         if(touchScreen == Configuration.TOUCHSCREEN_STYLUS)
                         
                                     {
-                                    setTouchScreenType(touchScreenTypesFactory!.STYLUS)
+                                    touchScreenFactory!.setTouchScreenType(touchScreenTypesFactory!.STYLUS)
 
-    
                         if(!touchScreenFactory!.isTouch())
                         
                                     {
-                                    put("Not Really Exception: This indicates that a touch screen does exist but is not API8 so we will try it", this, commonStrings!.PROCESS)
-setTouch(true)
+                                    PreLogUtil.put("Not Really Exception: This indicates that a touch screen does exist but is not API8 so we will try it", this, commonStrings!.PROCESS)
+touchScreenFactory!.setTouch(true)
 
                                     }
                                 
@@ -116,20 +112,18 @@ setTouch(true)
                                     }
                                 
                              else 
-    
                         if(touchScreen == Configuration.TOUCHSCREEN_NOTOUCH)
                         
                                     {
-                                    setTouchScreenType(touchScreenTypesFactory!.NOTOUCH)
+                                    touchScreenFactory!.setTouchScreenType(touchScreenTypesFactory!.NOTOUCH)
 
                                     }
                                 
                              else 
-    
                         if(touchScreen == Configuration.TOUCHSCREEN_UNDEFINED)
                         
                                     {
-                                    setTouchScreenType(touchScreenTypesFactory!.UNDEFINED)
+                                    touchScreenFactory!.setTouchScreenType(touchScreenTypesFactory!.UNDEFINED)
 
                                     }
                                 

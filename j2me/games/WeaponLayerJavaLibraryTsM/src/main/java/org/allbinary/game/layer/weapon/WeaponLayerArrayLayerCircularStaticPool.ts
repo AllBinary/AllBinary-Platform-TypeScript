@@ -94,7 +94,7 @@ ALL_WEAPONLAYER_ARRAY[3]= THREE_WEAPONLAYER_ARRAY
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getInstance(size: number): WeaponLayer[]{
@@ -104,7 +104,7 @@ var size = size
         
         
 
-next()
+circularIndexUtil!.next()
 
 
 

@@ -65,11 +65,10 @@ var currentIndex = currentIndex
 var x = x
 var y = y
 
-    
                         if(LockedUtil.getInstance()!.isLockedFeature() && this.getPaintableForm()!.getSelectedIndex() >= this.getLockedIndex())
                         
                                     {
-                                    paint(graphics, this.getPaintableForm()!.getDx() -this.halfWidth, this.getPaintableForm()!.getDy() +34)
+                                    this.getAnimation()!.paint(graphics, this.getPaintableForm()!.getDx() -this.halfWidth, this.getPaintableForm()!.getDy() +34)
 
                                     }
                                 

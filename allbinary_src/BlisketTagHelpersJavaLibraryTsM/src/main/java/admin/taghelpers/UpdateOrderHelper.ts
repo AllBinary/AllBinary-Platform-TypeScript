@@ -149,7 +149,7 @@ public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
             var hashMap = hashMap
 var pageContext = pageContext
 this.request= pageContext!.getRequest() as HttpServletRequest
-this.getFormData()
+this.this.getFormData()
 }
 
 
@@ -212,49 +212,48 @@ this.storeCancelComment= request.getParameter(OrderData.STORECANCELCOMMENT)
         
         
 
-put(EntryData.getInstance()!.ID, entryId)
-put(OrderData.ID, this.orderId)
-put(UserData.USERNAME, userName)
-put(StoreFrontData.getInstance()!.NAME, this.storeName)
-put(OrderHistoryData.SHIPPEDDATE, shipDate)
-put(OrderHistoryData.ORDERDATE, orderDate)
-put(OrderHistoryData.TRANSDATE, transDate)
-put(OrderHistoryData.CANCELDATE, cancelDate)
-put(OrderHistoryData.STATUS, status)
-put(PaymentData.METHOD, paymentMethod)
-put(PaymentData.NAME, name)
-put(PaymentData.TYPE, type)
-put(PaymentData.EXPIRATION, expiration)
-put(BillingAddressData.NAME, billingName)
-put(BillingAddressData.STREET, billingStreet)
-put(BillingAddressData.CITY, billingCity)
-put(BillingAddressData.STATE, billingState)
-put(BillingAddressData.CODE, billingCode)
-put(BillingAddressData.COUNTRY, billingCountry)
-put(ShippingAddressData.NAME, shippingName)
-put(ShippingAddressData.STREET, shippingStreet)
-put(ShippingAddressData.CITY, shippingCity)
-put(ShippingAddressData.STATE, shippingState)
-put(ShippingAddressData.CODE, shippingCode)
-put(ShippingAddressData.COUNTRY, shippingCountry)
-put(ShippingMethodData.NAME, this.shippingMethodName)
-put(OrderHistoryData.SUBTOTAL, this.subTotal)
-put(OrderHistoryData.SHIPPINGCOST, this.shippingCost)
-put(OrderHistoryData.TAX, this.tax)
-put(OrderHistoryData.TOTAL, this.total)
-put(EntryData.getInstance()!.SPECIAL, special)
-put(OrderData.CUSTOMERCOMMENT, this.userComment)
-put(OrderData.CUSTOMERCANCELCOMMENT, this.userCancelComment)
-put(OrderData.STORECOMMENT, this.storeComment)
-put(OrderData.STORECANCELCOMMENT, this.storeCancelComment)
-put(OrderData.ID, orderId)
-update(whereHashMap, orderHashMap)
+orderHashMap!.put(EntryData.getInstance()!.ID, entryId)
+orderHashMap!.put(OrderData.ID, this.orderId)
+orderHashMap!.put(UserData.USERNAME, userName)
+orderHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
+orderHashMap!.put(OrderHistoryData.SHIPPEDDATE, shipDate)
+orderHashMap!.put(OrderHistoryData.ORDERDATE, orderDate)
+orderHashMap!.put(OrderHistoryData.TRANSDATE, transDate)
+orderHashMap!.put(OrderHistoryData.CANCELDATE, cancelDate)
+orderHashMap!.put(OrderHistoryData.STATUS, status)
+orderHashMap!.put(PaymentData.METHOD, paymentMethod)
+orderHashMap!.put(PaymentData.NAME, name)
+orderHashMap!.put(PaymentData.TYPE, type)
+orderHashMap!.put(PaymentData.EXPIRATION, expiration)
+orderHashMap!.put(BillingAddressData.NAME, billingName)
+orderHashMap!.put(BillingAddressData.STREET, billingStreet)
+orderHashMap!.put(BillingAddressData.CITY, billingCity)
+orderHashMap!.put(BillingAddressData.STATE, billingState)
+orderHashMap!.put(BillingAddressData.CODE, billingCode)
+orderHashMap!.put(BillingAddressData.COUNTRY, billingCountry)
+orderHashMap!.put(ShippingAddressData.NAME, shippingName)
+orderHashMap!.put(ShippingAddressData.STREET, shippingStreet)
+orderHashMap!.put(ShippingAddressData.CITY, shippingCity)
+orderHashMap!.put(ShippingAddressData.STATE, shippingState)
+orderHashMap!.put(ShippingAddressData.CODE, shippingCode)
+orderHashMap!.put(ShippingAddressData.COUNTRY, shippingCountry)
+orderHashMap!.put(ShippingMethodData.NAME, this.shippingMethodName)
+orderHashMap!.put(OrderHistoryData.SUBTOTAL, this.subTotal)
+orderHashMap!.put(OrderHistoryData.SHIPPINGCOST, this.shippingCost)
+orderHashMap!.put(OrderHistoryData.TAX, this.tax)
+orderHashMap!.put(OrderHistoryData.TOTAL, this.total)
+orderHashMap!.put(EntryData.getInstance()!.SPECIAL, special)
+orderHashMap!.put(OrderData.CUSTOMERCOMMENT, this.userComment)
+orderHashMap!.put(OrderData.CUSTOMERCANCELCOMMENT, this.userCancelComment)
+orderHashMap!.put(OrderData.STORECOMMENT, this.storeComment)
+orderHashMap!.put(OrderData.STORECANCELCOMMENT, this.storeCancelComment)
+whereHashMap!.put(OrderData.ID, orderId)
+OrderHistoryEntityFactory.getInstance()!.update(whereHashMap, orderHashMap)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "update()")
+                                    logUtil!.put(success, this, "update()")
 
                                     }
                                 
@@ -272,11 +271,10 @@ update(whereHashMap, orderHashMap)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
 
                                     }
                                 

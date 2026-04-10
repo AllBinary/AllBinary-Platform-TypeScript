@@ -63,7 +63,7 @@ public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
             var hashMap = hashMap
 var pageContext = pageContext
 this.request= pageContext!.getRequest() as HttpServletRequest
-this.getFormData()
+this.this.getFormData()
 }
 
 
@@ -79,7 +79,6 @@ var newStatus = newStatus
 
         try {
             
-    
                         if(newStatus == 
                                     null
                                 )
@@ -89,13 +88,12 @@ var newStatus = newStatus
         
         
 
-setStatus(id, groupId, newStatus)
+OrderItemsEntityFactory.getInstance()!.setStatus(id, groupId, newStatus)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "setOrderStatus(newStatus)")
+                                    logUtil!.put(success, this, "setOrderStatus(newStatus)")
 
                                     }
                                 
@@ -113,11 +111,10 @@ setStatus(id, groupId, newStatus)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "setOrderStatus(newStatus)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus(newStatus)", e)
 
                                     }
                                 
@@ -140,13 +137,12 @@ setStatus(id, groupId, newStatus)
         
         
 
-setStatus(id, groupId, this.status)
+OrderItemsEntityFactory.getInstance()!.setStatus(id, groupId, this.status)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "setOrderStatus(newStatus)")
+                                    logUtil!.put(success, this, "setOrderStatus(newStatus)")
 
                                     }
                                 
@@ -164,11 +160,10 @@ setStatus(id, groupId, this.status)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "setOrderStatus(newStatus)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus(newStatus)", e)
 
                                     }
                                 

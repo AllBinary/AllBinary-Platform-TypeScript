@@ -51,26 +51,26 @@ public constructor (image: Image, animationBehavior: AnimationBehavior)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setFrame(this.getSize() -1)
+this.this.setFrame(this.getSize() -1)
 }
 
 
     public nextFrame(){
-previousFrame()
-this.update()
+super.previousFrame()
+this.this.update()
 }
 
 
     public previousFrame(){
-nextFrame()
-this.update()
+super.nextFrame()
+this.this.update()
 }
 
 
     public setFrame(index: number){
     //var index = index
-setFrame(index)
-this.update()
+super.setFrame(index)
+this.this.update()
 }
 
 
@@ -88,7 +88,7 @@ this.currentWidth= this.getDrawWidth() -this.startWidth
     //var graphics = graphics
     //var x = x
     //var y = y
-drawRegion(this.getImage(), this.startWidth, this.getStartY(), this.currentWidth, this.getDrawHeight(), Sprite.TRANS_NONE, x +this.startWidth, y, anchor)
+graphics.drawRegion(this.getImage(), this.startWidth, this.getStartY(), this.currentWidth, this.getDrawHeight(), Sprite.TRANS_NONE, x +this.startWidth, y, anchor)
 }
 
 

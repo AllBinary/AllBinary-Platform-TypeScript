@@ -134,7 +134,7 @@ this.dxArray= dxArray
 this.dyArray= dyArray
 this.y= y
 this.widthP= width
-this.reset()
+this.this.reset()
 }
 
 
@@ -155,17 +155,15 @@ this.reset()
         
 
 
-    
                         if(totalTimeElapsed > indexedAnimationBehavior!.frameDelayTime)
                         
                                     {
-                                    this.previousFrame()
+                                    this.this.previousFrame()
 this.lastFrameStartTime= currentTime
 
                                     }
                                 
 
-    
                         if(this.animationInterfaceArray[0]!.getFrame() == 0)
                         
                                     {
@@ -183,7 +181,6 @@ this.lastFrameStartTime= currentTime
         
 
 
-    
                         if(indexedAnimationBehavior!.loopTotal ==  -1 || indexedAnimationBehavior!.loopIndex < indexedAnimationBehavior!.loopTotal || this.getFrame() != 0)
                         
                                     {
@@ -256,25 +253,25 @@ this.lastFrameStartTime= currentTime
         
 index < sizeP; index++)
         {
-setFrame(frame)
+this.animationInterfaceArray[index]!.setFrame(frame)
 }
 
 }
 
 
     public setLastFrame(){
-this.setFrame(this.getSize() -1)
+this.this.setFrame(this.getSize() -1)
 }
 
 
     public reset(){
-this.setLastFrame()
+this.this.setLastFrame()
 
     var indexedAnimationBehavior: IndexedAnimationBehavior = (this.getAnimationBehavior() as IndexedAnimationBehavior);
         
         
 
-reset()
+indexedAnimationBehavior!.reset()
 }
 
 
@@ -289,7 +286,7 @@ reset()
         
 index < sizeP; index++)
         {
-previousFrame()
+this.animationInterfaceArray[index]!.previousFrame()
 }
 
 }
@@ -300,8 +297,8 @@ previousFrame()
     //var frame = frame
     //var x = x
     //var y = y
-this.setFrame(frame)
-this.paint(graphics, x, y)
+this.this.setFrame(frame)
+this.this.paint(graphics, x, y)
 }
 
 
@@ -319,7 +316,6 @@ this.paint(graphics, x, y)
         
 
 
-    
                         if(this.widthP != Integer.MIN_VALUE)
                         
                                     {
@@ -346,15 +342,14 @@ index < sizeP; index++)
 deltaX= this.dxArray[index] +x
 deltaY= this.dyArray[index] +y
 
-    
                         if(this.basicColorArray[index] != CLEAR_COLOR)
                         
                                     {
-                                    setBasicColorP(graphics, this.basicColorArray[index]!)
+                                    this.basicSetColorUtil!.setBasicColorP(graphics, this.basicColorArray[index]!)
 
                                     }
                                 
-paint(graphics, deltaX, deltaY)
+this.animationInterfaceArray[index]!.paint(graphics, deltaX, deltaY)
 }
 
 }

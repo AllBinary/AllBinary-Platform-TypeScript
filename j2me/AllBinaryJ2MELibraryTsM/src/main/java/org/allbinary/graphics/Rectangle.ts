@@ -124,17 +124,17 @@ this.height= height
         
         
 
-append(this.getPoint()!.toString())
-append(CommonSeps.getInstance()!.SPACE)
-append(CommonLabels.getInstance()!.WIDTH_LABEL)
-appendint(this.getWidth())
-append(CommonSeps.getInstance()!.SPACE)
-append(CommonLabels.getInstance()!.HEIGHT_LABEL)
-appendint(this.getHeight())
-append(" MaxX: ")
-appendint(this.getMaxX())
-append(" MaxY: ")
-appendint(this.getMaxY())
+stringBuffer!.append(this.getPoint()!.toString())
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(CommonLabels.getInstance()!.WIDTH_LABEL)
+stringBuffer!.appendint(this.getWidth())
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(CommonLabels.getInstance()!.HEIGHT_LABEL)
+stringBuffer!.appendint(this.getHeight())
+stringBuffer!.append(" MaxX: ")
+stringBuffer!.appendint(this.getMaxX())
+stringBuffer!.append(" MaxY: ")
+stringBuffer!.appendint(this.getMaxY())
 
 
 

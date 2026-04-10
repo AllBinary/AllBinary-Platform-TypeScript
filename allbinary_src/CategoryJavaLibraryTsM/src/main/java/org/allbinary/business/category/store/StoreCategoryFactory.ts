@@ -66,11 +66,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
             super();
             var transformInfoInterface = transformInfoInterface
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    put(commonStrings!.START, this, "StoreCategoryFactory(TransformInfoInterface transformInfoInterface)")
+                                    logUtil!.put(commonStrings!.START, this, "StoreCategoryFactory(TransformInfoInterface transformInfoInterface)")
 
                                     }
                                 
@@ -95,11 +94,10 @@ this.transformInfoInterface= transformInfoInterface
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getInstance(String, int)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(String, int)", e)
 
                                     }
                                 
@@ -137,11 +135,10 @@ var categoryPath = categoryPath
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getInstance(String, int)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(String, int)", e)
 
                                     }
                                 
@@ -184,11 +181,10 @@ var node = node
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getInstance(String, int)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(String, int)", e)
 
                                     }
                                 

@@ -51,11 +51,10 @@ public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
             var hashMap = hashMap
 var pageContext = pageContext
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(this.commonStrings!.CONSTRUCTOR, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -67,11 +66,10 @@ this.request= pageContext!.getRequest() as HttpServletRequest
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "insert()")
+                                    logUtil!.put(this.commonStrings!.START, this, "insert()")
 
                                     }
                                 
@@ -85,13 +83,12 @@ this.request= pageContext!.getRequest() as HttpServletRequest
         
         
 
-write()
+adminConfigurationInterface!.write()
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "insert()")
+                                    logUtil!.put(success, this, "insert()")
 
                                     }
                                 
@@ -109,11 +106,10 @@ write()
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "insert()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insert()", e)
 
                                     }
                                 
@@ -137,11 +133,10 @@ write()
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "delete()")
+                                    logUtil!.put(success, this, "delete()")
 
                                     }
                                 
@@ -159,11 +154,10 @@ write()
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "delete()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e)
 
                                     }
                                 
@@ -192,11 +186,10 @@ write()
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "update()")
+                                    logUtil!.put(success, this, "update()")
 
                                     }
                                 
@@ -214,11 +207,10 @@ write()
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
 
                                     }
                                 

@@ -84,9 +84,9 @@ this.dy= dy
     //var frame = frame
     //var x = x
     //var y = y
-this.setFrame(frame)
-setPosition(x +this.dx, y +this.dy)
-paint(graphics)
+this.this.setFrame(frame)
+this.sprite.setPosition(x +this.dx, y +this.dy)
+super.paint(graphics)
 }
 
 
@@ -94,15 +94,15 @@ paint(graphics)
     //var g = g
     //var x = x
     //var y = y
-setPosition(x +this.dx, y +this.dy)
-paint(g)
+this.sprite.setPosition(x +this.dx, y +this.dy)
+super.paint(g)
 }
 
 
     public paint(g: Graphics){
     //var g = g
-setPosition(this.dx, this.dy)
-paint(g)
+this.sprite.setPosition(this.dx, this.dy)
+super.paint(g)
 }
 
 

@@ -56,7 +56,6 @@ var list = list
         {
 point= list.objectArray[index]! as GPoint
 
-    
                         if(!rectangleCollisionUtil!.isInside(rectX1, rectY1, rectX2, rectY2, point.getX(), point.getY()))
                         
                                     {
@@ -108,7 +107,6 @@ var yCellSize = yCellSize
         {
 point= list.objectArray[index]! as GPoint
 
-    
                         if(!rectangleCollisionUtil!.isInside(rectX1, rectY1, rectX2, rectY2, point.getX() *xCellSize, point.getY() *yCellSize))
                         
                                     {

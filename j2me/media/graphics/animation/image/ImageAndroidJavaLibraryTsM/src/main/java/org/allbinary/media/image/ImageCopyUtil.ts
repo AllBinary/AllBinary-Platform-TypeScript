@@ -76,7 +76,7 @@ private constructor (){
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImageForRotation(originalImage: Image): Image{
     //var originalImage = originalImage
@@ -89,7 +89,7 @@ private constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage(originalImage: Image): Image{
     //var originalImage = originalImage
@@ -99,11 +99,10 @@ private constructor (){
         
 
 
-    
                         if(image.isMutable())
                         
                                     {
-                                    drawImage(originalImage, 0, 0, anchor)
+                                    image.getGraphics()!.drawImage(originalImage, 0, 0, anchor)
 
 
 
@@ -117,14 +116,14 @@ private constructor (){
                             
 
 
-                            throw Exception("Not Mutable")
+                            throw Error("Not Mutable")
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage(originalImage: Image, canvasScale: number, resize: boolean): Image{
     //var originalImage = originalImage
@@ -141,12 +140,10 @@ private constructor (){
         
 
 
-    
                         if(resize)
                         
                                     {
                                     
-    
                         if(newWidth < newHeight)
                         
                                     {
@@ -155,7 +152,6 @@ private constructor (){
                                     }
                                 
 
-    
                         if(newHeight < newWidth)
                         
                                     {
@@ -172,7 +168,6 @@ private constructor (){
         
 
 
-    
                         if(image.isMutable())
                         
                                     {
@@ -191,7 +186,7 @@ private constructor (){
         
         
 
-drawImage(originalImage, halfWidthDelta, halfHeightDelta, anchor)
+graphics.drawImage(originalImage, halfWidthDelta, halfHeightDelta, anchor)
 
 
 
@@ -205,7 +200,7 @@ drawImage(originalImage, halfWidthDelta, halfHeightDelta, anchor)
                             
 
 
-                            throw Exception("Not Mutable")
+                            throw Error("Not Mutable")
 
                         }
                             

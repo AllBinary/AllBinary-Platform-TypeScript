@@ -60,7 +60,6 @@ this.downloadableItem= downloadableItem
 
         try {
             
-    
                         if(this.downloadableItem!.getId() == 
                                     null
                                  || this.downloadableItem!.getId()!.length() < 1 || this.downloadableItem!.getId()!.length() > AbSqlData.MAXNUM)
@@ -76,7 +75,6 @@ this.downloadableItem= downloadableItem
                                     }
                                 
 
-    
                         if(this.downloadableItem!.getId() != 
                                     null
                                  && !StringValidationUtil.getInstance()!.isNumber(this.downloadableItem!.getId()))
@@ -92,7 +90,6 @@ this.downloadableItem= downloadableItem
                                     }
                                 
 
-    
                         if(this.downloadableItem!.getSystem() == 
                                     null
                                  || this.downloadableItem!.getSystem()!.length() < 1 || this.downloadableItem!.getSystem()!.length() > AbSqlData.MAXSTRING)
@@ -108,7 +105,6 @@ this.downloadableItem= downloadableItem
                                     }
                                 
 
-    
                         if(this.downloadableItem!.getPlatform() == 
                                     null
                                  || this.downloadableItem!.getPlatform()!.length() < 1 || this.downloadableItem!.getPlatform()!.length() > AbSqlData.MAXSTRING)
@@ -124,7 +120,6 @@ this.downloadableItem= downloadableItem
                                     }
                                 
 
-    
                         if(this.downloadableItem!.getSpecialName() == 
                                     null
                                  || this.downloadableItem!.getSpecialName()!.length() < 0 || this.downloadableItem!.getSpecialName()!.length() > AbSqlData.MAXSTRING)
@@ -140,7 +135,6 @@ this.downloadableItem= downloadableItem
                                     }
                                 
 
-    
                         if(this.downloadableItem!.getVersion() == 
                                     null
                                  || this.downloadableItem!.getVersion()!.length() < 1 || this.downloadableItem!.getVersion()!.length() > AbSqlData.MAXSTRING)
@@ -156,7 +150,6 @@ this.downloadableItem= downloadableItem
                                     }
                                 
 
-    
                         if(this.downloadableItem!.getChanges() == 
                                     null
                                  || this.downloadableItem!.getChanges()!.length() < 1 || this.downloadableItem!.getChanges()!.length() > AbSqlData.MAXBLOB)
@@ -172,7 +165,6 @@ this.downloadableItem= downloadableItem
                                     }
                                 
 
-    
                         if(this.downloadableItem!.getSize() == 
                                     null
                                 )
@@ -194,7 +186,6 @@ this.downloadableItem= downloadableItem
         
 
 
-    
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
                         
                                     {
@@ -211,7 +202,6 @@ this.downloadableItem= downloadableItem
                         }
                             
 
-    
                         if(this.downloadableItem!.getValidTime() == 
                                     null
                                 )
@@ -233,7 +223,6 @@ this.downloadableItem= downloadableItem
         
 
 
-    
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
                         
                                     {
@@ -250,7 +239,6 @@ this.downloadableItem= downloadableItem
                         }
                             
 
-    
                         if(this.downloadableItem!.getRetries() == 
                                     null
                                 )
@@ -272,7 +260,6 @@ this.downloadableItem= downloadableItem
         
 
 
-    
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
                         
                                     {
@@ -297,11 +284,10 @@ this.downloadableItem= downloadableItem
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -325,102 +311,94 @@ this.downloadableItem= downloadableItem
         
 
 
-    
                         if(this.downloadableItem!.getId() == 
                                     null
                                  || this.downloadableItem!.getId()!.length() < 1 || this.downloadableItem!.getId()!.length() > AbSqlData.MAXNUM)
                         
                                     {
-                                    append("Id is invalid. Must be number < ")
-appendint(AbSqlData.MAXNUM)
-append(" and > 0 digits.<br/>")
+                                    stringBuffer!.append("Id is invalid. Must be number < ")
+stringBuffer!.appendint(AbSqlData.MAXNUM)
+stringBuffer!.append(" and > 0 digits.<br/>")
 
                                     }
                                 
 
-    
                         if(this.downloadableItem!.getId() != 
                                     null
                                  && !StringValidationUtil.getInstance()!.isNumber(this.downloadableItem!.getId()))
                         
                                     {
-                                    append("Id is invalid. Must be > 0.<br/>")
+                                    stringBuffer!.append("Id is invalid. Must be > 0.<br/>")
 
                                     }
                                 
 
-    
                         if(this.downloadableItem!.getSystem() == 
                                     null
                                  || this.downloadableItem!.getSystem()!.length() < 1 || this.downloadableItem!.getSystem()!.length() > AbSqlData.MAXSTRING)
                         
                                     {
-                                    append("System value is invalid. Must be < ")
-appendint(AbSqlData.MAXSTRING)
-append(" and > 0 characters long.<br/>")
+                                    stringBuffer!.append("System value is invalid. Must be < ")
+stringBuffer!.appendint(AbSqlData.MAXSTRING)
+stringBuffer!.append(" and > 0 characters long.<br/>")
 
                                     }
                                 
 
-    
                         if(this.downloadableItem!.getPlatform() == 
                                     null
                                  || this.downloadableItem!.getPlatform()!.length() < 1 || this.downloadableItem!.getPlatform()!.length() > AbSqlData.MAXSTRING)
                         
                                     {
-                                    append("Platform value is invalid. Must be < ")
-appendint(AbSqlData.MAXSTRING)
-append(" and > 0 characters long.<br/>")
+                                    stringBuffer!.append("Platform value is invalid. Must be < ")
+stringBuffer!.appendint(AbSqlData.MAXSTRING)
+stringBuffer!.append(" and > 0 characters long.<br/>")
 
                                     }
                                 
 
-    
                         if(this.downloadableItem!.getSpecialName() == 
                                     null
                                  || this.downloadableItem!.getSpecialName()!.length() < 0 || this.downloadableItem!.getSpecialName()!.length() > AbSqlData.MAXSTRING)
                         
                                     {
-                                    append("Special Name value is invalid. Must be < ")
-appendint(AbSqlData.MAXSTRING)
-append(" and > 0 characters long.<br/>")
+                                    stringBuffer!.append("Special Name value is invalid. Must be < ")
+stringBuffer!.appendint(AbSqlData.MAXSTRING)
+stringBuffer!.append(" and > 0 characters long.<br/>")
 
                                     }
                                 
 
-    
                         if(this.downloadableItem!.getVersion() == 
                                     null
                                  || this.downloadableItem!.getVersion()!.length() < 1 || this.downloadableItem!.getVersion()!.length() > AbSqlData.MAXSTRING)
                         
                                     {
-                                    append("Version value is invalid. Must be < ")
-appendint(AbSqlData.MAXSTRING)
-append(" and > 0 characters long.<br/>")
+                                    stringBuffer!.append("Version value is invalid. Must be < ")
+stringBuffer!.appendint(AbSqlData.MAXSTRING)
+stringBuffer!.append(" and > 0 characters long.<br/>")
 
                                     }
                                 
 
-    
                         if(this.downloadableItem!.getChanges() == 
                                     null
                                  || this.downloadableItem!.getChanges()!.length() < 0 || this.downloadableItem!.getChanges()!.length() > AbSqlData.MAXBLOB)
                         
                                     {
-                                    append("Changes value is invalid. Must be < ")
-appendint(AbSqlData.MAXBLOB)
-append(" and >= 0 characters long.<br/>")
+                                    stringBuffer!.append("Changes value is invalid. Must be < ")
+stringBuffer!.appendint(AbSqlData.MAXBLOB)
+stringBuffer!.append(" and >= 0 characters long.<br/>")
 
                                     }
                                 
 
-    
                         if(this.downloadableItem!.getSize() == 
                                     null
                                 )
                         
                                     {
-                                    append("File Size is null")
+                                    stringBuffer!.append("File Size is null")
 
                                     }
                                 
@@ -431,13 +409,12 @@ append(" and >= 0 characters long.<br/>")
         
 
 
-    
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
                         
                                     {
-                                    append("File Size is invalid. Must be number < ")
-appendint(AbSqlData.MAXNUM)
-append(" and > 0 digits.<br/>")
+                                    stringBuffer!.append("File Size is invalid. Must be number < ")
+stringBuffer!.appendint(AbSqlData.MAXNUM)
+stringBuffer!.append(" and > 0 digits.<br/>")
 
                                     }
                                 
@@ -445,13 +422,12 @@ append(" and > 0 digits.<br/>")
                         }
                             
 
-    
                         if(this.downloadableItem!.getValidTime() == 
                                     null
                                 )
                         
                                     {
-                                    append("Valid Time is null")
+                                    stringBuffer!.append("Valid Time is null")
 
                                     }
                                 
@@ -462,13 +438,12 @@ append(" and > 0 digits.<br/>")
         
 
 
-    
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
                         
                                     {
-                                    append("Valid Time is invalid. Must be number < ")
-appendint(AbSqlData.MAXNUM)
-append(" and > 0 digits.<br/>")
+                                    stringBuffer!.append("Valid Time is invalid. Must be number < ")
+stringBuffer!.appendint(AbSqlData.MAXNUM)
+stringBuffer!.append(" and > 0 digits.<br/>")
 
                                     }
                                 
@@ -476,13 +451,12 @@ append(" and > 0 digits.<br/>")
                         }
                             
 
-    
                         if(this.downloadableItem!.getRetries() == 
                                     null
                                 )
                         
                                     {
-                                    append("Retries is null")
+                                    stringBuffer!.append("Retries is null")
 
                                     }
                                 
@@ -493,13 +467,12 @@ append(" and > 0 digits.<br/>")
         
 
 
-    
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
                         
                                     {
-                                    append("Retries is invalid. Must be number < ")
-appendint(AbSqlData.MAXNUM)
-append(" and > 0 digits.<br/>")
+                                    stringBuffer!.append("Retries is invalid. Must be number < ")
+stringBuffer!.appendint(AbSqlData.MAXNUM)
+stringBuffer!.append(" and > 0 digits.<br/>")
 
                                     }
                                 
@@ -515,11 +488,10 @@ append(" and > 0 digits.<br/>")
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 

@@ -66,7 +66,7 @@ private constructor (){
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getRelativeRelationshipList(resource: string, layer: AllBinaryLayer): BasicArrayList{
 var resource = resource
@@ -97,7 +97,6 @@ index < size; index++)
         
 
 
-    
                         if(featureInterface!.isFeature())
                         
                                     {
@@ -107,7 +106,6 @@ index < size; index++)
         
 
 
-    
                         if(list != basicArrayListUtil!.getImmutableInstance())
                         
                                     {
@@ -128,12 +126,12 @@ index < size; index++)
 
 
 
-                            throw Exception(StringMaker().
+                            throw Error(StringMaker().
                             append("Not available for current feature selection or Resource: ")!.append(resource)!.toString())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     duplicate(list: BasicArrayList, layer: AllBinaryLayer): BasicArrayList{
 var list = list
@@ -163,7 +161,7 @@ index < size; index++)
         
         
 
-add(RelativeLayerRelationship(layer, PointFactory.getInstance()!.getInstance(relativeRelationship!.getX(), relativeRelationship!.getY()), BasicArrayListUtil.getInstance()!.getImmutableInstance()))
+newList!.add(RelativeLayerRelationship(layer, PointFactory.getInstance()!.getInstance(relativeRelationship!.getX(), relativeRelationship!.getY()), BasicArrayListUtil.getInstance()!.getImmutableInstance()))
 }
 
 

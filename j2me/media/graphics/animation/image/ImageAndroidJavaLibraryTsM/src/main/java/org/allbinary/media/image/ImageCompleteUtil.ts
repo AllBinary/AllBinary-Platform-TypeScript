@@ -41,7 +41,7 @@ export class ImageCompleteUtil
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public waitFor(image: Image, name: string){
 var image = image

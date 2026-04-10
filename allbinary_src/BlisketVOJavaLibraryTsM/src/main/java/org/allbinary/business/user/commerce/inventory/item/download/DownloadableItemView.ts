@@ -72,16 +72,15 @@ this.downloadableItem= downloadableItem
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "toXmlNode")
+                                    logUtil!.put(this.commonStrings!.START, this, "toXmlNode")
 
                                     }
                                 
@@ -130,7 +129,7 @@ var document = document
         
         
 
-setTimeInMillis(calendar.getTimeInMillis() +totalTime)
+calendar.setTimeInMillis(calendar.getTimeInMillis() +totalTime)
 
     var yearDelta: number = calendar.get(Calendar.YEAR)!;
         
@@ -161,12 +160,12 @@ setTimeInMillis(calendar.getTimeInMillis() +totalTime)
         
         
 
-put(DownloadItemData.VALID_TIME_YEARS, Integer(Integer.valueOf(yearDelta -year)))
-put(DownloadItemData.VALID_TIME_MONTHS, Integer(Integer.valueOf(monthDelta -month)))
-put(DownloadItemData.VALID_TIME_DAYS, Integer(Integer.valueOf(dayDelta -day)))
-put(DownloadItemData.VALID_TIME_HOURS, Integer(Integer.valueOf(hourDelta -hour)))
-put(DownloadItemData.VALID_TIME_MINUTES, Integer(Integer.valueOf(minuteDelta -minute)))
-put(DownloadItemData.VALID_TIME_SECONDS, Integer(Integer.valueOf(secondDelta -second)))
+hashMap!.put(DownloadItemData.VALID_TIME_YEARS, Integer(Integer.valueOf(yearDelta -year)))
+hashMap!.put(DownloadItemData.VALID_TIME_MONTHS, Integer(Integer.valueOf(monthDelta -month)))
+hashMap!.put(DownloadItemData.VALID_TIME_DAYS, Integer(Integer.valueOf(dayDelta -day)))
+hashMap!.put(DownloadItemData.VALID_TIME_HOURS, Integer(Integer.valueOf(hourDelta -hour)))
+hashMap!.put(DownloadItemData.VALID_TIME_MINUTES, Integer(Integer.valueOf(minuteDelta -minute)))
+hashMap!.put(DownloadItemData.VALID_TIME_SECONDS, Integer(Integer.valueOf(secondDelta -second)))
 
     var keySet: Set = hashMap!.keys!;
         
@@ -214,7 +213,7 @@ index < size; index++)
         
 
 value= stringUtil!.getInstance(value)
-appendChild(ModDomHelper.createNameValueNodes(document, name, value))
+node.appendChild(ModDomHelper.createNameValueNodes(document, name, value))
 }
 
 

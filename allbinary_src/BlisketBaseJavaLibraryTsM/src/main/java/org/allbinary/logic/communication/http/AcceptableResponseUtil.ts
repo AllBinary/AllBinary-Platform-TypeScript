@@ -42,7 +42,7 @@ export class AcceptableResponseUtil
 
 
                 init{
-hashCode()
+AcceptableResponseFactory.getInstance()!.HTML.hashCode()
 }
 
     public readonly candidateVector: Vector = new Vector();

@@ -58,14 +58,14 @@ export class WaypointRunnableSelectedLogHelper extends WaypointRunnableLogHelper
 
     public start(pathFindingLayerInterface: PathFindingLayerInterface){
     //var pathFindingLayerInterface = pathFindingLayerInterface
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(pathFindingLayerInterface!.getName())!.append(commonStrings!.START_RUNNABLE)!.toString(), this, commonStrings!.RUN)
 }
 
 
     public end(pathFindingLayerInterface: PathFindingLayerInterface){
     //var pathFindingLayerInterface = pathFindingLayerInterface
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(pathFindingLayerInterface!.getName())!.append(commonStrings!.END_RUNNABLE)!.toString(), this, commonStrings!.RUN)
 }
 

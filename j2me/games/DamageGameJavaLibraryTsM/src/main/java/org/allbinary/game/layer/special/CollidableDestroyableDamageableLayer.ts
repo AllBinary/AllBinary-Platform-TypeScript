@@ -172,14 +172,14 @@ this.pickupBehavior= PickupBehavior.NULL_PICKUP_BEHAVIOR
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public initPosition(){
-this.setPosition(this.initX, this.initY, this.initZ)
+this.this.setPosition(this.initX, this.initY, this.initZ)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public initPosition(x: number, y: number, z: number){
     //var x = x
@@ -193,11 +193,11 @@ this.initZ= z
 
     public paint(graphics: Graphics){
     //var graphics = graphics
-paint(graphics)
+super.paint(graphics)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public damage(damage: number, damageType: number){
     //var damage = damage
@@ -205,28 +205,28 @@ paint(graphics)
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDamage(damageType: number): number{
     //var damageType = damageType
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isDestroyed(): boolean{
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -246,13 +246,12 @@ this.groupInterface= teamInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
 this.allBinaryGameLayerManagerP= allBinaryGameLayerManager
 
-    
                         if(this.allBinaryGameLayerManagerP == 
                                     null
                                 )
@@ -324,43 +323,43 @@ this.readyForExplosion= isReadyForExplosion
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public up(){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public down(){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public right(){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public left(){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public strafeLeft(){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public strafeRight(){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fire(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -368,7 +367,7 @@ this.readyForExplosion= isReadyForExplosion
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public special1(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -376,7 +375,7 @@ this.readyForExplosion= isReadyForExplosion
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public special2(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -384,7 +383,7 @@ this.readyForExplosion= isReadyForExplosion
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public special3(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -392,7 +391,7 @@ this.readyForExplosion= isReadyForExplosion
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public special4(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -400,7 +399,7 @@ this.readyForExplosion= isReadyForExplosion
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public special5(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -408,35 +407,35 @@ this.readyForExplosion= isReadyForExplosion
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public up(yAnalogValue: number){
     //var yAnalogValue = yAnalogValue
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public down(yAnalogValue: number){
     //var yAnalogValue = yAnalogValue
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public right(xAnalogValue: number){
     //var xAnalogValue = xAnalogValue
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public left(xAnalogValue: number){
     //var xAnalogValue = xAnalogValue
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public rightTrigger(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent, xAnalogValue: number){
     //var layerManager = layerManager
@@ -445,7 +444,7 @@ this.readyForExplosion= isReadyForExplosion
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public leftTrigger(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent, xAnalogValue: number){
     //var layerManager = layerManager
@@ -475,7 +474,7 @@ this.pickupBehavior= pickupBehavior
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public addPart(pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface){
     //var pickedUpLayerInterfaceFactoryInterface = pickedUpLayerInterfaceFactoryInterface
@@ -510,8 +509,8 @@ this.partInterfaceArrayP= partInterfaceArray
         
         
 
-toString(stringBuffer)
-append(commonSeps!.NEW_LINE)
+super.toString(stringBuffer)
+stringBuffer!.append(commonSeps!.NEW_LINE)
 
     var groupInterfaceArray: Group[] = this.getGroupInterface()!;
         
@@ -533,8 +532,8 @@ append(commonSeps!.NEW_LINE)
         
 index < size; index++)
         {
-append(groupInterfaceArray[index]!.toString())
-append(commonSeps!.COMMA)
+stringBuffer!.append(groupInterfaceArray[index]!.toString())
+stringBuffer!.append(commonSeps!.COMMA)
 }
 
 
@@ -543,29 +542,28 @@ append(commonSeps!.COMMA)
         
 
 
-    
                         if(pickupBehavior != 
                                     null
                                 )
                         
                                     {
-                                    append(commonSeps!.NEW_LINE)
-append(pickupBehavior!.toString())
+                                    stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append(pickupBehavior!.toString())
 
                                     }
                                 
-append(commonSeps!.NEW_LINE)
-append(READYFOREXPLOSION)
-appendboolean(readyForExplosion)
-append(commonSeps!.NEW_LINE)
-append(commonStrings!.INIT)
-append(commonSeps!.SPACE)
-append(positionStrings!.X_LABEL)
-appendint(initX)
-append(positionStrings!.Y_LABEL)
-appendint(initX)
-append(positionStrings!.Z_LABEL)
-appendint(initZ)
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append(READYFOREXPLOSION)
+stringBuffer!.appendboolean(readyForExplosion)
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append(commonStrings!.INIT)
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(positionStrings!.X_LABEL)
+stringBuffer!.appendint(initX)
+stringBuffer!.append(positionStrings!.Y_LABEL)
+stringBuffer!.appendint(initX)
+stringBuffer!.append(positionStrings!.Z_LABEL)
+stringBuffer!.appendint(initZ)
 }
 
 
@@ -575,7 +573,7 @@ appendint(initZ)
         
         
 
-this.toString(stringBuffer)
+this.this.toString(stringBuffer)
 
 
 

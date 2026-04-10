@@ -44,7 +44,7 @@ var read = read
         
         
 
-put("Url: " +url, this, "getUrl")
+PreLogUtil.put("Url: " +url, this, "getUrl")
 
 
 
@@ -54,14 +54,14 @@ put("Url: " +url, this, "getUrl")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public write(){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     load(){

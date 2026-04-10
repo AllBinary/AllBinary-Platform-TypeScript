@@ -134,7 +134,7 @@ export class UserEmailEventNameData
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstance(userEmailEventNameString: string): UserEmailEventNameData{
@@ -145,7 +145,6 @@ var userEmailEventNameString = userEmailEventNameString
         
 
 
-    
                         if(userEmailEventNameData == 
                                     null
                                 )
@@ -154,7 +153,7 @@ var userEmailEventNameString = userEmailEventNameString
                                     
 
 
-                            throw Exception()
+                            throw Error()
 
                                     }
                                 
@@ -179,8 +178,8 @@ public constructor (eventHandlerName: string){
             super();
             var eventHandlerName = eventHandlerName
 this.eventHandlerName= eventHandlerName
-this.initNextId()
-put(this.eventHandlerName, this)
+this.this.initNextId()
+this.userNameEvenNameHashMap!.put(this.eventHandlerName, this)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.

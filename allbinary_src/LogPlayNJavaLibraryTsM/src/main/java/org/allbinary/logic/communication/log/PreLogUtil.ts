@@ -49,7 +49,6 @@ import { PlayN } from "../../../../../playn/core/PlayN.js";
         
 
 
-    
                         if(className == 
                                     null
                                 )
@@ -66,7 +65,7 @@ className= StringMaker().
         
         
 
-debug(LOG_SUCCESS +message)
+PlayN.log()!.debug(LOG_SUCCESS +message)
 }
 
 
@@ -85,7 +84,6 @@ debug(LOG_SUCCESS +message)
         
 
 
-    
                         if(className == 
                                     null
                                 )
@@ -102,7 +100,7 @@ className= StringMaker().
         
         
 
-error(LOG_SUCCESS +message, exception as Throwable)
+PlayN.log()!.error(LOG_SUCCESS +message, exception as Error)
 }
 
 
@@ -115,7 +113,7 @@ error(LOG_SUCCESS +message, exception as Throwable)
         
         
 
-debug(LOG_SUCCESS +message)
+PlayN.log()!.debug(LOG_SUCCESS +message)
 }
 
 
@@ -129,7 +127,7 @@ debug(LOG_SUCCESS +message)
         
         
 
-error(LOG_SUCCESS +message, exception as Throwable)
+PlayN.log()!.error(LOG_SUCCESS +message, exception as Error)
 }
 
 

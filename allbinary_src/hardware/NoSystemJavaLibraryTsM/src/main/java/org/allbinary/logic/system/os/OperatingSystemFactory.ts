@@ -75,11 +75,11 @@ private constructor (){
         
         
 
-println(osString)
-put(osString, this, commonStrings!.GET_INSTANCE)
+System.out.println(osString)
+logUtil!.put(osString, this, commonStrings!.GET_INSTANCE)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 }
 
 

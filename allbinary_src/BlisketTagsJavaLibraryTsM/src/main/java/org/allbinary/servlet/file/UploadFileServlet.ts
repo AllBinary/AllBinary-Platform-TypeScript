@@ -103,7 +103,7 @@ export class UploadFileServlet extends HttpServlet {
 
     private fileName: string
 
-                @Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException::class, IOException::class)
             
     processRequest(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
@@ -122,7 +122,7 @@ var response = response
 
 
         try {
-            init(request)
+            BlisketServletUtil.getInstance()!.init(request)
 this.requestHashMap= MultipartRequestParams(request).
                             toHashMap()
 
@@ -131,14 +131,13 @@ this.requestHashMap= MultipartRequestParams(request).
         
 
 
-    
                         if(filePath == 
                                     null
                                 )
                         
                                     {
                                     isError= true
-sendError(HttpServletResponse.SC_NOT_FOUND)
+response.sendError(HttpServletResponse.SC_NOT_FOUND)
 
 
 
@@ -160,24 +159,22 @@ sendError(HttpServletResponse.SC_NOT_FOUND)
         
 
 
-    
                         if(authenticationHelper!.isAuthenticated())
                         
                                     {
                                     
-    
                         if(AuthenticationHelperUtil.getInstance()!.isAuthorized(authenticationHelper, filePath))
                         
                                     {
-                                    this.saveFile(filePath)
-setContentType("text/plain")
-write("OK!".encodeToByteArray())
+                                    this.this.saveFile(filePath)
+response.setContentType("text/plain")
+response.getOutputStream()!.write("OK!".encodeToByteArray())
 
                                     }
                                 
                         else {
                             isError= true
-sendError(HttpServletResponse.SC_UNAUTHORIZED, "You are not Authorized")
+response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "You are not Authorized")
 
                         }
                             
@@ -186,37 +183,34 @@ sendError(HttpServletResponse.SC_UNAUTHORIZED, "You are not Authorized")
                                 
                         else {
                             isError= true
-sendError(HttpServletResponse.SC_UNAUTHORIZED, "Please Login")
+response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Please Login")
 
                         }
                             
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put(this.commonStrings!.EXCEPTION, this, "processRequest()", e)
+                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "processRequest()", e)
 
                                     }
                                 
 isError= true
-sendError(HttpServletResponse.SC_NOT_FOUND)
+response.sendError(HttpServletResponse.SC_NOT_FOUND)
 }
 
          finally {
             
-    
                         if(!isError)
                         
                                     {
-                                    close(response.getOutputStream())
+                                    StreamUtil.getInstance()!.close(response.getOutputStream())
 
                                     }
                                 
 
-    
                         if(!StreamUtil.getInstance()!.close(inputStream))
                         
                                     {
@@ -229,7 +223,7 @@ sendError(HttpServletResponse.SC_NOT_FOUND)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     saveFile(filePath: string){
 var filePath = filePath
@@ -248,7 +242,6 @@ var filePath = filePath
         
 
 
-    
                         if(fileItem != 
                                     null
                                  && fileItem!.getSize() > 1)
@@ -256,7 +249,6 @@ var filePath = filePath
                                     {
                                     this.fileName= HttpRequestUtil.getInstance()!.generateFileName(fileItem!.getName())
 
-    
                         if(filePath!.endsWith("/") || filePath!.endsWith("\\"))
                         
                                     {
@@ -270,7 +262,6 @@ var filePath = filePath
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
@@ -279,45 +270,43 @@ var filePath = filePath
         
         
 
-append("Uploaded File: ")
-append(this.fileName)
-append(" New File: ")
-append(file.getPath())
-put(stringBuffer!.toString(), this, "saveFile()")
+stringBuffer!.append("Uploaded File: ")
+stringBuffer!.append(this.fileName)
+stringBuffer!.append(" New File: ")
+stringBuffer!.append(file.getPath())
+logUtil!.put(stringBuffer!.toString(), this, "saveFile()")
 
                                     }
                                 
-log(fileItem)
+HttpFileUploadUtil.log(fileItem)
 
     var byteArray: ByteArray = fileItem!.get()!;
         
         
 
 
-    
                         if(file.isFile())
                         
                                     {
-                                    delete()
-createNewFile()
+                                    file.delete()
+file.createNewFile()
 
                                     }
                                 
 fileOutputStream= AbFileOutputStream(file)
-write(byteArray)
+fileOutputStream!.write(byteArray)
 
                                     }
                                 
 
          finally {
             
-    
                         if(fileOutputStream != 
                                     null
                                 )
                         
                                     {
-                                    close()
+                                    fileOutputStream!.close()
 
                                     }
                                 
@@ -327,7 +316,7 @@ write(byteArray)
 }
 
 
-                @Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException::class, IOException::class)
             
     doGet(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
@@ -336,7 +325,7 @@ processRequest(request, response)
 }
 
 
-                @Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException::class, IOException::class)
             
     doPost(request: HttpServletRequest, response: HttpServletResponse){
 var request = request

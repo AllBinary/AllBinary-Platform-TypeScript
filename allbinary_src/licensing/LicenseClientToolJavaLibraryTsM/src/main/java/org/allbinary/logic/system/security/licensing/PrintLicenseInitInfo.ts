@@ -43,7 +43,7 @@ export class PrintLicenseInitInfo
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static main(args: string[]){
 var args = args
@@ -52,18 +52,18 @@ var args = args
         
         
 
-printInitInfo()
+initInfo!.printInitInfo()
 }
 
 public constructor (options: string[]){
 
             super();
             var options = options
-setFilePath(PATH +PATH_GLOBALS.getInstance()!.INIT_PATH)
+LicenseInitInfoUtil.getInstance()!.setFilePath(PATH +PATH_GLOBALS.getInstance()!.INIT_PATH)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getLicenseInitInfo(): LicenseInitInfo{
 
@@ -72,7 +72,6 @@ setFilePath(PATH +PATH_GLOBALS.getInstance()!.INIT_PATH)
         
 
 
-    
                         if(FileFactory.getInstance()!.isFile(licenseInitInfoUtil!.getFilePath()))
                         
                                     {
@@ -86,7 +85,7 @@ setFilePath(PATH +PATH_GLOBALS.getInstance()!.INIT_PATH)
                                     }
                                 
                         else {
-                            println("No Licence File at: " +licenseInitInfoUtil!.getFilePath())
+                            System.out.println("No Licence File at: " +licenseInitInfoUtil!.getFilePath())
 
 
 
@@ -107,7 +106,7 @@ setFilePath(PATH +PATH_GLOBALS.getInstance()!.INIT_PATH)
         
         
 
-println("License ID: " +licenseInitInfo!.getLicenseId())
+System.out.println("License ID: " +licenseInitInfo!.getLicenseId())
 
     var list: BasicArrayList = licenseInitInfo!.getServerList()!;
         
@@ -128,13 +127,13 @@ println("License ID: " +licenseInitInfo!.getLicenseId())
         
 index < size; index++)
         {
-println("Lic Serv: " +list.get(index))
+System.out.println("Lic Serv: " +list.get(index))
 }
 
 } catch(e: Exception)
             {
-print("Error: " +e)
-printStackTrace()
+System.out.print("Error: " +e)
+e.printStackTrace()
 }
 
 }

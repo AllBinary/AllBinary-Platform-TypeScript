@@ -57,31 +57,28 @@ this.status= value
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("Tag Start", this, "doStartTag")
+                                    logUtil!.put("Tag Start", this, "doStartTag")
 
                                     }
                                 
-this.setName("Range Order History View")
-this.setObjectFile("views.admin.orderhistory.DateRangeOrderHistoryView")
+this.this.setName("Range Order History View")
+this.this.setObjectFile("views.admin.orderhistory.DateRangeOrderHistoryView")
 
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
@@ -92,7 +89,7 @@ this.setObjectFile("views.admin.orderhistory.DateRangeOrderHistoryView")
                             
 
 
-                            throw Exception("No Such View Command: " +this.getCommand())
+                            throw Error("No Such View Command: " +this.getCommand())
 
                         }
                             
@@ -108,10 +105,10 @@ this.setObjectFile("views.admin.orderhistory.DateRangeOrderHistoryView")
 
 
 
-                            throw Exception("Command Null")
+                            throw Error("Command Null")
 } catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

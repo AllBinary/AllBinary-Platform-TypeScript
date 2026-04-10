@@ -68,14 +68,14 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public get(abeClientInformation: AbeClientInformationInterface): AbeLicenseInterface{
     //var abeClientInformation = abeClientInformation
 
         try {
-            put(commonStrings!.START, this, commonStrings!.GET)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.GET)
 
     var xmlRpcAbeLicenseClient: XmlRpcAbeClient = new XmlRpcAbeLicenseRetrievalClient(abeClientInformation);
         
@@ -113,7 +113,6 @@ public constructor (){
         
 
 
-    
                         if(stringValidationUtil!.isEmpty(abeClientInformation!.getLicenseId()) && !abeClientInformation!.isSameId(licenseId))
                         
                                     {
@@ -122,7 +121,6 @@ public constructor (){
                                     }
                                 
 
-    
                         if(servers.size() >= MINSERVERS && abeClientInformation!.isLargerOrDifferentServerList(servers))
                         
                                     {
@@ -131,7 +129,6 @@ public constructor (){
                                     }
                                 
 
-    
                         if(isBetterServerList || isNewLicenseId)
                         
                                     {
@@ -140,14 +137,14 @@ public constructor (){
         
         
 
-setLicenseId(licenseId)
-setServerList(servers)
-write(initInfo)
-init()
+initInfo!.setLicenseId(licenseId)
+initInfo!.setServerList(servers)
+LicenseInitInfoUtil.getInstance()!.write(initInfo)
+abeClientInformation!.init()
 
                                     }
                                 
-put(commonStrings!.END, this, commonStrings!.GET)
+logUtil!.put(commonStrings!.END, this, commonStrings!.GET)
 
 
 

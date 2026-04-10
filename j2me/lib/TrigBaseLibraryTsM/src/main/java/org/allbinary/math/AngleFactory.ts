@@ -75,10 +75,10 @@ var args = args
         
 index < 360; index++)
         {
-append(CommonSeps.getInstance()!.NEW_LINE)
+stringMaker!.appendint(index)!.append(CommonSeps.getInstance()!.FORWARD_SLASH)!.appendshort(angleFactory!.getClosestDirection(index)!.getValue())!.append(CommonSeps.getInstance()!.NEW_LINE)
 }
 
-put(stringMaker!.toString(), "main", "main")
+LogUtil.getInstance()!.put(stringMaker!.toString(), "main", "main")
 }
 
 
@@ -212,7 +212,6 @@ angleArray[index]= Angle(index.toShort())
     public getClosestDirection(angle: number): Angle{
 var angle = angle
 
-    
                         if((angle >= 315 && angle < 360) || (angle >= 0 && angle < 45))
                         
                                     {
@@ -226,7 +225,6 @@ var angle = angle
                                     }
                                 
                              else 
-    
                         if(angle >= 45 && angle < 135)
                         
                                     {
@@ -240,7 +238,6 @@ var angle = angle
                                     }
                                 
                              else 
-    
                         if(angle >= 135 && angle < 225)
                         
                                     {
@@ -254,7 +251,6 @@ var angle = angle
                                     }
                                 
                              else 
-    
                         if(angle >= 225 && angle < 315)
                         
                                     {

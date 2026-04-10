@@ -94,7 +94,7 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
@@ -113,21 +113,18 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
         
 
 
-    
                         if(this.componentInterface != 
                                     null
                                 )
                         error += this.componentInterface!.::class.toString()!
                              else 
-    
                         if()
                         
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 
@@ -140,7 +137,7 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlDoc(): Document{
 
@@ -148,7 +145,7 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
             
 
 
-                            throw Exception("Hmm: " +componentInterface!.getTransformDocumentInterface()!.getDoc())
+                            throw Error("Hmm: " +componentInterface!.getTransformDocumentInterface()!.getDoc())
 } catch(e: Exception)
             {
 
@@ -157,21 +154,18 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
         
 
 
-    
                         if(this.componentInterface != 
                                     null
                                 )
                         error += this.componentInterface!.::class.toString()!
                              else 
-    
                         if()
                         
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 
@@ -194,7 +188,7 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getTransformInfoInterface(): TransformInfoInterface{
 

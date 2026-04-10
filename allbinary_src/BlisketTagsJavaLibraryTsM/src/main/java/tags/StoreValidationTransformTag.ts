@@ -54,21 +54,20 @@ public constructor ()
     public setStoreName(value: string){
 var value = value
 this.storeName= value
-put(StoreFrontData.getInstance()!.NAME, this.storeName)
+this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("Tag Start", this, "doStartTag")
+                                    logUtil!.put("Tag Start", this, "doStartTag")
 
                                     }
                                 
@@ -80,7 +79,7 @@ put(StoreFrontData.getInstance()!.NAME, this.storeName)
     
 } catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

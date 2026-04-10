@@ -147,7 +147,7 @@ private constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createBufferedImage(bufferedImageArray: BufferedImage[], percent: number, scale: boolean): BufferedImage[]{
     //var bufferedImageArray = bufferedImageArray
@@ -200,7 +200,7 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createBufferedImage(bufferedImageArray: BufferedImage[], percent: number, scale: boolean): BufferedImage[]{
     //var bufferedImageArray = bufferedImageArray
@@ -253,7 +253,7 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createBufferedImage(bufferedImageArray: BufferedImage[], width: number, height: number, scale: boolean): BufferedImage[]{
     //var bufferedImageArray = bufferedImageArray
@@ -293,7 +293,7 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImageArray[ind
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createBufferedImage(bufferedImage: BufferedImage, newWidth: number, newHeight: number): BufferedImage{
     //var bufferedImage = bufferedImage
@@ -308,7 +308,7 @@ var newHeight = newHeight
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createBufferedImage(bufferedImage: BufferedImage, newWidth: number, newHeight: number, scale: boolean): BufferedImage{
     //var bufferedImage = bufferedImage
@@ -324,7 +324,7 @@ var newHeight = newHeight
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createBufferedImage(bufferedImage: BufferedImage, newWidth: number, newHeight: number, scale: boolean, allowTranslate: boolean): BufferedImage{
     //var bufferedImage = bufferedImage
@@ -373,7 +373,6 @@ var newHeight = newHeight
         
 
 
-    
                         if(scale)
                         
                                     {
@@ -388,7 +387,6 @@ ratioY= heightRatio
         
 
 
-    
                         if(!scale && allowTranslate)
                         
                                     {
@@ -402,7 +400,7 @@ ratioY= heightRatio
         
         
 
-translate(dx, dy)
+affineTransform!.translate(dx, dy)
 
                                     }
                                 
@@ -416,7 +414,7 @@ translate(dx, dy)
         
         
 
-drawRenderedImage(bufferedImage, affineTransform)
+graphics.drawRenderedImage(bufferedImage, affineTransform)
 
 
 
@@ -426,7 +424,7 @@ drawRenderedImage(bufferedImage, affineTransform)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createBufferedImageWithLargerCanvas(bufferedImage: BufferedImage, newWidth: number, newHeight: number): BufferedImage{
     //var bufferedImage = bufferedImage
@@ -502,7 +500,7 @@ var newHeight = newHeight
         
         
 
-drawImage(bufferedImage, dx4, dy4, 
+graphics.drawImage(bufferedImage, dx4, dy4, 
                             null)
 
 
@@ -516,7 +514,6 @@ drawImage(bufferedImage, dx4, dy4,
     public convertToBufferedImage(toolkitImage: java.awt.Image): BufferedImage{
 var toolkitImage = toolkitImage
 
-    
                         if(toolkitImage == 
                                     null
                                 )
@@ -543,9 +540,9 @@ var toolkitImage = toolkitImage
         
         
 
-drawImage(toolkitImage, 0, 0, 
+g2d.drawImage(toolkitImage, 0, 0, 
                             null)
-dispose()
+g2d.dispose()
 
 
 
@@ -561,7 +558,6 @@ dispose()
     var bufferedImage: BufferedImage
 
 
-    
                         if(image.isMutable())
                         
                                     {
@@ -605,13 +601,13 @@ var bufferedImage = bufferedImage
         
         
 
-append(" BufferedImage -")
-append(commonLabels!.WIDTH_LABEL)
-appendint(bufferedImage!.getWidth())
-append(commonLabels!.HEIGHT_LABEL)
-appendint(bufferedImage!.getHeight())
-append(" Type: ")
-appendint(bufferedImage!.getType())
+stringBuffer!.append(" BufferedImage -")
+stringBuffer!.append(commonLabels!.WIDTH_LABEL)
+stringBuffer!.appendint(bufferedImage!.getWidth())
+stringBuffer!.append(commonLabels!.HEIGHT_LABEL)
+stringBuffer!.appendint(bufferedImage!.getHeight())
+stringBuffer!.append(" Type: ")
+stringBuffer!.appendint(bufferedImage!.getType())
 
 
 

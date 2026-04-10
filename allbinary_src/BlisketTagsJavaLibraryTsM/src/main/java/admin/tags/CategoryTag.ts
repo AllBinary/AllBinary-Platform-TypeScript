@@ -57,8 +57,8 @@ export class CategoryTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(CategoryHelperFactory())
-this.setTagRequestHelperFactory(CategoryRequestHelperFactory())
+            this.this.setTagHelperFactory(CategoryHelperFactory())
+this.this.setTagRequestHelperFactory(CategoryRequestHelperFactory())
 }
 
 
@@ -68,7 +68,7 @@ this.xsl= value
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     viewCategory(): string{
 
@@ -117,11 +117,10 @@ this.xsl= value
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "viewCategory()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "viewCategory()", e)
 
                                     }
                                 
@@ -136,7 +135,7 @@ this.xsl= value
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     viewCategories(): string{
 
@@ -185,11 +184,10 @@ this.xsl= value
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "viewCategories()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "viewCategories()", e)
 
                                     }
                                 
@@ -204,26 +202,23 @@ this.xsl= value
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.isEnabled())
                         
                                     {
                                     
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
-                                    put(TransformInfoData.getInstance()!.TEMPLATEFILENAME, this.xsl)
+                                    this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.TEMPLATEFILENAME, this.xsl)
 
-    
                         if(this.getCommand()!.compareTo(CategoryData.getInstance()!.VIEW) == 0)
                         
                                     {
@@ -233,11 +228,10 @@ this.xsl= value
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    print(output)
+                                    pageContext!.getOut()!.print(output)
 
                                     }
                                 
@@ -245,7 +239,6 @@ this.xsl= value
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(CategoryData.getInstance()!.VIEW) == 0)
                         
                                     {
@@ -255,11 +248,10 @@ this.xsl= value
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    print(output)
+                                    pageContext!.getOut()!.print(output)
 
                                     }
                                 
@@ -290,7 +282,7 @@ this.xsl= value
     
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -300,7 +292,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

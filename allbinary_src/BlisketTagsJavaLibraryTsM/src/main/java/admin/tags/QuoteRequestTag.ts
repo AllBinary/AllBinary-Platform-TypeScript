@@ -54,8 +54,8 @@ export class QuoteRequestTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(QuoteHelperFactory())
-this.setTagRequestHelperFactory(QuoteRequestHelperFactory())
+            this.this.setTagHelperFactory(QuoteHelperFactory())
+this.this.setTagRequestHelperFactory(QuoteRequestHelperFactory())
 }
 
 
@@ -65,7 +65,7 @@ this.storeName= storeName
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     email(): string{
 
@@ -114,11 +114,10 @@ this.storeName= storeName
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "sendEmail()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "sendEmail()", e)
 
                                     }
                                 
@@ -133,25 +132,23 @@ this.storeName= storeName
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
-                                    put(StoreFrontData.getInstance()!.NAME, this.storeName)
+                                    this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
 
-    
                         if(this.getCommand()!.compareTo("EMAIL") == 0)
                         
                                     {
-                                    this.email()
+                                    this.this.email()
 
 
 
@@ -182,7 +179,7 @@ this.storeName= storeName
     
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -192,7 +189,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

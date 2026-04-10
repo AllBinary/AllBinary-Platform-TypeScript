@@ -45,7 +45,7 @@ export class ARectangleFilledAnimation extends Animation
 public constructor (){
 
             super();
-            this.setBasicColorP(BasicColorFactory.getInstance()!.BLACK)
+            this.this.setBasicColorP(BasicColorFactory.getInstance()!.BLACK)
 }
 
 
@@ -57,7 +57,7 @@ public constructor (){
     //var graphics = graphics
     //var unusedX = unusedX
     //var unusedY = unusedY
-fillRect(x, y, width, height)
+graphics.fillRect(x, y, width, height)
 }
 
 

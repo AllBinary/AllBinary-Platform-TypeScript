@@ -59,12 +59,11 @@ this.imageFileAbPath= imageAbPath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public saveFiles(fileItem: FileItem){
     //var fileItem = fileItem
 
-    
                         if(fileName == 
                                     null
                                 )
@@ -73,19 +72,18 @@ this.imageFileAbPath= imageAbPath
                                     
 
 
-                            throw Exception("Image File Name Was Null")
+                            throw Error("Image File Name Was Null")
 
                                     }
                                 
 
-    
                         if(!this.directory.create(this.imageFileAbPath))
                         
                                     {
                                     
 
 
-                            throw Exception("Unable to save file to non creatable directory")
+                            throw Error("Unable to save file to non creatable directory")
 
                                     }
                                 
@@ -94,8 +92,8 @@ this.imageFileAbPath= imageAbPath
         
         
 
-createNewFile()
-write(ByteArrayInputStream(fileItem!.get()), originalImageFile)
+originalImageFile!.createNewFile()
+FileUtil.getInstance()!.write(ByteArrayInputStream(fileItem!.get()), originalImageFile)
 }
 
 

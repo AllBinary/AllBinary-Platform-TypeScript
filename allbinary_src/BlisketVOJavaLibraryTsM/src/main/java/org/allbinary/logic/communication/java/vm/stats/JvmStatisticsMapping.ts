@@ -49,16 +49,16 @@ public constructor ()
         
         
 
-put(JvmStatisticsData.FREE_MEMORY_BYTES, this.getFreeMemoryBytesString())
-put(JvmStatisticsData.FREE_MEMORY_KILOBYTES, this.getFreeMemoryKilobytesString())
-put(JvmStatisticsData.FREE_MEMORY_MEGABYTES, this.getFreeMemoryMegabytesString())
-put(JvmStatisticsData.MAX_MEMORY_BYTES, this.getMaxMemoryBytesString())
-put(JvmStatisticsData.MAX_MEMORY_KILOBYTES, this.getMaxMemoryKilobytesString())
-put(JvmStatisticsData.MAX_MEMORY_MEGABYTES, this.getMaxMemoryMegabytesString())
-put(JvmStatisticsData.NUMBER_OF_THREADS, this.getNumberOfThreadsString())
-put(JvmStatisticsData.TOTAL_MEMORY_BYTES, this.getTotalMemoryBytesString())
-put(JvmStatisticsData.TOTAL_MEMORY_KILOBYTES, this.getTotalMemoryKilobytesString())
-put(JvmStatisticsData.TOTAL_MEMORY_MEGABYTES, this.getTotalMemoryMegabytesString())
+hashMap!.put(JvmStatisticsData.FREE_MEMORY_BYTES, this.getFreeMemoryBytesString())
+hashMap!.put(JvmStatisticsData.FREE_MEMORY_KILOBYTES, this.getFreeMemoryKilobytesString())
+hashMap!.put(JvmStatisticsData.FREE_MEMORY_MEGABYTES, this.getFreeMemoryMegabytesString())
+hashMap!.put(JvmStatisticsData.MAX_MEMORY_BYTES, this.getMaxMemoryBytesString())
+hashMap!.put(JvmStatisticsData.MAX_MEMORY_KILOBYTES, this.getMaxMemoryKilobytesString())
+hashMap!.put(JvmStatisticsData.MAX_MEMORY_MEGABYTES, this.getMaxMemoryMegabytesString())
+hashMap!.put(JvmStatisticsData.NUMBER_OF_THREADS, this.getNumberOfThreadsString())
+hashMap!.put(JvmStatisticsData.TOTAL_MEMORY_BYTES, this.getTotalMemoryBytesString())
+hashMap!.put(JvmStatisticsData.TOTAL_MEMORY_KILOBYTES, this.getTotalMemoryKilobytesString())
+hashMap!.put(JvmStatisticsData.TOTAL_MEMORY_MEGABYTES, this.getTotalMemoryMegabytesString())
 
 
 
@@ -68,7 +68,7 @@ put(JvmStatisticsData.TOTAL_MEMORY_MEGABYTES, this.getTotalMemoryMegabytesString
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getKey(): any = {}{
 
@@ -80,7 +80,7 @@ put(JvmStatisticsData.TOTAL_MEMORY_MEGABYTES, this.getTotalMemoryMegabytesString
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toVector(): Vector{
 
@@ -88,16 +88,16 @@ put(JvmStatisticsData.TOTAL_MEMORY_MEGABYTES, this.getTotalMemoryMegabytesString
         
         
 
-add(this.getFreeMemoryBytesString())
-add(this.getFreeMemoryKilobytesString())
-add(this.getFreeMemoryMegabytesString())
-add(this.getMaxMemoryBytesString())
-add(this.getMaxMemoryKilobytesString())
-add(this.getMaxMemoryMegabytesString())
-add(this.getNumberOfThreadsString())
-add(this.getTotalMemoryBytesString())
-add(this.getTotalMemoryKilobytesString())
-add(this.getTotalMemoryMegabytesString())
+vector.add(this.getFreeMemoryBytesString())
+vector.add(this.getFreeMemoryKilobytesString())
+vector.add(this.getFreeMemoryMegabytesString())
+vector.add(this.getMaxMemoryBytesString())
+vector.add(this.getMaxMemoryKilobytesString())
+vector.add(this.getMaxMemoryMegabytesString())
+vector.add(this.getNumberOfThreadsString())
+vector.add(this.getTotalMemoryBytesString())
+vector.add(this.getTotalMemoryKilobytesString())
+vector.add(this.getTotalMemoryMegabytesString())
 
 
 

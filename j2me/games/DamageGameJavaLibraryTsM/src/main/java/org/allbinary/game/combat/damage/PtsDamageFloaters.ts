@@ -124,7 +124,7 @@ var damage = damage
 this.lastDamage[index]= damage
 this.lastDamageString[index]= this.primitiveLongUtil!.getCharArray(this.lastDamage[index]!)
 this.lastDamageStringSizeArray[index]= this.primitiveLongUtil!.getCurrentTotalDigits()
-next()
+this.circularIndexUtil!.next()
 }
 
 
@@ -160,7 +160,6 @@ var graphics = graphics
 index >= 0; index--)
         {
 
-    
                         if(this.lastDamage[index] != 0)
                         
                                     {
@@ -169,9 +168,9 @@ index >= 0; index--)
         
         
 
-setBasicColorP(graphics, basicColorArrayIndexer!.get())
-drawChars(this.lastDamageString[index]!, 0, this.lastDamageStringSizeArray[index]!, x -myRandomFactory!.getNextInt(delta), y -delta, 0)
-next()
+this.basicSetColorUtil!.setBasicColorP(graphics, basicColorArrayIndexer!.get())
+graphics.drawChars(this.lastDamageString[index]!, 0, this.lastDamageStringSizeArray[index]!, x -myRandomFactory!.getNextInt(delta), y -delta, 0)
+basicColorArrayIndexer!.next()
 
                                     }
                                 

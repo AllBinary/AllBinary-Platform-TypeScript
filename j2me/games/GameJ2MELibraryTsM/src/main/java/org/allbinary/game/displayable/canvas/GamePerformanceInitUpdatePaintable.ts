@@ -72,7 +72,7 @@ var graphics = graphics
         
         
 
-setColor(RED)
+graphics.setColor(RED)
 
     var charArray: string[]
 
@@ -104,8 +104,8 @@ charArray= baseRefreshHelperCharArray[index]!
 charArray2= baseRefreshHelperCharArray[index +1]!
 size2= charArray!.length
 size3= charArray2!.length
-drawChars(charArray, 0, size2, 0, yArray[index]!, 0)
-drawChars(charArray2, 0, size3, size2 *myFont!.stringWidth(2), yArray[index +1]!, 0)
+graphics.drawChars(charArray, 0, size2, 0, yArray[index]!, 0)
+graphics.drawChars(charArray2, 0, size3, size2 *myFont!.stringWidth(2), yArray[index +1]!, 0)
 }
 
 }

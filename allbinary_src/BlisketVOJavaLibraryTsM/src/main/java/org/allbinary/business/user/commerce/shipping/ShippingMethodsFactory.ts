@@ -100,11 +100,11 @@ export class ShippingMethodsFactory
         
         
 
-append(sep)
-append("generic")
-append(sep)
-append("shipping")
-append(sep)
+stringBuffer!.append(sep)
+stringBuffer!.append("generic")
+stringBuffer!.append(sep)
+stringBuffer!.append("shipping")
+stringBuffer!.append(sep)
 SHIPPINGMETHODSFILEPATHSTRING= stringBuffer!.toString()
 }
 
@@ -132,11 +132,11 @@ public constructor (abeClientInformation: AbeClientInformationInterface, storeFr
         
         
 
-append(URLGLOBALS.getMainPath())
-append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-append(storeFrontInterface!.getName())
-append(sep)
-append(this.SHIPPINGMETHODSFILEPATHSTRING)
+stringBuffer!.append(URLGLOBALS.getMainPath())
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
+stringBuffer!.append(storeFrontInterface!.getName())
+stringBuffer!.append(sep)
+stringBuffer!.append(this.SHIPPINGMETHODSFILEPATHSTRING)
 
     var abPath: AbPath = AbPath(stringBuffer!.toString(), this.SHIPPINGMETHODSFILENAME) as AbPath;
         
@@ -195,7 +195,7 @@ index < nodeList!.getLength(); index++)
         
         
 
-add(shippingMethodInterface)
+shippingVector!.add(shippingMethodInterface)
 
     var defaultShippingMethodNameNode: Node = DomSearchHelper.getNode(ShippingMethodData.DEFAULT, shippingMethodNameNode!.getChildNodes())!;
         
@@ -207,7 +207,6 @@ add(shippingMethodInterface)
         
 
 
-    
                         if(defaultShippingMethodNameNodeValue != 
                                     null
                                  && defaultShippingMethodNameNodeValue!.compareTo(ShippingMethodData.DEFAULT) == 0)
@@ -215,20 +214,19 @@ add(shippingMethodInterface)
 }
 
 
-    
                         if(shippingVector!.length < 1)
                         
                                     {
                                     this.defaultShippingMethodInterface= BasicWeightShippingModuleView()
-add(this.defaultShippingMethodInterface)
-add(NoShippingModuleView())
+shippingVector!.add(this.defaultShippingMethodInterface)
+shippingVector!.add(NoShippingModuleView())
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(): Vector{
 

@@ -87,13 +87,13 @@ this.layerInterface= layerInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(geographicMapInterface: BasicGeographicMap){
     //var geographicMapInterface = geographicMapInterface
 this.occupyingGeographicMapCellPositionList= layerCoveringCellPositionsUtil!.getAll(geographicMapInterface, layerInterface, layerInterface!.getXP(), layerInterface!.getYP(), reusableOccupyingGeographicMapCellPositionList)
 this.surroundingGeographicMapCellPositionList= cellPositionsUtil!.getAllSurrounding(geographicMapInterface, occupyingGeographicMapCellPositionList, reusableSurroundingGeographicMapCellPositionList)
-setSize(this.surroundingGeographicMapCellPositionList!.size())
+this.surroundingCircularIndexUtil!.setSize(this.surroundingGeographicMapCellPositionList!.size())
 }
 
 
@@ -123,7 +123,7 @@ setSize(this.surroundingGeographicMapCellPositionList!.size())
         
         
 
-next()
+this.surroundingCircularIndexUtil!.next()
 
 
 

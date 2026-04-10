@@ -68,8 +68,8 @@ private constructor (){
             super();
             
         try {
-            this.setTouch(true)
-this.setMultiTouch(false)
+            this.this.setTouch(true)
+this.this.setMultiTouch(false)
 } catch(e: Exception)
             {
 
@@ -77,7 +77,7 @@ this.setMultiTouch(false)
         
         
 
-put(commonStrings!.EXCEPTION, SINGLETON, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, SINGLETON, commonStrings!.GET_INSTANCE, e)
 }
 
 }
@@ -153,14 +153,14 @@ this.touchScreenType= touchScreenType
         
         
 
-append("TouchScreen: ")
-appendboolean(this.isTouch())
-append(" MultiTouch: ")
-appendboolean(this.isMultiTouch())
-append(" Distinct MultiTouch: ")
-appendboolean(this.isMultiTouchDistinct())
-append(" TouchScreenType: ")
-append(StringUtil.getInstance()!.toString(this.getTouchScreenType()))
+stringBuffer!.append("TouchScreen: ")
+stringBuffer!.appendboolean(this.isTouch())
+stringBuffer!.append(" MultiTouch: ")
+stringBuffer!.appendboolean(this.isMultiTouch())
+stringBuffer!.append(" Distinct MultiTouch: ")
+stringBuffer!.appendboolean(this.isMultiTouchDistinct())
+stringBuffer!.append(" TouchScreenType: ")
+stringBuffer!.append(StringUtil.getInstance()!.toString(this.getTouchScreenType()))
 
 
 

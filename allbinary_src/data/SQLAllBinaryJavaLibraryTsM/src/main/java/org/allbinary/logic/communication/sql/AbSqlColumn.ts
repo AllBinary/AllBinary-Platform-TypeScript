@@ -82,15 +82,15 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo)
         
         
 
-append(sqlStrings!.SELECT)
-append(columnName)
-append(sqlStrings!.FROM)
-append(this.getTableName())
-append(sqlStrings!.WHERE)
-append(key)
-append(sqlStrings!.EQUAL_QUOTE)
-append(value)
-append(sqlStrings!.CLOSE_QUOTE)
+stringBuffer!.append(sqlStrings!.SELECT)
+stringBuffer!.append(columnName)
+stringBuffer!.append(sqlStrings!.FROM)
+stringBuffer!.append(this.getTableName())
+stringBuffer!.append(sqlStrings!.WHERE)
+stringBuffer!.append(key)
+stringBuffer!.append(sqlStrings!.EQUAL_QUOTE)
+stringBuffer!.append(value)
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
 
     var sqlStatement: string = stringBuffer!.toString()!;
         
@@ -117,7 +117,6 @@ append(sqlStrings!.CLOSE_QUOTE)
         
 
 
-    
                         if(intValue > largest)
                         
                                     {
@@ -134,16 +133,15 @@ append(sqlStrings!.CLOSE_QUOTE)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-append(sqlStrings!.SQL_STATEMENT_LABEL)
-append(sqlStatement)
-append(LARGEST_INT_VALUE_IN_COLUMN)
-append(largestAsString)
-put(stringBuffer!.toString(), this, METHOD_GET_LARGETS_INTEGER_IN_COLUMN)
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(sqlStrings!.SQL_STATEMENT_LABEL)
+stringBuffer!.append(sqlStatement)
+stringBuffer!.append(LARGEST_INT_VALUE_IN_COLUMN)
+stringBuffer!.append(largestAsString)
+logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_LARGETS_INTEGER_IN_COLUMN)
 
                                     }
                                 
@@ -156,11 +154,10 @@ put(stringBuffer!.toString(), this, METHOD_GET_LARGETS_INTEGER_IN_COLUMN)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_GET_LARGETS_INTEGER_IN_COLUMN, e)
+                                    logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_GET_LARGETS_INTEGER_IN_COLUMN, e)
 
                                     }
                                 
@@ -187,10 +184,10 @@ put(stringBuffer!.toString(), this, METHOD_GET_LARGETS_INTEGER_IN_COLUMN)
         
         
 
-append(sqlStrings!.SELECT)
-append(columnName)
-append(sqlStrings!.FROM)
-append(this.getTableName())
+stringBuffer!.append(sqlStrings!.SELECT)
+stringBuffer!.append(columnName)
+stringBuffer!.append(sqlStrings!.FROM)
+stringBuffer!.append(this.getTableName())
 
     var sqlStatement: string = stringBuffer!.toString()!;
         
@@ -211,20 +208,19 @@ append(this.getTableName())
         
         
 
-add(field)
+column.add(field)
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-append(sqlStrings!.SQL_STATEMENT_LABEL)
-append(sqlStatement)
-append(sqlStrings!.COLUMN_VALUE)
-append(column.toString())
-put(stringBuffer!.toString(), this, METHOD_GET_COLUMN)
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(sqlStrings!.SQL_STATEMENT_LABEL)
+stringBuffer!.append(sqlStatement)
+stringBuffer!.append(sqlStrings!.COLUMN_VALUE)
+stringBuffer!.append(column.toString())
+logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_COLUMN)
 
                                     }
                                 
@@ -237,11 +233,10 @@ put(stringBuffer!.toString(), this, METHOD_GET_COLUMN)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_GET_COLUMN, e)
+                                    logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_GET_COLUMN, e)
 
                                     }
                                 
@@ -265,15 +260,15 @@ var value = value
         
         
 
-append(sqlStrings!.SELECT)
-append(columnName)
-append(sqlStrings!.FROM)
-append(this.getTableName())
-append(sqlStrings!.WHERE)
-append(key)
-append(sqlStrings!.EQUAL_QUOTE)
-append(value)
-append(sqlStrings!.CLOSE_QUOTE)
+stringBuffer!.append(sqlStrings!.SELECT)
+stringBuffer!.append(columnName)
+stringBuffer!.append(sqlStrings!.FROM)
+stringBuffer!.append(this.getTableName())
+stringBuffer!.append(sqlStrings!.WHERE)
+stringBuffer!.append(key)
+stringBuffer!.append(sqlStrings!.EQUAL_QUOTE)
+stringBuffer!.append(value)
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
 
     var sqlStatement: string = stringBuffer!.toString()!;
         
@@ -297,20 +292,19 @@ append(sqlStrings!.CLOSE_QUOTE)
         while(rset.next())
         {
 field= rset.getObject(columnName)!.toString()
-add(field)
+column.add(field)
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-append(sqlStrings!.SQL_STATEMENT_LABEL)
-append(sqlStatement)
-append(sqlStrings!.COLUMN_VALUE)
-append(column.toString())
-put(stringBuffer!.toString(), this, METHOD_GET_COLUMN_WHERE)
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(sqlStrings!.SQL_STATEMENT_LABEL)
+stringBuffer!.append(sqlStatement)
+stringBuffer!.append(sqlStrings!.COLUMN_VALUE)
+stringBuffer!.append(column.toString())
+logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_COLUMN_WHERE)
 
                                     }
                                 
@@ -323,11 +317,10 @@ put(stringBuffer!.toString(), this, METHOD_GET_COLUMN_WHERE)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    put(this.FAILED_SQL_STATEMENT +sqlStatement, this, this.METHOD_GET_COLUMN_WHERE, e)
+                                    logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, this.METHOD_GET_COLUMN_WHERE, e)
 
                                     }
                                 

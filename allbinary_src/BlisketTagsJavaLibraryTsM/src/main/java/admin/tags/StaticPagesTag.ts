@@ -57,8 +57,8 @@ export class StaticPagesTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(StaticPagesHelperFactory())
-this.setTagRequestHelperFactory(StaticPagesRequestHelperFactory())
+            this.this.setTagHelperFactory(StaticPagesHelperFactory())
+this.this.setTagRequestHelperFactory(StaticPagesRequestHelperFactory())
 }
 
 
@@ -68,7 +68,7 @@ this.xslFile= value
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public generateStaticPages(): string{
 
@@ -117,11 +117,10 @@ this.xslFile= value
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "generateStaticPages()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "generateStaticPages()", e)
 
                                     }
                                 
@@ -136,7 +135,7 @@ this.xslFile= value
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public makePublic(): string{
 
@@ -185,11 +184,10 @@ this.xslFile= value
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "makePublic()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "makePublic()", e)
 
                                     }
                                 
@@ -204,40 +202,36 @@ this.xslFile= value
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.isEnabled())
                         
                                     {
                                     
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getCommand()!.compareTo(SearchData.GENERATESTATICPAGES) == 0)
                         
                                     {
-                                    put(TransformInfoData.getInstance()!.TEMPLATEFILENAME, this.xslFile)
+                                    this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.TEMPLATEFILENAME, this.xslFile)
 
     var output: string = this.generateStaticPages()!;
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    print(output)
+                                    this.pageContext!.getOut()!.print(output)
 
                                     }
                                 
@@ -245,7 +239,6 @@ this.xslFile= value
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(SearchData.MAKEPUBLIC) == 0)
                         
                                     {
@@ -255,11 +248,10 @@ this.xslFile= value
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    print(output)
+                                    this.pageContext!.getOut()!.print(output)
 
                                     }
                                 
@@ -290,7 +282,7 @@ this.xslFile= value
     
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -300,7 +292,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

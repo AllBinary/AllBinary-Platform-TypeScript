@@ -53,7 +53,7 @@ public constructor (){
 
 
     public updateSelectionInfo(){
-updateSelectionInfo()
+super.updateSelectionInfo()
 
     var rtsLayer: RTSLayer = this.rtsLayerP as RTSLayer;
         
@@ -87,14 +87,14 @@ updateSelectionInfo()
 total += geographicMapCellPosition!.getGeologicalResource()!.getTotal()
 }
 
-update(this.getPrimitiveLongUtil()!.getCharArray(total), this.getPrimitiveLongUtil()!.getCurrentTotalDigits())
+this.keyvalueDrawString!.update(this.getPrimitiveLongUtil()!.getCharArray(total), this.getPrimitiveLongUtil()!.getCurrentTotalDigits())
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics)
-paint(graphics, (y +(2 *MyFont.getInstance()!.DEFAULT_CHAR_HEIGHT)))
+super.paint(graphics)
+this.keyvalueDrawString!.paint(graphics, (y +(2 *MyFont.getInstance()!.DEFAULT_CHAR_HEIGHT)))
 }
 
 

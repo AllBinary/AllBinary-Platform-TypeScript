@@ -102,8 +102,8 @@ export class MapSelectionGameInputProcessor extends Processor
     public run(){
 
         try {
-            this.setRunning(true)
-add(SelectSound.getInstance())
+            this.this.setRunning(true)
+SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance())
 
     var track: number = preGameSelectorPaintable!.getPreGameSelectionForm()!.getSelectedIndex() +1;
         
@@ -114,19 +114,19 @@ add(SelectSound.getInstance())
         
         
 
-setCurrentLevel(wave)
-buildGame(false)
-removeListener(getPlayerGameInput())
-this.setRunning(false)
+gameCanvas!.getLayerManager()!.getGameInfo()!.setCurrentLevel(wave)
+gameCanvas!.buildGame(false)
+GameKeyEventHandler.getInstance()!.removeListener(getPlayerGameInput())
+this.this.setRunning(false)
 } catch(e: Exception)
             {
-this.setRunning(false)
+this.this.setRunning(false)
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }
@@ -150,14 +150,14 @@ this.lockedIndex= lockedIndex
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
-update()
+this.getPlayerGameInput()!.update()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onInput(list: BasicArrayList){
 var list = list
@@ -187,17 +187,15 @@ index < size; index++)
         
 
 
-    
                         if(key == Canvas.LEFT || key == Canvas.RIGHT || key == Canvas.UP || key == Canvas.DOWN)
                         
                                     {
                                     
-    
                         if(inputTimeHelper!.isTime())
                         
                                     {
-                                    add(SelectSound.getInstance())
-processInput(key)
+                                    SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance())
+this.preGameSelectorPaintable!.getPreGameSelectionForm()!.processInput(key)
 break;
 
                     
@@ -208,7 +206,6 @@ break;
                                     }
                                 
                              else 
-    
                         if(key == Canvas.KEY_NUM0)
                         
                                     {
@@ -218,22 +215,20 @@ break;
         
 
 
-    
                         if(selectedIndex < this.lockedIndex || !LockedUtil.getInstance()!.isLockedFeature())
                         
                                     {
                                     
-    
                         if(!abRunnable!.isRunning())
                         
                                     {
-                                    setRunning(true)
+                                    abRunnable!.setRunning(true)
 
     var thread: Thread = new Thread(abRunnable);
         
         
 
-start()
+thread.start()
 
                                     }
                                 
@@ -244,20 +239,20 @@ break;
                                     }
                                 
                         else {
-                            fire()
+                            LockedFeatureNotificationUtil.getInstance()!.fire()
 
                         }
                             
 
                                     }
                                 
-clear()
+list.clear()
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processInput(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager

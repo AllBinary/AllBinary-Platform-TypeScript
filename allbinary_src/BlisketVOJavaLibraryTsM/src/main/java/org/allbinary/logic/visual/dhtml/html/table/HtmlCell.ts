@@ -133,7 +133,6 @@ i < attributeSize; i++)
         
 
 
-    
                         if(value != 
                                     null
                                  && value.compareTo(stringUtil!.EMPTY_STRING) != 0)

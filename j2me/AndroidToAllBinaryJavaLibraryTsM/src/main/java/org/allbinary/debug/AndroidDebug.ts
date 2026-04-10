@@ -41,15 +41,15 @@ export class AndroidDebug
         
 
     public start(){
-this.setStartTime(System.currentTimeMillis())
-startMethodTracing("trace", bufferSize)
+this.this.setStartTime(System.currentTimeMillis())
+Debug.startMethodTracing("trace", bufferSize)
 setRunning(true)
 }
 
 
     public stop(){
 startTime= Long.MAX_VALUE
-stopMethodTracing()
+Debug.stopMethodTracing()
 setRunning(false)
 }
 

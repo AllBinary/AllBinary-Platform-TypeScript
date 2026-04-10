@@ -137,15 +137,15 @@ public constructor (groupInterface: Group[])
 
 this.noMoneyGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE)
 this.newUnitGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.NEW_UNIT, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE)
-put(WorkWaypoint.ID, smallIntegerSingletonFactory!.getInstance(50))
+this.getHashtable()!.put(WorkWaypoint.ID, smallIntegerSingletonFactory!.getInstance(50))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
         
@@ -156,12 +156,12 @@ setAllBinaryGameLayerManager(allBinaryGameLayerManager)
         
         
 
-setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
-setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
+this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
+this.newUnitGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, itemIndex: number){
     //var associatedRtsLayer = associatedRtsLayer
@@ -169,7 +169,7 @@ setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
     //var layerManager = layerManager
     //var item = item
     //var itemIndex = itemIndex
-process(layerManager)
+super.process(layerManager)
 
     var associatedRtsLayer2: RTSLayer = associatedRtsLayer as RTSLayer;
         
@@ -185,11 +185,10 @@ process(layerManager)
         
         
 
-put(Layer.ID, associatedRtsLayer)
-put(UnitRTSFormInput.DECAL_ID, 
+this.getHashtable()!.put(Layer.ID, associatedRtsLayer)
+this.getHashtable()!.put(UnitRTSFormInput.DECAL_ID, 
                                     (rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface).getDecalBasicColor())
 
-    
                         if(this.newUnconstructedRTSLayerInterfaceArray[itemIndex] == CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER)
                         
                                     {
@@ -208,7 +207,7 @@ put(UnitRTSFormInput.DECAL_ID,
         
         
 
-setPosition(cellPoint!.getX(), cellPoint!.getY(), rtsLayer!.getZP())
+rtsLayer!.setPosition(cellPoint!.getX(), cellPoint!.getY(), rtsLayer!.getZP())
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = rtsLayer!.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
         
@@ -219,7 +218,7 @@ setPosition(cellPoint!.getX(), cellPoint!.getY(), rtsLayer!.getZP())
         
         
 
-update(geographicMapInterface)
+rtsLayer!.geographicMapCellPositionAreaBase!.update(geographicMapInterface)
 
                         }
                             
@@ -233,12 +232,12 @@ update(geographicMapInterface)
         
         
 
-setPosition(cellPoint!.getX() -rtsLayer!.getHalfWidth(), cellPoint!.getY() -rtsLayer!.getHalfHeight(), rtsLayer!.getZP())
-this.attemptBuild(associatedRtsLayer2, rtsPlayerLayerInterface, layerManager, rtsLayer as RTSLayer, itemIndex)
+rtsLayer!.setPosition(cellPoint!.getX() -rtsLayer!.getHalfWidth(), cellPoint!.getY() -rtsLayer!.getHalfHeight(), rtsLayer!.getZP())
+this.this.attemptBuild(associatedRtsLayer2, rtsPlayerLayerInterface, layerManager, rtsLayer as RTSLayer, itemIndex)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     attemptBuild(associatedRtsLayer: RTSLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, layerInterface: RTSLayer, itemIndex: number){
     //var associatedRtsLayer = associatedRtsLayer
@@ -261,24 +260,23 @@ this.attemptBuild(associatedRtsLayer2, rtsPlayerLayerInterface, layerManager, rt
         
         
 
-append("Trying to Build: ")
-append(layerInterface!.getName())
-append(" for: $")
-appendint(cost)
-append(" with ")
-appendint(capital.getTotalMoney())
-put(stringBuffer!.toString(), this, "attemptBuild")
+stringBuffer!.append("Trying to Build: ")
+stringBuffer!.append(layerInterface!.getName())
+stringBuffer!.append(" for: $")
+stringBuffer!.appendint(cost)
+stringBuffer!.append(" with ")
+stringBuffer!.appendint(capital.getTotalMoney())
+logUtil!.put(stringBuffer!.toString(), this, "attemptBuild")
 
-    
                         if(cost <= capital.getTotalMoney())
                         
                                     {
-                                    construct(rtsPlayerLayerInterface)
+                                    layerInterface!.construct(rtsPlayerLayerInterface)
 this.newUnconstructedRTSLayerInterfaceArray[itemIndex]= CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER
-add(BuildingSound.getInstance())
-removeMoney(cost)
-set(layerInterface as UnitLayer, associatedRtsLayer as AdvancedRTSGameLayer)
-append(layerInterface, PlayersSingletonFactory.total)
+rtsPlayerLayerInterface!.add(BuildingSound.getInstance())
+capital.removeMoney(cost)
+AssignWaypointsUtil.getInstance()!.set(layerInterface as UnitLayer, associatedRtsLayer as AdvancedRTSGameLayer)
+layerManager!.append(layerInterface, PlayersSingletonFactory.total)
 
     var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;
         
@@ -289,13 +287,12 @@ append(layerInterface, PlayersSingletonFactory.total)
         
         
 
-addUnit(layerInterface)
+advancedPlayerOwnedRTSLayers!.addUnit(layerInterface)
 
-    
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
-                                    fireEvent(newUnitGameNotificationEvent)
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(newUnitGameNotificationEvent)
 
                                     }
                                 
@@ -303,13 +300,12 @@ addUnit(layerInterface)
                                     }
                                 
                         else {
-                            add(ErrorSound.getInstance())
+                            rtsPlayerLayerInterface!.add(ErrorSound.getInstance())
 
-    
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
-                                    fireEvent(noMoneyGameNotificationEvent)
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(noMoneyGameNotificationEvent)
 
                                     }
                                 

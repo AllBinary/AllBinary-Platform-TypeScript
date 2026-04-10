@@ -38,23 +38,23 @@ interface CategoryPropertiesInterface extends TableMappingInterface, ValidationI
 
     public getValue(): string
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getWebAppPath(): AbPath
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getPath(categoryHierarchyInterface: CategoryHierarchyInterface): AbPath
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getFileName(): string
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isRoot(): boolean
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isRealRoot(): boolean
 

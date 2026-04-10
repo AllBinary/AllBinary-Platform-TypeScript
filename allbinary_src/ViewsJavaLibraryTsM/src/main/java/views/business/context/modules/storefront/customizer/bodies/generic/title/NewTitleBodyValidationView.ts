@@ -64,11 +64,10 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("View Name: " +transformInfoInterface!.getName(), this, "NewTitleBodyValidationView()")
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "NewTitleBodyValidationView()")
 
                                     }
                                 
@@ -76,7 +75,7 @@ this.titleBody= TitleBodyValidation()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlDoc(): Document{
 
@@ -92,18 +91,17 @@ this.titleBody= TitleBodyValidation()
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("View Name: " +this.getTransformInfoInterface()!.getName(), this, commonStrings!.IS_VALID)
+                                    logUtil!.put("View Name: " +this.getTransformInfoInterface()!.getName(), this, commonStrings!.IS_VALID)
 
                                     }
                                 
 
 
                             {
-                            insert(this.getTransformInfoInterface(), this.titleBody as DomNodeInterface)
+                            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.titleBody as DomNodeInterface)
 
                             }
                     
@@ -116,11 +114,10 @@ this.titleBody= TitleBodyValidation()
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -143,7 +140,7 @@ this.titleBody= TitleBodyValidation()
         
         
 
-append(this.titleBody!.validationInfo())
+stringBuffer!.append(this.titleBody!.validationInfo())
 
 
 
@@ -153,11 +150,10 @@ append(this.titleBody!.validationInfo())
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 
@@ -193,7 +189,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 

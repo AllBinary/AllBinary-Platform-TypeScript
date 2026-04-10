@@ -126,15 +126,14 @@ var pageContext = pageContext
             this.request= pageContext!.getRequest() as HttpServletRequest
 this.pageContext= pageContext
 this.hashMap= hashMap
-this.getXmlData()
+this.this.getXmlData()
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "CategoryRequestHelper()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "CategoryRequestHelper()", e)
 
                                     }
                                 
@@ -173,7 +172,6 @@ this.getXmlData()
         
 
 
-    
                         if(size > 0)
                         
                                     {
@@ -192,7 +190,6 @@ this.getXmlData()
         {
 xmlRequest= keyArray[index]! as String
 
-    
                         if(xmlRequest!.startsWith(categoryRequest))
                         
                                     //Otherwise - thenStmt - BreakStmt
@@ -200,11 +197,10 @@ xmlRequest= keyArray[index]! as String
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    put(xmlRequest, this, "getXmlData()")
+                                    logUtil!.put(xmlRequest, this, "getXmlData()")
 
                                     }
                                 
@@ -219,15 +215,14 @@ xmlRequest= keyArray[index]! as String
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    put(DomDocumentHelper.toString(document), this, "getXmlData()")
+                                    logUtil!.put(DomDocumentHelper.toString(document), this, "getXmlData()")
 
                                     }
                                 
-this.setCategoryLoader(requestNode)
+this.this.setCategoryLoader(requestNode)
 
     var parentCategoryNode: Node = DomSearchHelper.getNode(categoryData!.PARENT, requestNode!.getChildNodes())!;
         
@@ -242,12 +237,11 @@ this.categoryInterface= StoreCategoryFactory(this.transformInfoInterface).
                             getRootInstanceFromNode(categoryNode) as CategoryInterface
 this.categoryInterface= this.categoryLoaderInterface!.get(this.categoryInterface)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    log()
-put("Loaded Parent Category", this, "getXmlData()")
+                                    this.categoryInterface!.log()
+logUtil!.put("Loaded Parent Category", this, "getXmlData()")
 
                                     }
                                 
@@ -257,30 +251,27 @@ put("Loaded Parent Category", this, "getXmlData()")
         
 
 
-    
                         if(childCategoryNode != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    put("Loading Child Category", this, "getXmlData()")
+                                    logUtil!.put("Loading Child Category", this, "getXmlData()")
 
                                     }
                                 
 this.childCategoryInterface= StoreCategoryFactory(this.transformInfoInterface).
                             getInstance(childCategoryNode) as CategoryInterface
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    log()
-put("Loaded Child Category", this, "getXmlData()")
+                                    this.childCategoryInterface!.log()
+logUtil!.put("Loaded Child Category", this, "getXmlData()")
 
                                     }
                                 
@@ -298,11 +289,10 @@ put("Loaded Child Category", this, "getXmlData()")
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getXmlData()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getXmlData()", e)
 
                                     }
                                 
@@ -311,7 +301,7 @@ put("Loaded Child Category", this, "getXmlData()")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     setCategoryLoader(requestNode: Node){
 var requestNode = requestNode
@@ -321,7 +311,6 @@ var requestNode = requestNode
         
 
 
-    
                         if(storeNameNode != 
                                     null
                                 )
@@ -333,7 +322,6 @@ var requestNode = requestNode
         
 
 
-    
                         if(storeName != 
                                     null
                                 )
@@ -346,7 +334,6 @@ var requestNode = requestNode
 
 this.transformInfoInterface= TransformInfoBasic(storeFrontInterface, hashMap, pageContext) as TransformInfoInterface
 
-    
                         if(this.transformInfoInterface == 
                                     null
                                 )
@@ -355,7 +342,7 @@ this.transformInfoInterface= TransformInfoBasic(storeFrontInterface, hashMap, pa
                                     
 
 
-                            throw Exception("TransformInfo null")
+                            throw Error("TransformInfo null")
 
                                     }
                                 
@@ -372,7 +359,7 @@ this.categoryLoaderInterface= CategoryLoaderFactory.getInstance(storeCategoryFac
                             
 
 
-                            throw Exception("Store Name Error: " +storeName)
+                            throw Error("Store Name Error: " +storeName)
 
                         }
                             
@@ -391,21 +378,19 @@ this.categoryLoaderInterface= CategoryLoaderFactory.getInstance(storeCategoryFac
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put("inserting", this, "insert()")
+                                    logUtil!.put("inserting", this, "insert()")
 
                                     }
                                 
-insert(this.categoryInterface, this.childCategoryInterface)
+this.categoryLoaderInterface!.insert(this.categoryInterface, this.childCategoryInterface)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "insert()")
+                                    logUtil!.put(success, this, "insert()")
 
                                     }
                                 
@@ -423,11 +408,10 @@ insert(this.categoryInterface, this.childCategoryInterface)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "insert()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insert()", e)
 
                                     }
                                 
@@ -451,21 +435,19 @@ insert(this.categoryInterface, this.childCategoryInterface)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put("Deleting", this, "delete()")
+                                    logUtil!.put("Deleting", this, "delete()")
 
                                     }
                                 
-delete(this.categoryInterface, this.childCategoryInterface)
+this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryInterface)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "delete()")
+                                    logUtil!.put(success, this, "delete()")
 
                                     }
                                 
@@ -485,11 +467,10 @@ delete(this.categoryInterface, this.childCategoryInterface)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "delete()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e)
 
                                     }
                                 
@@ -507,11 +488,10 @@ delete(this.categoryInterface, this.childCategoryInterface)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "delete()", e2)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e2)
 
                                     }
                                 
@@ -543,11 +523,10 @@ delete(this.categoryInterface, this.childCategoryInterface)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(xmlString, this, "viewCategory()")
+                                    logUtil!.put(xmlString, this, "viewCategory()")
 
                                     }
                                 
@@ -565,11 +544,10 @@ delete(this.categoryInterface, this.childCategoryInterface)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "viewCategory()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "viewCategory()", e)
 
                                     }
                                 
@@ -593,11 +571,10 @@ delete(this.categoryInterface, this.childCategoryInterface)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "viewCategories()")
+                                    logUtil!.put(success, this, "viewCategories()")
 
                                     }
                                 
@@ -615,11 +592,10 @@ delete(this.categoryInterface, this.childCategoryInterface)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "viewCategories()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "viewCategories()", e)
 
                                     }
                                 
@@ -643,11 +619,10 @@ delete(this.categoryInterface, this.childCategoryInterface)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "update()")
+                                    logUtil!.put(success, this, "update()")
 
                                     }
                                 
@@ -665,11 +640,10 @@ delete(this.categoryInterface, this.childCategoryInterface)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
 
                                     }
                                 

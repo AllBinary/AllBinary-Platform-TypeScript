@@ -98,7 +98,7 @@ public constructor (name: string)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public loadAll(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -167,11 +167,10 @@ public constructor (name: string)
         
         
 
-delete(0, stringBuffer!.length())
-put(stringBuffer!.append(this.persistanceStrings!.LOADING_ID)!.appendint(id)!.toString(), this, this.persistanceStrings!.LOAD_ALL)
+stringBuffer!.delete(0, stringBuffer!.length())
+logUtil!.put(stringBuffer!.append(this.persistanceStrings!.LOADING_ID)!.appendint(id)!.toString(), this, this.persistanceStrings!.LOAD_ALL)
 recordAsBytes= recordStore!.getRecord(id)
 
-    
                         if(recordAsBytes != 
                                     null
                                 )
@@ -193,45 +192,42 @@ hashtable= Hashtable<Any, Any>()
 
 value= Integer.parseInt(gameActionInputIdAsString)
 gameActionInputId= value.toLong()
-readUTF()
+inputStream!.readUTF()
 value= Integer.parseInt(inputStream!.readUTF())
 inputId= value.toLong()
 gameActionInput= gameKeyFactory!.getInstance(gameActionInputId.toInt())
 input= inputFactory!.getInstance(inputId.toInt())
 
-    
                         if(input == inputFactory!.NO_INPUT || gameActionInput == 
                                     null
                                 )
                         
                                     {
-                                    delete(0, stringBuffer!.length())
+                                    stringBuffer!.delete(0, stringBuffer!.length())
 
-    
                         if(input == inputFactory!.NO_INPUT)
                         
                                     {
-                                    append(this.persistanceStrings!.ERROR_LOADING_ID)
-appendlong(inputId)
-append(this.persistanceStrings!.GAME_ACTION_INPUT)
-appendlong(gameActionInputId)
-put(stringBuffer!.toString(), this, this.persistanceStrings!.LOAD_ALL)
+                                    stringBuffer!.append(this.persistanceStrings!.ERROR_LOADING_ID)
+stringBuffer!.appendlong(inputId)
+stringBuffer!.append(this.persistanceStrings!.GAME_ACTION_INPUT)
+stringBuffer!.appendlong(gameActionInputId)
+PreLogUtil.put(stringBuffer!.toString(), this, this.persistanceStrings!.LOAD_ALL)
 
                                     }
                                 
 
-    
                         if(gameActionInput == 
                                     null
                                 )
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-append(this.persistanceStrings!.ERROR_LOADING)
-appendlong(gameActionInputId)
-append(this.persistanceStrings!.ID)
-appendlong(inputId)
-put(stringBuffer!.toString(), this, this.persistanceStrings!.LOAD_ALL)
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(this.persistanceStrings!.ERROR_LOADING)
+stringBuffer!.appendlong(gameActionInputId)
+stringBuffer!.append(this.persistanceStrings!.ID)
+stringBuffer!.appendlong(inputId)
+PreLogUtil.put(stringBuffer!.toString(), this, this.persistanceStrings!.LOAD_ALL)
 
                                     }
                                 
@@ -242,11 +238,11 @@ put(stringBuffer!.toString(), this, this.persistanceStrings!.LOAD_ALL)
                             
                         }
                             
-put(input, gameActionInput)
+hashtable.put(input, gameActionInput)
 }
 
-add(hashtable)
-add(smallIntegerSingletonFactory!.getInstance(id))
+this.valueList!.add(hashtable)
+this.idList!.add(smallIntegerSingletonFactory!.getInstance(id))
 
                                     }
                                 
@@ -266,14 +262,13 @@ add(smallIntegerSingletonFactory!.getInstance(id))
 
          finally {
             
-    
                         if(recordStore != 
                                     null
                                 )
                         
                                     {
-                                    put(this.persistanceStrings!.CLOSING_RECORDSTORE, this, this.persistanceStrings!.LOAD_ALL)
-closeRecordStore()
+                                    PreLogUtil.put(this.persistanceStrings!.CLOSING_RECORDSTORE, this, this.persistanceStrings!.LOAD_ALL)
+recordStore!.closeRecordStore()
 
                                     }
                                 
@@ -283,7 +278,7 @@ closeRecordStore()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<Any, Any>){
     //var abeClientInformation = abeClientInformation
@@ -300,7 +295,7 @@ closeRecordStore()
         
         
 
-put(stringBuffer!.append(this.persistanceStrings!.SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE)
+PreLogUtil.put(stringBuffer!.append(this.persistanceStrings!.SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE)
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)
 
     var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
@@ -372,21 +367,21 @@ index2 < list.size(); index2++)
         
         
 
-writeUTF(gameActionInputIdAsString)
-writeUTF(commonSeps!.EQUALS)
+outputStream!.writeUTF(gameActionInputIdAsString)
+outputStream!.writeUTF(commonSeps!.EQUALS)
 input= list.objectArray[index2]! as Input
 
     var inputIdAsString: string = smallIntegerSingletonFactory!.getInstance(input.getId())!.toString()!;
         
         
 
-writeUTF(inputIdAsString)
+outputStream!.writeUTF(inputIdAsString)
 }
 
 }
 
 savedGameBytes= byteArrayOutputStream!.toByteArray()
-addRecord(savedGameBytes, 0, savedGameBytes!.length)
+recordStore!.addRecord(savedGameBytes, 0, savedGameBytes!.length)
 } catch(e: Exception)
             {
 
@@ -397,14 +392,13 @@ addRecord(savedGameBytes, 0, savedGameBytes!.length)
 
          finally {
             
-    
                         if(recordStore != 
                                     null
                                 )
                         
                                     {
-                                    put(this.persistanceStrings!.CLOSING_RECORDSTORE, this, this.commonStrings!.SAVE)
-closeRecordStore()
+                                    PreLogUtil.put(this.persistanceStrings!.CLOSING_RECORDSTORE, this, this.commonStrings!.SAVE)
+recordStore!.closeRecordStore()
 
                                     }
                                 

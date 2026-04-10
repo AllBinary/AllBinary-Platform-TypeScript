@@ -46,7 +46,7 @@ export class PostGameCommandFactory
 
     public addCommands(canvas: Canvas){
 var canvas = canvas
-addCommands(canvas)
+MultiPlayerGameFeatureFactory.getInstance()!.addCommands(canvas)
 }
 
 

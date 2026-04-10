@@ -49,7 +49,7 @@ protected constructor (){
     public setBasicColorP(graphics: Graphics, basicColor: BasicColor){
 var graphics = graphics
 var basicColor = basicColor
-setColor(basicColor!.toInt())
+graphics.setColor(basicColor!.toInt())
 }
 
 
@@ -57,7 +57,7 @@ setColor(basicColor!.toInt())
 var graphics = graphics
 var basicColor = basicColor
 var value = value
-setColor(value)
+graphics.setColor(value)
 }
 
 

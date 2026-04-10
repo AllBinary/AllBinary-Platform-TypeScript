@@ -56,6 +56,10 @@ private constructor (){
             }
 
 
+    private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
+        
+        
+
     /*actual*/ public put(log: Log){
 var log = log
 
@@ -78,7 +82,7 @@ var log = log
         
         
 
-this.put(specialMessage, anyType, functionName, exception)
+this.this.put(specialMessage, anyType, functionName, exception)
 }
 
 
@@ -104,12 +108,12 @@ this.put(specialMessage, anyType, functionName, exception)
                                     }
                                 
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage)!;
+    var message: string = logFormatUtil!.getS(className, functionName, specialMessage)!;
         
         
 
-print(LOG_SUCCESS)
-println(message)
+System.out.print(LOG_SUCCESS)
+System.out.println(message)
 }
 
 
@@ -136,12 +140,12 @@ println(message)
                                     }
                                 
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
+    var message: string = logFormatUtil!.get(className, functionName, specialMessage, exception)!;
         
         
 
-print(LOG_SUCCESS)
-println(message)
+System.out.print(LOG_SUCCESS)
+System.out.println(message)
 }
 
 

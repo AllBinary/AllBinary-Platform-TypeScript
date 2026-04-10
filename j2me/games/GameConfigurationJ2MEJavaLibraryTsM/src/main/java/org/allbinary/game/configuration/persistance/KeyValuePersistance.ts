@@ -79,15 +79,15 @@ protected constructor (recordId: string)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public loadAll(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-this.loadAll(abeClientInformation, 1)
+this.this.loadAll(abeClientInformation, 1)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public loadAll(abeClientInformation: AbeClientInformationInterface, size: number){
     //var abeClientInformation = abeClientInformation
@@ -141,11 +141,10 @@ var size = size
         
         
 
-delete(0, stringBuffer!.length())
-put(stringBuffer!.append(this.persistanceStrings!.LOADING_ID)!.appendint(id)!.toString(), this, this.persistanceStrings!.LOAD_ALL)
+stringBuffer!.delete(0, stringBuffer!.length())
+logUtil!.put(stringBuffer!.append(this.persistanceStrings!.LOADING_ID)!.appendint(id)!.toString(), this, this.persistanceStrings!.LOAD_ALL)
 recordAsBytes= recordStore!.getRecord(id)
 
-    
                         if(recordAsBytes != 
                                     null
                                 )
@@ -165,13 +164,13 @@ hashtable= Hashtable<String, String>()
 index < size; index++)
         {
 name= inputStream!.readUTF()
-readUTF()
+inputStream!.readUTF()
 value= inputStream!.readUTF()
-put(name, value)
+hashtable.put(name, value)
 }
 
-add(hashtable)
-add(smallIntegerSingletonFactory!.getInstance(id))
+this.valueList!.add(hashtable)
+this.idList!.add(smallIntegerSingletonFactory!.getInstance(id))
 
                                     }
                                 
@@ -187,14 +186,13 @@ add(smallIntegerSingletonFactory!.getInstance(id))
 
          finally {
             
-    
                         if(recordStore != 
                                     null
                                 )
                         
                                     {
-                                    put(this.persistanceStrings!.CLOSING_RECORDSTORE, this, this.persistanceStrings!.LOAD_ALL)
-closeRecordStore()
+                                    PreLogUtil.put(this.persistanceStrings!.CLOSING_RECORDSTORE, this, this.persistanceStrings!.LOAD_ALL)
+recordStore!.closeRecordStore()
 
                                     }
                                 
@@ -204,7 +202,7 @@ closeRecordStore()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<Any, Any>){
     //var abeClientInformation = abeClientInformation
@@ -216,7 +214,7 @@ closeRecordStore()
 
 
         try {
-            put(StringMaker().
+            logUtil!.put(StringMaker().
                             append(this.persistanceStrings!.SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE)
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)
 
@@ -261,11 +259,11 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
         
 index < size; index++)
         {
-writeUTF(objectArray[index]! as String)
-writeUTF(commonSeps!.EQUALS)
+outputStream!.writeUTF(objectArray[index]! as String)
+outputStream!.writeUTF(commonSeps!.EQUALS)
 anyType= objectArray[index]! as Object
 value= hashtable.get(anyType as Object) as String
-writeUTF(value)
+outputStream!.writeUTF(value)
 }
 
 
@@ -273,7 +271,7 @@ writeUTF(value)
         
         
 
-addRecord(savedGameBytes, 0, savedGameBytes!.length)
+recordStore!.addRecord(savedGameBytes, 0, savedGameBytes!.length)
 } catch(e: Exception)
             {
 
@@ -284,14 +282,13 @@ addRecord(savedGameBytes, 0, savedGameBytes!.length)
 
          finally {
             
-    
                         if(recordStore != 
                                     null
                                 )
                         
                                     {
-                                    put(this.persistanceStrings!.CLOSING_RECORDSTORE, this, this.commonStrings!.SAVE)
-closeRecordStore()
+                                    PreLogUtil.put(this.persistanceStrings!.CLOSING_RECORDSTORE, this, this.commonStrings!.SAVE)
+recordStore!.closeRecordStore()
 
                                     }
                                 

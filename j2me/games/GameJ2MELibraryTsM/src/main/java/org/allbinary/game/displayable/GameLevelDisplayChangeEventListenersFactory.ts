@@ -56,8 +56,8 @@ export class GameLevelDisplayChangeEventListenersFactory
 
     public add(displayChangeEventListener: DisplayChangeEventListener){
 var displayChangeEventListener = displayChangeEventListener
-add(displayChangeEventListener)
-addListener(displayChangeEventListener)
+this.list.add(displayChangeEventListener)
+DisplayChangeEventHandler.getInstance()!.addListener(displayChangeEventListener)
 }
 
 
@@ -81,10 +81,10 @@ addListener(displayChangeEventListener)
 --index >= 0; )
         {
 displayChangeEventListener= this.list.objectArray[index]! as DisplayChangeEventListener
-removeListener(displayChangeEventListener)
+displayChangeEventHandler!.removeListener(displayChangeEventListener)
 }
 
-clear()
+this.list.clear()
 }
 
 

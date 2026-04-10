@@ -86,7 +86,7 @@ this.dy= dy
     //var graphics = graphics
     //var x = x
     //var y = y
-paint(graphics, x +this.dx, y +this.dy)
+super.paint(graphics, x +this.dx, y +this.dy)
 }
 
 

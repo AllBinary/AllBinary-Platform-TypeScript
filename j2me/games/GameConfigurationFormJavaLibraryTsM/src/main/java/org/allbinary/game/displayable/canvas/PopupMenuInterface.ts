@@ -22,13 +22,13 @@
 interface PopupMenuInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     popupMenu()
 
     closeMenu()
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     toggleMenu()
 

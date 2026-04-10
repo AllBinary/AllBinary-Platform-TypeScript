@@ -57,7 +57,7 @@ var textField = textField
         
         
 
-setText(textField!.getString())
+gameConfigurationTextInput!.setText(textField!.getString())
 }
 
 
@@ -83,9 +83,9 @@ public constructor (label: string, text: string){
             super();
             var label = label
 var text = text
-this.setText(text)
-this.setLabel(label)
-put(this.getLabel(), this)
+this.this.setText(text)
+this.this.setLabel(label)
+hashtable.put(this.getLabel(), this)
 }
 
 

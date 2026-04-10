@@ -25,7 +25,7 @@ export class ImageIOUtil
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static read(file: AbFile): BufferedImage{
 var file = file
@@ -38,7 +38,7 @@ var file = file
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static write(renderedImage: RenderedImage, name: string, file: AbFile): boolean{
 var renderedImage = renderedImage

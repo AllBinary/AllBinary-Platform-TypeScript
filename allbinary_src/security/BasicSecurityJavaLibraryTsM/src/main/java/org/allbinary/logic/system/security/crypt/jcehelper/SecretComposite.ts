@@ -55,12 +55,12 @@ this.key= key
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public encrypt(array: ByteArray): ByteArray{
 var array = array
 array= this.mutilate(array)
-init(Cipher.ENCRYPT_MODE, secretKey)
+cipher.init(Cipher.ENCRYPT_MODE, secretKey)
 
 
 
@@ -70,11 +70,11 @@ init(Cipher.ENCRYPT_MODE, secretKey)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public decrypt(array: ByteArray): ByteArray{
 var array = array
-init(Cipher.DECRYPT_MODE, secretKey)
+cipher.init(Cipher.DECRYPT_MODE, secretKey)
 
 
 
@@ -102,7 +102,6 @@ index < key.length; index++)
         
 
 
-    
                         if(value < 8 && value > 0)
                         
                                     {

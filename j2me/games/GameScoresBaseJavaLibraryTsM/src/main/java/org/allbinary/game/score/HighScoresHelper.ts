@@ -31,8 +31,8 @@ export class HighScoresHelper extends HighScoresHelperBase {
 
     public setHighScoresArray(highScoresArrayP: HighScores[]){
     //var highScoresArrayP = highScoresArrayP
-setHighScoresArray(highScoresArrayP)
-setSize(this.highScoresArrayP!.length)
+super.setHighScoresArray(highScoresArrayP)
+this.circularIndexUtil!.setSize(this.highScoresArrayP!.length)
 }
 
 
@@ -54,7 +54,7 @@ setSize(this.highScoresArrayP!.length)
 
         while((highScores!.getTotal() < 1 || lastIndex == this.circularIndexUtil!.getIndex()) && index < this.highScoresArrayP!.length)
         {
-next()
+this.circularIndexUtil!.next()
 highScores= this.highScoresArrayP[this.circularIndexUtil!.getIndex()]!
 index++
 }
@@ -71,7 +71,6 @@ lastIndex= this.circularIndexUtil!.getIndex()
 
     public isAnyHighScores(): boolean{
 
-    
                         if(highScoresArrayP!.length < 1)
                         
                                     {
@@ -104,7 +103,6 @@ index >= 0; index--)
         {
 highScores= highScoresArrayP[index]!
 
-    
                         if(highScores!.getTotal() > 0)
                         
                                     {

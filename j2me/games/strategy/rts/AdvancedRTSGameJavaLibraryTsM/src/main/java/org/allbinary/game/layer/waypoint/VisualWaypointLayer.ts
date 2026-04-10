@@ -69,8 +69,8 @@ public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterfa
         
         
 
-setBasicColorP(this.allBinaryGameLayerManagerP!.getForegroundBasicColor())
-setRtsLayer(this)
+rtsLayerHudPaintable!.setBasicColorP(this.allBinaryGameLayerManagerP!.getForegroundBasicColor())
+rtsLayerHudPaintable!.setRtsLayer(this)
 
 
 

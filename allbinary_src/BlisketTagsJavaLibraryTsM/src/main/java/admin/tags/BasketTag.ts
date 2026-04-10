@@ -82,7 +82,7 @@ this.storeName= value
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     isBasketEmpty(): boolean{
 
@@ -121,11 +121,10 @@ this.storeName= value
  catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "isBasketEmpty()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isBasketEmpty()", e)
 
                                     }
                                 
@@ -140,7 +139,7 @@ this.storeName= value
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     addItemToBasket(): boolean{
 
@@ -184,11 +183,10 @@ this.storeName= value
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "addItemToBasket()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "addItemToBasket()", e)
 
                                     }
                                 
@@ -203,7 +201,7 @@ this.storeName= value
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     removeItemFromBasket(): boolean{
 
@@ -247,11 +245,10 @@ this.storeName= value
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "removeItemFromBasket()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "removeItemFromBasket()", e)
 
                                     }
                                 
@@ -266,7 +263,7 @@ this.storeName= value
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     adjustBasket(): boolean{
 
@@ -310,11 +307,10 @@ this.storeName= value
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "adjustBasket()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "adjustBasket()", e)
 
                                     }
                                 
@@ -329,31 +325,28 @@ this.storeName= value
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(command != 
                                     null
                                 )
                         
                                     {
                                     this.propertiesHashMap= HashMap<Any, Any>()
-put(StoreFrontData.getInstance()!.NAME, this.storeName)
+this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
 
-    
                         if(command.compareTo(BasketData.INSERT) == 0)
                         
                                     {
                                     
-    
                         if(!this.addItemToBasket())
                         
                                     {
-                                    println("Item is not currently being sold.<p/>")
+                                    this.pageContext!.getOut()!.println("Item is not currently being sold.<p/>")
 
                                     }
                                 
@@ -361,30 +354,26 @@ put(StoreFrontData.getInstance()!.NAME, this.storeName)
                                     }
                                 
                              else 
-    
                         if(command.compareTo(BasketData.DELETE) == 0)
                         
                                     {
-                                    this.removeItemFromBasket()
+                                    this.this.removeItemFromBasket()
 
                                     }
                                 
                              else 
-    
                         if(command.compareTo(BasketData.ADJUST) == 0)
                         
                                     {
-                                    this.adjustBasket()
+                                    this.this.adjustBasket()
 
                                     }
                                 
                              else 
-    
                         if(command.compareTo(BasketData.ISEMPTY) == 0)
                         
                                     {
                                     
-    
                         if(this.isBasketEmpty())
                         
 
@@ -393,7 +382,6 @@ put(StoreFrontData.getInstance()!.NAME, this.storeName)
                         return this.EVAL_BODY_INCLUDE;
     
                              else 
-    
                         if()
                         
 
@@ -410,7 +398,7 @@ put(StoreFrontData.getInstance()!.NAME, this.storeName)
     
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -420,7 +408,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

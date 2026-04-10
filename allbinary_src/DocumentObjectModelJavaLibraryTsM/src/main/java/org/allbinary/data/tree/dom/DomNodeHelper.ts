@@ -44,7 +44,6 @@ var parentNode = parentNode
         
 
 
-    
                         if(node != 
                                     null
                                  && node.getNodeType() != Node.ELEMENT_NODE)
@@ -67,7 +66,6 @@ index < nodeList!.getLength(); index++)
         {
 node= nodeList!.item(index)
 
-    
                         if(node.getNodeType() == 1)
                         
                                     {
@@ -99,7 +97,6 @@ var node = node
         
 
 
-    
                         if(nodeTextNode != 
                                     null
                                 )
@@ -127,7 +124,7 @@ var node = node
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getTextNodeValue(nodeName: string, nodeList: NodeList): string{
 var nodeName = nodeName
@@ -174,18 +171,16 @@ index < nodeList!.getLength(); index++)
         
 
 
-    
                         if(nodeTextNode!.getNodeType() == Node.TEXT_NODE)
                         
                                     {
                                     
-    
                         if(nodeTextNode != 
                                     null
                                 )
                         
                                     {
-                                    append(nodeTextNode!.getNodeValue())
+                                    stringBuffer!.append(nodeTextNode!.getNodeValue())
 
                                     }
                                 

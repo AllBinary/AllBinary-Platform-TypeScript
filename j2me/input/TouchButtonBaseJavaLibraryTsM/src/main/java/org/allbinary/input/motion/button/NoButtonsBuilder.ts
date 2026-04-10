@@ -38,7 +38,7 @@ export class NoButtonsBuilder extends BaseTouchInput {
     public getList(): BasicArrayList{
 
         try {
-            put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
     var list: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
         
@@ -52,7 +52,7 @@ export class NoButtonsBuilder extends BaseTouchInput {
     
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.GET_LIST, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_LIST, e)
 
 
 

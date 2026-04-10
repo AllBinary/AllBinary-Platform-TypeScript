@@ -22,15 +22,15 @@
 interface QueueInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public offer(anyType: any = {}): boolean
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public remove(anyType: any = {})
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public remove(): any = {}
 

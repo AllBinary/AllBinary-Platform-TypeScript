@@ -19,7 +19,7 @@
 
 
 
-export class InitException extends java.lang.Exception {
+export class InitException extends java.lang.Error {
         
 public constructor (){
 

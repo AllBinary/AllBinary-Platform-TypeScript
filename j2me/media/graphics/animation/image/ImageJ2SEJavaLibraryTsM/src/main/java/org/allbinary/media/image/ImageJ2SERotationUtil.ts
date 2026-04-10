@@ -96,14 +96,14 @@ private constructor (){
     //var newBufferedImage = newBufferedImage
     //var g = g
     //var radians = radians
-rotate(radians, newBufferedImage!.getWidth(
+g.rotate(radians, newBufferedImage!.getWidth(
                             null) /2, newBufferedImage!.getHeight(
                             null) /2)
-drawImage(bufferedImage, 0, 0, bufferedImage!.getWidth(
+g.drawImage(bufferedImage, 0, 0, bufferedImage!.getWidth(
                             null), bufferedImage!.getHeight(
                             null), 
                             null)
-dispose()
+g.dispose()
 
 
 
@@ -126,8 +126,8 @@ dispose()
         
         
 
-setBackground(imageJ2SEUtil!.TRANSPARENT_COLOR)
-clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight())
+g.setBackground(imageJ2SEUtil!.TRANSPARENT_COLOR)
+g.clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight())
 
 
 
@@ -221,7 +221,6 @@ bufferedImageArray[index]= this.getRotatedImage(bufferedImage, radians)
         
 
 
-    
                         if(size < columns)
                         
                                     {
@@ -231,7 +230,6 @@ bufferedImageArray[index]= this.getRotatedImage(bufferedImage, radians)
                                 
 rows= (size /columns)
 
-    
                         if(size % columns != 0)
                         
                                     {
@@ -280,7 +278,6 @@ rows= (size /columns)
 index < size; index++)
         {
 
-    
                         if(index /9 != 0 && index % 9 == 0)
                         
                                     {
@@ -290,7 +287,7 @@ columnIndex= 0
                                     }
                                 
 nextBufferedImage= bufferedImageArray[index]!
-drawImage(nextBufferedImage, nextBufferedImage!.getWidth(
+g.drawImage(nextBufferedImage, nextBufferedImage!.getWidth(
                             null) *columnIndex, nextBufferedImage!.getHeight(
                             null) *rowIndex, nextBufferedImage!.getWidth(
                             null), nextBufferedImage!.getHeight(
@@ -299,7 +296,7 @@ drawImage(nextBufferedImage, nextBufferedImage!.getWidth(
 columnIndex++
 }
 
-dispose()
+g.dispose()
 
 
 

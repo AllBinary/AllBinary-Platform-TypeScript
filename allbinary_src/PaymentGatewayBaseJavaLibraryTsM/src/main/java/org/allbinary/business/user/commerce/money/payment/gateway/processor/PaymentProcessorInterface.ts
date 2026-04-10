@@ -28,7 +28,7 @@ import { DomNodeInterface } from "../../../../../../../../../org/allbinary/data/
 interface PaymentProcessorInterface extends DomNodeInterface {
         
 
-                @Throws(PaymentException::class, Exception::class)
+                //@Throws(PaymentException::class, Error::class)
             
     public process()
 

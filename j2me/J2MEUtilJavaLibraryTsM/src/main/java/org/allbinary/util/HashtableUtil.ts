@@ -66,7 +66,6 @@ var hashtable = hashtable
         
 
 
-    
                         if(value == 
                                     null
                                 )
@@ -76,7 +75,7 @@ var hashtable = hashtable
                                     }
                                 
                         else {
-                            put(key, value)
+                            hashtable.put(key, value)
 
                         }
                             
@@ -132,7 +131,7 @@ var hashtable = hashtable
 
         while(enumeration.hasMoreElements())
         {
-add(enumeration.nextElement()!)
+list.add(enumeration.nextElement()!)
 }
 
 

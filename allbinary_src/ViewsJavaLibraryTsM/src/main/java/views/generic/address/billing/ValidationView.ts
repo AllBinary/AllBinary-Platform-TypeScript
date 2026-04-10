@@ -58,7 +58,6 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
 this.streetAddresses= billingAddressesEntity!.get()
 
-    
                         if(this.streetAddresses == 
                                     null
                                 )
@@ -74,7 +73,6 @@ this.streetAddresses= billingAddressesEntity!.get()
                                     }
                                 
 
-    
                         if(this.streetAddresses!.size() < 1)
                         
                                     {

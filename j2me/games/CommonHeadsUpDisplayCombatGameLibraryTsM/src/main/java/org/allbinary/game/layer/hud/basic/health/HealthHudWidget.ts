@@ -82,17 +82,16 @@ var direction = direction
                     
 this.animationInterface= animationInterface
 this.healthInterface= healthInterface
-addListener(this)
+this.healthInterface!.addListener(this)
 this.healthScale= (this.healthInterface!.getMaxHealth() /6) +1
-this.onHealthChange()
+this.this.onHealthChange()
 this.xArray= IntArray(30)
-this.update()
+this.this.update()
 }
 
 
     update(){
 
-    
                         if(this.xArray != 
                                     null
                                 )
@@ -119,8 +118,8 @@ this.xArray[index]= this.getX() +(index *16)
 
     public setX(x: number){
 var x = x
-setX(x)
-this.update()
+super.setX(x)
+this.this.update()
 }
 
 
@@ -144,13 +143,11 @@ this.update()
 max= (this.healthInterface!.getHealth() /this.healthScale)
 timeDelayHelper= NoTimeDelayHelper.SINGLETON
 
-    
                         if(max <= 1 && this.healthInterface!.isAlive())
                         
                                     {
                                     max= 1
 
-    
                         if(this.healthScale -this.healthInterface!.getHealth() > (this.healthScale *2) /3)
                         
                                     {
@@ -159,7 +156,6 @@ timeDelayHelper= NoTimeDelayHelper.SINGLETON
                                     }
                                 
                              else 
-    
                         if(this.healthScale -this.healthInterface!.getHealth() > this.healthScale /3)
                         
                                     {
@@ -191,11 +187,10 @@ var graphics = graphics
 index < max; index++)
         {
 
-    
                         if(this.timeDelayHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
                         
                                     {
-                                    paint(graphics, xArray[index]!, this.getY())
+                                    this.animationInterface!.paint(graphics, xArray[index]!, this.getY())
 
                                     }
                                 

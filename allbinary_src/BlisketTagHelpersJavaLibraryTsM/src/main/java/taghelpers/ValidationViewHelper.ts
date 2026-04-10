@@ -59,11 +59,10 @@ var pageContext = pageContext
                     
 viewInterface= this.getViewObject() as ValidationComponentInterface
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -74,11 +73,10 @@ viewInterface= this.getViewObject() as ValidationComponentInterface
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    put("Started", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Started", this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -91,11 +89,10 @@ viewInterface= this.getViewObject() as ValidationComponentInterface
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -122,11 +119,10 @@ viewInterface= this.getViewObject() as ValidationComponentInterface
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "validationInfo()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "validationInfo()", e)
 
                                     }
                                 
@@ -153,11 +149,10 @@ viewInterface= this.getViewObject() as ValidationComponentInterface
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "toValidationInfoDoc()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoDoc()", e)
 
                                     }
                                 
@@ -185,11 +180,10 @@ var document = document
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "toValidationInfoNode()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoNode()", e)
 
                                     }
                                 

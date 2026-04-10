@@ -82,7 +82,7 @@ var foregroundBasicColor = foregroundBasicColor
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
 
 
 

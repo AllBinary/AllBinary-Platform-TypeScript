@@ -30,14 +30,14 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(key: any = {}): CacheableInterface{
 var key = key
 
 
 
-                            throw Exception("This Factory Does Not")
+                            throw Error("This Factory Does Not")
 }
 
 

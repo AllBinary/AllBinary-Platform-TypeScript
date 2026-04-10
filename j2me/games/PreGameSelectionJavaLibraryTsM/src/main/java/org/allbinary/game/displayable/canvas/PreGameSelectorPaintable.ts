@@ -70,9 +70,9 @@ this.canvasDrawLineString= CanvasDrawLineString(displayInfo!.getLastHalfWidth(),
 
     public paint(graphics: Graphics){
 var graphics = graphics
-setColor(BasicColorFactory.getInstance()!.WHITE.toInt())
-paint(graphics, title, 0)
-paint(graphics)
+graphics.setColor(BasicColorFactory.getInstance()!.WHITE.toInt())
+this.canvasDrawLineString!.paint(graphics, title, 0)
+this.getPreGameSelectionForm()!.paint(graphics)
 }
 
 

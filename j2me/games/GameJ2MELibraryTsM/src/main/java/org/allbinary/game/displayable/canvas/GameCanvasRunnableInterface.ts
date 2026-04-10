@@ -52,11 +52,11 @@ interface GameCanvasRunnableInterface extends RunnableInterface, PaintableInterf
 
     isHighScoreSubmitted(): boolean
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     setHighScoreSubmitted(highScoreSubmitted: boolean)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     setGameOver()
 
@@ -64,15 +64,15 @@ interface GameCanvasRunnableInterface extends RunnableInterface, PaintableInterf
 
     initCommands(cmdListener: CommandListener)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getCurrentStateHashtable(): Hashtable<Any, Any>
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getLoadStateHashtable(): Hashtable<Any, Any>
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     setLoadStateHashtable(hashtable: Hashtable<Any, Any>)
 

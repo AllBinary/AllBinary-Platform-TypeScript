@@ -64,7 +64,7 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getColorNode(document: Document, redIndex: number, greenIndex: number, blueIndex: number): Node{
 var document = document
@@ -77,35 +77,32 @@ var blueIndex = blueIndex
         
 
 
-    
                         if(redIndex < HEXRADIX)
                         
                                     {
-                                    append(commonPhoneStrings!.ZERO)
+                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO)
 
                                     }
                                 
-append(redIndex, HEXRADIX.toString())
+hexColorStringBuffer!.append(redIndex, HEXRADIX.toString())
 
-    
                         if(greenIndex < HEXRADIX)
                         
                                     {
-                                    append(commonPhoneStrings!.ZERO)
+                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO)
 
                                     }
                                 
-append(greenIndex, HEXRADIX.toString())
+hexColorStringBuffer!.append(greenIndex, HEXRADIX.toString())
 
-    
                         if(blueIndex < HEXRADIX)
                         
                                     {
-                                    append(commonPhoneStrings!.ZERO)
+                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO)
 
                                     }
                                 
-append(blueIndex, HEXRADIX.toString())
+hexColorStringBuffer!.append(blueIndex, HEXRADIX.toString())
 
     var colorNode: Node = ModDomHelper.createNameValueNodes(document, ColorData.getInstance()!.NAME, hexColorStringBuffer!.toString())!;
         
@@ -120,7 +117,7 @@ append(blueIndex, HEXRADIX.toString())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -134,7 +131,7 @@ var document = document
         
         
 
-appendChild(blackNode)
+node.appendChild(blackNode)
 
 
 
@@ -151,41 +148,38 @@ index < MAX; )
         
 
 
-    
                         if(index < HEXRADIX)
                         
                                     {
-                                    append(commonPhoneStrings!.ZERO)
+                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO)
 
                                     }
                                 
-append(index, HEXRADIX.toString())
+hexColorStringBuffer!.append(index, HEXRADIX.toString())
 
-    
                         if(index < HEXRADIX)
                         
                                     {
-                                    append(commonPhoneStrings!.ZERO)
+                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO)
 
                                     }
                                 
-append(index, HEXRADIX.toString())
+hexColorStringBuffer!.append(index, HEXRADIX.toString())
 
-    
                         if(index < HEXRADIX)
                         
                                     {
-                                    append(commonPhoneStrings!.ZERO)
+                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO)
 
                                     }
                                 
-append(index, HEXRADIX.toString())
+hexColorStringBuffer!.append(index, HEXRADIX.toString())
 
     var colorNode: Node = ModDomHelper.createNameValueNodes(document, ColorData.getInstance()!.NAME, hexColorStringBuffer!.toString())!;
         
         
 
-appendChild(colorNode)
+node.appendChild(colorNode)
 }
 
 
@@ -193,7 +187,7 @@ appendChild(colorNode)
         
         
 
-appendChild(whiteNode)
+node.appendChild(whiteNode)
 
 
 
@@ -224,7 +218,7 @@ greenIndex < MAX /2; )
         
 redIndex < MAX /2; )
         {
-appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex))
+node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex))
 }
 
 }
@@ -261,7 +255,7 @@ greenIndex < MAX /2; )
         
 blueIndex < MAX /2; )
         {
-appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex))
+node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex))
 }
 
 }
@@ -298,7 +292,7 @@ redIndex < MAX /2; )
         
 blueIndex < MAX /2; )
         {
-appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex))
+node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex))
 }
 
 }
@@ -335,7 +329,7 @@ redIndex < MAX; )
         
 blueIndex < MAX; )
         {
-appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex))
+node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex))
 }
 
 }

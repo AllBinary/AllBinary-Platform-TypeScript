@@ -264,7 +264,7 @@ this.resizeCanvasForRotation= resizeCanvasForRotation
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getCanvasImage(): Image{
 
@@ -273,7 +273,6 @@ this.resizeCanvasForRotation= resizeCanvasForRotation
         
 
 
-    
                         if(this.resizeCanvasForRotation && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
@@ -299,7 +298,7 @@ this.resizeCanvasForRotation= resizeCanvasForRotation
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
@@ -319,11 +318,10 @@ this.resizeCanvasForRotation= resizeCanvasForRotation
         
 
 
-    
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
                         
                                     {
-                                    processAdjust(this)
+                                    animationFactoryImageScaleUtil!.processAdjust(this)
 
 
 

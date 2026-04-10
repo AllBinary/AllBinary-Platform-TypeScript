@@ -85,12 +85,10 @@ private constructor (){
         
 
 
-    
                         if(features.isFeature(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
                                     
-    
                         if(originalImage!.getType() >= OpenGLESImage.TYPE)
                         
                                     {
@@ -110,7 +108,7 @@ openGLESImage!.openGLESImageProperties!.angle= totalAngle
                                     }
                                 
                         else {
-                            put("OpenGL but image is: " +originalImage +" type: " +originalImage!.getType(), this, "rotateImage")
+                            PreLogUtil.put("OpenGL but image is: " +originalImage +" type: " +originalImage!.getType(), this, "rotateImage")
 
                         }
                             
@@ -137,7 +135,6 @@ openGLESImage!.openGLESImageProperties!.angle= totalAngle
         
 
 
-    
                         if(image.isMutable())
                         
                                     {
@@ -148,19 +145,19 @@ openGLESImage!.openGLESImageProperties!.angle= totalAngle
 
 copySwtImage= swtImage!.getImage() as org.eclipse.swt.graphics.Image
 gc= swtImage!.getGc()
-rotateImage(originalSwtImage, copySwtImage, gc, totalAngle)
+imageSwtRotationUtil!.rotateImage(originalSwtImage, copySwtImage, gc, totalAngle)
 
                                     }
                                 
                         else {
-                            put("No rotation for: " +image.toString(), this, "rotateImage")
+                            PreLogUtil.put("No rotation for: " +image.toString(), this, "rotateImage")
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
 var originalImage = originalImage

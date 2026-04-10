@@ -67,7 +67,7 @@ this.fileOutputStream= fileOutputStream
 
 
     public close(){
-close()
+this.fileOutputStream!.close()
 }
 
 
@@ -81,29 +81,29 @@ close()
 }
 
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public write(buffer: ByteArray){
 var buffer = buffer
-write(buffer)
+this.fileOutputStream!.write(buffer)
 }
 
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public write(buffer: ByteArray, offset: number, count: number){
 var buffer = buffer
 var offset = offset
 var count = count
-write(buffer, offset, count)
+this.fileOutputStream!.write(buffer, offset, count)
 }
 
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public write(b: number){
 var b = b
-write(b)
+this.fileOutputStream!.write(b)
 }
 
 

@@ -58,7 +58,7 @@ export class ImageModifierUtil
     //var image = image
     //var imageIndex = imageIndex
     //var basicColor = basicColor
-setColorFilter(PorterDuffColorFilter(basicColor!.toInt(), PorterDuff.Mode.SRC_IN))
+paint.setColorFilter(PorterDuffColorFilter(basicColor!.toInt(), PorterDuff.Mode.SRC_IN))
 }
 
 
@@ -67,7 +67,7 @@ setColorFilter(PorterDuffColorFilter(basicColor!.toInt(), PorterDuff.Mode.SRC_IN
     //var image = image
     //var imageIndex = imageIndex
     //var basicColor = basicColor
-setColorFilter(PorterDuffColorFilter(basicColor!.toInt(), PorterDuff.Mode.SRC_IN))
+paint.setColorFilter(PorterDuffColorFilter(basicColor!.toInt(), PorterDuff.Mode.SRC_IN))
 }
 
 
@@ -77,11 +77,10 @@ setColorFilter(PorterDuffColorFilter(basicColor!.toInt(), PorterDuff.Mode.SRC_IN
     //var imageIndex = imageIndex
     //var alphaInt = alphaInt
 
-    
                         if(alphaInt != paint.getAlpha())
                         
                                     {
-                                    setAlpha(alphaInt)
+                                    paint.setAlpha(alphaInt)
 
                                     }
                                 

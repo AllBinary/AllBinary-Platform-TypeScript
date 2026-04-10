@@ -72,13 +72,12 @@ public constructor (name: string, version: string, specialName: string, shortNam
         
 
 
-    
                         if(Integer.getInteger(number) == 
                                     null
                                 )
                         
                                     {
-                                    this.setHardSale(false)
+                                    this.this.setHardSale(false)
 
                                     }
                                 
@@ -88,16 +87,15 @@ public constructor (name: string, version: string, specialName: string, shortNam
         
 
 
-    
                         if(this.isHardSale())
                         
                                     {
-                                    put("Use Hard Coded Selling", this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Use Hard Coded Selling", this, commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
                         else {
-                            put("Don't Use Hard Coded Selling", this, commonStrings!.CONSTRUCTOR)
+                            logUtil!.put("Don't Use Hard Coded Selling", this, commonStrings!.CONSTRUCTOR)
 
                         }
                             
@@ -115,7 +113,7 @@ public constructor (name: string, version: string, specialName: string, shortNam
         
         
 
-put(registrationConfiguration!.NAME, registrationConfiguration!.getRegistrationCode())
+hashtable.put(registrationConfiguration!.NAME, registrationConfiguration!.getRegistrationCode())
 
 
 

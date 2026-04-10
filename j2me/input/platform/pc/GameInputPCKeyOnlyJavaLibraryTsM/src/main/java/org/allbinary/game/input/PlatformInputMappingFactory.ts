@@ -59,7 +59,6 @@ export class PlatformInputMappingFactory
 
         try {
             
-    
                         if(SINGLETON == PersistentInputMapping.NULL_PERSISTENT_INPUT_MAPPING)
                         
                                     {
@@ -74,7 +73,7 @@ export class PlatformInputMappingFactory
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 }
 
 

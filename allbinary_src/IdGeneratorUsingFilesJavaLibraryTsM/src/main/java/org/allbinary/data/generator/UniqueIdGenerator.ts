@@ -78,17 +78,16 @@ public constructor (){
 var value = value
 
         try {
-            createNewFile()
+            newFile!.createNewFile()
 
     var idData: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(newFile)!;
         
         
 
-writeLong(value)
+idData!.writeLong(value)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
@@ -97,7 +96,7 @@ writeLong(value)
         
         
 
-put(commonStrings!.EXCEPTION, this, "initialize", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e)
 
                                     }
                                 
@@ -106,7 +105,7 @@ put(commonStrings!.EXCEPTION, this, "initialize", e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setFile(filePathName: string, name: string){
@@ -116,7 +115,7 @@ newFile= AbFile(filePathName)
 }
 
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getNext(): string{
@@ -149,7 +148,7 @@ id= idData!.readLong()
         
 
 idOutData= AbDataOutputStream(idOutFile)
-writeLong(id +1)
+idOutData!.writeLong(id +1)
 
     var idLong: Long = new id as Long;
         
@@ -164,7 +163,6 @@ writeLong(id +1)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
@@ -173,7 +171,7 @@ writeLong(id +1)
         
         
 
-put(commonStrings!.EXCEPTION, this, "getNext", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "getNext", e)
 
                                     }
                                 
@@ -186,8 +184,8 @@ put(commonStrings!.EXCEPTION, this, "getNext", e)
 }
 
          finally {
-            close(idData)
-close(idOutData)
+            StreamUtil.getInstance()!.close(idData)
+StreamUtil.getInstance()!.close(idOutData)
 
          }
         

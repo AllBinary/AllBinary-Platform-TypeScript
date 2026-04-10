@@ -19,7 +19,7 @@
 
 
 
-export class MoneyException extends Exception {
+export class MoneyException extends Error {
         
 public constructor (){
 

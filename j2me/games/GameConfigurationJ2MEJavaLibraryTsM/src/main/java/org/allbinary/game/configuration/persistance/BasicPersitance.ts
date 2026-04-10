@@ -81,15 +81,15 @@ this.recordId= recordId
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public deleteRecoreStore(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-deleteRecordStore(this.getRecordId(abeClientInformation))
+RecordStore.deleteRecordStore(this.getRecordId(abeClientInformation))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public deleteAll(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -113,14 +113,14 @@ index < size; index++)
         
         
 
-this.delete(abeClientInformation, integer.toInt())
+this.this.delete(abeClientInformation, integer.toInt())
 }
 
-this.clear()
+this.this.clear()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public delete(abeClientInformation: AbeClientInformationInterface, deleteId: number){
     //var abeClientInformation = abeClientInformation
@@ -132,10 +132,10 @@ this.clear()
 
 
         try {
-            put(StringMaker().
+            logUtil!.put(StringMaker().
                             append(this.persistanceStrings!.DELETING_WITH_ID)!.appendint(deleteId)!.toString(), this, this.commonStrings!.delete)
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)
-deleteRecord(deleteId)
+recordStore!.deleteRecord(deleteId)
 } catch(e: Exception)
             {
 
@@ -146,14 +146,13 @@ deleteRecord(deleteId)
 
          finally {
             
-    
                         if(recordStore != 
                                     null
                                 )
                         
                                     {
-                                    put(this.persistanceStrings!.CLOSING_RECORDSTORE, this, this.commonStrings!.delete)
-closeRecordStore()
+                                    PreLogUtil.put(this.persistanceStrings!.CLOSING_RECORDSTORE, this, this.commonStrings!.delete)
+recordStore!.closeRecordStore()
 
                                     }
                                 
@@ -195,8 +194,8 @@ closeRecordStore()
 
 
     public clear(){
-clear()
-clear()
+this.valueList!.clear()
+this.idList!.clear()
 }
 
 

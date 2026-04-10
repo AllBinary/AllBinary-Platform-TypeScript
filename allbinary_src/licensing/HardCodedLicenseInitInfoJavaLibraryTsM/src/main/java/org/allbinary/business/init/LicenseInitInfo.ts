@@ -87,20 +87,20 @@ this.id= value
 
 
     public clearServers(){
-clear()
+this.serverList!.clear()
 }
 
 
     public setServer(value: string, index: number){
 var value = value
 var index = index
-add(index, value)
+this.serverList!.add(index, value)
 }
 
 
     public addServer(value: string){
 var value = value
-add(value)
+this.serverList!.add(value)
 }
 
 
@@ -117,7 +117,6 @@ add(value)
     public setServerList(servers: BasicArrayList){
 var servers = servers
 
-    
                         if(DebugFactory.getInstance() == NoDebug.getInstance())
                         
                                     {

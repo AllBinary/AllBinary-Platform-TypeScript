@@ -43,23 +43,23 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 interface WaypointLayerInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(geographicMapCellHistory: GeographicMapCellHistory, geographicMapCellPositionBasicArrayList: BasicArrayList)
 
     getMoveOutOfBuildAreaPath(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     setClosestGeographicMapCellHistory(pathsList: BasicArrayList)
 
     teleportTo(geographicMapCellPosition: GeographicMapCellPosition)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     setLoad(resource: number)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getSurroundingGeographicMapCellPositionList(): BasicArrayList
 
@@ -69,15 +69,15 @@ interface WaypointLayerInterface {
 
     isShowMoreCaptionStates(): boolean
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     trackTo(reason: string)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     trackTo(dx: number, dy: number)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     buildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition): boolean
 
@@ -87,11 +87,11 @@ interface WaypointLayerInterface {
 
     isWaypointListEmptyOrOnlyTargets(): boolean
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getCurrentGeographicMapCellPosition(): GeographicMapCellPosition
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getTopLeftGeographicMapCellPosition(): GeographicMapCellPosition
 

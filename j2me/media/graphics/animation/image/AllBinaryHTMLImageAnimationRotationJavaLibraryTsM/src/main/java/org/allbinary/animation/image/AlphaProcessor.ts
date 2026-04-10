@@ -47,7 +47,7 @@ export class AlphaProcessor extends AlphaBaseProcessor {
     //var originalImage = originalImage
     //var imageToShow = imageToShow
     //var alpha = alpha
-setAlpha3(imageToShow, alpha)
+imageModifierUtil!.setAlpha3(imageToShow, alpha)
 }
 
 

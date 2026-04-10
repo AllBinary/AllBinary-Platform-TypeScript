@@ -284,32 +284,30 @@ public constructor (request: HttpServletRequest){
 
             super();
                 //var request = request
-this.getFormData(RequestParams(request).
+this.this.getFormData(RequestParams(request).
                             toHashMap())
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put("TWB- needs update for adding and updating context configuration - currently defaults to admin context config", this, "StoreFront")
+                                    logUtil!.put("TWB- needs update for adding and updating context configuration - currently defaults to admin context config", this, "StoreFront")
 
                                     }
                                 
-this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getInstance()!.getInstance("Admin"))
+this.this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getInstance()!.getInstance("Admin"))
 }
 
 public constructor (hashMap: HashMap<Any, Any>){
 
             super();
                 //var hashMap = hashMap
-this.getFormData(hashMap)
+this.this.getFormData(hashMap)
 
     var domDocumentString: string = hashMap!.get(StoreFrontData.getInstance()!.CONFIGURATION) as String;
         
         
 
 
-    
                         if(domDocumentString == 
                                     null
                                 )
@@ -320,7 +318,7 @@ this.getFormData(hashMap)
         
         
 
-this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getInstance()!.getInstance(document))
+this.this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getInstance()!.getInstance(document))
 
                                     }
                                 
@@ -330,7 +328,6 @@ this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getIn
     isColumn(columnName: string): boolean{
 var columnName = columnName
 
-    
                         if(columnName!.compareTo(StoreFrontData.getInstance()!.NAME) == 0 || columnName!.compareTo(UserData.MAINEMAIL) == 0)
                         
                                     {
@@ -356,7 +353,7 @@ var columnName = columnName
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createPath(key: string, hashMap: HashMap<Any, Any>): AbPath{
 var key = key
@@ -370,7 +367,7 @@ var hashMap = hashMap
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createPath(append: string, key: string, hashMap: HashMap<Any, Any>): AbPath{
 var append = append
@@ -407,7 +404,6 @@ var hashMap = hashMap
         
 
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(path))
                         
                                     {
@@ -422,7 +418,6 @@ var hashMap = hashMap
                                 
                         else {
                             
-    
                         if(this.isColumn(path))
                         
                                     {
@@ -451,7 +446,7 @@ var hashMap = hashMap
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getFormData(storeHashMap: HashMap<Any, Any>){
 var storeHashMap = storeHashMap
@@ -492,7 +487,6 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as S
 
     public isNameValid(): Boolean{
 
-    
                         if(!StringValidationUtil.getInstance()!.isValidRequired(this.name, MINSTORENAMELENGTH, MAXCHAR))
                         
                                     {
@@ -517,7 +511,6 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as S
         
 
 
-    
                         if(this.name.compareTo(storeNameEscaped) != 0)
                         
                                     {
@@ -536,7 +529,6 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as S
         
 
 
-    
                         if(stringValidationUtil!.containsSpaces(this.name))
                         
                                     {
@@ -545,7 +537,6 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as S
                                     }
                                 
 
-    
                         if(isSpacesContained || isEscapedCharactersContained)
                         
                                     {
@@ -554,7 +545,7 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as S
         
         
 
-put(
+hashMap!.put(
                                                 [
                                                     CommonSeps.getInstance()!.SPACE;
         
@@ -590,7 +581,6 @@ valid= this.isNameValid()
         
 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.basketName, MINCHAR, MAXCHAR))
                         
                                     {
@@ -599,7 +589,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.homeHostName, MINCHAR, MAXCHAR))
                         
                                     {
@@ -608,7 +597,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.homeHostNamePath!.toString(), MINCHAR, MAXCHAR))
                         
                                     {
@@ -617,7 +605,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.hostName, MINCHAR, MAXCHAR))
                         
                                     {
@@ -626,7 +613,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.hostNamePath!.toString(), MINCHAR, MAXCHAR))
                         
                                     {
@@ -635,7 +621,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.testHomeHostName, MINCHAR, MAXCHAR))
                         
                                     {
@@ -644,7 +629,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.testHomeHostNamePath!.toString(), MINCHAR, MAXCHAR))
                         
                                     {
@@ -653,7 +637,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.testHostName, MINCHAR, MAXCHAR))
                         
                                     {
@@ -662,7 +645,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.testHostNamePath!.toString(), MINCHAR, MAXCHAR))
                         
                                     {
@@ -671,7 +653,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.imagePath!.toString(), MINCHAR, MAXCHAR))
                         
                                     {
@@ -680,7 +661,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.staticPath!.toString(), MINCHAR, MAXCHAR))
                         
                                     {
@@ -689,7 +669,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.categoryPath!.toString(), MINCHAR, MAXCHAR))
                         
                                     {
@@ -698,7 +677,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.inventoryControl, MINCHAR, MAXCHAR))
                         
                                     {
@@ -707,7 +685,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.subStores, MINCHAR, MAXCHAR))
                         
                                     {
@@ -716,7 +693,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.tagLocation, MINCHAR, MAXCHAR))
                         
                                     {
@@ -725,7 +701,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.packageLocation, MINCHAR, MAXCHAR))
                         
                                     {
@@ -734,7 +709,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.ftp, MINCHAR, MAXCHAR))
                         
                                     {
@@ -743,7 +717,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.ftpPath!.toString(), MINCHAR, MAXCHAR))
                         
                                     {
@@ -752,7 +725,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.ftpUserName, MINCHAR, MAXCHAR))
                         
                                     {
@@ -761,7 +733,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.ftpPassword, MINCHAR, MAXCHAR))
                         
                                     {
@@ -770,7 +741,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.testFtp, MINCHAR, MAXCHAR))
                         
                                     {
@@ -779,7 +749,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.testFtpPath!.toString(), MINCHAR, MAXCHAR))
                         
                                     {
@@ -788,7 +757,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.testFtpUserName, MINCHAR, MAXCHAR))
                         
                                     {
@@ -797,7 +765,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.testFtpPassword, MINCHAR, MAXCHAR))
                         
                                     {
@@ -806,7 +773,6 @@ valid= this.isNameValid()
                                     }
                                 
 
-    
                         if(valid == true)
                         
                                     {
@@ -839,7 +805,6 @@ valid= this.isNameValid()
         
 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.name, MINCHAR, MAXCHAR))
                         
                                     {
@@ -848,9 +813,9 @@ valid= this.isNameValid()
         
         
 
-append("Name is invalid. Must be < ")
-appendint(MAXCHAR)
-append(" and > 0 characters.<br>")
+stringBuffer!.append("Name is invalid. Must be < ")
+stringBuffer!.appendint(MAXCHAR)
+stringBuffer!.append(" and > 0 characters.<br>")
 
 
 
@@ -882,230 +847,206 @@ append(" and > 0 characters.<br>")
         
         
 
-append(this.nameValidationInfo())
+stringBuffer!.append(this.nameValidationInfo())
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.basketName, MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Basket name is invalid. Must be < ")
-appendint(MAXCHAR)
-append(" and > 0 characters.<br>")
+                                    stringBuffer!.append("Basket name is invalid. Must be < ")
+stringBuffer!.appendint(MAXCHAR)
+stringBuffer!.append(" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.homeHostName, MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Home host name is invalid. Must be < ")
-appendint(MAXCHAR)
-append(" and > 0 characters.<br>")
+                                    stringBuffer!.append("Home host name is invalid. Must be < ")
+stringBuffer!.appendint(MAXCHAR)
+stringBuffer!.append(" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.homeHostNamePath!.toString(), MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Home host name path is invalid. Must be < ")
-appendint(MAXCHAR)
-append(" and > 0 characters.<br>")
+                                    stringBuffer!.append("Home host name path is invalid. Must be < ")
+stringBuffer!.appendint(MAXCHAR)
+stringBuffer!.append(" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.hostName, MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Host name is invalid. Must be < ")
-appendint(MAXCHAR)
-append(" and > 0 characters.<br>")
+                                    stringBuffer!.append("Host name is invalid. Must be < ")
+stringBuffer!.appendint(MAXCHAR)
+stringBuffer!.append(" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.hostNamePath!.toString(), MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Host name path is invalid. Must be < ")
-appendint(MAXCHAR)
-append(" and > 0 characters.<br>")
+                                    stringBuffer!.append("Host name path is invalid. Must be < ")
+stringBuffer!.appendint(MAXCHAR)
+stringBuffer!.append(" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.testHomeHostName, MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Test home host name is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
+                                    stringBuffer!.append("Test home host name is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.testHomeHostNamePath!.toString(), MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Test home host name path is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
+                                    stringBuffer!.append("Test home host name path is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.testHostName, MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Test host name is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
+                                    stringBuffer!.append("Test host name is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.testHostNamePath!.toString(), MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Test host name path is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
+                                    stringBuffer!.append("Test host name path is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.imagePath!.toString(), MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Image path is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
+                                    stringBuffer!.append("Image path is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.staticPath!.toString(), MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Static path is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
+                                    stringBuffer!.append("Static path is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.categoryPath!.toString(), MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Category path is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
+                                    stringBuffer!.append("Category path is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.inventoryControl, MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Inventory control is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
+                                    stringBuffer!.append("Inventory control is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.subStores, MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Sub stores is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
+                                    stringBuffer!.append("Sub stores is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.tagLocation, MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Tag location is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
+                                    stringBuffer!.append("Tag location is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.packageLocation, MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Package location is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
+                                    stringBuffer!.append("Package location is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.ftp, MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Ftp is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
+                                    stringBuffer!.append("Ftp is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.ftpPath!.toString(), MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Ftp path is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
+                                    stringBuffer!.append("Ftp path is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.ftpUserName, MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Ftp username is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
+                                    stringBuffer!.append("Ftp username is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.ftpPassword, MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Ftp password is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
+                                    stringBuffer!.append("Ftp password is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.testFtp, MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Test ftp is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
+                                    stringBuffer!.append("Test ftp is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.testFtpPath!.toString(), MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Test ftp Path is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
+                                    stringBuffer!.append("Test ftp Path is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.testFtpUserName, MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Test ftp username is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
+                                    stringBuffer!.append("Test ftp username is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.testFtpPassword, MINCHAR, MAXCHAR))
                         
                                     {
-                                    append("Test ftp password is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
+                                    stringBuffer!.append("Test ftp password is invalid. Must be < " +MAXCHAR +" and > 0 characters.<br>")
 
                                     }
                                 
@@ -1118,11 +1059,10 @@ append(" and > 0 characters.<br>")
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 
@@ -1154,7 +1094,6 @@ append(" and > 0 characters.<br>")
         
 
 
-    
                         if(org.allbinary.globals.URLGLOBALS.isTestingMode())
                         
                                     {
@@ -1183,7 +1122,6 @@ append(" and > 0 characters.<br>")
         
 
 
-    
                         if(org.allbinary.globals.URLGLOBALS.isTestingMode())
                         
                                     {
@@ -1212,7 +1150,6 @@ append(" and > 0 characters.<br>")
         
 
 
-    
                         if(org.allbinary.globals.URLGLOBALS.isTestingMode())
                         
                                     {
@@ -1241,7 +1178,6 @@ append(" and > 0 characters.<br>")
         
 
 
-    
                         if(org.allbinary.globals.URLGLOBALS.isTestingMode())
                         
                                     {
@@ -1393,7 +1329,7 @@ append(" and > 0 characters.<br>")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getSubStores(): BasicArrayList{
 
@@ -1563,7 +1499,7 @@ this.homeHostName= value
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setHomeHostNamePath(value: string){
 var value = value
@@ -1577,7 +1513,7 @@ this.hostName= value
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setHostNamePath(value: string){
 var value = value
@@ -1591,7 +1527,7 @@ this.testHomeHostName= value
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setTestHomeHostNamePath(value: string){
 var value = value
@@ -1605,7 +1541,7 @@ this.testHostName= value
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setTestHostNamePath(value: string){
 var value = value
@@ -1613,7 +1549,7 @@ this.testHostNamePath= AbPath(value)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setImagePath(value: string){
 var value = value
@@ -1621,7 +1557,7 @@ this.imagePath= AbPath(value)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setStaticPath(value: string){
 var value = value
@@ -1629,7 +1565,7 @@ this.staticPath= AbPath(value)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setCategoryPath(value: string){
 var value = value
@@ -1715,7 +1651,7 @@ this.lastModified= value
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setFtpPath(value: string){
     //var value = value
@@ -1723,7 +1659,7 @@ this.ftpPath= AbPath(value)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setTestFtpPath(value: string){
     //var value = value
@@ -1731,7 +1667,7 @@ this.testFtpPath= AbPath(value)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createDirectories(): boolean{
 
@@ -1740,7 +1676,6 @@ this.testFtpPath= AbPath(value)
         
 
 
-    
                         if(!this.directory.create(storeAbPath))
                         
                                     {
@@ -1754,7 +1689,6 @@ this.testFtpPath= AbPath(value)
                                     }
                                 
 
-    
                         if(!this.directory.create(AbPath(storeAbPath +this.getCategoryPath())))
                         
                                     {
@@ -1768,7 +1702,6 @@ this.testFtpPath= AbPath(value)
                                     }
                                 
 
-    
                         if(!this.directory.create(AbPath(storeAbPath +this.getStaticPath())))
                         
                                     {
@@ -1790,7 +1723,7 @@ this.testFtpPath= AbPath(value)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public install(current: number, total: number){
     //var current = current
@@ -1798,14 +1731,13 @@ this.testFtpPath= AbPath(value)
 
         try {
             
-    
                         if(!this.createDirectories())
                         
                                     {
                                     
 
 
-                            throw Exception("Unable to create store directories")
+                            throw Error("Unable to create store directories")
 
                                     }
                                 
@@ -1814,54 +1746,52 @@ this.testFtpPath= AbPath(value)
         
         
 
-delete(0, stringBuffer!.length())
-append(URLGLOBALS.getMainPath())
-append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(URLGLOBALS.getMainPath())
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
 
     var viewPath: string = stringBuffer!.toString()!;
         
         
 
-delete(0, stringBuffer!.length())
-append(viewPath)
-append(FREEBLISKET_PATH_GLOBALS.getInstance()!.INSTALLPATH)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(viewPath)
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.INSTALLPATH)
 
     var fromDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString());
         
         
 
-delete(0, stringBuffer!.length())
-append(viewPath)
-append("special")
-append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(viewPath)
+stringBuffer!.append("special")
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
 
     var fromSpecialDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString());
         
         
 
-delete(0, stringBuffer!.length())
-append(viewPath)
-append(this.getName())
-append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(viewPath)
+stringBuffer!.append(this.getName())
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
 
     var toDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString());
         
         
 
 
-    
                         if(current == 0)
                         
                                     {
                                     
-    
                         if(!this.directory.create(toDirectoryAbPath))
                         
                                     {
                                     
 
 
-                            throw Exception("Unable to create store view directory: " +toDirectoryAbPath!.toString())
+                            throw Error("Unable to create store view directory: " +toDirectoryAbPath!.toString())
 
                                     }
                                 
@@ -1879,7 +1809,6 @@ append(AbPathData.getInstance()!.SEPARATOR)
         
 
 
-    
                         if(current < viewTotal)
                         
                                     {
@@ -1889,7 +1818,6 @@ append(AbPathData.getInstance()!.SEPARATOR)
         
 
 
-    
                         if(file.isDirectory())
                         
                                     {
@@ -1899,20 +1827,18 @@ append(AbPathData.getInstance()!.SEPARATOR)
         
 
 
-    
                         if(current < halfViewTotal)
                         
                                     {
-                                    this.installViews(fromSpecialDirectoryAbPath, toDirectoryAbPath, current, halfViewTotal)
+                                    this.this.installViews(fromSpecialDirectoryAbPath, toDirectoryAbPath, current, halfViewTotal)
 
                                     }
                                 
                              else 
-    
                         if(current < viewTotal)
                         
                                     {
-                                    this.installViews(fromDirectoryAbPath, toDirectoryAbPath, current -halfViewTotal, viewTotal -halfViewTotal)
+                                    this.this.installViews(fromDirectoryAbPath, toDirectoryAbPath, current -halfViewTotal, viewTotal -halfViewTotal)
 
                                     }
                                 
@@ -1920,7 +1846,7 @@ append(AbPathData.getInstance()!.SEPARATOR)
                                     }
                                 
                         else {
-                            this.installViews(fromDirectoryAbPath, toDirectoryAbPath, current, viewTotal)
+                            this.this.installViews(fromDirectoryAbPath, toDirectoryAbPath, current, viewTotal)
 
                         }
                             
@@ -1928,27 +1854,25 @@ append(AbPathData.getInstance()!.SEPARATOR)
                                     }
                                 
                              else 
-    
                         if(current < installTotal)
                         
                                     {
-                                    this.installResources(fromDirectoryAbPath, current -viewTotal, installTotal -viewTotal)
+                                    this.this.installResources(fromDirectoryAbPath, current -viewTotal, installTotal -viewTotal)
 
                                     }
                                 
                         else {
-                            this.installMedia(fromDirectoryAbPath, current -installTotal, total -installTotal)
+                            this.this.installMedia(fromDirectoryAbPath, current -installTotal, total -installTotal)
 
                         }
                             
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "install()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "install()", e)
 
                                     }
                                 
@@ -1961,18 +1885,18 @@ append(AbPathData.getInstance()!.SEPARATOR)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     installViews(fromDirectoryAbPath: AbPath, toDirectoryAbPath: AbPath, current: number, total: number){
     //var fromDirectoryAbPath = fromDirectoryAbPath
     //var toDirectoryAbPath = toDirectoryAbPath
     //var current = current
     //var total = total
-copyDirectoryPortion(fromDirectoryAbPath, toDirectoryAbPath, true, false, current, total)
+FileUtil.getInstance()!.copyDirectoryPortion(fromDirectoryAbPath, toDirectoryAbPath, true, false, current, total)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     installResources(fromDirectoryAbPath: AbPath, current: number, total: number){
     //var fromDirectoryAbPath = fromDirectoryAbPath
@@ -1983,30 +1907,30 @@ copyDirectoryPortion(fromDirectoryAbPath, toDirectoryAbPath, true, false, curren
         
         
 
-append(fromDirectoryAbPath!.toString())
-append(AbPathData.getInstance()!.SEPARATOR)
-append("Resources")
-append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.append(fromDirectoryAbPath!.toString())
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.append("Resources")
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
 
     var installCategoryAbPath: AbPath = new AbPath(stringBuffer!.toString());
         
         
 
-delete(0, stringBuffer!.length())
-append(URLGLOBALS.getMainPath())
-append(this.getCurrentHomeHostNamePath())
-append(AbPathData.getInstance()!.SEPARATOR)
-append(this.getCategoryPath())
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(URLGLOBALS.getMainPath())
+stringBuffer!.append(this.getCurrentHomeHostNamePath())
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.append(this.getCategoryPath())
 
     var categoryAbPath: AbPath = new AbPath(stringBuffer!.toString());
         
         
 
-copyDirectoryPortion(installCategoryAbPath, categoryAbPath, true, false, current, total)
+FileUtil.getInstance()!.copyDirectoryPortion(installCategoryAbPath, categoryAbPath, true, false, current, total)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     installMedia(fromDirectoryAbPath: AbPath, current: number, total: number){
     //var fromDirectoryAbPath = fromDirectoryAbPath
@@ -2017,11 +1941,11 @@ copyDirectoryPortion(installCategoryAbPath, categoryAbPath, true, false, current
         
         
 
-append(fromDirectoryAbPath!.toString())
-append(AbPathData.getInstance()!.SEPARATOR)
-append(FREEBLISKET_PATH_GLOBALS.getInstance()!.TEMPLATEPATH)
-append("images")
-append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.append(fromDirectoryAbPath!.toString())
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.TEMPLATEPATH)
+stringBuffer!.append("images")
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
 
     var viewStoreImagesDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString());
         
@@ -2032,11 +1956,11 @@ append(AbPathData.getInstance()!.SEPARATOR)
         
         
 
-copyDirectoryPortion(viewStoreImagesDirectoryAbPath, storeAbPath, true, false, current, total)
+FileUtil.getInstance()!.copyDirectoryPortion(viewStoreImagesDirectoryAbPath, storeAbPath, true, false, current, total)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toVector(): Vector{
 
@@ -2044,36 +1968,36 @@ copyDirectoryPortion(viewStoreImagesDirectoryAbPath, storeAbPath, true, false, c
         
         
 
-add(this.name)
-add(this.homeHostName)
-add(this.homeHostNamePath!.toString())
-add(this.hostName)
-add(this.hostNamePath!.toString())
-add(this.testHomeHostName)
-add(this.testHomeHostNamePath!.toString())
-add(this.testHostName)
-add(this.testHostNamePath!.toString())
-add(this.imagePath!.toString())
-add(this.staticPath!.toString())
-add(this.categoryPath!.toString())
-add(this.inventoryControl)
+dataVector!.add(this.name)
+dataVector!.add(this.homeHostName)
+dataVector!.add(this.homeHostNamePath!.toString())
+dataVector!.add(this.hostName)
+dataVector!.add(this.hostNamePath!.toString())
+dataVector!.add(this.testHomeHostName)
+dataVector!.add(this.testHomeHostNamePath!.toString())
+dataVector!.add(this.testHostName)
+dataVector!.add(this.testHostNamePath!.toString())
+dataVector!.add(this.imagePath!.toString())
+dataVector!.add(this.staticPath!.toString())
+dataVector!.add(this.categoryPath!.toString())
+dataVector!.add(this.inventoryControl)
 
     var contextConfigurationDomDocumentMapping: ContextConfigurationDomDocumentMapping = new ContextConfigurationDomDocumentMapping(this.getContextConfigurationInterface());
         
         
 
-add(contextConfigurationDomDocumentMapping!.toDomDocumentString())
-add(this.subStores)
-add(this.tagLocation)
-add(this.packageLocation)
-add(this.ftp)
-add(this.ftpPath!.toString())
-add(this.ftpUserName)
-add(this.ftpPassword)
-add(this.testFtp)
-add(this.testFtpPath!.toString())
-add(this.testFtpUserName)
-add(this.testFtpPassword)
+dataVector!.add(contextConfigurationDomDocumentMapping!.toDomDocumentString())
+dataVector!.add(this.subStores)
+dataVector!.add(this.tagLocation)
+dataVector!.add(this.packageLocation)
+dataVector!.add(this.ftp)
+dataVector!.add(this.ftpPath!.toString())
+dataVector!.add(this.ftpUserName)
+dataVector!.add(this.ftpPassword)
+dataVector!.add(this.testFtp)
+dataVector!.add(this.testFtpPath!.toString())
+dataVector!.add(this.testFtpUserName)
+dataVector!.add(this.testFtpPassword)
 
     var calendar: Calendar = Calendar.getInstance()!;
         
@@ -2086,8 +2010,8 @@ add(this.testFtpPassword)
         
         
 
-add(time)
-add(time)
+dataVector!.add(time)
+dataVector!.add(time)
 
 
 
@@ -2097,7 +2021,7 @@ add(time)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toHashMap(): HashMap<Any, Any>{
 
@@ -2110,36 +2034,36 @@ add(time)
         
         
 
-put(storeFrontData!.NAME, this.name)
-put(storeFrontData!.HOMEHOSTNAME, this.homeHostName)
-put(storeFrontData!.HOMEHOSTNAMEPATH, this.homeHostNamePath!.toString())
-put(storeFrontData!.HOSTNAME, this.hostName)
-put(storeFrontData!.HOSTNAMEPATH, this.hostNamePath!.toString())
-put(storeFrontData!.TESTHOMEHOSTNAME, this.testHomeHostName)
-put(storeFrontData!.TESTHOMEHOSTNAMEPATH, this.testHomeHostNamePath!.toString())
-put(storeFrontData!.TESTHOSTNAME, this.testHostName)
-put(storeFrontData!.TESTHOSTNAMEPATH, this.testHostNamePath!.toString())
-put(storeFrontData!.IMAGEPATH, this.imagePath!.toString())
-put(storeFrontData!.STATICPATH, this.staticPath!.toString())
-put(storeFrontData!.CATEGORYPATH, this.categoryPath!.toString())
-put(storeFrontData!.INVENTORYCONTROL, this.inventoryControl)
+dataHashMap!.put(storeFrontData!.NAME, this.name)
+dataHashMap!.put(storeFrontData!.HOMEHOSTNAME, this.homeHostName)
+dataHashMap!.put(storeFrontData!.HOMEHOSTNAMEPATH, this.homeHostNamePath!.toString())
+dataHashMap!.put(storeFrontData!.HOSTNAME, this.hostName)
+dataHashMap!.put(storeFrontData!.HOSTNAMEPATH, this.hostNamePath!.toString())
+dataHashMap!.put(storeFrontData!.TESTHOMEHOSTNAME, this.testHomeHostName)
+dataHashMap!.put(storeFrontData!.TESTHOMEHOSTNAMEPATH, this.testHomeHostNamePath!.toString())
+dataHashMap!.put(storeFrontData!.TESTHOSTNAME, this.testHostName)
+dataHashMap!.put(storeFrontData!.TESTHOSTNAMEPATH, this.testHostNamePath!.toString())
+dataHashMap!.put(storeFrontData!.IMAGEPATH, this.imagePath!.toString())
+dataHashMap!.put(storeFrontData!.STATICPATH, this.staticPath!.toString())
+dataHashMap!.put(storeFrontData!.CATEGORYPATH, this.categoryPath!.toString())
+dataHashMap!.put(storeFrontData!.INVENTORYCONTROL, this.inventoryControl)
 
     var contextConfigurationDomDocumentMapping: ContextConfigurationDomDocumentMapping = new ContextConfigurationDomDocumentMapping(this.getContextConfigurationInterface());
         
         
 
-put(storeFrontData!.CONFIGURATION, contextConfigurationDomDocumentMapping!.toDomDocumentString())
-put(storeFrontData!.SUBSTORES, this.subStores)
-put(storeFrontData!.TAGLOCATION, this.tagLocation)
-put(storeFrontData!.PACKAGELOCATION, this.packageLocation)
-put(storeFrontData!.FTP, this.ftp)
-put(storeFrontData!.FTPPATH, this.ftpPath!.toString())
-put(storeFrontData!.FTPUSERNAME, this.ftpUserName)
-put(storeFrontData!.FTPPASSWORD, this.ftpPassword)
-put(storeFrontData!.TESTFTP, this.testFtp)
-put(storeFrontData!.TESTFTPPATH, this.testFtpPath!.toString())
-put(storeFrontData!.TESTFTPUSERNAME, this.testFtpUserName)
-put(storeFrontData!.TESTFTPPASSWORD, this.testFtpPassword)
+dataHashMap!.put(storeFrontData!.CONFIGURATION, contextConfigurationDomDocumentMapping!.toDomDocumentString())
+dataHashMap!.put(storeFrontData!.SUBSTORES, this.subStores)
+dataHashMap!.put(storeFrontData!.TAGLOCATION, this.tagLocation)
+dataHashMap!.put(storeFrontData!.PACKAGELOCATION, this.packageLocation)
+dataHashMap!.put(storeFrontData!.FTP, this.ftp)
+dataHashMap!.put(storeFrontData!.FTPPATH, this.ftpPath!.toString())
+dataHashMap!.put(storeFrontData!.FTPUSERNAME, this.ftpUserName)
+dataHashMap!.put(storeFrontData!.FTPPASSWORD, this.ftpPassword)
+dataHashMap!.put(storeFrontData!.TESTFTP, this.testFtp)
+dataHashMap!.put(storeFrontData!.TESTFTPPATH, this.testFtpPath!.toString())
+dataHashMap!.put(storeFrontData!.TESTFTPUSERNAME, this.testFtpUserName)
+dataHashMap!.put(storeFrontData!.TESTFTPPASSWORD, this.testFtpPassword)
 
     var calendar: Calendar = Calendar.getInstance()!;
         
@@ -2152,7 +2076,7 @@ put(storeFrontData!.TESTFTPPASSWORD, this.testFtpPassword)
         
         
 
-put(EntryData.getInstance()!.LASTMODIFIED, time)
+dataHashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time)
 
 
 

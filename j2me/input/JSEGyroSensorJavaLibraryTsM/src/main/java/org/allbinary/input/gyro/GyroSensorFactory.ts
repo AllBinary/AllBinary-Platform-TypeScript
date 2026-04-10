@@ -26,7 +26,7 @@ export class GyroSensorFactory
 
     private allBinaryGyroSensor: AllBinaryOrientationSensor
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static init(){
 GyroSensorFactory.allBinaryGyroSensor= NoGyroSensor()

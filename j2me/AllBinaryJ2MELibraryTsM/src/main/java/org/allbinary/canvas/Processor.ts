@@ -38,13 +38,13 @@ export class Processor
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(timeDelta: number){
     //var timeDelta = timeDelta

@@ -58,7 +58,6 @@ this.value= this.getPageContext()!.getRequest()!.getParameter(StreetAddressData.
 
     public isValid(): Boolean{
 
-    
                         if(this.getWeblisketSession()!.getUserName() != 
                                     null
                                 )
@@ -80,7 +79,6 @@ this.value= this.getPageContext()!.getRequest()!.getParameter(StreetAddressData.
 
 this.streetAddress= billingAddressesEntity!.get(Integer(value))
 
-    
                         if(this.streetAddress == 
                                     null
                                 )

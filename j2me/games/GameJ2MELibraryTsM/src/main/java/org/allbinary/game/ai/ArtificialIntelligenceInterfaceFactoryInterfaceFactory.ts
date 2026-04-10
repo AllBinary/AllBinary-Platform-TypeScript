@@ -84,7 +84,7 @@ var hashtable = hashtable
 
     public add(artificialIntelligenceInterfaceFactoryInterface: ArtificialIntelligenceInterfaceFactoryInterface){
 var artificialIntelligenceInterfaceFactoryInterface = artificialIntelligenceInterfaceFactoryInterface
-add(artificialIntelligenceInterfaceFactoryInterface)
+list.add(artificialIntelligenceInterfaceFactoryInterface)
 }
 
 

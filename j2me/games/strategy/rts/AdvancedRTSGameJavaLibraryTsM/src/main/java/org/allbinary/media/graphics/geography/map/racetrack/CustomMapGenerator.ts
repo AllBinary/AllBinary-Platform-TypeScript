@@ -67,21 +67,20 @@ this.geographicMapCellTypeFactory= this.raceTrackGeographicMap!.getGeographicMap
 
 this.customMapArray= Array(mapArray!.length) { IntArray(size2) }
 
-    
                         if(mapArray!.length != this.customMapArray!.length || mapArray[0]!.length != this.customMapArray[0]!.length)
                         
                                     {
                                     
 
 
-                            throw Exception("Array Incorrect")
+                            throw Error("Array Incorrect")
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public copyMapIntoCustomMap(){
 
@@ -126,7 +125,7 @@ this.customMapArray[index]![index2]= this.getCustomType(index2, index, mapArray[
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getCustomType(column: number, row: number, currentType: number): number{
     //var column = column
@@ -148,7 +147,6 @@ this.customMapArray[index]![index2]= this.getCustomType(index2, index, mapArray[
         
 
 
-    
                         if(dropCellPositionHistory!.isCellPositionWithDrop(cellPosition))
                         
                                     {
@@ -158,7 +156,6 @@ this.customMapArray[index]![index2]= this.getCustomType(index2, index, mapArray[
         
 
 
-    
                         if(layer == AllBinaryLayer.NULL_ALLBINARY_LAYER)
                         
                                     {
@@ -177,7 +174,6 @@ this.customMapArray[index]![index2]= this.getCustomType(index2, index, mapArray[
         
 
 
-    
                         if(!(rtsLayer!.getType() == WaypointLayer.getStaticType()))
                         
                                     {

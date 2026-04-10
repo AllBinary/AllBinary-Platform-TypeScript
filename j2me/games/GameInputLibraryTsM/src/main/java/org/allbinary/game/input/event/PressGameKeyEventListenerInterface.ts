@@ -25,7 +25,7 @@ import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/
 interface PressGameKeyEventListenerInterface extends EventListenerInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     onPressGameKeyEvent(gameKeyEvent: GameKeyEvent)
 

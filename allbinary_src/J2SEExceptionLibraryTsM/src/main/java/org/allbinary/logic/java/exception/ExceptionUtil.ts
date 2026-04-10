@@ -44,7 +44,7 @@ import { PrintStream } from "../../../../../java/io/PrintStream.js";
 }
 
 
-    /*actual*/ public static readonly PRETEND_EXCEPTION: Exception = new Exception("Not Really An Exception");
+    /*actual*/ public static readonly PRETEND_EXCEPTION: Error = new Error("Not Really An Exception");
         
         
 private constructor (){
@@ -57,10 +57,9 @@ private constructor (){
         
         
 
-    /*actual*/ public getStackTrace(e: Throwable): string{
+    /*actual*/ public getStackTrace(e: Error): string{
     //var e = e
 
-    
                         if(e != 
                                     null
                                 )
@@ -76,14 +75,13 @@ private constructor (){
         
         
 
-printStackTrace(printStream)
+e.printStackTrace(printStream)
 
     var output: string = byteArrayOutputStream!.toString()!;
         
         
 
 
-    
                         if(output != 
                                     null
                                 )

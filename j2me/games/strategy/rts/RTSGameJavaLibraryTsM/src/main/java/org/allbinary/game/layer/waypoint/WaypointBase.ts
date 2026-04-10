@@ -92,7 +92,7 @@ this.sound= sound
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -112,11 +112,11 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getPathFindingInfo(geographicMapCellPosition: GeographicMapCellPosition): PathFindingInfo{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -127,7 +127,7 @@ log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getPathsList(geographicMapCellPosition: GeographicMapCellPosition, pathFindingInfo: PathFindingInfo, multipassState: MultipassState): BasicArrayList{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -140,7 +140,7 @@ log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getPathsList(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -151,7 +151,7 @@ log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getPathsListFromCacheOnly(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -162,7 +162,7 @@ log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public visit(unitLayer: PathFindingLayerInterface){
     //var unitLayer = unitLayer

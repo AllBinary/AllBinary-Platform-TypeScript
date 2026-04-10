@@ -45,7 +45,6 @@ this.total= total
 
     public isPeaked(): boolean{
 
-    
                         if(this.currentDestroyIndex >= this.total)
                         
                                     {

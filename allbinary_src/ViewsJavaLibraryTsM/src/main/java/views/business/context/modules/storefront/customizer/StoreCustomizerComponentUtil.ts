@@ -68,17 +68,16 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public generate(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): string{
     //var abeClientInformation = abeClientInformation
 var transformInfoInterface = transformInfoInterface
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Generating Modified Views For: " +transformInfoInterface!.getName(), this, "generateModifiedViews()")
+                                    logUtil!.put("Generating Modified Views For: " +transformInfoInterface!.getName(), this, "generateModifiedViews()")
 
                                     }
                                 
@@ -118,11 +117,10 @@ index < size; index++)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("View or component that was modified by a Customizer: " +nextTransformInfoInterface!.getName(), this, "generateModifiedViews()")
+                                    logUtil!.put("View or component that was modified by a Customizer: " +nextTransformInfoInterface!.getName(), this, "generateModifiedViews()")
 
                                     }
                                 
@@ -138,7 +136,7 @@ generate(abeClientInformation, transformInfoInterface, allViewsToBeModified)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     generate(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, allViewsToBeModifiedVector: Vector){
     //var abeClientInformation = abeClientInformation
@@ -175,15 +173,14 @@ index < size; index++)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Retrieved: " +specifiedTransformInfoInterface!.getName(), this, "generateModifiedViews()")
+                                    logUtil!.put("Retrieved: " +specifiedTransformInfoInterface!.getName(), this, "generateModifiedViews()")
 
                                     }
                                 
-generate(abeClientInformation, nextTransformInfoInterface, specifiedTransformInfoInterface)
+TransformGeneratorUtil.getInstance()!.generate(abeClientInformation, nextTransformInfoInterface, specifiedTransformInfoInterface)
 }
 
 }

@@ -93,7 +93,7 @@ numOfHealth <= max; numOfHealth++)
         
 index < numOfHealth; index++)
         {
-paint(image[numOfHealth]!.getGraphics(), numOfHealth *10, 0)
+this.animationInterface!.paint(image[numOfHealth]!.getGraphics(), numOfHealth *10, 0)
 }
 
 }
@@ -103,7 +103,7 @@ paint(image[numOfHealth]!.getGraphics(), numOfHealth *10, 0)
 
     public paint(graphics: Graphics){
 var graphics = graphics
-drawImage(this.image[max]!, x, y, Anchor.TOP_LEFT)
+graphics.drawImage(this.image[max]!, x, y, Anchor.TOP_LEFT)
 }
 
 

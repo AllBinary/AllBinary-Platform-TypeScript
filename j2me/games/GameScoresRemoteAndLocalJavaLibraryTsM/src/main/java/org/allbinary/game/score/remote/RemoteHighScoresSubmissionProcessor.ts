@@ -85,7 +85,7 @@ public constructor (){
     //var highScore = highScore
 
         try {
-            put("Begin Remote HighScores Submission", this, commonStrings!.PROCESS)
+            logUtil!.put("Begin Remote HighScores Submission", this, commonStrings!.PROCESS)
 
     var gameInfoData: GameInfoData = GameInfoData.getInstance()!;
         
@@ -96,21 +96,20 @@ public constructor (){
         
         
 
-putAll(highScore!.getGameInfo()!.toHashtable(), hashtable)
-put(RemoteHighScoresData.getInstance()!.CUSTOMER_USER_NAME, "None")
-put(RemoteHighScoresData.getInstance()!.DISPLAY_NAME, highScore!.getName())
-put(gameInfoData!.SOFTWARE_INFORMATION, remoteHighScores!.getSoftwareInformation()!.toString())
-put(remoteHighScores!.ASCENDING, remoteHighScores!.getAscending()!.toString())
+HashtableUtil.getInstance()!.putAll(highScore!.getGameInfo()!.toHashtable(), hashtable)
+hashtable.put(RemoteHighScoresData.getInstance()!.CUSTOMER_USER_NAME, "None")
+hashtable.put(RemoteHighScoresData.getInstance()!.DISPLAY_NAME, highScore!.getName())
+hashtable.put(gameInfoData!.SOFTWARE_INFORMATION, remoteHighScores!.getSoftwareInformation()!.toString())
+hashtable.put(remoteHighScores!.ASCENDING, remoteHighScores!.getAscending()!.toString())
 
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
 
-put(displayInfoSingleton!.ORIENTATION, BooleanFactory.getInstance()!.toString(displayInfoSingleton!.isPortrait()))
-put(RemoteHighScoresData.getInstance()!.GAME_CONFIGURATION, GameConfigurationCentral.getInstance()!.toString())
-put(RemoteHighScoresData.getInstance()!.SCORE, (highScore!.getScore()).toString())
+hashtable.put(displayInfoSingleton!.ORIENTATION, BooleanFactory.getInstance()!.toString(displayInfoSingleton!.isPortrait()))
+hashtable.put(RemoteHighScoresData.getInstance()!.GAME_CONFIGURATION, GameConfigurationCentral.getInstance()!.toString())
+hashtable.put(RemoteHighScoresData.getInstance()!.SCORE, (highScore!.getScore()).toString())
 
-    
                         if(XmlRpcAbeClient.isOnline)
                         
                                     {
@@ -120,13 +119,13 @@ put(RemoteHighScoresData.getInstance()!.SCORE, (highScore!.getScore()).toString(
         
         
 
-update(resultHashtable)
+remoteHighScores!.update(resultHashtable)
 
                                     }
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
 }
 
 }

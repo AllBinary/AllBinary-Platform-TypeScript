@@ -64,7 +64,6 @@ var rect2Y1 = rect2Y1
 var rect2X2 = rect2X2
 var rect2Y2 = rect2Y2
 
-    
                         if(rectX1 > rect2X1 && rectX2 < rect2X2 && rectY1 > rect2Y1 && rectY2 < rect2Y2)
                         
                                     {

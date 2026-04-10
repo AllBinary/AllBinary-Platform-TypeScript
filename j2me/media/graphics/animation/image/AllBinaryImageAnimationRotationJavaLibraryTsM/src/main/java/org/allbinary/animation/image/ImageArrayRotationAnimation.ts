@@ -53,7 +53,7 @@ protected constructor (anyType: any = {}, animationBehavior: AnimationBehavior)
         
         
 
-this.init(allBinaryImageRotationAnimationInfo!.getImageArray(), allBinaryImageRotationAnimationInfo!.getAngleInfoP(), allBinaryImageRotationAnimationInfo!.getTotalAngle())
+this.this.init(allBinaryImageRotationAnimationInfo!.getImageArray(), allBinaryImageRotationAnimationInfo!.getAngleInfoP(), allBinaryImageRotationAnimationInfo!.getTotalAngle())
 }
 
 public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior)                        
@@ -69,7 +69,7 @@ public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: numbe
 
                             //For kotlin this is before the body of the constructor.
                     
-this.init(imageArray, angleInfo, totalAngle)
+this.this.init(imageArray, angleInfo, totalAngle)
 }
 
 public constructor (imageArray: Image[], animationBehavior: AnimationBehavior)                        
@@ -100,23 +100,22 @@ public constructor (imageArray: Image[], angleInfo: AngleInfo, animationBehavior
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(imageArray: Image[], angleInfo: AngleInfo, totalAngle: number){
     //var imageArray = imageArray
     //var angleInfo = angleInfo
     //var totalAngle = totalAngle
 this.expectedTotalFrames= totalAngle /this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()
-adjustAngle(0)
+this.angleInfo!.adjustAngle(0)
 
-    
                         if(expectedTotalFrames != this.getSize())
                         
                                     {
                                     
 
 
-                            throw Exception("Wrong Number of Frames")
+                            throw Error("Wrong Number of Frames")
 
                                     }
                                 
@@ -125,8 +124,8 @@ adjustAngle(0)
 
     public setImageArray(imageArray: Image[]){
     //var imageArray = imageArray
-setImageArray(imageArray)
-adjustAngle(0)
+super.setImageArray(imageArray)
+this.angleInfo!.adjustAngle(0)
 }
 
 

@@ -129,15 +129,14 @@ index < size; index++)
         
         
 
-delete(0, stringMaker!.length())
-put(stringMaker!.append(name)!.append(ADD_CHOICE)!.append(gameFeature!.toString())!.toString(), this, GET_CHOICE_GROUP)
-append(gameFeature!.toString(), NullCanvas.NULL_IMAGE)
+stringMaker!.delete(0, stringMaker!.length())
+logUtil!.put(stringMaker!.append(name)!.append(ADD_CHOICE)!.append(gameFeature!.toString())!.toString(), this, GET_CHOICE_GROUP)
+choiceGroup!.append(gameFeature!.toString(), NullCanvas.NULL_IMAGE)
 
-    
                         if(features.isFeature(gameFeature))
                         
                                     {
-                                    setSelectedIndex(index, true)
+                                    choiceGroup!.setSelectedIndex(index, true)
 
                                     }
                                 
@@ -196,15 +195,15 @@ index < size; index++)
         
         
 
-delete(0, stringMaker!.length())
-put(stringMaker!.append(ADDING_CHOICE_GROUP)!.append(name)!.toString(), this, ADD_CHOICE_GROUP)
-append(this.getChoiceGroup(hashtable, name, option))
+stringMaker!.delete(0, stringMaker!.length())
+logUtil!.put(stringMaker!.append(ADDING_CHOICE_GROUP)!.append(name)!.toString(), this, ADD_CHOICE_GROUP)
+form.append(this.getChoiceGroup(hashtable, name, option))
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setDefault(form: CommandForm){
 var form = form
@@ -229,20 +228,18 @@ index < size; index++)
         
 
 
-    
                         if(item is GameConfigurationGauge)
                         
                                     {
-                                    setDefault(item as GameConfigurationGauge)
+                                    GameConfigurationUtil.getInstance()!.setDefault(item as GameConfigurationGauge)
 
                                     }
                                 
                              else 
-    
                         if(item is ChoiceGroup)
                         
                                     {
-                                    setDefault(item as ChoiceGroup)
+                                    GameFeatureUtil.getInstance()!.setDefault(item as ChoiceGroup)
 
                                     }
                                 

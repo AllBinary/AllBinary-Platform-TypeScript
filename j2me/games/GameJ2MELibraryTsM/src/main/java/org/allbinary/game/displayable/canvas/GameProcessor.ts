@@ -34,10 +34,10 @@ this.gameCanvas= gameCanvas
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
-processPlayingGame()
+this.gameCanvas!.processPlayingGame()
 }
 
 

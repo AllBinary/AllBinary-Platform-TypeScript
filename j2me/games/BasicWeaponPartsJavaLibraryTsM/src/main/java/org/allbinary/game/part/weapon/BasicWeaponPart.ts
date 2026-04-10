@@ -89,7 +89,7 @@ public constructor (animationInterface: Animation){
 
             super();
                 //var animationInterface = animationInterface
-this.setAnimationInterface(animationInterface)
+this.this.setAnimationInterface(animationInterface)
 }
 
 public constructor (animationInterface: Animation, sourceLayerInterface: AllBinaryLayer, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship){
@@ -100,8 +100,8 @@ public constructor (animationInterface: Animation, sourceLayerInterface: AllBina
     //var weaponProperties = weaponProperties
     //var scoreableInterface = scoreableInterface
     //var relativeRelationship = relativeRelationship
-this.init(sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship)
-this.setAnimationInterface(animationInterface)
+this.this.init(sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship)
+this.this.setAnimationInterface(animationInterface)
 }
 
 
@@ -110,24 +110,24 @@ this.setAnimationInterface(animationInterface)
     //var weaponProperties = weaponProperties
     //var scoreableInterface = scoreableInterface
     //var relativeRelationship = relativeRelationship
-this.setOwnerLayerInterface(sourceLayerInterface)
-this.setWeaponProperties(weaponProperties)
+this.this.setOwnerLayerInterface(sourceLayerInterface)
+this.this.setWeaponProperties(weaponProperties)
 this.scoreableInterface= scoreableInterface
 this.relativeRelationship= relativeRelationship
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number){
     //var allbinaryLayerManager = allbinaryLayerManager
     //var angle = angle
     //var otherAngle = otherAngle
-this.process(allbinaryLayerManager, angle, otherAngle, this.getWeaponProperties(), this.scoreableInterface)
+this.this.process(allbinaryLayerManager, angle, otherAngle, this.getWeaponProperties(), this.scoreableInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
     //var allbinaryLayerManager = allbinaryLayerManager
@@ -138,7 +138,7 @@ this.process(allbinaryLayerManager, angle, otherAngle, this.getWeaponProperties(
 
 
 
-                            throw Exception(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
+                            throw Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
 }
 
 
@@ -191,7 +191,7 @@ this.animationInterface= animationInterface
         
         
 
-paint(graphics, viewX, viewY)
+this.animationInterface!.paint(graphics, viewX, viewY)
 }
 
 

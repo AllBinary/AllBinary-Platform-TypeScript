@@ -101,26 +101,24 @@ var index = index
         
         
 
-put(UserData.USERNAME, userName)
-put(StreetAddressData.ID, index.toString() as String)
-deleteWhere(whereHashMap)
+whereHashMap!.put(UserData.USERNAME, userName)
+whereHashMap!.put(StreetAddressData.ID, index.toString() as String)
+super.deleteWhere(whereHashMap)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, "remove")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "remove")
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "remove", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "remove", e)
 
                                     }
                                 
@@ -131,7 +129,7 @@ deleteWhere(whereHashMap)
 
     public add(address: StreetAddress){
 var address = address
-this.add(address, TableDataFactory.getInstance()!.INTEGER_MAX_VALUE_STRING)
+this.this.add(address, TableDataFactory.getInstance()!.INTEGER_MAX_VALUE_STRING)
 }
 
 
@@ -145,15 +143,15 @@ var index = index
         
         
 
-add(index)
-add(userName)
-add(StringUtil.getInstance()!.EMPTY_STRING)
-add(address.getName())
-add(address.getStreet())
-add(address.getCity())
-add(address.getState())
-add(address.getCode())
-add(address.getCountry())
+values.add(index)
+values.add(userName)
+values.add(StringUtil.getInstance()!.EMPTY_STRING)
+values.add(address.getName())
+values.add(address.getStreet())
+values.add(address.getCity())
+values.add(address.getState())
+values.add(address.getCode())
+values.add(address.getCountry())
 
     var calendar: Calendar = Calendar.getInstance()!;
         
@@ -166,26 +164,24 @@ add(address.getCountry())
         
         
 
-add(time)
-insert(values)
-this.setDefault(getLastId())
+values.add(time)
+super.insert(values)
+this.this.setDefault(getLastId())
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, "add")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "add")
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "add", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "add", e)
 
                                     }
                                 
@@ -208,27 +204,25 @@ var address = address
         
         
 
-put(StreetAddressData.ID, address.getId())
-put(UserData.USERNAME, this.userName)
-updateWhere(whereKeyValuePairs, addressHashMap)
-this.setDefault(address.getId())
+whereKeyValuePairs!.put(StreetAddressData.ID, address.getId())
+whereKeyValuePairs!.put(UserData.USERNAME, this.userName)
+super.updateWhere(whereKeyValuePairs, addressHashMap)
+this.this.setDefault(address.getId())
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, "update")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "update")
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "add", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "add", e)
 
                                     }
                                 
@@ -260,7 +254,7 @@ this.setDefault(address.getId())
         
         
 
-put(UserData.USERNAME, userName)
+keyAndValue!.put(UserData.USERNAME, userName)
 
     var addressList: Vector = super.getRows(keyAndValue)!;
         
@@ -292,13 +286,12 @@ index < size; index++)
         
 
 
-    
                         if(streetAddress != 
                                     null
                                 )
                         
                                     {
-                                    add(streetAddress)
+                                    streetAddressVector!.add(streetAddress)
 
                                     }
                                 
@@ -313,11 +306,10 @@ index < size; index++)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e)
 
                                     }
                                 
@@ -341,15 +333,14 @@ var index = index
         
         
 
-put(UserData.USERNAME, userName)
-put(StreetAddressData.ID, index.toString())
+keyAndValue!.put(UserData.USERNAME, userName)
+keyAndValue!.put(StreetAddressData.ID, index.toString())
 
     var addressHashMap: HashMap<Any, Any> = super.getRow(keyAndValue)!;
         
         
 
 
-    
                         if(addressHashMap != 
                                     null
                                 )
@@ -377,11 +368,10 @@ put(StreetAddressData.ID, index.toString())
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e)
 
                                     }
                                 
@@ -409,11 +399,10 @@ put(StreetAddressData.ID, index.toString())
         
         
 
-put(StreetAddressData.DEFAULT, StreetAddressData.DEFAULT)
-put(UserData.USERNAME, userName)
+updateKeyAndValue!.put(StreetAddressData.DEFAULT, StreetAddressData.DEFAULT)
+updateKeyAndValue!.put(UserData.USERNAME, userName)
 addressHashMap= super.getRow(updateKeyAndValue)
 
-    
                         if(addressHashMap != 
                                     null
                                 )
@@ -425,11 +414,10 @@ addressHashMap= super.getRow(updateKeyAndValue)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, "getDefault")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "getDefault")
 
                                     }
                                 
@@ -444,11 +432,10 @@ addressHashMap= super.getRow(updateKeyAndValue)
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put("No Default Address Found", this, "getDefault")
+                                    logUtil!.put("No Default Address Found", this, "getDefault")
 
                                     }
                                 
@@ -464,11 +451,10 @@ addressHashMap= super.getRow(updateKeyAndValue)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "getDefault", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "getDefault", e)
 
                                     }
                                 
@@ -497,45 +483,42 @@ var value = value
         
         
 
-put(UserData.USERNAME, userName)
+whereKeyAndValue!.put(UserData.USERNAME, userName)
 
     var streetAddress: StreetAddress = getDefault()!;
         
         
 
 
-    
                         if(streetAddress != 
                                     null
                                 )
                         
                                     {
-                                    put(StreetAddressData.DEFAULT, StringUtil.getInstance()!.EMPTY_STRING)
-put(StreetAddressData.ID, streetAddress!.getId())
-updateWhere(whereKeyAndValue, updateKeyAndValue)
+                                    updateKeyAndValue!.put(StreetAddressData.DEFAULT, StringUtil.getInstance()!.EMPTY_STRING)
+whereKeyAndValue!.put(StreetAddressData.ID, streetAddress!.getId())
+super.updateWhere(whereKeyAndValue, updateKeyAndValue)
 
                                     }
                                 
-put(StreetAddressData.ID, value)
-put(StreetAddressData.DEFAULT, StreetAddressData.DEFAULT)
-updateWhere(whereKeyAndValue, updateKeyAndValue)
+whereKeyAndValue!.put(StreetAddressData.ID, value)
+updateKeyAndValue!.put(StreetAddressData.DEFAULT, StreetAddressData.DEFAULT)
+super.updateWhere(whereKeyAndValue, updateKeyAndValue)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, "setDefault")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "setDefault")
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "setShippingAddress", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "setShippingAddress", e)
 
                                     }
                                 
@@ -560,7 +543,7 @@ updateWhere(whereKeyAndValue, updateKeyAndValue)
         
         
 
-append(this.sqlStrings!.END)
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(this.getTableName())!.append(this.sqlStrings!.START)!.append(StreetAddressData.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_AUTO_INCREMENT_NOT_NULL)!.append(UserData.USERNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StreetAddressData.DEFAULT)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StreetAddressData.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StreetAddressData.STREET)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(StreetAddressData.CITY)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(StreetAddressData.STATE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(StreetAddressData.CODE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(StreetAddressData.COUNTRY)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(StreetAddressData.ID)!.append(this.sqlStrings!.END)
 
 
 

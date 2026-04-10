@@ -38,7 +38,6 @@ export class LongUtil
         
 
 
-    
                         if(frameStringBuffer!.length() < LongData.MAX_LONG_LENGTH)
                         
                                     {
@@ -62,13 +61,13 @@ export class LongUtil
         
 index < size; index++)
         {
-append(commonPhoneStrings!.ZERO)
+frameStringBuffer!.append(commonPhoneStrings!.ZERO)
 }
 
 
                                     }
                                 
-append(end)
+frameStringBuffer!.append(end)
 
 
 

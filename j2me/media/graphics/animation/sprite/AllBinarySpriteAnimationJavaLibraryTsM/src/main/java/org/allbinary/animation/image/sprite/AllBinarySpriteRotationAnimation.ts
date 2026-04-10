@@ -57,19 +57,19 @@ public constructor (sprite: Sprite, image: Image, animationBehavior: AnimationBe
 
                             //For kotlin this is before the body of the constructor.
                     
-adjustAngle(this.sprite.getFrame())
+this.angleInfo!.adjustAngle(this.sprite.getFrame())
 }
 
 
     public nextRotation(){
-nextFrame()
-adjustAngle(this.sprite.getFrame())
+this.sprite.nextFrame()
+this.angleInfo!.adjustAngle(this.sprite.getFrame())
 }
 
 
     public previousRotation(){
-prevFrame()
-adjustAngle(this.sprite.getFrame())
+this.sprite.prevFrame()
+this.angleInfo!.adjustAngle(this.sprite.getFrame())
 }
 
 
@@ -80,32 +80,32 @@ var direction = direction
         
         
 
-this.adjustFrame(angle)
+this.this.adjustFrame(angle)
 }
 
 
     public setFrame(angle: Angle){
 var angle = angle
-this.adjustFrame(angle)
+this.this.adjustFrame(angle)
 }
 
 
     public setFrame(index: number){
 var index = index
-setFrame(index)
-adjustAngle(this.getFrame())
+this.sprite.setFrame(index)
+this.angleInfo!.adjustAngle(this.getFrame())
 }
 
 
     public adjustFrame(angle: Angle){
 var angle = angle
-this.adjustFrame(angle.getValue())
+this.this.adjustFrame(angle.getValue())
 }
 
 
     public adjustFrame(angle: number){
 var angle = angle
-this.setFrame(frameUtil!.getFrameForAngle(angle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement().toInt()))
+this.this.setFrame(frameUtil!.getFrameForAngle(angle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement().toInt()))
 }
 
 

@@ -37,11 +37,10 @@ public constructor (){
 
             super();
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -61,11 +60,10 @@ this.propertiesHashMap= HashMap<Any, Any>()
 
     public doEndTag(): number{
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("Tag Ended", this, "doEndTag")
+                                    logUtil!.put("Tag Ended", this, "doEndTag")
 
                                     }
                                 

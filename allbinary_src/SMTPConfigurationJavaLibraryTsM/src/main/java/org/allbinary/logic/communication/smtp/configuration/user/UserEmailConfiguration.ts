@@ -53,15 +53,14 @@ public constructor (){
 
             super();
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.CONSTRUCTOR, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
-this.setUserEmailEventsConfigurationInterface(UserEmailEventsConfiguration())
+this.this.setUserEmailEventsConfigurationInterface(UserEmailEventsConfiguration())
 }
 
 public constructor (hashMap: HashMap<Any, Any>){
@@ -69,15 +68,14 @@ public constructor (hashMap: HashMap<Any, Any>){
             super();
             var hashMap = hashMap
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.CONSTRUCTOR, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
-this.setUserEmailEventsConfigurationInterface(UserEmailEventsConfiguration(hashMap))
+this.this.setUserEmailEventsConfigurationInterface(UserEmailEventsConfiguration(hashMap))
 }
 
 

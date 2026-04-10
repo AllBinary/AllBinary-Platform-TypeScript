@@ -49,9 +49,9 @@ this.emailServerConfigurationInterface= emailServerConfigurationInterface
         
         
 
-put(EmailServerConfigurationData.SERVER, this.emailServerConfigurationInterface!.getSmtpServer())
-put(EmailServerConfigurationData.ACCOUNT, this.emailServerConfigurationInterface!.getAccountName())
-put(EmailServerConfigurationData.PASSWORD, this.emailServerConfigurationInterface!.getPassword())
+hashMap!.put(EmailServerConfigurationData.SERVER, this.emailServerConfigurationInterface!.getSmtpServer())
+hashMap!.put(EmailServerConfigurationData.ACCOUNT, this.emailServerConfigurationInterface!.getAccountName())
+hashMap!.put(EmailServerConfigurationData.PASSWORD, this.emailServerConfigurationInterface!.getPassword())
 
 
 
@@ -61,7 +61,7 @@ put(EmailServerConfigurationData.PASSWORD, this.emailServerConfigurationInterfac
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getKey(): any = {}{
 
@@ -73,7 +73,7 @@ put(EmailServerConfigurationData.PASSWORD, this.emailServerConfigurationInterfac
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toVector(): Vector{
 
@@ -81,7 +81,7 @@ put(EmailServerConfigurationData.PASSWORD, this.emailServerConfigurationInterfac
         
         
 
-add(this.emailServerConfigurationInterface!.getSmtpServer())
+vector.add(this.emailServerConfigurationInterface!.getSmtpServer())
 
 
 

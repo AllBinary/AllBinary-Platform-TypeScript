@@ -57,7 +57,7 @@ export class DemoGameBehavior
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(){
 }
@@ -73,22 +73,22 @@ export class DemoGameBehavior
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public updateTouch(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public updateScreenButtonPaintable(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-setTouchPaintableP(NullPaintable.getInstance())
+allBinaryGameCanvas!.setTouchPaintableP(NullPaintable.getInstance())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setGameState(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -100,21 +100,21 @@ setTouchPaintableP(NullPaintable.getInstance())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public updateEndGameProcessor(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public buildGame(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public run(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -123,11 +123,11 @@ setTouchPaintableP(NullPaintable.getInstance())
         
         
 
-put(GameTypeFactory.getInstance()!.BOT.toString(), this, commonStrings!.RUN)
+logUtil!.put(GameTypeFactory.getInstance()!.BOT.toString(), this, commonStrings!.RUN)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setHighScore(abeClientInformation: AbeClientInformationInterface, allBinaryGameCanvas: AllBinaryGameCanvas, name: string, score: number, autoSubmit: boolean, isLast: boolean){
     //var abeClientInformation = abeClientInformation

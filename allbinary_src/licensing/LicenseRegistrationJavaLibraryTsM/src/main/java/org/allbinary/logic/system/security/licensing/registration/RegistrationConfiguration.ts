@@ -95,16 +95,15 @@ private constructor (){
             
         try {
             
-    
                         if(FileFactory.getInstance()!.isFile(FILE))
                         
                                     {
-                                    this.read()
+                                    this.this.read()
 
                                     }
                                 
                         else {
-                            this.write()
+                            this.this.write()
 
                         }
                             
@@ -115,13 +114,13 @@ private constructor (){
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     read(){
 
@@ -139,13 +138,13 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
         
         
 
-this.setRegistrationCode(dataInputStream!.readUTF())
-put(StringMaker().
+this.this.setRegistrationCode(dataInputStream!.readUTF())
+PreLogUtil.put(StringMaker().
                             append("Read Configuration: ")!.append(this.toString())!.toString(), this, "read")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public write(){
 
@@ -157,7 +156,7 @@ put(StringMaker().
 
 
         try {
-            put(StringMaker().
+            logUtil!.put(StringMaker().
                             append("Write Configuration: ")!.append(this.toString())!.toString(), this, "write")
 
     var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
@@ -170,11 +169,11 @@ put(StringMaker().
         
 
 dataOutputStream= AbDataOutputStream(fileOutputStream)
-writeUTF(this.getRegistrationCode())
-flush()
+dataOutputStream!.writeUTF(this.getRegistrationCode())
+dataOutputStream!.flush()
 
          finally {
-            close(dataOutputStream)
+            StreamUtil.getInstance()!.close(dataOutputStream)
 
          }
         

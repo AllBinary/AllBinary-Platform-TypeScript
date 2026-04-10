@@ -63,11 +63,10 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    put(commonStrings!.START, this, "CategoryModifierTree(CategoryFactoryInterface categoryFactoryInterface)")
+                                    logUtil!.put(commonStrings!.START, this, "CategoryModifierTree(CategoryFactoryInterface categoryFactoryInterface)")
 
                                     }
                                 
@@ -81,52 +80,47 @@ var newChildCategoryInterface = newChildCategoryInterface
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    put("Inserting", this, "insert()")
+                                    logUtil!.put("Inserting", this, "insert()")
 
                                     }
                                 
 
-    
                         if(parentCategoryInterface!.isValid())
                         
                                     {
-                                    addChild(newChildCategoryInterface)
+                                    parentCategoryInterface!.addChild(newChildCategoryInterface)
 
     var directoryToBeCreatedAbPath: AbPath = new AbPath(newChildCategoryInterface!.getRootFilePath()!.toString() +newChildCategoryInterface!.getPath()!.toString());
         
         
 
-create(directoryToBeCreatedAbPath)
+this.directory.create(directoryToBeCreatedAbPath)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    put("Saving", this, "insert()")
+                                    logUtil!.put("Saving", this, "insert()")
 
                                     }
                                 
-this.save(parentCategoryInterface)
-this.save(newChildCategoryInterface)
+this.this.save(parentCategoryInterface)
+this.this.save(newChildCategoryInterface)
 
                                     }
                                 
                              else 
-    
                         if()
                         
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "insert", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "insert", e)
 
                                     }
                                 
@@ -142,35 +136,32 @@ var existingChildCategoryInterface = existingChildCategoryInterface
 
         try {
             
-    
                         if(parentCategoryInterface!.isValid())
                         
                                     {
-                                    addChild(existingChildCategoryInterface)
+                                    parentCategoryInterface!.addChild(existingChildCategoryInterface)
 
     var directoryToBeDeletedAbPath: AbPath = new AbPath(existingChildCategoryInterface!.getRootFilePath()!.toString() +existingChildCategoryInterface!.getPath()!.toString());
         
         
 
-this.delete(existingChildCategoryInterface)
-removeChild(existingChildCategoryInterface)
-this.save(parentCategoryInterface)
-remove(directoryToBeDeletedAbPath)
+this.this.delete(existingChildCategoryInterface)
+parentCategoryInterface!.removeChild(existingChildCategoryInterface)
+this.this.save(parentCategoryInterface)
+this.directory.remove(directoryToBeDeletedAbPath)
 
                                     }
                                 
                              else 
-    
                         if()
                         
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
 
                                     }
                                 

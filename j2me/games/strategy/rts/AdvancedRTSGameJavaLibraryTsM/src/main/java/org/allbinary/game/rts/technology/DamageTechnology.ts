@@ -125,7 +125,6 @@ this.maxLevel= maxLevel
 
     public isUpgradeable(): boolean{
 
-    
                         if(this.getLevel() < this.getMaxLevel())
                         
                                     {
@@ -158,7 +157,7 @@ this.level++
         
         
 
-setDamage(unitTechnologySingletonFactory!.getDamage() +(this.getLevel() *100))
+unitTechnologySingletonFactory!.setDamage(unitTechnologySingletonFactory!.getDamage() +(this.getLevel() *100))
 }
 
 

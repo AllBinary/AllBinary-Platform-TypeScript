@@ -69,7 +69,7 @@ i < TOTAL; i++)
 data[i]= ComparableObject()
 }
 
-sort(data)
+Arrays.sort(data)
 
     var permutationVisitor: ObjectPermutationVisitor = new ObjectPermutationVisitor(data);
         
@@ -80,9 +80,9 @@ sort(data)
         
         
 
-print(ORIGINAL_DATA_LABEL)
-visit(data)
-generate(data, permutationVisitor)
+System.out.print(ORIGINAL_DATA_LABEL)
+permutationVisitor!.visit(data)
+OrderedObjectArrayPermutationUtil.getInstance()!.generate(data, permutationVisitor)
 }
 
 
@@ -129,13 +129,13 @@ i= i -1
 j= j -1
 }
 
-this.swap(data, i -1, j -1)
+this.this.swap(data, i -1, j -1)
 i++
 j= length
 
         while(i < j)
         {
-this.swap(data, i -1, j -1)
+this.this.swap(data, i -1, j -1)
 i++
 j--
 }
@@ -165,7 +165,6 @@ var dataLength = dataLength
         
 
 
-    
                         if(dataLength > 1)
                         
                                     {
@@ -202,8 +201,8 @@ var visitor = visitor
         
         
 
-print(TOTAL_ITERATIONS_TABLE)
-println(iterations)
+System.out.print(TOTAL_ITERATIONS_TABLE)
+System.out.println(iterations)
 
 
 
@@ -214,11 +213,11 @@ println(iterations)
         
 count < iterations -1; count++)
         {
-this.getNext(data)
-visit(this)
+this.this.getNext(data)
+visitor.visit(this)
 }
 
-println(FINISHED)
+System.out.println(FINISHED)
 }
 
 

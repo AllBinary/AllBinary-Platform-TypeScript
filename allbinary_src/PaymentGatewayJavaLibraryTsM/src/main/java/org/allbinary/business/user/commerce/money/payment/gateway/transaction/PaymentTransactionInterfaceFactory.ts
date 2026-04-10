@@ -62,7 +62,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(orderReview: OrderHistory): PaymentTransactionInterface{
 var orderReview = orderReview
@@ -74,7 +74,6 @@ var orderReview = orderReview
         
 
 
-    
                         if(gatewayName != 
                                     null
                                 )
@@ -107,11 +106,10 @@ var orderReview = orderReview
 
 
 
-                            throw Exception("Failed to create PaymentTransactionInterface: " +"GatewayName is: " +gatewayName)
+                            throw Error("Failed to create PaymentTransactionInterface: " +"GatewayName is: " +gatewayName)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENTERROR))
                         
                                     {
@@ -120,7 +118,7 @@ var orderReview = orderReview
         
         
 
-put("Failed to generate test data", this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put("Failed to generate test data", this, commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 

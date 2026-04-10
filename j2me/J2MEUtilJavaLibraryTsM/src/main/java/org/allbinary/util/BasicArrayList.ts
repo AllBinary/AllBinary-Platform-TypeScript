@@ -43,7 +43,6 @@ public constructor (size: number)
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(size < 0)
                         
                                     {
@@ -81,7 +80,6 @@ public constructor ()
     //var index = index
     //var element = element
 
-    
                         if(index > currentIndex || index < 0)
                         
                                     {
@@ -90,10 +88,10 @@ public constructor ()
         
         
 
-append(CommonLabels.getInstance()!.INDEX_LABEL)
-appendint(index)
-append(SIZE)
-appendint(currentIndex)
+stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL)
+stringBuffer!.appendint(index)
+stringBuffer!.append(SIZE)
+stringBuffer!.appendint(currentIndex)
 
 
 
@@ -102,7 +100,7 @@ appendint(currentIndex)
                                     }
                                 
 ensureCapacity(currentIndex +1)
-
+System.
 
 
         for (let i = ; i < ; i++) {
@@ -130,7 +128,6 @@ objectArray[currentIndex++]= anyType
     public remove(index: number): any = {}{
     //var index = index
 
-    
                         if(index >= currentIndex)
                         
                                     {
@@ -139,10 +136,10 @@ objectArray[currentIndex++]= anyType
         
         
 
-append(CommonLabels.getInstance()!.INDEX_LABEL)
-appendint(index)
-append(SIZE)
-appendint(currentIndex)
+stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL)
+stringBuffer!.appendint(index)
+stringBuffer!.append(SIZE)
+stringBuffer!.appendint(currentIndex)
 
 
 
@@ -161,7 +158,6 @@ appendint(currentIndex)
         
 
 
-    
                         if(numMoved > 0)
                         System.arraycopy(objectArray, index +1, objectArray, index, numMoved)
 objectArray[--currentIndex]= 
@@ -179,7 +175,6 @@ objectArray[--currentIndex]=
     public remove(anyType: any = {}): boolean{
     //var anyType = anyType
 
-    
                         if(anyType == 
                                     null
                                 )
@@ -196,7 +191,6 @@ objectArray[--currentIndex]=
 index < currentIndex; index++)
         {
 
-    
                         if(objectArray[index] == 
                                     null
                                 )
@@ -208,11 +202,10 @@ index < currentIndex; index++)
         
 
 
-    
                         if(numMoved > 0)
                         
                                     {
-                                    
+                                    System.
 
 
         for (let i = ; i < numMoved; i++) {
@@ -251,7 +244,6 @@ objectArray[--currentIndex]=
 index < currentIndex; index++)
         {
 
-    
                         if(anyType == objectArray[index] || anyType!.equals(objectArray[index]!))
                         
                                     {
@@ -261,11 +253,10 @@ index < currentIndex; index++)
         
 
 
-    
                         if(numMoved > 0)
                         
                                     {
-                                    
+                                    System.
 
 
         for (let i = ; i < numMoved; i++) {
@@ -324,7 +315,6 @@ objectArray[--currentIndex]=
 index < size; index++)
         {
 
-    
                         if(this.remove(list.get(index)))
                         
                                     {
@@ -402,7 +392,7 @@ objectArray[currentIndex++]= list.objectArray[index]!
         
 
 ensureCapacity(currentIndex +numSize)
-
+System.
 
 
         for (let i = 0; i < numSize; i++) {
@@ -428,7 +418,6 @@ currentIndex += numSize
         
 
 
-    
                         if(minSize > oldCapacity)
                         
                                     {
@@ -438,7 +427,6 @@ currentIndex += numSize
         
 
 
-    
                         if(newCapacity < minSize)
                         newCapacity= minSize
 objectArray= arrayUtil!.copyOf(objectArray, newCapacity)
@@ -456,7 +444,6 @@ objectArray= arrayUtil!.copyOf(objectArray, newCapacity)
         
 
 
-    
                         if(currentIndex < oldCapacity)
                         objectArray= arrayUtil!.copyOf(objectArray, currentIndex)
 }
@@ -465,7 +452,6 @@ objectArray= arrayUtil!.copyOf(objectArray, newCapacity)
     public indexOf(anyType: any = {}): number{
     //var anyType = anyType
 
-    
                         if(anyType == 
                                     null
                                 )
@@ -482,7 +468,6 @@ objectArray= arrayUtil!.copyOf(objectArray, newCapacity)
 i < currentIndex; i++)
         {
 
-    
                         if(objectArray[i] == 
                                     null
                                 )
@@ -509,7 +494,6 @@ i < currentIndex; i++)
 i < currentIndex; i++)
         {
 
-    
                         if(anyType!.equals(objectArray[i]!))
                         
 
@@ -534,7 +518,6 @@ i < currentIndex; i++)
     public lastIndexOf(anyType: any = {}): number{
     //var anyType = anyType
 
-    
                         if(anyType == 
                                     null
                                 )
@@ -551,7 +534,6 @@ i < currentIndex; i++)
 i >= 0; i--)
         {
 
-    
                         if(objectArray[i] == 
                                     null
                                 )
@@ -578,7 +560,6 @@ i >= 0; i--)
 i >= 0; i--)
         {
 
-    
                         if(anyType!.equals(objectArray[i]!))
                         
 
@@ -603,7 +584,6 @@ i >= 0; i--)
     public get(index: number): any = {}{
     //var index = index
 
-    
                         if(index >= currentIndex)
                         
                                     {
@@ -612,10 +592,10 @@ i >= 0; i--)
         
         
 
-append(CommonLabels.getInstance()!.INDEX_LABEL)
-appendint(index)
-append(SIZE)
-appendint(currentIndex)
+stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL)
+stringBuffer!.appendint(index)
+stringBuffer!.append(SIZE)
+stringBuffer!.appendint(currentIndex)
 
 
 
@@ -636,7 +616,6 @@ appendint(currentIndex)
     //var index = index
     //var element = element
 
-    
                         if(index >= currentIndex)
                         
                                     {
@@ -645,10 +624,10 @@ appendint(currentIndex)
         
         
 
-append(CommonLabels.getInstance()!.INDEX_LABEL)
-appendint(index)
-append(SIZE)
-appendint(currentIndex)
+stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL)
+stringBuffer!.appendint(index)
+stringBuffer!.append(SIZE)
+stringBuffer!.appendint(currentIndex)
 
 
 
@@ -735,7 +714,6 @@ currentIndex= 0
     public toArray(objectArray: any = {}[]): any = {}[]{
     //var objectArray = objectArray
 
-    
                         if(objectArray!.length < currentIndex)
                         
 
@@ -743,7 +721,7 @@ currentIndex= 0
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return arrayUtil!.copyOf(this.objectArray, currentIndex, objectArray!::class);
     
-
+System.
 
 
         for (let i = 0; i < currentIndex; i++) {
@@ -751,7 +729,6 @@ currentIndex= 0
         }
     
 
-    
                         if(objectArray!.length > currentIndex)
                         objectArray[currentIndex]= 
                                         null
@@ -790,7 +767,7 @@ currentIndex= 0
 index < size; index++)
         {
 anyType= this.objectArray[index]!
-add(anyType)
+list.add(anyType)
 }
 
 
@@ -823,8 +800,8 @@ add(anyType)
         
 index < currentIndex; index++)
         {
-append(objectArray[index]!.toString())
-append(COMMA_SEP)
+stringBuffer!.append(objectArray[index]!.toString())
+stringBuffer!.append(COMMA_SEP)
 }
 
 

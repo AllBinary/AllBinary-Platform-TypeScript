@@ -54,14 +54,14 @@ this.inputSensor= inputSensor
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(anyType: any = {}){
 var anyType = anyType
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public sendNotifications(anyType: any = {}){
 var anyType = anyType
@@ -70,7 +70,6 @@ var anyType = anyType
 
     public isAnySensor(): boolean{
 
-    
                         if(this.inputSensor == NoAllBinarySensor.getInstance())
                         
                                     {
@@ -97,9 +96,9 @@ var anyType = anyType
 
 
     setNoSensors(){
-setCompleteMotionGestureInputEventListener(NoCompleteMotionGestureInputEventListener.getInstance())
-setCompleteMotionGestureInputEventListener(NoCompleteMotionGestureInputEventListener.getInstance())
-this.setInputSensor(NoAllBinarySensor.getInstance())
+GyroSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(NoCompleteMotionGestureInputEventListener.getInstance())
+AccelerometerSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(NoCompleteMotionGestureInputEventListener.getInstance())
+this.this.setInputSensor(NoAllBinarySensor.getInstance())
 }
 
 

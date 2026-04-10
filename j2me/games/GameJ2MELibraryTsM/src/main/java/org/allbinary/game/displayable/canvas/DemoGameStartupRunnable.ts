@@ -51,20 +51,20 @@ this.demoCanvas= demoCanvas
     public run(){
 
         try {
-            this.setRunning(true)
-stopGameDemo()
-create()
-start()
-this.setRunning(false)
+            this.this.setRunning(true)
+this.demoCanvas!.stopGameDemo()
+this.demoCanvas!.create()
+this.demoCanvas!.start()
+this.this.setRunning(false)
 } catch(e: Exception)
             {
-this.setRunning(false)
+this.this.setRunning(false)
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }

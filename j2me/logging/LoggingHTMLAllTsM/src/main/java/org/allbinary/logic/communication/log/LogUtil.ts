@@ -53,6 +53,10 @@ private constructor (){
             }
 
 
+    private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
+        
+        
+
     /*actual*/ public put(log: Log){
     //var log = log
 
@@ -75,7 +79,7 @@ private constructor (){
         
         
 
-this.put(specialMessage, anyType, functionName, exception)
+this.this.put(specialMessage, anyType, functionName, exception)
 }
 
 
@@ -89,7 +93,6 @@ this.put(specialMessage, anyType, functionName, exception)
         
 
 
-    
                         if(className == 
                                     null
                                 )
@@ -100,11 +103,11 @@ this.put(specialMessage, anyType, functionName, exception)
                                     }
                                 
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage)!;
+    var message: string = logFormatUtil!.get(className, functionName, specialMessage)!;
         
         
 
-debug(LOG_SUCCESS +message)
+PlayN.log()!.debug(LOG_SUCCESS +message)
 }
 
 
@@ -119,7 +122,6 @@ debug(LOG_SUCCESS +message)
         
 
 
-    
                         if(className == 
                                     null
                                 )
@@ -130,23 +132,22 @@ debug(LOG_SUCCESS +message)
                                     }
                                 
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
+    var message: string = logFormatUtil!.get(className, functionName, specialMessage, exception)!;
         
         
 
 
-    
                         if(exception != 
                                     null
                                 )
                         
                                     {
-                                    error(LOG_SUCCESS +message, exception as Throwable)
+                                    PlayN.log()!.error(LOG_SUCCESS +message, exception as Error)
 
                                     }
                                 
                         else {
-                            debug(LOG_SUCCESS +message)
+                            PlayN.log()!.debug(LOG_SUCCESS +message)
 
                         }
                             

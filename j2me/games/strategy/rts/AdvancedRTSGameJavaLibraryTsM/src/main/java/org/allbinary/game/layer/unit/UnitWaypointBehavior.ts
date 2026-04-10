@@ -158,7 +158,7 @@ this.associatedAdvancedRTSGameLayer= associatedAdvancedRTSGameLayer
 this.completeTimeDelayHelper= TimeDelayHelper(30000)
 this.targetList= BasicArrayList()
 this.possibleTargetList= BasicArrayList()
-this.setWaypointPathsList(BasicArrayListUtil.getInstance()!.getImmutableInstance())
+this.this.setWaypointPathsList(BasicArrayListUtil.getInstance()!.getImmutableInstance())
 this.currentGeographicMapCellHistoryP= GeographicMapCellHistory()
 this.FAKE_WAYPOINT_LAYER= fakeWaypoint
 }
@@ -172,11 +172,11 @@ this.longWeaponRange= weaponRange /2
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onWaypointEvent(event: RTSLayerEvent){
     //var event = event
@@ -185,64 +185,59 @@ log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
         
         
 
-onWaypointEvent(this.associatedAdvancedRTSGameLayer, advancedRTSGameLayer)
+this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.onWaypointEvent(this.associatedAdvancedRTSGameLayer, advancedRTSGameLayer)
 
-    
                         if(this.associatedAdvancedRTSGameLayer!.isSelected())
                         
                                     {
-                                    this.addWaypointFromUser(advancedRTSGameLayer)
+                                    this.this.addWaypointFromUser(advancedRTSGameLayer)
 
                                     }
                                 
                              else 
-    
                         if(advancedRTSGameLayer!.shouldAddWaypointFromBuilding())
                         
                                     {
-                                    this.addWaypointFromBuilding(advancedRTSGameLayer)
+                                    this.this.addWaypointFromBuilding(advancedRTSGameLayer)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     addWaypointFromUser(advancedRTSGameLayer: AdvancedRTSGameLayer){
     //var advancedRTSGameLayer = advancedRTSGameLayer
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     addWaypointFromBuilding(advancedRTSGameLayer: AdvancedRTSGameLayer){
     //var advancedRTSGameLayer = advancedRTSGameLayer
 
-    
                         if(advancedRTSGameLayer == PrimaryWaypointHelper.getInstance()!.getWaypointLayer() || advancedRTSGameLayer!.getParentLayer() == associatedAdvancedRTSGameLayer!.getParentLayer())
                         
                                     {
                                     
-    
                         if(!this.targetList!.contains(advancedRTSGameLayer))
                         
                                     {
-                                    addWaypointFromBuilding(this.associatedAdvancedRTSGameLayer, advancedRTSGameLayer)
+                                    this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.addWaypointFromBuilding(this.associatedAdvancedRTSGameLayer, advancedRTSGameLayer)
 
-    
                         if(advancedRTSGameLayer!.isDestroyed())
                         
                                     {
                                     
 
 
-                            throw Exception("Trying to add a dead: " +advancedRTSGameLayer)
+                            throw Error("Trying to add a dead: " +advancedRTSGameLayer)
 
                                     }
                                 
-add(advancedRTSGameLayer)
-addWaypointFromBuilding(this.associatedAdvancedRTSGameLayer, advancedRTSGameLayer, this.targetList)
+this.targetList!.add(advancedRTSGameLayer)
+this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.addWaypointFromBuilding(this.associatedAdvancedRTSGameLayer, advancedRTSGameLayer, this.targetList)
 
                                     }
                                 
@@ -262,31 +257,29 @@ addWaypointFromBuilding(this.associatedAdvancedRTSGameLayer, advancedRTSGameLaye
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public insertWaypoint(index: number, rtsLayer: CollidableDestroyableDamageableLayer): boolean{
     //var index = index
     //var rtsLayer = rtsLayer
 
-    
                         if(this.canInsertWaypoint(index, rtsLayer))
                         
                                     {
-                                    insertWaypoint(this.associatedAdvancedRTSGameLayer, index, rtsLayer, this.getName())
+                                    this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.insertWaypoint(this.associatedAdvancedRTSGameLayer, index, rtsLayer, this.getName())
 
-    
                         if(rtsLayer!.isDestroyed())
                         
                                     {
                                     
 
 
-                            throw Exception("Trying to add a dead: " +rtsLayer)
+                            throw Error("Trying to add a dead: " +rtsLayer)
 
                                     }
                                 
-add(index, rtsLayer)
-insertWaypoint(this.associatedAdvancedRTSGameLayer, index, rtsLayer, this.getName(), this.targetList)
+this.targetList!.add(index, rtsLayer)
+this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.insertWaypoint(this.associatedAdvancedRTSGameLayer, index, rtsLayer, this.getName(), this.targetList)
 
 
 
@@ -307,24 +300,23 @@ insertWaypoint(this.associatedAdvancedRTSGameLayer, index, rtsLayer, this.getNam
 
     move(){
 
-    
                         if(this.isMoving())
                         
                                     {
-                                    this.setMovingFromStopped(false)
+                                    this.this.setMovingFromStopped(false)
 
                                     }
                                 
                         else {
-                            this.setMovingFromStopped(true)
+                            this.this.setMovingFromStopped(true)
 
                         }
                             
-this.setMoving(false)
+this.this.setMoving(false)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     setRandomGeographicMapCellHistory(pathsList: BasicArrayList){
     //var pathsList = pathsList
@@ -333,9 +325,8 @@ this.setMoving(false)
         
         
 
-setRandomGeographicMapCellHistory(this.associatedAdvancedRTSGameLayer, pathsList)
+this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.setRandomGeographicMapCellHistory(this.associatedAdvancedRTSGameLayer, pathsList)
 
-    
                         if(size > 0)
                         
                                     {
@@ -344,31 +335,30 @@ setRandomGeographicMapCellHistory(this.associatedAdvancedRTSGameLayer, pathsList
         
         
 
-this.setGeographicMapCellHistoryPath(geographicMapCellPositionBasicArrayList)
+this.this.setGeographicMapCellHistoryPath(geographicMapCellPositionBasicArrayList)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     setGeographicMapCellHistoryPath(geographicMapCellPositionBasicArrayList: BasicArrayList){
     //var geographicMapCellPositionBasicArrayList = geographicMapCellPositionBasicArrayList
 this.lastPathGeographicMapCellPosition= SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION
 
-    
                         if(this.associatedAdvancedRTSGameLayer!.showMoreCaptionStates)
                         
                                     {
-                                    update(PATHING, BasicColorFactory.getInstance()!.GREEN)
+                                    this.associatedAdvancedRTSGameLayer!.getCaptionAnimationHelper()!.update(PATHING, BasicColorFactory.getInstance()!.GREEN)
 
                                     }
                                 
-init()
-init(this.currentGeographicMapCellHistoryP, geographicMapCellPositionBasicArrayList)
-this.setTrackingWaypoint(true)
-setStartTime()
+this.currentGeographicMapCellHistoryP!.init()
+this.associatedAdvancedRTSGameLayer!.init(this.currentGeographicMapCellHistoryP, geographicMapCellPositionBasicArrayList)
+this.this.setTrackingWaypoint(true)
+this.getCompleteTimeDelayHelper()!.setStartTime()
 }
 
 
@@ -376,7 +366,6 @@ setStartTime()
     //var index = index
     //var rtsLayer = rtsLayer
 
-    
                         if(this.targetList!.size() > 4)
                         
                                     {
@@ -384,7 +373,6 @@ setStartTime()
                                     }
                                 
                              else 
-    
                         if(this.targetList!.contains(rtsLayer))
                         
                                     {
@@ -410,7 +398,7 @@ setStartTime()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public addBuildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition){
     //var allbinaryLayer = allbinaryLayer
@@ -418,7 +406,7 @@ setStartTime()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     moveAwayFromBuilding(buildingLayer: BuildingLayer){
     //var buildingLayer = buildingLayer
@@ -433,23 +421,21 @@ setStartTime()
         
 
 
-    
                         if(list.contains(geographicMapCellPosition))
                         
                                     {
                                     
-    
                         if(this.insertWaypoint(0, this.FAKE_WAYPOINT_LAYER))
                         
                                     {
-                                    moveAwayFromBuilding(this.associatedAdvancedRTSGameLayer)
-this.setCurrentTargetLayerInterface(this.FAKE_WAYPOINT_LAYER as CollidableDestroyableDamageableLayer)
+                                    this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.moveAwayFromBuilding(this.associatedAdvancedRTSGameLayer)
+this.this.setCurrentTargetLayerInterface(this.FAKE_WAYPOINT_LAYER as CollidableDestroyableDamageableLayer)
 
     var pathsList: BasicArrayList = buildingLayer!.getMoveOutOfBuildAreaPath(geographicMapCellPosition)!;
         
         
 
-setClosestGeographicMapCellHistory(pathsList)
+this.associatedAdvancedRTSGameLayer!.setClosestGeographicMapCellHistory(pathsList)
 
                                     }
                                 
@@ -464,13 +450,12 @@ setClosestGeographicMapCellHistory(pathsList)
         
 
     public needToMove(): boolean{
-needToMove(this.associatedAdvancedRTSGameLayer, this)
+this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.needToMove(this.associatedAdvancedRTSGameLayer, this)
 
-    
                         if(this.isTrackingWaypoint() || this.sensorAction == SensorActionFactory.getInstance()!.EVADE || (this.currentTargetLayerInterfaceP != CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER && this.getCurrentTargetDistance() >= this.longWeaponRange +this.currentTargetLayerInterfaceP!.getHalfHeight()))
                         
                                     {
-                                    setStartTime()
+                                    repeatedToLong!.setStartTime()
 
 
 
@@ -481,7 +466,6 @@ needToMove(this.associatedAdvancedRTSGameLayer, this)
                                     }
                                 
 
-    
                         if(repeatedToLong!.isTime())
                         
                                     {
@@ -490,7 +474,7 @@ needToMove(this.associatedAdvancedRTSGameLayer, this)
         
         
 
-log(message, this.associatedAdvancedRTSGameLayer)
+ForcedLogUtil.log(message, this.associatedAdvancedRTSGameLayer)
 
                                     }
                                 
@@ -509,21 +493,20 @@ log(message, this.associatedAdvancedRTSGameLayer)
         
         
 
-append("isTrackingWaypoint: ")
-appendboolean(this.isTrackingWaypoint())
-append(" sensorAction: ")
-append(this.sensorAction!.name)
-append(" getCurrentTargetLayerInterface: ")
-append(StringUtil.getInstance()!.toString(this.currentTargetLayerInterfaceP))
+stringBuffer!.append("isTrackingWaypoint: ")
+stringBuffer!.appendboolean(this.isTrackingWaypoint())
+stringBuffer!.append(" sensorAction: ")
+stringBuffer!.append(this.sensorAction!.name)
+stringBuffer!.append(" getCurrentTargetLayerInterface: ")
+stringBuffer!.append(StringUtil.getInstance()!.toString(this.currentTargetLayerInterfaceP))
 
-    
                         if(this.currentTargetLayerInterfaceP != CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER)
                         
                                     {
-                                    append(" Target Range: ")
-appendint(this.getCurrentTargetDistance())
-append(" >= ")
-appendint(this.longWeaponRange +this.currentTargetLayerInterfaceP!.getHalfHeight())
+                                    stringBuffer!.append(" Target Range: ")
+stringBuffer!.appendint(this.getCurrentTargetDistance())
+stringBuffer!.append(" >= ")
+stringBuffer!.appendint(this.longWeaponRange +this.currentTargetLayerInterfaceP!.getHalfHeight())
 
                                     }
                                 

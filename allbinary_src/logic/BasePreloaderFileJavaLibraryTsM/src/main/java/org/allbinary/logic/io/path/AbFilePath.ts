@@ -37,8 +37,8 @@ public constructor (aPath: string)
         
 
 this.schema= this.getSchema(aPath)
-this.setName(abPathUtil!.getNameFromPath(aPath))
-this.setPath(abPathUtil!.adjust(this.getPath(abPathUtil!.removeNameFromPath(aPath)!.toString())))
+this.this.setName(abPathUtil!.getNameFromPath(aPath))
+this.this.setPath(abPathUtil!.adjust(this.getPath(abPathUtil!.removeNameFromPath(aPath)!.toString())))
 }
 
 

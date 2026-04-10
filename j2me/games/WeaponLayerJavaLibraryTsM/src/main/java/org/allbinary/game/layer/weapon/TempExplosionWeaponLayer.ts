@@ -58,21 +58,20 @@ this.timeDelayHelper!.delay= timeDelay
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
-    
                         if(timeDelayHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
                                     {
-                                    collide(this)
+                                    this.getCollidableInferface()!.collide(this)
 this.totalDamage= this.getInitDamage() +1
 
                                     }
                                 
-processTick(allBinaryLayerManager)
+super.processTick(allBinaryLayerManager)
 }
 
 

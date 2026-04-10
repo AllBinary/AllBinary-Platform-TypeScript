@@ -31,7 +31,7 @@ export class MediaData
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static get(a_Name: string): MediaData{
 var a_Name = a_Name
@@ -41,7 +41,6 @@ var a_Name = a_Name
         
 
 
-    
                         if(mediaData != 
                                     null
                                 )
@@ -60,7 +59,7 @@ var a_Name = a_Name
                             
 
 
-                            throw Exception("No Such MediaData")
+                            throw Error("No Such MediaData")
 
                         }
                             
@@ -99,7 +98,7 @@ protected constructor (a_Name: string){
 this.name= a_Name
 this.extension= "." +this.name
 this.type= MediaTypeData.getInstance()!.NOT_RESIZABLE_MEDIA
-put(a_Name, this)
+MediaData.hashMap!.put(a_Name, this)
 }
 
 
@@ -136,7 +135,6 @@ put(a_Name, this)
     public isConvertableTo(mediaData: MediaData): boolean{
 var mediaData = mediaData
 
-    
                         if(this == MediaDataFactory.getInstance()!.GIF && mediaData == MediaDataFactory.getInstance()!.JPG)
                         
                                     {

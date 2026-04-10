@@ -66,7 +66,7 @@ this.animationInterfaceArray= animationInterfaceArray
         
 --index >= 0; )
         {
-setFrame(frameIndex)
+this.animationInterfaceArray[index]!.setFrame(frameIndex)
 }
 
 }
@@ -82,7 +82,7 @@ setFrame(frameIndex)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAnimationSize(): number{
 
@@ -116,13 +116,13 @@ setFrame(frameIndex)
         
 --index >= 0; )
         {
-previousFrame()
+this.animationInterfaceArray[index]!.previousFrame()
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public nextFrame(){
 
@@ -136,7 +136,7 @@ previousFrame()
         
 --index >= 0; )
         {
-nextFrame()
+this.animationInterfaceArray[index]!.nextFrame()
 }
 
 }
@@ -172,7 +172,7 @@ nextFrame()
         
 --index >= 0; )
         {
-paint(graphics, x, y)
+this.animationInterfaceArray[index]!.paint(graphics, x, y)
 }
 
 }
@@ -194,13 +194,13 @@ paint(graphics, x, y)
         
 --index >= 0; )
         {
-paintThreed(graphics, x, y, z)
+this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public set(gl: GL){
     //var gl = gl
@@ -215,7 +215,7 @@ paintThreed(graphics, x, y, z)
         
 --index >= 0; )
         {
-set(gl)
+this.animationInterfaceArray[index]!.set(gl)
 }
 
 }

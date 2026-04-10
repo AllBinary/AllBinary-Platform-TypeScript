@@ -48,18 +48,18 @@ public constructor (timeLastModified: TimeLastModified){
 
             super();
             var timeLastModified = timeLastModified
-this.setTimeLastModified(timeLastModified)
+this.this.setTimeLastModified(timeLastModified)
 }
 
 public constructor (node: Node){
 
             super();
             var node = node
-this.setTimeLastModified(TimeLastModified(DomNodeHelper.getTextNodeValue(node)))
+this.this.setTimeLastModified(TimeLastModified(DomNodeHelper.getTextNodeValue(node)))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

@@ -86,12 +86,12 @@ this.attempts= attempts
         
         
 
-append("EmailEvent Log: \n")
-append("Event Name: ")
-append(this.userEmailEventNameData!.toString())
-append(this.getEmailInfo()!.toString())
-append("\nNumber of Attempts: ")
-appendint(this.getAttempts())
+stringBuffer!.append("EmailEvent Log: \n")
+stringBuffer!.append("Event Name: ")
+stringBuffer!.append(this.userEmailEventNameData!.toString())
+stringBuffer!.append(this.getEmailInfo()!.toString())
+stringBuffer!.append("\nNumber of Attempts: ")
+stringBuffer!.appendint(this.getAttempts())
 
 
 

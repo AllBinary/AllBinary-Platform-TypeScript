@@ -25,7 +25,7 @@ import { EventListener } from "../../../../../../java/util/EventListener.js";
 interface UserEmailEventListenerInterface extends EventListener {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onEmailSendRequest(userEmailInfoEvent: EmailEvent)
 

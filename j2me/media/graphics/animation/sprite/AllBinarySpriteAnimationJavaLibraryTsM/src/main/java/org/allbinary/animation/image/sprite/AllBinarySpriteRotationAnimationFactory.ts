@@ -182,7 +182,7 @@ public constructor (image: Image, unused: any = {}, animationBehaviorFactory: An
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
@@ -192,7 +192,6 @@ public constructor (image: Image, unused: any = {}, animationBehaviorFactory: An
         
 
 
-    
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
                         
                                     {
@@ -218,7 +217,7 @@ public constructor (image: Image, unused: any = {}, animationBehaviorFactory: An
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(animationInterface: Animation): Animation{
     //var animationInterface = animationInterface

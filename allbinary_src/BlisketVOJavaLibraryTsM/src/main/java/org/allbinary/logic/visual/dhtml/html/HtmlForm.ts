@@ -97,13 +97,13 @@ method= GET
 
     public addInput(htmlInput: HtmlInput){
 var htmlInput = htmlInput
-add(htmlInput)
+inputs.add(htmlInput)
 }
 
 
     public addTable(htmlTable: HtmlTable){
 var htmlTable = htmlTable
-add(htmlTable)
+inputs.add(htmlTable)
 }
 
 

@@ -67,7 +67,7 @@ export class MakeCountedPartsSingletonArrayFactory
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(partInterfaceArray: PartInterface[]): PartInterface[]{
     //var partInterfaceArray = partInterfaceArray
@@ -82,7 +82,7 @@ list= BasicArrayList()
         
 index < partInterfaceArray!.length; index++)
         {
-add(partInterfaceArray[index]!)
+list.add(partInterfaceArray[index]!)
 }
 
 
@@ -109,7 +109,7 @@ add(partInterfaceArray[index]!)
 index < size; index++)
         {
 layerInterfaceFactoryInterface= countedBasicArrayList!.objectArray[index]! as CountedPickedUpLayerInterfaceFactory
-add(CountedLayerInterfaceFactoryPart(0, layerInterfaceFactoryInterface))
+list.add(CountedLayerInterfaceFactoryPart(0, layerInterfaceFactoryInterface))
 }
 
 
@@ -117,16 +117,16 @@ add(CountedLayerInterfaceFactoryPart(0, layerInterfaceFactoryInterface))
         
         
 
-append("Total Parts: ")
-appendint(list.size())
-append(" Counted: ")
-appendint(countedBasicArrayList!.size())
+stringBuffer!.append("Total Parts: ")
+stringBuffer!.appendint(list.size())
+stringBuffer!.append(" Counted: ")
+stringBuffer!.appendint(countedBasicArrayList!.size())
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
 
-put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE)
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE)
 
     var newPartInterfaceArray: PartInterface[] = new Array(list.size());
         

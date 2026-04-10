@@ -84,7 +84,7 @@ this.userConfigurationInterface= UserConfiguration() as UserConfigurationInterfa
         
         
 
-setUserEmailConfigurationInterface(userEmailConfigurationInterface)
+userConfigurationInterface!.setUserEmailConfigurationInterface(userEmailConfigurationInterface)
 
     var timeCreatedNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.TIMECREATED, childNodeList)!;
         
@@ -95,7 +95,7 @@ setUserEmailConfigurationInterface(userEmailConfigurationInterface)
         
         
 
-setTimeCreated(timeCreatedView!.getTimeCreated())
+this.userConfigurationInterface!.setTimeCreated(timeCreatedView!.getTimeCreated())
 
     var timeLastModifiedNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.LASTMODIFIED, childNodeList)!;
         
@@ -106,7 +106,7 @@ setTimeCreated(timeCreatedView!.getTimeCreated())
         
         
 
-setTimeLastModified(timeLastModifiedView!.getTimeLastModified())
+this.userConfigurationInterface!.setTimeLastModified(timeLastModifiedView!.getTimeLastModified())
 }
 
 public constructor (userConfigurationInterface: UserConfigurationInterface){
@@ -127,7 +127,7 @@ this.userConfigurationInterface= userConfigurationInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -141,19 +141,19 @@ var document = document
         
         
 
-appendChild(userEmailConfigurationView!.toXmlNode(document))
+node.appendChild(userEmailConfigurationView!.toXmlNode(document))
 
     var timeCreatedView: TimeCreatedView = new TimeCreatedView(userConfigurationInterface!.getTimeCreated());
         
         
 
-appendChild(timeCreatedView!.toXmlNode(document))
+node.appendChild(timeCreatedView!.toXmlNode(document))
 
     var timeLastModifiedView: TimeLastModifiedView = new TimeLastModifiedView(userConfigurationInterface!.getTimeLastModified());
         
         
 
-appendChild(timeLastModifiedView!.toXmlNode(document))
+node.appendChild(timeLastModifiedView!.toXmlNode(document))
 
 
 

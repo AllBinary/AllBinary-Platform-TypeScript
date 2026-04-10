@@ -113,12 +113,12 @@ this.circularIndexUtil= CircularIndexUtil.getInstance(4)
 
 
     public nextRotation(){
-adjustAngle(this.circularIndexUtil!.next())
+this.angleInfo!.adjustAngle(this.circularIndexUtil!.next())
 }
 
 
     public previousRotation(){
-adjustAngle(this.circularIndexUtil!.previous())
+this.angleInfo!.adjustAngle(this.circularIndexUtil!.previous())
 }
 
 
@@ -132,13 +132,13 @@ adjustAngle(this.circularIndexUtil!.previous())
 
     public setFrame(index: number){
     //var index = index
-setIndex(index)
+this.circularIndexUtil!.setIndex(index)
 
     var newFrame: number = this.circularIndexUtil!.getIndex()!;
         
         
 
-adjustAngle(newFrame)
+this.angleInfo!.adjustAngle(newFrame)
 }
 
 
@@ -149,25 +149,25 @@ adjustAngle(newFrame)
         
         
 
-this.adjustFrame(angle)
+this.this.adjustFrame(angle)
 }
 
 
     public setFrame(angle: Angle){
     //var angle = angle
-this.adjustFrame(angle)
+this.this.adjustFrame(angle)
 }
 
 
     public adjustFrame(angle: Angle){
     //var angle = angle
-this.adjustFrame(angle.getValue())
+this.this.adjustFrame(angle.getValue())
 }
 
 
     public adjustFrame(angle: number){
     //var angle = angle
-this.setFrame(this.frameUtil!.getFrameForAngle(angle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement().toInt()))
+this.this.setFrame(this.frameUtil!.getFrameForAngle(angle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement().toInt()))
 }
 
 

@@ -50,7 +50,7 @@ this.motionGestureRecognizer= MotionGestureRecognizer(id)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processStartMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x
@@ -62,13 +62,13 @@ var modifiers = modifiers
         
         
 
-setX(x)
-setY(y)
-processPressedMotionEvent(point, deviceId, modifiers)
+point.setX(x)
+point.setY(y)
+this.motionGestureRecognizer!.processPressedMotionEvent(point, deviceId, modifiers)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processEndMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x
@@ -80,13 +80,13 @@ var modifiers = modifiers
         
         
 
-setX(x)
-setY(y)
-processReleasedMotionEvent(point, deviceId, modifiers)
+point.setX(x)
+point.setY(y)
+this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifiers)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processDraggedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x
@@ -98,9 +98,9 @@ var modifiers = modifiers
         
         
 
-setX(x)
-setY(y)
-processDraggedMotionEvent(point, deviceId, modifiers)
+point.setX(x)
+point.setY(y)
+this.motionGestureRecognizer!.processDraggedMotionEvent(point, deviceId, modifiers)
 }
 
 

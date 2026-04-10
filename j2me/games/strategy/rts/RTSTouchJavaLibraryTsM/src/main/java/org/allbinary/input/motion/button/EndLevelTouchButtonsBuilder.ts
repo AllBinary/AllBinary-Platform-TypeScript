@@ -38,19 +38,19 @@ export class EndLevelTouchButtonsBuilder extends TouchButtonsListBuilder {
     public getList(): BasicArrayList{
 
         try {
-            put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
     var list: BasicArrayList = new BasicArrayList();
         
         
 
-addAll(BasicTouchButtonsBuilder().
+list.addAll(BasicTouchButtonsBuilder().
                             getList())
-addAll(BuildingScrollTouchButtonsBuilder().
+list.addAll(BuildingScrollTouchButtonsBuilder().
                             getList())
-addAll(UpgradeDowngradeTouchButtonsBuilder().
+list.addAll(UpgradeDowngradeTouchButtonsBuilder().
                             getList())
-this.add(list)
+this.this.add(list)
 
 
 
@@ -59,7 +59,7 @@ this.add(list)
     
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 
 
 

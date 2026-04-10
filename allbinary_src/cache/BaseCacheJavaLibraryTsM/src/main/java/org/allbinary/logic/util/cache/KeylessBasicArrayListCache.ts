@@ -63,11 +63,10 @@ public constructor (size: number)
 
         try {
             
-    
                         if(this.index >= this.list.size())
                         
                                     {
-                                    this.add()
+                                    this.this.add()
 
                                     }
                                 
@@ -84,7 +83,7 @@ public constructor (size: number)
     
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e)
 
 
 
@@ -97,7 +96,7 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e)
 
 
     public clear(){
-clear()
+super.clear()
 
     var basicArrayList: BasicArrayList
 
@@ -112,7 +111,7 @@ clear()
 index >= 0; index--)
         {
 basicArrayList= (this.list.objectArray[index]! as BasicArrayList)
-clear()
+basicArrayList!.clear()
 }
 
 }
@@ -124,8 +123,8 @@ clear()
         
         
 
-append("S: ")
-appendint(this.list.size())
+stringBuffer!.append("S: ")
+stringBuffer!.appendint(this.list.size())
 
     var S_LABEL: string = " s: ";
         
@@ -144,9 +143,9 @@ appendint(this.list.size())
         
 index >= 0; index--)
         {
-append(S_LABEL)
+stringBuffer!.append(S_LABEL)
 basicArrayList= (this.list.objectArray[index]! as BasicArrayList)
-appendint(basicArrayList!.size())
+stringBuffer!.appendint(basicArrayList!.size())
 }
 
 

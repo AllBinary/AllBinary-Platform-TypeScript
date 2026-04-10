@@ -162,7 +162,6 @@ private constructor (){
 
             super();
             
-    
                         if(AndroidUtil.isAndroid())
                         
                                     {
@@ -249,11 +248,10 @@ this.scaleLargestTo= scaleLargestTo.toFloat()
     //var aLastHeight = aLastHeight
     //var reason = reason
 
-    
                         if(this.full[WIDTH] != aLastWidth || this.full[HEIGHT] != aLastHeight)
                         
                                     {
-                                    this.setLastSizeForce(aLastWidth, aLastHeight, reason)
+                                    this.this.setLastSizeForce(aLastWidth, aLastHeight, reason)
 
                                     }
                                 
@@ -269,7 +267,7 @@ var aLastHeight = aLastHeight
         
         
 
-put(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append(reason)!.toString(), this, SET_LAST_SIZE_METHOD_NAME)
+logUtil!.put(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append(reason)!.toString(), this, SET_LAST_SIZE_METHOD_NAME)
 
     var aFullWidth: number = aLastWidth;
         
@@ -280,15 +278,14 @@ put(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append(reason)
         
         
 
-delete(0, stringMaker!.length())
-put(stringMaker!.append(FULL_WIDTH)!.appendint(aFullWidth)!.append(FULL_HEIGHT)!.appendint(aFullHeight)!.append(this.toString())!.toString(), this, SET_LAST_SIZE_METHOD_NAME)
+stringMaker!.delete(0, stringMaker!.length())
+logUtil!.put(stringMaker!.append(FULL_WIDTH)!.appendint(aFullWidth)!.append(FULL_HEIGHT)!.appendint(aFullHeight)!.append(this.toString())!.toString(), this, SET_LAST_SIZE_METHOD_NAME)
 
     var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
         
         
 
 
-    
                         if(operatingSystemInterface!.isOverScan())
                         
                                     {
@@ -298,33 +295,30 @@ aLastHeight= aLastHeight *operatingSystemInterface!.getOverScanYPercent() /100
                                     }
                                 
 
-    
                         if(operatingSystemInterface!.isScalable())
                         
                                     {
                                     
-    
                         if(this.isPortrait(aLastWidth, aLastHeight))
                         
                                     {
                                     
-    
                         if(aLastHeight > scaleLargestTo)
                         
                                     {
                                     this.displayRatio= scaleLargestTo /aLastHeight
 this.ratio= aLastHeight /scaleLargestTo
-delete(0, stringMaker!.length())
-put(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_PORTRAIT)!.appendfloat(displayRatio)!.toString(), this, SET_LAST_SIZE_METHOD_NAME)
+stringMaker!.delete(0, stringMaker!.length())
+logUtil!.put(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_PORTRAIT)!.appendfloat(displayRatio)!.toString(), this, SET_LAST_SIZE_METHOD_NAME)
 aLastWidth= (aLastWidth *displayRatio).toInt()
 aLastHeight= (aLastHeight *displayRatio).toInt()
-scale(ratio.toFloat())
+this.scalableListener!.scale(ratio.toFloat())
 
                                     }
                                 
                         else {
                             this.ratio= 1.0f
-scale(ratio.toFloat())
+this.scalableListener!.scale(ratio.toFloat())
 
                         }
                             
@@ -333,23 +327,22 @@ scale(ratio.toFloat())
                                 
                         else {
                             
-    
                         if(aLastWidth > scaleLargestTo)
                         
                                     {
                                     this.displayRatio= scaleLargestTo /aLastWidth
 this.ratio= aLastWidth /scaleLargestTo
-delete(0, stringMaker!.length())
-put(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_LANDSCAPE)!.appendfloat(displayRatio)!.toString(), this, SET_LAST_SIZE_METHOD_NAME)
+stringMaker!.delete(0, stringMaker!.length())
+logUtil!.put(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_LANDSCAPE)!.appendfloat(displayRatio)!.toString(), this, SET_LAST_SIZE_METHOD_NAME)
 aLastWidth= (aLastWidth *displayRatio).toInt()
 aLastHeight= (aLastHeight *displayRatio).toInt()
-scale(ratio.toFloat())
+this.scalableListener!.scale(ratio.toFloat())
 
                                     }
                                 
                         else {
                             this.ratio= 1.0f
-scale(ratio.toFloat())
+this.scalableListener!.scale(ratio.toFloat())
 
                         }
                             
@@ -359,8 +352,8 @@ scale(ratio.toFloat())
 
                                     }
                                 
-delete(0, stringMaker!.length())
-put(stringMaker!.append(LAST_WIDTH)!.appendint(aLastWidth)!.append(LAST_HEIGHT)!.appendint(aLastHeight)!.toString(), this, SET_LAST_SIZE_METHOD_NAME)
+stringMaker!.delete(0, stringMaker!.length())
+logUtil!.put(stringMaker!.append(LAST_WIDTH)!.appendint(aLastWidth)!.append(LAST_HEIGHT)!.appendint(aLastHeight)!.toString(), this, SET_LAST_SIZE_METHOD_NAME)
 this.xOffset= aFullWidth -aLastWidth
 this.yOffset= aFullHeight -aLastHeight
 this.left= this.scalableListener!.getLeft(this.xOffset)
@@ -371,8 +364,8 @@ last[WIDTH]= aLastWidth
 lastHalf[WIDTH]= (last[WIDTH] shr 1)
 last[HEIGHT]= aLastHeight
 lastHalf[HEIGHT]= (last[HEIGHT] shr 1)
-setCustom(aLastWidth, aLastHeight, this.ratio)
-this.add(SET_LAST_SIZE_METHOD_NAME)
+SWTJOGLProcessor.getInstance()!.setCustom(aLastWidth, aLastHeight, this.ratio)
+this.this.add(SET_LAST_SIZE_METHOD_NAME)
 }
 
 
@@ -380,7 +373,6 @@ this.add(SET_LAST_SIZE_METHOD_NAME)
 var lastWidth = lastWidth
 var lastHeight = lastHeight
 
-    
                         if(lastHeight > lastWidth)
                         
                                     {
@@ -443,10 +435,10 @@ var lastHeight = lastHeight
         
         
 
-put(stringMaker!.append(REASON)!.append(reason)!.toString(), this, FIRE_METHOD_NAME)
-delete(0, stringMaker!.length())
-put(this.toString(stringMaker), this, FIRE_METHOD_NAME)
-add(reason)
+logUtil!.put(stringMaker!.append(REASON)!.append(reason)!.toString(), this, FIRE_METHOD_NAME)
+stringMaker!.delete(0, stringMaker!.length())
+logUtil!.put(this.toString(stringMaker), this, FIRE_METHOD_NAME)
+list.add(reason)
 }
 
 
@@ -454,18 +446,17 @@ add(reason)
 
         try {
             
-    
                         if(list.size() > 0)
                         
                                     {
-                                    this.processForced()
+                                    this.this.processForced()
 
                                     }
                                 
-clear()
+list.clear()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, FIRE_METHOD_NAME, e)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, FIRE_METHOD_NAME, e)
 }
 
 }
@@ -479,13 +470,13 @@ put(commonStrings!.EXCEPTION, this, FIRE_METHOD_NAME, e)
         
         
 
-clear()
-fireEvent(displayChangeEvent)
-fireEvent(displayChangeEvent)
-onSurfaceChanged()
+swtJOGLProcessor!.clear()
+DisplayChangeEventHandler.getInstance()!.fireEvent(displayChangeEvent)
+LastDisplayChangeEventHandler.getInstance()!.fireEvent(displayChangeEvent)
+swtJOGLProcessor!.onSurfaceChanged()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, FIRE_METHOD_NAME, e)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, FIRE_METHOD_NAME, e)
 }
 
 }
@@ -519,26 +510,23 @@ put(commonStrings!.EXCEPTION, this, FIRE_METHOD_NAME, e)
         
         
 
-put(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append(reason)!.append(LAST_WIDTH)!.appendint(aLastWidth)!.append(LAST_HEIGHT)!.appendint(aLastHeight)!.append(commonSeps!.SPACE)!.append(this.toString())!.toString(), this, commonStrings!.UPDATE)
+logUtil!.put(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append(reason)!.append(LAST_WIDTH)!.appendint(aLastWidth)!.append(LAST_HEIGHT)!.appendint(aLastHeight)!.append(commonSeps!.SPACE)!.append(this.toString())!.toString(), this, commonStrings!.UPDATE)
 
-    
                         if(aLastWidth > 0 && aLastHeight > 0)
                         
                                     {
                                     
-    
                         if(this.last[WIDTH] != aLastWidth || this.last[HEIGHT] != aLastHeight)
                         
                                     {
-                                    delete(0, stringMaker!.length())
-put(stringMaker!.append(UPDATE_FROM_ORIENTATION_CHANGE)!.toString(), this, commonStrings!.UPDATE)
+                                    stringMaker!.delete(0, stringMaker!.length())
+logUtil!.put(stringMaker!.append(UPDATE_FROM_ORIENTATION_CHANGE)!.toString(), this, commonStrings!.UPDATE)
 
     var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
         
         
 
 
-    
                         if(operatingSystemInterface!.isOverScan())
                         
                                     {
@@ -548,33 +536,30 @@ aLastHeight= aLastHeight *operatingSystemInterface!.getOverScanYPercent() /100
                                     }
                                 
 
-    
                         if(operatingSystemInterface!.isScalable())
                         
                                     {
                                     
-    
                         if(this.isPortrait(aLastWidth, aLastHeight))
                         
                                     {
                                     
-    
                         if(aLastHeight > scaleLargestTo)
                         
                                     {
                                     this.displayRatio= scaleLargestTo /aLastHeight
 this.ratio= aLastHeight /scaleLargestTo
-delete(0, stringMaker!.length())
-put(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_PORTRAIT)!.appendfloat(displayRatio)!.toString(), this, commonStrings!.UPDATE)
+stringMaker!.delete(0, stringMaker!.length())
+logUtil!.put(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_PORTRAIT)!.appendfloat(displayRatio)!.toString(), this, commonStrings!.UPDATE)
 aLastWidth= (aLastWidth *displayRatio).toInt()
 aLastHeight= (aLastHeight *displayRatio).toInt()
-scale(ratio.toFloat())
+this.scalableListener!.scale(ratio.toFloat())
 
                                     }
                                 
                         else {
                             this.ratio= 1.0f
-scale(ratio.toFloat())
+this.scalableListener!.scale(ratio.toFloat())
 
                         }
                             
@@ -582,25 +567,24 @@ scale(ratio.toFloat())
                                     }
                                 
                         else {
-                            put("Found Landscape Orientation", this, commonStrings!.UPDATE)
+                            logUtil!.put("Found Landscape Orientation", this, commonStrings!.UPDATE)
 
-    
                         if(aLastWidth > scaleLargestTo)
                         
                                     {
                                     this.displayRatio= scaleLargestTo /aLastWidth
 this.ratio= aLastWidth /scaleLargestTo
-delete(0, stringMaker!.length())
-put(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_LANDSCAPE)!.appendfloat(displayRatio)!.toString(), this, commonStrings!.UPDATE)
+stringMaker!.delete(0, stringMaker!.length())
+logUtil!.put(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_LANDSCAPE)!.appendfloat(displayRatio)!.toString(), this, commonStrings!.UPDATE)
 aLastWidth= (aLastWidth *displayRatio).toInt()
 aLastHeight= (aLastHeight *displayRatio).toInt()
-scale(ratio.toFloat())
+this.scalableListener!.scale(ratio.toFloat())
 
                                     }
                                 
                         else {
                             this.ratio= 1.0f
-scale(ratio.toFloat())
+this.scalableListener!.scale(ratio.toFloat())
 
                         }
                             
@@ -610,8 +594,8 @@ scale(ratio.toFloat())
 
                                     }
                                 
-delete(0, stringMaker!.length())
-put(stringMaker!.append(UPDATE_FROM_ORIENTATION_CHANGE)!.append(LAST_WIDTH)!.appendint(aLastWidth)!.append(LAST_HEIGHT)!.appendint(aLastHeight)!.toString(), this, commonStrings!.UPDATE)
+stringMaker!.delete(0, stringMaker!.length())
+logUtil!.put(stringMaker!.append(UPDATE_FROM_ORIENTATION_CHANGE)!.append(LAST_WIDTH)!.appendint(aLastWidth)!.append(LAST_HEIGHT)!.appendint(aLastHeight)!.toString(), this, commonStrings!.UPDATE)
 this.xOffset= aFullWidth -aLastWidth
 this.yOffset= aFullHeight -aLastHeight
 this.left= this.scalableListener!.getLeft(this.xOffset)
@@ -622,8 +606,8 @@ last[WIDTH]= aLastWidth
 lastHalf[WIDTH]= (last[WIDTH] shr 1)
 last[HEIGHT]= aLastHeight
 lastHalf[HEIGHT]= (last[HEIGHT] shr 1)
-setCustom(aLastWidth, aLastHeight, this.ratio)
-this.add(commonStrings!.UPDATE)
+SWTJOGLProcessor.getInstance()!.setCustom(aLastWidth, aLastHeight, this.ratio)
+this.this.add(commonStrings!.UPDATE)
 
 
 
@@ -672,30 +656,30 @@ this.add(commonStrings!.UPDATE)
 
     public toString(stringBuffer: StringMaker): string{
     //var stringBuffer = stringBuffer
-append(DISPLAY_INFO)
-append(FULL)
-append(commonLabels!.WIDTH_LABEL)
-appendint(full[WIDTH]!)
-append(commonSeps!.SPACE)
-append(FULL)
-append(commonLabels!.HEIGHT_LABEL)
-appendint(full[HEIGHT]!)
-append(commonSeps!.SPACE)
-append(LAST)
-append(commonLabels!.WIDTH_LABEL)
-appendint(last[WIDTH]!)
-append(commonSeps!.SPACE)
-append(LAST)
-append(commonLabels!.HEIGHT_LABEL)
-appendint(last[HEIGHT]!)
-append(commonSeps!.SPACE)
-append(LAST_HALF)
-append(commonLabels!.WIDTH_LABEL)
-appendint(lastHalf[WIDTH]!)
-append(commonSeps!.SPACE)
-append(LAST_HALF)
-append(commonLabels!.HEIGHT_LABEL)
-appendint(lastHalf[HEIGHT]!)
+stringBuffer!.append(DISPLAY_INFO)
+stringBuffer!.append(FULL)
+stringBuffer!.append(commonLabels!.WIDTH_LABEL)
+stringBuffer!.appendint(full[WIDTH]!)
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(FULL)
+stringBuffer!.append(commonLabels!.HEIGHT_LABEL)
+stringBuffer!.appendint(full[HEIGHT]!)
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(LAST)
+stringBuffer!.append(commonLabels!.WIDTH_LABEL)
+stringBuffer!.appendint(last[WIDTH]!)
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(LAST)
+stringBuffer!.append(commonLabels!.HEIGHT_LABEL)
+stringBuffer!.appendint(last[HEIGHT]!)
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(LAST_HALF)
+stringBuffer!.append(commonLabels!.WIDTH_LABEL)
+stringBuffer!.appendint(lastHalf[WIDTH]!)
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(LAST_HALF)
+stringBuffer!.append(commonLabels!.HEIGHT_LABEL)
+stringBuffer!.appendint(lastHalf[HEIGHT]!)
 
 
 

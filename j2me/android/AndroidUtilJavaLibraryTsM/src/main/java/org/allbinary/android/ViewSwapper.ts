@@ -68,7 +68,6 @@ var id = id
         
 
 
-    
                         if(id != this.currentMainViewId)
                         
                                     {
@@ -82,7 +81,7 @@ var id = id
         
 index < this.topViewArray!.length; index++)
         {
-removeView(this.topViewArray[index]!)
+viewGroup!.removeView(this.topViewArray[index]!)
 }
 
 
@@ -96,11 +95,10 @@ removeView(this.topViewArray[index]!)
 index < this.mainViewArray!.length; index++)
         {
 
-    
                         if(id != this.mainViewArray[index]!.getId())
                         
                                     {
-                                    removeView(this.mainViewArray[index]!)
+                                    viewGroup!.removeView(this.mainViewArray[index]!)
 
                                     }
                                 
@@ -117,11 +115,10 @@ index < this.mainViewArray!.length; index++)
 index < this.mainViewArray!.length; index++)
         {
 
-    
                         if(id == this.mainViewArray[index]!.getId())
                         
                                     {
-                                    addView(this.mainViewArray[index]!)
+                                    viewGroup!.addView(this.mainViewArray[index]!)
 this.currentMainViewId= id
 
                                     }
@@ -138,7 +135,7 @@ this.currentMainViewId= id
         
 index < this.topViewArray!.length; index++)
         {
-addView(this.topViewArray[index]!)
+viewGroup!.addView(this.topViewArray[index]!)
 }
 
 

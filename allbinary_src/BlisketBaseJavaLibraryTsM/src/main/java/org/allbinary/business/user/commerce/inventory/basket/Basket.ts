@@ -63,7 +63,6 @@ public constructor (){
 var id = id
 var num = num
 
-    
                         if(items.containsKey(id))
                         
                                     {
@@ -87,12 +86,12 @@ var num = num
         
         
 
-put(id, newNumInt!.toString())
+items.put(id, newNumInt!.toString())
 
                                     }
                                 
                         else {
-                            put(id, num)
+                            items.put(id, num)
 
                         }
                             
@@ -101,7 +100,7 @@ put(id, newNumInt!.toString())
 
     public removeItem(id: string){
 var id = id
-remove(id)
+items.remove(id)
 }
 
 
@@ -109,16 +108,15 @@ remove(id)
 var id = id
 var num = num
 
-    
                         if(Integer.valueOf(num)!.toInt() > 0)
                         
                                     {
-                                    put(id, num)
+                                    items.put(id, num)
 
                                     }
                                 
                         else {
-                            remove(id)
+                            items.remove(id)
 
                         }
                             
@@ -137,7 +135,6 @@ var num = num
         
 
 
-    
                         if(itemsAndNumberInBasket!.size() > 0)
                         
                                     {
@@ -177,7 +174,7 @@ product= .toCharArray()
 weightFloat= Float(InventoryEntity().
                             getWeight(product))
 weightFloat= Float(getNumberOf(product)!.toFloat() *weightFloat!.toFloat())
-add(weightFloat!.toString())
+totalWeight!.add(weightFloat!.toString())
 }
 
 
@@ -243,7 +240,7 @@ var product = product
 }
 
 
-                @Throws(MoneyException::class)
+                //@Throws(MoneyException::class)
             
     public getSubTotal(): Money{
 
@@ -257,7 +254,6 @@ var product = product
         
 
 
-    
                         if(itemsAndNumberInBasket!.size() > 0)
                         
                                     {
@@ -312,8 +308,8 @@ index < size; index++)
         
         
 
-multiply(getNumberOf(product)!.toInt())
-add(productTotal!.toString())
+productTotal!.multiply(getNumberOf(product)!.toInt())
+subTotal!.add(productTotal!.toString())
 }
 
 

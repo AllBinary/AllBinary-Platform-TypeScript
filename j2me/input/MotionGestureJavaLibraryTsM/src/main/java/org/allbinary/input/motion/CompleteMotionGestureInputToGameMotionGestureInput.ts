@@ -98,7 +98,7 @@ export class CompleteMotionGestureInputToGameMotionGestureInput
 
 
         try {
-            put("Compound Motion Gestures", this, commonStrings!.INIT)
+            PreLogUtil.put("Compound Motion Gestures", this, commonStrings!.INIT)
 
     var motionGestureConfiguration: MotionGestureConfiguration = MotionGestureConfigurationFactory.getInstance()!;
         
@@ -114,35 +114,35 @@ export class CompleteMotionGestureInputToGameMotionGestureInput
         
         
 
-add(touchMotionGestureFactory!.DIAGONAL_DOWN_LEFT)
-addMotionGestureAction(list, DiagonalDownLeftTouchInputToGameKeyEventAction.getInstance())
+list.add(touchMotionGestureFactory!.DIAGONAL_DOWN_LEFT)
+motionGestureConfiguration!.addMotionGestureAction(list, DiagonalDownLeftTouchInputToGameKeyEventAction.getInstance())
 list= BasicArrayList()
-add(touchMotionGestureFactory!.DIAGONAL_DOWN_RIGHT)
-addMotionGestureAction(list, DiagonalDownRightTouchInputToGameKeyEventAction.getInstance())
+list.add(touchMotionGestureFactory!.DIAGONAL_DOWN_RIGHT)
+motionGestureConfiguration!.addMotionGestureAction(list, DiagonalDownRightTouchInputToGameKeyEventAction.getInstance())
 list= BasicArrayList()
-add(touchMotionGestureFactory!.DIAGONAL_UP_LEFT)
-addMotionGestureAction(list, DiagonalUpLeftTouchInputToGameKeyEventAction.getInstance())
+list.add(touchMotionGestureFactory!.DIAGONAL_UP_LEFT)
+motionGestureConfiguration!.addMotionGestureAction(list, DiagonalUpLeftTouchInputToGameKeyEventAction.getInstance())
 list= BasicArrayList()
-add(touchMotionGestureFactory!.DIAGONAL_UP_RIGHT)
-addMotionGestureAction(list, DiagonalUpRightTouchInputToGameKeyEventAction.getInstance())
+list.add(touchMotionGestureFactory!.DIAGONAL_UP_RIGHT)
+motionGestureConfiguration!.addMotionGestureAction(list, DiagonalUpRightTouchInputToGameKeyEventAction.getInstance())
 list= BasicArrayList()
-add(touchMotionGestureFactory!.LEFT)
-addMotionGestureAction(list, LeftTouchInputToGameKeyEventAction.getInstance())
+list.add(touchMotionGestureFactory!.LEFT)
+motionGestureConfiguration!.addMotionGestureAction(list, LeftTouchInputToGameKeyEventAction.getInstance())
 list= BasicArrayList()
-add(touchMotionGestureFactory!.RIGHT)
-addMotionGestureAction(list, RightTouchInputToGameKeyEventAction.getInstance())
+list.add(touchMotionGestureFactory!.RIGHT)
+motionGestureConfiguration!.addMotionGestureAction(list, RightTouchInputToGameKeyEventAction.getInstance())
 list= BasicArrayList()
-add(touchMotionGestureFactory!.DOWN)
-addMotionGestureAction(list, DownTouchInputToGameKeyEventAction.getInstance())
+list.add(touchMotionGestureFactory!.DOWN)
+motionGestureConfiguration!.addMotionGestureAction(list, DownTouchInputToGameKeyEventAction.getInstance())
 list= BasicArrayList()
-add(touchMotionGestureFactory!.UP)
-addMotionGestureAction(list, UpTouchInputToGameKeyEventAction.getInstance())
+list.add(touchMotionGestureFactory!.UP)
+motionGestureConfiguration!.addMotionGestureAction(list, UpTouchInputToGameKeyEventAction.getInstance())
 list= BasicArrayList()
-add(touchMotionGestureFactory!.RELEASED)
-addMotionGestureAction(list, ReleaseTouchInputToGameKeyEventAction.getInstance())
+list.add(touchMotionGestureFactory!.RELEASED)
+motionGestureConfiguration!.addMotionGestureAction(list, ReleaseTouchInputToGameKeyEventAction.getInstance())
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
 }
 
 }

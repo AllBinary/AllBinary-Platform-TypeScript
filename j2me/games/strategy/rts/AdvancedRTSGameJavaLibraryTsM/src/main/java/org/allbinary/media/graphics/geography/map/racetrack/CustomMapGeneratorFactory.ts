@@ -22,7 +22,7 @@
 export class CustomMapGeneratorFactory extends CustomMapGeneratorBaseFactory {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(raceTrackGeographicMap: RaceTrackGeographicMap): CustomMapGeneratorBase{
     //var raceTrackGeographicMap = raceTrackGeographicMap

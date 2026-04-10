@@ -36,8 +36,8 @@ this.capitalGraphic= moneyGraphic
 
     public removeMoney(points: number){
 var points = points
-removeMoney(points)
-reduce(points)
+super.removeMoney(points)
+this.capitalGraphic!.reduce(points)
 }
 
 
@@ -53,8 +53,8 @@ reduce(points)
 
     public addMoney(points: number){
 var points = points
-addMoney(points)
-add(points)
+super.addMoney(points)
+this.capitalGraphic!.add(points)
 }
 
 

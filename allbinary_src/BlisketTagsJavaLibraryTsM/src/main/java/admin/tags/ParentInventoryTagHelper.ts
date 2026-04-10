@@ -44,13 +44,12 @@ export class ParentInventoryTagHelper
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isValid(tagClass: any = {}, parentTag: Tag){
 var tagClass = tagClass
 var parentTag = parentTag
 
-    
                         if(parentTag == 
                                     null
                                 )
@@ -59,12 +58,11 @@ var parentTag = parentTag
                                     
 
 
-                            throw Exception("Must have parent tag.")
+                            throw Error("Must have parent tag.")
 
                                     }
                                 
                              else 
-    
                         if(!(parentTag is HelperTag))
                         
                                     {
@@ -73,15 +71,15 @@ var parentTag = parentTag
         
         
 
-append("Must have at least a ")
-append("tags.HelperTag")
-append(" as parent")
-append("and not: ")
-append(parentTag!::class.toString()!)
+stringBuffer!.append("Must have at least a ")
+stringBuffer!.append("tags.HelperTag")
+stringBuffer!.append(" as parent")
+stringBuffer!.append("and not: ")
+stringBuffer!.append(parentTag!::class.toString()!)
 
 
 
-                            throw Exception(stringBuffer!.toString())
+                            throw Error(stringBuffer!.toString())
 
                                     }
                                 

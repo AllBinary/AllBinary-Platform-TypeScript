@@ -25,11 +25,11 @@ import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/
 interface DownKeyEventListenerInterface extends EventListenerInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     onDownKeyEvent(keyInteger: GameKeyEvent)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     onDownKeyEvent(keyInteger: Integer)
 

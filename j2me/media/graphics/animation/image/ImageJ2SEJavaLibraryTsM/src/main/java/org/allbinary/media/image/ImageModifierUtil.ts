@@ -162,11 +162,10 @@ rx= colorModel!.getRed(dataElements)
 gx= colorModel!.getGreen(dataElements)
 bx= colorModel!.getBlue(dataElements)
 
-    
                         if(rx != 0 || gx != 0 || bx != 0)
                         
                                     {
-                                    setRGB(index, index2, (ax shl 24) or (r shl 16) or (g shl 8) or (b))
+                                    newBufferedImage!.setRGB(index, index2, (ax shl 24) or (r shl 16) or (g shl 8) or (b))
 
                                     }
                                 
@@ -265,7 +264,7 @@ bx= colorModel!.getBlue(dataElements)
 rx *= r
 gx *= g
 bx *= b
-setRGB(index, index2, (ax shl 24) or (rx shl 16) or (gx shl 8) or (bx))
+newBufferedImage!.setRGB(index, index2, (ax shl 24) or (rx shl 16) or (gx shl 8) or (bx))
 }
 
 }
@@ -323,9 +322,9 @@ index < width; index++)
         
 index2 < height; index2++)
         {
-getPixel(index, index2, colorArray)
+raster.getPixel(index, index2, colorArray)
 colorArray[0]= alpha and colorArray[0]
-setPixel(index, index2, colorArray)
+raster.setPixel(index, index2, colorArray)
 }
 
 }
@@ -367,7 +366,7 @@ originalImage= originalImageArray[index]!
         
         
 
-drawImage(originalImage, 0, 0, Anchor.TOP_LEFT)
+image.getGraphics()!.drawImage(originalImage, 0, 0, Anchor.TOP_LEFT)
 newImageArray[index]= image
 }
 
@@ -384,7 +383,7 @@ newImageArray[index]= image
         
         
 
-put(commonStrings!.EXCEPTION, this, "getImageArray", e)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, "getImageArray", e)
 
 
 

@@ -76,16 +76,15 @@ this.vector= vector
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "toXmlNode")
+                                    logUtil!.put(this.commonStrings!.START, this, "toXmlNode")
 
                                     }
                                 
@@ -99,7 +98,7 @@ var document = document
         
         
 
-put(BasicItemData.IMAGE, EMPTY_STRING)
+hashMap!.put(BasicItemData.IMAGE, EMPTY_STRING)
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
@@ -147,7 +146,7 @@ index < size2; index++)
         
 
 value= stringUtil!.getInstance(value)
-appendChild(ModDomHelper.createNameValueNodes(document, name, value))
+node.appendChild(ModDomHelper.createNameValueNodes(document, name, value))
 }
 
 
@@ -155,7 +154,7 @@ appendChild(ModDomHelper.createNameValueNodes(document, name, value))
         
         
 
-appendChild(totalNode)
+node.appendChild(totalNode)
 
     var size: number = this.vector.length!;
         
@@ -181,7 +180,7 @@ index < size; index++)
         
         
 
-appendChild(customNode)
+node.appendChild(customNode)
 }
 
 

@@ -67,7 +67,6 @@ export class MediaUtil
         
 
 
-    
                         if(propertyStringArray != 
                                     null
                                 )
@@ -88,7 +87,7 @@ index < propertyStringArray!.length; index++)
         
         
 
-put(propertyStringArray[index]!, propertyObject!.toString())
+hashMap!.put(propertyStringArray[index]!, propertyObject!.toString())
 }
 
 
@@ -112,7 +111,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public saveImageFile(originalImageFile: AbFile, newImageFileName: string, category: string, mediaData: MediaData, newWidth: number, newHeight: number){
 var originalImageFile = originalImageFile
@@ -122,7 +121,6 @@ var mediaData = mediaData
 var newWidth = newWidth
 var newHeight = newHeight
 
-    
                         if(originalImageFile == 
                                     null
                                  || !originalImageFile!.isFile())
@@ -131,7 +129,7 @@ var newHeight = newHeight
                                     
 
 
-                            throw Exception("Original Image File Does Not Exist.")
+                            throw Error("Original Image File Does Not Exist.")
 
                                     }
                                 
@@ -141,7 +139,6 @@ var newHeight = newHeight
         
 
 
-    
                         if(bufferedImage == 
                                     null
                                 )
@@ -150,12 +147,11 @@ var newHeight = newHeight
                                     
 
 
-                            throw Exception("Unable to find ImageReader for this file.")
+                            throw Error("Unable to find ImageReader for this file.")
 
                                     }
                                 
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -164,7 +160,7 @@ var newHeight = newHeight
         
         
 
-put("Image Properties: " +hashMap!.toString(), this, "saveImageFile()")
+logUtil!.put("Image Properties: " +hashMap!.toString(), this, "saveImageFile()")
 
                                     }
                                 
@@ -173,7 +169,7 @@ put("Image Properties: " +hashMap!.toString(), this, "saveImageFile()")
         
         
 
-createNewFile()
+imageFile!.createNewFile()
 
     var imageUtil: ImageUtil = ImageUtil.getInstance()!;
         
@@ -190,19 +186,17 @@ createNewFile()
         
 
 
-    
                         if(!isWritten)
                         
                                     {
                                     
 
 
-                            throw Exception("Unable to write.")
+                            throw Error("Unable to write.")
 
                                     }
                                 
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -216,23 +210,23 @@ createNewFile()
         
         
 
-append("Get Path: ")
-append(originalImageFile!.getPath())
-append("\nNewImageFileName: ")
-append(newImageFileName)
-append("\nCategory: ")
-append(category)
-append("\nSave File Type: ")
-append(mediaData!.getName())
-append(commonLabels!.WIDTH_LABEL)
-appendint(newWidth)
-append(commonLabels!.HEIGHT_LABEL)
-appendint(newHeight)
-append("\nFile Length: ")
-appendlong(originalImageFile!.length())
-append("\nNew File Length: ")
-appendlong(imageFile!.length())
-put(stringBuffer!.toString(), this, "saveImageFile()")
+stringBuffer!.append("Get Path: ")
+stringBuffer!.append(originalImageFile!.getPath())
+stringBuffer!.append("\nNewImageFileName: ")
+stringBuffer!.append(newImageFileName)
+stringBuffer!.append("\nCategory: ")
+stringBuffer!.append(category)
+stringBuffer!.append("\nSave File Type: ")
+stringBuffer!.append(mediaData!.getName())
+stringBuffer!.append("\nNew")!.append(commonLabels!.WIDTH_LABEL)
+stringBuffer!.appendint(newWidth)
+stringBuffer!.append("\nNew")!.append(commonLabels!.HEIGHT_LABEL)
+stringBuffer!.appendint(newHeight)
+stringBuffer!.append("\nFile Length: ")
+stringBuffer!.appendlong(originalImageFile!.length())
+stringBuffer!.append("\nNew File Length: ")
+stringBuffer!.appendlong(imageFile!.length())
+logUtil!.put(stringBuffer!.toString(), this, "saveImageFile()")
 
                                     }
                                 

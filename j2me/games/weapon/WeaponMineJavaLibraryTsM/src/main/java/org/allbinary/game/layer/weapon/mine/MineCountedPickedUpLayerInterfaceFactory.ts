@@ -59,7 +59,7 @@ export class MineCountedPickedUpLayerInterfaceFactory extends CountedPickedUpLay
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static init(){
 pickedUpLayerInterfaceFactoryInterface= MineCountedPickedUpLayerInterfaceFactory()
@@ -109,7 +109,7 @@ private constructor ()
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(hashtable: Hashtable<Any, Any>, x: number, y: number, z: number): AllBinaryLayer{
     //var hashtable = hashtable

@@ -36,7 +36,7 @@ export class HardwareFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(os: GenericOperatingSystem): HardwareInterface{
 var os = os
@@ -48,7 +48,6 @@ var os = os
         
 
 
-    
                         if(os.getName()!.compareTo(operatingSystems!.LINUX) == 0)
                         
                                     {
@@ -62,7 +61,6 @@ var os = os
                                     }
                                 
                              else 
-    
                         if(os.getName()!.indexOf(operatingSystems!.WINDOWS) >= 0)
                         
                                     {
@@ -78,7 +76,7 @@ var os = os
 
 
 
-                            throw Exception("No Hardware Imp for: " +os.getName())
+                            throw Error("No Hardware Imp for: " +os.getName())
 } catch(e: Exception)
             {
 

@@ -34,7 +34,7 @@ export class ImageArrayRotationAnimationCacheableInterfaceFactory
                 , CacheableInterfaceFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(key: any = {}): CacheableInterface{
     //var key = key

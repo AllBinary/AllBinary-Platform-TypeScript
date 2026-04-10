@@ -108,7 +108,6 @@ this.numThreads= numThreads
 
     public init(){
 
-    
                         if(!this.isAlive)
                         
                                     {
@@ -128,8 +127,8 @@ this.taskQueue= BasicArrayList()
 i < this.numThreads; i++)
         {
 pooledThread= PooledThread()
-setPriority(priority)
-start()
+pooledThread!.setPriority(priority)
+pooledThread!.start()
 }
 
 
@@ -138,7 +137,7 @@ start()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public runAPriorityTask(){
 
@@ -158,16 +157,14 @@ start()
         //mutex.withLock
         {
 
-    
                         if(!this.isAlive)
                         
                                     {
-                                    this.init()
+                                    this.this.init()
 
                                     }
                                 
 
-    
                         if(task != 
                                     null
                                 )
@@ -198,7 +195,6 @@ index < size; index++)
         {
 runnable= this.taskQueue!.get(index) as PriorityRunnable
 
-    
                         if(runnable.getPriority() > task.getPriority())
                         
                                     {
@@ -212,11 +208,10 @@ break;
 }
 
 
-    
                         if(lowerPriorityRunnable == threadObjectUtil!.NULL_PRIORITY_RUNNABLE || lowerPriorityRunnable == NULL_RUNNABLE)
                         
                                     {
-                                    add(task)
+                                    this.taskQueue!.add(task)
 
                                     }
                                 
@@ -226,7 +221,7 @@ break;
         
         
 
-add(index, task)
+this.taskQueue!.add(index, task)
 
                         }
                             
@@ -249,22 +244,20 @@ notify()
         //mutex.withLock
         {
 
-    
                         if(!isAlive)
                         
                                     {
-                                    this.init()
+                                    this.this.init()
 
                                     }
                                 
 
-    
                         if(task != 
                                     null
                                 )
                         
                                     {
-                                    add(task)
+                                    this.taskQueue!.add(task)
 notify()
 
                                     }
@@ -274,7 +267,7 @@ notify()
 }
 
 
-                @Throws(InterruptedException::class)
+                //@Throws(InterruptedException::class)
             
     getTask(): Runnable{
 
@@ -288,7 +281,6 @@ notify()
         while(this.taskQueue!.size() == 0)
         {
 
-    
                         if(!this.isAlive)
                         
                                     {
@@ -301,7 +293,7 @@ notify()
 
                                     }
                                 
-this.wait()
+this.this.wait()
 }
 
 
@@ -329,11 +321,10 @@ this.wait()
         //mutex.withLock
         {
 
-    
                         if(this.isAlive)
                         
                                     {
-                                    clear()
+                                    this.taskQueue!.clear()
 
                                     }
                                 
@@ -351,12 +342,11 @@ this.wait()
         //mutex.withLock
         {
 
-    
                         if(this.isAlive)
                         
                                     {
                                     this.isAlive= false
-clear()
+this.taskQueue!.clear()
 
                                     }
                                 
@@ -374,7 +364,7 @@ clear()
         //mutex.withLock
         {
 this.isAlive= false
-clear()
+this.taskQueue!.clear()
 notifyAll()
 }
 
@@ -383,7 +373,6 @@ notifyAll()
 
     public isBusy(): boolean{
 
-    
                         if(!this.isAlive)
                         
                                     {
@@ -397,7 +386,6 @@ notifyAll()
                                     }
                                 
 
-    
                         if(this.taskQueue!.size() > 0)
                         
                                     {
@@ -411,7 +399,6 @@ notifyAll()
                                     }
                                 
 
-    
                         if(this.runningTask)
                         
                                     {
@@ -439,12 +426,11 @@ notifyAll()
 
     threadStopped(){
 
-    
                         if(this.numThreads == 1)
                         
                                     {
                                     this.isAlive= false
-clear()
+taskQueue!.clear()
 
                                     }
                                 
@@ -477,7 +463,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-put(commonStrings!.CONSTRUCTOR, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.CONSTRUCTOR, this, commonStrings!.CONSTRUCTOR)
 }
 
 
@@ -502,14 +488,13 @@ runningTask= true
 startTask(task2)
 } catch(ex: InterruptedException)
             {
-put(INTERRUPT_EXCEPTION, this, commonStrings!.RUN)
+logUtil!.put(INTERRUPT_EXCEPTION, this, commonStrings!.RUN)
 break;
 
                     
 }
 
 
-    
                         if(task2 == threadObjectUtil!.NULL_PRIORITY_RUNNABLE)
                         
                                     {
@@ -521,12 +506,12 @@ break;
                                 
 
         try {
-            run()
+            task2.run()
 completedTask(task2)
 runningTask= false
 } catch(e: Exception)
             {
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(commonStrings!.EXCEPTION_LABEL)!.append(StringUtil.getInstance()!.toString(task2))!.toString(), this, commonStrings!.RUN, e)
 }
 

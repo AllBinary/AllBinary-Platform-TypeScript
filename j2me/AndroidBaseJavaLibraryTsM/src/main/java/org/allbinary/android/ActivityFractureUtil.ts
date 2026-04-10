@@ -27,7 +27,7 @@ export class ActivityFractureUtil
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(activity: Activity){
     //var activity = activity

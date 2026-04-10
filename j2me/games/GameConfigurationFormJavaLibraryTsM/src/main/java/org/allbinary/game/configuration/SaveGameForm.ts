@@ -44,7 +44,7 @@ export class SaveGameForm extends CommandForm {
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor): CommandForm{
 var commandListener = commandListener
@@ -83,14 +83,14 @@ var foregroundBasicColor = foregroundBasicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
     var timeString: string = (System.currentTimeMillis()).toString()!;
         
         
 
-this.append(TextField("Name: ", timeString, 30, TextField.ANY))
-this.initCommands(commandListener)
+this.this.append(TextField("Name: ", timeString, 30, TextField.ANY))
+this.this.initCommands(commandListener)
 }
 
 
@@ -101,10 +101,10 @@ var cmdListener = cmdListener
         
         
 
-this.removeAllCommands()
-this.addCommand(gameCommandsFactory!.SAVE)
-this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.setCommandListener(cmdListener)
+this.this.removeAllCommands()
+this.this.addCommand(gameCommandsFactory!.SAVE)
+this.this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS)
+this.this.setCommandListener(cmdListener)
 }
 
 

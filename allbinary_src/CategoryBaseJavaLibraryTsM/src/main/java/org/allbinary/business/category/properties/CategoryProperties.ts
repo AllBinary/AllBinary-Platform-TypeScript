@@ -141,7 +141,7 @@ this.category= .toCharArray()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getPath(categoryHierarchyInterface: CategoryHierarchyInterface): AbPath{
 var categoryHierarchyInterface = categoryHierarchyInterface
@@ -166,7 +166,6 @@ var categoryHierarchyInterface = categoryHierarchyInterface
         
 
 
-    
                         if(this != nextParentCategoryInterface!.getProperties())
                         
                                     {
@@ -181,7 +180,6 @@ var categoryHierarchyInterface = categoryHierarchyInterface
                                 )
         {
 
-    
                         if(nextParentCategoryInterface!.getProperties()!.isRealRoot())
                         
                                     {
@@ -192,22 +190,20 @@ var categoryHierarchyInterface = categoryHierarchyInterface
                                     }
                                 
 
-    
                         if(nextParentCategoryInterface!.getProperties()!.isRoot())
                         
                                     {
-                                    add(0, nextParentCategoryInterface!.getPath()!.toString())
+                                    list.add(0, nextParentCategoryInterface!.getPath()!.toString())
 
                                     }
                                 
                         else {
-                            delete(0, pathStringBuffer!.length())
-add(0, pathStringBuffer!.append(abPathData!.SEPARATOR)!.append(nextParentCategoryInterface!.getProperties()!.getValue())!.toString())
+                            pathStringBuffer!.delete(0, pathStringBuffer!.length())
+list.add(0, pathStringBuffer!.append(abPathData!.SEPARATOR)!.append(nextParentCategoryInterface!.getProperties()!.getValue())!.toString())
 
                         }
                             
 
-    
                         if(nextParentCategoryInterface == nextParentCategoryInterface!.getHierarchy()!.getParent())
                         
                                     {
@@ -220,14 +216,13 @@ add(0, pathStringBuffer!.append(abPathData!.SEPARATOR)!.append(nextParentCategor
 nextParentCategoryInterface= nextParentCategoryInterface!.getHierarchy()!.getParent()
 depthIndex++
 
-    
                         if(depthIndex > MAXDEPTH)
                         
                                     {
                                     
 
 
-                            throw Exception("Probably Major Error")
+                            throw Error("Probably Major Error")
 
                                     }
                                 
@@ -236,8 +231,8 @@ depthIndex++
 
                                     }
                                 
-delete(0, pathStringBuffer!.length())
-append(this.getValue())
+pathStringBuffer!.delete(0, pathStringBuffer!.length())
+pathStringBuffer!.append(abPathData!.SEPARATOR)!.append(this.getValue())
 
     var size: number = list.size()!;
         
@@ -253,16 +248,15 @@ append(this.getValue())
         
 index < size; index++)
         {
-append(list.get(index) as String)
+pathStringBuffer!.append(list.get(index) as String)
 }
 
-append(abPathData!.SEPARATOR)
+pathStringBuffer!.append(abPathData!.SEPARATOR)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    put("path = " +pathStringBuffer!.toString(), this, "getPath")
+                                    logUtil!.put("path = " +pathStringBuffer!.toString(), this, "getPath")
 
                                     }
                                 
@@ -285,13 +279,13 @@ append(abPathData!.SEPARATOR)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getWebAppPath(): AbPath{
 
 
 
-                            throw Exception("Not Root")
+                            throw Error("Not Root")
 }
 
 
@@ -308,7 +302,6 @@ this.category= value
         
 
 
-    
                         if(StringValidationUtil.getInstance()!.isValidRequired(this.category, 1, AbSqlData.MAXSTRING))
                         
                                     {
@@ -331,7 +324,7 @@ this.category= value
         
         
 
-put(CategoryData.getInstance()!.NAME, this.category)
+categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category)
 
 
 
@@ -347,7 +340,7 @@ put(CategoryData.getInstance()!.NAME, this.category)
         
         
 
-add(category)
+categoryVector!.add(category)
 
 
 
@@ -357,7 +350,7 @@ add(category)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toValidationInfoDoc(): Document{
 
@@ -369,7 +362,7 @@ add(category)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document
@@ -382,7 +375,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public validationInfo(): string{
 

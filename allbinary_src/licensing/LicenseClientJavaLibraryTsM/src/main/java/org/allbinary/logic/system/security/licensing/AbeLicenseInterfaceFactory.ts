@@ -84,12 +84,11 @@ private constructor (){
             }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public getLicenseInstance(abeClientInformation: AbeClientInformationInterface): AbeLicenseInterface{
     //var abeClientInformation = abeClientInformation
 
-    
                         if(isTimeToGetKey())
                         
                                     {
@@ -115,13 +114,13 @@ private constructor (){
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     get(abeClientInformation: AbeClientInformationInterface): AbeLicenseInterface{
     //var abeClientInformation = abeClientInformation
 
         try {
-            put("Getting Keys", this, commonStrings!.GET)
+            logUtil!.put("Getting Keys", this, commonStrings!.GET)
 abeLicenseInterface= AbeNoLicense.getInstance()
 
     var licenseClient: AbeLicenseClient = new AbeLicenseClient();
@@ -130,13 +129,12 @@ abeLicenseInterface= AbeNoLicense.getInstance()
 
 abeLicenseInterface= licenseClient!.get(abeClientInformation)
 
-    
                         if(abeLicenseInterface != 
                                     null
                                 )
                         
                                     {
-                                    put("Default Key: " +abeLicenseInterface!.getKey(AbeClientInformationData.getInstance()!.KEY), this, commonStrings!.GET)
+                                    logUtil!.put("Default Key: " +abeLicenseInterface!.getKey(AbeClientInformationData.getInstance()!.KEY), this, commonStrings!.GET)
 
                                     }
                                 
@@ -148,7 +146,7 @@ abeLicenseInterface= licenseClient!.get(abeClientInformation)
     
 } catch(e: IOException)
             {
-put("Licensing IO Error", this, commonStrings!.GET, e)
+logUtil!.put("Licensing IO Error", this, commonStrings!.GET, e)
 
 
 
@@ -156,7 +154,7 @@ put("Licensing IO Error", this, commonStrings!.GET, e)
 }
  catch(e: Exception)
             {
-put("Licensing Failure", this, commonStrings!.GET, e)
+logUtil!.put("Licensing Failure", this, commonStrings!.GET, e)
 
 
 
@@ -178,7 +176,6 @@ put("Licensing Failure", this, commonStrings!.GET, e)
         
 
 
-    
                         if(abeLicenseInterface == 
                                     null
                                  || abeLicenseInterface == AbeNoLicense.getInstance() || !abeLicenseInterface!.hasKey() || isCheck() || currentTime -checkPeriod > time)
@@ -198,7 +195,6 @@ time= currentTime
                                     }
                                 
                              else 
-    
                         if()
                         
 }

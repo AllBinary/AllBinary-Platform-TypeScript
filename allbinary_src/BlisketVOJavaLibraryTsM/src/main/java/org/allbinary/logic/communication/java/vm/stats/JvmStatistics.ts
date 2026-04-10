@@ -333,7 +333,7 @@ public constructor (){
 
 
     public collectGarbage(){
-gc()
+runtime.gc()
 }
 
 

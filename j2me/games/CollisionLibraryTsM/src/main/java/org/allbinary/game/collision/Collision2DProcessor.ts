@@ -15,7 +15,6 @@ export class Collision2DProcessor extends CollisionProcessor {
     //var myLayer = myLayer
     //var myLayer2 = myLayer2
 
-    
                         if(myLayer2!.getXP() >= myLayer!.getX2() || myLayer2!.getYP() >= myLayer!.getY2() || myLayer2!.getX2() <= myLayer!.getXP() || myLayer2!.getY2() <= myLayer!.getYP())
                         
                                     {

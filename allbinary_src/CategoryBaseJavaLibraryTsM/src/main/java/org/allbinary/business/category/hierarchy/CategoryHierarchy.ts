@@ -48,8 +48,8 @@ public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInte
             var rootCategoryInterface = rootCategoryInterface
 var parentCategoryInterface = parentCategoryInterface
 this.level= 0
-this.setRoot(rootCategoryInterface)
-this.setParent(parentCategoryInterface)
+this.this.setRoot(rootCategoryInterface)
+this.this.setParent(parentCategoryInterface)
 }
 
 public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, level: number){
@@ -59,8 +59,8 @@ public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInte
 var parentCategoryInterface = parentCategoryInterface
 var level = level
 this.level= level
-this.setRoot(rootCategoryInterface)
-this.setParent(parentCategoryInterface)
+this.this.setRoot(rootCategoryInterface)
+this.this.setParent(parentCategoryInterface)
 }
 
 public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<Any, Any>){
@@ -75,8 +75,8 @@ var categoryPropertiesHashMap = categoryPropertiesHashMap
         
 
 this.level= Integer.valueOf(levelString)!.toInt()
-this.setRoot(rootCategoryInterface)
-this.setParent(parentCategoryInterface)
+this.this.setRoot(rootCategoryInterface)
+this.this.setParent(parentCategoryInterface)
 }
 
 

@@ -62,69 +62,69 @@ export class AdvancedPlayerOwnedRTSLayers extends PlayerOwnedRTSLayers {
 
     public addUnit(rtsLayer: RTSLayer){
 var rtsLayer = rtsLayer
-add(rtsLayer)
-add(rtsLayer)
+this.unitsList!.add(rtsLayer)
+this.rtsLayerList!.add(rtsLayer)
 }
 
 
     public addWaypoint(rtsLayer: RTSLayer){
 var rtsLayer = rtsLayer
-add(rtsLayer)
-add(rtsLayer)
+this.waypointsList!.add(rtsLayer)
+this.rtsLayerList!.add(rtsLayer)
 }
 
 
     public addBase(rtsLayer: RTSLayer){
 var rtsLayer = rtsLayer
-add(rtsLayer)
-add(rtsLayer)
-add(rtsLayer)
+this.baseList!.add(rtsLayer)
+this.buildingList!.add(rtsLayer)
+this.rtsLayerList!.add(rtsLayer)
 }
 
 
     public addGarrison(rtsLayer: RTSLayer){
 var rtsLayer = rtsLayer
-add(rtsLayer)
-add(rtsLayer)
-add(rtsLayer)
+this.garrisonList!.add(rtsLayer)
+this.buildingList!.add(rtsLayer)
+this.rtsLayerList!.add(rtsLayer)
 }
 
 
     public addHouse(rtsLayer: RTSLayer){
 var rtsLayer = rtsLayer
-add(rtsLayer)
-add(rtsLayer)
-add(rtsLayer)
+this.houseList!.add(rtsLayer)
+this.buildingList!.add(rtsLayer)
+this.rtsLayerList!.add(rtsLayer)
 }
 
 
     public addLab(rtsLayer: RTSLayer){
 var rtsLayer = rtsLayer
-add(rtsLayer)
-add(rtsLayer)
-add(rtsLayer)
+this.labList!.add(rtsLayer)
+this.buildingList!.add(rtsLayer)
+this.rtsLayerList!.add(rtsLayer)
 }
 
 
     public addFactory(rtsLayer: RTSLayer){
 var rtsLayer = rtsLayer
-add(rtsLayer)
-add(rtsLayer)
-add(rtsLayer)
+this.factoryList!.add(rtsLayer)
+this.buildingList!.add(rtsLayer)
+this.rtsLayerList!.add(rtsLayer)
 }
 
 
     public removeUnit(gameLayer: AllBinaryGameLayer){
 var gameLayer = gameLayer
-remove(gameLayer)
-remove(gameLayer)
+this.unitsList!.remove(gameLayer)
+this.rtsLayerList!.remove(gameLayer)
 }
 
 
     public removeWaypoint(gameLayer: AllBinaryGameLayer){
 var gameLayer = gameLayer
-remove(gameLayer)
-remove(gameLayer)
+this.waypointsList!.remove(gameLayer)
+this.rtsLayerList!.remove(gameLayer)
 }
 
 
@@ -210,49 +210,44 @@ remove(gameLayer)
 
     public removeBuilding(layerInterface: AllBinaryGameLayer){
 var layerInterface = layerInterface
-add(layerInterface)
+this.buildingList!.add(layerInterface)
 
-    
                         if(this.getBaseList()!.remove(layerInterface))
                         
                                     {
-                                    remove(layerInterface)
+                                    this.rtsLayerList!.remove(layerInterface)
 
                                     }
                                 
                              else 
-    
                         if(this.getFactoryList()!.remove(layerInterface))
                         
                                     {
-                                    remove(layerInterface)
+                                    this.rtsLayerList!.remove(layerInterface)
 
                                     }
                                 
                              else 
-    
                         if(this.getGarrisonList()!.remove(layerInterface))
                         
                                     {
-                                    remove(layerInterface)
+                                    this.rtsLayerList!.remove(layerInterface)
 
                                     }
                                 
                              else 
-    
                         if(this.getLabList()!.remove(layerInterface))
                         
                                     {
-                                    remove(layerInterface)
+                                    this.rtsLayerList!.remove(layerInterface)
 
                                     }
                                 
                              else 
-    
                         if(this.getHouseList()!.remove(layerInterface))
                         
                                     {
-                                    remove(layerInterface)
+                                    this.rtsLayerList!.remove(layerInterface)
 
                                     }
                                 
@@ -265,21 +260,21 @@ add(layerInterface)
         
         
 
-append(super.toString())
-append(" Bases: ")
-appendint(this.getBaseList()!.size())
-append(" Factory: ")
-appendint(this.getFactoryList()!.size())
-append(" Garrison: ")
-appendint(this.getGarrisonList()!.size())
-append(" Labs: ")
-appendint(this.getLabList()!.size())
-append(" Houses: ")
-appendint(this.getHouseList()!.size())
-append(" Waypoints: ")
-appendint(this.getWaypointsList()!.size())
-append(" Units: ")
-appendint(this.getUnitsList()!.size())
+stringBuffer!.append(super.toString())
+stringBuffer!.append(" Bases: ")
+stringBuffer!.appendint(this.getBaseList()!.size())
+stringBuffer!.append(" Factory: ")
+stringBuffer!.appendint(this.getFactoryList()!.size())
+stringBuffer!.append(" Garrison: ")
+stringBuffer!.appendint(this.getGarrisonList()!.size())
+stringBuffer!.append(" Labs: ")
+stringBuffer!.appendint(this.getLabList()!.size())
+stringBuffer!.append(" Houses: ")
+stringBuffer!.appendint(this.getHouseList()!.size())
+stringBuffer!.append(" Waypoints: ")
+stringBuffer!.appendint(this.getWaypointsList()!.size())
+stringBuffer!.append(" Units: ")
+stringBuffer!.appendint(this.getUnitsList()!.size())
 
 
 

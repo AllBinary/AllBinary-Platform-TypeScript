@@ -44,7 +44,6 @@ var playerInputId = playerInputId
         
 
 
-    
                         if(playerInputId < list.size())
                         
                                     {
@@ -53,12 +52,11 @@ var playerInputId = playerInputId
                                     }
                                 
 
-    
                         if(analogLocationInput == AnalogLocationInput.NULL_ANALOG_LOCATION_INPUT)
                         
                                     {
                                     analogLocationInput= AnalogLocationInput(playerInputId)
-add(analogLocationInput)
+list.add(analogLocationInput)
 
                                     }
                                 

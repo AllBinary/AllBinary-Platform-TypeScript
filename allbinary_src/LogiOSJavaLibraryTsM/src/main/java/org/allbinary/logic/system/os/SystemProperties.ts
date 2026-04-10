@@ -33,10 +33,22 @@
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return SystemProperties.instance;
     
 }
 
+
+    private readonly OS_NAME: string = "os.name";
+        
+        
+
+    private readonly OS_ARCH: string = "os.arch";
+        
+        
+
+    private readonly OS_VERSION: string = "os.version";
+        
+        
 private constructor (){
 
             super();
@@ -48,7 +60,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return System.getProperty("os.name");
+                        return System.getProperty(OS_NAME);
     
 }
 
@@ -58,7 +70,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return System.getProperty("os.arch");
+                        return System.getProperty(OS_ARCH);
     
 }
 
@@ -68,7 +80,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return System.getProperty("os.version");
+                        return System.getProperty(OS_VERSION);
     
 }
 

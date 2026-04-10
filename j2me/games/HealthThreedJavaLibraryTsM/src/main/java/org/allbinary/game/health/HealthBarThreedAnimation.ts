@@ -77,9 +77,9 @@ var location = location
 this.basicColor= this.basicColorFactory!.GREEN
 this.colorP= this.basicColor!.toInt()
 rectangle= Rectangle(0, 0, 1, 1, this.basicColor)
-setDoubleSidedEnabled(true)
-setNormalsEnabled(false)
-setTexturesEnabled(false)
+rectangle.setDoubleSidedEnabled(true)
+rectangle.setNormalsEnabled(false)
+rectangle.setTexturesEnabled(false)
 }
 
 
@@ -104,7 +104,7 @@ setTexturesEnabled(false)
         
 --index >= 0; )
         {
-set(index, this.basicColor)
+colorBufferList!.set(index, this.basicColor)
 }
 
 }
@@ -181,7 +181,7 @@ set(index, this.basicColor)
                         for (
     col <= segsW; col++)
         {
-set(index++, col.toFloat() *w -width5, row.toFloat() *h -height5, 0f)
+number3dBufferList!.set(index++, col.toFloat() *w -width5, row.toFloat() *h -height5, 0f)
 }
 
 }
@@ -191,9 +191,9 @@ set(index++, col.toFloat() *w -width5, row.toFloat() *h -height5, 0f)
 
     public onHealthChange(newX2: number){
     //var newX2 = newX2
-onHealthChange(newX2)
-this.updateColor()
-this.updateSize()
+super.onHealthChange(newX2)
+this.this.updateColor()
+this.this.updateSize()
 }
 
 
@@ -229,7 +229,7 @@ this.updateSize()
 positionNumber3d!.x=  -(viewPosition!.getX().toFloat())
 positionNumber3d!.z=  -(viewPosition!.getY().toFloat())
 positionNumber3d!.y= viewPosition!.getZ() +this.allbinaryLayer!.getHeight()
-drawObject(gl, this.rectangle)
+object3dProcessor!.drawObject(gl, this.rectangle)
 }
 
 

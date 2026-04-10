@@ -78,7 +78,7 @@ var name = name
 
     public add(gameConfiguration: GameConfiguration){
 var gameConfiguration = gameConfiguration
-add(gameConfiguration)
+list.add(gameConfiguration)
 }
 
 

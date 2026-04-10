@@ -66,7 +66,6 @@ this.value= httpTransformInfoInterface!.getPageContext()!.getRequest()!.getParam
 
     public isValid(): Boolean{
 
-    
                         if(this.getWeblisketSession()!.getUserName() != 
                                     null
                                 )
@@ -88,7 +87,6 @@ this.value= httpTransformInfoInterface!.getPageContext()!.getRequest()!.getParam
 
 this.streetAddress= billingAddressesEntity!.get(Integer(value))
 
-    
                         if(this.streetAddress == 
                                     null
                                 )

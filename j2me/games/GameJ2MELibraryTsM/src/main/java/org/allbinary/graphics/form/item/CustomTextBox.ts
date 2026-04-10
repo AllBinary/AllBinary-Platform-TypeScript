@@ -107,9 +107,9 @@ public constructor (cmdListener: CommandListener, label: string, text: string, m
         
         
 
-setString(text)
+textFieldItem!.setString(text)
 this.textFieldItem= textFieldItem
-this.setTitle(label)
+this.this.setTitle(label)
 }
 
 
@@ -125,27 +125,27 @@ this.setTitle(label)
     //var keyCode = keyCode
     //var deviceId = deviceId
     //var repeated = repeated
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(commonStrings!.START)!.appendint(keyCode)!.toString(), this, "onEvent")
-this.keyPressed(keyCode, deviceId)
+this.this.keyPressed(keyCode, deviceId)
 }
 
 
     public keyPressed(keyCode: number){
     //var keyCode = keyCode
-this.keyPressed(keyCode, 0)
+this.this.keyPressed(keyCode, 0)
 }
 
 
     public keyReleased(keyCode: number){
     //var keyCode = keyCode
-this.keyReleased(keyCode, 0)
+this.this.keyReleased(keyCode, 0)
 }
 
 
     public keyRepeated(keyCode: number){
     //var keyCode = keyCode
-this.keyRepeated(keyCode, 0)
+this.this.keyRepeated(keyCode, 0)
 }
 
 
@@ -154,7 +154,7 @@ this.keyRepeated(keyCode, 0)
     //var deviceId = deviceId
 
         try {
-            put(StringMaker().
+            logUtil!.put(StringMaker().
                             append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, gameInputStrings!.KEY_PRESSED)
 
     var platformKeyFactory: PlatformKeyFactory = PlatformKeyFactory.getInstance()!;
@@ -167,22 +167,21 @@ this.keyRepeated(keyCode, 0)
         
 
 
-    
                         if(platformKeyFactory!.isSubmission(input))
                         
                                     {
-                                    this.submit()
+                                    this.this.submit()
 
                                     }
                                 
                         else {
-                            keyPressed(keyCode)
+                            this.textFieldItem!.keyPressed(keyCode)
 
                         }
                             
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED, e)
 }
 
 }
@@ -196,20 +195,19 @@ put(commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED, e)
 
     public paint(graphics: Graphics){
     //var graphics = graphics
-setColor(this.backgroundColor)
-fillRect(0, 0, this.displayInfoSingleton!.getLastWidth(), this.displayInfoSingleton!.getLastHeight())
-setColor(this.foregroundColor)
+graphics.setColor(this.backgroundColor)
+graphics.fillRect(0, 0, this.displayInfoSingleton!.getLastWidth(), this.displayInfoSingleton!.getLastHeight())
+graphics.setColor(this.foregroundColor)
 
-    
                         if(!J2MEUtil.isJ2ME())
                         
                                     {
-                                    drawString(this.getTitle(), 8, 1, 0)
+                                    graphics.drawString(this.getTitle(), 8, 1, 0)
 
                                     }
                                 
-this.paint(graphics, 8, graphics.getFont()!.getHeight() +2)
-paint(graphics)
+this.this.paint(graphics, 8, graphics.getFont()!.getHeight() +2)
+super.paint(graphics)
 }
 
 
@@ -217,7 +215,7 @@ paint(graphics)
     //var graphics = graphics
     //var x = x
     //var y = y
-paint(graphics, x, y)
+textFieldItem!.paint(graphics, x, y)
 }
 
 

@@ -87,30 +87,30 @@ this.playerInputId= playerInputId
 
     public onPressGameKeyEvent(gameKeyEvent: GameKeyEvent){
     //var gameKeyEvent = gameKeyEvent
-this.add(gameKeyEvent)
-this.addForRemoval(gameKeyEvent)
+this.this.add(gameKeyEvent)
+this.this.addForRemoval(gameKeyEvent)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onDownGameKeyEvent(gameKeyEvent: GameKeyEvent){
     //var gameKeyEvent = gameKeyEvent
-this.add(gameKeyEvent)
+this.this.add(gameKeyEvent)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onDownKeyEvent(gameKeyEvent: GameKeyEvent){
     //var gameKeyEvent = gameKeyEvent
-this.add(gameKeyEvent)
-this.addForRemoval(gameKeyEvent)
+this.this.add(gameKeyEvent)
+this.this.addForRemoval(gameKeyEvent)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onDownKeyEvent(gameKeyEvent: Integer){
     //var gameKeyEvent = gameKeyEvent
-put(StringMaker().
+PreLogUtil.put(StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(gameKeyEvent!.toString())!.toString(), this, gameInputStrings!.ON_DOWN_GAME_KEY)
 }
 
@@ -118,7 +118,7 @@ put(StringMaker().
 
     public onUpGameKeyEvent(gameKeyEvent: GameKeyEvent){
     //var gameKeyEvent = gameKeyEvent
-this.addForRemoval(gameKeyEvent)
+this.this.addForRemoval(gameKeyEvent)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -130,7 +130,7 @@ this.addForRemoval(gameKeyEvent)
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 

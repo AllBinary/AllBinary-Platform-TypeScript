@@ -73,7 +73,7 @@ this.alphaP= alpha
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public nextFrame(){
 }
@@ -83,7 +83,7 @@ this.alphaP= alpha
     //var graphics = graphics
     //var x = x
     //var y = y
-setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
 }
 
 
@@ -171,7 +171,7 @@ this.changeColorP= this.changeBasicColorP!.toInt()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public set(gl: GL){
 var gl = gl

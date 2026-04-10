@@ -51,7 +51,6 @@ export class AdvertisementCampaignInternalEntityFactory
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
@@ -60,7 +59,7 @@ export class AdvertisementCampaignInternalEntityFactory
         
         
 
-put(commonStrings!.EXCEPTION, "AdvertisementCampaignEntityFactory", commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, "AdvertisementCampaignEntityFactory", commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 

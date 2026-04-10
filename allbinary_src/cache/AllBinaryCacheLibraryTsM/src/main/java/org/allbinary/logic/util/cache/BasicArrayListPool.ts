@@ -38,11 +38,11 @@ public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactor
 
 
     public clear(){
-clear()
+this.buffers.clear()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public remove(key: any = {}): CacheableInterface{
 var key = key
@@ -52,7 +52,6 @@ var key = key
         
 
 
-    
                         if(size > 0)
                         
                                     {
@@ -78,7 +77,7 @@ var key = key
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public addAll(usedList: BasicArrayList){
 var usedList = usedList
@@ -97,14 +96,14 @@ var usedList = usedList
         
         
 
-this.add(anyType)
+this.this.add(anyType)
 }
 
-clear()
+usedList!.clear()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public releaseUsedBackToPool(usedList: BasicArrayList){
 var usedList = usedList
@@ -124,12 +123,11 @@ var usedList = usedList
         
 
 
-    
                         if(list.size() == 0)
                         
                                     {
-                                    remove(index)
-this.add(list)
+                                    usedList!.remove(index)
+this.this.add(list)
 
                                     }
                                 

@@ -26,7 +26,7 @@ interface RunnableInterface extends Runnable {
 
     public setRunning(isRunning: boolean)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setThread(thread: Thread)
 

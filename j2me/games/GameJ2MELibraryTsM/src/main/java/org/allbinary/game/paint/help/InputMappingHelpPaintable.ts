@@ -143,9 +143,8 @@ protected constructor (gameInputMappingArray: GameInputMapping[], backgroundBasi
                             //For kotlin this is before the body of the constructor.
                     
 this.gameInputMappingArray= gameInputMappingArray
-this.update(NONE, NONE)
+this.this.update(NONE, NONE)
 
-    
                         if(backgroundBasicColor == this.basicColorFactory!.WHITE || basicColor == this.basicColorFactory!.WHITE)
                         
                                     {
@@ -169,7 +168,7 @@ this.update(NONE, NONE)
         
         
 
-put(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append("selected GameKey: ")!.append(this.stringUtil!.toString(selectedGameKey))!.append(" Input: ")!.append(this.stringUtil!.toString(selectedInput))!.toString(), this, commonStrings!.UPDATE)
+logUtil!.put(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append("selected GameKey: ")!.append(this.stringUtil!.toString(selectedGameKey))!.append(" Input: ")!.append(this.stringUtil!.toString(selectedInput))!.toString(), this, commonStrings!.UPDATE)
 
     var gameKeyMapping: PersistentInputMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!;
         
@@ -244,12 +243,11 @@ inputBasicColorArray[index]![index2]= this.basicColor
 }
 
 
-    
                         if(gameKey == selectedGameKey)
                         
                                     {
-                                    delete(0, stringMaker!.length())
-put(stringMaker!.append("Found: selected GameKey: ")!.append(this.stringUtil!.toString(selectedGameKey))!.toString(), this, commonStrings!.UPDATE)
+                                    stringMaker!.delete(0, stringMaker!.length())
+logUtil!.put(stringMaker!.append("Found: selected GameKey: ")!.append(this.stringUtil!.toString(selectedGameKey))!.toString(), this, commonStrings!.UPDATE)
 actionBasicColor[index]= this.selectedBasicColor
 
     var indexOfSelectedInput: number = list.indexOf(selectedInput)!;
@@ -257,12 +255,11 @@ actionBasicColor[index]= this.selectedBasicColor
         
 
 
-    
                         if(indexOfSelectedInput >= 0)
                         
                                     {
-                                    delete(0, stringMaker!.length())
-put(stringMaker!.append("Found: selected Input: ")!.append(this.stringUtil!.toString(selectedInput))!.toString(), this, commonStrings!.UPDATE)
+                                    stringMaker!.delete(0, stringMaker!.length())
+logUtil!.put(stringMaker!.append("Found: selected Input: ")!.append(this.stringUtil!.toString(selectedInput))!.toString(), this, commonStrings!.UPDATE)
 inputBasicColorArray[index]![indexOfSelectedInput]= this.selectedBasicColor
 
                                     }
@@ -282,7 +279,7 @@ keyMappingArray[index]= list
 this.keyMappingArray= keyMappingArray
 this.actionBasicColor= actionBasicColor
 this.inputBasicColorArray= inputBasicColorArray
-setInputInfoP(keyInfo)
+super.setInputInfoP(keyInfo)
 }
 
 
@@ -312,33 +309,30 @@ var keyList = keyList
 index < size; index++)
         {
 key= keyList!.objectArray[index]! as Input
-append(key.getName())
+stringBuffer!.append(key.getName())
 
-    
                         if(index +1 < keyList!.size())
                         
                                     {
                                     
-    
                         if(keyList!.size() == 2)
                         
                                     {
-                                    append(AND)
+                                    stringBuffer!.append(AND)
 
                                     }
                                 
                         else {
                             
-    
                         if(index +2 == keyList!.size())
                         
                                     {
-                                    append(MORE_THAN_TWO_IN_LIST_AND)
+                                    stringBuffer!.append(MORE_THAN_TWO_IN_LIST_AND)
 
                                     }
                                 
                         else {
-                            append(SEP)
+                            stringBuffer!.append(SEP)
 
                         }
                             
@@ -430,8 +424,8 @@ append(key.getName())
         
         
 
-setColor(this.basicColor!.toInt())
-drawString(this.TITLE, halfWidth -beginWidth, charHeight, anchor)
+graphics.setColor(this.basicColor!.toInt())
+graphics.drawString(this.TITLE, halfWidth -beginWidth, charHeight, anchor)
 
     var inputInfo: string[] = this.inputInfo;
         
@@ -488,12 +482,12 @@ deltaX= 0
 list= this.keyMappingArray[index]!
 size2= list.size()
 keyMappings= this.get(list)
-delete(0, stringMaker!.length())
+stringMaker!.delete(0, stringMaker!.length())
 actionString= stringMaker!.append(inputInfo[index]!)!.append(commonSeps!.COLON)!.append(commonSeps!.SPACE)!.append(commonSeps!.SPACE)!.toString()
-delete(0, stringMaker!.length())
+stringMaker!.delete(0, stringMaker!.length())
 beginWidth= (font.stringWidth(stringMaker!.append(actionString)!.append(keyMappings)!.toString()) shr 1)
-setColor(this.actionBasicColor[index]!.toInt())
-drawString(actionString, halfWidth -beginWidth +deltaX, y, anchor)
+graphics.setColor(this.actionBasicColor[index]!.toInt())
+graphics.drawString(actionString, halfWidth -beginWidth +deltaX, y, anchor)
 deltaX += font.stringWidth(actionString)
 
 
@@ -506,17 +500,15 @@ deltaX += font.stringWidth(actionString)
 index2 < size2; index2++)
         {
 input= list.objectArray[index2]! as Input
-setColor(this.inputBasicColorArray[index]![index2]!.toInt())
-drawString(input.getName(), halfWidth -beginWidth +deltaX, y, anchor)
+graphics.setColor(this.inputBasicColorArray[index]![index2]!.toInt())
+graphics.drawString(input.getName(), halfWidth -beginWidth +deltaX, y, anchor)
 deltaX += font.stringWidth(input.getName())
 sep= EMPTY_STRING
 
-    
                         if(index2 +1 < list.size())
                         
                                     {
                                     
-    
                         if(list.size() == 2)
                         
                                     {
@@ -526,7 +518,6 @@ sep= EMPTY_STRING
                                 
                         else {
                             
-    
                         if(index2 +2 == list.size())
                         
                                     {
@@ -546,12 +537,11 @@ sep= EMPTY_STRING
                                     }
                                 
 
-    
                         if(sep != EMPTY_STRING)
                         
                                     {
-                                    setColor(this.basicColor!.toInt())
-drawString(sep, halfWidth -beginWidth +deltaX, y, anchor)
+                                    graphics.setColor(this.basicColor!.toInt())
+graphics.drawString(sep, halfWidth -beginWidth +deltaX, y, anchor)
 deltaX += font.stringWidth(sep)
 
                                     }

@@ -101,83 +101,82 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
     public setName(value: string){
 var value = value
 this.name= value
-put(TransformInfoData.getInstance()!.NAME, this.name)
+this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.NAME, this.name)
 }
 
 
     public setStoreName(value: string){
 var value = value
 this.storeName= value
-put(StoreFrontData.getInstance()!.NAME, this.storeName)
+this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
 }
 
 
     public setObjectFile(value: string){
 var value = value
 this.objectFile= value
-put(TransformInfoData.getInstance()!.OBJECTFILENAME, this.objectFile)
+this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.OBJECTFILENAME, this.objectFile)
 }
 
 
     public setObject(value: string){
 var value = value
 this.anyType= value
-put(TransformInfoData.getInstance()!.OBJECT, this.anyType)
+this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.OBJECT, this.anyType)
 }
 
 
     public setTemplateFile(value: string){
 var value = value
 this.templateFile= value
-put(TransformInfoData.getInstance()!.TEMPLATEFILENAME, this.templateFile)
+this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.TEMPLATEFILENAME, this.templateFile)
 }
 
 
     public setTemplate(value: string){
 var value = value
 this.template= value
-put(TransformInfoData.getInstance()!.TEMPLATE, this.template)
+this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.TEMPLATE, this.template)
 }
 
 
     public setDataFile(value: string){
 var value = value
 this.dataFile= value
-put(TransformInfoData.getInstance()!.DATAFILENAME, this.dataFile)
+this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.DATAFILENAME, this.dataFile)
 }
 
 
     public setData(value: string){
 var value = value
 this.data= value
-put(TransformInfoData.getInstance()!.DATA, this.data)
+this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.DATA, this.data)
 }
 
 
     public setObjectConfigFile(value: string){
 var value = value
 this.objectConfigFile= value
-put(TransformInfoData.getInstance()!.OBJECTCONFIGFILENAME, this.objectConfigFile)
+this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.OBJECTCONFIGFILENAME, this.objectConfigFile)
 }
 
 
     public setObjectConfig(value: string){
 var value = value
 this.objectConfig= value
-put(TransformInfoData.getInstance()!.OBJECTCONFIG, this.objectConfig)
+this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.OBJECTCONFIG, this.objectConfig)
 }
 
 
     public setType(value: string){
 var value = value
 this.type= value
-put(OutputTypeData.getInstance()!.NAME, this.type)
+this.getPropertiesHashMap()!.put(OutputTypeData.getInstance()!.NAME, this.type)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("TransformInfoTag type set: " +this.type, this, "setType")
+                                    logUtil!.put("TransformInfoTag type set: " +this.type, this, "setType")
 
                                     }
                                 
@@ -204,7 +203,7 @@ put(OutputTypeData.getInstance()!.NAME, this.type)
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
@@ -217,7 +216,7 @@ put(OutputTypeData.getInstance()!.NAME, this.type)
     
 } catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

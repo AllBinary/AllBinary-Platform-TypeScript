@@ -31,7 +31,7 @@ import { BasicDataTableInterface } from "../../../../../org/allbinary/data/table
 interface IdGeneratorEntityInterface extends BasicDataTableInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(name: string): Long
 

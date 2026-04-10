@@ -66,15 +66,14 @@ this.allBinaryGameCanvas= allBinaryGameCanvas
         
         
 
-setStartTime(gameTickTimeDelayHelper!.setStartTime())
-update()
-processGame()
+allBinaryGameCanvas!.getLoopTimeHelperP()!.setStartTime(gameTickTimeDelayHelper!.setStartTime())
+gameTickDisplayInfoSingleton!.update()
+allBinaryGameCanvas!.processGame()
 
-    
                         if(!allBinaryGameCanvas!.isRunning() || allBinaryGameCanvas!.isPaused())
                         
                                     {
-                                    notifyDonePainting()
+                                    allBinaryGameCanvas!.notifyDonePainting()
 
                                     }
                                 
@@ -85,7 +84,7 @@ processGame()
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }

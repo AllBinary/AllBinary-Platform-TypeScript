@@ -66,11 +66,11 @@ public constructor (imageArray: Image[], animationBehavior: AnimationBehavior)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setImageArray(imageArray)
+this.this.setImageArray(imageArray)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAnimationSize(): number{
 
@@ -83,18 +83,18 @@ this.setImageArray(imageArray)
 
 
     public nextFrame(){
-next()
+this.circularIndexUtil!.next()
 }
 
 
     public previousFrame(){
-previous()
+this.circularIndexUtil!.previous()
 }
 
 
     public setFrame(index: number){
 var index = index
-setIndex(index)
+this.circularIndexUtil!.setIndex(index)
 }
 
 
@@ -170,7 +170,7 @@ this.circularIndexUtil= CircularIndexUtil.getInstance(this.totalFrames)
 var graphics = graphics
 var x = x
 var y = y
-drawImage(this.imageArray[this.circularIndexUtil!.getIndex()]!, x, y, anchor)
+graphics.drawImage(this.imageArray[this.circularIndexUtil!.getIndex()]!, x, y, anchor)
 }
 
 

@@ -73,7 +73,7 @@ public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
             var hashMap = hashMap
 var pageContext = pageContext
 this.request= pageContext!.getRequest() as HttpServletRequest
-this.getFormData()
+this.this.getFormData()
 }
 
 
@@ -92,9 +92,9 @@ this.lastModified= request.getParameter(EntryData.getInstance()!.LASTMODIFIED)
         
         
 
-put(BasicItemData.ID, this.id)
-put(XmlOptionItemData.XML_FILE_STATUS, this.xmlFileStatus)
-put(XmlOptionItemData.OPTION_XML_FILE, this.optionXmlFile)
+values.put(BasicItemData.ID, this.id)
+values.put(XmlOptionItemData.XML_FILE_STATUS, this.xmlFileStatus)
+values.put(XmlOptionItemData.OPTION_XML_FILE, this.optionXmlFile)
 
     var calendar: Calendar = Calendar.getInstance()!;
         
@@ -107,7 +107,7 @@ put(XmlOptionItemData.OPTION_XML_FILE, this.optionXmlFile)
         
         
 
-put(EntryData.getInstance()!.LASTMODIFIED, time)
+values.put(EntryData.getInstance()!.LASTMODIFIED, time)
 
 
 
@@ -137,23 +137,22 @@ put(EntryData.getInstance()!.LASTMODIFIED, time)
         
         
 
-add(this.id)
-add(this.xmlFileStatus)
-add(this.optionXmlFile)
-add(time)
-add(time)
-insert(values)
+values.add(this.id)
+values.add(this.xmlFileStatus)
+values.add(this.optionXmlFile)
+values.add(time)
+values.add(time)
+XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.insert(values)
 
     var success: string = "Successfully inserted " +id +" into items table";
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "insert()")
+                                    logUtil!.put(success, this, "insert()")
 
                                     }
                                 
@@ -171,11 +170,10 @@ insert(values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "inserts()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "inserts()", e)
 
                                     }
                                 
@@ -193,18 +191,17 @@ insert(values)
     public delete(): string{
 
         try {
-            delete(id)
+            XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.delete(id)
 
     var success: string = "Successfully deleted";
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "delete()")
+                                    logUtil!.put(success, this, "delete()")
 
                                     }
                                 
@@ -222,11 +219,10 @@ insert(values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "delete()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e)
 
                                     }
                                 
@@ -254,13 +250,12 @@ insert(values)
         
         
 
-update(values)
+XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.update(values)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(id +" " +success, this, "update()")
+                                    logUtil!.put(id +" " +success, this, "update()")
 
                                     }
                                 
@@ -278,11 +273,10 @@ update(values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
 
                                     }
                                 

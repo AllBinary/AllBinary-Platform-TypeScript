@@ -36,7 +36,6 @@ var keyCode = keyCode
         
 
 
-    
                         if(input != 
                                     null
                                 )
@@ -80,7 +79,6 @@ var keyName = keyName
         
 
 
-    
                         if(id >= 0)
                         
                                     {
@@ -89,7 +87,7 @@ var keyName = keyName
         
         
 
-add(id, this)
+inputFactory!.add(id, this)
 
                                     }
                                 

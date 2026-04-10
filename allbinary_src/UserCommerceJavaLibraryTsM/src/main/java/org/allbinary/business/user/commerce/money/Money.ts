@@ -62,7 +62,6 @@ public constructor (usDollarStr: string){
             super();
             var usDollarStr = usDollarStr
 
-    
                         if(usDollarStr != 
                                     null
                                  && StringValidationUtil.getInstance()!.isNumber(usDollarStr))
@@ -84,7 +83,6 @@ this.units= units as Long
 
     public isValid(): boolean{
 
-    
                         if(this.units != 
                                     null
                                  && this.units.longValue() > 0 && this.units.longValue() < Long.MAX_VALUE)
@@ -114,7 +112,7 @@ this.units= units as Long
 
     public add(moreMoney: Money){
 var moreMoney = moreMoney
-this.add(moreMoney!.toString())
+this.this.add(moreMoney!.toString())
 }
 
 
@@ -151,7 +149,6 @@ var currency = currency
         
 
 
-    
                         if(currency.compareTo(DEFAULT_CURRENCY) == 0)
                         
                                     {
@@ -165,19 +162,18 @@ var currency = currency
         
         
 
-append(dollar as Long.
+stringBuffer!.append(dollar as Long.
                             toString())
-append(AbPathData.getInstance()!.EXTENSION_SEP)
+stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP)
 
-    
                         if(cents < 10)
                         
                                     {
-                                    append(CommonPhoneStrings.getInstance()!.ZERO)
+                                    stringBuffer!.append(CommonPhoneStrings.getInstance()!.ZERO)
 
                                     }
                                 
-append(cents as Long.
+stringBuffer!.append(cents as Long.
                             toString())
 
                                     }
@@ -219,7 +215,6 @@ var usDollarStr = usDollarStr
         
 
 
-    
                         if(index < 1)
                         
                                     {

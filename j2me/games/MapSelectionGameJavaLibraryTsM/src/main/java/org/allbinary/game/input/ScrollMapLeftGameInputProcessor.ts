@@ -40,12 +40,12 @@ public constructor (scrollMapPlayerGameInput: ScrollMapPlayerGameInput)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
-left()
+this.scrollMapPlayerGameInput!.left()
 }
 
 

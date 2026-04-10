@@ -29,7 +29,7 @@ export class NoMagneticFieldSensor extends AllBinaryMagneticFieldSensor
                 , AllBinarySensorListener {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getOrientation(): Orientation{
 

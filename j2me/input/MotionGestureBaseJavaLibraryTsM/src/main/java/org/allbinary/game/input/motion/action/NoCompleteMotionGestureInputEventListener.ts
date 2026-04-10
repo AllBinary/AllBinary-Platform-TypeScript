@@ -58,7 +58,7 @@ private constructor (){
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 

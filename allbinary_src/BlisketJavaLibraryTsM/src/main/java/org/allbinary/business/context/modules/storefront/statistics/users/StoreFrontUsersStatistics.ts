@@ -98,7 +98,7 @@ index < size; index++)
         
         
 
-put(nextUserRole, currentNumberOfUsersForRole)
+totalUsersByRoleHashMap!.put(nextUserRole, currentNumberOfUsersForRole)
 }
 
 }
@@ -112,7 +112,6 @@ var userRole = userRole
         
 
 
-    
                         if(numberOfUsersForRoleLong == 
                                     null
                                 )
@@ -163,7 +162,7 @@ var role = role
         
         
 
-put(StoreFrontUsersStatisticsData.getInstance()!.NUMBEROFUSERS, this.getNumberOfUsers()!.toString())
+hashMap!.put(StoreFrontUsersStatisticsData.getInstance()!.NUMBEROFUSERS, this.getNumberOfUsers()!.toString())
 
     var setOfUserRoles: Set = this.totalUsersByRoleHashMap!.keys!;
         
@@ -199,7 +198,7 @@ nextUserRole= userRoleArray[index]! as UserRole
         
         
 
-put(nextUserRole!.toString(), totalForRole!.toString())
+hashMap!.put(nextUserRole!.toString(), totalForRole!.toString())
 }
 
 

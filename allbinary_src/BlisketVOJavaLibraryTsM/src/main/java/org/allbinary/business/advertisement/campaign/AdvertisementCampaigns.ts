@@ -48,7 +48,7 @@ this.advertisementsVector= advertisementsVector
 
     public add(advertisementInterface: AdvertisementInterface){
 var advertisementInterface = advertisementInterface
-add(advertisementInterface)
+this.advertisementsVector!.add(advertisementInterface)
 }
 
 

@@ -46,23 +46,23 @@ interface OrderHistoryEntityInterface extends BasicDataTableInterface {
 
     public setPaymentMethod(orderId: string, status: string)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getStoreOrders(storeFrontInterface: StoreFrontInterface): Vector
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getOrders(userName: string): Vector
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getOrders(status: string, fromDate: string, toDate: string): Vector
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getOrder(id: string): OrderHistory
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(whereHashMap: HashMap<Any, Any>, orderHashMap: HashMap<Any, Any>)
 

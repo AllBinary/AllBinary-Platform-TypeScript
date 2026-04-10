@@ -30,24 +30,24 @@ export class ThreadObjectUtil
 
     public notifyObject(anyType: Object){
 var anyType = anyType
-notify()
+anyType!.notify()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public waitObject(anyType: Object){
 var anyType = anyType
-wait()
+anyType!.wait()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public waitObject(anyType: Object, delay: number){
 var anyType = anyType
 var delay = delay
-wait(delay)
+anyType!.wait(delay)
 }
 
 

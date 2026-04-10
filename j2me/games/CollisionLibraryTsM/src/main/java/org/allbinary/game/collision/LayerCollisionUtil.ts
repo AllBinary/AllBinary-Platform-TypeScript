@@ -65,7 +65,6 @@ private constructor (){
         
 
 
-    
                         if(OpenGLFeatureUtil.getInstance()!.isAnyThreed() && !features.isFeature(gameFeatureFactory!.COLLISIONS_FORCED_TWO_DIMENSIONAL))
                         
                                     {

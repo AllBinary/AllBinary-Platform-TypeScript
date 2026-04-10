@@ -22,11 +22,11 @@
 interface WorkFlowInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getName(): string
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(): Integer
 

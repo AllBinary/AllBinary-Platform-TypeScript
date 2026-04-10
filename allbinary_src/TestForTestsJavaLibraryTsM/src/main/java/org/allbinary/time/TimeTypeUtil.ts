@@ -92,7 +92,7 @@ var timeInMillis = timeInMillis
         
         
 
-setTimeInMillis(timeInMillis)
+calendar.setTimeInMillis(timeInMillis)
 
 
 

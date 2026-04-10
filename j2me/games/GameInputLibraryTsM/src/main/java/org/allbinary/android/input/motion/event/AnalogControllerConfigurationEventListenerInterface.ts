@@ -25,7 +25,7 @@ import { EventListenerInterface } from "../../../../../../org/allbinary/logic/ut
 interface AnalogControllerConfigurationEventListenerInterface extends EventListenerInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     onAnalogControllerConfigurationEvent(analogControllerConfigurationEvent: AnalogControllerConfigurationEvent)
 

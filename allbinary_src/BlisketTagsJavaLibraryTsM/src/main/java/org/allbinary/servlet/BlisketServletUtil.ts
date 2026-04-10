@@ -60,9 +60,9 @@ var request = request
         
         
 
-setWebappPath(request.getServletContext()!.getRealPath(AbPathData.getInstance()!.SEPARATOR))
-init(urlGlobals)
-setLoader(::class.java.classLoader)
+urlGlobals!.setWebappPath(request.getServletContext()!.getRealPath(AbPathData.getInstance()!.SEPARATOR))
+URLGLOBALS.init(urlGlobals)
+WebappClassLoaderInfo.setLoader(::class.java.classLoader)
 }
 
 

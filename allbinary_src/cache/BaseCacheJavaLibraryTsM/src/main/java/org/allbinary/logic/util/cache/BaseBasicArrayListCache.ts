@@ -40,8 +40,8 @@ export class BaseBasicArrayListCache
         
         
 
-append("S: ")
-appendint(this.list.size())
+stringBuffer!.append("S: ")
+stringBuffer!.appendint(this.list.size())
 
 
 

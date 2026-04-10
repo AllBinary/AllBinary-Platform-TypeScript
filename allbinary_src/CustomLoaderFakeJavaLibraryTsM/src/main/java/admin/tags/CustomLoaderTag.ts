@@ -71,7 +71,7 @@ this.webappPath= value
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     setCustomLoaderWebappPath(){
 
@@ -81,16 +81,15 @@ this.webappPath= value
         
         
 
-setWebappPath(this.webappPath)
-init(urlGlobals)
+urlGlobals!.setWebappPath(this.webappPath)
+URLGLOBALS.init(urlGlobals)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "setCustomLoaderWebappPath()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setCustomLoaderWebappPath()", e)
 
                                     }
                                 
@@ -99,33 +98,30 @@ init(urlGlobals)
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "doStartTag()")
+                                    logUtil!.put(this.commonStrings!.START, this, "doStartTag()")
 
                                     }
                                 
 
-    
                         if(command != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(command.compareTo(GLOBALS2.SET) == 0)
                         
                                     {
-                                    this.setCustomLoaderWebappPath()
+                                    this.this.setCustomLoaderWebappPath()
 
                                     }
                                 
@@ -140,7 +136,7 @@ init(urlGlobals)
     
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -150,7 +146,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

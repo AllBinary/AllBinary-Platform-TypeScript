@@ -62,30 +62,30 @@ export class TextNotificationUtil
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fireError(message: string){
 var message = message
-add(ErrorSound.getInstance())
-this.fire(message)
+PrimaryPlayerQueueFactory.getInstance()!.add(ErrorSound.getInstance())
+this.this.fire(message)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fireNew(message: string){
 var message = message
-add(SelectSound.getInstance())
-this.fire(message)
+PrimaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance())
+this.this.fire(message)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fireSuccess(message: string){
 var message = message
-add(SelectSound.getInstance())
-this.fire(message)
+PrimaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance())
+this.this.fire(message)
 }
 
 
@@ -101,7 +101,7 @@ this.fire(message)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fire(message: string){
 var message = message
@@ -110,7 +110,7 @@ var message = message
         
         
 
-fireEvent(gameNotificationEvent)
+gameNotificationEventHandler!.fireEvent(gameNotificationEvent)
 }
 
 

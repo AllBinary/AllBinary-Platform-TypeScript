@@ -397,39 +397,37 @@ public constructor (abeClientInformation: AbeClientInformationInterface, command
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setWait(NullWaitGameRunnable.getInstance()!.WAIT)
+this.this.setWait(NullWaitGameRunnable.getInstance()!.WAIT)
 this.gameInitializationInterfaceFactoryInterface= gameInitializationInterfaceFactoryInterface
-initDemo(abeClientInformation, this, gameInitializationInterfaceFactoryInterface)
-fireEvent(false)
+GameInitializationUtil.getInstance()!.initDemo(abeClientInformation, this, gameInitializationInterfaceFactoryInterface)
+ResizableListenerHandler.getInstance()!.fireEvent(false)
 this.overlayPaintable= overlayPaintable
 this.highScoresFactoryInterface= highScoresFactoryInterface
-this.setDefaultPaintableInterface(paintable)
-this.setPaintableInterface(this.getDefaultPaintableInterface())
+this.this.setDefaultPaintableInterface(paintable)
+this.this.setPaintableInterface(this.getDefaultPaintableInterface())
 
-    
                         if(isContinue)
                         
                                     {
-                                    this.addCommand(GameCommandsFactory.getInstance()!.CONTINUE_COMMAND)
+                                    this.this.addCommand(GameCommandsFactory.getInstance()!.CONTINUE_COMMAND)
 
                                     }
                                 
 
-    
                         if(ChangedGameFeatureListener.getInstance()!.isChanged(GameFeatureFactory.getInstance()!.SOUND))
                         
                                     {
-                                    this.mediaInit()
+                                    this.this.mediaInit()
 
                                     }
                                 
-addListener(this)
+DisplayChangeEventHandler.getInstance()!.addListener(this)
 }
 
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
@@ -443,7 +441,6 @@ var displayChangeEvent = displayChangeEvent
         
 
 
-    
                         if(scrollSelectionForm != 
                                     null
                                 )
@@ -459,14 +456,14 @@ var displayChangeEvent = displayChangeEvent
         
         
 
-init(rectangle, formType)
+scrollSelectionForm!.init(rectangle, formType)
 
                                     }
                                 
-init()
+this.overlayPaintable!.init()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e)
 }
 
 }
@@ -479,7 +476,6 @@ put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT,
         
 
 
-    
                         if(J2MEUtil.isHTML())
                         
                                     {
@@ -506,14 +502,13 @@ put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT,
         
         
 
-add(gameCommandsFactory!.START_COMMAND)
+commandList!.add(gameCommandsFactory!.START_COMMAND)
 
     var inApplicationPurchaseFactory: InApplicationPurchaseFactory = InApplicationPurchaseFactory.getInstance()!;
         
         
 
 
-    
                         if(inApplicationPurchaseFactory!.isEnabled())
                         
                                     {
@@ -523,18 +518,17 @@ add(gameCommandsFactory!.START_COMMAND)
         
 
 
-    
                         if(list.size() > 0 && !inApplicationPurchaseFactory!.isPurchased(list.get(0) as LockableFeature))
                         
                                     {
-                                    add(gameCommandsFactory!.BUY_COMMAND)
+                                    commandList!.add(gameCommandsFactory!.BUY_COMMAND)
 
                                     }
                                 
 
                                     }
                                 
-add(HighScoreCommands.getInstance()!.DISPLAY)
+commandList!.add(HighScoreCommands.getInstance()!.DISPLAY)
 
         try {
             
@@ -543,22 +537,20 @@ add(HighScoreCommands.getInstance()!.DISPLAY)
         
 
 
-    
                         if(SWTUtil.isSWT)
                         
                                     {
-                                    add(GameInputMappingCanvas.DISPLAY)
+                                    commandList!.add(GameInputMappingCanvas.DISPLAY)
 
                                     }
                                 
                              else 
-    
                         if(!isOverScan)
                         
                                     {
-                                    add(gameCommandsFactory!.DISPLAY_OPTIONS)
-add(gameCommandsFactory!.DISPLAY_LOAD_FORM)
-add(GameInputMappingCanvas.DISPLAY)
+                                    commandList!.add(gameCommandsFactory!.DISPLAY_OPTIONS)
+commandList!.add(gameCommandsFactory!.DISPLAY_LOAD_FORM)
+commandList!.add(GameInputMappingCanvas.DISPLAY)
 
                                     }
                                 
@@ -566,7 +558,7 @@ add(GameInputMappingCanvas.DISPLAY)
             {
 }
 
-add(gameCommandsFactory!.DISPLAY_ABOUT)
+commandList!.add(gameCommandsFactory!.DISPLAY_ABOUT)
 
     var commandArray: any = {}[] = commandList!.toArray()!;
         
@@ -586,7 +578,7 @@ add(gameCommandsFactory!.DISPLAY_ABOUT)
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-this.removeAllCommands()
+this.this.removeAllCommands()
 
     var commandArray: any = {}[] = getCustomCommands()!;
         
@@ -608,50 +600,50 @@ this.removeAllCommands()
         
 index < size; index++)
         {
-this.addCommand(commandArray[index]! as Command)
+this.this.addCommand(commandArray[index]! as Command)
 }
 
-add(this)
-this.setCommandListener(cmdListener)
+CustomGameMenuUtil.add(this)
+this.this.setCommandListener(cmdListener)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public initPostPaint(){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public mediaInit(){
-init(EarlySoundsFactory.getInstance())
+AllBinaryMediaManager.init(EarlySoundsFactory.getInstance())
 }
 
 
     public itemStateChanged(item: Item){
 var item = item
-log(commonStrings!.NOT_IMPLEMENTED, this)
+ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     initMenu(){
-this.close()
-this.open()
+this.this.close()
+this.this.open()
 }
 
 
     public open(){
-addListener(this.getMenuInputProcessor())
-addListener(this.getMenuInputProcessor())
+BasicMotionGesturesHandler.getInstance()!.addListener(this.getMenuInputProcessor())
+GameKeyEventHandler.getInstance()!.addListener(this.getMenuInputProcessor())
 }
 
 
     public close(){
-removeListener(this.getMenuInputProcessor())
-removeListener(this.getMenuInputProcessor())
+BasicMotionGesturesHandler.getInstance()!.removeListener(this.getMenuInputProcessor())
+GameKeyEventHandler.getInstance()!.removeListener(this.getMenuInputProcessor())
 }
 
 
@@ -667,33 +659,33 @@ removeListener(this.getMenuInputProcessor())
 
     public keyPressed(keyCode: number){
 var keyCode = keyCode
-this.keyPressed(keyCode, 0)
+this.this.keyPressed(keyCode, 0)
 }
 
 
     public keyReleased(keyCode: number){
 var keyCode = keyCode
-this.keyReleased(keyCode, 0)
+this.this.keyReleased(keyCode, 0)
 }
 
 
     public keyRepeated(keyCode: number){
 var keyCode = keyCode
-this.keyRepeated(keyCode, 0)
+this.this.keyRepeated(keyCode, 0)
 }
 
 
     public keyPressed(keyCode: number, deviceId: number){
 var keyCode = keyCode
 var deviceId = deviceId
-this.addGameKeyEvent(keyCode, false)
+this.this.addGameKeyEvent(keyCode, false)
 }
 
 
     public keyReleased(keyCode: number, deviceId: number){
 var keyCode = keyCode
 var deviceId = deviceId
-this.removeGameKeyEvent(keyCode, false)
+this.this.removeGameKeyEvent(keyCode, false)
 }
 
 
@@ -705,11 +697,10 @@ this.removeGameKeyEvent(keyCode, false)
 var keyCode = keyCode
 var deviceId = deviceId
 
-    
                         if(this.isSingleKeyRepeatableProcessing)
                         
                                     {
-                                    this.addGameKeyEvent(keyCode, true)
+                                    this.this.addGameKeyEvent(keyCode, true)
 
                                     }
                                 
@@ -735,7 +726,6 @@ var repeated = repeated
         
 
 
-    
                         if(gameKey != NONE)
                         
                                     {
@@ -744,19 +734,19 @@ var repeated = repeated
         
         
 
-fireEvent(gameKeyEvent)
+DownGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent)
 
                                     }
                                 
                         else {
-                            put(StringMaker().
+                            logUtil!.put(StringMaker().
                             append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT)
 
                         }
                             
 } catch(e: Exception)
             {
-put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
+logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
 }
 
 }
@@ -773,7 +763,6 @@ var repeated = repeated
         
 
 
-    
                         if(gameKey != NONE)
                         
                                     {
@@ -782,19 +771,19 @@ var repeated = repeated
         
         
 
-fireEvent(gameKeyEvent)
+UpGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent)
 
                                     }
                                 
                         else {
-                            put(StringMaker().
+                            logUtil!.put(StringMaker().
                             append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.REMOVE_KEY_EVENT)
 
                         }
                             
 } catch(e: Exception)
             {
-put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e)
+logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e)
 }
 
 }
@@ -802,21 +791,20 @@ put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e)
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pause(){
-this.close()
-this.setPaused(true)
+this.this.close()
+this.this.setPaused(true)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public unPause(){
-this.open()
-this.setPaused(false)
+this.this.open()
+this.this.setPaused(false)
 }
 
 
     public isPausable(): boolean{
 
-    
                         if(CurrentDisplayableFactory.getInstance()!.getUsedRunnable() == NullWaitGameRunnable.getInstance())
                         
                                     {
@@ -843,7 +831,7 @@ this.setPaused(false)
 
 
     public isGameOver(): boolean{
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(commonStrings!.NOT_IMPLEMENTED)!.append(" since not a game")!.toString(), this, "isGameOver")
 
 
@@ -854,18 +842,18 @@ put(StringMaker().
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setLoadStateHashtable(hashtable: Hashtable<Any, Any>){
 var hashtable = hashtable
-put("Trying to continue a demo lol - only continue a game canvas not the demo", this, "setLoadStateHashtable")
+logUtil!.put("Trying to continue a demo lol - only continue a game canvas not the demo", this, "setLoadStateHashtable")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getLoadStateHashtable(): Hashtable<Any, Any>{
-put("Trying to continue a demo lol - only continue a game canvas not the demo", this, "getLoadStateHashtable")
+logUtil!.put("Trying to continue a demo lol - only continue a game canvas not the demo", this, "getLoadStateHashtable")
 
 
 
@@ -875,10 +863,10 @@ put("Trying to continue a demo lol - only continue a game canvas not the demo", 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getCurrentStateHashtable(): Hashtable<Any, Any>{
-put("Trying to save the AI lol", this, "getCurrentStateHashtable")
+logUtil!.put("Trying to save the AI lol", this, "getCurrentStateHashtable")
 
 
 
@@ -895,25 +883,25 @@ var isNotUsed = isNotUsed
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics)
-paint(graphics, 0, 0)
-paint(graphics)
-paint(graphics)
-paint(graphics)
-paint(graphics)
+this.paintableInterface!.paint(graphics)
+this.paintedSpecialAnimationInterface!.paint(graphics, 0, 0)
+this.highScoresPaintable!.paint(graphics)
+this.getBasicGameDemoPaintable()!.paint(graphics)
+this.overlayPaintable!.paint(graphics)
+this.progressPaintable!.paint(graphics)
 }
 
 
     public paintThreed(graphics: Graphics){
 var graphics = graphics
-paintThreed(graphics)
-paintThreed(graphics, 0, 0, 0)
+this.paintableInterface!.paintThreed(graphics)
+this.paintedSpecialAnimationInterface!.paintThreed(graphics, 0, 0, 0)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setGameOver(){
-put("Not Implemented since not a game", this, "setGameOver")
+logUtil!.put("Not Implemented since not a game", this, "setGameOver")
 }
 
 
@@ -924,7 +912,6 @@ put("Not Implemented since not a game", this, "setGameOver")
         
 
 
-    
                         if(newState > 2)
                         
                                     {
@@ -933,12 +920,10 @@ put("Not Implemented since not a game", this, "setGameOver")
                                     }
                                 
                              else 
-    
                         if(newState == 2)
                         
                                     {
                                     
-    
                         if(!this.highScoresHelper!.isAnyHighScores())
                         
                                     {
@@ -953,7 +938,6 @@ put("Not Implemented since not a game", this, "setGameOver")
         
 
 
-    
                         if(highScores == NullHighScoresSingletonFactory.getInstance())
                         
                                     {
@@ -962,7 +946,7 @@ put("Not Implemented since not a game", this, "setGameOver")
                                     }
                                 
                         else {
-                            setHighScores(highScores)
+                            this.getRealHighScoresPaintable()!.setHighScores(highScores)
 
                         }
                             
@@ -972,8 +956,8 @@ put("Not Implemented since not a game", this, "setGameOver")
 
                                     }
                                 
-this.setState(newState)
-this.setState()
+this.this.setState(newState)
+this.this.setState()
 }
 
 
@@ -982,21 +966,19 @@ this.setState()
         
 
     setState(){
-put(SmallIntegerSingletonFactory.getInstance()!.createInstance(this.state)!.toString(), this, SET_STATE)
-setState(this.state)
+PreLogUtil.put(SmallIntegerSingletonFactory.getInstance()!.createInstance(this.state)!.toString(), this, SET_STATE)
+this.getBasicGameDemoPaintable()!.setState(this.state)
 
-    
                         if(this.state == 0)
                         
                                     {
                                     this.highScoresPaintable= NullPaintable.getInstance()
 this.paintedSpecialAnimationInterface= this.getSpecialAnimationInterface()
-reset()
+this.getSpecialAnimationInterface()!.reset()
 
                                     }
                                 
                              else 
-    
                         if(this.state == 1)
                         
                                     {
@@ -1005,7 +987,6 @@ reset()
                                     }
                                 
                              else 
-    
                         if(this.state == 2)
                         
                                     {
@@ -1018,43 +999,43 @@ reset()
         
         
 
-processPageAdState()
+gameAdState!.processPageAdState()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getNextRandom(): number{
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createGameLayerManager(randomValue: number): AllBinaryGameLayerManager{
 var randomValue = randomValue
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createRunnable(randomLevel: number): GameCanvasRunnableInterface{
 var randomLevel = randomLevel
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     create(){
 this.highScoresPaintable= NullPaintable.getInstance()
@@ -1066,24 +1047,23 @@ this.highScoresPaintable= NullPaintable.getInstance()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     start(){
 }
 
 
     public preDemoProcess(){
-update()
+this.overlayPaintable!.update()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
-processInput()
-this.preDemoProcess()
+this.getMenuInputProcessor()!.processInput()
+this.this.preDemoProcess()
 
-    
                         if(this.state == 0)
                         
                                     {
@@ -1093,11 +1073,10 @@ this.preDemoProcess()
         
 
 
-    
                         if(indexedAnimationBehavior!.loopIndex < 1)
                         
                                     {
-                                    setStartTime()
+                                    timeDelayHelper!.setStartTime()
 
                                     }
                                 
@@ -1112,23 +1091,23 @@ this.preDemoProcess()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     startDemoGame(){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     processGame(){
-run()
-nextFrame()
-this.process()
+this.gameRunnable!.run()
+this.specialAnimationInterface!.nextFrame()
+this.this.process()
 }
 
 
     public run(){
-put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN)
+logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN)
 
         try {
             
@@ -1136,38 +1115,35 @@ put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN)
         
         
 
-addPortion(50, "Demo Thread")
-this.setCurrentThread()
-this.setRunning(true)
+progressCanvas!.addPortion(50, "Demo Thread")
+this.this.setCurrentThread()
+this.this.setRunning(true)
 
-    
                         if(features.isFeature(MainFeatureFactory.getInstance()!.LOAD_ONDEMAND))
                         
                                     {
-                                    end()
+                                    progressCanvas!.end()
 
                                     }
                                 
                         else {
-                            addPortion(50, "Demo Thread Running")
+                            progressCanvas!.addPortion(50, "Demo Thread Running")
 
                         }
                             
-init(this, this.getCustomCommandListener())
-this.initMenu()
-this.initPostPaint()
-this.setState()
+fullScreenUtil!.init(this, this.getCustomCommandListener())
+this.this.initMenu()
+this.this.initPostPaint()
+this.this.setState()
 
-    
                         if(features.isDefault(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD))
                         
                                     {
-                                    onResume()
+                                    OpenGLThreadUtil.getInstance()!.onResume()
 
                                     }
                                 
 
-    
                         if(features.isDefault(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD) || J2MEUtil.isHTML())
                         
                                     {
@@ -1178,31 +1154,30 @@ this.setState()
                             
         while(this.isRunning())
         {
-setStartTime()
-this.processGame()
-this.processLoopSleep()
+this.loopTimeHelper!.setStartTime()
+this.this.processGame()
+this.this.processLoopSleep()
 }
 
-this.end()
+this.this.end()
 
                         }
                             
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
-put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN)
+logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN)
 }
 
 
     public setRunning(running: boolean){
 var running = running
-setRunning(running)
+super.setRunning(running)
 
         try {
             
-    
                         if((features.isDefault(openGLFeatureFactory!.OPENGL) || J2MEUtil.isHTML()) && !running)
                         
                                     {
@@ -1211,14 +1186,14 @@ setRunning(running)
         
         
 
-clearRunnable()
-this.end()
+currentDisplayableFactory!.clearRunnable()
+this.this.end()
 
                                     }
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, SET_RUNNING, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e)
 }
 
 }
@@ -1228,7 +1203,7 @@ put(commonStrings!.EXCEPTION, this, SET_RUNNING, e)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public end(){
 
@@ -1236,21 +1211,20 @@ put(commonStrings!.EXCEPTION, this, SET_RUNNING, e)
         
         
 
-add(StringMaker().
+baseGameStatistics!.add(StringMaker().
                             append(BOT_GAME_STATS)!.append(baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString())
-init()
+baseGameStatistics!.init()
 
-    
                         if(features.isFeature(MainFeatureFactory.getInstance()!.LOAD_ONDEMAND))
                         
                                     {
-                                    start()
+                                    progressCanvas!.start()
 
                                     }
                                 
-put("Demo End", this, commonStrings!.RUN)
-this.close()
-removeListener(this)
+logUtil!.put("Demo End", this, commonStrings!.RUN)
+this.this.close()
+DisplayChangeEventHandler.getInstance()!.removeListener(this)
 }
 
 
@@ -1286,7 +1260,7 @@ this.state= state
 
 
     public isHighScoreSubmitted(): boolean{
-put("Wow the AI got a high score!", this, "isHighScoreSubmitted")
+logUtil!.put("Wow the AI got a high score!", this, "isHighScoreSubmitted")
 
 
 
@@ -1308,7 +1282,7 @@ put("Wow the AI got a high score!", this, "isHighScoreSubmitted")
 
     setSpecialAnimationInterface(specialAnimationInterface: SpecialAnimation){
 var specialAnimationInterface = specialAnimationInterface
-setFrame(0)
+specialAnimationInterface!.setFrame(0)
 this.specialAnimationInterface= specialAnimationInterface
 }
 
@@ -1471,7 +1445,6 @@ this.tempWait= tempWait
         
 
 
-    
                         if(features.isDefault(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD))
                         
                                     {

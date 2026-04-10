@@ -33,14 +33,14 @@ var anyType = anyType
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public waitObject(anyType: Object){
 var anyType = anyType
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public waitObject(anyType: Object, delay: number){
 var anyType = anyType

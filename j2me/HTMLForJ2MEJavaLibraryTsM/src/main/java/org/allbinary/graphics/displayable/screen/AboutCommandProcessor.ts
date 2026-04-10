@@ -51,7 +51,7 @@ export class AboutCommandProcessor
     //var midletCommandListener = midletCommandListener
     //var command = command
     //var canvas = canvas
-commandAction(command, canvas)
+midletCommandListener!.commandAction(command, canvas)
 }
 
 

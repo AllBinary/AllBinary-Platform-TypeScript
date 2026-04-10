@@ -61,21 +61,20 @@ var direction = direction
                     
 this.lifeInterface= lifeInterface
 this.xArray= IntArray(this.getLifeInterface()!.getMaxlives().toInt())
-this.update()
+this.this.update()
 this.animationInterface= animationInterface
 }
 
 
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
 var displayChangeEvent = displayChangeEvent
-onDisplayChangeEvent(displayChangeEvent)
-this.update()
+super.onDisplayChangeEvent(displayChangeEvent)
+this.this.update()
 }
 
 
     update(){
 
-    
                         if(this.xArray != 
                                     null
                                 )
@@ -107,8 +106,8 @@ this.xArray[index]= this.getX() +(index *16)
 
     public setX(x: number){
 var x = x
-setX(x)
-this.update()
+super.setX(x)
+this.this.update()
 }
 
 
@@ -124,7 +123,7 @@ var graphics = graphics
         
 --index >= 0; )
         {
-paint(graphics, xArray[index]!, this.getY())
+this.animationInterface!.paint(graphics, xArray[index]!, this.getY())
 }
 
 }

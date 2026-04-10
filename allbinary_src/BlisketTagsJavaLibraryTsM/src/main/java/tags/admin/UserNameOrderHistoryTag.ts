@@ -50,22 +50,20 @@ this.status= value
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
-            this.setName("Range Order History View")
-this.setObjectFile("views.admin.orderhistory.UserNameOrderHistoryView")
+            this.this.setName("Range Order History View")
+this.this.setObjectFile("views.admin.orderhistory.UserNameOrderHistoryView")
 
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
@@ -76,7 +74,7 @@ this.setObjectFile("views.admin.orderhistory.UserNameOrderHistoryView")
                             
 
 
-                            throw Exception("No Such View Command: " +this.getCommand())
+                            throw Error("No Such View Command: " +this.getCommand())
 
                         }
                             
@@ -92,10 +90,10 @@ this.setObjectFile("views.admin.orderhistory.UserNameOrderHistoryView")
 
 
 
-                            throw Exception("Command Null")
+                            throw Error("Command Null")
 } catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

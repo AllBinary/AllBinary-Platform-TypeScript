@@ -61,9 +61,9 @@ this.allBinaryGameCanvas= allBinaryGameCanvas
     public run(){
 
         try {
-            setStartTime(gameTickTimeDelayHelper!.setStartTime())
-update()
-processGame()
+            allBinaryGameCanvas!.getLoopTimeHelperP()!.setStartTime(gameTickTimeDelayHelper!.setStartTime())
+gameTickDisplayInfoSingleton!.update()
+allBinaryGameCanvas!.processGame()
 } catch(e: Exception)
             {
 
@@ -71,16 +71,16 @@ processGame()
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processLoopSleep(){
-processLoopSleep()
+allBinaryGameCanvas!.processLoopSleep()
 }
 
 

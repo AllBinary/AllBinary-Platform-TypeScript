@@ -39,7 +39,7 @@ export class InventoryViewFactory
          {
         
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public static getInstance(searchRequest: SearchRequest): InventoryViewSearchInterface{
 var searchRequest = searchRequest
@@ -59,7 +59,6 @@ var searchRequest = searchRequest
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
@@ -68,7 +67,7 @@ var searchRequest = searchRequest
         
         
 
-put(commonStrings!.EXCEPTION, "InventoryViewFactory", "getInstance(SearchRequest)", e)
+logUtil!.put(commonStrings!.EXCEPTION, "InventoryViewFactory", "getInstance(SearchRequest)", e)
 
                                     }
                                 

@@ -65,7 +65,7 @@ public constructor (){
 
     public update(list: BasicArrayList){
 var list = list
-this.clear()
+this.this.clear()
 
     var size: number = list.size()!;
         
@@ -88,11 +88,10 @@ index >= 0; index--)
         
 
 
-    
                         if(!this.rootNameList!.contains(rtsLayer!.getRootName()))
                         
                                     {
-                                    add(rtsLayer!.getRootName())
+                                    this.rootNameList!.add(rtsLayer!.getRootName())
 
                                     }
                                 
@@ -123,13 +122,12 @@ index >= 0; index--)
         
         
 
-append(rootName)
+stringBuffer!.append(rootName)
 
-    
                         if(index != 0)
                         
                                     {
-                                    append(COMMA_SEP)
+                                    stringBuffer!.append(COMMA_SEP)
 
                                     }
                                 
@@ -140,7 +138,7 @@ this.rootNamesString= stringBuffer!.toString()
 
 
     clear(){
-clear()
+this.rootNameList!.clear()
 }
 
 
@@ -158,17 +156,17 @@ clear()
 
     public paint(graphics: Graphics){
 var graphics = graphics
-setColor(backgroundColor)
-drawRect(this.getX(), y, this.getWidth(), this.getHeight())
-setColor(this.getColor())
-drawString(TOTAL, this.textX, y, 0)
-drawChars(this.totalCharArray, 0, this.getPrimitiveLongUtil()!.getCurrentTotalDigits(), this.textX +this.totalWidth, y, 0)
+graphics.setColor(backgroundColor)
+graphics.drawRect(this.getX(), y, this.getWidth(), this.getHeight())
+graphics.setColor(this.getColor())
+graphics.drawString(TOTAL, this.textX, y, 0)
+graphics.drawChars(this.totalCharArray, 0, this.getPrimitiveLongUtil()!.getCurrentTotalDigits(), this.textX +this.totalWidth, y, 0)
 
     var textLine2Y: number = (y +myFont!.DEFAULT_CHAR_HEIGHT);
         
         
 
-drawString(this.rootNamesString, this.textX, textLine2Y, 0)
+graphics.drawString(this.rootNamesString, this.textX, textLine2Y, 0)
 }
 
 

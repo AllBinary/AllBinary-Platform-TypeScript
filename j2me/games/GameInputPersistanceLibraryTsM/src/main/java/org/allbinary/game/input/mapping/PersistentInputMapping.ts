@@ -131,22 +131,22 @@ inputPersistance= InputPersistance(name)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setDefault(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-removeAll()
-add(this.getDefault())
-this.save(abeClientInformation)
+this.getInputMapping()!.removeAll()
+this.getInputMapping()!.add(this.getDefault())
+this.this.save(abeClientInformation)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-deleteAll(abeClientInformation)
-this.save(abeClientInformation)
+this.inputPersistance!.deleteAll(abeClientInformation)
+this.this.save(abeClientInformation)
 }
 
 
@@ -154,40 +154,39 @@ this.save(abeClientInformation)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public save(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-save(abeClientInformation, this.getInputMapping()!.getHashtable())
-setInputToGameKeyMapping(this.getInputMapping())
+inputPersistance!.save(abeClientInformation, this.getInputMapping()!.getHashtable())
+inputMappingEvent!.setInputToGameKeyMapping(this.getInputMapping())
 
-    
                         if(this.getInputMappingEventListenerInterface() != 
                                     null
                                 )
                         
                                     {
-                                    onInputMappingEvent(inputMappingEvent)
+                                    this.getInputMappingEventListenerInterface()!.onInputMappingEvent(inputMappingEvent)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-put(commonStrings!.START, this, commonStrings!.INIT)
+logUtil!.put(commonStrings!.START, this, commonStrings!.INIT)
 
         try {
-            loadAll(abeClientInformation)
+            inputPersistance!.loadAll(abeClientInformation)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
-deleteRecoreStore(abeClientInformation)
-this.setDefault(abeClientInformation)
-loadAll(abeClientInformation)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+inputPersistance!.deleteRecoreStore(abeClientInformation)
+this.this.setDefault(abeClientInformation)
+inputPersistance!.loadAll(abeClientInformation)
 }
 
 
@@ -239,7 +238,7 @@ index < size; index++)
         
 
 totalMappedTo++
-add(gameActionInput, mappedToInput)
+this.getInputMapping()!.add(gameActionInput, mappedToInput)
 }
 
 }
@@ -249,11 +248,11 @@ add(gameActionInput, mappedToInput)
         
         
 
-append("End - Total Loaded Keys Mapped: ")
-appendint(this.getTotalMapped())
-append(" to: ")
-appendint(totalMappedTo)
-put(stringBuffer!.toString(), this, commonStrings!.INIT)
+stringBuffer!.append("End - Total Loaded Keys Mapped: ")
+stringBuffer!.appendint(this.getTotalMapped())
+stringBuffer!.append(" to: ")
+stringBuffer!.appendint(totalMappedTo)
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT)
 }
 
 
@@ -283,25 +282,25 @@ this.inputMappingEventListenerInterface= inputMappingEventListenerInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isDelete(input: Input): boolean{
 var input = input
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isSystemInput(input: Input): boolean{
 var input = input
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 

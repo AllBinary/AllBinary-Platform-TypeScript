@@ -39,48 +39,48 @@ export class InGameMenuBehavior extends BaseMenuBehavior {
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onDisplayChangeEvent(allBinaryGameCanvas: AllBinaryGameCanvas, displayChangeEvent: DisplayChangeEvent){
     //var allBinaryGameCanvas = allBinaryGameCanvas
     //var displayChangeEvent = displayChangeEvent
-updateMenu(displayChangeEvent)
+allBinaryGameCanvas!.updateMenu(displayChangeEvent)
 }
 
 
     public initSpecialPaint(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-setNonBotPaintableP(GameCanvasNonBotPaintable(allBinaryGameCanvas))
+allBinaryGameCanvas!.setNonBotPaintableP(GameCanvasNonBotPaintable(allBinaryGameCanvas))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public initMenu(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-initMenu2()
+allBinaryGameCanvas!.initMenu2()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public updateMenu(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-initMenu2()
+allBinaryGameCanvas!.initMenu2()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public popupMenu(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-popupMenu2()
+allBinaryGameCanvas!.popupMenu2()
 }
 
 
     public closeMenu(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-closeMenu2()
+allBinaryGameCanvas!.closeMenu2()
 }
 
 

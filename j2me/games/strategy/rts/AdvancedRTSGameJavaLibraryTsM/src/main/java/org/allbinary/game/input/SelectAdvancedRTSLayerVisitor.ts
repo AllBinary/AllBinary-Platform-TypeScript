@@ -66,7 +66,6 @@ var anyType = anyType
         
 
 
-    
                         if(selectedLayer != CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER && selectedLayer!.getType() == BuildingLayer.getStaticType())
                         
                                     {
@@ -103,13 +102,12 @@ index >= 0; index--)
         {
 currentRTSLayer= list.get(index) as RTSLayer
 
-    
                         if(currentRTSLayer!.getType() == UnitLayer.getStaticType())
                         
                                     {
                                     unitLayer= currentRTSLayer as UnitLayer
-setParentLayer(rtsGameLayer)
-set(unitLayer, rtsGameLayer)
+unitLayer!.setParentLayer(rtsGameLayer)
+assignWaypointsUtil!.set(unitLayer, rtsGameLayer)
 
                                     }
                                 

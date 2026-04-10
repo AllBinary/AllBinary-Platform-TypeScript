@@ -203,7 +203,7 @@ public constructor (image: Image, width: number, height: number, animationBehavi
                             //For kotlin this is before the body of the constructor.
                     
 this.angleIncrement= AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()
-this.init()
+this.this.init()
 }
 
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
@@ -221,18 +221,18 @@ public constructor (image: Image, width: number, height: number, angleIncrement:
                             //For kotlin this is before the body of the constructor.
                     
 this.angleIncrement= angleIncrement
-this.init()
+this.this.init()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(){
-this.setImageArray(ImageToRotationImageArrayUtil.getInstance()!.generate(this.getImage(), this.getAngleIncrement(), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt()))
+this.this.setImageArray(ImageToRotationImageArrayUtil.getInstance()!.generate(this.getImage(), this.getAngleIncrement(), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt()))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
@@ -266,11 +266,10 @@ scaledImageArray[index]= animationFactoryImageScaleUtil!.createImage(image, imag
 }
 
 
-    
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
                         
                                     {
-                                    processAdjust(this)
+                                    animationFactoryImageScaleUtil!.processAdjust(this)
 
 
 

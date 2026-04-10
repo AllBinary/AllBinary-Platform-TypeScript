@@ -51,15 +51,15 @@ var z = z
         
         
 
-append(POINT_LABEL)
-append(positionStrings!.X_LABEL)
-appendint(x)
-append(CommonSeps.getInstance()!.SPACE)
-append(positionStrings!.Y_LABEL)
-appendint(y)
-append(CommonSeps.getInstance()!.SPACE)
-append(positionStrings!.Z_LABEL)
-appendint(z)
+stringBuffer!.append(POINT_LABEL)
+stringBuffer!.append(positionStrings!.X_LABEL)
+stringBuffer!.appendint(x)
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(positionStrings!.Y_LABEL)
+stringBuffer!.appendint(y)
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(positionStrings!.Z_LABEL)
+stringBuffer!.appendint(z)
 
 
 

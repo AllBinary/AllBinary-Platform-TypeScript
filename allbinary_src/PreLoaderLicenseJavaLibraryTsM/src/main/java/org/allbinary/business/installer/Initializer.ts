@@ -199,25 +199,25 @@ index < size; index++)
         
         
 
-put(key.toCharArray()
+hashMap!.put(key.toCharArray()
                                         .slice(0, ).join('')
                                     , .toCharArray())
-delete(0, stringBuffer!.length())
-append("key: ")
-append(key)
-append(" Value: ")
-append(values[0]!)
-put(stringBuffer!.toString(), this, "getFormData()")
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("key: ")
+stringBuffer!.append(key)
+stringBuffer!.append(" Value: ")
+stringBuffer!.append(values[0]!)
+logUtil!.put(stringBuffer!.toString(), this, "getFormData()")
 }
 
-this.getFormData(hashMap)
+this.this.getFormData(hashMap)
 }
 
 public constructor (initHashMap: HashMap<Any, Any>){
 
             super();
             var initHashMap = initHashMap
-this.getFormData(initHashMap)
+this.this.getFormData(initHashMap)
 }
 
 
@@ -267,7 +267,7 @@ staticPagesServer= hashMap!.get(initializerData!.STATICPAGESSERVER) as String
 staticPagesPort= hashMap!.get(initializerData!.STATICPAGESPORT) as String
 } catch(e: Exception)
             {
-put("Unable to get form data", this, "getFormData()", e)
+logUtil!.put("Unable to get form data", this, "getFormData()", e)
 }
 
 }
@@ -277,7 +277,7 @@ put("Unable to get form data", this, "getFormData()", e)
 var jdbcDriverClassPathString = jdbcDriverClassPathString
 
         try {
-            newInstance()
+            Class.forName(jdbcDriverClassPathString)!.newInstance()
 
 
 
@@ -287,7 +287,6 @@ var jdbcDriverClassPathString = jdbcDriverClassPathString
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
@@ -296,7 +295,7 @@ var jdbcDriverClassPathString = jdbcDriverClassPathString
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -318,7 +317,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
         
 
 
-    
                         if(!this.isJdbcDriverValid(this.userJdbcDriver))
                         
                                     {
@@ -332,7 +330,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
         
 
 
-    
                         if(!stringValidationUtil!.isValidRequired(userName, MIN, MAXDB))
                         
                                     {
@@ -341,7 +338,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(userUserName, MIN, MAX))
                         
                                     {
@@ -350,7 +346,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(userPassword, MINPASSWORD, MAX))
                         
                                     {
@@ -359,7 +354,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
                                     }
                                 
 
-    
                         if(!this.isJdbcDriverValid(this.historyJdbcDriver))
                         
                                     {
@@ -368,7 +362,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(historyName, MIN, MAXDB))
                         
                                     {
@@ -377,7 +370,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(historyUserName, MIN, MAX))
                         
                                     {
@@ -386,7 +378,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(historyPassword, MINPASSWORD, MAX))
                         
                                     {
@@ -395,7 +386,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
                                     }
                                 
 
-    
                         if(!this.isJdbcDriverValid(this.logJdbcDriver))
                         
                                     {
@@ -404,7 +394,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.logName, MIN, MAXDB))
                         
                                     {
@@ -413,7 +402,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.logUserName, MIN, MAX))
                         
                                     {
@@ -422,7 +410,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.logPassword, MINPASSWORD, MAX))
                         
                                     {
@@ -431,7 +418,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
                                     }
                                 
 
-    
                         if(!this.isJdbcDriverValid(this.inventoryJdbcDriver))
                         
                                     {
@@ -440,7 +426,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(inventoryName, MIN, MAXDB))
                         
                                     {
@@ -449,7 +434,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(inventoryUserName, MIN, MAX))
                         
                                     {
@@ -458,7 +442,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(inventoryPassword, MINPASSWORD, MAX))
                         
                                     {
@@ -467,7 +450,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
                                     }
                                 
 
-    
                         if(!this.isJdbcDriverValid(this.staticPagesJdbcDriver))
                         
                                     {
@@ -476,7 +458,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(staticPagesName, MIN, MAXDB))
                         
                                     {
@@ -485,7 +466,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(staticPagesUserName, MIN, MAX))
                         
                                     {
@@ -494,7 +474,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(staticPagesPassword, MINPASSWORD, MAX))
                         
                                     {
@@ -518,9 +497,9 @@ var jdbcDriver = jdbcDriver
         
         
 
-append("The JDBC driver (")
-append(jdbcDriver)
-append(") you have provided is not valid.<br/>")
+stringBuffer!.append("The JDBC driver (")
+stringBuffer!.append(jdbcDriver)
+stringBuffer!.append(") you have provided is not valid.<br/>")
 
 
 
@@ -536,15 +515,15 @@ append(") you have provided is not valid.<br/>")
         
         
 
-append("The following describes the possible problems and solutions regarding the Jdbc Driver error(s):<p/>")
-append("1. A JDBC driver you specified is not in your classpath.<br/>")
-append("Solution 1: Move the JDBC driver into any directory specified in the existing classpath. <br/>")
-append("Solution 2: Add the directory that contains the JDBC driver to the classpath.<br/>")
-append("Solution 3: Add the JDBC driver to the WEB-INF/lib directory where you installed this webapp.<br/>")
-append("2. The JDBC driver you specified does not exit.<br/>")
-append("Solution: Get a JDBC driver. <br/>")
-append("3. The JDBC driver you specified is not valid.<br/>")
-append("Solution: Use a valid JDBC driver.<p/>")
+stringBuffer!.append("The following describes the possible problems and solutions regarding the Jdbc Driver error(s):<p/>")
+stringBuffer!.append("1. A JDBC driver you specified is not in your classpath.<br/>")
+stringBuffer!.append("Solution 1: Move the JDBC driver into any directory specified in the existing classpath. <br/>")
+stringBuffer!.append("Solution 2: Add the directory that contains the JDBC driver to the classpath.<br/>")
+stringBuffer!.append("Solution 3: Add the JDBC driver to the WEB-INF/lib directory where you installed this webapp.<br/>")
+stringBuffer!.append("2. The JDBC driver you specified does not exit.<br/>")
+stringBuffer!.append("Solution: Get a JDBC driver. <br/>")
+stringBuffer!.append("3. The JDBC driver you specified is not valid.<br/>")
+stringBuffer!.append("Solution: Use a valid JDBC driver.<p/>")
 
 
 
@@ -566,12 +545,11 @@ append("Solution: Use a valid JDBC driver.<p/>")
         
 
 
-    
                         if(!this.isJdbcDriverValid(this.userJdbcDriver))
                         
                                     {
                                     isJdbcDriversValid= false
-append(this.getJdbcDriverValidationInfo(this.userJdbcDriver))
+stringBuffer!.append(this.getJdbcDriverValidationInfo(this.userJdbcDriver))
 
                                     }
                                 
@@ -581,186 +559,166 @@ append(this.getJdbcDriverValidationInfo(this.userJdbcDriver))
         
 
 
-    
                         if(!stringValidationUtil!.isValidRequired(userName, MIN, MAXDB))
                         
                                     {
-                                    append("User db name should be < " +MAXDB +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("User db name should be < " +MAXDB +" and > " +MIN +" characters in length.<br />")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(userUserName, MIN, MAX))
                         
                                     {
-                                    append("User db username should be < " +MAX +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("User db username should be < " +MAX +" and > " +MIN +" characters in length.<br />")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(userPassword, MINPASSWORD, MAX))
                         
                                     {
-                                    append("User DB password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />")
+                                    stringBuffer!.append("User DB password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />")
 
                                     }
                                 
 
-    
                         if(!this.isJdbcDriverValid(this.historyJdbcDriver))
                         
                                     {
                                     isJdbcDriversValid= false
-append(this.getJdbcDriverValidationInfo(this.historyJdbcDriver))
+stringBuffer!.append(this.getJdbcDriverValidationInfo(this.historyJdbcDriver))
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(historyName, MIN, MAXDB))
                         
                                     {
-                                    append("History db should be < " +MAXDB +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("History db should be < " +MAXDB +" and > " +MIN +" characters in length.<br />")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(historyUserName, MIN, MAX))
                         
                                     {
-                                    append("History db username should be < " +MAX +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("History db username should be < " +MAX +" and > " +MIN +" characters in length.<br />")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(historyPassword, MINPASSWORD, MAX))
                         
                                     {
-                                    append("History db password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />")
+                                    stringBuffer!.append("History db password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />")
 
                                     }
                                 
 
-    
                         if(!this.isJdbcDriverValid(this.logJdbcDriver))
                         
                                     {
                                     isJdbcDriversValid= false
-append(this.getJdbcDriverValidationInfo(this.logJdbcDriver))
+stringBuffer!.append(this.getJdbcDriverValidationInfo(this.logJdbcDriver))
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.logName, MIN, MAXDB))
                         
                                     {
-                                    append("Log db should be < " +MAXDB +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("Log db should be < " +MAXDB +" and > " +MIN +" characters in length.<br />")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.logUserName, MIN, MAX))
                         
                                     {
-                                    append("Log db username should be < " +MAX +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("Log db username should be < " +MAX +" and > " +MIN +" characters in length.<br />")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(this.logPassword, MINPASSWORD, MAX))
                         
                                     {
-                                    append("Log db password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />")
+                                    stringBuffer!.append("Log db password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />")
 
                                     }
                                 
 
-    
                         if(!this.isJdbcDriverValid(this.inventoryJdbcDriver))
                         
                                     {
                                     isJdbcDriversValid= false
-append(this.getJdbcDriverValidationInfo(this.inventoryJdbcDriver))
+stringBuffer!.append(this.getJdbcDriverValidationInfo(this.inventoryJdbcDriver))
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(inventoryName, MIN, MAXDB))
                         
                                     {
-                                    append("Inventory db should be < " +MAXDB +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("Inventory db should be < " +MAXDB +" and > " +MIN +" characters in length.<br />")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(inventoryUserName, MIN, MAX))
                         
                                     {
-                                    append("Inventory db username should be < " +MAX +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("Inventory db username should be < " +MAX +" and > " +MIN +" characters in length.<br />")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(inventoryPassword, MINPASSWORD, MAX))
                         
                                     {
-                                    append("Inventory DB password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />")
+                                    stringBuffer!.append("Inventory DB password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />")
 
                                     }
                                 
 
-    
                         if(!this.isJdbcDriverValid(this.staticPagesJdbcDriver))
                         
                                     {
                                     isJdbcDriversValid= false
-append(this.getJdbcDriverValidationInfo(this.staticPagesJdbcDriver))
+stringBuffer!.append(this.getJdbcDriverValidationInfo(this.staticPagesJdbcDriver))
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(staticPagesName, MIN, MAXDB))
                         
                                     {
-                                    append("Static Pages db should be < " +MAXDB +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("Static Pages db should be < " +MAXDB +" and > " +MIN +" characters in length.<br />")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(staticPagesUserName, MIN, MAX))
                         
                                     {
-                                    append("Static Pages db username should be < " +MAX +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("Static Pages db username should be < " +MAX +" and > " +MIN +" characters in length.<br />")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidNotRequired(staticPagesPassword, MINPASSWORD, MAX))
                         
                                     {
-                                    append("Static Pages DB password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />")
+                                    stringBuffer!.append("Static Pages DB password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />")
 
                                     }
                                 
 
-    
                         if(!isJdbcDriversValid)
                         
                                     {
-                                    append(getJdbcDriverSolutionInfo())
+                                    stringBuffer!.append(getJdbcDriverSolutionInfo())
 
                                     }
                                 
@@ -773,81 +731,81 @@ append(this.getJdbcDriverValidationInfo(this.staticPagesJdbcDriver))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public set(){
-put("Creating DB connection files", this, "set()")
+logUtil!.put("Creating DB connection files", this, "set()")
 
     var userDbInitInfo: UserDbInitInfo = new UserDbInitInfo(false);
         
         
 
-setJdbcDriver(this.userJdbcDriver)
-setName(userName)
-setUserName(userUserName)
-setPassword(userPassword)
-setSchema(userSchema)
-setServer(userServer)
-setPort(userPort)
-setHasRead(true)
-write()
+userDbInitInfo!.setJdbcDriver(this.userJdbcDriver)
+userDbInitInfo!.setName(userName)
+userDbInitInfo!.setUserName(userUserName)
+userDbInitInfo!.setPassword(userPassword)
+userDbInitInfo!.setSchema(userSchema)
+userDbInitInfo!.setServer(userServer)
+userDbInitInfo!.setPort(userPort)
+userDbInitInfo!.setHasRead(true)
+userDbInitInfo!.write()
 
     var historyDbInitInfo: HistoryDbInitInfo = new HistoryDbInitInfo(false);
         
         
 
-setJdbcDriver(this.historyJdbcDriver)
-setName(historyName)
-setUserName(historyUserName)
-setPassword(historyPassword)
-setSchema(historySchema)
-setServer(historyServer)
-setPort(historyPort)
-setHasRead(true)
-write()
+historyDbInitInfo!.setJdbcDriver(this.historyJdbcDriver)
+historyDbInitInfo!.setName(historyName)
+historyDbInitInfo!.setUserName(historyUserName)
+historyDbInitInfo!.setPassword(historyPassword)
+historyDbInitInfo!.setSchema(historySchema)
+historyDbInitInfo!.setServer(historyServer)
+historyDbInitInfo!.setPort(historyPort)
+historyDbInitInfo!.setHasRead(true)
+historyDbInitInfo!.write()
 
     var logDbInitInfo: LogDbInitInfo = new LogDbInitInfo(false);
         
         
 
-setJdbcDriver(this.logJdbcDriver)
-setName(this.logName)
-setUserName(this.logUserName)
-setPassword(this.logPassword)
-setSchema(this.logSchema)
-setServer(this.logServer)
-setPort(this.logPort)
-setHasRead(true)
-write()
+logDbInitInfo!.setJdbcDriver(this.logJdbcDriver)
+logDbInitInfo!.setName(this.logName)
+logDbInitInfo!.setUserName(this.logUserName)
+logDbInitInfo!.setPassword(this.logPassword)
+logDbInitInfo!.setSchema(this.logSchema)
+logDbInitInfo!.setServer(this.logServer)
+logDbInitInfo!.setPort(this.logPort)
+logDbInitInfo!.setHasRead(true)
+logDbInitInfo!.write()
 
     var staticPagesDbInitInfo: StaticPagesDbInitInfo = new StaticPagesDbInitInfo(false);
         
         
 
-setJdbcDriver(this.staticPagesJdbcDriver)
-setName(staticPagesName)
-setUserName(staticPagesUserName)
-setPassword(staticPagesPassword)
-setSchema(staticPagesSchema)
-setServer(staticPagesServer)
-setPort(staticPagesPort)
-setHasRead(true)
-write()
+staticPagesDbInitInfo!.setJdbcDriver(this.staticPagesJdbcDriver)
+staticPagesDbInitInfo!.setName(staticPagesName)
+staticPagesDbInitInfo!.setUserName(staticPagesUserName)
+staticPagesDbInitInfo!.setPassword(staticPagesPassword)
+staticPagesDbInitInfo!.setSchema(staticPagesSchema)
+staticPagesDbInitInfo!.setServer(staticPagesServer)
+staticPagesDbInitInfo!.setPort(staticPagesPort)
+staticPagesDbInitInfo!.setHasRead(true)
+staticPagesDbInitInfo!.write()
 
     var inventoryDbInitInfo: InventoryDbInitInfo = new InventoryDbInitInfo(false);
         
         
 
-setJdbcDriver(this.inventoryJdbcDriver)
-setName(inventoryName)
-setUserName(inventoryUserName)
-setPassword(inventoryPassword)
-setSchema(inventorySchema)
-setServer(inventoryServer)
-setPort(inventoryPort)
-setHasRead(true)
-write()
-put("Created DB connection files", this, "set()")
+inventoryDbInitInfo!.setJdbcDriver(this.inventoryJdbcDriver)
+inventoryDbInitInfo!.setName(inventoryName)
+inventoryDbInitInfo!.setUserName(inventoryUserName)
+inventoryDbInitInfo!.setPassword(inventoryPassword)
+inventoryDbInitInfo!.setSchema(inventorySchema)
+inventoryDbInitInfo!.setServer(inventoryServer)
+inventoryDbInitInfo!.setPort(inventoryPort)
+inventoryDbInitInfo!.setHasRead(true)
+inventoryDbInitInfo!.write()
+logUtil!.put("Created DB connection files", this, "set()")
 }
 
 

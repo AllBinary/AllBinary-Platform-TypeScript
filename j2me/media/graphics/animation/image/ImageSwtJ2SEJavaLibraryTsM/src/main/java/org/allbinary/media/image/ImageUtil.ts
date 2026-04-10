@@ -107,10 +107,10 @@ private constructor (){
             super();
             
         try {
-            put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 }
@@ -133,7 +133,7 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createBufferedImage(bufferedImageArray: org.eclipse.swt.graphics.Image[], percent: number, scale: boolean): org.eclipse.swt.graphics.Image[]{
     //var bufferedImageArray = bufferedImageArray
@@ -190,7 +190,7 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createBufferedImage(bufferedImageArray: org.eclipse.swt.graphics.Image[], percent: number, scale: boolean): org.eclipse.swt.graphics.Image[]{
     //var bufferedImageArray = bufferedImageArray
@@ -247,7 +247,7 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createBufferedImage(bufferedImageArray: org.eclipse.swt.graphics.Image[], width: number, height: number, scale: boolean): org.eclipse.swt.graphics.Image[]{
     //var bufferedImageArray = bufferedImageArray
@@ -287,7 +287,7 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImageArray[ind
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createBufferedImage(bufferedImage: org.eclipse.swt.graphics.Image, newWidth: number, newHeight: number): org.eclipse.swt.graphics.Image{
     //var bufferedImage = bufferedImage
@@ -302,7 +302,7 @@ var newHeight = newHeight
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createBufferedImage(bufferedImage: org.eclipse.swt.graphics.Image, newWidth: number, newHeight: number, scale: boolean): org.eclipse.swt.graphics.Image{
     //var bufferedImage = bufferedImage
@@ -318,7 +318,7 @@ var newHeight = newHeight
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createBufferedImage(bufferedImage: org.eclipse.swt.graphics.Image, newWidth: number, newHeight: number, scale: boolean, allowTranslate: boolean): org.eclipse.swt.graphics.Image{
     //var bufferedImage = bufferedImage
@@ -372,7 +372,6 @@ var newHeight = newHeight
         
 
 
-    
                         if(scale)
                         
                                     {
@@ -381,7 +380,7 @@ ratioY= heightRatio
 
                                     }
                                 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             appendfloat(width)!.append(this.commonSeps!.FORWARD_SLASH)!.appendfloat(height)!.append(this.commonSeps!.COLON)!.appendint(newWidth)!.append(this.commonSeps!.FORWARD_SLASH)!.appendint(newHeight)!.append(this.commonSeps!.COLON)!.appendfloat(widthRatio)!.append(this.commonSeps!.FORWARD_SLASH)!.appendfloat(heightRatio)!.toString(), this, CREATE_BUFFERED_IMAGE)
 
     var dx: number = 0;
@@ -394,13 +393,12 @@ put(StringMaker().
         
 
 
-    
                         if(!scale && allowTranslate)
                         
                                     {
                                     dx= (newWidth -width) /2
 dy= (newHeight -height) /2
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Translate dx: ")!.appendfloat(dx)!.append(" dy: ")!.appendfloat(dy)!.toString(), this, CREATE_BUFFERED_IMAGE)
 
                                     }
@@ -420,13 +418,13 @@ put(StringMaker().
         
         
 
-scale(ratioX, ratioY)
-translate(dx, dy)
-setTransform(affineTransform)
-setAntialias(SWT.ON)
-setInterpolation(SWT.HIGH)
-drawImage(bufferedImage, 0, 0, bufferedImage!.getBounds()!.width, bufferedImage!.getBounds()!.height, 0, 0, newWidth, newHeight)
-dispose()
+affineTransform!.scale(ratioX, ratioY)
+affineTransform!.translate(dx, dy)
+gc.setTransform(affineTransform)
+gc.setAntialias(SWT.ON)
+gc.setInterpolation(SWT.HIGH)
+gc.drawImage(bufferedImage, 0, 0, bufferedImage!.getBounds()!.width, bufferedImage!.getBounds()!.height, 0, 0, newWidth, newHeight)
+gc.dispose()
 
 
 
@@ -448,7 +446,7 @@ dispose()
         
         
 
-addPaintListener(object: PaintListener()
+imageCanvas!.addPaintListener(object: PaintListener()
                                 {
                                 
     public paintControl(event: PaintEvent){
@@ -463,10 +461,10 @@ var event = event
         
         
 
-translate(dx, dy)
-setAntialias(SWT.ON)
-setInterpolation(SWT.HIGH)
-drawImage(image, 0, 0, image.getBounds()!.width, image.getBounds()!.height, 0, 0, width, height)
+affineTransform!.translate(dx, dy)
+gc.setAntialias(SWT.ON)
+gc.setInterpolation(SWT.HIGH)
+gc.drawImage(image, 0, 0, image.getBounds()!.width, image.getBounds()!.height, 0, 0, width, height)
 }
 
                                 }
@@ -497,13 +495,13 @@ var bufferedImage = bufferedImage
         
         
 
-append(" org.eclipse.swt.graphics.Image: ")
-append(commonLabels!.WIDTH_LABEL)
-appendint(imageData!.width)
-append(commonLabels!.HEIGHT_LABEL)
-appendint(imageData!.height)
-append(" Type: ")
-appendint(imageData!.type)
+stringBuffer!.append(" org.eclipse.swt.graphics.Image: ")
+stringBuffer!.append(commonLabels!.WIDTH_LABEL)
+stringBuffer!.appendint(imageData!.width)
+stringBuffer!.append(commonLabels!.HEIGHT_LABEL)
+stringBuffer!.appendint(imageData!.height)
+stringBuffer!.append(" Type: ")
+stringBuffer!.appendint(imageData!.type)
 
 
 

@@ -70,13 +70,12 @@ var value = value
         
         
 
-add(name)
-add(Long.valueOf(value)!.toString())
-insert(vector)
+vector.add(name)
+vector.add(Long.valueOf(value)!.toString())
+idGeneratorEntity!.insert(vector)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
@@ -85,7 +84,7 @@ insert(vector)
         
         
 
-put(commonStrings!.EXCEPTION, this, "initialize", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e)
 
                                     }
                                 
@@ -94,7 +93,7 @@ put(commonStrings!.EXCEPTION, this, "initialize", e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setFile(filePathName: string, name: string){
@@ -104,7 +103,7 @@ this.name= name
 }
 
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getNext(): string{
@@ -120,7 +119,7 @@ this.name= name
         
         
 
-update(name, newValue)
+this.idGeneratorEntity!.update(name, newValue)
 
 
 
@@ -130,7 +129,6 @@ update(name, newValue)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
@@ -139,7 +137,7 @@ update(name, newValue)
         
         
 
-put(commonStrings!.EXCEPTION, this, "getNext", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "getNext", e)
 
                                     }
                                 

@@ -58,7 +58,7 @@ this.userEmailEventsConfigurationInterface= userEmailEventsConfigurationInterfac
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getKey(): any = {}{
 
@@ -70,7 +70,7 @@ this.userEmailEventsConfigurationInterface= userEmailEventsConfigurationInterfac
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toVector(): Vector{
 

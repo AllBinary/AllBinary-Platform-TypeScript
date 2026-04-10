@@ -22,15 +22,15 @@
 interface ModifyTableInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     insert(): string
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     delete(): string
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     update(): string
 

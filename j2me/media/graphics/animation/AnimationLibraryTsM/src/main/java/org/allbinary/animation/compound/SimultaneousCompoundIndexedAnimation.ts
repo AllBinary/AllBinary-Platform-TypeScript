@@ -70,7 +70,7 @@ this.animationInterfaceArray= animationInterfaceArray
 --index >= 0; )
         {
 indexedAnimation= this.animationInterfaceArray[index]! as IndexedAnimation
-setFrame(frameIndex)
+indexedAnimation!.setFrame(frameIndex)
 }
 
 }
@@ -122,7 +122,7 @@ setFrame(frameIndex)
 --index >= 0; )
         {
 indexedAnimation= this.animationInterfaceArray[index]! as IndexedAnimation
-previousFrame()
+indexedAnimation!.previousFrame()
 }
 
 }
@@ -143,7 +143,7 @@ previousFrame()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public nextFrame(){
 
@@ -157,7 +157,7 @@ previousFrame()
         
 --index >= 0; )
         {
-nextFrame()
+this.animationInterfaceArray[index]!.nextFrame()
 }
 
 }
@@ -183,7 +183,7 @@ nextFrame()
         
 index < size; index++)
         {
-paint(graphics, x, y)
+this.animationInterfaceArray[index]!.paint(graphics, x, y)
 }
 
 }
@@ -210,7 +210,7 @@ paint(graphics, x, y)
         
 index < size; index++)
         {
-paintThreed(graphics, x, y, z)
+this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z)
 }
 
 }

@@ -179,7 +179,7 @@ this.file= File(abPath!.toFileSystemString())
 }
 
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public getCanonicalPath(): string{
 
@@ -191,7 +191,7 @@ this.file= File(abPath!.toFileSystemString())
 }
 
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public getCanonicalFile(): any = {}{
 
@@ -293,7 +293,7 @@ this.file= File(abPath!.toFileSystemString())
 }
 
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public createNewFile(): boolean{
 
@@ -305,7 +305,7 @@ this.file= File(abPath!.toFileSystemString())
 }
 
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public delete(): boolean{
 
@@ -318,7 +318,7 @@ this.file= File(abPath!.toFileSystemString())
 
 
     public deleteOnExit(){
-deleteOnExit()
+this.file.deleteOnExit()
 }
 
 

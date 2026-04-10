@@ -125,35 +125,27 @@ index++
         
 
 
-    
                         if(index == 0)
                         mask= 1
 
-    
                         if(index == 1)
                         mask= 2
 
-    
                         if(index == 2)
                         mask= 4
 
-    
                         if(index == 3)
                         mask= 8
 
-    
                         if(index == 4)
                         mask= 16
 
-    
                         if(index == 5)
                         mask= 32
 
-    
                         if(index == 6)
                         mask= 64
 
-    
                         if(index == 7)
                         mask=  -127
 
@@ -169,7 +161,6 @@ index++
     //var newByteArray = newByteArray
     //var oldByteArray = oldByteArray
 
-    
                         if(newByteArray!.length != oldByteArray!.length)
                         
                                     {
@@ -203,7 +194,6 @@ index++
 index < size; index++)
         {
 
-    
                         if(newByteArray[index] != oldByteArray[index])
                         
                                     {
@@ -233,7 +223,6 @@ index < size; index++)
     //var oldByteArray = oldByteArray
     //var stats = stats
 
-    
                         if(newSize != oldByteArray!.length)
                         
                                     {
@@ -271,7 +260,6 @@ stats[1]= 0
 index < size; index++)
         {
 
-    
                         if(newByteArray[index] != oldByteArray[index])
                         
                                     {

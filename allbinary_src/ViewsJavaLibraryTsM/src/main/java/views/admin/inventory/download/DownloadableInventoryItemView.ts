@@ -120,7 +120,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 this.request= this.getPageContext()!.getRequest() as HttpServletRequest
-this.getFormData()
+this.this.getFormData()
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, empty: string)                        
@@ -148,10 +148,10 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getFormData(){
-this.setRequestHashMap(MultipartRequestParams(request).
+this.this.setRequestHashMap(MultipartRequestParams(request).
                             toHashMap())
 this.id= this.getRequestHashMap()!.get(BasicItemData.ID) as String
 }
@@ -164,26 +164,25 @@ this.id= this.getRequestHashMap()!.get(BasicItemData.ID) as String
         
 
 
-    
                         if(this.downloadableItem != 
                                     null
                                 )
                         
                                     {
-                                    add(DownloadableItemView(this.downloadableItem))
+                                    vector.add(DownloadableItemView(this.downloadableItem))
 
                                     }
                                 
-this.addDomNodeInterface(BasicItemView(itemInterface, vector))
+this.this.addDomNodeInterface(BasicItemView(itemInterface, vector))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.this.addDomNodeInterfaces()
 
 
 
@@ -193,11 +192,10 @@ this.addDomNodeInterface(BasicItemView(itemInterface, vector))
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 
@@ -210,7 +208,7 @@ this.addDomNodeInterface(BasicItemView(itemInterface, vector))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     processFile(fileItem: FileItem){
     //var fileItem = fileItem
@@ -229,32 +227,32 @@ this.addDomNodeInterface(BasicItemView(itemInterface, vector))
         
         
 
-mkdir()
+itemResourceFile!.mkdir()
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
 
-append(fullPath)
-append(fileName)
-put("FileName: " +fileName, this, "processFile()")
+stringBuffer!.append(fullPath)
+stringBuffer!.append(fileName)
+logUtil!.put("FileName: " +fileName, this, "processFile()")
 
     var file: AbFile = new AbFile(stringBuffer!.toString());
         
         
 
-put(file.getPath(), this, "processFiles()")
-createNewFile()
+logUtil!.put(file.getPath(), this, "processFiles()")
+file.createNewFile()
 
     var byteArray: ByteArray = fileItem!.get()!;
         
         
 
-write(ByteArrayInputStream(byteArray), file)
+FileUtil.getInstance()!.write(ByteArrayInputStream(byteArray), file)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     unzip(fileItem: FileItem){
     //var fileItem = fileItem
@@ -273,16 +271,16 @@ write(ByteArrayInputStream(byteArray), file)
         
         
 
-append(fullPath)
-append(fileName)
-put("FileName: " +fileName, this, "unzip()")
+stringBuffer!.append(fullPath)
+stringBuffer!.append(fileName)
+logUtil!.put("FileName: " +fileName, this, "unzip()")
 
     var file: AbFile = new AbFile(stringBuffer!.toString());
         
         
 
-put(file.getPath(), this, "unzip()")
-unzip(fullPath, file, fileName)
+logUtil!.put(file.getPath(), this, "unzip()")
+ZipFileUtil.getInstance()!.unzip(fullPath, file, fileName)
 }
 
 
@@ -302,14 +300,14 @@ unzip(fullPath, file, fileName)
         
         
 
-append(URLGLOBALS.getWebappPath())
-append(storeFrontInterface!.getCurrentHostNamePath())
-append(this.itemInterface!.getCategory())
-append(filePathData!.SEPARATOR)
-append(this.itemInterface!.getId())
-append(filePathData!.SEPARATOR)
-append(this.downloadableItem!.getId())
-append(filePathData!.SEPARATOR)
+stringBuffer!.append(URLGLOBALS.getWebappPath())
+stringBuffer!.append(storeFrontInterface!.getCurrentHostNamePath())
+stringBuffer!.append(this.itemInterface!.getCategory())
+stringBuffer!.append(filePathData!.SEPARATOR)
+stringBuffer!.append(this.itemInterface!.getId())
+stringBuffer!.append(filePathData!.SEPARATOR)
+stringBuffer!.append(this.downloadableItem!.getId())
+stringBuffer!.append(filePathData!.SEPARATOR)
 
 
 

@@ -134,13 +134,13 @@ var maxHeight = maxHeight
 var maxWidth = maxWidth
 var bufferZone = bufferZone
 var basicColor = basicColor
-this.setLocation(location)
-this.setDirection(direction)
-this.setBufferZone(bufferZone)
-this.setMaxWidth(maxWidth)
-this.setMaxHeight(maxHeight)
-this.onDisplayChangeEvent(DisplayInfoSingleton.getInstance()!.displayChangeEvent)
-this.setBasicColorP(basicColor)
+this.this.setLocation(location)
+this.this.setDirection(direction)
+this.this.setBufferZone(bufferZone)
+this.this.setMaxWidth(maxWidth)
+this.this.setMaxHeight(maxHeight)
+this.this.onDisplayChangeEvent(DisplayInfoSingleton.getInstance()!.displayChangeEvent)
+this.this.setBasicColorP(basicColor)
 this.color= basicColor!.toInt()
 }
 
@@ -165,7 +165,7 @@ this.color= basicColor!.toInt()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getHudGraphicsPosition(width: number, height: number): HudGraphicsPosition{
 var width = width
@@ -191,7 +191,6 @@ var height = height
         
 
 
-    
                         if(basicHudFactory!.BOTTOMLEFT == this.getLocation())
                         
                                     {
@@ -202,7 +201,6 @@ anchor= Graphics.BOTTOM and Graphics.LEFT
                                     }
                                 
                              else 
-    
                         if(basicHudFactory!.BOTTOMRIGHT == this.getLocation())
                         
                                     {
@@ -213,7 +211,6 @@ anchor= Graphics.BOTTOM and Graphics.RIGHT
                                     }
                                 
                              else 
-    
                         if(basicHudFactory!.TOPLEFT == this.getLocation())
                         
                                     {
@@ -224,7 +221,6 @@ anchor= Anchor.TOP_LEFT
                                     }
                                 
                              else 
-    
                         if(basicHudFactory!.TOPRIGHT == this.getLocation())
                         
                                     {
@@ -235,7 +231,6 @@ anchor= Graphics.TOP and Graphics.RIGHT
                                     }
                                 
                              else 
-    
                         if(basicHudFactory!.TOPCENTER == this.getLocation())
                         
                                     {
@@ -246,7 +241,6 @@ anchor= Graphics.TOP and Graphics.HCENTER
                                     }
                                 
                              else 
-    
                         if(basicHudFactory!.BOTTOMCENTER == this.getLocation())
                         
                                     {
@@ -257,7 +251,6 @@ anchor= Graphics.BOTTOM and Graphics.HCENTER
                                     }
                                 
                              else 
-    
                         if(basicHudFactory!.ABSOLUTE == this.getLocation())
                         
                                     {
@@ -278,7 +271,7 @@ anchor= 0
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
@@ -293,7 +286,7 @@ var displayChangeEvent = displayChangeEvent
 
 this.hudGraphicsPosition= this.getHudGraphicsPosition(displayInfo!.getLastWidth(), displayInfo!.getLastHeight())
 x= this.hudGraphicsPosition!.getPoint()!.getX()
-this.setY(this.hudGraphicsPosition!.getPoint()!.getY())
+this.this.setY(this.hudGraphicsPosition!.getPoint()!.getY())
 } catch(e: Exception)
             {
 
@@ -301,7 +294,7 @@ this.setY(this.hudGraphicsPosition!.getPoint()!.getY())
         
         
 
-put(commonStrings!.EXCEPTION, this, canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e)
 }
 
 }
@@ -333,7 +326,6 @@ var y = y
 var bufferZone = bufferZone
 this.bufferZone= bufferZone
 
-    
                         if(J2MEUtil.isHTML())
                         
                                     {
@@ -398,9 +390,9 @@ var graphics = graphics
 var string = string
 var string2 = string2
 var offset = offset
-setBasicColorP(graphics, getBasicColorP())
-drawString(string, x, getY(), hudGraphicsPosition!.getAnchor())
-drawString(string2, x +offset, getY(), hudGraphicsPosition!.getAnchor())
+this.basicSetColorUtil!.setBasicColorP(graphics, getBasicColorP())
+graphics.drawString(string, x, getY(), hudGraphicsPosition!.getAnchor())
+graphics.drawString(string2, x +offset, getY(), hudGraphicsPosition!.getAnchor())
 }
 
 
@@ -410,9 +402,9 @@ var string = string
 var string2 = string2
 var offset = offset
 var offset2 = offset2
-setColor(this.getColor())
-drawString(string, x +offset, getY(), hudGraphicsPosition!.getAnchor())
-drawString(string2, x +offset2, getY(), hudGraphicsPosition!.getAnchor())
+graphics.setColor(this.getColor())
+graphics.drawString(string, x +offset, getY(), hudGraphicsPosition!.getAnchor())
+graphics.drawString(string2, x +offset2, getY(), hudGraphicsPosition!.getAnchor())
 }
 
 
@@ -426,14 +418,14 @@ var offset2 = offset2
 var len2 = len2
 var xOffset = xOffset
 var xOffset2 = xOffset2
-setBasicColorP(graphics, getBasicColorP())
+this.basicSetColorUtil!.setBasicColorP(graphics, getBasicColorP())
 
     var y: number = getY()!;
         
         
 
-drawChars(charArray, offset, len, x +xOffset, y, hudGraphicsPosition!.getAnchor())
-drawChars(charArray2, offset2, len2, x +xOffset2, y, hudGraphicsPosition!.getAnchor())
+graphics.drawChars(charArray, offset, len, x +xOffset, y, hudGraphicsPosition!.getAnchor())
+graphics.drawChars(charArray2, offset2, len2, x +xOffset2, y, hudGraphicsPosition!.getAnchor())
 }
 
 
@@ -446,14 +438,14 @@ var charArray2 = charArray2
 var offset2 = offset2
 var len2 = len2
 var xOffset = xOffset
-setBasicColorP(graphics, getBasicColorP())
+this.basicSetColorUtil!.setBasicColorP(graphics, getBasicColorP())
 
     var y: number = getY()!;
         
         
 
-drawChars(charArray, offset, len, x, y, hudGraphicsPosition!.getAnchor())
-drawChars(charArray2, offset2, len2, x +xOffset, y, hudGraphicsPosition!.getAnchor())
+graphics.drawChars(charArray, offset, len, x, y, hudGraphicsPosition!.getAnchor())
+graphics.drawChars(charArray2, offset2, len2, x +xOffset, y, hudGraphicsPosition!.getAnchor())
 }
 
 
@@ -462,13 +454,13 @@ var graphics = graphics
 var charArray = charArray
 var offset = offset
 var len = len
-setBasicColorP(graphics, getBasicColorP())
+this.basicSetColorUtil!.setBasicColorP(graphics, getBasicColorP())
 
     var y: number = getY()!;
         
         
 
-drawChars(charArray, offset, len, x, y, hudGraphicsPosition!.getAnchor())
+graphics.drawChars(charArray, offset, len, x, y, hudGraphicsPosition!.getAnchor())
 }
 
 
@@ -477,13 +469,13 @@ drawChars(charArray, offset, len, x, y, hudGraphicsPosition!.getAnchor())
     public paint(graphics: Graphics, string: string){
 var graphics = graphics
 var string = string
-setBasicColorP(graphics, getBasicColorP())
+this.basicSetColorUtil!.setBasicColorP(graphics, getBasicColorP())
 
     var y: number = getY() +offsetY;
         
         
 
-drawString(string, x, y, hudGraphicsPosition!.getAnchor())
+graphics.drawString(string, x, y, hudGraphicsPosition!.getAnchor())
 }
 
 

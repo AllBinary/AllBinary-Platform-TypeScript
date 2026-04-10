@@ -97,22 +97,22 @@ public constructor ()
         
         
 
-append(this.sqlStrings!.CREATE_TABLE)
-append(tableName)
-append(this.sqlStrings!.START)
-append(NOTHING)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(InitInfo.getInstance()!.TESTING)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(InitInfo.getInstance()!.TESTHTMLPATH)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(InitInfo.getInstance()!.MAINPATH)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(this.sqlStrings!.PRIMARY_KEY)
-append(NOTHING)
-append(this.sqlStrings!.END)
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)
+stringBuffer!.append(tableName)
+stringBuffer!.append(this.sqlStrings!.START)
+stringBuffer!.append(NOTHING)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(InitInfo.getInstance()!.TESTING)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(InitInfo.getInstance()!.TESTHTMLPATH)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(InitInfo.getInstance()!.MAINPATH)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(this.sqlStrings!.PRIMARY_KEY)
+stringBuffer!.append(NOTHING)
+stringBuffer!.append(this.sqlStrings!.END)
 this.tableData= stringBuffer!.toString()
-this.setTable(this.tableName)
+this.this.setTable(this.tableName)
 }
 
 
@@ -124,20 +124,19 @@ this.setTable(this.tableName)
         
         
 
-put(NOTHING, NOTHING)
+keyAndValue!.put(NOTHING, NOTHING)
 
     var hashMap: HashMap<Any, Any> = getRow(keyAndValue)!;
         
         
 
 
-    
                         if(hashMap != 
                                     null
                                 )
                         
                                     {
-                                    set(hashMap)
+                                    InitInfo.getInstance()!.set(hashMap)
 
 
 
@@ -149,11 +148,10 @@ put(NOTHING, NOTHING)
                                 
                         else {
                             
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    put(this.NOT_IN_DB, NAME, this.METHOD_GET)
+                                    PreLogUtil.put(this.NOT_IN_DB, NAME, this.METHOD_GET)
 
                                     }
                                 
@@ -169,11 +167,10 @@ put(NOTHING, NOTHING)
 } catch(e: Exception)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    put(this.commonStrings!.EXCEPTION, this.NAME, this.METHOD_GET, e)
+                                    PreLogUtil.put(this.commonStrings!.EXCEPTION, this.NAME, this.METHOD_GET, e)
 
                                     }
                                 
@@ -196,14 +193,13 @@ put(NOTHING, NOTHING)
         
         
 
-put(NOTHING, NOTHING)
+keyAndValue!.put(NOTHING, NOTHING)
 
     var hashMap: HashMap<Any, Any> = getRow(keyAndValue)!;
         
         
 
 
-    
                         if(hashMap != 
                                     null
                                 )
@@ -220,11 +216,10 @@ put(NOTHING, NOTHING)
                                 
                         else {
                             
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    put(this.NOT_IN_DB, this.NAME, this.METHOD_IS)
+                                    PreLogUtil.put(this.NOT_IN_DB, this.NAME, this.METHOD_IS)
 
                                     }
                                 
@@ -240,11 +235,10 @@ put(NOTHING, NOTHING)
 } catch(e: Exception)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    put(this.commonStrings!.EXCEPTION, this.NAME, this.METHOD_IS, e)
+                                    PreLogUtil.put(this.commonStrings!.EXCEPTION, this.NAME, this.METHOD_IS, e)
 
                                     }
                                 
@@ -272,19 +266,18 @@ updateWhere(NOTHING, NOTHING, InitInfo.getInstance()!.toHashMap())
         
         
 
-add(NOTHING)
-add(InitInfo.getInstance()!.getTesting())
-add(InitInfo.getInstance()!.getTestHtmlPath())
-add(InitInfo.getInstance()!.getMainPath())
+values.add(NOTHING)
+values.add(InitInfo.getInstance()!.getTesting())
+values.add(InitInfo.getInstance()!.getTestHtmlPath())
+values.add(InitInfo.getInstance()!.getMainPath())
 insert(values)
 } catch(e: Exception)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    put(this.commonStrings!.EXCEPTION, this.NAME, this.METHOD_ADD, e)
+                                    PreLogUtil.put(this.commonStrings!.EXCEPTION, this.NAME, this.METHOD_ADD, e)
 
                                     }
                                 
@@ -295,7 +288,6 @@ insert(values)
 
     public createTable(): string{
 
-    
                         if(super.createTable(tableData))
                         
                                     {
@@ -314,9 +306,9 @@ insert(values)
         
         
 
-append(FAILED_TO_CREATE)
-append(tableData)
-append(AbPathData.getInstance()!.EXTENSION_SEP)
+stringBuffer!.append(FAILED_TO_CREATE)
+stringBuffer!.append(tableData)
+stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP)
 
 
 

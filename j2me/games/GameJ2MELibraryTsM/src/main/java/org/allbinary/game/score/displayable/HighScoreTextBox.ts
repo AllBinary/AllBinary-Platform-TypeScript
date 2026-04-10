@@ -124,7 +124,6 @@ highScoreUtil= HighScoreUtil(highScoresFactoryInterface, highScoresHelper, abeCl
         
 
 
-    
                         if(operatingSystemInterface!.isOverScan())
                         
                                     {
@@ -134,18 +133,17 @@ highScoreUtil= HighScoreUtil(highScoresFactoryInterface, highScoresHelper, abeCl
         
 
 
-    
                         if(username != 
                                     null
                                 )
                         
                                     {
-                                    setString(username)
+                                    this.getTextFieldItem()!.setString(username)
 
                                     }
                                 
                         else {
-                            setString("NoGamerInfo")
+                            this.getTextFieldItem()!.setString("NoGamerInfo")
 
                         }
                             
@@ -157,33 +155,32 @@ highScoreUtil= HighScoreUtil(highScoresFactoryInterface, highScoresHelper, abeCl
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-this.removeAllCommands()
-addCommands(this)
-this.addCommand(HighScoreUtil.SUBMIT_TEXTBOX_COMMAND)
-this.setCommandListener(cmdListener)
+this.this.removeAllCommands()
+PostGameCommandFactory.getInstance()!.addCommands(this)
+this.this.addCommand(HighScoreUtil.SUBMIT_TEXTBOX_COMMAND)
+this.this.setCommandListener(cmdListener)
 }
 
 
     public open(){
-open()
+this.virtualKeyboardEventHandler!.open()
 this.paintable= NullPaintable.getInstance()
-open()
+super.open()
 }
 
 
     public close(){
-close()
+this.virtualKeyboardEventHandler!.close()
 this.paintable= this.pleaseWait
-onChangeRepaint(this)
-close()
-this.removeCommand(HighScoreUtil.SUBMIT_TEXTBOX_COMMAND)
-this.update()
+this.repaintBehavior!.onChangeRepaint(this)
+super.close()
+this.this.removeCommand(HighScoreUtil.SUBMIT_TEXTBOX_COMMAND)
+this.this.update()
 
-    
                         if(this.submitted)
                         
                                     {
-                                    saveHighScore()
+                                    this.highScoreUtil!.saveHighScore()
 
                                     }
                                 
@@ -192,11 +189,11 @@ this.update()
                         }
                             
 this.paintable= NullPaintable.getInstance()
-onChangeRepaint(this)
+this.repaintBehavior!.onChangeRepaint(this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(){
 
@@ -204,25 +201,25 @@ onChangeRepaint(this)
         
         
 
-update(name)
-update()
+this.highScoreUtil!.update(name)
+super.update()
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics)
-paint(graphics)
+super.paint(graphics)
+this.paintable.paint(graphics)
 }
 
 
     public saveHighScore(){
-saveHighScore()
+this.highScoreUtil!.saveHighScore()
 }
 
 
     public submit(){
-submit(this)
+this.highScoreUtil!.submit(this)
 }
 
 

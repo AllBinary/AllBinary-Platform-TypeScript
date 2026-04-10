@@ -56,7 +56,7 @@ export class HttpFileUploadUtil
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static log(fileItem: FileItemStream){
 var fileItem = fileItem
@@ -75,25 +75,24 @@ var fileItem = fileItem
         
         
 
-append("FileItem Log:")
-append(commonSeps!.NEW_LINE)
-append("Content Type:")
-append(fileItem!.getContentType())
-append(commonSeps!.NEW_LINE)
-append("Field Name:")
-append(fileItem!.getFieldName())
-append(commonSeps!.NEW_LINE)
-append("Name:")
-append(fileItem!.getName())
-append(commonSeps!.NEW_LINE)
-append("Size:")
-append(" Not Calculated Yet")
+stringBuffer!.append("FileItem Log:")
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append("Content Type:")
+stringBuffer!.append(fileItem!.getContentType())
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append("Field Name:")
+stringBuffer!.append(fileItem!.getFieldName())
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append("Name:")
+stringBuffer!.append(fileItem!.getName())
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append("Size:")
+stringBuffer!.append(" Not Calculated Yet")
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTP))
                         
                                     {
-                                    put(stringBuffer!.toString(), getInstance(), "log()")
+                                    logUtil!.put(stringBuffer!.toString(), getInstance(), "log()")
 
                                     }
                                 
@@ -117,25 +116,24 @@ var fileItem = fileItem
         
         
 
-append("FileItem Log:")
-append(commonSeps!.NEW_LINE)
-append("Content Type:")
-append(fileItem!.getContentType())
-append(commonSeps!.NEW_LINE)
-append("Field Name:")
-append(fileItem!.getFieldName())
-append(commonSeps!.NEW_LINE)
-append("Name:")
-append(fileItem!.getName())
-append(commonSeps!.NEW_LINE)
-append("Size:")
-appendlong(fileItem!.getSize())
+stringBuffer!.append("FileItem Log:")
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append("Content Type:")
+stringBuffer!.append(fileItem!.getContentType())
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append("Field Name:")
+stringBuffer!.append(fileItem!.getFieldName())
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append("Name:")
+stringBuffer!.append(fileItem!.getName())
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append("Size:")
+stringBuffer!.appendlong(fileItem!.getSize())
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    put(stringBuffer!.toString(), getInstance(), "log()")
+                                    logUtil!.put(stringBuffer!.toString(), getInstance(), "log()")
 
                                     }
                                 
@@ -151,19 +149,17 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isValid(anyType: any = {}): boolean{
 var anyType = anyType
 
-    
                         if(anyType != 
                                     null
                                  && !(anyType is String))
                         
                                     {
                                     
-    
                         if(anyType is FileItem)
                         
                                     {
@@ -180,7 +176,7 @@ var anyType = anyType
                             
 
 
-                            throw Exception("Object Not Instance Of FileItem but is: " +ClassUtil.viewAll(anyType, CommonSeps.getInstance()!.NEW_LINE))
+                            throw Error("Object Not Instance Of FileItem but is: " +ClassUtil.viewAll(anyType, CommonSeps.getInstance()!.NEW_LINE))
 
                         }
                             

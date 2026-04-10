@@ -35,7 +35,7 @@ var direction = direction
 
                             //For kotlin this is before the body of the constructor.
                     
-this.calculate()
+this.this.calculate()
 }
 
 

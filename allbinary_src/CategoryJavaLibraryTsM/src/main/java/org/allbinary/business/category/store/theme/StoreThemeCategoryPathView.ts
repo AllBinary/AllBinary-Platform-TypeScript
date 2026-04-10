@@ -56,7 +56,7 @@ public constructor (categoryInterface: StoreThemeCategoryInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -101,7 +101,7 @@ i < size; i++)
         
         
 
-appendChild(domNodeInterface!.toXmlNode(document))
+node.appendChild(domNodeInterface!.toXmlNode(document))
 }
 
 

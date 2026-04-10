@@ -81,7 +81,7 @@ var name = name
         
         
 
-add(this.getId(), this)
+inputFactory!.add(this.getId(), this)
 }
 
 
@@ -102,7 +102,7 @@ this.gameKeyEvent= this.gameKeyEventFactory!.getInstance(this, gameKey)
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
 }
 
 }

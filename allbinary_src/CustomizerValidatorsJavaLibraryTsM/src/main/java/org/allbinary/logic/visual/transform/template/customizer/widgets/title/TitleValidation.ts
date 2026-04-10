@@ -87,11 +87,10 @@ public constructor (hashMap: HashMap<Any, Any>)
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("TitleValidation", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("TitleValidation", this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -101,7 +100,6 @@ public constructor (hashMap: HashMap<Any, Any>)
         
 
 
-    
                         if(!StringValidationUtil.getInstance()!.isValidRequired(this.getTitle(), 1, TitleData.getInstance()!.MAXLEN))
                         
                                     {
@@ -110,11 +108,10 @@ public constructor (hashMap: HashMap<Any, Any>)
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("TitleValidation: " +valid, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("TitleValidation: " +valid, this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -127,11 +124,10 @@ public constructor (hashMap: HashMap<Any, Any>)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -154,7 +150,7 @@ public constructor (hashMap: HashMap<Any, Any>)
         
         
 
-append("Title is not valid.")
+stringBuffer!.append("Title is not valid.")
 
 
 
@@ -164,11 +160,10 @@ append("Title is not valid.")
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 

@@ -93,13 +93,13 @@ public constructor (){
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getString(): string{
 
@@ -118,7 +118,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
         
 
 
-    
                         if(features.isFeature(graphicsFeatureFactory!.IMAGE_TO_ARRAY_GRAPHICS))
                         
                                     {
@@ -127,7 +126,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                                     }
                                 
                              else 
-    
                         if(features.isFeature(graphicsFeatureFactory!.SPRITE_FULL_GRAPHICS))
                         
                                     {
@@ -136,7 +134,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                                     }
                                 
                              else 
-    
                         if(features.isFeature(graphicsFeatureFactory!.SPRITE_QUARTER_ROTATION_GRAPHICS))
                         
                                     {
@@ -145,7 +142,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                                     }
                                 
                              else 
-    
                         if(features.isFeature(graphicsFeatureFactory!.IMAGE_ROTATION_ON_THE_FLY))
                         
                                     {
@@ -162,7 +158,7 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getString(graphicsFeature: GraphicsFeature): string{
 var graphicsFeature = graphicsFeature
@@ -176,14 +172,13 @@ var graphicsFeature = graphicsFeature
         
         
 
-delete(0, stringBuffer!.length())
+stringBuffer!.delete(0, stringBuffer!.length())
 
     var features: Features = Features.getInstance()!;
         
         
 
 
-    
                         if(features.isFeature(graphicsFeatureFactory!.VECTOR_GRAPHICS))
                         
                                     {
@@ -191,12 +186,10 @@ delete(0, stringBuffer!.length())
                                     }
                                 
                              else 
-    
                         if(features.isFeature(graphicsFeatureFactory!.IMAGE_GRAPHICS))
                         
                                     {
                                     
-    
                         if(graphicsFeature == graphicsFeatureFactory!.IMAGE_TO_ARRAY_GRAPHICS || graphicsFeature == graphicsFeatureFactory!.IMAGE_ROTATION_ON_THE_FLY)
                         
                                     {
@@ -204,21 +197,19 @@ delete(0, stringBuffer!.length())
                                     }
                                 
                              else 
-    
                         if(graphicsFeature == graphicsFeatureFactory!.SPRITE_FULL_GRAPHICS)
                         
                                     {
-                                    append(SPRITE)
+                                    stringBuffer!.append(SPRITE)
 
                                     }
                                 
                              else 
-    
                         if(graphicsFeature == graphicsFeatureFactory!.SPRITE_QUARTER_ROTATION_GRAPHICS)
                         
                                     {
-                                    append(QUARTER)
-append(SPRITE)
+                                    stringBuffer!.append(QUARTER)
+stringBuffer!.append(SPRITE)
 
                                     }
                                 
@@ -226,7 +217,7 @@ append(SPRITE)
                             
 
 
-                            throw Exception("None/Unknown Sub Image Resource Type Specified")
+                            throw Error("None/Unknown Sub Image Resource Type Specified")
 
                         }
                             
@@ -234,11 +225,10 @@ append(SPRITE)
                                     }
                                 
                              else 
-    
                         if(OpenGLFeatureUtil.getInstance()!.isAnyThreed())
                         
                                     {
-                                    append(CanvasStrings.getInstance()!.OBJ_MODEL)
+                                    stringBuffer!.append(CanvasStrings.getInstance()!.OBJ_MODEL)
 
                                     }
                                 
@@ -246,7 +236,7 @@ append(SPRITE)
                             
 
 
-                            throw Exception("None/Unknown Main Image Resource Type Specified")
+                            throw Error("None/Unknown Main Image Resource Type Specified")
 
                         }
                             

@@ -85,7 +85,7 @@ export class AnimationFactorySpriteScaleUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage(image: Image, width: number, height: number, scaleWidth: number, scaleHeight: number): Sprite{
     //var image = image
@@ -105,7 +105,6 @@ export class AnimationFactorySpriteScaleUtil
     var scaledImage: Image
 
 
-    
                         if(scaleWidth != 0 && scaleHeight != 0)
                         
                                     {
@@ -120,7 +119,6 @@ export class AnimationFactorySpriteScaleUtil
         
 
 
-    
                         if((scaleX == 1.0f && scaleY == 1.0f) || (scaleX == 0.0f || scaleY == 0.0f))
                         
                                     {
@@ -131,7 +129,6 @@ sprite= spriteFactory!.create(scaledImage, width, height)
                                 
                         else {
                             
-    
                         if(openGLESImageExclusionUtil!.isCustomScaling(image))
                         
                                     {
@@ -168,7 +165,6 @@ scaleX= (by16Width.toFloat()) /width
 
 scaleY= (by16Height.toFloat()) /height
 
-    
                         if(scaleWidth < width)
                         
                                     {
@@ -177,7 +173,6 @@ scaleY= (by16Height.toFloat()) /height
                                     }
                                 
 
-    
                         if(scaleHeight < height)
                         
                                     {

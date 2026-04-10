@@ -57,7 +57,7 @@ export class ImageCompleteUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public waitFor(image: Image, name: string){
 var image = image
@@ -69,7 +69,7 @@ var name = name
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isReady(image: Image, name: string, timeDelayHelper: TimeDelayHelper): boolean{
     //var image = image
@@ -86,11 +86,10 @@ var name = name
         
 
 
-    
                         if(!playnCoreImage!.isReady() || playnCoreImage!.width() +playnCoreImage!.height() <= 0)
                         
                                     {
-                                    this.handleTimeout(name)
+                                    this.this.handleTimeout(name)
 
 
 
@@ -101,17 +100,15 @@ var name = name
                                     }
                                 
 
-    
                         if(!image.isReady())
                         
                                     {
-                                    init(image.getImage())
+                                    image.init(image.getImage())
 
-    
                         if(!image.isReady())
                         
                                     {
-                                    put("Waiting for Not Ready Image: " +image.getName(), this, ISREADY)
+                                    PreLogUtil.put("Waiting for Not Ready Image: " +image.getName(), this, ISREADY)
 
                                     }
                                 
@@ -123,7 +120,7 @@ var name = name
         
         
 
-put(COMPLETE +image.getName(), this, commonStrings!.SUCCESS)
+PreLogUtil.put(COMPLETE +image.getName(), this, commonStrings!.SUCCESS)
 
 
 
@@ -133,14 +130,14 @@ put(COMPLETE +image.getName(), this, commonStrings!.SUCCESS)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public handleTimeout(name: string){
     //var name = name
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public waitForAll(){
 }

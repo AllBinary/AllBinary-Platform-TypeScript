@@ -45,7 +45,7 @@ public constructor ()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -57,11 +57,10 @@ var index = index
         
 
 
-    
                         if(collidableInterfaceCompositeInterface!.getCollidableInferface()!.isCollidable())
                         
                                     {
-                                    process(this.getLayerManager(), collidableInterfaceCompositeInterface, index)
+                                    AllBinaryCollisionManager.getInstance()!.process(this.getLayerManager(), collidableInterfaceCompositeInterface, index)
 
                                     }
                                 
@@ -71,7 +70,6 @@ var index = index
     public isProcessorLayer(layerInterface: AllBinaryLayer): boolean{
 var layerInterface = layerInterface
 
-    
                         if(layerInterface!.implmentsCollidableInterface())
                         
                                     {

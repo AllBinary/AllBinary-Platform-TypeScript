@@ -70,18 +70,18 @@ public constructor (){
 
 
     updateUrl(){
-this.updateHost()
+this.this.updateHost()
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
 
-append(this.getHost())
-append(this.getName())
-append(this.getUserNameKey())
-append(this.getUserName())
-append(this.getPasswordKey())
-append(this.getPassword())
+stringBuffer!.append(this.getHost())
+stringBuffer!.append(this.getName())
+stringBuffer!.append(this.getUserNameKey())
+stringBuffer!.append(this.getUserName())
+stringBuffer!.append(this.getPasswordKey())
+stringBuffer!.append(this.getPassword())
 this.url= stringBuffer!.toString()
 }
 
@@ -142,22 +142,21 @@ this.url= stringBuffer!.toString()
         
         
 
-append(this.getSchema())
-append(this.SCHEMA_SEP)
-append(this.getServer())
+stringBuffer!.append(this.getSchema())
+stringBuffer!.append(this.SCHEMA_SEP)
+stringBuffer!.append(this.getServer())
 
-    
                         if(this.getPort() != 
                                     null
                                  && this.getPort()!.length() > 1)
                         
                                     {
-                                    append(CommonSeps.getInstance()!.COLON)
-append(this.getPort())
+                                    stringBuffer!.append(CommonSeps.getInstance()!.COLON)
+stringBuffer!.append(this.getPort())
 
                                     }
                                 
-append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
 this.host= stringBuffer!.toString()
 }
 
@@ -211,42 +210,42 @@ this.jdbcDriver= value
     public setName(value: string){
 var value = value
 this.name= value
-this.updateUrl()
+this.this.updateUrl()
 }
 
 
     public setUserName(value: string){
 var value = value
 this.userName= value
-this.updateUrl()
+this.this.updateUrl()
 }
 
 
     public setPassword(value: string){
 var value = value
 this.password= value
-this.updateUrl()
+this.this.updateUrl()
 }
 
 
     public setSchema(value: string){
 var value = value
 this.schema= value
-this.updateUrl()
+this.this.updateUrl()
 }
 
 
     public setServer(value: string){
 var value = value
 this.server= value
-this.updateUrl()
+this.this.updateUrl()
 }
 
 
     public setPort(value: string){
 var value = value
 this.port= value
-this.updateUrl()
+this.this.updateUrl()
 }
 
 

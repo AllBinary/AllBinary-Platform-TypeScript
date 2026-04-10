@@ -82,7 +82,6 @@ this.quoteRequest= QuoteRequest(this.weblisketSession!.getUserName(), request)
         
 
 
-    
                         if(storeName != 
                                     null
                                 )
@@ -123,18 +122,17 @@ this.quoteRequest= QuoteRequest(this.weblisketSession!.getUserName(), request)
         
         
 
-insert(values)
+QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.insert(values)
 
     var success: string = "New QuoteRequest Successfully added to the QuoteRequest Table";
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "add()")
+                                    logUtil!.put(success, this, "add()")
 
                                     }
                                 
@@ -152,11 +150,10 @@ insert(values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "add()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "add()", e)
 
                                     }
                                 
@@ -179,18 +176,17 @@ insert(values)
         
         
 
-update(this.quoteRequest!.getUserName(), values)
+QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.update(this.quoteRequest!.getUserName(), values)
 
     var success: string = "New QuoteRequest Successfully updated";
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "update()")
+                                    logUtil!.put(success, this, "update()")
 
                                     }
                                 
@@ -208,11 +204,10 @@ update(this.quoteRequest!.getUserName(), values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
 
                                     }
                                 

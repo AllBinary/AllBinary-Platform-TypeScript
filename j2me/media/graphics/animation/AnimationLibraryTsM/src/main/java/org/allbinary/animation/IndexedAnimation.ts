@@ -59,8 +59,8 @@ this.animationBehaviorP= animationBehavior
 
 
     public reset(){
-reset()
-this.setFrame(0)
+this.animationBehaviorP!.reset()
+this.this.setFrame(0)
 }
 
 
@@ -79,13 +79,13 @@ this.setFrame(0)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAnimationSize(): number{
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -105,7 +105,6 @@ this.setFrame(0)
 
     public isLastFrame(): boolean{
 
-    
                         if(this.getFrame() == this.getSize() -1)
                         
                                     {
@@ -148,9 +147,9 @@ this.setFrame(0)
 
     public setState(indexedAnimation: IndexedAnimation){
     //var indexedAnimation = indexedAnimation
-this.setFrame(indexedAnimation!.getFrame())
-this.setDx(indexedAnimation!.getDx())
-this.setDy(indexedAnimation!.getDy())
+this.this.setFrame(indexedAnimation!.getFrame())
+this.this.setDx(indexedAnimation!.getDx())
+this.this.setDy(indexedAnimation!.getDy())
 }
 
 

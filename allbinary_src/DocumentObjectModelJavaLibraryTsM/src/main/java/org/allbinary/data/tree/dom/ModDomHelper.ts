@@ -48,7 +48,7 @@ export class ModDomHelper
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static createTextNode(document: Document, name: string, text: string): Node{
 var document = document
@@ -64,7 +64,7 @@ var text = text
         
         
 
-appendChild(newValueTextNode)
+newValueNode!.appendChild(newValueTextNode)
 
 
 
@@ -74,7 +74,7 @@ appendChild(newValueTextNode)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static createValueNode(document: Document, text: string): Node{
 var document = document
@@ -88,7 +88,7 @@ var text = text
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static createNameNode(document: Document, text: string): Node{
 var document = document
@@ -102,7 +102,7 @@ var text = text
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static createIndexNode(document: Document, index: number): Node{
 var document = document
@@ -117,7 +117,7 @@ var index = index
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static createNameValueNodes(document: Document, elementName: string, nameText: string, valueText: string): Node{
 var document = document
@@ -129,8 +129,8 @@ var valueText = valueText
         
         
 
-appendChild(ModDomHelper.createNameNode(document, nameText))
-appendChild(ModDomHelper.createValueNode(document, valueText))
+newNode!.appendChild(ModDomHelper.createNameNode(document, nameText))
+newNode!.appendChild(ModDomHelper.createValueNode(document, valueText))
 
 
 
@@ -140,7 +140,7 @@ appendChild(ModDomHelper.createValueNode(document, valueText))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static createNameValueNodes(document: Document, elementNameAndNameText: string, valueText: string): Node{
 var document = document
@@ -160,7 +160,7 @@ var valueText = valueText
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static createNameValueIndexNodes(document: Document, elementNameAndNameText: string, index: number, valueText: string): Node{
 var document = document
@@ -172,7 +172,7 @@ var valueText = valueText
         
         
 
-appendChild(ModDomHelper.createIndexNode(document, index))
+newNode!.appendChild(ModDomHelper.createIndexNode(document, index))
 
 
 
@@ -182,7 +182,7 @@ appendChild(ModDomHelper.createIndexNode(document, index))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static createNameValueNodes(document: Document, rootNode: string, hashMap: HashMap<Any, Any>): Node{
 var document = document
@@ -202,7 +202,7 @@ var hashMap = hashMap
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static createNameValueNodes(document: Document, node: Node, hashMap: HashMap<Any, Any>): Node{
 var document = document
@@ -255,7 +255,6 @@ i < size; i++)
         
 
 
-    
                         if(anyType == 
                                     null
                                 )
@@ -266,12 +265,11 @@ i < size; i++)
         
         
 
-appendChild(ModDomHelper.createNameValueNodes(document, name, value))
+node.appendChild(ModDomHelper.createNameValueNodes(document, name, value))
 
                                     }
                                 
                              else 
-    
                         if(anyType is String)
                         
                                     {
@@ -280,16 +278,15 @@ appendChild(ModDomHelper.createNameValueNodes(document, name, value))
         
         
 
-appendChild(ModDomHelper.createNameValueNodes(document, name, value))
+node.appendChild(ModDomHelper.createNameValueNodes(document, name, value))
 
                                     }
                                 
                              else 
-    
                         if(anyType is HashMap)
                         
                                     {
-                                    appendChild(ModDomHelper.createNameValueNodes(document, name, hashMap))
+                                    node.appendChild(ModDomHelper.createNameValueNodes(document, name, hashMap))
 
                                     }
                                 
@@ -297,7 +294,7 @@ appendChild(ModDomHelper.createNameValueNodes(document, name, value))
                             
 
 
-                            throw Exception("HashMap value is the wrong instance and is: " +ClassUtil.viewAll(anyType, CommonSeps.getInstance()!.NEW_LINE))
+                            throw Error("HashMap value is the wrong instance and is: " +ClassUtil.viewAll(anyType, CommonSeps.getInstance()!.NEW_LINE))
 
                         }
                             
@@ -312,7 +309,7 @@ appendChild(ModDomHelper.createNameValueNodes(document, name, value))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static createNameValueNodes(document: Document, rootNodeName: string, duplicateNodeName: string, valueVector: Vector): Node{
 var document = document
@@ -349,7 +346,7 @@ i < size; i++)
         
         
 
-appendChild(ModDomHelper.createNameValueNodes(document, duplicateNodeName, value))
+node.appendChild(ModDomHelper.createNameValueNodes(document, duplicateNodeName, value))
 }
 
 
@@ -361,7 +358,7 @@ appendChild(ModDomHelper.createNameValueNodes(document, duplicateNodeName, value
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static createNameValueIndexNodes(document: Document, rootNodeName: string, duplicateNodeName: string, valueVector: Vector): Node{
 var document = document
@@ -398,7 +395,7 @@ index < size; index++)
         
         
 
-appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeName, index, value))
+node.appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeName, index, value))
 }
 
 
@@ -410,7 +407,7 @@ appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeName, 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static createNodeWithValueNodes(document: Document, rootNode: string, hashMap: HashMap<Any, Any>): Node{
 var document = document
@@ -430,7 +427,7 @@ var hashMap = hashMap
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static createNodeWithValueNodes(document: Document, node: Node, hashMap: HashMap<Any, Any>): Node{
 var document = document
@@ -482,7 +479,7 @@ i < size; i++)
         
         
 
-appendChild(ModDomHelper.createTextNode(document, name, value))
+node.appendChild(ModDomHelper.createTextNode(document, name, value))
 }
 
 

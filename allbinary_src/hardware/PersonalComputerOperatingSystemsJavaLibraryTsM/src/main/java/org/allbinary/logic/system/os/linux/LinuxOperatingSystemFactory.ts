@@ -88,7 +88,6 @@ private constructor (){
     var operatingSystemInterface: GenericOperatingSystem
 
 
-    
                         if(osName!.compareTo(operatingSystems!.LINUX) == 0)
                         
                                     {
@@ -98,7 +97,6 @@ private constructor (){
                                 
                         else {
                             
-    
                         if(operatingSystems!.isUnknownSpecificOSAllowed())
                         
                                     {
@@ -110,7 +108,7 @@ private constructor (){
                             
 
 
-                            throw Exception("Specific Linux OS Not Supported: " +osName)
+                            throw Error("Specific Linux OS Not Supported: " +osName)
 
                         }
                             
@@ -126,7 +124,6 @@ private constructor (){
 } catch(e: Exception)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
                                     {
@@ -135,7 +132,7 @@ private constructor (){
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 

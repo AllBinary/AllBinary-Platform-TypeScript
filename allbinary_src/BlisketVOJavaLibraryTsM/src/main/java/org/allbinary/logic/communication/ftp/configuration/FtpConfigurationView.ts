@@ -51,7 +51,7 @@ public constructor (node: Node){
 
             super();
             var node = node
-this.setFtpConfigurationInterface(FtpConfiguration() as FtpConfigurationInterface)
+this.this.setFtpConfigurationInterface(FtpConfiguration() as FtpConfigurationInterface)
 
     var chileNodeList: NodeList = node.getChildNodes()!;
         
@@ -62,36 +62,36 @@ this.setFtpConfigurationInterface(FtpConfiguration() as FtpConfigurationInterfac
         
         
 
-setServer(server)
+this.getFtpConfigurationInterface()!.setServer(server)
 
     var userName: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.USERNAME, chileNodeList)!;
         
         
 
-setUserName(userName)
+this.getFtpConfigurationInterface()!.setUserName(userName)
 
     var password: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.PASSWORD, chileNodeList)!;
         
         
 
-setPassword(password)
+this.getFtpConfigurationInterface()!.setPassword(password)
 
     var path: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.PATH, chileNodeList)!;
         
         
 
-setPath(path)
+this.getFtpConfigurationInterface()!.setPath(path)
 }
 
 public constructor (ftpConfigurationInterface: FtpConfigurationInterface){
 
             super();
             var ftpConfigurationInterface = ftpConfigurationInterface
-this.setFtpConfigurationInterface(ftpConfigurationInterface)
+this.this.setFtpConfigurationInterface(ftpConfigurationInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

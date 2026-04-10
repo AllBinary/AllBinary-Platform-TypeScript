@@ -50,7 +50,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 var eventObject = eventObject
@@ -60,7 +60,7 @@ var eventListenerInterface = eventListenerInterface
         
         
 
-onDemoGameMidletEvent(eventObject as DemoGameMidletEvent)
+demoGameMidletEventListener!.onDemoGameMidletEvent(eventObject as DemoGameMidletEvent)
 }
 
 

@@ -211,11 +211,10 @@ var tableName = tableName
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(SAVING +tableName, this, this.METHOD_GET_OUTPUT_STREAM)
+                                    logUtil!.put(SAVING +tableName, this, this.METHOD_GET_OUTPUT_STREAM)
 
                                     }
                                 
@@ -230,16 +229,15 @@ var tableName = tableName
         
 
 
-    
                         if(backupFile!.exists())
                         
                                     {
                                     backupFile(backupFilePath, backupPath, tableName)
-delete()
+backupFile!.delete()
 
                                     }
                                 
-createNewFile()
+backupFile!.createNewFile()
 
     var outputStream: OutputStream = new AbFileOutputStream(backupFile);
         
@@ -254,11 +252,10 @@ createNewFile()
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    put("Create File", this, this.METHOD_GET_OUTPUT_STREAM, e)
+                                    logUtil!.put("Create File", this, this.METHOD_GET_OUTPUT_STREAM, e)
 
                                     }
                                 
@@ -305,36 +302,35 @@ var tableName = tableName
         
         
 
-append(backupPath)
-append(AbPathData.getInstance()!.SEPARATOR)
-append(time)
+stringBuffer!.append(backupPath)
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.append(time)
 
     var backupAbPath: AbPath = new AbPath(stringBuffer!.toString());
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-append(SAVING_BACKUP_PATH)
-append(backupAbPath!.toFileSystemString())
-append(FILE_LABEL)
-append(fileName)
-put(stringBuffer!.toString(), this, this.METHOD_BACKUP_FILE)
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(SAVING_BACKUP_PATH)
+stringBuffer!.append(backupAbPath!.toFileSystemString())
+stringBuffer!.append(FILE_LABEL)
+stringBuffer!.append(fileName)
+logUtil!.put(stringBuffer!.toString(), this, this.METHOD_BACKUP_FILE)
 
                                     }
                                 
-create(backupAbPath)
+Directory.create(backupAbPath)
 
     var backupFileBak: AbFile = new AbFile(backupAbPath!.toFileSystemString());
         
         
 
-createNewFile()
-copy(path, backupAbPath)
+backupFileBak!.createNewFile()
+FileUtil.getInstance()!.copy(path, backupAbPath)
 
 
 
@@ -344,11 +340,10 @@ copy(path, backupAbPath)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.EXCEPTION, this, this.METHOD_BACKUP_FILE, e)
+                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_BACKUP_FILE, e)
 
                                     }
                                 
@@ -385,7 +380,6 @@ var value = value
         {
 index= value.indexOf(specialCharArray[0]!, lastIndex)
 
-    
                         if(index !=  -1)
                         
                                     {
@@ -394,8 +388,8 @@ index= value.indexOf(specialCharArray[0]!, lastIndex)
         
         
 
-append(nextLine)
-append(NEW_LINE)
+stringBuffer!.append(nextLine)
+stringBuffer!.append(NEW_LINE)
 lastIndex= index +1
 
                                     }
@@ -410,11 +404,10 @@ lastIndex= index +1
 }
 
 
-    
                         if(lastIndex < value.length)
                         
                                     {
-                                    append(value.substring(lastIndex, value.length))
+                                    stringBuffer!.append(value.substring(lastIndex, value.length))
 
                                     }
                                 
@@ -453,16 +446,14 @@ var abSqlTable = abSqlTable
         
 
 
-    
                         if(!Directory.create(AbPath(path)))
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(ERROR_CREATING +path, this, this.METHOD_BACKUP_TABLE)
+                                    logUtil!.put(ERROR_CREATING +path, this, this.METHOD_BACKUP_TABLE)
 
                                     }
                                 
@@ -503,8 +494,8 @@ var abSqlTable = abSqlTable
 
         while(rset.next())
         {
-delete(0, stringBuffer!.length())
-append(QUERY_START)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(QUERY_START)
 
 
 
@@ -520,30 +511,29 @@ i < colNum; i++)
         
         
 
-append(this.convertNewLines(value))
-append(this.sqlStrings!.SINGLE_QUOTE_COMMA_SEP)
+stringBuffer!.append(this.convertNewLines(value))
+stringBuffer!.append(this.sqlStrings!.SINGLE_QUOTE_COMMA_SEP)
 }
 
-append(rset.getString(colNum))
-append(END)
+stringBuffer!.append(rset.getString(colNum))
+stringBuffer!.append(END)
 
     var sqlStatementLine: string = stringBuffer!.toString()!;
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(APPENDING +sqlStatementLine, this, this.METHOD_BACKUP_TABLE)
+                                    logUtil!.put(APPENDING +sqlStatementLine, this, this.METHOD_BACKUP_TABLE)
 
                                     }
                                 
-write(sqlStatementLine!.encodeToByteArray())
+outputStream!.write(sqlStatementLine!.encodeToByteArray())
 }
 
-close(outputStream)
+StreamUtil.getInstance()!.close(outputStream)
 
 
 
@@ -553,11 +543,10 @@ close(outputStream)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    put("Backup Table Failed\nSQL Statement", this, this.METHOD_BACKUP_TABLE, e)
+                                    logUtil!.put("Backup Table Failed\nSQL Statement", this, this.METHOD_BACKUP_TABLE, e)
 
                                     }
                                 
@@ -594,21 +583,18 @@ var portion = portion
         
 
 
-    
                         if(current == 0)
                         
                                     {
                                     
-    
                         if(Directory.create(AbPath(path)))
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.ERROR_CREATING +path, this, this.METHOD_RESTORE_TABLE)
+                                    logUtil!.put(this.ERROR_CREATING +path, this, this.METHOD_RESTORE_TABLE)
 
                                     }
                                 
@@ -649,7 +635,6 @@ var portion = portion
         
 
 
-    
                         if(end > size)
                         
                                     {
@@ -662,22 +647,21 @@ var portion = portion
         
         
 
-append(TOTAL_LABEL)
-append(size)
-append(SECTION_LABEL)
-append(start)
-append(DASH)
-append(end)
+stringBuffer!.append(TOTAL_LABEL)
+stringBuffer!.append(size)
+stringBuffer!.append(SECTION_LABEL)
+stringBuffer!.append(start)
+stringBuffer!.append(DASH)
+stringBuffer!.append(end)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(stringBuffer!.toString(), this, this.METHOD_RESTORE_TABLE)
+                                    logUtil!.put(stringBuffer!.toString(), this, this.METHOD_RESTORE_TABLE)
 
                                     }
                                 
-readUpToLines(start)
+bufferedLineReader!.readUpToLines(start)
 
     var line: string = this.stringUtil!.EMPTY_STRING;
         
@@ -689,20 +673,19 @@ readUpToLines(start)
                                 )
         {
 
-    
                         if(line.length > 1)
                         
                                     {
-                                    executeSQLStatement(line)
+                                    abSqlTable!.executeSQLStatement(line)
 
                                     }
                                 
 }
 
-append(this.commonSeps!.SPACE)
-append(this.TABLE_LABEL)
-append(tableName)
-append(PORTION_RESTORED)
+stringBuffer!.append(this.commonSeps!.SPACE)
+stringBuffer!.append(this.TABLE_LABEL)
+stringBuffer!.append(tableName)
+stringBuffer!.append(PORTION_RESTORED)
 
 
 
@@ -712,11 +695,10 @@ append(PORTION_RESTORED)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    put("Restore Table Failed\nSQL Statement", this, this.METHOD_RESTORE_TABLE, e)
+                                    logUtil!.put("Restore Table Failed\nSQL Statement", this, this.METHOD_RESTORE_TABLE, e)
 
                                     }
                                 
@@ -725,9 +707,9 @@ append(PORTION_RESTORED)
         
         
 
-append(TABLE_LABEL)
-append(tableName)
-append(" Restoration Failed")
+stringBuffer!.append(TABLE_LABEL)
+stringBuffer!.append(tableName)
+stringBuffer!.append(" Restoration Failed")
 
 
 

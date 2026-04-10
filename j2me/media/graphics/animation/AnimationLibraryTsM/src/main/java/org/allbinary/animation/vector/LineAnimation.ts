@@ -57,7 +57,7 @@ public constructor (basicColor: BasicColor){
 
             super();
             var basicColor = basicColor
-this.setBasicColorP(basicColor)
+this.this.setBasicColorP(basicColor)
 }
 
 
@@ -97,8 +97,8 @@ var y = y
         
         
 
-setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
-drawLine(currentLine[0]![0]!, currentLine[0]![1]!, currentLine[1]![0]!, currentLine[1]![1]!)
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
+graphics.drawLine(currentLine[0]![0]!, currentLine[0]![1]!, currentLine[1]![0]!, currentLine[1]![1]!)
 }
 
 

@@ -53,11 +53,11 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTable(tableName)
+this.this.setTable(tableName)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getStoreFrontInterface(name: string): BasicStoreFrontInterface{
 var name = name
@@ -66,25 +66,23 @@ var name = name
         
         
 
-put(StoreFrontData.getInstance()!.NAME, name)
+keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name)
 
     var storeHashMap: HashMap<Any, Any> = super.getRow(keysAndValues)!;
         
         
 
 
-    
                         if(storeHashMap == 
                                     null
                                 )
                         
-                                    throw Exception("No Such Store: " +name)
+                                    throw Error("No Such Store: " +name)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
                                     {
-                                    put("StoreFront: " +storeHashMap!.toString(), this, "getStore()")
+                                    logUtil!.put("StoreFront: " +storeHashMap!.toString(), this, "getStore()")
 
                                     }
                                 

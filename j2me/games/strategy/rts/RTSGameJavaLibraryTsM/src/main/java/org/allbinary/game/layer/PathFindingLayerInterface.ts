@@ -37,7 +37,7 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 interface PathFindingLayerInterface extends WaypointLayerInterface, GameKeyEventSourceInterface, GroupInterfaceCompositeInterface, DestroyableInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getEndGeographicMapCellPositionList(): BasicArrayList
 
@@ -47,7 +47,7 @@ interface PathFindingLayerInterface extends WaypointLayerInterface, GameKeyEvent
 
     getHudPaintable(): SelectionHudPaintable
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     handleCost(ownerLayer: PathFindingLayerInterface)
 
@@ -55,7 +55,7 @@ interface PathFindingLayerInterface extends WaypointLayerInterface, GameKeyEvent
 
     getRTSLayer2LogHelper(): RTSLayer2LogHelper
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     setTarget(targetGameLayer: PathFindingLayerInterface)
 

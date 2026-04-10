@@ -28,7 +28,7 @@ import { Input } from "../../../../../org/allbinary/game/input/Input.js";
 interface InputMappingInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(gameKey: GameKey, input: Input)
 

@@ -61,7 +61,7 @@ export class CommandUriAction
     public add(command: Command, url: string){
 var command = command
 var url = url
-put(command, url)
+hashtable.put(command, url)
 }
 
 
@@ -71,7 +71,7 @@ var command = command
         try {
             } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
 }
 
 }

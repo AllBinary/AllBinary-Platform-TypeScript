@@ -66,11 +66,10 @@ private constructor (){
     public addListener(analogControllerConfigurationEventListenerInterface: AnalogControllerConfigurationEventListenerInterface){
 var analogControllerConfigurationEventListenerInterface = analogControllerConfigurationEventListenerInterface
 
-    
                         if(!list.contains(analogControllerConfigurationEventListenerInterface))
                         
                                     {
-                                    add(analogControllerConfigurationEventListenerInterface)
+                                    list.add(analogControllerConfigurationEventListenerInterface)
 
                                     }
                                 
@@ -78,19 +77,19 @@ var analogControllerConfigurationEventListenerInterface = analogControllerConfig
 
 
     public removeAllListeners(){
-clear()
-removeAllListeners()
+this.list.clear()
+super.removeAllListeners()
 }
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-remove(eventListenerInterface)
-removeListener(eventListenerInterface)
+this.list.remove(eventListenerInterface)
+super.removeListener(eventListenerInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fireEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
@@ -111,19 +110,19 @@ var eventObject = eventObject
         
         
 
-onAnalogControllerConfigurationEvent(eventObject as AnalogControllerConfigurationEvent)
+playerGameInput!.onAnalogControllerConfigurationEvent(eventObject as AnalogControllerConfigurationEvent)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
 }
 
 }
 
-fireEvent(eventObject)
+super.fireEvent(eventObject)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject
@@ -133,7 +132,7 @@ fireEvent(eventObject)
         
         
 
-onAnalogControllerConfigurationEvent(eventObject as AnalogControllerConfigurationEvent)
+analogControllerConfigurationEventListenerInterface!.onAnalogControllerConfigurationEvent(eventObject as AnalogControllerConfigurationEvent)
 }
 
 

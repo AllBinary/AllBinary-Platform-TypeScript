@@ -59,7 +59,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public addDomNodeInterfaces(){
 
@@ -67,23 +67,23 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
         
 
-process()
+paymentProcessorInterface!.process()
 
     var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
         
         
 
-removeBasket()
-this.addDomNodeInterface(paymentProcessorInterface as DomNodeInterface)
+httpTransformInfoInterface!.getWeblisketSession()!.removeBasket()
+this.this.addDomNodeInterface(paymentProcessorInterface as DomNodeInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.this.addDomNodeInterfaces()
 
 
 
@@ -93,11 +93,10 @@ this.addDomNodeInterface(paymentProcessorInterface as DomNodeInterface)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 

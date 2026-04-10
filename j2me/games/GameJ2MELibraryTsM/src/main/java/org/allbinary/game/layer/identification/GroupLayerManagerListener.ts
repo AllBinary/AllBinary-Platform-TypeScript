@@ -91,7 +91,7 @@ export class GroupLayerManagerListener extends LayerManagerEventListener {
 private constructor (){
 
             super();
-            addListener(this)
+            LayerManagerEventHandler.getInstance()!.addListener(this)
 }
 
 
@@ -115,7 +115,7 @@ private constructor (){
 index >= 0; index--)
         {
 groupList= this.list.objectArray[index]! as BasicArrayList
-clear()
+groupList!.clear()
 }
 
 }
@@ -229,7 +229,6 @@ clear()
 index >= 0; index--)
         {
 
-    
                         if(id != index)
                         
                                     {
@@ -239,11 +238,10 @@ index >= 0; index--)
         
 
 
-    
                         if(groupSize != 0)
                         
                                     {
-                                    put(StringMaker().
+                                    logUtil!.put(StringMaker().
                             append("Group Size: ")!.appendint(groupSize)!.toString(), this, "areAllOtherGroupsEmpty")
 
 
@@ -315,7 +313,6 @@ index2 < size2; index2++)
 groupInterface= groupInterfaceArray[index2]!
 groupId= groupInterface!.getGroupId().toInt()
 
-    
                         if(groupId == id)
                         
                                     {
@@ -360,7 +357,6 @@ groupId= groupInterface!.getGroupId().toInt()
 index >= 0; index--)
         {
 
-    
                         if(!this.isIdInList(index, excludeGroupList))
                         
                                     {
@@ -370,7 +366,6 @@ index >= 0; index--)
         
 
 
-    
                         if(groupSize >= maxSize)
                         
                                     {
@@ -402,7 +397,7 @@ var total = total
 
         while(this.list.size() <= total +1)
         {
-add(BasicArrayList())
+this.list.add(BasicArrayList())
 }
 
 }
@@ -410,11 +405,11 @@ add(BasicArrayList())
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onCreateLayerManagerEvent(layerManagerEvent: LayerManagerEvent){
     //var layerManagerEvent = layerManagerEvent
@@ -453,23 +448,21 @@ index < size; index++)
 id= groupInterfaceArray[index]!.getGroupId().toInt()
 groupList= this.list.objectArray[id]! as BasicArrayList
 
-    
                         if(groupList == 
                                     null
                                 )
                         
                                     {
-                                    put(StringMaker().
+                                    logUtil!.put(StringMaker().
                             append("id: ")!.appendint(id)!.toString(), this, "onCreateLayerManagerEvent")
 
                                     }
                                 
 
-    
                         if(!groupList!.contains(layerInterface))
                         
                                     {
-                                    add(layerInterface)
+                                    groupList!.add(layerInterface)
 
                                     }
                                 
@@ -482,7 +475,7 @@ groupList= this.list.objectArray[id]! as BasicArrayList
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onDeleteLayerManagerEvent(layerManagerEvent: LayerManagerEvent){
     //var layerManagerEvent = layerManagerEvent
@@ -520,7 +513,7 @@ index < size; index++)
         {
 id= groupInterfaceArray[index]!.getGroupId().toInt()
 groupList= this.list.objectArray[id]! as BasicArrayList
-remove(layerInterface)
+groupList!.remove(layerInterface)
 }
 
 }
@@ -567,15 +560,15 @@ index >= 0; index--)
         
         
 
-append(GROUP)
-appendint(index)
-append(SPACE)
-append(TOTAL_LABEL)
-appendint(groupList!.size())
-append(SPACE)
+stringBuffer!.append(GROUP)
+stringBuffer!.appendint(index)
+stringBuffer!.append(SPACE)
+stringBuffer!.append(TOTAL_LABEL)
+stringBuffer!.appendint(groupList!.size())
+stringBuffer!.append(SPACE)
 }
 
-put(stringBuffer!.toString(), this, "log")
+logUtil!.put(stringBuffer!.toString(), this, "log")
 }
 
 

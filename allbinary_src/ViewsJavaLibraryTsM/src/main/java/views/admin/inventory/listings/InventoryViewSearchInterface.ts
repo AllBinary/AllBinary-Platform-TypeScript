@@ -22,19 +22,19 @@
 interface InventoryViewSearchInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public searchSingleStaticPage(): string
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public searchSingleDynamicPage(): string
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public search(): string[]
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getProduct(product: string): string
 

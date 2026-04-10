@@ -184,7 +184,7 @@ protected constructor (name: string, remoteInfo: RemoteInfo, multiPlayerType: nu
                             //For kotlin this is before the body of the constructor.
                     
 this.initAnimationInterface= animationInterface
-this.setAnimationInterface(animationInterface)
+this.this.setAnimationInterface(animationInterface)
 this.destroyedAnimationInterface= destroyedAnimationInterface
 this.movement= movement
 this.multiPlayerType= multiPlayerType
@@ -197,12 +197,12 @@ this.multiPlayerType= multiPlayerType
 
     public setCollidableInferface(collidableInferface: CollidableBaseBehavior){
 var collidableInferface = collidableInferface
-setCollidableInferface(collidableInferface)
+super.setCollidableInferface(collidableInferface)
 this.collidableWeaponBehavior= this.getCollidableInferface() as CollidableWeaponBehavior
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(x: number, y: number, z: number){
 var x = x
@@ -214,7 +214,7 @@ this.z= z
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(sourceLayerInterface: AllBinaryLayer, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreable: ScoreableInterface){
 var sourceLayerInterface = sourceLayerInterface
@@ -222,14 +222,13 @@ var angle = angle
 var otherAngle = otherAngle
 var weaponProperties = weaponProperties
 var scoreable = scoreable
-this.setWeaponPropertiesP(weaponProperties)
-this.setReadyForExplosion(false)
-this.setAnimationInterface(this.getInitAnimationInterfaceP())
-this.setOwnerLayerInterface(sourceLayerInterface)
-init(sourceLayerInterface)
-this.setGroupInterface()
+this.this.setWeaponPropertiesP(weaponProperties)
+this.this.setReadyForExplosion(false)
+this.this.setAnimationInterface(this.getInitAnimationInterfaceP())
+this.this.setOwnerLayerInterface(sourceLayerInterface)
+this.collidableWeaponBehavior!.init(sourceLayerInterface)
+this.this.setGroupInterface()
 
-    
                         if(scoreable != 
                                     null
                                 )
@@ -241,8 +240,8 @@ this.setGroupInterface()
                                 
 this.totalDamage= 0
 this.initDamage= weaponProperties!.getDamage()
-this.setDestroyed(false)
-init(weaponProperties!.getSpeed(), angle, otherAngle)
+this.this.setDestroyed(false)
+this.movement.init(weaponProperties!.getSpeed(), angle, otherAngle)
 }
 
 
@@ -253,33 +252,30 @@ init(weaponProperties!.getSpeed(), angle, otherAngle)
         
 
 
-    
                         if(sourceLayerInterface!.getGroupInterface()[0] == basicGroupFactory!.ENEMY)
                         
                                     {
-                                    this.setGroupInterface(basicGroupFactory!.ENEMY_ARRAY)
+                                    this.this.setGroupInterface(basicGroupFactory!.ENEMY_ARRAY)
 
                                     }
                                 
                         else {
-                            this.setGroupInterface(sourceLayerInterface!.getGroupInterface())
+                            this.this.setGroupInterface(sourceLayerInterface!.getGroupInterface())
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
-    
                         if(this.isExhausted() && !this.isDestroyed())
                         
                                     {
                                     
-    
                         if(this.isReadyForExplosion())
                         
                                     {
@@ -294,16 +290,15 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 
 
-    
                         if(currentFrame < indexedAnimationInterface!.getAnimationSize() -1)
                         
                                     {
-                                    nextFrame()
+                                    indexedAnimationInterface!.nextFrame()
 
                                     }
                                 
                         else {
-                            this.setDestroyed(true)
+                            this.this.setDestroyed(true)
 
                         }
                             
@@ -317,18 +312,17 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 
 
-    
                         if(collidableWeaponBehavior!.isCollided())
                         
                                     {
-                                    this.setAnimationInterface(this.destroyedAnimationInterface)
-stop()
-this.setReadyForExplosion(true)
+                                    this.this.setAnimationInterface(this.destroyedAnimationInterface)
+this.getMovement()!.stop()
+this.this.setReadyForExplosion(true)
 
                                     }
                                 
                         else {
-                            this.setDestroyed(true)
+                            this.this.setDestroyed(true)
 
                         }
                             
@@ -338,7 +332,7 @@ this.setReadyForExplosion(true)
 
                                     }
                                 
-process(this)
+this.movement.process(this)
 this.totalDamage += this.weaponProperties!.getDissipation()
 }
 
@@ -362,13 +356,12 @@ this.totalDamage += damage *damage
 
     givePoints(total: number){
 var total = total
-addPoints(GameConfigurationUtil.getInstance()!.getCompetitionValue() *total)
+scoreableInterface!.addPoints(GameConfigurationUtil.getInstance()!.getCompetitionValue() *total)
 }
 
 
     isExhausted(): boolean{
 
-    
                         if(this.totalDamage > this.getInitDamage() || this.totalDamage < 0)
                         
                                     {
@@ -397,7 +390,6 @@ addPoints(GameConfigurationUtil.getInstance()!.getCompetitionValue() *total)
     public getDamage(damageType: number): number{
 var damageType = damageType
 
-    
                         if(!this.isExhausted())
                         
                                     {
@@ -406,7 +398,7 @@ var damageType = damageType
         
         
 
-this.givePoints(total)
+this.this.givePoints(total)
 
 
 
@@ -429,12 +421,11 @@ this.givePoints(total)
 var destroyed = destroyed
 this.destroyed= destroyed
 
-    
                         if(this.isDestroyed())
                         
                                     {
                                     this.scoreableInterface= NoScoreable.getInstance()
-add(this)
+DestroyedLayerProcessor.getInstance()!.add(this)
 
                                     }
                                 
@@ -516,7 +507,7 @@ var graphics = graphics
         
         
 
-paint(graphics, viewPosition!.getX() -this.getHalfWidth(), viewPosition!.getY() -this.getHalfHeight())
+this.animationInterface!.paint(graphics, viewPosition!.getX() -this.getHalfWidth(), viewPosition!.getY() -this.getHalfHeight())
 }
 
 
@@ -527,7 +518,7 @@ var graphics = graphics
         
         
 
-paintThreed(graphics, viewPosition!.getX() -this.getHalfWidth(), viewPosition!.getY() -this.getHalfHeight(), viewPosition!.getZ() -this.getHalfDepth())
+this.animationInterface!.paintThreed(graphics, viewPosition!.getX() -this.getHalfWidth(), viewPosition!.getY() -this.getHalfHeight(), viewPosition!.getZ() -this.getHalfDepth())
 }
 
 
@@ -593,11 +584,11 @@ this.weaponProperties= weaponProperties
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public set(gl: GL){
 var gl = gl
-set(gl)
+this.initAnimationInterface!.set(gl)
 }
 
 

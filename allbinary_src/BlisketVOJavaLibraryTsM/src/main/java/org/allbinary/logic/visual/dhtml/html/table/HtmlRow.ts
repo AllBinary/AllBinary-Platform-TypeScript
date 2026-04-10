@@ -69,7 +69,7 @@ this.htmlCellsVector= Vector()
 
     public addCell(htmlCell: HtmlCell){
 var htmlCell = htmlCell
-add(htmlCell)
+this.htmlCellsVector!.add(htmlCell)
 this.numberOfColumns++
 }
 
@@ -135,7 +135,6 @@ i < attributeSize; i++)
         
 
 
-    
                         if(value != 
                                     null
                                  && value.compareTo(stringUtil!.EMPTY_STRING) != 0)

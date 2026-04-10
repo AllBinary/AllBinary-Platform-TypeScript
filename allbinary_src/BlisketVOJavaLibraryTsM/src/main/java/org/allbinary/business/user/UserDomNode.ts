@@ -58,7 +58,7 @@ this.dataMappingInterface= dataMappingInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -72,9 +72,9 @@ var document = document
         
         
 
-put(EntryData.getInstance()!.LASTMODIFIED, EMPTY_STRING)
-put(EntryData.getInstance()!.ENCRYPTION, EMPTY_STRING)
-put(UserData.PASSWORD, EMPTY_STRING)
+hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, EMPTY_STRING)
+hashMap!.put(EntryData.getInstance()!.ENCRYPTION, EMPTY_STRING)
+hashMap!.put(UserData.PASSWORD, EMPTY_STRING)
 
 
 
@@ -84,7 +84,7 @@ put(UserData.PASSWORD, EMPTY_STRING)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlDoc(): Document{
 
@@ -96,7 +96,7 @@ put(UserData.PASSWORD, EMPTY_STRING)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 

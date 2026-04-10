@@ -31,20 +31,19 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 export class PCGameInputMapping extends PersistentInputMapping {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-put(this.commonStrings!.START, this, this.commonStrings!.INIT)
-getInstance()
-init(abeClientInformation)
+logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.INIT)
+PCKeyFactory.getInstance()
+super.init(abeClientInformation)
 
-    
                         if(this.getTotalMapped() == 0 || this.isDefaultNew())
                         
                                     {
-                                    add(this.getDefault())
-this.save(abeClientInformation)
+                                    this.getInputMapping()!.add(this.getDefault())
+this.this.save(abeClientInformation)
 
                                     }
                                 
@@ -54,7 +53,6 @@ this.save(abeClientInformation)
     public isDelete(input: Input): boolean{
 var input = input
 
-    
                         if(input == PCKeyFactory.getInstance()!.DEL)
                         
                                     {

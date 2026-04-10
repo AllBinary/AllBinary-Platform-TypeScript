@@ -30,11 +30,11 @@ interface ShippingMethodsInterface {
 
     public get(): Vector
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getShippingInterface(name: string): ShippingInterface
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDefault(): ShippingInterface
 

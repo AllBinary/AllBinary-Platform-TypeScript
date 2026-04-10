@@ -56,11 +56,10 @@ var currentIndex = currentIndex
 var x = x
 var y = y
 
-    
                         if(LockedUtil.getInstance()!.isLockedFeature() && currentIndex >= this.getLockedIndex())
                         
                                     {
-                                    paint(graphics, x, y)
+                                    this.getAnimation()!.paint(graphics, x, y)
 
                                     }
                                 

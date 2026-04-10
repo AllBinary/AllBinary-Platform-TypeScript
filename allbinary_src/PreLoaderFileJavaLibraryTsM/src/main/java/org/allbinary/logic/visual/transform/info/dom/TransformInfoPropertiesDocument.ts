@@ -108,11 +108,10 @@ this.document= DomDocumentFileHelper.create(xmlFile)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Size: " +transformInfoNodeVector!.length, this, "toTransformInfoPropertiesHashMap()")
+                                    logUtil!.put("Size: " +transformInfoNodeVector!.length, this, "toTransformInfoPropertiesHashMap()")
 
                                     }
                                 
@@ -139,7 +138,7 @@ index < size; index++)
         {
 node= transformInfoNodeVector!.get(index) as Node
 transformInfoProperties= TransformInfoPropertiesFactory.getInstance()!.getInstance(node)
-put(transformInfoProperties!.getName(), transformInfoProperties)
+transformInfoPropertiesHashMap!.put(transformInfoProperties!.getName(), transformInfoProperties)
 }
 
 
@@ -151,7 +150,6 @@ put(transformInfoProperties!.getName(), transformInfoProperties)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
@@ -160,7 +158,7 @@ put(transformInfoProperties!.getName(), transformInfoProperties)
         
         
 
-put(commonStrings!.EXCEPTION, this, "toTransformInfoPropertiesHashMap()", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "toTransformInfoPropertiesHashMap()", e)
 
                                     }
                                 

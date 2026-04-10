@@ -24,7 +24,7 @@ export class PoolInterfaceFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface, poolType: PoolType, cachePolicy: CachePolicy): PoolInterface{
 var cacheableInterfaceFactoryInterface = cacheableInterfaceFactoryInterface
@@ -33,7 +33,7 @@ var cachePolicy = cachePolicy
 
 
 
-                            throw Exception("No Such PoolType: " +poolType!.toString())
+                            throw Error("No Such PoolType: " +poolType!.toString())
 }
 
 private constructor (){

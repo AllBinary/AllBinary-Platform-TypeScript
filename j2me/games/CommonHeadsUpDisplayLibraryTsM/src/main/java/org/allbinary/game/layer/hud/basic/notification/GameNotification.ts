@@ -66,13 +66,12 @@ var string = string
 var seconds = seconds
 var basicColor = basicColor
 
-    
                         if(!this.stringList!.contains(string))
                         
                                     {
-                                    add(string)
-add(seconds)
-add(basicColor)
+                                    this.stringList!.add(string)
+this.timeList!.add(seconds)
+this.colorList!.add(basicColor)
 
                                     }
                                 
@@ -80,9 +79,9 @@ add(basicColor)
 
 
     public clear(){
-clear()
-clear()
-clear()
+this.stringList!.clear()
+this.timeList!.clear()
+this.colorList!.clear()
 }
 
 

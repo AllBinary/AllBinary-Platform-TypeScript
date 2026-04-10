@@ -121,7 +121,6 @@ this.rtsInterface= rtsInterface
         
 
 
-    
                         if(image != NullCanvas.NULL_IMAGE)
                         
                                     {
@@ -134,7 +133,7 @@ this.adjustedCostY=  -yOffset +imageHeight -(2 *DEFAULT_CHAR_HEIGHT)
 this.adjustedCostX= 2 +(DOLLAR.length *(DEFAULT_CHAR_HEIGHT -1))
 this.adjustedLevelY=  -yOffset +imageHeight -DEFAULT_CHAR_HEIGHT
 this.adjustedLevelX= 2 +(LEVEL.length *(DEFAULT_CHAR_HEIGHT -1))
-this.update()
+this.this.update()
 }
 
 
@@ -158,17 +157,17 @@ this.levelString= this.primitiveLongUtil!.getCharArray(this.getRtsInterface()!.g
 var graphics = graphics
 var x = x
 var y = y
-paint(graphics, x, y)
+super.paint(graphics, x, y)
 
     var xa: number = x +2;
         
         
 
-drawString(COST, xa, y +this.adjustedCostLabelY, 0)
-drawString(DOLLAR, xa, y +this.adjustedCostY, 0)
-drawChars(costString, 0, this.costLength, x +this.adjustedCostX, y +this.adjustedCostY, 0)
-drawString(LEVEL, xa, y +this.adjustedLevelY, 0)
-drawChars(levelString, 0, this.levelLength, x +this.adjustedLevelX, y +this.adjustedLevelY, 0)
+graphics.drawString(COST, xa, y +this.adjustedCostLabelY, 0)
+graphics.drawString(DOLLAR, xa, y +this.adjustedCostY, 0)
+graphics.drawChars(costString, 0, this.costLength, x +this.adjustedCostX, y +this.adjustedCostY, 0)
+graphics.drawString(LEVEL, xa, y +this.adjustedLevelY, 0)
+graphics.drawChars(levelString, 0, this.levelLength, x +this.adjustedLevelX, y +this.adjustedLevelY, 0)
 }
 
 

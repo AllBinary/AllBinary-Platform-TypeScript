@@ -37,7 +37,7 @@ export class LoggingInitInfo
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static write(){
@@ -55,7 +55,7 @@ export class LoggingInitInfo
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     static read(){
@@ -79,19 +79,17 @@ LoggingInitInfo.hasRead= value
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     static updateIfNeeded(){
 
-    
                         if(!hasRead)
                         
                                     {
-                                    read()
+                                    LoggingInitInfo.read()
 hasRead= true
 
-    
                         if(LoggingInitInfo.logConfigInfoList == 
                                     null
                                 )
@@ -100,7 +98,7 @@ hasRead= true
                                     
 
 
-                            throw Exception("Read Failed")
+                            throw Error("Read Failed")
 
                                     }
                                 
@@ -117,10 +115,10 @@ LoggingInitInfo.logConfigInfoList= logConfigInfoList
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static get(): BasicArrayList{
-updateIfNeeded()
+LoggingInitInfo.updateIfNeeded()
 
 
 
@@ -130,10 +128,10 @@ updateIfNeeded()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getTypeList(): BasicArrayList{
-updateIfNeeded()
+LoggingInitInfo.updateIfNeeded()
 
     var allLogTypeVector: BasicArrayList = new BasicArrayList();
         
@@ -165,11 +163,10 @@ index < size; index++)
         
 
 
-    
                         if(logConfigInfo!.isEnabled())
                         
                                     {
-                                    addAll(logTypeVector)
+                                    allLogTypeVector!.addAll(logTypeVector)
 
                                     }
                                 
@@ -211,7 +208,7 @@ public constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getNumberOfLogConfigs(): number{
 

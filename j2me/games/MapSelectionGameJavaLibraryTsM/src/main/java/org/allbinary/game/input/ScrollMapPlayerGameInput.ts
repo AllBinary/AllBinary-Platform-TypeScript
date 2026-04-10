@@ -92,10 +92,10 @@ var playerInputId = playerInputId
 
                             //For kotlin this is before the body of the constructor.
                     
-this.initInputProcessors()
+this.this.initInputProcessors()
 this.geographicMapInterface= geographicMapInterface
 this.inputList= list
-this.init()
+this.this.init()
 }
 
 
@@ -103,7 +103,7 @@ this.init()
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     move(dx: number, dy: number){
 var dx = dx
@@ -113,9 +113,9 @@ var dy = dy
         
         
 
-move( -dx,  -dy)
-setDxDy( -dx,  -dy)
-fireEvent(scrollMapEvent)
+terrainTiledLayer!.move( -dx,  -dy)
+scrollMapEvent!.setDxDy( -dx,  -dy)
+ScrollMapEventHandler.getInstance()!.fireEvent(scrollMapEvent)
 }
 
 
@@ -125,7 +125,7 @@ this.maxRight= this.getSpecialWidth()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public scrollMiddleX(){
 
@@ -138,9 +138,8 @@ this.maxRight= this.getSpecialWidth()
         
         
 
-this.move( -terrainTiledLayer!.getXP(), 0)
+this.this.move( -terrainTiledLayer!.getXP(), 0)
 
-    
                         if(terrainTiledLayer!.getWidth() < displayInfo!.getLastWidth())
                         
                                     {
@@ -149,7 +148,7 @@ this.move( -terrainTiledLayer!.getXP(), 0)
         
         
 
-this.move( -diffX, 0)
+this.this.move( -diffX, 0)
 
                                     }
                                 
@@ -159,14 +158,14 @@ this.move( -diffX, 0)
         
         
 
-this.move(diffX, 0)
+this.this.move(diffX, 0)
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public scrollY(anchor: number){
 var anchor = anchor
@@ -181,41 +180,38 @@ var anchor = anchor
         
 
 
-    
                         if(anchor == Graphics.TOP)
                         
                                     {
-                                    put("Top", this, "scrollY")
+                                    logUtil!.put("Top", this, "scrollY")
 
                                     }
                                 
                              else 
-    
                         if(anchor == Graphics.BOTTOM)
                         
                                     {
-                                    put("Bottom", this, "scrollY")
+                                    logUtil!.put("Bottom", this, "scrollY")
 
     var diffY: number = (terrainTiledLayer!.getHeight() -displayInfo!.getLastHeight());
         
         
 
-this.move(0, diffY)
+this.this.move(0, diffY)
 
                                     }
                                 
                              else 
-    
                         if(anchor == Graphics.VCENTER)
                         
                                     {
-                                    put("Center", this, "scrollY")
+                                    logUtil!.put("Center", this, "scrollY")
 
     var diffY: number = (terrainTiledLayer!.getHeight() -displayInfo!.getLastHeight()) /2;
         
         
 
-this.move(0, diffY)
+this.this.move(0, diffY)
 
                                     }
                                 
@@ -223,14 +219,14 @@ this.move(0, diffY)
                             
 
 
-                            throw Exception("No Such Anchor Supported")
+                            throw Error("No Such Anchor Supported")
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     up(){
 
@@ -239,18 +235,17 @@ this.move(0, diffY)
         
 
 
-    
                         if(this.keepOnMapMinY(y))
                         
                                     {
-                                    this.move(0,  -10)
+                                    this.this.move(0,  -10)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     down(){
 
@@ -259,18 +254,17 @@ this.move(0, diffY)
         
 
 
-    
                         if(this.keepOnMapMaxY(y))
                         
                                     {
-                                    this.move(0, 10)
+                                    this.this.move(0, 10)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     right(){
 
@@ -279,18 +273,17 @@ this.move(0, diffY)
         
 
 
-    
                         if(this.keepOnMapMinX(x))
                         
                                     {
-                                    this.move(10, 0)
+                                    this.this.move(10, 0)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     left(){
 
@@ -299,11 +292,10 @@ this.move(0, diffY)
         
 
 
-    
                         if(this.keepOnMapMaxX(x))
                         
                                     {
-                                    this.move( -10, 0)
+                                    this.this.move( -10, 0)
 
                                     }
                                 
@@ -315,19 +307,19 @@ this.inputProcessorArray[Canvas.UP]= ScrollMapUpGameInputProcessor(this)
 this.inputProcessorArray[Canvas.DOWN]= ScrollMapDownGameInputProcessor(this)
 this.inputProcessorArray[Canvas.KEY_NUM9]= ScrollMapRightGameInputProcessor(this)
 this.inputProcessorArray[Canvas.KEY_NUM7]= ScrollMapLeftGameInputProcessor(this)
-init(this.inputProcessorArray)
+GameInputProcessorUtil.init(this.inputProcessorArray)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processInput(key: number){
 var key = key
-process(AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER, GameKeyEvent.NONE)
+inputProcessorArray[key]!.process(AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER, GameKeyEvent.NONE)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processInput(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager
@@ -359,26 +351,25 @@ index < size; index++)
         
 
 key= gameKeyEvent!.getKey()
-this.processInput(key)
+this.this.processInput(key)
 }
 
 
-    
                         if(isSingleKeyProcessing)
                         
                                     {
-                                    this.clear()
+                                    this.this.clear()
 
                                     }
                                 
                         else {
-                            this.update()
+                            this.this.update()
 
                         }
                             
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e)
 }
 
 }
@@ -396,7 +387,6 @@ put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e)
         
 
 
-    
                         if(terrainTiledLayer!.getHeight() > displayInfo!.getLastHeight())
                         
                                     {
@@ -434,7 +424,6 @@ put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e)
         
 
 
-    
                         if(terrainTiledLayer!.getWidth() > displayInfo!.getLastWidth())
                         
                                     {
@@ -468,7 +457,6 @@ var newY = newY
         
 
 
-    
                         if(y > maxBottom +border)
                         
                                     {
@@ -502,7 +490,6 @@ var newY = newY
         
 
 
-    
                         if(y <  -border)
                         
                                     {
@@ -536,7 +523,6 @@ var newX = newX
         
 
 
-    
                         if(x <  -maxRight -border)
                         
                                     {
@@ -570,7 +556,6 @@ var newX = newX
         
 
 
-    
                         if(x > border)
                         
                                     {

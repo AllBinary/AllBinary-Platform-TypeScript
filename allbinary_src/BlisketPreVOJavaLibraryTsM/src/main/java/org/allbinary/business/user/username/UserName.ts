@@ -62,7 +62,6 @@ export class UserName
     public static getValidationInfo(aUserName: string): string{
 var aUserName = aUserName
 
-    
                         if(!StringValidationUtil.getInstance()!.isValidRequired(aUserName, 5, UserData.MAXLEN))
                         
                                     {
@@ -114,11 +113,10 @@ this.userName= hashMap!.get(UserData.USERNAME) as String
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to validate form", this, "isUserNameValid()", e)
+                                    logUtil!.put("Failed to validate form", this, "isUserNameValid()", e)
 
                                     }
                                 
@@ -163,25 +161,22 @@ var aUserName = aUserName
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VALIDATION))
                         
                                     {
-                                    put("UserName: " +aUserName, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("UserName: " +aUserName, this, commonStrings!.IS_VALID)
 
                                     }
                                 
 
-    
                         if(!StringValidationUtil.getInstance()!.isValidRequired(aUserName, 5, UserData.MAXLEN))
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VALIDATION))
                         
                                     {
-                                    put("UserName is invalid", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("UserName is invalid", this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -198,11 +193,10 @@ valid= booleanFactory!.FALSE
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 

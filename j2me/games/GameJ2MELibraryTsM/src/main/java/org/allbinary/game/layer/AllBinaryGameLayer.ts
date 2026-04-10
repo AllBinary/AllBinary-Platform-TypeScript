@@ -104,7 +104,7 @@ export class AllBinaryGameLayer extends AllBinaryLayer
 
     public paint(graphics: Graphics){
 var graphics = graphics
-setBasicColorP(graphics, BLACK)
+basicSetColorUtil!.setBasicColorP(graphics, BLACK)
 }
 
                                 }
@@ -160,14 +160,14 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public set(gl: GL){
     //var gl = gl
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -185,56 +185,55 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processInput(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onViewPositionChangeEvent(){
-this.onChangeEvent(this.viewPositionEvent)
+this.this.onChangeEvent(this.viewPositionEvent)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onChangeEvent(layerManagerEvent: ViewPositionEvent){
     //var layerManagerEvent = layerManagerEvent
 
-    
                         if(GameLayerUtil.isOnScreen(this))
                         
                                     {
-                                    this.setVisible(true)
+                                    this.this.setVisible(true)
 
                                     }
                                 
                         else {
-                            this.setVisible(false)
+                            this.this.setVisible(false)
 
                         }
                             
@@ -243,7 +242,7 @@ this.onChangeEvent(this.viewPositionEvent)
 
     public paintFirst(graphics: Graphics){
     //var graphics = graphics
-paint(graphics)
+this.paintable.paint(graphics)
 }
 
 
@@ -264,22 +263,22 @@ paint(graphics)
         
         
 
-setBasicColorP(graphics, RED)
-drawRect(viewX, viewY, this.getWidth(), this.getHeight())
+this.basicSetColorUtil!.setBasicColorP(graphics, RED)
+graphics.drawRect(viewX, viewY, this.getWidth(), this.getHeight())
 }
 
 
     public setWidth(width: number){
     //var width = width
-setLayerWidth(width)
-this.setHalfWidth(width shr 1)
+super.setLayerWidth(width)
+this.this.setHalfWidth(width shr 1)
 }
 
 
     public setHeight(height: number){
     //var height = height
-setLayerHeight(height)
-this.setHalfHeight(height shr 1)
+super.setLayerHeight(height)
+this.this.setHalfHeight(height shr 1)
 }
 
 

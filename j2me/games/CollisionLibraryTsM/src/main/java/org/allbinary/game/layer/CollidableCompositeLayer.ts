@@ -74,7 +74,7 @@ public constructor (layerInfo: Rectangle, viewPosition: ViewPosition, collidable
                             //For kotlin this is before the body of the constructor.
                     
 this.collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance()
-this.setCollidableInferface(collidableInferface)
+this.this.setCollidableInferface(collidableInferface)
 }
 
 public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition, collidableInferface: CollidableBaseBehavior)                        
@@ -91,7 +91,7 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
                             //For kotlin this is before the body of the constructor.
                     
 this.collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance()
-this.setCollidableInferface(collidableInferface)
+this.this.setCollidableInferface(collidableInferface)
 }
 
 public constructor (layerInfo: Rectangle, viewPosition: ViewPosition)                        
@@ -138,7 +138,7 @@ collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance()
 
 
     public getArtificialIntelligenceInterface(): ArtificialIntelligenceInterface{
-log(commonStrings!.NOT_IMPLEMENTED, this)
+ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this)
 
 
 
@@ -181,9 +181,9 @@ this.collidableInferface= collidableInferface
         
         
 
-toString(stringBuffer)
-append(commonSeps!.NEW_LINE)
-append(this.getCollidableInferface()!.toString())
+super.toString(stringBuffer)
+stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append(this.getCollidableInferface()!.toString())
 }
 
 
@@ -193,7 +193,7 @@ append(this.getCollidableInferface()!.toString())
         
         
 
-this.toString(stringBuffer)
+this.this.toString(stringBuffer)
 
 
 

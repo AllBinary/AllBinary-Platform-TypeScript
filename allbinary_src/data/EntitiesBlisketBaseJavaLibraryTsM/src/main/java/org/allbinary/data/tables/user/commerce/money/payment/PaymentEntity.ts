@@ -87,7 +87,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.this.setTableName(tableName)
 }
 
 
@@ -117,45 +117,42 @@ var index = index
         
         
 
-put(UserData.USERNAME, userName)
+whereKeyAndValue!.put(UserData.USERNAME, userName)
 
     var paymentInterface: PaymentInterface = getDefault(userName)!;
         
         
 
 
-    
                         if(paymentInterface != 
                                     null
                                 )
                         
                                     {
-                                    put(EntryData.getInstance()!.DEFAULT, StringUtil.getInstance()!.EMPTY_STRING)
-put(PaymentData.ID, paymentInterface!.getId())
-updateWhere(whereKeyAndValue, updateKeyAndValue)
+                                    updateKeyAndValue!.put(EntryData.getInstance()!.DEFAULT, StringUtil.getInstance()!.EMPTY_STRING)
+whereKeyAndValue!.put(PaymentData.ID, paymentInterface!.getId())
+super.updateWhere(whereKeyAndValue, updateKeyAndValue)
 
                                     }
                                 
-put(EntryData.getInstance()!.DEFAULT, EntryData.getInstance()!.DEFAULT)
-put(PaymentData.ID, index.toString())
-updateWhere(whereKeyAndValue, updateKeyAndValue)
+updateKeyAndValue!.put(EntryData.getInstance()!.DEFAULT, EntryData.getInstance()!.DEFAULT)
+whereKeyAndValue!.put(PaymentData.ID, index.toString())
+super.updateWhere(whereKeyAndValue, updateKeyAndValue)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, "setDefault")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "setDefault")
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "setDefault", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "setDefault", e)
 
                                     }
                                 
@@ -178,7 +175,7 @@ var userName = userName
         
         
 
-put(UserData.USERNAME, userName)
+keyAndValue!.put(UserData.USERNAME, userName)
 
     var paymentList: Vector = super.getRows(keyAndValue)!;
         
@@ -210,13 +207,12 @@ index < size; index++)
         
 
 
-    
                         if(payment != 
                                     null
                                 )
                         
                                     {
-                                    add(payment)
+                                    paymentVector!.add(payment)
 
                                     }
                                 
@@ -231,11 +227,10 @@ index < size; index++)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e)
 
                                     }
                                 
@@ -264,11 +259,10 @@ var userName = userName
         
         
 
-put(EntryData.getInstance()!.DEFAULT, EntryData.getInstance()!.DEFAULT)
-put(UserData.USERNAME, userName)
+updateKeyAndValue!.put(EntryData.getInstance()!.DEFAULT, EntryData.getInstance()!.DEFAULT)
+updateKeyAndValue!.put(UserData.USERNAME, userName)
 paymentHashMap= super.getRow(updateKeyAndValue)
 
-    
                         if(paymentHashMap != 
                                     null
                                 )
@@ -280,11 +274,10 @@ paymentHashMap= super.getRow(updateKeyAndValue)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, "getDefault")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "getDefault")
 
                                     }
                                 
@@ -310,11 +303,10 @@ paymentHashMap= super.getRow(updateKeyAndValue)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "getDefault", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "getDefault", e)
 
                                     }
                                 
@@ -339,26 +331,24 @@ var index = index
         
         
 
-put(UserData.USERNAME, userName)
-put(PaymentData.ID, index.toString() as String)
-deleteWhere(whereHashMap)
+whereHashMap!.put(UserData.USERNAME, userName)
+whereHashMap!.put(PaymentData.ID, index.toString() as String)
+super.deleteWhere(whereHashMap)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, "remove")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "remove")
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "remove", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "remove", e)
 
                                     }
                                 
@@ -377,22 +367,22 @@ var paymentInterface = paymentInterface
         
         
 
-add(PaymentIdGenerator().
+vector.add(PaymentIdGenerator().
                             getNext())
-add(userName)
-add(StringUtil.getInstance()!.EMPTY_STRING)
-add(paymentInterface!.getName())
-add(paymentInterface!.getType())
-add(paymentInterface!.getExpiration())
+vector.add(userName)
+vector.add(StringUtil.getInstance()!.EMPTY_STRING)
+vector.add(paymentInterface!.getName())
+vector.add(paymentInterface!.getType())
+vector.add(paymentInterface!.getExpiration())
 
     var random: number = Random().
                             nextInt(SuperCrypt.KEYMAX)!;
         
         
 
-add(SuperCrypt(random).
+vector.add(SuperCrypt(random).
                             encrypt(paymentInterface!.getNumber()))
-add(Integer(random).
+vector.add(Integer(random).
                             toString())
 
     var calendar: Calendar = Calendar.getInstance()!;
@@ -406,25 +396,23 @@ add(Integer(random).
         
         
 
-add(time)
-insert(vector)
+vector.add(time)
+super.insert(vector)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, "add")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "add")
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "add", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "add", e)
 
                                     }
                                 
@@ -444,7 +432,7 @@ insert(vector)
         
         
 
-append(this.sqlStrings!.END)
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(PaymentData.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_AUTO_INCREMENT_NOT_NULL)!.append(UserData.USERNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(entryData!.DEFAULT)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(PaymentData.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(PaymentData.TYPE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(PaymentData.EXPIRATION)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(PaymentData.NUMBER)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(entryData!.ENCRYPTION)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(entryData!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(PaymentData.ID)!.append(this.sqlStrings!.END)
 
 
 

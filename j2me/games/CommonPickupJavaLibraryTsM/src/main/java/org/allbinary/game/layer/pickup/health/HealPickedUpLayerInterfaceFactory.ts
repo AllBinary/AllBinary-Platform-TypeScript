@@ -51,7 +51,7 @@ export class HealPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFac
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static init(){
 pickedUpLayerInterfaceFactoryInterface= HealPickedUpLayerInterfaceFactory()
@@ -93,11 +93,11 @@ private constructor ()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface
-visit(sourceLayerInterface)
+pool.visit(sourceLayerInterface)
 }
 
 

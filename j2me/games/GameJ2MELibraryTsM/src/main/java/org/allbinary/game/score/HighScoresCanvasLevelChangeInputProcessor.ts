@@ -74,12 +74,12 @@ public constructor (highScoresCanvas: HighScoresCanvas)
 
 
     public open(){
-addListener(this)
+GameKeyEventHandler.getInstance()!.addListener(this)
 }
 
 
     public close(){
-removeListener(this)
+GameKeyEventHandler.getInstance()!.removeListener(this)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -116,27 +116,25 @@ index < size; index++)
         
 
 
-    
                         if(key == Canvas.RIGHT)
                         
                                     {
-                                    nextGameLevel()
+                                    this.getHighScoresCanvas()!.getGameInfo()!.nextGameLevel()
 
                                     }
                                 
                              else 
-    
                         if(key == Canvas.LEFT)
                         
                                     {
-                                    previousGameLevel()
+                                    this.getHighScoresCanvas()!.getGameInfo()!.previousGameLevel()
 
                                     }
                                 
-executeUpdate()
+this.getHighScoresCanvas()!.executeUpdate()
 }
 
-clear()
+list.clear()
 }
 
 
@@ -157,7 +155,7 @@ var graphics = graphics
         
         
 
-drawString(INSTRUCTIONS, (width shr 1) -topScoresWidth, myFont!.DEFAULT_CHAR_HEIGHT *2, anchor)
+graphics.drawString(INSTRUCTIONS, (width shr 1) -topScoresWidth, myFont!.DEFAULT_CHAR_HEIGHT *2, anchor)
 }
 
 

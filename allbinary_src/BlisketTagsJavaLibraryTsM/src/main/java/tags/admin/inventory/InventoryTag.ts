@@ -39,77 +39,70 @@ public constructor (){
             }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
                                     
 
 
-                            throw Exception("No Such View Command: " +this.getCommand())
+                            throw Error("No Such View Command: " +this.getCommand())
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
                         
                                     {
-                                    this.setName("Add Inventory Item Validation View")
-this.setObjectFile("views.admin.inventory.AddFileValidationView")
+                                    this.this.setName("Add Inventory Item Validation View")
+this.this.setObjectFile("views.admin.inventory.AddFileValidationView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(this.commonStrings!.DELETE) == 0)
                         
                                     {
-                                    this.setName("Delete Inventory Item Validation View")
-this.setObjectFile("views.admin.inventory.DeleteFileValidationView")
+                                    this.this.setName("Delete Inventory Item Validation View")
+this.this.setObjectFile("views.admin.inventory.DeleteFileValidationView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.EDIT) == 0)
                         
                                     {
-                                    this.setName("Edit Inventory Item Validation View")
-this.setObjectFile("views.admin.inventory.EditValidationView")
+                                    this.this.setName("Edit Inventory Item Validation View")
+this.this.setObjectFile("views.admin.inventory.EditValidationView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.NEW) == 0)
                         
                                     {
-                                    this.setName("New Inventory Item Validation View")
-this.setObjectFile("views.admin.inventory.NewValidationView")
+                                    this.this.setName("New Inventory Item Validation View")
+this.this.setObjectFile("views.admin.inventory.NewValidationView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(this.commonStrings!.UPDATE) == 0)
                         
                                     {
-                                    this.setName("Update Inventory Item Validation View")
-this.setObjectFile("views.admin.inventory.UpdateFileValidationView")
+                                    this.this.setName("Update Inventory Item Validation View")
+this.this.setObjectFile("views.admin.inventory.UpdateFileValidationView")
 
                                     }
                                 
@@ -117,7 +110,7 @@ this.setObjectFile("views.admin.inventory.UpdateFileValidationView")
                             
 
 
-                            throw Exception("No Such View Command: " +this.getCommand())
+                            throw Error("No Such View Command: " +this.getCommand())
 
                         }
                             
@@ -133,10 +126,10 @@ this.setObjectFile("views.admin.inventory.UpdateFileValidationView")
 
 
 
-                            throw Exception("Command Null")
+                            throw Error("Command Null")
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -146,7 +139,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

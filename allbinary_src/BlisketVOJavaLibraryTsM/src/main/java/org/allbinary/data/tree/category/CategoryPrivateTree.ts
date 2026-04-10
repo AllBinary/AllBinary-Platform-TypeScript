@@ -61,7 +61,6 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface){
             super();
             var categoryFactoryInterface = categoryFactoryInterface
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
@@ -70,7 +69,7 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface){
         
         
 
-put(commonStrings!.START, this, "CategoryPrivateTree(CategoryFactoryInterface categoryFactoryInterface)")
+logUtil!.put(commonStrings!.START, this, "CategoryPrivateTree(CategoryFactoryInterface categoryFactoryInterface)")
 
                                     }
                                 
@@ -78,17 +77,16 @@ this.categoryFactoryInterface= categoryFactoryInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     save(categoryInterface: CategoryInterface){
 var categoryInterface = categoryInterface
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put("Saving Category File: " +categoryInterface!.getFilePath(), this, "save()")
+                                    logUtil!.put("Saving Category File: " +categoryInterface!.getFilePath(), this, "save()")
 
                                     }
                                 
@@ -103,26 +101,24 @@ var categoryInterface = categoryInterface
         
         
 
-write(categoryInterface!.getFilePath(), document)
+cryptFileWriter!.write(categoryInterface!.getFilePath(), document)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put("end", this, "save()")
+                                    logUtil!.put("end", this, "save()")
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     delete(categoryInterface: CategoryInterface){
 var categoryInterface = categoryInterface
 
-    
                         if(categoryInterface!.isLeaf())
                         
                                     {
@@ -132,16 +128,14 @@ var categoryInterface = categoryInterface
         
 
 
-    
                         if(categoryFile!.delete())
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put("Removed: " +categoryInterface!.getFilePath(), this, "delete(CategoryInterface)")
+                                    logUtil!.put("Removed: " +categoryInterface!.getFilePath(), this, "delete(CategoryInterface)")
 
                                     }
                                 
@@ -153,11 +147,10 @@ var categoryInterface = categoryInterface
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put("Not a leaf unable to remove", this, "delete(CategoryInterface)")
+                                    logUtil!.put("Not a leaf unable to remove", this, "delete(CategoryInterface)")
 
                                     }
                                 

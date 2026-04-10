@@ -60,8 +60,8 @@ this.dy= dy
     //var g = g
     //var x = x
     //var y = y
-setPosition(x +this.dx, y +this.dy)
-this.paint(g)
+this.sprite.setPosition(x +this.dx, y +this.dy)
+this.this.paint(g)
 }
 
 

@@ -90,7 +90,7 @@ public constructor (result: string){
         
         
 
-putAll(hashtable)
+keyValuePairs!.putAll(hashtable)
 } catch(e: Exception)
             {
 
@@ -98,7 +98,7 @@ putAll(hashtable)
         
         
 
-put(exceptionMessage, this, this.commonStrings!.CONSTRUCTOR)
+logUtil!.put(exceptionMessage, this, this.commonStrings!.CONSTRUCTOR)
 }
 
 }
@@ -143,28 +143,28 @@ this.result= "Needs to have the hashmap converted to string for other constructo
         
         
 
-add(paymentTransactionKeysFactory!.RESULT.toString())
-add(paymentTransactionKeysFactory!.PNREF.toString())
-add(paymentTransactionKeysFactory!.RESPMSG.toString())
-add(paymentTransactionKeysFactory!.AUTHCODE.toString())
-add(paymentTransactionKeysFactory!.AVSADDR.toString())
-add(paymentTransactionKeysFactory!.AVSZIP.toString())
-add(paymentTransactionKeysFactory!.ORIGRESULT.toString())
-add(paymentTransactionKeysFactory!.STATUS.toString())
-add(paymentTransactionKeysFactory!.FRAUDCODE.toString())
-add(paymentTransactionKeysFactory!.FRAUDMSG.toString())
-add(paymentTransactionKeysFactory!.ERRCODE.toString())
-add(paymentTransactionKeysFactory!.SCORE.toString())
-add(paymentTransactionKeysFactory!.REASON1.toString())
-add(paymentTransactionKeysFactory!.REASON2.toString())
-add(paymentTransactionKeysFactory!.REASON3.toString())
-add(paymentTransactionKeysFactory!.EXCEPTION1.toString())
-add(paymentTransactionKeysFactory!.EXCEPTION2.toString())
-add(paymentTransactionKeysFactory!.EXCEPTION3.toString())
-add(paymentTransactionKeysFactory!.EXCEPTION4.toString())
-add(paymentTransactionKeysFactory!.EXCEPTION5.toString())
-add(paymentTransactionKeysFactory!.EXCEPTION6.toString())
-add(paymentTransactionKeysFactory!.EXCEPTION7.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.RESULT.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.PNREF.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.RESPMSG.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.AUTHCODE.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.AVSADDR.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.AVSZIP.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.ORIGRESULT.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.STATUS.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.FRAUDCODE.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.FRAUDMSG.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.ERRCODE.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.SCORE.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.REASON1.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.REASON2.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.REASON3.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.EXCEPTION1.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.EXCEPTION2.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.EXCEPTION3.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.EXCEPTION4.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.EXCEPTION5.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.EXCEPTION6.toString())
+verisignResponseKeys!.add(paymentTransactionKeysFactory!.EXCEPTION7.toString())
 
 
 
@@ -206,11 +206,10 @@ i < size; i++)
         
 
 
-    
                         if(keyValuePairs!.containsKey(key))
                         
                                     {
-                                    add(keyValuePairs!.get(key))
+                                    valueVector!.add(keyValuePairs!.get(key))
 
                                     }
                                 
@@ -220,7 +219,7 @@ i < size; i++)
         
         
 
-add(stringUtil!.EMPTY_STRING)
+valueVector!.add(stringUtil!.EMPTY_STRING)
 
                         }
                             

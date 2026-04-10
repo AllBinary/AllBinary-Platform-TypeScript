@@ -95,8 +95,8 @@ this.totalNumberOfItems= this.totalNumberOfItems +numberInStock
         
         
 
-multiply(numberInStock)
-add(itemPriceMoney!.toString())
+itemPriceMoney!.multiply(numberInStock)
+this.totalInventorySaleValueMoney!.add(itemPriceMoney!.toString())
 }
 
 }
@@ -128,8 +128,8 @@ add(itemPriceMoney!.toString())
         
         
 
-put(StoreFrontInventoryStatisticsData.getInstance()!.NUMBEROFITEMS, this.getNumber()!.toString())
-put(StoreFrontInventoryStatisticsData.getInstance()!.TOTALVALUE, this.getTotal()!.toString())
+hashMap!.put(StoreFrontInventoryStatisticsData.getInstance()!.NUMBEROFITEMS, this.getNumber()!.toString())
+hashMap!.put(StoreFrontInventoryStatisticsData.getInstance()!.TOTALVALUE, this.getTotal()!.toString())
 
 
 

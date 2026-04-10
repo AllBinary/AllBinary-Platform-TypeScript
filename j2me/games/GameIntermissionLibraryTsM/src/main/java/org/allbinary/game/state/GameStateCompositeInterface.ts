@@ -22,7 +22,7 @@
 interface GameStateCompositeInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     setGameState(gameState: GameState)
 

@@ -65,7 +65,7 @@ export class NullRTSLayer extends NullPathFindingLayer
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processInput(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager
@@ -134,7 +134,7 @@ var eventObject = eventObject
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onDestroyed(destroyedEvent: DestroyedEvent){
 var destroyedEvent = destroyedEvent
@@ -145,7 +145,7 @@ var destroyedEvent = destroyedEvent
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager

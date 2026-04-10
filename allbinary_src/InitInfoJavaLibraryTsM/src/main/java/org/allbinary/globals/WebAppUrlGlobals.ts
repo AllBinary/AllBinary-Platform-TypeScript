@@ -72,7 +72,7 @@ isWebappPathSet= true
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getMainPath(): string{
 
@@ -81,7 +81,6 @@ isWebappPathSet= true
         
 
 
-    
                         if(!StringValidationUtil.getInstance()!.isEmpty(mainPath))
                         
                                     {
@@ -95,7 +94,6 @@ isWebappPathSet= true
                                     }
                                 
                              else 
-    
                         if(isWebappPathSet)
                         
                                     {
@@ -112,7 +110,7 @@ isWebappPathSet= true
                             
 
 
-                            throw Exception("Webapp Path is not set")
+                            throw Error("Webapp Path is not set")
 
                         }
                             

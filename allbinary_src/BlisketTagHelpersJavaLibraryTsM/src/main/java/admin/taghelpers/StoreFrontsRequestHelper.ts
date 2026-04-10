@@ -113,11 +113,11 @@ this.pageContext= pageContext
 this.request= pageContext!.getRequest() as HttpServletRequest
 this.weblisketSession= WeblisketSession(hashMap, pageContext)
 this.portion= Portion(hashMap)
-this.getFormData()
+this.this.getFormData()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getFormData(){
 this.storeName= this.weblisketSession!.getStoreName()
@@ -138,13 +138,12 @@ this.modifyingStoreFrontInterface= StoreFront(this.request) as StoreFrontInterfa
         
         
 
-update(hashMapData)
+StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.update(hashMapData)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "update()")
+                                    logUtil!.put(success, this, "update()")
 
                                     }
                                 
@@ -162,11 +161,10 @@ update(hashMapData)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
 
                                     }
                                 
@@ -181,7 +179,7 @@ update(hashMapData)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public sendStoreCreatedEmails(){
 
@@ -199,19 +197,19 @@ update(hashMapData)
         
         
 
-append("Store Created: ")
-append(this.modifyingStoreFrontInterface!.getName())
-append("\n\n")
-append("Click here for the Admin Interface:\n")
-append(this.modifyingStoreFrontInterface!.getCurrentHomeHostName())
-append("/admin/login.jsp\n\n")
-append("Goto Your Store:\n")
-append(this.modifyingStoreFrontInterface!.getCurrentHomeHostName())
-append(this.modifyingStoreFrontInterface!.getName())
-append("/index.jsp")
-append("\n\n")
-append("UserName: ")
-append(this.weblisketSession!.getUserName())
+stringBuffer!.append("Store Created: ")
+stringBuffer!.append(this.modifyingStoreFrontInterface!.getName())
+stringBuffer!.append("\n\n")
+stringBuffer!.append("Click here for the Admin Interface:\n")
+stringBuffer!.append(this.modifyingStoreFrontInterface!.getCurrentHomeHostName())
+stringBuffer!.append("/admin/login.jsp\n\n")
+stringBuffer!.append("Goto Your Store:\n")
+stringBuffer!.append(this.modifyingStoreFrontInterface!.getCurrentHomeHostName())
+stringBuffer!.append(this.modifyingStoreFrontInterface!.getName())
+stringBuffer!.append("/index.jsp")
+stringBuffer!.append("\n\n")
+stringBuffer!.append("UserName: ")
+stringBuffer!.append(this.weblisketSession!.getUserName())
 
     var adminEmailTextBody: string = stringBuffer!.toString()!;
         
@@ -247,8 +245,8 @@ append(this.weblisketSession!.getUserName())
         
         
 
-receiveEmailInfo(UserEmailEventNameData.STORECREATED, storeAdminEmailInfo)
-receiveEmailInfo(UserEmailEventNameData.STORECREATED, adminEmailInfo)
+storeAdminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STORECREATED, storeAdminEmailInfo)
+adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STORECREATED, adminEmailInfo)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -261,22 +259,21 @@ receiveEmailInfo(UserEmailEventNameData.STORECREATED, adminEmailInfo)
         
         
 
-append("Intall StoreFront Successfully: ")
-appendint(this.portion.getCurrent()!.toInt())
-append(" of ")
-appendint(this.portion.getTotal()!.toInt())
+stringBuffer!.append("Intall StoreFront Successfully: ")
+stringBuffer!.appendint(this.portion.getCurrent()!.toInt())
+stringBuffer!.append(" of ")
+stringBuffer!.appendint(this.portion.getTotal()!.toInt())
 
     var success: string = stringBuffer!.toString()!;
         
         
 
-install(this.portion.getCurrent()!.toInt(), this.portion.getTotal()!.toInt())
+this.modifyingStoreFrontInterface!.install(this.portion.getCurrent()!.toInt(), this.portion.getTotal()!.toInt())
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "install()")
+                                    logUtil!.put(success, this, "install()")
 
                                     }
                                 
@@ -294,11 +291,10 @@ install(this.portion.getCurrent()!.toInt(), this.portion.getTotal()!.toInt())
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "install()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "install()", e)
 
                                     }
                                 
@@ -327,13 +323,12 @@ install(this.portion.getCurrent()!.toInt(), this.portion.getTotal()!.toInt())
         
         
 
-insert(values)
+StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.insert(values)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "insert()")
+                                    logUtil!.put(success, this, "insert()")
 
                                     }
                                 
@@ -351,11 +346,10 @@ insert(values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "insert()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insert()", e)
 
                                     }
                                 
@@ -378,13 +372,12 @@ insert(values)
         
         
 
-delete(this.storeName)
+StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.delete(this.storeName)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "delete()")
+                                    logUtil!.put(success, this, "delete()")
 
                                     }
                                 
@@ -402,11 +395,10 @@ delete(this.storeName)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "delete()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e)
 
                                     }
                                 

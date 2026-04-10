@@ -108,11 +108,11 @@ this.atLeastOneHouseGameNotificationEvent= GameNotificationEvent(this, "Build At
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
         
@@ -123,13 +123,12 @@ setAllBinaryGameLayerManager(allBinaryGameLayerManager)
         
         
 
-setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
+this.atLeastOneHouseGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
 }
 
 
     public isPositionBlocked(): boolean{
 
-    
                         if(DropCellPositionHistory.getInstance()!.isCellPositionWithDrop(this.getSelectedGeographicCellPosition()) || WaypointCellPositionHistory.getInstance()!.isCellPositionWithDrop(this.getSelectedGeographicCellPosition()))
                         
                                     {
@@ -155,7 +154,7 @@ setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     isBuildAttemptValid(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerInterface: RTSLayer): boolean{
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
@@ -176,17 +175,15 @@ var layerInterface = layerInterface
         
 
 
-    
                         if(totalHouses < 1 && layerInterface!.getName()!.indexOf(" House") < 0)
                         
                                     {
-                                    add(ErrorSound.getInstance())
+                                    rtsPlayerLayerInterface!.add(ErrorSound.getInstance())
 
-    
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
-                                    fireEvent(atLeastOneHouseGameNotificationEvent)
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(atLeastOneHouseGameNotificationEvent)
 
                                     }
                                 
@@ -212,25 +209,24 @@ var layerInterface = layerInterface
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     add(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, layerInterface: RTSLayer){
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 var layerManager = layerManager
 var layerInterface = layerInterface
-setRtsLayer(layerInterface)
-fireEvent(BUILD_BUILDING_RTS_LAYER_EVENT)
+BUILD_BUILDING_RTS_LAYER_EVENT.setRtsLayer(layerInterface)
+BuildingEventHandler.getInstance()!.fireEvent(BUILD_BUILDING_RTS_LAYER_EVENT)
 
-    
                         if(
                                     (rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface).isLocalPlayer())
                         
                                     {
-                                    fireEvent(BUILD_BUILDING_RTS_LAYER_EVENT)
+                                    LocalPlayerBuildingEventHandler.getInstance()!.fireEvent(BUILD_BUILDING_RTS_LAYER_EVENT)
 
                                     }
                                 
-add(rtsPlayerLayerInterface, layerManager, layerInterface)
+super.add(rtsPlayerLayerInterface, layerManager, layerInterface)
 }
 
 

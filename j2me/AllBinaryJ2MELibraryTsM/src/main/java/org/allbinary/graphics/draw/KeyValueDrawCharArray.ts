@@ -61,8 +61,8 @@ this.valueX= this.labelWidth +x
     public paint(graphics: Graphics, y: number){
     //var graphics = graphics
     //var y = y
-drawString(this.LABEL, this.labelX, y, 0)
-drawChars(this.value, 0, this.len, this.valueX, y, 0)
+graphics.drawString(this.LABEL, this.labelX, y, 0)
+graphics.drawChars(this.value, 0, this.len, this.valueX, y, 0)
 }
 
 

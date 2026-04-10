@@ -33,7 +33,6 @@ var keyCode = keyCode
         
 
 
-    
                         if(input != 
                                     null
                                 )
@@ -77,11 +76,10 @@ var name = name
         
 
 
-    
                         if(id >= 0)
                         
                                     {
-                                    add(id, this)
+                                    InputFactory.getInstance()!.add(id, this)
 
                                     }
                                 

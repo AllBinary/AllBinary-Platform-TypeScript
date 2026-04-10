@@ -82,7 +82,6 @@ var node = node
         
 
 
-    
                         if(attrNode != 
                                     null
                                 )
@@ -104,7 +103,6 @@ var node = node
         
 
 
-    
                         if(labelNode != 
                                     null
                                 )

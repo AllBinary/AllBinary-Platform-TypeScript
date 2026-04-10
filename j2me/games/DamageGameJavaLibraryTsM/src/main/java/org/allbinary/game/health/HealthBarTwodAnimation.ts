@@ -50,8 +50,8 @@ public constructor (layerInterface: AllBinaryLayer, location: number)
         
         
 
-setBasicColorP(graphics, this.basicColor, this.colorP)
-fillRect(ax, this.getY() -1, x2, this.thickness)
+this.basicSetColorUtil!.setBasicColorP(graphics, this.basicColor, this.colorP)
+graphics.fillRect(ax, this.getY() -1, x2, this.thickness)
 }
 
 

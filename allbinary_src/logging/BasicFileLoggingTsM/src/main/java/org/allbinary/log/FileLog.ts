@@ -99,7 +99,6 @@ export class FileLog
         try {
             logFile= File(logPath, fileName)
 
-    
                         if(!firstTime)
                         
                                     {
@@ -114,7 +113,7 @@ export class FileLog
         
         
 
-seek(raFile!.length())
+raFile!.seek(raFile!.length())
 fileOut= BufferedWriter(FileWriter(raFile!.getFD()))
 
                         }
@@ -132,7 +131,7 @@ fileOut= BufferedWriter(FileWriter(raFile!.getFD()))
     
 } catch(e: Exception)
             {
-println("Error Creating Log: " +e)
+System.out.println("Error Creating Log: " +e)
 
 
 
@@ -178,14 +177,14 @@ logFileBak= File(logPath, StringBuilder().
                                     null
                                 )
         {
-write(line, 0, line.length)
-newLine()
+tmpOut!.write(line, 0, line.length)
+tmpOut!.newLine()
 }
 
-flush()
-close()
-close()
-delete()
+tmpOut!.flush()
+tmpOut!.close()
+tmpIn!.close()
+logFile!.delete()
 
 
 
@@ -194,7 +193,7 @@ delete()
     
 } catch(e: Exception)
             {
-println("Error Creating Backup: " +e)
+System.out.println("Error Creating Backup: " +e)
 
 
 
@@ -222,7 +221,7 @@ var functionName = functionName
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public static put(specialMessage: string, anyType: any = {}, functionName: string, exception: Throwable): string{
+    public static put(specialMessage: string, anyType: any = {}, functionName: string, exception: Error): string{
 var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName
@@ -230,13 +229,11 @@ var exception = exception
 
         try {
             
-    
                         if(firstTime == true)
                         
                                     {
                                     createLogFileBackup()
 
-    
                         if(createLogFile() == false)
                         
                                     {
@@ -258,12 +255,10 @@ var exception = exception
         
 
 
-    
                         if(length > logLength)
                         
                                     {
                                     
-    
                         if(!(createLogFileBackup()) || createLogFile() == false)
                         
                                     {
@@ -285,19 +280,16 @@ var exception = exception
         
 
 
-    
                         if(functionName == 
                                     null
                                 )
                         functionName= NULL_STRING.toCharArray()
 
-    
                         if(specialMessage == 
                                     null
                                 )
                         specialMessage= NULL_STRING.toCharArray()
 
-    
                         if(anyType!::class.toString()! != 
                                     null
                                 )
@@ -308,9 +300,9 @@ var exception = exception
         
         
 
-write(message, 0, message.length)
-newLine()
-flush()
+fileOut!.write(message, 0, message.length)
+fileOut!.newLine()
+fileOut!.flush()
 
 
 
@@ -346,7 +338,7 @@ flush()
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public static put(specialMessage: string, className: string, functionName: string, exception: Exception): string{
+    public static put(specialMessage: string, className: string, functionName: string, exception: Error): string{
 var specialMessage = specialMessage
     //var className = className
 var functionName = functionName
@@ -354,13 +346,11 @@ var functionName = functionName
 
         try {
             
-    
                         if(firstTime == true)
                         
                                     {
                                     createLogFileBackup()
 
-    
                         if(createLogFile() == false)
                         
                                     {
@@ -382,12 +372,10 @@ var functionName = functionName
         
 
 
-    
                         if(length > logLength)
                         
                                     {
                                     
-    
                         if(!(createLogFileBackup()) || createLogFile() == false)
                         
                                     {
@@ -404,13 +392,11 @@ var functionName = functionName
                                     }
                                 
 
-    
                         if(functionName == 
                                     null
                                 )
                         functionName= NULL_STRING.toCharArray()
 
-    
                         if(specialMessage == 
                                     null
                                 )
@@ -420,9 +406,9 @@ var functionName = functionName
         
         
 
-write(message, 0, message.length)
-newLine()
-flush()
+fileOut!.write(message, 0, message.length)
+fileOut!.newLine()
+fileOut!.flush()
 
 
 

@@ -31,7 +31,7 @@ interface HighScoresInterface {
 
     getTotal(): number
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     isBestScore(newHighScore: HighScore): boolean
 

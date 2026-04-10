@@ -84,7 +84,7 @@ this.basicURIResolver= basicURIResolver
 }
 
 
-                @Throws(TransformerException::class)
+                //@Throws(TransformerException::class)
             
     public resolve(href: string, base: string): Source{
 var href = href
@@ -102,11 +102,10 @@ var base = base
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XMLLOGGING))
                         
                                     {
-                                    put("attempt to use xsl:import: href=" +href +"\nBase= " +base +"\nNew path= " +fileAbPath!.toString() +"\nNote: " +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +" is a urlglobal" +"\nRequired Extension: " +this.basicURIResolver!.getExtension(), this, "resolve")
+                                    logUtil!.put("attempt to use xsl:import: href=" +href +"\nBase= " +base +"\nNew path= " +fileAbPath!.toString() +"\nNote: " +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +" is a urlglobal" +"\nRequired Extension: " +this.basicURIResolver!.getExtension(), this, "resolve")
 
                                     }
                                 

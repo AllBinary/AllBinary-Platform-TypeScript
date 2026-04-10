@@ -41,7 +41,7 @@ public constructor (){
 
     public add(log: Log){
 var log = log
-add(log)
+this.logEntryVector!.add(log)
 }
 
 
@@ -66,7 +66,7 @@ index < size; index++)
         
         
 
-put(log)
+logUtil!.put(log)
 }
 
 }

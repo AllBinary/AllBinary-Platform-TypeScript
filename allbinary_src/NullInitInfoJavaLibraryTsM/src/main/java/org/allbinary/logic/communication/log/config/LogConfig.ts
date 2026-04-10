@@ -180,7 +180,7 @@ this.fileName= value
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getTypeVector(): BasicArrayList{
 

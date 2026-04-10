@@ -28,7 +28,7 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 interface GameInitializationInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, level: number)
 

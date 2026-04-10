@@ -48,36 +48,36 @@ this.cacheableInterfaceFactoryInterface= cacheableInterfaceFactoryInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public clear(){
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public remove(key: any = {}): CacheableInterface{
 var key = key
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public add(cacheableInterface: CacheableInterface){
 var cacheableInterface = cacheableInterface
-add(cacheableInterface)
+buffers.add(cacheableInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public add(cacheableInterfaces: CacheableInterface[]){
 var cacheableInterfaces = cacheableInterfaces
@@ -91,7 +91,7 @@ var cacheableInterfaces = cacheableInterfaces
         
 index < cacheableInterfaces!.length; index++)
         {
-add(cacheableInterfaces[index]!)
+buffers.add(cacheableInterfaces[index]!)
 }
 
 }

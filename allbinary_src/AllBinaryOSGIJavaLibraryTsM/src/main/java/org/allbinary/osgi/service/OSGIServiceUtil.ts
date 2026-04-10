@@ -62,7 +62,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getServicesObjectVector(bundleContext: Object, serviceReferences: ServiceReference[]): Vector{
     //var bundleContext = bundleContext
@@ -73,7 +73,6 @@ private constructor (){
         
 
 
-    
                         if(serviceReferences != 
                                     null
                                 )
@@ -85,7 +84,7 @@ private constructor (){
         
         
 
-put("Service References: " +size, this, "getServicesObjectVector")
+logUtil!.put("Service References: " +size, this, "getServicesObjectVector")
 
 
 
@@ -102,7 +101,6 @@ index < size; index++)
         
 
 
-    
                         if(serviceReference != 
                                     null
                                 )
@@ -114,7 +112,6 @@ index < size; index++)
         
 
 
-    
                         if(osgiServiceInterface == 
                                     null
                                 )
@@ -123,11 +120,11 @@ index < size; index++)
                                     
 
 
-                            throw Exception("No Service For Reference")
+                            throw Error("No Service For Reference")
 
                                     }
                                 
-add(osgiServiceInterface)
+vector.add(osgiServiceInterface)
 
                                     }
                                 

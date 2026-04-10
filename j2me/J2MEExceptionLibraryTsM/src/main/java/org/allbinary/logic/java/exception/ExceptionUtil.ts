@@ -36,7 +36,7 @@ import { ByteArrayOutputStream } from "../../../../../java/io/ByteArrayOutputStr
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ExceptionUtil.instance;
     
 }
 
@@ -46,7 +46,7 @@ private constructor (){
             }
 
 
-    /*actual*/ public readonly PRETEND_EXCEPTION: Exception = new Exception("Not Really An Exception");
+    /*actual*/ public readonly PRETEND_EXCEPTION: Error = new Error("Not Really An Exception");
         
         
 
@@ -54,21 +54,20 @@ private constructor (){
         
         
 
-    /*actual*/ public getStackTrace(e: Throwable): string{
+    /*actual*/ public getStackTrace(e: Error): string{
 var e = e
 
     var bs: ByteArrayOutputStream = new ByteArrayOutputStream();
         
         
 
-printStackTrace()
+e.printStackTrace()
 
     var output: string = bs.toString()!;
         
         
 
 
-    
                         if(output != 
                                     null
                                 )

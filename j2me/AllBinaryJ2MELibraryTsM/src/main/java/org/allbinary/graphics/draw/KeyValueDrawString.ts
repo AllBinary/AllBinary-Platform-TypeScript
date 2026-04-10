@@ -59,15 +59,14 @@ this.valueX= this.labelWidth +x
     public paint(graphics: Graphics, y: number){
     //var graphics = graphics
     //var y = y
-drawString(this.LABEL, this.labelX, y, 0)
-drawString(this.value, this.valueX, y, 0)
+graphics.drawString(this.LABEL, this.labelX, y, 0)
+graphics.drawString(this.value, this.valueX, y, 0)
 }
 
 
     public update(value: string){
 var value = value
 
-    
                         if(value != 
                                     null
                                 )

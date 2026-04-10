@@ -59,22 +59,21 @@ export class SpecialMessageUtil
         
         
 
-append(Memory.getInfo())
-append(CommonSeps.getInstance()!.SPACE)
-append(GameStatisticsFactory.getInstance()!.toString())
-append(CommonSeps.getInstance()!.SPACE)
-append(" Option: ")
+stringBuffer!.append(Memory.getInfo())
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(GameStatisticsFactory.getInstance()!.toString())
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(" Option: ")
 
-    
                         if(Features.getInstance()!.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL_AUTO_SELECT))
                         
                                     {
-                                    append(OpenGLFeatureFactory.getInstance()!.OPENGL_AUTO_SELECT.getName())
+                                    stringBuffer!.append(OpenGLFeatureFactory.getInstance()!.OPENGL_AUTO_SELECT.getName())
 
                                     }
                                 
                         else {
-                            append(OpenGLFeatureFactory.getInstance()!.OPENGL_MINIMUM.getName())
+                            stringBuffer!.append(OpenGLFeatureFactory.getInstance()!.OPENGL_MINIMUM.getName())
 
                         }
                             

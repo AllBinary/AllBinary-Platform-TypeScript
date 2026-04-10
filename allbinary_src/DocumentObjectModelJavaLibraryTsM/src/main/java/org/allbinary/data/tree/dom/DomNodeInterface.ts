@@ -28,7 +28,7 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 interface DomNodeInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node
 

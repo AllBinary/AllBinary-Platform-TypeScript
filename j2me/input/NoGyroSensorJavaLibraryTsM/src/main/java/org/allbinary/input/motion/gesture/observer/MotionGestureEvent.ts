@@ -84,7 +84,7 @@ var motionGesture = motionGesture
                             //For kotlin this is before the body of the constructor.
                     
 this.id= id
-this.setMotionGesture(motionGesture)
+this.this.setMotionGesture(motionGesture)
 }
 
 
@@ -147,13 +147,13 @@ this.currentPoint= currentPoint
         
         
 
-append(stringUtil!.toString(this.motionGesture))
-append(CURRENT)
-append(stringUtil!.toString(this.currentPoint))
-append(PREVIOUS)
-append(stringUtil!.toString(this.previousPoint))
-append(HASHCODE)
-appendint(this.hashCode())
+stringBuffer!.append(stringUtil!.toString(this.motionGesture))
+stringBuffer!.append(CURRENT)
+stringBuffer!.append(stringUtil!.toString(this.currentPoint))
+stringBuffer!.append(PREVIOUS)
+stringBuffer!.append(stringUtil!.toString(this.previousPoint))
+stringBuffer!.append(HASHCODE)
+stringBuffer!.appendint(this.hashCode())
 
 
 

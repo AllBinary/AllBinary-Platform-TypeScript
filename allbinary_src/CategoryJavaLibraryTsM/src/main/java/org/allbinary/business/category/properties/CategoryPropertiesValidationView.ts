@@ -54,7 +54,7 @@ public constructor (categoryPropertiesInterface: CategoryPropertiesInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isValid(): Boolean{
 
@@ -66,7 +66,7 @@ public constructor (categoryPropertiesInterface: CategoryPropertiesInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public validationInfo(): string{
 
@@ -76,7 +76,7 @@ public constructor (categoryPropertiesInterface: CategoryPropertiesInterface)
         
         
 
-append(this.categoryPropertiesInterface!.validationInfo())
+stringBuffer!.append(this.categoryPropertiesInterface!.validationInfo())
 
 
 
@@ -86,11 +86,10 @@ append(this.categoryPropertiesInterface!.validationInfo())
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation info error", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation info error", this, "validationInfo()", e)
 
                                     }
                                 
@@ -105,7 +104,7 @@ append(this.categoryPropertiesInterface!.validationInfo())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toValidationInfoDoc(): Document{
 
@@ -117,7 +116,7 @@ append(this.categoryPropertiesInterface!.validationInfo())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document

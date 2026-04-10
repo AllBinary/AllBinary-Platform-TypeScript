@@ -126,7 +126,7 @@ this.code= DomNodeHelper.getTextNodeValue(codeNode)
         
 
 this.country= DomNodeHelper.getTextNodeValue(countryNode)
-this.log()
+this.this.log()
 }
 
 public constructor (streetAddress: StreetAddress){
@@ -141,21 +141,21 @@ this.state= streetAddress!.getState()
 this.code= streetAddress!.getCode()
 this.country= streetAddress!.getCountry()
 this.isDefault= streetAddress!.isDefault()
-this.log()
+this.this.log()
 }
 
 public constructor (request: HttpServletRequest){
 
             super();
             var request = request
-this.setId(request.getParameter(StreetAddressData.ID))
-this.setName(request.getParameter(StreetAddressData.NAME))
-this.setStreet(request.getParameter(StreetAddressData.STREET))
-this.setCity(request.getParameter(StreetAddressData.CITY))
-this.setState(request.getParameter(StreetAddressData.STATE))
-this.setCode(request.getParameter(StreetAddressData.CODE))
-this.setCountry(request.getParameter(StreetAddressData.COUNTRY))
-this.log()
+this.this.setId(request.getParameter(StreetAddressData.ID))
+this.this.setName(request.getParameter(StreetAddressData.NAME))
+this.this.setStreet(request.getParameter(StreetAddressData.STREET))
+this.this.setCity(request.getParameter(StreetAddressData.CITY))
+this.this.setState(request.getParameter(StreetAddressData.STATE))
+this.this.setCode(request.getParameter(StreetAddressData.CODE))
+this.this.setCountry(request.getParameter(StreetAddressData.COUNTRY))
+this.this.log()
 }
 
 public constructor (name: string, street: string, city: string, state: string, code: string, country: string){
@@ -173,7 +173,7 @@ this.city= city
 this.state= state
 this.code= code
 this.country= country
-this.log()
+this.this.log()
 }
 
 public constructor (address: HashMap<Any, Any>){
@@ -193,7 +193,6 @@ this.country= address.get(StreetAddressData.COUNTRY) as String
         
 
 
-    
                         if(def != 
                                     null
                                  && def.compareTo(StreetAddressData.DEFAULT) == 0)
@@ -208,17 +207,16 @@ this.country= address.get(StreetAddressData.COUNTRY) as String
 
                         }
                             
-this.log()
+this.this.log()
 }
 
 
     log(){
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put("Created Address: \n" +this.toHashMap(), this, "log")
+                                    logUtil!.put("Created Address: \n" +this.toHashMap(), this, "log")
 
                                     }
                                 
@@ -354,7 +352,6 @@ this.country= value
         
 
 
-    
                         if(this.getName() == 
                                     null
                                  && this.getName()!.compareTo(EMPTY_STRING) == 0 && this.getStreet() == 
@@ -395,7 +392,6 @@ this.country= value
         
 
 
-    
                         if(this.getName() == 
                                     null
                                  || this.getName()!.compareTo(EMPTY_STRING) == 0 || this.getStreet() == 
@@ -435,69 +431,63 @@ this.country= value
         
         
 
-append("Address Failed To Validate - All fields must contain data.<br></br>")
+stringBuffer!.append("Address Failed To Validate - All fields must contain data.<br></br>")
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.getName(), StreetAddressData.MIN, StreetAddressData.MAX))
                         
                                     {
-                                    append("Please enter a valid name")
-append("<br></br>")
+                                    stringBuffer!.append("Please enter a valid name")
+stringBuffer!.append("<br></br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.getStreet(), StreetAddressData.MIN, StreetAddressData.MAX))
                         
                                     {
-                                    append("Please enter a valid street")
-append("<br></br>")
+                                    stringBuffer!.append("Please enter a valid street")
+stringBuffer!.append("<br></br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.getCity(), StreetAddressData.MIN, StreetAddressData.MAX))
                         
                                     {
-                                    append("Please enter a valid city")
-append("<br></br>")
+                                    stringBuffer!.append("Please enter a valid city")
+stringBuffer!.append("<br></br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.getState(), StreetAddressData.MIN, StreetAddressData.MAX))
                         
                                     {
-                                    append("Please enter a valid state")
-append("<br></br>")
+                                    stringBuffer!.append("Please enter a valid state")
+stringBuffer!.append("<br></br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.getCode(), StreetAddressData.MIN, StreetAddressData.MAX))
                         
                                     {
-                                    append("Please enter a valid zipcode")
-append("<br></br>")
+                                    stringBuffer!.append("Please enter a valid zipcode")
+stringBuffer!.append("<br></br>")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.getCountry(), StreetAddressData.MIN, StreetAddressData.MAX))
                         
                                     {
-                                    append("Please enter a valid country")
-append("<br></br>")
+                                    stringBuffer!.append("Please enter a valid country")
+stringBuffer!.append("<br></br>")
 
                                     }
                                 
@@ -529,7 +519,7 @@ var document = document
         
         
 
-appendChild(this.toXmlNode(document))
+node.appendChild(this.toXmlNode(document))
 
 
 
@@ -539,7 +529,6 @@ appendChild(this.toXmlNode(document))
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
@@ -548,7 +537,7 @@ appendChild(this.toXmlNode(document))
         
         
 
-put(commonStrings!.EXCEPTION, this, "toValidationInfoNode", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoNode", e)
 
                                     }
                                 
@@ -569,13 +558,13 @@ put(commonStrings!.EXCEPTION, this, "toValidationInfoNode", e)
         
         
 
-put(StreetAddressData.ID, this.id)
-put(StreetAddressData.NAME, this.name)
-put(StreetAddressData.STREET, this.street)
-put(StreetAddressData.CITY, this.city)
-put(StreetAddressData.STATE, this.state)
-put(StreetAddressData.CODE, this.code)
-put(StreetAddressData.COUNTRY, this.country)
+hashMap!.put(StreetAddressData.ID, this.id)
+hashMap!.put(StreetAddressData.NAME, this.name)
+hashMap!.put(StreetAddressData.STREET, this.street)
+hashMap!.put(StreetAddressData.CITY, this.city)
+hashMap!.put(StreetAddressData.STATE, this.state)
+hashMap!.put(StreetAddressData.CODE, this.code)
+hashMap!.put(StreetAddressData.COUNTRY, this.country)
 
 
 
@@ -585,7 +574,7 @@ put(StreetAddressData.COUNTRY, this.country)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -640,7 +629,7 @@ i < size; i++)
         
         
 
-appendChild(ModDomHelper.createNameValueNodes(document, name, value))
+node.appendChild(ModDomHelper.createNameValueNodes(document, name, value))
 }
 
 

@@ -76,18 +76,16 @@ this.user= NewUserFactory.getInstance(transformInfoInterface)
 
         try {
             
-    
                         if(UserEntityFactory.getInstance()!.getUser(this.user.getUserName()) == 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("User does not exist", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("User does not exist", this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -101,7 +99,6 @@ this.user= NewUserFactory.getInstance(transformInfoInterface)
                                     }
                                 
 
-    
                         if(this.user.isValid() == Boolean.FALSE)
                         
                                     {
@@ -123,11 +120,10 @@ this.user= NewUserFactory.getInstance(transformInfoInterface)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -151,31 +147,28 @@ this.user= NewUserFactory.getInstance(transformInfoInterface)
         
 
 
-    
                         if(UserEntityFactory.getInstance()!.getUser(this.user.getUserName()) == 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("User does not exist", this, "validationInfo()")
+                                    logUtil!.put("User does not exist", this, "validationInfo()")
 
                                     }
                                 
-append("Unable to update user that does not exist.<br />")
+stringBuffer!.append("Unable to update user that does not exist.<br />")
 
                                     }
                                 
 
-    
                         if(this.user.isValid() == Boolean.FALSE)
                         
                                     {
-                                    append(this.user.validationInfo())
+                                    stringBuffer!.append(this.user.validationInfo())
 
                                     }
                                 
@@ -188,11 +181,10 @@ append("Unable to update user that does not exist.<br />")
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 
@@ -228,7 +220,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 

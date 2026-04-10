@@ -49,7 +49,6 @@ var textBody = textBody
 var htmlAttachment = htmlAttachment
 var contentBase = contentBase
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
@@ -85,7 +84,7 @@ var contentBase = contentBase
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public log(): string{
 
@@ -97,7 +96,7 @@ var contentBase = contentBase
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toHashMap(): HashMap<Any, Any>{
 
@@ -109,7 +108,7 @@ var contentBase = contentBase
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -132,7 +131,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlDoc(): Document{
 

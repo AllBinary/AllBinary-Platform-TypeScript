@@ -95,14 +95,13 @@ this.sprite= sprite
 this.image= image
 this.basicColorArray= basicColorArray
 
-    
                         if(this.basicColorArray!.length != 0 && this.getSize() != this.basicColorArray!.length)
                         
                                     {
                                     
 
 
-                            throw Exception(StringMaker().
+                            throw Error(StringMaker().
                             append(CommonLabels.getInstance()!.TOTAL_LABEL)!.appendint(this.getSize())!.append("!=")!.appendint(this.basicColorArray!.length)!.toString())
 
                                     }
@@ -110,7 +109,7 @@ this.basicColorArray= basicColorArray
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAnimationSize(): number{
 
@@ -135,11 +134,10 @@ this.basicColorArray= basicColorArray
 index < this.basicColorArray!.length; index++)
         {
 
-    
                         if(basicColor == this.basicColorArray[index])
                         
                                     {
-                                    this.setFrame(index)
+                                    this.this.setFrame(index)
 break;
 
                     
@@ -153,7 +151,6 @@ break;
 
     public getBasicColorP(): BasicColor{
 
-    
                         if(this.basicColorArray!.length < this.getFrame())
                         
                                     {
@@ -184,9 +181,9 @@ break;
     //var frame = frame
     //var x = x
     //var y = y
-this.setFrame(frame)
-setPosition(x, y)
-paint(graphics)
+this.this.setFrame(frame)
+this.sprite.setPosition(x, y)
+sprite.paint(graphics)
 }
 
 
@@ -194,24 +191,24 @@ paint(graphics)
     //var graphics = graphics
     //var x = x
     //var y = y
-setPosition(x, y)
-paint(graphics)
+this.sprite.setPosition(x, y)
+sprite.paint(graphics)
 }
 
 
     paint(graphics: Graphics){
     //var graphics = graphics
-paint(graphics)
+sprite.paint(graphics)
 }
 
 
     public nextFrame(){
-nextFrame()
+this.sprite.nextFrame()
 }
 
 
     public previousFrame(){
-prevFrame()
+this.sprite.prevFrame()
 }
 
 
@@ -227,7 +224,7 @@ prevFrame()
 
     public setFrame(frame: number){
     //var frame = frame
-setFrame(frame)
+this.sprite.setFrame(frame)
 }
 
 
@@ -243,7 +240,6 @@ setFrame(frame)
 
     public isLastFrame(): boolean{
 
-    
                         if(this.sprite.getFrame() == this.getSize() -1)
                         
                                     {
@@ -298,7 +294,7 @@ setFrame(frame)
 }
 
 
-                @Throws(Throwable::class)
+                //@Throws(Error::class)
             
     finalize(){
 }

@@ -56,7 +56,7 @@ export class AdvancedRTSLayerUtil
         
         
 
-put(WorkWaypoint.ID, SmallIntegerSingletonFactory.getInstance()!.getInstance(50))
+hashtable.put(WorkWaypoint.ID, SmallIntegerSingletonFactory.getInstance()!.getInstance(50))
 
 
 

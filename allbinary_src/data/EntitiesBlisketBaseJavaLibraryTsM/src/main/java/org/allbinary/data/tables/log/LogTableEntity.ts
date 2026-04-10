@@ -50,7 +50,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.this.setTableName(tableName)
 }
 
 
@@ -65,7 +65,7 @@ this.setTableName(tableName)
         
         
 
-append(this.sqlStrings!.END)
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(this.sqlStrings!.ID)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(abeHttpRequestInfoData!.HTTP_USER_AGENT)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(abeHttpRequestInfoData!.REMOTE_HOST)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(abeHttpRequestInfoData!.REMOTE_ADDRESS)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(abeHttpRequestInfoData!.REQUEST_FILE_PATH)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(abeHttpRequestInfoData!.REMOTE_PORT)!.append(this.sqlTypeStrings!.MAX_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(this.sqlStrings!.ID)!.append(this.sqlStrings!.END)
 
 
 

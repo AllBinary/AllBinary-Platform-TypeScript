@@ -59,11 +59,10 @@ public constructor ()
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -80,18 +79,17 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     view(): string{
 
@@ -112,11 +110,10 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 
@@ -129,22 +126,20 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("Creating with: \n" +this.getPropertiesHashMap()!.toString(), this, "doStartTag")
+                                    logUtil!.put("Creating with: \n" +this.getPropertiesHashMap()!.toString(), this, "doStartTag")
 
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
@@ -153,22 +148,21 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
         
         
 
-append("ViewTag Start For: ")
-append(this.getName())
-append("\nViewFile: ")
-append(this.getObjectFile())
-put(stringBuffer!.toString(), this, "doStartTag")
+stringBuffer!.append("ViewTag Start For: ")
+stringBuffer!.append(this.getName())
+stringBuffer!.append("\nViewFile: ")
+stringBuffer!.append(this.getObjectFile())
+logUtil!.put(stringBuffer!.toString(), this, "doStartTag")
 
                                     }
                                 
-this.setHelper()
-print(this.view())
+this.this.setHelper()
+pageContext!.getOut()!.print(this.view())
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("Tag End", this, "doStartTag")
+                                    logUtil!.put("Tag End", this, "doStartTag")
 
                                     }
                                 
@@ -180,7 +174,7 @@ print(this.view())
     
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -190,7 +184,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

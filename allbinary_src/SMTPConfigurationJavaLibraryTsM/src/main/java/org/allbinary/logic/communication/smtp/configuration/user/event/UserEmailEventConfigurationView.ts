@@ -66,25 +66,25 @@ public constructor (node: Node){
         
         
 
-put(UserEmailEventConfigurationData.NAME, name)
+hashMap!.put(UserEmailEventConfigurationData.NAME, name)
 
     var eventListenerClassPath: string = DomNodeHelper.getTextNodeValue(UserEmailEventConfigurationData.LISTENER_CLASSPATH, childNodeList)!;
         
         
 
-put(UserEmailEventConfigurationData.LISTENER_CLASSPATH, eventListenerClassPath)
-this.setUserEmailEventConfigurationInterface(UserEmailEventConfiguration(hashMap) as UserEmailEventConfigurationInterface)
+hashMap!.put(UserEmailEventConfigurationData.LISTENER_CLASSPATH, eventListenerClassPath)
+this.this.setUserEmailEventConfigurationInterface(UserEmailEventConfiguration(hashMap) as UserEmailEventConfigurationInterface)
 }
 
 public constructor (userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface){
 
             super();
             var userEmailEventConfigurationInterface = userEmailEventConfigurationInterface
-this.setUserEmailEventConfigurationInterface(userEmailEventConfigurationInterface)
+this.this.setUserEmailEventConfigurationInterface(userEmailEventConfigurationInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

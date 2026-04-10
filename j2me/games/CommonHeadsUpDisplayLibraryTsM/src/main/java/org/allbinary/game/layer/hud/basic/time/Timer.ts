@@ -100,7 +100,6 @@ this.startTime= this.gameTickTimeDelayHelper!.startTime
         
 
 
-    
                         if(currentTime < 0)
                         
                                     {
@@ -110,12 +109,10 @@ this.startTime= this.gameTickTimeDelayHelper!.startTime
                                 
 this.hundredthTime= currentTime /100
 
-    
                         if(this.hundredthTime >= this.maxTime)
                         
                                     {
                                     
-    
                         if(this.startTime > 0)
                         
                                     {
@@ -127,7 +124,6 @@ this.hundredthTime= currentTime /100
                                     }
                                 
                              else 
-    
                         if(lastLowerTime != this.hundredthTime)
                         
                                     {

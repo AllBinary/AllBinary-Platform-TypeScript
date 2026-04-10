@@ -54,13 +54,13 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     read(){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public write(){
 }

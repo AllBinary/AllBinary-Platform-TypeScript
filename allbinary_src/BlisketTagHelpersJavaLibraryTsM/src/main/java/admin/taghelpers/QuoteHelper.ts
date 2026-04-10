@@ -127,7 +127,6 @@ var pageContext = pageContext
         
 
 
-    
                         if(storeName != 
                                     null
                                 )
@@ -147,7 +146,7 @@ this.portion= Portion(hashMap)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     emailUser(quoteRequest: QuoteRequest){
 var quoteRequest = quoteRequest
@@ -166,9 +165,9 @@ var quoteRequest = quoteRequest
         
         
 
-append("This is just a verification email. ")
-append("We usually respond to quote request within 24 hours.")
-append("\n\nThank You For Your Business.")
+stringBuffer!.append("This is just a verification email. ")
+stringBuffer!.append("We usually respond to quote request within 24 hours.")
+stringBuffer!.append("\n\nThank You For Your Business.")
 
     var userEmailTextBody: string = stringBuffer!.toString()!;
         
@@ -189,11 +188,11 @@ append("\n\nThank You For Your Business.")
         
         
 
-receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST, emailInfo)
+userEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST, emailInfo)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     emailAdmins(quoteRequest: QuoteRequest){
 var quoteRequest = quoteRequest
@@ -207,18 +206,18 @@ var quoteRequest = quoteRequest
         
         
 
-append("\nUserName: ")
-append(quoteRequest!.getUserName())
-append("\nProject Info: \n")
-append(quoteRequest!.getProjectInfo())
-append("\nUser Comments: \n")
-append(quoteRequest!.getUserComments())
-append("\nBudget: \n")
-append(quoteRequest!.getBudget())
-append("\nTime Frame: \n")
-append(quoteRequest!.getTimeFrame())
-append("\nComments: \n")
-append(quoteRequest!.getComments())
+stringBuffer!.append("\nUserName: ")
+stringBuffer!.append(quoteRequest!.getUserName())
+stringBuffer!.append("\nProject Info: \n")
+stringBuffer!.append(quoteRequest!.getProjectInfo())
+stringBuffer!.append("\nUser Comments: \n")
+stringBuffer!.append(quoteRequest!.getUserComments())
+stringBuffer!.append("\nBudget: \n")
+stringBuffer!.append(quoteRequest!.getBudget())
+stringBuffer!.append("\nTime Frame: \n")
+stringBuffer!.append(quoteRequest!.getTimeFrame())
+stringBuffer!.append("\nComments: \n")
+stringBuffer!.append(quoteRequest!.getComments())
 
     var adminEmailTextBody: string = stringBuffer!.toString()!;
         
@@ -244,12 +243,12 @@ append(quoteRequest!.getComments())
         
         
 
-receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST, emailInfo)
-receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST, emailInfo)
+storeAdminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST, emailInfo)
+adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST, emailInfo)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public email(): string{
 
@@ -297,7 +296,6 @@ get.
         
 
 
-    
                         if(id < nextId)
                         
                                     {
@@ -313,14 +311,13 @@ get.
         
 
 
-    
                         if(quoteRequest != 
                                     null
                                 )
                         
                                     {
-                                    this.emailUser(quoteRequest)
-this.emailAdmins(quoteRequest)
+                                    this.this.emailUser(quoteRequest)
+this.this.emailAdmins(quoteRequest)
 
 
 
@@ -334,18 +331,17 @@ this.emailAdmins(quoteRequest)
                             
 
 
-                            throw Exception("No Quote Request")
+                            throw Error("No Quote Request")
 
                         }
                             
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "email", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "email", e)
 
                                     }
                                 
@@ -369,11 +365,10 @@ this.emailAdmins(quoteRequest)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, commonStrings!.DROP)
+                                    logUtil!.put(success, this, commonStrings!.DROP)
 
                                     }
                                 
@@ -391,11 +386,10 @@ this.emailAdmins(quoteRequest)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e)
 
                                     }
                                 
@@ -419,11 +413,10 @@ this.emailAdmins(quoteRequest)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "create()")
+                                    logUtil!.put(success, this, "create()")
 
                                     }
                                 
@@ -441,11 +434,10 @@ this.emailAdmins(quoteRequest)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "create()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "create()", e)
 
                                     }
                                 
@@ -474,11 +466,10 @@ this.emailAdmins(quoteRequest)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "restore()")
+                                    logUtil!.put(success, this, "restore()")
 
                                     }
                                 
@@ -496,11 +487,10 @@ this.emailAdmins(quoteRequest)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "restore()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "restore()", e)
 
                                     }
                                 
@@ -529,11 +519,10 @@ this.emailAdmins(quoteRequest)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "backup()")
+                                    logUtil!.put(success, this, "backup()")
 
                                     }
                                 
@@ -551,11 +540,10 @@ this.emailAdmins(quoteRequest)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "backup()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "backup()", e)
 
                                     }
                                 

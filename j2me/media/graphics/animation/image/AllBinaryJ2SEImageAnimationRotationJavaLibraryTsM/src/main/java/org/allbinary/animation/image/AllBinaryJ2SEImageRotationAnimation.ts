@@ -139,7 +139,6 @@ this.twoImages[1]= ImageCopyUtil.getInstance()!.createImageForRotation(image)
         
 
 
-    
                         if(this.getBasicColorP() == 
                                     null
                                  || this.getBasicColorP()!.toInt() != basicColor!.toInt())
@@ -149,14 +148,13 @@ this.twoImages[1]= ImageCopyUtil.getInstance()!.createImageForRotation(image)
 
                                     }
                                 
-setBasicColorP(basicColor)
+super.setBasicColorP(basicColor)
 
-    
                         if(changed)
                         
                                     {
                                     this.setColorProcessor= SetColorProcessor.getInstance()
-this.updateImage()
+this.this.updateImage()
 
                                     }
                                 
@@ -171,7 +169,6 @@ this.updateImage()
         
 
 
-    
                         if(this.getChangeBasicColor() == 
                                     null
                                  || this.getChangeBasicColor()!.toInt() != basicColor!.toInt())
@@ -181,14 +178,13 @@ this.updateImage()
 
                                     }
                                 
-changeBasicColor(basicColor)
+super.changeBasicColor(basicColor)
 
-    
                         if(changed)
                         
                                     {
                                     this.changeColorProcessor= ChangeColorProcessor.getInstance()
-this.updateImage()
+this.this.updateImage()
 
                                     }
                                 
@@ -203,7 +199,6 @@ this.updateImage()
         
 
 
-    
                         if(this.alphaP != alpha)
                         
                                     {
@@ -211,14 +206,13 @@ this.updateImage()
 
                                     }
                                 
-setAlpha(alpha)
+super.setAlpha(alpha)
 
-    
                         if(changed)
                         
                                     {
                                     this.alphaProcessor= AlphaProcessor.getInstance()
-this.updateImage()
+this.this.updateImage()
 
                                     }
                                 
@@ -231,12 +225,11 @@ this.updateImage()
 this.scaleX= scaleX
 this.scaleY= scaleY
 
-    
                         if(this.scaleX != this.lastScaleX || this.scaleY != this.lastScaleY)
                         
                                     {
-                                    update(this.realOriginalImage, this.originalImageArray, this.twoImages, this.bufferedImageIndex, this.scaleX, this.scaleY, this.maxScaleX, this.maxScaleY)
-this.updateImage()
+                                    this.scaleProcessor!.update(this.realOriginalImage, this.originalImageArray, this.twoImages, this.bufferedImageIndex, this.scaleX, this.scaleY, this.maxScaleX, this.maxScaleY)
+this.this.updateImage()
 
                                     }
                                 
@@ -250,43 +243,42 @@ this.lastScaleY= this.scaleY
     //var maxScaleY = maxScaleY
 this.maxScaleX= maxScaleX
 this.maxScaleY= maxScaleY
-update(this.realOriginalImage, this.originalImageArray, this.twoImages, this.bufferedImageIndex, this.scaleX, this.scaleY, this.maxScaleX, this.maxScaleY)
-this.updateImage()
+this.scaleProcessor!.update(this.realOriginalImage, this.originalImageArray, this.twoImages, this.bufferedImageIndex, this.scaleX, this.scaleY, this.maxScaleX, this.maxScaleY)
+this.this.updateImage()
 }
 
 
     public nextRotation(){
-nextRotation()
-this.updateImage()
+super.nextRotation()
+this.this.updateImage()
 }
 
 
     public previousRotation(){
-previousRotation()
-this.updateImage()
+super.previousRotation()
+this.this.updateImage()
 }
 
 
     updateImage(){
-rotateImage(this.originalImageArray[0]!, this.twoImages[this.bufferedImageIndex]!, this.angleInfo!.getAngle() +90)
-update(imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.alphaP)
-update(imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.basicColor)
-update(imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.changeBasicColorP)
-this.swap()
+this.imageRotationUtil!.rotateImage(this.originalImageArray[0]!, this.twoImages[this.bufferedImageIndex]!, this.angleInfo!.getAngle() +90)
+this.alphaProcessor!.update(imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.alphaP)
+this.setColorProcessor!.update(imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.basicColor)
+this.changeColorProcessor!.update(imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.changeBasicColorP)
+this.this.swap()
 }
 
 
     public setFrame(index: number){
     //var index = index
-setFrame(index)
-this.updateImage()
+super.setFrame(index)
+this.this.updateImage()
 }
 
 
     public swap(){
 this.imageToShow= this.twoImages[this.bufferedImageIndex]!
 
-    
                         if(this.bufferedImageIndex == 0)
                         
                                     {
@@ -306,12 +298,12 @@ this.imageToShow= this.twoImages[this.bufferedImageIndex]!
     //var graphics = graphics
     //var x = x
     //var y = y
-drawImage(this.imageToShow, x, y, anchor)
+graphics.drawImage(this.imageToShow, x, y, anchor)
 }
 
 
     public close(){
-close()
+super.close()
 
     var disposalUtil: DisposalUtil = DisposalUtil.getInstance()!;
         
@@ -333,7 +325,7 @@ close()
         
 index < size2; index++)
         {
-dispose(this.twoImages[index]!)
+disposalUtil!.dispose(this.twoImages[index]!)
 }
 
 
@@ -352,18 +344,18 @@ dispose(this.twoImages[index]!)
         
 index < size; index++)
         {
-dispose(this.originalImageArray[index]!)
+disposalUtil!.dispose(this.originalImageArray[index]!)
 }
 
-dispose(this.realOriginalImage)
-dispose(this.imageToShow)
+disposalUtil!.dispose(this.realOriginalImage)
+disposalUtil!.dispose(this.imageToShow)
 }
 
 
-                @Throws(Throwable::class)
+                //@Throws(Error::class)
             
     finalize(){
-finalize()
+super.finalize()
 
     var disposalUtil: DisposalUtil = DisposalUtil.getInstance()!;
         
@@ -385,7 +377,7 @@ finalize()
         
 index < size2; index++)
         {
-dispose(this.twoImages[index]!)
+disposalUtil!.dispose(this.twoImages[index]!)
 }
 
 
@@ -404,11 +396,11 @@ dispose(this.twoImages[index]!)
         
 index < size; index++)
         {
-dispose(this.originalImageArray[index]!)
+disposalUtil!.dispose(this.originalImageArray[index]!)
 }
 
-dispose(this.realOriginalImage)
-dispose(this.imageToShow)
+disposalUtil!.dispose(this.realOriginalImage)
+disposalUtil!.dispose(this.imageToShow)
 }
 
 

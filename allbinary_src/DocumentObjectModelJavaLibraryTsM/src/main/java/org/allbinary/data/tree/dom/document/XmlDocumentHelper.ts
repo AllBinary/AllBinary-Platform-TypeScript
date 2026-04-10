@@ -95,7 +95,7 @@ export class XmlDocumentHelper
 private constructor (){
 
             super();
-            this.init(4, true)
+            this.this.init(4, true)
 }
 
 
@@ -114,10 +114,10 @@ private constructor (){
         
         
 
-setAttribute(INDENT_NUMBER, indent)
+transformerFactory!.setAttribute(INDENT_NUMBER, indent)
 transformer= transformerFactory!.newTransformer()
-setOutputProperty(OutputKeys.ENCODING, CharacterSetData.getInstance()!.UTF_8)
-setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, ignoreDeclaration
+transformer.setOutputProperty(OutputKeys.ENCODING, CharacterSetData.getInstance()!.UTF_8)
+transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, ignoreDeclaration
                         ?       
                                 booleanFactory!.YES
                                 :
@@ -125,7 +125,7 @@ setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, ignoreDeclaration
                             booleanFactory!.NO;
 
     )
-setOutputProperty(OutputKeys.INDENT, booleanFactory!.YES)
+transformer.setOutputProperty(OutputKeys.INDENT, booleanFactory!.YES)
 } catch(e: Exception)
             {
 
@@ -133,13 +133,13 @@ setOutputProperty(OutputKeys.INDENT, booleanFactory!.YES)
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public format(xmlString: string): string{
     //var xmlString = xmlString
@@ -158,7 +158,7 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
         
         
 
-transform(DOMSource(document), StreamResult(out))
+transformer.transform(DOMSource(document), StreamResult(out))
 
 
 

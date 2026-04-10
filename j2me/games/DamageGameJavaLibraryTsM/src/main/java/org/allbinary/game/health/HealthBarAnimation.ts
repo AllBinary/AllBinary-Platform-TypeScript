@@ -58,19 +58,17 @@ this.location= location
         
 
 
-    
                         if(this.location != basicHudFactory!.TOPLEFT && this.location != basicHudFactory!.BOTTOMLEFT)
                         
                                     {
                                     
 
 
-                            throw Exception("Location Not Valid")
+                            throw Error("Location Not Valid")
 
                                     }
                                 
 
-    
                         if(layerInterface!.getWidth() > 40)
                         
                                     {
@@ -79,7 +77,6 @@ this.location= location
                                     }
                                 
                              else 
-    
                         if(layerInterface!.getWidth() > 20)
                         
                                     {
@@ -104,7 +101,6 @@ x2= newX2
         
 
 
-    
                         if(x2 > quarter *3)
                         
                                     {
@@ -114,7 +110,6 @@ this.colorP= this.basicColor!.toInt()
                                     }
                                 
                              else 
-    
                         if(x2 > quarter *2)
                         
                                     {
@@ -124,7 +119,6 @@ this.colorP= this.basicColor!.toInt()
                                     }
                                 
                              else 
-    
                         if(x2 > quarter)
                         
                                     {
@@ -149,7 +143,6 @@ this.colorP= this.basicColor!.toInt()
         
 
 
-    
                         if(this.location == basicHudFactory!.TOPLEFT)
                         
                                     {
@@ -163,7 +156,6 @@ this.colorP= this.basicColor!.toInt()
                                     }
                                 
                              else 
-    
                         if(this.location == basicHudFactory!.BOTTOMLEFT)
                         
                                     {

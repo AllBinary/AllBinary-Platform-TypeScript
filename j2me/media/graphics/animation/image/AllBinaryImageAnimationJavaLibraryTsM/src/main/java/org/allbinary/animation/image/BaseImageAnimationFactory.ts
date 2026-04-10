@@ -144,7 +144,7 @@ this.sequenceArray= sequenceArray
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
@@ -193,11 +193,11 @@ this.sequenceArray= sequenceArray
         
         
 
-append(super.toString())
-append(commonLabels!.HEIGHT_LABEL)
-appendint(image.getHeight())
-append(commonSeps!.SPACE)
-append(this.animationFactoryInitializationVisitor!.toString())
+stringBuffer!.append(super.toString())
+stringBuffer!.append(commonLabels!.HEIGHT_LABEL)
+stringBuffer!.appendint(image.getHeight())
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(this.animationFactoryInitializationVisitor!.toString())
 
 
 
@@ -211,7 +211,6 @@ append(this.animationFactoryInitializationVisitor!.toString())
     //var scaleProperties = scaleProperties
 this.scaleProperties= scaleProperties
 
-    
                         if(this.scaleProperties!.shouldScale)
                         
                                     {

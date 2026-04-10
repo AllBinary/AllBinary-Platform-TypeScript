@@ -63,7 +63,7 @@ private constructor (){
 
     public defaultList(){
 this.list= LIST
-this.toggle(false, LIST)
+this.this.toggle(false, LIST)
 }
 
 
@@ -76,13 +76,11 @@ this.toggle(false, LIST)
 var save = save
 var list = list
 
-    
                         if(list != BasicArrayListUtil.getInstance()!.getImmutableInstance())
                         
                                     {
                                     this.savedList= list
 
-    
                         if(!this.saved)
                         
                                     {
@@ -95,12 +93,10 @@ var list = list
                                 
                         else {
                             
-    
                         if(save)
                         
                                     {
                                     
-    
                         if(!this.saved)
                         
                                     {
@@ -129,12 +125,11 @@ this.saved= false
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setList(list: BasicArrayList){
 var list = list
 
-    
                         if(list == 
                                     null
                                 )
@@ -143,7 +138,7 @@ var list = list
                                     
 
 
-                            throw Exception("Null List")
+                            throw Error("Null List")
 
                                     }
                                 

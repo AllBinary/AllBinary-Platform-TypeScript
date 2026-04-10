@@ -82,7 +82,6 @@ public constructor (){
     public getMotionGestureAction(index: number): CompleteMotionGestureInputEvent{
 var index = index
 
-    
                         if(index >= activeCommands!.size())
                         
                                     {
@@ -107,12 +106,12 @@ var index = index
     public addMotionGestureAction(list: BasicArrayList, commandAction: CompleteMotionGestureInputEvent){
 var list = list
 var commandAction = commandAction
-add(MotionGestureToMotionGestureActionAssociation(list, commandAction))
+activeCommands!.add(MotionGestureToMotionGestureActionAssociation(list, commandAction))
 }
 
 
     public clearMotionGestureAction(){
-clear()
+activeCommands!.clear()
 }
 
 

@@ -40,11 +40,11 @@ import { BasicDataTableInterface } from "../../../../../../../../org/allbinary/d
 interface InventoryEntityInterface extends BasicDataTableInterface {
         
 
-                @Throws(MoneyException::class)
+                //@Throws(MoneyException::class)
             
     public getItem(id: string): ItemInterface
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getItems(storeFrontInterface: StoreFrontInterface): Vector
 

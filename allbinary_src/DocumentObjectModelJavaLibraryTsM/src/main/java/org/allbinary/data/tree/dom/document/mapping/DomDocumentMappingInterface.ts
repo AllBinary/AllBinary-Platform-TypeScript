@@ -25,7 +25,7 @@ import { Document } from "../../../../../../../org/w3c/dom/Document.js";
 interface DomDocumentMappingInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlDoc(): Document
 

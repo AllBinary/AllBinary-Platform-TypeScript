@@ -85,7 +85,7 @@ this.paymentGatewayVector= gatewayVector
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -126,13 +126,13 @@ index < size; index++)
         
         
 
-put(EntryData.getInstance()!.DEFAULT, PaymentTypeUtil.getInstance()!.getDefault(storeName)!.getBasicPaymentType()!.getName())
+hashMap!.put(EntryData.getInstance()!.DEFAULT, PaymentTypeUtil.getInstance()!.getDefault(storeName)!.getBasicPaymentType()!.getName())
 
     var paymentGatewayNode: Node = ModDomHelper.createNodeWithValueNodes(document, PaymentGatewayData.NAME.toString(), hashMap)!;
         
         
 
-appendChild(paymentGatewayNode)
+paymentGatewaysNode!.appendChild(paymentGatewayNode)
 }
 
 
@@ -144,11 +144,10 @@ appendChild(paymentGatewayNode)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
 
                                     }
                                 
@@ -162,14 +161,14 @@ appendChild(paymentGatewayNode)
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface)
+this.this.addDomNodeInterface(this as DomNodeInterface)
 }
 
 
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.this.addDomNodeInterfaces()
 
 
 
@@ -184,11 +183,10 @@ this.addDomNodeInterface(this as DomNodeInterface)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 

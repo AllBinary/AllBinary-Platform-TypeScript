@@ -82,11 +82,11 @@ export class MyRandomFactory
         
 index < size2; index++)
         {
-append(commonSeps!.COMMA)
+stringBuilder!.appendint(randomFactory!.getAbsoluteNextInt(3))!.append(commonSeps!.COMMA)
 }
 
-println(stringBuilder!.toString())
-delete(0, stringBuilder!.length())
+System.out.println(stringBuilder!.toString())
+stringBuilder!.delete(0, stringBuilder!.length())
 
     var intArray: IntArray = IntArray(52);
         
@@ -117,7 +117,7 @@ intArray[index]= index
 intArray2[index]= index
 }
 
-shuffle(intArray, intArray2)
+randomFactory!.shuffle(intArray, intArray2)
 
 
 
@@ -128,11 +128,11 @@ shuffle(intArray, intArray2)
         
 index < size; index++)
         {
-append(commonSeps!.COMMA)
+stringBuilder!.appendint(intArray[index]!)!.append(commonSeps!.COMMA)
 }
 
-println(stringBuilder!.toString())
-delete(0, stringBuilder!.length())
+System.out.println(stringBuilder!.toString())
+stringBuilder!.delete(0, stringBuilder!.length())
 
 
 
@@ -143,10 +143,10 @@ delete(0, stringBuilder!.length())
         
 index < size; index++)
         {
-append(commonSeps!.COMMA)
+stringBuilder!.appendint(intArray2[index]!)!.append(commonSeps!.COMMA)
 }
 
-println(stringBuilder!.toString())
+System.out.println(stringBuilder!.toString())
 
     var found: boolean= false
 
@@ -172,7 +172,6 @@ found= false
 index2 < size; index2++)
         {
 
-    
                         if(intArray[index2] == index)
                         
                                     {
@@ -183,7 +182,6 @@ index2 < size; index2++)
 }
 
 
-    
                         if(!found)
                         
                                     throw RuntimeException()
@@ -240,7 +238,6 @@ var range = range
     public getAbsoluteNextIntAllowZero(range: number): number{
 var range = range
 
-    
                         if(range == 0)
                         
                                     {
@@ -268,7 +265,7 @@ var range = range
 
     public shuffle(intArray: IntArray){
     //var intArray = intArray
-this.shuffle(intArray, intArray!.length *7)
+this.this.shuffle(intArray, intArray!.length *7)
 }
 
 
@@ -313,7 +310,7 @@ intArray[randomIndex2]= value
     public shuffle(intArray: IntArray, intArray2: IntArray){
     //var intArray = intArray
     //var intArray2 = intArray2
-this.shuffle(intArray, intArray2, intArray!.length *7)
+this.this.shuffle(intArray, intArray2, intArray!.length *7)
 }
 
 

@@ -77,14 +77,14 @@ public constructor (signed: CompleteMotionGestureListenerInterface){
 
             super();
             var signed = signed
-put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 this.signed= signed
 }
 
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-log(commonStrings!.NOT_IMPLEMENTED, this)
+ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this)
 }
 
 
@@ -140,7 +140,7 @@ onMotionGestureEvent(ev)
 var ev = ev
 isMouseGestureOccurring= true
 currentMotionGesture= TouchMotionGestureFactory.getInstance()!.NO_MOTION
-this.onMotionGestureEvent(ev)
+this.this.onMotionGestureEvent(ev)
 }
 
 
@@ -149,7 +149,6 @@ var ev = ev
 
         try {
             
-    
                         if(isMouseGestureOccurring == false)
                         
 
@@ -158,11 +157,11 @@ var ev = ev
                         return ;
     
 isMouseGestureOccurring= false
-onMotionGestureCompleted(motionGestureCollection)
-clear()
+signed.onMotionGestureCompleted(motionGestureCollection)
+motionGestureCollection!.clear()
 } catch(e: Exception)
             {
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(commonStrings!.EXCEPTION_LABEL)!.append(StringUtil.getInstance()!.toString(ev.getMotionGesture()))!.toString(), this, "release", e)
 }
 
@@ -172,7 +171,6 @@ put(StringMaker().
     public onMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
 
-    
                         if(isMouseGestureOccurring == false)
                         
 
@@ -186,31 +184,28 @@ var ev = ev
         
 
 
-    
                         if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.PRESSED)
                         
                                     {
-                                    this.onPressedMotionGestureEvent(ev)
+                                    this.this.onPressedMotionGestureEvent(ev)
 
                                     }
                                 
                              else 
-    
                         if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.RELEASED)
                         
                                     {
-                                    this.released(ev)
+                                    this.this.released(ev)
 
                                     }
                                 
                         else {
                             
-    
                         if(currentMotionGesture != motionGestureInput)
                         
                                     {
                                     currentMotionGesture= motionGestureInput
-add(ev.getMotionGesture())
+motionGestureCollection!.add(ev.getMotionGesture())
 
                                     }
                                 

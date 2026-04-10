@@ -121,7 +121,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.this.setTableName(tableName)
 }
 
 
@@ -129,24 +129,22 @@ this.setTableName(tableName)
 var values = values
 
         try {
-            insert(values)
+            super.insert(values)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, INSERT)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT)
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, INSERT, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e)
 
                                     }
                                 
@@ -155,7 +153,7 @@ var values = values
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAdministrators(): Vector{
 
@@ -167,7 +165,7 @@ var values = values
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getStoreManagers(storeFrontInterface: StoreFrontInterface): Vector{
 var storeFrontInterface = storeFrontInterface
@@ -181,8 +179,8 @@ var storeFrontInterface = storeFrontInterface
         
         
 
-put(UserRoleData.NAME.toString(), UserRoleFactory.getInstance()!.STOREMANAGER.toString())
-put(UserData.PERMISSIONS, storeFrontInterface!.getName())
+keysAndValues!.put(UserRoleData.NAME.toString(), UserRoleFactory.getInstance()!.STOREMANAGER.toString())
+keysAndValues!.put(UserData.PERMISSIONS, storeFrontInterface!.getName())
 
     var usersHashMapVector: Vector = super.getRows(keysAndValues)!;
         
@@ -209,7 +207,6 @@ i < size; i++)
         
 
 
-    
                         if(userHashMap != 
                                     null
                                 )
@@ -225,7 +222,7 @@ i < size; i++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getCustomers(): Vector{
 
@@ -237,7 +234,7 @@ i < size; i++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getUsersWithRole(userRole: UserRole): Vector{
 var userRole = userRole
@@ -251,7 +248,7 @@ var userRole = userRole
         
         
 
-put(UserRoleData.NAME.toString(), userRole!.toString())
+keysAndValues!.put(UserRoleData.NAME.toString(), userRole!.toString())
 
     var usersHashMapVector: Vector = super.getRows(keysAndValues)!;
         
@@ -278,7 +275,6 @@ index < size; index++)
         
 
 
-    
                         if(userHashMap != 
                                     null
                                 )
@@ -294,7 +290,7 @@ index < size; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getUsers(storeFrontInterface: StoreFrontInterface): Vector{
 var storeFrontInterface = storeFrontInterface
@@ -308,7 +304,7 @@ var storeFrontInterface = storeFrontInterface
         
         
 
-put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getName())
+keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getName())
 
     var usersHashMapVector: Vector = super.getRows(keysAndValues)!;
         
@@ -335,7 +331,6 @@ index < size; index++)
         
 
 
-    
                         if(userHashMap != 
                                     null
                                 )
@@ -351,7 +346,7 @@ index < size; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getUser(userName: string): UserInterface{
 var userName = userName
@@ -360,14 +355,13 @@ var userName = userName
         
         
 
-put(UserData.USERNAME, userName)
+row.put(UserData.USERNAME, userName)
 
     var userHashMap: HashMap<Any, Any> = super.getRow(row)!;
         
         
 
 
-    
                         if(userHashMap != 
                                     null
                                 )
@@ -400,24 +394,22 @@ var key = key
 var value = value
 
         try {
-            deleteWhere(key, value)
+            super.deleteWhere(key, value)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, "deleteWhere")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "deleteWhere")
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "deleteWhere", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "deleteWhere", e)
 
                                     }
                                 
@@ -447,7 +439,6 @@ var password = password
         
 
 
-    
                         if(encryption != 
                                     null
                                  && encryption.compareTo(this.stringUtil!.EMPTY_STRING) != 0)
@@ -456,11 +447,10 @@ var password = password
                             encrypt(password))
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put("Command Success but login failed for user: " +userName +" because user did not exist", this, "login")
+                                    logUtil!.put("Command Success but login failed for user: " +userName +" because user did not exist", this, "login")
 
                                     }
                                 
@@ -474,12 +464,10 @@ var password = password
                         }
                             
 
-    
                         if(isUserNameAndPasswordCorrect == 0)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
@@ -488,13 +476,13 @@ var password = password
         
         
 
-append(COMMAND_SUCCESS_FOR_USER)
-append(userName)
-append(PASSWORD_LABEL)
-append(password)
-append(EQUALS)
-append(result)
-put(stringBuffer!.toString(), this, "login")
+stringBuffer!.append(COMMAND_SUCCESS_FOR_USER)
+stringBuffer!.append(userName)
+stringBuffer!.append(PASSWORD_LABEL)
+stringBuffer!.append(password)
+stringBuffer!.append(EQUALS)
+stringBuffer!.append(result)
+logUtil!.put(stringBuffer!.toString(), this, "login")
 
                                     }
                                 
@@ -509,7 +497,6 @@ put(stringBuffer!.toString(), this, "login")
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
@@ -518,16 +505,16 @@ put(stringBuffer!.toString(), this, "login")
         
         
 
-append(COMMAND_SUCCESS_BUT_LOGIN_FAILED)
-append(userName)
-append(INVALID_PASSWORD_LABEL)
-append(SuperCrypt(Integer(encryption).
+stringBuffer!.append(COMMAND_SUCCESS_BUT_LOGIN_FAILED)
+stringBuffer!.append(userName)
+stringBuffer!.append(INVALID_PASSWORD_LABEL)
+stringBuffer!.append(SuperCrypt(Integer(encryption).
                             toInt()).
                             encrypt(password))
-append(NOT_EQUAL)
-append(result)
-append(END_QUOTES)
-put(stringBuffer!.toString(), this, "login")
+stringBuffer!.append(NOT_EQUAL)
+stringBuffer!.append(result)
+stringBuffer!.append(END_QUOTES)
+logUtil!.put(stringBuffer!.toString(), this, "login")
 
                                     }
                                 
@@ -543,11 +530,10 @@ put(stringBuffer!.toString(), this, "login")
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "login", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "login", e)
 
                                     }
                                 
@@ -565,7 +551,7 @@ put(stringBuffer!.toString(), this, "login")
     public update(userName: string, updatedValues: HashMap<Any, Any>){
 var userName = userName
 var updatedValues = updatedValues
-updateWhere(UserData.USERNAME, userName, updatedValues)
+super.updateWhere(UserData.USERNAME, userName, updatedValues)
 }
 
 
@@ -590,7 +576,7 @@ updateWhere(UserData.USERNAME, userName, updatedValues)
         
         
 
-append(this.sqlStrings!.END)
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(UserData.USERNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.PREFIXNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.FIRSTNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.LASTNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.MIDDLENAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.SUFFIXNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.COMPANY)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.POSITIONATCOMPANY)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.MAINEMAIL)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.SECONDARYEMAIL)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.HOMEPHONE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.CELLPHONE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.WORKPHONE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.OTHERCONTACT)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.ELECTRONICDEVICE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.FAX)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserRoleData.NAME.toString())!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.CONFIGURATION)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(UserData.PERMISSIONS)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(entryData!.ENCRYPTION)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(UserData.SECRET)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.PASSWORD)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(entryData!.ENABLE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(entryData!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(entryData!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(UserData.USERNAME)!.append(this.sqlStrings!.END)
 
 
 

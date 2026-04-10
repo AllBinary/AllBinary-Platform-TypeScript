@@ -70,7 +70,7 @@ scrollSelectionForm= RTSScrollSelectionFormFactory.getInstance(label, items)
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 this.scrollSelectionForm= scrollSelectionForm

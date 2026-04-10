@@ -99,15 +99,14 @@ var fileBasicArrayList = fileBasicArrayList
         
 
 
-    
                         if(zipFile!.exists())
                         
                                     {
-                                    delete()
+                                    zipFile!.delete()
 
                                     }
                                 
-createNewFile()
+zipFile!.createNewFile()
 
     var outputStream: ZipOutputStream = new ZipOutputStream(AbFileOutputStream(zipFile));
         
@@ -157,7 +156,6 @@ i < size; i++)
         
 
 
-    
                         if(file.isDirectory())
                         
                                     {
@@ -165,25 +163,24 @@ i < size; i++)
                                     }
                                 
                              else 
-    
                         if(file.isFile())
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-appendint(current)
-append(" Creating Zip File Entry: ")
-append(file.getPath())
-put(stringBuffer!.toString(), this, "create()")
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.appendint(current)
+stringBuffer!.append(" Creating Zip File Entry: ")
+stringBuffer!.append(file.getPath())
+logUtil!.put(stringBuffer!.toString(), this, "create()")
 
         try {
             fileInputStream= AbFileInputStream(file)
-putNextEntry(ZipEntry(file.getPath()))
-get(fileInputStream, outputStream, byteArray)
-closeEntry()
-close(fileInputStream)
+outputStream!.putNextEntry(ZipEntry(file.getPath()))
+streamUtil!.get(fileInputStream, outputStream, byteArray)
+outputStream!.closeEntry()
+streamUtil!.close(fileInputStream)
 } catch(e: Exception)
             {
-put("Skipping File (Probably Local): " +file.getPath(), this, "create()")
+logUtil!.put("Skipping File (Probably Local): " +file.getPath(), this, "create()")
 }
 
 
@@ -192,16 +189,16 @@ put("Skipping File (Probably Local): " +file.getPath(), this, "create()")
 current++
 }
 
-close(outputStream)
+streamUtil!.close(outputStream)
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "create", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "create", e)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public unzip(path: string, zipFile: AbFile, fileName: string){
 var path = path
@@ -246,7 +243,6 @@ var fileName = fileName
         
 
 
-    
                         if(zipEntry!.isDirectory())
                         
                                     {
@@ -259,31 +255,31 @@ var fileName = fileName
         
         
 
-delete(0, stringBuffer!.length())
-append("ZipEntry Name: ")
-append(entryName)
-append(" isFile: ")
-appendboolean(entryFile!.isFile())
-append(" isDirectory: ")
-appendboolean(entryFile!.isDirectory())
-append(" getParent: ")
-append(entryFile!.getParent())
-put(stringBuffer!.toString(), this, "unzip")
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("ZipEntry Name: ")
+stringBuffer!.append(entryName)
+stringBuffer!.append(" isFile: ")
+stringBuffer!.appendboolean(entryFile!.isFile())
+stringBuffer!.append(" isDirectory: ")
+stringBuffer!.appendboolean(entryFile!.isDirectory())
+stringBuffer!.append(" getParent: ")
+stringBuffer!.append(entryFile!.getParent())
+logUtil!.put(stringBuffer!.toString(), this, "unzip")
 
     var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(entryFile)!;
         
         
 
-write(inputStream, dataOutputStream, buffer)
+fileUtil!.write(inputStream, dataOutputStream, buffer)
 
                         }
                             
-closeEntry()
+inputStream!.closeEntry()
 }
 
 
          finally {
-            close(inputStream)
+            StreamUtil.getInstance()!.close(inputStream)
 
          }
         

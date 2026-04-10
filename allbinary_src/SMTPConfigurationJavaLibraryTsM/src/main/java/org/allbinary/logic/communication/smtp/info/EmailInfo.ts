@@ -44,7 +44,6 @@ public constructor (basicEmailInfo: BasicEmailInfo){
             super();
             var basicEmailInfo = basicEmailInfo
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -53,11 +52,11 @@ public constructor (basicEmailInfo: BasicEmailInfo){
         
         
 
-put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
-this.init(basicEmailInfo, 
+this.this.init(basicEmailInfo, 
                             null, 
                             null)
 }
@@ -69,7 +68,6 @@ public constructor (basicEmailInfo: BasicEmailInfo, htmlAttachment: string, cont
 var htmlAttachment = htmlAttachment
 var contentBase = contentBase
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -78,11 +76,11 @@ var contentBase = contentBase
         
         
 
-put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
-this.init(basicEmailInfo, 
+this.this.init(basicEmailInfo, 
                             null, 
                             null)
 }

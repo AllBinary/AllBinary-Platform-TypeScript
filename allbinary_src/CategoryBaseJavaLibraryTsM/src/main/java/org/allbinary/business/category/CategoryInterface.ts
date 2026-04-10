@@ -48,7 +48,7 @@ interface CategoryInterface extends TableMappingInterface, ValidationInterface {
 
     public removeChild(categoryInterface: CategoryInterface): boolean
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isLeaf(): boolean
 
@@ -60,23 +60,23 @@ interface CategoryInterface extends TableMappingInterface, ValidationInterface {
 
     public setHierarchy(categoryHierarchyInterface: CategoryHierarchyInterface)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getPath(): AbPath
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getFilePath(): AbPath
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getWebAppPath(): AbPath
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getRootFilePath(): AbPath
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public log()
 

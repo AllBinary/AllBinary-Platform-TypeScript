@@ -75,7 +75,7 @@ this.categoryInterface= categoryInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -90,11 +90,10 @@ var document = document
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    put("Number Of Children: " +childCategoryVector!.length, this, "toXmlNode")
+                                    logUtil!.put("Number Of Children: " +childCategoryVector!.length, this, "toXmlNode")
 
                                     }
                                 
@@ -126,7 +125,6 @@ i < size; i++)
         
 
 
-    
                         if(InterfaceUtil.isImplemented("CategoryPropertiesInterface", anyType))
                         
                                     {
@@ -135,7 +133,6 @@ i < size; i++)
                                     }
                                 
                              else 
-    
                         if(InterfaceUtil.isImplemented("CategoryInterface", anyType))
                         
                                     {
@@ -157,7 +154,7 @@ categoryPropertiesInterface= categoryInterface!.getProperties()
 
 
 
-                            throw Exception("CategoryView found unknown object.\n" +"Show Testing:" +isImpl)
+                            throw Error("CategoryView found unknown object.\n" +"Show Testing:" +isImpl)
 
                         }
                             
@@ -167,7 +164,7 @@ categoryPropertiesInterface= categoryInterface!.getProperties()
         
         
 
-appendChild(childCategoryNode)
+node.appendChild(childCategoryNode)
 }
 
 

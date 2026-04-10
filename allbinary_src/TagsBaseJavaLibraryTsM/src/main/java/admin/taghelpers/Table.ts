@@ -32,7 +32,7 @@ export class Table
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public drop(): string{
 
@@ -42,7 +42,7 @@ export class Table
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public create(): string{
 
@@ -52,7 +52,7 @@ export class Table
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public restore(): string{
 
@@ -62,7 +62,7 @@ export class Table
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public backup(): string{
 
@@ -72,7 +72,7 @@ export class Table
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public insert(): string{
 
@@ -82,7 +82,7 @@ export class Table
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public delete(): string{
 
@@ -92,7 +92,7 @@ export class Table
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(): string{
 

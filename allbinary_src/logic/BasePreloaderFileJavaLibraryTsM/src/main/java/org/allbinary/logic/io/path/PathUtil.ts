@@ -73,7 +73,6 @@ var filePath = filePath
         
 
 
-    
                         if(indexOfFileExtensionDelmiter < 0)
                         
                                     {
@@ -87,7 +86,6 @@ var filePath = filePath
                                     }
                                 
 
-    
                         if(indexOfFileExtensionDelmiter < indexOfLatDelimiter)
                         
                                     {
@@ -144,7 +142,6 @@ var filePath = filePath
         
 
 
-    
                         if(indexOfFileExtensionDelmiter >= 0)
                         
                                     {
@@ -161,7 +158,7 @@ var filePath = filePath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getWithoutExtension(abFilePath: AbFilePath): string{
 var abFilePath = abFilePath
@@ -174,7 +171,7 @@ var abFilePath = abFilePath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getWithoutExtension(abPath: AbPath): string{
 var abPath = abPath
@@ -187,7 +184,7 @@ var abPath = abPath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getWithoutExtension(filePath: string): string{
 var filePath = filePath
@@ -202,7 +199,6 @@ var filePath = filePath
         
 
 
-    
                         if(indexOfFileExtensionDelmiter >= 0)
                         
                                     {
@@ -222,12 +218,10 @@ var filePath = filePath
     public isValid(path: string): boolean{
 var path = path
 
-    
                         if(this.isValidStart(path))
                         
                                     {
                                     
-    
                         if(this.isValidEnd(path))
                         
                                     {
@@ -255,7 +249,6 @@ var path = path
     isValidStart(path: string): boolean{
 var path = path
 
-    
                         if(path[0] == abPathData!.SEPARATORCHAR || path[0] == '.')
                         
                                     {
@@ -289,7 +282,6 @@ var path = path
         
 
 
-    
                         if(stringValidationUtil!.isEmpty(path))
                         
                                     {
@@ -303,7 +295,6 @@ var path = path
                                     }
                                 
 
-    
                         if(path[path.length -1] == abPathData!.SEPARATORCHAR)
                         
                                     {
@@ -332,7 +323,6 @@ var path = path
     public adjustStart(path: string): string{
 var path = path
 
-    
                         if(!this.isValidStart(path))
                         
                                     {
@@ -352,7 +342,6 @@ var path = path
     public adjustEnd(path: string): string{
 var path = path
 
-    
                         if(!this.isValidEnd(path))
                         
                                     {
@@ -377,7 +366,6 @@ var path = path
         
 
 
-    
                         if(stringValidationUtil!.isEmpty(path))
                         
                                     {
@@ -391,7 +379,6 @@ var path = path
                                     }
                                 
 
-    
                         if(path.indexOf("\\") >= 0)
                         
                                     {
@@ -417,7 +404,6 @@ var categoryPath = categoryPath
         
 
 
-    
                         if(endIndex < 0)
                         
                                     {
@@ -426,7 +412,6 @@ var categoryPath = categoryPath
                                     }
                                 
 
-    
                         if(endIndex < 0)
                         
 
@@ -435,7 +420,6 @@ var categoryPath = categoryPath
                         return categoryPath;
     
 
-    
                         if(categoryPath!.length == endIndex +1)
                         
                                     {
@@ -471,7 +455,7 @@ var categoryPath = categoryPath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeNameFromPath(path: string): AbPath{
@@ -482,7 +466,6 @@ var path = path
         
 
 
-    
                         if(endIndex < 0)
                         
                                     {
@@ -491,7 +474,6 @@ var path = path
                                     }
                                 
 
-    
                         if(endIndex < 0)
                         
                                     {
@@ -505,7 +487,6 @@ var path = path
                                     }
                                 
 
-    
                         if(path.length == endIndex +1)
                         
                                     {

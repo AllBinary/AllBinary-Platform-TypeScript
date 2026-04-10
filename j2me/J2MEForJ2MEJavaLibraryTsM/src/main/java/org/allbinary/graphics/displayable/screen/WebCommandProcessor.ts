@@ -74,7 +74,7 @@ export class WebCommandProcessor
     //var canvas = canvas
 
         try {
-            remove(0)
+            list.remove(0)
 } catch(e: Exception)
             {
 
@@ -82,7 +82,7 @@ export class WebCommandProcessor
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
 }
 
 }

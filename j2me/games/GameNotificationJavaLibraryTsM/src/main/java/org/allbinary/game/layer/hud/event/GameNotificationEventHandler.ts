@@ -73,7 +73,6 @@ private constructor (){
         
 
 
-    
                         if(list.size() > 0)
                         
                                     {
@@ -81,26 +80,24 @@ private constructor (){
 
                                     }
                                 
-removeAllListeners()
+super.removeAllListeners()
 
-    
                         if(eventListenerInterface != NullEventListener.NULL_EVENT_LISTENER)
                         
                                     {
-                                    this.addListener(eventListenerInterface)
+                                    this.this.addListener(eventListenerInterface)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    
                         if(!enabled)
                         
                                     {
@@ -118,7 +115,7 @@ var eventListenerInterface = eventListenerInterface
         
         
 
-onGameNotificationEvent(eventObject as GameNotificationEvent)
+gameNotificationListenerInterface!.onGameNotificationEvent(eventObject as GameNotificationEvent)
 }
 
 

@@ -53,7 +53,7 @@ public constructor (){
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
 }
 
 }

@@ -52,15 +52,15 @@ public constructor (upgradableRTSLayerHudPaintable: UpgradableRTSLayerHudPaintab
 
     public update(rtsLayer: RTSLayer){
 var rtsLayer = rtsLayer
-update(rtsLayer)
-this.setCost(StringMaker().
+super.update(rtsLayer)
+this.this.setCost(StringMaker().
                             append(this.getUpgradeCost())!.append(CommonSeps.getInstance()!.SPACE)!.append(this.getDownGradeCost())!.toString())
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-drawString(this.getCost(), this.upgradableRTSLayerHudPaintable!.textX, this.upgradableRTSLayerHudPaintable!.costY, 0)
+graphics.drawString(this.getCost(), this.upgradableRTSLayerHudPaintable!.textX, this.upgradableRTSLayerHudPaintable!.costY, 0)
 }
 
 

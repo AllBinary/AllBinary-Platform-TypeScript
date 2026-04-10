@@ -31,20 +31,19 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 export class J2MEGameInputMapping extends PersistentInputMapping {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-put(commonStrings!.START, this, commonStrings!.INIT)
-init()
-init(abeClientInformation)
+logUtil!.put(commonStrings!.START, this, commonStrings!.INIT)
+J2MEKeyFactory.getInstance()!.init()
+super.init(abeClientInformation)
 
-    
                         if(this.getTotalMapped() == 0 || this.isDefaultNew())
                         
                                     {
-                                    add(this.getDefault())
-this.save(abeClientInformation)
+                                    this.getInputMapping()!.add(this.getDefault())
+this.this.save(abeClientInformation)
 
                                     }
                                 
@@ -54,7 +53,6 @@ this.save(abeClientInformation)
     public isDelete(input: Input): boolean{
 var input = input
 
-    
                         if(input == GameKeyFactory.getInstance()!.GAME_D)
                         
                                     {

@@ -55,19 +55,19 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this.styleValidationInterface as DomNodeInterface)
+this.this.addDomNodeInterface(this.styleValidationInterface as DomNodeInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.this.addDomNodeInterfaces()
 
 
 
@@ -77,11 +77,10 @@ this.addDomNodeInterface(this.styleValidationInterface as DomNodeInterface)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 

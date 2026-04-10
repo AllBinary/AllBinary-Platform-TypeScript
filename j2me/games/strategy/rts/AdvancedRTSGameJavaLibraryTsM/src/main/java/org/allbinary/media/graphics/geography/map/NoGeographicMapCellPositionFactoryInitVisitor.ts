@@ -28,7 +28,7 @@ export class NoGeographicMapCellPositionFactoryInitVisitor
                 , GeographicMapCellPositionFactoryInitVisitorInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public visit(tiledLayer: AllBinaryTiledLayer, cellPosition: GeographicMapCellPosition){
 var tiledLayer = tiledLayer

@@ -36,7 +36,6 @@ this.name= name
     public isEqual(transactionType: TransactionType): boolean{
 var transactionType = transactionType
 
-    
                         if(this.toString()!.compareTo(transactionType!.toString()) == 0)
                         
 
@@ -45,7 +44,6 @@ var transactionType = transactionType
                         return true;
     
                              else 
-    
                         if()
                         
 }

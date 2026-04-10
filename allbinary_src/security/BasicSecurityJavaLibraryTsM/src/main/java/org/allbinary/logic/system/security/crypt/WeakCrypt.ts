@@ -60,7 +60,7 @@ public constructor (key: number){
             var key = key
 
         try {
-            init(keys[key]!)
+            this.abCrypt!.init(keys[key]!)
 } catch(e: Exception)
             {
 
@@ -68,7 +68,7 @@ public constructor (key: number){
         
         
 
-put(commonStrings!.EXCEPTION, this, "SuperCrypt(key)", e)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, "SuperCrypt(key)", e)
 }
 
 }
@@ -91,7 +91,7 @@ var value = value
     
 } catch(e: Exception)
             {
-put("Encrypt Failed", this, "encrypt", e)
+PreLogUtil.put("Encrypt Failed", this, "encrypt", e)
 
 
 
@@ -120,7 +120,7 @@ var value = value
     
 } catch(e: Exception)
             {
-put("decrypt Failed", this, "decrypt", e)
+PreLogUtil.put("decrypt Failed", this, "decrypt", e)
 
 
 

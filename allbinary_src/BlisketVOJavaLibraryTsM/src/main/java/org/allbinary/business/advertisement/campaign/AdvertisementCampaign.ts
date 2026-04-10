@@ -68,13 +68,13 @@ this.hashMap= hashMap
 
     public setComponentName(name: string){
 var name = name
-put(DynamicObjectData.NAME, name)
+this.hashMap!.put(DynamicObjectData.NAME, name)
 }
 
 
     public setName(name: string){
 var name = name
-put(AdvertisementCampaignData.getInstance()!.NAME, name)
+this.hashMap!.put(AdvertisementCampaignData.getInstance()!.NAME, name)
 }
 
 

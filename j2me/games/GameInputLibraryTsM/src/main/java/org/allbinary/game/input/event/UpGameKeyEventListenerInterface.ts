@@ -25,7 +25,7 @@ import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/
 interface UpGameKeyEventListenerInterface extends EventListenerInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     onUpGameKeyEvent(gameKeyEvent: GameKeyEvent)
 

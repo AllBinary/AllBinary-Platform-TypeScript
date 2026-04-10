@@ -39,7 +39,7 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(hashMap: HashMap<Any, Any>): UserInterface{
 var hashMap = hashMap

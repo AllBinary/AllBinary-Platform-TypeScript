@@ -92,7 +92,7 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
     //var allbinaryLayerManager = allbinaryLayerManager
@@ -165,7 +165,7 @@ beamX= (sine /noDecimalTrigTable!.SCALE).toInt()
 cosine= (next *noDecimalTrigTable!.cos(angle.toInt())).toLong()
 beamY=  -(cosine /noDecimalTrigTable!.SCALE).toInt()
 weaponLayer= weaponLayerCircularStaticPool!.getInstance(sourceLayerInterface, x +beamX, y +beamY, 0, angle.toInt(), otherAngle.toInt(), weaponProperties, scoreableInterface)
-append(weaponLayer)
+allbinaryLayerManager!.append(weaponLayer)
 next += increment
 }
 

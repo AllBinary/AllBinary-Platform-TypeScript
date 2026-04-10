@@ -46,20 +46,19 @@ public constructor (size: number){
 
             super();
             var size = size
-this.init(size)
+this.this.init(size)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(size: number){
 var size = size
 
-    
                         if(this.size < size)
                         
                                     {
-                                    ensureCapacity(size)
+                                    this.list.ensureCapacity(size)
 
 
 
@@ -70,7 +69,7 @@ var size = size
         
 index >= this.size; index--)
         {
-this.add()
+this.this.add()
 }
 
 this.size= size
@@ -91,36 +90,36 @@ var index = index
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public add(){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public add(anyType: any = {}){
 var anyType = anyType
-add(anyType)
+this.list.add(anyType)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public add(cacheableInterface: CacheableInterface){
 var cacheableInterface = cacheableInterface
-add(cacheableInterface)
+this.list.add(cacheableInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public add(cacheableInterfaces: CacheableInterface[]){
 var cacheableInterfaces = cacheableInterfaces
 
 
 
-                            throw Exception("No Imple")
+                            throw Error("No Imple")
 }
 
 

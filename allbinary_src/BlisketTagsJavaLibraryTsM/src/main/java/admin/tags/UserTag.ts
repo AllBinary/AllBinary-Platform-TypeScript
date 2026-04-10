@@ -43,32 +43,31 @@ export class UserTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(UserHelperFactory())
-this.setTagRequestHelperFactory(UserHelperFactory())
+            this.this.setTagHelperFactory(UserHelperFactory())
+this.this.setTagRequestHelperFactory(UserHelperFactory())
 }
 
 
     public setRole(value: string){
 var value = value
 this.role= value
-put(UserRoleData.NAME, this.role)
+this.getPropertiesHashMap()!.put(UserRoleData.NAME, this.role)
 }
 
 
     public setEnable(value: string){
 var value = value
 this.enable= value
-put(EntryData.getInstance()!.ENABLE, this.enable)
+this.getPropertiesHashMap()!.put(EntryData.getInstance()!.ENABLE, this.enable)
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.isEnabled())
                         
                                     {
@@ -89,7 +88,7 @@ put(EntryData.getInstance()!.ENABLE, this.enable)
     
 } catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

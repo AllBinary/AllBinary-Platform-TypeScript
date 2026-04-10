@@ -46,7 +46,7 @@ var height = height
 var basicColor = basicColor
 this.width= width
 this.height= height
-this.setBasicColorP(basicColor)
+this.this.setBasicColorP(basicColor)
 }
 
 
@@ -58,8 +58,8 @@ this.setBasicColorP(basicColor)
 var graphics = graphics
 var x = x
 var y = y
-setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
-drawRect(x, y, width, height)
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
+graphics.drawRect(x, y, width, height)
 }
 
 

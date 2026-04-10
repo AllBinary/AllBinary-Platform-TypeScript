@@ -25,7 +25,7 @@ import { ContextConfigurationInterface } from "../../../../../../../org/allbinar
 interface AdminConfigurationInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public write()
 

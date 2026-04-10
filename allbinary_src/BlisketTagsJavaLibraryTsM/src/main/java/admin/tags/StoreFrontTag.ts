@@ -76,7 +76,7 @@ this.storeName= value
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     getCurrentLocation(): string{
 
@@ -120,11 +120,10 @@ this.storeName= value
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getCurrentLocation()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getCurrentLocation()", e)
 
                                     }
                                 
@@ -139,7 +138,7 @@ this.storeName= value
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     getCurrentHomeLocation(): string{
 
@@ -183,11 +182,10 @@ this.storeName= value
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getCurrentHomeLocation()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getCurrentHomeLocation()", e)
 
                                     }
                                 
@@ -202,35 +200,32 @@ this.storeName= value
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(command != 
                                     null
                                 )
                         
                                     {
                                     this.propertiesHashMap= HashMap<Any, Any>()
-put(StoreFrontData.getInstance()!.NAME, this.storeName)
+this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
 
-    
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.GETCURRENTLOCATION) == 0)
                         
                                     {
-                                    print(this.getCurrentLocation())
+                                    pageContext!.getOut()!.print(this.getCurrentLocation())
 
                                     }
                                 
                              else 
-    
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.GETCURRENTHOMELOCATION) == 0)
                         
                                     {
-                                    print(this.getCurrentHomeLocation())
+                                    pageContext!.getOut()!.print(this.getCurrentHomeLocation())
 
                                     }
                                 
@@ -245,7 +240,7 @@ put(StoreFrontData.getInstance()!.NAME, this.storeName)
     
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -255,7 +250,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

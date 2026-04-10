@@ -37,7 +37,7 @@ var displayable = displayable
         
         
 
-repaint()
+canvas.repaint()
 }
 
 

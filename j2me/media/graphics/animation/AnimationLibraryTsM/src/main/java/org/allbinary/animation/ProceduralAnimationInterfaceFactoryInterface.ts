@@ -22,7 +22,7 @@
 interface ProceduralAnimationInterfaceFactoryInterface extends BasicAnimationInterfaceFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getInstance(animationInterface: Animation): Animation
 

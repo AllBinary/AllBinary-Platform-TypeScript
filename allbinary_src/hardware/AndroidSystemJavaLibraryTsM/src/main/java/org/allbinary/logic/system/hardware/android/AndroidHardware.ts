@@ -90,23 +90,22 @@ export class AndroidHardware
 public constructor (){
 
             super();
-            this.init(DEVICES)
+            this.this.init(DEVICES)
 
-    
                         if(componentInterfaceVector!.size() < MINHARDWARE)
                         
                                     {
                                     
 
 
-                            throw Exception("Not Enough Data For A Valid License On Linux")
+                            throw Error("Not Enough Data For A Valid License On Linux")
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(filePath: string){
     //var filePath = filePath
@@ -120,7 +119,7 @@ public constructor (){
             lineNumberReader= this.get(filePath)
 } catch(e: Exception)
             {
-put("Hardware Data: " +this.toString(), this, commonStrings!.INIT, e)
+logUtil!.put("Hardware Data: " +this.toString(), this, commonStrings!.INIT, e)
 
 
 
@@ -129,13 +128,12 @@ put("Hardware Data: " +this.toString(), this, commonStrings!.INIT, e)
 
          finally {
             
-    
                         if(lineNumberReader != 
                                     null
                                 )
                         
                                     {
-                                    close()
+                                    lineNumberReader!.close()
 
                                     }
                                 
@@ -145,7 +143,7 @@ put("Hardware Data: " +this.toString(), this, commonStrings!.INIT, e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     get(filePath: string): LineNumberReader{
     //var filePath = filePath
@@ -160,7 +158,7 @@ componentInterfaceVector= BasicArrayList()
         
         
 
-put("File Found", this, commonStrings!.CONSTRUCTOR)
+logUtil!.put("File Found", this, commonStrings!.CONSTRUCTOR)
 
     var nextLine: string = lineNumberReader!.readLine()!;
         
@@ -172,7 +170,7 @@ put("File Found", this, commonStrings!.CONSTRUCTOR)
                                 )
         {
 nextLine= lineNumberReader!.readLine()
-add(UnknownHardware(nextLine))
+componentInterfaceVector!.add(UnknownHardware(nextLine))
 }
 
 
@@ -221,8 +219,8 @@ index < size; index++)
         
         
 
-append(componentInterface!.toString())
-append(CommonSeps.getInstance()!.NEW_LINE)
+hardwareBuffer!.append(componentInterface!.toString())
+hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
 }
 
 

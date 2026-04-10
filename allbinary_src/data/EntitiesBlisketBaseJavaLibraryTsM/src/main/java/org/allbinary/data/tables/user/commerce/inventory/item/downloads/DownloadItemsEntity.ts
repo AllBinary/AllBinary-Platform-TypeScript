@@ -69,7 +69,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.this.setTableName(tableName)
 }
 
 
@@ -77,24 +77,22 @@ this.setTableName(tableName)
 var values = values
 
         try {
-            insert(values)
+            super.insert(values)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, INSERT)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT)
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, INSERT, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e)
 
                                     }
                                 
@@ -107,24 +105,22 @@ var values = values
 var value = value
 
         try {
-            deleteWhere(DownloadItemData.ID, value)
+            super.deleteWhere(DownloadItemData.ID, value)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, commonStrings!.delete)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, commonStrings!.delete)
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
 
                                     }
                                 
@@ -135,7 +131,7 @@ var value = value
 
     public update(updatedValues: HashMap<Any, Any>){
 var updatedValues = updatedValues
-updateWhere(DownloadItemData.ID, updatedValues!.get(DownloadItemData.ID) as String, updatedValues)
+super.updateWhere(DownloadItemData.ID, updatedValues!.get(DownloadItemData.ID) as String, updatedValues)
 }
 
 
@@ -151,7 +147,7 @@ var id = id
         
         
 
-put(BasicItemData.ID, id)
+keysAndValues!.put(BasicItemData.ID, id)
 
     var vector: Vector = super.getRows(keysAndValues)!;
         
@@ -177,15 +173,14 @@ index < size; index++)
         
         
 
-add(DownloadableItem(hashMap))
+returnVector!.add(DownloadableItem(hashMap))
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put("Found: " +size, this, "getForItem")
+                                    logUtil!.put("Found: " +size, this, "getForItem")
 
                                     }
                                 
@@ -211,8 +206,8 @@ var downloadItemId = downloadItemId
         
         
 
-put(BasicItemData.ID, id)
-put(DownloadItemData.ID, downloadItemId)
+keysAndValues!.put(BasicItemData.ID, id)
+keysAndValues!.put(DownloadItemData.ID, downloadItemId)
 
     var vector: Vector = super.getRows(keysAndValues)!;
         
@@ -238,15 +233,14 @@ index < size; index++)
         
         
 
-add(DownloadableItem(hashMap))
+returnVector!.add(DownloadableItem(hashMap))
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put("Found: " +size, this, "getForItem")
+                                    logUtil!.put("Found: " +size, this, "getForItem")
 
                                     }
                                 
@@ -265,8 +259,8 @@ add(DownloadableItem(hashMap))
         
         
 
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(this.sqlStrings!.END)
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(DownloadItemData.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicItemData.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.ENABLE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.SPECIAL_NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.VERSION)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.CHANGES)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(DownloadItemData.SYSTEM)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.PLATFORM)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.LICENSE_FILE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(DownloadItemData.FILE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.SIZE)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(DownloadItemData.VALID_TIME)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(DownloadItemData.RETRIES)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(DownloadItemData.ID)!.append(this.sqlStrings!.END)
 
 
 

@@ -30,7 +30,7 @@ export class RandomTranslation
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(vector: BasicArrayList, howMuch: number): BasicArrayList{
 var vector = vector
@@ -55,8 +55,8 @@ var howMuch = howMuch
         
         
 
-createMatrix()
-translate(x, y)
+graphicsPipe!.createMatrix()
+graphicsPipe!.translate(x, y)
 
 
 

@@ -76,7 +76,7 @@ this.shippingVector= ShippingMethodsFactory(abeClientInformation, storeFrontInte
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getShippingInterface(name: string): ShippingInterface{
 var name = name
@@ -100,7 +100,6 @@ index < size; index++)
         {
 shipping= shippingVector!.get(index) as ShippingInterface
 
-    
                         if(name.compareTo(shipping.getName()) == 0)
                         
 
@@ -116,22 +115,21 @@ shipping= shippingVector!.get(index) as ShippingInterface
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SHIPPINGERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getShippingInterface(String name)")
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getShippingInterface(String name)")
 
                                     }
                                 
 
 
 
-                            throw Exception(error)
+                            throw Error(error)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDefault(): ShippingInterface{
 

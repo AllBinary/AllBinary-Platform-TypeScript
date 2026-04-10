@@ -52,8 +52,8 @@ export class LogConfigTypeFactory
 private constructor (){
 
             super();
-            add(OS)
-add(FACTORYERROR)
+            LogConfigTypes.LOGGING.add(OS)
+LogConfigTypes.LOGGING.add(FACTORYERROR)
 }
 
 

@@ -96,7 +96,6 @@ index < size; index++)
 index2 < size2; index2++)
         {
 
-    
                         if(mapArray[index]![index2] == 14)
                         
                                     {
@@ -104,17 +103,15 @@ index2 < size2; index2++)
                                     }
                                 
                         else {
-                            this.visit2(mapArray, mapData, index, index2)
+                            this.this.visit2(mapArray, mapData, index, index2)
 
                         }
                             
 
-    
                         if(index % 7 == 0)
                         
                                     {
                                     
-    
                         if(mapArray[index]![index2] == 19)
                         
                                     {
@@ -124,7 +121,6 @@ index2 < size2; index2++)
         
 
 
-    
                         if(randomInt == 0)
                         
                                     {
@@ -133,7 +129,6 @@ index2 < size2; index2++)
                                     }
                                 
                              else 
-    
                         if(randomInt == 1)
                         
                                     {
@@ -142,7 +137,6 @@ index2 < size2; index2++)
                                     }
                                 
                              else 
-    
                         if(randomInt == 2)
                         
                                     {
@@ -154,7 +148,6 @@ index2 < size2; index2++)
                                     }
                                 
                              else 
-    
                         if(mapArray[index]![index2] == 17)
                         
                                     {
@@ -164,7 +157,6 @@ index2 < size2; index2++)
         
 
 
-    
                         if(randomInt == 0)
                         
                                     {
@@ -173,7 +165,6 @@ index2 < size2; index2++)
                                     }
                                 
                              else 
-    
                         if(randomInt == 1)
                         
                                     {
@@ -182,7 +173,6 @@ index2 < size2; index2++)
                                     }
                                 
                              else 
-    
                         if(randomInt == 2)
                         
                                     {
@@ -197,12 +187,10 @@ index2 < size2; index2++)
                                     }
                                 
 
-    
                         if(index2 % 7 == 0)
                         
                                     {
                                     
-    
                         if(mapArray[index]![index2] == 34)
                         
                                     {
@@ -212,7 +200,6 @@ index2 < size2; index2++)
         
 
 
-    
                         if(randomInt == 0)
                         
                                     {
@@ -221,7 +208,6 @@ index2 < size2; index2++)
                                     }
                                 
                              else 
-    
                         if(randomInt == 1)
                         
                                     {
@@ -230,7 +216,6 @@ index2 < size2; index2++)
                                     }
                                 
                              else 
-    
                         if(randomInt == 2)
                         
                                     {
@@ -239,7 +224,6 @@ index2 < size2; index2++)
                                     }
                                 
                              else 
-    
                         if(randomInt == 3)
                         
                                     {
@@ -297,7 +281,6 @@ index4 > 0; index4--)
         {
 index3--
 
-    
                         if(index3 < 0 || index4 < 0)
                         
                                     {
@@ -311,12 +294,10 @@ index3--
                                     }
                                 
 
-    
                         if(mapArray[index3]![index4] != 14 || mapData[index3]![index4] != 0)
                         
                                     {
                                     
-    
                         if(countX > 10 && countY > 10)
                         
                                     {
@@ -341,7 +322,6 @@ index5 < index -1; index5++)
 index6 < index2 -1; index6++)
         {
 
-    
                         if(mapArray[index5]![index6] != 14 || mapData[index5]![index6] != 0)
                         
                                     {
@@ -369,7 +349,6 @@ index6 < index2 -1; index6++)
         
 
 
-    
                         if(x >= 0 && y >= 0 && x < mapData!.length && y < mapData[0]!.length)
                         
                                     {

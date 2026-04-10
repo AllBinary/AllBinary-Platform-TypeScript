@@ -22,7 +22,7 @@
 interface UpdateInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     update()
 

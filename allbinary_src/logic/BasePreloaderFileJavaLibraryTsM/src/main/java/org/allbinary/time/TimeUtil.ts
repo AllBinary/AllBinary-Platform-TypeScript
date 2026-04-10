@@ -75,7 +75,7 @@ var hourString = hourString
         
         
 
-set(year, month, day, hour, 0)
+calendar.set(year, month, day, hour, 0)
 }
 
 
@@ -123,7 +123,7 @@ var secondString = secondString
         
         
 
-set(year, month, day, hour, minute, second)
+calendar.set(year, month, day, hour, minute, second)
 }
 
 
@@ -171,7 +171,7 @@ var secondsString = secondsString
         
         
 
-set(year, month, day, hour, minute, second)
+calendar.set(year, month, day, hour, minute, second)
 }
 
 
@@ -187,7 +187,7 @@ var secondString = secondString
         
         
 
-this.setExpirationCalendar(calendar, yearString, monthString, dayString, hourString, minuteString, secondString)
+this.this.setExpirationCalendar(calendar, yearString, monthString, dayString, hourString, minuteString, secondString)
 
     var timeDelta: number = calendar.getTimeInMillis()!;
         

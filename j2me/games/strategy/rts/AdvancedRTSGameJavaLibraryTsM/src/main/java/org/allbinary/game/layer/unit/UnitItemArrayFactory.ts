@@ -97,7 +97,7 @@ this.resources= resources
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createFlagItem(flagResources: FlagGameResources, layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface): CustomItem{
     //var flagResources = flagResources
@@ -113,7 +113,6 @@ this.resources= resources
         
 
 
-    
                         if(index >= 0)
                         
                                     {
@@ -130,7 +129,7 @@ this.resources= resources
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createFlagItem(flagResources: FlagGameResources, name: string, layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface): CustomItem{
     //var flagResources = flagResources
@@ -165,7 +164,7 @@ this.resources= resources
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getItems(): CustomItem[]{
 
@@ -200,7 +199,6 @@ this.resources= resources
 index >= 0; index--)
         {
 
-    
                         if(this.resources[index] == basicGameResources)
                         
                                     {

@@ -68,7 +68,7 @@ var key = key
         try {
             this.algorithm= algorithm
 this.key= key.encodeToByteArray()
-this.init()
+this.this.init()
 } catch(e: Exception)
             {
 
@@ -76,7 +76,7 @@ this.init()
         
         
 
-put(commonStrings!.EXCEPTION, this, "AbCrypt(alg,key)", e)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, "AbCrypt(alg,key)", e)
 }
 
 }
@@ -90,7 +90,7 @@ put(commonStrings!.EXCEPTION, this, "AbCrypt(alg,key)", e)
         
         
 
-addProvider(sunJce)
+Security.addProvider(sunJce)
 
     var keySpec: KeySpec = KeySpecFactory.getInstance()!.getInstance(this.algorithm, this.key)!;
         
@@ -110,7 +110,7 @@ this.cipher= Cipher.getInstance(algorithm)
         
         
 
-put("init Failed", this, commonStrings!.INIT, e)
+PreLogUtil.put("init Failed", this, commonStrings!.INIT, e)
 }
 
 }
@@ -120,7 +120,7 @@ put("init Failed", this, commonStrings!.INIT, e)
 var array = array
 
         try {
-            init(Cipher.ENCRYPT_MODE, secretKey)
+            cipher.init(Cipher.ENCRYPT_MODE, secretKey)
 
     var ivArray: ByteArray = secretKey!.getEncoded()!;
         
@@ -136,7 +136,7 @@ var array = array
         
         
 
-put("ivArray Length: " +ivArray!.length, this, "encrypt")
+PreLogUtil.put("ivArray Length: " +ivArray!.length, this, "encrypt")
 
 
 
@@ -171,7 +171,7 @@ result[index +ivArray!.length]= encrypted[index]!
     
 } catch(e: Exception)
             {
-put("Encrypt Failed", this, "encrypt", e)
+PreLogUtil.put("Encrypt Failed", this, "encrypt", e)
 
 
 
@@ -187,7 +187,7 @@ put("Encrypt Failed", this, "encrypt", e)
 var array = array
 
         try {
-            init(Cipher.DECRYPT_MODE, secretKey)
+            cipher.init(Cipher.DECRYPT_MODE, secretKey)
 
     var ivArray: ByteArray = ByteArray(8);
         
@@ -206,7 +206,7 @@ index < 8; index++)
 ivArray[index]= array[index]!
 }
 
-put("ivArray Length: " +ivArray!.length, this, "encrypt")
+PreLogUtil.put("ivArray Length: " +ivArray!.length, this, "encrypt")
 
     var result: ByteArray = ByteArray(array.length -ivArray!.length);
         
@@ -239,7 +239,7 @@ result[index -ivArray!.length]= array[index]!
     
 } catch(e: Exception)
             {
-put("decrypt Failed", this, "decrypt", e)
+PreLogUtil.put("decrypt Failed", this, "decrypt", e)
 
 
 

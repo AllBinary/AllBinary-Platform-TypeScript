@@ -63,8 +63,8 @@ this.colorFillPaintable= ColorFillPaintableFactory.getInstance()!.getInstance(al
 
     public paint(graphics: Graphics){
     //var graphics = graphics
-paint(graphics)
-setColor(this.foregroundColor)
+this.colorFillPaintable!.paint(graphics)
+graphics.setColor(this.foregroundColor)
 
 
 
@@ -75,10 +75,10 @@ setColor(this.foregroundColor)
         
 index >= 0; index--)
         {
-paint(graphics)
+this.paintableArray[index]!.paint(graphics)
 }
 
-paint(graphics)
+super.paint(graphics)
 }
 
 

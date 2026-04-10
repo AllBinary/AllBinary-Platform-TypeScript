@@ -86,13 +86,12 @@ this.requestMapInterface= InventoryItemViewParentTagHelper.getInstance()!.getReq
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public forward(){
 
         try {
             
-    
                         if(this.shouldForward())
                         
                                     {
@@ -106,9 +105,9 @@ this.requestMapInterface= InventoryItemViewParentTagHelper.getInstance()!.getReq
         
         
 
-append(page)
-append(params)
-forward(stringBuffer!.toString())
+stringBuffer!.append(page)
+stringBuffer!.append(params)
+this.pageContext!.forward(stringBuffer!.toString())
 
                                     }
                                 
@@ -120,11 +119,10 @@ forward(stringBuffer!.toString())
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "forward()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "forward()", e)
 
                                     }
                                 
@@ -190,22 +188,21 @@ index < size; index++)
         
 
 
-    
                         if(index != 0)
                         
                                     {
-                                    append(AMP)
+                                    stringBuffer!.append(AMP)
 
                                     }
                                 
                         else {
-                            append(QUESTION)
+                            stringBuffer!.append(QUESTION)
 
                         }
                             
-append(key)
-append(EQUALS)
-append(value)
+stringBuffer!.append(key)
+stringBuffer!.append(EQUALS)
+stringBuffer!.append(value)
 }
 
 
@@ -229,7 +226,6 @@ append(value)
         
 
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(command) || (!StringValidationUtil.getInstance()!.isEmpty(requestCommand) && command.compareTo(requestCommand) == 0))
                         
                                     {

@@ -43,7 +43,7 @@ public constructor (){
     public run(){
 
         try {
-            start(pathFindingLayer)
+            pathFindingLayer!.getWaypointRunnableLogHelper()!.start(pathFindingLayer)
 
     var waypointBehavior: WaypointBehaviorBase = pathFindingLayer!.getWaypointBehavior()!;
         
@@ -55,7 +55,6 @@ public constructor (){
         
 
 
-    
                         if(geographicMapCellPosition == 
                                     null
                                 )
@@ -64,13 +63,13 @@ public constructor (){
                                     
 
 
-                            throw Exception("Should never be running here")
+                            throw Error("Should never be running here")
 
                                     }
                                 
-setWaypointPathsList(this.targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition))
-end(pathFindingLayer)
-sleep(15.toLong() +(this.priorityP *2))
+waypointBehavior!.setWaypointPathsList(this.targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition))
+pathFindingLayer!.getWaypointRunnableLogHelper()!.end(pathFindingLayer)
+Thread.sleep(15.toLong() +(this.priorityP *2))
 } catch(e: Exception)
             {
 
@@ -78,8 +77,8 @@ sleep(15.toLong() +(this.priorityP *2))
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
-this.setRunning(false)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+this.this.setRunning(false)
 }
 
 }

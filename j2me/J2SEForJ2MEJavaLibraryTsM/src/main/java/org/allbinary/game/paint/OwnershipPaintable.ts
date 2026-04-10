@@ -86,7 +86,7 @@ private constructor (){
 
     public paint(graphics: Graphics){
     //var graphics = graphics
-setColor(color)
+graphics.setColor(color)
 
     var myFont: MyFont = MyFont.getInstance()!;
         
@@ -122,7 +122,7 @@ setColor(color)
         
         
 
-drawString(COPYRIGHT, halfWidth -beginWidth, height -COPYRIGHT_Y, anchor)
+graphics.drawString(COPYRIGHT, halfWidth -beginWidth, height -COPYRIGHT_Y, anchor)
 }
 
 

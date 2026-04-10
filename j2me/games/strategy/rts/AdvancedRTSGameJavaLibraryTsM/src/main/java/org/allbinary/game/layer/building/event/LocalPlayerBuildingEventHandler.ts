@@ -52,7 +52,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject
@@ -62,7 +62,7 @@ private constructor (){
         
         
 
-onBuildingEvent(eventObject as RTSLayerEvent)
+buildingEventListenerInterface!.onBuildingEvent(eventObject as RTSLayerEvent)
 }
 
 

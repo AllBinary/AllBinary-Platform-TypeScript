@@ -59,13 +59,13 @@ this.context= context
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isFile(path: string): boolean{
 var path = path
 
         try {
-            openFileInput(path)
+            context.openFileInput(path)
 
 
 
@@ -95,7 +95,7 @@ var path = path
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getFile(filePath: string): AbFile{
 var filePath = filePath
@@ -108,7 +108,7 @@ var filePath = filePath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(file: AbFile, childFilePath: string): AbFile{
 var file = file

@@ -97,12 +97,11 @@ this.rectangle= rectangle
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processInput(key: number): number{
     //var key = key
 
-    
                         if(key == Canvas.KEY_STAR)
                         
                                     {
@@ -111,7 +110,7 @@ this.rectangle= rectangle
         
         
 
-toggleMenu()
+gameCanvas!.toggleMenu()
 
 
 
@@ -130,7 +129,7 @@ toggleMenu()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processInput(): number{
 
@@ -170,7 +169,6 @@ index < size; index++)
         {
 gameKeyEvent= list.objectArray[index]! as GameKeyEvent
 
-    
                         if(gameKeyEvent != 
                                     null
                                 )
@@ -178,7 +176,6 @@ gameKeyEvent= list.objectArray[index]! as GameKeyEvent
                                     {
                                     key= gameKeyEvent!.getKey()
 
-    
                         if(this.processInput(key) == 1)
                         
                                     {
@@ -193,9 +190,8 @@ gameKeyEvent= list.objectArray[index]! as GameKeyEvent
                                 
 }
 
-this.clear()
+this.this.clear()
 
-    
                         if(size > 0 || motionInputsIndex >= 0)
                         
                                     {
@@ -220,7 +216,7 @@ this.clear()
                             
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, GameInputStrings.getInstance()!.PROCESS_INPUT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, GameInputStrings.getInstance()!.PROCESS_INPUT, e)
 
 
 
@@ -232,7 +228,7 @@ put(commonStrings!.EXCEPTION, this, GameInputStrings.getInstance()!.PROCESS_INPU
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processMotionInputs(): number{
 
@@ -241,7 +237,6 @@ put(commonStrings!.EXCEPTION, this, GameInputStrings.getInstance()!.PROCESS_INPU
         
 
 
-    
                         if(lastIndex >= 0)
                         
                                     {
@@ -250,11 +245,11 @@ put(commonStrings!.EXCEPTION, this, GameInputStrings.getInstance()!.PROCESS_INPU
         
         
 
-this.processMotionInput(motionGestureEvent)
+this.this.processMotionInput(motionGestureEvent)
 
                                     }
                                 
-clear()
+motionGestureEventList!.clear()
 
 
 
@@ -264,18 +259,17 @@ clear()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     processMotionInput(motionGestureEvent: MotionGestureEvent){
     //var motionGestureEvent = motionGestureEvent
 
-    
                         if(motionGestureEvent == 
                                     null
                                 )
                         
                                     {
-                                    put("Exception: Bug", this, gameInputStrings!.PROCESS_MOTION_INPUT)
+                                    logUtil!.put("Exception: Bug", this, gameInputStrings!.PROCESS_MOTION_INPUT)
 
 
 
@@ -296,7 +290,6 @@ clear()
         
 
 
-    
                         if(motionGestureInput == touchMotionGestureFactory!.RELEASED)
                         
                                     {
@@ -311,12 +304,10 @@ clear()
         
 
 
-    
                         if(rectangleCollisionUtil!.isInside(rectPoint!.getX(), rectPoint!.getY(), rectangle.getMaxX() +20, rectangle.getMaxY(), point.getX(), point.getY()))
                         
                                     {
                                     
-    
                         if(this.clickTimeHelper!.isTime())
                         
                                     {
@@ -325,7 +316,7 @@ clear()
         
         
 
-toggleMenu()
+gameCanvas!.toggleMenu()
 
                                     }
                                 

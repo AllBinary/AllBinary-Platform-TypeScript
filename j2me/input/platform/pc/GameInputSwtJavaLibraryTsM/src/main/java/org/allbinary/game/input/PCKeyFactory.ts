@@ -367,7 +367,6 @@ export class PCKeyFactory
     public isSubmission(input: Input): boolean{
 var input = input
 
-    
                         if(input == ENTER)
                         
                                     {
@@ -392,7 +391,6 @@ var input = input
     public isDelete(input: Input): boolean{
 var input = input
 
-    
                         if(input == DEL)
                         
                                     {
@@ -417,7 +415,6 @@ var input = input
     public isBackSpace(input: Input): boolean{
 var input = input
 
-    
                         if(input == BACK_SPACE)
                         
                                     {
@@ -442,7 +439,6 @@ var input = input
     public isUp(input: Input): boolean{
 var input = input
 
-    
                         if(input == DPAD_UP || input == DPAD_UP2)
                         
                                     {
@@ -467,7 +463,6 @@ var input = input
     public isDown(input: Input): boolean{
 var input = input
 
-    
                         if(input == DPAD_DOWN || input == DPAD_DOWN2)
                         
                                     {
@@ -492,7 +487,6 @@ var input = input
     public isLeft(input: Input): boolean{
 var input = input
 
-    
                         if(input == DPAD_LEFT || input == DPAD_LEFT2)
                         
                                     {
@@ -517,7 +511,6 @@ var input = input
     public isRight(input: Input): boolean{
 var input = input
 
-    
                         if(input == DPAD_RIGHT || input == DPAD_RIGHT2)
                         
                                     {
@@ -542,7 +535,6 @@ var input = input
     public isEnter(input: Input): boolean{
 var input = input
 
-    
                         if(input == ENTER)
                         
                                     {

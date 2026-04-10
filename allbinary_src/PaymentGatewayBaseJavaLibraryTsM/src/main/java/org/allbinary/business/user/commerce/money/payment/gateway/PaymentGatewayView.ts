@@ -73,7 +73,7 @@ this.paymentGatewayInterface= paymentGatewayInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toHashMap(): HashMap<Any, Any>{
 
@@ -90,18 +90,17 @@ this.paymentGatewayInterface= paymentGatewayInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
     //var document = document
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "toXmlNode")
+                                    logUtil!.put(this.commonStrings!.START, this, "toXmlNode")
 
                                     }
                                 
@@ -111,7 +110,7 @@ this.paymentGatewayInterface= paymentGatewayInterface
         
         
 
-putAll(this.toHashMap())
+hashMap!.putAll(this.toHashMap())
 
     var paymentGatewayNode: Node = ModDomHelper.createNodeWithValueNodes(document, PaymentGatewayData.NAME.toString(), hashMap)!;
         
@@ -126,11 +125,10 @@ putAll(this.toHashMap())
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "toXmlNode", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode", e)
 
                                     }
                                 

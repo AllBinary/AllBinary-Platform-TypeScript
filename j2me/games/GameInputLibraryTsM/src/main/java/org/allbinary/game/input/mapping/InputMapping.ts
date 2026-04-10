@@ -100,8 +100,8 @@ protected constructor (){
 
 
     removeAll(){
-clear()
-clear()
+this.hashtable.clear()
+this.mappedList!.clear()
 }
 
 
@@ -118,53 +118,52 @@ clear()
         
         
 
-append(CommonLabels.getInstance()!.START_LABEL)
-append(stringUtil!.toString(input))
-append(" == ")
-append(stringUtil!.toString(mappedToInput))
-put(stringBuffer!.toString(), this, "InputMapping::remove")
+stringBuffer!.append(CommonLabels.getInstance()!.START_LABEL)
+stringBuffer!.append(stringUtil!.toString(input))
+stringBuffer!.append(" == ")
+stringBuffer!.append(stringUtil!.toString(mappedToInput))
+logUtil!.put(stringBuffer!.toString(), this, "InputMapping::remove")
 
     var list: BasicArrayList = this.getMappedInput(input)!;
         
         
 
 
-    
                         if(list.contains(mappedToInput))
                         
                                     {
-                                    remove(mappedToInput)
-remove(mappedToInput)
-delete(0, stringBuffer!.length())
-append("Removed: ")
-append(stringUtil!.toString(input))
-append(" == ")
-append(stringUtil!.toString(mappedToInput))
-put(stringBuffer!.toString(), this, "InputMapping::remove")
+                                    list.remove(mappedToInput)
+this.mappedList!.remove(mappedToInput)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("Removed: ")
+stringBuffer!.append(stringUtil!.toString(input))
+stringBuffer!.append(" == ")
+stringBuffer!.append(stringUtil!.toString(mappedToInput))
+logUtil!.put(stringBuffer!.toString(), this, "InputMapping::remove")
 
                                     }
                                 
                         else {
-                            delete(0, stringBuffer!.length())
-append("Not Deleted: ")
-append(stringUtil!.toString(input))
-append(" == ")
-append(stringUtil!.toString(mappedToInput))
-put(stringBuffer!.toString(), this, "InputMapping::remove")
+                            stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("Not Deleted: ")
+stringBuffer!.append(stringUtil!.toString(input))
+stringBuffer!.append(" == ")
+stringBuffer!.append(stringUtil!.toString(mappedToInput))
+logUtil!.put(stringBuffer!.toString(), this, "InputMapping::remove")
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public add(inputToGameKeyMapping: InputToGameKeyMapping){
     //var inputToGameKeyMapping = inputToGameKeyMapping
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -177,12 +176,11 @@ put(stringBuffer!.toString(), this, "InputMapping::remove")
         
 
 
-    
                         if(!list.contains(mappedToInput))
                         
                                     {
-                                    add(mappedToInput)
-add(mappedToInput)
+                                    list.add(mappedToInput)
+this.mappedList!.add(mappedToInput)
 
                                     }
                                 
@@ -208,7 +206,6 @@ add(mappedToInput)
         
 
 
-    
                         if(mappingInputCanBeNullList == 
                                     null
                                 )
@@ -219,7 +216,7 @@ add(mappedToInput)
         
         
 
-put(id, list)
+this.hashtable.put(id, list)
 
 
 

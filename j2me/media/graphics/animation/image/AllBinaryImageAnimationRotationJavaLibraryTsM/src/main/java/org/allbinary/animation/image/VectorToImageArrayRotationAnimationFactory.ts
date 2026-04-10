@@ -124,11 +124,11 @@ public constructor (vectorInfo: VectorInfo, basicColor: BasicColor, animationBeh
 
                             //For kotlin this is before the body of the constructor.
                     
-this.init()
+this.this.init()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(){
 
@@ -141,12 +141,11 @@ this.imageArray= ImageToRotationImageArrayUtil.getInstance()!.generate(this.getI
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
 
-    
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
                         
                                     {

@@ -58,7 +58,6 @@ export class AppUrlGlobals extends UrlGlobalsInterface {
 var path = path
 this.path= path
 
-    
                         if(!(this.path.endsWith("\\") || this.path.endsWith("/")))
                         
                                     {
@@ -79,7 +78,7 @@ this.path= path
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getMainPath(): string{
 

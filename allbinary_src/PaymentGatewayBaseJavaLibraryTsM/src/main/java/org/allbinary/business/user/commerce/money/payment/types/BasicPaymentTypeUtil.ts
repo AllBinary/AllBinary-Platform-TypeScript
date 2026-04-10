@@ -55,11 +55,11 @@ private constructor (){
 
     public add(paymentType: BasicPaymentType){
 var paymentType = paymentType
-add(paymentType)
+this.paymentTypeVector!.add(paymentType)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(paymentTypeString: string): BasicPaymentType{
 var paymentTypeString = paymentTypeString
@@ -84,7 +84,6 @@ i < size; i++)
         
 
 
-    
                         if(paymentType!.getName()!.compareTo(paymentTypeString) == 0)
                         
                                     {
@@ -102,7 +101,7 @@ i < size; i++)
 
 
 
-                            throw Exception("Unknown PaymentType: " +paymentTypeString)
+                            throw Error("Unknown PaymentType: " +paymentTypeString)
 }
 
 
@@ -145,7 +144,6 @@ i < size; i++)
         
 
 
-    
                         if(!a_PaymentTypeVector!.contains(paymentType))
                         diff.add(paymentType)
 }

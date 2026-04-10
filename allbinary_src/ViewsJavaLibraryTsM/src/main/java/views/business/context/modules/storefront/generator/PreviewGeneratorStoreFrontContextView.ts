@@ -56,7 +56,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
@@ -66,7 +66,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
         
 
-put(TransformInfoData.getInstance()!.PARTIAL, CommonSeps.getInstance()!.SPACE +TransformInfosData.getInstance()!.PREVIEW)
+httpTransformInfoInterface!.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.PARTIAL, CommonSeps.getInstance()!.SPACE +TransformInfosData.getInstance()!.PREVIEW)
 
 
 
@@ -76,11 +76,10 @@ put(TransformInfoData.getInstance()!.PARTIAL, CommonSeps.getInstance()!.SPACE +T
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 

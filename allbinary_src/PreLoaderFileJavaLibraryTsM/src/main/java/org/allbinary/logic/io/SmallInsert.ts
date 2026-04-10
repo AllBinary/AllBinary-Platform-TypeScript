@@ -73,7 +73,7 @@ var text = text
         
         
 
-writeBytes(text +this.string)
+idOutData!.writeBytes(text +this.string)
 
 
 
@@ -83,11 +83,10 @@ writeBytes(text +this.string)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "insertAtBeginning", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insertAtBeginning", e)
 
                                     }
                                 
@@ -113,11 +112,10 @@ var after = after
         
 
 
-    
                         if(index < 0)
                         
                                     {
-                                    println("No such start: " +after +" in: " +this.string)
+                                    System.out.println("No such start: " +after +" in: " +this.string)
 
 
 
@@ -148,9 +146,9 @@ index= index +after.length
         
         
 
-writeBytes(start +text +end)
-close()
-close()
+idOutData!.writeBytes(start +text +end)
+idOutData!.close()
+idFile!.close()
 
 
 
@@ -160,11 +158,10 @@ close()
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "after", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "after", e)
 
                                     }
                                 
@@ -193,7 +190,7 @@ var text = text
         
         
 
-writeBytes(this.string +text)
+idOutData!.writeBytes(this.string +text)
 
 
 
@@ -203,11 +200,10 @@ writeBytes(this.string +text)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "insertAtEnd", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insertAtEnd", e)
 
                                     }
                                 

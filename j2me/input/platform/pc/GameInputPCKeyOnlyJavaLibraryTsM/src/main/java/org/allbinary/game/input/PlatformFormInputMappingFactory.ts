@@ -59,7 +59,6 @@ export class PlatformFormInputMappingFactory
 
         try {
             
-    
                         if(SINGLETON == InputToGameKeyMapping.NULL_INPUT_TO_GAME_KEY_MAPPING)
                         
                                     {
@@ -78,11 +77,11 @@ export class PlatformFormInputMappingFactory
         
         
 
-add(gameKeyFactory!.UP, pcKeyFactory!.DPAD_UP)
-add(gameKeyFactory!.DOWN, pcKeyFactory!.DPAD_DOWN)
-add(gameKeyFactory!.LEFT, pcKeyFactory!.DPAD_LEFT)
-add(gameKeyFactory!.RIGHT, pcKeyFactory!.DPAD_RIGHT)
-add(gameKeyFactory!.KEY_NUM1, pcKeyFactory!.ENTER)
+inputToGameKeyMapping!.add(gameKeyFactory!.UP, pcKeyFactory!.DPAD_UP)
+inputToGameKeyMapping!.add(gameKeyFactory!.DOWN, pcKeyFactory!.DPAD_DOWN)
+inputToGameKeyMapping!.add(gameKeyFactory!.LEFT, pcKeyFactory!.DPAD_LEFT)
+inputToGameKeyMapping!.add(gameKeyFactory!.RIGHT, pcKeyFactory!.DPAD_RIGHT)
+inputToGameKeyMapping!.add(gameKeyFactory!.KEY_NUM1, pcKeyFactory!.ENTER)
 SINGLETON= inputToGameKeyMapping
 
                                     }
@@ -94,7 +93,7 @@ SINGLETON= inputToGameKeyMapping
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 }
 
 

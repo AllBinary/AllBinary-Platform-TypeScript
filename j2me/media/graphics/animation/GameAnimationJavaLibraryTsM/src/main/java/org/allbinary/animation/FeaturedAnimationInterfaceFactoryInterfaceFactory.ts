@@ -71,7 +71,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getRectangle(resource: string): Rectangle{
 var resource = resource
@@ -84,7 +84,7 @@ var resource = resource
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getRectangle(resource: string, x: number, y: number): Rectangle{
     //var resource = resource
@@ -121,7 +121,6 @@ index < size; index++)
         
 
 
-    
                         if(featureInterface!.isFeature())
                         
                                     {
@@ -131,7 +130,6 @@ index < size; index++)
         
 
 
-    
                         if(rectangle != RectangleFactory.SINGLETON)
                         
                                     {
@@ -152,12 +150,12 @@ index < size; index++)
 
 
 
-                            throw Exception(StringMaker().
+                            throw Error(StringMaker().
                             append("No rectangle available for current feature selection or Resource: ")!.append(resource)!.toString())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getProcedural(resource: string): ProceduralAnimationInterfaceFactoryInterface{
 var resource = resource
@@ -170,7 +168,7 @@ var resource = resource
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(resource: string): AnimationInterfaceFactoryInterface{
 var resource = resource
@@ -183,7 +181,7 @@ var resource = resource
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getBasicAnimationInterfaceFactoryInstance(resource: string): BasicAnimationInterfaceFactoryInterface{
     //var resource = resource
@@ -220,14 +218,12 @@ index < size; index++)
         {
 featureInterface= list.objectArray[index]! as FeatureResourceAnimationInterfaceFactoryInterface
 
-    
                         if(featureInterface!.isFeature())
                         
                                     {
-                                    add(featureInterface)
+                                    resourceTypeAvailableList!.add(featureInterface)
 animationInterfaceFactoryInterface= featureInterface!.getBasicAnimationInterfaceFactoryInstance(resource)
 
-    
                         if(animationInterfaceFactoryInterface != NullAnimationFactory.NULL_NOT_FOR_USE_ANIMATION_FACTORY)
                         
                                     {
@@ -246,7 +242,6 @@ animationInterfaceFactoryInterface= featureInterface!.getBasicAnimationInterface
 }
 
 
-    
                         if(resourceTypeAvailableList!.size() > 0)
                         
                                     {
@@ -280,11 +275,11 @@ animationInterfaceFactoryInterface= featureInterface!.getBasicAnimationInterface
         
         
 
-append(NO_ANIMATION_AVAILABLE_FROM)
-appendint(resourceTypeAvailableList!.size())
-append(CommonSeps.getInstance()!.FORWARD_SLASH)
-appendint(size)
-append(FOR_FACTORIES)
+stringBuffer!.append(NO_ANIMATION_AVAILABLE_FROM)
+stringBuffer!.appendint(resourceTypeAvailableList!.size())
+stringBuffer!.append(CommonSeps.getInstance()!.FORWARD_SLASH)
+stringBuffer!.appendint(size)
+stringBuffer!.append(FOR_FACTORIES)
 
     var size2: number = resourceTypeAvailableList!.size()!;
         
@@ -300,12 +295,12 @@ append(FOR_FACTORIES)
         
 index < size2; index++)
         {
-append(resourceTypeAvailableList!.get(index)!.toString())
-append(CommonSeps.getInstance()!.COMMA_SEP)
+stringBuffer!.append(resourceTypeAvailableList!.get(index)!.toString())
+stringBuffer!.append(CommonSeps.getInstance()!.COMMA_SEP)
 }
 
-append(FOR_RESOURCE)
-append(resource)
+stringBuffer!.append(FOR_RESOURCE)
+stringBuffer!.append(resource)
 
 
 
@@ -316,17 +311,16 @@ append(resource)
         
 index < size; index++)
         {
-append(CommonSeps.getInstance()!.NEW_LINE)
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
 featureInterface= list.objectArray[index]! as FeatureResourceAnimationInterfaceFactoryInterface
 
-    
                         if(featureInterface!.isFeature())
                         
                                     {
-                                    append(StringUtil.getInstance()!.toString(featureInterface))
-append(HAS_KEY)
-appendint(featureInterface!.getHashtable()!.size)
-append(RESOURCES_LABEL)
+                                    stringBuffer!.append(StringUtil.getInstance()!.toString(featureInterface))
+stringBuffer!.append(HAS_KEY)
+stringBuffer!.appendint(featureInterface!.getHashtable()!.size)
+stringBuffer!.append(RESOURCES_LABEL)
 
                                     }
                                 
@@ -335,7 +329,7 @@ append(RESOURCES_LABEL)
 
 
 
-                            throw Exception(stringBuffer!.toString())
+                            throw Error(stringBuffer!.toString())
 
                                     }
                                 
@@ -356,8 +350,8 @@ append(RESOURCES_LABEL)
 index < size; index++)
         {
 featureInterface= list.objectArray[index]! as FeatureResourceAnimationInterfaceFactoryInterface
-append(featureInterface!.toString())
-append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(featureInterface!.toString())
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
 }
 
 
@@ -365,11 +359,11 @@ append(CommonSeps.getInstance()!.SPACE)
         
         
 
-delete(0, stringBuffer!.length())
+stringBuffer!.delete(0, stringBuffer!.length())
 
 
 
-                            throw Exception(stringBuffer!.append("No feature resource type available for Resource: ")!.append(resource)!.append(" Resource Factories Available: ")!.append(result)!.toString())
+                            throw Error(stringBuffer!.append("No feature resource type available for Resource: ")!.append(resource)!.append(" Resource Factories Available: ")!.append(result)!.toString())
 
                         }
                             

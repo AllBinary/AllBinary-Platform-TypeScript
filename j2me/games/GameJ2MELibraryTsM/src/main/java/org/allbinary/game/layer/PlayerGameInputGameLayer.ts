@@ -67,7 +67,7 @@ this.playerGameInput= PlayerGameInput(this.getGameKeyEventList(), playerInputId)
         
         
 
-put("Danger Danger Danger: Should Not Be Called Except For Testing Input", this, canvasStrings!.PAINT)
+logUtil!.put("Danger Danger Danger: Should Not Be Called Except For Testing Input", this, canvasStrings!.PAINT)
 }
 
 
@@ -85,7 +85,7 @@ put("Danger Danger Danger: Should Not Be Called Except For Testing Input", this,
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processInput(myManager: AllBinaryLayerManager){
 var myManager = myManager

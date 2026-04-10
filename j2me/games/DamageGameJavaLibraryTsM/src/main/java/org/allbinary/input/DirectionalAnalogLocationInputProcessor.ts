@@ -109,7 +109,7 @@ this.rightTriggerGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstance(th
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 }
@@ -145,56 +145,50 @@ customGPoint= analogLocationInput!.getCustomGPoint()
         
 
 
-    
                         if(x < 0)
                         
                                     {
-                                    process(allbinaryLayerManager, this.leftGameKeyEvent, x)
+                                    inputProcessorArray[this.leftGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.leftGameKeyEvent, x)
 
                                     }
                                 
                              else 
-    
                         if(x > 0)
                         
                                     {
-                                    process(allbinaryLayerManager, this.rightGameKeyEvent, x)
+                                    inputProcessorArray[this.rightGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.rightGameKeyEvent, x)
 
                                     }
                                 
 
-    
                         if(y < 0)
                         
                                     {
-                                    process(allbinaryLayerManager, this.downGameKeyEvent, y)
+                                    inputProcessorArray[this.downGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.downGameKeyEvent, y)
 
                                     }
                                 
                              else 
-    
                         if(y > 0)
                         
                                     {
-                                    process(allbinaryLayerManager, this.upGameKeyEvent, y)
+                                    inputProcessorArray[this.upGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.upGameKeyEvent, y)
 
                                     }
                                 
 
-    
                         if(leftTrigger > 0)
                         
                                     {
-                                    process(allbinaryLayerManager, this.leftTriggerGameKeyEvent, leftTrigger)
+                                    inputProcessorArray[this.leftTriggerGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.leftTriggerGameKeyEvent, leftTrigger)
 
                                     }
                                 
 
-    
                         if(rightTrigger > 0)
                         
                                     {
-                                    process(allbinaryLayerManager, this.rightTriggerGameKeyEvent, rightTrigger)
+                                    inputProcessorArray[this.rightTriggerGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.rightTriggerGameKeyEvent, rightTrigger)
 
                                     }
                                 
@@ -205,7 +199,7 @@ customGPoint= analogLocationInput!.getCustomGPoint()
         
         
 
-put("Unable to process analog input", this, commonStrings!.PROCESS, e)
+logUtil!.put("Unable to process analog input", this, commonStrings!.PROCESS, e)
 }
 
 }

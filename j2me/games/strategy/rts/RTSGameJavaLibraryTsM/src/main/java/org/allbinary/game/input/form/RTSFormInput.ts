@@ -127,29 +127,28 @@ newUnconstructedRTSLayerInterfaceArray[index]= CollidableDestroyableDamageableLa
 }
 
 this.groupInterfaceArray= groupInterfaceArray
-put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getInstance()!.DOWN)
+this.hashtable.put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getInstance()!.DOWN)
 
-    
                         if(groupInterfaceArray != 
                                     null
                                 )
                         
                                     {
-                                    put(Group.ID, groupInterfaceArray)
+                                    this.hashtable.put(Group.ID, groupInterfaceArray)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint){
     //var associatedRtsLayer = associatedRtsLayer
@@ -162,7 +161,6 @@ put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getInstance()!.DOWN)
         
 
 
-    
                         if(index < 0)
                         
                                     {
@@ -186,7 +184,6 @@ put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getInstance()!.DOWN)
         
 
 
-    
                         if(item == 
                                     null
                                 )
@@ -201,19 +198,19 @@ put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getInstance()!.DOWN)
 
                                     }
                                 
-this.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index)
+this.this.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(layerManager: AllBinaryLayerManager){
     //var layerManager = layerManager
-this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager)
+this.this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, index: number){
     //var associatedRtsLayer = associatedRtsLayer
@@ -224,7 +221,7 @@ this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processSticky(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint): boolean{
     //var associatedRtsLayer = associatedRtsLayer
@@ -237,7 +234,6 @@ this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager)
         
 
 
-    
                         if(index < 0)
                         
                                     {
@@ -261,7 +257,6 @@ this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager)
         
 
 
-    
                         if(item == 
                                     null
                                 )
@@ -276,7 +271,7 @@ this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager)
 
                                     }
                                 
-this.processSticky(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index)
+this.this.processSticky(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index)
 
 
 
@@ -286,7 +281,7 @@ this.processSticky(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, it
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processSticky(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, index: number){
 var associatedRtsLayer = associatedRtsLayer
@@ -297,12 +292,12 @@ var index = index
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getItemAt(rtsPlayerLayerInterface: RTSPlayerLayerInterface, point: GPoint): CustomItem{
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
     //var point = point
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Point: ")!.append(StringUtil.getInstance()!.toString(point))!.toString(), this, "getItemAt")
 
     var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;
@@ -318,12 +313,12 @@ put(StringMaker().
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getIndexAt(rtsPlayerLayerInterface: RTSPlayerLayerInterface, point: GPoint): number{
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
     //var point = point
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Point: ")!.append(StringUtil.getInstance()!.toString(point))!.toString(), this, "getItemAt")
 
     var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;
@@ -339,7 +334,7 @@ put(StringMaker().
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getInstance(layerManager: AllBinaryLayerManager, aItem: CustomItem, geographicMapCellPosition: GeographicMapCellPosition): CollidableDestroyableDamageableLayer{
     //var layerManager = layerManager
@@ -361,13 +356,12 @@ put(StringMaker().
         
 
 
-    
                         if(layerInterfaceFactoryInterface != 
                                     null
                                 )
                         
                                     {
-                                    put(AllBinaryGameLayerManager.ID, layerManager)
+                                    hashtable.put(AllBinaryGameLayerManager.ID, layerManager)
 
 
 
@@ -398,7 +392,7 @@ put(StringMaker().
 
     public setSelectedGeographicCellPosition(selectedGeographicCellPosition: GeographicMapCellPosition){
 var selectedGeographicCellPosition = selectedGeographicCellPosition
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Selected GeographicMapCellPosition: ")!.append(selectedGeographicCellPosition!.toString())!.toString(), this, "setSelectedGeographicCellPosition")
 this.selectedGeographicCellPosition= selectedGeographicCellPosition
 }

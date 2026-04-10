@@ -113,7 +113,7 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getTaxRate(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): Float{
 var streetAddress = streetAddress
@@ -133,11 +133,10 @@ this.storeFrontInterface= storeFrontInterface
 
 this.document= DomDocumentHelper.create(data)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAX))
                         
                                     {
-                                    put("Tax Doc: " +DomDocumentHelper.toString(document), this, "getTaxRate")
+                                    logUtil!.put("Tax Doc: " +DomDocumentHelper.toString(document), this, "getTaxRate")
 
                                     }
                                 
@@ -193,12 +192,10 @@ index < nodeList!.getLength(); index++)
         
 
 
-    
                         if(!stringValidationUtil!.isEmpty(country) && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()) && country.compareTo(taxableStreetAddress!.getCountry()) == 0)
                         
                                     {
                                     
-    
                         if(state != 
                                     null
                                  && taxableStreetAddress!.getState() != 
@@ -265,11 +262,10 @@ this.storeFrontInterface= storeFrontInterface
 
 this.document= DomDocumentHelper.create(data)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAX))
                         
                                     {
-                                    put("Tax Doc: " +DomDocumentHelper.toString(document), this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Tax Doc: " +DomDocumentHelper.toString(document), this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -314,7 +310,6 @@ index < nodeList!.getLength(); index++)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAX))
                         
                                     {
@@ -323,13 +318,13 @@ index < nodeList!.getLength(); index++)
         
         
 
-append("StreetAddress Node: ")
-append(streetAddressNode!.getNodeName())
-append(" Value: ")
-append(streetAddressNode!.getNodeValue())
-append(" Number Of Children: ")
-append(streetAddressNode!.getChildNodes()!.getLength())
-put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+stringBuffer!.append("StreetAddress Node: ")
+stringBuffer!.append(streetAddressNode!.getNodeName())
+stringBuffer!.append(" Value: ")
+stringBuffer!.append(streetAddressNode!.getNodeValue())
+stringBuffer!.append(" Number Of Children: ")
+stringBuffer!.append(streetAddressNode!.getChildNodes()!.getLength())
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -344,7 +339,6 @@ put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
         
 
 
-    
                         if(!stringValidationUtil!.isEmpty(country) && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()) && taxableStreetAddress!.getCountry()!.compareTo(ALL) == 0)
                         
                                     {
@@ -358,7 +352,6 @@ put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isEmpty(country) && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()) && country.compareTo(taxableStreetAddress!.getCountry()) == 0)
                         
                                     {
@@ -368,7 +361,6 @@ put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
         
 
 
-    
                         if(state != 
                                     null
                                 )
@@ -397,11 +389,10 @@ put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 

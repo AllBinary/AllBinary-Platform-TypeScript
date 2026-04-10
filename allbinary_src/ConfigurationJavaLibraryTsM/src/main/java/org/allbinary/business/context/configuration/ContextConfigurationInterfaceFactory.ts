@@ -61,7 +61,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(document: Document): ContextConfigurationInterface{
     //var document = document
@@ -85,7 +85,7 @@ private constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(contextName: string): ContextConfigurationInterface{
     //var contextName = contextName

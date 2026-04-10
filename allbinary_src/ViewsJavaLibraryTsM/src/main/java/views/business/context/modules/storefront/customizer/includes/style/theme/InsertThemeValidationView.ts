@@ -75,29 +75,27 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put(this.commonStrings!.CONSTRUCTOR, this, "started")
+                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, "started")
 
                                     }
                                 
 this.requestHashMap= NameSpaceRequestParams(this.getPageContext()).
                             toHashMap()
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put(this.commonStrings!.CONSTRUCTOR, this, "begin loading theme")
+                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, "begin loading theme")
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlDoc(): Document{
 
@@ -118,11 +116,10 @@ this.requestHashMap= NameSpaceRequestParams(this.getPageContext()).
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Started Validation", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Started Validation", this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -132,7 +129,6 @@ this.requestHashMap= NameSpaceRequestParams(this.getPageContext()).
         
 
 
-    
                         if(themeValidation!.isValid() == Boolean.FALSE)
                         
                                     {
@@ -143,11 +139,10 @@ this.requestHashMap= NameSpaceRequestParams(this.getPageContext()).
 this.validationInterface= themeValidation!.getCssStyleValidation()
 isValid= this.validationInterface!.isValid()
 
-    
                         if(isValid == Boolean.TRUE)
                         
                                     {
-                                    insert(this.getTransformInfoInterface(), this.validationInterface as DomNodeInterface)
+                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.validationInterface as DomNodeInterface)
 
                                     }
                                 
@@ -160,11 +155,10 @@ isValid= this.validationInterface!.isValid()
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -196,11 +190,10 @@ isValid= this.validationInterface!.isValid()
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 
@@ -236,7 +229,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
@@ -250,11 +243,10 @@ var document = document
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 

@@ -79,19 +79,19 @@ public constructor (total: number, countedPickedUpLayerInterfaceFactory: Counted
             var total = total
 var countedPickedUpLayerInterfaceFactory = countedPickedUpLayerInterfaceFactory
 this.primitiveLongUtil= PrimitiveLongUtil(1000)
-this.init(total, countedPickedUpLayerInterfaceFactory)
+this.this.init(total, countedPickedUpLayerInterfaceFactory)
 }
 
 
     init(total: number, countedPickedUpLayerInterfaceFactory: CountedPickedUpLayerInterfaceFactory){
 var total = total
 var countedPickedUpLayerInterfaceFactory = countedPickedUpLayerInterfaceFactory
-this.setCountedPickedUpLayerInterfaceFactory(countedPickedUpLayerInterfaceFactory)
+this.this.setCountedPickedUpLayerInterfaceFactory(countedPickedUpLayerInterfaceFactory)
 this.total= total
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(hashtable: Hashtable<Any, Any>, x: number, y: number, z: number): AllBinaryLayer{
 var hashtable = hashtable
@@ -99,11 +99,10 @@ var x = x
 var y = y
 var z = z
 
-    
                         if(this.total > 0)
                         
                                     {
-                                    this.setTotal(this.total -1)
+                                    this.this.setTotal(this.total -1)
 
 
 
@@ -117,7 +116,7 @@ var z = z
                             
 
 
-                            throw Exception("No more left. Could use a listener to automatically remove")
+                            throw Error("No more left. Could use a listener to automatically remove")
 
                         }
                             
@@ -143,7 +142,7 @@ this.totalString= this.primitiveLongUtil!.getCharArray(total)
         
         
 
-this.setXOffset(font.charsWidth(totalString, 0, this.primitiveLongUtil!.getCurrentTotalDigits()) +(font.getSize() shr 1))
+this.this.setXOffset(font.charsWidth(totalString, 0, this.primitiveLongUtil!.getCurrentTotalDigits()) +(font.getSize() shr 1))
 }
 
 

@@ -88,7 +88,6 @@ private constructor (){
     var operatingSystemInterface: GenericOperatingSystem
 
 
-    
                         if(osName!.compareTo(operatingSystems!.WINDOWS_NT) == 0)
                         
                                     {
@@ -97,7 +96,6 @@ private constructor (){
                                     }
                                 
                              else 
-    
                         if(osName!.compareTo(operatingSystems!.WINDOWS_10) == 0)
                         
                                     {
@@ -106,7 +104,6 @@ private constructor (){
                                     }
                                 
                              else 
-    
                         if(osName!.compareTo(operatingSystems!.WINDOWS_11) == 0)
                         
                                     {
@@ -115,7 +112,6 @@ private constructor (){
                                     }
                                 
                              else 
-    
                         if(osName!.compareTo(operatingSystems!.WINDOWS2000) == 0)
                         
                                     {
@@ -124,7 +120,6 @@ private constructor (){
                                     }
                                 
                              else 
-    
                         if(osName!.compareTo(operatingSystems!.WINDOWS_XP) == 0)
                         
                                     {
@@ -133,7 +128,6 @@ private constructor (){
                                     }
                                 
                              else 
-    
                         if(osName!.compareTo(operatingSystems!.WINDOWS_VISTA) == 0)
                         
                                     {
@@ -143,7 +137,6 @@ private constructor (){
                                 
                         else {
                             
-    
                         if(operatingSystems!.isUnknownSpecificOSAllowed())
                         
                                     {
@@ -155,7 +148,7 @@ private constructor (){
                             
 
 
-                            throw Exception("Specific Windows OS Not Supported: " +osName)
+                            throw Error("Specific Windows OS Not Supported: " +osName)
 
                         }
                             
@@ -171,7 +164,6 @@ private constructor (){
 } catch(e: Exception)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
                                     {
@@ -180,7 +172,7 @@ private constructor (){
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 

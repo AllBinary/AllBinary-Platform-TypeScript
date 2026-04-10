@@ -64,11 +64,11 @@ var animationInterface = animationInterface
         
 
 this.id= list.size()
-add(this)
+list.add(this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(hashtable: Hashtable<Any, Any>, x: number, y: number, z: number): AllBinaryLayer{
 var hashtable = hashtable
@@ -78,7 +78,7 @@ var z = z
 
 
 
-                            throw Exception(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
+                            throw Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
 }
 
 

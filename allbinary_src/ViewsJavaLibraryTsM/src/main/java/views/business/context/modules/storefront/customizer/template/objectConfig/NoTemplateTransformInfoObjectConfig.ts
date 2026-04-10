@@ -81,7 +81,7 @@ var document = document
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setDocument(this.generate(this.toXmlDoc()))
+this.this.setDocument(this.generate(this.toXmlDoc()))
 }
 
 public constructor (transformInfoInterface: Object, name: string, type: string)                        
@@ -96,11 +96,11 @@ var type = type
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setDocument(this.generate(this.toXmlDoc()))
+this.this.setDocument(this.generate(this.toXmlDoc()))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     generate(objectConfigDocument: Document): Document{
 var objectConfigDocument = objectConfigDocument
@@ -110,11 +110,10 @@ var objectConfigDocument = objectConfigDocument
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Initial ObjectConfig: " +docString, this, "generate()")
+                                    logUtil!.put("Initial ObjectConfig: " +docString, this, "generate()")
 
                                     }
                                 
@@ -138,14 +137,14 @@ var objectConfigDocument = objectConfigDocument
         
         
 
-put(VARKEY +StoreFrontData.getInstance()!.NAME, storeName)
-put(VARKEY +TransformInfoData.getInstance()!.OWNER, viewName)
+hashMap!.put(VARKEY +StoreFrontData.getInstance()!.NAME, storeName)
+hashMap!.put(VARKEY +TransformInfoData.getInstance()!.OWNER, viewName)
 
     var pageName: string = TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(this.getTransformInfoInterface()!.getName(), this.getTransformInfoInterface()!.getStoreName())!;
         
         
 
-put(VARKEY +TransformInfoData.getInstance()!.PARTIAL, pageName)
+hashMap!.put(VARKEY +TransformInfoData.getInstance()!.PARTIAL, pageName)
 
     var replace: Replace = new Replace(hashMap);
         
@@ -157,11 +156,10 @@ put(VARKEY +TransformInfoData.getInstance()!.PARTIAL, pageName)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Final ObjectConfig: " +DomDocumentHelper.toString(newObjectConfigDocument), this, "generate()")
+                                    logUtil!.put("Final ObjectConfig: " +DomDocumentHelper.toString(newObjectConfigDocument), this, "generate()")
 
                                     }
                                 

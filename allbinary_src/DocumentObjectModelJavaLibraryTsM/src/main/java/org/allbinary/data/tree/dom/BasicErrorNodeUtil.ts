@@ -33,7 +33,7 @@ export class BasicErrorNodeUtil
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static get(document: Document, errorText: string): Node{
 var document = document
@@ -45,7 +45,7 @@ var errorText = errorText
         
         
 
-appendChild(ModDomHelper.createNameValueNodes(document, ErrorData.getInstance()!.TEXT, errorText))
+node.appendChild(ModDomHelper.createNameValueNodes(document, ErrorData.getInstance()!.TEXT, errorText))
 
 
 
@@ -57,7 +57,7 @@ appendChild(ModDomHelper.createNameValueNodes(document, ErrorData.getInstance()!
 
 
 
-                            throw Exception("Error Node Creation Failure")
+                            throw Error("Error Node Creation Failure")
 }
 
 }

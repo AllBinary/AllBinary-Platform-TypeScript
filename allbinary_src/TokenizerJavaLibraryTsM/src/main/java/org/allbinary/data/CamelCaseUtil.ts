@@ -60,13 +60,12 @@ export class CamelCaseUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAsCamelCase(string: string, stringBuilder: StringMaker): string{
     //var string = string
     //var stringBuilder = stringBuilder
 
-    
                         if(string == 
                                     null
                                 )
@@ -86,7 +85,7 @@ export class CamelCaseUtil
         
         
 
-delete(0, stringBuilder!.length())
+stringBuilder!.delete(0, stringBuilder!.length())
 
     var list: BasicArrayList = new BasicArrayList();
         
@@ -97,7 +96,7 @@ delete(0, stringBuilder!.length())
         
         
 
-getTokens(string, list)
+tokenizer.getTokens(string, list)
 
     var size: number = list.size()!;
         
@@ -126,7 +125,7 @@ word= stringValidationUtil!.isEmpty(word)
                             appendchar(Character.toUpperCase(word[0]))!.append(word.substring(1)!.lowercase())!.toString();
 
     
-append(word)
+stringBuilder!.append(word)
 }
 
 

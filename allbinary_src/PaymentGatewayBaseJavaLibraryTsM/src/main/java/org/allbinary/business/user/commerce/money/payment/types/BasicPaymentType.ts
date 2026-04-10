@@ -59,7 +59,7 @@ protected constructor (paymentMethod: string){
 
             super();
             var paymentMethod = paymentMethod
-this.init(paymentMethod)
+this.this.init(paymentMethod)
 }
 
 protected constructor (paymentMethod: string, paymentGatewayInterfaceFactoryInterface: PaymentGatewayInterfaceFactoryInterface, paymentGatewayDomNodeFactoryInterface: PaymentGatewayDomNodeFactoryInterface){
@@ -68,7 +68,7 @@ protected constructor (paymentMethod: string, paymentGatewayInterfaceFactoryInte
             var paymentMethod = paymentMethod
 var paymentGatewayInterfaceFactoryInterface = paymentGatewayInterfaceFactoryInterface
 var paymentGatewayDomNodeFactoryInterface = paymentGatewayDomNodeFactoryInterface
-this.init(paymentMethod)
+this.this.init(paymentMethod)
 this.paymentGatewayInterfaceFactoryInterface= paymentGatewayInterfaceFactoryInterface
 this.paymentGatewayDomNodeFactoryInterface= paymentGatewayDomNodeFactoryInterface
 }
@@ -86,9 +86,9 @@ var paymentMethod = paymentMethod
         
         
 
-put(CommonSeps.getInstance()!.SPACE, UNDERSCORE)
-put(AbPathData.getInstance()!.EXTENSION_SEP, UNDERSCORE)
-put("-", UNDERSCORE)
+hashMap!.put(CommonSeps.getInstance()!.SPACE, UNDERSCORE)
+hashMap!.put(AbPathData.getInstance()!.EXTENSION_SEP, UNDERSCORE)
+hashMap!.put("-", UNDERSCORE)
 
     var replace: Replace = new Replace(hashMap);
         
@@ -96,7 +96,7 @@ put("-", UNDERSCORE)
 
 this.name= replace.all(paymentMethod)
 this.value= paymentMethod
-add(this)
+BasicPaymentTypeUtil.getInstance()!.add(this)
 }
 
 
@@ -120,11 +120,10 @@ add(this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getPaymentGatewayInterfaceFactoryInterface(): PaymentGatewayInterfaceFactoryInterface{
 
-    
                         if(this.paymentGatewayInterfaceFactoryInterface == 
                                     null
                                 )
@@ -133,7 +132,7 @@ add(this)
                                     
 
 
-                            throw Exception("PaymentGatewayInterfaceFactoryInterface is Null")
+                            throw Error("PaymentGatewayInterfaceFactoryInterface is Null")
 
                                     }
                                 
@@ -146,11 +145,10 @@ add(this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getPaymentGatewayDomNodeFactoryInterface(): PaymentGatewayDomNodeFactoryInterface{
 
-    
                         if(this.paymentGatewayDomNodeFactoryInterface == 
                                     null
                                 )
@@ -159,7 +157,7 @@ add(this)
                                     
 
 
-                            throw Exception("PaymentGatewayDomNodeFactoryInterface is Null")
+                            throw Error("PaymentGatewayDomNodeFactoryInterface is Null")
 
                                     }
                                 
@@ -188,8 +186,8 @@ add(this)
         
         
 
-add(this.name)
-add(this.value)
+vector.add(this.name)
+vector.add(this.value)
 
 
 
@@ -205,8 +203,8 @@ add(this.value)
         
         
 
-put(PaymentGatewayData.NAME.toString(), this.name)
-put(PaymentGatewayData.VALUE.toString(), this.value)
+hashMap!.put(PaymentGatewayData.NAME.toString(), this.name)
+hashMap!.put(PaymentGatewayData.VALUE.toString(), this.value)
 
 
 

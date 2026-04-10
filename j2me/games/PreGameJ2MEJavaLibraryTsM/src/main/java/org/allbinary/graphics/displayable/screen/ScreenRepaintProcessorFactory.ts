@@ -55,7 +55,6 @@ private constructor (){
     public getInstance(displayable: Displayable): Processor{
 var displayable = displayable
 
-    
                         if(!J2MEUtil.isJ2ME())
                         
                                     {

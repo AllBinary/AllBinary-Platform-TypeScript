@@ -73,24 +73,24 @@ var foregroundBasicColor = foregroundBasicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
     var gameFeatureFormUtil: GameFeatureFormUtil = GameFeatureFormUtil.getInstance()!;
         
         
 
-addChoiceGroup(this, InGameFeatureChoiceGroups.getExclusiveInstance()!.get(), Choice.EXCLUSIVE)
-addChoiceGroup(this, InGameFeatureChoiceGroups.getMultipleInstance()!.get(), Choice.MULTIPLE)
-this.initCommands(commandListener)
+gameFeatureFormUtil!.addChoiceGroup(this, InGameFeatureChoiceGroups.getExclusiveInstance()!.get(), Choice.EXCLUSIVE)
+gameFeatureFormUtil!.addChoiceGroup(this, InGameFeatureChoiceGroups.getMultipleInstance()!.get(), Choice.MULTIPLE)
+this.this.initCommands(commandListener)
 }
 
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-this.removeAllCommands()
-this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.addCommand(InGameOptionsForm.DEFAULT)
-this.setCommandListener(cmdListener)
+this.this.removeAllCommands()
+this.this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS)
+this.this.addCommand(InGameOptionsForm.DEFAULT)
+this.this.setCommandListener(cmdListener)
 }
 
 

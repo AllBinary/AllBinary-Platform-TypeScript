@@ -74,11 +74,10 @@ var userName = userName
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getShippingAddressesEntityInstance()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getShippingAddressesEntityInstance()", e)
 
                                     }
                                 

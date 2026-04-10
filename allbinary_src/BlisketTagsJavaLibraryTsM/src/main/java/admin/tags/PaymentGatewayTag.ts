@@ -46,12 +46,12 @@ export class PaymentGatewayTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(PaymentGatewayHelperFactory())
-this.setTagRequestHelperFactory(PaymentGatewayHelperFactory())
+            this.this.setTagHelperFactory(PaymentGatewayHelperFactory())
+this.this.setTagRequestHelperFactory(PaymentGatewayHelperFactory())
 }
 
 
-                @Throws(LicensingException::class, Exception::class)
+                //@Throws(LicensingException::class, Error::class)
             
     public process(): string{
 
@@ -87,7 +87,7 @@ this.setTagRequestHelperFactory(PaymentGatewayHelperFactory())
     
 } catch(e: LicensingException)
             {
-put("LicensingException", this, commonStrings!.PROCESS, e)
+logUtil!.put("LicensingException", this, commonStrings!.PROCESS, e)
 
 
 
@@ -96,11 +96,10 @@ put("LicensingException", this, commonStrings!.PROCESS, e)
  catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
 
                                     }
                                 
@@ -113,18 +112,16 @@ put("LicensingException", this, commonStrings!.PROCESS, e)
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.isEnabled())
                         
                                     {
                                     
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.AUTHORIZEORDEREVALBODYONERROR) == 0 || this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.AUTHORIZEORDERANDEVALBODY) == 0 || this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.AUTHORIZEFORMEVALBODYONERROR) == 0)
                         
                                     {
@@ -136,12 +133,11 @@ put("LicensingException", this, commonStrings!.PROCESS, e)
 
 
                             {
-                            print(output +"<br />")
+                            this.pageContext!.getOut()!.print(output +"<br />")
 
                             }
                     
 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.AUTHORIZEORDEREVALBODYONERROR) == 0)
                         
                                     {
@@ -188,7 +184,7 @@ put("LicensingException", this, commonStrings!.PROCESS, e)
     
 } catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

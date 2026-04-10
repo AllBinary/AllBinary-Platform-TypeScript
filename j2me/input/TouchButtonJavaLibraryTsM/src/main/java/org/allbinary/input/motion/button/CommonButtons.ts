@@ -84,7 +84,6 @@ private constructor (){
         
 
 
-    
                         if(totalRows > max)
                         
                                     {
@@ -93,7 +92,6 @@ private constructor (){
                                     }
                                 
 
-    
                         if(max > 9)
                         
                                     {

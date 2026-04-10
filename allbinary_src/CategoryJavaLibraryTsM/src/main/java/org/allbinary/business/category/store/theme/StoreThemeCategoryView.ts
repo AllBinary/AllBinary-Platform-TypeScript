@@ -53,7 +53,7 @@ public constructor (categoryInterface: StoreThemeCategoryInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
     //var document = document
@@ -72,7 +72,7 @@ public constructor (categoryInterface: StoreThemeCategoryInterface)
         
         
 
-sort(themeValidationArray, ThemeComparator())
+Arrays.sort(themeValidationArray, ThemeComparator())
 
     var size: number = themeValidationArray!.length
                 ;
@@ -94,7 +94,7 @@ index < size; index++)
         
         
 
-appendChild(themeValidation!.toXmlNode(document))
+node.appendChild(themeValidation!.toXmlNode(document))
 }
 
 

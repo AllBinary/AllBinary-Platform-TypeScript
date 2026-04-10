@@ -81,7 +81,6 @@ this.request= pageContext!.getRequest() as HttpServletRequest
         
 
 
-    
                         if(storeName != 
                                     null
                                 )
@@ -92,7 +91,7 @@ this.request= pageContext!.getRequest() as HttpServletRequest
                                     }
                                 
 this.weblisketSession= WeblisketSession(hashMap, pageContext)
-this.getFormData()
+this.this.getFormData()
 }
 
 
@@ -114,13 +113,12 @@ this.shippingType= request.getParameter(ShippingMethodData.NAME)
         
         
 
-setShippingMethod(shippingType)
+order.setShippingMethod(shippingType)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "setShippingType()")
+                                    logUtil!.put(success, this, "setShippingType()")
 
                                     }
                                 
@@ -138,11 +136,10 @@ setShippingMethod(shippingType)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "setShippingType()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setShippingType()", e)
 
                                     }
                                 

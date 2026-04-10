@@ -50,7 +50,6 @@ private constructor (){
     public containsSpaces(value: string): boolean{
 var value = value
 
-    
                         if(value.indexOf(' ') >= 0)
                         
                                     {
@@ -95,7 +94,6 @@ index < value.length; index++)
         
 
 
-    
                         if(!isNumber(digit) && digit != '.')
                         
                                     {
@@ -109,13 +107,11 @@ index < value.length; index++)
                                     }
                                 
 
-    
                         if(digit == '.')
                         
                                     {
                                     numberOfDecimalPoints++
 
-    
                         if(numberOfDecimalPoints > 1)
                         
                                     {
@@ -145,7 +141,6 @@ index < value.length; index++)
     public isNumber(digit: string): boolean{
 var digit = digit
 
-    
                         if(digit != '0' && digit != '1' && digit != '2' && digit != '3' && digit != '4' && digit != '5' && digit != '6' && digit != '7' && digit != '8' && digit != '9')
                         
                                     {
@@ -172,7 +167,6 @@ var value = value
 var min = min
 var max = max
 
-    
                         if(value == 
                                     null
                                  || value.length < min || value.length > max)
@@ -201,7 +195,6 @@ var value = value
 var min = min
 var max = max
 
-    
                         if(this.isEmpty(value) || value.length < min || value.length > max)
                         
                                     {
@@ -215,7 +208,6 @@ var max = max
                                     }
                                 
 
-    
                         if(!this.isNumber(value))
                         
                                     {
@@ -242,14 +234,12 @@ var value = value
 var min = min
 var max = max
 
-    
                         if(value != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(value.length < min || value.length > max)
                         
                                     {
@@ -279,14 +269,12 @@ var value = value
 var min = min
 var max = max
 
-    
                         if(value != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(value.compareTo(stringUtil!.NULL_STRING) == 0 || value.length < min || value.length > max)
                         
                                     {
@@ -300,7 +288,6 @@ var max = max
                                     }
                                 
 
-    
                         if(!this.isNumber(value))
                         
                                     {
@@ -328,7 +315,6 @@ var max = max
     public isEmpty(string: string): boolean{
 var string = string
 
-    
                         if(string != 
                                     null
                                  && string.compareTo(stringUtil!.NULL_STRING) != 0 && string.compareTo(stringUtil!.EMPTY_STRING) != 0)

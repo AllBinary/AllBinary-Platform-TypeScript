@@ -159,22 +159,21 @@ public constructor (path: string){
 
             super();
             var path = path
-this.init(path)
+this.this.init(path)
 }
 
 public constructor (){
 
             super();
-            this.init(PCIFILE)
+            this.this.init(PCIFILE)
 
-    
                         if(componentInterfaceVector!.length < MINHARDWARE)
                         
                                     {
                                     
 
 
-                            throw Exception("Not Enough Data For A Valid License On Linux")
+                            throw Error("Not Enough Data For A Valid License On Linux")
 
                                     }
                                 
@@ -184,30 +183,28 @@ public constructor (){
         
 
 
-    
                         if(cpu != 
                                     null
                                 )
                         
                                     {
-                                    add(cpu)
-add(cpu)
+                                    cpuInterfaceVector!.add(cpu)
+componentInterfaceVector!.add(cpu)
 
                                     }
                                 
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
                         
                                     {
-                                    put("Hardware Data: " +this.toString(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Hardware Data: " +this.toString(), this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(filePath: string){
 var filePath = filePath
@@ -224,11 +221,10 @@ var filePath = filePath
 } catch(e: Exception)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
                         
                                     {
-                                    put("Hardware Data: " +this.toString(), this, this.commonStrings!.CONSTRUCTOR, e)
+                                    logUtil!.put("Hardware Data: " +this.toString(), this, this.commonStrings!.CONSTRUCTOR, e)
 
                                     }
                                 
@@ -241,7 +237,7 @@ var filePath = filePath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(lineNumberReader: LineNumberReader, filePath: string){
 var lineNumberReader = lineNumberReader
@@ -267,7 +263,6 @@ monitorInterfaceVector= Vector()
 
 lineNumberReader= LineNumberReader(pciFile)
 
-    
                         if(lineNumberReader == 
                                     null
                                 )
@@ -279,7 +274,6 @@ lineNumberReader= LineNumberReader(pciFile)
         
 
 
-    
                         if(!fileVector!.isEmpty())
                         
                                     {
@@ -293,7 +287,6 @@ lineNumberReader= LineNumberReader(FileReader(file.getPath()))
                                     }
                                 
 
-    
                         if(lineNumberReader == 
                                     null
                                 )
@@ -302,7 +295,7 @@ lineNumberReader= LineNumberReader(FileReader(file.getPath()))
                                     
 
 
-                            throw Exception("No Linux File Data")
+                            throw Error("No Linux File Data")
 
                                     }
                                 
@@ -310,18 +303,16 @@ lineNumberReader= LineNumberReader(FileReader(file.getPath()))
                                     }
                                 
 
-    
                         if(lineNumberReader != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
                         
                                     {
-                                    put("PCI File Found", this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("PCI File Found", this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -338,7 +329,6 @@ lineNumberReader= LineNumberReader(FileReader(file.getPath()))
                                 )
         {
 
-    
                         if(this.isNextHardware(nextLine))
                         
                                     {
@@ -360,16 +350,15 @@ nextLine= lineNumberReader!.readLine()
         
 
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
                         
                                     {
-                                    put("Found Hardware Device: " +componentInterfaceVector!.length, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Found Hardware Device: " +componentInterfaceVector!.length, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
-append(nextLine)
-append(CommonSeps.getInstance()!.NEW_LINE)
+componentData!.append(nextLine)
+componentData!.append(CommonSeps.getInstance()!.NEW_LINE)
 nextLine= lineNumberReader!.readLine()
 
     var componentType: string = PCComponentFactory.getInstance()!.java.componentType!;
@@ -381,11 +370,10 @@ nextLine= lineNumberReader!.readLine()
                                     null
                                 )
         {
-append(nextLine)
-append(CommonSeps.getInstance()!.NEW_LINE)
+componentData!.append(nextLine)
+componentData!.append(CommonSeps.getInstance()!.NEW_LINE)
 nextLine= lineNumberReader!.readLine()
 
-    
                         if(nextLine == 
                                     null
                                  || this.isNextHardware(nextLine))
@@ -405,13 +393,12 @@ nextLine= lineNumberReader!.readLine()
         
 
 
-    
                         if(componentInterface != 
                                     null
                                 )
                         
                                     {
-                                    add(componentInterface)
+                                    componentInterfaceVector!.add(componentInterface)
 
                                     }
                                 
@@ -422,22 +409,20 @@ nextLine= lineNumberReader!.readLine()
                                 
                         else {
                             
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
                         
                                     {
-                                    put("Could not load PCI File", this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Could not load PCI File", this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
 
                         }
                             
-close()
+lineNumberReader!.close()
 
          finally {
             
-    
                         if(lineNumberReader != 
                                     null
                                 )
@@ -606,11 +591,11 @@ index < size; index++)
         
         
 
-append("Component ")
-appendint(index)
-append(": \n")
-append(componentInterface!.toString())
-append(CommonSeps.getInstance()!.NEW_LINE)
+hardwareBuffer!.append("Component ")
+hardwareBuffer!.appendint(index)
+hardwareBuffer!.append(": \n")
+hardwareBuffer!.append(componentInterface!.toString())
+hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
 }
 
 
@@ -647,7 +632,6 @@ var hardwareInterface = hardwareInterface
     public isNextHardware(nextLine: string): boolean{
 var nextLine = nextLine
 
-    
                         if(nextLine != 
                                     null
                                 )
@@ -659,7 +643,6 @@ var nextLine = nextLine
         
 
 
-    
                         if(index >= 0 && index < 4)
                         
                                     {

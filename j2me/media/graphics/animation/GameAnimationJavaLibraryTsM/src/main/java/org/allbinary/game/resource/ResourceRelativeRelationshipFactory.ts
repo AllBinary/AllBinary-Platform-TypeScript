@@ -47,15 +47,15 @@ export class ResourceRelativeRelationshipFactory
 
     private initialized: boolean= false
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(level: number){
 var level = level
-this.setInitialized(true)
+this.this.setInitialized(true)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getResourceRelativeRelationshipList(resource: string): BasicArrayList{
 var resource = resource
@@ -65,7 +65,6 @@ var resource = resource
         
 
 
-    
                         if(listCanBeNull == 
                                     null
                                 )
@@ -89,7 +88,7 @@ var resource = resource
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public addResourceRelativeRelationship(resource: string, hardPoint: RelativeRelationship){
 var resource = resource
@@ -100,7 +99,6 @@ var hardPoint = hardPoint
         
 
 
-    
                         if(list == this.basicArrayListUtil!.getImmutableInstance())
                         
                                     {
@@ -108,8 +106,8 @@ var hardPoint = hardPoint
 
                                     }
                                 
-add(hardPoint)
-put(resource, list)
+list.add(hardPoint)
+this.hashtable.put(resource, list)
 }
 
 

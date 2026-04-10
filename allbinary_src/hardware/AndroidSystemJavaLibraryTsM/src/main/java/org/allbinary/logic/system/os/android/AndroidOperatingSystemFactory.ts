@@ -65,7 +65,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getOperatingSystemInstance(): GenericOperatingSystem{
 
@@ -84,7 +84,6 @@ private constructor (){
         
 
 
-    
                         if(osName!.compareTo(OperatingSystems.getInstance()!.ANDROID) == 0)
                         
                                     {
@@ -94,7 +93,6 @@ private constructor (){
                                 
                         else {
                             
-    
                         if(OperatingSystems.getInstance()!.isUnknownSpecificOSAllowed())
                         
                                     {
@@ -106,7 +104,7 @@ private constructor (){
                             
 
 
-                            throw Exception("Specific Android OS Not Supported: " +osName)
+                            throw Error("Specific Android OS Not Supported: " +osName)
 
                         }
                             
@@ -126,7 +124,7 @@ private constructor (){
         
         
 
-put("Failed to get OperatingSystem returning NoOperatingSystem", this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put("Failed to get OperatingSystem returning NoOperatingSystem", this, commonStrings!.GET_INSTANCE, e)
 
 
 

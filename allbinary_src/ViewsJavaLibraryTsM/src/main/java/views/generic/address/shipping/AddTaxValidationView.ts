@@ -81,7 +81,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isValid(): Boolean{
 
@@ -98,7 +98,6 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
 
 
-    
                         if(taxInterface == 
                                     null
                                 )
@@ -114,7 +113,6 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                                     }
                                 
 
-    
                         if(taxInterface!.isValid(this.streetAddress, storeFrontInterface) == Boolean.FALSE)
                         
                                     {
@@ -138,7 +136,6 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
 
 
-    
                         if(streetAddressList == 
                                     null
                                 )
@@ -174,7 +171,6 @@ index < size; index++)
         
 
 
-    
                         if(aStreetAddress!.getName()!.compareTo(ShippingAddressData.TAX) == 0)
                         
                                     {
@@ -198,11 +194,10 @@ index < size; index++)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -217,7 +212,7 @@ index < size; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public validationInfo(): string{
 
@@ -238,23 +233,21 @@ index < size; index++)
         
 
 
-    
                         if(taxInterface == 
                                     null
                                 )
                         
                                     {
-                                    append("Unable to Load Tax Component<br/>")
+                                    stringBuffer!.append("Unable to Load Tax Component<br/>")
 
                                     }
                                 
                         else {
                             
-    
                         if(taxInterface!.isValid(this.streetAddress, storeFrontInterface) == Boolean.FALSE)
                         
                                     {
-                                    append("Unable to validate address with Tax Component<br/>")
+                                    stringBuffer!.append("Unable to validate address with Tax Component<br/>")
 
                                     }
                                 
@@ -292,11 +285,10 @@ index < size; index++)
         
 
 
-    
                         if(aStreetAddress!.getName()!.compareTo(ShippingAddressData.TAX) == 0)
                         
                                     {
-                                    append("Not a valid tax location<br/>")
+                                    stringBuffer!.append("Not a valid tax location<br/>")
 
                                     }
                                 
@@ -311,11 +303,10 @@ index < size; index++)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to create validateInfo", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to create validateInfo", this, "validationInfo()", e)
 
                                     }
                                 

@@ -52,7 +52,7 @@ private constructor (){
 
     public add(basicDefaultColor: BasicColor){
     //var basicDefaultColor = basicDefaultColor
-put(Integer(basicDefaultColor!.toInt()), basicDefaultColor)
+hashtable.put(Integer(basicDefaultColor!.toInt()), basicDefaultColor)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -65,14 +65,13 @@ put(Integer(basicDefaultColor!.toInt()), basicDefaultColor)
         
 
 
-    
                         if(basicColor == 
                                     null
                                 )
                         
                                     {
                                     basicColor= BasicColor(integer.toInt())
-put(integer, basicColor)
+hashtable.put(integer, basicColor)
 
                                     }
                                 

@@ -123,12 +123,12 @@ directionArray[value]= this
         
         
 
-append("Direction: ")
-append(this.getName())
-append(" Or: ")
-append(this.getOtherName())
-append(" Value: ")
-appendint(this.value)
+stringBuffer!.append("Direction: ")
+stringBuffer!.append(this.getName())
+stringBuffer!.append(" Or: ")
+stringBuffer!.append(this.getOtherName())
+stringBuffer!.append(" Value: ")
+stringBuffer!.appendint(this.value)
 
 
 

@@ -61,11 +61,10 @@ public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
             var hashMap = hashMap
 var pageContext = pageContext
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    put("Properties: " +hashMap!.toString(), this, "StoreTagWorkFlowHelper()")
+                                    logUtil!.put("Properties: " +hashMap!.toString(), this, "StoreTagWorkFlowHelper()")
 
                                     }
                                 
@@ -73,17 +72,16 @@ this.storeWorkFlowInterface= StoreTagWorkFlowFactory.getInstance()!.getInstance(
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(): Integer{
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    put("Process", this, commonStrings!.PROCESS)
+                                    logUtil!.put("Process", this, commonStrings!.PROCESS)
 
                                     }
                                 
@@ -101,11 +99,10 @@ this.storeWorkFlowInterface= StoreTagWorkFlowFactory.getInstance()!.getInstance(
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 

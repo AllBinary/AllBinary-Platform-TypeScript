@@ -41,7 +41,7 @@ interface UserEmailEventsConfigurationInterface {
 
     public addUserEmailEventConfiguration(userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getEventListener(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): UserEmailEventListenerInterface
 

@@ -49,8 +49,8 @@ this.userEmailEventConfigurationInterface= userEmailEventConfigurationInterface
         
         
 
-put(UserEmailEventConfigurationData.NAME, this.userEmailEventConfigurationInterface!.getName())
-put(UserEmailEventConfigurationData.LISTENER_CLASSPATH, this.userEmailEventConfigurationInterface!.getEventListenerClassPath())
+hashMap!.put(UserEmailEventConfigurationData.NAME, this.userEmailEventConfigurationInterface!.getName())
+hashMap!.put(UserEmailEventConfigurationData.LISTENER_CLASSPATH, this.userEmailEventConfigurationInterface!.getEventListenerClassPath())
 
 
 
@@ -60,7 +60,7 @@ put(UserEmailEventConfigurationData.LISTENER_CLASSPATH, this.userEmailEventConfi
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getKey(): any = {}{
 
@@ -72,7 +72,7 @@ put(UserEmailEventConfigurationData.LISTENER_CLASSPATH, this.userEmailEventConfi
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toVector(): Vector{
 
@@ -80,8 +80,8 @@ put(UserEmailEventConfigurationData.LISTENER_CLASSPATH, this.userEmailEventConfi
         
         
 
-add(this.userEmailEventConfigurationInterface!.getName())
-add(this.userEmailEventConfigurationInterface!.getEventListenerClassPath())
+vector.add(this.userEmailEventConfigurationInterface!.getName())
+vector.add(this.userEmailEventConfigurationInterface!.getEventListenerClassPath())
 
 
 

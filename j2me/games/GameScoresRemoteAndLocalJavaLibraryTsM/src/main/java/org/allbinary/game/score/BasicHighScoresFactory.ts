@@ -58,7 +58,6 @@ export class BasicHighScoresFactory extends HighScoresBase {
     public static loaded(index2: number): boolean{
     //var index2 = index2
 
-    
                         if(index2 >= 0)
                         
                                     {
@@ -124,8 +123,8 @@ this.softwareInformation= softwareInformation
     public fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener){
     //var gameInfo = gameInfo
     //var highScoresResultsListener = highScoresResultsListener
-put("Getting Remote/Local HighScores", this, FETCH)
-this.fetchHighScores(gameInfo, highScoresResultsListener, true)
+logUtil!.put("Getting Remote/Local HighScores", this, FETCH)
+this.this.fetchHighScores(gameInfo, highScoresResultsListener, true)
 }
 
 
@@ -133,13 +132,13 @@ this.fetchHighScores(gameInfo, highScoresResultsListener, true)
     //var gameInfo = gameInfo
     //var highScoresResultsListener = highScoresResultsListener
     //var preload = preload
-runTask(object: ARunnable()
+SecondaryThreadPool.getInstance()!.runTask(object: ARunnable()
                                 {
                                 
     public run(){
 
         try {
-            put(commonStrings!.START, this, FETCH)
+            logUtil!.put(commonStrings!.START, this, FETCH)
 highScoresArray[0]= RecordStoreHighScores.getInstance(abeClientInformation, gameInfo, TOP, PERSONAL_HIGH_SCORES, SCORES, ScoreComparator(true))
 
     var gameType: GameType = gameInfo!.getGameType()!;
@@ -157,7 +156,6 @@ highScoresArray[0]= RecordStoreHighScores.getInstance(abeClientInformation, game
         
 
 
-    
                         if(gameType == gameTypeFactory!.SINGLE_PLAYER || gameType == gameTypeFactory!.BOT)
                         
                                     {
@@ -166,7 +164,6 @@ highScoresArray[0]= RecordStoreHighScores.getInstance(abeClientInformation, game
                                     }
                                 
                              else 
-    
                         if(gameType == gameTypeFactory!.MULTI_PLAYER)
                         
                                     {
@@ -175,12 +172,12 @@ highScoresArray[0]= RecordStoreHighScores.getInstance(abeClientInformation, game
                                     }
                                 
 highScoresArray[1]= RemoteHighScores.getInstance(abeClientInformation, softwareInformation, gameInfo2, WORLD_TOP_SCORES, SCORES, BooleanFactory.getInstance()!.FALSE, preload)
-put(commonStrings!.END, this, FETCH)
+logUtil!.put(commonStrings!.END, this, FETCH)
 LastFetchHighScoresFactory.getInstance()!.highScoresArray= highScoresArray
-setHighScoresArray(highScoresArray)
+highScoresResultsListener!.setHighScoresArray(highScoresArray)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, FETCH, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, FETCH, e)
 }
 
 }

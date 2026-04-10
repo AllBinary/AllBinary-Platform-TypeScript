@@ -48,7 +48,7 @@ var name = name
     static add(name: string, gameFeature: Feature){
 var name = name
 var gameFeature = gameFeature
-put(name, gameFeature)
+hashtable.put(name, gameFeature)
 }
 
 
@@ -59,7 +59,7 @@ public constructor (name: string){
             var name = name
 this.name= name
 add(name, this)
-add(this)
+ChangedGameFeatureListener.getInstance()!.add(this)
 }
 
 

@@ -77,7 +77,7 @@ this.userRole= userRole
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -96,7 +96,7 @@ var document = document
         
         
 
-appendChild(storeFrontAdvertisementsStatisticsDomNodeInterface!.toXmlNode(document))
+node.appendChild(storeFrontAdvertisementsStatisticsDomNodeInterface!.toXmlNode(document))
 
     var storeFrontInventoryStatisticsInterface: StoreFrontInventoryStatisticsInterface = this.storeFrontStatisticsInterface!.getInventory()!;
         
@@ -107,7 +107,7 @@ appendChild(storeFrontAdvertisementsStatisticsDomNodeInterface!.toXmlNode(docume
         
         
 
-appendChild(storeFrontInventoryStatisticsDomNodeInterface!.toXmlNode(document))
+node.appendChild(storeFrontInventoryStatisticsDomNodeInterface!.toXmlNode(document))
 
     var storeFrontOrdersHistoryStatisticsInterface: StoreFrontOrdersHistoryStatisticsInterface = this.storeFrontStatisticsInterface!.getOrders()!;
         
@@ -118,9 +118,8 @@ appendChild(storeFrontInventoryStatisticsDomNodeInterface!.toXmlNode(document))
         
         
 
-appendChild(storeFrontOrdersHistoryStatisticsDomNodeInterface!.toXmlNode(document))
+node.appendChild(storeFrontOrdersHistoryStatisticsDomNodeInterface!.toXmlNode(document))
 
-    
                         if(this.userRole == UserRoleFactory.getInstance()!.ADMINISTRATOR)
                         
                                     {
@@ -134,7 +133,7 @@ appendChild(storeFrontOrdersHistoryStatisticsDomNodeInterface!.toXmlNode(documen
         
         
 
-appendChild(storeFrontUsersStatisticsDomNodeInterface!.toXmlNode(document))
+node.appendChild(storeFrontUsersStatisticsDomNodeInterface!.toXmlNode(document))
 
                                     }
                                 

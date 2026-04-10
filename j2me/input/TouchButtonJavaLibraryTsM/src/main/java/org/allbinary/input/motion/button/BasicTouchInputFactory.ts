@@ -121,26 +121,25 @@ NONE= TouchButtonInput(MAX -40, "No Button")
     public init(inputToGameKeyMapping: InputToGameKeyMapping){
 var inputToGameKeyMapping = inputToGameKeyMapping
 
-    
                         if(!initialized)
                         
                                     {
                                     initialized= true
-add(UP)
-add(LEFT)
-add(RIGHT)
-add(DOWN)
-add(SPECIAL_BUTTON_TWO)
-add(SPECIAL_BUTTON_FOUR)
-add(SPECIAL_BUTTON_THREE)
-add(SPECIAL_BUTTON_ONE)
-add(SPECIAL_BUTTON_FIVE)
-add(SPECIAL_BUTTON_SIX)
-add(SPECIAL_BUTTON_SIX)
-add(SPECIAL_BUTTON_SEVEN_TESTING_ONLY)
-add(SPECIAL_BUTTON_EIGHT_TESTING_ONLY)
-this.updateAll(list, inputToGameKeyMapping)
-getInstance()
+list.add(UP)
+list.add(LEFT)
+list.add(RIGHT)
+list.add(DOWN)
+list.add(SPECIAL_BUTTON_TWO)
+list.add(SPECIAL_BUTTON_FOUR)
+list.add(SPECIAL_BUTTON_THREE)
+list.add(SPECIAL_BUTTON_ONE)
+list.add(SPECIAL_BUTTON_FIVE)
+list.add(SPECIAL_BUTTON_SIX)
+list.add(SPECIAL_BUTTON_SIX)
+list.add(SPECIAL_BUTTON_SEVEN_TESTING_ONLY)
+list.add(SPECIAL_BUTTON_EIGHT_TESTING_ONLY)
+this.this.updateAll(list, inputToGameKeyMapping)
+CancelTouchButtonInputFactory.getInstance()
 
                                     }
                                 
@@ -149,14 +148,14 @@ getInstance()
 
     public updateAll(inputToGameKeyMapping: InputToGameKeyMapping){
 var inputToGameKeyMapping = inputToGameKeyMapping
-this.updateAll(this.list, inputToGameKeyMapping)
+this.this.updateAll(this.list, inputToGameKeyMapping)
 }
 
 
     public updateAll(list: BasicArrayList, inputToGameKeyMapping: InputToGameKeyMapping){
 var list = list
 var inputToGameKeyMapping = inputToGameKeyMapping
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.appendint(list.size())!.toString(), this, "updateAll")
 
     var touchButtonInput: TouchButtonInput
@@ -172,7 +171,7 @@ put(StringMaker().
 index >= 0; index--)
         {
 touchButtonInput= list.objectArray[index]! as TouchButtonInput
-update(inputToGameKeyMapping)
+touchButtonInput!.update(inputToGameKeyMapping)
 }
 
 }

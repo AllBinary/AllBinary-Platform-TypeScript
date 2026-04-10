@@ -70,7 +70,7 @@ this.session= request.getSession(true)
 
     public setRole(aRole: BasicUserRole){
 var aRole = aRole
-setAttribute(BasicUserRoleData.NAME.toString(), aRole)
+session.setAttribute(BasicUserRoleData.NAME.toString(), aRole)
 }
 
 
@@ -86,42 +86,42 @@ setAttribute(BasicUserRoleData.NAME.toString(), aRole)
 
     public setPassword(password: string){
 var password = password
-setAttribute(UserData.PASSWORD, password)
+session.setAttribute(UserData.PASSWORD, password)
 }
 
 
     public setUserName(userName: string){
 var userName = userName
-setAttribute(UserData.USERNAME, userName)
+session.setAttribute(UserData.USERNAME, userName)
 }
 
 
     public setPaymentMethod(value: string){
 var value = value
-setAttribute(PaymentGatewayData.NAME.toString(), value)
+session.setAttribute(PaymentGatewayData.NAME.toString(), value)
 }
 
 
     public setAuthenticated(){
-setAttribute(WeblisketSessionData.AUTHENTICATED, BooleanFactory.getInstance()!.TRUE_STRING)
+session.setAttribute(WeblisketSessionData.AUTHENTICATED, BooleanFactory.getInstance()!.TRUE_STRING)
 }
 
 
     public setAttempts(value: Integer){
 var value = value
-setAttribute(WeblisketSessionData.ATTEMPTS, value)
+session.setAttribute(WeblisketSessionData.ATTEMPTS, value)
 }
 
 
     public setTimeout(value: string){
 var value = value
-setAttribute(WeblisketSessionData.TIMEOUT, value)
+this.session.setAttribute(WeblisketSessionData.TIMEOUT, value)
 }
 
 
     public setStoreName(value: string){
 var value = value
-setAttribute(StoreFrontData.getInstance()!.NAME, value)
+this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value)
 }
 
 
@@ -207,15 +207,15 @@ setAttribute(StoreFrontData.getInstance()!.NAME, value)
 
     public setAuthenticated(value: boolean){
 var value = value
-setAttribute(WeblisketSessionData.AUTHENTICATED, BooleanFactory.getInstance()!.FALSE_STRING)
+session.setAttribute(WeblisketSessionData.AUTHENTICATED, BooleanFactory.getInstance()!.FALSE_STRING)
 }
 
 
     public clear(){
-removeAttribute(WeblisketSessionData.AUTHENTICATED)
-removeAttribute(WeblisketSessionData.TIMEOUT)
-removeAttribute(BasicUserRoleData.NAME.toString())
-removeAttribute(UserData.USERNAME)
+this.session.removeAttribute(WeblisketSessionData.AUTHENTICATED)
+this.session.removeAttribute(WeblisketSessionData.TIMEOUT)
+this.session.removeAttribute(BasicUserRoleData.NAME.toString())
+this.session.removeAttribute(UserData.USERNAME)
 }
 
 

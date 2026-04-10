@@ -106,7 +106,6 @@ this.id= payment.get(PaymentData.ID) as String
         
 
 
-    
                         if(def != 
                                     null
                                  && def.compareTo(EntryData.getInstance()!.DEFAULT) == 0)
@@ -171,7 +170,6 @@ public constructor (){
         
 
 
-    
                         if(this.name == 
                                     null
                                  || this.name.compareTo(stringUtil!.EMPTY_STRING) == 0)
@@ -187,7 +185,6 @@ public constructor (){
                                     }
                                 
 
-    
                         if(this.type == 
                                     null
                                  || this.type.compareTo(stringUtil!.EMPTY_STRING) == 0)
@@ -203,7 +200,6 @@ public constructor (){
                                     }
                                 
 
-    
                         if(this.expiration == 
                                     null
                                  || this.expiration.compareTo(stringUtil!.EMPTY_STRING) == 0)
@@ -219,7 +215,6 @@ public constructor (){
                                     }
                                 
 
-    
                         if(this.number == 
                                     null
                                  || this.number.compareTo(stringUtil!.EMPTY_STRING) == 0)
@@ -235,7 +230,6 @@ public constructor (){
                                     }
                                 
 
-    
                         if(this.number.length > org.allbinary.business.user.commerce.money.payment.types.CreditCardType.MAXLEN)
                         
                                     {
@@ -497,7 +491,6 @@ this.number= value
 
     public getLastFour(): string{
 
-    
                         if(this.number.length > PaymentData.MIN && this.number.length <= PaymentData.MAX)
                         
                                     {
@@ -539,30 +532,29 @@ this.number= value
         
         
 
-put(PaymentData.NAME, this.name)
-put(PaymentData.TYPE, this.type)
-put(PaymentData.EXPIRATION, this.expiration)
-put(PaymentData.NUMBER, this.getLastFour())
-put(PaymentData.TENDERTYPE, this.tenderType)
-put(PaymentData.TRANSACTIONTYPE, this.transactionType)
-put(PaymentData.ABA, this.aba)
-put(PaymentData.ACCOUNT, this.account)
-put(PaymentData.ACCOUNTTYPE, this.accountType)
-put(PaymentData.AUTHORIZATIONCODE, this.authorizationCode)
-put(PaymentData.CHECKNUMBER, this.checkNumber)
-put(PaymentData.DRIVERSLICENSE, this.driversLicense)
-put(PaymentData.MAGNETICINKCHECKREADER, this.magneticInkCheckReader)
+hashMap!.put(PaymentData.NAME, this.name)
+hashMap!.put(PaymentData.TYPE, this.type)
+hashMap!.put(PaymentData.EXPIRATION, this.expiration)
+hashMap!.put(PaymentData.NUMBER, this.getLastFour())
+hashMap!.put(PaymentData.TENDERTYPE, this.tenderType)
+hashMap!.put(PaymentData.TRANSACTIONTYPE, this.transactionType)
+hashMap!.put(PaymentData.ABA, this.aba)
+hashMap!.put(PaymentData.ACCOUNT, this.account)
+hashMap!.put(PaymentData.ACCOUNTTYPE, this.accountType)
+hashMap!.put(PaymentData.AUTHORIZATIONCODE, this.authorizationCode)
+hashMap!.put(PaymentData.CHECKNUMBER, this.checkNumber)
+hashMap!.put(PaymentData.DRIVERSLICENSE, this.driversLicense)
+hashMap!.put(PaymentData.MAGNETICINKCHECKREADER, this.magneticInkCheckReader)
 
-    
                         if(this.isDefault)
                         
                                     {
-                                    put(EntryData.getInstance()!.DEFAULT, EntryData.getInstance()!.DEFAULT)
+                                    hashMap!.put(EntryData.getInstance()!.DEFAULT, EntryData.getInstance()!.DEFAULT)
 
                                     }
                                 
                         else {
-                            put(EntryData.getInstance()!.DEFAULT, StringUtil.getInstance()!.EMPTY_STRING)
+                            hashMap!.put(EntryData.getInstance()!.DEFAULT, StringUtil.getInstance()!.EMPTY_STRING)
 
                         }
                             
@@ -575,7 +567,7 @@ put(PaymentData.MAGNETICINKCHECKREADER, this.magneticInkCheckReader)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

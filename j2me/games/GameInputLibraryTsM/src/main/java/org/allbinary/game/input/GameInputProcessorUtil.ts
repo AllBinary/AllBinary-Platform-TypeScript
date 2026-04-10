@@ -52,7 +52,6 @@ index < total; index++)
         
 
 
-    
                         if(inputProcessorCanBeNull == 
                                     null
                                 )

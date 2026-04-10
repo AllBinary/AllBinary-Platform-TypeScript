@@ -52,7 +52,7 @@ public constructor (){
             }
 
 
-                @Throws(LicensingException::class, Exception::class)
+                //@Throws(LicensingException::class, Error::class)
             
     public process(): string{
 
@@ -89,11 +89,10 @@ public constructor (){
 } catch(e: LicensingException)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
                         
                                     {
-                                    put("LicensingException", this, commonStrings!.PROCESS, e)
+                                    logUtil!.put("LicensingException", this, commonStrings!.PROCESS, e)
 
                                     }
                                 
@@ -105,11 +104,10 @@ public constructor (){
  catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
 
                                     }
                                 
@@ -122,19 +120,17 @@ public constructor (){
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.AUTHORIZEORDEREVALBODYONERROR) == 0 || this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.AUTHORIZEORDERANDEVALBODY) == 0 || this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.AUTHORIZEFORMEVALBODYONERROR) == 0)
                         
                                     {
-                                    print(this.process() +"<br />")
+                                    this.pageContext!.getOut()!.print(this.process() +"<br />")
 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.AUTHORIZEORDEREVALBODYONERROR) == 0)
                         
 
@@ -143,7 +139,6 @@ public constructor (){
                         return this.SKIP_BODY;
     
                              else 
-    
                         if()
                         
 
@@ -153,13 +148,13 @@ public constructor (){
                             
 
 
-                            throw Exception("No Such Payment Processing Command")
+                            throw Error("No Such Payment Processing Command")
 
                         }
                             
 } catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

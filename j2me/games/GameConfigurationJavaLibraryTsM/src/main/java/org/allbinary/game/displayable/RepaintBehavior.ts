@@ -88,11 +88,10 @@ export class RepaintBehavior
         
 
 
-    
                         if(features.isFeature(openGLFeatureFactory!.OPENGL))
                         
                                     {
-                                    process()
+                                    DisplayInfoSingleton.getInstance()!.process()
 
                                     }
                                 
@@ -104,8 +103,8 @@ export class RepaintBehavior
     public run(){
 
         try {
-            repaint()
-process()
+            canvas.repaint()
+DisplayInfoSingleton.getInstance()!.process()
 } catch(e: Exception)
             {
 
@@ -113,7 +112,7 @@ process()
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }
@@ -123,7 +122,7 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
         
         
 
-start()
+thread.start()
 
                         }
                             

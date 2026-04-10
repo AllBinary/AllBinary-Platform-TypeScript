@@ -37,10 +37,10 @@ this.midlet= midlet
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
-exit(0)
+System.exit(0)
 }
 
 

@@ -51,7 +51,7 @@ export class RTSScrollSelectionFormFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(formLabel: string, items: CustomItem[]): MultipleScrollSelectionHorizontalForm{
     //var formLabel = formLabel

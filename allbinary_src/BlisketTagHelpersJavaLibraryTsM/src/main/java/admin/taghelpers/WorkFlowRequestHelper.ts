@@ -70,7 +70,7 @@ this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(this.abeCl
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public delete(): string{
 
@@ -80,18 +80,17 @@ this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(this.abeCl
         
         
 
-delete(this.workFlowInterface!.getName(), stringUtil!.EMPTY_STRING)
+WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.getName(), stringUtil!.EMPTY_STRING)
 
     var success: string = "Successfully Removed the workflow with " +WorkFlowData.getInstance()!.NAME +"= " +this.workFlowInterface!.getName() +" from ";
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "delete()")
+                                    logUtil!.put(success, this, "delete()")
 
                                     }
                                 
@@ -111,18 +110,17 @@ delete(this.workFlowInterface!.getName(), stringUtil!.EMPTY_STRING)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "delete()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e)
 
                                     }
                                 
 
 
 
-                            throw Exception(e)
+                            throw Error(e)
 } catch(ex: Exception)
             {
 
@@ -131,11 +129,10 @@ delete(this.workFlowInterface!.getName(), stringUtil!.EMPTY_STRING)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "delete()", ex)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", ex)
 
                                     }
                                 
@@ -161,11 +158,10 @@ delete(this.workFlowInterface!.getName(), stringUtil!.EMPTY_STRING)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "add()")
+                                    logUtil!.put(success, this, "add()")
 
                                     }
                                 
@@ -183,11 +179,10 @@ delete(this.workFlowInterface!.getName(), stringUtil!.EMPTY_STRING)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "add()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "add()", e)
 
                                     }
                                 
@@ -211,11 +206,10 @@ delete(this.workFlowInterface!.getName(), stringUtil!.EMPTY_STRING)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "update()")
+                                    logUtil!.put(success, this, "update()")
 
                                     }
                                 
@@ -233,11 +227,10 @@ delete(this.workFlowInterface!.getName(), stringUtil!.EMPTY_STRING)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
 
                                     }
                                 

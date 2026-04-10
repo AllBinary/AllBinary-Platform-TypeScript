@@ -58,7 +58,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
     //var originalImage = originalImage
@@ -69,7 +69,6 @@ private constructor (){
         
 
 
-    
                         if(image.isMutable())
                         
                                     {
@@ -81,7 +80,6 @@ private constructor (){
         
 
 
-    
                         if(originalImage!.isMutable())
                         
                                     {
@@ -119,9 +117,9 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image
         
         
 
-translate(originalPlayNImage!.width() /2, originalPlayNImage!.height() /2)
-rotate(Math.toRadians(rotationInDegrees).toFloat())
-drawImage(originalPlayNImage,  -originalPlayNImage!.width() /2,  -originalPlayNImage!.height() /2)
+canvasSurface!.translate(originalPlayNImage!.width() /2, originalPlayNImage!.height() /2)
+canvasSurface!.rotate(Math.toRadians(rotationInDegrees).toFloat())
+canvasSurface!.drawImage(originalPlayNImage,  -originalPlayNImage!.width() /2,  -originalPlayNImage!.height() /2)
 
 
 
@@ -135,7 +133,7 @@ drawImage(originalPlayNImage,  -originalPlayNImage!.width() /2,  -originalPlayNI
                             
 
 
-                            throw Exception("Not Mutable")
+                            throw Error("Not Mutable")
 
                         }
                             

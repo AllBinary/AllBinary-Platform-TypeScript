@@ -114,10 +114,10 @@ private constructor (){
         
         
 
-append(this.get(exception))
-append(SPECIAL_MESSAGE)
-append(specialMessage)
-append(this.commonSeps!.NEW_LINE)
+stringBuffer!.append(this.get(exception))
+stringBuffer!.append(SPECIAL_MESSAGE)
+stringBuffer!.append(specialMessage)
+stringBuffer!.append(this.commonSeps!.NEW_LINE)
 
 
 
@@ -136,9 +136,9 @@ append(this.commonSeps!.NEW_LINE)
         
         
 
-append(SPECIAL_MESSAGE)
-append(specialMessage)
-append(this.commonSeps!.NEW_LINE)
+stringBuffer!.append(SPECIAL_MESSAGE)
+stringBuffer!.append(specialMessage)
+stringBuffer!.append(this.commonSeps!.NEW_LINE)
 
 
 
@@ -152,7 +152,6 @@ append(this.commonSeps!.NEW_LINE)
     //var className = className
 var functionName = functionName
 
-    
                         if(functionName == 
                                     null
                                 )
@@ -167,12 +166,12 @@ var functionName = functionName
         
         
 
-append(TIME)
-append(timeStampUtil!.getAsString())
-append(CLASS_NAME)
-append(className)
-append(FUNCTION_CALL)
-append(functionName)
+stringBuffer!.append(TIME)
+stringBuffer!.append(timeStampUtil!.getAsString())
+stringBuffer!.append(CLASS_NAME)
+stringBuffer!.append(className)
+stringBuffer!.append(FUNCTION_CALL)
+stringBuffer!.append(functionName)
 
 
 
@@ -197,7 +196,6 @@ append(functionName)
     /*actual*/ public get(exception: any = {}): string{
     //var exception = exception
 
-    
                         if(exception != nullUtil!.NULL_OBJECT)
                         
                                     {
@@ -206,40 +204,38 @@ append(functionName)
         
         
 
-append(LOG_ERROR)
+stringBuffer!.append(LOG_ERROR)
 
     var exceptionAsString: string = exception.toString()!;
         
         
 
 
-    
                         if(exceptionAsString != 
                                     null
                                 )
                         
                                     {
-                                    append(exceptionAsString)
+                                    stringBuffer!.append(exceptionAsString)
 
                                     }
                                 
                         else {
-                            append(EMPTY)
+                            stringBuffer!.append(EMPTY)
 
                         }
                             
-append(STACK_TRACE)
+stringBuffer!.append(STACK_TRACE)
 
-    
                         if(exception != nullUtil!.NULL_OBJECT)
                         
                                     {
-                                    append(exceptionUtil!.getStackTrace(exception as Throwable))
+                                    stringBuffer!.append(exceptionUtil!.getStackTrace(exception as Error))
 
                                     }
                                 
                         else {
-                            append(stringUtil!.NULL_STRING)
+                            stringBuffer!.append(stringUtil!.NULL_STRING)
 
                         }
                             

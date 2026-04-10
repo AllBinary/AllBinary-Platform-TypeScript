@@ -65,11 +65,10 @@ export class GameFeatureItemStateListener
     public static add(gameFeature: GameFeature){
 var gameFeature = gameFeature
 
-    
                         if(!GameFeatureItemStateListener.toggleList!.contains(gameFeature))
                         
                                     {
-                                    add(gameFeature)
+                                    GameFeatureItemStateListener.toggleList!.add(gameFeature)
 
                                     }
                                 
@@ -91,14 +90,14 @@ this.gameOptionsForm= gameOptionsForm
         
         
 
-add(gameFeatureFactory!.ARTIFICIAL_INTELLEGENCE_PROCESSOR)
-add(gameFeatureFactory!.COLLIDABLE_INTERFACE_LAYER_PROCESSOR)
-add(gameFeatureFactory!.DAMAGE_FLOATERS)
-add(gameFeatureFactory!.DROPPED_ITEMS)
-add(gameFeatureFactory!.GAME_INPUT_LAYER_PROCESSOR)
-add(gameFeatureFactory!.HEALTH_BARS)
-add(gameFeatureFactory!.SOUND)
-add(gameFeatureFactory!.TICKABLE_LAYER_PROCESSOR)
+GameFeatureItemStateListener.add(gameFeatureFactory!.ARTIFICIAL_INTELLEGENCE_PROCESSOR)
+GameFeatureItemStateListener.add(gameFeatureFactory!.COLLIDABLE_INTERFACE_LAYER_PROCESSOR)
+GameFeatureItemStateListener.add(gameFeatureFactory!.DAMAGE_FLOATERS)
+GameFeatureItemStateListener.add(gameFeatureFactory!.DROPPED_ITEMS)
+GameFeatureItemStateListener.add(gameFeatureFactory!.GAME_INPUT_LAYER_PROCESSOR)
+GameFeatureItemStateListener.add(gameFeatureFactory!.HEALTH_BARS)
+GameFeatureItemStateListener.add(gameFeatureFactory!.SOUND)
+GameFeatureItemStateListener.add(gameFeatureFactory!.TICKABLE_LAYER_PROCESSOR)
 }
 
 
@@ -111,19 +110,17 @@ var item = item
         
         
 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged")
 
-    
                         if(item is GameConfigurationGauge)
                         
                                     {
-                                    change(this.gameOptionsForm, item as GameConfigurationGauge)
+                                    GameConfigurationUtil.getInstance()!.change(this.gameOptionsForm, item as GameConfigurationGauge)
 
                                     }
                                 
                              else 
-    
                         if(item is ChoiceGroup)
                         
                                     {
@@ -133,16 +130,15 @@ put(StringMaker().
         
 
 
-    
                         if(gameFeatureUtil!.isExclusive(itemLabel))
                         
                                     {
-                                    updateExclusive(item as ChoiceGroup)
+                                    gameFeatureUtil!.updateExclusive(item as ChoiceGroup)
 
                                     }
                                 
                         else {
-                            updateMultiple(item as ChoiceGroup)
+                            gameFeatureUtil!.updateMultiple(item as ChoiceGroup)
 
                         }
                             
@@ -156,7 +152,7 @@ put(StringMaker().
         
         
 
-put(commonStrings!.EXCEPTION, this, "itemStateChanged", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "itemStateChanged", e)
 }
 
 }

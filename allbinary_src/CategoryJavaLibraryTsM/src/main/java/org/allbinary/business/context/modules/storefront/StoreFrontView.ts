@@ -59,7 +59,6 @@ public constructor (storeFrontInterface: StoreFrontInterface){
             super();
             var storeFrontInterface = storeFrontInterface
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -68,7 +67,7 @@ public constructor (storeFrontInterface: StoreFrontInterface){
         
         
 
-put("Constructing: StoreFrontView for: " +storeFrontInterface!.getName(), this, commonStrings!.GET_INSTANCE)
+logUtil!.put("Constructing: StoreFrontView for: " +storeFrontInterface!.getName(), this, commonStrings!.GET_INSTANCE)
 
                                     }
                                 
@@ -76,7 +75,7 @@ this.storeFrontInterface= storeFrontInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -90,11 +89,11 @@ var document = document
         
         
 
-put(storeFrontData!.CURRENTHOMEHOSTNAME, this.storeFrontInterface!.getCurrentHomeHostName())
-put(storeFrontData!.CURRENTHOMEHOSTNAMEPATH, this.storeFrontInterface!.getCurrentHomeHostNamePath())
-put(storeFrontData!.CURRENTHOSTNAME, this.storeFrontInterface!.getCurrentHostName())
-put(storeFrontData!.CURRENTHOSTNAMEPATH, this.storeFrontInterface!.getCurrentHostNamePath())
-put(BasketData.NAME, this.storeFrontInterface!.getBasketName())
+hashMap!.put(storeFrontData!.CURRENTHOMEHOSTNAME, this.storeFrontInterface!.getCurrentHomeHostName())
+hashMap!.put(storeFrontData!.CURRENTHOMEHOSTNAMEPATH, this.storeFrontInterface!.getCurrentHomeHostNamePath())
+hashMap!.put(storeFrontData!.CURRENTHOSTNAME, this.storeFrontInterface!.getCurrentHostName())
+hashMap!.put(storeFrontData!.CURRENTHOSTNAMEPATH, this.storeFrontInterface!.getCurrentHostNamePath())
+hashMap!.put(BasketData.NAME, this.storeFrontInterface!.getBasketName())
 
     var node: Node = ModDomHelper.createNameValueNodes(document, storeFrontData!.NAME, hashMap)!;
         

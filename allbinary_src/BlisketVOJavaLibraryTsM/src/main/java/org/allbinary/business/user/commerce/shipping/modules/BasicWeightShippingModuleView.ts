@@ -103,8 +103,8 @@ var document = document
         
         
 
-appendChild(ModDomHelper.createNameValueNodes(document, ShippingMethodData.NAME, this.getName()))
-appendChild(ModDomHelper.createNameValueNodes(document, ShippingMethodData.DESCRIPTION, this.getDescription()))
+shippingMethodNode!.appendChild(ModDomHelper.createNameValueNodes(document, ShippingMethodData.NAME, this.getName()))
+shippingMethodNode!.appendChild(ModDomHelper.createNameValueNodes(document, ShippingMethodData.DESCRIPTION, this.getDescription()))
 
 
 
@@ -114,11 +114,10 @@ appendChild(ModDomHelper.createNameValueNodes(document, ShippingMethodData.DESCR
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.EXCEPTION, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "toXmlNode", e)
 
                                     }
                                 
@@ -150,11 +149,10 @@ appendChild(ModDomHelper.createNameValueNodes(document, ShippingMethodData.DESCR
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.EXCEPTION, this, "toXmlDoc", e)
+                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "toXmlDoc", e)
 
                                     }
                                 
@@ -181,11 +179,10 @@ appendChild(ModDomHelper.createNameValueNodes(document, ShippingMethodData.DESCR
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.EXCEPTION, this, "view", e)
+                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "view", e)
 
                                     }
                                 

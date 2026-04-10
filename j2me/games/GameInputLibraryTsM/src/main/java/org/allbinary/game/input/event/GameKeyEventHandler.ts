@@ -69,37 +69,37 @@ export class GameKeyEventHandler
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeAllListeners(){
-removeAllListeners()
-removeAllListeners()
-removeAllListeners()
+this.pressGameKeyEventHandler!.removeAllListeners()
+this.upGameKeyEventHandler!.removeAllListeners()
+this.downGameKeyEventHandler!.removeAllListeners()
 }
 
 
     public addListener(eventListenerInterface: EventListenerInterface, playerInputId: number){
 var eventListenerInterface = eventListenerInterface
 var playerInputId = playerInputId
-put(eventListenerInterface!.toString(), this, commonStrings!.ADD_LISTENER)
-addListenerSingleThreaded(eventListenerInterface)
-addListenerSingleThreaded(eventListenerInterface)
-addListenerSingleThreaded(eventListenerInterface)
+logUtil!.put(eventListenerInterface!.toString(), this, commonStrings!.ADD_LISTENER)
+this.pressGameKeyEventHandler!.addListenerSingleThreaded(eventListenerInterface)
+this.upGameKeyEventHandler!.getInstanceForPlayer(playerInputId)!.addListenerSingleThreaded(eventListenerInterface)
+this.downGameKeyEventHandler!.getInstanceForPlayer(playerInputId)!.addListenerSingleThreaded(eventListenerInterface)
 }
 
 
     public addListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-put(eventListenerInterface!.toString(), this, commonStrings!.ADD_LISTENER)
-addListenerSingleThreaded(eventListenerInterface)
-addListenerSingleThreaded(eventListenerInterface)
-addListenerSingleThreaded(eventListenerInterface)
+logUtil!.put(eventListenerInterface!.toString(), this, commonStrings!.ADD_LISTENER)
+this.pressGameKeyEventHandler!.addListenerSingleThreaded(eventListenerInterface)
+this.upGameKeyEventHandler!.addListenerSingleThreaded(eventListenerInterface)
+this.downGameKeyEventHandler!.addListenerSingleThreaded(eventListenerInterface)
 }
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-put(eventListenerInterface!.toString(), this, commonStrings!.REMOVE_LISTENER)
-removeListenerSingleThreaded(eventListenerInterface)
-removeListenerSingleThreaded(eventListenerInterface)
-removeListenerSingleThreaded(eventListenerInterface)
+logUtil!.put(eventListenerInterface!.toString(), this, commonStrings!.REMOVE_LISTENER)
+this.pressGameKeyEventHandler!.removeListenerSingleThreaded(eventListenerInterface)
+this.upGameKeyEventHandler!.removeListenerSingleThreaded(eventListenerInterface)
+this.downGameKeyEventHandler!.removeListenerSingleThreaded(eventListenerInterface)
 }
 
 

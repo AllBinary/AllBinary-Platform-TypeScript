@@ -61,29 +61,26 @@ public constructor (fullPath: AbPath){
             var fullPath = fullPath
 file= AbFile(AbPath(fullPath!.toFileSystemString(), FileUploadData.getInstance()!.FILE))
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Loading Privileges: " +fullPath!.toFileSystemString(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Loading Privileges: " +fullPath!.toFileSystemString(), this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
 
-    
                         if(this.isFile())
                         
                                     {
-                                    add(BasicUserRoleFactory.getInstance()!.ADMINISTRATOR)
+                                    userRoles!.add(BasicUserRoleFactory.getInstance()!.ADMINISTRATOR)
 
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("User Roles: " +userRoles, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("User Roles: " +userRoles, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 

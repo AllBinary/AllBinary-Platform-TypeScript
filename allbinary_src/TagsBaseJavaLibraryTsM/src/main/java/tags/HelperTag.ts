@@ -40,11 +40,10 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
             super();
                 //var tagHelperFactoryInterface = tagHelperFactoryInterface
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put(commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -52,22 +51,20 @@ this.tagHelperFactoryInterface= tagHelperFactoryInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     setHelper(){
 
-    
                         if(this.anyType == 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("Creating TagHelper with: \n" +this.getPropertiesHashMap()!.toString(), this, "doStartTag")
+                                    logUtil!.put("Creating TagHelper with: \n" +this.getPropertiesHashMap()!.toString(), this, "doStartTag")
 
                                     }
                                 
@@ -90,11 +87,10 @@ this.anyType= tagHelperFactoryInterface!.getInstance(this.getPropertiesHashMap()
 
     public doEndTag(): number{
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("Tag Ended", this, "doEndTag")
+                                    logUtil!.put("Tag Ended", this, "doEndTag")
 
                                     }
                                 

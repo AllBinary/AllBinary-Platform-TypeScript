@@ -66,13 +66,13 @@ this.animationInterface= animationInterface
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics, x, y)
+this.animationInterface!.paint(graphics, x, y)
 }
 
 
     public paintThreed(graphics: Graphics){
 var graphics = graphics
-paintThreed(graphics, x, y, z)
+this.animationInterface!.paintThreed(graphics, x, y, z)
 }
 
 

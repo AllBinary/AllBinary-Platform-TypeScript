@@ -40,7 +40,7 @@ interface WeblisketSessionInterface {
 
     getLastAccessedTime(): number
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getOrder(): OrderInterface
 
@@ -48,7 +48,7 @@ interface WeblisketSessionInterface {
 
     getPaymentMethod(): string
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getRole(): UserRole
 

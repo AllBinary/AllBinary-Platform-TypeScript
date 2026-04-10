@@ -68,7 +68,7 @@ var groupInterface = groupInterface
         
 index >= 0; index--)
         {
-removeAllListeners()
+capitalEventHandlerArray[index]!.removeAllListeners()
 }
 
 }

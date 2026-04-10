@@ -77,7 +77,7 @@ this.circularIndexUtil= CircularIndexUtil.getInstance(this.totalFrames)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAnimationSize(): number{
 
@@ -90,18 +90,18 @@ this.circularIndexUtil= CircularIndexUtil.getInstance(this.totalFrames)
 
 
     public nextFrame(){
-next()
+this.circularIndexUtil!.next()
 }
 
 
     public previousFrame(){
-previous()
+this.circularIndexUtil!.previous()
 }
 
 
     public setFrame(index: number){
 var index = index
-setIndex(index)
+this.circularIndexUtil!.setIndex(index)
 }
 
 
@@ -163,19 +163,19 @@ var y = y
         
         
 
-drawImage(this.image, x +currentX, y +currentY, anchor)
+graphics.drawImage(this.image, x +currentX, y +currentY, anchor)
 }
 
 
     public close(){
-dispose(this.image)
+DisposalUtil.getInstance()!.dispose(this.image)
 }
 
 
-                @Throws(Throwable::class)
+                //@Throws(Error::class)
             
     finalize(){
-dispose(this.image)
+DisposalUtil.getInstance()!.dispose(this.image)
 }
 
 

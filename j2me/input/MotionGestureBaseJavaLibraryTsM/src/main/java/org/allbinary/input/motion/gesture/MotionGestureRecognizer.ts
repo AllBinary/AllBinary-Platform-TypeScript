@@ -118,7 +118,7 @@ movedMotionGesturesHandler= MovedMotionGesturesHandler.getInstance()
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 this.motionGesturesHandler= motionGesturesHandler as BasicMotionGesturesHandler
@@ -126,7 +126,7 @@ this.movedMotionGesturesHandler= movedMotionGesturesHandler
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processPressedMotionEvent(current: GPoint, deviceId: number, button: number): boolean{
     //var current = current
@@ -139,9 +139,9 @@ previous= origin
         
         
 
-setPreviousPoint(previous)
-setCurrentPoint(current)
-fireEvent(event)
+event.setPreviousPoint(previous)
+event.setCurrentPoint(current)
+motionGesturesHandler!.fireEvent(event)
 
 
 
@@ -151,7 +151,7 @@ fireEvent(event)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processReleasedMotionEvent(current: GPoint, deviceId: number, button: number): boolean{
     //var current = current
@@ -162,9 +162,9 @@ fireEvent(event)
         
         
 
-setPreviousPoint(previous)
-setCurrentPoint(current)
-fireEvent(event)
+event.setPreviousPoint(previous)
+event.setCurrentPoint(current)
+motionGesturesHandler!.fireEvent(event)
 
 
 
@@ -174,14 +174,13 @@ fireEvent(event)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processDraggedMotionEvent(current: GPoint, deviceId: number, buttonMask: number){
     //var current = current
     //var deviceId = deviceId
     //var buttonMask = buttonMask
 
-    
                         if(previous == origin || intermediate == origin)
                         
                                     {
@@ -196,15 +195,14 @@ intermediate= current
 
                                     }
                                 
-setP1(previous)
-setP2(current)
+line.setP1(previous)
+line.setP2(current)
 
     var minimumMotionGesture: number = MotionGestureConfigurationFactory.getInstance()!.getMinimumMotionGesture()!;
         
         
 
 
-    
                         if(j2seMath!.abs(line.getDeltaX().toFloat()) < minimumMotionGesture && j2seMath!.abs(line.getDeltaY().toFloat()) < minimumMotionGesture)
                         
                                     {
@@ -254,7 +252,6 @@ setP2(current)
         
 
 
-    
                         if(conf.isDiagonalMotionGestureAllowed())
                         
                                     {
@@ -264,12 +261,10 @@ diagonalToleranceLower= conf.getDiagonalTolerance().toDouble()
                                     }
                                 
 
-    
                         if(absGradient > Math.tan(Math.toRadians(diagonalToleranceHigher)))
                         
                                     {
                                     
-    
                         if(line.getDeltaY() > 0)
                         
                                     {
@@ -287,12 +282,10 @@ diagonalToleranceLower= conf.getDiagonalTolerance().toDouble()
                                 
                         else {
                             
-    
                         if(absGradient < Math.tan(Math.toRadians(diagonalToleranceLower)))
                         
                                     {
                                     
-    
                         if(line.getDeltaX() > 0)
                         
                                     {
@@ -310,12 +303,10 @@ diagonalToleranceLower= conf.getDiagonalTolerance().toDouble()
                                 
                         else {
                             
-    
                         if(gradient > 0)
                         
                                     {
                                     
-    
                         if(line.getDeltaX() > 0)
                         
                                     {
@@ -333,7 +324,6 @@ diagonalToleranceLower= conf.getDiagonalTolerance().toDouble()
                                 
                         else {
                             
-    
                         if(line.getDeltaX() > 0)
                         
                                     {
@@ -362,9 +352,9 @@ intermediate= current
         
         
 
-setPreviousPoint(previous)
-setCurrentPoint(current)
-fireEvent(event)
+event.setPreviousPoint(previous)
+event.setCurrentPoint(current)
+motionGesturesHandler!.fireEvent(event)
 
 
 
@@ -374,7 +364,7 @@ fireEvent(event)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processMovedMotionEvent(current: GPoint, deviceId: number, button: number): boolean{
     //var current = current
@@ -385,9 +375,9 @@ fireEvent(event)
         
         
 
-setPreviousPoint(previous)
-setCurrentPoint(current)
-fireEvent(event)
+event.setPreviousPoint(previous)
+event.setCurrentPoint(current)
+movedMotionGesturesHandler!.fireEvent(event)
 
 
 

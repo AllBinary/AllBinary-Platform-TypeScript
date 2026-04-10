@@ -79,7 +79,7 @@ export class MultipassWaypointPathRunnable extends WaypointPathRunnableBase {
     public run(){
 
         try {
-            start(pathFindingLayer)
+            pathFindingLayer!.getWaypointRunnableLogHelper()!.start(pathFindingLayer)
 reset2()
 
     var geographicMapCellPosition: GeographicMapCellPosition = pathFindingLayer!.getCurrentGeographicMapCellPosition()!;
@@ -87,7 +87,6 @@ reset2()
         
 
 
-    
                         if(geographicMapCellPosition == 
                                     null
                                 )
@@ -96,7 +95,7 @@ reset2()
                                     
 
 
-                            throw Exception("Should never be running here")
+                            throw Error("Should never be running here")
 
                                     }
                                 
@@ -108,11 +107,10 @@ pathFindingInfo= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.g
 
 list= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition, localPathFindingInfo, multipassState)
 
-    
                         if(list != basicArrayListUtil!.getImmutableInstance())
                         
                                     {
-                                    run()
+                                    END_RUNNABLE.run()
 
                                     }
                                 
@@ -128,7 +126,7 @@ list= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 setRunning(false)
 finish()
 }
@@ -158,11 +156,10 @@ finish()
 
 list= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition, localPathFindingInfo, multipassState)
 
-    
                         if(list != basicArrayListUtil!.getImmutableInstance())
                         
                                     {
-                                    run()
+                                    END_RUNNABLE.run()
 
                                     }
                                 
@@ -173,7 +170,7 @@ list= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 setRunning(false)
 finish()
 }
@@ -196,8 +193,8 @@ finish()
         
         
 
-setWaypointPathsList(list)
-end(pathFindingLayer)
+waypointBehavior!.setWaypointPathsList(list)
+pathFindingLayer!.getWaypointRunnableLogHelper()!.end(pathFindingLayer)
 } catch(e: Exception)
             {
 
@@ -205,7 +202,7 @@ end(pathFindingLayer)
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 setRunning(false)
 }
 
@@ -245,11 +242,10 @@ public constructor (){
 var isRunning = isRunning
 this.runningP= isRunning
 
-    
                         if(this.runningP)
                         
                                     {
-                                    this.reset()
+                                    this.this.reset()
 this.done= false
 
                                     }
@@ -260,7 +256,7 @@ this.done= false
     public run(){
 
         try {
-            run()
+            this.currentPassRunnable!.run()
 } catch(e: Exception)
             {
 
@@ -268,8 +264,8 @@ this.done= false
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
-this.setRunning(false)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+this.this.setRunning(false)
 }
 
 }
@@ -284,7 +280,7 @@ pathFindingInfo= NullUtil.getInstance()!.NULL_OBJECT
 
 
     finish(){
-this.reset2()
+this.this.reset2()
 currentPassRunnable= ALREADY_ENDED_RUNNABLE
 done= true
 }
@@ -301,7 +297,7 @@ done= true
 
 
     public reset(){
-this.reset2()
+this.this.reset2()
 this.currentPassRunnable= FIRST_RUNNABLE
 this.done= false
 }

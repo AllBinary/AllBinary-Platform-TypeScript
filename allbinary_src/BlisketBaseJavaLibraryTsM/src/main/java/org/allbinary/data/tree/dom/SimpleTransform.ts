@@ -58,7 +58,7 @@ this.dataFilePath= dataFilePath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public transform(): string{
 

@@ -57,8 +57,8 @@ public constructor (){
     public update(gameInfo: GameInfo, myCanvas: MyCanvas){
     //var gameInfo = gameInfo
     //var myCanvas = myCanvas
-this.setGameOverStr(this.NORMAL_GAME_OVER)
-this.setWinStr(this.NORMAL_GAME_OVER_WIN)
+this.this.setGameOverStr(this.NORMAL_GAME_OVER)
+this.this.setWinStr(this.NORMAL_GAME_OVER_WIN)
 }
 
 

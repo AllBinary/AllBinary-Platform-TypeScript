@@ -25,7 +25,7 @@ import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/
 interface UpKeyEventListenerInterface extends EventListenerInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     onUpKeyEvent(keyAsInteger: Integer)
 

@@ -18,6 +18,9 @@
 
 
 
+import { DirectoryBooleanFileVisitor } from "../../../../../org/allbinary/logic/io/file/directory/DirectoryBooleanFileVisitor.js";
+
+    
 import { DirectoryOrIncludeFileExtensionBooleanFileVisitor } from "../../../../../org/allbinary/logic/io/file/directory/DirectoryOrIncludeFileExtensionBooleanFileVisitor.js";
 
     
@@ -71,8 +74,8 @@ var path = path
     
 } catch(e: Exception)
             {
-printStackTrace()
-println("Error: " +e +"\nMsg: " +e.message)
+e.printStackTrace()
+System.out.println("Error: " +e +"\nMsg: " +e.message)
 }
 
 
@@ -110,7 +113,7 @@ println("Error: " +e +"\nMsg: " +e.message)
         
 index < size; index++)
         {
-add(includeExtensions[index]!)
+includeExtensionBasicArrayList!.add(includeExtensions[index]!)
 }
 
 
@@ -131,8 +134,8 @@ add(includeExtensions[index]!)
     
 } catch(e: Exception)
             {
-printStackTrace()
-println("Error: " +e +"\nMsg: " +e.message)
+e.printStackTrace()
+System.out.println("Error: " +e +"\nMsg: " +e.message)
 }
 
 
@@ -154,7 +157,7 @@ println("Error: " +e +"\nMsg: " +e.message)
         
         
 
-add(includeExtension)
+includeExtensionBasicArrayList!.add(includeExtension)
 
     var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList));
         
@@ -173,8 +176,8 @@ add(includeExtension)
     
 } catch(e: Exception)
             {
-printStackTrace()
-println("Error: " +e +"\nMsg: " +e.message)
+e.printStackTrace()
+System.out.println("Error: " +e +"\nMsg: " +e.message)
 }
 
 
@@ -197,7 +200,7 @@ println("Error: " +e +"\nMsg: " +e.message)
         
         
 
-add(includeExtension)
+includeExtensionBasicArrayList!.add(includeExtension)
 
     var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList, pathIncludes));
         
@@ -216,8 +219,43 @@ add(includeExtension)
     
 } catch(e: Exception)
             {
-printStackTrace()
-println("Error: " +e +"\nMsg: " +e.message)
+e.printStackTrace()
+System.out.println("Error: " +e +"\nMsg: " +e.message)
+}
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return null;
+    
+}
+
+
+    public getDirectories(path: string): BasicArrayList{
+    //var path = path
+
+        try {
+            
+    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(DirectoryBooleanFileVisitor());
+        
+        
+
+
+    var files: BasicArrayList = subDirectory!.search(visitorFileFilter, AbFile(path))!;
+        
+        
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return files;
+    
+} catch(e: Exception)
+            {
+e.printStackTrace()
+System.out.println("Error: " +e +"\nMsg: " +e.message)
 }
 
 

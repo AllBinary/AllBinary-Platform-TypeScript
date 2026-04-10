@@ -109,8 +109,8 @@ public constructor (name: string, childNameList: BasicArrayList){
             super();
                 //var name = name
     //var childNameList = childNameList
-put(commonStrings!.CONSTRUCTOR, this, commonStrings!.CONSTRUCTOR)
-update(this, canvasStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.CONSTRUCTOR, this, commonStrings!.CONSTRUCTOR)
+displayInfoSingleton!.update(this, canvasStrings!.CONSTRUCTOR)
 this.name= name
 this.childNameList= childNameList
 this.commandStack= Stack()
@@ -119,15 +119,15 @@ this.commandStack= Stack()
 
     public setFullScreenMode(mode: boolean){
 var mode = mode
-setFullScreenMode(mode)
-update(this, canvasStrings!.SET_FULL_SCREEN_MODE)
+super.setFullScreenMode(mode)
+displayInfoSingleton!.update(this, canvasStrings!.SET_FULL_SCREEN_MODE)
 }
 
 
     sizeChanged(w: number, h: number){
 var w = w
 var h = h
-update(this, canvasStrings!.SIZE_CHANGED)
+displayInfoSingleton!.update(this, canvasStrings!.SIZE_CHANGED)
 }
 
 
@@ -157,12 +157,11 @@ var command = command
     public addCommand(command: Command){
 var command = command
 
-    
                         if(!this.commandStack!.contains(command))
                         
                                     {
-                                    push(command)
-addCommand(command)
+                                    commandStack!.push(command)
+super.addCommand(command)
 
                                     }
                                 
@@ -172,8 +171,8 @@ addCommand(command)
 
     public removeCommand(command: Command){
 var command = command
-removeElement(command)
-removeCommand(command)
+commandStack!.removeElement(command)
+super.removeCommand(command)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -194,7 +193,7 @@ removeCommand(command)
         
 index < size; index++)
         {
-removeCommand(commandStack!.pop() as Command)
+super.removeCommand(commandStack!.pop() as Command)
 }
 
 }
@@ -206,7 +205,7 @@ removeCommand(commandStack!.pop() as Command)
 
     public setCommandListener(l: CommandListener){
 var l = l
-setCommandListener(l)
+super.setCommandListener(l)
 listener= l
 }
 
@@ -233,32 +232,32 @@ listener= l
 
 
     public removePauseCommand(){
-this.removeCommand(MyCommandsFactory.getInstance()!.PAUSE_COMMAND)
+this.this.removeCommand(MyCommandsFactory.getInstance()!.PAUSE_COMMAND)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pause(){
-put(commonStrings!.START, this, canvasStrings!.PAUSE)
-this.removePauseCommand()
-this.addCommand(MyCommandsFactory.getInstance()!.RESUME_COMMAND)
-this.setPaused(true)
+logUtil!.put(commonStrings!.START, this, canvasStrings!.PAUSE)
+this.this.removePauseCommand()
+this.this.addCommand(MyCommandsFactory.getInstance()!.RESUME_COMMAND)
+this.this.setPaused(true)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public unPause(){
-put(commonStrings!.START, this, canvasStrings!.UN_PAUSE)
-this.removeCommand(MyCommandsFactory.getInstance()!.RESUME_COMMAND)
-this.addCommand(MyCommandsFactory.getInstance()!.PAUSE_COMMAND)
-this.setPaused(false)
+logUtil!.put(commonStrings!.START, this, canvasStrings!.UN_PAUSE)
+this.this.removeCommand(MyCommandsFactory.getInstance()!.RESUME_COMMAND)
+this.this.addCommand(MyCommandsFactory.getInstance()!.PAUSE_COMMAND)
+this.this.setPaused(false)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(){
-process()
+displayInfoSingleton!.process()
 }
 
 
@@ -284,7 +283,7 @@ var displayable = displayable
 
 
     public destroy(){
-put("Destroyed MyCanvas", this, "destroy")
+logUtil!.put("Destroyed MyCanvas", this, "destroy")
 }
 
 
@@ -319,21 +318,21 @@ var deviceId = deviceId
     pointerDragged(x: number, y: number){
 var x = x
 var y = y
-pointerDragged(x, y)
+touchME!.pointerDragged(x, y)
 }
 
 
     pointerPressed(x: number, y: number){
 var x = x
 var y = y
-pointerPressed(x, y)
+touchME!.pointerPressed(x, y)
 }
 
 
     pointerReleased(x: number, y: number){
 var x = x
 var y = y
-pointerReleased(x, y)
+touchME!.pointerReleased(x, y)
 }
 
 

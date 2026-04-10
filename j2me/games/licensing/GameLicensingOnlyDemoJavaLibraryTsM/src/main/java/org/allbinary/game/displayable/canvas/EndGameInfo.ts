@@ -57,18 +57,17 @@ export class EndGameInfo
     //var gameInfo = gameInfo
     //var myCanvas = myCanvas
 
-    
                         if(gameInfo!.isLastLevel())
                         
                                     {
-                                    this.setWinStr(TEASER_DEMO_GAME_END_LAST_LEVEL)
-this.setGameOverStr(TEASER_DEMO_GAME_END_LAST_LEVEL)
+                                    this.this.setWinStr(TEASER_DEMO_GAME_END_LAST_LEVEL)
+this.this.setGameOverStr(TEASER_DEMO_GAME_END_LAST_LEVEL)
 
                                     }
                                 
                         else {
-                            this.setWinStr(NORMAL_GAME_OVER_WIN)
-this.setGameOverStr(TEASER_DEMO_GAME_END)
+                            this.this.setWinStr(NORMAL_GAME_OVER_WIN)
+this.this.setGameOverStr(TEASER_DEMO_GAME_END)
 
                         }
                             

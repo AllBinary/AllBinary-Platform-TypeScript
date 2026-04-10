@@ -61,16 +61,16 @@ public constructor (request: HttpServletRequest){
             super();
             var request = request
 this.columnsAndSearchValues= HashMap<Any, Any>()
-this.setLength(request.getParameter(SearchData.LENGTH))
-this.setOrder(request.getParameter(SearchData.ORDER))
+this.this.setLength(request.getParameter(SearchData.LENGTH))
+this.this.setOrder(request.getParameter(SearchData.ORDER))
 
     var page: string = request.getParameter(SearchData.PAGE)!;
         
         
 
-this.setStartPage(page)
-this.setEndPage(page)
-this.setSortBy(request.getParameter(SearchData.SORTBY))
+this.this.setStartPage(page)
+this.this.setEndPage(page)
+this.this.setSortBy(request.getParameter(SearchData.SORTBY))
 
     var index: number = 0;
         
@@ -91,7 +91,7 @@ this.setSortBy(request.getParameter(SearchData.SORTBY))
                                     null
                                 )
         {
-this.add(columnName, columnValue)
+this.this.add(columnName, columnValue)
 index++
 columnName= request.getParameter(SearchData.COLUMNNAME +"[" +index +"]")
 columnValue= request.getParameter(SearchData.COLUMNVALUE +"[" +index +"]")
@@ -103,7 +103,7 @@ columnValue= request.getParameter(SearchData.COLUMNVALUE +"[" +index +"]")
     public add(column: string, value: string){
 var column = column
 var value = value
-put(column, value)
+this.columnsAndSearchValues!.put(column, value)
 }
 
 
@@ -179,7 +179,6 @@ this.endPage= value
 
     public getLengthInt(): Integer{
 
-    
                         if(this.listLength != 
                                     null
                                 )
@@ -195,7 +194,6 @@ this.endPage= value
                                     }
                                 
                              else 
-    
                         if()
                         
 }
@@ -223,7 +221,6 @@ this.endPage= value
 
     public getStartPageInt(): Integer{
 
-    
                         if(this.startPage != 
                                     null
                                 )
@@ -239,7 +236,6 @@ this.endPage= value
                                     }
                                 
                              else 
-    
                         if()
                         
 }
@@ -247,7 +243,6 @@ this.endPage= value
 
     public getEndPageInt(): Integer{
 
-    
                         if(this.endPage != 
                                     null
                                 )
@@ -263,13 +258,12 @@ this.endPage= value
                                     }
                                 
                              else 
-    
                         if()
                         
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getParamsNode(document: Document): Node{
 var document = document
@@ -278,10 +272,10 @@ var document = document
         
         
 
-appendChild(this.getFieldsNode(document))
-appendChild(this.getOrderNode(document))
-appendChild(this.getSortByNode(document))
-appendChild(this.getLengthNode(document))
+paramsNode!.appendChild(this.getFieldsNode(document))
+paramsNode!.appendChild(this.getOrderNode(document))
+paramsNode!.appendChild(this.getSortByNode(document))
+paramsNode!.appendChild(this.getLengthNode(document))
 
 
 
@@ -291,7 +285,7 @@ appendChild(this.getLengthNode(document))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getFieldsNode(document: Document): Node{
 var document = document
@@ -337,7 +331,7 @@ index < size; index++)
         
         
 
-appendChild(ModDomHelper.createNameValueNodes(document, SearchData.FIELD, key, ToDomHelper.convertNull(searchValue)))
+fieldsNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.FIELD, key, ToDomHelper.convertNull(searchValue)))
 }
 
 
@@ -349,7 +343,7 @@ appendChild(ModDomHelper.createNameValueNodes(document, SearchData.FIELD, key, T
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getOrderNode(document: Document): Node{
 var document = document
@@ -362,7 +356,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getSortByNode(document: Document): Node{
 var document = document
@@ -375,7 +369,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getLengthNode(document: Document): Node{
 var document = document

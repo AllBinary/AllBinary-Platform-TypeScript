@@ -75,7 +75,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.this.setTableName(tableName)
 }
 
 
@@ -83,24 +83,22 @@ this.setTableName(tableName)
 var value = value
 
         try {
-            deleteWhere(EntryData.getInstance()!.ID, value)
+            super.deleteWhere(EntryData.getInstance()!.ID, value)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, commonStrings!.delete)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, commonStrings!.delete)
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
 
                                     }
                                 
@@ -109,7 +107,7 @@ var value = value
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(storeName: string): Vector{
 var storeName = storeName
@@ -118,7 +116,7 @@ var storeName = storeName
         
         
 
-put(StoreFrontData.getInstance()!.NAME, storeName)
+keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName)
 
     var hashMapVector: Vector = super.getRows(keysAndValues)!;
         
@@ -150,13 +148,12 @@ index < size; index++)
         
 
 
-    
                         if(hashMap != 
                                     null
                                 )
                         
                                     {
-                                    add(AdvertisementArea(hashMap) as AdvertisementAreaInterface)
+                                    vector.add(AdvertisementArea(hashMap) as AdvertisementAreaInterface)
 
                                     }
                                 
@@ -171,7 +168,7 @@ index < size; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(storeName: string, advertisementAreaName: string): AdvertisementAreaInterface{
 var storeName = storeName
@@ -181,15 +178,14 @@ var advertisementAreaName = advertisementAreaName
         
         
 
-put(StoreFrontData.getInstance()!.NAME, storeName)
-put(AdvertisementAreaData.getInstance()!.NAME, advertisementAreaName)
+keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName)
+keysAndValues!.put(AdvertisementAreaData.getInstance()!.NAME, advertisementAreaName)
 
     var hashMap: HashMap<Any, Any> = super.getRow(keysAndValues)!;
         
         
 
 
-    
                         if(hashMap != 
                                     null
                                 )
@@ -228,10 +224,10 @@ put(AdvertisementAreaData.getInstance()!.NAME, advertisementAreaName)
         
         
 
-append(this.sqlStrings!.CREATE_TABLE)
-append(this.getTableName())
-append(this.sqlStrings!.START)
-append(this.sqlStrings!.END)
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)
+stringBuffer!.append(this.getTableName())
+stringBuffer!.append(this.sqlStrings!.START)
+stringBuffer!.append(advertisementAreaData!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StoreFrontData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(advertisementAreaData!.DESCRIPTION)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(advertisementAreaData!.CONSTRAINTS)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(AdvertisementCampaignData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(advertisementAreaData!.NAME)!.append(this.sqlStrings!.END)
 
 
 
@@ -258,7 +254,7 @@ append(this.sqlStrings!.END)
 
     public update(updatedValues: HashMap<Any, Any>){
 var updatedValues = updatedValues
-updateWhere(AdvertisementAreaData.getInstance()!.NAME, updatedValues!.get(AdvertisementAreaData.getInstance()!.NAME) as String, updatedValues)
+super.updateWhere(AdvertisementAreaData.getInstance()!.NAME, updatedValues!.get(AdvertisementAreaData.getInstance()!.NAME) as String, updatedValues)
 }
 
 

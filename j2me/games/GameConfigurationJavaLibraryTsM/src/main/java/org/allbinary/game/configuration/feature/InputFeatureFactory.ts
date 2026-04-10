@@ -70,7 +70,6 @@ private constructor (){
         
 
 
-    
                         if(features.isFeature(this.SINGLE_KEY_REPEAT_PRESS) || features.isFeature(this.SINGLE_KEY_PRESS))
                         
                                     {

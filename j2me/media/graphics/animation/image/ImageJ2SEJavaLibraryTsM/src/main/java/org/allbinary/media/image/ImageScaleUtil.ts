@@ -70,7 +70,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean): Image{
     //var imageCache = imageCache
@@ -89,7 +89,7 @@ private constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
     //var imageCache = imageCache
@@ -124,7 +124,6 @@ private constructor (){
     var image: Image
 
 
-    
                         if(cached)
                         
                                     {
@@ -137,7 +136,7 @@ private constructor (){
 
                         }
                             
-this.scale(originalImage, image, scaleX, scaleY, true)
+this.this.scale(originalImage, image, scaleX, scaleY, true)
 
 
 
@@ -147,7 +146,7 @@ this.scale(originalImage, image, scaleX, scaleY, true)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public scale(originalImage: Image, originalImageArray: Image[], ximageToShowArray: Image[], unused: number, scaleX: number, scaleY: number, maxScaleX: number, maxScaleY: number){
     //var originalImage = originalImage
@@ -159,7 +158,6 @@ this.scale(originalImage, image, scaleX, scaleY, true)
     //var maxScaleX = maxScaleX
     //var maxScaleY = maxScaleY
 
-    
                         if(maxScaleX *originalImage!.getWidth() > originalImageArray[0]!.getWidth() || maxScaleY *originalImage!.getHeight() > originalImageArray[0]!.getHeight())
                         
                                     {
@@ -167,7 +165,7 @@ this.scale(originalImage, image, scaleX, scaleY, true)
 
                                     }
                                 
-this.scale(originalImage, originalImageArray[0]!, scaleX, scaleY, false)
+this.this.scale(originalImage, originalImageArray[0]!, scaleX, scaleY, false)
 }
 
 
@@ -198,17 +196,16 @@ this.scale(originalImage, originalImageArray[0]!, scaleX, scaleY, false)
         
 
 
-    
                         if(clear)
                         
                                     {
-                                    setBackground(imageJ2SEUtil!.TRANSPARENT_COLOR)
-clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight())
+                                    g.setBackground(imageJ2SEUtil!.TRANSPARENT_COLOR)
+g.clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight())
 
                                     }
                                 
-drawRenderedImage(bufferedImage, at)
-dispose()
+g.drawRenderedImage(bufferedImage, at)
+g.dispose()
 }
 
 

@@ -73,7 +73,7 @@ this.paramVector= paramVector
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
@@ -83,19 +83,19 @@ this.paramVector= paramVector
         
         
 
-isValid(this, parentTag)
+ParentInventoryTagHelper.getInstance()!.isValid(this, parentTag)
 
     var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
         
         
 
-put(AbTagData.PARENT, parentTag)
+hashMap!.put(AbTagData.PARENT, parentTag)
 
     var multipartRequestParamForwardHelper: MultipartRequestParamForwardHelper = new MultipartRequestParamForwardHelper(parentTag, this.page, this.command, this.paramVector, this.pageContext);
         
         
 
-forward()
+multipartRequestParamForwardHelper!.forward()
 
 
 
@@ -104,7 +104,7 @@ forward()
     
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -114,7 +114,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

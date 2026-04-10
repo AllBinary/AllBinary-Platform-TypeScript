@@ -59,7 +59,7 @@ private constructor (){
             }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getKey(abeClientInformation: AbeClientInformationInterface, keyName: string): string{
@@ -67,9 +67,8 @@ private constructor (){
     //var keyName = keyName
 
         try {
-            put("Getting Key: " +keyName, this, "getKey")
+            logUtil!.put("Getting Key: " +keyName, this, "getKey")
 
-    
                         if(keyName!.compareTo("DirectX 8") == 0 || keyName!.compareTo("DirectX") == 0 || keyName!.compareTo("Low Level") == 0 || keyName!.compareTo("System Drivers") == 0)
                         
                                     {
@@ -97,7 +96,7 @@ private constructor (){
 }
  catch(e: Exception)
             {
-put("Licensing Failure", this, "getKey()", e)
+logUtil!.put("Licensing Failure", this, "getKey()", e)
 
 
 

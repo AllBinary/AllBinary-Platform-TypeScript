@@ -75,11 +75,11 @@ var directoryAbPath = directoryAbPath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public remove(existingDirectoryAbPath: AbPath){
 var existingDirectoryAbPath = existingDirectoryAbPath
-this.remove(existingDirectoryAbPath!.toFileSystemString())
+this.this.remove(existingDirectoryAbPath!.toFileSystemString())
 }
 
 
@@ -93,13 +93,11 @@ var directory = directory
         
 
 
-    
                         if(!directoryFile!.isDirectory())
                         
                                     {
-                                    put("Creating Directories: " +directory, this, "create")
+                                    PreLogUtil.put("Creating Directories: " +directory, this, "create")
 
-    
                         if(!directoryFile!.mkdirs())
                         
                                     {
@@ -123,7 +121,7 @@ var directory = directory
     
 } catch(e: Exception)
             {
-put("Error Creating Directories: " +directory, this, "create", e)
+PreLogUtil.put("Error Creating Directories: " +directory, this, "create", e)
 
 
 
@@ -135,7 +133,7 @@ put("Error Creating Directories: " +directory, this, "create", e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     remove(existingDirectory: string){
 var existingDirectory = existingDirectory
@@ -145,28 +143,25 @@ var existingDirectory = existingDirectory
         
 
 
-    
                         if(existingDirectoryFile!.isDirectory())
                         
                                     {
                                     
-    
                         if(existingDirectoryFile!.list()!.length > 0)
                         
                                     {
                                     
 
 
-                            throw Exception("Did not remove category: " +existingDirectory +" because files exist")
+                            throw Error("Did not remove category: " +existingDirectory +" because files exist")
 
                                     }
                                 
                              else 
-    
                         if(existingDirectoryFile!.delete())
                         
                                     {
-                                    put("Successfully Removed: " +existingDirectory, "Directory", "remove")
+                                    PreLogUtil.put("Successfully Removed: " +existingDirectory, "Directory", "remove")
 
                                     }
                                 
@@ -177,7 +172,7 @@ var existingDirectory = existingDirectory
                             
 
 
-                            throw Exception("Category Directory Is Missing:" +existingDirectory)
+                            throw Error("Category Directory Is Missing:" +existingDirectory)
 
                         }
                             
@@ -209,7 +204,6 @@ var isRecursiveSearch = isRecursiveSearch
     var recursiveFileList: BasicArrayList
 
 
-    
                         if(file.isDirectory())
                         
                                     {
@@ -219,7 +213,6 @@ var isRecursiveSearch = isRecursiveSearch
         
 
 
-    
                         if(fileArray == 
                                     null
                                 )
@@ -240,7 +233,6 @@ var isRecursiveSearch = isRecursiveSearch
         
 
 
-    
                         if(files == 
                                     null
                                 )
@@ -271,14 +263,13 @@ var isRecursiveSearch = isRecursiveSearch
         
 index < size; index++)
         {
-add(files[index]!)
+fileList!.add(files[index]!)
 
-    
                         if(isRecursiveSearch)
                         
                                     {
                                     recursiveFileList= this.search(fileFilter, files[index]!, isRecursiveSearch)
-addAll(recursiveFileList)
+fileList!.addAll(recursiveFileList)
 
                                     }
                                 
@@ -319,7 +310,6 @@ var file = file
     var recursiveFileList: BasicArrayList
 
 
-    
                         if(file.isDirectory())
                         
                                     {
@@ -329,7 +319,6 @@ var file = file
         
 
 
-    
                         if(fileArray == 
                                     null
                                 )
@@ -350,7 +339,6 @@ var file = file
         
 
 
-    
                         if(files == 
                                     null
                                 )
@@ -375,14 +363,13 @@ var file = file
         
 index < files.length; index++)
         {
-add(files[index]!)
+fileList!.add(files[index]!)
 
-    
                         if(isRecursiveSearch)
                         
                                     {
                                     recursiveFileList= this.search(files[index]!, isRecursiveSearch)
-addAll(recursiveFileList)
+fileList!.addAll(recursiveFileList)
 
                                     }
                                 
@@ -425,7 +412,6 @@ var file = file
     var recursiveFileList: BasicArrayList
 
 
-    
                         if(file.isDirectory())
                         
                                     {
@@ -435,7 +421,6 @@ var file = file
         
 
 
-    
                         if(fileArray == 
                                     null
                                 )
@@ -456,7 +441,6 @@ var file = file
         
 
 
-    
                         if(files == 
                                     null
                                 )
@@ -482,21 +466,19 @@ var file = file
 index < files.length; index++)
         {
 
-    
                         if(files[index]!.getPath()!.indexOf(searchValue) >= 0)
                         
                                     {
-                                    add(files[index]!)
+                                    fileList!.add(files[index]!)
 
                                     }
                                 
 
-    
                         if(isRecursiveSearch)
                         
                                     {
                                     recursiveFileList= this.search(searchValue, files[index]!, isRecursiveSearch)
-addAll(recursiveFileList)
+fileList!.addAll(recursiveFileList)
 
                                     }
                                 
@@ -539,7 +521,6 @@ var isRecursiveSearch = isRecursiveSearch
     var recursiveFileList: BasicArrayList
 
 
-    
                         if(file.isDirectory())
                         
                                     {
@@ -549,7 +530,6 @@ var isRecursiveSearch = isRecursiveSearch
         
 
 
-    
                         if(fileArray == 
                                     null
                                 )
@@ -570,7 +550,6 @@ var isRecursiveSearch = isRecursiveSearch
         
 
 
-    
                         if(files == 
                                     null
                                 )
@@ -595,9 +574,8 @@ var isRecursiveSearch = isRecursiveSearch
         
 index < files.length; index++)
         {
-add(files[index]!)
+fileList!.add(files[index]!)
 
-    
                         if(level <= 0)
                         
                                     {
@@ -611,7 +589,7 @@ add(files[index]!)
                                     }
                                 
 recursiveFileList= this.search(level -1, files[index]!, isRecursiveSearch)
-addAll(recursiveFileList)
+fileList!.addAll(recursiveFileList)
 }
 
 

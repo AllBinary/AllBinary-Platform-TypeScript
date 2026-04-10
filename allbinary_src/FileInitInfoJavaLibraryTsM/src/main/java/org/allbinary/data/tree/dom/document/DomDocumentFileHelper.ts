@@ -54,7 +54,7 @@ export class DomDocumentFileHelper
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static create(xmlFile: AbFile): Document{
 var xmlFile = xmlFile
@@ -77,7 +77,7 @@ var xmlFile = xmlFile
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static save(file: AbFile, document: Document){
 var file = file
@@ -107,23 +107,22 @@ var document = document
         
 
 
-    
                         if(file.isFile())
                         
                                     {
-                                    delete()
+                                    file.delete()
 
                                     }
                                 
-createNewFile()
+file.createNewFile()
 dataOutputStream= DataOutputStreamFactory.getInstance()!.getInstance(file)
 
     var streamResult: StreamResult = new StreamResult(dataOutputStream);
         
         
 
-transform(domSource, streamResult)
-flush()
+copyTransformer!.transform(domSource, streamResult)
+dataOutputStream!.flush()
 } catch(e: Exception)
             {
 
@@ -133,7 +132,7 @@ flush()
 }
 
          finally {
-            close(dataOutputStream)
+            StreamUtil.getInstance()!.close(dataOutputStream)
 
          }
         

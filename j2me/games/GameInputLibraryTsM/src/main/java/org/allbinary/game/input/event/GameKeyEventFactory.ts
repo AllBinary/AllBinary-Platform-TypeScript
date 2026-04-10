@@ -118,7 +118,7 @@ ARRAY[index]![index2]= GameKeyEvent(nullUtil!.NULL_OBJECT, index, index2)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(anyType: GameKeyEventSourceInterface, key: number): GameKeyEvent{
 var anyType = anyType
@@ -137,7 +137,7 @@ var key = key
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(anyType: GameKeyEventSourceInterface, input: Input): GameKeyEvent{
 var anyType = anyType

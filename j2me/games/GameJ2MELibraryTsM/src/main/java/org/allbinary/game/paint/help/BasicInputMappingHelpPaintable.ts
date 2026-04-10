@@ -69,7 +69,7 @@ protected constructor (gameInputMappingArray: GameInputMapping[], basicColor: Ba
                             //For kotlin this is before the body of the constructor.
                     
 this.gameInputMappingArray= gameInputMappingArray
-this.update(NONE, NONE)
+this.this.update(NONE, NONE)
 }
 
 
@@ -124,11 +124,11 @@ index < size; index++)
 gameInputMapping= gameInputMappingArray[index]!
 gameKey= gameInputMapping!.getGameKey()
 list= gameKeyMapping!.getInputMapping()!.getMappedInput(gameKey)
-delete(0, stringMaker!.length())
+stringMaker!.delete(0, stringMaker!.length())
 keyInfo[index]= stringMaker!.append(gameInputMapping!.getName())!.append(EQUAL)!.append(this.get(list))!.toString()
 }
 
-setInputInfoP(keyInfo)
+super.setInputInfoP(keyInfo)
 }
 
 
@@ -168,34 +168,31 @@ setInputInfoP(keyInfo)
 index < size; index++)
         {
 key= keyList!.objectArray[index]! as Input
-append(key.getName())
+stringBuffer!.append(key.getName())
 
-    
                         if(index +1 < keyList!.size())
                         
                                     {
                                     
-    
                         if(keyList!.size() == 2)
                         
                                     {
-                                    append(AND)
+                                    stringBuffer!.append(commonSeps!.SPACE)!.append(AND)
 
                                     }
                                 
                         else {
                             
-    
                         if(index +2 == keyList!.size())
                         
                                     {
-                                    append(commonSeps!.COMMA_SEP)
-append(AND)
+                                    stringBuffer!.append(commonSeps!.COMMA_SEP)
+stringBuffer!.append(AND)
 
                                     }
                                 
                         else {
-                            append(commonSeps!.COMMA_SEP)
+                            stringBuffer!.append(commonSeps!.COMMA_SEP)
 
                         }
                             

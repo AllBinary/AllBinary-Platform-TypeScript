@@ -80,7 +80,7 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
     //var allbinaryLayerManager = allbinaryLayerManager
@@ -93,7 +93,7 @@ var otherAngle = otherAngle
         
         
 
-append(weaponLayer)
+allbinaryLayerManager!.append(weaponLayer)
 }
 
 

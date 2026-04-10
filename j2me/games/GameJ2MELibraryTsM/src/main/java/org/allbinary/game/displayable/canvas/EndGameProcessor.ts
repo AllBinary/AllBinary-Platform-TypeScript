@@ -47,21 +47,18 @@ this.gameCanvas= gameCanvas
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
 
-    
                         if(this.gameCanvas!.isHighScoreSubmitted())
                         
                                     {
                                     
-    
                         if(this.gameCanvas!.getGameStateTimeHelper()!.isElapsed(WAIT))
                         
                                     {
                                     
-    
                         if(this.gameCanvas!.getGameState() == AllBinaryGameCanvas.SHOW_END_RESULT_GAME_STATE)
                         
                                     {
@@ -71,14 +68,13 @@ this.gameCanvas= gameCanvas
         
 
 
-    
                         if(highScores != NullHighScoresSingletonFactory.getInstance())
                         
                                     {
-                                    selectHighScores()
-setHighScores(highScores)
-setGameState(AllBinaryGameCanvas.SHOW_HIGH_SCORE_GAME_STATE)
-setHighScoresPaintable(this.gameCanvas!.getRealHighScoresPaintable())
+                                    this.gameCanvas!.highScoresHelper!.selectHighScores()
+this.gameCanvas!.getRealHighScoresPaintable()!.setHighScores(highScores)
+this.gameCanvas!.setGameState(AllBinaryGameCanvas.SHOW_HIGH_SCORE_GAME_STATE)
+this.gameCanvas!.setHighScoresPaintable(this.gameCanvas!.getRealHighScoresPaintable())
 
                                     }
                                 
@@ -86,12 +82,11 @@ setHighScoresPaintable(this.gameCanvas!.getRealHighScoresPaintable())
                                     }
                                 
                              else 
-    
                         if(this.gameCanvas!.getGameState() == AllBinaryGameCanvas.SHOW_HIGH_SCORE_GAME_STATE)
                         
                                     {
-                                    setGameState(AllBinaryGameCanvas.SHOW_END_RESULT_GAME_STATE)
-setHighScoresPaintable(NullPaintable.getInstance())
+                                    this.gameCanvas!.setGameState(AllBinaryGameCanvas.SHOW_END_RESULT_GAME_STATE)
+this.gameCanvas!.setHighScoresPaintable(NullPaintable.getInstance())
 
                                     }
                                 

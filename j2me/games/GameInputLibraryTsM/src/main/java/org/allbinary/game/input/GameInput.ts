@@ -82,7 +82,6 @@ this.isRemoveDuplicateKeyPresses= Features.getInstance()!.isFeature(InputFeature
     public add(gameKeyEvent: GameKeyEvent){
 var gameKeyEvent = gameKeyEvent
 
-    
                         if(this.isRemoveDuplicateKeyPresses && this.gameKeyEventList!.contains(gameKeyEvent))
                         
                                     {
@@ -96,18 +95,17 @@ var gameKeyEvent = gameKeyEvent
                                     }
                                 
 
-    
                         if(gameKeyEvent != 
                                     null
                                 )
                         
                                     {
-                                    add(gameKeyEvent)
+                                    this.gameKeyEventList!.add(gameKeyEvent)
 
                                     }
                                 
                         else {
-                            put("Danger Passed Null GameKeyEvent", this, commonStrings!.ADD)
+                            logUtil!.put("Danger Passed Null GameKeyEvent", this, commonStrings!.ADD)
 
                         }
                             
@@ -117,7 +115,7 @@ var gameKeyEvent = gameKeyEvent
 
     public addForRemoval(gameKeyEvent: GameKeyEvent){
 var gameKeyEvent = gameKeyEvent
-add(gameKeyEvent)
+this.removalGameKeyEventList!.add(gameKeyEvent)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -135,7 +133,7 @@ var gameKeyEvent = gameKeyEvent
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public clear(){
-clear()
+this.gameKeyEventList!.clear()
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -161,11 +159,10 @@ clear()
         {
 gameKeyEvent= list.objectArray[index]! as GameKeyEvent
 
-    
                         if(gameKeyEvent!.getSourceId() != 1)
                         
                                     {
-                                    remove(index)
+                                    list.remove(index)
 
                                     }
                                 
@@ -217,11 +214,10 @@ index < size; index++)
 --index2 >= 0; )
         {
 
-    
                         if(list.objectArray[index2] == anyType)
                         
                                     {
-                                    remove(index2)
+                                    list.remove(index2)
 
                                     }
                                 
@@ -229,7 +225,7 @@ index < size; index++)
 
 }
 
-clear()
+removeList!.clear()
 }
 
 

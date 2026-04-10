@@ -44,7 +44,6 @@ export class GameKeyUtil
     public isDirectionKey(key: number): boolean{
 var key = key
 
-    
                         if(key == Canvas.UP || key == Canvas.DOWN || key == Canvas.LEFT || key == Canvas.RIGHT)
                         
                                     {

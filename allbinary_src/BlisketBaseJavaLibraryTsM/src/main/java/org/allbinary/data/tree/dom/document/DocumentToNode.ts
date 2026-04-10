@@ -54,7 +54,7 @@ export class DocumentToNode
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static convertDocumentToNodeString(documentString: string): string{
 var documentString = documentString
@@ -96,7 +96,6 @@ var end = end
         while((startIndex= documentString!.indexOf(start)) !=  -1)
         {
 
-    
                         if(startIndex >= 0)
                         
                                     {
@@ -106,7 +105,6 @@ var end = end
         
 
 
-    
                         if(endIndex >= 0)
                         
                                     {

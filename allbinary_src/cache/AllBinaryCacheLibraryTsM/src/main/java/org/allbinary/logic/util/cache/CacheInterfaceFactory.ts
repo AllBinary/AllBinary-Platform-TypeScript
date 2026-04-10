@@ -24,7 +24,7 @@ export class CacheInterfaceFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(cacheType: CacheType, cachePolicy: CachePolicy): CacheInterface{
 var cacheType = cacheType
@@ -32,7 +32,7 @@ var cachePolicy = cachePolicy
 
 
 
-                            throw Exception("No such " +cacheType!.toString())
+                            throw Error("No such " +cacheType!.toString())
 }
 
 private constructor (){

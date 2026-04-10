@@ -54,11 +54,10 @@ this.allBinaryGameCanvas= allBinaryGameCanvas
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processLoopSleep(){
 
-    
                         if(AndroidUtil.isAndroid())
                         
                                     {
@@ -75,11 +74,10 @@ this.allBinaryGameCanvas= allBinaryGameCanvas
         
 
 
-    
                         if(isOpenGL)
                         
                                     {
-                                    processSleep()
+                                    allBinaryGameCanvas!.processSleep()
 
                                     }
                                 
@@ -90,7 +88,7 @@ this.allBinaryGameCanvas= allBinaryGameCanvas
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 

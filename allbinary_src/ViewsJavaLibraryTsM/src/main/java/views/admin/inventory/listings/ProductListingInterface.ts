@@ -22,11 +22,11 @@
 interface ProductListingInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public generateAll(): string
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public generateAll(storeName: string): string
 

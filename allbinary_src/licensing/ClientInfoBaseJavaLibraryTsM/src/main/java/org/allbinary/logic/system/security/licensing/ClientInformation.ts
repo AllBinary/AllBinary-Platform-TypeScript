@@ -90,7 +90,7 @@ this.version= version
 this.specialName= specialName
 this.shortName= StringMaker().
                             append(shortName)!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append(version)!.toString()
-this.init()
+this.this.init()
 }
 
 
@@ -190,14 +190,14 @@ var index = index
         
         
 
-put(abeClientInformationData!.NAME, this.name)
-put(abeClientInformationData!.VERSION, this.version)
-put(abeClientInformationData!.SPECIALNAME, this.specialName)
-put(abeClientInformationData!.LICENSEID, this.getLicenseId())
-put(abeClientInformationData!.OSNAME, this.getOperatingSystemInterface()!.getName())
-put(abeClientInformationData!.OSARCH, this.getOperatingSystemInterface()!.getArch())
-put(abeClientInformationData!.OSVERSION, this.getOperatingSystemInterface()!.getVersion())
-put(abeClientInformationData!.OS, this.getOperatingSystemInterface()!.toString())
+clientInfoHashtable!.put(abeClientInformationData!.NAME, this.name)
+clientInfoHashtable!.put(abeClientInformationData!.VERSION, this.version)
+clientInfoHashtable!.put(abeClientInformationData!.SPECIALNAME, this.specialName)
+clientInfoHashtable!.put(abeClientInformationData!.LICENSEID, this.getLicenseId())
+clientInfoHashtable!.put(abeClientInformationData!.OSNAME, this.getOperatingSystemInterface()!.getName())
+clientInfoHashtable!.put(abeClientInformationData!.OSARCH, this.getOperatingSystemInterface()!.getArch())
+clientInfoHashtable!.put(abeClientInformationData!.OSVERSION, this.getOperatingSystemInterface()!.getVersion())
+clientInfoHashtable!.put(abeClientInformationData!.OS, this.getOperatingSystemInterface()!.toString())
 
     var hardwareInterface: HardwareInterface = SystemHardwareFactory.getInstance()!.getInstance(getOperatingSystemInterface())!;
         
@@ -208,7 +208,7 @@ put(abeClientInformationData!.OS, this.getOperatingSystemInterface()!.toString()
         
         
 
-put(abeClientInformationData!.HARDWARE, hardwareString)
+clientInfoHashtable!.put(abeClientInformationData!.HARDWARE, hardwareString)
 
 
 
@@ -221,7 +221,6 @@ put(abeClientInformationData!.HARDWARE, hardwareString)
     public isSameId(alicenseId: string): boolean{
 var alicenseId = alicenseId
 
-    
                         if(this.getLicenseId()!.compareTo(alicenseId) == 0)
                         
                                     {
@@ -260,7 +259,6 @@ var list = list
         
 
 
-    
                         if(size > currentSize)
                         
                                     {
@@ -304,7 +302,6 @@ index2 >= 0; index2--)
         
 
 
-    
                         if(newServerName!.compareTo(nextOldServerName) != 0)
                         
                                     {

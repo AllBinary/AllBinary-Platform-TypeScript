@@ -37,7 +37,7 @@ export class AccelerometerSensorFactory
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static init(){
 
@@ -51,31 +51,28 @@ export class AccelerometerSensorFactory
         
 
 
-    
                         if(features.isFeature(sensorFeatureFactory!.ORIENTATION_SENSORS))
                         
                                     {
                                     
 
 
-                            throw Exception("No Orientation Sensors")
+                            throw Error("No Orientation Sensors")
 
                                     }
                                 
                              else 
-    
                         if(features.isFeature(sensorFeatureFactory!.SIMULATED_ORIENTATION_SENSORS))
                         
                                     {
                                     
 
 
-                            throw Exception("No Simulation Sensors")
+                            throw Error("No Simulation Sensors")
 
                                     }
                                 
                              else 
-    
                         if(features.isFeature(sensorFeatureFactory!.NO_ORIENTATION))
                         
                                     {
@@ -87,7 +84,7 @@ export class AccelerometerSensorFactory
                             
 
 
-                            throw Exception("Not Such SensorFeature")
+                            throw Error("Not Such SensorFeature")
 
                         }
                             

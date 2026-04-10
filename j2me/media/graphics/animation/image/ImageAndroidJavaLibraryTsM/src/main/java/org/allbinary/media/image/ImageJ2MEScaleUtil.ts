@@ -49,7 +49,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public scale(images: Image[], width: number, height: number): Image[]{
 var images = images
@@ -82,7 +82,7 @@ images[index]= ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFa
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public scale(image: Image, width: number, height: number): Image{
 var image = image

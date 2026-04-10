@@ -67,11 +67,10 @@ private constructor (){
     public addListener(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer){
 var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 
-    
                         if(!list.contains(collidableDestroyableDamageableLayer))
                         
                                     {
-                                    add(collidableDestroyableDamageableLayer)
+                                    list.add(collidableDestroyableDamageableLayer)
 
                                     }
                                 
@@ -80,20 +79,20 @@ var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeAllListeners(){
-clear()
-removeAllListeners()
+this.list.clear()
+super.removeAllListeners()
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-remove(eventListenerInterface)
-removeListener(eventListenerInterface)
+this.list.remove(eventListenerInterface)
+super.removeListener(eventListenerInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fireEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
@@ -114,19 +113,19 @@ var eventObject = eventObject
         
         
 
-onDestroyed(eventObject as DestroyedEvent)
+collidableDestroyableDamageableLayer!.onDestroyed(eventObject as DestroyedEvent)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
 }
 
 }
 
-fireEvent(eventObject)
+super.fireEvent(eventObject)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 var eventObject = eventObject
@@ -136,7 +135,7 @@ var eventListenerInterface = eventListenerInterface
         
         
 
-onDestroyed(eventObject as DestroyedEvent)
+destroyedEventListenerInterface!.onDestroyed(eventObject as DestroyedEvent)
 }
 
 

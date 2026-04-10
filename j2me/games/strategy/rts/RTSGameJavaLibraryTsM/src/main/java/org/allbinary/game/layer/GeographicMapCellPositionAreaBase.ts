@@ -62,7 +62,7 @@ export class GeographicMapCellPositionAreaBase
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(geographicMapInterface: BasicGeographicMap){
     //var geographicMapInterface = geographicMapInterface

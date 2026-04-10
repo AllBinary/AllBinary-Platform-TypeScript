@@ -44,137 +44,125 @@ public constructor (){
     public setRole(value: string){
 var value = value
 this.role= value
-put(UserRoleData.NAME, this.role)
+this.getPropertiesHashMap()!.put(UserRoleData.NAME, this.role)
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.EDIT +org.allbinary.globals.GLOBALS2.EDIT) == 0)
                         
                                     {
-                                    this.setName("Edit Session Validation User View - i.e. User Profile Edit")
-this.setObjectFile("views.generic.user.EditValidationView")
+                                    this.this.setName("Edit Session Validation User View - i.e. User Profile Edit")
+this.this.setObjectFile("views.generic.user.EditValidationView")
 
                                     }
                                 
 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.NEW) == 0)
                         
                                     {
-                                    this.setName("New User View")
-this.setObjectFile("views.generic.user.NewUserView")
+                                    this.this.setName("New User View")
+this.this.setObjectFile("views.generic.user.NewUserView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
                         
                                     {
-                                    this.setName("Add Validation User View")
-this.setObjectFile("views.generic.user.AddValidationUserView")
+                                    this.this.setName("Add Validation User View")
+this.this.setObjectFile("views.generic.user.AddValidationUserView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.setName("Validation User View")
-this.setObjectFile("views.generic.user.ViewValidationUserView")
+                                    this.this.setName("Validation User View")
+this.this.setObjectFile("views.generic.user.ViewValidationUserView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.EDIT) == 0)
                         
                                     {
-                                    this.setName("Validation User View")
-this.setObjectFile("views.generic.user.EditValidationUserView")
+                                    this.this.setName("Validation User View")
+this.this.setObjectFile("views.generic.user.EditValidationUserView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(this.commonStrings!.UPDATE) == 0)
                         
                                     {
-                                    this.setName("Update Validation User View")
-this.setObjectFile("views.generic.user.UpdateValidationUserView")
+                                    this.this.setName("Update Validation User View")
+this.this.setObjectFile("views.generic.user.UpdateValidationUserView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(this.commonStrings!.DELETE) == 0)
                         
                                     {
-                                    this.setName("Delete Validation User View")
-this.setObjectFile("views.generic.user.DeleteValidationUserView")
+                                    this.this.setName("Delete Validation User View")
+this.this.setObjectFile("views.generic.user.DeleteValidationUserView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.BACKUP) == 0)
                         
                                     {
                                     
 
 
-                            throw Exception("View not implemented")
+                            throw Error("View not implemented")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.RESTORE) == 0)
                         
                                     {
                                     
 
 
-                            throw Exception("View not implemented")
+                            throw Error("View not implemented")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(this.commonStrings!.DROP) == 0)
                         
                                     {
                                     
 
 
-                            throw Exception("View not implemented")
+                            throw Error("View not implemented")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(this.commonStrings!.CREATE) == 0)
                         
                                     {
                                     
 
 
-                            throw Exception("View not implemented")
+                            throw Error("View not implemented")
 
                                     }
                                 
@@ -182,7 +170,7 @@ this.setObjectFile("views.generic.user.DeleteValidationUserView")
                             
 
 
-                            throw Exception("No Such View Command: " +this.getCommand())
+                            throw Error("No Such View Command: " +this.getCommand())
 
                         }
                             
@@ -198,10 +186,10 @@ this.setObjectFile("views.generic.user.DeleteValidationUserView")
 
 
 
-                            throw Exception("Command Null")
+                            throw Error("Command Null")
 } catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

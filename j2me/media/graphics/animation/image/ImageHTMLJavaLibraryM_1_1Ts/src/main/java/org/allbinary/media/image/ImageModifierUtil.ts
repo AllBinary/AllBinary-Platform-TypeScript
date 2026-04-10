@@ -115,7 +115,7 @@ export class ImageModifierUtil
         
         
 
-this.setAlpha(originalImage, image, imageIndex, alphaFloat)
+this.this.setAlpha(originalImage, image, imageIndex, alphaFloat)
 }
 
 
@@ -125,12 +125,11 @@ this.setAlpha(originalImage, image, imageIndex, alphaFloat)
     //var imageIndex = imageIndex
     //var alpha = alpha
 
-    
                         if(this.alphaArray[imageIndex])
                         
                                     {
                                     this.alphaArray[imageIndex]= false
-this.setAlpha2(originalImage, image, imageIndex, alpha)
+this.this.setAlpha2(originalImage, image, imageIndex, alpha)
 
                                     }
                                 
@@ -163,9 +162,9 @@ this.setAlpha2(originalImage, image, imageIndex, alpha)
         
         
 
-clear()
-setAlpha(alpha)
-drawImage(originalPlaynImage, 0, 0)
+canvas.clear()
+canvas.setAlpha(alpha)
+canvas.drawImage(originalPlaynImage, 0, 0)
 }
 
 
@@ -197,7 +196,7 @@ drawImage(originalPlaynImage, 0, 0)
         
         
 
-setAlpha(alphaFloat)
+canvas.setAlpha(alphaFloat)
 }
 
 
@@ -226,7 +225,7 @@ this.alphaArray= BooleanArray(size)
 index < size; index++)
         {
 imageArray[index]= originalImageArray[index]!
-this.handleImage(imageArray, index, originalImageArray[index]!)
+this.this.handleImage(imageArray, index, originalImageArray[index]!)
 }
 
 
@@ -249,14 +248,12 @@ this.handleImage(imageArray, index, originalImageArray[index]!)
         
 
 
-    
                         if(image3 != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(image3.isReady() || image3.width() +image3.height() <= 0 || image.getName() == resourceCallbackStrings!.FROM_DATA)
                         
                                     {
@@ -271,13 +268,13 @@ this.handleImage(imageArray, index, originalImageArray[index]!)
                                 
     public done(resource: any = {}){
 var resource = resource
-put(resourceCallbackStrings!.DONE +image.getName(), this, resourceCallbackStrings!.HANDLE_IMAGE)
+logUtil!.put(resourceCallbackStrings!.DONE +image.getName(), this, resourceCallbackStrings!.HANDLE_IMAGE)
 copy(imageArray, index, image, image3)
 }
 
-    public error(e: Throwable){
+    public error(e: Error){
 var e = e
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(commonStrings!.EXCEPTION_LABEL)!.append(resourceCallbackStrings!.ERROR)!.append(image.getName())!.toString(), this, resourceCallbackStrings!.HANDLE_IMAGE)
 }
 
@@ -286,7 +283,7 @@ put(StringMaker().
         
         
 
-addCallback(callback)
+image3.addCallback(callback)
 
                         }
                             
@@ -294,7 +291,7 @@ addCallback(callback)
                                     }
                                 
                         else {
-                            put(resourceCallbackStrings!.NULL +image.isMutable(), this, resourceCallbackStrings!.HANDLE_IMAGE)
+                            logUtil!.put(resourceCallbackStrings!.NULL +image.isMutable(), this, resourceCallbackStrings!.HANDLE_IMAGE)
 
                         }
                             
@@ -318,11 +315,11 @@ addCallback(callback)
         
         
 
-drawImage(image, 0, 0, Anchor.TOP_LEFT)
+graphics.drawImage(image, 0, 0, Anchor.TOP_LEFT)
 imageArray[index]= image2
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION_LABEL +resourceCallbackStrings!.DONE, this, resourceCallbackStrings!.HANDLE_IMAGE)
+logUtil!.put(commonStrings!.EXCEPTION_LABEL +resourceCallbackStrings!.DONE, this, resourceCallbackStrings!.HANDLE_IMAGE)
 }
 
 }

@@ -188,11 +188,11 @@ this.noMoneyGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.ge
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
         
@@ -203,32 +203,30 @@ setAllBinaryGameLayerManager(allBinaryGameLayerManager)
         
         
 
-setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
-setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
-setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
-setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
-setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
-setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
+this.dragToSpotGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
+this.spotTakenGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
+this.buildingCollisionGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
+this.roadCollisionGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
+this.newWaypointGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
+this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint){
     //var associatedRtsLayer = associatedRtsLayer
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
     //var layerManager = layerManager
     //var point = point
-process(layerManager)
+super.process(layerManager)
 
-    
                         if(this.isStickyItemSelected() || associatedRtsLayer == 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.isStickyItemSelected() && associatedRtsLayer == 
                                     null
                                 )
@@ -264,17 +262,16 @@ process(layerManager)
         
         
 
-this.process(rtsPlayerLayerInterface, layerManager, geographicMapCellPosition)
+this.this.process(rtsPlayerLayerInterface, layerManager, geographicMapCellPosition)
 
                                     }
                                 
                         else {
                             
-    
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
-                                    fireEvent(dragToSpotGameNotificationEvent)
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(dragToSpotGameNotificationEvent)
 
                                     }
                                 
@@ -286,11 +283,10 @@ this.process(rtsPlayerLayerInterface, layerManager, geographicMapCellPosition)
                                 
                         else {
                             
-    
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
-                                    fireEvent(spotTakenGameNotificationEvent)
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(spotTakenGameNotificationEvent)
 
                                     }
                                 
@@ -300,7 +296,7 @@ this.process(rtsPlayerLayerInterface, layerManager, geographicMapCellPosition)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, geographicMapCellPosition: GeographicMapCellPosition){
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
@@ -312,7 +308,6 @@ this.process(rtsPlayerLayerInterface, layerManager, geographicMapCellPosition)
         
 
 
-    
                         if(this.newUnconstructedRTSLayerInterfaceArray[itemIndex] == CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER)
                         
                                     {
@@ -331,7 +326,7 @@ this.process(rtsPlayerLayerInterface, layerManager, geographicMapCellPosition)
         
         
 
-setPosition(cellPoint!.getX(), cellPoint!.getY(), rtsLayer!.getZP())
+rtsLayer!.setPosition(cellPoint!.getX(), cellPoint!.getY(), rtsLayer!.getZP())
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = rtsLayer!.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
         
@@ -342,15 +337,15 @@ setPosition(cellPoint!.getX(), cellPoint!.getY(), rtsLayer!.getZP())
         
         
 
-update(geographicMapInterface)
+rtsLayer!.geographicMapCellPositionAreaBase!.update(geographicMapInterface)
 
                         }
                             
-this.attemptBuild(rtsPlayerLayerInterface, layerManager, this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer, itemIndex)
+this.this.attemptBuild(rtsPlayerLayerInterface, layerManager, this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer, itemIndex)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processSticky(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, index: number){
     //var associatedRtsLayer = associatedRtsLayer
@@ -358,31 +353,30 @@ this.attemptBuild(rtsPlayerLayerInterface, layerManager, this.newUnconstructedRT
     //var layerManager = layerManager
 var item = item
 var index = index
-put("Set Sticking Item: " +item, this, "processSticky")
-this.setSelectedStickyItem(item)
-this.setSelectedStickyItemIndex(index)
-this.setStickyItemSelected(true)
+logUtil!.put("Set Sticking Item: " +item, this, "processSticky")
+this.this.setSelectedStickyItem(item)
+this.this.setSelectedStickyItemIndex(index)
+this.this.setStickyItemSelected(true)
 this.stickyAssociatedRtsLayer= associatedRtsLayer as RTSLayer
-put(Layer.ID, associatedRtsLayer)
+this.getHashtable()!.put(Layer.ID, associatedRtsLayer)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     attemptBuild(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, layerInterface: RTSLayer, itemIndex: number): boolean{
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
     //var layerManager = layerManager
     //var layerInterface = layerInterface
     //var itemIndex = itemIndex
-put("Layer: " +layerInterface, this, "attemptBuild")
+logUtil!.put("Layer: " +layerInterface, this, "attemptBuild")
 
-    
                         if(layerInterface == 
                                     null
                                 )
                         
                                     {
-                                    put("Layer was null", this, "attemptBuild", Exception())
+                                    logUtil!.put("Layer was null", this, "attemptBuild", Error())
 
 
 
@@ -403,17 +397,15 @@ put("Layer: " +layerInterface, this, "attemptBuild")
         
 
 
-    
                         if(DropCellPositionHistory.getInstance()!.anyCellPositionWithDrop(list) || WaypointCellPositionHistory.getInstance()!.anyCellPositionWithDrop(list))
                         
                                     {
-                                    add(ErrorSound.getInstance())
+                                    rtsPlayerLayerInterface!.add(ErrorSound.getInstance())
 
-    
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
-                                    fireEvent(buildingCollisionGameNotificationEvent)
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(buildingCollisionGameNotificationEvent)
 
                                     }
                                 
@@ -456,17 +448,15 @@ put("Layer: " +layerInterface, this, "attemptBuild")
         {
 geographicMapCellType= geographicMapInterface!.getCellTypeAt(list.get(index) as GeographicMapCellPosition)
 
-    
                         if(raceTrackGeographicMapCellTypeFactory!.isPath(geographicMapCellType))
                         
                                     {
-                                    add(ErrorSound.getInstance())
+                                    rtsPlayerLayerInterface!.add(ErrorSound.getInstance())
 
-    
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
-                                    fireEvent(roadCollisionGameNotificationEvent)
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(roadCollisionGameNotificationEvent)
 
                                     }
                                 
@@ -496,22 +486,21 @@ geographicMapCellType= geographicMapInterface!.getCellTypeAt(list.get(index) as 
         
         
 
-append("Trying to Build: ")
-append(layerInterface!.getName())
-append(" for: $")
-appendint(cost)
-append(" with ")
-appendint(capital.getTotalMoney())
-put(stringBuffer!.toString(), this, "attemptBuild")
+stringBuffer!.append("Trying to Build: ")
+stringBuffer!.append(layerInterface!.getName())
+stringBuffer!.append(" for: $")
+stringBuffer!.appendint(cost)
+stringBuffer!.append(" with ")
+stringBuffer!.appendint(capital.getTotalMoney())
+logUtil!.put(stringBuffer!.toString(), this, "attemptBuild")
 
-    
                         if(cost <= capital.getTotalMoney())
                         
                                     {
-                                    construct(rtsPlayerLayerInterface)
+                                    layerInterface!.construct(rtsPlayerLayerInterface)
 newUnconstructedRTSLayerInterfaceArray[itemIndex]= CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER
-removeMoney(cost)
-add(list, layerInterface)
+capital.removeMoney(cost)
+WaypointCellPositionHistory.getInstance()!.add(list, layerInterface)
 
     var geographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAt(layerInterface!.getXP(), layerInterface!.getYP())!;
         
@@ -522,32 +511,31 @@ add(list, layerInterface)
         
         
 
-this.addWayPoint(waypointLayer)
+this.this.addWayPoint(waypointLayer)
 
     var rtsPlayerGameInput: RTSPlayerGameInput = rtsPlayerLayerInterface!.getPlayerGameInput() as RTSPlayerGameInput;
         
         
 
-setSelectedRTSLayer(layerInterface, geographicMapCellPosition)
+rtsPlayerGameInput!.setSelectedRTSLayer(layerInterface, geographicMapCellPosition)
 
     var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;
         
         
 
-addWaypoint(layerInterface)
-append(layerInterface)
+advancedRTSPlayerLayerInterface!.getAdvancedPlayerOwnedRTSLayers()!.addWaypoint(layerInterface)
+layerManager!.append(layerInterface)
 
     var waypointAvancedRTSGameLayer: AdvancedRTSGameLayer = waypointLayer as AdvancedRTSGameLayer;
         
         
 
-add(waypointAvancedRTSGameLayer!.getWaypointBehavior()!.getWaypoint()!.getSound())
+rtsPlayerLayerInterface!.add(waypointAvancedRTSGameLayer!.getWaypointBehavior()!.getWaypoint()!.getSound())
 
-    
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
-                                    fireEvent(newWaypointGameNotificationEvent)
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(newWaypointGameNotificationEvent)
 
                                     }
                                 
@@ -561,13 +549,12 @@ add(waypointAvancedRTSGameLayer!.getWaypointBehavior()!.getWaypoint()!.getSound(
                                     }
                                 
                         else {
-                            add(ErrorSound.getInstance())
+                            rtsPlayerLayerInterface!.add(ErrorSound.getInstance())
 
-    
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
-                                    fireEvent(noMoneyGameNotificationEvent)
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(noMoneyGameNotificationEvent)
 
                                     }
                                 
@@ -583,7 +570,7 @@ add(waypointAvancedRTSGameLayer!.getWaypointBehavior()!.getWaypoint()!.getSound(
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     addWayPoint(layerInterface: WaypointLayer){
     //var layerInterface = layerInterface
@@ -597,19 +584,18 @@ add(waypointAvancedRTSGameLayer!.getWaypointBehavior()!.getWaypoint()!.getSound(
         
         
 
-destroyAndClear(list)
-add(layerInterface)
+RTSLayerUtil.getInstance()!.destroyAndClear(list)
+list.add(layerInterface)
 
-    
                         if(this.isPrimaryWaypointCreator)
                         
                                     {
-                                    setWaypointLayer(layerInterface)
+                                    PrimaryWaypointHelper.getInstance()!.setWaypointLayer(layerInterface)
 
                                     }
                                 
-setRtsLayer(layerInterface)
-fireEvent(this.WAYPOINT_EVENT)
+this.WAYPOINT_EVENT.setRtsLayer(layerInterface)
+WaypointEventHandlerFactory.getInstance(layerInterface!.getGroupInterface()[0]!)!.fireEvent(this.WAYPOINT_EVENT)
 }
 
 

@@ -58,22 +58,22 @@ public constructor (){
         
         
 
-this.setName(rtsLayer!.getName())
-this.setAnimationInterface(rtsLayer!.getVerticleBuildAnimationInterface())
-update(rtsLayer!.getParentLayer()!.getName())
+this.this.setName(rtsLayer!.getName())
+this.this.setAnimationInterface(rtsLayer!.getVerticleBuildAnimationInterface())
+this.keyvalueDrawString!.update(rtsLayer!.getParentLayer()!.getName())
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics)
+super.paint(graphics)
 
     var textLine2Y: number = (y +myFont!.DEFAULT_CHAR_HEIGHT);
         
         
 
-paint(graphics, textLine2Y)
-paint(graphics, this.imageX, y)
+this.keyvalueDrawString!.paint(graphics, textLine2Y)
+this.getAnimationInterface()!.paint(graphics, this.imageX, y)
 }
 
 

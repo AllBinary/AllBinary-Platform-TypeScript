@@ -96,13 +96,12 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.this.setTableName(tableName)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.CONSTRUCTOR, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -114,11 +113,10 @@ var paymentGatewayInterface = paymentGatewayInterface
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "add")
+                                    logUtil!.put(this.commonStrings!.START, this, "add")
 
                                     }
                                 
@@ -127,9 +125,9 @@ var paymentGatewayInterface = paymentGatewayInterface
         
         
 
-add(PaymentGatewayIdGenerator().
+vector.add(PaymentGatewayIdGenerator().
                             getNext())
-addAll(PaymentGatewayEncryptedMapping(paymentGatewayInterface).
+vector.addAll(PaymentGatewayEncryptedMapping(paymentGatewayInterface).
                             toVector())
 
     var calendar: Calendar = Calendar.getInstance()!;
@@ -143,26 +141,24 @@ addAll(PaymentGatewayEncryptedMapping(paymentGatewayInterface).
         
         
 
-add(time)
-add(time)
-insert(vector)
+vector.add(time)
+vector.add(time)
+super.insert(vector)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(commonStrings!.END, this, "add")
+                                    logUtil!.put(commonStrings!.END, this, "add")
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "add", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "add", e)
 
                                     }
                                 
@@ -187,16 +183,15 @@ var paymentGatewayInterface = paymentGatewayInterface
         
         
 
-setLastModified(time)
+paymentGatewayInterface!.setLastModified(time)
 
     var whereKeyValuePairs: HashMap<Any, Any> = new HashMap<Any, Any>();
         
         
 
-put(StoreFrontData.getInstance()!.NAME.toString(), paymentGatewayInterface!.getStoreName())
-put(PaymentGatewayData.NAME.toString(), paymentGatewayInterface!.getName())
+whereKeyValuePairs!.put(StoreFrontData.getInstance()!.NAME.toString(), paymentGatewayInterface!.getStoreName())
+whereKeyValuePairs!.put(PaymentGatewayData.NAME.toString(), paymentGatewayInterface!.getName())
 
-    
                         if(whereKeyValuePairs!.get(EntryData.getInstance()!.TIMECREATED) != 
                                     null
                                 )
@@ -205,7 +200,7 @@ put(PaymentGatewayData.NAME.toString(), paymentGatewayInterface!.getName())
                                     
 
 
-                            throw Exception("Don't update TimeCreated for update")
+                            throw Error("Don't update TimeCreated for update")
 
                                     }
                                 
@@ -215,24 +210,22 @@ put(PaymentGatewayData.NAME.toString(), paymentGatewayInterface!.getName())
         
         
 
-updateWhere(whereKeyValuePairs, updateHashMap)
+super.updateWhere(whereKeyValuePairs, updateHashMap)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, "update")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "update")
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "update", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "update", e)
 
                                     }
                                 
@@ -256,11 +249,10 @@ var paymentType = paymentType
         
         
 
-put(StoreFrontData.getInstance()!.NAME.toString(), storeName)
-put(PaymentGatewayData.NAME.toString(), paymentType!.getName())
+whereKeyAndValue!.put(StoreFrontData.getInstance()!.NAME.toString(), storeName)
+whereKeyAndValue!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName())
 paymentGatewayHashMap= super.getRow(whereKeyAndValue)
 
-    
                         if(paymentGatewayHashMap != 
                                     null
                                 )
@@ -326,17 +318,17 @@ paymentGatewayHashMap= super.getRow(whereKeyAndValue)
         
         
 
-put(UserData.USERNAME.toString(), superCrypt!.decrypt(userName))
-put(UserData.PASSWORD.toString(), superCrypt!.decrypt(password))
-put(PaymentGatewayData.SPECIAL1.toString(), superCrypt!.decrypt(special1))
-put(PaymentGatewayData.SPECIAL2.toString(), superCrypt!.decrypt(special2))
-put(PaymentGatewayData.SPECIAL3.toString(), superCrypt!.decrypt(special3))
-put(PaymentGatewayData.SPECIAL4.toString(), superCrypt!.decrypt(special4))
-put(PaymentGatewayData.SPECIAL5.toString(), superCrypt!.decrypt(special5))
-put(PaymentGatewayData.SPECIAL6.toString(), superCrypt!.decrypt(special6))
-put(PaymentGatewayData.SPECIAL7.toString(), superCrypt!.decrypt(special7))
-put(PaymentGatewayData.SPECIAL8.toString(), superCrypt!.decrypt(special8))
-put(PaymentGatewayData.SPECIAL9.toString(), superCrypt!.decrypt(special9))
+paymentGatewayHashMap!.put(UserData.USERNAME.toString(), superCrypt!.decrypt(userName))
+paymentGatewayHashMap!.put(UserData.PASSWORD.toString(), superCrypt!.decrypt(password))
+paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL1.toString(), superCrypt!.decrypt(special1))
+paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL2.toString(), superCrypt!.decrypt(special2))
+paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL3.toString(), superCrypt!.decrypt(special3))
+paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL4.toString(), superCrypt!.decrypt(special4))
+paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL5.toString(), superCrypt!.decrypt(special5))
+paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL6.toString(), superCrypt!.decrypt(special6))
+paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL7.toString(), superCrypt!.decrypt(special7))
+paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL8.toString(), superCrypt!.decrypt(special8))
+paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL9.toString(), superCrypt!.decrypt(special9))
 
     var paymentGatewayInterface: PaymentGatewayInterface = PaymentGatewayInterfaceFactory().
                             getInstance(paymentGatewayHashMap)!;
@@ -344,11 +336,10 @@ put(PaymentGatewayData.SPECIAL9.toString(), superCrypt!.decrypt(special9))
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, "getPaymentGatewayInterface()")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "getPaymentGatewayInterface()")
 
                                     }
                                 
@@ -375,11 +366,10 @@ put(PaymentGatewayData.SPECIAL9.toString(), superCrypt!.decrypt(special9))
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put("Command Failed for paymentType: " +paymentType!.getName(), this, "getPaymentGatewayInterface", e)
+                                    logUtil!.put("Command Failed for paymentType: " +paymentType!.getName(), this, "getPaymentGatewayInterface", e)
 
                                     }
                                 
@@ -405,7 +395,6 @@ var storeName = storeName
 
 paymentGatewayNameVector= super.getColumnWhere(PaymentGatewayData.NAME.toString(), StoreFrontData.getInstance()!.NAME.toString(), storeName)
 
-    
                         if(paymentGatewayNameVector != 
                                     null
                                 )
@@ -441,15 +430,14 @@ i < size; i++)
         
         
 
-add(paymentType)
+paymentGatewayVector!.add(paymentType)
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, "findPaymentTypeVectorByStore()")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "findPaymentTypeVectorByStore()")
 
                                     }
                                 
@@ -475,11 +463,10 @@ add(paymentType)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "findPaymentTypeVectorByStore", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "findPaymentTypeVectorByStore", e)
 
                                     }
                                 
@@ -504,26 +491,24 @@ var paymentType = paymentType
         
         
 
-put(StoreFrontData.getInstance()!.NAME.toString(), storeName)
-put(PaymentGatewayData.NAME.toString(), paymentType!.getName())
-deleteWhere(whereHashMap)
+whereHashMap!.put(StoreFrontData.getInstance()!.NAME.toString(), storeName)
+whereHashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName())
+super.deleteWhere(whereHashMap)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, "remove")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "remove")
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "remove", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "remove", e)
 
                                     }
                                 
@@ -538,82 +523,82 @@ deleteWhere(whereHashMap)
         
         
 
-append(this.sqlStrings!.CREATE_TABLE)
-append(tableName)
-append(this.sqlStrings!.START)
-append(PaymentGatewayData.ID.toString())
-append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_AUTO_INCREMENT_NOT_NULL)
-append(EntryData.getInstance()!.ENABLE)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(StoreFrontData.getInstance()!.NAME)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.NAME.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentData.METHOD)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.MODE.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.TESTPROTOCOL.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.TESTSERVER.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.TESTPORT.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.TESTPATH.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.SERVERPROTOCOL.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.SERVER.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.SERVERPORT.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.SERVERPATH.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(UserData.USERNAME)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(UserData.PASSWORD)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.TIMEOUT.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.PROXYPROTOCOL.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.PROXYSERVER.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.PROXYPORT.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.PROXYPATH.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.PROXYUSERNAME.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.PROXYPASSWORD.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.PROXYTIMEOUT.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.SPECIAL1.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.SPECIAL2.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.SPECIAL3.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.SPECIAL4.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.SPECIAL5.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.SPECIAL6.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.SPECIAL7.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.SPECIAL8.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(PaymentGatewayData.SPECIAL9.toString())
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(EntryData.getInstance()!.LASTMODIFIED)
-append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-append(EntryData.getInstance()!.TIMECREATED)
-append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-append(this.sqlStrings!.PRIMARY_KEY)
-append(PaymentGatewayData.ID.toString())
-append(this.sqlStrings!.END)
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)
+stringBuffer!.append(tableName)
+stringBuffer!.append(this.sqlStrings!.START)
+stringBuffer!.append(PaymentGatewayData.ID.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_AUTO_INCREMENT_NOT_NULL)
+stringBuffer!.append(EntryData.getInstance()!.ENABLE)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(StoreFrontData.getInstance()!.NAME)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.NAME.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentData.METHOD)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.MODE.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.TESTPROTOCOL.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.TESTSERVER.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.TESTPORT.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.TESTPATH.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.SERVERPROTOCOL.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.SERVER.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.SERVERPORT.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.SERVERPATH.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(UserData.USERNAME)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(UserData.PASSWORD)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.TIMEOUT.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.PROXYPROTOCOL.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.PROXYSERVER.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.PROXYPORT.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.PROXYPATH.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.PROXYUSERNAME.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.PROXYPASSWORD.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.PROXYTIMEOUT.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.SPECIAL1.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.SPECIAL2.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.SPECIAL3.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.SPECIAL4.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.SPECIAL5.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.SPECIAL6.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.SPECIAL7.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.SPECIAL8.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(PaymentGatewayData.SPECIAL9.toString())
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(EntryData.getInstance()!.LASTMODIFIED)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
+stringBuffer!.append(EntryData.getInstance()!.TIMECREATED)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
+stringBuffer!.append(this.sqlStrings!.PRIMARY_KEY)
+stringBuffer!.append(PaymentGatewayData.ID.toString())
+stringBuffer!.append(this.sqlStrings!.END)
 
 
 

@@ -100,25 +100,25 @@ public constructor (commandListener: CommandListener, title: string, backgrounBa
 
                             //For kotlin this is before the body of the constructor.
                     
-put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-this.addConfiguration()
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+this.this.addConfiguration()
 
     var gameFeatureFormUtil: GameFeatureFormUtil = GameFeatureFormUtil.getInstance()!;
         
         
 
-addChoiceGroup(this, GameFeatureChoiceGroups.getExclusiveInstance()!.get(), Choice.EXCLUSIVE)
-addChoiceGroup(this, GameFeatureChoiceGroups.getMultipleInstance()!.get(), Choice.MULTIPLE)
-this.initCommands(commandListener)
-this.setItemStateListener(GameFeatureItemStateListener(this))
-this.addTextFieldsIfSimulated()
+gameFeatureFormUtil!.addChoiceGroup(this, GameFeatureChoiceGroups.getExclusiveInstance()!.get(), Choice.EXCLUSIVE)
+gameFeatureFormUtil!.addChoiceGroup(this, GameFeatureChoiceGroups.getMultipleInstance()!.get(), Choice.MULTIPLE)
+this.this.initCommands(commandListener)
+this.this.setItemStateListener(GameFeatureItemStateListener(this))
+this.this.addTextFieldsIfSimulated()
 }
 
 
     public close(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-close()
-this.save(abeClientInformation)
+super.close()
+this.this.save(abeClientInformation)
 }
 
 
@@ -134,7 +134,6 @@ this.save(abeClientInformation)
         
 
 
-    
                         if(hashtable != 
                                     null
                                 )
@@ -146,7 +145,6 @@ this.save(abeClientInformation)
         
 
 
-    
                         if(listCanBeNull != 
                                     null
                                 )
@@ -158,11 +156,10 @@ this.save(abeClientInformation)
         
 
 
-    
                         if(list.contains(SensorFeatureFactory.getInstance()!.SIMULATED_ORIENTATION_SENSORS))
                         
                                     {
-                                    this.addTextFields()
+                                    this.this.addTextFields()
 
                                     }
                                 
@@ -209,7 +206,7 @@ index < size; index++)
         {
 gameConfigurationTextInput= hashtable.get(objectArray[index]! as Object) as GameConfigurationTextInput
 textField= TextField(gameConfigurationTextInput!.getLabel(), gameConfigurationTextInput!.getText(), 30, TextField.ANY)
-this.append(textField)
+this.this.append(textField)
 }
 
 }
@@ -263,12 +260,12 @@ this.append(textField)
 index < size; index++)
         {
 gameConfiguration= list.objectArray[index]! as GameConfiguration
-delete(0, stringMaker!.length())
-put(stringMaker!.append(NAME)!.append(gameConfiguration!.toString())!.toString(), this, METHOD_NAME)
+stringMaker!.delete(0, stringMaker!.length())
+logUtil!.put(stringMaker!.append(NAME)!.append(gameConfiguration!.toString())!.toString(), this, METHOD_NAME)
 gauge= GameConfigurationGauge(gameConfiguration)
-setDefaultCommand(GAUGE_CHANGE)
-setItemCommandListener(GameFeatureItemCommandListener(this))
-this.append(gauge)
+gauge.setDefaultCommand(GAUGE_CHANGE)
+gauge.setItemCommandListener(GameFeatureItemCommandListener(this))
+this.this.append(gauge)
 }
 
 }
@@ -281,14 +278,14 @@ this.append(gauge)
         
         
 
-this.removeAllCommands()
-this.addCommand(gameCommandsFactory!.CLOSE_OPTIONS)
-this.addCommand(gameCommandsFactory!.DEFAULT_OPTIONS)
-this.setCommandListener(cmdListener)
+this.this.removeAllCommands()
+this.this.addCommand(gameCommandsFactory!.CLOSE_OPTIONS)
+this.this.addCommand(gameCommandsFactory!.DEFAULT_OPTIONS)
+this.this.setCommandListener(cmdListener)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public save(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -312,26 +309,24 @@ index < size; index++)
         {
 item= this.get(index)
 
-    
                         if(item is GameConfigurationGauge)
                         
                                     {
-                                    update(item as GameConfigurationGauge)
+                                    GameConfigurationUtil.getInstance()!.update(item as GameConfigurationGauge)
 
                                     }
                                 
                              else 
-    
                         if(item is TextField)
                         
                                     {
-                                    update(item as TextField)
+                                    GameConfigurationTextInput.update(item as TextField)
 
                                     }
                                 
 }
 
-updateCompetitionValue()
+GameConfigurationUtil.getInstance()!.updateCompetitionValue()
 
     var hashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
         
@@ -342,20 +337,20 @@ updateCompetitionValue()
         
         
 
-put(SCALE.getName(), SCALE.getValue()!.toString())
+hashtable.put(SCALE.getName(), SCALE.getValue()!.toString())
 
     var keyValuePersistance: KeyValuePersistance = GameConfigurationPersistanceSingleton.getInstance()!;
         
         
 
-clear()
-loadAll(abeClientInformation)
+keyValuePersistance!.clear()
+keyValuePersistance!.loadAll(abeClientInformation)
 
     var list: BasicArrayList = keyValuePersistance!.getIds()!;
         
         
 
-save(abeClientInformation, hashtable)
+keyValuePersistance!.save(abeClientInformation, hashtable)
 
     var size2: number = list.size()!;
         
@@ -375,7 +370,7 @@ save(abeClientInformation, hashtable)
 index < size2; index++)
         {
 integer= list.objectArray[index]! as Integer
-delete(abeClientInformation, integer.toInt())
+keyValuePersistance!.delete(abeClientInformation, integer.toInt())
 }
 
 }

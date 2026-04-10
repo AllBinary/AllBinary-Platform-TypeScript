@@ -95,7 +95,7 @@ export class BlisketBackupFactory
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getFileBasicArrayList(pathString: string): BasicArrayList{
 var pathString = pathString
@@ -121,14 +121,14 @@ var pathString = pathString
     public backup(){
 
         try {
-            put(this.commonStrings!.START, this, "backup()")
+            logUtil!.put(this.commonStrings!.START, this, "backup()")
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
 
-append(URLGLOBALS.getWebappPath())
-append(PATH_GLOBALS.getInstance()!.BACKUP_PATH)
+stringBuffer!.append(URLGLOBALS.getWebappPath())
+stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH)
 
     var backupPath: string = stringBuffer!.toString()!;
         
@@ -144,10 +144,10 @@ append(PATH_GLOBALS.getInstance()!.BACKUP_PATH)
         
         
 
-this.backup(fileBasicArrayList, path.toFileSystemString() +"backup.zip")
+this.this.backup(fileBasicArrayList, path.toFileSystemString() +"backup.zip")
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "backup()", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "backup()", e)
 }
 
 }
@@ -156,14 +156,14 @@ put(this.commonStrings!.EXCEPTION, this, "backup()", e)
     public backupViews(){
 
         try {
-            put(this.commonStrings!.START, this, "backupViews()")
+            logUtil!.put(this.commonStrings!.START, this, "backupViews()")
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
 
-append(URLGLOBALS.getWebappPath())
-append(PATH_GLOBALS.getInstance()!.BACKUP_PATH)
+stringBuffer!.append(URLGLOBALS.getWebappPath())
+stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH)
 
     var backupPath: string = stringBuffer!.toString()!;
         
@@ -209,28 +209,28 @@ index < size; index++)
         
         
 
-delete(0, stringBuffer!.length())
-append(URLGLOBALS.getWebappPath())
-append(PATH_GLOBALS.getInstance()!.VIEWS_PATH)
-append(nextStore)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(URLGLOBALS.getWebappPath())
+stringBuffer!.append(PATH_GLOBALS.getInstance()!.VIEWS_PATH)
+stringBuffer!.append(nextStore)
 
     var viewsPath: string = stringBuffer!.toString()!;
         
         
 
-delete(0, stringBuffer!.length())
-append("Backup Store Views: ")
-append(nextStore)
-append(" from: ")
-append(viewsPath)
-put(stringBuffer!.toString(), this, "backupViews()")
-addAll(this.getFileBasicArrayList(viewsPath))
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("Backup Store Views: ")
+stringBuffer!.append(nextStore)
+stringBuffer!.append(" from: ")
+stringBuffer!.append(viewsPath)
+PreLogUtil.put(stringBuffer!.toString(), this, "backupViews()")
+fileBasicArrayList!.addAll(this.getFileBasicArrayList(viewsPath))
 }
 
-this.backup(fileBasicArrayList, path.toFileSystemString() +"backupViews.zip")
+this.this.backup(fileBasicArrayList, path.toFileSystemString() +"backupViews.zip")
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "backupViews()", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupViews()", e)
 }
 
 }
@@ -239,14 +239,14 @@ put(this.commonStrings!.EXCEPTION, this, "backupViews()", e)
     public backupResources(){
 
         try {
-            put(this.commonStrings!.START, this, "backupResources()")
+            logUtil!.put(this.commonStrings!.START, this, "backupResources()")
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
 
-append(URLGLOBALS.getWebappPath())
-append(PATH_GLOBALS.getInstance()!.BACKUP_PATH)
+stringBuffer!.append(URLGLOBALS.getWebappPath())
+stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH)
 
     var backupPath: string = stringBuffer!.toString()!;
         
@@ -297,28 +297,28 @@ index < size; index++)
         
         
 
-delete(0, stringBuffer!.length())
-append(URLGLOBALS.getWebappPath())
-append(storeFrontInterface!.getCurrentHostNamePath())
-append(storeFrontInterface!.getCategoryPath())
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(URLGLOBALS.getWebappPath())
+stringBuffer!.append(storeFrontInterface!.getCurrentHostNamePath())
+stringBuffer!.append(storeFrontInterface!.getCategoryPath())
 
     var resourcesPath: string = stringBuffer!.toString()!;
         
         
 
-delete(0, stringBuffer!.length())
-append("Backup Store Resrouces: ")
-append(nextStore)
-append(" from: ")
-append(resourcesPath)
-put(stringBuffer!.toString(), this, "backupResources()")
-addAll(this.getFileBasicArrayList(resourcesPath))
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("Backup Store Resrouces: ")
+stringBuffer!.append(nextStore)
+stringBuffer!.append(" from: ")
+stringBuffer!.append(resourcesPath)
+PreLogUtil.put(stringBuffer!.toString(), this, "backupResources()")
+fileBasicArrayList!.addAll(this.getFileBasicArrayList(resourcesPath))
 }
 
-this.backup(fileBasicArrayList, path.toFileSystemString() +"backupResources.zip")
+this.this.backup(fileBasicArrayList, path.toFileSystemString() +"backupResources.zip")
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "backupResources()", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupResources()", e)
 }
 
 }
@@ -327,14 +327,14 @@ put(this.commonStrings!.EXCEPTION, this, "backupResources()", e)
     public backupJsps(){
 
         try {
-            put(this.commonStrings!.START, this, "backupJsps()")
+            logUtil!.put(this.commonStrings!.START, this, "backupJsps()")
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
 
-append(URLGLOBALS.getWebappPath())
-append(PATH_GLOBALS.getInstance()!.BACKUP_PATH)
+stringBuffer!.append(URLGLOBALS.getWebappPath())
+stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH)
 
     var backupPath: string = stringBuffer!.toString()!;
         
@@ -380,17 +380,17 @@ index < size; index++)
         
         
 
-put("Backup Store Jsps: " +nextStore, this, "backupJsps()")
-delete(0, stringBuffer!.length())
-append(URLGLOBALS.getWebappPath())
-append(nextStore)
-addAll(this.getFileBasicArrayList(stringBuffer!.toString()))
+PreLogUtil.put("Backup Store Jsps: " +nextStore, this, "backupJsps()")
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(URLGLOBALS.getWebappPath())
+stringBuffer!.append(nextStore)
+fileBasicArrayList!.addAll(this.getFileBasicArrayList(stringBuffer!.toString()))
 }
 
-this.backup(fileBasicArrayList, path.toFileSystemString() +"backupJsps.zip")
+this.this.backup(fileBasicArrayList, path.toFileSystemString() +"backupJsps.zip")
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "backupJsps()", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupJsps()", e)
 }
 
 }
@@ -406,17 +406,17 @@ var zipFile = zipFile
         
         
 
-delete(0, stringBuffer!.length())
-append("ZipFile: ")
-append(zipFile)
-append(" BasicArrayList: ")
-appendint(fileBasicArrayList!.size())
-put("Creating Backup Zip File: " +stringBuffer!.toString(), this, "backup()")
-create(zipFile, fileBasicArrayList)
-put("Created Backup Zip File", this, "backup()")
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("ZipFile: ")
+stringBuffer!.append(zipFile)
+stringBuffer!.append(" BasicArrayList: ")
+stringBuffer!.appendint(fileBasicArrayList!.size())
+PreLogUtil.put("Creating Backup Zip File: " +stringBuffer!.toString(), this, "backup()")
+ZipFileUtil.getInstance()!.create(zipFile, fileBasicArrayList)
+logUtil!.put("Created Backup Zip File", this, "backup()")
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, "backup()", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "backup()", e)
 }
 
 }

@@ -56,7 +56,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(httpServletRequest: HttpServletRequest): string{
 var httpServletRequest = httpServletRequest
@@ -83,16 +83,14 @@ var httpServletRequest = httpServletRequest
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTP))
                         
                                     {
-                                    put("Request Type: " +acceptable, this, commonStrings!.GET)
+                                    logUtil!.put("Request Type: " +acceptable, this, commonStrings!.GET)
 
                                     }
                                 
 
-    
                         if(acceptable != 
                                     null
                                 )
@@ -114,7 +112,6 @@ var httpServletRequest = httpServletRequest
 index < size; index++)
         {
 
-    
                         if(acceptable.compareTo(acceptableResponseUtil!.get(index)) == 0)
                         
                                     {
@@ -128,11 +125,10 @@ index < size; index++)
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTP))
                         
                                     {
-                                    put("Response Type: " +result, this, commonStrings!.GET)
+                                    logUtil!.put("Response Type: " +result, this, commonStrings!.GET)
 
                                     }
                                 
@@ -145,11 +141,10 @@ index < size; index++)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e)
 
                                     }
                                 

@@ -72,7 +72,7 @@ var document = document
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setDocument(this.generate(this.toXmlDoc()))
+this.this.setDocument(this.generate(this.toXmlDoc()))
 }
 
 public constructor (transformInfoInterface: Object, name: string, type: string)                        
@@ -87,20 +87,19 @@ var type = type
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setDocument(this.generate(this.toXmlDoc()))
+this.this.setDocument(this.generate(this.toXmlDoc()))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public set(aParentViewName: string){
 var aParentViewName = aParentViewName
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Setting: " +aParentViewName, this, "set()")
+                                    logUtil!.put("Setting: " +aParentViewName, this, "set()")
 
                                     }
                                 
@@ -115,18 +114,16 @@ var aParentViewName = aParentViewName
         
 
 
-    
                         if(parentComponentsNodeList != 
                                     null
                                  && parentComponentsNodeList!.getLength() > 0)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Replacing", this, "set()")
+                                    logUtil!.put("Replacing", this, "set()")
 
                                     }
                                 
@@ -136,28 +133,26 @@ var aParentViewName = aParentViewName
         
 
 
-    
                         if(componentNode != 
                                     null
                                 )
                         
                                     {
-                                    removeChild(componentNode)
+                                    document.removeChild(componentNode)
 
                                     }
                                 
-appendChild(TransformInfoDomNodeView(aParentViewName).
+parentComponentsNodeList!.item(0)!.appendChild(TransformInfoDomNodeView(aParentViewName).
                             toXmlNode(document))
 
                                     }
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Setting", this, "set()")
+                                    logUtil!.put("Setting", this, "set()")
 
                                     }
                                 
@@ -171,13 +166,13 @@ appendChild(TransformInfoDomNodeView(aParentViewName).
         
         
 
-appendChild(parentComponentsNode)
+objectConfigNode!.appendChild(parentComponentsNode)
 
     var transformInfoDomNodeView: TransformInfoDomNodeView = new TransformInfoDomNodeView(aParentViewName);
         
         
 
-appendChild(transformInfoDomNodeView!.toXmlNode(document))
+parentComponentsNode!.appendChild(transformInfoDomNodeView!.toXmlNode(document))
 
                         }
                             

@@ -64,7 +64,7 @@ public constructor (keyAsString: string){
         
         
 
-put(commonStrings!.EXCEPTION, this, "AbCrypt(alg,key)", e)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, "AbCrypt(alg,key)", e)
 }
 
 this.key= key
@@ -83,7 +83,7 @@ this.key= key
     
 } catch(e: Exception)
             {
-put("Encrypt Failed", this, "encrypt", e)
+PreLogUtil.put("Encrypt Failed", this, "encrypt", e)
 
 
 
@@ -107,7 +107,7 @@ put("Encrypt Failed", this, "encrypt", e)
     
 } catch(e: Exception)
             {
-put("decrypt Failed", this, "decrypt", e)
+PreLogUtil.put("decrypt Failed", this, "decrypt", e)
 
 
 

@@ -145,7 +145,7 @@ var selectRTSLayerVisitorFactoryInterface = selectRTSLayerVisitorFactoryInterfac
 
                             //For kotlin this is before the body of the constructor.
                     
-this.initInputProcessors()
+this.this.initInputProcessors()
 this.rtsPlayerLayerInterface= rtsPlayerLayerInterface
 this.list= list
 this.selectRTSLayerVisitorInterface= selectRTSLayerVisitorFactoryInterface!.getInstance(this)
@@ -165,7 +165,7 @@ this.downgradeGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -179,16 +179,15 @@ this.downgradeGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.
         
         
 
-setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
-setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
-setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
+this.upgradeGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
+this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
+this.downgradeGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
 }
 
 
     public isSelected(rtsLayer: RTSLayer): boolean{
 var rtsLayer = rtsLayer
 
-    
                         if(this.selectedRTSLayersList!.contains(rtsLayer))
                         
                                     {
@@ -214,7 +213,7 @@ var rtsLayer = rtsLayer
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     upgrade(){
 
@@ -238,7 +237,6 @@ index >= 0; index--)
         
 
 
-    
                         if(rtsLayer!.isUpgradeable())
                         
                                     {
@@ -253,20 +251,18 @@ index >= 0; index--)
         
 
 
-    
                         if(upgradeCost <= capital.getTotalMoney())
                         
                                     {
                                     anyChanged= true
-add(UpgradeSound.getInstance())
-upgrade()
-removeMoney(upgradeCost)
+rtsPlayerLayerInterface!.add(UpgradeSound.getInstance())
+rtsLayer!.upgrade()
+capital.removeMoney(upgradeCost)
 
-    
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
-                                    fireEvent(upgradeGameNotificationEvent)
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(upgradeGameNotificationEvent)
 
                                     }
                                 
@@ -274,13 +270,12 @@ removeMoney(upgradeCost)
                                     }
                                 
                         else {
-                            add(ErrorSound.getInstance())
+                            rtsPlayerLayerInterface!.add(ErrorSound.getInstance())
 
-    
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
-                                    fireEvent(noMoneyGameNotificationEvent)
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(noMoneyGameNotificationEvent)
 
                                     }
                                 
@@ -293,7 +288,6 @@ removeMoney(upgradeCost)
 }
 
 
-    
                         if(anyChanged)
                         
                                     {
@@ -302,14 +296,14 @@ removeMoney(upgradeCost)
         
         
 
-updatePaintable()
+rtsPlayerGameInput!.updatePaintable()
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     downgrade(){
 
@@ -333,30 +327,28 @@ updatePaintable()
         
 
 
-    
                         if(rtsLayer!.isDowngradeable())
                         
                                     {
                                     anyChanged= true
-add(DowngradeSound.getInstance())
+rtsPlayerLayerInterface!.add(DowngradeSound.getInstance())
 
     var downgradeCost: number = rtsLayer!.getDowngradeCost()!;
         
         
 
-downgrade()
+rtsLayer!.downgrade()
 
     var capital: Capital = this.rtsPlayerLayerInterface!.getCapital()!;
         
         
 
-addMoney(downgradeCost)
+capital.addMoney(downgradeCost)
 
-    
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
-                                    fireEvent(downgradeGameNotificationEvent)
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(downgradeGameNotificationEvent)
 
                                     }
                                 
@@ -366,7 +358,6 @@ addMoney(downgradeCost)
 }
 
 
-    
                         if(anyChanged)
                         
                                     {
@@ -375,7 +366,7 @@ addMoney(downgradeCost)
         
         
 
-updatePaintable()
+rtsPlayerGameInput!.updatePaintable()
 
                                     }
                                 
@@ -385,29 +376,28 @@ updatePaintable()
     public initInputProcessors(){
 this.inputProcessorArray[Canvas.KEY_NUM1]= SelectedRTSLayersPlayerUpgradeGameInputProcessor(this)
 this.inputProcessorArray[Canvas.KEY_NUM3]= SelectedRTSLayersPlayerDowngradeGameInputProcessor(this)
-init(this.inputProcessorArray)
+GameInputProcessorUtil.init(this.inputProcessorArray)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processInput(key: number){
 var key = key
 
-    
                         if(this.selectedRTSLayersList != 
                                     null
                                 )
                         
                                     {
-                                    process(AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER, GameKeyEvent.NONE)
+                                    this.inputProcessorArray[key]!.process(AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER, GameKeyEvent.NONE)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processInput(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager
@@ -439,26 +429,25 @@ index < size; index++)
         
 
 key= gameKeyEvent!.getKey()
-this.processInput(key)
+this.this.processInput(key)
 }
 
 
-    
                         if(isSingleKeyProcessing)
                         
                                     {
-                                    this.clear()
+                                    this.this.clear()
 
                                     }
                                 
                         else {
-                            this.update()
+                            this.this.update()
 
                         }
                             
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e)
 }
 
 }
@@ -478,22 +467,20 @@ put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e)
 var selectedLayer = selectedLayer
 this.paintSelectedRTSLayersList= BasicArrayListUtil.getInstance()!.getImmutableInstance()
 
-    
                         if(selectedLayer == CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER)
                         
                                     {
-                                    this.deselectAll()
-clear()
+                                    this.this.deselectAll()
+this.selectedRTSLayersList!.clear()
 
                                     }
                                 
                         else {
                             
-    
                         if(!this.selectedRTSLayersList!.contains(selectedLayer))
                         
                                     {
-                                    add(selectedLayer)
+                                    this.selectedRTSLayersList!.add(selectedLayer)
 
                                     }
                                 
@@ -511,28 +498,26 @@ var selectedLayer = selectedLayer
         
         
 
-append("Selected Layer: ")
+stringBuffer!.append("Selected Layer: ")
 
-    
                         if(selectedLayer != 
                                     null
                                 )
                         
                                     {
-                                    append(selectedLayer!.getName())
+                                    stringBuffer!.append(selectedLayer!.getName())
 
                                     }
                                 
-put(stringBuffer!.toString(), this, "setSelectedRTSLayer")
+logUtil!.put(stringBuffer!.toString(), this, "setSelectedRTSLayer")
 this.paintSelectedRTSLayersList= BasicArrayListUtil.getInstance()!.getImmutableInstance()
-visit(selectedLayer)
-this.deselectAll()
+this.selectRTSLayerVisitorInterface!.visit(selectedLayer)
+this.this.deselectAll()
 
-    
                         if(this.selectedRTSLayersList!.size() > 0)
                         
                                     {
-                                    clear()
+                                    this.getPreSelectedRTSLayersList()!.clear()
 
     var tempList: BasicArrayList = this.getPreSelectedRTSLayersList()!;
         
@@ -540,17 +525,16 @@ this.deselectAll()
 
 this.preSelectedRTSLayersList= this.selectedRTSLayersList
 this.selectedRTSLayersList= tempList
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Preselected: ")!.append(this.preSelectedRTSLayersList!.toString())!.toString(), this, "setSelectedRTSLayer")
 
                                     }
                                 
 
-    
                         if(selectedLayer != CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER)
                         
                                     {
-                                    add(selectedLayer)
+                                    this.selectedRTSLayersList!.add(selectedLayer)
 
                                     }
                                 
@@ -560,7 +544,6 @@ this.paintSelectedRTSLayersList= this.selectedRTSLayersList
 
     public getLastSelectedRtsLayer(): CollidableDestroyableDamageableLayer{
 
-    
                         if(this.isAnyRTSLayerSelected())
                         
                                     {
@@ -592,9 +575,9 @@ this.paintSelectedRTSLayersList= this.selectedRTSLayersList
         
         
 
-append("Select all Preselected: ")
-append(this.preSelectedRTSLayersList!.toString())
-put(stringBuffer!.toString(), this, "selectAllPreselected")
+stringBuffer!.append("Select all Preselected: ")
+stringBuffer!.append(this.preSelectedRTSLayersList!.toString())
+logUtil!.put(stringBuffer!.toString(), this, "selectAllPreselected")
 
 
 
@@ -610,7 +593,7 @@ index >= 0; index--)
         
         
 
-select()
+rtsLayer!.select()
 }
 
 }
@@ -622,9 +605,9 @@ select()
         
         
 
-append("Deselect all Preselected: ")
-append(this.preSelectedRTSLayersList!.toString())
-put(stringBuffer!.toString(), this, "deselectAllPreselected")
+stringBuffer!.append("Deselect all Preselected: ")
+stringBuffer!.append(this.preSelectedRTSLayersList!.toString())
+logUtil!.put(stringBuffer!.toString(), this, "deselectAllPreselected")
 
 
 
@@ -640,10 +623,10 @@ index >= 0; index--)
         
         
 
-deselect()
+rtsLayer!.deselect()
 }
 
-clear()
+this.preSelectedRTSLayersList!.clear()
 }
 
 
@@ -663,7 +646,7 @@ index >= 0; index--)
         
         
 
-deselect()
+rtsLayer!.deselect()
 }
 
 }
@@ -671,7 +654,6 @@ deselect()
 
     public isAnyRTSLayerSelected(): boolean{
 
-    
                         if(this.selectedRTSLayersList!.size() == 0)
                         
                                     {

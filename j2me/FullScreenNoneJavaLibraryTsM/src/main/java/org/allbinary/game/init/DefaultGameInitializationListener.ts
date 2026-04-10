@@ -70,14 +70,14 @@ public constructor (){
         
         
 
-removeAllListeners()
-addListener(this as GameInitializedListenerInterface)
+gameInitializedEventHandler!.removeAllListeners()
+gameInitializedEventHandler!.addListener(this as GameInitializedListenerInterface)
 }
 
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
@@ -99,17 +99,16 @@ log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 
 
         try {
-            put(commonStrings!.START, this, ON_GAME_INITIALIZED)
+            logUtil!.put(commonStrings!.START, this, ON_GAME_INITIALIZED)
 
         while(!swtJOGLProcessor!.isHolderCreated())
         {
-put(commonStrings!.UPDATE, this, ON_GAME_INITIALIZED)
-sleep(20)
+logUtil!.put(commonStrings!.UPDATE, this, ON_GAME_INITIALIZED)
+Thread.sleep(20)
 }
 
-init(gameInitializedEvent!.getLevel())
+FeatureResourceInitializationUtil.getInstance()!.init(gameInitializedEvent!.getLevel())
 
-    
                         if(firstTime)
                         
                                     {
@@ -118,13 +117,13 @@ init(gameInitializedEvent!.getLevel())
                                     }
                                 
                         else {
-                            onSurfaceChanged()
+                            swtJOGLProcessor!.onSurfaceChanged()
 
                         }
                             
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, ON_GAME_INITIALIZED, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, ON_GAME_INITIALIZED, e)
 }
 
 }

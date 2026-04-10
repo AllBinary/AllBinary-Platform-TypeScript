@@ -50,7 +50,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(os: OperatingSystemInterface): HardwareInterface{
 var os = os

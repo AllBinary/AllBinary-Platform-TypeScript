@@ -87,7 +87,7 @@ export class SimpleFileUtil
                                 
     var private closed: boolean= false
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public append(c: string): Writer{
 var c = c
@@ -99,7 +99,7 @@ var c = c
     
 }
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public append(csq: CharSequence): Writer{
 var csq = csq
@@ -111,7 +111,7 @@ var csq = csq
     
 }
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public append(csq: CharSequence, start: number, end: number): Writer{
 var csq = csq
@@ -125,13 +125,13 @@ var end = end
     
 }
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public write(c: number){
 var c = c
 }
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public write(cbuf: string[], off: number, len: number){
 var cbuf = cbuf
@@ -139,13 +139,13 @@ var off = off
 var len = len
 }
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public write(str: string){
 var str = str
 }
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public write(str: string, off: number, len: number){
 var str = str
@@ -153,7 +153,7 @@ var off = off
 var len = len
 }
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public flush(){
 }
@@ -175,7 +175,7 @@ var len = len
                         return object: Reader()
                                 {
                                 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public read(): number{
 
@@ -186,7 +186,7 @@ var len = len
     
 }
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public read(cbuf: string[], off: number, len: number): number{
 var cbuf = cbuf
@@ -200,7 +200,7 @@ var len = len
     
 }
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public read(target: CharBuffer): number{
 var target = target
@@ -212,7 +212,7 @@ var target = target
     
 }
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public ready(): boolean{
 
@@ -223,7 +223,7 @@ var target = target
     
 }
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public skip(n: number): number{
 var n = n
@@ -292,7 +292,6 @@ var n = n
         
 
 
-    
                         if(inputStream == 
                                     null
                                 )
@@ -320,15 +319,14 @@ var n = n
         
 
 byteArray= streamUtil!.getByteArray(inputStream, outputStream2, byteArray1)
-close(inputStream)
+streamUtil!.close(inputStream)
 } catch(e: Exception)
             {
-close(inputStream)
-put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
+streamUtil!.close(inputStream)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
 }
 
 
-    
                         if(byteArray == 
                                     null
                                 )
@@ -373,12 +371,10 @@ index++
 }
 
 
-    
                         if(includeReturnLine == 0)
                         
                                     {
                                     
-    
                         if(index > 0 && byteArray[index -1] == '\r'.code.toByte())
                         
                                     {
@@ -399,7 +395,7 @@ index++
         
         
 
-add(s)
+stringList!.add(s)
 index++
 }
 
@@ -435,7 +431,7 @@ index++
         
 index < size; index++)
         {
-append(stringArray[index]!)
+stringMaker!.append(stringArray[index]!)
 }
 
 

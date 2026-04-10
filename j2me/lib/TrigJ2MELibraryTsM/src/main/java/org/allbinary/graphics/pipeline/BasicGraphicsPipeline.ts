@@ -58,7 +58,7 @@ pointBasicArrayList= points
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public translate(x: number, y: number){
 var x = x
@@ -93,16 +93,15 @@ index < size; index++)
         {
 secondPoint= pointBasicArrayList!.objectArray[index]! as GPoint
 
-    
                         if(secondPoint!.getX() != 1000)
                         
                                     {
-                                    add(pointFactory!.getInstance(secondPoint!.getX() +x, secondPoint!.getY() +y))
+                                    newBasicArrayList!.add(pointFactory!.getInstance(secondPoint!.getX() +x, secondPoint!.getY() +y))
 
                                     }
                                 
                         else {
-                            add(secondPoint)
+                            newBasicArrayList!.add(secondPoint)
 
                         }
                             
@@ -112,11 +111,11 @@ this.pointBasicArrayList= newBasicArrayList
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public rotate(angle: Angle){
 var angle = angle
-this.rotate(angle.getValue().toInt())
+this.this.rotate(angle.getValue().toInt())
 }
 
 
@@ -124,7 +123,7 @@ this.rotate(angle.getValue().toInt())
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     rotate(angle: number){
 var angle = angle
@@ -176,7 +175,6 @@ index < size; index++)
         {
 secondPoint= pointBasicArrayList!.objectArray[index]! as GPoint
 
-    
                         if(secondPoint!.getX() != 1000)
                         
                                     {
@@ -186,12 +184,12 @@ y= secondPoint!.getY() *sin
 secondX= (secondPoint!.getX() *cos) -y
 secondY= (secondPoint!.getX() *sin) +(secondPoint!.getY() *cos)
 point= pointFactory!.getInstance(secondX.toInt() /10000, secondY.toInt() /10000)
-add(point)
+newBasicArrayList!.add(point)
 
                                     }
                                 
                         else {
-                            add(secondPoint)
+                            newBasicArrayList!.add(secondPoint)
 
                         }
                             
@@ -201,7 +199,7 @@ this.pointBasicArrayList= newBasicArrayList
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public mirror(width: number){
 var width = width
@@ -246,13 +244,11 @@ index < size; index++)
         {
 secondPoint= pointBasicArrayList!.objectArray[index]! as GPoint
 
-    
                         if(secondPoint!.getX() != 1000)
                         
                                     {
                                     newX= 0
 
-    
                         if(secondPoint!.getX() > halfWidth)
                         
                                     {
@@ -266,12 +262,12 @@ secondPoint= pointBasicArrayList!.objectArray[index]! as GPoint
                         }
                             
 point= pointFactory!.getInstance(newX, secondPoint!.getY())
-add(point)
+newBasicArrayList!.add(point)
 
                                     }
                                 
                         else {
-                            add(secondPoint)
+                            newBasicArrayList!.add(secondPoint)
 
                         }
                             

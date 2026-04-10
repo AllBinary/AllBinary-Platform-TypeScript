@@ -63,16 +63,16 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(damageableInterface: DamageableInterface, damageableInterface2: DamageableInterface){
 var damageableInterface = damageableInterface
 var damageableInterface2 = damageableInterface2
-damage(damageableInterface2!.getDamage(0), 0)
+damageableInterface!.damage(damageableInterface2!.getDamage(0), 0)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public debugDamage(collidableInterfaceCompositeInterface1: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
 var collidableInterfaceCompositeInterface1 = collidableInterfaceCompositeInterface1
@@ -88,7 +88,6 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
         
 
 
-    
                         if(damage > 20000)
                         
                                     {
@@ -97,13 +96,13 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
         
         
 
-append("Collision ")
-append(collidableInterfaceCompositeInterface1!.toString())
-append(" with: ")
-append(collidableInterfaceCompositeInterface!.toString())
-append(" damage: ")
-appendint(damage)
-put(stringBuffer!.toString(), collidableInterfaceCompositeInterface1, COLLIDE)
+stringBuffer!.append("Collision ")
+stringBuffer!.append(collidableInterfaceCompositeInterface1!.toString())
+stringBuffer!.append(" with: ")
+stringBuffer!.append(collidableInterfaceCompositeInterface!.toString())
+stringBuffer!.append(" damage: ")
+stringBuffer!.appendint(damage)
+logUtil!.put(stringBuffer!.toString(), collidableInterfaceCompositeInterface1, COLLIDE)
 
                                     }
                                 

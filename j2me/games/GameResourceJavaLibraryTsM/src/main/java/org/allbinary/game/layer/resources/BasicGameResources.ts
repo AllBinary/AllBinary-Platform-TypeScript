@@ -71,11 +71,10 @@ var SIZE = SIZE
         
 
 
-    
                         if(scale > 1 && scale -1 < SIZE.length)
                         
                                     {
-                                    this.init(ROOT, SIZE[scale -1]!)
+                                    this.this.init(ROOT, SIZE[scale -1]!)
 
                                     }
                                 
@@ -83,7 +82,7 @@ var SIZE = SIZE
                             
 
 
-                            throw Exception(StringMaker().
+                            throw Error(StringMaker().
                             append("Invalid Value: ")!.appendint(scale)!.toString())
 
                         }
@@ -95,13 +94,13 @@ var SIZE = SIZE
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getString(): string{
 
@@ -113,7 +112,7 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(ROOT: string, sizeString: string){
 var ROOT = ROOT
@@ -128,16 +127,16 @@ var sizeString = sizeString
         
         
 
-delete(0, stringBuffer!.length())
-append(ROOT)
-append(string)
-append(sizeString)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(ROOT)
+stringBuffer!.append(string)
+stringBuffer!.append(sizeString)
 this.RESOURCE= stringBuffer!.toString()
-delete(0, stringBuffer!.length())
-append(ROOT)
-append(DESTROY)
-append(string)
-append(sizeString)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(ROOT)
+stringBuffer!.append(DESTROY)
+stringBuffer!.append(string)
+stringBuffer!.append(sizeString)
 this.RESOURCE_DESTROY= stringBuffer!.toString()
 }
 

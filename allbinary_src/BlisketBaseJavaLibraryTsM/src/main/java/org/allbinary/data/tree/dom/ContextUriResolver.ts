@@ -77,7 +77,7 @@ this.basicURIResolver= basicURIResolver
 }
 
 
-                @Throws(TransformerException::class)
+                //@Throws(TransformerException::class)
             
     public resolve(href: string, base: string): Source{
 var href = href
@@ -89,34 +89,33 @@ var base = base
         
         
 
-append(URLGLOBALS.getMainPath())
-append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-append(FREEBLISKET_PATH_GLOBALS.getInstance()!.INSTALLPATH)
-append(AbPathData.getInstance()!.SEPARATOR)
-append(href)
+stringBuffer!.append(URLGLOBALS.getMainPath())
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.INSTALLPATH)
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.append(href)
 
     var fileAbPath: AbPath = new AbFilePath(stringBuffer!.toString());
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XMLLOGGING))
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-append("attempt to use xsl:import: href=")
-append(href)
-append("\nBase= ")
-append(base)
-append("\nNew path= ")
-append(fileAbPath!.toString())
-append("\nNote: ")
-append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-append(" is a urlglobal")
-append("\nRequired Extension: ")
-append(this.basicURIResolver!.getExtension())
-put(stringBuffer!.toString(), this, "resolve")
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("attempt to use xsl:import: href=")
+stringBuffer!.append(href)
+stringBuffer!.append("\nBase= ")
+stringBuffer!.append(base)
+stringBuffer!.append("\nNew path= ")
+stringBuffer!.append(fileAbPath!.toString())
+stringBuffer!.append("\nNote: ")
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
+stringBuffer!.append(" is a urlglobal")
+stringBuffer!.append("\nRequired Extension: ")
+stringBuffer!.append(this.basicURIResolver!.getExtension())
+logUtil!.put(stringBuffer!.toString(), this, "resolve")
 
                                     }
                                 

@@ -106,7 +106,6 @@ this.request= pageContext!.getRequest() as HttpServletRequest
         
 
 
-    
                         if(!StringValidationUtil.getInstance()!.isEmpty(storeName))
                         
                                     {
@@ -137,12 +136,11 @@ this.weblisketSession= WeblisketSession(this.propertiesHashMap, this.pageContext
         
 
 
-    
                         if(!StringValidationUtil.getInstance()!.isEmpty(requestPaymentGateway))
                         
                                     {
-                                    setPaymentMethod(requestPaymentGateway)
-setPaymentMethod(requestPaymentGateway)
+                                    this.weblisketSession!.setPaymentMethod(requestPaymentGateway)
+orderInterface!.setPaymentMethod(requestPaymentGateway)
 paymentGatewayBoolean= Boolean.TRUE
 
                                     }
@@ -158,7 +156,6 @@ paymentGatewayBoolean= Boolean.TRUE
         
 
 
-    
                         if(paymentTypeVector!.length == 1)
                         
                                     {
@@ -177,14 +174,13 @@ paymentGatewayBoolean= Boolean.TRUE
         
         
 
-setPaymentMethod(paymentGateway)
-setPaymentMethod(paymentGateway)
+this.weblisketSession!.setPaymentMethod(paymentGateway)
+orderInterface!.setPaymentMethod(paymentGateway)
 paymentGatewayBoolean= Boolean.TRUE
 
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
@@ -193,11 +189,11 @@ paymentGatewayBoolean= Boolean.TRUE
         
         
 
-append("Successfully set PaymentGateway Order: ")
-append(orderInterface!.getId())
-append(" to: ")
-append(orderInterface!.getPaymentMethod())
-put(stringBuffer!.toString(), this, "setPaymentGateway()")
+stringBuffer!.append("Successfully set PaymentGateway Order: ")
+stringBuffer!.append(orderInterface!.getId())
+stringBuffer!.append(" to: ")
+stringBuffer!.append(orderInterface!.getPaymentMethod())
+logUtil!.put(stringBuffer!.toString(), this, "setPaymentGateway()")
 
                                     }
                                 
@@ -210,7 +206,6 @@ put(stringBuffer!.toString(), this, "setPaymentGateway()")
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
@@ -219,7 +214,7 @@ put(stringBuffer!.toString(), this, "setPaymentGateway()")
         
         
 
-append("Failed to set PaymentGateway for Order: ")
+stringBuffer!.append("Failed to set PaymentGateway for Order: ")
 
         try {
             
@@ -228,24 +223,23 @@ append("Failed to set PaymentGateway for Order: ")
         
 
 
-    
                         if(orderInterface != 
                                     null
                                 )
                         
                                     {
-                                    append(orderInterface!.getId())
-append(" to: ")
-append(orderInterface!.getPaymentMethod())
+                                    stringBuffer!.append(orderInterface!.getId())
+stringBuffer!.append(" to: ")
+stringBuffer!.append(orderInterface!.getPaymentMethod())
 
                                     }
                                 
 } catch(ex: Exception)
             {
-append(" Exception Getting")
+stringBuffer!.append(" Exception Getting")
 }
 
-put(stringBuffer!.toString(), this, "setPaymentGateway()", e)
+logUtil!.put(stringBuffer!.toString(), this, "setPaymentGateway()", e)
 
                                     }
                                 
@@ -268,18 +262,17 @@ put(stringBuffer!.toString(), this, "setPaymentGateway()", e)
         
         
 
-setStoreName(this.storeFrontInterface!.getName())
+order.setStoreName(this.storeFrontInterface!.getName())
 
     var result: string = OrderProcessorUtil.getInstance()!.process(this.weblisketSession!.getUserName(), order as Order)!;
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put("Successfully Processed Order: " +result, this, "processOrder()")
+                                    logUtil!.put("Successfully Processed Order: " +result, this, "processOrder()")
 
                                     }
                                 
@@ -296,13 +289,13 @@ setStoreName(this.storeFrontInterface!.getName())
         
         
 
-append("Failed to Process Order: ")
+stringBuffer!.append("Failed to Process Order: ")
 
         try {
-            append(this.weblisketSession!.getOrder()!.getId())
+            stringBuffer!.append(this.weblisketSession!.getOrder()!.getId())
 } catch(ex: Exception)
             {
-append(" Exception Getting Id")
+stringBuffer!.append(" Exception Getting Id")
 }
 
 
@@ -311,11 +304,10 @@ append(" Exception Getting Id")
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
 
                                     }
                                 

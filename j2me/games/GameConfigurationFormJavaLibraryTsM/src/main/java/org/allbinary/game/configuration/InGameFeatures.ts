@@ -68,7 +68,6 @@ export class InGameFeatures extends Init {
         
 
 
-    
                         if(exclusiveOrientationSensorVector != 
                                     null
                                 )
@@ -80,13 +79,12 @@ export class InGameFeatures extends Init {
         
 
 
-    
                         if(inGameExclusiveOrientationSensorVectorCanBeNull == 
                                     null
                                 )
                         
                                     {
-                                    this.addToInGameMenu()
+                                    this.this.addToInGameMenu()
 
                                     }
                                 
@@ -97,11 +95,10 @@ export class InGameFeatures extends Init {
         
 
 
-    
                         if(inGameExclusiveOrientationSensorVector!.size() == 0)
                         
                                     {
-                                    this.addToInGameMenu()
+                                    this.this.addToInGameMenu()
 
                                     }
                                 
@@ -117,7 +114,6 @@ export class InGameFeatures extends Init {
         
 
 
-    
                         if(features.isFeature(TouchFeatureFactory.getInstance()!.SHOW_SCREEN_BUTTONS) || features.isFeature(TouchFeatureFactory.getInstance()!.AUTO_HIDE_SHOW_SCREEN_BUTTONS) || features.isFeature(TouchFeatureFactory.getInstance()!.HIDE_SCREEN_BUTTONS))
                         
                                     {
@@ -131,10 +127,10 @@ export class InGameFeatures extends Init {
         
         
 
-add(touchFeatureFactory!.AUTO_HIDE_SHOW_SCREEN_BUTTONS)
-add(touchFeatureFactory!.SHOW_SCREEN_BUTTONS)
-add(touchFeatureFactory!.HIDE_SCREEN_BUTTONS)
-add(LABEL, exclusiveScreenButtonsVector)
+exclusiveScreenButtonsVector!.add(touchFeatureFactory!.AUTO_HIDE_SHOW_SCREEN_BUTTONS)
+exclusiveScreenButtonsVector!.add(touchFeatureFactory!.SHOW_SCREEN_BUTTONS)
+exclusiveScreenButtonsVector!.add(touchFeatureFactory!.HIDE_SCREEN_BUTTONS)
+inGameFeatureChoiceGroups!.add(LABEL, exclusiveScreenButtonsVector)
 
                                     }
                                 
@@ -152,9 +148,9 @@ add(LABEL, exclusiveScreenButtonsVector)
         
         
 
-add(SensorFeatureFactory.getInstance()!.ORIENTATION_SENSORS)
-add(SensorFeatureFactory.getInstance()!.NO_ORIENTATION)
-add(orientationData!.ORIENTATION_SENSOR_INPUT, inGameExclusiveOrientationSensorVector)
+inGameExclusiveOrientationSensorVector!.add(SensorFeatureFactory.getInstance()!.ORIENTATION_SENSORS)
+inGameExclusiveOrientationSensorVector!.add(SensorFeatureFactory.getInstance()!.NO_ORIENTATION)
+InGameFeatureChoiceGroups.getExclusiveInstance()!.add(orientationData!.ORIENTATION_SENSOR_INPUT, inGameExclusiveOrientationSensorVector)
 }
 
 
@@ -170,7 +166,6 @@ add(orientationData!.ORIENTATION_SENSOR_INPUT, inGameExclusiveOrientationSensorV
         
 
 
-    
                         if(features.isFeature(touchFeatureFactory!.SHOW_SCREEN_BUTTONS) || features.isFeature(touchFeatureFactory!.AUTO_HIDE_SHOW_SCREEN_BUTTONS) || features.isFeature(touchFeatureFactory!.HIDE_SCREEN_BUTTONS))
                         
                                     {
@@ -189,7 +184,6 @@ add(orientationData!.ORIENTATION_SENSOR_INPUT, inGameExclusiveOrientationSensorV
         
 
 
-    
                         if(exclusiveOrientationSensorVector != 
                                     null
                                 )

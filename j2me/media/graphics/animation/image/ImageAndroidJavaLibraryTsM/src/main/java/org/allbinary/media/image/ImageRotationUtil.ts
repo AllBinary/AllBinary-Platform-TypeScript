@@ -69,7 +69,7 @@ private constructor (){
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
 var originalImage = originalImage
@@ -80,7 +80,6 @@ var rotationInDegrees = rotationInDegrees
         
 
 
-    
                         if(image.isMutable())
                         
                                     {
@@ -100,15 +99,15 @@ var rotationInDegrees = rotationInDegrees
         
         
 
-setRotate(rotationInDegrees.toFloat(), (width shr 1).toFloat(), (height shr 1).toFloat())
+matrix.setRotate(rotationInDegrees.toFloat(), (width shr 1).toFloat(), (height shr 1).toFloat())
 
     var canvas: Canvas = 
                                     (image as AndroidImageInterface).getCanvas()!;
         
         
 
-concat(matrix)
-drawImage(originalImage, 0, 0, anchor)
+canvas.concat(matrix)
+image.getGraphics()!.drawImage(originalImage, 0, 0, anchor)
 
 
 
@@ -122,7 +121,7 @@ drawImage(originalImage, 0, 0, anchor)
                             
 
 
-                            throw Exception("Not Mutable")
+                            throw Error("Not Mutable")
 
                         }
                             

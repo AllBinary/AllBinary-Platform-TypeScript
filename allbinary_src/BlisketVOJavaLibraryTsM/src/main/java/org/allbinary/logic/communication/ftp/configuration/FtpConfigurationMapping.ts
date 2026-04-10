@@ -49,10 +49,10 @@ this.ftpConfigurationInterface= ftpConfigurationInterface
         
         
 
-put(FtpConfigurationData.SERVER, this.ftpConfigurationInterface!.getServer())
-put(FtpConfigurationData.USERNAME, this.ftpConfigurationInterface!.getUserName())
-put(FtpConfigurationData.PASSWORD, this.ftpConfigurationInterface!.getPassword())
-put(FtpConfigurationData.PATH, this.ftpConfigurationInterface!.getPath())
+hashMap!.put(FtpConfigurationData.SERVER, this.ftpConfigurationInterface!.getServer())
+hashMap!.put(FtpConfigurationData.USERNAME, this.ftpConfigurationInterface!.getUserName())
+hashMap!.put(FtpConfigurationData.PASSWORD, this.ftpConfigurationInterface!.getPassword())
+hashMap!.put(FtpConfigurationData.PATH, this.ftpConfigurationInterface!.getPath())
 
 
 
@@ -62,7 +62,7 @@ put(FtpConfigurationData.PATH, this.ftpConfigurationInterface!.getPath())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getKey(): any = {}{
 
@@ -74,7 +74,7 @@ put(FtpConfigurationData.PATH, this.ftpConfigurationInterface!.getPath())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toVector(): Vector{
 
@@ -82,10 +82,10 @@ put(FtpConfigurationData.PATH, this.ftpConfigurationInterface!.getPath())
         
         
 
-add(this.ftpConfigurationInterface!.getServer())
-add(this.ftpConfigurationInterface!.getUserName())
-add(this.ftpConfigurationInterface!.getPassword())
-add(this.ftpConfigurationInterface!.getPath())
+vector.add(this.ftpConfigurationInterface!.getServer())
+vector.add(this.ftpConfigurationInterface!.getUserName())
+vector.add(this.ftpConfigurationInterface!.getPassword())
+vector.add(this.ftpConfigurationInterface!.getPath())
 
 
 

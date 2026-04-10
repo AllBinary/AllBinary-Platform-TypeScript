@@ -52,16 +52,16 @@ export class ContextConfiguration
 public constructor (){
 
             super();
-            put(commonStrings!.START, this, "ContextConfiguration")
-this.setEmailServerConfigurationInterface(EmailServerConfiguration() as EmailServerConfigurationInterface)
+            logUtil!.put(commonStrings!.START, this, "ContextConfiguration")
+this.this.setEmailServerConfigurationInterface(EmailServerConfiguration() as EmailServerConfigurationInterface)
 }
 
 public constructor (hashMap: HashMap<Any, Any>){
 
             super();
             var hashMap = hashMap
-put(commonStrings!.START, this, "ContextConfiguration(HashMap)")
-this.setEmailServerConfigurationInterface(EmailServerConfiguration(hashMap) as EmailServerConfigurationInterface)
+logUtil!.put(commonStrings!.START, this, "ContextConfiguration(HashMap)")
+this.this.setEmailServerConfigurationInterface(EmailServerConfiguration(hashMap) as EmailServerConfigurationInterface)
 }
 
 

@@ -82,7 +82,7 @@ this.itemInterface= itemView!.getItemInterface()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public insert(): string{
 
@@ -97,18 +97,17 @@ this.itemInterface= itemView!.getItemInterface()
         
         
 
-insert(values)
+InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.insert(values)
 
     var success: string = "Successfully Added Product";
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "insert()")
+                                    logUtil!.put(success, this, "insert()")
 
                                     }
                                 
@@ -126,11 +125,10 @@ insert(values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "insert()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insert()", e)
 
                                     }
                                 
@@ -158,28 +156,27 @@ insert(values)
         
         
 
-deleteWhere(BasicItemData.ID, id)
+InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.deleteWhere(BasicItemData.ID, id)
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
 
-append("Successfully Removed the item with ")
-append(BasicItemData.ID)
-append("=")
-append(id)
-append(" from to the Inventory table")
+stringBuffer!.append("Successfully Removed the item with ")
+stringBuffer!.append(BasicItemData.ID)
+stringBuffer!.append("=")
+stringBuffer!.append(id)
+stringBuffer!.append(" from to the Inventory table")
 
     var success: string = stringBuffer!.toString()!;
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "doStartTag()")
+                                    logUtil!.put(success, this, "doStartTag()")
 
                                     }
                                 
@@ -197,11 +194,10 @@ append(" from to the Inventory table")
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "doStartTag()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "doStartTag()", e)
 
                                     }
                                 
@@ -219,19 +215,18 @@ append(" from to the Inventory table")
     public update(): string{
 
         try {
-            this.delete()
-this.insert()
+            this.this.delete()
+this.this.insert()
 
     var success: string = "Item Successfully Updated";
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "update()")
+                                    logUtil!.put(success, this, "update()")
 
                                     }
                                 
@@ -249,11 +244,10 @@ this.insert()
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
 
                                     }
                                 

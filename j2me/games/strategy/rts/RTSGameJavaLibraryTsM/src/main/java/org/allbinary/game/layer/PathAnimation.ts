@@ -79,7 +79,7 @@ this.linePathAnimation= linePathAnimation
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -87,7 +87,7 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public nextFrame(){
 }
@@ -117,7 +117,6 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager
         
 
 
-    
                         if(waypointBehaviorBase != 
                                     null
                                 )
@@ -139,7 +138,6 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager
         
 
 
-    
                         if(size > 0)
                         
                                     {
@@ -185,28 +183,26 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager
 index < size -1; index++)
         {
 
-    
                         if(index == start)
                         
                                     {
-                                    this.setBasicColorP(this.startColor)
-setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
+                                    this.this.setBasicColorP(this.startColor)
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
 
                                     }
                                 
                              else 
-    
                         if(geographicMapCellHistory!.isVisited(geographicMapCellPosition))
                         
                                     {
-                                    this.setBasicColorP(this.endColor)
-setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
+                                    this.this.setBasicColorP(this.endColor)
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
 
                                     }
                                 
                         else {
-                            this.setBasicColorP(this.middleColor)
-setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
+                            this.this.setBasicColorP(this.middleColor)
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
 
                         }
                             
@@ -214,7 +210,7 @@ geographicMapCellPosition= list.get(index) as GeographicMapCellPosition
 point= geographicMapCellPosition!.getMidPoint()
 geographicMapCellPosition= list.get(index +1) as GeographicMapCellPosition
 nextPoint= geographicMapCellPosition!.getMidPoint()
-paint(graphics, point, nextPoint, tiledLayer)
+this.linePathAnimation!.paint(graphics, point, nextPoint, tiledLayer)
 }
 
 
@@ -225,7 +221,7 @@ paint(graphics, point, nextPoint, tiledLayer)
                                 
 } catch(e: Exception)
             {
-put("Cleared Target", this, "paint")
+logUtil!.put("Cleared Target", this, "paint")
 }
 
 }

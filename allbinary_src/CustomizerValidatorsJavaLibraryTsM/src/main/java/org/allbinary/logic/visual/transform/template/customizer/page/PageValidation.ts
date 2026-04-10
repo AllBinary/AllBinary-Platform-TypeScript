@@ -83,7 +83,7 @@ public constructor (hashMap: HashMap<Any, Any>){
 
             super();
             var hashMap = hashMap
-this.getFormData(hashMap)
+this.this.getFormData(hashMap)
 }
 
 
@@ -102,16 +102,14 @@ this.title= TitleValidation(hashMap)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("PageValidation", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("PageValidation", this, commonStrings!.IS_VALID)
 
                                     }
                                 
 
-    
                         if(!this.title.isValid())
                         
                                     {
@@ -120,11 +118,10 @@ this.title= TitleValidation(hashMap)
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("PageValidation: " +valid, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("PageValidation: " +valid, this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -137,11 +134,10 @@ this.title= TitleValidation(hashMap)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -165,11 +161,10 @@ this.title= TitleValidation(hashMap)
         
 
 
-    
                         if(!this.title.isValid())
                         
                                     {
-                                    append(this.title.validationInfo())
+                                    stringBuffer!.append(this.title.validationInfo())
 
                                     }
                                 
@@ -182,11 +177,10 @@ this.title= TitleValidation(hashMap)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 
@@ -222,7 +216,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -231,7 +225,7 @@ var document = document
         
         
 
-appendChild(this.title.toXmlNode(document))
+node.appendChild(this.title.toXmlNode(document))
 
 
 

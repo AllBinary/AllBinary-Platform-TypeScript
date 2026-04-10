@@ -107,13 +107,12 @@ var httpServletRequest = httpServletRequest
 
 this.session= request.getSession(true)
 
-    
                         if(this.getStoreName() == 
                                     null
                                 )
                         
                                     {
-                                    this.setStoreName(propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as String)
+                                    this.this.setStoreName(propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as String)
 
                                     }
                                 
@@ -132,48 +131,48 @@ this.session= request.getSession(true)
 
     public setPassword(password: string){
 var password = password
-setAttribute(UserData.PASSWORD, password)
+session.setAttribute(UserData.PASSWORD, password)
 }
 
 
     public setUserName(userName: string){
 var userName = userName
-setAttribute(UserData.USERNAME, userName)
+session.setAttribute(UserData.USERNAME, userName)
 }
 
 
     public setPaymentMethod(value: string){
 var value = value
-setAttribute(PaymentGatewayData.NAME.toString(), value)
+session.setAttribute(PaymentGatewayData.NAME.toString(), value)
 }
 
 
     public setAuthenticated(){
-setAttribute(WeblisketSessionData.AUTHENTICATED, BooleanFactory.getInstance()!.TRUE_STRING)
+session.setAttribute(WeblisketSessionData.AUTHENTICATED, BooleanFactory.getInstance()!.TRUE_STRING)
 }
 
 
     public setRole(aRole: UserRole){
 var aRole = aRole
-setAttribute(UserRoleData.NAME.toString(), aRole)
+session.setAttribute(UserRoleData.NAME.toString(), aRole)
 }
 
 
     public setAttempts(value: Integer){
 var value = value
-setAttribute(WeblisketSessionData.ATTEMPTS, value)
+session.setAttribute(WeblisketSessionData.ATTEMPTS, value)
 }
 
 
     public setTimeout(value: string){
 var value = value
-setAttribute(WeblisketSessionData.TIMEOUT, value)
+this.session.setAttribute(WeblisketSessionData.TIMEOUT, value)
 }
 
 
     public setStoreName(value: string){
 var value = value
-setAttribute(StoreFrontData.getInstance()!.NAME, value)
+this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value)
 }
 
 
@@ -257,7 +256,7 @@ setAttribute(StoreFrontData.getInstance()!.NAME, value)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getRole(): UserRole{
 
@@ -266,7 +265,6 @@ setAttribute(StoreFrontData.getInstance()!.NAME, value)
         
 
 
-    
                         if(userRole != 
                                     null
                                 )
@@ -294,7 +292,7 @@ setAttribute(StoreFrontData.getInstance()!.NAME, value)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getOrder(): OrderInterface{
 
@@ -308,7 +306,6 @@ setAttribute(StoreFrontData.getInstance()!.NAME, value)
         
 
 
-    
                         if(!StringValidationUtil.getInstance()!.isEmpty(basketName))
                         
                                     {
@@ -318,7 +315,6 @@ setAttribute(StoreFrontData.getInstance()!.NAME, value)
         
 
 
-    
                         if(orderInterface == 
                                     null
                                 )
@@ -328,7 +324,7 @@ setAttribute(StoreFrontData.getInstance()!.NAME, value)
 
                                     }
                                 
-setAttribute(basketName, orderInterface)
+session.setAttribute(basketName, orderInterface)
 
 
 
@@ -342,7 +338,7 @@ setAttribute(basketName, orderInterface)
                             
 
 
-                            throw Exception("Basket Name Not Found")
+                            throw Error("Basket Name Not Found")
 
                         }
                             
@@ -351,15 +347,15 @@ setAttribute(basketName, orderInterface)
 
     public setAuthenticated(value: boolean){
 var value = value
-setAttribute(WeblisketSessionData.AUTHENTICATED, BooleanFactory.getInstance()!.FALSE_STRING)
+session.setAttribute(WeblisketSessionData.AUTHENTICATED, BooleanFactory.getInstance()!.FALSE_STRING)
 }
 
 
     public clear(){
-removeAttribute(WeblisketSessionData.AUTHENTICATED)
-removeAttribute(WeblisketSessionData.TIMEOUT)
-removeAttribute(UserRoleData.NAME.toString())
-removeAttribute(UserData.USERNAME)
+this.session.removeAttribute(WeblisketSessionData.AUTHENTICATED)
+this.session.removeAttribute(WeblisketSessionData.TIMEOUT)
+this.session.removeAttribute(UserRoleData.NAME.toString())
+this.session.removeAttribute(UserData.USERNAME)
 }
 
 
@@ -395,11 +391,10 @@ removeAttribute(UserData.USERNAME)
         
 
 
-    
                         if(!StringValidationUtil.getInstance()!.isEmpty(basketName))
                         
                                     {
-                                    removeAttribute(basketName)
+                                    session.removeAttribute(basketName)
 
                                     }
                                 

@@ -65,7 +65,6 @@ this.includesString= includesString
     public visit(file: AbFile): Boolean{
 var file = file
 
-    
                         if(file.isDirectory())
                         
                                     {
@@ -79,7 +78,6 @@ var file = file
                                     }
                                 
 
-    
                         if(this.includesString == 
                                     null
                                  || file.getAbsolutePath()!.indexOf(this.includesString) >= 0)

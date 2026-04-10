@@ -102,7 +102,7 @@ this.options= Vector()
 
     public addOption(key: string){
 var key = key
-add(key)
+this.options.add(key)
 }
 
 
@@ -123,12 +123,12 @@ var fileName = fileName
         
         
 
-this.addOption(option)
+this.this.addOption(option)
 }
 
 } catch(e: Exception)
             {
-this.addOption("Error")
+this.this.addOption("Error")
 }
 
 }
@@ -194,7 +194,6 @@ i < optionsSize; i++)
         
 
 
-    
                         if(value != 
                                     null
                                  && value.compareTo(stringUtil!.EMPTY_STRING) != 0)
@@ -269,7 +268,6 @@ i < attributeSize; i++)
         
 
 
-    
                         if(value != 
                                     null
                                  && value.compareTo(stringUtil!.EMPTY_STRING) != 0)
@@ -285,7 +283,6 @@ result += "\" "
 }
 
 
-    
                         if(this.isMultiple())
                         result += " " +multiple +" "
 result += END

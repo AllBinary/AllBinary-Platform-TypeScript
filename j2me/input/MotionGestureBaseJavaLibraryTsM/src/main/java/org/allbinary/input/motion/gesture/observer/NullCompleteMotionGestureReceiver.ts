@@ -45,11 +45,11 @@ public constructor (){
         
         
 
-put("Null Gesture Reciever", this, commonStrings!.CONSTRUCTOR)
+logUtil!.put("Null Gesture Reciever", this, commonStrings!.CONSTRUCTOR)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onMotionGestureCompleted(list: BasicArrayList){
 var list = list

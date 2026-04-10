@@ -109,26 +109,24 @@ public constructor (commandListener: CommandListener, childNameList: BasicArrayL
 
                             //For kotlin this is before the body of the constructor.
                     
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("delay: ")!.appendint(this.loopTimeHelper!.delay)!.toString(), this, this.commonStrings!.CONSTRUCTOR)
 this.runnableCanvasRefreshHelper= RunnableCanvasRefreshHelper(this)
 
-    
                         if(commandListener != 
                                     null
                                 )
                         
                                     {
-                                    this.initCommands(commandListener)
+                                    this.this.initCommands(commandListener)
 
                                     }
                                 
                              else 
-    
                         if(hasParam)
                         
                                     {
-                                    put("commandListener was null", this, "initCommands")
+                                    logUtil!.put("commandListener was null", this, "initCommands")
 
                                     }
                                 
@@ -161,13 +159,12 @@ public constructor ()
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-put(commonStrings!.NOT_IMPLEMENTED, this, "initCommands")
+logUtil!.put(commonStrings!.NOT_IMPLEMENTED, this, "initCommands")
 }
 
 
     public isMainCanvas(): boolean{
 
-    
                         if(this.getCustomCommandListener() != 
                                     null
                                 )
@@ -205,7 +202,6 @@ this.thread= thread
 var running = running
 this.running= running
 
-    
                         if(!this.running)
                         
                                     {
@@ -217,13 +213,13 @@ this.running= running
 
         //mutex.withLock
         {
-notifyObject(this)
+threadObjectUtil!.notifyObject(this)
 }
 
 
                                     }
                                 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(IS_RUNNING)!.appendboolean(this.running)!.toString(), this, SET_RUNNING)
 }
 
@@ -247,7 +243,6 @@ put(StringMaker().
 
     public isRunning(): boolean{
 
-    
                         if(this.thread == this.currentThread)
                         
                                     {
@@ -266,31 +261,29 @@ put(StringMaker().
         
         
 
-append(THREAD)
+stringBuffer!.append(THREAD)
 
-    
                         if(this.thread != 
                                     null
                                 )
                         
                                     {
-                                    append(this.thread.toString())
+                                    stringBuffer!.append(this.thread.toString())
 
                                     }
                                 
-append(NOT_EQUAL)
+stringBuffer!.append(NOT_EQUAL)
 
-    
                         if(this.currentThread != 
                                     null
                                 )
                         
                                     {
-                                    append(StringUtil.getInstance()!.toString(this.currentThread))
+                                    stringBuffer!.append(StringUtil.getInstance()!.toString(this.currentThread))
 
                                     }
                                 
-put(stringBuffer!.toString(), this, IS_RUNNING)
+logUtil!.put(stringBuffer!.toString(), this, IS_RUNNING)
 
 
 
@@ -321,7 +314,7 @@ put(stringBuffer!.toString(), this, IS_RUNNING)
 var wait = wait
 loopTimeHelper!.delay= wait
 this.pauseWait= wait.toLong() *3
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("setWait - delay: ")!.appendint(this.loopTimeHelper!.delay)!.toString(), this, this.commonStrings!.CONSTRUCTOR)
 }
 
@@ -349,10 +342,10 @@ this.currentThread= thread
     showNotify(){
 
         try {
-            this.stopWaiting()
+            this.this.stopWaiting()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "showNotify", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "showNotify", e)
 }
 
 }
@@ -362,7 +355,7 @@ put(commonStrings!.EXCEPTION, this, "showNotify", e)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     stopWaiting(){
 this.notified= true
@@ -373,34 +366,32 @@ this.notified= true
 
         //mutex.withLock
         {
-notifyObject(this)
+this.threadObjectUtil!.notifyObject(this)
 }
 
-this.repaint()
+this.this.repaint()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public waitOnNotify(wait: number){
 var wait = wait
 
-    
                         if(!this.notified)
                         
                                     {
                                     
-    
                         if(wait > 0)
                         
                                     {
-                                    waitObject(this, wait.toLong())
+                                    threadObjectUtil!.waitObject(this, wait.toLong())
 
                                     }
                                 
                         else {
-                            waitObject(this)
+                            threadObjectUtil!.waitObject(this)
 
                         }
                             
@@ -414,10 +405,10 @@ var wait = wait
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processSleep(){
-sleep(pauseWait)
+Thread.sleep(pauseWait)
 }
 
 
@@ -431,11 +422,11 @@ sleep(pauseWait)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processGameSleep(sleep: number){
 var sleep = sleep
-sleep(sleep)
+Thread.sleep(sleep)
 }
 
 
@@ -451,12 +442,11 @@ sleep(sleep)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processLoopSleep(){
-process()
+this.runnableCanvasRefreshHelper!.process()
 
-    
                         if(this.isPaused() && this.isRunning() && !this.isSingleThread())
                         
                                     {
@@ -465,18 +455,17 @@ process()
         
         
 
-put(stringMaker!.append(START_PAUSE)!.appendlong(System.currentTimeMillis())!.append(PAUSE_SLEEP)!.appendlong(this.pauseWait)!.toString(), this, PROCESS_LOOP_SLEEP)
+logUtil!.put(stringMaker!.append(START_PAUSE)!.appendlong(System.currentTimeMillis())!.append(PAUSE_SLEEP)!.appendlong(this.pauseWait)!.toString(), this, PROCESS_LOOP_SLEEP)
 
         while(this.isPaused() && this.isRunning() && !this.isSingleThread())
         {
-this.processSleep()
+this.this.processSleep()
 
-    
                         if(!this.isPausable())
                         
                                     {
-                                    delete(0, stringMaker!.length())
-put(stringMaker!.append(END_PAUSE)!.appendlong(System.currentTimeMillis())!.toString(), this, PROCESS_LOOP_SLEEP)
+                                    stringMaker!.delete(0, stringMaker!.length())
+logUtil!.put(stringMaker!.append(END_PAUSE)!.appendlong(System.currentTimeMillis())!.toString(), this, PROCESS_LOOP_SLEEP)
 
 
 
@@ -502,7 +491,6 @@ put(stringMaker!.append(END_PAUSE)!.appendlong(System.currentTimeMillis())!.toSt
         
 
 
-    
                         if(elapsedTime > wait)
                         
                                     {
@@ -529,11 +517,11 @@ put(stringMaker!.append(END_PAUSE)!.appendlong(System.currentTimeMillis())!.toSt
 
 
     public run(){
-this.setCurrentThread()
+this.this.setCurrentThread()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public end2(){
 }

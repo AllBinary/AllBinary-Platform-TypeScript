@@ -76,7 +76,7 @@ private constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-init(this.inputProcessorArray)
+GameInputProcessorUtil.init(this.inputProcessorArray)
 }
 
 
@@ -99,12 +99,12 @@ this.paintable= testInputInterface
 this.inputProcessorArray[Canvas.UP]= object: GameInputProcessor()
                                 {
                                 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
-up()
+testInputInterface!.up()
 }
 
                                 }
@@ -112,12 +112,12 @@ up()
 this.inputProcessorArray[Canvas.DOWN]= object: GameInputProcessor()
                                 {
                                 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
-down()
+testInputInterface!.down()
 }
 
                                 }
@@ -125,12 +125,12 @@ down()
 this.inputProcessorArray[Canvas.LEFT]= object: GameInputProcessor()
                                 {
                                 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
-left()
+testInputInterface!.left()
 }
 
                                 }
@@ -138,12 +138,12 @@ left()
 this.inputProcessorArray[Canvas.RIGHT]= object: GameInputProcessor()
                                 {
                                 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
-right()
+testInputInterface!.right()
 }
 
                                 }
@@ -151,12 +151,12 @@ right()
 this.inputProcessorArray[Canvas.KEY_NUM7]= object: GameInputProcessor()
                                 {
                                 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
-strafeLeft()
+testInputInterface!.strafeLeft()
 }
 
                                 }
@@ -164,21 +164,21 @@ strafeLeft()
 this.inputProcessorArray[Canvas.KEY_NUM9]= object: GameInputProcessor()
                                 {
                                 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
-strafeRight()
+testInputInterface!.strafeRight()
 }
 
                                 }
                             
-init(this.inputProcessorArray)
+GameInputProcessorUtil.init(this.inputProcessorArray)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public processInput(allbinaryLayerManager: AllBinaryLayerManager, list: BasicArrayList){
@@ -209,25 +209,25 @@ index < size; index++)
         {
 gameKeyEvent= (list.objectArray[index]! as GameKeyEvent)
 key= gameKeyEvent!.getKey()
-process(allbinaryLayerManager, GameKeyEvent.NONE)
+inputProcessorArray[key]!.process(allbinaryLayerManager, GameKeyEvent.NONE)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public processInput(allbinaryLayerManager: AllBinaryLayerManager){
 var allbinaryLayerManager = allbinaryLayerManager
-this.processInput(allbinaryLayerManager, this.getGameKeyEventList())
-clear()
+this.this.processInput(allbinaryLayerManager, this.getGameKeyEventList())
+this.getGameKeyEventList()!.clear()
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics)
+this.paintable.paint(graphics)
 }
 
 

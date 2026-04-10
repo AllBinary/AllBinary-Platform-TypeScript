@@ -26,11 +26,11 @@ interface FullScreenInterface {
 
     setFullScreenMode(mode: boolean)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     stopWaiting()
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     waitOnNotify(wait: number)
 

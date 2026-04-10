@@ -28,7 +28,7 @@ import { AbeClientInformationInterface } from "../../../../../org/allbinary/logi
 interface RemoteHighScoresProcessorInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(remoteHighScores: RemoteHighScores, abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo)
 

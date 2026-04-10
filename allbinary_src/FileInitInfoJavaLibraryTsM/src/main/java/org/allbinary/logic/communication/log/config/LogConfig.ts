@@ -219,7 +219,7 @@ this.fileName= value
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getDoc(): Document{
 
@@ -227,9 +227,9 @@ this.fileName= value
         
         
 
-append(URLGLOBALS.getWebappPath())
-append(PATH_GLOBALS.getInstance()!.INIT_PATH)
-append(this.getFileName())
+stringBuffer!.append(URLGLOBALS.getWebappPath())
+stringBuffer!.append(PATH_GLOBALS.getInstance()!.INIT_PATH)
+stringBuffer!.append(this.getFileName())
 
     var file: AbFile = new AbFile(stringBuffer!.toString());
         
@@ -249,7 +249,7 @@ append(this.getFileName())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getTypeVector(): BasicArrayList{
 
@@ -302,7 +302,7 @@ i < size; i++)
         
         
 
-add(logType)
+logKeyVector!.add(logType)
 }
 
 

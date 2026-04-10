@@ -67,28 +67,26 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("View Name: " +transformInfoInterface!.getName(), this, "RootContextView()")
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "RootContextView()")
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("View Name: " +this.getTransformInfoInterface()!.getName(), this, "view()")
+                                    logUtil!.put("View Name: " +this.getTransformInfoInterface()!.getName(), this, "view()")
 
                                     }
                                 
@@ -111,11 +109,10 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 
@@ -128,7 +125,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getName(): string{
 
@@ -144,26 +141,24 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
 
 
-    
                         if(componentsVector!.length == 0)
                         
                                     {
                                     
 
 
-                            throw Exception("Template View Not Set - No Components")
+                            throw Error("Template View Not Set - No Components")
 
                                     }
                                 
 
-    
                         if(componentsVector!.length > 1)
                         
                                     {
                                     
 
 
-                            throw Exception("To Many Root Template Views: " +componentsVector!.length)
+                            throw Error("To Many Root Template Views: " +componentsVector!.length)
 
                                     }
                                 
@@ -178,23 +173,21 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Root Template With View Name: " +viewName, this, "getName()")
+                                    logUtil!.put("Root Template With View Name: " +viewName, this, "getName()")
 
                                     }
                                 
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(viewName))
                         
                                     {
                                     
 
 
-                            throw Exception("Template View Not Set - No View Name")
+                            throw Error("Template View Not Set - No View Name")
 
                                     }
                                 
@@ -207,11 +200,10 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getName()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getName()", e)
 
                                     }
                                 

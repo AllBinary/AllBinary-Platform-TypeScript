@@ -55,8 +55,8 @@ export class NullGameCanvas extends AllBinaryGameCanvas {
         
         
 
-setInitialized(true)
-setTitle(NO_GAME)
+nullGameCanvas!.setInitialized(true)
+nullGameCanvas!.setTitle(NO_GAME)
 
 
 
@@ -83,13 +83,13 @@ protected constructor (gameLayerManager: AllBinaryGameLayerManager)
 
                             //For kotlin this is before the body of the constructor.
                     
-setWait(1200)
+super.setWait(1200)
 }
 
 private constructor (){
 
             super();
-            setWait(1200)
+            super.setWait(1200)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -127,24 +127,24 @@ this.running= running
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pause(){
-this.setPaused(true)
+this.this.setPaused(true)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public unPause(){
-this.setPaused(false)
+this.this.setPaused(false)
 }
 
 
     public initCommands(cmdListener: CommandListener){
     //var cmdListener = cmdListener
-this.removeAllCommands()
-this.setCommandListener(cmdListener)
+this.this.removeAllCommands()
+this.this.setCommandListener(cmdListener)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public buildGame(isProgress: boolean){
     //var isProgress = isProgress
@@ -159,11 +159,11 @@ this.setCommandListener(cmdListener)
     public run(){
 
         try {
-            put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN)
-put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN)
+            logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN)
+logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }

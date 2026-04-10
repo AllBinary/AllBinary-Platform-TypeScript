@@ -40,7 +40,7 @@ export class BasicFileFilterUtil
         
         
 
-add(extension)
+vector.add(extension)
 
     var includeFileExtensionsBooleanFileVisitor: IncludeFileExtensionsBooleanFileVisitor = new IncludeFileExtensionsBooleanFileVisitor(vector);
         

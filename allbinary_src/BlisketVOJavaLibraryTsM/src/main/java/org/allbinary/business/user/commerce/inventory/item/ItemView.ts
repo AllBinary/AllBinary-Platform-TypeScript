@@ -61,7 +61,7 @@ this.vector= vector
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -85,7 +85,7 @@ var document = document
         
         
 
-appendChild(basicItemView!.toXmlNode(document))
+node.appendChild(basicItemView!.toXmlNode(document))
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
@@ -123,7 +123,7 @@ index < size; index++)
         
 
 value= stringUtil!.getInstance(value)
-appendChild(ModDomHelper.createNameValueNodes(document, name, value))
+node.appendChild(ModDomHelper.createNameValueNodes(document, name, value))
 }
 
 
@@ -131,7 +131,7 @@ appendChild(ModDomHelper.createNameValueNodes(document, name, value))
         
         
 
-appendChild(this.itemInterface!.getShippingAddress()!.toXmlNode(document))
+shippingAddressNode!.appendChild(this.itemInterface!.getShippingAddress()!.toXmlNode(document))
 
 
 

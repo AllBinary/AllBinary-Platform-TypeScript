@@ -73,7 +73,7 @@ export class AdminConfiguration
 public constructor (){
 
             super();
-            put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 this.contextConfigurationInterface= ContextConfigurationInterfaceFactory.getInstance()!.getInstance(AdminConfigurationData.CONTEXTNAME)
 }
 
@@ -81,8 +81,8 @@ public constructor (request: HttpServletRequest){
 
             super();
             var request = request
-put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-this.getFormData(RequestParams(request).
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+this.this.getFormData(RequestParams(request).
                             toHashMap())
 }
 
@@ -90,21 +90,21 @@ public constructor (storeHashMap: HashMap<Any, Any>){
 
             super();
             var storeHashMap = storeHashMap
-put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-this.getFormData(storeHashMap)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+this.this.getFormData(storeHashMap)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getFormData(storeHashMap: HashMap<Any, Any>){
 var storeHashMap = storeHashMap
-put(commonStrings!.START, this, "getFormData")
-this.setContextConfigurationInterface(ContextConfiguration(storeHashMap) as ContextConfigurationInterface)
+logUtil!.put(commonStrings!.START, this, "getFormData")
+this.this.setContextConfigurationInterface(ContextConfiguration(storeHashMap) as ContextConfigurationInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public write(){
@@ -118,7 +118,7 @@ this.setContextConfigurationInterface(ContextConfiguration(storeHashMap) as Cont
         
         
 
-write(ContextConfigurationPathUtil.getAbPath(AdminConfigurationData.CONTEXTNAME), contextConfigurationDomDocumentMapping!.toXmlDoc())
+cryptFileWriter!.write(ContextConfigurationPathUtil.getAbPath(AdminConfigurationData.CONTEXTNAME), contextConfigurationDomDocumentMapping!.toXmlDoc())
 }
 
 

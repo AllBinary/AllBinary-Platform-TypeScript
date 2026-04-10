@@ -23,7 +23,6 @@ export class BasicHighScoresFactory extends HighScoresBase {
     public static loaded(index2: number): boolean{
     //var index2 = index2
 
-    
                         if(index2 >= 0)
                         
                                     {
@@ -82,8 +81,8 @@ this.abeClientInformation= abeClientInformation
     public fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener){
     //var gameInfo = gameInfo
     //var highScoresResultsListener = highScoresResultsListener
-put("Getting Local HighScores", this, FETCH)
-this.fetchHighScores(gameInfo, highScoresResultsListener, true)
+logUtil!.put("Getting Local HighScores", this, FETCH)
+this.this.fetchHighScores(gameInfo, highScoresResultsListener, true)
 }
 
 
@@ -94,10 +93,10 @@ this.fetchHighScores(gameInfo, highScoresResultsListener, true)
 
         try {
             highScoresArray[0]= RecordStoreHighScores.getInstance(abeClientInformation, gameInfo, TOP, PERSONAL_HIGH_SCORES, SCORES, ScoreComparator(true))
-setHighScoresArray(highScoresArray)
+highScoresResultsListener!.setHighScoresArray(highScoresArray)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, FETCH, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, FETCH, e)
 }
 
 }

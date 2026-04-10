@@ -102,11 +102,10 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("View Name: " +transformInfoInterface!.getName(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -124,11 +123,10 @@ this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME) as Str
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Started Validation", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Started Validation", this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -138,7 +136,6 @@ this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME) as Str
         
 
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(this.viewName))
                         
                                     {
@@ -163,7 +160,6 @@ this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME) as Str
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -172,10 +168,10 @@ this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME) as Str
         
         
 
-append("Pointing ")
-appendint(componentVector!.length)
-append(" Components")
-put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+stringBuffer!.append("Pointing ")
+stringBuffer!.appendint(componentVector!.length)
+stringBuffer!.append(" Components")
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -200,11 +196,10 @@ index < size; index++)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Setting Template Component with ViewName: " +transformInfoName, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Setting Template Component with ViewName: " +transformInfoName, this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -243,7 +238,7 @@ index < size; index++)
         
         
 
-append(storePrepend)
+newViewNameStringBuffer!.append(storePrepend)
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
@@ -255,34 +250,31 @@ append(storePrepend)
         
 
 
-    
                         if(transformInfoName!.indexOf(transformInfosData!.SMALL_PREVIEW) >= 0)
                         
                                     {
-                                    append(commonSeps!.SPACE)
-append(transformInfosData!.SMALL_PREVIEW)
+                                    newViewNameStringBuffer!.append(commonSeps!.SPACE)
+newViewNameStringBuffer!.append(transformInfosData!.SMALL_PREVIEW)
 
                                     }
                                 
                              else 
-    
                         if(transformInfoName!.indexOf(transformInfosData!.PREVIEW) >= 0)
                         
                                     {
-                                    append(commonSeps!.SPACE)
-append(transformInfosData!.PREVIEW)
+                                    newViewNameStringBuffer!.append(commonSeps!.SPACE)
+newViewNameStringBuffer!.append(transformInfosData!.PREVIEW)
 
                                     }
                                 
-append(commonSeps!.SPACE)
-append(viewNamePostfix)
+newViewNameStringBuffer!.append(commonSeps!.SPACE)
+newViewNameStringBuffer!.append(viewNamePostfix)
 
-    
                         if(transformInfoName!.indexOf(GeneratorTransformInfoData.NAME) >= 0)
                         
                                     {
-                                    append(commonSeps!.SPACE)
-append(GeneratorTransformInfoData.NAME)
+                                    newViewNameStringBuffer!.append(commonSeps!.SPACE)
+newViewNameStringBuffer!.append(GeneratorTransformInfoData.NAME)
 
                                     }
                                 
@@ -292,7 +284,6 @@ append(GeneratorTransformInfoData.NAME)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -301,17 +292,16 @@ append(GeneratorTransformInfoData.NAME)
         
         
 
-append("Template Component: ")
-append(transformInfoName)
-append("\n Now Pointing To View Name: ")
-append(newViewName)
-put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+stringBuffer!.append("Template Component: ")
+stringBuffer!.append(transformInfoName)
+stringBuffer!.append("\n Now Pointing To View Name: ")
+stringBuffer!.append(newViewName)
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
 
                                     }
                                 
-set(newViewName)
+templateViewObjectConfig!.set(newViewName)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -320,21 +310,21 @@ set(newViewName)
         
         
 
-append("Template Component: ")
-append(transformInfoName)
-append("\n with ObjectConfig: ")
-append(templateViewObjectConfig!.toString())
-put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+stringBuffer!.append("Template Component: ")
+stringBuffer!.append(transformInfoName)
+stringBuffer!.append("\n with ObjectConfig: ")
+stringBuffer!.append(templateViewObjectConfig!.toString())
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
 
                                     }
                                 
-setObjectConfigInterface(templateViewObjectConfig)
+componentInterface!.getTransformInfoInterface()!.setObjectConfigInterface(templateViewObjectConfig)
 
     var updatedTransformInfoHashMap: HashMap<Any, Any> = componentInterface!.getTransformInfoInterface()!.toHashMap()!;
         
         
 
-update(updatedTransformInfoHashMap)
+TransformInfoEntityBuilder.getInstance()!.update(updatedTransformInfoHashMap)
 }
 
 
@@ -349,11 +339,10 @@ update(updatedTransformInfoHashMap)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -376,7 +365,7 @@ update(updatedTransformInfoHashMap)
         
         
 
-append("Error: Template Name Is Empty.")
+stringBuffer!.append("Error: Template Name Is Empty.")
 
 
 
@@ -386,11 +375,10 @@ append("Error: Template Name Is Empty.")
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 
@@ -426,7 +414,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 

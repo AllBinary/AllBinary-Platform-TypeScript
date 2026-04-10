@@ -110,7 +110,6 @@ var deviceId = deviceId
     var index: number= 0
 
 
-    
                         if(deviceId < MAX_FAST_DEVICEID)
                         
                                     {
@@ -120,7 +119,6 @@ var deviceId = deviceId
         
 
 
-    
                         if(playerInputId !=  -1)
                         
                                     {
@@ -145,7 +143,6 @@ var deviceId = deviceId
     index >= 0; index--)
         {
 
-    
                         if(this.playerIdToDeviceId[index] == deviceId)
                         
                                     {
@@ -165,7 +162,6 @@ var deviceId = deviceId
                             
 index= totalDevicesMapped
 
-    
                         if(deviceId < MAX_FAST_DEVICEID)
                         
                                     {
@@ -174,15 +170,15 @@ index= totalDevicesMapped
                                     }
                                 
                         else {
-                            put(StringMaker().
+                            logUtil!.put(StringMaker().
                             append("Added DeviceId: ")!.appendint(deviceId)!.append(" beyond fast Id list")!.toString(), this, "getPlayerForDevice")
 
                         }
                             
 this.playerIdToDeviceId[index]= deviceId
-addPlayer(totalDevicesMapped)
+AnalogLocationInputFactory.getInstance()!.addPlayer(totalDevicesMapped)
 totalDevicesMapped++
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Added DeviceId: ")!.appendint(deviceId)!.append(" at: ")!.appendint(index)!.append(" Total: ")!.appendint(this.totalDevicesMapped)!.toString(), this, "getPlayerForDevice")
 
 
@@ -210,7 +206,6 @@ put(StringMaker().
 index >= 0; index--)
         {
 
-    
                         if(this.playersInPlay[index] == true)
                         
                                     {
@@ -242,7 +237,7 @@ var playerInputId = playerInputId
 
     public setPlayerInPlay(playerInputId: number){
 var playerInputId = playerInputId
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Setting PlayerInPlay with playerInputId: ")!.appendint(playerInputId)!.toString(), this, "setPlayerInPlay")
 playersInPlay[playerInputId]= true
 }
@@ -250,7 +245,7 @@ playersInPlay[playerInputId]= true
 
     public setPlayerOutOfPlay(playerInputId: number){
 var playerInputId = playerInputId
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Setting PlayerOutOfPlay with playerInputId: ")!.appendint(playerInputId)!.toString(), this, "setPlayerOutOfPlay")
 playersInPlay[playerInputId]= false
 }

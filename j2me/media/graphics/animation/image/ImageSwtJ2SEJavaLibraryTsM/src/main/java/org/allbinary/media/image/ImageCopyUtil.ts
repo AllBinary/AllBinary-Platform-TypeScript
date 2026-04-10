@@ -129,12 +129,11 @@ private constructor (){
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImageForRotation(originalImage: Image): Image{
     //var originalImage = originalImage
 
-    
                         if(features.isFeature(openGLFeatureFactory!.OPENGL))
                         
                                     {
@@ -166,16 +165,15 @@ image= openGLUtil!.add(image)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage(originalImage: Image): Image{
     //var originalImage = originalImage
 
-    
                         if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
                                     {
-                                    put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
 
 
 
@@ -191,12 +189,10 @@ image= openGLUtil!.add(image)
         
 
 
-    
                         if(features.isFeature(openGLFeatureFactory!.OPENGL))
                         
                                     {
                                     
-    
                         if(originalImage!.getType() >= OpenGLESImage.TYPE)
                         
                                     {
@@ -220,7 +216,6 @@ originalImage2= openGLESImage!.openGLBitmap!.getImage()
         
 
 
-    
                         if(originalImage2!.isMutable())
                         
                                     {
@@ -253,7 +248,7 @@ image= openGLUtil!.add(image)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage(originalImage: Image, width: number, height: number): Image{
     //var originalImage = originalImage
@@ -268,7 +263,7 @@ image= openGLUtil!.add(image)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage(originalImage: Image, width: number, height: number, mutable: boolean): Image{
     //var originalImage = originalImage
@@ -281,11 +276,10 @@ image= openGLUtil!.add(image)
         
 
 
-    
                         if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
                                     {
-                                    put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
 
 
 
@@ -296,12 +290,10 @@ image= openGLUtil!.add(image)
                                     }
                                 
 
-    
                         if(features.isFeature(openGLFeatureFactory!.OPENGL))
                         
                                     {
                                     
-    
                         if(openGLESImageExclusionUtil!.isCustomScaling(originalImage))
                         
                                     {
@@ -315,7 +307,6 @@ image= openGLUtil!.add(image)
                                     }
                                 
 
-    
                         if(originalImage!.getType() >= OpenGLESImage.TYPE)
                         
                                     {
@@ -339,7 +330,6 @@ originalImage2= openGLESImage!.openGLBitmap!.getImage()
         
 
 
-    
                         if(originalImage2!.isMutable() && mutable)
                         
                                     {
@@ -349,7 +339,6 @@ originalImage2= openGLESImage!.openGLBitmap!.getImage()
         
 
 
-    
                         if(originalMutableImage!.getImage() != 
                                     null
                                 )
@@ -384,7 +373,6 @@ image= SwtMutableImage(SwtDeviceComponent.createImage(imageData))
         
 
 
-    
                         if(originalImmutableImage!.getImage() != 
                                     null
                                 )
@@ -430,7 +418,7 @@ image= openGLUtil!.add(image)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage2(originalImage: Image, width: number, height: number, mutable: boolean): Image{
     //var originalImage = originalImage
@@ -443,11 +431,10 @@ image= openGLUtil!.add(image)
         
 
 
-    
                         if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
                                     {
-                                    put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
 
 
 
@@ -465,7 +452,6 @@ image= openGLUtil!.add(image)
         
 
 
-    
                         if(features.isFeature(openGLFeatureFactory!.OPENGL))
                         
                                     {
@@ -475,7 +461,6 @@ image= openGLUtil!.add(image)
         
 
 
-    
                         if(originalImage!.getType() >= OpenGLESImage.TYPE)
                         
                                     {
@@ -504,7 +489,6 @@ openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY2= ((height.toFl
 openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX *0.75f
 openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.75f
 
-    
                         if(originalImage!.getHeight() % 2 != 0)
                         
                                     {
@@ -532,7 +516,6 @@ image= openGLESImage
 openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX2= ((width.toFloat()) /openGLESImage!.getWidth()).toFloat()
 openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY2= ((height.toFloat()) /openGLESImage!.getHeight()).toFloat()
 
-    
                         if(image.getName()!.startsWith(INFORMATION))
                         
                                     {
@@ -553,7 +536,6 @@ openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.25f
                             openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX *0.75f
 openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.75f
 
-    
                         if(image.getName()!.startsWith(LEADERBOARD))
                         
                                     {
@@ -568,7 +550,6 @@ openGLESDeviceImageTranslate!.translateX=  -displayInfoSingleton!.getLastWidth()
                                     }
                                 
 
-    
                         if(image.getName()!.startsWith(LEADERBOARD))
                         
                                     {
@@ -593,7 +574,6 @@ image= openGLESImage
                                 
                         else {
                             
-    
                         if(originalImage2!.isMutable() && mutable)
                         
                                     {
@@ -603,7 +583,6 @@ image= openGLESImage
         
 
 
-    
                         if(originalMutableImage!.getImage() != 
                                     null
                                 )
@@ -638,7 +617,6 @@ image= SwtMutableImage(SwtDeviceComponent.createImage(imageData))
         
 
 
-    
                         if(originalImmutableImage!.getImage() != 
                                     null
                                 )
@@ -679,18 +657,17 @@ image= openGLUtil!.add(image)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage(originalImage: Image, canvasScale: number, resize: boolean): Image{
     //var originalImage = originalImage
     //var canvasScale = canvasScale
     //var resize = resize
 
-    
                         if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
                                     {
-                                    put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
 
 
 
@@ -711,12 +688,10 @@ image= openGLUtil!.add(image)
         
 
 
-    
                         if(resize)
                         
                                     {
                                     
-    
                         if(newWidth < newHeight)
                         
                                     {
@@ -725,7 +700,6 @@ image= openGLUtil!.add(image)
                                     }
                                 
 
-    
                         if(newHeight < newWidth)
                         
                                     {
@@ -742,7 +716,6 @@ image= openGLUtil!.add(image)
         
 
 
-    
                         if(image.isMutable())
                         
                                     {
@@ -797,7 +770,7 @@ image= openGLUtil!.add(image)
         
 i < height; i++)
         {
-getPixels(0, i, width, originalPixelArray, (i *width))
+originalImageData!.getPixels(0, i, width, originalPixelArray, (i *width))
 }
 
 
@@ -825,7 +798,9 @@ newPixelArray[index +(index2 *width)]= originalPixelArray[(index -halfWidthDelta
 
 }
 
-setPixels(0, 0, image.getWidth(), newPixelArray, 0)
+getImage = mutableImage2!.getImage()getImage as org.eclipse.swt.graphics.Image
+getImage.
+                    getImageData()!.setPixels(0, 0, image.getWidth(), newPixelArray, 0)
 
 
 
@@ -887,7 +862,7 @@ setPixels(0, 0, image.getWidth(), newPixelArray, 0)
         
 i < height; i++)
         {
-getPixels(0, i, width, originalPixelArray, (i *width))
+originalImageData!.getPixels(0, i, width, originalPixelArray, (i *width))
 }
 
 
@@ -915,7 +890,9 @@ newPixelArray[index +(index2 *width)]= originalPixelArray[(index -halfWidthDelta
 
 }
 
-setPixels(0, 0, image.getWidth(), newPixelArray, 0)
+getImage = originalImmutableImage!.getImage()getImage as org.eclipse.swt.graphics.Image
+getImage.
+                    getImageData()!.setPixels(0, 0, image.getWidth(), newPixelArray, 0)
 
 
 

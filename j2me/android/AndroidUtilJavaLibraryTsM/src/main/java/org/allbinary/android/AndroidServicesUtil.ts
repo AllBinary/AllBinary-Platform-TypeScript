@@ -126,7 +126,6 @@ runningServiceInfo= runningServicesList!.get(index)
 serviceComponent= runningServiceInfo!.service
 serviceName= serviceComponent!.toString()
 
-    
                         if(serviceName!.indexOf(name) >= 0)
                         
                                     {
@@ -141,7 +140,7 @@ serviceName= serviceComponent!.toString()
                                 
 }
 
-put(SERVICE_NOT_FOUND_RUNNING +name, this, IS_SERVICE_RUNNING)
+logUtil!.put(SERVICE_NOT_FOUND_RUNNING +name, this, IS_SERVICE_RUNNING)
 
 
 

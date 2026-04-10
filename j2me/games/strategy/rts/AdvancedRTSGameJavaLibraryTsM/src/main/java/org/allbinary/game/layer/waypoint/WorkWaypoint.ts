@@ -65,12 +65,11 @@ public constructor (ownerLayer: PathFindingLayerInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public visit(unitLayer: UnitLayer){
     //var unitLayer = unitLayer
 
-    
                         if(unitLayer!.getGroupInterface()[0] != this.ownerLayer!.getGroupInterface()[0])
                         
                                     {
@@ -89,7 +88,6 @@ public constructor (ownerLayer: PathFindingLayerInterface)
         
 
 
-    
                         if(size > 0)
                         
                                     {
@@ -122,7 +120,6 @@ public constructor (ownerLayer: PathFindingLayerInterface)
 geologicalGeographicMapCellPosition= occupyList!.get(index) as GeologicalGeographicMapCellPosition
 geologicalResource= geologicalGeographicMapCellPosition!.getGeologicalResource()
 
-    
                         if(geologicalResource!.getTotal() >= 1)
                         
                                     {
@@ -132,8 +129,8 @@ geologicalResource= geologicalGeographicMapCellPosition!.getGeologicalResource()
         
         
 
-remove(maxResourceLoad)
-setLoad(maxResourceLoad)
+geologicalResource!.remove(maxResourceLoad)
+unitLayer!.setLoad(maxResourceLoad)
 
                                     }
                                 
@@ -145,16 +142,14 @@ setLoad(maxResourceLoad)
         
 
 
-    
                         if(this.ownerLayer == waypointInfoHudPaintable!.getRtsLayer())
                         
                                     {
-                                    updateSelectionInfo()
+                                    waypointInfoHudPaintable!.updateSelectionInfo()
 
                                     }
                                 
 
-    
                         if(!outOfResources)
                         
                                     {
@@ -171,16 +166,15 @@ setLoad(maxResourceLoad)
         {
 rtsLayer= this.getConnectedWaypointList()!.get(0) as RTSLayer
 
-    
                         if(rtsLayer!.isDestroyed())
                         
                                     {
-                                    remove(rtsLayer)
+                                    this.getConnectedWaypointList()!.remove(rtsLayer)
 
                                     }
                                 
                         else {
-                            insertWaypoint(0, rtsLayer)
+                            unitWaypointBehavior!.insertWaypoint(0, rtsLayer)
 break;
 
                     

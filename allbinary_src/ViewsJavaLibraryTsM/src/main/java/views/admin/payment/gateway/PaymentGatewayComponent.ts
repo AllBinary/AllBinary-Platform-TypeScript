@@ -66,7 +66,7 @@ this.paymentGatewayInterface= paymentGatewayInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public addDomNodeInterfaces(){
 
@@ -84,14 +84,14 @@ this.paymentGatewayInterface= paymentGatewayInterface
         
         
 
-this.addDomNodeInterface(domNodeInterface)
+this.this.addDomNodeInterface(domNodeInterface)
 }
 
 
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.this.addDomNodeInterfaces()
 
 
 
@@ -106,11 +106,10 @@ this.addDomNodeInterface(domNodeInterface)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 

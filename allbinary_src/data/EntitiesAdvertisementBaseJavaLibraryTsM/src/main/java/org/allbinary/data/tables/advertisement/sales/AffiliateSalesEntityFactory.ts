@@ -51,7 +51,6 @@ export class AffiliateSalesEntityFactory
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
@@ -60,7 +59,7 @@ export class AffiliateSalesEntityFactory
         
         
 
-put(commonStrings!.EXCEPTION, "AffiliateEntityFactory", commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, "AffiliateEntityFactory", commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 

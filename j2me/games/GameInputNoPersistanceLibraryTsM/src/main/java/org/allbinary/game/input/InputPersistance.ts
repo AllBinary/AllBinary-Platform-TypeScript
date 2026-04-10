@@ -77,7 +77,7 @@ public constructor (name: string)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public loadAll(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -111,23 +111,23 @@ public constructor (name: string)
         while(recordEnum!.hasNextElement())
         {
 id= recordEnum!.nextRecordId()
-delete(0, stringBuffer!.length())
-put(stringBuffer!.append(this.persistanceStrings!.LOADING_ID)!.appendint(id)!.toString(), this, this.persistanceStrings!.LOAD_ALL)
+stringBuffer!.delete(0, stringBuffer!.length())
+logUtil!.put(stringBuffer!.append(this.persistanceStrings!.LOADING_ID)!.appendint(id)!.toString(), this, this.persistanceStrings!.LOAD_ALL)
 hashtable= Hashtable<Any, Any>()
-add(hashtable)
-add(smallIntegerSingletonFactory!.getInstance(id))
+this.valueList!.add(hashtable)
+this.idList!.add(smallIntegerSingletonFactory!.getInstance(id))
 }
 
-closeRecordStore()
+recordStore!.closeRecordStore()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<Any, Any>){
     //var abeClientInformation = abeClientInformation
 var hashtable = hashtable
-put(StringMaker().
+PreLogUtil.put(StringMaker().
                             append(this.persistanceStrings!.NOT_SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE)
 
     var recordStore: RecordStore = RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)!;
@@ -181,7 +181,7 @@ input= list.get(index2) as Input
 
 }
 
-closeRecordStore()
+recordStore!.closeRecordStore()
 }
 
 

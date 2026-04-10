@@ -66,7 +66,7 @@ export class WeblisketFinder
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static main(args: string[]){
 var args = args
@@ -80,7 +80,7 @@ var args = args
         
         
 
-println(vector.size())
+System.out.println(vector.size())
 }
 
 
@@ -105,7 +105,7 @@ private constructor (){
 var path = path
 
         try {
-            put(this.commonStrings!.START, this, "findAll")
+            logUtil!.put(this.commonStrings!.START, this, "findAll")
 
 
 
@@ -114,13 +114,12 @@ var path = path
     
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "findAll", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "findAll", e)
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "findAll", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "findAll", e)
 
                                     }
                                 
@@ -150,7 +149,6 @@ var file = file
         
 
 
-    
                         if(end < 0)
                         
                                     {
@@ -172,11 +170,10 @@ var file = file
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getInstallationPath", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstallationPath", e)
 
                                     }
                                 

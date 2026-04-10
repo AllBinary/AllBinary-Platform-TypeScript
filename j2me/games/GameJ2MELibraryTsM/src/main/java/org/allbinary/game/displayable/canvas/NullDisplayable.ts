@@ -45,7 +45,7 @@ private constructor (){
 
     public paint(graphics: Graphics){
 var graphics = graphics
-nextRefresh()
+baseGameStatistics!.nextRefresh()
 }
 
 

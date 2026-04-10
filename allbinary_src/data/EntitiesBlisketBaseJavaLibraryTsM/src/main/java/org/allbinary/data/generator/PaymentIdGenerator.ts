@@ -42,11 +42,11 @@ public constructor (){
         
         
 
-append(URLGLOBALS.getMainPath())
-append(PATH_GLOBALS.getInstance()!.INIT_PATH)
-append(IDFILE)
-append(UniqueIdGenerator.EXT)
-setFile(stringBuffer!.toString(), IDFILE)
+stringBuffer!.append(URLGLOBALS.getMainPath())
+stringBuffer!.append(PATH_GLOBALS.getInstance()!.INIT_PATH)
+stringBuffer!.append(IDFILE)
+stringBuffer!.append(UniqueIdGenerator.EXT)
+super.setFile(stringBuffer!.toString(), IDFILE)
 }
 
 

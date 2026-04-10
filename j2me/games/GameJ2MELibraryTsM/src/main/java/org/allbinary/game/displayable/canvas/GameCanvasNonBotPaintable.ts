@@ -39,7 +39,7 @@ this.gameCanvas= gameCanvas
 
     public paint(graphics: Graphics){
 var graphics = graphics
-nonBotPaint(graphics)
+this.gameCanvas!.nonBotPaint(graphics)
 }
 
 

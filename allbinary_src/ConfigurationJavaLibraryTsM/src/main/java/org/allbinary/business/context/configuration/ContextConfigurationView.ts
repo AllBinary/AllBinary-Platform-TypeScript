@@ -70,7 +70,7 @@ this.contextConfigurationInterface= ContextConfiguration()
         
         
 
-setEmailServerConfigurationInterface(emailServerConfigurationView!.getEmailConfigurationInterface() as EmailServerConfigurationInterface)
+this.contextConfigurationInterface!.setEmailServerConfigurationInterface(emailServerConfigurationView!.getEmailConfigurationInterface() as EmailServerConfigurationInterface)
 }
 
 public constructor (contextConfigurationInterface: ContextConfigurationInterface){
@@ -91,7 +91,7 @@ this.contextConfigurationInterface= contextConfigurationInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -105,7 +105,7 @@ var document = document
         
         
 
-appendChild(emailServerConfigurationView!.toXmlNode(document))
+node.appendChild(emailServerConfigurationView!.toXmlNode(document))
 
 
 

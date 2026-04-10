@@ -53,7 +53,6 @@ private constructor (){
     //var rect2X2 = rect2X2
     //var rect2Y2 = rect2Y2
 
-    
                         if(rect2X1 >= rectX2 || rect2Y1 >= rectY2 || rect2X2 <= rectX1 || rect2Y2 <= rectY1)
                         
                                     {
@@ -87,7 +86,6 @@ private constructor (){
     //var x = x
     //var y = y
 
-    
                         if(x >= rectX2 || y >= rectY2 || x <= rectX1 || y <= rectY1)
                         
                                     {

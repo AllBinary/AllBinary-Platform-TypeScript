@@ -53,7 +53,7 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class, LicensingException::class)
+                //@Throws(Error::class, LicensingException::class)
             
     public getInstance(propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext): any = {}{
 var propertiesHashMap = propertiesHashMap

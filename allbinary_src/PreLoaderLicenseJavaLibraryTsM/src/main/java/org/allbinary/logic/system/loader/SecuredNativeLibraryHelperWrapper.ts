@@ -46,7 +46,7 @@ this.securedNativeLibraryInterface= securedNativeLibraryInterface
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public unlock(abeClientInformation: AbeClientInformationInterface): boolean{
     //var abeClientInformation = abeClientInformation

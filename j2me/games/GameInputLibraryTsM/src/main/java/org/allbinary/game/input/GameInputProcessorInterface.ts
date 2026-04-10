@@ -25,7 +25,7 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 interface GameInputProcessorInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     onInput(list: BasicArrayList)
 

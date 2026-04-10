@@ -65,7 +65,7 @@ this.groupInterface= groupInterface
 
 
     public clear(){
-clear()
+this.list.clear()
 }
 
 
@@ -81,19 +81,18 @@ clear()
         
         
 
-append(ADDING_LABEL)
-append(groupInterface!.toString())
-append(TO_LABEL)
-append(StringUtil.getInstance()!.toString(this.groupInterface))
-put(stringBuffer!.toString(), this, commonStrings!.ADD)
-add(groupInterface)
+stringBuffer!.append(ADDING_LABEL)
+stringBuffer!.append(groupInterface!.toString())
+stringBuffer!.append(TO_LABEL)
+stringBuffer!.append(StringUtil.getInstance()!.toString(this.groupInterface))
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.ADD)
+this.list.add(groupInterface)
 }
 
 
     public isInGroup(groupInterface: Group): boolean{
     //var groupInterface = groupInterface
 
-    
                         if(list.contains(groupInterface))
                         
                                     {

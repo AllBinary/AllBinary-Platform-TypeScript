@@ -110,8 +110,8 @@ export class VisibleCellPositionsSingleton
 private constructor (){
 
             super();
-            addListener(this)
-addListener(this)
+            LocalPlayerBuildingEventHandler.getInstance()!.addListener(this)
+ScrollMapEventHandler.getInstance()!.addListener(this)
 }
 
 
@@ -132,17 +132,17 @@ this.currentIndex= 0
 this.stationaryVisibleCellPositions= Array(rows) { ShortArray(columns) }
 this.visibleCellPositions= Array(rows) { ShortArray(columns) }
 this.currentlyVisibleCellPositions= Array(rows) { ShortArray(columns) }
-this.setSimpleTiledLayer(simpleTiledLayer)
+this.this.setSimpleTiledLayer(simpleTiledLayer)
 }
 
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onBuildingEvent(event: RTSLayerEvent){
 var event = event
@@ -150,11 +150,11 @@ this.paintSimpleTiledLayer= this.simpleTiledLayer
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onMoveEvent(scrollMapEvent: ScrollMapEvent){
 var scrollMapEvent = scrollMapEvent
-this.move(scrollMapEvent!.getDx(), scrollMapEvent!.getDy())
+this.this.move(scrollMapEvent!.getDx(), scrollMapEvent!.getDy())
 }
 
 
@@ -206,7 +206,6 @@ this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getCo
 
     public update(){
 
-    
                         if(this.currentIndex == 0)
                         
                                     {
@@ -247,7 +246,6 @@ this.visibleCellPositions[index]![index2]= this.stationaryVisibleCellPositions[i
                                 
 this.currentIndex++
 
-    
                         if(this.currentIndex > 10)
                         
                                     {
@@ -260,7 +258,6 @@ this.currentIndex++
 
     public shouldProcess(): boolean{
 
-    
                         if(this.currentIndex == 0)
                         
                                     {
@@ -312,7 +309,6 @@ this.visibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]++
     public isVisible(cellPosition: CellPosition): boolean{
 var cellPosition = cellPosition
 
-    
                         if(this.visibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()] > 0)
                         
                                     {
@@ -341,13 +337,13 @@ var cellPosition = cellPosition
     public move(dx: number, dy: number){
 var dx = dx
 var dy = dy
-move(dx, dy)
+this.getSimpleTiledLayer()!.move(dx, dy)
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics, this.currentlyVisibleCellPositions)
+this.paintSimpleTiledLayer!.paint(graphics, this.currentlyVisibleCellPositions)
 }
 
 

@@ -67,11 +67,11 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.getFormData()
+this.this.getFormData()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getFormData(){
 
@@ -81,12 +81,11 @@ this.getFormData()
         
 
 
-    
                         if(hashMap == 
                                     null
                                 )
                         
-                                    throw Exception("No Request Params Found")
+                                    throw Error("No Request Params Found")
 this.id= hashMap!.get(BasicItemData.ID) as String
 }
 
@@ -95,7 +94,6 @@ this.id= hashMap!.get(BasicItemData.ID) as String
 
         try {
             
-    
                         if(id == 
                                     null
                                  || !StringValidationUtil.getInstance()!.isNumber(this.id))
@@ -112,7 +110,6 @@ this.id= hashMap!.get(BasicItemData.ID) as String
                                 
 this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.getItem(this.id)
 
-    
                         if(this.itemInterface == 
                                     null
                                 )
@@ -171,24 +168,22 @@ var document = document
         
 
 
-    
                         if(id == 
                                     null
                                  || !StringValidationUtil.getInstance()!.isNumber(this.id))
                         
                                     {
-                                    append("Id is not valid.<br />")
+                                    stringBuffer!.append("Id is not valid.<br />")
 
                                     }
                                 
 
-    
                         if(InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.getItem(this.id) == 
                                     null
                                 )
                         
                                     {
-                                    append("Item does not exist.<br />")
+                                    stringBuffer!.append("Item does not exist.<br />")
 
                                     }
                                 

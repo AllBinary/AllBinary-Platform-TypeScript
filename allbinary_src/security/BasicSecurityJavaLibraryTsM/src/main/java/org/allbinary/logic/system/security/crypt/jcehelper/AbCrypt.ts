@@ -82,10 +82,10 @@ this.algorithm= algorithm
         try {
             
         try {
-            addProvider(BouncyCastleProvider())
+            Security.addProvider(BouncyCastleProvider())
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
 }
 
 
@@ -116,7 +116,7 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
 this.secretComposite= SecretComposite(secretKey, cipher, key)
 } catch(e: Exception)
             {
-put("init Failed", this, commonStrings!.INIT, e)
+PreLogUtil.put("init Failed", this, commonStrings!.INIT, e)
 }
 
 }
@@ -134,7 +134,7 @@ put("init Failed", this, commonStrings!.INIT, e)
     
 } catch(e: Exception)
             {
-put("Encrypt Failed", this, "encrypt", e)
+PreLogUtil.put("Encrypt Failed", this, "encrypt", e)
 
 
 
@@ -158,7 +158,7 @@ put("Encrypt Failed", this, "encrypt", e)
     
 } catch(e: Exception)
             {
-put("decrypt Failed", this, "decrypt", e)
+PreLogUtil.put("decrypt Failed", this, "decrypt", e)
 
 
 

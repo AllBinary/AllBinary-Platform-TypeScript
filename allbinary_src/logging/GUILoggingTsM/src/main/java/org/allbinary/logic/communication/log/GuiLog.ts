@@ -47,6 +47,10 @@ export class GuiLog
 }
 
 
+    private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
+        
+        
+
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
@@ -75,12 +79,10 @@ var msg = msg
         
 
 
-    
                         if(x > 550)
                         x= 550
-setLayout(GridLayout(1, 1))
+error.getContentPane()!.setLayout(GridLayout(1, 1))
 
-    
                         if(size > 255)
                         
                                     {
@@ -89,13 +91,12 @@ setLayout(GridLayout(1, 1))
         
         
 
-setSize(x, y)
-add(javax.swing.JScrollPane(javax.swing.JTextArea(msg)))
+error.setSize(x, y)
+error.getContentPane()!.add(javax.swing.JScrollPane(javax.swing.JTextArea(msg)))
 
                                     }
                                 
                              else 
-    
                         if(size > 0)
                         
                                     {
@@ -104,12 +105,12 @@ add(javax.swing.JScrollPane(javax.swing.JTextArea(msg)))
         
         
 
-setSize(x, y)
-add(javax.swing.JScrollPane(javax.swing.JLabel(msg)))
+error.setSize(x, y)
+error.getContentPane()!.add(javax.swing.JScrollPane(javax.swing.JLabel(msg)))
 
                                     }
                                 
-show()
+error.show()
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -129,7 +130,7 @@ var functionName = functionName
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public put(specialMessage: string, anyType: any = {}, functionName: string, exception: Exception): string{
+    public put(specialMessage: string, anyType: any = {}, functionName: string, exception: Error): string{
 var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName
@@ -137,12 +138,12 @@ var exception = exception
 
         try {
             
-    var data: string = LogFormatUtil.getInstance()!.get(specialMessage, anyType!::class.toString()!, functionName, exception)!;
+    var data: string = logFormatUtil!.get(specialMessage, anyType!::class.toString()!, functionName, exception)!;
         
         
 
-this.showDialog(data)
-println(data)
+this.this.showDialog(data)
+System.out.println(data)
 
 
 
@@ -151,7 +152,7 @@ println(data)
     
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "put", e)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, "put", e)
 
 
 
@@ -179,7 +180,7 @@ var functionName = functionName
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public put(specialMessage: string, className: string, functionName: string, exception: Exception): string{
+    public put(specialMessage: string, className: string, functionName: string, exception: Error): string{
 var specialMessage = specialMessage
 var className = className
 var functionName = functionName
@@ -187,12 +188,12 @@ var exception = exception
 
         try {
             
-    var data: string = LogFormatUtil.getInstance()!.get(specialMessage, className, functionName, exception)!;
+    var data: string = logFormatUtil!.get(specialMessage, className, functionName, exception)!;
         
         
 
-this.showDialog(data)
-println(data)
+this.this.showDialog(data)
+System.out.println(data)
 
 
 
@@ -201,7 +202,7 @@ println(data)
     
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "put", e)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, "put", e)
 
 
 

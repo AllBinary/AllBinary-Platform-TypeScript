@@ -114,16 +114,15 @@ var read = read
                     
 this.initFileName= initFileName
 
-    
                         if(read)
                         
                                     {
-                                    this.updateIfNeeded()
+                                    this.this.updateIfNeeded()
 
                                     }
                                 
                         else {
-                            this.setHasRead(true)
+                            this.this.setHasRead(true)
 
                         }
                             
@@ -137,11 +136,10 @@ this.initFileName= initFileName
         
 
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    put(this.httpData!.URL_LABEL +url, this, GET_URL)
+                                    PreLogUtil.put(this.httpData!.URL_LABEL +url, this, GET_URL)
 
                                     }
                                 
@@ -154,7 +152,7 @@ this.initFileName= initFileName
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public write(){
 
@@ -162,7 +160,7 @@ this.initFileName= initFileName
         
         
 
-create(PATH)
+this.directory.create(PATH)
 
     var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +PACKAGE, this.initFileName);
         
@@ -175,7 +173,7 @@ create(PATH)
         
         
 
-createNewFile()
+newFile!.createNewFile()
 
     var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(newFile)!;
         
@@ -225,28 +223,27 @@ createNewFile()
         
         
 
-writeUTF(DatabaseEncoder.encode(cryptedJdbcDriver))
-writeUTF(DatabaseEncoder.encode(cryptedName))
-writeUTF(DatabaseEncoder.encode(cryptedUserName))
-writeUTF(DatabaseEncoder.encode(cryptedPassword))
-writeUTF(DatabaseEncoder.encode(cryptedSchema))
-writeUTF(DatabaseEncoder.encode(cryptedServer))
-writeUTF(DatabaseEncoder.encode(cryptedPort))
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedJdbcDriver))
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedName))
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedUserName))
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedPassword))
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedSchema))
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedServer))
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedPort))
 hasRead= false
 
          finally {
-            close(dataOutputStream)
+            StreamUtil.getInstance()!.close(dataOutputStream)
 
          }
         
 } catch(e: Exception)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    put("Failed Write: " +FILEABPATH.toString(), this, "write", e)
+                                    PreLogUtil.put("Failed Write: " +FILEABPATH.toString(), this, "write", e)
 
                                     }
                                 
@@ -255,7 +252,7 @@ hasRead= false
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     load(){
 
@@ -271,7 +268,6 @@ hasRead= false
         
 
 
-    
                         if(file.isFile())
                         
                                     {
@@ -322,19 +318,19 @@ hasRead= false
         
         
 
-this.setJdbcDriver(WeakCrypt(1).
+this.this.setJdbcDriver(WeakCrypt(1).
                             decrypt(decryptedJdbcDriver))
-this.setName(WeakCrypt(2).
+this.this.setName(WeakCrypt(2).
                             decrypt(decryptedName))
-this.setUserName(WeakCrypt(3).
+this.this.setUserName(WeakCrypt(3).
                             decrypt(decryptedUserName))
-this.setPassword(WeakCrypt(4).
+this.this.setPassword(WeakCrypt(4).
                             decrypt(decryptedPassword))
-this.setSchema(WeakCrypt(5).
+this.this.setSchema(WeakCrypt(5).
                             decrypt(decryptedSchema))
-this.setServer(WeakCrypt(6).
+this.this.setServer(WeakCrypt(6).
                             decrypt(decryptedServer))
-this.setPort(WeakCrypt(7).
+this.this.setPort(WeakCrypt(7).
                             decrypt(decryptedPort))
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
@@ -343,7 +339,7 @@ this.setPort(WeakCrypt(7).
 
 
          finally {
-            close(iData)
+            StreamUtil.getInstance()!.close(iData)
 
          }
         
@@ -353,11 +349,10 @@ this.setPort(WeakCrypt(7).
                         else {
                             hasRead= false
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    put("Not a File - Failed Loading: " +FILEABPATH.toString(), this, commonStrings!.LOAD)
+                                    PreLogUtil.put("Not a File - Failed Loading: " +FILEABPATH.toString(), this, commonStrings!.LOAD)
 
                                     }
                                 
@@ -367,11 +362,10 @@ this.setPort(WeakCrypt(7).
 } catch(e: Exception)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    put("Failed Loading: " +FILEABPATH.toString(), this, commonStrings!.LOAD, e)
+                                    PreLogUtil.put("Failed Loading: " +FILEABPATH.toString(), this, commonStrings!.LOAD, e)
 
                                     }
                                 
@@ -390,23 +384,21 @@ this.hasRead= value
 
         try {
             
-    
                         if(!hasRead)
                         
                                     {
                                     hasRead= true
-this.load()
+this.this.load()
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "updateIfNeeded", e)
+                                    PreLogUtil.put(commonStrings!.EXCEPTION, this, "updateIfNeeded", e)
 
                                     }
                                 
@@ -416,13 +408,12 @@ this.load()
 
 
     public getName(): string{
-this.updateIfNeeded()
+this.this.updateIfNeeded()
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    put("Name: " +super.getName(), this, "getName")
+                                    PreLogUtil.put("Name: " +super.getName(), this, "getName")
 
                                     }
                                 
@@ -436,13 +427,12 @@ this.updateIfNeeded()
 
 
     public getUserName(): string{
-this.updateIfNeeded()
+this.this.updateIfNeeded()
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    put("Name: " +super.getUserName(), this, "getUserName")
+                                    PreLogUtil.put("Name: " +super.getUserName(), this, "getUserName")
 
                                     }
                                 
@@ -456,7 +446,7 @@ this.updateIfNeeded()
 
 
     public getPassword(): string{
-this.updateIfNeeded()
+this.this.updateIfNeeded()
 
 
 
@@ -467,7 +457,7 @@ this.updateIfNeeded()
 
 
     public getSchema(): string{
-this.updateIfNeeded()
+this.this.updateIfNeeded()
 
 
 
@@ -478,7 +468,7 @@ this.updateIfNeeded()
 
 
     public getServer(): string{
-this.updateIfNeeded()
+this.this.updateIfNeeded()
 
 
 
@@ -489,7 +479,7 @@ this.updateIfNeeded()
 
 
     public getPort(): string{
-this.updateIfNeeded()
+this.this.updateIfNeeded()
 
 
 

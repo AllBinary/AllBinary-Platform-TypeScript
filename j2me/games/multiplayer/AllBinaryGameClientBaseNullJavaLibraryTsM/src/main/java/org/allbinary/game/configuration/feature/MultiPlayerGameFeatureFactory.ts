@@ -47,7 +47,7 @@ private constructor (){
         
         
 
-addCommand(gameCommandsFactory!.QUIT_COMMAND)
+canvas.addCommand(gameCommandsFactory!.QUIT_COMMAND)
 }
 
 

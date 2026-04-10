@@ -50,6 +50,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
     private static readonly LOG_SUCCESS: string = "org.allbinary: ";
         
         
+
+    private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
+        
+        
 private constructor (){
 
             super();
@@ -78,7 +82,7 @@ var log = log
         
         
 
-this.put(specialMessage, anyType, functionName, exception)
+this.this.put(specialMessage, anyType, functionName, exception)
 }
 
 
@@ -92,7 +96,6 @@ this.put(specialMessage, anyType, functionName, exception)
         
 
 
-    
                         if(anyType!::class.toString()! != 
                                     null
                                 )
@@ -105,12 +108,12 @@ this.put(specialMessage, anyType, functionName, exception)
                                     }
                                 
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage)!;
+    var message: string = logFormatUtil!.getS(className, functionName, specialMessage)!;
         
         
 
-print(LOG_SUCCESS)
-println(message)
+System.out.print(LOG_SUCCESS)
+System.out.println(message)
 }
 
 
@@ -125,7 +128,6 @@ println(message)
         
 
 
-    
                         if(anyType!::class.toString()! != 
                                     null
                                 )
@@ -138,12 +140,12 @@ println(message)
                                     }
                                 
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
+    var message: string = logFormatUtil!.get(className, functionName, specialMessage, exception)!;
         
         
 
-print(LOG_SUCCESS)
-println(message)
+System.out.print(LOG_SUCCESS)
+System.out.println(message)
 }
 
 

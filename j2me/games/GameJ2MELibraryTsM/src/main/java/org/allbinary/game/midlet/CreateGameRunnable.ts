@@ -70,22 +70,22 @@ this.startGameMidletEvent= DemoGameMidletEvent(this, DemoGameMidletStateFactory.
     public run(){
 
         try {
-            put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN)
+            logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN)
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
 
-commandAction(MyCommandsFactory.getInstance()!.SET_DISPLAYABLE, progressCanvas)
-stopGameCanvasRunnableInterface()
-setGameCanvasRunnableInterface(this.demoGameMidlet!.createGameCanvasRunnableInterface())
-setLoadStateHashtable(hashtable)
-startGameCanvasRunnableInterface()
-fireEvent(this.startGameMidletEvent)
-put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN)
+this.demoGameMidlet!.commandAction(MyCommandsFactory.getInstance()!.SET_DISPLAYABLE, progressCanvas)
+this.demoGameMidlet!.stopGameCanvasRunnableInterface()
+this.demoGameMidlet!.setGameCanvasRunnableInterface(this.demoGameMidlet!.createGameCanvasRunnableInterface())
+this.demoGameMidlet!.getGameCanvasRunnableInterface()!.setLoadStateHashtable(hashtable)
+this.demoGameMidlet!.startGameCanvasRunnableInterface()
+DemoGameMidletEventHandler.getInstance()!.fireEvent(this.startGameMidletEvent)
+logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }

@@ -57,7 +57,7 @@ this.dy= dy
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public nextFrame(){
 }
@@ -67,8 +67,8 @@ this.dy= dy
     //var graphics = graphics
     //var x = x
     //var y = y
-paint(graphics, x +this.captionDx, y +this.captionDy)
-paint(graphics, x +this.captionDx +dx, y +this.captionDy +dy)
+this.animationInterface!.paint(graphics, x +this.captionDx, y +this.captionDy)
+this.overlayAnimationInterface!.paint(graphics, x +this.captionDx +dx, y +this.captionDy +dy)
 }
 
 
@@ -77,8 +77,8 @@ paint(graphics, x +this.captionDx +dx, y +this.captionDy +dy)
     //var x = x
     //var y = y
     //var z = z
-paintThreed(graphics, x +this.captionDx, y +this.captionDy, z)
-paintThreed(graphics, x +this.captionDx +dx, y +this.captionDy +dy, z)
+this.animationInterface!.paintThreed(graphics, x +this.captionDx, y +this.captionDy, z)
+this.overlayAnimationInterface!.paintThreed(graphics, x +this.captionDx +dx, y +this.captionDy +dy, z)
 }
 
 

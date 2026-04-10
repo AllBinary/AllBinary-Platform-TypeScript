@@ -83,18 +83,18 @@ this.sequenceArray= sequenceArray
 
 
     public nextFrame(){
-next()
+this.circularIndexUtil!.next()
 }
 
 
     public previousFrame(){
-previous()
+this.circularIndexUtil!.previous()
 }
 
 
     public setFrame(index: number){
 var index = index
-setIndex(index)
+this.circularIndexUtil!.setIndex(index)
 }
 
 

@@ -22,7 +22,7 @@
 interface CacheableInterfaceFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getInstance(key: any = {}): CacheableInterface
 

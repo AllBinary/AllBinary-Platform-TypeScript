@@ -19,7 +19,7 @@
 
 
 
-export class PaymentException extends Exception {
+export class PaymentException extends Error {
         
 public constructor (error: string)                        
 

@@ -96,7 +96,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.this.setTableName(tableName)
 }
 
 
@@ -104,24 +104,22 @@ this.setTableName(tableName)
     //var values = values
 
         try {
-            insert(values)
+            super.insert(values)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, INSERT)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT)
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, INSERT, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e)
 
                                     }
                                 
@@ -140,26 +138,24 @@ this.setTableName(tableName)
         
         
 
-put(WorkFlowData.getInstance()!.NAME, name)
-put(StoreFrontData.getInstance()!.NAME, storeName)
-deleteWhere(keysAndValues)
+keysAndValues!.put(WorkFlowData.getInstance()!.NAME, name)
+keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName)
+super.deleteWhere(keysAndValues)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, commonStrings!.delete)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, commonStrings!.delete)
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
 
                                     }
                                 
@@ -168,7 +164,7 @@ deleteWhere(keysAndValues)
 }
 
 
-                @Throws(Exception::class, LicensingException::class)
+                //@Throws(Error::class, LicensingException::class)
             
     public get(name: string, storeName: string): WorkFlowInterface{
     //var name = name
@@ -180,8 +176,8 @@ deleteWhere(keysAndValues)
         
         
 
-put(WorkFlowData.getInstance()!.NAME, name)
-put(StoreFrontData.getInstance()!.NAME, storeName)
+keysAndValues!.put(WorkFlowData.getInstance()!.NAME, name)
+keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName)
 
     var hashMap: HashMap<Any, Any> = super.getRow(keysAndValues)!;
         
@@ -196,11 +192,10 @@ put(StoreFrontData.getInstance()!.NAME, storeName)
 } catch(e: LicensingException)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, METHOD_GET, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, METHOD_GET, e)
 
                                     }
                                 
@@ -212,11 +207,10 @@ put(StoreFrontData.getInstance()!.NAME, storeName)
  catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, METHOD_GET, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, METHOD_GET, e)
 
                                     }
                                 
@@ -243,7 +237,7 @@ var storeName = storeName
         
         
 
-put(StoreFrontData.getInstance()!.NAME, storeName)
+keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName)
 
     var hashMapVector: Vector = super.getRows(keysAndValues)!;
         
@@ -270,13 +264,12 @@ i < size; i++)
         
 
 
-    
                         if(workFlowHashMap != 
                                     null
                                 )
                         
                                     {
-                                    add(DbWorkFlowFactory.getInstance()!.getInstance(abeClientInformation, workFlowHashMap))
+                                    workFlowsVector!.add(DbWorkFlowFactory.getInstance()!.getInstance(abeClientInformation, workFlowHashMap))
 
                                     }
                                 
@@ -291,11 +284,10 @@ i < size; i++)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, this.METHOD_GET, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, this.METHOD_GET, e)
 
                                     }
                                 
@@ -319,17 +311,16 @@ var updatedValues = updatedValues
         
         
 
-put(WorkFlowData.getInstance()!.NAME, updatedValues!.get(WorkFlowData.getInstance()!.NAME) as String)
-put(StoreFrontData.getInstance()!.NAME, updatedValues!.get(StoreFrontData.getInstance()!.NAME) as String)
-updateWhere(wherekeysAndValues, updatedValues)
+wherekeysAndValues!.put(WorkFlowData.getInstance()!.NAME, updatedValues!.get(WorkFlowData.getInstance()!.NAME) as String)
+wherekeysAndValues!.put(StoreFrontData.getInstance()!.NAME, updatedValues!.get(StoreFrontData.getInstance()!.NAME) as String)
+super.updateWhere(wherekeysAndValues, updatedValues)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, METHOD_UPDATE, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, METHOD_UPDATE, e)
 
                                     }
                                 
@@ -349,7 +340,7 @@ updateWhere(wherekeysAndValues, updatedValues)
         
         
 
-append(this.sqlStrings!.END)
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(workFlowData!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StoreFrontData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DynamicObjectData.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(workFlowData!.DATA)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(workFlowData!.NAME)!.append(this.sqlStrings!.END)
 
 
 

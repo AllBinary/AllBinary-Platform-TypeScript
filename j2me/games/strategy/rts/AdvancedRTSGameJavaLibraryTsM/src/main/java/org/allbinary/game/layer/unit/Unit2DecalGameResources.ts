@@ -88,24 +88,23 @@ private constructor (){
         
         
 
-init(ROOT, SIZE)
+super.init(ROOT, SIZE)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(ROOT: string, sizeString: string){
 var ROOT = ROOT
 var sizeString = sizeString
-init(ROOT, sizeString)
+super.init(ROOT, sizeString)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getString(): string{
 
-    
                         if(AndroidUtil.isAndroid())
                         
                                     {

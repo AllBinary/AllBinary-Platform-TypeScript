@@ -82,7 +82,7 @@ this.transformDocumentInterface= TransformDocumentFactory.getInstance() as Trans
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getTransformInfoInterface(): TransformInfoInterface{
 
@@ -110,7 +110,7 @@ this.transformDocumentInterface= transformDocumentInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
     //var document = document
@@ -143,7 +143,7 @@ index < size; index++)
 nextFile= this.fileBasicArrayList!.get(index) as AbFile
 fileNode= FileDomDataModel(nextFile).
                             toXmlNode(document)
-appendChild(fileNode)
+dirNode!.appendChild(fileNode)
 }
 
 
@@ -155,7 +155,7 @@ appendChild(fileNode)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlDoc(): Document{
 
@@ -167,7 +167,7 @@ appendChild(fileNode)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
@@ -175,7 +175,7 @@ appendChild(fileNode)
         
         
 
-appendChild(node)
+this.getTransformDocumentInterface()!.getBaseNode()!.appendChild(node)
 
 
 

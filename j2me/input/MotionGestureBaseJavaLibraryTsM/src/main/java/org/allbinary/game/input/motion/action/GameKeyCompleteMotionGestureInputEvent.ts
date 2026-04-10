@@ -80,8 +80,8 @@ var inputToGameKeyMapping = inputToGameKeyMapping
                             //For kotlin this is before the body of the constructor.
                     
 this.inputToGameKeyMapping= inputToGameKeyMapping
-add(this)
-this.update()
+GameKeyCompleteMotionGestureInputEventFactory.getInstance()!.add(this)
+this.this.update()
 }
 
 
@@ -98,8 +98,8 @@ this.update()
     public update(){
 
         try {
-            this.setGameKey(inputToGameKeyMapping!.getInstance(this.getMotionGestureInput()!.getId()))
-this.setGameKeyEvent(this.gameKeyEventFactory!.getInstance(this, getGameKey()))
+            this.this.setGameKey(inputToGameKeyMapping!.getInstance(this.getMotionGestureInput()!.getId()))
+this.this.setGameKeyEvent(this.gameKeyEventFactory!.getInstance(this, getGameKey()))
 } catch(e: Exception)
             {
 
@@ -107,7 +107,7 @@ this.setGameKeyEvent(this.gameKeyEventFactory!.getInstance(this, getGameKey()))
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
 }
 
 }

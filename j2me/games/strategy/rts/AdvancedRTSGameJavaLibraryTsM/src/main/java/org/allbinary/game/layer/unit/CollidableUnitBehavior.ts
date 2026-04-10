@@ -87,22 +87,21 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     collideNone(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
-this.chase(collidableInterfaceCompositeInterface)
+this.this.chase(collidableInterfaceCompositeInterface)
 
     var rtsLayer: AdvancedRTSGameLayer = collidableInterfaceCompositeInterface as AdvancedRTSGameLayer;
         
         
 
 
-    
                         if(rtsLayer!.getType() == UnitLayer.getStaticType())
                         
                                     {
-                                    this.collideUnit(rtsLayer as UnitLayer)
+                                    this.this.collideUnit(rtsLayer as UnitLayer)
 
                                     }
                                 
@@ -117,7 +116,6 @@ export inner class SimpleSteeringVisitor extends SteeringVisitor {
 
         try {
             
-    
                         if(this.getList()!.size() > 0)
                         
                                     {
@@ -132,11 +130,10 @@ export inner class SimpleSteeringVisitor extends SteeringVisitor {
         
 
 
-    
                         if(clear)
                         
                                     {
-                                    clear()
+                                    this.getList()!.clear()
 
 
 
@@ -163,7 +160,7 @@ export inner class SimpleSteeringVisitor extends SteeringVisitor {
     
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "visit", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e)
 
 
 
@@ -182,7 +179,7 @@ put(commonStrings!.EXCEPTION, this, "visit", e)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     steer(collidableInterfaceCompositeInterface: CollidableCompositeLayer): boolean{
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
@@ -212,7 +209,6 @@ put(commonStrings!.EXCEPTION, this, "visit", e)
         
 
 
-    
                         if(angle < 90 || angle > 270)
                         
                                     {
@@ -226,11 +222,10 @@ put(commonStrings!.EXCEPTION, this, "visit", e)
                                     }
                                 
                              else 
-    
                         if(angle >= 90 || angle <= 270)
                         
                                     {
-                                    add(GameKeyEventFactory.getInstance()!.getInstance(ownerUnitLayer, Canvas.RIGHT))
+                                    ownerUnitLayer!.getGameKeyEventList()!.add(GameKeyEventFactory.getInstance()!.getInstance(ownerUnitLayer, Canvas.RIGHT))
 
 
 
@@ -243,11 +238,11 @@ put(commonStrings!.EXCEPTION, this, "visit", e)
 
 
 
-                            throw Exception("Error")
+                            throw Error("Error")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     chase(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
@@ -257,16 +252,14 @@ put(commonStrings!.EXCEPTION, this, "visit", e)
         
 
 
-    
                         if(rtsLayer!.getType() == UnitLayer.getStaticType())
                         
                                     {
                                     
-    
                         if(!this.simpleSteeringVisitor!.getList()!.contains(collidableInterfaceCompositeInterface))
                         
                                     {
-                                    add(collidableInterfaceCompositeInterface)
+                                    this.simpleSteeringVisitor!.getList()!.add(collidableInterfaceCompositeInterface)
 
                                     }
                                 
@@ -281,11 +274,10 @@ put(commonStrings!.EXCEPTION, this, "visit", e)
         
 
 
-    
                         if(!list.contains(this.simpleSteeringVisitor))
                         
                                     {
-                                    add(this.simpleSteeringVisitor)
+                                    list.add(this.simpleSteeringVisitor)
 
                                     }
                                 
@@ -295,7 +287,7 @@ put(commonStrings!.EXCEPTION, this, "visit", e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     collideUnit(unitLayer: UnitLayer){
     //var unitLayer = unitLayer
@@ -340,7 +332,6 @@ put(commonStrings!.EXCEPTION, this, "visit", e)
         
 
 
-    
                         if(this.ownerLayer!.getXP() < unitLayer!.getXP() && this.ownerLayer!.getX2() > unitLayer!.getXP())
                         
                                     {
@@ -349,9 +340,8 @@ put(commonStrings!.EXCEPTION, this, "visit", e)
         
         
 
-getAll(basicGeographicMap, this.ownerLayer,  -diff, 0, partialPositionList)
+this.layerPartialCellPositionsUtil!.getAll(basicGeographicMap, this.ownerLayer,  -diff, 0, partialPositionList)
 
-    
                         if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList))
                         
                                     {
@@ -367,13 +357,12 @@ getAll(basicGeographicMap, this.ownerLayer,  -diff, 0, partialPositionList)
 
 x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, this.ownerLayer!.getWidth())
 y= tiledLayerUtil!.keepOnMapY(tiledLayer, y, this.ownerLayer!.getHeight())
-setPosition(x, y, this.ownerLayer!.getZP())
+this.ownerLayer!.setPosition(x, y, this.ownerLayer!.getZP())
 
                                     }
                                 
-getAll(basicGeographicMap, unitLayer, diff, 0, partialPositionList)
+this.layerPartialCellPositionsUtil!.getAll(basicGeographicMap, unitLayer, diff, 0, partialPositionList)
 
-    
                         if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList))
                         
                                     {
@@ -389,7 +378,7 @@ getAll(basicGeographicMap, unitLayer, diff, 0, partialPositionList)
 
 x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, unitLayer!.getWidth())
 y= tiledLayerUtil!.keepOnMapY(tiledLayer, y, unitLayer!.getHeight())
-setPosition(x, y, unitLayer!.getZP())
+unitLayer!.setPosition(x, y, unitLayer!.getZP())
 
                                     }
                                 
@@ -397,7 +386,6 @@ setPosition(x, y, unitLayer!.getZP())
                                     }
                                 
 
-    
                         if(this.ownerLayer!.getYP() < unitLayer!.getYP() && this.ownerLayer!.getY2() > unitLayer!.getYP())
                         
                                     {
@@ -406,9 +394,8 @@ setPosition(x, y, unitLayer!.getZP())
         
         
 
-getAll(basicGeographicMap, this.ownerLayer, 0,  -diff, partialPositionList)
+this.layerPartialCellPositionsUtil!.getAll(basicGeographicMap, this.ownerLayer, 0,  -diff, partialPositionList)
 
-    
                         if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList))
                         
                                     {
@@ -424,13 +411,12 @@ getAll(basicGeographicMap, this.ownerLayer, 0,  -diff, partialPositionList)
 
 x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, this.ownerLayer!.getWidth())
 y= tiledLayerUtil!.keepOnMapY(tiledLayer, y, this.ownerLayer!.getHeight())
-setPosition(x, y, this.ownerLayer!.getZP())
+this.ownerLayer!.setPosition(x, y, this.ownerLayer!.getZP())
 
                                     }
                                 
-getAll(basicGeographicMap, unitLayer, 0, diff, partialPositionList)
+this.layerPartialCellPositionsUtil!.getAll(basicGeographicMap, unitLayer, 0, diff, partialPositionList)
 
-    
                         if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList))
                         
                                     {
@@ -446,7 +432,7 @@ getAll(basicGeographicMap, unitLayer, 0, diff, partialPositionList)
 
 x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, unitLayer!.getWidth())
 y= tiledLayerUtil!.keepOnMapY(tiledLayer, y, unitLayer!.getHeight())
-setPosition(x, y, unitLayer!.getZP())
+unitLayer!.setPosition(x, y, unitLayer!.getZP())
 
                                     }
                                 

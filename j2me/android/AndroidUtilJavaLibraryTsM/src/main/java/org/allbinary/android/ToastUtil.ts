@@ -67,7 +67,7 @@ this.string= string
     public run(){
 
         try {
-            show()
+            Toast.makeText(context, string, time)!.show()
 } catch(e: Exception)
             {
 
@@ -75,7 +75,7 @@ this.string= string
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }
@@ -84,7 +84,7 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
                 
             
-post(MakeToast(message))
+view.post(MakeToast(message))
 }
 
 

@@ -79,7 +79,6 @@ var attributeValue = attributeValue
 var contentValue = contentValue
 this.label= label
 
-    
                         if(htmlMetaAttributeData!.equals(HtmlMetaAttributeDataFactory.getInstance()!.HTTP_EQUIV))
                         
                                     {
@@ -88,7 +87,6 @@ this.label= label
                                     }
                                 
                              else 
-    
                         if(htmlMetaAttributeData!.equals(HtmlMetaAttributeDataFactory.getInstance()!.NAME))
                         
                                     {
@@ -106,7 +104,7 @@ public constructor (document: Document){
 
 
 
-                            throw Exception(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
+                            throw Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
 }
 
 
@@ -127,11 +125,10 @@ public constructor (document: Document){
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -163,11 +160,10 @@ public constructor (document: Document){
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 
@@ -214,10 +210,10 @@ var document = document
         
         
 
-put(HtmlMetaData.getInstance()!.LABEL.toString(), this.label)
-put(htmlMetaAttributeDataFactory!.NAME.toString(), this.name)
-put(htmlMetaAttributeDataFactory!.HTTP_EQUIV.toString(), this.httpEquiv)
-put(htmlMetaAttributeDataFactory!.CONTENT.toString(), this.content)
+hashMap!.put(HtmlMetaData.getInstance()!.LABEL.toString(), this.label)
+hashMap!.put(htmlMetaAttributeDataFactory!.NAME.toString(), this.name)
+hashMap!.put(htmlMetaAttributeDataFactory!.HTTP_EQUIV.toString(), this.httpEquiv)
+hashMap!.put(htmlMetaAttributeDataFactory!.CONTENT.toString(), this.content)
 
 
 
@@ -227,7 +223,7 @@ put(htmlMetaAttributeDataFactory!.CONTENT.toString(), this.content)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

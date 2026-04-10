@@ -64,7 +64,7 @@ this.image= image
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAnimationSize(): number{
 
@@ -81,8 +81,8 @@ this.image= image
     //var frame = frame
     //var x = x
     //var y = y
-this.setFrame(frame)
-this.paint(g, x, y)
+this.this.setFrame(frame)
+this.this.paint(g, x, y)
 }
 
 
@@ -90,24 +90,24 @@ this.paint(g, x, y)
     //var g = g
     //var x = x
     //var y = y
-setPosition(x, y)
-this.paint(g)
+this.sprite.setPosition(x, y)
+this.this.paint(g)
 }
 
 
     paint(g: Graphics){
     //var g = g
-paint(g)
+this.sprite.paint(g)
 }
 
 
     public nextRotation(){
-nextFrame()
+this.sprite.nextFrame()
 }
 
 
     public previousRotation(){
-prevFrame()
+this.sprite.prevFrame()
 }
 
 
@@ -123,7 +123,7 @@ prevFrame()
 
     public setFrame(frame: number){
     //var frame = frame
-setFrame(frame)
+this.sprite.setFrame(frame)
 }
 
 

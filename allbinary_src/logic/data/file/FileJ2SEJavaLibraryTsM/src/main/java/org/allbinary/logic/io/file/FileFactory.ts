@@ -38,7 +38,7 @@ export class FileFactory
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(filePath: string): AbFile{
 var filePath = filePath
@@ -51,7 +51,7 @@ var filePath = filePath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(file: AbFile, childFilePath: string): AbFile{
 var file = file
@@ -65,7 +65,7 @@ var childFilePath = childFilePath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isFile(path: string): boolean{
 var path = path
@@ -75,7 +75,6 @@ var path = path
         
 
 
-    
                         if(file.exists())
                         
                                     {

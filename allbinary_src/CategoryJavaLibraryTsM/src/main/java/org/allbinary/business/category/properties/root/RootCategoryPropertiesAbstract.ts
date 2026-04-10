@@ -82,18 +82,18 @@ public constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setValue(value: string){
 var value = value
 
 
 
-                            throw Exception("No Value Allowed")
+                            throw Error("No Value Allowed")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setRootFilePath(value: AbPath){
 var value = value
@@ -104,55 +104,55 @@ var value = value
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setRootFilePath(value: string){
 var value = value
 
 
 
-                            throw Exception("No Value Allowed")
+                            throw Error("No Value Allowed")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getRootFilePath(): AbPath{
 
 
 
-                            throw Exception("No Value Allowed")
+                            throw Error("No Value Allowed")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isRealRoot(): boolean{
 
 
 
-                            throw Exception("No A Real Root")
+                            throw Error("No A Real Root")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isRoot(): boolean{
 
 
 
-                            throw Exception("Root but not implemented")
+                            throw Error("Root but not implemented")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getWebAppPath(categoryHierarchyInterface: CategoryHierarchyInterface): string{
 var categoryHierarchyInterface = categoryHierarchyInterface
 
 
 
-                            throw Exception("Not Root")
+                            throw Error("Not Root")
 }
 
 
@@ -193,7 +193,7 @@ var categoryHierarchyInterface = categoryHierarchyInterface
         
         
 
-put(CategoryData.getInstance()!.NAME, this.category)
+categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category)
 
 
 
@@ -209,7 +209,7 @@ put(CategoryData.getInstance()!.NAME, this.category)
         
         
 
-add(category)
+categoryVector!.add(category)
 
 
 
@@ -219,7 +219,7 @@ add(category)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toValidationInfoDoc(): Document{
 
@@ -231,7 +231,7 @@ add(category)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document
@@ -244,7 +244,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public validationInfo(): string{
 

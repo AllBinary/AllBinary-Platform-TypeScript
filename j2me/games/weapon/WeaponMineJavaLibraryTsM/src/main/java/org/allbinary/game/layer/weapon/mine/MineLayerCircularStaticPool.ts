@@ -34,12 +34,12 @@ export class MineLayerCircularStaticPool
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static init(viewPositionFactoryInterface: ViewPositionFactoryInterface){
 var viewPositionFactoryInterface = viewPositionFactoryInterface
-init()
-init(MineLayerFactory(viewPositionFactoryInterface), 20)
+MineCountedPickedUpLayerInterfaceFactory.init()
+WEAPON_LAYER_CIRCULAR_STATIC_POOL.init(MineLayerFactory(viewPositionFactoryInterface), 20)
 }
 
 

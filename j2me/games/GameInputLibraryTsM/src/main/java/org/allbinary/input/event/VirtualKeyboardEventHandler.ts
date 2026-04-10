@@ -67,7 +67,7 @@ private constructor (){
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject
@@ -77,18 +77,18 @@ private constructor (){
         
         
 
-onVirtualKeyboardEvent(eventObject as VirtualKeyboardEvent)
+virtualKeyboardEventListenerInterface!.onVirtualKeyboardEvent(eventObject as VirtualKeyboardEvent)
 }
 
 
     public open(){
 
         try {
-            sleep(120)
-this.fireEvent(this.SHOW_EVENT)
+            Thread.sleep(120)
+this.this.fireEvent(this.SHOW_EVENT)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "open", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "open", e)
 }
 
 }
@@ -97,11 +97,11 @@ put(commonStrings!.EXCEPTION, this, "open", e)
     public close(){
 
         try {
-            sleep(120)
-this.fireEvent(this.HIDE_EVENT)
+            Thread.sleep(120)
+this.this.fireEvent(this.HIDE_EVENT)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e)
 }
 
 }

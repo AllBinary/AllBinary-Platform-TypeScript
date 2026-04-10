@@ -109,7 +109,7 @@ this.name= name
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(level: number){
     //var level = level
@@ -118,13 +118,13 @@ this.name= name
         
         
 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Available List of Animations: ")!.append(hashtable.toString())!.toString(), this, commonStrings!.INIT)
-this.setInitialized(true)
+this.this.setInitialized(true)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(imageCache: ImageCache, level: number){
     //var imageCache = imageCache
@@ -132,29 +132,28 @@ this.setInitialized(true)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public add(resource: string, animationInterfaceFactoryInterface: BasicAnimationInterfaceFactoryInterface){
     //var resource = resource
     //var animationInterfaceFactoryInterface = animationInterfaceFactoryInterface
 
-    
                         if(hashtable.containsKey(resource as Object))
                         
                                     {
                                     
 
 
-                            throw Exception(StringMaker().
+                            throw Error(StringMaker().
                             append("Resource Already Created: ")!.append(resource)!.toString())
 
                                     }
                                 
-put(resource, animationInterfaceFactoryInterface)
+hashtable.put(resource, animationInterfaceFactoryInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getBasicAnimationInterfaceFactoryInstance(resource: string): BasicAnimationInterfaceFactoryInterface{
     //var resource = resource
@@ -164,7 +163,6 @@ put(resource, animationInterfaceFactoryInterface)
         
 
 
-    
                         if(basicAnimationInterfaceFactoryInterfaceCanBeNull == 
                                     null
                                 )
@@ -188,7 +186,7 @@ put(resource, animationInterfaceFactoryInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getRectangle(resource: string): Rectangle{
     //var resource = resource
@@ -198,7 +196,6 @@ put(resource, animationInterfaceFactoryInterface)
         
 
 
-    
                         if(rectangleCanBeNull == 
                                     null
                                 )
@@ -222,16 +219,16 @@ put(resource, animationInterfaceFactoryInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public addRectangle(resource: string, rectangle: Rectangle){
     //var resource = resource
     //var rectangle = rectangle
-put(resource, rectangle)
+rectangleHashtable!.put(resource, rectangle)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getRectangleArrayOfArrays(resource: string): Rectangle[][]{
     //var resource = resource
@@ -244,12 +241,12 @@ put(resource, rectangle)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public addRectangleArrayOfArrays(resource: string, rectangleArrayOfArrays: Rectangle[][]){
     //var resource = resource
     //var rectangleArrayOfArrays = rectangleArrayOfArrays
-put(resource, rectangleArrayOfArrays)
+rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays)
 }
 
 
@@ -271,7 +268,6 @@ put(resource, rectangleArrayOfArrays)
         
 
 
-    
                         if(level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel())
                         
                                     {

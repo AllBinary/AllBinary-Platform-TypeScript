@@ -60,11 +60,10 @@ public constructor ()
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -74,21 +73,20 @@ public constructor ()
     public setName(value: string){
 var value = value
 this.viewName= value
-put(TransformInfoData.getInstance()!.NAME, this.viewName)
+this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.NAME, this.viewName)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(): number{
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put(this.commonStrings!.START, this, commonStrings!.PROCESS)
+                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.PROCESS)
 
                                     }
                                 
@@ -118,11 +116,10 @@ put(TransformInfoData.getInstance()!.NAME, this.viewName)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
 
                                     }
                                 
@@ -135,21 +132,20 @@ put(TransformInfoData.getInstance()!.NAME, this.viewName)
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "doStartTag()")
+                                    logUtil!.put(this.commonStrings!.START, this, "doStartTag()")
 
                                     }
                                 
-this.setHelper()
+this.this.setHelper()
 
 
 
@@ -158,7 +154,7 @@ this.setHelper()
     
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -168,7 +164,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

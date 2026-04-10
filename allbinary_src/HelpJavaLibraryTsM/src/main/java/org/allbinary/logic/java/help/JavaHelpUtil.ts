@@ -80,7 +80,7 @@ var args = args
         
         
 
-show(javaHelpUtil!.getHelpSet("G:/mnt/bc/mydev/working/automation/InputAutomationJavaApplication/AllBinaryInputAutomationHelp/AllBinaryInputAutomation.hs"))
+javaHelpUtil!.show(javaHelpUtil!.getHelpSet("G:/mnt/bc/mydev/working/automation/InputAutomationJavaApplication/AllBinaryInputAutomationHelp/AllBinaryInputAutomation.hs"))
 } catch(e: Exception)
             {
 }
@@ -137,7 +137,7 @@ var filePath = filePath
     
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, getInstance(), "set", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "set", e)
 
 
 
@@ -162,7 +162,7 @@ var url = url
     
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, getInstance(), "set", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "set", e)
 
 
 
@@ -183,13 +183,14 @@ var helpSet = helpSet
         
         
 
-setLocation(point)
-setSize(dimension)
-actionPerformed(contextSensitiveHelpActionEvent)
-put("CSH Action", getInstance(), "show")
+helpBroker!.setLocation(point)
+helpBroker!.setSize(dimension)
+CSH.DisplayHelpFromSource(helpBroker).
+                            actionPerformed(contextSensitiveHelpActionEvent)
+logUtil!.put("CSH Action", getInstance(), "show")
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, getInstance(), "show", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "show", e)
 }
 
 }

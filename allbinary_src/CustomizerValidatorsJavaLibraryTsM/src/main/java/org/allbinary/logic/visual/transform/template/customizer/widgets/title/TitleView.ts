@@ -93,7 +93,6 @@ public constructor (node: Node){
 
 this.title= DomNodeHelper.getTextNodeValue(valueNode)
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(this.title))
                         
                                     {
@@ -102,11 +101,10 @@ this.title= DomNodeHelper.getTextNodeValue(valueNode)
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Title: " +this.getTitle(), this, "Consructor()")
+                                    logUtil!.put("Title: " +this.getTitle(), this, "Consructor()")
 
                                     }
                                 
@@ -117,15 +115,14 @@ public constructor (hashMap: HashMap<Any, Any>){
             super();
             var hashMap = hashMap
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("HashMap: " +hashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("HashMap: " +hashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
-this.getFormData(hashMap)
+this.this.getFormData(hashMap)
 }
 
 
@@ -143,7 +140,6 @@ this.getFormData(hashMap)
 var hashMap = hashMap
 this.title= hashMap!.get(TitleData.getInstance()!.TEXT) as String
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(this.title))
                         
                                     {
@@ -160,7 +156,7 @@ this.title= hashMap!.get(TitleData.getInstance()!.TEXT) as String
         
         
 
-put(TitleData.getInstance()!.TEXT, this.getTitle())
+hashMap!.put(TitleData.getInstance()!.TEXT, this.getTitle())
 
 
 
@@ -170,7 +166,7 @@ put(TitleData.getInstance()!.TEXT, this.getTitle())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -180,11 +176,10 @@ var document = document
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("TitleView HashMap: " +hashMap!.toString(), this, "toXmlNode()")
+                                    logUtil!.put("TitleView HashMap: " +hashMap!.toString(), this, "toXmlNode()")
 
                                     }
                                 

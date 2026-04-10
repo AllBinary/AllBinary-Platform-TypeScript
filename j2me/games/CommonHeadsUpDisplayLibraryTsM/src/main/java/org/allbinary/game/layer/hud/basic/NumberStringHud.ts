@@ -128,14 +128,13 @@ this.primitiveLongUtil= PrimitiveLongUtil(max +1)
 this.max= max
 this.value= 0
 
-    
                         if(direction == 0)
                         
                                     {
                                     
 
 
-                            throw Exception(BasicHudFactory.getInstance()!.DIRECTION_EXCEPTION)
+                            throw Error(BasicHudFactory.getInstance()!.DIRECTION_EXCEPTION)
 
                                     }
                                 
@@ -154,7 +153,7 @@ this.value= 0
 
     public add(value: number){
 var value = value
-this.set(this.value +value)
+this.this.set(this.value +value)
 }
 
 
@@ -162,7 +161,6 @@ this.set(this.value +value)
 var value = value
 this.value= value
 
-    
                         if(this.value > this.max)
                         
                                     {
@@ -177,13 +175,13 @@ this.valueTotalDigits= this.primitiveLongUtil!.getCurrentTotalDigits()
 
     public reduce(value: number){
 var value = value
-this.set(this.value -value)
+this.this.set(this.value -value)
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics, PREPEND_STRING, 0, PREPEND_STRING.length, this.valueString, 0, this.valueTotalDigits, offset)
+super.paint(graphics, PREPEND_STRING, 0, PREPEND_STRING.length, this.valueString, 0, this.valueTotalDigits, offset)
 }
 
 
@@ -212,9 +210,9 @@ var y = y
         
         
 
-setBasicColorP(graphics, getBasicColorP())
-drawChars(charArray, 0, len, x, y, 0)
-drawChars(charArray2, 0, len2, x -this.offset, y, 0)
+this.basicSetColorUtil!.setBasicColorP(graphics, getBasicColorP())
+graphics.drawChars(charArray, 0, len, x, y, 0)
+graphics.drawChars(charArray2, 0, len2, x -this.offset, y, 0)
 }
 
 

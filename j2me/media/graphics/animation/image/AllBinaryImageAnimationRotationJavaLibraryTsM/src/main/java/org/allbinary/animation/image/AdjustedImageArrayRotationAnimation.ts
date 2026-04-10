@@ -56,7 +56,7 @@ public constructor (anyType: any = {}, animationBehavior: AnimationBehavior)
         
         
 
-this.init(allBinaryImageRotationAnimationInfo!.getDx(), allBinaryImageRotationAnimationInfo!.getDy())
+this.this.init(allBinaryImageRotationAnimationInfo!.getDx(), allBinaryImageRotationAnimationInfo!.getDy())
 }
 
 public constructor (imageArray: Image[], animationBehavior: AnimationBehavior)                        
@@ -118,7 +118,7 @@ public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: numbe
 
                             //For kotlin this is before the body of the constructor.
                     
-this.init(dx, dy)
+this.this.init(dx, dy)
 }
 
 public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior)                        
@@ -134,17 +134,17 @@ public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: numbe
 
                             //For kotlin this is before the body of the constructor.
                     
-this.init( -(imageArray[0]!.getWidth() shr 2),  -(imageArray[0]!.getHeight() shr 2))
+this.this.init( -(imageArray[0]!.getWidth() shr 2),  -(imageArray[0]!.getHeight() shr 2))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(dx: number, dy: number){
     //var dx = dx
     //var dy = dy
-this.setDx(dx)
-this.setDy(dy)
+this.this.setDx(dx)
+this.this.setDy(dy)
 }
 
 
@@ -152,7 +152,7 @@ this.setDy(dy)
     //var graphics = graphics
     //var x = x
     //var y = y
-paint(graphics, x +this.dx, y +this.dy)
+super.paint(graphics, x +this.dx, y +this.dy)
 }
 
 

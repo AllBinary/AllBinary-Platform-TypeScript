@@ -50,11 +50,11 @@ export class RequestHandler extends HttpServlet {
         
         
 
-                @Throws(ServletException::class)
+                //@Throws(ServletException::class)
             
     public init(config: ServletConfig){
 var config = config
-init(config)
+super.init(config)
 }
 
 
@@ -62,14 +62,14 @@ init(config)
 }
 
 
-                @Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException::class, IOException::class)
             
     processRequest(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
 var response = response
 
         try {
-            setContentType("text/html")
+            response.setContentType("text/html")
 
     var out: PrintWriter = response.getWriter()!;
         
@@ -81,49 +81,46 @@ var response = response
         
 
 
-    
                         if(workflowInterface != 
                                     null
                                 )
                         
                                     {
-                                    print(workflowInterface!.process())
+                                    out.print(workflowInterface!.process())
 
                                     }
                                 
-flush()
-close()
+out.flush()
+out.close()
 } catch(e: LicensingException)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SERVLETERROR))
                         
                                     {
-                                    put("Servlet LicensingException", this, "processRequest()", e)
+                                    logUtil!.put("Servlet LicensingException", this, "processRequest()", e)
 
                                     }
                                 
-sendRedirect(abcs.globals.URLGLOBALS.LICENSEERRORPAGE)
+response.sendRedirect(abcs.globals.URLGLOBALS.LICENSEERRORPAGE)
 }
  catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SERVLETERROR))
                         
                                     {
-                                    put("Servlet Exception", this, "processRequest()", e)
+                                    logUtil!.put("Servlet Exception", this, "processRequest()", e)
 
                                     }
                                 
-sendRedirect(abcs.globals.URLGLOBALS.ERRORPAGE)
+response.sendRedirect(abcs.globals.URLGLOBALS.ERRORPAGE)
 }
 
 }
 
 
-                @Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException::class, IOException::class)
             
     doGet(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
@@ -132,7 +129,7 @@ processRequest(request, response)
 }
 
 
-                @Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException::class, IOException::class)
             
     doPost(request: HttpServletRequest, response: HttpServletResponse){
 var request = request

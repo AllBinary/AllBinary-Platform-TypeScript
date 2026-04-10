@@ -98,10 +98,10 @@ index < size; index++)
         {
 orderHistoryInterface= orderHistoryInterfaceVector!.get(index) as OrderHistoryInterface
 numberOfOrders= numberOfOrders +1
-add(orderHistoryInterface!.getSubTotal())
-add(orderHistoryInterface!.getShippingCost())
-add(orderHistoryInterface!.getTaxes())
-add(orderHistoryInterface!.getTotal())
+this.subTotalMoney!.add(orderHistoryInterface!.getSubTotal())
+this.shippingCostMoney!.add(orderHistoryInterface!.getShippingCost())
+this.taxesMoney!.add(orderHistoryInterface!.getTaxes())
+this.totalMoney!.add(orderHistoryInterface!.getTotal())
 }
 
 this.numberOfOrdersLong= numberOfOrders as Long
@@ -169,11 +169,11 @@ this.numberOfOrdersLong= numberOfOrders as Long
         
         
 
-put(storeFrontOrdersHistoryStatisticsData!.NUMBEROFORDERS, this.getNumberOfOrders()!.toString())
-put(storeFrontOrdersHistoryStatisticsData!.SUBTOTAL, this.getSubTotal()!.toString())
-put(storeFrontOrdersHistoryStatisticsData!.SHIPPINGCOST, this.getShippingCost()!.toString())
-put(storeFrontOrdersHistoryStatisticsData!.TAXES, this.getTaxes()!.toString())
-put(storeFrontOrdersHistoryStatisticsData!.TOTAL, this.getTotal()!.toString())
+hashMap!.put(storeFrontOrdersHistoryStatisticsData!.NUMBEROFORDERS, this.getNumberOfOrders()!.toString())
+hashMap!.put(storeFrontOrdersHistoryStatisticsData!.SUBTOTAL, this.getSubTotal()!.toString())
+hashMap!.put(storeFrontOrdersHistoryStatisticsData!.SHIPPINGCOST, this.getShippingCost()!.toString())
+hashMap!.put(storeFrontOrdersHistoryStatisticsData!.TAXES, this.getTaxes()!.toString())
+hashMap!.put(storeFrontOrdersHistoryStatisticsData!.TOTAL, this.getTotal()!.toString())
 
 
 

@@ -75,7 +75,7 @@ private constructor (){
             }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getInstance(abeClientInformation: AbeClientInformationInterface, className: string): any = {}{
@@ -92,11 +92,10 @@ private constructor (){
 } catch(e: LicensingException)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
-                                    put("Failure for: " +className, this, "getInstance(classname)", e)
+                                    logUtil!.put("Failure for: " +className, this, "getInstance(classname)", e)
 
                                     }
                                 
@@ -108,11 +107,10 @@ private constructor (){
  catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
-                                    put("Failure for: " +className, this, "getInstance(classname)", e)
+                                    logUtil!.put("Failure for: " +className, this, "getInstance(classname)", e)
 
                                     }
                                 
@@ -127,7 +125,7 @@ private constructor (){
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getInstance(abeClientInformation: AbeClientInformationInterface, className: string, classes: KClass<*>[], params: any = {}[]): any = {}{
@@ -150,7 +148,6 @@ var params = params
         
 
 
-    
                         if(useCustomLoader)
                         
                                     {
@@ -193,7 +190,6 @@ constructor= myClass!.getConstructor(classes)
 } catch(e: LicensingException)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
@@ -202,11 +198,11 @@ constructor= myClass!.getConstructor(classes)
         
         
 
-append("Failure for: ")
-append(className)
-append(CommonSeps.getInstance()!.SPACE)
-append(ConstructorUtil.view(constructor, CommonSeps.getInstance()!.NEW_LINE))
-put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
+stringBuffer!.append("Failure for: ")
+stringBuffer!.append(className)
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(ConstructorUtil.view(constructor, CommonSeps.getInstance()!.NEW_LINE))
+logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
 
                                     }
                                 
@@ -218,7 +214,6 @@ put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
  catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
@@ -227,11 +222,11 @@ put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
         
         
 
-append("Failure for: ")
-append(className)
-append(CommonSeps.getInstance()!.SPACE)
-append(ConstructorUtil.view(constructor, CommonSeps.getInstance()!.NEW_LINE))
-put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
+stringBuffer!.append("Failure for: ")
+stringBuffer!.append(className)
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(ConstructorUtil.view(constructor, CommonSeps.getInstance()!.NEW_LINE))
+logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
 
                                     }
                                 
@@ -246,7 +241,7 @@ put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public ::class(abeClientInformation: AbeClientInformationInterface, className: string): KClass<*>{
@@ -260,7 +255,6 @@ put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
         
 
 
-    
                         if(useCustomLoader)
                         
                                     {
@@ -301,11 +295,10 @@ put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
 } catch(e: LicensingException)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
-                                    put("Failure for: " +className, this, "getClass(className)", e)
+                                    logUtil!.put("Failure for: " +className, this, "getClass(className)", e)
 
                                     }
                                 
@@ -317,11 +310,10 @@ put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
  catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
-                                    put("Failure for: " +className, this, "getClass(className)", e)
+                                    logUtil!.put("Failure for: " +className, this, "getClass(className)", e)
 
                                     }
                                 

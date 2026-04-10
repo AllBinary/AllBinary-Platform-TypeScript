@@ -30,7 +30,6 @@ export class ParamsUtil
     public static viewParams(params: KClass<*>[]): string{
 var params = params
 
-    
                         if(params != 
                                     null
                                 )
@@ -51,8 +50,8 @@ var params = params
         
 index < params.length; index++)
         {
-append(" ")
-append(params[index]!.getName())
+stringBuffer!.append(" ")
+stringBuffer!.append(params[index]!.getName())
 }
 
 
@@ -65,7 +64,6 @@ append(params[index]!.getName())
                                     }
                                 
                              else 
-    
                         if()
                         
 }

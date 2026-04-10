@@ -85,7 +85,6 @@ i < size; i++)
         
 
 
-    
                         if(url.toString()!.compareTo(nextURL!.toString()) == 0)
                         
                                     {
@@ -95,7 +94,7 @@ i < size; i++)
                                 
 }
 
-add(url)
+vector.add(url)
 
 
 

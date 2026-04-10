@@ -73,7 +73,7 @@ this.webappPath= value
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     setCustomLoaderWebappPath(){
 
@@ -110,7 +110,7 @@ this.webappPath= value
         
         
 
-invoke(anyType, methodArgs)
+setMethod!.invoke(anyType, methodArgs)
 } catch(e: LicensingException)
             {
 
@@ -121,11 +121,10 @@ invoke(anyType, methodArgs)
  catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "setCustomLoaderWebappPath()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setCustomLoaderWebappPath()", e)
 
                                     }
                                 
@@ -134,22 +133,20 @@ invoke(anyType, methodArgs)
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "doStartTag()")
+                                    logUtil!.put(this.commonStrings!.START, this, "doStartTag()")
 
                                     }
                                 
 
-    
                         if(command != 
                                     null
                                 )
@@ -157,11 +154,10 @@ invoke(anyType, methodArgs)
                                     {
                                     this.propertiesHashMap= HashMap<Any, Any>()
 
-    
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.SET) == 0)
                         
                                     {
-                                    this.setCustomLoaderWebappPath()
+                                    this.this.setCustomLoaderWebappPath()
 
                                     }
                                 
@@ -176,7 +172,7 @@ invoke(anyType, methodArgs)
     
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -186,7 +182,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

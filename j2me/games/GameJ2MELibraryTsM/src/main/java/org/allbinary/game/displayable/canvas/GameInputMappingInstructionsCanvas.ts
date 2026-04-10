@@ -93,16 +93,16 @@ var allBinaryGameLayerManager = allBinaryGameLayerManager
 
                             //For kotlin this is before the body of the constructor.
                     
-put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 this.colorFillPaintable= ColorFillPaintableFactory.getInstance()!.getInstance(allBinaryGameLayerManager!.getBackgroundBasicColor(), false)
 }
 
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-this.removeAllCommands()
-this.addCommand(GameInputMappingInstructionsCanvas.CLOSE)
-this.setCommandListener(cmdListener)
+this.this.removeAllCommands()
+this.this.addCommand(GameInputMappingInstructionsCanvas.CLOSE)
+this.this.setCommandListener(cmdListener)
 }
 
 
@@ -126,7 +126,7 @@ var graphics = graphics
         
         
 
-paint(graphics)
+this.colorFillPaintable!.paint(graphics)
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
@@ -142,10 +142,10 @@ paint(graphics)
         
         
 
-setColor(this.foregroundColor)
-drawString(this.TITLE, halfWidth -beginWidth, charHeight, anchor)
-drawCenterStrings(graphics, instructions, displayInfo!.getLastWidth(), halfWidth, 3 *charHeight)
-paint(graphics)
+graphics.setColor(this.foregroundColor)
+graphics.drawString(this.TITLE, halfWidth -beginWidth, charHeight, anchor)
+drawStringUtil!.drawCenterStrings(graphics, instructions, displayInfo!.getLastWidth(), halfWidth, 3 *charHeight)
+super.paint(graphics)
 }
 
 

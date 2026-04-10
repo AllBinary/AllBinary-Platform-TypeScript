@@ -43,7 +43,7 @@ this.demoGameMidletState= demoGameMidletState
 
     public init(anyType: any = {}){
 var anyType = anyType
-this.setSource(anyType)
+this.this.setSource(anyType)
 }
 
 

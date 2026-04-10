@@ -22,7 +22,7 @@
 interface PickupBehaviorInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     doPickup(pickupProcessorInterface: PickupProcessorInterface)
 

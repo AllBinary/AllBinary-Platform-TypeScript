@@ -22,7 +22,7 @@
 interface PoolInterface extends CacheInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     remove(key: any = {}): CacheableInterface
 

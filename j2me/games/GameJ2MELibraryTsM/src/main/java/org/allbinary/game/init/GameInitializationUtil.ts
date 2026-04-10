@@ -66,7 +66,7 @@ export class GameInitializationUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public initDemo(abeClientInformation: AbeClientInformationInterface, canvas: MyCanvas, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory){
     //var abeClientInformation = abeClientInformation
@@ -78,7 +78,6 @@ export class GameInitializationUtil
         
 
 
-    
                         if(ChangedGameFeatureListener.getInstance()!.isChanged(mainFeatureFactory!.STATIC))
                         
                                     {
@@ -93,16 +92,14 @@ export class GameInitializationUtil
         
 
 
-    
                         if(features.isFeature(mainFeatureFactory!.LOAD_ALL))
                         
                                     {
-                                    this.initGame(abeClientInformation, canvas, gameInitializationInterfaceFactoryInterface)
+                                    this.this.initGame(abeClientInformation, canvas, gameInitializationInterfaceFactoryInterface)
 
                                     }
                                 
                              else 
-    
                         if(features.isFeature(mainFeatureFactory!.LOAD_ONDEMAND))
                         
                                     {
@@ -111,8 +108,8 @@ export class GameInitializationUtil
         
         
 
-init(abeClientInformation, canvas.getCustomCommandListener(), resourceLoadingLevelFactory!.LOAD_EARLY.getLevel())
-setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_EARLY)
+gameInitializationInterface!.init(abeClientInformation, canvas.getCustomCommandListener(), resourceLoadingLevelFactory!.LOAD_EARLY.getLevel())
+this.EVENT.setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_EARLY)
 
                                     }
                                 
@@ -120,25 +117,24 @@ setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_EARLY)
                             
 
 
-                            throw Exception("No Loading Feature Available")
+                            throw Error("No Loading Feature Available")
 
                         }
                             
-fireEvent(EVENT)
+GameInitializedEventHandler.getInstance()!.fireEvent(EVENT)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public initGame(abeClientInformation: AbeClientInformationInterface, canvas: MyCanvas, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory){
     //var abeClientInformation = abeClientInformation
     //var canvas = canvas
     //var gameInitializationInterfaceFactoryInterface = gameInitializationInterfaceFactoryInterface
 
-    
                         if(ChangedGameFeatureListener.getInstance()!.isChanged(MainFeatureFactory.getInstance()!.STATIC))
                         
                                     {
@@ -152,10 +148,10 @@ fireEvent(EVENT)
         
         
 
-init(abeClientInformation, canvas.getCustomCommandListener(), resourceLoadingLevelFactory!.LOAD_ALL.getLevel())
-setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_ALL)
-fireEvent(EVENT)
-remove(MainFeatureFactory.getInstance()!.STATIC)
+gameInitializationInterface!.init(abeClientInformation, canvas.getCustomCommandListener(), resourceLoadingLevelFactory!.LOAD_ALL.getLevel())
+this.EVENT.setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_ALL)
+GameInitializedEventHandler.getInstance()!.fireEvent(EVENT)
+ChangedGameFeatureListener.getInstance()!.remove(MainFeatureFactory.getInstance()!.STATIC)
 
                                     }
                                 

@@ -58,7 +58,7 @@ export class SetLicenseInitInfo
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static main(args: string[]){
 var args = args
@@ -67,7 +67,7 @@ var args = args
         
         
 
-createNewLicenseInitInfo(BasicArrayList())
+initInfo!.createNewLicenseInitInfo(BasicArrayList())
 }
 
 
@@ -78,7 +78,7 @@ public constructor (options: string[]){
 
             super();
             var options = options
-setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH)
+LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH)
 
 
 
@@ -89,13 +89,13 @@ setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH)
         
 index < options.length; index++)
         {
-add(options[index]!)
+vector.add(options[index]!)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getLicenseInitInfo(): LicenseInitInfo{
 
@@ -104,7 +104,6 @@ add(options[index]!)
         
 
 
-    
                         if(FileFactory.getInstance()!.isFile(licenseInitInfoUtil!.INITFILENAME))
                         
                                     {
@@ -135,7 +134,6 @@ var licenceServerVector = licenceServerVector
 
         try {
             
-    
                         if(licenceServerVector == 
                                     null
                                 )
@@ -144,7 +142,7 @@ var licenceServerVector = licenceServerVector
                                     
 
 
-                            throw Exception("null Vector Passed - Just Make Empty if you want")
+                            throw Error("null Vector Passed - Just Make Empty if you want")
 
                                     }
                                 
@@ -153,8 +151,8 @@ var licenceServerVector = licenceServerVector
         
         
 
-println("License Serv Example: http://www.dartstatistics.com/LicServ/serverssl.php")
-clearServers()
+System.out.println("License Serv Example: http://www.dartstatistics.com/LicServ/serverssl.php")
+licenseInitInfo!.clearServers()
 
     var file: File = new File(PrintLicenseInitInfo.PATH +"licenseservers.txt");
         
@@ -179,13 +177,12 @@ clearServers()
         
 
 
-    
                         if(line != 
                                     null
                                 )
                         
                                     {
-                                    addServer(line)
+                                    licenseInitInfo!.addServer(line)
 
                                     }
                                 
@@ -198,12 +195,12 @@ clearServers()
                             
 }
 
-write(licenseInitInfo)
-read()
+LicenseInitInfoUtil.getInstance()!.write(licenseInitInfo)
+LicenseInitInfoUtil.getInstance()!.read()
 } catch(e: Exception)
             {
-print("Error: " +e)
-printStackTrace()
+System.out.print("Error: " +e)
+e.printStackTrace()
 }
 
 }

@@ -65,7 +65,6 @@ private constructor (){
     public getInstance(string: string): string{
 var string = string
 
-    
                         if(string == 
                                     null
                                 )
@@ -127,7 +126,6 @@ var string = string
 index < size; index++)
         {
 
-    
                         if(string[index] == aChar)
                         
                                     {
@@ -149,7 +147,6 @@ index < size; index++)
     public toString(anyType: any = {}): string{
     //var anyType = anyType
 
-    
                         if(anyType != 
                                     null
                                 )

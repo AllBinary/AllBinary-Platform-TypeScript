@@ -58,7 +58,7 @@ public constructor (clientInformationFactory: ClientInformationFactory)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     isContinue(): boolean{
 
@@ -67,7 +67,6 @@ public constructor (clientInformationFactory: ClientInformationFactory)
         
 
 
-    
                         if(hashtable != 
                                     null
                                  && hashtable.length > 0)
@@ -105,28 +104,28 @@ public constructor (clientInformationFactory: ClientInformationFactory)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createDemoGameCanvasRunnableInterface(): GameCanvasRunnableInterface{
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createGameCanvasRunnableInterface(allBinaryGameLayerManager: AllBinaryGameLayerManager): GameCanvasRunnableInterface{
 var allBinaryGameLayerManager = allBinaryGameLayerManager
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     createGameCanvasRunnableInterface(): GameCanvasRunnableInterface{
 
@@ -146,22 +145,22 @@ var allBinaryGameLayerManager = allBinaryGameLayerManager
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setDemo(){
-put(commonStrings!.START, this, "setDemo")
+logUtil!.put(commonStrings!.START, this, "setDemo")
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
 
-start()
-runTask(DemoRunnable(this))
+progressCanvas!.start()
+PrimaryThreadPool.getInstance()!.runTask(DemoRunnable(this))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public createGame(){
@@ -170,21 +169,21 @@ runTask(DemoRunnable(this))
         
         
 
-put(commonStrings!.START, this, CREATE_GAME)
+logUtil!.put(commonStrings!.START, this, CREATE_GAME)
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
 
-start()
+progressCanvas!.start()
 
     var hashtable: Hashtable<Any, Any> = this.getStartStateHashtable()!;
         
         
 
-this.setStartStateHashtable(NullUtil.getInstance()!.NULL_TABLE)
-runTask(CreateGameRunnable(this, hashtable))
-put(commonStrings!.END, this, CREATE_GAME)
+this.this.setStartStateHashtable(NullUtil.getInstance()!.NULL_TABLE)
+PrimaryThreadPool.getInstance()!.runTask(CreateGameRunnable(this, hashtable))
+logUtil!.put(commonStrings!.END, this, CREATE_GAME)
 }
 
 

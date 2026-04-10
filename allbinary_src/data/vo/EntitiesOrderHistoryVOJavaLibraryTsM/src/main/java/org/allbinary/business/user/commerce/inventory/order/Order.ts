@@ -118,7 +118,6 @@ this.paymentMethod= paymentMethod
 
     public isIdValid(): Boolean{
 
-    
                         if(this.getId() == 
                                     null
                                  || this.getId()!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId()))
@@ -159,7 +158,6 @@ this.paymentMethod= paymentMethod
         
 
 
-    
                         if(this.getId() == 
                                     null
                                  || this.getId()!.compareTo(EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId()))
@@ -378,15 +376,15 @@ var storeFrontInterface = storeFrontInterface
         
         
 
-put(PaymentData.METHOD, this.paymentMethod)
-put(ShippingMethodData.NAME, this.shippingType)
-put(StoreFrontData.getInstance()!.NAME, this.storeName)
-put(EntryData.getInstance()!.SPECIAL, this.special)
-put(OrderData.ID, this.id)
-put(OrderData.CUSTOMERCOMMENT, this.userComment)
-put(OrderData.CUSTOMERCANCELCOMMENT, this.userCancelComment)
-put(OrderData.STORECOMMENT, this.storeComment)
-put(OrderData.STORECANCELCOMMENT, this.storeCancelComment)
+hashMap!.put(PaymentData.METHOD, this.paymentMethod)
+hashMap!.put(ShippingMethodData.NAME, this.shippingType)
+hashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
+hashMap!.put(EntryData.getInstance()!.SPECIAL, this.special)
+hashMap!.put(OrderData.ID, this.id)
+hashMap!.put(OrderData.CUSTOMERCOMMENT, this.userComment)
+hashMap!.put(OrderData.CUSTOMERCANCELCOMMENT, this.userCancelComment)
+hashMap!.put(OrderData.STORECOMMENT, this.storeComment)
+hashMap!.put(OrderData.STORECANCELCOMMENT, this.storeCancelComment)
 
 
 
@@ -396,7 +394,7 @@ put(OrderData.STORECANCELCOMMENT, this.storeCancelComment)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -447,7 +445,7 @@ i < size; i++)
         
 
 value= StringUtil.getInstance()!.getInstance(value)
-appendChild(ModDomHelper.createNameValueNodes(document, name, value))
+node.appendChild(ModDomHelper.createNameValueNodes(document, name, value))
 }
 
 

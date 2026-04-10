@@ -58,11 +58,11 @@ private constructor (){
 
     public init(combatGameCanvas: AllBinaryGameCanvas){
 var combatGameCanvas = combatGameCanvas
-init(DestroyEventFactory(combatGameCanvas))
+EVENT_POOL.init(DestroyEventFactory(combatGameCanvas))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(layerInterface: AllBinaryLayer): DestroyedEvent{
 var layerInterface = layerInterface
@@ -71,7 +71,7 @@ var layerInterface = layerInterface
         
         
 
-setLayerInterfaceForCircularStaticPool(layerInterface)
+destroyedEvent!.setLayerInterfaceForCircularStaticPool(layerInterface)
 
 
 

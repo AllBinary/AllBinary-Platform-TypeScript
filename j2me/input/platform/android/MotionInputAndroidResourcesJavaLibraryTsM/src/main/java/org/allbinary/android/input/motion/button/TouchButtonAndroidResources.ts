@@ -92,7 +92,6 @@ export class TouchButtonAndroidResources extends Init {
         
 
 
-    
                         if(CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE == 128)
                         
                                     {
@@ -106,11 +105,10 @@ RESOURCE_ARRAY[6]= androidResources!.raw.touch_button_turn_right_arrow_128_by_12
 RESOURCE_ARRAY[7]= androidResources!.raw.touch_button_strafe_left_arrow_128_by_128
 RESOURCE_ARRAY[8]= androidResources!.raw.touch_button_strafe_right_arrow_128_by_128
 
-    
                         if(OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!.isOverScan())
                         
                                     {
-                                    addResource(RESOURCE_STRING_ARRAY[2]!.HINT, Integer(Integer.valueOf(androidResources!.raw.ouya_o)))
+                                    resourceUtil!.addResource(RESOURCE_STRING_ARRAY[2]!.HINT, Integer(Integer.valueOf(androidResources!.raw.ouya_o)))
 
                                     }
                                 
@@ -140,7 +138,7 @@ RESOURCE_ARRAY[8]= androidResources!.raw.touch_button_strafe_right_arrow_64_by_6
         
 index < RESOURCE_ARRAY.length; index++)
         {
-addResource(RESOURCE_STRING_ARRAY[index]!.RESOURCE, Integer(Integer.valueOf(RESOURCE_ARRAY[index]!)))
+resourceUtil!.addResource(RESOURCE_STRING_ARRAY[index]!.RESOURCE, Integer(Integer.valueOf(RESOURCE_ARRAY[index]!)))
 }
 
 }

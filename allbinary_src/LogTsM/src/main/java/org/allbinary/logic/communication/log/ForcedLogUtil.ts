@@ -38,7 +38,7 @@ var anyType = anyType
                             throw Error(message)
 } catch(e: Exception)
             {
-put(CommonStrings.getInstance()!.EXCEPTION, anyType, "log", e)
+PreLogUtil.put(CommonStrings.getInstance()!.EXCEPTION, anyType, "log", e)
 }
 
 }

@@ -63,11 +63,10 @@ export class DownKeyEventHandlerBase extends BasicEventHandler {
     public addListener(playerGameInput: PlayerGameInput){
     //var playerGameInput = playerGameInput
 
-    
                         if(!list.contains(playerGameInput))
                         
                                     {
-                                    add(playerGameInput)
+                                    list.add(playerGameInput)
 
                                     }
                                 
@@ -75,27 +74,27 @@ export class DownKeyEventHandlerBase extends BasicEventHandler {
 
 
     public removeAllListeners(){
-clear()
-removeAllListeners()
+this.list.clear()
+super.removeAllListeners()
 }
 
 
     public removeListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
-remove(eventListenerInterface)
-removeListenerSingleThreaded(eventListenerInterface)
+this.list.remove(eventListenerInterface)
+super.removeListenerSingleThreaded(eventListenerInterface)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-remove(eventListenerInterface)
-removeListener(eventListenerInterface)
+this.list.remove(eventListenerInterface)
+super.removeListener(eventListenerInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fireEvent(eventObject: Integer){
     //var eventObject = eventObject
@@ -116,10 +115,10 @@ removeListener(eventListenerInterface)
         
         
 
-onDownKeyEvent(eventObject)
+playerGameInput!.onDownKeyEvent(eventObject)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
 }
 
 }
@@ -138,10 +137,10 @@ put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
 
         try {
             eventListenerInterface= this.eventListenerInterfaceList!.get(index) as EventListenerInterface
-this.process(eventObject, eventListenerInterface)
+this.this.process(eventObject, eventListenerInterface)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
 }
 
 index++
@@ -150,7 +149,7 @@ index++
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fireEvent(eventObject: GameKeyEvent){
     //var eventObject = eventObject
@@ -176,10 +175,10 @@ index++
         
         
 
-onDownKeyEvent(eventObject)
+playerGameInput!.onDownKeyEvent(eventObject)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
 }
 
 }
@@ -198,10 +197,10 @@ put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
 
         try {
             eventListenerInterface= this.eventListenerInterfaceList!.get(index) as EventListenerInterface
-this.process(eventObject, eventListenerInterface)
+this.this.process(eventObject, eventListenerInterface)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
 }
 
 index++
@@ -210,7 +209,7 @@ index++
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(eventObject: Integer, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject
@@ -220,11 +219,11 @@ index++
         
         
 
-onDownKeyEvent(eventObject)
+downKeyEventListenerInterface!.onDownKeyEvent(eventObject)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(eventObject: GameKeyEvent, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject
@@ -234,7 +233,7 @@ onDownKeyEvent(eventObject)
         
         
 
-onDownKeyEvent(eventObject)
+downKeyEventListenerInterface!.onDownKeyEvent(eventObject)
 }
 
 
@@ -244,9 +243,9 @@ onDownKeyEvent(eventObject)
         
         
 
-append(super.toString())
-append(TOTAL_LISTENERS)
-appendint(this.list.size())
+stringBuffer!.append(super.toString())
+stringBuffer!.append(TOTAL_LISTENERS)
+stringBuffer!.appendint(this.list.size())
 
     var eventListenerInterface: EventListenerInterface
 
@@ -263,11 +262,11 @@ index < this.list.size(); index++)
 
         try {
             eventListenerInterface= this.list.get(index) as EventListenerInterface
-append(LISTENER_LABEL)
-append(eventListenerInterface!.toString())
+stringBuffer!.append(LISTENER_LABEL)
+stringBuffer!.append(eventListenerInterface!.toString())
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e)
 }
 
 }

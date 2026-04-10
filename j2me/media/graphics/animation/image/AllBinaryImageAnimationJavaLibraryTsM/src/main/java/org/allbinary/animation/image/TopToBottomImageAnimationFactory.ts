@@ -58,7 +58,7 @@ public constructor (image: Image, sequenceArray: IntArray, animationBehaviorFact
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

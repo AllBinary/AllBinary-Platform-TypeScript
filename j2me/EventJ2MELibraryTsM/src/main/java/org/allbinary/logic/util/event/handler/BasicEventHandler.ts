@@ -92,7 +92,7 @@ this.eventListenerInterfaceList= BasicArrayList()
 index < size; index++)
         {
 eventListenerInterface= vector.get(index) as EventListenerInterface
-this.addListener(eventListenerInterface)
+this.this.addListener(eventListenerInterface)
 }
 
 }
@@ -119,7 +119,7 @@ this.addListener(eventListenerInterface)
 index < size; index++)
         {
 eventListenerInterface= vector.get(index) as EventListenerInterface
-this.removeListener(eventListenerInterface)
+this.this.removeListener(eventListenerInterface)
 }
 
 }
@@ -128,11 +128,10 @@ this.removeListener(eventListenerInterface)
     public addListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
 
-    
                         if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
                         
                                     {
-                                    add(eventListenerInterface)
+                                    this.eventListenerInterfaceList!.add(eventListenerInterface)
 
                                     }
                                 
@@ -142,11 +141,10 @@ this.removeListener(eventListenerInterface)
     public addListener(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
 
-    
                         if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
                         
                                     {
-                                    add(eventListenerInterface)
+                                    this.eventListenerInterfaceList!.add(eventListenerInterface)
 
                                     }
                                 
@@ -155,17 +153,17 @@ this.removeListener(eventListenerInterface)
 
     public removeListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
-remove(eventListenerInterface)
+this.eventListenerInterfaceList!.remove(eventListenerInterface)
 }
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
-remove(eventListenerInterface)
+this.eventListenerInterfaceList!.remove(eventListenerInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fireEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
@@ -183,10 +181,10 @@ remove(eventListenerInterface)
 
         try {
             eventListenerInterface= this.eventListenerInterfaceList!.get(index) as EventListenerInterface
-this.process(eventObject, eventListenerInterface)
+this.this.process(eventObject, eventListenerInterface)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, eventStrings!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, eventStrings!.FIRE_EVENT, e)
 }
 
 index++
@@ -195,12 +193,12 @@ index++
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
-onEvent(eventObject)
+eventListenerInterface!.onEvent(eventObject)
 }
 
 
@@ -220,8 +218,8 @@ onEvent(eventObject)
         
         
 
-append(eventStrings!.TOTAL_LISTENERS)
-appendint(this.eventListenerInterfaceList!.size())
+stringBuffer!.append(eventStrings!.TOTAL_LISTENERS)
+stringBuffer!.appendint(this.eventListenerInterfaceList!.size())
 
     var eventListenerInterface: EventListenerInterface
 
@@ -236,11 +234,11 @@ appendint(this.eventListenerInterfaceList!.size())
 
         try {
             eventListenerInterface= this.eventListenerInterfaceList!.get(index) as EventListenerInterface
-append(eventStrings!.LISTENER_LABEL)
-append(eventListenerInterface!.toString())
+stringBuffer!.append(eventStrings!.LISTENER_LABEL)
+stringBuffer!.append(eventListenerInterface!.toString())
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e)
 }
 
 index++

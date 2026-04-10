@@ -78,11 +78,11 @@ public constructor (clientInfo: AbeClientInformationInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setServer(0)
+this.this.setServer(0)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(anyType: any = {}, cryptInterface: CryptInterface): any = {}{
     //var anyType = anyType
@@ -99,11 +99,11 @@ this.setServer(0)
         
         
 
-append(TRYING)
-appendint(this.getServer())
-append(SEP)
-append(server)
-put(CommonLabels.getInstance()!.START_LABEL +stringBuffer!.toString(), this, commonStrings!.GET)
+stringBuffer!.append(TRYING)
+stringBuffer!.appendint(this.getServer())
+stringBuffer!.append(SEP)
+stringBuffer!.append(server)
+logUtil!.put(CommonLabels.getInstance()!.START_LABEL +stringBuffer!.toString(), this, commonStrings!.GET)
 
     var param: Vector = new Vector();
         
@@ -125,8 +125,8 @@ serverUrl= serverUrl!.substring(0, index +1) +PAGE
         
         
 
-this.setClient(xmlRpcClient)
-setBasicAuthentication(
+this.this.setClient(xmlRpcClient)
+xmlRpcClient!.setBasicAuthentication(
                             null, 
                             null)
 
@@ -134,14 +134,14 @@ setBasicAuthentication(
         
         
 
-put(CLIENT_INFO +hashtable.toString(), this, commonStrings!.GET)
-add(hashtable)
+logUtil!.put(CLIENT_INFO +hashtable.toString(), this, commonStrings!.GET)
+param.add(hashtable)
 
     var result: any = {} = xmlRpcClient!.execute(this.getRemoteMethod(), param, cryptInterface)!;
         
         
 
-put(RESULT +result.toString(), this, commonStrings!.GET)
+logUtil!.put(RESULT +result.toString(), this, commonStrings!.GET)
 isOnline= true
 
 
@@ -151,9 +151,8 @@ isOnline= true
     
 } catch(e: IOException)
             {
-put(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTrace(e), this, commonStrings!.GET)
+logUtil!.put(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTrace(e), this, commonStrings!.GET)
 
-    
                         if(!e.getMessage()!.startsWith(HOST_NOT_RESOLVED))
                         
                                     {
@@ -170,14 +169,14 @@ put(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTrace(e), this, c
                             
 
 
-                            throw Exception(HOST_NOT_RESOLVED_MSG)
+                            throw Error(HOST_NOT_RESOLVED_MSG)
 
                         }
                             
 }
  catch(e: XmlRpcException)
             {
-put(SERVER_REPORTED_ERROR, this, commonStrings!.GET, e)
+logUtil!.put(SERVER_REPORTED_ERROR, this, commonStrings!.GET, e)
 
 
 
@@ -187,7 +186,7 @@ put(SERVER_REPORTED_ERROR, this, commonStrings!.GET, e)
 }
  catch(e: Exception)
             {
-put(UNKNOWN_ERROR, this, commonStrings!.GET, e)
+logUtil!.put(UNKNOWN_ERROR, this, commonStrings!.GET, e)
 
 
 

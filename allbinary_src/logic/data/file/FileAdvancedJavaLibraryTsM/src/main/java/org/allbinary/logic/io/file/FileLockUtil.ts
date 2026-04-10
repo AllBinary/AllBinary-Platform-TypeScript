@@ -65,7 +65,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAll(vector: Vector, isReturnOnFailure: boolean): Vector{
 var vector = vector
@@ -101,23 +101,21 @@ index < size; index++)
         
 
 
-    
                         if(fileLock != 
                                     null
                                 )
                         
                                     {
-                                    put("File Lock Obtained: " +file.getAbsolutePath(), this, "getAll")
-add(fileLock)
+                                    logUtil!.put("File Lock Obtained: " +file.getAbsolutePath(), this, "getAll")
+fileLockVector!.add(fileLock)
 
                                     }
                                 
                              else 
-    
                         if(isReturnOnFailure)
                         
                                     {
-                                    put("Total Locks Obtained: " +fileLockVector!.length, this, "getAll")
+                                    logUtil!.put("Total Locks Obtained: " +fileLockVector!.length, this, "getAll")
 
 
 
@@ -129,7 +127,7 @@ add(fileLock)
                                 
 }
 
-put("Total Locks Obtained: " +fileLockVector!.length, this, "getAll")
+logUtil!.put("Total Locks Obtained: " +fileLockVector!.length, this, "getAll")
 
 
 
@@ -139,7 +137,7 @@ put("Total Locks Obtained: " +fileLockVector!.length, this, "getAll")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAllPossible(vector: Vector): Vector{
 var vector = vector
@@ -152,7 +150,7 @@ var vector = vector
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAllOrNone(vector: Vector): Vector{
 var vector = vector
@@ -162,7 +160,6 @@ var vector = vector
         
 
 
-    
                         if(vector.length != fileLockVector!.length)
                         
                                     {
@@ -188,7 +185,7 @@ var vector = vector
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getLock(file: AbFile): FileLock{
 var file = file
@@ -202,7 +199,7 @@ var file = file
     
 } catch(e: Exception)
             {
-put("Exception returns null", this, "getLock", e)
+logUtil!.put("Exception returns null", this, "getLock", e)
 
 
 
@@ -218,7 +215,7 @@ put("Exception returns null", this, "getLock", e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getLock(fileOutputStream: AbFileOutputStream): FileLock{
 var fileOutputStream = fileOutputStream
@@ -237,7 +234,7 @@ var fileOutputStream = fileOutputStream
     
 } catch(e: Exception)
             {
-put("Exception returns null", this, "getLock", e)
+logUtil!.put("Exception returns null", this, "getLock", e)
 
 
 
@@ -247,15 +244,15 @@ put("Exception returns null", this, "getLock", e)
 }
 
          finally {
-            put("Finally - Closing FileOutputStream", this, "getLock")
-close(fileOutputStream)
+            logUtil!.put("Finally - Closing FileOutputStream", this, "getLock")
+StreamUtil.getInstance()!.close(fileOutputStream)
 
          }
         
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getLock(fileChannel: FileChannel): FileLock{
 var fileChannel = fileChannel
@@ -274,7 +271,7 @@ var fileChannel = fileChannel
     
 } catch(e: Exception)
             {
-put("Exception returns null", this, "getLock", e)
+logUtil!.put("Exception returns null", this, "getLock", e)
 
 
 
@@ -284,8 +281,8 @@ put("Exception returns null", this, "getLock", e)
 }
 
          finally {
-            put("Finally - Closing FileChannel", this, "getLock")
-close()
+            logUtil!.put("Finally - Closing FileChannel", this, "getLock")
+fileChannel!.close()
 
          }
         

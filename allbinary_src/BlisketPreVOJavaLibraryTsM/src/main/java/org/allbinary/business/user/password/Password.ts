@@ -97,25 +97,22 @@ this.password= value
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VALIDATION))
                         
                                     {
-                                    put("Password: " +this.password, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Password: " +this.password, this, commonStrings!.IS_VALID)
 
                                     }
                                 
 
-    
                         if(!StringValidationUtil.getInstance()!.isValidRequired(this.password, 6, UserData.MAXLEN))
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VALIDATION))
                         
                                     {
-                                    put("Password is invalid", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Password is invalid", this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -132,11 +129,10 @@ valid= Boolean.FALSE
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VALIDATIONERROR))
                         
                                     {
-                                    put("Failed to validate form", "Password", commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", "Password", commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -153,7 +149,6 @@ valid= Boolean.FALSE
 
     public getValidationInfo(): string{
 
-    
                         if(!StringValidationUtil.getInstance()!.isValidRequired(this.password, 6, UserData.MAXLEN))
                         
                                     {
@@ -194,10 +189,10 @@ this.password= StringUtil.getInstance()!.getInstance(this.password)
         
         
 
-add(Integer(random).
+vector.add(Integer(random).
                             toString())
-add(secret)
-add(SuperCrypt(random).
+vector.add(secret)
+vector.add(SuperCrypt(random).
                             encrypt(password))
 
 
@@ -222,10 +217,10 @@ this.password= StringUtil.getInstance()!.getInstance(this.password)
         
         
 
-put(EntryData.getInstance()!.ENCRYPTION, Integer(random).
+values.put(EntryData.getInstance()!.ENCRYPTION, Integer(random).
                             toString())
-put(UserData.SECRET, secret)
-put(UserData.PASSWORD, SuperCrypt(random).
+values.put(UserData.SECRET, secret)
+values.put(UserData.PASSWORD, SuperCrypt(random).
                             encrypt(this.password))
 
 

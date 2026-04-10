@@ -51,15 +51,15 @@ export class LogConfigTypes
         
 
                 init{
-init()
+LogConfigTypes.init()
 }
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static init(){
 
         try {
-            put("Initialize LogconfigTypes", "LogConfigTypes", "init()")
-getInstance()
+            PreLogUtil.put("Initialize LogconfigTypes", "LogConfigTypes", "init()")
+LogConfigTypeFactory.getInstance()
 
     var loggingInitInfo: LoggingInitInfo = new LoggingInitInfo();
         
@@ -70,19 +70,19 @@ getInstance()
         
         
 
-put("Number Of Log Configs: " +loggingInitInfo!.getNumberOfLogConfigs(), "LogConfigTypes", "init()")
-put("Number Of Log Config Type Names: " +logConfigTypeVector!.size(), "LogConfigTypes", "init()")
-addAll(logConfigTypeVector)
-add(LogConfigTypeFactory.getInstance()!.NETBEANS_MODULE)
+PreLogUtil.put("Number Of Log Configs: " +loggingInitInfo!.getNumberOfLogConfigs(), "LogConfigTypes", "init()")
+PreLogUtil.put("Number Of Log Config Type Names: " +logConfigTypeVector!.size(), "LogConfigTypes", "init()")
+LogConfigTypes.LOGGING.addAll(logConfigTypeVector)
+LogConfigTypes.LOGGING.add(LogConfigTypeFactory.getInstance()!.NETBEANS_MODULE)
 } catch(e: Exception)
             {
-put("Unable to initialize LogConfigTypes", "LogConfigTypes", "init()", e)
+PreLogUtil.put("Unable to initialize LogConfigTypes", "LogConfigTypes", "init()", e)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(node: Node): LogConfigType{
     //var node = node
@@ -102,7 +102,6 @@ put("Unable to initialize LogConfigTypes", "LogConfigTypes", "init()", e)
         
 
 
-    
                         if(descriptionValueNode != 
                                     null
                                 )
@@ -141,7 +140,6 @@ index < size; index++)
         {
 logConfigType= availableLogConfigTypes!.get(index) as LogConfigType
 
-    
                         if(logConfigType!.getName()!.compareTo(name) == 0)
                         
                                     {
@@ -159,7 +157,7 @@ logConfigType= availableLogConfigTypes!.get(index) as LogConfigType
 
 
 
-                            throw Exception("No Such LogConfigType: " +name)
+                            throw Error("No Such LogConfigType: " +name)
 }
 
 private constructor (){

@@ -126,7 +126,7 @@ private constructor (){
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(transformInfoInterface: TransformInfoInterface): PaymentTransactionInterface{
 var transformInfoInterface = transformInfoInterface
@@ -153,7 +153,6 @@ var transformInfoInterface = transformInfoInterface
         
 
 
-    
                         if(command != 
                                     null
                                  && command.compareTo(org.allbinary.globals.GLOBALS2.AUTHORIZEFORMEVALBODYONERROR) == 0)
@@ -209,15 +208,14 @@ var transformInfoInterface = transformInfoInterface
         
         
 
-setTransactionType(TransactionTypeFactory.getInstance()!.SALE.toString())
-setTenderType(TenderTypeFactory.getInstance()!.CREDITCARD.toString())
-setPaymentInfo(orderPaymentInfo)
+orderPaymentInfo!.setTransactionType(TransactionTypeFactory.getInstance()!.SALE.toString())
+orderPaymentInfo!.setTenderType(TenderTypeFactory.getInstance()!.CREDITCARD.toString())
+orderReview!.setPaymentInfo(orderPaymentInfo)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    put(orderReview!.getId(), this, "getPaymentTransactionInterface()")
+                                    logUtil!.put(orderReview!.getId(), this, "getPaymentTransactionInterface()")
 
                                     }
                                 
@@ -238,11 +236,10 @@ setPaymentInfo(orderPaymentInfo)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENTERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getPaymentTransactionInterface()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getPaymentTransactionInterface()", e)
 
                                     }
                                 
@@ -255,7 +252,7 @@ setPaymentInfo(orderPaymentInfo)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     generateFromTestData(transformInfoInterface: TransformInfoInterface): PaymentTransactionInterface{
 var transformInfoInterface = transformInfoInterface
@@ -297,7 +294,6 @@ var transformInfoInterface = transformInfoInterface
         
 
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(gatewayName))
                         
                                     {
@@ -320,23 +316,22 @@ var transformInfoInterface = transformInfoInterface
         
         
 
-setTransactionType(transactionType)
-setTenderType(tenderType)
+payment.setTransactionType(transactionType)
+payment.setTenderType(tenderType)
 
     var orderReview: OrderHistory = new OrderHistory(Basket());
         
         
 
-setStoreName(storeFrontInterface!.getName())
-setPaymentMethod(gatewayName)
-setUserName("testing")
+orderReview!.setStoreName(storeFrontInterface!.getName())
+orderReview!.setPaymentMethod(gatewayName)
+orderReview!.setUserName("testing")
 
     var orderId: string = httpServletRequest!.getParameter("orderNumber")!;
         
         
 
 
-    
                         if(orderId == 
                                     null
                                  || orderId!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) == 0)
@@ -344,7 +339,7 @@ setUserName("testing")
                                     {
                                     orderId= OrderIdGenerator().
                             getNext()
-setId(orderId)
+orderReview!.setId(orderId)
 
     var account: string = httpServletRequest!.getParameter("account")!;
         
@@ -385,14 +380,14 @@ setId(orderId)
         
         
 
-setName(name)
-setNumber(account)
-setExpiration(expirationDate)
-setCheckNumber(checkNumber)
-setDriversLicense(driversLicense)
-setMagneticInkCheckReader(magneticInkCheckReader)
-setAba(aba)
-setAccountType(accountType)
+payment.setName(name)
+payment.setNumber(account)
+payment.setExpiration(expirationDate)
+payment.setCheckNumber(checkNumber)
+payment.setDriversLicense(driversLicense)
+payment.setMagneticInkCheckReader(magneticInkCheckReader)
+payment.setAba(aba)
+payment.setAccountType(accountType)
 
     var street: string = httpServletRequest!.getParameter("street")!;
         
@@ -418,11 +413,11 @@ setAccountType(accountType)
         
         
 
-setName(name)
-setStreet(street)
-setCity(city)
-setState(state)
-setCode(zip)
+streetAddress!.setName(name)
+streetAddress!.setStreet(street)
+streetAddress!.setCity(city)
+streetAddress!.setState(state)
+streetAddress!.setCode(zip)
 
     var email: string = httpServletRequest!.getParameter("email")!;
         
@@ -433,17 +428,17 @@ setCode(zip)
         
         
 
-setTotal(Money(amount))
-setBillingAddress(streetAddress)
+orderReview!.setTotal(Money(amount))
+orderReview!.setBillingAddress(streetAddress)
 
                                     }
                                 
                         else {
-                            setId(orderId)
+                            orderReview!.setId(orderId)
 
                         }
                             
-setPaymentInfo(payment)
+orderReview!.setPaymentInfo(payment)
 
     var paymentTransactionInterface: PaymentTransactionInterface = PaymentTransactionInterfaceFactory.getInstance()!.getInstance(orderReview)!;
         
@@ -458,11 +453,10 @@ setPaymentInfo(payment)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENTERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "generatePaymentTransactionInterfaceFromTestData()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "generatePaymentTransactionInterfaceFromTestData()", e)
 
                                     }
                                 

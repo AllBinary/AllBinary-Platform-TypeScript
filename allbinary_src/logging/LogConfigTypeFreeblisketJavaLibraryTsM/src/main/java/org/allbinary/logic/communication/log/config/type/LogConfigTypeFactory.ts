@@ -322,7 +322,7 @@ export class LogConfigTypeFactory
 private constructor (){
 
             super();
-            put("FreeBlisket", this, CommonStrings.getInstance()!.CONSTRUCTOR)
+            PreLogUtil.put("FreeBlisket", this, CommonStrings.getInstance()!.CONSTRUCTOR)
 }
 
 

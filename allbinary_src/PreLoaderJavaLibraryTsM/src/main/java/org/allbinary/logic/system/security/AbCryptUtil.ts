@@ -62,7 +62,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public decrypt(inputStream: InputStream, key: string): ByteArray{
     //var inputStream = inputStream
@@ -82,7 +82,7 @@ private constructor (){
         
         
 
-init(key)
+abCrypt!.init(key)
 
 
 
@@ -91,8 +91,8 @@ init(key)
     
 
          finally {
-            close(outputStream)
-close(inputStream)
+            streamUtil!.close(outputStream)
+streamUtil!.close(inputStream)
 
          }
         

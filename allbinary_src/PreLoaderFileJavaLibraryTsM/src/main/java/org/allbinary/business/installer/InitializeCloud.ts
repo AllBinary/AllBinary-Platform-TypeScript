@@ -80,7 +80,6 @@ var total = total
 
         try {
             
-    
                         if(AbFileSystem.getInstance()!.isType("com.vobject.appengine.java.io"))
                         
                                     {
@@ -89,16 +88,16 @@ var total = total
         
         
 
-append(URLGLOBALS.getWebappPath())
-append(cloud)
-append(PATH_GLOBALS.getInstance()!.DATA_PATH)
+stringBuffer!.append(URLGLOBALS.getWebappPath())
+stringBuffer!.append(cloud)
+stringBuffer!.append(PATH_GLOBALS.getInstance()!.DATA_PATH)
 
     var path: AbPath = new AbPath(stringBuffer!.toString());
         
         
 
-delete(0, stringBuffer!.length())
-append(URLGLOBALS.getWebappPath())
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(URLGLOBALS.getWebappPath())
 
     var realPath: AbPath = new AbPath(stringBuffer!.toString());
         
@@ -119,11 +118,11 @@ append(URLGLOBALS.getWebappPath())
         
         
 
-delete(0, stringBuffer!.length())
-append("Searched: ")
-append(path.toFileSystemString())
-append(" BasicArrayList: ")
-appendint(size)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("Searched: ")
+stringBuffer!.append(path.toFileSystemString())
+stringBuffer!.append(" BasicArrayList: ")
+stringBuffer!.appendint(size)
 
     var portion: number = size /total +1;
         
@@ -140,7 +139,6 @@ appendint(size)
         
 
 
-    
                         if(end > size)
                         
                                     {
@@ -148,11 +146,11 @@ appendint(size)
 
                                     }
                                 
-append(" Section: ")
-appendint(start)
-append(" - ")
-appendint(end)
-put(stringBuffer!.toString(), this, "initialize()")
+stringBuffer!.append(" Section: ")
+stringBuffer!.appendint(start)
+stringBuffer!.append(" - ")
+stringBuffer!.appendint(end)
+logUtil!.put(stringBuffer!.toString(), this, "initialize()")
 
 
 
@@ -169,7 +167,6 @@ index < end; index++)
         
 
 
-    
                         if(nextFile!.isDirectory())
                         
                                     {
@@ -177,13 +174,13 @@ index < end; index++)
                                     }
                                 
                         else {
-                            copyToCloud(nextFile, path, realPath, cloud, overwriteNewer, overwriteAll)
+                            FileUtil.getInstance()!.copyToCloud(nextFile, path, realPath, cloud, overwriteNewer, overwriteAll)
 
                         }
                             
 }
 
-put("Copied Files To Cloud", this, "initialize()")
+logUtil!.put("Copied Files To Cloud", this, "initialize()")
 
                                     }
                                 
@@ -195,7 +192,7 @@ put("Copied Files To Cloud", this, "initialize()")
     
 } catch(e: Exception)
             {
-put("Unable to copy installer files into cloud", this, "initialize()", e)
+logUtil!.put("Unable to copy installer files into cloud", this, "initialize()", e)
 
 
 

@@ -55,13 +55,13 @@ this.image= image
 var graphics = graphics
 var x = x
 var y = y
-paint(graphics, x, y)
+super.paint(graphics, x, y)
 
     var adjustedCostY: number = image.getHeight() -this.myFont!.DEFAULT_CHAR_HEIGHT;
         
         
 
-drawString(text, x, y +adjustedCostY, 0)
+graphics.drawString(text, x, y +adjustedCostY, 0)
 }
 
 

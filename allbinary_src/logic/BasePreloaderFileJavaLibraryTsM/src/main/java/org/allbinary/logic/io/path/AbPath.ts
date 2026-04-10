@@ -97,7 +97,6 @@ public constructor (aPath: string){
         
 
 
-    
                         if(!stringValidationUtil!.isEmpty(aPath))
                         
                                     {
@@ -125,7 +124,6 @@ var name = name
         
 
 
-    
                         if(!stringValidationUtil!.isEmpty(aPath))
                         
                                     {
@@ -138,7 +136,6 @@ this.path= abPathUtil!.adjustEnd(abPathUtil!.adjust(this.getPath(aPath)))
                         else {
                             init()
 
-    
                         if(!stringValidationUtil!.isEmpty(name))
                         
                                     {
@@ -154,7 +151,7 @@ this.path= abPathUtil!.adjustEnd(abPathUtil!.adjust(this.getPath(aPath)))
 
     init(){
 this.schema= EMPTY_STRING
-this.setPath(abPathData!.SEPARATOR)
+this.this.setPath(abPathData!.SEPARATOR)
 this.nameP= EMPTY_STRING
 }
 
@@ -167,7 +164,6 @@ var aPath = aPath
         
 
 
-    
                         if(beginIndex >= 0)
                         
                                     {
@@ -201,7 +197,7 @@ this.hasSchema= false
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getPath(aPath: string): string{
 var aPath = aPath
@@ -216,7 +212,6 @@ var aPath = aPath
         
 
 
-    
                         if(!this.hasSchema())
                         
                                     {
@@ -231,7 +226,6 @@ var aPath = aPath
         
 
 
-    
                         if(beginIndex >= 0)
                         
                                     {
@@ -242,14 +236,13 @@ var aPath = aPath
 beginIndex++
 numberOfSeps++
 
-    
                         if(numberOfSeps > 2)
                         
                                     {
                                     
 
 
-                            throw Exception("Should Not Have More Than Two Seps")
+                            throw Error("Should Not Have More Than Two Seps")
 
                                     }
                                 
@@ -294,17 +287,16 @@ this.nameP= name
         
 
 
-    
                         if(this.hasSchema())
                         
                                     {
-                                    append(this.schema)
-append(NETWORK_SEP)
+                                    stringBuffer!.append(this.schema)
+stringBuffer!.append(NETWORK_SEP)
 
                                     }
                                 
-append(this.getPath())
-append(this.nameP)
+stringBuffer!.append(this.getPath())
+stringBuffer!.append(this.nameP)
 
 
 
@@ -316,7 +308,6 @@ append(this.nameP)
 
     public toFileSystemString(): string{
 
-    
                         if(this.hasSchema())
                         
                                     {
@@ -330,11 +321,11 @@ append(this.nameP)
         
         
 
-append(this.schema)
-append(commonSeps!.COLON)
-append(filePathData!.SEPARATOR)
-append(FilePathUtil.adjust(this.getPath()))
-append(this.nameP)
+stringBuffer!.append(this.schema)
+stringBuffer!.append(commonSeps!.COLON)
+stringBuffer!.append(filePathData!.SEPARATOR)
+stringBuffer!.append(FilePathUtil.adjust(this.getPath()))
+stringBuffer!.append(this.nameP)
 
 
 

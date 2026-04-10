@@ -40,8 +40,8 @@ export class PlayerOwnedRTSLayers
         
         
 
-append("All: ")
-appendint(this.rtsLayerList!.size())
+stringBuffer!.append("All: ")
+stringBuffer!.appendint(this.rtsLayerList!.size())
 
 
 

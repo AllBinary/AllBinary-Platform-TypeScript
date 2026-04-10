@@ -44,32 +44,30 @@ public constructor (){
 
             super();
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "doStartTag()")
+                                    logUtil!.put(this.commonStrings!.START, this, "doStartTag()")
 
                                     }
                                 
-put(DynamicObjectData.NAME, "workflows.template.data.BasicStoreWorkFlow")
+this.getPropertiesHashMap()!.put(DynamicObjectData.NAME, "workflows.template.data.BasicStoreWorkFlow")
 
 
 
@@ -78,7 +76,7 @@ put(DynamicObjectData.NAME, "workflows.template.data.BasicStoreWorkFlow")
     
 } catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

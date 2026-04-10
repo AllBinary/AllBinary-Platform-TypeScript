@@ -53,7 +53,7 @@ private constructor (){
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
     //var originalImage = originalImage

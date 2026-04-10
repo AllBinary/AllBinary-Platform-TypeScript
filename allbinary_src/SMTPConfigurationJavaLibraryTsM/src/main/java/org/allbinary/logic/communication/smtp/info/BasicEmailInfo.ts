@@ -54,7 +54,6 @@ public constructor (subject: string, textBody: string){
             var subject = subject
 var textBody = textBody
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -63,7 +62,7 @@ var textBody = textBody
         
         
 
-put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -114,12 +113,12 @@ this.emailServerConfigurationInterface= emailServerConfigurationInterface
         
         
 
-append(this.getEmailServerConfigurationInterface()!.toString())
-append(CommonSeps.getInstance()!.NEW_LINE)
-append("Subject: \n")
-append(this.getSubject())
-append("\nText Body: \n")
-append(this.getTextBody())
+stringBuffer!.append(this.getEmailServerConfigurationInterface()!.toString())
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
+stringBuffer!.append("Subject: \n")
+stringBuffer!.append(this.getSubject())
+stringBuffer!.append("\nText Body: \n")
+stringBuffer!.append(this.getTextBody())
 
 
 
@@ -129,7 +128,7 @@ append(this.getTextBody())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(){
 

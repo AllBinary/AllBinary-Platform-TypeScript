@@ -142,11 +142,11 @@ this.roles= values
     makeSessionValid(storedRole: BasicUserRole, userName: string){
 var storedRole = storedRole
 var userName = userName
-setAuthenticated()
-setRole(storedRole)
-setUserName(userName)
-removeAttribute(WeblisketSessionData.REMOVABLEUSERNAME)
-removeAttribute(WeblisketSessionData.REMOVABLEPASSWORD)
+this.weblisketSession!.setAuthenticated()
+this.weblisketSession!.setRole(storedRole)
+this.weblisketSession!.setUserName(userName)
+this.request.removeAttribute(WeblisketSessionData.REMOVABLEUSERNAME)
+this.request.removeAttribute(WeblisketSessionData.REMOVABLEPASSWORD)
 }
 
 
@@ -161,25 +161,24 @@ this.timeout= this.weblisketSession!.getTimeout()
 
     public nextAttempt(){
 
-    
                         if(attemptsInteger != 
                                     null
                                  && attemptsInteger!.toInt() > 0)
                         
                                     {
-                                    setAttempts(Integer(attemptsInteger!.toInt() +1))
+                                    this.weblisketSession!.setAttempts(Integer(attemptsInteger!.toInt() +1))
 
                                     }
                                 
                         else {
-                            setAttempts(Integer(1))
+                            this.weblisketSession!.setAttempts(Integer(1))
 
                         }
                             
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     changePassword(): boolean{
 
@@ -205,7 +204,6 @@ this.timeout= this.weblisketSession!.getTimeout()
         
 
 
-    
                         if(newPassword!.compareTo(newReenteredPassword) != 0)
                         
                                     {
@@ -224,14 +222,13 @@ this.timeout= this.weblisketSession!.getTimeout()
         
 
 
-    
                         if(installerInfo!.isValid(userName, password))
                         
                                     {
-                                    setPassword(newPassword)
-write()
-setUserName(userName)
-setPassword(newPassword)
+                                    installerInfo!.setPassword(newPassword)
+installerInfo!.write()
+this.weblisketSession!.setUserName(userName)
+this.weblisketSession!.setPassword(newPassword)
 
 
 
@@ -257,11 +254,10 @@ setPassword(newPassword)
  catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "invalidateSession()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "invalidateSession()", e)
 
                                     }
                                 
@@ -279,7 +275,7 @@ setPassword(newPassword)
     invalidateSession(): number{
 
         try {
-            clear()
+            this.weblisketSession!.clear()
 
 
 
@@ -290,11 +286,10 @@ setPassword(newPassword)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "invalidateSession()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "invalidateSession()", e)
 
                                     }
                                 
@@ -309,13 +304,12 @@ setPassword(newPassword)
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     isSessionOld(): boolean{
 
         try {
             
-    
                         if(this.role != 
                                     null
                                 )
@@ -342,12 +336,10 @@ setPassword(newPassword)
         
 
 
-    
                         if(timeFirst > timeCreated)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
                                     {
@@ -356,13 +348,13 @@ setPassword(newPassword)
         
         
 
-append("Session Is Old - Timeout: ")
-appendlong(sessionTimout)
-append(" Eval: ")
-appendlong(timeFirst)
-append(" > ")
-appendlong(timeCreated)
-put(stringBuffer!.toString(), this, "isSessionOld()")
+stringBuffer!.append("Session Is Old - Timeout: ")
+stringBuffer!.appendlong(sessionTimout)
+stringBuffer!.append(" Eval: ")
+stringBuffer!.appendlong(timeFirst)
+stringBuffer!.append(" > ")
+stringBuffer!.appendlong(timeCreated)
+logUtil!.put(stringBuffer!.toString(), this, "isSessionOld()")
 
                                     }
                                 
@@ -380,11 +372,10 @@ put(stringBuffer!.toString(), this, "isSessionOld()")
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
                                     {
-                                    put("Role Is Not In Session", this, "isSessionOld()")
+                                    logUtil!.put("Role Is Not In Session", this, "isSessionOld()")
 
                                     }
                                 
@@ -400,11 +391,10 @@ put(stringBuffer!.toString(), this, "isSessionOld()")
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "isSessionOld()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isSessionOld()", e)
 
                                     }
                                 
@@ -421,7 +411,6 @@ put(stringBuffer!.toString(), this, "isSessionOld()")
 
     isRarelyUsedSession(): Boolean{
 
-    
                         if(this.role != 
                                     null
                                 )
@@ -453,7 +442,6 @@ put(stringBuffer!.toString(), this, "isSessionOld()")
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
                                     {
@@ -462,13 +450,13 @@ put(stringBuffer!.toString(), this, "isSessionOld()")
         
         
 
-append("Session Is Rarely Used - Timeout: ")
-appendlong(lastAccess)
-append(" Eval: ")
-appendlong(timeFirst)
-append(" > ")
-appendlong(timePassed)
-put(stringBuffer!.toString(), this, "isRarelyUsedSession()")
+stringBuffer!.append("Session Is Rarely Used - Timeout: ")
+stringBuffer!.appendlong(lastAccess)
+stringBuffer!.append(" Eval: ")
+stringBuffer!.appendlong(timeFirst)
+stringBuffer!.append(" > ")
+stringBuffer!.appendlong(timePassed)
+logUtil!.put(stringBuffer!.toString(), this, "isRarelyUsedSession()")
 
                                     }
                                 
@@ -477,11 +465,10 @@ put(stringBuffer!.toString(), this, "isRarelyUsedSession()")
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
                                     {
-                                    put("Role Is Not In Session", this, "isRarelyUsedSession()")
+                                    logUtil!.put("Role Is Not In Session", this, "isRarelyUsedSession()")
 
                                     }
                                 
@@ -497,12 +484,12 @@ put(stringBuffer!.toString(), this, "isRarelyUsedSession()")
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     isRoleValid(): boolean{
 
         try {
-            this.makeSessionValid(BasicUserRoleFactory.getInstance()!.INSTALLER, userName)
+            this.this.makeSessionValid(BasicUserRoleFactory.getInstance()!.INSTALLER, userName)
 
 
 
@@ -512,11 +499,10 @@ put(stringBuffer!.toString(), this, "isRarelyUsedSession()")
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "isRoleValid()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isRoleValid()", e)
 
                                     }
                                 
@@ -531,7 +517,7 @@ put(stringBuffer!.toString(), this, "isRarelyUsedSession()")
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     validRole(): string{
 
@@ -541,7 +527,7 @@ put(stringBuffer!.toString(), this, "isRarelyUsedSession()")
         
         
 
-append("Trying New login<p>")
+stringBuffer!.append("Trying New login<p>")
 
 
 
@@ -556,11 +542,10 @@ append("Trying New login<p>")
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "validRole()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "validRole()", e)
 
                                     }
                                 
@@ -575,19 +560,19 @@ append("Trying New login<p>")
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     invalidRole(): string{
 
         try {
-            setAuthenticated(false)
+            this.weblisketSession!.setAuthenticated(false)
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
 
-append("Sorry your username and password is invalid on this page.")
-append("Trying New login<p>")
+stringBuffer!.append("Sorry your username and password is invalid on this page.")
+stringBuffer!.append("Trying New login<p>")
 
 
 
@@ -602,11 +587,10 @@ append("Trying New login<p>")
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "invalidRole()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "invalidRole()", e)
 
                                     }
                                 
@@ -621,13 +605,12 @@ append("Trying New login<p>")
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     isAuthenticationSessionValid(): boolean{
 
         try {
             
-    
                         if(BooleanUtil.getInstance()!.getFromString(authenticated))
                         
                                     {
@@ -652,7 +635,6 @@ index < size; index++)
         
 
 
-    
                         if(sessionUserName != 
                                     null
                                  && role.equals(mustBeOfRole))
@@ -687,11 +669,10 @@ index < size; index++)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "isAuthenticationSessionValid()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isAuthenticationSessionValid()", e)
 
                                     }
                                 
@@ -706,22 +687,20 @@ index < size; index++)
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     processIfNewLogin(): boolean{
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put("Starting for User: " +this.userName +" Attempt: " +this.weblisketSession!.getAttempts(), this, "processIfNewLogin()")
+                                    logUtil!.put("Starting for User: " +this.userName +" Attempt: " +this.weblisketSession!.getAttempts(), this, "processIfNewLogin()")
 
                                     }
                                 
 
-    
                         if(userName != 
                                     null
                                  && userName!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0 && password != 
@@ -738,7 +717,6 @@ index < size; index++)
         
 
 
-    
                         if(installerInfo!.isValid(userName, password))
                         
                                     {
@@ -752,11 +730,10 @@ index < size; index++)
                         }
                             
 
-    
                         if(login.compareTo(org.allbinary.globals.GLOBALS2.LOGINSUCCESS) == 0)
                         
                                     {
-                                    setAttempts(Integer(0))
+                                    this.weblisketSession!.setAttempts(Integer(0))
 
 
 
@@ -766,7 +743,7 @@ index < size; index++)
 
                                     }
                                 
-this.nextAttempt()
+this.this.nextAttempt()
 
 
 
@@ -776,7 +753,7 @@ this.nextAttempt()
 
                                     }
                                 
-this.nextAttempt()
+this.this.nextAttempt()
 
 
 
@@ -786,11 +763,10 @@ this.nextAttempt()
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "processIfNewLogin()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "processIfNewLogin()", e)
 
                                     }
                                 
@@ -805,17 +781,16 @@ this.nextAttempt()
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     processInvalidation(): boolean{
 
         try {
             
-    
                         if(BooleanUtil.getInstance()!.getFromString(timeout))
                         
                                     {
-                                    this.invalidateSession()
+                                    this.this.invalidateSession()
 
 
 
@@ -828,7 +803,7 @@ this.nextAttempt()
 
 
                             {
-                            setTimeout(BooleanFactory.getInstance()!.TRUE_STRING)
+                            this.weblisketSession!.setTimeout(BooleanFactory.getInstance()!.TRUE_STRING)
 
 
 
@@ -841,11 +816,10 @@ this.nextAttempt()
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "isSetToInvalidate()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isSetToInvalidate()", e)
 
                                     }
                                 
@@ -860,7 +834,7 @@ this.nextAttempt()
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
@@ -872,43 +846,38 @@ this.nextAttempt()
 
 this.request= pageContext!.getRequest() as HttpServletRequest
 this.weblisketSession= BasicWeblisketSession(pageContext)
-this.getFormData()
+this.this.getFormData()
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("Started", this, "doStartTag()")
+                                    logUtil!.put("Started", this, "doStartTag()")
 
                                     }
                                 
 
-    
                         if(command != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.CHANGEPASSWORD) == 0)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("Change Password", this, "doStartTag()")
+                                    logUtil!.put("Change Password", this, "doStartTag()")
 
                                     }
                                 
 
-    
                         if(!this.changePassword())
                         
                                     {
-                                    print("Password Change Attempt Failed.<p>")
+                                    pageContext!.getOut()!.print("Password Change Attempt Failed.<p>")
 
 
 
@@ -919,7 +888,7 @@ this.getFormData()
                                     }
                                 
                         else {
-                            print("Password Changed Successfully.<p>")
+                            pageContext!.getOut()!.print("Password Changed Successfully.<p>")
 
 
 
@@ -933,16 +902,14 @@ this.getFormData()
                                     }
                                 
                              else 
-    
                         if(command.compareTo(WeblisketSessionData.INVALIDATESESSION) == 0)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("INVALIDATESESSION", this, "doStartTag()")
+                                    logUtil!.put("INVALIDATESESSION", this, "doStartTag()")
 
                                     }
                                 
@@ -957,27 +924,23 @@ this.getFormData()
                                 
                         else {
                             
-    
                         if(this.isSessionOld())
                         
                                     {
                                     
-    
                         if(this.processInvalidation())
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("Processing Invalidation", this, "doStartTag()")
+                                    logUtil!.put("Processing Invalidation", this, "doStartTag()")
 
                                     }
                                 
-print("Please login again.<p>")
+pageContext!.getOut()!.print("Please login again.<p>")
 
-    
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
@@ -1005,16 +968,14 @@ print("Please login again.<p>")
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("Preparing session for invalidation", this, "doStartTag()")
+                                    logUtil!.put("Preparing session for invalidation", this, "doStartTag()")
 
                                     }
                                 
 
-    
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
@@ -1044,7 +1005,6 @@ print("Please login again.<p>")
                                     }
                                 
 
-    
                         if((userName == 
                                     null
                                  || userName!.compareTo(stringUtil!.EMPTY_STRING) == 0) && (password == 
@@ -1055,16 +1015,14 @@ print("Please login again.<p>")
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("Authenticated session is valid", this, "doStartTag()")
+                                    logUtil!.put("Authenticated session is valid", this, "doStartTag()")
 
                                     }
                                 
 
-    
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
@@ -1091,7 +1049,6 @@ print("Please login again.<p>")
                                     }
                                 
 
-    
                         if(this.userName != 
                                     null
                                  && this.password != 
@@ -1100,31 +1057,27 @@ print("Please login again.<p>")
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("Processing new login.", this, "doStartTag()")
+                                    logUtil!.put("Processing new login.", this, "doStartTag()")
 
                                     }
                                 
 
-    
                         if(this.isRoleValid())
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("Role is valid - Processing new login", this, "doStartTag()")
+                                    logUtil!.put("Role is valid - Processing new login", this, "doStartTag()")
 
                                     }
                                 
-print(validRole())
+pageContext!.getOut()!.print(validRole())
 
-    
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
@@ -1152,17 +1105,15 @@ print(validRole())
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("Role is not valid - Processing new login", this, "doStartTag()")
+                                    logUtil!.put("Role is not valid - Processing new login", this, "doStartTag()")
 
                                     }
                                 
-print(invalidRole())
+pageContext!.getOut()!.print(invalidRole())
 
-    
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
@@ -1193,16 +1144,14 @@ print(invalidRole())
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("Invalid Login", this, "doStartTag()")
+                                    logUtil!.put("Invalid Login", this, "doStartTag()")
 
                                     }
                                 
 
-    
                         if(userName != 
                                     null
                                  && userName!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0 && password != 
@@ -1210,7 +1159,7 @@ print(invalidRole())
                                  && password.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0)
                         
                                     {
-                                    print("Sorry your username and/or password is invalid.<p>")
+                                    pageContext!.getOut()!.print("Sorry your username and/or password is invalid.<p>")
 
                                     }
                                 
@@ -1218,7 +1167,6 @@ print(invalidRole())
                         }
                             
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
@@ -1227,18 +1175,17 @@ print(invalidRole())
         
         
 
-append("Major authentication error - userName: ")
-append(this.userName)
-append(" Password: ")
-append(this.password)
-append(" Command: ")
-append(this.command)
-put(stringBuffer!.toString(), this, "doStartTag()")
+stringBuffer!.append("Major authentication error - userName: ")
+stringBuffer!.append(this.userName)
+stringBuffer!.append(" Password: ")
+stringBuffer!.append(this.password)
+stringBuffer!.append(" Command: ")
+stringBuffer!.append(this.command)
+logUtil!.put(stringBuffer!.toString(), this, "doStartTag()")
 
                                     }
                                 
 
-    
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
@@ -1275,7 +1222,7 @@ put(stringBuffer!.toString(), this, "doStartTag()")
     
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -1285,7 +1232,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

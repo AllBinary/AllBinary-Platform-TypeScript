@@ -43,8 +43,8 @@ this.menuPaintableInterface= menuPaintableInterface
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics)
-paint(graphics)
+this.menuPaintableInterface!.paint(graphics)
+this.ownershipPaintableInterface!.paint(graphics)
 }
 
 

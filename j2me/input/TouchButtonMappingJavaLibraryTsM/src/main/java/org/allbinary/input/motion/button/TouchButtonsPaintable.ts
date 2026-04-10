@@ -64,7 +64,7 @@ var graphics = graphics
         
         
 
-setBasicColorP(graphics, this.foregroundBasicColor, this.foregroundColor)
+this.basicSetColorUtil!.setBasicColorP(graphics, this.foregroundBasicColor, this.foregroundColor)
 
     var touchButton: TouchButton
 
@@ -79,7 +79,7 @@ setBasicColorP(graphics, this.foregroundBasicColor, this.foregroundColor)
 --index >= 0; )
         {
 touchButton= list.objectArray[index]! as TouchButton
-paint(graphics)
+touchButton!.paint(graphics)
 }
 
 
@@ -93,7 +93,7 @@ paint(graphics)
 --index >= 0; )
         {
 touchButton= list.objectArray[index]! as TouchButton
-paintHint(graphics)
+touchButton!.paintHint(graphics)
 }
 
 }

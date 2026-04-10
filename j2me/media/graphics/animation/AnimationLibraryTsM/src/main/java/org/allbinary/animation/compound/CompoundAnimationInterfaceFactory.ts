@@ -53,7 +53,7 @@ this.animationBehaviorFactory= animationBehaviorFactory
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
@@ -140,7 +140,7 @@ animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArra
         
 index < size; index++)
         {
-setInitialScale(scaleProperties)
+this.basicAnimationInterfaceFactoryInterfaceArrayP[index]!.setInitialScale(scaleProperties)
 }
 
 }

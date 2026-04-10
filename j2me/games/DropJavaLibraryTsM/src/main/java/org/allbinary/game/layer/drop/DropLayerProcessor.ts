@@ -53,7 +53,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -87,10 +87,10 @@ index < size; index++)
         
         
 
-append(dropLayerInterface!.getDroppedLayer() as AllBinaryLayer)
+allBinaryLayerManager!.append(dropLayerInterface!.getDroppedLayer() as AllBinaryLayer)
 }
 
-clear()
+list.clear()
 }
 
 

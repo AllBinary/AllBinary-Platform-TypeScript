@@ -49,7 +49,7 @@ export class DamageableBaseBehavior
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public damage(damage: number, damageType: number){
 var damage = damage
@@ -57,7 +57,7 @@ var damageType = damageType
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDamage(damageType: number): number{
 var damageType = damageType

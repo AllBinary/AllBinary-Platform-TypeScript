@@ -138,11 +138,10 @@ index < size; index++)
         
 
 
-    
                         if(viewName!.indexOf(CustomizerTransformInfoData.NAME) > 0 && viewName!.indexOf(GLOBALS2.EDIT) > 0 && viewName!.indexOf(BodyData.getInstance()!.VIEWNAMEKEY) > 0 && viewName!.indexOf(TitleData.getInstance()!.VIEWNAMEKEY) > 0)
                         
                                     {
-                                    add(viewName)
+                                    unsortedCustomizerViewVector!.add(viewName)
 
                                     }
                                 
@@ -153,7 +152,7 @@ index < size; index++)
         
         
 
-sort(objectArray, StringComparator())
+Arrays.sort(objectArray, StringComparator())
 
 
 
@@ -174,7 +173,7 @@ index < objectArray!.length; index++)
         
         
 
-appendChild(viewNameNode)
+node.appendChild(viewNameNode)
 }
 
 
@@ -186,11 +185,10 @@ appendChild(viewNameNode)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
 
                                     }
                                 
@@ -206,16 +204,16 @@ appendChild(viewNameNode)
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface)
+this.this.addDomNodeInterface(this as DomNodeInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.this.addDomNodeInterfaces()
 
 
 
@@ -225,11 +223,10 @@ this.addDomNodeInterface(this as DomNodeInterface)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 

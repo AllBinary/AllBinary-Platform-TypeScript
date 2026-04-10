@@ -166,7 +166,7 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 
             super();
             var databaseConnectionInfoInterface = databaseConnectionInfoInterface
-this.setDatabaseConnectionInfoInterface(databaseConnectionInfoInterface)
+this.this.setDatabaseConnectionInfoInterface(databaseConnectionInfoInterface)
 }
 
 
@@ -191,10 +191,10 @@ var tableData = tableData
         
         
 
-append("Creating Table: ")
-append(tableData)
-put(stringBuffer!.toString(), INIT_SQL, "createTable()")
-this.executeSQLStatement(tableData)
+stringBuffer!.append("Creating Table: ")
+stringBuffer!.append(tableData)
+PreLogUtil.put(stringBuffer!.toString(), INIT_SQL, "createTable()")
+this.this.executeSQLStatement(tableData)
 
 
 
@@ -204,11 +204,10 @@ this.executeSQLStatement(tableData)
 } catch(e: Exception)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.EXCEPTION, INIT_SQL, "createTable()", e)
+                                    PreLogUtil.put(this.commonStrings!.EXCEPTION, INIT_SQL, "createTable()", e)
 
                                     }
                                 
@@ -231,7 +230,7 @@ this.executeSQLStatement(tableData)
 
 
         try {
-            this.executeSQLStatement(sqlStatement)
+            this.this.executeSQLStatement(sqlStatement)
 
 
 
@@ -241,11 +240,10 @@ this.executeSQLStatement(tableData)
 } catch(e: Exception)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.EXCEPTION, INIT_SQL, "dropTables()", e)
+                                    PreLogUtil.put(this.commonStrings!.EXCEPTION, INIT_SQL, "dropTables()", e)
 
                                     }
                                 
@@ -267,9 +265,9 @@ var keysAndValues = keysAndValues
         
         
 
-append(this.sqlStrings!.SELECT_ALL_FROM)
-append(this.tableName)
-append(sqlStrings!.WHERE)
+stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM)
+stringBuffer!.append(this.tableName)
+stringBuffer!.append(sqlStrings!.WHERE)
 
         try {
             
@@ -315,16 +313,15 @@ i < size; i++)
         
         
 
-append(key)
-append(sqlStrings!.EQUAL_QUOTE)
-append(this.getValue(value))
-append(sqlStrings!.CLOSE_QUOTE)
+stringBuffer!.append(key)
+stringBuffer!.append(sqlStrings!.EQUAL_QUOTE)
+stringBuffer!.append(this.getValue(value))
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
 
-    
                         if(i < size -1)
                         
                                     {
-                                    append(sqlStrings!.AND)
+                                    stringBuffer!.append(sqlStrings!.AND)
 
                                     }
                                 
@@ -336,11 +333,10 @@ append(sqlStrings!.CLOSE_QUOTE)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(sqlStrings!.SQL_STATEMENT_LABEL +sqlStatement, this.INIT_SQL, this.METHOD_GET_ROW)
+                                    PreLogUtil.put(sqlStrings!.SQL_STATEMENT_LABEL +sqlStatement, this.INIT_SQL, this.METHOD_GET_ROW)
 
                                     }
                                 
@@ -383,15 +379,14 @@ index <= columnCount; index++)
         
         
 
-put(columnName, field)
+result.put(columnName, field)
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(ROW_VALUE_LABEL +result.toString(), this.INIT_SQL, this.METHOD_GET_ROW)
+                                    PreLogUtil.put(ROW_VALUE_LABEL +result.toString(), this.INIT_SQL, this.METHOD_GET_ROW)
 
                                     }
                                 
@@ -404,11 +399,10 @@ put(columnName, field)
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    put(NO_RESULTS_IN_RESULT_SET, this.INIT_SQL, this.METHOD_GET_ROW)
+                                    PreLogUtil.put(NO_RESULTS_IN_RESULT_SET, this.INIT_SQL, this.METHOD_GET_ROW)
 
                                     }
                                 
@@ -421,11 +415,10 @@ put(columnName, field)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    put(this.FAILED_SQL_STATEMENT +stringBuffer, this.INIT_SQL, this.METHOD_GET_ROW, e)
+                                    PreLogUtil.put(this.FAILED_SQL_STATEMENT +stringBuffer, this.INIT_SQL, this.METHOD_GET_ROW, e)
 
                                     }
                                 
@@ -450,9 +443,9 @@ var updatedKeyValuePairs = updatedKeyValuePairs
         
         
 
-append(this.sqlStrings!.UPDATE)
-append(this.tableName)
-append(this.sqlStrings!.SET)
+stringBuffer!.append(this.sqlStrings!.UPDATE)
+stringBuffer!.append(this.tableName)
+stringBuffer!.append(this.sqlStrings!.SET)
 
         try {
             
@@ -481,16 +474,15 @@ i < size; i++)
         
         
 
-append(this.commonSeps!.SPACE)
-append(columnName)
-append(EQUAL_QUOTE)
+stringBuffer!.append(this.commonSeps!.SPACE)
+stringBuffer!.append(columnName)
+stringBuffer!.append(EQUAL_QUOTE)
 
     var columnValue: string = updatedKeyValuePairs!.get(columnName) as String;
         
         
 
 
-    
                         if(columnValue == 
                                     null
                                 )
@@ -504,47 +496,44 @@ append(EQUAL_QUOTE)
                             
                         }
                             
-append(this.getValue(columnValue))
-append(sqlStrings!.CLOSE_QUOTE)
+stringBuffer!.append(this.getValue(columnValue))
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
 
-    
                         if(i < size -1)
                         
                                     {
-                                    append(this.commonSeps!.COMMA)
+                                    stringBuffer!.append(this.commonSeps!.COMMA)
 
                                     }
                                 
 }
 
-append(sqlStrings!.WHERE)
-append(key)
-append(sqlStrings!.EQUAL_QUOTE)
-append(this.getValue(value))
-append(sqlStrings!.CLOSE_QUOTE)
+stringBuffer!.append(sqlStrings!.WHERE)
+stringBuffer!.append(key)
+stringBuffer!.append(sqlStrings!.EQUAL_QUOTE)
+stringBuffer!.append(this.getValue(value))
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
 
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
 
-this.executeSQLStatement(sqlStatement)
+this.this.executeSQLStatement(sqlStatement)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.SUCCESS_SQL_STATEMENT +sqlStatement, this.INIT_SQL, METHOD_UPDATE_WHERE)
+                                    PreLogUtil.put(this.SUCCESS_SQL_STATEMENT +sqlStatement, this.INIT_SQL, METHOD_UPDATE_WHERE)
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    put(this.FAILED_SQL_STATEMENT +stringBuffer, this.INIT_SQL, METHOD_UPDATE_WHERE, e)
+                                    PreLogUtil.put(this.FAILED_SQL_STATEMENT +stringBuffer, this.INIT_SQL, METHOD_UPDATE_WHERE, e)
 
                                     }
                                 
@@ -560,9 +549,9 @@ var values = values
         
         
 
-append(this.sqlStrings!.INSERT_INTO)
-append(this.tableName)
-append(this.sqlStrings!.VALUES)
+stringBuffer!.append(this.sqlStrings!.INSERT_INTO)
+stringBuffer!.append(this.tableName)
+stringBuffer!.append(this.sqlStrings!.VALUES)
 
         try {
             
@@ -585,8 +574,8 @@ i < size -1; i++)
         
         
 
-append(value)
-append(this.sqlStrings!.SINGLE_QUOTE_COMMA_SEP)
+stringBuffer!.append(value)
+stringBuffer!.append(this.sqlStrings!.SINGLE_QUOTE_COMMA_SEP)
 }
 
 
@@ -594,31 +583,29 @@ append(this.sqlStrings!.SINGLE_QUOTE_COMMA_SEP)
         
         
 
-append(value)
-append(INSERT_END)
+stringBuffer!.append(value)
+stringBuffer!.append(INSERT_END)
 
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
 
-this.executeSQLStatement(sqlStatement)
+this.this.executeSQLStatement(sqlStatement)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.SUCCESS_SQL_STATEMENT +sqlStatement, this.INIT_SQL, INSERT)
+                                    PreLogUtil.put(this.SUCCESS_SQL_STATEMENT +sqlStatement, this.INIT_SQL, INSERT)
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    put(this.FAILED_SQL_STATEMENT +stringBuffer!.toString(), this.INIT_SQL, INSERT, e)
+                                    PreLogUtil.put(this.FAILED_SQL_STATEMENT +stringBuffer!.toString(), this.INIT_SQL, INSERT, e)
 
                                     }
                                 
@@ -631,7 +618,6 @@ this.executeSQLStatement(sqlStatement)
     getValue(value: string): string{
 var value = value
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(value))
                         
                                     {
@@ -657,14 +643,13 @@ var value = value
 }
 
 
-                @Throws(Exception::class, SQLException::class)
+                //@Throws(Error::class, SQLException::class)
             
     public executeSQLStatement(statement: string): ResultSet{
 var statement = statement
 
         try {
             
-    
                         if(conn == 
                                     null
                                 )
@@ -679,13 +664,13 @@ var statement = statement
         
         
 
-execute(statement)
+stmt.execute(statement)
 
     var rset: ResultSet = stmt.getResultSet()!;
         
         
 
-close()
+stmt.close()
 
 
 
@@ -695,11 +680,10 @@ close()
 } catch(e: SQLException)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.EXCEPTION, INIT_SQL, "executeSQLStatement()", e)
+                                    PreLogUtil.put(this.commonStrings!.EXCEPTION, INIT_SQL, "executeSQLStatement()", e)
 
                                     }
                                 
@@ -711,11 +695,10 @@ close()
  catch(e: Exception)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.EXCEPTION, INIT_SQL, "executeSQLStatement()", e)
+                                    PreLogUtil.put(this.commonStrings!.EXCEPTION, INIT_SQL, "executeSQLStatement()", e)
 
                                     }
                                 
@@ -728,13 +711,12 @@ close()
 }
 
 
-                @Throws(SQLException::class)
+                //@Throws(SQLException::class)
             
     createConnection(){
 
         try {
             
-    
                         if(useridAndPassword == true)
                         
                                     {
@@ -749,7 +731,7 @@ close()
                             
 } catch(se: SQLException)
             {
-put(this.commonStrings!.EXCEPTION, INIT_SQL, "createConnection()", se)
+PreLogUtil.put(this.commonStrings!.EXCEPTION, INIT_SQL, "createConnection()", se)
 
 
 
@@ -759,7 +741,7 @@ put(this.commonStrings!.EXCEPTION, INIT_SQL, "createConnection()", se)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     initialize(){
 
@@ -771,17 +753,16 @@ put(this.commonStrings!.EXCEPTION, INIT_SQL, "createConnection()", se)
         
         
 
-put(StringBuilder().
+PreLogUtil.put(StringBuilder().
                             append("Loading DbConnnectionInfo: ")!.append(this.databaseConnectionInfoInterface!.::class.toString()!)!.append(" Driver: ")!.append(jdbcDriver)!.toString(), INIT_SQL, "initialize()")
-newInstance()
+Class.forName(jdbcDriver)!.newInstance()
 } catch(e: Exception)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    put("LoadDriver Failed: " +this.databaseConnectionInfoInterface!.getJdbcDriver(), INIT_SQL, "initialize()", e)
+                                    PreLogUtil.put("LoadDriver Failed: " +this.databaseConnectionInfoInterface!.getJdbcDriver(), INIT_SQL, "initialize()", e)
 
                                     }
                                 
@@ -792,7 +773,6 @@ newInstance()
 }
 
 
-    
                         if(userid == 
                                     null
                                  && password == 
@@ -804,15 +784,14 @@ newInstance()
 
                                     }
                                 
-this.createConnection()
+this.this.createConnection()
 } catch(se: Exception)
             {
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.EXCEPTION, INIT_SQL, "initialize()", se)
+                                    PreLogUtil.put(this.commonStrings!.EXCEPTION, INIT_SQL, "initialize()", se)
 
                                     }
                                 

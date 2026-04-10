@@ -68,14 +68,13 @@ this.value= value
         
 
 
-    
                         if(beginIndex < 0)
                         
                                     {
                                     
 
 
-                            throw Exception("Not a NameSpaceRequest")
+                            throw Error("Not a NameSpaceRequest")
 
                                     }
                                 
@@ -95,11 +94,10 @@ this.value= value
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    put("\nSep Tokens: " +nameSpaceWithPropertiesVector!.toString(), this, "NameSpaceRequestParam()")
+                                    logUtil!.put("\nSep Tokens: " +nameSpaceWithPropertiesVector!.toString(), this, "NameSpaceRequestParam()")
 
                                     }
                                 
@@ -136,23 +134,21 @@ this.value= value
         
         
 
-clear()
+list.clear()
 
     var nameSpaceAndPropertiesVector: BasicArrayList = nameSpaceAndPropertiesTokenizer!.getTokens(nameSpaceWithProperties, list)!;
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    put("\nPackageName and PackageName Properties Tokens: " +nameSpaceAndPropertiesVector!.toString(), this, "NameSpaceRequestParam()")
+                                    logUtil!.put("\nPackageName and PackageName Properties Tokens: " +nameSpaceAndPropertiesVector!.toString(), this, "NameSpaceRequestParam()")
 
                                     }
                                 
 
-    
                         if(nameSpaceAndPropertiesVector!.size() > 0)
                         
                                     {
@@ -162,7 +158,6 @@ clear()
         
 
 
-    
                         if(packageName == 
                                     null
                                 )
@@ -171,13 +166,12 @@ clear()
                                     
 
 
-                            throw Exception("Package Name Is Null")
+                            throw Error("Package Name Is Null")
 
                                     }
                                 
-add(packageName)
+this.nameSpaceVector!.add(packageName)
 
-    
                         if(nameSpaceAndPropertiesVector!.size() > 1)
                         
                                     {
@@ -191,7 +185,7 @@ add(packageName)
         
         
 
-put(packageIndex.toString(), packagePropertiesHashMap)
+this.nameSpacePropertiesHashMap!.put(packageIndex.toString(), packagePropertiesHashMap)
 
                                     }
                                 
@@ -202,11 +196,10 @@ packageIndex++
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    put("NameSpace: " +this.nameSpaceVector!.toString(), this, "NameSpaceRequestParam()")
+                                    logUtil!.put("NameSpace: " +this.nameSpaceVector!.toString(), this, "NameSpaceRequestParam()")
 
                                     }
                                 
@@ -215,11 +208,10 @@ packageIndex++
 
     public getPackages(): Vector{
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    put("NameSpace: " +this.nameSpaceVector!.toString(), this, "getPackages()")
+                                    logUtil!.put("NameSpace: " +this.nameSpaceVector!.toString(), this, "getPackages()")
 
                                     }
                                 
@@ -240,7 +232,6 @@ var packageIndex = packageIndex
         
 
 
-    
                         if(packagePropertiesHashMap == 
                                     null
                                 )
@@ -251,11 +242,10 @@ var packageIndex = packageIndex
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    put("Package Properties: " +packagePropertiesHashMap!.toString(), this, "getPackagesProperties()")
+                                    logUtil!.put("Package Properties: " +packagePropertiesHashMap!.toString(), this, "getPackagesProperties()")
 
                                     }
                                 
@@ -270,11 +260,10 @@ var packageIndex = packageIndex
 
     public getValue(): string{
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    put("\nValue: " +this.value, this, "getValue()")
+                                    logUtil!.put("\nValue: " +this.value, this, "getValue()")
 
                                     }
                                 
@@ -287,7 +276,7 @@ var packageIndex = packageIndex
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     generatePackagePropertiesHashMap(properties: string): HashMap<Any, Any>{
 var properties = properties
@@ -334,7 +323,7 @@ var properties = properties
         
         
 
-clear()
+list.clear()
 
     var propertyNameValueVector: BasicArrayList = propertyTokenizer!.getTokens(property, list)!;
         
@@ -354,7 +343,6 @@ clear()
         
 
 
-    
                         if(propertyNameValueVector!.size() > 1)
                         
                                     {
@@ -364,20 +352,19 @@ clear()
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    put("\nProperty Name: " +propertyName +"\nProperty Value: " +propertyValue, this, "generatePackagePropertiesHashMap()")
+                                    logUtil!.put("\nProperty Name: " +propertyName +"\nProperty Value: " +propertyValue, this, "generatePackagePropertiesHashMap()")
 
                                     }
                                 
-put(propertyName, propertyValue)
+packagePropertiesHashMap!.put(propertyName, propertyValue)
 
                                     }
                                 
                         else {
-                            put(propertyName, StringUtil.getInstance()!.EMPTY_STRING)
+                            packagePropertiesHashMap!.put(propertyName, StringUtil.getInstance()!.EMPTY_STRING)
 
                         }
                             

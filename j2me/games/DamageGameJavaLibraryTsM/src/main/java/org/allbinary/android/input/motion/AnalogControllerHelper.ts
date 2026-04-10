@@ -59,72 +59,68 @@ this.reduceTimeFactor= reduceTimeFactor
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public right(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer, xAnalogValue: number){
 var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 var xAnalogValue = xAnalogValue
 this.rightTimeElapsedHelper!.delay= ((SCALE_VALUE -xAnalogValue) shr this.reduceTimeFactor)
 
-    
                         if(this.rightTimeElapsedHelper!.isTime())
                         
                                     {
-                                    right()
+                                    collidableDestroyableDamageableLayer!.right()
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public left(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer, xAnalogValue: number){
 var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 var xAnalogValue = xAnalogValue
 this.leftTimeElapsedHelper!.delay= ((SCALE_VALUE +xAnalogValue) shr this.reduceTimeFactor)
 
-    
                         if(this.leftTimeElapsedHelper!.isTime())
                         
                                     {
-                                    left()
+                                    collidableDestroyableDamageableLayer!.left()
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public up(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer, xAnalogValue: number){
 var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 var xAnalogValue = xAnalogValue
 this.upTimeElapsedHelper!.delay= ((SCALE_VALUE -xAnalogValue) shr this.reduceTimeFactor)
 
-    
                         if(this.upTimeElapsedHelper!.isTime())
                         
                                     {
-                                    up()
+                                    collidableDestroyableDamageableLayer!.up()
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public down(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer, xAnalogValue: number){
 var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 var xAnalogValue = xAnalogValue
 this.downTimeElapsedHelper!.delay= ((SCALE_VALUE +xAnalogValue) shr this.reduceTimeFactor)
 
-    
                         if(this.downTimeElapsedHelper!.isTime())
                         
                                     {
-                                    down()
+                                    collidableDestroyableDamageableLayer!.down()
 
                                     }
                                 

@@ -81,14 +81,13 @@ var item = item
         
         
 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, MidletStrings.getInstance()!.COMMAND_ACTION)
 
-    
                         if(item is GameConfigurationGauge)
                         
                                     {
-                                    change(this.gameOptionsForm, item as GameConfigurationGauge)
+                                    GameConfigurationUtil.getInstance()!.change(this.gameOptionsForm, item as GameConfigurationGauge)
 
                                     }
                                 
@@ -99,7 +98,7 @@ put(StringMaker().
         
         
 
-put(commonStrings!.EXCEPTION, this, MidletStrings.getInstance()!.COMMAND_ACTION, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, MidletStrings.getInstance()!.COMMAND_ACTION, e)
 }
 
 }

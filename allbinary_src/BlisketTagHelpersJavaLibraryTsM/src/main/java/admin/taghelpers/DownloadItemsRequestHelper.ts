@@ -89,18 +89,17 @@ this.downloadableItem= downloadableInventoryItemView!.getDownloadableItem()
         
         
 
-insert(vector)
+DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.insert(vector)
 
     var success: string = "Successfully inserted " +this.downloadableItem!.getId() +" into downloaditems table";
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "insert()")
+                                    logUtil!.put(success, this, "insert()")
 
                                     }
                                 
@@ -118,11 +117,10 @@ insert(vector)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "inserts()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "inserts()", e)
 
                                     }
                                 
@@ -140,18 +138,17 @@ insert(vector)
     public delete(): string{
 
         try {
-            delete(this.downloadableItem!.getId())
+            DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.delete(this.downloadableItem!.getId())
 
     var success: string = "Successfully deleted";
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "delete()")
+                                    logUtil!.put(success, this, "delete()")
 
                                     }
                                 
@@ -169,11 +166,10 @@ insert(vector)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "delete()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e)
 
                                     }
                                 
@@ -201,13 +197,12 @@ insert(vector)
         
         
 
-update(values)
+DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.update(values)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(this.downloadableItem!.getId() +CommonSeps.getInstance()!.SPACE +success, this, "update()")
+                                    logUtil!.put(this.downloadableItem!.getId() +CommonSeps.getInstance()!.SPACE +success, this, "update()")
 
                                     }
                                 
@@ -225,11 +220,10 @@ update(values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
 
                                     }
                                 

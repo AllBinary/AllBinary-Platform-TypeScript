@@ -38,7 +38,7 @@ export class BaseCircularPool
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getNextInstance(): any = {}{
@@ -47,7 +47,7 @@ export class BaseCircularPool
         
         
 
-next()
+this.circularIndexUtil!.next()
 
 
 
@@ -59,7 +59,7 @@ next()
 
     public init(allBinaryObjectFactoryInterface: AllBinaryObjectFactoryInterface){
 var allBinaryObjectFactoryInterface = allBinaryObjectFactoryInterface
-setIndex(0)
+this.circularIndexUtil!.setIndex(0)
 
     var size: number = this.circularIndexUtil!.getSize()!;
         
@@ -81,7 +81,7 @@ OBJECT_ARRAY[index]= allBinaryObjectFactoryInterface!.getInstance()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(index: number): any = {}{
 var index = index

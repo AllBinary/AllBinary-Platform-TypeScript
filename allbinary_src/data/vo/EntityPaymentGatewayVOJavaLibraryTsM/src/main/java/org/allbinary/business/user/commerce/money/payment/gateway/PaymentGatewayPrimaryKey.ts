@@ -42,8 +42,8 @@ public constructor (storeName: string, gatewayName: string){
             super();
             var storeName = storeName
 var gatewayName = gatewayName
-this.setStoreName(storeName)
-this.setName(gatewayName)
+this.this.setStoreName(storeName)
+this.this.setName(gatewayName)
 }
 
 
@@ -85,14 +85,14 @@ this.name= name
         
         
 
-append(PaymentGatewayPrimaryKey::class.toString()!)
-append(StoreFront::class.toString()!)
-append(" =")
-append(this.getStoreName())
-append(CommonSeps.getInstance()!.SPACE)
-append(PaymentGateway::class.toString()!)
-append("=")
-append(this.getName())
+stringBuffer!.append(PaymentGatewayPrimaryKey::class.toString()!)
+stringBuffer!.append(StoreFront::class.toString()!)
+stringBuffer!.append(" =")
+stringBuffer!.append(this.getStoreName())
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(PaymentGateway::class.toString()!)
+stringBuffer!.append("=")
+stringBuffer!.append(this.getName())
 
 
 

@@ -69,7 +69,7 @@ export class PrimitiveLongSingleton
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getNumberFromChar(numberAsChar: string): number{
 var numberAsChar = numberAsChar
@@ -90,7 +90,6 @@ var numberAsChar = numberAsChar
 index < size; index++)
         {
 
-    
                         if(NUMBER_CHAR_ARRAY[index] == numberAsChar)
                         
                                     {
@@ -108,7 +107,7 @@ index < size; index++)
 
 
 
-                            throw Exception(StringMaker().
+                            throw Error(StringMaker().
                             append("numberAsChar was not in array: ")!.appendchar(numberAsChar)!.toString())
 }
 

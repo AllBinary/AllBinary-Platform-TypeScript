@@ -55,7 +55,6 @@ var angleIncrement = angleIncrement
         
 
 
-    
                         if(angleIncrementInfoCanBeNull == 
                                     null
                                 )

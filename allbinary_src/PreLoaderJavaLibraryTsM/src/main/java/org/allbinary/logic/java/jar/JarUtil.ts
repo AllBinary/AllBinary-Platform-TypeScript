@@ -39,11 +39,12 @@ export class JarUtil
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static main(args: string[]){
 var args = args
-show()
+JarUtil(URL("file:///G:/mnt/bc/mydev/working/j2me/MiniSpaceWars/MiniSpaceWars/dist/MiniSpaceWars.jar")).
+                            show()
 }
 
 
@@ -83,14 +84,12 @@ this.jarURL= jarURL
         
 
 
-    
                         if(entry != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(!entry.isDirectory())
                         
                                     {
@@ -109,7 +108,6 @@ this.jarURL= jarURL
         {
 offset += i
 
-    
                         if(offset >= cache.length)
                         
                                     {
@@ -118,7 +116,7 @@ offset += i
         
         
 
-
+System.
 
 
         for (let i = 0; i < ; i++) {
@@ -136,14 +134,14 @@ cache= newcache
         
         
 
-
+System.
 
 
         for (let i = 0; i < offset; i++) {
             tmp[0 + i] = cache[i]!;
         }
     
-println(entry.getName())
+System.out.println(entry.getName())
 
                                     }
                                 
@@ -161,8 +159,8 @@ println(entry.getName())
 
 } catch(ex: IOException)
             {
-println(ex)
-printStackTrace()
+System.err.println(ex)
+ex.printStackTrace()
 }
 
 }

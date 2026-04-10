@@ -45,7 +45,7 @@ export class NullPlayerGameInputComposite
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processInput(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager

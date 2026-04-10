@@ -61,7 +61,7 @@ export class ArrayUtil
         
         
 
-
+System.
 
 
         for (let i = 0; i < ; i++) {
@@ -85,7 +85,7 @@ export class ArrayUtil
         
         
 
-
+System.
 
 
         for (let i = 0; i < ; i++) {
@@ -109,7 +109,7 @@ var newLength = newLength
         
         
 
-
+System.
 
 
         for (let i = 0; i < ; i++) {
@@ -133,7 +133,7 @@ var newLength = newLength
         
         
 
-
+System.
 
 
         for (let i = 0; i < ; i++) {
@@ -157,7 +157,7 @@ var newLength = newLength
         
         
 
-
+System.
 
 
         for (let i = 0; i < ; i++) {
@@ -184,7 +184,7 @@ var newLength = newLength
         
         
 
-
+System.
 
 
         for (let i = 0; i < ; i++) {
@@ -208,7 +208,7 @@ var newLength = newLength
         
         
 
-
+System.
 
 
         for (let i = 0; i < ; i++) {
@@ -232,7 +232,7 @@ var newLength = newLength
         
         
 
-
+System.
 
 
         for (let i = 0; i < ; i++) {
@@ -256,7 +256,7 @@ var newLength = newLength
         
         
 
-
+System.
 
 
         for (let i = 0; i < ; i++) {
@@ -389,7 +389,7 @@ intArray[rowIndex +x]= temp
         
 index < endIndex; index++)
         {
-append(commonSeps!.BRACE_OPEN)
+stringBuffer!.append(commonSeps!.BRACE_OPEN)
 
 
 
@@ -400,12 +400,12 @@ append(commonSeps!.BRACE_OPEN)
         
 index2 < endIndex2; index2++)
         {
-appendint(twoDimensionalIntArray[index]![index2]!)
-append(commonSeps!.COMMA_SEP)
+stringBuffer!.appendint(twoDimensionalIntArray[index]![index2]!)
+stringBuffer!.append(commonSeps!.COMMA_SEP)
 }
 
-append(commonSeps!.BRACE_CLOSE)
-append(commonSeps!.NEW_LINE)
+stringBuffer!.append(commonSeps!.BRACE_CLOSE)
+stringBuffer!.append(commonSeps!.NEW_LINE)
 }
 
 
@@ -439,8 +439,8 @@ append(commonSeps!.NEW_LINE)
         
 index < objectArray!.length; index++)
         {
-append(StringUtil.getInstance()!.toString(objectArray[index]!))
-append(commonSeps!.COMMA_SEP)
+stringBuffer!.append(StringUtil.getInstance()!.toString(objectArray[index]!))
+stringBuffer!.append(commonSeps!.COMMA_SEP)
 }
 
 
@@ -474,8 +474,8 @@ append(commonSeps!.COMMA_SEP)
         
 index < byteArray!.length; index++)
         {
-appendbyte(byteArray[index]!)
-append(commonSeps!.COMMA_SEP)
+stringBuffer!.appendbyte(byteArray[index]!)
+stringBuffer!.append(commonSeps!.COMMA_SEP)
 }
 
 

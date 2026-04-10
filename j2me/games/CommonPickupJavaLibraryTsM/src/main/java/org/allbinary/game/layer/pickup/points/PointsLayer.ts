@@ -62,7 +62,7 @@ var graphics = graphics
 
     public visit(scoreableInterface: ScoreableInterface){
 var scoreableInterface = scoreableInterface
-addPoints(this.points)
+scoreableInterface!.addPoints(this.points)
 }
 
 

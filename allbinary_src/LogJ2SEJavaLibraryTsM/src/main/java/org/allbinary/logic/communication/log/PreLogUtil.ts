@@ -53,7 +53,6 @@ var exception = exception
         
 
 
-    
                         if(anyType!::class.toString()! != 
                                     null
                                 )
@@ -69,8 +68,8 @@ var exception = exception
         
         
 
-print(LOG_SUCCESS)
-println(message)
+System.out.print(LOG_SUCCESS)
+System.out.println(message)
 }
 
 
@@ -92,8 +91,8 @@ var exception = exception
         
         
 
-print(LOG_SUCCESS)
-println(message)
+System.out.print(LOG_SUCCESS)
+System.out.println(message)
 }
 
 public constructor (){

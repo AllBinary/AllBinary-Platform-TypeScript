@@ -46,7 +46,7 @@ private constructor (){
 
     public process(display: Display){
     //var display = display
-run()
+this.runnable.run()
 }
 
 

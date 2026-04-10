@@ -45,7 +45,7 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -54,7 +54,7 @@ var document = document
         
         
 
-put(UrlGlobalsData.WEBAPPPATH, org.allbinary.globals.URLGLOBALS.getWebappPath())
+hashMap!.put(UrlGlobalsData.WEBAPPPATH, org.allbinary.globals.URLGLOBALS.getWebappPath())
 
     var node: Node = ModDomHelper.createNameValueNodes(document, UrlGlobalsData.NAME, hashMap)!;
         

@@ -19,7 +19,7 @@
 
 
 
-export class LicensingException extends java.lang.Exception {
+export class LicensingException extends java.lang.Error {
         
 
     public static readonly serialVersionUID: number = 1L;

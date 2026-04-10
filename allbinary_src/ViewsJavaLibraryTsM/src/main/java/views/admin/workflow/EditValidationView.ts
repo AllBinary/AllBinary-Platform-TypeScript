@@ -78,7 +78,6 @@ this.workFlowName= httpTransformInfoInterface!.getPageContext()!.getRequest()!.g
 
         try {
             
-    
                         if(this.workFlowName == 
                                     null
                                 )
@@ -94,18 +93,16 @@ this.workFlowName= httpTransformInfoInterface!.getPageContext()!.getRequest()!.g
                                     }
                                 
 
-    
                         if(WorkFlowEntityFactory.getInstance()!.create2()!.get(this.workFlowName, this.getTransformInfoInterface()!.getStoreName()) == 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("WorkFlow does not exist.", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("WorkFlow does not exist.", this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -127,11 +124,10 @@ this.workFlowName= httpTransformInfoInterface!.getPageContext()!.getRequest()!.g
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -155,33 +151,30 @@ this.workFlowName= httpTransformInfoInterface!.getPageContext()!.getRequest()!.g
         
 
 
-    
                         if(this.workFlowName == 
                                     null
                                 )
                         
                                     {
-                                    append("WorkFlow name is invalid<br />")
+                                    stringBuffer!.append("WorkFlow name is invalid<br />")
 
                                     }
                                 
 
-    
                         if(WorkFlowEntityFactory.getInstance()!.create2()!.get(this.workFlowName, this.getTransformInfoInterface()!.getStoreName()) == 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("WorkFlow does not exist.", this, "validationInfo()")
+                                    logUtil!.put("WorkFlow does not exist.", this, "validationInfo()")
 
                                     }
                                 
-append("WorkFlow does not exist<br />")
+stringBuffer!.append("WorkFlow does not exist<br />")
 
                                     }
                                 
@@ -194,11 +187,10 @@ append("WorkFlow does not exist<br />")
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 

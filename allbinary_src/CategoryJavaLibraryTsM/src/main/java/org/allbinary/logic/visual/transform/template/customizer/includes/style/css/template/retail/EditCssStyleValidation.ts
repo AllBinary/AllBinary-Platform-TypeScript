@@ -118,7 +118,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -132,8 +132,8 @@ var document = document
         
         
 
-appendChild(styleNode)
-appendChild(ColorsView().
+node.appendChild(styleNode)
+styleNode!.appendChild(ColorsView().
                             toXmlNode(document))
 
     var size: number = cssStyleElementVector!.size()!;
@@ -155,7 +155,7 @@ i < size; i++)
         
         
 
-appendChild(styleDomNodeInterface!.toXmlNode(document))
+styleNode!.appendChild(styleDomNodeInterface!.toXmlNode(document))
 }
 
 

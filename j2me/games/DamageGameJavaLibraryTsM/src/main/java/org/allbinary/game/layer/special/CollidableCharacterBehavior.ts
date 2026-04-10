@@ -53,7 +53,7 @@ var collidable = collidable
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public collide(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
@@ -68,7 +68,6 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
         
 
 
-    
                         if(collisionType == collisionTypeFactory!.PICKUP)
                         
                                     {
@@ -77,23 +76,23 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
         
         
 
-doPickup(collidableInterfaceCompositeInterface as PickedUpLayerInterface)
+collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickup(collidableInterfaceCompositeInterface as PickedUpLayerInterface)
 
                                     }
                                 
                         else {
-                            collide(collidableInterfaceCompositeInterface)
+                            super.collide(collidableInterfaceCompositeInterface)
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public collide(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
-log(commonStrings!.NOT_IMPLEMENTED, this)
+ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this)
 }
 
 

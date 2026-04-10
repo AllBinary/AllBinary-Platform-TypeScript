@@ -53,6 +53,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
     private readonly logger: Logger = Logger.getLogger(LogUtil::class.toString()!)!;
         
         
+
+    private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
+        
+        
 private constructor (){
 
             super();
@@ -60,7 +64,7 @@ private constructor (){
 
 
     /*actual*/ public init(){
-put("Loggin Initialized", "LogUtil", "init()")
+PreLogUtil.put("Loggin Initialized", "LogUtil", "init()")
 }
 
 
@@ -74,7 +78,6 @@ var log = log
 
         try {
             
-    
                         if(exception != 
                                     null
                                 )
@@ -106,7 +109,6 @@ var log = log
         
 
 
-    
                         if(clazz.toString()! != 
                                     null
                                 )
@@ -117,11 +119,11 @@ var log = log
                                     }
                                 
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
+    var message: string = logFormatUtil!.get(className, functionName, specialMessage, exception)!;
         
         
 
-log(Level.INFO, message)
+logger.log(Level.INFO, message)
 
                                     }
                                 
@@ -150,7 +152,6 @@ log(Level.INFO, message)
         
 
 
-    
                         if(clazz.toString()! != 
                                     null
                                 )
@@ -161,23 +162,22 @@ log(Level.INFO, message)
                                     }
                                 
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage)!;
+    var message: string = logFormatUtil!.getS(className, functionName, specialMessage)!;
         
         
 
 
-    
                         if(exception != 
                                     null
                                 )
                         
                                     {
-                                    log(Level.SEVERE, message, exception)
+                                    logger.log(Level.SEVERE, message, exception)
 
                                     }
                                 
                         else {
-                            log(Level.INFO, message)
+                            logger.log(Level.INFO, message)
 
                         }
                             

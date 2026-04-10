@@ -20,7 +20,7 @@ public constructor (animationBehavior: AnimationBehavior)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAnimationSize(): number{
 

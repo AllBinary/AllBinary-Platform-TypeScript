@@ -61,12 +61,12 @@ export class GameConfigurationUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public change(gameOptionsForm: GameOptionsForm, gauge: GameConfigurationGauge){
 var gameOptionsForm = gameOptionsForm
 var gauge = gauge
-this.update(gauge)
+this.this.update(gauge)
 
     var gameConfigurationSingleton: GameConfigurationSingleton = GameConfigurationSingleton.getInstance()!;
         
@@ -77,7 +77,7 @@ this.update(gauge)
         
         
 
-this.updateChallange(gameOptionsForm, gameConfiguration)
+this.this.updateChallange(gameOptionsForm, gameConfiguration)
 }
 
 
@@ -93,7 +93,7 @@ this.updateChallange(gameOptionsForm, gameConfiguration)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(gauge: GameConfigurationGauge){
 var gauge = gauge
@@ -122,18 +122,18 @@ var gauge = gauge
         
         
 
-append(GAUGE_UPDATE)
-append(gameConfiguration!.getName())
-append(FROM)
-appendint(gameConfiguration!.getValue()!.toInt())
-append(TO)
-appendint(value.toInt())
-put(stringBuffer!.toString(), this, commonStrings!.UPDATE)
-setValue(value)
+stringBuffer!.append(GAUGE_UPDATE)
+stringBuffer!.append(gameConfiguration!.getName())
+stringBuffer!.append(FROM)
+stringBuffer!.appendint(gameConfiguration!.getValue()!.toInt())
+stringBuffer!.append(TO)
+stringBuffer!.appendint(value.toInt())
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.UPDATE)
+gameConfiguration!.setValue(value)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setDefault(gauge: GameConfigurationGauge){
 var gauge = gauge
@@ -152,17 +152,17 @@ var gauge = gauge
         
         
 
-append("Gauge Default: ")
-append(gameConfiguration!.getName())
-append(TO)
-appendint(gameConfiguration!.getDefaultValue()!.toInt())
-put(stringBuffer!.toString(), this, "setDefault")
-setValue(gameConfiguration!.getDefaultValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt())
-setValue(gameConfiguration!.getDefaultValue())
+stringBuffer!.append("Gauge Default: ")
+stringBuffer!.append(gameConfiguration!.getName())
+stringBuffer!.append(TO)
+stringBuffer!.appendint(gameConfiguration!.getDefaultValue()!.toInt())
+logUtil!.put(stringBuffer!.toString(), this, "setDefault")
+gauge.setValue(gameConfiguration!.getDefaultValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt())
+gameConfiguration!.setValue(gameConfiguration!.getDefaultValue())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public updateChallange(gameOptionsForm: GameOptionsForm, gameConfiguration: GameConfiguration){
 var gameOptionsForm = gameOptionsForm
@@ -178,15 +178,14 @@ var gameConfiguration = gameConfiguration
         
 
 
-    
                         if(gameConfiguration == gameConfigurationCentral!.CHALLENGE_LEVEL)
                         
                                     {
-                                    put(commonStrings!.START, this, "updateChallange")
-setValue(gameConfiguration!.getValue())
-setValue(gameConfiguration!.getValue())
-setValue(gameConfiguration!.getValue())
-setValue(gameConfiguration!.getValue())
+                                    logUtil!.put(commonStrings!.START, this, "updateChallange")
+gameConfigurationCentral!.COLLIDE_DAMAGE.setValue(gameConfiguration!.getValue())
+gameConfigurationCentral!.ATTACK_CHALLENGE_LEVEL.setValue(gameConfiguration!.getValue())
+gameConfigurationCentral!.DURABILITY_CHALLENGE_LEVEL.setValue(gameConfiguration!.getValue())
+gameConfigurationCentral!.SPEED_CHALLENGE_LEVEL.setValue(gameConfiguration!.getValue())
 
     var size: number = gameOptionsForm!.size()!;
         
@@ -208,7 +207,6 @@ index < size; index++)
         
 
 
-    
                         if(item is GameConfigurationGauge)
                         
                                     {
@@ -228,38 +226,34 @@ index < size; index++)
         
 
 
-    
                         if(nextGameConfiguration == gameConfigurationCentral!.COLLIDE_DAMAGE)
                         
                                     {
-                                    setValue(gameConfigurationCentral!.COLLIDE_DAMAGE.getValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt())
+                                    gauge.setValue(gameConfigurationCentral!.COLLIDE_DAMAGE.getValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt())
 
                                     }
                                 
                              else 
-    
                         if(nextGameConfiguration == gameConfigurationCentral!.DURABILITY_CHALLENGE_LEVEL)
                         
                                     {
-                                    setValue(gameConfigurationCentral!.DURABILITY_CHALLENGE_LEVEL.getValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt())
+                                    gauge.setValue(gameConfigurationCentral!.DURABILITY_CHALLENGE_LEVEL.getValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt())
 
                                     }
                                 
                              else 
-    
                         if(nextGameConfiguration == gameConfigurationCentral!.ATTACK_CHALLENGE_LEVEL)
                         
                                     {
-                                    setValue(gameConfigurationCentral!.ATTACK_CHALLENGE_LEVEL.getValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt())
+                                    gauge.setValue(gameConfigurationCentral!.ATTACK_CHALLENGE_LEVEL.getValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt())
 
                                     }
                                 
                              else 
-    
                         if(nextGameConfiguration == gameConfigurationCentral!.SPEED_CHALLENGE_LEVEL)
                         
                                     {
-                                    setValue(gameConfigurationCentral!.SPEED_CHALLENGE_LEVEL.getValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt())
+                                    gauge.setValue(gameConfigurationCentral!.SPEED_CHALLENGE_LEVEL.getValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt())
 
                                     }
                                 
@@ -279,7 +273,7 @@ index < size; index++)
         
 
     public updateCompetitionValue(){
-put(commonStrings!.START, this, "updateCompetitionValue")
+logUtil!.put(commonStrings!.START, this, "updateCompetitionValue")
 
     var gameConfigurationCentral: GameConfigurationCentral = GameConfigurationCentral.getInstance()!;
         

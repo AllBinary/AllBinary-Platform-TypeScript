@@ -95,7 +95,7 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
@@ -111,11 +111,10 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
 
 scaledImage= openGLUtil!.add(scaledImage)
 
-    
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
                         
                                     {
-                                    processAdjust(this)
+                                    animationFactoryImageScaleUtil!.processAdjust(this)
 
 
 

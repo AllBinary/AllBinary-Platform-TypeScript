@@ -38,17 +38,17 @@ export class RTSTouchButtonsBuilder extends BaseTouchInput {
     public getList(): BasicArrayList{
 
         try {
-            put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
     var list: BasicArrayList = new BasicArrayList();
         
         
 
-addAll(BasicTouchButtonsBuilder().
+list.addAll(BasicTouchButtonsBuilder().
                             getList())
-addAll(BuildingScrollTouchButtonsBuilder().
+list.addAll(BuildingScrollTouchButtonsBuilder().
                             getList())
-addAll(UpgradeDowngradeTouchButtonsBuilder().
+list.addAll(UpgradeDowngradeTouchButtonsBuilder().
                             getList())
 
 
@@ -58,7 +58,7 @@ addAll(UpgradeDowngradeTouchButtonsBuilder().
     
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 
 
 

@@ -82,7 +82,6 @@ var level = level
 index < RESOURCE_LOADING_LEVEL_ARRAY.length; index++)
         {
 
-    
                         if(level == RESOURCE_LOADING_LEVEL_ARRAY[index]!.getLevel())
                         
                                     {

@@ -95,7 +95,7 @@ export class DownloadFileServlet extends HttpServlet {
         
         
 
-                @Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException::class, IOException::class)
             
     processRequest(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
@@ -109,20 +109,19 @@ var response = response
 
 
         try {
-            init(request)
+            BlisketServletUtil.getInstance()!.init(request)
 
     var requestPath: string = request.getRequestURI()!;
         
         
 
 
-    
                         if(requestPath == 
                                     null
                                 )
                         
                                     {
-                                    sendError(HttpServletResponse.SC_NOT_FOUND)
+                                    response.sendError(HttpServletResponse.SC_NOT_FOUND)
 
 
 
@@ -143,7 +142,6 @@ var response = response
         
 
 
-    
                         if(beginIndex >= 0)
                         
                                     {
@@ -152,7 +150,7 @@ var response = response
                                     }
                                 
                         else {
-                            sendError(HttpServletResponse.SC_NOT_FOUND)
+                            response.sendError(HttpServletResponse.SC_NOT_FOUND)
 
                         }
                             
@@ -162,11 +160,10 @@ var response = response
         
 
 
-    
                         if(!file.exists())
                         
                                     {
-                                    sendError(HttpServletResponse.SC_NOT_FOUND)
+                                    response.sendError(HttpServletResponse.SC_NOT_FOUND)
 
 
 
@@ -188,12 +185,10 @@ var response = response
         
 
 
-    
                         if(authenticationHelper!.isAuthenticated())
                         
                                     {
                                     
-    
                         if(AuthenticationHelperUtil.getInstance()!.isAuthorized(authenticationHelper, filePath))
                         
                                     {
@@ -204,7 +199,6 @@ var response = response
         
 
 
-    
                         if(contentType == 
                                     null
                                 )
@@ -214,10 +208,10 @@ var response = response
 
                                     }
                                 
-reset()
-setBufferSize(DEFAULT_BUFFER_SIZE)
-setContentType(contentType)
-setHeader("Content-Length", file.length.concatToString()
+response.reset()
+response.setBufferSize(DEFAULT_BUFFER_SIZE)
+response.setContentType(contentType)
+response.setHeader("Content-Length", file.length.concatToString()
 
                                     )
 
@@ -225,16 +219,16 @@ setHeader("Content-Length", file.length.concatToString()
         
         
 
-append("attachment; filename=\"")
-append(file.getName())
-append("\"")
-setHeader("Content-Disposition", stringBuffer!.toString())
-get(inputStream, response.getOutputStream(), ByteArray(16348))
+stringBuffer!.append("attachment; filename=\"")
+stringBuffer!.append(file.getName())
+stringBuffer!.append("\"")
+response.setHeader("Content-Disposition", stringBuffer!.toString())
+StreamUtil.getInstance()!.get(inputStream, response.getOutputStream(), ByteArray(16348))
 
                                     }
                                 
                         else {
-                            sendError(HttpServletResponse.SC_UNAUTHORIZED, "You are not Authorized")
+                            response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "You are not Authorized")
 
                         }
                             
@@ -242,28 +236,26 @@ get(inputStream, response.getOutputStream(), ByteArray(16348))
                                     }
                                 
                         else {
-                            sendError(HttpServletResponse.SC_UNAUTHORIZED, "Please Login")
+                            response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Please Login")
 
                         }
                             
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put(this.commonStrings!.EXCEPTION, this, "processRequest()", e)
+                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "processRequest()", e)
 
                                     }
                                 
-sendError(HttpServletResponse.SC_NOT_FOUND)
+response.sendError(HttpServletResponse.SC_NOT_FOUND)
 }
 
          finally {
-            close(response.getOutputStream())
+            StreamUtil.getInstance()!.close(response.getOutputStream())
 
-    
                         if(!StreamUtil.getInstance()!.close(inputStream))
                         
                                     {
@@ -276,7 +268,7 @@ sendError(HttpServletResponse.SC_NOT_FOUND)
 }
 
 
-                @Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException::class, IOException::class)
             
     doGet(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
@@ -285,7 +277,7 @@ processRequest(request, response)
 }
 
 
-                @Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException::class, IOException::class)
             
     doPost(request: HttpServletRequest, response: HttpServletResponse){
 var request = request

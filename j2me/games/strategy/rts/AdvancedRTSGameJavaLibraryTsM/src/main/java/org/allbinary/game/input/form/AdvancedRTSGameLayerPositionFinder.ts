@@ -67,7 +67,6 @@ var geographicMapCellPosition = geographicMapCellPosition
         
 
 
-    
                         if(layerInterface == AllBinaryLayer.NULL_ALLBINARY_LAYER)
                         
                                     {

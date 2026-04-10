@@ -65,7 +65,7 @@ export class PlayerTopViewCharacterBehavior extends TopViewCharacterBehavior {
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public terrainEvent(layer: AllBinaryLayer, direction: Direction, x: number, y: number, geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellPosition: GeographicMapCellPosition){
     //var layer = layer
@@ -74,7 +74,7 @@ export class PlayerTopViewCharacterBehavior extends TopViewCharacterBehavior {
     //var y = y
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
     //var geographicMapCellPosition = geographicMapCellPosition
-fireEvent(TrackingEventCircularStaticPool.getInstance()!.getInstance(layer))
+TrackingEventHandler.getInstance()!.fireEvent(TrackingEventCircularStaticPool.getInstance()!.getInstance(layer))
 }
 
 
@@ -88,7 +88,7 @@ fireEvent(TrackingEventCircularStaticPool.getInstance()!.getInstance(layer))
         
         
 
-setPosition(geographicMapInterfaceArray, x, y)
+basicGeographicMapUtil!.setPosition(geographicMapInterfaceArray, x, y)
 }
 
 

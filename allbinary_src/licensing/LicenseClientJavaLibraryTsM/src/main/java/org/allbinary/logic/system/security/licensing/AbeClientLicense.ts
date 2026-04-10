@@ -51,7 +51,6 @@ var resultHashtable = resultHashtable
         
 
 
-    
                         if(resultHashtable!.containsKey(abeClientInformationData!.LICENSEID) && resultHashtable!.containsKey(abeClientInformationData!.LICENSESERVERS) && resultHashtable!.containsKey(abeClientInformationData!.KEY) && resultHashtable!.containsKey(abeClientInformationData!.LICENSE_TYPE))
                         
                                     {
@@ -102,18 +101,16 @@ this.hashtable= Hashtable<Any, Any>()
         
 
 
-    
                         if(keyValue != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(keyValue is String)
                         
                                     {
-                                    put(abeClientInformationData!.KEY, keyValue)
+                                    this.hashtable.put(abeClientInformationData!.KEY, keyValue)
 
                                     }
                                 
@@ -142,7 +139,7 @@ this.servers= BasicArrayList()
         
 index < size; index++)
         {
-add(vector.get(index))
+this.servers.add(vector.get(index))
 }
 
 
@@ -150,7 +147,7 @@ add(vector.get(index))
         
         
 
-this.setSpecial(stringUtil!.getInstance(hashtable.get(abeClientInformationData!.SPECIAL) as String))
+this.this.setSpecial(stringUtil!.getInstance(hashtable.get(abeClientInformationData!.SPECIAL) as String))
 
     var licenseTypeString: string = stringUtil!.getInstance(hashtable.get(abeClientInformationData!.LICENSE_TYPE) as String)!;
         
@@ -208,7 +205,6 @@ var keyName = keyName
         
 
 
-    
                         if(!stringValidationUtil!.isEmpty(this.getKey(AbeClientInformationData.getInstance()!.KEY)))
                         
                                     {
@@ -241,15 +237,15 @@ var keyName = keyName
         
         
 
-append("License Id: ")
-append(this.getLicenseId())
-append(BREAK)
-append("Is Valid: ")
-appendboolean(this.isValid())
-append(BREAK)
-append("Keys: ")
-append(this.hashtable.toString())
-append(BREAK)
+stringBuffer!.append("License Id: ")
+stringBuffer!.append(this.getLicenseId())
+stringBuffer!.append(BREAK)
+stringBuffer!.append("Is Valid: ")
+stringBuffer!.appendboolean(this.isValid())
+stringBuffer!.append(BREAK)
+stringBuffer!.append("Keys: ")
+stringBuffer!.append(this.hashtable.toString())
+stringBuffer!.append(BREAK)
 
     var serverVector: BasicArrayList = this.getServers()!;
         
@@ -275,9 +271,9 @@ index < size; index++)
         
         
 
-append("Server: ")
-append(nextServerString)
-append(BREAK)
+stringBuffer!.append("Server: ")
+stringBuffer!.append(nextServerString)
+stringBuffer!.append(BREAK)
 }
 
 

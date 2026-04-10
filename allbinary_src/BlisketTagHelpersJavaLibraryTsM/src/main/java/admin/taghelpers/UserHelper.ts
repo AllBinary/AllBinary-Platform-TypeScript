@@ -116,28 +116,27 @@ this.portion= Portion(hashMap)
         
         
 
-deleteWhere(UserData.USERNAME, userName!.get())
+UserEntityFactory.getInstance()!.deleteWhere(UserData.USERNAME, userName!.get())
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
 
-append("Successfully Removed the user with ")
-append(UserData.USERNAME)
-append("=")
-append(userName!.get())
-append(" from to the user table")
+stringBuffer!.append("Successfully Removed the user with ")
+stringBuffer!.append(UserData.USERNAME)
+stringBuffer!.append("=")
+stringBuffer!.append(userName!.get())
+stringBuffer!.append(" from to the user table")
 
     var success: string = stringBuffer!.toString()!;
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "delete()")
+                                    logUtil!.put(success, this, "delete()")
 
                                     }
                                 
@@ -155,11 +154,10 @@ append(" from to the user table")
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "delete()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e)
 
                                     }
                                 
@@ -174,7 +172,7 @@ append(" from to the user table")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public insert(): string{
 
@@ -190,11 +188,10 @@ append(" from to the user table")
         
 
 
-    
                         if(!StringValidationUtil.getInstance()!.isEmpty(enable))
                         
                                     {
-                                    setEnable(enable)
+                                    userInterface!.setEnable(enable)
 
                                     }
                                 
@@ -203,18 +200,17 @@ append(" from to the user table")
         
         
 
-insert(values)
+UserEntityFactory.getInstance()!.insert(values)
 
     var success: string = "New User Successfully added to the Users Table";
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "add()")
+                                    logUtil!.put(success, this, "add()")
 
                                     }
                                 
@@ -232,11 +228,10 @@ insert(values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "add()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "add()", e)
 
                                     }
                                 
@@ -264,18 +259,17 @@ insert(values)
         
         
 
-update(user.getUserName(), values)
+UserEntityFactory.getInstance()!.update(user.getUserName(), values)
 
     var success: string = "New User Successfully added to the Users Table";
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "update()")
+                                    logUtil!.put(success, this, "update()")
 
                                     }
                                 
@@ -293,11 +287,10 @@ update(user.getUserName(), values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
 
                                     }
                                 
@@ -321,11 +314,10 @@ update(user.getUserName(), values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    put(success, this, commonStrings!.DROP)
+                                    logUtil!.put(success, this, commonStrings!.DROP)
 
                                     }
                                 
@@ -343,11 +335,10 @@ update(user.getUserName(), values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e)
 
                                     }
                                 
@@ -371,11 +362,10 @@ update(user.getUserName(), values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    put(success, this, "create()")
+                                    logUtil!.put(success, this, "create()")
 
                                     }
                                 
@@ -393,11 +383,10 @@ update(user.getUserName(), values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "create()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "create()", e)
 
                                     }
                                 
@@ -426,11 +415,10 @@ update(user.getUserName(), values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "restore()")
+                                    logUtil!.put(success, this, "restore()")
 
                                     }
                                 
@@ -448,11 +436,10 @@ update(user.getUserName(), values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "restore()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "restore()", e)
 
                                     }
                                 
@@ -481,11 +468,10 @@ update(user.getUserName(), values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    put(success, this, "backup()")
+                                    logUtil!.put(success, this, "backup()")
 
                                     }
                                 
@@ -503,11 +489,10 @@ update(user.getUserName(), values)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "backup()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "backup()", e)
 
                                     }
                                 

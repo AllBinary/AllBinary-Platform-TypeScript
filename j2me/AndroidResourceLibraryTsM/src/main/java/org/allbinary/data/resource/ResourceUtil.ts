@@ -131,11 +131,10 @@ var resource = resource
         
 
 
-    
                         if(DebugFactory.getInstance() != NoDebug.getInstance())
                         
                                     {
-                                    put(StringMaker().
+                                    PreLogUtil.put(StringMaker().
                             append(resource)!.append(CommonSeps.getInstance()!.COLON)!.append(value.toString())!.toString(), this, "getResourceId")
 
                                     }
@@ -153,18 +152,16 @@ var resource = resource
 var resource = resource
 var value = value
 
-    
                         if(DebugFactory.getInstance() != NoDebug.getInstance())
                         
                                     {
-                                    put(StringMaker().
+                                    PreLogUtil.put(StringMaker().
                             append(resource)!.append(CommonSeps.getInstance()!.COLON)!.append(value.toString())!.toString(), this, "addResource")
 
-    
                         if(this.containsDuplicate(resource, value))
                         
                                     {
-                                    log(StringMaker().
+                                    ForcedLogUtil.log(StringMaker().
                             append("Found Duplicate Resource: ")!.append(resource)!.toString(), this)
 
                                     }
@@ -172,7 +169,7 @@ var value = value
 
                                     }
                                 
-put(resource, value)
+this.hashMap!.put(resource, value)
 }
 
 
@@ -201,17 +198,14 @@ var value = value
         
 
 
-    
                         if(resource != objectArray[index])
                         
                                     {
                                     
-    
                         if(value != integer)
                         
                                     {
                                     
-    
                         if(value.toInt() == integer.toInt())
                         
                                     {
@@ -243,13 +237,13 @@ var value = value
 
     public setResources(resources: Resources){
     //var resources = resources
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Resource Loader: ")!.append(resources::class.toString()!)!.toString(), this, "setResources")
 this.resources= resources
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getResourceAsStream(resource: string): InputStream{
     //var resource = resource
@@ -270,7 +264,6 @@ this.resources= resources
         
 
 
-    
                         if(inputStream != 
                                     null
                                 )

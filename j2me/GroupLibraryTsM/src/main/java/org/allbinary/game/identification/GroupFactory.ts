@@ -89,7 +89,7 @@ index++
         
         
 
-setName(name)
+group.setName(name)
 
 
 
@@ -117,7 +117,7 @@ var nameArray = nameArray
         
         
 
-clear()
+list.clear()
 index= 0
 
     var size: number = list.size()!;
@@ -133,7 +133,6 @@ index= 0
         
 
 
-    
                         if(size < nameArray!.length)
                         
                                     {
@@ -142,12 +141,12 @@ index= 0
                                     }
                                 
                         else {
-                            delete(0, stringMaker!.length())
+                            stringMaker!.delete(0, stringMaker!.length())
 name= stringMaker!.append(TEAM)!.appendint(size)!.toString()
 
                         }
                             
-add(Group(name, (size +3).toShort()))
+list.add(Group(name, (size +3).toShort()))
 size++
 }
 

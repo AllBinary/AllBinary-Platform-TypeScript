@@ -48,7 +48,7 @@ export class HelperFactory
          {
         
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<Any, Any>, httpServletRequest: HttpServletRequest): any = {}{
     //var abeClientInformation = abeClientInformation
@@ -101,11 +101,10 @@ params[1]= httpServletRequest as Object
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
-                                    put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
+                                    logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
 
                                     }
                                 
@@ -122,11 +121,10 @@ params[1]= httpServletRequest as Object
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
-                                    put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
+                                    logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
 
                                     }
                                 
@@ -141,7 +139,7 @@ params[1]= httpServletRequest as Object
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<Any, Any>, pageContext: PageContext): any = {}{
     //var abeClientInformation = abeClientInformation
@@ -189,7 +187,6 @@ params[1]= pageContext as Object
 } catch(e: LicensingException)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
@@ -198,7 +195,7 @@ params[1]= pageContext as Object
         
         
 
-put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
+logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
 
                                     }
                                 
@@ -210,7 +207,6 @@ put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap,
  catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
@@ -219,7 +215,7 @@ put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap,
         
         
 
-put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
+logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
 
                                     }
                                 
@@ -234,7 +230,7 @@ put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(Strin
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<Any, Any>, specialhashMap: HashMap<Any, Any>, pageContext: PageContext): any = {}{
     //var abeClientInformation = abeClientInformation
@@ -285,7 +281,6 @@ params[2]= pageContext as Object
 } catch(e: LicensingException)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
@@ -294,7 +289,7 @@ params[2]= pageContext as Object
         
         
 
-put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
+logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
 
                                     }
                                 
@@ -306,7 +301,6 @@ put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap,
  catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
@@ -315,7 +309,7 @@ put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap,
         
         
 
-put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
+logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
 
                                     }
                                 
@@ -330,7 +324,7 @@ put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(Strin
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string): any = {}{
     //var abeClientInformation = abeClientInformation
@@ -357,7 +351,6 @@ put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(Strin
 } catch(e: LicensingException)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
@@ -366,7 +359,7 @@ put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(Strin
         
         
 
-put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
+logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
 
                                     }
                                 
@@ -378,7 +371,6 @@ put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(Strin
  catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
@@ -387,7 +379,7 @@ put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(Strin
         
         
 
-put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
+logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
 
                                     }
                                 

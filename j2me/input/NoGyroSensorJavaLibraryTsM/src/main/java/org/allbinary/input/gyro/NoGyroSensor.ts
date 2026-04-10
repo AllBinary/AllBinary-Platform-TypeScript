@@ -34,11 +34,11 @@ export class NoGyroSensor extends AllBinaryOrientationSensor
 public constructor (){
 
             super();
-            put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getOrientation(): Orientation{
 

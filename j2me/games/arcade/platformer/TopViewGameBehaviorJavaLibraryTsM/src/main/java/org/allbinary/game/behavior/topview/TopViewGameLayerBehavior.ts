@@ -61,7 +61,6 @@ this.maxGravityActionIndex= maxGravityActionIndex
 
     public gravity(){
 
-    
                         if(this.gravityActionIndex == 0)
                         
                                     {
@@ -75,8 +74,8 @@ this.isFallingWithoutJumpAttempt= true
 
     public land(velocityProperties: VelocityProperties){
     //var velocityProperties = velocityProperties
-set(0)
-this.land()
+velocityProperties!.getVelocityYBasicDecimalP()!.set(0)
+this.this.land()
 }
 
 
@@ -94,12 +93,10 @@ this.isJumpOver= false
     //var jumpBehavior = jumpBehavior
     //var accelerationMultiplier = accelerationMultiplier
 
-    
                         if(!isJumpOver)
                         
                                     {
                                     
-    
                         if(gravityActionIndex < maxGravityActionIndex)
                         
                                     {
@@ -108,8 +105,8 @@ this.isJumpOver= false
         
         
 
-add(acceleration2)
-limitXYToForwardAndReverseMaxVelocity()
+velocityProperties!.getVelocityYBasicDecimalP()!.add(acceleration2)
+velocityProperties!.limitXYToForwardAndReverseMaxVelocity()
 gravityActionIndex++
 
                                     }
@@ -126,11 +123,10 @@ gravityActionIndex++
                         }
                             
 
-    
                         if(isJumpAction)
                         
                                     {
-                                    process()
+                                    jumpBehavior!.process()
 isJumpAction= false
 
                                     }
@@ -141,7 +137,6 @@ isJumpAction= false
     public inputFrames(velocityProperties: VelocityProperties){
     //var velocityProperties = velocityProperties
 
-    
                         if(this.gravityActionIndex > 0 && velocityProperties!.getVelocityYBasicDecimalP()!.getUnscaled() > 0)
                         
                                     {

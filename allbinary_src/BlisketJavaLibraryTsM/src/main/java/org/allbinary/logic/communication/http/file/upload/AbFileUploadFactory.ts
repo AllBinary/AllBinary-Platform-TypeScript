@@ -74,7 +74,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getFileItemStreamList(httpServletRequest: HttpServletRequest): List{
 var httpServletRequest = httpServletRequest
@@ -103,13 +103,13 @@ var httpServletRequest = httpServletRequest
         
         
 
-log(fileItemStream)
+HttpFileUploadUtil.log(fileItemStream)
 
     var fileItem: AbFileItem = new AbFileItem(fileItemStream!.getName(), fileItemStream!.getFieldName(), FileItemUtil.getInstance()!.encodeToByteArray());
         
         
 
-add(fileItem)
+items.add(fileItem)
 }
 
 
@@ -121,7 +121,6 @@ add(fileItem)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPERROR))
                         
                                     {
@@ -130,7 +129,7 @@ add(fileItem)
         
         
 
-put(commonStrings!.EXCEPTION, this, "get()", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e)
 
                                     }
                                 
@@ -143,7 +142,7 @@ put(commonStrings!.EXCEPTION, this, "get()", e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getFileItemList(httpServletRequest: HttpServletRequest): List{
 var httpServletRequest = httpServletRequest
@@ -168,11 +167,10 @@ var httpServletRequest = httpServletRequest
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "get()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e)
 
                                     }
                                 

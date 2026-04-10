@@ -57,8 +57,8 @@ export class OrderHistoryTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(OrderHistoryHelperFactory())
-this.setTagRequestHelperFactory(OrderHistoryRequestHelperFactory())
+            this.this.setTagHelperFactory(OrderHistoryHelperFactory())
+this.this.setTagRequestHelperFactory(OrderHistoryRequestHelperFactory())
 }
 
 
@@ -68,7 +68,7 @@ this.status= value
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     setOrderStatus(): string{
 
@@ -85,7 +85,6 @@ this.status= value
         
 
 
-    
                         if(this.status == 
                                     null
                                 )
@@ -173,11 +172,10 @@ this.status= value
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "setOrderStatus()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus()", e)
 
                                     }
                                 
@@ -192,30 +190,27 @@ this.status= value
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.isEnabled())
                         
                                     {
                                     
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
-                                    put(OrderHistoryData.STATUS, this.status)
+                                    this.getPropertiesHashMap()!.put(OrderHistoryData.STATUS, this.status)
 
-    
                         if(this.getCommand()!.compareTo(OrderHistoryData.SETSTATUS) == 0)
                         
                                     {
-                                    this.setOrderStatus()
+                                    this.this.setOrderStatus()
 
                                     }
                                 
@@ -243,7 +238,7 @@ this.status= value
     
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -253,7 +248,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

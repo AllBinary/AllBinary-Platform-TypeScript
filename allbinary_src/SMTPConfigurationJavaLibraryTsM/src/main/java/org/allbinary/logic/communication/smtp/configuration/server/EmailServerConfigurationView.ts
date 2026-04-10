@@ -92,7 +92,7 @@ this.emailServerConfigurationInterface= emailServerConfigurationInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

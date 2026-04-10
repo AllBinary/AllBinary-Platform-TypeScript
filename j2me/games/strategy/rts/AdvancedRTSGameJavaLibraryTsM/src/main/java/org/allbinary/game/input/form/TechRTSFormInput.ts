@@ -118,11 +118,11 @@ this.noMoneyGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.ge
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
         
@@ -133,11 +133,11 @@ setAllBinaryGameLayerManager(allBinaryGameLayerManager)
         
         
 
-setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
+this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, itemIndex: number){
     //var associatedRtsLayer = associatedRtsLayer
@@ -145,7 +145,7 @@ setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
     //var layerManager = layerManager
     //var item = item
     //var itemIndex = itemIndex
-process(layerManager)
+super.process(layerManager)
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
@@ -166,9 +166,8 @@ process(layerManager)
         
         
 
-put(stringMaker!.append("isUpgradeable: ")!.appendboolean(rtsInterface!.isUpgradeable())!.toString(), this, commonStrings!.PROCESS)
+logUtil!.put(stringMaker!.append("isUpgradeable: ")!.appendboolean(rtsInterface!.isUpgradeable())!.toString(), this, commonStrings!.PROCESS)
 
-    
                         if(rtsInterface!.isUpgradeable())
                         
                                     {
@@ -182,29 +181,27 @@ put(stringMaker!.append("isUpgradeable: ")!.appendboolean(rtsInterface!.isUpgrad
         
         
 
-delete(0, stringMaker!.length())
-put(stringMaker!.appendint(cost)!.append("<=")!.appendint(capital.getTotalMoney())!.toString(), this, commonStrings!.PROCESS)
+stringMaker!.delete(0, stringMaker!.length())
+logUtil!.put(stringMaker!.appendint(cost)!.append("<=")!.appendint(capital.getTotalMoney())!.toString(), this, commonStrings!.PROCESS)
 
-    
                         if(cost <= capital.getTotalMoney())
                         
                                     {
-                                    add(BuildingSound.getInstance())
-removeMoney(cost)
-upgrade()
-update()
-fireEvent(EVENT)
+                                    rtsPlayerLayerInterface!.add(BuildingSound.getInstance())
+capital.removeMoney(cost)
+rtsInterface!.upgrade()
+technologyRTSInterfaceImageItem!.update()
+TechEventHandler.getInstance()!.fireEvent(EVENT)
 
                                     }
                                 
                         else {
-                            add(ErrorSound.getInstance())
+                            rtsPlayerLayerInterface!.add(ErrorSound.getInstance())
 
-    
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
-                                    fireEvent(noMoneyGameNotificationEvent)
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(noMoneyGameNotificationEvent)
 
                                     }
                                 

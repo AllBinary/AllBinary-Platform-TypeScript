@@ -58,7 +58,7 @@ private constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public mirrorVerticle(motionGestureEvent: MotionGestureEvent, halfWidth: number): MotionGestureEvent{
 var motionGestureEvent = motionGestureEvent
@@ -93,8 +93,8 @@ var halfWidth = halfWidth
         
         
 
-setPreviousPoint(mirroredPreviousPoint)
-setCurrentPoint(mirroredCurrentPoint)
+event.setPreviousPoint(mirroredPreviousPoint)
+event.setCurrentPoint(mirroredCurrentPoint)
 
 
 
@@ -111,7 +111,6 @@ var halfWidth = halfWidth
     var newX: number= 0
 
 
-    
                         if(x > halfWidth)
                         
                                     {

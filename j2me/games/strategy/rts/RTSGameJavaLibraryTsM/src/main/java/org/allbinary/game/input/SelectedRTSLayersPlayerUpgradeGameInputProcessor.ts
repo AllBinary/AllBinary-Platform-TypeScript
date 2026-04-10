@@ -40,12 +40,12 @@ public constructor (selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGam
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
-upgrade()
+selectedRTSLayersPlayerGameInput!.upgrade()
 }
 
 

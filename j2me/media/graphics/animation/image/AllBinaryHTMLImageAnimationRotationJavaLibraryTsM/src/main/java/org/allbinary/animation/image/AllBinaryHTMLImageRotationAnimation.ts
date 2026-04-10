@@ -123,7 +123,7 @@ this.canvasSurfaceArray[1]= this.getCanvasSurface(this.twoImages[1]!)
         
         
 
-translate(originalImage!.getWidth() /2, originalImage!.getHeight() /2)
+canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight() /2)
 
 
 
@@ -141,7 +141,6 @@ translate(originalImage!.getWidth() /2, originalImage!.getHeight() /2)
         
 
 
-    
                         if(this.getBasicColorP() == 
                                     null
                                  || this.getBasicColorP()!.toInt() != basicColor!.toInt())
@@ -151,13 +150,12 @@ translate(originalImage!.getWidth() /2, originalImage!.getHeight() /2)
 
                                     }
                                 
-setBasicColorP(basicColor)
+super.setBasicColorP(basicColor)
 
-    
                         if(changed)
                         
                                     {
-                                    this.updateImage()
+                                    this.this.updateImage()
 
                                     }
                                 
@@ -172,7 +170,6 @@ setBasicColorP(basicColor)
         
 
 
-    
                         if(this.alphaP != alpha)
                         
                                     {
@@ -180,14 +177,13 @@ setBasicColorP(basicColor)
 
                                     }
                                 
-setAlpha(alpha)
+super.setAlpha(alpha)
 
-    
                         if(changed)
                         
                                     {
                                     this.alphaProcessor= AlphaProcessor.getInstance()
-this.updateImage()
+this.this.updateImage()
 
                                     }
                                 
@@ -195,14 +191,14 @@ this.updateImage()
 
 
     public nextRotation(){
-nextRotation()
-this.updateImage()
+super.nextRotation()
+this.this.updateImage()
 }
 
 
     public previousRotation(){
-previousRotation()
-this.updateImage()
+super.previousRotation()
+this.this.updateImage()
 }
 
 
@@ -212,26 +208,25 @@ this.updateImage()
         
         
 
-save()
-rotateImageClear(originalImage, this.twoImages[this.bufferedImageIndex]!, canvasSurface, this.angleInfo!.getAngle() +90)
-setAlpha(imageModifierUtil, this.originalImage, this.twoImages[this.bufferedImageIndex]!, this.alphaP)
-drawImage(originalImage, imageToShow, canvasSurface)
-restore()
-this.swap()
+canvasSurface!.save()
+this.imageRotationUtil!.rotateImageClear(originalImage, this.twoImages[this.bufferedImageIndex]!, canvasSurface, this.angleInfo!.getAngle() +90)
+this.alphaProcessor!.setAlpha(imageModifierUtil, this.originalImage, this.twoImages[this.bufferedImageIndex]!, this.alphaP)
+this.imageRotationUtil!.drawImage(originalImage, imageToShow, canvasSurface)
+canvasSurface!.restore()
+this.this.swap()
 }
 
 
     public setFrame(index: number){
     //var index = index
-setFrame(index)
-this.updateImage()
+super.setFrame(index)
+this.this.updateImage()
 }
 
 
     public swap(){
 this.imageToShow= this.twoImages[this.bufferedImageIndex]!
 
-    
                         if(this.bufferedImageIndex == 0)
                         
                                     {
@@ -251,7 +246,7 @@ this.imageToShow= this.twoImages[this.bufferedImageIndex]!
 var graphics = graphics
 var x = x
 var y = y
-drawImage(this.imageToShow, x, y, anchor)
+graphics.drawImage(this.imageToShow, x, y, anchor)
 }
 
 

@@ -37,7 +37,7 @@ interface GeographicMapCellPositionAreaInterface {
 
     getSurroundingGeographicMapCellPositionList(): BasicArrayList
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     update(geographicMapInterface: BasicGeographicMap)
 

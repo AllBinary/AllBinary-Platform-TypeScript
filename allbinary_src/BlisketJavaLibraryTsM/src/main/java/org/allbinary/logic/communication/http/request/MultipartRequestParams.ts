@@ -66,7 +66,7 @@ public constructor (request: HttpServletRequest)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.processMultipartRequest(request)
+this.this.processMultipartRequest(request)
 }
 
 public constructor (pageContext: PageContext)                        
@@ -79,7 +79,7 @@ public constructor (pageContext: PageContext)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.processMultipartRequest(pageContext!.getRequest() as HttpServletRequest)
+this.this.processMultipartRequest(pageContext!.getRequest() as HttpServletRequest)
 }
 
 
@@ -103,18 +103,16 @@ var request = request
         
 
 
-    
                         if(multipartRequestList != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    put("FileItem List Size: " +multipartRequestList!.size, this, "processMultipartRequest()")
+                                    logUtil!.put("FileItem List Size: " +multipartRequestList!.size, this, "processMultipartRequest()")
 
                                     }
                                 
@@ -150,70 +148,65 @@ index < size; index++)
         
 
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(name))
                         
                                     {
-                                    put(fileItem!.getFieldName(), fileItem!.getString())
+                                    specialRequest!.put(fileItem!.getFieldName(), fileItem!.getString())
 
                                     }
                                 
                         else {
-                            put(fileItem!.getFieldName(), fileItem)
+                            specialRequest!.put(fileItem!.getFieldName(), fileItem)
 
                         }
                             
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    put("Special Request Data: " +specialRequest!.toString(), this, "processMultipartRequest()")
+                                    logUtil!.put("Special Request Data: " +specialRequest!.toString(), this, "processMultipartRequest()")
 
                                     }
                                 
-this.setSpecial()
-this.setMap(specialRequest)
+this.this.setSpecial()
+this.this.setMap(specialRequest)
 
                                     }
                                 
 } catch(e: InvalidContentTypeException)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    put("Using Normal RequestParams", this, "processMultipartRequest()")
+                                    logUtil!.put("Using Normal RequestParams", this, "processMultipartRequest()")
 
                                     }
                                 
-setMap(request.getParameterMap())
+super.setMap(request.getParameterMap())
 }
  catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUESTERROR))
                         
                                     {
-                                    put("Should Not Occur", this, "processMultipartRequest()")
+                                    logUtil!.put("Should Not Occur", this, "processMultipartRequest()")
 
                                     }
                                 
-setMap(request.getParameterMap())
+super.setMap(request.getParameterMap())
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toHashMap(): HashMap<Any, Any>{
 
-    
                         if(this.special)
                         
                                     {

@@ -165,7 +165,6 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as S
         
 
 
-    
                         if(org.allbinary.globals.URLGLOBALS.isTestingMode())
                         
                                     {
@@ -196,7 +195,6 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as S
         
 
 
-    
                         if(org.allbinary.globals.URLGLOBALS.isTestingMode())
                         
                                     {
@@ -227,7 +225,6 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as S
         
 
 
-    
                         if(org.allbinary.globals.URLGLOBALS.isTestingMode())
                         
                                     {
@@ -258,7 +255,6 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as S
         
 
 
-    
                         if(org.allbinary.globals.URLGLOBALS.isTestingMode())
                         
                                     {
@@ -420,7 +416,7 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as S
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getSubStores(): BasicArrayList{
 

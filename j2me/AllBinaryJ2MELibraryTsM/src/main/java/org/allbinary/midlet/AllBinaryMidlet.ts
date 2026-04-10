@@ -113,7 +113,7 @@ export class AllBinaryMidlet extends MIDlet
 public constructor (){
 
             super();
-            put(commonStrings!.CONSTRUCTOR, this, "AllBinaryMidlet::AllBinaryMidlet")
+            logUtil!.put(commonStrings!.CONSTRUCTOR, this, "AllBinaryMidlet::AllBinaryMidlet")
 }
 
 
@@ -125,25 +125,23 @@ public constructor (){
         
 
 
-    
                         if(newDisplay != NullCanvas.NULL_CANVAS)
                         
                                     {
                                     title= newDisplay!.getTitle()
 
-    
                         if(title != 
                                     null
                                 )
                         
                                     {
-                                    put(StringMaker().
+                                    logUtil!.put(StringMaker().
                             append(SETTING_)!.append(title)!.append(_DISPLAY_)!.append(StringUtil.getInstance()!.toString(newDisplay))!.toString(), this, SET_DISPLAY)
 
                                     }
                                 
                         else {
-                            put(StringMaker().
+                            logUtil!.put(StringMaker().
                             append(SETTING_NO_TITLE)!.append(StringUtil.getInstance()!.toString(newDisplay))!.toString(), this, SET_DISPLAY)
 
                         }
@@ -156,7 +154,7 @@ public constructor (){
         
         
 
-setCurrent(newDisplay)
+display.setCurrent(newDisplay)
 }
 
 
@@ -196,15 +194,15 @@ this.destroyed= destroyed
 }
 
 
-                @Throws(MIDletStateChangeException::class)
+                //@Throws(MIDletStateChangeException::class)
             
     startApp(){
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
     pauseApp(){
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
@@ -223,31 +221,31 @@ var unconditional = unconditional
 
 
         try {
-            put(commonStrings!.START, this, METHOD_NAME)
-put(Memory.getInfo(), this, METHOD_NAME)
-this.setDestroyed(true)
+            logUtil!.put(commonStrings!.START, this, METHOD_NAME)
+PreLogUtil.put(Memory.getInfo(), this, METHOD_NAME)
+this.this.setDestroyed(true)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, METHOD_NAME, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setStartStateHashtable(hashtable: Hashtable<Any, Any>){
 var hashtable = hashtable
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, "setStartStateHashtable")
 this.hashtable= hashtable
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getStartStateHashtable(): Hashtable<Any, Any>{
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, "getStartStateHashtable")
 
 
@@ -258,10 +256,10 @@ put(StringMaker().
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getCurrentStateHashtable(): Hashtable<Any, Any>{
-put(commonStrings!.START, this, "getStateHashtable")
+logUtil!.put(commonStrings!.START, this, "getStateHashtable")
 
 
 

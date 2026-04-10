@@ -63,20 +63,19 @@ export class SystemHardwareFactory
         
         
 
-append("Hardware Info: \n")
+osBuffer!.append("Hardware Info: \n")
 
-    
                         if(hardwareInterface != 
                                     null
                                 )
                         
                                     {
-                                    append(hardwareInterface!.toString())
+                                    osBuffer!.append(hardwareInterface!.toString())
 
                                     }
                                 
                         else {
-                            append(StringUtil.getInstance()!.NULL_STRING)
+                            osBuffer!.append(StringUtil.getInstance()!.NULL_STRING)
 
                         }
                             
@@ -107,7 +106,6 @@ var operatingSystemInterface = operatingSystemInterface
 
         try {
             
-    
                         if(hardwareInterface == NoHardware.getInstance())
                         
                                     {
@@ -115,10 +113,10 @@ var operatingSystemInterface = operatingSystemInterface
 
                                     }
                                 
-put("Found Hardware", this, commonStrings!.CONSTRUCTOR)
+logUtil!.put("Found Hardware", this, commonStrings!.CONSTRUCTOR)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 

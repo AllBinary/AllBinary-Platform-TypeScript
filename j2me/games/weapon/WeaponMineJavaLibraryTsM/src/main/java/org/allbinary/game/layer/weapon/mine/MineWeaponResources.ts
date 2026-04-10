@@ -91,7 +91,7 @@ protected constructor (){
         
         
 
-init(ROOT, SIZE)
+super.init(ROOT, SIZE)
 }
 
 

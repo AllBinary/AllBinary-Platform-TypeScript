@@ -46,7 +46,7 @@ private constructor (name: string){
 
             super();
             var name = name
-this.setName(name)
+this.this.setName(name)
 }
 
 

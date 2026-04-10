@@ -55,7 +55,6 @@ put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT)
         
 
 
-    
                         if(actualClassName != 
                                     null
                                 )
@@ -70,7 +69,7 @@ put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT)
         
         
 
-i(LABEL, message)
+android.util.Log.i(LABEL, message)
 }
 
 
@@ -92,7 +91,7 @@ put(specialMessage, className, functionName, NullUtil.getInstance()!.NULL_OBJECT
         
         
 
-i(className, message)
+android.util.Log.i(className, message)
 }
 
 public constructor (){

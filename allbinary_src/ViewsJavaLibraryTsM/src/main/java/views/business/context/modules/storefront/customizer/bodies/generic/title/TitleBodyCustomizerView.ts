@@ -87,15 +87,15 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this.titleBody as DomNodeInterface)
-this.addDomNodeInterface(this as DomNodeInterface)
+this.this.addDomNodeInterface(this.titleBody as DomNodeInterface)
+this.this.addDomNodeInterface(this as DomNodeInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -105,7 +105,6 @@ var document = document
         
 
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(pageName))
                         
                                     {
@@ -122,7 +121,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
@@ -147,11 +146,10 @@ var document = document
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 

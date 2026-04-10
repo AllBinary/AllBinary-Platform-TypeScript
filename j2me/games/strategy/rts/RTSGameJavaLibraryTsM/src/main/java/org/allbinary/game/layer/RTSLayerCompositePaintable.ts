@@ -62,32 +62,30 @@ this.upgradableRTSLayerHudPaintable= upgradableRTSLayerHudPaintable
     public update(rtsLayer: RTSLayer){
 var rtsLayer = rtsLayer
 
-    
                         if(rtsLayer!.isUpgradeable())
                         
                                     {
-                                    this.setUpgradeCost(StringMaker().
+                                    this.this.setUpgradeCost(StringMaker().
                             append(UPGRADE)!.appendint(rtsLayer!.getUpgradeCost())!.toString())
 
                                     }
                                 
                         else {
-                            this.setUpgradeCost(StringUtil.getInstance()!.EMPTY_STRING)
+                            this.this.setUpgradeCost(StringUtil.getInstance()!.EMPTY_STRING)
 
                         }
                             
 
-    
                         if(rtsLayer!.isDowngradeable())
                         
                                     {
-                                    this.setDownGradeCost(StringMaker().
+                                    this.this.setDownGradeCost(StringMaker().
                             append(DOWNGRADE)!.appendint(rtsLayer!.getDowngradeCost())!.toString())
 
                                     }
                                 
                         else {
-                            this.setDownGradeCost(StringUtil.getInstance()!.EMPTY_STRING)
+                            this.this.setDownGradeCost(StringUtil.getInstance()!.EMPTY_STRING)
 
                         }
                             
@@ -96,8 +94,8 @@ var rtsLayer = rtsLayer
 
     public paint(graphics: Graphics){
 var graphics = graphics
-drawString(this.getDownGradeCost(), this.upgradableRTSLayerHudPaintable!.textX, this.upgradableRTSLayerHudPaintable!.costY1, 0)
-drawString(this.getUpgradeCost(), this.upgradableRTSLayerHudPaintable!.textX, this.upgradableRTSLayerHudPaintable!.costY, 0)
+graphics.drawString(this.getDownGradeCost(), this.upgradableRTSLayerHudPaintable!.textX, this.upgradableRTSLayerHudPaintable!.costY1, 0)
+graphics.drawString(this.getUpgradeCost(), this.upgradableRTSLayerHudPaintable!.textX, this.upgradableRTSLayerHudPaintable!.costY, 0)
 }
 
 

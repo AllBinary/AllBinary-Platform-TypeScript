@@ -89,7 +89,7 @@ public constructor (image: Image, sequenceArray: IntArray, animationBehaviorFact
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
@@ -99,11 +99,10 @@ public constructor (image: Image, sequenceArray: IntArray, animationBehaviorFact
         
 
 
-    
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
                         
                                     {
-                                    processAdjust(this)
+                                    animationFactoryImageScaleUtil!.processAdjust(this)
 
 
 

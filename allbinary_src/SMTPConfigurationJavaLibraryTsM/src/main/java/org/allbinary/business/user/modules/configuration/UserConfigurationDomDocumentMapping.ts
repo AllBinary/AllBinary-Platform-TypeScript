@@ -46,7 +46,7 @@ this.userConfigurationInterface= userConfigurationInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlDoc(): Document{
 
@@ -60,7 +60,7 @@ this.userConfigurationInterface= userConfigurationInterface
         
         
 
-appendChild(node)
+document.appendChild(node)
 
 
 
@@ -70,7 +70,7 @@ appendChild(node)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toDomDocumentString(): string{
 

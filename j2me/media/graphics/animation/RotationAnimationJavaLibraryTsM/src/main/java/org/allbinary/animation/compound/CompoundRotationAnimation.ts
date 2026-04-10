@@ -72,7 +72,7 @@ this.circularIndexUtil= CircularIndexUtil.getInstance(this.animationInterfaceArr
 
     public setFrame(index: number){
     //var index = index
-setFrame(index)
+this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.setFrame(index)
 }
 
 
@@ -86,7 +86,7 @@ setFrame(index)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAnimationSize(): number{
 
@@ -109,24 +109,24 @@ setFrame(index)
 
 
     public previousFrame(){
-previousFrame()
+this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.previousFrame()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public nextFrame(){
-nextFrame()
+this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.nextFrame()
 }
 
 
     public previousRotation(){
-previousRotation()
+this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.previousRotation()
 }
 
 
     public nextRotation(){
-nextRotation()
+this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.nextRotation()
 }
 
 
@@ -149,7 +149,7 @@ var sequence = sequence
     //var graphics = graphics
     //var x = x
     //var y = y
-paint(graphics, x, y)
+this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.paint(graphics, x, y)
 }
 
 
@@ -158,7 +158,7 @@ paint(graphics, x, y)
     //var x = x
     //var y = y
     //var z = z
-paintThreed(graphics, x, y, z)
+this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.paintThreed(graphics, x, y, z)
 }
 
 
@@ -178,8 +178,8 @@ paintThreed(graphics, x, y, z)
         
         
 
-next()
-this.setFrame(frame)
+this.circularIndexUtil!.next()
+this.this.setFrame(frame)
 }
 
 
@@ -189,8 +189,8 @@ this.setFrame(frame)
         
         
 
-previous()
-this.setFrame(frame)
+this.circularIndexUtil!.previous()
+this.this.setFrame(frame)
 }
 
 
@@ -201,32 +201,32 @@ this.setFrame(frame)
         
         
 
-setIndex(index)
-this.setFrame(frame)
+this.circularIndexUtil!.setIndex(index)
+this.this.setFrame(frame)
 }
 
 
     public setFrame(direction: Direction){
     //var direction = direction
-setFrame(direction)
+this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.setFrame(direction)
 }
 
 
     public setFrame(angle: Angle){
     //var angle = angle
-setFrame(angle)
+this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.setFrame(angle)
 }
 
 
     public adjustFrame(newAngle: Angle){
     //var newAngle = newAngle
-this.adjustFrame(newAngle!.getValue())
+this.this.adjustFrame(newAngle!.getValue())
 }
 
 
     public adjustFrame(angle: number){
     //var angle = angle
-adjustFrame(angle)
+this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.adjustFrame(angle)
 }
 
 
@@ -256,7 +256,7 @@ this.animationInterfaceArray= animationInterfaceArray
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public set(gl: GL){
     //var gl = gl
@@ -271,7 +271,7 @@ this.animationInterfaceArray= animationInterfaceArray
         
 --index >= 0; )
         {
-set(gl)
+this.animationInterfaceArray[index]!.set(gl)
 }
 
 }

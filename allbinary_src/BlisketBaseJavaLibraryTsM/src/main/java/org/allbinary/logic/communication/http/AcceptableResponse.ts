@@ -43,14 +43,14 @@ protected constructor (candidate: string, tagName: string, index: number){
             var candidate = candidate
 var tagName = tagName
 var index = index
-put(tagName, this, this.commonStrings!.CONSTRUCTOR)
+logUtil!.put(tagName, this, this.commonStrings!.CONSTRUCTOR)
 
     var acceptableResponseUtil: AcceptableResponseUtil = AcceptableResponseUtil.getInstance()!;
         
         
 
-add(index, candidate)
-add(index, tagName)
+acceptableResponseUtil!.candidateVector!.add(index, candidate)
+acceptableResponseUtil!.tagNameVector!.add(index, tagName)
 }
 
 

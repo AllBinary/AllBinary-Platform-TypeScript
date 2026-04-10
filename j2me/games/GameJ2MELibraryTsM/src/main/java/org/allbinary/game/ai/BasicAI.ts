@@ -96,27 +96,26 @@ this.gameInput= gameInput
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processAI(key: number){
 var key = key
 
-    
                         if(key !=  -1)
                         
                                     {
-                                    add(gameKeyEventFactory!.getInstance(this, key))
+                                    this.gameInput!.add(gameKeyEventFactory!.getInstance(this, key))
 
                                     }
                                 
@@ -175,10 +174,10 @@ this.lastKey= lastKey
         
         
 
-append(CommonSeps.getInstance()!.NEW_LINE)
-append(this.getName())
-append(" LastKey: ")
-append(CanvasUtil.getKeyName(this.getLastKey()))
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
+stringBuffer!.append(this.getName())
+stringBuffer!.append(" LastKey: ")
+stringBuffer!.append(CanvasUtil.getKeyName(this.getLastKey()))
 
 
 

@@ -85,7 +85,6 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                     
 this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest() as HttpServletRequest) as StoreFrontInterface
 
-    
                         if(this.newStoreFrontInterface!.getName() == 
                                     null
                                 )
@@ -102,7 +101,6 @@ this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest() as H
         
 
 
-    
                         if(this.newStoreFrontInterface!.isValid() == Boolean.FALSE)
                         
                                     {
@@ -111,7 +109,6 @@ this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest() as H
                                     }
                                 
 
-    
                         if(StoreFrontFactory.getInstance(this.newStoreFrontInterface!.getName()) != 
                                     null
                                 )
@@ -122,7 +119,6 @@ this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest() as H
                                     }
                                 
 
-    
                         if(AbFile(AbPath(this.getStoreViewsPath())).
                             isFile())
                         
@@ -140,11 +136,10 @@ this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest() as H
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -159,7 +154,7 @@ this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest() as H
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getStoreViewsPath(): string{
 
@@ -167,9 +162,9 @@ this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest() as H
         
         
 
-append(URLGLOBALS.getMainPath())
-append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-append(this.newStoreFrontInterface!.getName())
+stringBuffer!.append(URLGLOBALS.getMainPath())
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
+stringBuffer!.append(this.newStoreFrontInterface!.getName())
 
 
 
@@ -188,32 +183,29 @@ append(this.newStoreFrontInterface!.getName())
         
 
 
-    
                         if(this.newStoreFrontInterface!.isValid() == Boolean.FALSE)
                         
                                     {
-                                    append(this.newStoreFrontInterface!.validationInfo())
+                                    stringBuffer!.append(this.newStoreFrontInterface!.validationInfo())
 
                                     }
                                 
 
-    
                         if(StoreFrontFactory.getInstance(this.newStoreFrontInterface!.getName()) != 
                                     null
                                 )
                         
                                     {
-                                    append("Store name already used<br/>")
+                                    stringBuffer!.append("Store name already used<br/>")
 
                                     }
                                 
 
-    
                         if(AbFile(AbPath(this.getStoreViewsPath())).
                             isFile())
                         
                                     {
-                                    append("Store name clashes with template name<br/>")
+                                    stringBuffer!.append("Store name clashes with template name<br/>")
 
                                     }
                                 
@@ -226,11 +218,10 @@ append(this.newStoreFrontInterface!.getName())
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 
@@ -266,7 +257,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 

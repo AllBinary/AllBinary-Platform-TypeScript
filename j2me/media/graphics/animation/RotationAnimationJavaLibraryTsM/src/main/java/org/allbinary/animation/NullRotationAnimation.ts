@@ -37,7 +37,7 @@ export class NullRotationAnimation extends RotationAnimation {
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAnimationSize(): number{
 

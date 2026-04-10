@@ -60,7 +60,7 @@ public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactor
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public remove(key: any = {}): CacheableInterface{
 var key = key
@@ -79,7 +79,7 @@ var key = key
         
         
 
-setImageArray(allBinaryImageRotationAnimationInfo!.getImageArray())
+imageArrayRotationAnimationCacheable!.setImageArray(allBinaryImageRotationAnimationInfo!.getImageArray())
 
 
 

@@ -65,7 +65,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(inputStream: InputStream, outputStream: OutputStream, buffer: ByteArray): OutputStream{
     //var inputStream = inputStream
@@ -81,7 +81,6 @@ var buffer = buffer
         {
 len= inputStream!.read(buffer, 0, buffer.length)
 
-    
                         if(len !=  -1)
                         
                                     {
@@ -95,7 +94,7 @@ len= inputStream!.read(buffer, 0, buffer.length)
 
                         }
                             
-write(buffer, 0, len)
+outputStream!.write(buffer, 0, len)
 }
 
 
@@ -107,7 +106,7 @@ write(buffer, 0, len)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getByteArray(inputStream: InputStream, outputStream2: ByteArrayOutputStream, byteArray: ByteArray): ByteArray{
     //var inputStream = inputStream
@@ -120,7 +119,7 @@ write(buffer, 0, len)
 
 
         try {
-            this.get(inputStream, outputStream, byteArray)
+            this.this.get(inputStream, outputStream, byteArray)
 
 
 
@@ -136,7 +135,7 @@ write(buffer, 0, len)
 }
 
          finally {
-            this.close(outputStream)
+            this.this.close(outputStream)
 
          }
         
@@ -148,13 +147,12 @@ var closeable = closeable
 
         try {
             
-    
                         if(closeable != 
                                     null
                                 )
                         
                                     {
-                                    close()
+                                    closeable.close()
 
                                     }
                                 
@@ -171,7 +169,7 @@ var closeable = closeable
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e)
 
 
 

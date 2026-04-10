@@ -117,7 +117,6 @@ var fromFile = fromFile
         
 
 
-    
                         if(AbFileSystem.getInstance()!.isType("com.vobject.appengine.java.io"))
                         
                                     {
@@ -131,7 +130,6 @@ var fromFile = fromFile
         
 
 
-    
                         if(lastIndex >= newDirectory!.length)
                         
                                     {
@@ -174,7 +172,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public write(inputStream: InputStream, file: AbFile){
 var inputStream = inputStream
@@ -184,11 +182,11 @@ var file = file
         
         
 
-this.write(inputStream, dataOutputStream)
+this.this.write(inputStream, dataOutputStream)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public write(inputStream: InputStream, dataOutputStream: AbDataOutputStream){
 var inputStream = inputStream
@@ -196,17 +194,17 @@ var dataOutputStream = dataOutputStream
 
         try {
             dataOutputStream= StreamUtil.getInstance()!.get(inputStream, dataOutputStream, ByteArray(16384)) as AbDataOutputStream
-flush()
+dataOutputStream!.flush()
 
          finally {
-            close(dataOutputStream)
+            StreamUtil.getInstance()!.close(dataOutputStream)
 
          }
         
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public write(inputStream: InputStream, dataOutputStream: AbDataOutputStream, buffer: ByteArray){
 var inputStream = inputStream
@@ -215,17 +213,17 @@ var buffer = buffer
 
         try {
             dataOutputStream= StreamUtil.getInstance()!.get(inputStream, dataOutputStream, buffer) as AbDataOutputStream
-flush()
+dataOutputStream!.flush()
 
          finally {
-            close(dataOutputStream)
+            StreamUtil.getInstance()!.close(dataOutputStream)
 
          }
         
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     copy(dataInputStream: AbFileInputStream, dataOutputStream: AbDataOutputStream){
 var dataInputStream = dataInputStream
@@ -233,18 +231,18 @@ var dataOutputStream = dataOutputStream
 
         try {
             dataOutputStream= StreamUtil.getInstance()!.get(dataInputStream, dataOutputStream, ByteArray(16384)) as AbDataOutputStream
-flush()
+dataOutputStream!.flush()
 
          finally {
-            close(dataOutputStream)
-close(dataInputStream)
+            StreamUtil.getInstance()!.close(dataOutputStream)
+StreamUtil.getInstance()!.close(dataInputStream)
 
          }
         
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     fixPath(file: AbFile, path: AbPath, realPath: AbPath, cloud: string): AbPath{
 var file = file
@@ -271,18 +269,17 @@ var cloud = cloud
         
         
 
-create(fixedPath)
+this.directory.create(fixedPath)
 
     var string: string = fixedPath!.toFileSystemString()!;
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    put(string, getInstance(), "fixPath")
+                                    logUtil!.put(string, getInstance(), "fixPath")
 
                                     }
                                 
@@ -300,18 +297,18 @@ create(fixedPath)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public copyToCloud(file: AbFile, path: AbPath, realPath: AbPath, cloud: string){
 var file = file
 var path = path
 var realPath = realPath
 var cloud = cloud
-this.copyToCloud(file, path, realPath, cloud, false, false)
+this.this.copyToCloud(file, path, realPath, cloud, false, false)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public copyToCloud(file: AbFile, path: AbPath, realPath: AbPath, cloud: string, overwriteNewer: boolean, overwriteAll: boolean){
 var file = file
@@ -333,7 +330,6 @@ var overwriteAll = overwriteAll
         
 
 
-    
                         if(!this.copyPrepare(file, outFile, overwriteNewer, overwriteAll))
                         
                                     {
@@ -348,7 +344,6 @@ var overwriteAll = overwriteAll
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
@@ -357,12 +352,12 @@ var overwriteAll = overwriteAll
         
         
 
-append("Out File: ")
-append(outFile!.getPath())
-append(" In File: ")
-append(file.getPath())
-append(" to cloud.")
-put(stringBuffer!.toString(), getInstance(), "copyToCloud")
+stringBuffer!.append("Out File: ")
+stringBuffer!.append(outFile!.getPath())
+stringBuffer!.append(" In File: ")
+stringBuffer!.append(file.getPath())
+stringBuffer!.append(" to cloud.")
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud")
 
                                     }
                                 
@@ -379,11 +374,10 @@ put(stringBuffer!.toString(), getInstance(), "copyToCloud")
         
         
 
-this.copy(fileInputStream, dataOutputStream)
+this.this.copy(fileInputStream, dataOutputStream)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILEERROR))
                         
                                     {
@@ -392,10 +386,10 @@ this.copy(fileInputStream, dataOutputStream)
         
         
 
-append("Error Copying File File: ")
-append(file.toString())
-append(" to cloud.")
-put(stringBuffer!.toString(), getInstance(), "copyToCloud", e)
+stringBuffer!.append("Error Copying File File: ")
+stringBuffer!.append(file.toString())
+stringBuffer!.append(" to cloud.")
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud", e)
 
                                     }
                                 
@@ -408,16 +402,16 @@ put(stringBuffer!.toString(), getInstance(), "copyToCloud", e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public copyToCloud(file: AbFile, outFile: AbFile){
 var file = file
 var outFile = outFile
-this.copyToCloud(file, outFile, false, false)
+this.this.copyToCloud(file, outFile, false, false)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public copyToCloud(file: AbFile, outFile: AbFile, overwriteNewer: boolean, overwriteAll: boolean){
 var file = file
@@ -432,7 +426,6 @@ var overwriteAll = overwriteAll
         
 
 
-    
                         if(!this.copyPrepare(file, outFile, overwriteNewer, overwriteAll))
                         
                                     {
@@ -447,17 +440,16 @@ var overwriteAll = overwriteAll
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-append("Out File: ")
-append(outFile!.getPath())
-append(" In File: ")
-append(file.getPath())
-append(" to cloud.")
-put(stringBuffer!.toString(), getInstance(), "copyToCloud")
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("Out File: ")
+stringBuffer!.append(outFile!.getPath())
+stringBuffer!.append(" In File: ")
+stringBuffer!.append(file.getPath())
+stringBuffer!.append(" to cloud.")
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud")
 
                                     }
                                 
@@ -474,11 +466,10 @@ put(stringBuffer!.toString(), getInstance(), "copyToCloud")
         
         
 
-this.copy(fileInputStream, dataOutputStream)
+this.this.copy(fileInputStream, dataOutputStream)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILEERROR))
                         
                                     {
@@ -487,10 +478,10 @@ this.copy(fileInputStream, dataOutputStream)
         
         
 
-append("Error Copying File File: ")
-append(file.toString())
-append(" to cloud.")
-put(stringBuffer!.toString(), getInstance(), "copyToCloud", e)
+stringBuffer!.append("Error Copying File File: ")
+stringBuffer!.append(file.toString())
+stringBuffer!.append(" to cloud.")
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud", e)
 
                                     }
                                 
@@ -503,7 +494,7 @@ put(stringBuffer!.toString(), getInstance(), "copyToCloud", e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     copyPrepare(fromFile: AbFile, toFile: AbFile, overwriteNewer: boolean, overwriteAll: boolean): boolean{
 var fromFile = fromFile
@@ -511,7 +502,6 @@ var toFile = toFile
 var overwriteNewer = overwriteNewer
 var overwriteAll = overwriteAll
 
-    
                         if(toFile!.exists())
                         
                                     {
@@ -521,77 +511,71 @@ var overwriteAll = overwriteAll
         
 
 
-    
                         if(overwriteAll)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-append("Overwriting File: ")
-append(toFile!.getPath())
-put(stringBuffer!.toString(), getInstance(), "copyFile")
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("Overwriting File: ")
+stringBuffer!.append(toFile!.getPath())
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile")
 
                                     }
                                 
-delete()
-createNewFile()
+toFile!.delete()
+toFile!.createNewFile()
 
                                     }
                                 
                              else 
-    
                         if(toFile!.lastModified() < fromFile!.lastModified() && overwriteNewer)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-append("Newer by: ")
-appendlong(fromFile!.lastModified() -toFile!.lastModified())
-append("ms ")
-append("Copying File: ")
-append(toFile!.getPath())
-put(stringBuffer!.toString(), getInstance(), "copyFile")
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("Newer by: ")
+stringBuffer!.appendlong(fromFile!.lastModified() -toFile!.lastModified())
+stringBuffer!.append("ms ")
+stringBuffer!.append("Copying File: ")
+stringBuffer!.append(toFile!.getPath())
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile")
 
                                     }
                                 
-delete()
-createNewFile()
+toFile!.delete()
+toFile!.createNewFile()
 
                                     }
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-append("File Already Exists")
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("File Already Exists")
 
-    
                         if(overwriteNewer)
                         
                                     {
-                                    append(" And Is Not Older")
+                                    stringBuffer!.append(" And Is Not Older")
 
                                     }
                                 
                         else {
-                            append(" And Not A In Overwrite Mode")
+                            stringBuffer!.append(" And Not A In Overwrite Mode")
 
                         }
                             
-append(CommonLabels.getInstance()!.COLON_SEP)
-append(toFile!.getPath())
-put(stringBuffer!.toString(), getInstance(), "copyFile")
+stringBuffer!.append(CommonLabels.getInstance()!.COLON_SEP)
+stringBuffer!.append(toFile!.getPath())
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile")
 
                                     }
                                 
@@ -608,7 +592,7 @@ put(stringBuffer!.toString(), getInstance(), "copyFile")
                                     }
                                 
                         else {
-                            createNewFile()
+                            toFile!.createNewFile()
 
                         }
                             
@@ -621,16 +605,16 @@ put(stringBuffer!.toString(), getInstance(), "copyFile")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     copyFile(fromFile: AbFile, toFile: AbFile){
 var fromFile = fromFile
 var toFile = toFile
-this.copyFile(fromFile, toFile, false, false)
+this.this.copyFile(fromFile, toFile, false, false)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     copyFile(fromFile: AbFile, toFile: AbFile, overwriteNewer: boolean, overwriteAll: boolean){
 var fromFile = fromFile
@@ -640,7 +624,6 @@ var overwriteAll = overwriteAll
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
@@ -649,18 +632,17 @@ var overwriteAll = overwriteAll
         
         
 
-append("Copying ")
-appendlong(fromFile!.length())
-append(" bytes from File: ")
-append(fromFile!.getPath())
-append(" to: ")
-append(toFile!.getPath())
-put(stringBuffer!.toString(), getInstance(), "copyFile")
+stringBuffer!.append("Copying ")
+stringBuffer!.appendlong(fromFile!.length())
+stringBuffer!.append(" bytes from File: ")
+stringBuffer!.append(fromFile!.getPath())
+stringBuffer!.append(" to: ")
+stringBuffer!.append(toFile!.getPath())
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile")
 
                                     }
                                 
 
-    
                         if(!this.copyPrepare(fromFile, toFile, overwriteNewer, overwriteAll))
                         
                                     {
@@ -683,11 +665,10 @@ put(stringBuffer!.toString(), getInstance(), "copyFile")
         
         
 
-this.copy(fileInputStream, dataOutputStream)
+this.this.copy(fileInputStream, dataOutputStream)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILEERROR))
                         
                                     {
@@ -696,11 +677,11 @@ this.copy(fileInputStream, dataOutputStream)
         
         
 
-append("Error Copying File fromFile: ")
-append(fromFile!.toString())
-append(" to: ")
-append(toFile!.toString())
-put(stringBuffer!.toString(), getInstance(), "copyFile", e)
+stringBuffer!.append("Error Copying File fromFile: ")
+stringBuffer!.append(fromFile!.toString())
+stringBuffer!.append(" to: ")
+stringBuffer!.append(toFile!.toString())
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile", e)
 
                                     }
                                 
@@ -713,7 +694,7 @@ put(stringBuffer!.toString(), getInstance(), "copyFile", e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public copyDirectoryPortion(fromDirectoryAbPath: AbPath, toDirectoryAbPath: AbPath, overwriteNewer: boolean, overwriteAll: boolean, current: number, total: number){
 var fromDirectoryAbPath = fromDirectoryAbPath
@@ -728,14 +709,13 @@ var total = total
         
 
 
-    
                         if(!file.isDirectory())
                         
                                     {
                                     
 
 
-                            throw Exception("Not a directory: " +file.getPath())
+                            throw Error("Not a directory: " +file.getPath())
 
                                     }
                                 
@@ -754,10 +734,10 @@ var total = total
         
         
 
-append("Searched: ")
-append(file.getPath())
-append(" Total: ")
-appendint(size)
+stringBuffer!.append("Searched: ")
+stringBuffer!.append(file.getPath())
+stringBuffer!.append(" Total: ")
+stringBuffer!.appendint(size)
 
     var portion: number = size /total +1;
         
@@ -774,7 +754,6 @@ appendint(size)
         
 
 
-    
                         if(end > size)
                         
                                     {
@@ -782,16 +761,15 @@ appendint(size)
 
                                     }
                                 
-append(" Section: ")
-appendint(start)
-append(" - ")
-appendint(end)
+stringBuffer!.append(" Section: ")
+stringBuffer!.appendint(start)
+stringBuffer!.append(" - ")
+stringBuffer!.appendint(end)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    put(stringBuffer!.toString(), getInstance(), "copySomeFilesToDirectory()")
+                                    logUtil!.put(stringBuffer!.toString(), getInstance(), "copySomeFilesToDirectory()")
 
                                     }
                                 
@@ -811,7 +789,6 @@ index < end; index++)
         
 
 
-    
                         if(nextFile!.isDirectory())
                         
                                     {
@@ -831,7 +808,6 @@ index < end; index++)
         
 
 
-    
                         if(path.indexOf(URLGLOBALS.getWebappPath()) < 0)
                         
                                     {
@@ -850,7 +826,7 @@ index < end; index++)
         
         
 
-this.copyFile(nextFile, toFile, overwriteNewer, overwriteAll)
+this.this.copyFile(nextFile, toFile, overwriteNewer, overwriteAll)
 
                         }
                             
@@ -859,7 +835,7 @@ this.copyFile(nextFile, toFile, overwriteNewer, overwriteAll)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     copyDirectory(fromFile: AbFile, to: AbFile){
     //var fromFile = fromFile
@@ -867,7 +843,6 @@ this.copyFile(nextFile, toFile, overwriteNewer, overwriteAll)
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
@@ -876,11 +851,11 @@ this.copyFile(nextFile, toFile, overwriteNewer, overwriteAll)
         
         
 
-append("Copying Directory from: ")
-append(fromFile!.getPath())
-append(" to: ")
-append(to.getPath())
-put(stringBuffer!.toString(), getInstance(), "copyDirectory")
+stringBuffer!.append("Copying Directory from: ")
+stringBuffer!.append(fromFile!.getPath())
+stringBuffer!.append(" to: ")
+stringBuffer!.append(to.getPath())
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory")
 
                                     }
                                 
@@ -895,14 +870,13 @@ put(stringBuffer!.toString(), getInstance(), "copyDirectory")
         
 
 
-    
                         if(!this.directory.create(newDirectoryAbPath))
                         
                                     {
                                     
 
 
-                            throw Exception("Failed to create directory: " +newDirectoryAbPath)
+                            throw Error("Failed to create directory: " +newDirectoryAbPath)
 
                                     }
                                 
@@ -918,7 +892,6 @@ put(stringBuffer!.toString(), getInstance(), "copyDirectory")
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
@@ -927,13 +900,13 @@ put(stringBuffer!.toString(), getInstance(), "copyDirectory")
         
         
 
-append("Copying ")
-appendint(size)
-append(" files from: ")
-append(fromFile!.getPath())
-append(" to: ")
-append(to.getPath())
-put(stringBuffer!.toString(), getInstance(), "copyDirectory")
+stringBuffer!.append("Copying ")
+stringBuffer!.appendint(size)
+stringBuffer!.append(" files from: ")
+stringBuffer!.append(fromFile!.getPath())
+stringBuffer!.append(" to: ")
+stringBuffer!.append(to.getPath())
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory")
 
                                     }
                                 
@@ -953,20 +926,18 @@ index < size; index++)
         
 
 
-    
                         if(file.isFile())
                         
                                     {
-                                    this.copyFile(file, AbFile(newDirectoryAbPath!.toString(), file.getName()))
+                                    this.this.copyFile(file, AbFile(newDirectoryAbPath!.toString(), file.getName()))
 
                                     }
                                 
                              else 
-    
                         if(file.isDirectory())
                         
                                     {
-                                    this.copyDirectory(file, AbFile(newDirectoryAbPath))
+                                    this.this.copyDirectory(file, AbFile(newDirectoryAbPath))
 
                                     }
                                 
@@ -974,7 +945,7 @@ index < size; index++)
                             
 
 
-                            throw Exception("File Copy Error")
+                            throw Error("File Copy Error")
 
                         }
                             
@@ -983,7 +954,6 @@ index < size; index++)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILEERROR))
                         
                                     {
@@ -992,11 +962,11 @@ index < size; index++)
         
         
 
-append("Error Copying Directory fromFile: ")
-append(fromFile!.toString())
-append(" to: ")
-append(to.toString())
-put(stringBuffer!.toString(), getInstance(), "copyDirectory", e)
+stringBuffer!.append("Error Copying Directory fromFile: ")
+stringBuffer!.append(fromFile!.toString())
+stringBuffer!.append(" to: ")
+stringBuffer!.append(to.toString())
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory", e)
 
                                     }
                                 
@@ -1009,7 +979,7 @@ put(stringBuffer!.toString(), getInstance(), "copyDirectory", e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public copy(fromAbPath: AbPath, to: AbPath): boolean{
@@ -1018,7 +988,6 @@ var to = to
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
@@ -1027,16 +996,15 @@ var to = to
         
         
 
-append("Copying AbPaths from: ")
-append(fromAbPath!.toString())
-append(" to: ")
-append(to.toString())
-put(stringBuffer!.toString(), getInstance(), "copy")
+stringBuffer!.append("Copying AbPaths from: ")
+stringBuffer!.append(fromAbPath!.toString())
+stringBuffer!.append(" to: ")
+stringBuffer!.append(to.toString())
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copy")
 
                                     }
                                 
 
-    
                         if(fromAbPath == 
                                     null
                                 )
@@ -1045,12 +1013,11 @@ put(stringBuffer!.toString(), getInstance(), "copy")
                                     
 
 
-                            throw Exception("Cannot Copy From A Null Location")
+                            throw Error("Cannot Copy From A Null Location")
 
                                     }
                                 
 
-    
                         if(to == 
                                     null
                                 )
@@ -1059,7 +1026,7 @@ put(stringBuffer!.toString(), getInstance(), "copy")
                                     
 
 
-                            throw Exception("Cannot Copy To A Null Location")
+                            throw Error("Cannot Copy To A Null Location")
 
                                     }
                                 
@@ -1074,12 +1041,10 @@ put(stringBuffer!.toString(), getInstance(), "copy")
         
 
 
-    
                         if(fromLocationFile!.isFile())
                         
                                     {
                                     
-    
                         if(toLocationFile!.isDirectory())
                         
                                     {
@@ -1088,9 +1053,8 @@ put(stringBuffer!.toString(), getInstance(), "copy")
         
         
 
-this.copyFile(fromLocationFile, file)
+this.this.copyFile(fromLocationFile, file)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
@@ -1099,13 +1063,13 @@ this.copyFile(fromLocationFile, file)
         
         
 
-append("Copied file=")
-append(fromLocationFile!.getName())
-append(" from: ")
-append(fromLocationFile!.getPath())
-append(" to: ")
-append(toLocationFile!.getPath())
-put(stringBuffer!.toString(), getInstance(), "copy")
+stringBuffer!.append("Copied file=")
+stringBuffer!.append(fromLocationFile!.getName())
+stringBuffer!.append(" from: ")
+stringBuffer!.append(fromLocationFile!.getPath())
+stringBuffer!.append(" to: ")
+stringBuffer!.append(toLocationFile!.getPath())
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copy")
 
                                     }
                                 
@@ -1113,9 +1077,8 @@ put(stringBuffer!.toString(), getInstance(), "copy")
                                     }
                                 
                         else {
-                            this.copyFile(fromLocationFile, toLocationFile)
+                            this.this.copyFile(fromLocationFile, toLocationFile)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
@@ -1124,12 +1087,12 @@ put(stringBuffer!.toString(), getInstance(), "copy")
         
         
 
-append("Copied file with new name ")
-append(" from: ")
-append(fromLocationFile!.getPath())
-append(" to: ")
-append(toLocationFile!.getPath())
-put(stringBuffer!.toString(), getInstance(), "copy")
+stringBuffer!.append("Copied file with new name ")
+stringBuffer!.append(" from: ")
+stringBuffer!.append(fromLocationFile!.getPath())
+stringBuffer!.append(" to: ")
+stringBuffer!.append(toLocationFile!.getPath())
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copy")
 
                                     }
                                 
@@ -1140,21 +1103,18 @@ put(stringBuffer!.toString(), getInstance(), "copy")
                                     }
                                 
                              else 
-    
                         if(fromLocationFile!.isDirectory() && toLocationFile!.isDirectory())
                         
                                     {
                                     
-    
                         if(fromAbPath!.toFileSystemString()[fromAbPath!.toFileSystemString()!.length() -1] == java.io.File.separatorChar)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    put("Copying subdirectories", getInstance(), "copy")
+                                    logUtil!.put("Copying subdirectories", getInstance(), "copy")
 
                                     }
                                 
@@ -1179,7 +1139,6 @@ index < fileArray!.length; index++)
         
 
 
-    
                         if(file.isFile())
                         
                                     {
@@ -1188,12 +1147,11 @@ index < fileArray!.length; index++)
         
         
 
-this.copyFile(file, aFile)
+this.this.copyFile(file, aFile)
 
                                     }
                                 
                              else 
-    
                         if(file.isDirectory())
                         
                                     {
@@ -1205,18 +1163,17 @@ this.copyFile(file, aFile)
                             
 
 
-                            throw Exception("File Copy Error")
+                            throw Error("File Copy Error")
 
                         }
                             
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    put("Copied subdirectories", getInstance(), "copy")
+                                    logUtil!.put("Copied subdirectories", getInstance(), "copy")
 
                                     }
                                 
@@ -1225,21 +1182,19 @@ this.copyFile(file, aFile)
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    put("Copyinhg directory", getInstance(), "copy")
+                                    logUtil!.put("Copyinhg directory", getInstance(), "copy")
 
                                     }
                                 
 copyDirectory(fromLocationFile, toLocationFile)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    put("Copied directory", getInstance(), "copy")
+                                    logUtil!.put("Copied directory", getInstance(), "copy")
 
                                     }
                                 
@@ -1258,7 +1213,6 @@ copyDirectory(fromLocationFile, toLocationFile)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILEERROR))
                         
                                     {
@@ -1267,11 +1221,11 @@ copyDirectory(fromLocationFile, toLocationFile)
         
         
 
-append("Error Copying fromAbPath: ")
-append(fromAbPath!.toString())
-append(" to: ")
-append(to.toString())
-put(stringBuffer!.toString(), getInstance(), "copy", e)
+stringBuffer!.append("Error Copying fromAbPath: ")
+stringBuffer!.append(fromAbPath!.toString())
+stringBuffer!.append(" to: ")
+stringBuffer!.append(to.toString())
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copy", e)
 
                                     }
                                 
@@ -1319,7 +1273,6 @@ put(stringBuffer!.toString(), getInstance(), "copy", e)
         
 
 
-    
                         if(size > 0)
                         
                                     {
@@ -1335,18 +1288,17 @@ put(stringBuffer!.toString(), getInstance(), "copy", e)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.IDLOGGING))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "SmallInsert", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "SmallInsert", e)
 
                                     }
                                 
 }
 
          finally {
-            close(idFile)
+            streamUtil!.close(idFile)
 
          }
         
@@ -1383,7 +1335,6 @@ index < size; index++)
         {
 skipFile= skipFiles[index]!
 
-    
                         if(file.getPath()!.compareTo(skipFile) == 0)
                         
                                     {
@@ -1419,7 +1370,7 @@ skipFile= skipFiles[index]!
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public write(filePath: string, string: string){
 var filePath = filePath
@@ -1433,7 +1384,7 @@ var string = string
 
 
         try {
-            put(StringBuilder().
+            PreLogUtil.put(StringBuilder().
                             append(this.WRITE_LABEL)!.append(filePath)!.append(DATA_LABEL)!.append(string)!.toString(), this, this.WRITE_METHOD)
 
     var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
@@ -1446,11 +1397,11 @@ var string = string
         
 
 dataOutputStream= AbDataOutputStream(fileOutputStream)
-write(string.encodeToByteArray()0, string.length)
-flush()
+dataOutputStream!.write(string.encodeToByteArray()0, string.length)
+dataOutputStream!.flush()
 
          finally {
-            close(dataOutputStream)
+            StreamUtil.getInstance()!.close(dataOutputStream)
 
          }
         

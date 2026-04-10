@@ -63,15 +63,14 @@ this.intermissionEnableListener= enableListener
 var enabled = enabled
 this.enabled= enabled
 
-    
                         if(this.isEnabled())
                         
                                     {
-                                    setStartTime()
+                                    this.getTimeDelayHelper()!.setStartTime()
 
                                     }
                                 
-notifyIntermission(enabled)
+this.intermissionEnableListener!.notifyIntermission(enabled)
 }
 
 

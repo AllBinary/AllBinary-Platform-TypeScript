@@ -130,7 +130,7 @@ this.name= StringUtil.getInstance()!.EMPTY_STRING
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public deleteAll(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo){
     //var abeClientInformation = abeClientInformation
@@ -155,10 +155,10 @@ index < size; index++)
         
         
 
-this.delete(abeClientInformation, gameInfo, integer.toInt())
+this.this.delete(abeClientInformation, gameInfo, integer.toInt())
 }
 
-this.clear()
+this.this.clear()
 }
 
 
@@ -173,7 +173,7 @@ this.clear()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public delete(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, deleteId: number){
     //var abeClientInformation = abeClientInformation
@@ -186,10 +186,10 @@ this.clear()
 
 
         try {
-            put(StringMaker().
+            logUtil!.put(StringMaker().
                             append("Deleting: ")!.appendint(deleteId)!.toString(), this, commonStrings!.delete)
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)
-deleteRecord(deleteId)
+recordStore!.deleteRecord(deleteId)
 } catch(e: Exception)
             {
 
@@ -200,14 +200,13 @@ deleteRecord(deleteId)
 
          finally {
             
-    
                         if(recordStore != 
                                     null
                                 )
                         
                                     {
-                                    put("Closing RecordStore", this, commonStrings!.delete)
-closeRecordStore()
+                                    PreLogUtil.put("Closing RecordStore", this, commonStrings!.delete)
+recordStore!.closeRecordStore()
 
                                     }
                                 
@@ -238,7 +237,6 @@ closeRecordStore()
 
         try {
             
-    
                         if(this.name == StringUtil.getInstance()!.EMPTY_STRING)
                         
                                     {
@@ -275,7 +273,7 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
         
         
 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(LOADING_ID)!.appendint(id)!.toString(), this, commonStrings!.LOAD)
 recordAsBytes= recordStore!.getRecord(id)
 byteArrayInputStream= ByteArrayInputStream(recordAsBytes)
@@ -286,7 +284,7 @@ inputStream= DataInputStream(byteArrayInputStream)
 this.name= inputStream!.readUTF()
 }
 
-add(smallIntegerSingletonFactory!.getInstance(id))
+nameBasicArrayList!.add(smallIntegerSingletonFactory!.getInstance(id))
 }
 
 
@@ -294,8 +292,8 @@ add(smallIntegerSingletonFactory!.getInstance(id))
                                 
 } catch(e: Exception)
             {
-this.save(abeClientInformation, gameInfo, this.name)
-put(StringMaker().
+this.this.save(abeClientInformation, gameInfo, this.name)
+logUtil!.put(StringMaker().
                             append(commonStrings!.EXCEPTION_LABEL)!.append(ExceptionUtil.getInstance()!.getStackTrace(e))!.toString(), this, commonStrings!.LOAD)
 }
 
@@ -303,20 +301,19 @@ put(StringMaker().
             
         try {
             
-    
                         if(recordStore != 
                                     null
                                 )
                         
                                     {
-                                    put("Closing RecordStore", this, commonStrings!.LOAD)
-closeRecordStore()
+                                    PreLogUtil.put("Closing RecordStore", this, commonStrings!.LOAD)
+recordStore!.closeRecordStore()
 
                                     }
                                 
 } catch(e: RecordStoreException)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e)
 }
 
 
@@ -342,7 +339,7 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e)
 
 
         try {
-            put(StringMaker().
+            logUtil!.put(StringMaker().
                             append("Saving: ")!.append(name)!.toString(), this, commonStrings!.SAVE)
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)
 
@@ -355,37 +352,36 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
         
         
 
-writeUTF(name)
+outputStream!.writeUTF(name)
 
     var savedGameBytes: ByteArray = byteArrayOutputStream!.toByteArray()!;
         
         
 
-addRecord(savedGameBytes, 0, savedGameBytes!.length)
+recordStore!.addRecord(savedGameBytes, 0, savedGameBytes!.length)
 this.name= name
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e)
 }
 
          finally {
             
         try {
             
-    
                         if(recordStore != 
                                     null
                                 )
                         
                                     {
-                                    put("Closing RecordStore", this, commonStrings!.SAVE)
-closeRecordStore()
+                                    PreLogUtil.put("Closing RecordStore", this, commonStrings!.SAVE)
+recordStore!.closeRecordStore()
 
                                     }
                                 
 } catch(e: RecordStoreException)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e)
 }
 
 

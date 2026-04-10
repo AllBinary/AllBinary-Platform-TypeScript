@@ -74,7 +74,7 @@ export class GameFeatureUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setDefault(choiceGroup: ChoiceGroup){
 var choiceGroup = choiceGroup
@@ -108,9 +108,9 @@ var choiceGroup = choiceGroup
         
         
 
-append("Multiple Total Choices: ")
-appendint(total)
-put(stringBuffer!.toString(), this, METHOD_NAME)
+stringBuffer!.append("Multiple Total Choices: ")
+stringBuffer!.appendint(total)
+logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME)
 
     var features: Features = Features.getInstance()!;
         
@@ -131,12 +131,12 @@ index < selectedArray_return!.length; index++)
         
         
 
-delete(0, stringBuffer!.length())
-append(SELECTED_ARRAY_RETURN)
-appendint(index)
-append(SELECTED_SEP)
-appendboolean(isSelected)
-put(stringBuffer!.toString(), this, METHOD_NAME)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(SELECTED_ARRAY_RETURN)
+stringBuffer!.appendint(index)
+stringBuffer!.append(SELECTED_SEP)
+stringBuffer!.appendboolean(isSelected)
+logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME)
 
     var selectedChoiceLabel: string = choiceGroup!.getString(index)!;
         
@@ -148,18 +148,17 @@ put(stringBuffer!.toString(), this, METHOD_NAME)
         
 
 
-    
                         if(features.isDefault(gameFeature))
                         
                                     {
-                                    add(gameFeature)
-setSelectedIndex(index, true)
+                                    features.add(gameFeature)
+choiceGroup!.setSelectedIndex(index, true)
 
                                     }
                                 
                         else {
-                            remove(gameFeature)
-setSelectedIndex(index, false)
+                            features.remove(gameFeature)
+choiceGroup!.setSelectedIndex(index, false)
 
                         }
                             
@@ -168,7 +167,7 @@ setSelectedIndex(index, false)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public updateMultiple(choiceGroup: ChoiceGroup){
 var choiceGroup = choiceGroup
@@ -202,9 +201,9 @@ var choiceGroup = choiceGroup
         
         
 
-append("Multiple Total Choices: ")
-appendint(total)
-put(stringBuffer!.toString(), this, METHOD_NAME)
+stringBuffer!.append("Multiple Total Choices: ")
+stringBuffer!.appendint(total)
+logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME)
 
     var features: Features = Features.getInstance()!;
         
@@ -225,12 +224,12 @@ index < selectedArray_return!.length; index++)
         
         
 
-delete(0, stringBuffer!.length())
-append(SELECTED_ARRAY_RETURN)
-appendint(index)
-append(SELECTED_SEP)
-appendboolean(isSelected)
-put(stringBuffer!.toString(), this, METHOD_NAME)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(SELECTED_ARRAY_RETURN)
+stringBuffer!.appendint(index)
+stringBuffer!.append(SELECTED_SEP)
+stringBuffer!.appendboolean(isSelected)
+logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME)
 
     var selectedChoiceLabel: string = choiceGroup!.getString(index)!;
         
@@ -242,20 +241,18 @@ put(stringBuffer!.toString(), this, METHOD_NAME)
         
 
 
-    
                         if(!isSelected && features.isFeature(gameFeature))
                         
                                     {
-                                    remove(gameFeature)
+                                    features.remove(gameFeature)
 
                                     }
                                 
                              else 
-    
                         if(isSelected && !features.isFeature(gameFeature))
                         
                                     {
-                                    add(gameFeature)
+                                    features.add(gameFeature)
 
                                     }
                                 
@@ -264,7 +261,7 @@ put(stringBuffer!.toString(), this, METHOD_NAME)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public updateExclusive(choiceGroup: ChoiceGroup){
 var choiceGroup = choiceGroup
@@ -298,9 +295,9 @@ var choiceGroup = choiceGroup
         
         
 
-append("Exclusive Total Choices: 1==")
-appendint(total)
-put(stringBuffer!.toString(), this, METHOD_NAME)
+stringBuffer!.append("Exclusive Total Choices: 1==")
+stringBuffer!.appendint(total)
+logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME)
 
 
 
@@ -316,14 +313,13 @@ index < selectedArray_return!.length; index++)
         
         
 
-delete(0, stringBuffer!.length())
-append(SELECTED_ARRAY_RETURN)
-appendint(index)
-append(SELECTED_SEP)
-appendboolean(isSelected)
-put(stringBuffer!.toString(), this, METHOD_NAME)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(SELECTED_ARRAY_RETURN)
+stringBuffer!.appendint(index)
+stringBuffer!.append(SELECTED_SEP)
+stringBuffer!.appendboolean(isSelected)
+logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME)
 
-    
                         if(isSelected)
                         
                                     {
@@ -357,7 +353,6 @@ var itemLabel = itemLabel
         
 
 
-    
                         if(itemLabel!.compareTo(name) == 0)
                         
                                     {
@@ -381,11 +376,11 @@ var itemLabel = itemLabel
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     updateExclusive(selectedChoiceLabel: string){
     //var selectedChoiceLabel = selectedChoiceLabel
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(selectedChoiceLabel)!.toString(), this, "updateExclusive")
 
     var gameFeature: Feature = Feature.getInstance(selectedChoiceLabel)!;
@@ -432,13 +427,12 @@ updateExclusive(gameFeature, basicArrayList)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public updateExclusive(gameFeature: Feature, list: BasicArrayList){
 var gameFeature = gameFeature
 var list = list
 
-    
                         if(list.contains(gameFeature))
                         
                                     {
@@ -468,16 +462,15 @@ var list = list
 index < size; index++)
         {
 
-    
                         if(addIndex != index)
                         
                                     {
-                                    remove(list.objectArray[index]! as Feature)
+                                    features.remove(list.objectArray[index]! as Feature)
 
                                     }
                                 
                         else {
-                            add(list.objectArray[index]! as Feature)
+                            features.add(list.objectArray[index]! as Feature)
 
                         }
                             

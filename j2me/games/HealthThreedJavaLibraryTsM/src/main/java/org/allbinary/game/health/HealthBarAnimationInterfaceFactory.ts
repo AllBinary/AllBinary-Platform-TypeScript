@@ -46,7 +46,7 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(layerInterface: AllBinaryLayer, location: number): HealthBarAnimation{
 var layerInterface = layerInterface
@@ -60,7 +60,7 @@ var location = location
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
@@ -73,7 +73,7 @@ var location = location
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(animationInterface: Animation): Animation{
 var animationInterface = animationInterface

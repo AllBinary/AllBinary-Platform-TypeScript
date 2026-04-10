@@ -85,8 +85,8 @@ index < size; index++)
         
         
 
-append(file.getPath())
-append(NEW_LINE)
+stringBuffer!.append(file.getPath())
+stringBuffer!.append(NEW_LINE)
 }
 
 

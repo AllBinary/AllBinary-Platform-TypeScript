@@ -25,7 +25,7 @@ import { EventListenerInterface } from "../../../../../../org/allbinary/logic/ut
 interface InputMappingEventListenerInterface extends EventListenerInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     onInputMappingEvent(inputMappingEvent: InputMappingEvent)
 

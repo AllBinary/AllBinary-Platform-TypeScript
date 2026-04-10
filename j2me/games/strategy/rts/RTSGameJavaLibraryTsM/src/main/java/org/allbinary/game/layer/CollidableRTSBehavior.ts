@@ -57,7 +57,6 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
         
 
 
-    
                         if(collisionType == collisionTypeFactory!.PICKUP)
                         
                                     {
@@ -65,7 +64,6 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
                                     }
                                 
                              else 
-    
                         if(collisionType == collisionTypeFactory!.COLLISION)
                         
                                     {
@@ -80,7 +78,6 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
                                 
                         else {
                             
-    
                         if(collidableInterfaceCompositeInterface!.getX2() <= this.ownerLayer!.getXP() || collidableInterfaceCompositeInterface!.getY2() <= this.ownerLayer!.getYP() || collidableInterfaceCompositeInterface!.getYP() >= this.ownerLayer!.getY2() || collidableInterfaceCompositeInterface!.getXP() >= this.ownerLayer!.getX2())
                         
                                     {
@@ -115,7 +112,7 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public collide(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
@@ -130,7 +127,6 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
         
 
 
-    
                         if(collisionType == collisionTypeFactory!.PICKUP)
                         
                                     {
@@ -138,23 +134,22 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
                                     }
                                 
                              else 
-    
                         if(collisionType == collisionTypeFactory!.COLLISION)
                         
                                     {
-                                    collide(collidableInterfaceCompositeInterface)
+                                    super.collide(collidableInterfaceCompositeInterface)
 
                                     }
                                 
                         else {
-                            this.collideNone(collidableInterfaceCompositeInterface)
+                            this.this.collideNone(collidableInterfaceCompositeInterface)
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     collideNone(collidableInterface: CollidableCompositeLayer){
     //var collidableInterface = collidableInterface

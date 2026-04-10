@@ -116,7 +116,7 @@ this.extension= extension
 }
 
 
-                @Throws(TransformerException::class)
+                //@Throws(TransformerException::class)
             
     public resolve(href: string, base: string): Source{
 var href = href
@@ -128,32 +128,31 @@ var base = base
         
         
 
-append(URLGLOBALS.getMainPath())
-append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-append(href)
+stringBuffer!.append(URLGLOBALS.getMainPath())
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
+stringBuffer!.append(href)
 
     var abPath: AbPath = AbFilePath(stringBuffer!.toString()) as AbPath;
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XMLLOGGING))
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-append(ATTEMPT)
-append(href)
-append(BASE)
-append(base)
-append(NEW_PATH)
-append(abPath!.toString())
-append(NOTE)
-append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-append(URL_GLOBAL)
-append(REQUIRED_EXTENSION)
-append(extension)
-put(stringBuffer!.toString(), this, RESOLVE)
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(ATTEMPT)
+stringBuffer!.append(href)
+stringBuffer!.append(BASE)
+stringBuffer!.append(base)
+stringBuffer!.append(NEW_PATH)
+stringBuffer!.append(abPath!.toString())
+stringBuffer!.append(NOTE)
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
+stringBuffer!.append(URL_GLOBAL)
+stringBuffer!.append(REQUIRED_EXTENSION)
+stringBuffer!.append(extension)
+logUtil!.put(stringBuffer!.toString(), this, RESOLVE)
 
                                     }
                                 
@@ -190,9 +189,9 @@ put(stringBuffer!.toString(), this, RESOLVE)
         
         
 
-append(URLGLOBALS.getMainPath())
-append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-append(IMPORT_URL)
+stringBuffer!.append(URLGLOBALS.getMainPath())
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
+stringBuffer!.append(IMPORT_URL)
 
 
 

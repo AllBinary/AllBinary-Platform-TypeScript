@@ -50,12 +50,12 @@ this.screenListenerInterface= screenListenerInterface
 
     public fire(isFullScreen: boolean){
 var isFullScreen = isFullScreen
-onFullScreen(isFullScreen)
+this.screenListenerInterface!.onFullScreen(isFullScreen)
 }
 
 
     public fire(){
-onFullScreenDisplay()
+this.screenListenerInterface!.onFullScreenDisplay()
 }
 
 

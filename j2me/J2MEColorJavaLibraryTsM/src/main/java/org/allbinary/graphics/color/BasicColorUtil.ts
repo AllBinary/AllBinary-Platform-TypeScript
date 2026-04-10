@@ -62,12 +62,10 @@ var blue = blue
     var value: number= 0
 
 
-    
                         if(isAlpha)
                         
                                     {
                                     
-    
                         if(ffOpaque)
                         
                                     {

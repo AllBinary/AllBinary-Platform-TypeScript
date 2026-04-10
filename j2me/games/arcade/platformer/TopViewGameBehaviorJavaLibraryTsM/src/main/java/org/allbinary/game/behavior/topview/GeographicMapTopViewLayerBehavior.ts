@@ -55,7 +55,7 @@ public constructor (maxGravityActionIndex: number)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -73,7 +73,7 @@ var y = y
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition, velocityProperties: VelocityProperties, layer: AllBinaryLayer): GeographicMapCellPosition{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -90,7 +90,7 @@ var y = y
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPositionList: BasicArrayList, velocityProperties: VelocityProperties, layer: AllBinaryLayer): GeographicMapCellPosition{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -107,7 +107,7 @@ var y = y
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public gravity(velocityProperties: VelocityProperties, geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition){
     //var velocityProperties = velocityProperties
@@ -117,7 +117,7 @@ var y = y
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public left(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer){
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -127,7 +127,7 @@ var y = y
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public move(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer, x: number, y: number): boolean{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -145,7 +145,7 @@ var y = y
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public moveAndLand(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition, velocityProperties: VelocityProperties, layer: AllBinaryLayer, x: number, y: number){
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -158,7 +158,7 @@ var y = y
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public right(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer){
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -192,7 +192,6 @@ index < size; index++)
         {
 basicTopViewGeographicMapCellTypeFactory= geographicMapInterfaceArray[index]!.getGeographicMapCellTypeFactory() as BasicTopViewGeographicMapCellTypeFactory
 
-    
                         if(basicTopViewGeographicMapCellTypeFactory!.BLOCK_CELL_TYPE.isType(geographicMapCellTypeArray[index]!))
                         
                                     {
@@ -240,7 +239,6 @@ index < size; index++)
         {
 basicTopViewGeographicMapCellTypeFactory= geographicMapInterfaceArray[index]!.getGeographicMapCellTypeFactory() as BasicTopViewGeographicMapCellTypeFactory
 
-    
                         if(basicTopViewGeographicMapCellTypeFactory!.OFF_MAP_CELL_TYPE.isType(geographicMapCellTypeArray[index]!))
                         
                                     {

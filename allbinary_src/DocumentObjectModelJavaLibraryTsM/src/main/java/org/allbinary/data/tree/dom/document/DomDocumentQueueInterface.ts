@@ -25,11 +25,11 @@ import { DomDocumentMappingInterface } from "../../../../../../org/allbinary/dat
 interface DomDocumentQueueInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public offer(domDocumentMappingInterface: DomDocumentMappingInterface): boolean
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public remove(): DomDocumentMappingInterface
 

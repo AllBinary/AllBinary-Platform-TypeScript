@@ -38,7 +38,7 @@ export class Validation
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isValid(): Boolean{
 
@@ -48,7 +48,7 @@ export class Validation
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document
@@ -59,7 +59,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toValidationInfoDoc(): Document{
 
@@ -69,7 +69,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public validationInfo(): string{
 

@@ -88,7 +88,6 @@ var graphics = graphics
         
 
 
-    
                         if(this.dropSize > myFont!.DEFAULT_CHAR_HEIGHT)
                         
                                     {
@@ -144,18 +143,17 @@ index < size; index++)
         {
 countedLayerInterfaceFactory= partInterfaceArray[index]! as CountedLayerInterfaceFactoryPart
 
-    
                         if(countedLayerInterfaceFactory!.getTotal() > 0)
                         
                                     {
                                     pickedUpLayerInterfaceFactoryInterface= countedLayerInterfaceFactory!.getCountedPickedUpLayerInterfaceFactory()
 layerInterface= pickedUpLayerInterfaceFactoryInterface!.getIconLayer()
 y= 40 +(count *height)
-setPosition(widthEdge, y, layerInterface!.getZP())
-paint(graphics)
-setColor(countedTotalStringColor)
+layerInterface!.setPosition(widthEdge, y, layerInterface!.getZP())
+layerInterface!.paint(graphics)
+graphics.setColor(countedTotalStringColor)
 charArray= countedLayerInterfaceFactory!.getTotalString()
-drawChars(charArray, 0, charArray!.length, widthEdge -countedLayerInterfaceFactory!.getXOffset(), y, 0)
+graphics.drawChars(charArray, 0, charArray!.length, widthEdge -countedLayerInterfaceFactory!.getXOffset(), y, 0)
 count++
 
                                     }
@@ -163,12 +161,11 @@ count++
 }
 
 
-    
                         if(count > 0)
                         
                                     {
-                                    setColor(countedPartsBorder)
-drawRect(lastWidth -(XXStringWidth +this.dropSize), 40, XXStringWidth +this.dropSize, (count *height) +3)
+                                    graphics.setColor(countedPartsBorder)
+graphics.drawRect(lastWidth -(XXStringWidth +this.dropSize), 40, XXStringWidth +this.dropSize, (count *height) +3)
 
                                     }
                                 

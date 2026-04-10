@@ -122,7 +122,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 this.request= this.getPageContext()!.getRequest() as HttpServletRequest
-this.getFormData()
+this.this.getFormData()
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, empty: string)                        
@@ -150,10 +150,10 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getFormData(){
-this.setRequestHashMap(MultipartRequestParams(request).
+this.this.setRequestHashMap(MultipartRequestParams(request).
                             toHashMap())
 
     var imageFileItemObject: any = {} = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
@@ -161,7 +161,6 @@ this.setRequestHashMap(MultipartRequestParams(request).
         
 
 
-    
                         if(HttpFileUploadUtil.getInstance()!.isValid(imageFileItemObject))
                         
                                     {
@@ -171,7 +170,6 @@ this.setRequestHashMap(MultipartRequestParams(request).
         
 
 
-    
                         if(fileItem != 
                                     null
                                  && fileItem!.getSize() > 1)
@@ -186,7 +184,6 @@ this.setRequestHashMap(MultipartRequestParams(request).
 this.mediaData= MediaData.get(pathUtil!.getExtension(this.imageFileName))
 this.imageFileName= pathUtil!.getWithoutExtension(this.imageFileName)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
@@ -195,11 +192,11 @@ this.imageFileName= pathUtil!.getWithoutExtension(this.imageFileName)
         
         
 
-append("Uploaded File Data: ")
-append(this.imageFileName)
-append(" Extension: ")
-append(this.mediaData!.getName())
-put(stringBuffer!.toString(), this, "getFormData()")
+stringBuffer!.append("Uploaded File Data: ")
+stringBuffer!.append(this.imageFileName)
+stringBuffer!.append(" Extension: ")
+stringBuffer!.append(this.mediaData!.getName())
+logUtil!.put(stringBuffer!.toString(), this, "getFormData()")
 
                                     }
                                 
@@ -238,10 +235,10 @@ this.itemInterface= BasicItem(this.getRequestHashMap()) as ItemInterface
 index < size; index++)
         {
 downloadableItem= this.downloadableItemVector!.get(index) as DownloadableItem
-add(DownloadableItemView(downloadableItem))
+vector.add(DownloadableItemView(downloadableItem))
 }
 
-this.addDomNodeInterface(BasicItemView(itemInterface, vector))
+this.this.addDomNodeInterface(BasicItemView(itemInterface, vector))
 }
 
 
@@ -255,12 +252,12 @@ this.addDomNodeInterface(BasicItemView(itemInterface, vector))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.this.addDomNodeInterfaces()
 
 
 
@@ -270,11 +267,10 @@ this.addDomNodeInterface(BasicItemView(itemInterface, vector))
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 
@@ -287,7 +283,7 @@ this.addDomNodeInterface(BasicItemView(itemInterface, vector))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     processImageFiles(){
 
@@ -322,7 +318,6 @@ index < size; index++)
         
 
 
-    
                         if(fieldName!.compareTo(BasicItemData.IMAGE) == 0)
                         
                                     {

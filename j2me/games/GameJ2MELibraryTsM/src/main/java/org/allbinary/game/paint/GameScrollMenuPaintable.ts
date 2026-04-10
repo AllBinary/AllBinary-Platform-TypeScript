@@ -62,14 +62,14 @@ var basicColor = basicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setColor(basicColor)
-addListener(this)
+this.this.setColor(basicColor)
+ColorChangeEventHandler.getInstance()!.addListener(this)
 }
 
 
     public setState(state: number){
 var state = state
-this.setCurrentStatePaintable(this.getMainDemoStatePaintable())
+this.this.setCurrentStatePaintable(this.getMainDemoStatePaintable())
 }
 
 
@@ -95,8 +95,8 @@ var basicColor = basicColor
         
         
 
-setBasicColorP(basicColor)
-setButtonBasicColor(basicColor)
+mainGameDemoStatePaintable!.getOwnershipPaintableInterface()!.setBasicColorP(basicColor)
+scrollSelectionForm!.setButtonBasicColor(basicColor)
 
 
 
@@ -118,13 +118,12 @@ index >= 0; index--)
         
 
 
-    
                         if(stringComponent != 
                                     null
                                 )
                         
                                     {
-                                    setForegroundBasicColor(basicColor)
+                                    stringComponent!.setForegroundBasicColor(basicColor)
 
                                     }
                                 

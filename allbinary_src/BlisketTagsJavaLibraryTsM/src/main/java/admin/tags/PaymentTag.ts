@@ -59,8 +59,8 @@ export class PaymentTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(PaymentHelperFactory())
-this.setTagRequestHelperFactory(PaymentHelperFactory())
+            this.this.setTagHelperFactory(PaymentHelperFactory())
+this.this.setTagRequestHelperFactory(PaymentHelperFactory())
 }
 
 
@@ -70,7 +70,7 @@ this.storeName= value
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     select(): string{
 
@@ -119,11 +119,10 @@ this.storeName= value
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "selectPayment()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "selectPayment()", e)
 
                                     }
                                 
@@ -138,27 +137,24 @@ this.storeName= value
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.isEnabled())
                         
                                     {
                                     this.propertiesHashMap= HashMap<Any, Any>()
-put(StoreFrontData.getInstance()!.NAME, this.storeName)
+this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
 
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getCommand()!.compareTo(PaymentData.SELECT) == 0)
                         
                                     {
@@ -168,11 +164,10 @@ put(StoreFrontData.getInstance()!.NAME, this.storeName)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    print(output +"<br />")
+                                    this.pageContext!.getOut()!.print(output +"<br />")
 
                                     }
                                 
@@ -209,7 +204,7 @@ put(StoreFrontData.getInstance()!.NAME, this.storeName)
     
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -219,7 +214,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

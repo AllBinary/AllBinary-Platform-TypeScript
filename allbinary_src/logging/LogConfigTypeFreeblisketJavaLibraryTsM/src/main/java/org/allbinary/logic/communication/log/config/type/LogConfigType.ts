@@ -48,7 +48,7 @@ public constructor (name: string, description: string){
 var description = description
 this.name= name
 this.description= description
-add(this)
+availableLogConfigTypes!.add(this)
 }
 
 

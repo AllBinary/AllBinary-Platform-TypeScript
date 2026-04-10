@@ -43,7 +43,6 @@ public constructor (sep: string){
             super();
             var sep = sep
 
-    
                         if(sep == 
                                     null
                                  || sep.compareTo(StringUtil.getInstance()!.EMPTY_STRING) == 0)
@@ -52,7 +51,7 @@ public constructor (sep: string){
                                     
 
 
-                            throw Exception("Sep provided is not valid")
+                            throw Error("Sep provided is not valid")
 
                                     }
                                 
@@ -94,7 +93,6 @@ var string = string
         {
 index= string.indexOf(sep, index)
 
-    
                         if(index !=  -1)
                         
                                     {
@@ -104,11 +102,10 @@ index= string.indexOf(sep, index)
         
 
 
-    
                         if(end !=  -1)
                         
                                     {
-                                    add(string.substring(index +sep.length, end -(endSep!.length -1)))
+                                    tokenList!.add(string.substring(index +sep.length, end -(endSep!.length -1)))
 index= end +endSep!.length
 
                                     }
@@ -156,17 +153,16 @@ var tokenVector = tokenVector
         {
 end= string.indexOf(sep, index)
 
-    
                         if(end !=  -1)
                         
                                     {
-                                    add(string.substring(index, end))
+                                    tokenVector!.add(string.substring(index, end))
 index= end +sep.length
 
                                     }
                                 
                         else {
-                            add(string.substring(index, string.length))
+                            tokenVector!.add(string.substring(index, string.length))
 break;
 
                     
@@ -219,11 +215,10 @@ index < size; index++)
 string= stringVector!.objectArray[index]! as String
 end= string.indexOf(sep)
 
-    
                         if(end >= 0)
                         
                                     {
-                                    put(string.substring(0, end), string.substring(end +1, string.length))
+                                    tokenHashtable!.put(string.substring(0, end), string.substring(end +1, string.length))
 
                                     }
                                 

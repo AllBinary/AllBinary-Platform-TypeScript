@@ -54,7 +54,6 @@ var requestPath = requestPath
         
 
 
-    
                         if(beginIndex < 0)
                         
                                     {
@@ -71,7 +70,7 @@ var requestPath = requestPath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public generateFileName(requestPath: string): string{
 var requestPath = requestPath
@@ -81,7 +80,6 @@ var requestPath = requestPath
         
 
 
-    
                         if(beginIndex < 0)
                         
                                     {

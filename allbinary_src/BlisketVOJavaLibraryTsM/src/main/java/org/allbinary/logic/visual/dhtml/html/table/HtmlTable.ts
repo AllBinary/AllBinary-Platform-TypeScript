@@ -147,10 +147,9 @@ addAttribute(STYLE, this.BORDERCOLLAPSE)
     public addRow(htmlRow: HtmlRow){
 var htmlRow = htmlRow
 
-    
                         if(this.numberOfColumns < htmlRow!.getNumberOfColumns())
                         this.numberOfColumns= htmlRow!.getNumberOfColumns()
-add(htmlRow)
+this.htmlRowsVector!.add(htmlRow)
 }
 
 
@@ -194,7 +193,6 @@ i < attributeKeys!.length; i++)
         
 
 
-    
                         if(value != 
                                     null
                                  && value.compareTo(stringUtil!.EMPTY_STRING) != 0)

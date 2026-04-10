@@ -69,7 +69,7 @@ this.logic= true
     public setXsl(value: string){
 var value = value
 this.xslFile= value
-this.setTemplateFile(this.xslFile)
+this.this.setTemplateFile(this.xslFile)
 }
 
 
@@ -79,7 +79,7 @@ this.logic= logic
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     isValid(): boolean{
 
@@ -110,11 +110,10 @@ this.logic= logic
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -127,7 +126,7 @@ this.logic= logic
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     validationInfo(): string{
 
@@ -158,11 +157,10 @@ this.logic= logic
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "validationInfo()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "validationInfo()", e)
 
                                     }
                                 
@@ -175,13 +173,12 @@ this.logic= logic
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
@@ -195,25 +192,23 @@ this.logic= logic
         
         
 
-append("ValidationViewTag Start For: ")
-append(this.getName())
-append("\nView FIle: ")
-append(this.getObjectFile())
-append("\nRequest URI: ")
-append(request.getRequestURI())
-put(stringBuffer!.toString(), this, "doStartTag")
+stringBuffer!.append("ValidationViewTag Start For: ")
+stringBuffer!.append(this.getName())
+stringBuffer!.append("\nView FIle: ")
+stringBuffer!.append(this.getObjectFile())
+stringBuffer!.append("\nRequest URI: ")
+stringBuffer!.append(request.getRequestURI())
+logUtil!.put(stringBuffer!.toString(), this, "doStartTag")
 
                                     }
                                 
-this.setHelper()
+this.this.setHelper()
 
-    
                         if(this.isValid())
                         
                                     {
-                                    doStartTag()
+                                    super.doStartTag()
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
@@ -222,16 +217,15 @@ this.setHelper()
         
         
 
-append("View File: ")
-append(this.getObjectFile())
-append("\nLogic includes body if true=")
-appendboolean(this.logic)
-put(stringBuffer!.toString(), this, "doStartTag")
+stringBuffer!.append("View File: ")
+stringBuffer!.append(this.getObjectFile())
+stringBuffer!.append("\nLogic includes body if true=")
+stringBuffer!.appendboolean(this.logic)
+logUtil!.put(stringBuffer!.toString(), this, "doStartTag")
 
                                     }
                                 
 
-    
                         if(this.logic)
                         
                                     {
@@ -258,9 +252,8 @@ put(stringBuffer!.toString(), this, "doStartTag")
                                     }
                                 
                         else {
-                            print(this.validationInfo())
+                            pageContext!.getOut()!.print(this.validationInfo())
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
@@ -269,17 +262,16 @@ put(stringBuffer!.toString(), this, "doStartTag")
         
         
 
-append("View File: ")
-append(this.getObjectFile())
-append("\nisValid()=false")
-append("\nLogic skips body if true=")
-appendboolean(this.logic)
-put(stringBuffer!.toString(), this, "doStartTag")
+stringBuffer!.append("View File: ")
+stringBuffer!.append(this.getObjectFile())
+stringBuffer!.append("\nisValid()=false")
+stringBuffer!.append("\nLogic skips body if true=")
+stringBuffer!.appendboolean(this.logic)
+logUtil!.put(stringBuffer!.toString(), this, "doStartTag")
 
                                     }
                                 
 
-    
                         if(this.logic)
                         
                                     {
@@ -307,7 +299,7 @@ put(stringBuffer!.toString(), this, "doStartTag")
                             
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -317,7 +309,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 
@@ -331,11 +323,10 @@ sendJspTagRedirect(this.pageContext, e)
 
     public doEndTag(): number{
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put("Tag Ended", this, "doEndTag")
+                                    logUtil!.put("Tag Ended", this, "doEndTag")
 
                                     }
                                 

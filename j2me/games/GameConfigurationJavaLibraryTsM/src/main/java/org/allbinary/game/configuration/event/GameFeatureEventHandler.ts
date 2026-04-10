@@ -50,7 +50,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 var eventObject = eventObject
@@ -60,7 +60,7 @@ var eventListenerInterface = eventListenerInterface
         
         
 
-onGameFeatureChange(eventObject as GameFeatureEvent)
+gameFeatureListenerInterface!.onGameFeatureChange(eventObject as GameFeatureEvent)
 }
 
 

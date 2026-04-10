@@ -36,22 +36,20 @@ public constructor (){
             }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
-            this.setName("Basic Basket View")
-this.setObjectFile("views.generic.basket.ValidationView")
+            this.this.setName("Basic Basket View")
+this.this.setObjectFile("views.generic.basket.ValidationView")
 
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
@@ -62,7 +60,7 @@ this.setObjectFile("views.generic.basket.ValidationView")
                             
 
 
-                            throw Exception("No Such View Command: " +this.getCommand())
+                            throw Error("No Such View Command: " +this.getCommand())
 
                         }
                             
@@ -78,10 +76,10 @@ this.setObjectFile("views.generic.basket.ValidationView")
 
 
 
-                            throw Exception("Command Null")
+                            throw Error("Command Null")
 } catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

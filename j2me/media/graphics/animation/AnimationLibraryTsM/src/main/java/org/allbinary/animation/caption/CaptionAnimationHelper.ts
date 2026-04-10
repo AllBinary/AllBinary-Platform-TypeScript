@@ -73,7 +73,6 @@ this.captionAnimation= CaptionAnimation(captionAnimation, this.textAnimation, ca
 
     public isShowing(): boolean{
 
-    
                         if(this.animation == this.captionAnimation)
                         
                                     {
@@ -101,7 +100,6 @@ this.captionAnimation= CaptionAnimation(captionAnimation, this.textAnimation, ca
 
     public tick(){
 
-    
                         if(this.timeHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
                                     {
@@ -115,10 +113,10 @@ this.captionAnimation= CaptionAnimation(captionAnimation, this.textAnimation, ca
     public update(message: string, basicColor: BasicColor){
 var message = message
 var basicColor = basicColor
-setBasicColorP(basicColor)
-setText(message)
+this.textAnimation!.setBasicColorP(basicColor)
+this.textAnimation!.setText(message)
 this.animation= this.captionAnimation
-setStartTime()
+this.timeHelper!.setStartTime()
 }
 
 
@@ -126,7 +124,7 @@ setStartTime()
 var graphics = graphics
 var x = x
 var y = y
-paint(graphics, x, y)
+this.animation.paint(graphics, x, y)
 }
 
 

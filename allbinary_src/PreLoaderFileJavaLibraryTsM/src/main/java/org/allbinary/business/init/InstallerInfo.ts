@@ -100,7 +100,7 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public write(){
@@ -116,7 +116,7 @@ public constructor (){
         
         
 
-createNewFile()
+newFile!.createNewFile()
 
     var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(newFile)!;
         
@@ -134,17 +134,16 @@ createNewFile()
         
         
 
-writeUTF(DatabaseEncoder.encode(cryptedUserName))
-writeUTF(DatabaseEncoder.encode(cryptedPassword))
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedUserName))
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedPassword))
 hasRead= false
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    put("Failed", this, "write")
+                                    logUtil!.put("Failed", this, "write")
 
                                     }
                                 
@@ -157,7 +156,7 @@ hasRead= false
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     read(){
@@ -174,7 +173,6 @@ hasRead= false
         
 
 
-    
                         if(file.isFile())
                         
                                     {
@@ -198,20 +196,19 @@ hasRead= false
         
         
 
-this.setUserName(WeakCrypt(1).
+this.this.setUserName(WeakCrypt(1).
                             decrypt(decryptedUserName))
-this.setPassword(WeakCrypt(2).
+this.this.setPassword(WeakCrypt(2).
                             decrypt(decryptedPassword))
 
                                     }
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    put("Not a File - Failed Loading: " +FILEABPATH.toString(), this, "read")
+                                    logUtil!.put("Not a File - Failed Loading: " +FILEABPATH.toString(), this, "read")
 
                                     }
                                 
@@ -221,11 +218,10 @@ this.setPassword(WeakCrypt(2).
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    put("Failed", this, "read")
+                                    logUtil!.put("Failed", this, "read")
 
                                     }
                                 
@@ -246,19 +242,17 @@ InstallerInfo.password= password
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     updateIfNeeded(){
 
-    
                         if(!hasRead)
                         
                                     {
                                     hasRead= true
-this.read()
+this.this.read()
 
-    
                         if(InstallerInfo.userName == 
                                     null
                                  || InstallerInfo.password == 
@@ -267,11 +261,10 @@ this.read()
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    put("Failed", this, "updateIfNeeded")
+                                    logUtil!.put("Failed", this, "updateIfNeeded")
 
                                     }
                                 
@@ -284,10 +277,10 @@ this.read()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getUserName(): string{
-this.updateIfNeeded()
+this.this.updateIfNeeded()
 
 
 
@@ -297,10 +290,10 @@ this.updateIfNeeded()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getPassword(): string{
-this.updateIfNeeded()
+this.this.updateIfNeeded()
 
 
 
@@ -310,14 +303,13 @@ this.updateIfNeeded()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isValid(userName: string, password: string): boolean{
 var userName = userName
 var password = password
-this.updateIfNeeded()
+this.this.updateIfNeeded()
 
-    
                         if(this.userName != 
                                     null
                                  && this.userName!.compareTo(userName) == 0 && this.password != 

@@ -134,30 +134,30 @@ private constructor (){
         
         
 
-append(sep)
-append("generic")
-append(sep)
-append("user")
-append(sep)
-append("commerce")
-append(sep)
-append("money")
-append(sep)
-append("payment")
-append(sep)
-append("gateway")
-append(sep)
+stringBuffer!.append(sep)
+stringBuffer!.append("generic")
+stringBuffer!.append(sep)
+stringBuffer!.append("user")
+stringBuffer!.append(sep)
+stringBuffer!.append("commerce")
+stringBuffer!.append(sep)
+stringBuffer!.append("money")
+stringBuffer!.append(sep)
+stringBuffer!.append("payment")
+stringBuffer!.append(sep)
+stringBuffer!.append("gateway")
+stringBuffer!.append(sep)
 PAYMENTGATEWAYFILEPATHSTRING= stringBuffer!.toString()
 }
 
 
     public add(paymentType: PaymentType){
 var paymentType = paymentType
-add(paymentType)
+this.paymentTypeVector!.add(paymentType)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(paymentTypeString: string): PaymentType{
 var paymentTypeString = paymentTypeString
@@ -182,7 +182,6 @@ i < size; i++)
         
 
 
-    
                         if(paymentType!.getBasicPaymentType()!.getName()!.compareTo(paymentTypeString) == 0)
                         
                                     {
@@ -200,25 +199,23 @@ i < size; i++)
 
 
 
-                            throw Exception("Unknown PaymentType: " +paymentTypeString)
+                            throw Error("Unknown PaymentType: " +paymentTypeString)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public initDefault(storeName: string){
 var storeName = storeName
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    put("initDefault Payment: " +this.defaultName, this, "initDefault")
+                                    logUtil!.put("initDefault Payment: " +this.defaultName, this, "initDefault")
 
                                     }
                                 
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(this.defaultName))
                         
                                     {
@@ -227,11 +224,11 @@ var storeName = storeName
         
         
 
-append(URLGLOBALS.getMainPath())
-append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-append(storeName)
-append(AbPathData.getInstance()!.SEPARATOR)
-append(PAYMENTGATEWAYFILEPATHSTRING)
+stringBuffer!.append(URLGLOBALS.getMainPath())
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
+stringBuffer!.append(storeName)
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.append(PAYMENTGATEWAYFILEPATHSTRING)
 
     var abPath: AbPath = AbPath(stringBuffer!.toString(), SHIPPINGMETHODSFILENAME) as AbPath;
         
@@ -279,16 +276,14 @@ index < nodeList!.getLength(); index++)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    put("DefaultPaymentGatewayNodeValue: " +defaultPaymentGatewayNodeValue, this, "initDefault")
+                                    logUtil!.put("DefaultPaymentGatewayNodeValue: " +defaultPaymentGatewayNodeValue, this, "initDefault")
 
                                     }
                                 
 
-    
                         if(!StringValidationUtil.getInstance()!.isEmpty(defaultPaymentGatewayNodeValue))
                         
                                     {
@@ -304,22 +299,20 @@ index < nodeList!.getLength(); index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDefault(storeName: string): PaymentType{
 var storeName = storeName
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "getDefault")
+                                    logUtil!.put(this.commonStrings!.START, this, "getDefault")
 
                                     }
                                 
-this.initDefault(storeName)
+this.this.initDefault(storeName)
 
-    
                         if(!StringValidationUtil.getInstance()!.isEmpty(this.defaultName))
                         
                                     {
@@ -335,7 +328,7 @@ this.initDefault(storeName)
 
 
 
-                            throw Exception("No Default: " +this.defaultName)
+                            throw Error("No Default: " +this.defaultName)
 }
 
 
@@ -378,7 +371,6 @@ i < size; i++)
         
 
 
-    
                         if(!a_PaymentTypeVector!.contains(paymentType))
                         diff.add(paymentType)
 }

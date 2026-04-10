@@ -33,7 +33,7 @@ export class HealthBarFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(layerInterface: AllBinaryLayer, healthInterface: Health, location: number, direction: number): HealthBar{
 var layerInterface = layerInterface
@@ -41,7 +41,6 @@ var healthInterface = healthInterface
 var location = location
 var direction = direction
 
-    
                         if(OpenGLFeatureUtil.getInstance()!.isAnyThreed())
                         
                                     {

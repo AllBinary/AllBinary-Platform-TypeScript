@@ -71,7 +71,7 @@ this.resourceAnimationInterfaceFactoryInterfaceFactory= resourceAnimationInterfa
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(imageCache: ImageCache, level: number, loadingString: string){
     //var imageCache = imageCache
@@ -83,12 +83,10 @@ this.resourceAnimationInterfaceFactoryInterfaceFactory= resourceAnimationInterfa
         
 
 
-    
                         if(Features.getInstance()!.isFeature(MainFeatureFactory.getInstance()!.LOAD_ALL))
                         
                                     {
                                     
-    
                         if(this.resourceAnimationInterfaceFactoryInterfaceFactory!.isInitialized())
                         
                                     {
@@ -101,12 +99,11 @@ this.resourceAnimationInterfaceFactoryInterfaceFactory= resourceAnimationInterfa
 
                                     }
                                 
-this.initAll(imageCache, loadingString)
+this.this.initAll(imageCache, loadingString)
 
                                     }
                                 
                              else 
-    
                         if(level != resourceLoadingLevelFactory!.LOAD_ALL.getLevel())
                         
                                     {
@@ -115,14 +112,14 @@ this.initAll(imageCache, loadingString)
         
         
 
-this.initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface, imageCache, level, loadingString)
+this.this.initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface, imageCache, level, loadingString)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     initAll(imageCache: ImageCache, loadingString: string){
     //var imageCache = imageCache
@@ -152,7 +149,6 @@ this.initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface, imageCache
         {
 onDemandResources= onDemandResourcesFactory!.remove(onDemandIndex)
 
-    
                         if(onDemandResources != OnDemandResources.NULL_ON_DEMAND_RESOURCES)
                         
                                     {
@@ -165,7 +161,7 @@ onDemandResources= onDemandResourcesFactory!.remove(onDemandIndex)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface: LayerPlacementInterfaceBasicArrayListFactoryInterface, imageCache: ImageCache, level: number, loadingString: string){
     //var layerPlacementInterfaceBasicArrayListFactoryInterface = layerPlacementInterfaceBasicArrayListFactoryInterface
@@ -192,7 +188,7 @@ onDemandResources= onDemandResourcesFactory!.remove(onDemandIndex)
         
         
 
-put(StringMaker().
+PreLogUtil.put(StringMaker().
                             append(commonStrings!.START)!.appendint(onDemandArray!.length)!.toString(), this, "initLevel")
 
     var onDemandResources: OnDemandResources
@@ -210,7 +206,6 @@ put(StringMaker().
         {
 onDemandResources= onDemandResourcesFactory!.remove(onDemandArray[onDemandIndex]!)
 
-    
                         if(onDemandResources != OnDemandResources.NULL_ON_DEMAND_RESOURCES)
                         
                                     {

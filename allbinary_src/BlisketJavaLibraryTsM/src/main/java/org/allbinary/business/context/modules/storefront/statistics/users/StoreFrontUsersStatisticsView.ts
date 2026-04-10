@@ -49,7 +49,7 @@ this.storeFrontUsersStatisticsInterface= storeFrontUsersStatisticsInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

@@ -55,7 +55,6 @@ export class AbFileSystem
     public isType(type: string): boolean{
 var type = type
 
-    
                         if(this.type.compareTo(type) == 0)
                         
                                     {

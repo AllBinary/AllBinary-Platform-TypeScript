@@ -72,9 +72,9 @@ var foregroundBasicColor = foregroundBasicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-this.update()
-this.initCommands(commandListener)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+this.this.update()
+this.this.initCommands(commandListener)
 }
 
 
@@ -85,15 +85,15 @@ var cmdListener = cmdListener
         
         
 
-this.removeAllCommands()
-this.addCommand(gameCommandsFactory!.LOAD_FILE)
-this.addCommand(gameCommandsFactory!.DELETE_FILE)
-this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.setCommandListener(cmdListener)
+this.this.removeAllCommands()
+this.this.addCommand(gameCommandsFactory!.LOAD_FILE)
+this.this.addCommand(gameCommandsFactory!.DELETE_FILE)
+this.this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS)
+this.this.setCommandListener(cmdListener)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(){
 
@@ -101,24 +101,23 @@ this.setCommandListener(cmdListener)
         
         
 
-this.deleteAll()
+this.this.deleteAll()
 
-    
                         if(list.size() > 0)
                         
                                     {
-                                    this.add(list, "Select A Saved Game", Choice.EXCLUSIVE)
+                                    this.this.add(list, "Select A Saved Game", Choice.EXCLUSIVE)
 this.areChoices= true
 
                                     }
                                 
                         else {
-                            this.append(StringItem("No Saved Games", StringUtil.getInstance()!.EMPTY_STRING))
+                            this.this.append(StringItem("No Saved Games", StringUtil.getInstance()!.EMPTY_STRING))
 this.areChoices= false
 
                         }
                             
-update()
+super.update()
 }
 
 
@@ -132,15 +131,14 @@ var option = option
         
 
 
-    
                         if(list.size() > 0)
                         
                                     {
-                                    setSelectedIndex(0, true)
+                                    choiceGroup!.setSelectedIndex(0, true)
 
                                     }
                                 
-this.append(choiceGroup)
+this.this.append(choiceGroup)
 }
 
 
@@ -178,9 +176,9 @@ index < size; index++)
         
         
 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Adding Choice: ")!.append(anyType!.toString())!.toString(), this, METHOD_NAME)
-append(anyType!.toString(), NullCanvas.NULL_IMAGE)
+choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE)
 }
 
 
@@ -194,7 +192,6 @@ append(anyType!.toString(), NullCanvas.NULL_IMAGE)
 
     public getSelectedId(): number{
 
-    
                         if(this.areChoices)
                         
                                     {
@@ -227,7 +224,6 @@ append(anyType!.toString(), NullCanvas.NULL_IMAGE)
 
     public getSelectedText(): number{
 
-    
                         if(this.areChoices)
                         
                                     {

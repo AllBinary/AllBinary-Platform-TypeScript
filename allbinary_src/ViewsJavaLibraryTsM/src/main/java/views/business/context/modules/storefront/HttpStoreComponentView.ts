@@ -61,33 +61,31 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("View Name: " +transformInfoInterface!.getName(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
-this.setTransformDocumentInterface(TransformStoreDocumentFactory.getInstance(this.getPageContext(), this.getWeblisketSession()))
+this.this.setTransformDocumentInterface(TransformStoreDocumentFactory.getInstance(this.getPageContext(), this.getWeblisketSession()))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "view")
+                                    logUtil!.put(this.commonStrings!.START, this, "view")
 
                                     }
                                 
-this.toXmlDoc()
+this.this.toXmlDoc()
 
     var success: string = DomDocumentHelper.toString(this.getDoc())!;
         
@@ -108,11 +106,10 @@ this.toXmlDoc()
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view", e)
 
                                     }
                                 

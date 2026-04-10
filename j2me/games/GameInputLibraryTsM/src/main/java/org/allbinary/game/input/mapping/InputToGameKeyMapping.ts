@@ -83,8 +83,8 @@ export class InputToGameKeyMapping extends InputMapping {
 public constructor (){
 
             super();
-            put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-this.clear()
+            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+this.this.clear()
 }
 
 
@@ -106,8 +106,8 @@ platformToGameKeyMapping[index]= gameKeyFactory!.NONE
 
 
     removeAll(){
-removeAll()
-this.clear()
+super.removeAll()
+this.this.clear()
 }
 
 
@@ -129,11 +129,10 @@ index >= 0; index--)
         
 
 
-    
                         if(input != gameKeyFactory!.NONE)
                         
                                     {
-                                    this.addAll(input, inputToGameKeyMapping!.getMappedInput(input))
+                                    this.this.addAll(input, inputToGameKeyMapping!.getMappedInput(input))
 
                                     }
                                 
@@ -160,7 +159,7 @@ index >= 0; index--)
         
         
 
-this.add(input, mappedToInput)
+this.this.add(input, mappedToInput)
 }
 
 }
@@ -169,18 +168,18 @@ this.add(input, mappedToInput)
     public add(input: Input, mappedToInput: Input){
 var input = input
 var mappedToInput = mappedToInput
-add(input, mappedToInput)
-this.set(input, mappedToInput)
+super.add(input, mappedToInput)
+this.this.set(input, mappedToInput)
 }
 
 
     public remove(input: Input, mappedToInput: Input){
 var input = input
 var mappedToInput = mappedToInput
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(input))!.append(" == ")!.append(StringUtil.getInstance()!.toString(mappedToInput))!.toString(), this, "InputToGameKeyMapping::remove")
-remove(input, mappedToInput)
-this.set(input, gameKeyFactory!.NONE)
+super.remove(input, mappedToInput)
+this.this.set(input, gameKeyFactory!.NONE)
 }
 
 
@@ -193,7 +192,6 @@ var mappedToInput = mappedToInput
         
 
 
-    
                         if(id >= 0 && id < platformToGameKeyMapping!.length)
                         
                                     {
@@ -237,7 +235,6 @@ var id = id
 index < platformToGameKeyMapping!.length; index++)
         {
 
-    
                         if(platformToGameKeyMapping[index]!.getId() == id)
                         
                                     {
@@ -247,13 +244,12 @@ index < platformToGameKeyMapping!.length; index++)
         
 
 
-    
                         if(input != 
                                     null
                                 )
                         
                                     {
-                                    add(input)
+                                    list.add(input)
 
                                     }
                                 
@@ -271,7 +267,7 @@ index < platformToGameKeyMapping!.length; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(canvas: Canvas, gameKey: GameKey){
 var canvas = canvas
@@ -282,7 +278,6 @@ var gameKey = gameKey
         
 
 
-    
                         if(key < 0 &&  -key < negativePlatformToGameKeyMapping!.length)
                         
                                     {
@@ -291,12 +286,10 @@ var gameKey = gameKey
                                     }
                                 
                              else 
-    
                         if(key > 0)
                         
                                     {
                                     
-    
                         if(platformToGameKeyMapping[key] == gameKeyFactory!.NONE)
                         
                                     {
@@ -308,15 +301,15 @@ var gameKey = gameKey
                                     }
                                 
                         else {
-                            put(StringMaker().
-                            append(gameKey!.toString())!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendint(key)!.toString(), this, commonStrings!.INIT, Exception())
+                            PreLogUtil.put(StringMaker().
+                            append(gameKey!.toString())!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendint(key)!.toString(), this, commonStrings!.INIT, Error())
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getSmallestCanvasGameKeyCode(canvas: Canvas): number{
 var canvas = canvas
@@ -343,7 +336,6 @@ var canvas = canvas
         {
 nextKey= canvas.getKeyCode(mappedGameKeys[index]!.getId())
 
-    
                         if(nextKey < smallestKey)
                         
                                     {
@@ -377,13 +369,11 @@ var canvas = canvas
         
 
 
-    
                         if(smallestKey < 0)
                         
                                     {
                                     smallestKey--
 
-    
                         if(smallestKey <  -256)
                         
                                     {
@@ -421,12 +411,12 @@ this.negativePlatformToGameKeyMapping= negativePlatformToGameKeyMapping
         
 --index >= 0; )
         {
-this.init(canvas, mappedGameKeys[index]!)
+this.this.init(canvas, mappedGameKeys[index]!)
 }
 
 } catch(t: Throwable)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, t)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, t)
 }
 
 }
@@ -436,7 +426,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, t)
 var canvas = canvas
 var id = id
 
-    
                         if(id >= 0 && id < platformToGameKeyMapping!.length)
                         
                                     {
@@ -450,7 +439,6 @@ var id = id
                                     }
                                 
                              else 
-    
                         if(id < 0 &&  -id < negativePlatformToGameKeyMapping!.length)
                         
                                     {
@@ -479,7 +467,6 @@ var id = id
     public getInstance(id: number): GameKey{
 var id = id
 
-    
                         if(id >= 0 && id < platformToGameKeyMapping!.length)
                         
                                     {
@@ -493,7 +480,6 @@ var id = id
                                     }
                                 
                              else 
-    
                         if(id < 0 &&  -id < negativePlatformToGameKeyMapping!.length)
                         
                                     {

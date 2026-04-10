@@ -51,34 +51,34 @@ export class UniqueTokens
 public constructor (){
 
             super();
-            add("!")
-add("@")
-add(CommonPhoneStrings.getInstance()!.POUND)
-add("$")
-add("%")
-add("^")
-add(CommonSeps.getInstance()!.AMPERSAND)
-add(CommonPhoneStrings.getInstance()!.STAR)
-add("(")
-add(")")
-add("-")
-add("_")
-add("+")
-add("=")
-add("\\")
-add("|")
-add(AbPathData.getInstance()!.EXTENSION_SEP)
-add(",")
-add("<")
-add(">")
-add("?")
-add("/")
-add("~")
-add("`")
+            specialCharacters!.add("!")
+specialCharacters!.add("@")
+specialCharacters!.add(CommonPhoneStrings.getInstance()!.POUND)
+specialCharacters!.add("$")
+specialCharacters!.add("%")
+specialCharacters!.add("^")
+specialCharacters!.add(CommonSeps.getInstance()!.AMPERSAND)
+specialCharacters!.add(CommonPhoneStrings.getInstance()!.STAR)
+specialCharacters!.add("(")
+specialCharacters!.add(")")
+specialCharacters!.add("-")
+specialCharacters!.add("_")
+specialCharacters!.add("+")
+specialCharacters!.add("=")
+specialCharacters!.add("\\")
+specialCharacters!.add("|")
+specialCharacters!.add(AbPathData.getInstance()!.EXTENSION_SEP)
+specialCharacters!.add(",")
+specialCharacters!.add("<")
+specialCharacters!.add(">")
+specialCharacters!.add("?")
+specialCharacters!.add("/")
+specialCharacters!.add("~")
+specialCharacters!.add("`")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getWhithoutDashesAndSkipNumberOnlyTokens(stringVector: Vector): HashSet{
 var stringVector = stringVector
@@ -134,13 +134,11 @@ forIndex < keywordVector!.size(); forIndex++)
 
 cleanString= cleanString!.trim()
 
-    
                         if(cleanString!.indexOf('-') !=  -1)
                         cleanString= Replace("-", commonSeps!.SPACE).
                             all(cleanString)
-add(cleanString)
+hashSet!.add(cleanString)
 
-    
                         if(cleanString!.indexOf(' ') !=  -1)
                         
                                     {
@@ -170,11 +168,10 @@ spaceIndex < subKeywordVector!.size(); spaceIndex++)
         
 
 
-    
                         if(!isSpecialCharacter(subCleanString) && !numberOnly(subCleanString))
                         
                                     {
-                                    add(subCleanString)
+                                    hashSet!.add(subCleanString)
 
                                     }
                                 
@@ -209,7 +206,7 @@ index++
     //var subCleaningString = subCleaningString
 
         try {
-            parseInt(subCleaningString)
+            Integer.parseInt(subCleaningString)
 
 
 
@@ -242,7 +239,6 @@ var subCleaningString = subCleaningString
 index < specialCharacters!.length; index++)
         {
 
-    
                         if(subCleaningString!.compareTo(specialCharacters!.elementAt(index) as String) == 0)
                         
 

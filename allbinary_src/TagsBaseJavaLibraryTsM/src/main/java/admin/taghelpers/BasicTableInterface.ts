@@ -22,19 +22,19 @@
 interface BasicTableInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     drop(): string
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     create(): string
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     restore(): string
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     backup(): string
 

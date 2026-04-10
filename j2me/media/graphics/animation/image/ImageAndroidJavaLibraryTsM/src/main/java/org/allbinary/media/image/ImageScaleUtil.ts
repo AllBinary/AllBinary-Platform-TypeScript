@@ -104,7 +104,7 @@ private constructor (){
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean): Image{
     //var imageCache = imageCache
@@ -123,7 +123,7 @@ private constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
     //var imageCache = imageCache
@@ -153,7 +153,7 @@ private constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage(imageCache: ImageCache, originalImage: Image, scaleX: number, scaleY: number, cached: boolean): Image{
     //var imageCache = imageCache
@@ -192,7 +192,6 @@ private constructor (){
         
 
 
-    
                         if(index >= 0)
                         
                                     {
@@ -217,7 +216,6 @@ private constructor (){
         
 
 
-    
                         if(scaleX2 == scaleX && scaleY2 == scaleY)
                         
                                     {
@@ -229,7 +227,6 @@ private constructor (){
                                     }
                                 
 
-    
                         if(alreadyAvailable)
                         
                                     {
@@ -248,10 +245,10 @@ private constructor (){
         
         
 
-add(originalImage)
-add(scaledImage)
-add(scaleX)
-add(scaleY)
+imageBasicArrayList!.add(originalImage)
+scaledImageBasicArrayList!.add(scaledImage)
+this.scaleXBasicArrayList!.add(scaleX)
+this.scaleYBasicArrayList!.add(scaleY)
 
 
 
@@ -264,7 +261,7 @@ add(scaleY)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getScaledImage(imageCache: ImageCache, originalImage: Image, scaleX: number, scaleY: number, width: number, height: number, cached: boolean): Image{
     //var imageCache = imageCache
@@ -280,7 +277,6 @@ add(scaleY)
         
 
 
-    
                         if(cached)
                         
                                     {
@@ -294,7 +290,6 @@ add(scaleY)
                         }
                             
 
-    
                         if(image.isMutable())
                         
                                     {
@@ -303,8 +298,8 @@ add(scaleY)
         
         
 
-this.scale(image, matrix, scaleX, scaleY)
-drawImage(originalImage, 0, 0, anchor)
+this.this.scale(image, matrix, scaleX, scaleY)
+image.getGraphics()!.drawImage(originalImage, 0, 0, anchor)
 
 
 
@@ -318,7 +313,7 @@ drawImage(originalImage, 0, 0, anchor)
                             
 
 
-                            throw Exception("Not Mutable")
+                            throw Error("Not Mutable")
 
                         }
                             
@@ -330,14 +325,14 @@ drawImage(originalImage, 0, 0, anchor)
     //var matrix = matrix
     //var scaleX = scaleX
     //var scaleY = scaleY
-setScale(scaleX, scaleY)
+matrix.setScale(scaleX, scaleY)
 
     var canvas: Canvas = 
                                     (image as AndroidImageInterface).getCanvas()!;
         
         
 
-concat(matrix)
+canvas.concat(matrix)
 }
 
 

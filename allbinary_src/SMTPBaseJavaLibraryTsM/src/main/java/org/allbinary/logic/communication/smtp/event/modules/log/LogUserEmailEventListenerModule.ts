@@ -43,12 +43,11 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onEmailSendRequest(userEmailInfoEvent: EmailEvent){
 var userEmailInfoEvent = userEmailInfoEvent
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -57,7 +56,7 @@ var userEmailInfoEvent = userEmailInfoEvent
         
         
 
-put(message, this, "onEmailSendRequest")
+logUtil!.put(message, this, "onEmailSendRequest")
 
                                     }
                                 

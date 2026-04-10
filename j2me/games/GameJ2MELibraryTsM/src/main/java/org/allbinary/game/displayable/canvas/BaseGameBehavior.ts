@@ -57,7 +57,7 @@ export class BaseGameBehavior extends DemoGameBehavior {
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(){
 
@@ -65,7 +65,7 @@ export class BaseGameBehavior extends DemoGameBehavior {
         
         
 
-playingAdState()
+gameAdState!.playingAdState()
 }
 
 
@@ -77,7 +77,6 @@ playingAdState()
         
 
 
-    
                         if(features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL_AS_GAME_THREAD))
                         
                                     {
@@ -86,7 +85,7 @@ playingAdState()
         
         
 
-setRunnable(allBinaryGameCanvas!.gamePauseRunnable)
+currentDisplayableFactory!.setRunnable(allBinaryGameCanvas!.gamePauseRunnable)
 
                                     }
                                 
@@ -96,7 +95,6 @@ setRunnable(allBinaryGameCanvas!.gamePauseRunnable)
     public unPause(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
 
-    
                         if(Features.getInstance()!.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL_AS_GAME_THREAD))
                         
                                     {
@@ -105,69 +103,69 @@ setRunnable(allBinaryGameCanvas!.gamePauseRunnable)
         
         
 
-setRunnable(allBinaryGameCanvas!.gameRunnable)
-setDisplayable(allBinaryGameCanvas)
+currentDisplayableFactory!.setRunnable(allBinaryGameCanvas!.gameRunnable)
+currentDisplayableFactory!.setDisplayable(allBinaryGameCanvas)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public updateTouch(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-updateTouch2()
+allBinaryGameCanvas!.updateTouch2()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public updateScreenButtonPaintable(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-updateScreenButtonPaintable2()
+allBinaryGameCanvas!.updateScreenButtonPaintable2()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setGameState(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-setGameState()
+allBinaryGameCanvas!.setGameState()
 }
 
 
     public removeAllGameKeyInputListeners(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-removeAllGameKeyInputListeners2()
+allBinaryGameCanvas!.removeAllGameKeyInputListeners2()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public updateEndGameProcessor(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-updateEndGameProcessor2()
+allBinaryGameCanvas!.updateEndGameProcessor2()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public buildGame(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-buildGame2()
+allBinaryGameCanvas!.buildGame2()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public run(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-run2()
+allBinaryGameCanvas!.run2()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setHighScore(abeClientInformation: AbeClientInformationInterface, allBinaryGameCanvas: AllBinaryGameCanvas, name: string, score: number, autoSubmit: boolean, isLast: boolean){
     //var abeClientInformation = abeClientInformation
@@ -176,7 +174,7 @@ run2()
     //var score = score
     //var autoSubmit = autoSubmit
     //var isLast = isLast
-setHighScore2(abeClientInformation, name, score, autoSubmit, isLast)
+allBinaryGameCanvas!.setHighScore2(abeClientInformation, name, score, autoSubmit, isLast)
 }
 
 

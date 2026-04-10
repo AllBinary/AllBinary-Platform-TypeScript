@@ -50,12 +50,11 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isValid(): Boolean{
 this.streetAddress= StreetAddress(this.getRequest())
 
-    
                         if(this.streetAddress!.isValid() == Boolean.FALSE)
                         
                                     {

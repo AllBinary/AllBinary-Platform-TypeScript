@@ -110,14 +110,14 @@ private constructor (){
     //var specialMessage = specialMessage
     //var exception = exception
 
-    var stringBuffer: StringMaker = get(className, functionName)!;
+    var stringBuffer: StringMaker = this.getF(className, functionName)!;
         
         
 
-append(this.get(exception))
-append(this.SPECIAL_MESSAGE)
-append(specialMessage)
-append(this.commonSeps!.NEW_LINE)
+stringBuffer!.append(this.getO(exception))
+stringBuffer!.append(this.SPECIAL_MESSAGE)
+stringBuffer!.append(specialMessage)
+stringBuffer!.append(this.commonSeps!.NEW_LINE)
 
 
 
@@ -127,18 +127,18 @@ append(this.commonSeps!.NEW_LINE)
 }
 
 
-    /*actual*/ public get(className: string, functionName: string, specialMessage: string): string{
+    /*actual*/ public getS(className: string, functionName: string, specialMessage: string): string{
     //var className = className
     //var functionName = functionName
     //var specialMessage = specialMessage
 
-    var stringBuffer: StringMaker = get(className, functionName)!;
+    var stringBuffer: StringMaker = this.getF(className, functionName)!;
         
         
 
-append(this.SPECIAL_MESSAGE)
-append(specialMessage)
-append(this.commonSeps!.NEW_LINE)
+stringBuffer!.append(this.SPECIAL_MESSAGE)
+stringBuffer!.append(specialMessage)
+stringBuffer!.append(this.commonSeps!.NEW_LINE)
 
 
 
@@ -148,7 +148,7 @@ append(this.commonSeps!.NEW_LINE)
 }
 
 
-    get(className: string, functionName: string): StringMaker{
+    getF(className: string, functionName: string): StringMaker{
     //var className = className
 var functionName = functionName
 
@@ -166,12 +166,12 @@ var functionName = functionName
         
         
 
-append(this.TIME)
-append(this.timeStampUtil!.getAsString())
-append(this.CLASS_NAME)
-append(className)
-append(FUNCTION_CALL)
-append(functionName)
+stringBuffer!.append(this.TIME)
+stringBuffer!.append(this.timeStampUtil!.getAsString())
+stringBuffer!.append(this.CLASS_NAME)
+stringBuffer!.append(className)
+stringBuffer!.append(this.FUNCTION_CALL)
+stringBuffer!.append(functionName)
 
 
 
@@ -193,7 +193,7 @@ append(functionName)
         
         
 
-    /*actual*/ public get(exception: any = {}): string{
+    /*actual*/ public getO(exception: any = {}): string{
     //var exception = exception
 
                         if(exception != this.nullUtil!.NULL_OBJECT)
@@ -204,7 +204,7 @@ append(functionName)
         
         
 
-append(this.LOG_ERROR)
+stringBuffer!.append(this.LOG_ERROR)
 
     var exceptionAsString: string = exception.toString()!;
         
@@ -216,26 +216,26 @@ append(this.LOG_ERROR)
                                 )
                         
                                     {
-                                    append(exceptionAsString)
+                                    stringBuffer!.append(exceptionAsString)
 
                                     }
                                 
                         else {
-                            append(this.EMPTY)
+                            stringBuffer!.append(this.EMPTY)
 
                         }
                             
-append(this.STACK_TRACE)
+stringBuffer!.append(this.STACK_TRACE)
 
                         if(exception != this.nullUtil!.NULL_OBJECT)
                         
                                     {
-                                    append(exceptionUtil!.getStackTrace(exception as Throwable))
+                                    stringBuffer!.append(this.exceptionUtil!.getStackTrace(exception as Error))
 
                                     }
                                 
                         else {
-                            append(this.stringUtil!.NULL_STRING)
+                            stringBuffer!.append(this.stringUtil!.NULL_STRING)
 
                         }
                             

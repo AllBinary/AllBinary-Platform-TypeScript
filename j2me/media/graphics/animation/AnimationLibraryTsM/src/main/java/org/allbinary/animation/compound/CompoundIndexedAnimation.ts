@@ -70,7 +70,7 @@ this.circularIndexUtil= CircularIndexUtil.getInstance(this.animationInterfaceArr
         
         
 
-setFrame(index)
+indexedAnimation!.setFrame(index)
 }
 
 
@@ -110,7 +110,7 @@ setFrame(index)
         
         
 
-previousFrame()
+indexedAnimation!.previousFrame()
 }
 
 
@@ -129,10 +129,10 @@ var sequence = sequence
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public nextFrame(){
-nextFrame()
+this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.nextFrame()
 }
 
 
@@ -140,7 +140,7 @@ nextFrame()
     //var graphics = graphics
     //var x = x
     //var y = y
-paint(graphics, x, y)
+this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.paint(graphics, x, y)
 }
 
 
@@ -149,7 +149,7 @@ paint(graphics, x, y)
     //var x = x
     //var y = y
     //var z = z
-paintThreed(graphics, x, y, z)
+this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.paintThreed(graphics, x, y, z)
 }
 
 
@@ -169,8 +169,8 @@ paintThreed(graphics, x, y, z)
         
         
 
-next()
-this.setFrame(frame)
+this.circularIndexUtil!.next()
+this.this.setFrame(frame)
 }
 
 
@@ -180,8 +180,8 @@ this.setFrame(frame)
         
         
 
-previous()
-this.setFrame(frame)
+this.circularIndexUtil!.previous()
+this.this.setFrame(frame)
 }
 
 
@@ -192,8 +192,8 @@ this.setFrame(frame)
         
         
 
-setIndex(index)
-this.setFrame(frame)
+this.circularIndexUtil!.setIndex(index)
+this.this.setFrame(frame)
 }
 
 
@@ -213,7 +213,7 @@ this.animationInterfaceArray= animationInterfaceArray
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public set(gl: GL){
     //var gl = gl
@@ -228,7 +228,7 @@ this.animationInterfaceArray= animationInterfaceArray
         
 --index >= 0; )
         {
-set(gl)
+this.animationInterfaceArray[index]!.set(gl)
 }
 
 }

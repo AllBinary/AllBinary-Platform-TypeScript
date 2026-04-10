@@ -111,33 +111,32 @@ this.portion= portion
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public initKey(portion: number){
 var portion = portion
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     initKeyMapping(abeClientInformation: AbeClientInformationInterface, portion: number){
     //var abeClientInformation = abeClientInformation
 var portion = portion
 
-    
                         if(ChangedGameFeatureListener.getInstance()!.isChanged(InputFeatureFactory.getInstance()!.INPUT_MAPPING))
                         
                                     {
-                                    init(abeClientInformation)
-addPortion(50, "Game Keys")
-remove(InputFeatureFactory.getInstance()!.INPUT_MAPPING)
+                                    PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.init(abeClientInformation)
+ProgressCanvasFactory.getInstance()!.addPortion(50, "Game Keys")
+ChangedGameFeatureListener.getInstance()!.remove(InputFeatureFactory.getInstance()!.INPUT_MAPPING)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, level: number){
     //var abeClientInformation = abeClientInformation
@@ -149,7 +148,6 @@ remove(InputFeatureFactory.getInstance()!.INPUT_MAPPING)
         
 
 
-    
                         if(!this.isInitialized() && (level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel() || level == resourceLoadingLevelFactory!.LOAD_EARLY.getLevel()))
                         
                                     {
@@ -159,7 +157,6 @@ remove(InputFeatureFactory.getInstance()!.INPUT_MAPPING)
         
 
 
-    
                         if(level == resourceLoadingLevelFactory!.LOAD_EARLY.getLevel())
                         
                                     {
@@ -167,23 +164,23 @@ remove(InputFeatureFactory.getInstance()!.INPUT_MAPPING)
 
                                     }
                                 
-this.setInitialized(true)
-this.initKey(getPortion())
-this.initKeyMapping(abeClientInformation, getPortion())
-init()
+this.this.setInitialized(true)
+this.this.initKey(getPortion())
+this.this.initKeyMapping(abeClientInformation, getPortion())
+GameKeyEventFactory.getInstance()!.init()
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
 
-addPortion(localPortion, "Game Key Events")
-init(PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping())
-addPortion(localPortion, "Touch Input")
-init()
-addPortion(localPortion, "Motion Input")
-init()
-addPortion(localPortion, "Image Cache")
-init()
+progressCanvas!.addPortion(localPortion, "Game Key Events")
+BasicTouchInputFactory.getInstance()!.init(PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping())
+progressCanvas!.addPortion(localPortion, "Touch Input")
+CompleteMotionGestureInputToGameMotionGestureInput.getInstance()!.init()
+progressCanvas!.addPortion(localPortion, "Motion Input")
+GameFeatureImageCacheFactory.init()
+progressCanvas!.addPortion(localPortion, "Image Cache")
+this.resourceInitializationArray[EARLY_RESOURCES]!.init()
 
                                     }
                                 
@@ -194,7 +191,7 @@ init()
 
     private allLoaded: boolean= false
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public resourceInitialization(level: number){
 var level = level
@@ -204,39 +201,35 @@ var level = level
         
 
 
-    
                         if(this.resourceAnimationChange() && level == resourceLoadingLevelFactory!.LOAD_EARLY.getLevel())
                         
                                     {
-                                    this.clearResources()
-init()
+                                    this.this.clearResources()
+this.resourceInitializationArray[this.EARLY_CHANGABLE_RESOURCES]!.init()
 
                                     }
                                 
 
-    
                         if(this.resourceAnimationChange() && level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel())
                         
                                     {
                                     
-    
                         if(this.allLoaded)
                         
                                     {
-                                    this.clearResources()
+                                    this.this.clearResources()
 
                                     }
                                 
 
-    
                         if(FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.getList()!.size() == 0)
                         
                                     {
-                                    init()
+                                    this.resourceInitializationArray[this.EARLY_CHANGABLE_RESOURCES]!.init()
 
                                     }
                                 
-init()
+this.resourceInitializationArray[this.GAME_CHANGABLE_RESOURCES]!.init()
 this.allLoaded= true
 
                                     }
@@ -256,7 +249,6 @@ this.allLoaded= true
         
 
 
-    
                         if(changedGameFeatureListener!.isChanged(gameConfigurationCentral!.SCALE))
                         
                                     {
@@ -270,7 +262,6 @@ this.allLoaded= true
                                     }
                                 
 
-    
                         if(ChangedGameFeatureListener.getInstance()!.isChanged(MainFeatureFactory.getInstance()!.STATIC))
                         
                                     {
@@ -294,14 +285,14 @@ this.allLoaded= true
 
     clearResources(){
 this.allLoaded= false
-releaseAll()
+GameFeatureImageCacheFactory.releaseAll()
 
     var featuredAnimationInterfaceFactoryInterfaceFactory: FeaturedAnimationInterfaceFactoryInterfaceFactory = FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!;
         
         
 
-clear()
-clear()
+featuredAnimationInterfaceFactoryInterfaceFactory!.clear()
+FeaturedResourceRelativeRelationshipFactory.getInstance()!.clear()
 }
 
 

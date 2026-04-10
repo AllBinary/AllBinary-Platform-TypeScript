@@ -149,7 +149,7 @@ maxHealthHud= NumberStringHud("/ ", 99999, basicHudFactory!.ABSOLUTE, basicHudFa
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 this.productivityHud= productivityHud
@@ -161,22 +161,22 @@ this.maxHealthHud= maxHealthHud
 
     public setBasicColorP(basicColor: BasicColor){
 var basicColor = basicColor
-setBasicColorP(basicColor)
-setBasicColorP(basicColor)
-setBasicColorP(basicColor)
-setBasicColorP(basicColor)
-setBasicColorP(basicColor)
+super.setBasicColorP(basicColor)
+this.productivityHud!.setBasicColorP(basicColor)
+this.efficiencyHud!.setBasicColorP(basicColor)
+this.healthHud!.setBasicColorP(basicColor)
+this.maxHealthHud!.setBasicColorP(basicColor)
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics)
-paint(graphics)
-paint(graphics)
-paint(graphics)
-paint(graphics)
-paint(graphics, this.imageX, y)
+super.paint(graphics)
+this.productivityHud!.paint(graphics)
+this.efficiencyHud!.paint(graphics)
+this.healthHud!.paint(graphics)
+this.maxHealthHud!.paint(graphics)
+this.getAnimationInterface()!.paint(graphics, this.imageX, y)
 }
 
 
@@ -186,23 +186,23 @@ paint(graphics, this.imageX, y)
         
         
 
-this.setName(buildingLayer!.getName())
-this.setAnimationInterface(buildingLayer!.getVerticleBuildAnimationInterface())
-set(buildingLayer!.getProductivity())
-set(buildingLayer!.getEfficiency() /100)
+this.this.setName(buildingLayer!.getName())
+this.this.setAnimationInterface(buildingLayer!.getVerticleBuildAnimationInterface())
+this.productivityHud!.set(buildingLayer!.getProductivity())
+this.efficiencyHud!.set(buildingLayer!.getEfficiency() /100)
 
     var health: number = buildingLayer!.getHealthInterface()!.getHealth()!;
         
         
 
-set(health)
+this.healthHud!.set(health)
 
     var totalLength: number = HEALTH.length +MathUtil.getInstance()!.getTotalDigits(health);
         
         
 
-setX(this.textX +MyFont.getInstance()!.stringWidth(totalLength))
-set(buildingLayer!.getHealthInterface()!.getMaxHealth())
+this.maxHealthHud!.setX(this.textX +MyFont.getInstance()!.stringWidth(totalLength))
+this.maxHealthHud!.set(buildingLayer!.getHealthInterface()!.getMaxHealth())
 }
 
 

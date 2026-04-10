@@ -30,7 +30,7 @@ export class TransformInfoTableTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(TransformInfoHelperFactory())
+            this.this.setTagHelperFactory(TransformInfoHelperFactory())
 }
 
 

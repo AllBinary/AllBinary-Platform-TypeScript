@@ -73,28 +73,26 @@ var collidable = collidable
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setCollided(false)
-this.setCollidable(true)
+this.this.setCollided(false)
+this.this.setCollidable(true)
 this.collisionHelper= CollidableHelperFactory.getInstance()
 }
 
 
     public init(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface
-this.setCollided(false)
-setOwnerLayerInterface(sourceLayerInterface)
+this.this.setCollided(false)
+this.collisionHelper!.setOwnerLayerInterface(sourceLayerInterface)
 }
 
 
     public isCollision(collisionLayer: CollidableCompositeLayer): boolean{
 var collisionLayer = collisionLayer
 
-    
                         if(this.collisionHelper!.isCollidable(collisionLayer))
                         
                                     {
                                     
-    
                         if(this.ownerLayer!.getGroupInterface()[0] != collisionLayer!.getGroupInterface()[0])
                         
                                     {
@@ -119,11 +117,11 @@ var collisionLayer = collisionLayer
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public collide(collisionLayer: CollidableCompositeLayer){
 var collisionLayer = collisionLayer
-collide(collisionLayer)
+super.collide(collisionLayer)
 this.collided= true
 }
 
@@ -135,7 +133,6 @@ this.collided= true
     public isCollision(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
-    
                         if(this.collisionHelper!.isCollidable(collidableInterfaceCompositeInterface as CollidableCompositeLayer))
                         
                                     {
@@ -145,12 +142,10 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
         
 
 
-    
                         if(this.ownerLayer!.getGroupInterface()[0] != layerInterface!.getGroupInterface()[0])
                         
                                     {
                                     
-    
                         if(layerCollisionUtil!.isCollision(this.ownerLayer, layerInterface))
                         
                                     {
@@ -178,11 +173,11 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public collide(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
-process(this.ownerLayer as DamageableInterface, collidableInterfaceCompositeInterface as DamageableInterface)
+damageUtil!.process(this.ownerLayer as DamageableInterface, collidableInterfaceCompositeInterface as DamageableInterface)
 this.collided= true
 }
 

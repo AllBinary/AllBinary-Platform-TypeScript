@@ -58,25 +58,24 @@ export class UserEmailEventsConfiguration
 public constructor (){
 
             super();
-            this.init()
+            this.this.init()
 }
 
 public constructor (hashMap: HashMap<Any, Any>){
 
             super();
             var hashMap = hashMap
-this.init()
+this.this.init()
 }
 
 
     init(){
 this.emailEventHashMap= HashMap<Any, Any>()
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.CONSTRUCTOR, this, " Constructor")
+                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, " Constructor")
 
                                     }
                                 
@@ -96,19 +95,18 @@ this.emailEventHashMap= HashMap<Any, Any>()
     public addUserEmailEventConfiguration(userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface){
 var userEmailEventConfigurationInterface = userEmailEventConfigurationInterface
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put("Adding: " +userEmailEventConfigurationInterface!.log(), this, "addUserEmailEventConfiguration")
+                                    logUtil!.put("Adding: " +userEmailEventConfigurationInterface!.log(), this, "addUserEmailEventConfiguration")
 
                                     }
                                 
-put(userEmailEventConfigurationInterface!.getName(), userEmailEventConfigurationInterface)
+this.emailEventHashMap!.put(userEmailEventConfigurationInterface!.getName(), userEmailEventConfigurationInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getEventListener(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): UserEmailEventListenerInterface{
     //var abeClientInformation = abeClientInformation

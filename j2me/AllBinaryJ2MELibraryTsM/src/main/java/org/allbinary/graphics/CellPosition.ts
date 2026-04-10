@@ -55,11 +55,11 @@ var i_row = i_row
         
         
 
-append(commonSeps!.PARENTHESIS_OPEN)
-appendint(i_column)
-append(commonSeps!.COMMA)
-appendint(i_row)
-append(commonSeps!.PARENTHESIS_CLOSE)
+stringBuffer!.append(commonSeps!.PARENTHESIS_OPEN)
+stringBuffer!.appendint(i_column)
+stringBuffer!.append(commonSeps!.COMMA)
+stringBuffer!.appendint(i_row)
+stringBuffer!.append(commonSeps!.PARENTHESIS_CLOSE)
 
 
 

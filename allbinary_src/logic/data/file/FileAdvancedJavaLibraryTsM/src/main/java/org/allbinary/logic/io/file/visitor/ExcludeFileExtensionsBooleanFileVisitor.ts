@@ -43,7 +43,6 @@ public constructor (filterStringBasicArrayList: BasicArrayList)
     public visit(file: AbFile): Boolean{
 var file = file
 
-    
                         if(this.getFilterStringBasicArrayList()!.size() == 0)
                         
                                     {
@@ -74,7 +73,6 @@ var fileNameString = fileNameString
         
 
 
-    
                         if(fileNameAndExtension!.length > fileNameString!.length)
                         
                                     {
@@ -89,7 +87,6 @@ var fileNameString = fileNameString
         
 
 
-    
                         if(fileName!.compareTo(fileNameString) == 0)
                         
                                     {

@@ -35,7 +35,7 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 var eventObject = eventObject
@@ -45,7 +45,7 @@ var eventListenerInterface = eventListenerInterface
         
         
 
-onCapitalChangeEvent(eventObject as CapitalEvent)
+capitalEventListenerInterface!.onCapitalChangeEvent(eventObject as CapitalEvent)
 }
 
 

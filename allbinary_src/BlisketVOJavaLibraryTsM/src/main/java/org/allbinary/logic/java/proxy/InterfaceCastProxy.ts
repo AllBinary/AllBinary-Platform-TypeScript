@@ -51,7 +51,7 @@ this.anyType= anyType
 }
 
 
-                @Throws(Throwable::class)
+                //@Throws(Error::class)
             
     public invoke(proxyObject: any = {}, proxyMethod: Method, proxyArgs: any = {}[]): any = {}{
 var proxyObject = proxyObject
@@ -68,7 +68,6 @@ var proxyArgs = proxyArgs
         
 
 
-    
                         if(!realMethod!.isAccessible())
                         realMethod!.setAccessible(true)
 

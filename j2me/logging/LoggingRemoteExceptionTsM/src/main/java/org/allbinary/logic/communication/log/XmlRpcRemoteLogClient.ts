@@ -62,7 +62,7 @@ public constructor (clientInfo: AbeClientInformationInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(anyType: any = {}): any = {}{
     //var anyType = anyType
@@ -89,8 +89,8 @@ serverUrl= serverUrl!.substring(0, index +1) +"logservssl.php"
         
         
 
-this.setClient(xmlRpcClient)
-setBasicAuthentication(
+this.this.setClient(xmlRpcClient)
+xmlRpcClient!.setBasicAuthentication(
                             null, 
                             null)
 
@@ -98,13 +98,13 @@ setBasicAuthentication(
         
         
 
-add(hashtable)
+param.add(hashtable)
 
     var result: any = {} = xmlRpcClient!.execute(this.getRemoteMethod(), param, noCrypt)!;
         
         
 
-println("Result: \n" +result.toString())
+System.out.println("Result: \n" +result.toString())
 
 
 
@@ -113,9 +113,8 @@ println("Result: \n" +result.toString())
     
 } catch(e: IOException)
             {
-println("IOException Trying Other Servers")
+System.out.println("IOException Trying Other Servers")
 
-    
                         if(!e.getMessage()!.startsWith(HOST_NOT_RESOLVED))
                         
                                     {
@@ -132,7 +131,7 @@ println("IOException Trying Other Servers")
                             
 
 
-                            throw Exception(HOST_NOT_RESOLVED_MSG)
+                            throw Error(HOST_NOT_RESOLVED_MSG)
 
                         }
                             

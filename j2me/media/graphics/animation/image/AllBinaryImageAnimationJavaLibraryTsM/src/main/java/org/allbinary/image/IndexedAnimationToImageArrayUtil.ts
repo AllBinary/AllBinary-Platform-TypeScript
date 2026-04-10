@@ -30,7 +30,7 @@ export class IndexedAnimationToImageArrayUtil
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(width: number, height: number, sequentialAnimationInterface: IndexedAnimation): Image[]{
 var width = width
@@ -56,7 +56,7 @@ var sequentialAnimationInterface = sequentialAnimationInterface
         
 index < size; index++)
         {
-setFrame(index)
+sequentialAnimationInterface!.setFrame(index)
 imageArray[index]= AnimationFrameToImageUtil.getInstance()!.getInstance(width, height, sequentialAnimationInterface)
 }
 

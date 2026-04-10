@@ -144,7 +144,6 @@ var remoteMethod = remoteMethod
 this.remoteMethod= remoteMethod
 this.clientInfo= clientInfo
 
-    
                         if(clientInfo!.getNumberOfLicenseServers() > 1)
                         
                                     {
@@ -154,7 +153,6 @@ this.start= myRandomFactory!.getAbsoluteNextInt(maxServers) +1
                                     }
                                 
                              else 
-    
                         if(clientInfo!.getNumberOfLicenseServers() == 1)
                         
                                     {
@@ -170,19 +168,19 @@ this.server= this.start
         
         
 
-append(START_SERVER)
-appendint(this.getServer())
-append(SEP)
-append(clientInfo!.getLicenseServer(this.getServer()))
-put(stringBuffer!.toString(), this, commonStrings!.CONSTRUCTOR)
+stringBuffer!.append(START_SERVER)
+stringBuffer!.appendint(this.getServer())
+stringBuffer!.append(SEP)
+stringBuffer!.append(clientInfo!.getLicenseServer(this.getServer()))
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.CONSTRUCTOR)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(anyType: any = {}): any = {}{
 var anyType = anyType
-log(commonStrings!.NOT_IMPLEMENTED, this)
+ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this)
 
 
 
@@ -192,12 +190,11 @@ log(commonStrings!.NOT_IMPLEMENTED, this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     tryAnother(anyType: any = {}): any = {}{
 var anyType = anyType
 
-    
                         if(getServer() < getMaxServers())
                         
                                     {
@@ -211,7 +208,6 @@ var anyType = anyType
                         }
                             
 
-    
                         if(getServer() != getStart() && !isIsDone())
                         
                                     {
@@ -232,7 +228,7 @@ var anyType = anyType
 
 
 
-                            throw Exception("Tried All Servers But Still Failed")
+                            throw Error("Tried All Servers But Still Failed")
 }
 
 

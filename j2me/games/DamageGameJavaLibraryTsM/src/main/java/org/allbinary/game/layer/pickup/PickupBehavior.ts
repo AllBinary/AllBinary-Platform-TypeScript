@@ -80,11 +80,10 @@ this.countedIndex= countedIndex
         
 
 
-    
                         if(healthInterfaceCompositeInterface!.getHealthInterface()!.isAlive())
                         
                                     {
-                                    process(ownerLayerInterface)
+                                    pickupProcessorInterface!.process(ownerLayerInterface)
 
                                     }
                                 
@@ -95,7 +94,7 @@ this.countedIndex= countedIndex
         
         
 
-put(commonStrings!.EXCEPTION, this, "doPickup", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "doPickup", e)
 }
 
 }
@@ -121,16 +120,14 @@ var pickupLayerInterface = pickupLayerInterface
         
 
 
-    
                         if(pickedUpLayerType == pickedUpLayerTypeFactory!.BEAM || pickedUpLayerType == pickedUpLayerTypeFactory!.MINE || pickedUpLayerType == pickedUpLayerTypeFactory!.PROJECTILE || pickedUpLayerType == pickedUpLayerTypeFactory!.ENHANCEMENT)
                         
                                     {
-                                    this.add(pickedUpLayerInterfaceFactoryInterface as CountedPickedUpLayerInterfaceFactoryInterface)
+                                    this.this.add(pickedUpLayerInterfaceFactoryInterface as CountedPickedUpLayerInterfaceFactoryInterface)
 
                                     }
                                 
                              else 
-    
                         if(pickedUpLayerInterfaceFactoryInterface!.getPickedUpLayerType() == pickedUpLayerTypeFactory!.PART)
                         
                                     {
@@ -139,12 +136,11 @@ var pickupLayerInterface = pickupLayerInterface
         
         
 
-addPart(pickedUpLayerInterfaceFactoryInterface)
+collidableDestroyableDamageableLayer!.addPart(pickedUpLayerInterfaceFactoryInterface)
 
                                     }
                                 
                              else 
-    
                         if(pickedUpLayerType == pickedUpLayerTypeFactory!.NONE)
                         
                                     {
@@ -152,11 +148,11 @@ addPart(pickedUpLayerInterfaceFactoryInterface)
                                     }
                                 
                         else {
-                            this.doPickup(pickedUpLayerInterfaceFactoryInterface as PickupProcessorInterface)
+                            this.this.doPickup(pickedUpLayerInterfaceFactoryInterface as PickupProcessorInterface)
 
                         }
                             
-setPickedUp()
+pickupLayerInterface!.setPickedUp()
 } catch(e: Exception)
             {
 
@@ -164,7 +160,7 @@ setPickedUp()
         
         
 
-put(commonStrings!.EXCEPTION, this, "doPickup", e)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, "doPickup", e)
 }
 
 }
@@ -177,7 +173,7 @@ var countedPickedUpLayerInterfaceFactoryInterface = countedPickedUpLayerInterfac
         
         
 
-this.add(countedPickedUpLayerInterfaceFactoryInterface, partIndex)
+this.this.add(countedPickedUpLayerInterfaceFactoryInterface, partIndex)
 }
 
 
@@ -194,7 +190,7 @@ this.add(countedPickedUpLayerInterfaceFactoryInterface, partIndex)
         
         
 
-setTotal(countedLayerInterfaceFactory!.getTotal() +countedPickedUpLayerInterfaceFactoryInterface!.getTotal())
+countedLayerInterfaceFactory!.setTotal(countedLayerInterfaceFactory!.getTotal() +countedPickedUpLayerInterfaceFactoryInterface!.getTotal())
 }
 
 
@@ -246,12 +242,10 @@ countedPickedUpLayerInterfaceFactory= nextCountedLayerInterfaceFactory!.getCount
 --index2 >= 0; )
         {
 
-    
                         if(countedPickedUpLayerInterfaceFactory!.getPickedUpLayerType() == pickedUpLayerTypeArray[index2])
                         
                                     {
                                     
-    
                         if(nextCountedLayerInterfaceFactory!.getTotal() > 0)
                         
                                     {
@@ -280,7 +274,7 @@ countedPickedUpLayerInterfaceFactory= nextCountedLayerInterfaceFactory!.getCount
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getCountedLayerInterfaceFactoryForSlot(slotIndex: number): CountedLayerInterfaceFactoryPart{
 var slotIndex = slotIndex
@@ -320,12 +314,10 @@ index < size; index++)
         {
 nextCountedLayerInterfaceFactory= collidableDestroyableDamageableLayer!.getPartInterfaceArray()[index]! as CountedLayerInterfaceFactoryPart
 
-    
                         if(nextCountedLayerInterfaceFactory!.getTotal() > 0)
                         
                                     {
                                     
-    
                         if(currentSlot == slotIndex)
                         
                                     {

@@ -27,7 +27,7 @@ export class UrlGlobalsInterface
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getMainPath(): string{
 

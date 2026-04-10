@@ -129,18 +129,18 @@ this.rowsRemainderHalf= (this.rowsRemainder shr 1)
         
         
 
-append("totalColumns: ")
-appendint(totalColumns)
-append(" totalRows: ")
-appendint(totalRows)
-append(" columnsRemainder: ")
-appendint(columnsRemainder)
-append(" rowsRemainder: ")
-appendint(rowsRemainder)
-append(" columnsRemainderHalf: ")
-appendint(columnsRemainderHalf)
-append(" rowsRemainderHalf: ")
-appendint(rowsRemainderHalf)
+stringBuffer!.append("totalColumns: ")
+stringBuffer!.appendint(totalColumns)
+stringBuffer!.append(" totalRows: ")
+stringBuffer!.appendint(totalRows)
+stringBuffer!.append(" columnsRemainder: ")
+stringBuffer!.appendint(columnsRemainder)
+stringBuffer!.append(" rowsRemainder: ")
+stringBuffer!.appendint(rowsRemainder)
+stringBuffer!.append(" columnsRemainderHalf: ")
+stringBuffer!.appendint(columnsRemainderHalf)
+stringBuffer!.append(" rowsRemainderHalf: ")
+stringBuffer!.appendint(rowsRemainderHalf)
 
 
 

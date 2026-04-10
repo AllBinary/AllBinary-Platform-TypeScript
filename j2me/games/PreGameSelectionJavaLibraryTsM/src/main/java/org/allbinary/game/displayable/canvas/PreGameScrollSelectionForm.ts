@@ -57,11 +57,11 @@ var foregroundBasicColor = foregroundBasicColor
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(rectangle: Rectangle){
 var rectangle = rectangle
-init(rectangle, FormTypeFactory.getInstance()!.TEMP_HORIZONTAL_FORM)
+super.init(rectangle, FormTypeFactory.getInstance()!.TEMP_HORIZONTAL_FORM)
 }
 
 

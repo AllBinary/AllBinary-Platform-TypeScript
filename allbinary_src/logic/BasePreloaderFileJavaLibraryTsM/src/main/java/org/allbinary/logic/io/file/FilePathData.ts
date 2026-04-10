@@ -52,7 +52,6 @@ private constructor (){
 
             super();
             
-    
                         if(File.separatorChar == '\\')
                         
                                     {

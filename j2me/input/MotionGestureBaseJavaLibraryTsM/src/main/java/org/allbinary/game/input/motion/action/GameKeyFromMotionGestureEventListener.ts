@@ -62,7 +62,7 @@ export class GameKeyFromMotionGestureEventListener extends CompleteMotionGesture
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
@@ -81,28 +81,25 @@ var completeMotionGestureInputEvent = completeMotionGestureInputEvent
         
 
 
-    
                         if(gameKeyEvent != previousGameKeyEvent)
                         
                                     {
                                     
-    
                         if(previousGameKeyEvent != GameKeyEvent.NONE)
                         
                                     {
-                                    fireEvent(previousGameKeyEvent)
+                                    UpGameKeyEventHandler.getInstance()!.fireEvent(previousGameKeyEvent)
 
                                     }
                                 
 previousGameKeyEvent= gameKeyEvent
 
-    
                         if(gameKeyEvent != 
                                     null
                                  && gameKeyEvent != GameKeyEvent.NONE)
                         
                                     {
-                                    fireEvent(gameKeyEvent)
+                                    DownGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent)
 
                                     }
                                 
@@ -116,7 +113,7 @@ previousGameKeyEvent= gameKeyEvent
         
         
 
-put(commonStrings!.EXCEPTION, this, "onCompleteMotionGestureInputEvent", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "onCompleteMotionGestureInputEvent", e)
 }
 
 }

@@ -57,7 +57,6 @@ var anyType = anyType
         
 
 
-    
                         if(value.length < 2)
                         
                                     {
@@ -67,7 +66,6 @@ var anyType = anyType
         
 
 
-    
                         if(stringValidationUtil!.isNumber(value))
                         
                                     {
@@ -83,7 +81,7 @@ var anyType = anyType
                         else {
                             
         try {
-            fireError("Numbers Only")
+            TextNotificationUtil.getInstance()!.fireError("Numbers Only")
 } catch(e: Exception)
             {
 
@@ -91,7 +89,7 @@ var anyType = anyType
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e)
 }
 
 

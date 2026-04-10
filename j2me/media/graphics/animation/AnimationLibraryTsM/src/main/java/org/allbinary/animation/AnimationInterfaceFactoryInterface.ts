@@ -25,7 +25,7 @@ import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js
 interface AnimationInterfaceFactoryInterface extends BasicAnimationInterfaceFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getInstance(instanceId: number): Animation
 

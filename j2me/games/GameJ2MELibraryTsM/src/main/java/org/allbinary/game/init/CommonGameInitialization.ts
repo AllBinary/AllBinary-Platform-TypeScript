@@ -69,51 +69,50 @@ var portion = portion
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, level: number){
     //var abeClientInformation = abeClientInformation
     //var commandListener = commandListener
     //var level = level
-init(abeClientInformation, commandListener, level)
+super.init(abeClientInformation, commandListener, level)
 
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
         
         
 
 
-    
                         if(!this.isGameInitialized() && level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel())
                         
                                     {
-                                    this.setGameInitialized(true)
+                                    this.this.setGameInitialized(true)
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
 
-init()
-addPortion(50, "Integers")
-init()
-addPortion(50, "Points")
-getInstance()
-addPortion(50, "Angles")
-this.initGame()
-init()
+SmallIntegerSingletonFactory.getInstance()!.init()
+progressCanvas!.addPortion(50, "Integers")
+PointFactory.getInstance()!.init()
+progressCanvas!.addPortion(50, "Points")
+AngleFactory.getInstance()
+progressCanvas!.addPortion(50, "Angles")
+this.this.initGame()
+this.resourceInitializationArray[GAME_RESOURCES]!.init()
 
                                     }
                                 
-resourceInitialization(level)
+super.resourceInitialization(level)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public initGame(){
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 

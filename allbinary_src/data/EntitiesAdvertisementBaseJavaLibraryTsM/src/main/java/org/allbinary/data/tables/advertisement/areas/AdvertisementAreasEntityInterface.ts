@@ -34,11 +34,11 @@ import { BasicDataTableInterface } from "../../../../../../org/allbinary/data/ta
 interface AdvertisementAreasEntityInterface extends BasicDataTableInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(storeName: string): Vector
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(storeName: string, advertisementAreaName: string): AdvertisementAreaInterface
 

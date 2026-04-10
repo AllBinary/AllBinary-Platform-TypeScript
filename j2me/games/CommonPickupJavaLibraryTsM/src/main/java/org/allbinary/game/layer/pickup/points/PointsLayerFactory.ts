@@ -40,7 +40,7 @@ this.points= points
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(): AllBinaryLayer{
 

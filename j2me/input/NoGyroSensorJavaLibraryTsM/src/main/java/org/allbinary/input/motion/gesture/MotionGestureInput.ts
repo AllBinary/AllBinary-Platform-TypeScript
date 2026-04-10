@@ -43,7 +43,7 @@ var name = name
         
         
 
-add(this.getId(), this)
+inputFactory!.add(this.getId(), this)
 }
 
 

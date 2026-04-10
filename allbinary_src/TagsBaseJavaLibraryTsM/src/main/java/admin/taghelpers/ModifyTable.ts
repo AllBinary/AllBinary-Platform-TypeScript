@@ -32,7 +32,7 @@ export class ModifyTable
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public insert(): string{
 
@@ -42,7 +42,7 @@ export class ModifyTable
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public delete(): string{
 
@@ -52,7 +52,7 @@ export class ModifyTable
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public update(): string{
 

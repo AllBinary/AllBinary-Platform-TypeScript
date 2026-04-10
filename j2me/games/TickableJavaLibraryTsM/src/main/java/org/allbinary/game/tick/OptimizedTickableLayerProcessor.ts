@@ -45,7 +45,7 @@ public constructor ()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -56,14 +56,13 @@ var index = index
         
         
 
-processTick(allBinaryLayerManager)
+tickableInterface!.processTick(allBinaryLayerManager)
 }
 
 
     public isProcessorLayer(layerInterface: AllBinaryLayer): boolean{
 var layerInterface = layerInterface
 
-    
                         if(layerInterface!.implmentsTickableInterface())
                         
                                     {

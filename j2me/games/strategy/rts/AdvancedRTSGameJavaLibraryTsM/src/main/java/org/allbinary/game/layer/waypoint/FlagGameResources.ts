@@ -72,38 +72,38 @@ protected constructor (){
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(ROOT: string, sizeString: string){
 var ROOT = ROOT
 var sizeString = sizeString
-init(ROOT, sizeString)
+super.init(ROOT, sizeString)
 
     var string: string = GameGraphicsResourceUtil.getInstance()!.getName()!;
         
         
 
-delete(0, stringBuffer!.length())
-append(ROOT)
-append(DESTROY)
-append(string)
-append(sizeString)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(ROOT)
+stringBuffer!.append(DESTROY)
+stringBuffer!.append(string)
+stringBuffer!.append(sizeString)
 this.RESOURCE_DESTROY= stringBuffer!.toString()
-delete(0, stringBuffer!.length())
-append(ICON)
-append(ROOT)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(ICON)
+stringBuffer!.append(ROOT)
 this.RESOURCE_ICON_ANIMATION= stringBuffer!.toString()
-delete(0, stringBuffer!.length())
-append(ROOT)
-append(ICON)
-append(string)
-append(ICON_SIZE)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(ROOT)
+stringBuffer!.append(ICON)
+stringBuffer!.append(string)
+stringBuffer!.append(ICON_SIZE)
 this.RESOURCE_ICON= stringBuffer!.toString()
-delete(0, stringBuffer!.length())
-append(ROOT)
-append(ICON_BUILD)
-append(string)
-append(ICON_SIZE)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(ROOT)
+stringBuffer!.append(ICON_BUILD)
+stringBuffer!.append(string)
+stringBuffer!.append(ICON_SIZE)
 this.RESOURCE_ICON_BUILD= stringBuffer!.toString()
 }
 

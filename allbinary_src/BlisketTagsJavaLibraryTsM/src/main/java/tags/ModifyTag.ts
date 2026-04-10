@@ -63,18 +63,17 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public insert(): string{
 
@@ -110,11 +109,10 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "insert()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insert()", e)
 
                                     }
                                 
@@ -129,7 +127,7 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public delete(): string{
 
@@ -165,11 +163,10 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "delete()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e)
 
                                     }
                                 
@@ -184,7 +181,7 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public update(): string{
 
@@ -220,11 +217,10 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
 
                                     }
                                 
@@ -239,13 +235,12 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
@@ -259,16 +254,15 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
         
         
 
-append("Command: ")
-append(this.getCommand())
-append(" Request URI: ")
-append(request.getRequestURI())
-put(stringBuffer!.toString(), this, "doStartTag()")
+stringBuffer!.append("Command: ")
+stringBuffer!.append(this.getCommand())
+stringBuffer!.append(" Request URI: ")
+stringBuffer!.append(request.getRequestURI())
+logUtil!.put(stringBuffer!.toString(), this, "doStartTag()")
 
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
@@ -276,20 +270,18 @@ put(stringBuffer!.toString(), this, "doStartTag()")
                                     }
                                 
 
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
-                                    this.setHelper()
+                                    this.this.setHelper()
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
 
 
-    
                         if(this.getCommand()!.compareTo(commonStrings!.INSERT) == 0)
                         
                                     {
@@ -299,11 +291,10 @@ put(stringBuffer!.toString(), this, "doStartTag()")
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    print(output +"<br />")
+                                    this.pageContext!.getOut()!.print(output +"<br />")
 
                                     }
                                 
@@ -311,7 +302,6 @@ put(stringBuffer!.toString(), this, "doStartTag()")
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(commonStrings!.DELETE) == 0)
                         
                                     {
@@ -321,11 +311,10 @@ put(stringBuffer!.toString(), this, "doStartTag()")
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    print(output +"<br />")
+                                    this.pageContext!.getOut()!.print(output +"<br />")
 
                                     }
                                 
@@ -333,7 +322,6 @@ put(stringBuffer!.toString(), this, "doStartTag()")
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(commonStrings!.UPDATE) == 0)
                         
                                     {
@@ -343,11 +331,10 @@ put(stringBuffer!.toString(), this, "doStartTag()")
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    print(output +"<br />")
+                                    this.pageContext!.getOut()!.print(output +"<br />")
 
                                     }
                                 
@@ -365,7 +352,7 @@ put(stringBuffer!.toString(), this, "doStartTag()")
     
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -375,7 +362,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

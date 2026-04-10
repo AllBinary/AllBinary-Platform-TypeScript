@@ -67,7 +67,7 @@ this.touchButtonRecognizer= TouchButtonRecognizer()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processStartMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
     //var x = x
@@ -75,7 +75,6 @@ this.touchButtonRecognizer= TouchButtonRecognizer()
     //var deviceId = deviceId
     //var modifiers = modifiers
 
-    
                         if(this.touchButtonRecognizer!.pressTouchButtonInput(x, y, deviceId))
                         
                                     {
@@ -84,7 +83,6 @@ this.touchButtonRecognizer= TouchButtonRecognizer()
                                     }
                                 
 
-    
                         if(!touchButtonProcessing)
                         
                                     {
@@ -93,16 +91,16 @@ this.touchButtonRecognizer= TouchButtonRecognizer()
         
         
 
-setX(x)
-setY(y)
-processPressedMotionEvent(point, deviceId, modifiers)
+point.setX(x)
+point.setY(y)
+this.motionGestureRecognizer!.processPressedMotionEvent(point, deviceId, modifiers)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processEndMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
     //var x = x
@@ -110,7 +108,6 @@ processPressedMotionEvent(point, deviceId, modifiers)
     //var deviceId = deviceId
     //var modifiers = modifiers
 
-    
                         if(this.touchButtonRecognizer!.releaseTouchButtonInput(x, y, deviceId))
                         
                                     {
@@ -118,7 +115,6 @@ processPressedMotionEvent(point, deviceId, modifiers)
                                     }
                                 
 
-    
                         if(!touchButtonProcessing)
                         
                                     {
@@ -127,14 +123,13 @@ processPressedMotionEvent(point, deviceId, modifiers)
         
         
 
-setX(x)
-setY(y)
-processReleasedMotionEvent(point, deviceId, modifiers)
+point.setX(x)
+point.setY(y)
+this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifiers)
 
                                     }
                                 
 
-    
                         if(touchButtonProcessing)
                         
                                     {
@@ -145,7 +140,7 @@ processReleasedMotionEvent(point, deviceId, modifiers)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processDraggedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
     //var x = x
@@ -153,16 +148,14 @@ processReleasedMotionEvent(point, deviceId, modifiers)
     //var deviceId = deviceId
     //var modifiers = modifiers
 
-    
                         if(touchButtonProcessing)
                         
                                     {
-                                    pressTouchButtonInput(x, y, deviceId)
+                                    this.touchButtonRecognizer!.pressTouchButtonInput(x, y, deviceId)
 
                                     }
                                 
 
-    
                         if(!touchButtonProcessing)
                         
                                     {
@@ -171,9 +164,9 @@ processReleasedMotionEvent(point, deviceId, modifiers)
         
         
 
-setX(x)
-setY(y)
-processDraggedMotionEvent(point, deviceId, modifiers)
+point.setX(x)
+point.setY(y)
+this.motionGestureRecognizer!.processDraggedMotionEvent(point, deviceId, modifiers)
 
                                     }
                                 
@@ -184,7 +177,7 @@ processDraggedMotionEvent(point, deviceId, modifiers)
 
     private lastY: number= 0
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processMovedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
     //var x = x
@@ -192,7 +185,6 @@ processDraggedMotionEvent(point, deviceId, modifiers)
     //var deviceId = deviceId
     //var modifiers = modifiers
 
-    
                         if(x != lastX || y != lastY)
                         
                                     {
@@ -203,9 +195,9 @@ this.lastY= y
         
         
 
-setX(x)
-setY(y)
-processMovedMotionEvent(point, deviceId, modifiers)
+point.setX(x)
+point.setY(y)
+this.motionGestureRecognizer!.processMovedMotionEvent(point, deviceId, modifiers)
 
                                     }
                                 

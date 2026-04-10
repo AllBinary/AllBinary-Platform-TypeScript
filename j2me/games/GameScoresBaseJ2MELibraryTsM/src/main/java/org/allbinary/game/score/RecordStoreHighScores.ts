@@ -106,7 +106,6 @@ export class RecordStoreHighScores extends HighScores {
         
 
 
-    
                         if(highScoresCanBeNull == 
                                     null
                                 )
@@ -117,7 +116,7 @@ export class RecordStoreHighScores extends HighScores {
         
         
 
-put(highScores!.getName(), highScores)
+hashTable!.put(highScores!.getName(), highScores)
 
 
 
@@ -179,7 +178,7 @@ private constructor (abeClientInformation: AbeClientInformationInterface, gameIn
 this.abeClientInformation= abeClientInformation
 this.gameInfo= gameInfo
 this.recordComparatorInterface= recordComparatorInterface
-this.load()
+this.this.load()
 }
 
 
@@ -205,15 +204,14 @@ this.load()
 
 
         try {
-            put(StringMaker().
+            logUtil!.put(StringMaker().
                             append("Adding HighScore: ")!.appendlong(newHighScore!.getScore())!.toString(), this, commonStrings!.ADD)
 
-    
                         if(this.isTooManyHighScores())
                         
                                     {
-                                    put("Removing Lowest Score", this, commonStrings!.ADD)
-this.removeLowestHighScore()
+                                    logUtil!.put("Removing Lowest Score", this, commonStrings!.ADD)
+this.this.removeLowestHighScore()
 
                                     }
                                 
@@ -228,38 +226,37 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
         
         
 
-this.load()
+this.this.load()
 } catch(e: RecordStoreException)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
 }
  catch(e: IOException)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
 }
  catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
 }
 
          finally {
             
         try {
             
-    
                         if(recordStore != 
                                     null
                                 )
                         
                                     {
-                                    put("Closing RecordStore", this, commonStrings!.ADD)
-closeRecordStore()
+                                    PreLogUtil.put("Closing RecordStore", this, commonStrings!.ADD)
+recordStore!.closeRecordStore()
 
                                     }
                                 
 } catch(e: RecordStoreException)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
 }
 
 
@@ -311,7 +308,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
 
 recordAsBytes= recordStore!.getRecord(id)
 
-    
                         if(recordAsBytes != 
                                     null
                                 )
@@ -335,7 +331,6 @@ inputStream= DataInputStream(byteArrayInputStream)
         
 
 
-    
                         if(this.recordComparatorInterface!.compare(nextCurrentHighScore!.getAsBytes(), bestHighScore!.getAsBytes()) == RecordComparator.FOLLOWS)
                         
                                     {
@@ -349,43 +344,41 @@ inputStream= DataInputStream(byteArrayInputStream)
 }
 
 
-    
                         if(bestHighScore!.getId() !=  -1)
                         
                                     {
-                                    put(StringMaker().
+                                    logUtil!.put(StringMaker().
                             append("Removing Lowest HighScore: ")!.appendlong(bestHighScore!.getScore())!.toString(), this, commonStrings!.LOAD)
-deleteRecord(bestHighScore!.getId())
+recordStore!.deleteRecord(bestHighScore!.getId())
 
                                     }
                                 
 } catch(e: RecordStoreException)
             {
-put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e)
 }
  catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e)
 }
 
          finally {
             
         try {
             
-    
                         if(recordStore != 
                                     null
                                 )
                         
                                     {
-                                    put("Closing RecordStore", this, "removeLowestHighScore")
-closeRecordStore()
+                                    PreLogUtil.put("Closing RecordStore", this, "removeLowestHighScore")
+recordStore!.closeRecordStore()
 
                                     }
                                 
 } catch(e: RecordStoreException)
             {
-put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e)
 }
 
 
@@ -403,7 +396,7 @@ put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e)
 
         try {
             recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)
-this.setList(BasicArrayList())
+this.this.setList(BasicArrayList())
 
     var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;
         
@@ -428,7 +421,6 @@ this.setList(BasicArrayList())
 
 recordAsBytes= recordStore!.getRecord(id)
 
-    
                         if(recordAsBytes != 
                                     null
                                 )
@@ -484,7 +476,6 @@ index < size; index++)
         
 
 
-    
                         if(this.recordComparatorInterface!.compare(newHighScore!.getAsBytes(), highScore!.getAsBytes()) == RecordComparator.PRECEDES)
                         
                                     {
@@ -497,10 +488,10 @@ break;
                                 
 }
 
-add(lastIndex, newHighScore)
+list.add(lastIndex, newHighScore)
 } catch(e: EOFException)
             {
-put("EOF", this, commonStrings!.LOAD, e)
+logUtil!.put("EOF", this, commonStrings!.LOAD, e)
 
 
 
@@ -514,39 +505,38 @@ put("EOF", this, commonStrings!.LOAD, e)
 
 } catch(e: RecordStoreNotFoundException)
             {
-put("No High Scores", this, commonStrings!.LOAD, e)
+logUtil!.put("No High Scores", this, commonStrings!.LOAD, e)
 }
  catch(e: RecordStoreException)
             {
-put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e)
+logUtil!.put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e)
 }
  catch(e: IOException)
             {
-put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e)
+logUtil!.put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e)
 }
  catch(e: Exception)
             {
-put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e)
+logUtil!.put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e)
 }
 
          finally {
             
         try {
             
-    
                         if(recordStore != 
                                     null
                                 )
                         
                                     {
-                                    put("Closing RecordStore", this, commonStrings!.LOAD)
-closeRecordStore()
+                                    PreLogUtil.put("Closing RecordStore", this, commonStrings!.LOAD)
+recordStore!.closeRecordStore()
 
                                     }
                                 
 } catch(e: RecordStoreException)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e)
 }
 
 
@@ -557,7 +547,6 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e)
 
     isTooManyHighScores(): boolean{
 
-    
                         if(this.getList() != 
                                     null
                                  && this.getList()!.size() < MAXHIGHSCORES)
@@ -573,7 +562,7 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e)
                                     }
                                 
                         else {
-                            put(StringMaker().
+                            logUtil!.put(StringMaker().
                             append("HighScores RecordStore Max Reached: ")!.appendint(this.MAXHIGHSCORES)!.toString(), this, "isTooManyHighScores")
 
 
@@ -587,7 +576,7 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isBestScore(newHighScore: HighScore): boolean{
@@ -595,11 +584,10 @@ var newHighScore = newHighScore
 
         try {
             
-    
                         if(!this.isTooManyHighScores())
                         
                                     {
-                                    put("Slot Available for a High Score", this, "isBestScore")
+                                    logUtil!.put("Slot Available for a High Score", this, "isBestScore")
 
 
 
@@ -636,11 +624,10 @@ index < size; index++)
         
 
 
-    
                         if(recordComparatorInterface!.compare(newHighScore!.getAsBytes(), highScore!.getAsBytes()) == RecordComparator.FOLLOWS)
                         
                                     {
-                                    put("Obtained a High Score", this, "isBestScore")
+                                    logUtil!.put("Obtained a High Score", this, "isBestScore")
 
 
 
@@ -655,7 +642,7 @@ index < size; index++)
 
                         }
                             
-put("Not a High Score", this, "isBestScore")
+logUtil!.put("Not a High Score", this, "isBestScore")
 
 
 
@@ -664,7 +651,7 @@ put("Not a High Score", this, "isBestScore")
     
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
 
 
 
@@ -680,7 +667,7 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
         
         
 
-append(super.toString())
+stringBuffer!.append(super.toString())
 
     var list: BasicArrayList = this.getList()!;
         
@@ -706,8 +693,8 @@ index < size; index++)
         
         
 
-append(highScore!.getScoreString())
-append(CommonSeps.getInstance()!.COMMA_SEP)
+stringBuffer!.append(highScore!.getScoreString())
+stringBuffer!.append(CommonSeps.getInstance()!.COMMA_SEP)
 }
 
 

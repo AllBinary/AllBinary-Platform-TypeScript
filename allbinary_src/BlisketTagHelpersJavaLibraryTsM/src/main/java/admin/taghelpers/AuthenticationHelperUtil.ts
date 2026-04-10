@@ -69,17 +69,16 @@ export class AuthenticationHelperUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isAuthorized(authenticationHelper: AuthenticationHelper, filePath: string): boolean{
 var authenticationHelper = authenticationHelper
 var filePath = filePath
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put(CommonLabels.getInstance()!.START +filePath, this, "isAuthorized()")
+                                    logUtil!.put(CommonLabels.getInstance()!.START +filePath, this, "isAuthorized()")
 
                                     }
                                 
@@ -114,16 +113,14 @@ var filePath = filePath
         
 
 
-    
                         if(userRoles!.contains(basicUserRole))
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Authorized", this, "isAuthorized()")
+                                    logUtil!.put("Authorized", this, "isAuthorized()")
 
                                     }
                                 
@@ -138,11 +135,10 @@ var filePath = filePath
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Not Authorized: " +basicUserRole!.toString(), this, "isAuthorized()")
+                                    logUtil!.put("Not Authorized: " +basicUserRole!.toString(), this, "isAuthorized()")
 
                                     }
                                 

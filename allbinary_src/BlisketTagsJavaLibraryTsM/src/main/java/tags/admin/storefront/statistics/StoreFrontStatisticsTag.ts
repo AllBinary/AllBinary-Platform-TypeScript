@@ -39,25 +39,23 @@ public constructor (){
             }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.setName("Validation StoreFrontStatistics View")
-this.setObjectFile("views.admin.storefront.statistics.ValidationStoreFrontStatisticsView")
+                                    this.this.setName("Validation StoreFrontStatistics View")
+this.this.setObjectFile("views.admin.storefront.statistics.ValidationStoreFrontStatisticsView")
 
                                     }
                                 
@@ -65,7 +63,7 @@ this.setObjectFile("views.admin.storefront.statistics.ValidationStoreFrontStatis
                             
 
 
-                            throw Exception("No Such View Command: " +this.getCommand())
+                            throw Error("No Such View Command: " +this.getCommand())
 
                         }
                             
@@ -81,10 +79,10 @@ this.setObjectFile("views.admin.storefront.statistics.ValidationStoreFrontStatis
 
 
 
-                            throw Exception("Command Null")
+                            throw Error("Command Null")
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -94,7 +92,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

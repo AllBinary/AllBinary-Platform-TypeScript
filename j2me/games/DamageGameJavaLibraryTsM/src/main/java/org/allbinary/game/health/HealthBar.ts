@@ -47,8 +47,8 @@ var direction = direction
 this.allbinaryLayer= layerInterface
 this.animationInterface= animationInterface
 this.healthInterface= healthInterface
-addListener(this)
-this.onHealthChange()
+this.healthInterface!.addListener(this)
+this.this.onHealthChange()
 }
 
 public constructor (layerInterface: AllBinaryLayer, healthInterface: Health, location: number, direction: number)                        
@@ -68,19 +68,19 @@ var direction = direction
 
 
     public onHealthChange(){
-onHealthChange(this.healthInterface!.getHealth() *this.allbinaryLayer!.getWidth() /this.healthInterface!.getMaxHealth())
+this.animationInterface!.onHealthChange(this.healthInterface!.getHealth() *this.allbinaryLayer!.getWidth() /this.healthInterface!.getMaxHealth())
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics, 0, 0)
+this.animationInterface!.paint(graphics, 0, 0)
 }
 
 
     public paintThreed(graphics: Graphics){
 var graphics = graphics
-paintThreed(graphics, 0, 0, 0)
+this.animationInterface!.paintThreed(graphics, 0, 0, 0)
 }
 
 

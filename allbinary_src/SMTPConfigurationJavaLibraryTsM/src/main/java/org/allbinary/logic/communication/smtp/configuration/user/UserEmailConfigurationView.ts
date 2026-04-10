@@ -75,11 +75,10 @@ public constructor (node: Node){
             super();
             var node = node
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.CONSTRUCTOR, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -99,7 +98,7 @@ this.userEmailConfigurationInterface= UserEmailConfiguration() as UserEmailConfi
         
         
 
-setUserEmailEventsConfigurationInterface(userEmailEventsConfigurationView!.getUserEmailEventsConfigurationInterface())
+this.userEmailConfigurationInterface!.setUserEmailEventsConfigurationInterface(userEmailEventsConfigurationView!.getUserEmailEventsConfigurationInterface())
 }
 
 public constructor (userEmailConfigurationInterface: UserEmailConfigurationInterface){
@@ -120,7 +119,7 @@ this.userEmailConfigurationInterface= userEmailConfigurationInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -154,7 +153,7 @@ var document = document
         
         
 
-appendChild(userEmailEventsConfigurationView!.toXmlNode(document))
+node.appendChild(userEmailEventsConfigurationView!.toXmlNode(document))
 
 
 

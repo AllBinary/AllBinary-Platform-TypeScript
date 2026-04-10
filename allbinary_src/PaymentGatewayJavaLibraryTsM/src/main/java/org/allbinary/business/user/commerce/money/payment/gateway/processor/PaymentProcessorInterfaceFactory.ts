@@ -71,7 +71,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getInstance(transformInfoInterface: TransformInfoInterface): PaymentProcessorInterface{
@@ -89,7 +89,6 @@ var transformInfoInterface = transformInfoInterface
         
 
 
-    
                         if(!StringValidationUtil.getInstance()!.isEmpty(gatewayName))
                         
                                     {
@@ -115,11 +114,10 @@ var transformInfoInterface = transformInfoInterface
 
 
 
-                            throw Exception("Error Getting PaymentProcessorInterface")
+                            throw Error("Error Getting PaymentProcessorInterface")
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENTERROR))
                         
                                     {
@@ -128,7 +126,7 @@ var transformInfoInterface = transformInfoInterface
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 

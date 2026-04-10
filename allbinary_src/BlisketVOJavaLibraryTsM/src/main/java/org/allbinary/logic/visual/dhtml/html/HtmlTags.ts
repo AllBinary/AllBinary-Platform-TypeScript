@@ -48,7 +48,7 @@ var index = index
 
     public add(htmlTag: HtmlTag){
 var htmlTag = htmlTag
-add(htmlTag)
+htmlTagVector!.add(htmlTag)
 }
 
 

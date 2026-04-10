@@ -51,7 +51,7 @@ export class OrderProcessorUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(userName: string, order: Order): string{
 var userName = userName
@@ -66,10 +66,10 @@ var order = order
         
         
 
-setId(OrderIdGenerator().
+order.setId(OrderIdGenerator().
                             getNext())
-insert(userName, order)
-insert(userName, order)
+orderItems!.insert(userName, order)
+orderHistory!.insert(userName, order)
 
 
 

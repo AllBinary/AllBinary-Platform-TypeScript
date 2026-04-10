@@ -84,9 +84,9 @@ public constructor (name: string, remoteInfo: RemoteInfo, viewPosition: ViewPosi
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setCollidableInferface(CollidableAlwaysPickupNeverCollideBehaviorFactory.getInstance())
-this.setLayerWidth(10)
-this.setLayerHeight(10)
+this.this.setCollidableInferface(CollidableAlwaysPickupNeverCollideBehaviorFactory.getInstance())
+this.this.setLayerWidth(10)
+this.this.setLayerHeight(10)
 }
 
 public constructor (name: string, remoteInfo: RemoteInfo, total: number, pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition)                        
@@ -105,10 +105,10 @@ public constructor (name: string, remoteInfo: RemoteInfo, total: number, pickedU
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setCollidableInferface(CollidableAlwaysPickupNeverCollideBehaviorFactory.getInstance())
-this.setLayerWidth(10)
-this.setLayerHeight(10)
-this.init(pickedUpLayerInterfaceFactoryInterface, animationInterface)
+this.this.setCollidableInferface(CollidableAlwaysPickupNeverCollideBehaviorFactory.getInstance())
+this.this.setLayerWidth(10)
+this.this.setLayerHeight(10)
+this.this.init(pickedUpLayerInterfaceFactoryInterface, animationInterface)
 }
 
 public constructor (name: string, viewPosition: ViewPosition)                        
@@ -147,7 +147,7 @@ public constructor (name: string, total: number, pickedUpLayerInterfaceFactoryIn
     //var animationInterface = animationInterface
 this.pickedUpLayerInterfaceFactoryInterface= pickedUpLayerInterfaceFactoryInterface
 this.animationInterface= animationInterface
-this.setDestroyed(false)
+this.this.setDestroyed(false)
 }
 
 
@@ -155,7 +155,7 @@ this.setDestroyed(false)
 var x = x
 var y = y
 var z = z
-this.setPosition(x, y, z)
+this.this.setPosition(x, y, z)
 }
 
 
@@ -176,7 +176,7 @@ var graphics = graphics
         
         
 
-paint(graphics, viewX, viewY)
+this.animationInterface!.paint(graphics, viewX, viewY)
 }
 
 
@@ -197,7 +197,7 @@ var graphics = graphics
         
         
 
-paintThreed(graphics, viewX, viewY, 3)
+this.animationInterface!.paintThreed(graphics, viewX, viewY, 3)
 }
 
 
@@ -212,7 +212,7 @@ paintThreed(graphics, viewX, viewY, 3)
 
 
     public setPickedUp(){
-this.setDestroyed(true)
+this.this.setDestroyed(true)
 }
 
 
@@ -230,11 +230,10 @@ this.setDestroyed(true)
 var destroyed = destroyed
 this.destroyed= destroyed
 
-    
                         if(this.isDestroyed())
                         
                                     {
-                                    add(this)
+                                    DestroyedLayerProcessor.getInstance()!.add(this)
 
                                     }
                                 
@@ -258,7 +257,7 @@ var damageType = damageType
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public set(gl: GL){
 var gl = gl
@@ -267,7 +266,7 @@ var gl = gl
         
         
 
-set(gl)
+openGLSurfaceChangedInterface!.set(gl)
 }
 
 

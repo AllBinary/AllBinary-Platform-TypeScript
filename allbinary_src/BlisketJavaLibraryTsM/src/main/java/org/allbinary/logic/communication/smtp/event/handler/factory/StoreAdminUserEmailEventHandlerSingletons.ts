@@ -83,29 +83,27 @@ private constructor (){
 
             super();
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(userEmailEventNameData: UserEmailEventNameData, abeClientInformation: AbeClientInformationInterface, storeFrontInterface: StoreFrontInterface): UserEmailEventHandler{
 var userEmailEventNameData = userEmailEventNameData
     //var abeClientInformation = abeClientInformation
 var storeFrontInterface = storeFrontInterface
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.START, this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.GET_INSTANCE)
 
                                     }
                                 
@@ -115,18 +113,16 @@ var storeFrontInterface = storeFrontInterface
         
 
 
-    
                         if(userEmailEventHandler == 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put("Creating New Named UserEmailEventHandler", this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Creating New Named UserEmailEventHandler", this, commonStrings!.GET_INSTANCE)
 
                                     }
                                 
@@ -140,7 +136,7 @@ var storeFrontInterface = storeFrontInterface
         
         
 
-put(userEmailEventNameData, newUserEmailEventHandler)
+this.userEmailEventHandlerHashMap!.put(userEmailEventNameData, newUserEmailEventHandler)
 
 
 
@@ -152,11 +148,10 @@ put(userEmailEventNameData, newUserEmailEventHandler)
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put("Returning existing UserEmailEventHandler", this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Returning existing UserEmailEventHandler", this, commonStrings!.GET_INSTANCE)
 
                                     }
                                 

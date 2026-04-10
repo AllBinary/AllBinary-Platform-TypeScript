@@ -44,11 +44,10 @@ export class Advertisements
     public addPage(advertisementProcessorInterface: AdvertisementProcessorInterface){
 var advertisementProcessorInterface = advertisementProcessorInterface
 
-    
                         if(!this.pageList!.contains(advertisementProcessorInterface))
                         
                                     {
-                                    add(advertisementProcessorInterface)
+                                    this.pageList!.add(advertisementProcessorInterface)
 
                                     }
                                 
@@ -62,7 +61,6 @@ var advertisementProcessorInterface = advertisementProcessorInterface
         
 
 
-    
                         if(size > 0)
                         
                                     {
@@ -76,7 +74,7 @@ var advertisementProcessorInterface = advertisementProcessorInterface
         
         
 
-start()
+advertisementProcessorInterface!.start()
 
                                     }
                                 
@@ -89,7 +87,6 @@ start()
 
     public processRandomPage(){
 
-    
                         if(LockedUtil.getInstance()!.isLockedFeature())
                         
                                     {
@@ -99,7 +96,6 @@ start()
         
 
 
-    
                         if(size > 0)
                         
                                     {
@@ -113,7 +109,7 @@ start()
         
         
 
-process()
+advertisementProcessorInterface!.process()
 
                                     }
                                 
@@ -139,7 +135,7 @@ process()
         
         
 
-stop()
+advertisementProcessorInterface!.stop()
 }
 
 }
@@ -148,11 +144,10 @@ stop()
     public addBanner(advertisementProcessorInterface: AdvertisementProcessorInterface){
 var advertisementProcessorInterface = advertisementProcessorInterface
 
-    
                         if(!this.bannerList!.contains(advertisementProcessorInterface))
                         
                                     {
-                                    add(advertisementProcessorInterface)
+                                    this.bannerList!.add(advertisementProcessorInterface)
 
                                     }
                                 
@@ -175,7 +170,7 @@ var advertisementProcessorInterface = advertisementProcessorInterface
         
         
 
-start()
+advertisementProcessorInterface!.start()
 }
 
 }
@@ -197,7 +192,7 @@ start()
         
         
 
-stop()
+advertisementProcessorInterface!.stop()
 }
 
 }
@@ -220,8 +215,8 @@ var index = index
 
 
     public stopAll(){
-this.stopAllBanner()
-this.stopAllPage()
+this.this.stopAllBanner()
+this.this.stopAllPage()
 }
 
 

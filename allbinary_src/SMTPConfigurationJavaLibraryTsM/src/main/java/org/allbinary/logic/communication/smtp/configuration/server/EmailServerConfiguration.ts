@@ -50,7 +50,6 @@ public constructor (){
 
             super();
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -59,11 +58,11 @@ public constructor (){
         
         
 
-put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
-this.setSmtpServer(StringUtil.getInstance()!.EMPTY_STRING)
+this.this.setSmtpServer(StringUtil.getInstance()!.EMPTY_STRING)
 }
 
 public constructor (hashMap: HashMap<Any, Any>){
@@ -71,7 +70,6 @@ public constructor (hashMap: HashMap<Any, Any>){
             super();
             var hashMap = hashMap
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -80,14 +78,14 @@ public constructor (hashMap: HashMap<Any, Any>){
         
         
 
-put(commonStrings!.START, this, "EmailServerConfiguration(HashMap)")
+logUtil!.put(commonStrings!.START, this, "EmailServerConfiguration(HashMap)")
 
                                     }
                                 
-this.setAccountName(hashMap!.get(EmailServerConfigurationData.ACCOUNT) as String)
-this.setPassword(hashMap!.get(EmailServerConfigurationData.PASSWORD) as String)
-this.setSmtpServer(hashMap!.get(EmailServerConfigurationData.SERVER) as String)
-this.log()
+this.this.setAccountName(hashMap!.get(EmailServerConfigurationData.ACCOUNT) as String)
+this.this.setPassword(hashMap!.get(EmailServerConfigurationData.PASSWORD) as String)
+this.this.setSmtpServer(hashMap!.get(EmailServerConfigurationData.SERVER) as String)
+this.this.log()
 }
 
 public constructor (account: string, password: string, server: string){
@@ -97,7 +95,6 @@ public constructor (account: string, password: string, server: string){
 var password = password
 var server = server
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -106,14 +103,14 @@ var server = server
         
         
 
-put(commonStrings!.START, this, "EmailServerConfiguration(HashMap)")
+logUtil!.put(commonStrings!.START, this, "EmailServerConfiguration(HashMap)")
 
                                     }
                                 
-this.setAccountName(account)
-this.setPassword(password)
-this.setSmtpServer(server)
-this.log()
+this.this.setAccountName(account)
+this.this.setPassword(password)
+this.this.setSmtpServer(server)
+this.this.log()
 }
 
 
@@ -167,11 +164,10 @@ this.password= password
 
     public log(){
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put(this.toString(), this, "EmailServerConfiguration")
+                                    logUtil!.put(this.toString(), this, "EmailServerConfiguration")
 
                                     }
                                 

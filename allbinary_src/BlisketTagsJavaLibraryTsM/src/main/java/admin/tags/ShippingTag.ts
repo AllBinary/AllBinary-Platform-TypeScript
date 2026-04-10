@@ -76,7 +76,7 @@ this.storeName= value
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     setShippingType(): string{
 
@@ -125,11 +125,10 @@ this.storeName= value
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "setShippingType()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setShippingType()", e)
 
                                     }
                                 
@@ -144,26 +143,24 @@ this.storeName= value
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(command != 
                                     null
                                 )
                         
                                     {
                                     this.propertiesHashMap= HashMap<Any, Any>()
-put(StoreFrontData.getInstance()!.NAME, this.storeName)
+propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
 
-    
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.SETSHIPPINGTYPE) == 0)
                         
                                     {
-                                    this.setShippingType()
+                                    this.this.setShippingType()
 
                                     }
                                 
@@ -178,7 +175,7 @@ put(StoreFrontData.getInstance()!.NAME, this.storeName)
     
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -188,7 +185,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

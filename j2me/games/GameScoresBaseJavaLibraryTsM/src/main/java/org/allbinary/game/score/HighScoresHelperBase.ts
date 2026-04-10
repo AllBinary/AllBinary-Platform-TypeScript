@@ -45,7 +45,6 @@ export class HighScoresHelperBase
     public setHighScoresArray(highScoresArrayP: HighScores[]){
     //var highScoresArrayP = highScoresArrayP
 
-    
                         if(highScoresArrayP != 
                                     null
                                 )
@@ -56,7 +55,7 @@ export class HighScoresHelperBase
         
         
 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(commonStrings!.START)!.appendint(highScoresArrayP!.length)!.toString(), this, "setHighScoresArray")
 
                                     }
@@ -67,7 +66,7 @@ put(StringMaker().
         
         
 
-put(commonStrings!.START, this, "setHighScoresArray")
+logUtil!.put(commonStrings!.START, this, "setHighScoresArray")
 
                         }
                             

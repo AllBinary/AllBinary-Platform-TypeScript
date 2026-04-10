@@ -25,7 +25,7 @@ import { Processor } from "../../../../org/allbinary/canvas/Processor.js";
 export class GyroSensorUpdateProcessor extends Processor {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
 }

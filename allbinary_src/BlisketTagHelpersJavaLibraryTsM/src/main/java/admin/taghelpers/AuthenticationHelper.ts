@@ -113,20 +113,19 @@ public constructor (hashMap: HashMap<Any, Any>, httpServletRequest: HttpServletR
             var hashMap = hashMap
 var httpServletRequest = httpServletRequest
 this.weblisketSession= WeblisketSession(hashMap, httpServletRequest)
-this.getFormData()
+this.this.getFormData()
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
                                     {
-                                    put(this.outputSessionInfo(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.outputSessionInfo(), this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getFormData(){
 this.authenticated= this.weblisketSession!.getAuthentication()
@@ -137,12 +136,12 @@ this.timeout= this.weblisketSession!.getTimeout()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public invalidateSession(): Integer{
 
         try {
-            clear()
+            this.weblisketSession!.clear()
 
 
 
@@ -152,11 +151,10 @@ this.timeout= this.weblisketSession!.getTimeout()
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "invalidateSession()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "invalidateSession()", e)
 
                                     }
                                 
@@ -173,7 +171,6 @@ this.timeout= this.weblisketSession!.getTimeout()
 
     public isSessionOld(): Boolean{
 
-    
                         if(this.role != 
                                     null
                                 )
@@ -200,12 +197,10 @@ this.timeout= this.weblisketSession!.getTimeout()
         
 
 
-    
                         if(timeFirst > timeCreated)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
                                     {
@@ -214,13 +209,13 @@ this.timeout= this.weblisketSession!.getTimeout()
         
         
 
-append("Session Is Old - Timeout: ")
-appendlong(sessionTimout)
-append(" Eval: ")
-appendlong(timeFirst)
-append(" > ")
-appendlong(timeCreated)
-put(stringBuffer!.toString(), this, "isSessionOld()")
+stringBuffer!.append("Session Is Old - Timeout: ")
+stringBuffer!.appendlong(sessionTimout)
+stringBuffer!.append(" Eval: ")
+stringBuffer!.appendlong(timeFirst)
+stringBuffer!.append(" > ")
+stringBuffer!.appendlong(timeCreated)
+logUtil!.put(stringBuffer!.toString(), this, "isSessionOld()")
 
                                     }
                                 
@@ -238,11 +233,10 @@ put(stringBuffer!.toString(), this, "isSessionOld()")
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
                                     {
-                                    put("Role Is Not In Session", this, "isSessionOld()")
+                                    logUtil!.put("Role Is Not In Session", this, "isSessionOld()")
 
                                     }
                                 
@@ -260,7 +254,6 @@ put(stringBuffer!.toString(), this, "isSessionOld()")
 
     isRarelyUsedSession(): Boolean{
 
-    
                         if(this.role != 
                                     null
                                 )
@@ -292,7 +285,6 @@ put(stringBuffer!.toString(), this, "isSessionOld()")
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
                                     {
@@ -301,13 +293,13 @@ put(stringBuffer!.toString(), this, "isSessionOld()")
         
         
 
-append("Session Is Rarely Used - Timeout: ")
-appendlong(lastAccess)
-append(" Eval: ")
-appendlong(timeFirst)
-append(" > ")
-appendlong(inactivityAllowed)
-put(stringBuffer!.toString(), this, "isRarelyUsedSession()")
+stringBuffer!.append("Session Is Rarely Used - Timeout: ")
+stringBuffer!.appendlong(lastAccess)
+stringBuffer!.append(" Eval: ")
+stringBuffer!.appendlong(timeFirst)
+stringBuffer!.append(" > ")
+stringBuffer!.appendlong(inactivityAllowed)
+logUtil!.put(stringBuffer!.toString(), this, "isRarelyUsedSession()")
 
                                     }
                                 
@@ -316,11 +308,10 @@ put(stringBuffer!.toString(), this, "isRarelyUsedSession()")
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
                                     {
-                                    put("Role Is Not In Session", this, "isRarelyUsedSession()")
+                                    logUtil!.put("Role Is Not In Session", this, "isRarelyUsedSession()")
 
                                     }
                                 
@@ -344,7 +335,7 @@ put(stringBuffer!.toString(), this, "isRarelyUsedSession()")
         
         
 
-append("Trying New login<p/>")
+stringBuffer!.append("Trying New login<p/>")
 
 
 
@@ -359,11 +350,10 @@ append("Trying New login<p/>")
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "validRole()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "validRole()", e)
 
                                     }
                                 
@@ -381,14 +371,14 @@ append("Trying New login<p/>")
     public invalidRole(): string{
 
         try {
-            setAuthenticated(false)
+            this.weblisketSession!.setAuthenticated(false)
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
 
-append("Sorry your username and password is invalid on this page. ")
-append("Trying New login<p/>")
+stringBuffer!.append("Sorry your username and password is invalid on this page. ")
+stringBuffer!.append("Trying New login<p/>")
 
 
 
@@ -403,11 +393,10 @@ append("Trying New login<p/>")
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "invalidRole()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "invalidRole()", e)
 
                                     }
                                 
@@ -422,11 +411,10 @@ append("Trying New login<p/>")
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isAuthenticated(): boolean{
 
-    
                         if(BooleanUtil.getInstance()!.getFromString(authenticated))
                         
                                     {
@@ -457,19 +445,16 @@ var roles = roles
 
         try {
             
-    
                         if(this.role != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.isAuthenticated())
                         
                                     {
                                     
-    
                         if(sessionUserName != 
                                     null
                                 )
@@ -507,12 +492,10 @@ index < size; index++)
         
 
 
-    
                         if(basicUserRole!.equals(mustBeOfRole))
                         
                                     {
                                     
-    
                         if(basicUserRole!.equals(UserRoleFactory.getInstance()!.CUSTOMER))
                         
                                     {
@@ -527,7 +510,6 @@ index < size; index++)
         
 
 
-    
                         if(!userInterface!.isSessionValid())
                         
                                     {
@@ -571,11 +553,10 @@ index < size; index++)
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
                                     {
-                                    put("Role Is Not In Session", this, "isAuthenticationSessionValid()")
+                                    logUtil!.put("Role Is Not In Session", this, "isAuthenticationSessionValid()")
 
                                     }
                                 
@@ -591,11 +572,10 @@ index < size; index++)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "isAuthenticatedSessionValid()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isAuthenticatedSessionValid()", e)
 
                                     }
                                 
@@ -612,18 +592,17 @@ index < size; index++)
 
     public nextAttempt(){
 
-    
                         if(attemptsInteger != 
                                     null
                                  && attemptsInteger!.toInt() > 0)
                         
                                     {
-                                    setAttempts(Integer(attemptsInteger!.toInt() +1))
+                                    this.weblisketSession!.setAttempts(Integer(attemptsInteger!.toInt() +1))
 
                                     }
                                 
                         else {
-                            setAttempts(Integer(1))
+                            this.weblisketSession!.setAttempts(Integer(1))
 
                         }
                             
@@ -636,16 +615,14 @@ var password = password
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
-                                    put("Starting: " +userName, this, "processIfNewLogin()")
+                                    logUtil!.put("Starting: " +userName, this, "processIfNewLogin()")
 
                                     }
                                 
 
-    
                         if(userName != 
                                     null
                                  && userName!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0 && password != 
@@ -663,7 +640,6 @@ var password = password
 
 login= userEntityInterface!.login(userName, password)
 
-    
                         if(login.compareTo(GLOBALS2.LOGINSUCCESS) == 0)
                         
                                     {
@@ -673,11 +649,10 @@ login= userEntityInterface!.login(userName, password)
         
 
 
-    
                         if(userInterface!.isSessionValid())
                         
                                     {
-                                    setAttempts(Integer(0))
+                                    this.weblisketSession!.setAttempts(Integer(0))
 
 
 
@@ -690,7 +665,7 @@ login= userEntityInterface!.login(userName, password)
 
                                     }
                                 
-this.nextAttempt()
+this.this.nextAttempt()
 
 
 
@@ -700,7 +675,7 @@ this.nextAttempt()
 
                                     }
                                 
-this.nextAttempt()
+this.this.nextAttempt()
 
 
 
@@ -710,11 +685,10 @@ this.nextAttempt()
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "processIfNewLogin()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "processIfNewLogin()", e)
 
                                     }
                                 
@@ -733,11 +707,10 @@ this.nextAttempt()
 
         try {
             
-    
                         if(BooleanUtil.getInstance()!.getFromString(timeout))
                         
                                     {
-                                    this.invalidateSession()
+                                    this.this.invalidateSession()
 
 
 
@@ -750,7 +723,7 @@ this.nextAttempt()
 
 
                             {
-                            setTimeout(BooleanFactory.getInstance()!.TRUE_STRING)
+                            this.weblisketSession!.setTimeout(BooleanFactory.getInstance()!.TRUE_STRING)
 
 
 
@@ -763,11 +736,10 @@ this.nextAttempt()
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "processInvalidation()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "processInvalidation()", e)
 
                                     }
                                 
@@ -805,35 +777,34 @@ this.nextAttempt()
         
         
 
-append("Time Since Last Access: " +(calendar.getTimeInMillis() -lastAccess) +"<br/>\n")
+stringBuffer!.append("Time Since Last Access: " +(calendar.getTimeInMillis() -lastAccess) +"<br/>\n")
 
-    
                         if(this.role != 
                                     null
                                 )
                         
                                     {
-                                    append("Auth: ")
-append(this.authenticated)
-append(" UserName: ")
-append(this.sessionUserName)
-append(" Role: ")
-append(this.role.toString())
-append("<br/>\n")
-append("Time Left: ")
-appendlong((role.getSessionTimeout() -(calendar.getTimeInMillis() -timeCreated)))
-append("<br/>\n")
-append("Inactivity Time Allowed: ")
-appendlong(role.getSessionTimeout())
-append("<br/>\n")
-append("Inactivity Time Allowed: ")
-appendlong(role.getSessionInactivityTimeout())
-append("<br/>\n")
+                                    stringBuffer!.append("Auth: ")
+stringBuffer!.append(this.authenticated)
+stringBuffer!.append(" UserName: ")
+stringBuffer!.append(this.sessionUserName)
+stringBuffer!.append(" Role: ")
+stringBuffer!.append(this.role.toString())
+stringBuffer!.append("<br/>\n")
+stringBuffer!.append("Time Left: ")
+stringBuffer!.appendlong((role.getSessionTimeout() -(calendar.getTimeInMillis() -timeCreated)))
+stringBuffer!.append("<br/>\n")
+stringBuffer!.append("Inactivity Time Allowed: ")
+stringBuffer!.appendlong(role.getSessionTimeout())
+stringBuffer!.append("<br/>\n")
+stringBuffer!.append("Inactivity Time Allowed: ")
+stringBuffer!.appendlong(role.getSessionInactivityTimeout())
+stringBuffer!.append("<br/>\n")
 
                                     }
                                 
                         else {
-                            append("Role Is Not Set<br/>\n")
+                            stringBuffer!.append("Role Is Not Set<br/>\n")
 
                         }
                             

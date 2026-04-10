@@ -40,13 +40,13 @@ public constructor (collidableDestroyableDamageableLayer: CollidableDestroyableD
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent, yAnalogValue: number){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
 var yAnalogValue = yAnalogValue
-rightTrigger(allbinaryLayerManager, gameKeyEvent, yAnalogValue)
+this.collidableDestroyableDamageableLayer!.rightTrigger(allbinaryLayerManager, gameKeyEvent, yAnalogValue)
 }
 
 

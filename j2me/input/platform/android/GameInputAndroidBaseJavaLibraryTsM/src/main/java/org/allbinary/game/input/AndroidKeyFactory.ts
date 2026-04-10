@@ -500,14 +500,13 @@ export class AndroidKeyFactory extends ActivityFractureUtil {
         
         
 
-put("Start/End", this, commonStrings!.INIT)
+logUtil!.put("Start/End", this, commonStrings!.INIT)
 }
 
 
     public isSubmission(input: Input): boolean{
 var input = input
 
-    
                         if(input == ENTER)
                         
                                     {
@@ -521,7 +520,6 @@ var input = input
                                     }
                                 
                              else 
-    
                         if(input == DPAD_CENTER)
                         
                                     {
@@ -557,7 +555,6 @@ var input = input
     public isBackSpace(input: Input): boolean{
 var input = input
 
-    
                         if(input == DEL)
                         
                                     {
@@ -582,7 +579,6 @@ var input = input
     public isLeft(input: Input): boolean{
 var input = input
 
-    
                         if(input == DPAD_LEFT)
                         
                                     {
@@ -607,7 +603,6 @@ var input = input
     public isRight(input: Input): boolean{
 var input = input
 
-    
                         if(input == DPAD_RIGHT)
                         
                                     {
@@ -632,7 +627,6 @@ var input = input
     public isUp(input: Input): boolean{
 var input = input
 
-    
                         if(input == DPAD_UP)
                         
                                     {
@@ -657,7 +651,6 @@ var input = input
     public isDown(input: Input): boolean{
 var input = input
 
-    
                         if(input == DPAD_DOWN)
                         
                                     {
@@ -682,7 +675,6 @@ var input = input
     public isEnter(input: Input): boolean{
 var input = input
 
-    
                         if(input == DPAD_CENTER)
                         
                                     {
@@ -696,7 +688,6 @@ var input = input
                                     }
                                 
                              else 
-    
                         if(input == ENTER)
                         
                                     {
@@ -710,7 +701,6 @@ var input = input
                                     }
                                 
                              else 
-    
                         if(input == CALL)
                         
                                     {

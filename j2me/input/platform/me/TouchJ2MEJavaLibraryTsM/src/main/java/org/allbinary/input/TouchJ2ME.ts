@@ -61,7 +61,7 @@ public constructor (){
         
         
 
-addListener(GameMotionGestureListener(MotionGestureReceiveInterfaceFactory.getInstance()))
+motionGesturesHandler!.addListener(GameMotionGestureListener(MotionGestureReceiveInterfaceFactory.getInstance()))
 }
 
 
@@ -70,7 +70,7 @@ var x = x
 var y = y
 
         try {
-            processDraggedMotionEvent(x, y, DEVICE_ID, 0)
+            motionRecognizer!.processDraggedMotionEvent(x, y, DEVICE_ID, 0)
 } catch(e: Exception)
             {
 
@@ -78,7 +78,7 @@ var y = y
         
         
 
-put(commonStrings!.EXCEPTION, this, "pointerDragged", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "pointerDragged", e)
 }
 
 }
@@ -89,7 +89,7 @@ var x = x
 var y = y
 
         try {
-            processStartMotionEvent(x, y, DEVICE_ID, 0)
+            motionRecognizer!.processStartMotionEvent(x, y, DEVICE_ID, 0)
 } catch(e: Exception)
             {
 
@@ -97,7 +97,7 @@ var y = y
         
         
 
-put(commonStrings!.EXCEPTION, this, "pointerPressed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "pointerPressed", e)
 }
 
 }
@@ -108,7 +108,7 @@ var x = x
 var y = y
 
         try {
-            processEndMotionEvent(x, y, DEVICE_ID, 0)
+            motionRecognizer!.processEndMotionEvent(x, y, DEVICE_ID, 0)
 } catch(e: Exception)
             {
 
@@ -116,7 +116,7 @@ var y = y
         
         
 
-put(commonStrings!.EXCEPTION, this, "pointerReleased", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "pointerReleased", e)
 }
 
 }

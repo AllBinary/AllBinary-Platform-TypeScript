@@ -38,7 +38,7 @@ export class BuildingScrollTouchButtonsBuilder extends BaseTouchInput {
     public getList(): BasicArrayList{
 
         try {
-            put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
     var list: BasicArrayList = new BasicArrayList();
         
@@ -69,8 +69,8 @@ export class BuildingScrollTouchButtonsBuilder extends BaseTouchInput {
         
         
 
-add(LEFT)
-add(RIGHT)
+list.add(LEFT)
+list.add(RIGHT)
 
 
 
@@ -79,7 +79,7 @@ add(RIGHT)
     
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 
 
 

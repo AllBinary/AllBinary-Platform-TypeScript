@@ -50,7 +50,6 @@ total++
     public sqrt(value: number): number{
     //var value = value
 
-    
                         if(value <= 1)
                         
                                     {

@@ -67,7 +67,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean): Image{
     //var imageCache = imageCache
@@ -86,7 +86,7 @@ private constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
     //var imageCache = imageCache
@@ -116,7 +116,7 @@ private constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage(imageCache: ImageCache, originalImage: Image, scaleX: number, scaleY: number, cached: boolean): Image{
     //var imageCache = imageCache
@@ -133,7 +133,7 @@ private constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage(originalImage: Image, scaleX: number, scaleY: number): Image{
     //var originalImage = originalImage
@@ -145,7 +145,6 @@ private constructor (){
         
 
 
-    
                         if(image.isMutable())
                         
                                     {
@@ -157,7 +156,6 @@ private constructor (){
         
 
 
-    
                         if(originalImage!.isMutable())
                         
                                     {
@@ -195,7 +193,7 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image
         
         
 
-drawImage(originalPlayNImage, 0, 0, image.getWidth(), image.getHeight(), 0, 0, originalImage!.getWidth(), originalImage!.getHeight())
+canvasSurface!.drawImage(originalPlayNImage, 0, 0, image.getWidth(), image.getHeight(), 0, 0, originalImage!.getWidth(), originalImage!.getHeight())
 
 
 
@@ -209,7 +207,7 @@ drawImage(originalPlayNImage, 0, 0, image.getWidth(), image.getHeight(), 0, 0, o
                             
 
 
-                            throw Exception("Not Mutable")
+                            throw Error("Not Mutable")
 
                         }
                             

@@ -55,7 +55,7 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(httpServletRequest: HttpServletRequest): PaymentGatewayInterface{
 var httpServletRequest = httpServletRequest
@@ -67,11 +67,10 @@ var httpServletRequest = httpServletRequest
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    put("Getting", this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Getting", this, commonStrings!.GET_INSTANCE)
 
                                     }
                                 
@@ -85,11 +84,10 @@ var httpServletRequest = httpServletRequest
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENTERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getInstance(HttpServletRequest)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HttpServletRequest)", e)
 
                                     }
                                 
@@ -102,7 +100,7 @@ var httpServletRequest = httpServletRequest
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(paymentType: BasicPaymentType): PaymentGatewayInterface{
 var paymentType = paymentType
@@ -111,7 +109,7 @@ var paymentType = paymentType
         
         
 
-put(PaymentGatewayData.NAME.toString(), paymentType!.getName())
+hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName())
 
 
 
@@ -121,7 +119,7 @@ put(PaymentGatewayData.NAME.toString(), paymentType!.getName())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(hashMap: HashMap<Any, Any>): PaymentGatewayInterface{
 var hashMap = hashMap
@@ -143,11 +141,10 @@ var hashMap = hashMap
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    put("Getting PaymentGatewayInterface for PaymentType: " +paymentType!.getName() +" with: " +hashMap, this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Getting PaymentGatewayInterface for PaymentType: " +paymentType!.getName() +" with: " +hashMap, this, commonStrings!.GET_INSTANCE)
 
                                     }
                                 
@@ -165,11 +162,10 @@ var hashMap = hashMap
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENTERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 

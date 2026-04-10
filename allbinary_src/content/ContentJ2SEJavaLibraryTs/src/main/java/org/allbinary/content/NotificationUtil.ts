@@ -77,8 +77,8 @@ var message = message
         
         
 
-setLatestEventInfo(context, command.getLabel(), message, pendingIntent)
-notify(command.hashCode(), notification)
+notification.setLatestEventInfo(context, command.getLabel(), message, pendingIntent)
+notificationManager!.notify(command.hashCode(), notification)
 }
 
 

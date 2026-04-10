@@ -52,7 +52,7 @@ this.paymentProcessorComponent= PaymentProcessorComponent(transformInfoInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(): string{
 

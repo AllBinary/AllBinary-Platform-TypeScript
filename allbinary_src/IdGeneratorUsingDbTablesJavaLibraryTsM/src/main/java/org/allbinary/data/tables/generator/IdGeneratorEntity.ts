@@ -72,11 +72,11 @@ public constructor ()
                     
 this.tableData= StringBuilder().
                             append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(VALUE)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(NAME)!.append(this.sqlStrings!.END)!.toString()
-setTableName(tableName)
+super.setTableName(tableName)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(name: string): Long{
 var name = name
@@ -85,14 +85,13 @@ var name = name
         
         
 
-put(NAME, name)
+keysAndValues!.put(NAME, name)
 
     var hashMap: HashMap<Any, Any> = super.getRow(keysAndValues)!;
         
         
 
 
-    
                         if(
                                     (get as String).compareTo(name) != 0)
                         
@@ -100,7 +99,7 @@ put(NAME, name)
                                     
 
 
-                            throw Exception("results do not match")
+                            throw Error("results do not match")
 
                                     }
                                 
@@ -122,11 +121,11 @@ put(NAME, name)
 var values = values
 
         try {
-            insert(values)
-put(this.commonStrings!.SUCCESS, this, INSERT)
+            super.insert(values)
+logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT)
 } catch(e: Exception)
             {
-put(this.commonStrings!.FAILURE, this, INSERT, e)
+logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e)
 }
 
 }
@@ -136,11 +135,11 @@ put(this.commonStrings!.FAILURE, this, INSERT, e)
 var value = value
 
         try {
-            deleteWhere(NAME, value)
-put(this.commonStrings!.SUCCESS, this, commonStrings!.delete)
+            super.deleteWhere(NAME, value)
+logUtil!.put(this.commonStrings!.SUCCESS, this, commonStrings!.delete)
 } catch(e: Exception)
             {
-put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
+logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
 }
 
 }
@@ -154,15 +153,15 @@ var value = value
         
         
 
-put(NAME, name)
-put(VALUE, value.toString())
-this.update(map)
+map.put(NAME, name)
+map.put(VALUE, value.toString())
+this.this.update(map)
 }
 
 
     public update(hashMap: HashMap<Any, Any>){
 var hashMap = hashMap
-updateWhere(NAME, hashMap!.get(NAME as Object) as String, hashMap)
+super.updateWhere(NAME, hashMap!.get(NAME as Object) as String, hashMap)
 }
 
 

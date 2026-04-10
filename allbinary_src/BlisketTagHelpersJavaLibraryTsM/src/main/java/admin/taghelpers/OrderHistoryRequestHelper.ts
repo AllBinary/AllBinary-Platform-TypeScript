@@ -85,7 +85,7 @@ public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
             var hashMap = hashMap
 var pageContext = pageContext
 this.request= pageContext!.getRequest() as HttpServletRequest
-this.getFormData()
+this.this.getFormData()
 }
 
 
@@ -100,12 +100,10 @@ this.status= request.getParameter(OrderHistoryData.STATUS)
 
         try {
             
-    
                         if(this.groupId!.compareTo(CommonPhoneStrings.getInstance()!.ZERO) != 0)
                         
                                     {
                                     
-    
                         if(OrderItemsEntityFactory.getInstance()!.isEverythingShipped(id))
                         
                                     {
@@ -126,13 +124,12 @@ this.status= request.getParameter(OrderHistoryData.STATUS)
         
         
 
-setStatus(id, this.status)
+OrderHistoryEntityFactory.getInstance()!.setStatus(id, this.status)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put("Success", this, "setOrderStatus()")
+                                    logUtil!.put("Success", this, "setOrderStatus()")
 
                                     }
                                 
@@ -150,11 +147,10 @@ setStatus(id, this.status)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "setOrderStatus()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus()", e)
 
                                     }
                                 
@@ -174,7 +170,6 @@ var newStatus = newStatus
 
         try {
             
-    
                         if(newStatus == 
                                     null
                                 )
@@ -184,19 +179,19 @@ var newStatus = newStatus
         
         
 
-setStatus(id, newStatus)
+OrderHistoryEntityFactory.getInstance()!.setStatus(id, newStatus)
 
     var orderHistory: OrderHistory = OrderHistoryEntityFactory.getInstance()!.getOrder(id)!;
         
         
 
-process()
+OrderStatusEmail(this.abeClientInformation, orderHistory).
+                            process()
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put("Success", this, "setOrderStatus()")
+                                    logUtil!.put("Success", this, "setOrderStatus()")
 
                                     }
                                 
@@ -214,11 +209,10 @@ process()
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "setOrderStatus(newStatus)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus(newStatus)", e)
 
                                     }
                                 

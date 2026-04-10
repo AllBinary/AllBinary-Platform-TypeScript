@@ -36,13 +36,13 @@ public constructor (){
             }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
-            this.setName("Add Validation Customizers View")
-this.setObjectFile("views.admin.customizers.CustomizersValidationView")
+            this.this.setName("Add Validation Customizers View")
+this.this.setObjectFile("views.admin.customizers.CustomizersValidationView")
 
 
 
@@ -51,7 +51,7 @@ this.setObjectFile("views.admin.customizers.CustomizersValidationView")
     
 } catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

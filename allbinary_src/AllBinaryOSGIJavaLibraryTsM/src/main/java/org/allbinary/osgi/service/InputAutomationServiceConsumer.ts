@@ -68,22 +68,22 @@ public constructor (registryName: string, bundleContext: BundleContext, osgiServ
                 //var registryName = registryName
     //var bundleContext = bundleContext
     //var osgiServiceVisitorInterface = osgiServiceVisitorInterface
-this.setRegistryName(registryName)
-this.setBundleContext(bundleContext)
-this.setOsgiServiceVisitorInterface(osgiServiceVisitorInterface)
+this.this.setRegistryName(registryName)
+this.this.setBundleContext(bundleContext)
+this.this.setOsgiServiceVisitorInterface(osgiServiceVisitorInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
-put(this.commonStrings!.START, this, commonStrings!.PROCESS)
+logUtil!.put(this.commonStrings!.START, this, commonStrings!.PROCESS)
 
     var vector: Vector = osgiServiceUtil!.getServicesObjectVector(this.getBundleContext(), this.getServiceReferences())!;
         
         
 
-put("Processing " +vector.length +" Services", this, commonStrings!.PROCESS)
+logUtil!.put("Processing " +vector.length +" Services", this, commonStrings!.PROCESS)
 
     var size: number = vector.length!;
         
@@ -104,14 +104,13 @@ index < size; index++)
         {
 osgiServiceInterface= vector.get(index) as OSGIServiceInterface
 
-    
                         if(!getOsgiServiceVisitorInterface()!.visit(osgiServiceInterface))
                         
                                     {
                                     
 
 
-                            throw Exception("Unable to process service: " +osgiServiceInterface)
+                            throw Error("Unable to process service: " +osgiServiceInterface)
 
                                     }
                                 
@@ -120,7 +119,7 @@ osgiServiceInterface= vector.get(index) as OSGIServiceInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getServiceReferences(): ServiceReference[]{
 

@@ -41,7 +41,7 @@ export class DataOutputStreamFactory
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(file: AbFile): AbDataOutputStream{
 var file = file
@@ -64,7 +64,7 @@ var file = file
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(filePath: string, fileName: string): AbDataOutputStream{
 var filePath = filePath

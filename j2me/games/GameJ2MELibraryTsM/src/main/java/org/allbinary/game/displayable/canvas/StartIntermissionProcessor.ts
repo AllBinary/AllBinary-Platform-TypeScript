@@ -52,16 +52,15 @@ this.gameCanvas= gameCanvas
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
 
-    
                         if(this.gameCanvas!.getStartIntermissionInterface()!.getTimeDelayHelper()!.isElapsed(WAIT))
                         
                                     {
-                                    put("Intermission End", this, commonStrings!.PROCESS)
-setEnabled(false)
+                                    logUtil!.put("Intermission End", this, commonStrings!.PROCESS)
+this.gameCanvas!.getStartIntermissionInterface()!.setEnabled(false)
 
                                     }
                                 

@@ -32,7 +32,7 @@ export class NullInputMappingEventListener
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onInputMappingEvent(inputMappingEvent: InputMappingEvent){
     //var inputMappingEvent = inputMappingEvent

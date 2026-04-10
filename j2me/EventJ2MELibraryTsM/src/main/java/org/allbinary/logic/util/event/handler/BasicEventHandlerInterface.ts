@@ -35,7 +35,7 @@ interface BasicEventHandlerInterface {
 
     addListeners(basicArrayList: BasicArrayList)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     fireEvent(eventObject: AllBinaryEventObject)
 

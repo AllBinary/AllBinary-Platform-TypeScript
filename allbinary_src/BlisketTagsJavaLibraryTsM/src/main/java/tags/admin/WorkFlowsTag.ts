@@ -36,123 +36,112 @@ public constructor (){
             }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.NEW) == 0)
                         
                                     {
-                                    this.setName("New WorkFlow View")
-this.setObjectFile("views.admin.workflow.NewView")
+                                    this.this.setName("New WorkFlow View")
+this.this.setObjectFile("views.admin.workflow.NewView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
                         
                                     {
-                                    this.setName("Add Validation WorkFlow View")
-this.setObjectFile("views.admin.workflow.AddValidationView")
+                                    this.this.setName("Add Validation WorkFlow View")
+this.this.setObjectFile("views.admin.workflow.AddValidationView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.setName("Validation WorkFlow View")
-this.setObjectFile("views.admin.workflow.WorkflowsValidationView")
+                                    this.this.setName("Validation WorkFlow View")
+this.this.setObjectFile("views.admin.workflow.WorkflowsValidationView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.EDIT) == 0)
                         
                                     {
-                                    this.setName("Validation WorkFlow View")
-this.setObjectFile("views.admin.workflow.EditValidationView")
+                                    this.this.setName("Validation WorkFlow View")
+this.this.setObjectFile("views.admin.workflow.EditValidationView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(this.commonStrings!.UPDATE) == 0)
                         
                                     {
-                                    this.setName("Update Validation WorkFlow View")
-this.setObjectFile("views.admin.workflow.UpdateValidationView")
+                                    this.this.setName("Update Validation WorkFlow View")
+this.this.setObjectFile("views.admin.workflow.UpdateValidationView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(this.commonStrings!.DELETE) == 0)
                         
                                     {
-                                    this.setName("Delete Validation WorkFlow View")
-this.setObjectFile("views.admin.workflow.DeleteValidationView")
+                                    this.this.setName("Delete Validation WorkFlow View")
+this.this.setObjectFile("views.admin.workflow.DeleteValidationView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.BACKUP) == 0)
                         
                                     {
                                     
 
 
-                            throw Exception("View not implemented")
+                            throw Error("View not implemented")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.RESTORE) == 0)
                         
                                     {
                                     
 
 
-                            throw Exception("View not implemented")
+                            throw Error("View not implemented")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(this.commonStrings!.DROP) == 0)
                         
                                     {
                                     
 
 
-                            throw Exception("View not implemented")
+                            throw Error("View not implemented")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(this.commonStrings!.CREATE) == 0)
                         
                                     {
                                     
 
 
-                            throw Exception("View not implemented")
+                            throw Error("View not implemented")
 
                                     }
                                 
@@ -160,7 +149,7 @@ this.setObjectFile("views.admin.workflow.DeleteValidationView")
                             
 
 
-                            throw Exception("No Such View Command: " +this.getCommand())
+                            throw Error("No Such View Command: " +this.getCommand())
 
                         }
                             
@@ -176,10 +165,10 @@ this.setObjectFile("views.admin.workflow.DeleteValidationView")
 
 
 
-                            throw Exception("Command Null")
+                            throw Error("Command Null")
 } catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

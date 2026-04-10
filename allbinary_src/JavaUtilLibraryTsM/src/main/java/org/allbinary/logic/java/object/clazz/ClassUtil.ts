@@ -40,7 +40,6 @@ export class ClassUtil
 var anyType = anyType
 var lineBreak = lineBreak
 
-    
                         if(anyType != 
                                     null
                                 )
@@ -56,7 +55,6 @@ var lineBreak = lineBreak
                                     }
                                 
                              else 
-    
                         if()
                         
 }
@@ -66,7 +64,6 @@ var lineBreak = lineBreak
 var myClass = myClass
 var lineBreak = lineBreak
 
-    
                         if(myClass != 
                                     null
                                 )
@@ -82,16 +79,16 @@ var lineBreak = lineBreak
         
         
 
-append(lineBreak)
-append("Class: ")
-append(myClass!.toString()!)
-append(" uses ")
-appendint(classes.length)
-append(" other classes")
-append(lineBreak)
-append(lineBreak)
-append("Classes: ")
-append(lineBreak)
+stringBuffer!.append(lineBreak)
+stringBuffer!.append("Class: ")
+stringBuffer!.append(myClass!.toString()!)
+stringBuffer!.append(" uses ")
+stringBuffer!.appendint(classes.length)
+stringBuffer!.append(" other classes")
+stringBuffer!.append(lineBreak)
+stringBuffer!.append(lineBreak)
+stringBuffer!.append("Classes: ")
+stringBuffer!.append(lineBreak)
 
 
 
@@ -102,16 +99,16 @@ append(lineBreak)
         
 index < classes.length; index++)
         {
-append("Class: ")
-append(classes[index]!.getName())
-append(lineBreak)
+stringBuffer!.append("Class: ")
+stringBuffer!.append(classes[index]!.getName())
+stringBuffer!.append(lineBreak)
 }
 
-append(InterfaceUtil.viewAll(myClass::class.java, lineBreak))
-append(lineBreak)
-append(ConstructorUtil.viewAll(myClass::class.java, lineBreak))
-append(lineBreak)
-append(MethodUtil.viewAll(myClass::class.java, lineBreak))
+stringBuffer!.append(InterfaceUtil.viewAll(myClass::class.java, lineBreak))
+stringBuffer!.append(lineBreak)
+stringBuffer!.append(ConstructorUtil.viewAll(myClass::class.java, lineBreak))
+stringBuffer!.append(lineBreak)
+stringBuffer!.append(MethodUtil.viewAll(myClass::class.java, lineBreak))
 
 
 
@@ -122,7 +119,6 @@ append(MethodUtil.viewAll(myClass::class.java, lineBreak))
                                     }
                                 
                              else 
-    
                         if()
                         
 }

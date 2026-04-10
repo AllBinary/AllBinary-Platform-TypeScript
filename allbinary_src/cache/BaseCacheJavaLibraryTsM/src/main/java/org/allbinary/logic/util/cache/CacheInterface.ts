@@ -22,15 +22,15 @@
 interface CacheInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     add(cacheableInterface: CacheableInterface)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     add(cacheableInterfaces: CacheableInterface[])
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     clear()
 

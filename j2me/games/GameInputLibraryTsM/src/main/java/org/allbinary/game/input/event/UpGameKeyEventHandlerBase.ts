@@ -66,11 +66,10 @@ export class UpGameKeyEventHandlerBase extends BasicEventHandler {
     public addListener(playerGameInput: PlayerGameInput){
 var playerGameInput = playerGameInput
 
-    
                         if(!list.contains(playerGameInput))
                         
                                     {
-                                    add(playerGameInput)
+                                    list.add(playerGameInput)
 
                                     }
                                 
@@ -78,27 +77,27 @@ var playerGameInput = playerGameInput
 
 
     public removeAllListeners(){
-clear()
-removeAllListeners()
+this.list.clear()
+super.removeAllListeners()
 }
 
 
     public removeListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
-remove(eventListenerInterface)
-removeListenerSingleThreaded(eventListenerInterface)
+this.list.remove(eventListenerInterface)
+super.removeListenerSingleThreaded(eventListenerInterface)
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeListener(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
-remove(eventListenerInterface)
-removeListener(eventListenerInterface)
+this.list.remove(eventListenerInterface)
+super.removeListener(eventListenerInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fireEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
@@ -119,19 +118,19 @@ removeListener(eventListenerInterface)
         
         
 
-onUpGameKeyEvent(eventObject as GameKeyEvent)
+playerGameInput!.onUpGameKeyEvent(eventObject as GameKeyEvent)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
 }
 
 }
 
-fireEvent(eventObject)
+super.fireEvent(eventObject)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject
@@ -141,7 +140,7 @@ fireEvent(eventObject)
         
         
 
-onUpGameKeyEvent(eventObject as GameKeyEvent)
+upGameKeyEventListenerInterface!.onUpGameKeyEvent(eventObject as GameKeyEvent)
 }
 
 
@@ -156,9 +155,9 @@ onUpGameKeyEvent(eventObject as GameKeyEvent)
         
         
 
-append(super.toString())
-append(TOTAL_LISTENERS)
-appendint(size)
+stringBuffer!.append(super.toString())
+stringBuffer!.append(TOTAL_LISTENERS)
+stringBuffer!.appendint(size)
 
 
 
@@ -176,11 +175,11 @@ index < size; index++)
         
         
 
-append(LISTENER_LABEL)
-append(eventListenerInterface!.toString())
+stringBuffer!.append(LISTENER_LABEL)
+stringBuffer!.append(eventListenerInterface!.toString())
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e)
 }
 
 }

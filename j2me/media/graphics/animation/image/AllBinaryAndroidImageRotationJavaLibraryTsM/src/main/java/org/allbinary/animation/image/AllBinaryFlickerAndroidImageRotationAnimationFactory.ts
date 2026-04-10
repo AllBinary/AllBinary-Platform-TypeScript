@@ -114,13 +114,13 @@ public constructor (image: Image, width: number, height: number, angleIncrement:
     //var height = height
     //var angleIncrement = angleIncrement
     //var animationBehaviorFactory = animationBehaviorFactory
-this.setImage(image)
+this.this.setImage(image)
 this.angleIncrement= angleIncrement
 this.animationBehaviorFactory= animationBehaviorFactory
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

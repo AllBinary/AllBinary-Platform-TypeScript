@@ -76,7 +76,7 @@ var basicColor = basicColor
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
@@ -88,21 +88,20 @@ log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onGameNotificationEvent(gameNotificationEvent: GameNotificationEvent){
     //var gameNotificationEvent = gameNotificationEvent
 
-    
                         if(lastGameNotificationEvent != gameNotificationEvent)
                         
                                     {
                                     lastGameNotificationEvent= gameNotificationEvent
-put(gameNotificationEvent!.getString(), this, METHOD_NAME)
+logUtil!.put(gameNotificationEvent!.getString(), this, METHOD_NAME)
 
                                     }
                                 
-this.add(gameNotificationEvent!.getString(), gameNotificationEvent!.getSeconds(), gameNotificationEvent!.getBasicColorP(), gameNotificationEvent!.getPermanent())
+this.this.add(gameNotificationEvent!.getString(), gameNotificationEvent!.getSeconds(), gameNotificationEvent!.getBasicColorP(), gameNotificationEvent!.getPermanent())
 }
 
 
@@ -114,7 +113,7 @@ var permanent = permanent
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processTick(){
 }

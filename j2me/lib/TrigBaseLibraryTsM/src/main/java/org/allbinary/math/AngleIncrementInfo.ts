@@ -109,7 +109,6 @@ var angle = angle
         
 
 
-    
                         if(UP_FRAME.toInt() -angle < closestDirection!.toInt() -angle)
                         
                                     {
@@ -118,7 +117,6 @@ var angle = angle
                                     }
                                 
 
-    
                         if(DOWN_FRAME.toInt() -angle < closestDirection!.toInt() -angle)
                         
                                     {
@@ -127,7 +125,6 @@ var angle = angle
                                     }
                                 
 
-    
                         if(LEFT_FRAME.toInt() -angle < closestDirection!.toInt() -angle)
                         
                                     {
@@ -136,7 +133,6 @@ var angle = angle
                                     }
                                 
 
-    
                         if(RIGHT_FRAME.toInt() -angle < closestDirection!.toInt() -angle)
                         
                                     {

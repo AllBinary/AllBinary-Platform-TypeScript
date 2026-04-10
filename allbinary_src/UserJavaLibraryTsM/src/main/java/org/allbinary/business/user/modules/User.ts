@@ -163,7 +163,7 @@ public constructor (request: HttpServletRequest){
 
             super();
                 //var request = request
-this.getFormData(RequestParams(request).
+this.this.getFormData(RequestParams(request).
                             toHashMap())
 this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(this.getRole())
 }
@@ -172,12 +172,12 @@ public constructor (userHashMap: HashMap<Any, Any>){
 
             super();
                 //var userHashMap = userHashMap
-this.getFormData(userHashMap)
+this.this.getFormData(userHashMap)
 this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(this.getRole())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getFormData(userHashMap: HashMap<Any, Any>){
     //var userHashMap = userHashMap
@@ -199,7 +199,6 @@ this.userName= UserName(userHashMap).
         
 
 
-    
                         if(stringValidationUtil!.isEmpty(this.userName) && stringValidationUtil!.isEmpty(passwordString))
                         
                                     {
@@ -237,11 +236,9 @@ this.fax= stringUtil!.getInstance(userHashMap!.get(UserData.FAX) as String)
 this.role= UserRoleB.getRole(userHashMap!.get(UserRoleData.NAME.toString()) as String)
 this.permissions= stringUtil!.getInstance(userHashMap!.get(UserData.PERMISSIONS) as String)
 
-    
                         if(!stringValidationUtil!.isEmpty(this.permissions) && this.permissions.compareTo(StoreFrontData.getInstance()!.NAME) == 0)
                         this.permissions= stringUtil!.getInstance(userHashMap!.get(StoreFrontData.getInstance()!.NAME) as String)
                              else 
-    
                         if(this.permissions == 
                                     null
                                 )
@@ -264,7 +261,6 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
         
 
 
-    
                         if(!UserName.getInstance()!.isValid(this.userName))
                         
                                     {
@@ -273,7 +269,6 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
                                     }
                                 
 
-    
                         if(!this.password.isValid())
                         
                                     {
@@ -287,7 +282,6 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
         
 
 
-    
                         if(!stringValidationUtil!.isValidRequired(firstName, 1, UserData.MAXLEN))
                         
                                     {
@@ -296,7 +290,6 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(lastName, 1, UserData.MAXLEN))
                         
                                     {
@@ -305,7 +298,6 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.mainEmail, 1, UserData.MAXLEN) || this.mainEmail!.indexOf("@") ==  -1)
                         
                                     {
@@ -322,7 +314,6 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VALIDATIONERROR))
                         
                                     {
@@ -331,7 +322,7 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
         
         
 
-put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -359,32 +350,29 @@ put("Failed to validate form", this, commonStrings!.IS_VALID, e)
         
         
 
-append(UserName.getValidationInfo(this.userName))
-append(this.password.getValidationInfo())
+stringBuffer!.append(UserName.getValidationInfo(this.userName))
+stringBuffer!.append(this.password.getValidationInfo())
 
-    
                         if(!stringValidationUtil!.isValidRequired(firstName, 1, UserData.MAXLEN))
                         
                                     {
-                                    append("Please enter a valid First Name.<br />")
+                                    stringBuffer!.append("Please enter a valid First Name.<br />")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(lastName, 1, UserData.MAXLEN))
                         
                                     {
-                                    append("Please enter a valid Last Name.<br />")
+                                    stringBuffer!.append("Please enter a valid Last Name.<br />")
 
                                     }
                                 
 
-    
                         if(!stringValidationUtil!.isValidRequired(this.mainEmail, 1, UserData.MAXLEN) || this.mainEmail!.indexOf("@") ==  -1)
                         
                                     {
-                                    append("Please enter a valid email address.<br />")
+                                    stringBuffer!.append("Please enter a valid email address.<br />")
 
                                     }
                                 
@@ -397,11 +385,10 @@ append(this.password.getValidationInfo())
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 
@@ -538,17 +525,17 @@ this.secret= value
 
     public setPassword(value: string){
 var value = value
-set(value)
+this.password.set(value)
 }
 
 
     public enable(){
-this.setEnable("Yes")
+this.this.setEnable("Yes")
 }
 
 
     public disable(){
-this.setEnable("No")
+this.this.setEnable("No")
 }
 
 
@@ -768,7 +755,7 @@ this.enable= enable
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toVector(): Vector{
 
@@ -776,32 +763,32 @@ this.enable= enable
         
         
 
-add(userName)
-add(prefixName)
-add(firstName)
-add(lastName)
-add(middleName)
-add(suffixName)
-add(company)
-add(positionAtCompany)
-add(mainEmail)
-add(secondaryEmail)
-add(homePhone)
-add(cellPhone)
-add(workPhone)
-add(otherContact)
-add(electronicDevice)
-add(fax)
-add(this.getRole()!.toString())
+values.add(userName)
+values.add(prefixName)
+values.add(firstName)
+values.add(lastName)
+values.add(middleName)
+values.add(suffixName)
+values.add(company)
+values.add(positionAtCompany)
+values.add(mainEmail)
+values.add(secondaryEmail)
+values.add(homePhone)
+values.add(cellPhone)
+values.add(workPhone)
+values.add(otherContact)
+values.add(electronicDevice)
+values.add(fax)
+values.add(this.getRole()!.toString())
 
     var userConfigurationDomDocumentMapping: UserConfigurationDomDocumentMapping = new UserConfigurationDomDocumentMapping(this.getUserConfigurationInterface());
         
         
 
-add(userConfigurationDomDocumentMapping!.toDomDocumentString())
-add(this.permissions)
-addAll(this.password.toVector(this.secret))
-add(this.enable)
+values.add(userConfigurationDomDocumentMapping!.toDomDocumentString())
+values.add(this.permissions)
+values.addAll(this.password.toVector(this.secret))
+values.add(this.enable)
 
     var calendar: Calendar = Calendar.getInstance()!;
         
@@ -814,8 +801,8 @@ add(this.enable)
         
         
 
-add(time)
-add(time)
+values.add(time)
+values.add(time)
 
 
 
@@ -825,7 +812,7 @@ add(time)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toHashMap(): HashMap<Any, Any>{
 
@@ -833,30 +820,29 @@ add(time)
         
         
 
-put(UserData.USERNAME, userName)
-put(UserData.PREFIXNAME, prefixName)
-put(UserData.FIRSTNAME, firstName)
-put(UserData.LASTNAME, lastName)
-put(UserData.MIDDLENAME, middleName)
-put(UserData.SUFFIXNAME, suffixName)
-put(UserData.COMPANY, company)
-put(UserData.POSITIONATCOMPANY, positionAtCompany)
-put(UserData.MAINEMAIL, mainEmail)
-put(UserData.SECONDARYEMAIL, secondaryEmail)
-put(UserData.HOMEPHONE, homePhone)
-put(UserData.CELLPHONE, cellPhone)
-put(UserData.WORKPHONE, workPhone)
-put(UserData.OTHERCONTACT, otherContact)
-put(UserData.ELECTRONICDEVICE, electronicDevice)
-put(UserData.FAX, fax)
+values.put(UserData.USERNAME, userName)
+values.put(UserData.PREFIXNAME, prefixName)
+values.put(UserData.FIRSTNAME, firstName)
+values.put(UserData.LASTNAME, lastName)
+values.put(UserData.MIDDLENAME, middleName)
+values.put(UserData.SUFFIXNAME, suffixName)
+values.put(UserData.COMPANY, company)
+values.put(UserData.POSITIONATCOMPANY, positionAtCompany)
+values.put(UserData.MAINEMAIL, mainEmail)
+values.put(UserData.SECONDARYEMAIL, secondaryEmail)
+values.put(UserData.HOMEPHONE, homePhone)
+values.put(UserData.CELLPHONE, cellPhone)
+values.put(UserData.WORKPHONE, workPhone)
+values.put(UserData.OTHERCONTACT, otherContact)
+values.put(UserData.ELECTRONICDEVICE, electronicDevice)
+values.put(UserData.FAX, fax)
 
-    
                         if(this.getRole() != 
                                     null
                                 )
                         
                                     {
-                                    put(UserRoleData.NAME.toString(), this.getRole()!.toString())
+                                    values.put(UserRoleData.NAME.toString(), this.getRole()!.toString())
 
                                     }
                                 
@@ -865,10 +851,10 @@ put(UserData.FAX, fax)
         
         
 
-put(UserData.CONFIGURATION, userConfigurationDomDocumentMapping!.toDomDocumentString())
-put(UserData.PERMISSIONS, this.permissions)
-putAll(this.password.toHashMap(this.secret))
-put(EntryData.getInstance()!.ENABLE, this.enable)
+values.put(UserData.CONFIGURATION, userConfigurationDomDocumentMapping!.toDomDocumentString())
+values.put(UserData.PERMISSIONS, this.permissions)
+values.putAll(this.password.toHashMap(this.secret))
+values.put(EntryData.getInstance()!.ENABLE, this.enable)
 
     var calendar: Calendar = Calendar.getInstance()!;
         
@@ -881,7 +867,7 @@ put(EntryData.getInstance()!.ENABLE, this.enable)
         
         
 
-put(EntryData.getInstance()!.LASTMODIFIED, time)
+values.put(EntryData.getInstance()!.LASTMODIFIED, time)
 
 
 
@@ -903,9 +889,9 @@ put(EntryData.getInstance()!.LASTMODIFIED, time)
 
     public validateSession(weblisketSession: WeblisketSessionInterface){
 var weblisketSession = weblisketSession
-setAuthenticated()
-setRole(this.getRole())
-setUserName(this.getUserName())
+weblisketSession!.setAuthenticated()
+weblisketSession!.setRole(this.getRole())
+weblisketSession!.setUserName(this.getUserName())
 }
 
 
@@ -924,7 +910,7 @@ var weblisketSession = weblisketSession
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getKey(): any = {}{
 

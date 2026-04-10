@@ -36,7 +36,7 @@ public constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processStartMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x
@@ -46,7 +46,7 @@ var modifiers = modifiers
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processEndMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x
@@ -56,7 +56,7 @@ var modifiers = modifiers
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processDraggedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x
@@ -66,7 +66,7 @@ var modifiers = modifiers
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processMovedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x

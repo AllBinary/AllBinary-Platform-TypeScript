@@ -37,7 +37,7 @@ public constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processStartMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x
@@ -45,7 +45,6 @@ var y = y
 var deviceId = deviceId
 var modifiers = modifiers
 
-    
                         if(this.touchButtonRecognizer!.pressTouchButtonInput(x, y, deviceId))
                         
                                     {
@@ -56,7 +55,7 @@ var modifiers = modifiers
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processEndMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x
@@ -64,7 +63,6 @@ var y = y
 var deviceId = deviceId
 var modifiers = modifiers
 
-    
                         if(touchButtonProcessing)
                         
                                     {
@@ -73,7 +71,6 @@ var modifiers = modifiers
                                     }
                                 
 
-    
                         if(this.touchButtonRecognizer!.releaseTouchButtonInput(x, y, deviceId))
                         
                                     {
@@ -89,7 +86,7 @@ var modifiers = modifiers
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processDraggedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x
@@ -97,11 +94,10 @@ var y = y
 var deviceId = deviceId
 var modifiers = modifiers
 
-    
                         if(touchButtonProcessing)
                         
                                     {
-                                    pressTouchButtonInput(x, y, deviceId)
+                                    this.touchButtonRecognizer!.pressTouchButtonInput(x, y, deviceId)
 
                                     }
                                 

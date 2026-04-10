@@ -96,18 +96,17 @@ var request = request
 
 this.id= QuoteRequestIdGenerator().
                             getNext()
-this.setUserName(userName)
-this.setProjectInfo(request.getParameter(quoteRequestData!.PROJECT_INFO) as String)
-this.setUserComments(request.getParameter(quoteRequestData!.CUSTOMER_COMMENTS) as String)
-this.setBudget(request.getParameter(quoteRequestData!.BUDGET) as String)
-this.setTimeFrame(request.getParameter(quoteRequestData!.TIMEFRAME) as String)
-this.setComments(request.getParameter(quoteRequestData!.COMMENTS) as String)
+this.this.setUserName(userName)
+this.this.setProjectInfo(request.getParameter(quoteRequestData!.PROJECT_INFO) as String)
+this.this.setUserComments(request.getParameter(quoteRequestData!.CUSTOMER_COMMENTS) as String)
+this.this.setBudget(request.getParameter(quoteRequestData!.BUDGET) as String)
+this.this.setTimeFrame(request.getParameter(quoteRequestData!.TIMEFRAME) as String)
+this.this.setComments(request.getParameter(quoteRequestData!.COMMENTS) as String)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    put("Created with: " +this.toHashMap(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Created with: " +this.toHashMap(), this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -123,18 +122,17 @@ public constructor (hashMap: HashMap<Any, Any>){
         
 
 this.id= hashMap!.get(quoteRequestData!.ID) as String
-this.setUserName(hashMap!.get(UserData.USERNAME) as String)
-this.setProjectInfo(hashMap!.get(quoteRequestData!.PROJECT_INFO) as String)
-this.setUserComments(hashMap!.get(quoteRequestData!.CUSTOMER_COMMENTS) as String)
-this.setBudget(hashMap!.get(quoteRequestData!.BUDGET) as String)
-this.setTimeFrame(hashMap!.get(quoteRequestData!.TIMEFRAME) as String)
-this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
+this.this.setUserName(hashMap!.get(UserData.USERNAME) as String)
+this.this.setProjectInfo(hashMap!.get(quoteRequestData!.PROJECT_INFO) as String)
+this.this.setUserComments(hashMap!.get(quoteRequestData!.CUSTOMER_COMMENTS) as String)
+this.this.setBudget(hashMap!.get(quoteRequestData!.BUDGET) as String)
+this.this.setTimeFrame(hashMap!.get(quoteRequestData!.TIMEFRAME) as String)
+this.this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    put("Created with: " +this.toHashMap(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Created with: " +this.toHashMap(), this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -150,7 +148,6 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
         
 
 
-    
                         if(userName == 
                                     null
                                  || userName!.length < 4 || userName!.length > 250)
@@ -161,7 +158,6 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
                                     }
                                 
 
-    
                         if(this.projectInfo == 
                                     null
                                  || this.projectInfo!.length < 0 || this.projectInfo!.length > AbSqlData.MAXBLOB)
@@ -172,7 +168,6 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
                                     }
                                 
 
-    
                         if(this.userComments == 
                                     null
                                  || this.userComments!.length < 0 || this.userComments!.length > AbSqlData.MAXBLOB)
@@ -183,7 +178,6 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
                                     }
                                 
 
-    
                         if(this.budget == 
                                     null
                                  || this.budget.length < 0 || this.budget.length > AbSqlData.MAXBLOB)
@@ -194,7 +188,6 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
                                     }
                                 
 
-    
                         if(this.timeFrame == 
                                     null
                                  || this.timeFrame!.length < 0 || this.timeFrame!.length > AbSqlData.MAXBLOB)
@@ -205,7 +198,6 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
                                     }
                                 
 
-    
                         if(this.comments == 
                                     null
                                  || this.comments.length < 0 || this.comments.length > AbSqlData.MAXBLOB)
@@ -224,11 +216,10 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -252,68 +243,62 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
         
 
 
-    
                         if(userName == 
                                     null
                                  || userName!.length < 4 || userName!.length > 250)
                         
                                     {
-                                    append("Please enter a User Name with more than 4 characters.<br>")
+                                    stringBuffer!.append("Please enter a User Name with more than 4 characters.<br>")
 
                                     }
                                 
 
-    
                         if(this.projectInfo == 
                                     null
                                  || this.projectInfo!.length < 0 || this.projectInfo!.length > AbSqlData.MAXBLOB)
                         
                                     {
-                                    append("Please enter Project Info with less than " +AbSqlData.MAXBLOB +" characters.<br>")
+                                    stringBuffer!.append("Please enter Project Info with less than " +AbSqlData.MAXBLOB +" characters.<br>")
 
                                     }
                                 
 
-    
                         if(this.userComments == 
                                     null
                                  || this.userComments!.length < 0 || this.userComments!.length > AbSqlData.MAXBLOB)
                         
                                     {
-                                    append("Please enter User Comments with less than " +AbSqlData.MAXBLOB +" characters.<br>")
+                                    stringBuffer!.append("Please enter User Comments with less than " +AbSqlData.MAXBLOB +" characters.<br>")
 
                                     }
                                 
 
-    
                         if(this.budget == 
                                     null
                                  || this.budget.length < 0 || this.budget.length > AbSqlData.MAXBLOB)
                         
                                     {
-                                    append("Please enter Budget with less than " +AbSqlData.MAXBLOB +" characters.<br>")
+                                    stringBuffer!.append("Please enter Budget with less than " +AbSqlData.MAXBLOB +" characters.<br>")
 
                                     }
                                 
 
-    
                         if(this.timeFrame == 
                                     null
                                  || this.timeFrame!.length < 0 || this.timeFrame!.length > AbSqlData.MAXBLOB)
                         
                                     {
-                                    append("Please enter time frame with less than " +AbSqlData.MAXBLOB +" characters.<br>")
+                                    stringBuffer!.append("Please enter time frame with less than " +AbSqlData.MAXBLOB +" characters.<br>")
 
                                     }
                                 
 
-    
                         if(this.comments == 
                                     null
                                  || this.comments.length < 0 || this.comments.length > AbSqlData.MAXBLOB)
                         
                                     {
-                                    append("Please enter comments with less than " +AbSqlData.MAXBLOB +" characters.<br>")
+                                    stringBuffer!.append("Please enter comments with less than " +AbSqlData.MAXBLOB +" characters.<br>")
 
                                     }
                                 
@@ -326,11 +311,10 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 
@@ -351,13 +335,13 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
         
         
 
-add(id)
-add(userName)
-add(this.projectInfo)
-add(this.userComments)
-add(this.budget)
-add(this.timeFrame)
-add(this.comments)
+values.add(id)
+values.add(userName)
+values.add(this.projectInfo)
+values.add(this.userComments)
+values.add(this.budget)
+values.add(this.timeFrame)
+values.add(this.comments)
 
     var calendar: Calendar = Calendar.getInstance()!;
         
@@ -370,8 +354,8 @@ add(this.comments)
         
         
 
-add(time)
-add(time)
+values.add(time)
+values.add(time)
 
 
 
@@ -392,12 +376,12 @@ add(time)
         
         
 
-put(UserData.USERNAME, userName)
-put(quoteRequestData!.PROJECT_INFO, this.projectInfo)
-put(quoteRequestData!.CUSTOMER_COMMENTS, this.userComments)
-put(quoteRequestData!.BUDGET, this.budget)
-put(quoteRequestData!.TIMEFRAME, this.timeFrame)
-put(quoteRequestData!.COMMENTS, this.comments)
+values.put(UserData.USERNAME, userName)
+values.put(quoteRequestData!.PROJECT_INFO, this.projectInfo)
+values.put(quoteRequestData!.CUSTOMER_COMMENTS, this.userComments)
+values.put(quoteRequestData!.BUDGET, this.budget)
+values.put(quoteRequestData!.TIMEFRAME, this.timeFrame)
+values.put(quoteRequestData!.COMMENTS, this.comments)
 
     var calendar: Calendar = Calendar.getInstance()!;
         
@@ -410,7 +394,7 @@ put(quoteRequestData!.COMMENTS, this.comments)
         
         
 
-put(EntryData.getInstance()!.LASTMODIFIED, time)
+values.put(EntryData.getInstance()!.LASTMODIFIED, time)
 
 
 
@@ -459,7 +443,6 @@ this.comments= value
         
 
 
-    
                         if(this.comments == 
                                     null
                                 )

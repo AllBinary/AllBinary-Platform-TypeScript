@@ -78,16 +78,16 @@ export class ActivityFractureUtilAPI5 extends ActivityFractureUtilAPI1 {
         
         
 
-setTouch(this.isTouch(activity))
-setMultiTouch(this.isMultiTouch(activity))
-setMultiTouchDistinct(this.isMultiTouchDistinct(activity))
-update(activity)
+touchScreenFactory!.setTouch(this.isTouch(activity))
+touchScreenFactory!.setMultiTouch(this.isMultiTouch(activity))
+touchScreenFactory!.setMultiTouchDistinct(this.isMultiTouchDistinct(activity))
+touchScreenTypeFactory!.update(activity)
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
 
-put(touchScreenFactory!.toString(), this, commonStrings!.PROCESS)
+PreLogUtil.put(touchScreenFactory!.toString(), this, commonStrings!.PROCESS)
 }
 
 

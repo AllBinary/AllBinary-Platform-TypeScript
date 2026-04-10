@@ -94,11 +94,10 @@ this.cssStyleElementVector= StylesValidationFactory.getInstance(hashMap)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put(this.commonStrings!.START, this, commonStrings!.IS_VALID)
+                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -123,7 +122,6 @@ i < size; i++)
         
 
 
-    
                         if(!styleValidationInterface!.isValid())
                         
                                     {
@@ -134,11 +132,10 @@ i < size; i++)
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("End: " +isValid, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("End: " +isValid, this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -151,11 +148,10 @@ i < size; i++)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -187,11 +183,10 @@ i < size; i++)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 
@@ -227,7 +222,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -241,7 +236,7 @@ var document = document
         
         
 
-appendChild(styleNode)
+node.appendChild(styleNode)
 
     var size: number = cssStyleElementVector!.length!;
         
@@ -262,7 +257,7 @@ i < size; i++)
         
         
 
-appendChild(styleDomNodeInterface!.toXmlNode(document))
+styleNode!.appendChild(styleDomNodeInterface!.toXmlNode(document))
 }
 
 

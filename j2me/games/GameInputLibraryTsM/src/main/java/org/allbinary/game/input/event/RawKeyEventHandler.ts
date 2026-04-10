@@ -99,7 +99,7 @@ this.eventListenerInterfaceList= BasicArrayList()
 index < size; index++)
         {
 eventListenerInterface= vector.get(index) as RawKeyEventListener
-this.addListener(eventListenerInterface)
+this.this.addListener(eventListenerInterface)
 }
 
 }
@@ -108,11 +108,10 @@ this.addListener(eventListenerInterface)
     public addListenerSingleThreaded(eventListenerInterface: RawKeyEventListener){
     //var eventListenerInterface = eventListenerInterface
 
-    
                         if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
                         
                                     {
-                                    add(eventListenerInterface)
+                                    this.eventListenerInterfaceList!.add(eventListenerInterface)
 
                                     }
                                 
@@ -122,11 +121,10 @@ this.addListener(eventListenerInterface)
     public addListener(eventListenerInterface: RawKeyEventListener){
     //var eventListenerInterface = eventListenerInterface
 
-    
                         if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
                         
                                     {
-                                    add(eventListenerInterface)
+                                    this.eventListenerInterfaceList!.add(eventListenerInterface)
 
                                     }
                                 
@@ -135,17 +133,17 @@ this.addListener(eventListenerInterface)
 
     public removeListenerSingleThreaded(eventListenerInterface: RawKeyEventListener){
     //var eventListenerInterface = eventListenerInterface
-remove(eventListenerInterface)
+this.eventListenerInterfaceList!.remove(eventListenerInterface)
 }
 
 
     public removeListener(eventListenerInterface: RawKeyEventListener){
     //var eventListenerInterface = eventListenerInterface
-remove(eventListenerInterface)
+this.eventListenerInterfaceList!.remove(eventListenerInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public fireEvent(keyCode: number, deviceId: number, repeated: boolean){
     //var keyCode = keyCode
@@ -165,7 +163,7 @@ remove(eventListenerInterface)
 
         try {
             eventListenerInterface= this.eventListenerInterfaceList!.get(index) as RawKeyEventListener
-this.process(keyCode, deviceId, repeated, eventListenerInterface)
+this.this.process(keyCode, deviceId, repeated, eventListenerInterface)
 } catch(e: Exception)
             {
 
@@ -173,7 +171,7 @@ this.process(keyCode, deviceId, repeated, eventListenerInterface)
         
         
 
-put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
 }
 
 index++
@@ -182,14 +180,14 @@ index++
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(keyCode: number, deviceId: number, repeated: boolean, eventListenerInterface: RawKeyEventListener){
     //var keyCode = keyCode
     //var deviceId = deviceId
     //var repeated = repeated
     //var eventListenerInterface = eventListenerInterface
-onEvent(keyCode, deviceId, repeated)
+eventListenerInterface!.onEvent(keyCode, deviceId, repeated)
 }
 
 
@@ -209,8 +207,8 @@ onEvent(keyCode, deviceId, repeated)
         
         
 
-append(TOTAL_LISTENERS)
-appendint(this.eventListenerInterfaceList!.size())
+stringBuffer!.append(TOTAL_LISTENERS)
+stringBuffer!.appendint(this.eventListenerInterfaceList!.size())
 
     var eventListenerInterface: RawKeyEventListener
 
@@ -225,8 +223,8 @@ appendint(this.eventListenerInterfaceList!.size())
 
         try {
             eventListenerInterface= this.eventListenerInterfaceList!.get(index) as RawKeyEventListener
-append(LISTENER_LABEL)
-append(eventListenerInterface!.toString())
+stringBuffer!.append(LISTENER_LABEL)
+stringBuffer!.append(eventListenerInterface!.toString())
 } catch(e: Exception)
             {
 
@@ -234,7 +232,7 @@ append(eventListenerInterface!.toString())
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e)
 }
 
 index++

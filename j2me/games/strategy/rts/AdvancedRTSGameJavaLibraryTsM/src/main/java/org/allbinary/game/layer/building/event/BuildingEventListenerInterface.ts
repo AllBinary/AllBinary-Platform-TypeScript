@@ -27,7 +27,7 @@ import { EventListenerInterface } from "../../../../../../org/allbinary/logic/ut
 interface BuildingEventListenerInterface extends EventListenerInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     onBuildingEvent(event: RTSLayerEvent)
 

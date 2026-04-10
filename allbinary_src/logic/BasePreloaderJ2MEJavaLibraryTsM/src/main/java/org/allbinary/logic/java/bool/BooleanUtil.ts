@@ -46,7 +46,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getFromString(booleanString: string): boolean{
     //var booleanString = booleanString
@@ -61,7 +61,6 @@ private constructor (){
         
 
 
-    
                         if(stringValidationUtil!.isEmpty(booleanString))
                         
                                     {
@@ -80,7 +79,6 @@ private constructor (){
         
 
 
-    
                         if(booleanStringLowerCase!.compareTo(booleanFactory!.TRUE_STRING) == 0)
                         
                                     {
@@ -94,7 +92,6 @@ private constructor (){
                                     }
                                 
                              else 
-    
                         if(booleanStringLowerCase!.compareTo(booleanFactory!.FALSE_STRING) == 0)
                         
                                     {
@@ -111,14 +108,14 @@ private constructor (){
                             
 
 
-                            throw Exception("Invalid booleanString - Must be true or false")
+                            throw Error("Invalid booleanString - Must be true or false")
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isStringBoolean(booleanString: string): boolean{
     //var booleanString = booleanString
@@ -133,7 +130,6 @@ private constructor (){
         
 
 
-    
                         if(booleanStringLowerCase!.compareTo(booleanFactory!.TRUE_STRING) == 0 || booleanStringLowerCase!.compareTo(booleanFactory!.FALSE_STRING) == 0)
                         
                                     {

@@ -75,8 +75,8 @@ this.basicColor= basicColor
         
         
 
-setColor(this.getBasicColorP()!.toInt())
-drawString(this.text, (width shr 1) -topScoresWidth, myFont!.DEFAULT_CHAR_HEIGHT *3, anchor)
+graphics.setColor(this.getBasicColorP()!.toInt())
+graphics.drawString(this.text, (width shr 1) -topScoresWidth, myFont!.DEFAULT_CHAR_HEIGHT *3, anchor)
 }
 
 

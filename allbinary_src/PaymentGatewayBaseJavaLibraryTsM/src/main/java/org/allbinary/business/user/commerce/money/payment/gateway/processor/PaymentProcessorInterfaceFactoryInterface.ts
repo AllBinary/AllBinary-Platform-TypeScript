@@ -28,7 +28,7 @@ import { TransformInfoInterface } from "../../../../../../../../../org/allbinary
 interface PaymentProcessorInterfaceFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(transformInfoInterface: TransformInfoInterface, paymentTransactionInterface: PaymentTransactionInterface): PaymentProcessorInterface
 

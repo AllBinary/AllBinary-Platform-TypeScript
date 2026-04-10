@@ -76,7 +76,7 @@ var timer = timer
                             //For kotlin this is before the body of the constructor.
                     
 this.timer= timer
-this.set()
+this.this.set()
 
     var myFont: MyFont = MyFont.getInstance()!;
         
@@ -84,14 +84,13 @@ this.set()
 
 this.offset= myFont!.stringWidth(this.TIME_STRING) +myFont!.stringWidth(3)
 
-    
                         if(direction == 0)
                         
                                     {
                                     
 
 
-                            throw Exception(BasicHudFactory.getInstance()!.DIRECTION_EXCEPTION)
+                            throw Error(BasicHudFactory.getInstance()!.DIRECTION_EXCEPTION)
 
                                     }
                                 
@@ -130,8 +129,8 @@ var timer = timer
 
 
     public update(){
-update()
-this.set()
+this.timer.update()
+this.this.set()
 }
 
 
@@ -143,7 +142,7 @@ totalDigits= timer.getCurrentTotalDigits()
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics, TIME_CHAR_ARRAY, 0, TIME_CHAR_ARRAY.length, string, 0, totalDigits, offset)
+super.paint(graphics, TIME_CHAR_ARRAY, 0, TIME_CHAR_ARRAY.length, string, 0, totalDigits, offset)
 }
 
 

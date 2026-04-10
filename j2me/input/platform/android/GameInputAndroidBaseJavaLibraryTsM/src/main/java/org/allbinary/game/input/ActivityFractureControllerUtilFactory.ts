@@ -20,7 +20,6 @@ export class ActivityFractureControllerUtilFactory
         
 
 
-    
                         if(SDK_VERSION <= 8)
                         
                                     {
@@ -34,7 +33,6 @@ export class ActivityFractureControllerUtilFactory
                                     }
                                 
                              else 
-    
                         if(SDK_VERSION <= 11)
                         
                                     {

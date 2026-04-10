@@ -48,7 +48,6 @@ var path = path
         
 
 
-    
                         if(stringValidationUtil!.isEmpty(path))
                         
                                     {

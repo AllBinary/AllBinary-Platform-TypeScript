@@ -38,11 +38,11 @@ public constructor (allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterfa
             super();
             var allbinaryLayerFactoryInterface = allbinaryLayerFactoryInterface
 var total = total
-init(allbinaryLayerFactoryInterface, total)
+super.init(allbinaryLayerFactoryInterface, total)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public visit(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface
@@ -56,7 +56,7 @@ var sourceLayerInterface = sourceLayerInterface
         
         
 
-visit(scoreableInterface)
+pointsLayer!.visit(scoreableInterface)
 }
 
 

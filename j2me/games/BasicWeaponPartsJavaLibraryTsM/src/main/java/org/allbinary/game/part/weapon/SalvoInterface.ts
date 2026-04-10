@@ -31,11 +31,11 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 interface SalvoInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface)
 

@@ -104,11 +104,10 @@ private constructor (){
     //var bufferedImage = bufferedImage
     //var totalAngle = totalAngle
 
-    
                         if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
                                     {
-                                    put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
 
 
 
@@ -133,11 +132,10 @@ private constructor (){
     //var gc = gc
     //var angle = angle
 
-    
                         if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
                                     {
-                                    put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
 
 
 
@@ -244,7 +242,6 @@ bufferedImageArray[index]= this.getRotatedImage(bufferedImage, angle)
         
 
 
-    
                         if(size < columns)
                         
                                     {
@@ -254,7 +251,6 @@ bufferedImageArray[index]= this.getRotatedImage(bufferedImage, angle)
                                 
 rows= (size /columns)
 
-    
                         if(size % columns != 0)
                         
                                     {
@@ -282,8 +278,8 @@ rows= (size /columns)
         
         
 
-setAntialias(SWT.ON)
-setInterpolation(SWT.HIGH)
+gc.setAntialias(SWT.ON)
+gc.setInterpolation(SWT.HIGH)
 
     var columnIndex: number = 0;
         
@@ -308,7 +304,6 @@ setInterpolation(SWT.HIGH)
 index < size; index++)
         {
 
-    
                         if(index /9 != 0 && index % 9 == 0)
                         
                                     {
@@ -319,11 +314,11 @@ columnIndex= 0
                                 
 nextBufferedImage= bufferedImageArray[index]!
 imageData= nextBufferedImage!.getImageData()
-drawImage(bufferedImage, 0, 0, bufferedImage!.getBounds()!.width, bufferedImage!.getBounds()!.height, imageData!.width *columnIndex, imageData!.height *rowIndex, imageData!.width, imageData!.height)
+gc.drawImage(bufferedImage, 0, 0, bufferedImage!.getBounds()!.width, bufferedImage!.getBounds()!.height, imageData!.width *columnIndex, imageData!.height *rowIndex, imageData!.width, imageData!.height)
 columnIndex++
 }
 
-dispose()
+gc.dispose()
 
 
 

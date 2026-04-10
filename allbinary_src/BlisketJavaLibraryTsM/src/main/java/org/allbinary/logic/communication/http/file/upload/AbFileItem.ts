@@ -92,7 +92,7 @@ this.byteArray= byteArray
 }
 
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public getInputStream(): InputStream{
 
@@ -152,7 +152,7 @@ this.byteArray= byteArray
 }
 
 
-                @Throws(UnsupportedEncodingException::class)
+                //@Throws(UnsupportedEncodingException::class)
             
     public getString(encoding: string): string{
 var encoding = encoding
@@ -177,11 +177,10 @@ var encoding = encoding
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getString", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getString", e)
 
                                     }
                                 
@@ -196,30 +195,30 @@ var encoding = encoding
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public write(file: File){
 var file = file
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public write(file: AbFile){
 var file = file
 
 
 
-                            throw Exception(commonStrings!.NOT_IMPLEMENTED)
+                            throw Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
     public delete(){
-log(commonStrings!.NOT_IMPLEMENTED, "delete()")
+ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, "delete()")
 }
 
 
@@ -241,7 +240,6 @@ this.fieldName= name
 
     public isFormField(): boolean{
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(this.fieldName))
                         
                                     {
@@ -272,7 +270,7 @@ var state = state
 }
 
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public getOutputStream(): OutputStream{
 

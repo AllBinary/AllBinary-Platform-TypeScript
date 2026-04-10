@@ -61,8 +61,8 @@ public constructor (maxHealth: number){
 
             super();
             var maxHealth = maxHealth
-this.setMaxHealth(maxHealth)
-this.setHealth(maxHealth)
+this.this.setMaxHealth(maxHealth)
+this.this.setHealth(maxHealth)
 }
 
 
@@ -74,16 +74,15 @@ var ahealth = ahealth
         
 
 
-    
                         if(newHealth > this.getMaxHealth())
                         
                                     {
-                                    this.setHealth(this.getMaxHealth())
+                                    this.this.setHealth(this.getMaxHealth())
 
                                     }
                                 
                         else {
-                            this.setHealth(newHealth)
+                            this.this.setHealth(newHealth)
 
                         }
                             
@@ -91,13 +90,12 @@ var ahealth = ahealth
 
 
     public heal(){
-this.setHealth(this.getMaxHealth())
+this.this.setHealth(this.getMaxHealth())
 }
 
 
     public isDamaged(): boolean{
 
-    
                         if(this.getHealth() != this.getMaxHealth())
                         
                                     {
@@ -126,7 +124,6 @@ this.setHealth(this.getMaxHealth())
     public damage(ahealth: number){
 var ahealth = ahealth
 
-    
                         if(ahealth < 0)
                         
                                     {
@@ -135,11 +132,11 @@ var ahealth = ahealth
         
         
 
-append("******* Trying to heal when damaging. Damage: ")
-appendint(ahealth)
-append(CommonSeps.getInstance()!.SPACE)
-append(this.toString())
-log(stringBuffer!.toString(), this)
+stringBuffer!.append("******* Trying to heal when damaging. Damage: ")
+stringBuffer!.appendint(ahealth)
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(this.toString())
+ForcedLogUtil.log(stringBuffer!.toString(), this)
 
 
 
@@ -154,13 +151,12 @@ log(stringBuffer!.toString(), this)
         
         
 
-this.setHealth(health)
+this.this.setHealth(health)
 }
 
 
     public isAlive(): boolean{
 
-    
                         if(this.getHealth() <= 0)
                         
                                     {
@@ -205,7 +201,6 @@ this.maxHealth= maxHealth
     public setHealth(health: number){
 var health = health
 
-    
                         if(health > this.getMaxHealth())
                         
                                     {
@@ -214,7 +209,6 @@ var health = health
                                     }
                                 
                              else 
-    
                         if(health < 0)
                         
                                     {
@@ -228,13 +222,12 @@ var health = health
                         }
                             
 
-    
                         if(this.healthListenerInterface != 
                                     null
                                 )
                         
                                     {
-                                    onHealthChange()
+                                    this.healthListenerInterface!.onHealthChange()
 
                                     }
                                 
@@ -263,10 +256,10 @@ this.healthListenerInterface= healthGraphic
         
         
 
-append(Health.HEALTH_LABEL)
-appendint(this.health)
-append(Health.MAX_HEALTH_LABEL)
-appendint(this.maxHealth)
+stringBuffer!.append(Health.HEALTH_LABEL)
+stringBuffer!.appendint(this.health)
+stringBuffer!.append(Health.MAX_HEALTH_LABEL)
+stringBuffer!.appendint(this.maxHealth)
 
 
 

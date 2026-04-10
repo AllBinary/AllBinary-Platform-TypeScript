@@ -100,17 +100,16 @@ public constructor (categoryPropertiesFactoryInterface: CategoryPropertiesFactor
             super();
             var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    put(this.commonStrings!.CONSTRUCTOR, this, "Category(CategoryPropertiesFactoryInterface)")
+                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, "Category(CategoryPropertiesFactoryInterface)")
 
                                     }
                                 
 this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance()
 this.categoryHierarchyInterface= CategoryHierarchy(this, this) as CategoryHierarchyInterface
-this.log()
+this.this.log()
 }
 
 public constructor (categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number){
@@ -120,7 +119,7 @@ public constructor (categoryPropertiesFactoryInterface: CategoryPropertiesFactor
 var level = level
 this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance()
 this.categoryHierarchyInterface= CategoryHierarchy(this, this, level) as CategoryHierarchyInterface
-this.log()
+this.this.log()
 }
 
 public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface){
@@ -131,11 +130,11 @@ var parentCategoryInterface = parentCategoryInterface
 var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
 this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance() as CategoryPropertiesInterface
 this.categoryHierarchyInterface= CategoryHierarchy(rootCategoryInterface, parentCategoryInterface) as CategoryHierarchyInterface
-this.log()
+this.this.log()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getKey(): any = {}{
 
@@ -147,7 +146,7 @@ this.log()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getRootFilePath(): AbPath{
 
@@ -161,7 +160,6 @@ this.log()
         
 
 
-    
                         if(categoryInterface!.getProperties()!.isRoot())
                         
                                     {
@@ -183,7 +181,7 @@ rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getFilePath(): AbPath{
 
@@ -195,7 +193,7 @@ rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getWebAppPath(): AbPath{
 
@@ -212,7 +210,7 @@ rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getPath(): AbPath{
 
@@ -227,7 +225,7 @@ rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath()
 
     public addChildProperty(categoryPropertiesInterface: CategoryPropertiesInterface): boolean{
 var categoryPropertiesInterface = categoryPropertiesInterface
-add(this.PROPERTIES)
+this.typeVector!.add(this.PROPERTIES)
 
 
 
@@ -240,13 +238,12 @@ add(this.PROPERTIES)
 
     public addChild(categoryInterface: CategoryInterface): boolean{
 var categoryInterface = categoryInterface
-this.removeDuplicateChild(categoryInterface)
+this.this.removeDuplicateChild(categoryInterface)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    put("adding", this, "addChild")
+                                    logUtil!.put("adding", this, "addChild")
 
                                     }
                                 
@@ -255,10 +252,10 @@ this.removeDuplicateChild(categoryInterface)
         
         
 
-setParent(this)
-setRoot(this.getHierarchy()!.getRoot())
-setHierarchy(childCategoryHierarchyInterface)
-add(this.CATEGORY)
+childCategoryHierarchyInterface!.setParent(this)
+childCategoryHierarchyInterface!.setRoot(this.getHierarchy()!.getRoot())
+categoryInterface!.setHierarchy(childCategoryHierarchyInterface)
+this.typeVector!.add(this.CATEGORY)
 
 
 
@@ -307,7 +304,6 @@ var categoryInterface = categoryInterface
 index < size; index++)
         {
 
-    
                         if(this.CATEGORY == this.typeVector!.get(index))
                         
                                     {
@@ -322,11 +318,10 @@ index < size; index++)
         
 
 
-    
                         if(currentCategoryInterface!.getProperties()!.getValue()!.compareTo(categoryInterface!.getProperties()!.getValue()) == 0)
                         
                                     {
-                                    add(currentCategoryInterface)
+                                    removalVector!.add(currentCategoryInterface)
 bool_return= true
 
                                     }
@@ -336,7 +331,7 @@ bool_return= true
                                 
 }
 
-this.removal(removalVector)
+this.this.removal(removalVector)
 
 
 
@@ -373,8 +368,8 @@ index < removalSize; index++)
         
         
 
-remove(objectIndex)
-remove(objectIndex)
+this.typeVector!.remove(objectIndex)
+this.childCategoryVector!.remove(objectIndex)
 }
 
 }
@@ -414,7 +409,6 @@ index < size; index++)
         
 
 
-    
                         if(this.PROPERTIES == this.typeVector!.get(index))
                         
                                     {
@@ -424,11 +418,10 @@ index < size; index++)
         
 
 
-    
                         if(categoryInterface!.getProperties()!.getValue()!.compareTo(categoryPropertiesInterface!.getValue()) == 0)
                         
                                     {
-                                    add(categoryPropertiesInterface)
+                                    removalVector!.add(categoryPropertiesInterface)
 bool_return= true
 break;
 
@@ -440,7 +433,6 @@ break;
                                     }
                                 
                              else 
-    
                         if(this.CATEGORY == this.typeVector!.get(index))
                         
                                     {
@@ -455,11 +447,10 @@ break;
         
 
 
-    
                         if(categoryInterface!.getProperties()!.getValue()!.compareTo(categoryPropertiesInterface!.getValue()) == 0)
                         
                                     {
-                                    add(existingCategoryInterface)
+                                    removalVector!.add(existingCategoryInterface)
 bool_return= true
 break;
 
@@ -472,7 +463,7 @@ break;
                                 
 }
 
-this.removal(removalVector)
+this.this.removal(removalVector)
 
 
 
@@ -482,11 +473,10 @@ this.removal(removalVector)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isLeaf(): boolean{
 
-    
                         if(this.childCategoryVector == 
                                     null
                                 )
@@ -495,12 +485,11 @@ this.removal(removalVector)
                                     
 
 
-                            throw Exception("Category Error")
+                            throw Error("Category Error")
 
                                     }
                                 
 
-    
                         if(this.childCategoryVector!.length == 0)
                         
                                     {
@@ -558,12 +547,11 @@ this.categoryHierarchyInterface= categoryHierarchyInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isValid(): Boolean{
 
-    
                         if(!this.categoryPropertiesInterface!.isValid())
                         
                                     {
@@ -597,7 +585,6 @@ index < size; index++)
         
 
 
-    
                         if(this.PROPERTIES == this.typeVector!.get(index))
                         
                                     {
@@ -607,7 +594,6 @@ index < size; index++)
         
 
 
-    
                         if(!categoryPropertiesInterface!.isValid())
                         
                                     {
@@ -624,7 +610,6 @@ index < size; index++)
                                     }
                                 
                              else 
-    
                         if(this.CATEGORY == this.typeVector!.get(index))
                         
                                     {
@@ -634,7 +619,6 @@ index < size; index++)
         
 
 
-    
                         if(!categoryInterface!.isValid())
                         
                                     {
@@ -661,7 +645,7 @@ index < size; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toValidationInfoDoc(): Document{
 
@@ -673,7 +657,7 @@ index < size; index++)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document
@@ -686,7 +670,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public validationInfo(): string{
 
@@ -698,7 +682,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toHashMap(): HashMap<Any, Any>{
 
@@ -715,7 +699,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toVector(): Vector{
 
@@ -723,7 +707,7 @@ var document = document
         
         
 
-add(this.childCategoryVector)
+categoryVector!.add(this.childCategoryVector)
 
 
 
@@ -733,11 +717,10 @@ add(this.childCategoryVector)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public log(){
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
@@ -746,13 +729,13 @@ add(this.childCategoryVector)
         
         
 
-append("Category Name: ")
-append(this.categoryPropertiesInterface!.getValue())
-append("\nPath = ")
-append(this.getPath()!.toString())
-append("\nFile Path: ")
-append(this.getFilePath()!.toString())
-put(stringBuffer!.toString(), this, "log()")
+stringBuffer!.append("Category Name: ")
+stringBuffer!.append(this.categoryPropertiesInterface!.getValue())
+stringBuffer!.append("\nPath = ")
+stringBuffer!.append(this.getPath()!.toString())
+stringBuffer!.append("\nFile Path: ")
+stringBuffer!.append(this.getFilePath()!.toString())
+logUtil!.put(stringBuffer!.toString(), this, "log()")
 
                                     }
                                 

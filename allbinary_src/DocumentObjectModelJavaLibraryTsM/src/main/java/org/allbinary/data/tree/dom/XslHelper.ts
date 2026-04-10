@@ -76,7 +76,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public translate(xsltStreamSource: StreamSource, xmlStreamSource: StreamSource, streamResult: StreamResult): OutputStream{
     //var xsltStreamSource = xsltStreamSource
@@ -94,7 +94,7 @@ private constructor (){
         
         
 
-transform(xmlStreamSource, streamResult)
+transformer.transform(xmlStreamSource, streamResult)
 
 
 
@@ -112,7 +112,7 @@ transform(xmlStreamSource, streamResult)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public translate(resolver: URIResolver, xsltStreamSource: StreamSource, xmlStreamSource: StreamSource, streamResult: StreamResult): OutputStream{
     //var resolver = resolver
@@ -126,13 +126,13 @@ transform(xmlStreamSource, streamResult)
         
         
 
-setURIResolver(resolver)
+tFactory!.setURIResolver(resolver)
 
     var transformer: Transformer = tFactory!.newTransformer(xsltStreamSource)!;
         
         
 
-transform(xmlStreamSource, streamResult)
+transformer.transform(xmlStreamSource, streamResult)
 
 
 
@@ -150,7 +150,7 @@ transform(xmlStreamSource, streamResult)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public translate(xsltStreamSource: StreamSource, xmlDocument: Document): string{
     //var xsltStreamSource = xsltStreamSource
@@ -179,7 +179,7 @@ transform(xmlStreamSource, streamResult)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public translate(xsltStreamSource: StreamSource, xmlStreamSource: StreamSource): string{
     //var xsltStreamSource = xsltStreamSource
@@ -208,7 +208,7 @@ transform(xmlStreamSource, streamResult)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public translate(resolver: URIResolver, xsltStreamSource: StreamSource, xmlStreamSource: StreamSource): string{
     //var resolver = resolver
@@ -238,7 +238,7 @@ transform(xmlStreamSource, streamResult)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public export(outputFile: File, xsltFilePath: string, xmlDocument: Document){
     //var outputFile = outputFile
@@ -246,8 +246,8 @@ transform(xmlStreamSource, streamResult)
     //var xmlDocument = xmlDocument
 
         try {
-            createNewFile()
-this.translate(StreamSource(xsltFilePath), StreamSource(StringBufferInputStream(DomDocumentHelper.toString(xmlDocument))), StreamResult(outputFile))
+            outputFile!.createNewFile()
+this.this.translate(StreamSource(xsltFilePath), StreamSource(StringBufferInputStream(DomDocumentHelper.toString(xmlDocument))), StreamResult(outputFile))
 } catch(e: Exception)
             {
 

@@ -63,17 +63,17 @@ var z = z
         
         
 
-append(HASHTABLE)
-append(StringUtil.getInstance()!.toString(hashtable))
-append(commonSeps!.SPACE)
-append(positionStrings!.X_LABEL)
-appendint(x)
-append(commonSeps!.SPACE)
-append(positionStrings!.Y_LABEL)
-appendint(y)
-append(commonSeps!.SPACE)
-append(positionStrings!.Z_LABEL)
-appendint(z)
+stringBuffer!.append(HASHTABLE)
+stringBuffer!.append(StringUtil.getInstance()!.toString(hashtable))
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(positionStrings!.X_LABEL)
+stringBuffer!.appendint(x)
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(positionStrings!.Y_LABEL)
+stringBuffer!.appendint(y)
+stringBuffer!.append(commonSeps!.SPACE)
+stringBuffer!.append(positionStrings!.Z_LABEL)
+stringBuffer!.appendint(z)
 
 
 

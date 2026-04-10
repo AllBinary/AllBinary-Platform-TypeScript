@@ -69,7 +69,6 @@ var basicColor = basicColor
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(AndroidUtil.isAndroid())
                         
                                     {
@@ -96,8 +95,8 @@ this.yAdjustment= this.xAdjustment
 var graphics = graphics
 var x = x
 var y = y
-setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
-drawArc(x +this.xAdjustment, y +this.yAdjustment, width, height, 0, TOTAL_ANGLE)
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
+graphics.drawArc(x +this.xAdjustment, y +this.yAdjustment, width, height, 0, TOTAL_ANGLE)
 }
 
 

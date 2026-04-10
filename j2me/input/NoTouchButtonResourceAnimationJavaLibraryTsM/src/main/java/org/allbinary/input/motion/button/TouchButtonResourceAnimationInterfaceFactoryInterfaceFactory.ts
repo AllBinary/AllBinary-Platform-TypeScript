@@ -63,21 +63,20 @@ public constructor (name: string)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(level: number){
 var level = level
-this.init(ImageCacheFactory.getInstance(), level)
+this.this.init(ImageCacheFactory.getInstance(), level)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(imageCache: ImageCache, level: number){
 var imageCache = imageCache
 var level = level
 
-    
                         if(this.isInitialized())
                         
                                     {
@@ -90,7 +89,7 @@ var level = level
 
                                     }
                                 
-init(level)
+super.init(level)
 }
 
 
@@ -102,7 +101,6 @@ var level = level
         
 
 
-    
                         if(level == resourceLoadingLevelFactory!.LOAD_TOUCH.getLevel())
                         
                                     {
@@ -130,7 +128,6 @@ var level = level
 
     public isFeature(): boolean{
 
-    
                         if(!Features.getInstance()!.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {

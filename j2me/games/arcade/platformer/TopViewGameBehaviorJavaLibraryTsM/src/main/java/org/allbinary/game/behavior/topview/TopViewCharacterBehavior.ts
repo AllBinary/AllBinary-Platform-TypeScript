@@ -42,7 +42,7 @@ export class TopViewCharacterBehavior
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public terrainEvent(layer: AllBinaryLayer, direction: Direction, x: number, y: number, geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellPosition: GeographicMapCellPosition){
     //var layer = layer
@@ -86,7 +86,6 @@ index < size; index++)
         {
 basicTopViewGeographicMapCellTypeFactory= geographicMapInterfaceArray[index]!.getGeographicMapCellTypeFactory() as BasicTopViewGeographicMapCellTypeFactory
 
-    
                         if(basicTopViewGeographicMapCellTypeFactory!.BLOCK_CELL_TYPE.isType(geographicMapCellTypeArray[index]!))
                         
                                     {

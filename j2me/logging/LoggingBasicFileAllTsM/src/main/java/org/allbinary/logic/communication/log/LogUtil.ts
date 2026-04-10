@@ -85,7 +85,7 @@ put(specialMessage, anyType, functionName, exception)
 var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName
-put(specialMessage, anyType, functionName)
+FileLog.put(specialMessage, anyType, functionName)
 }
 
 
@@ -94,7 +94,7 @@ var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName
 var exception = exception
-put(specialMessage, anyType, functionName, exception as Throwable)
+FileLog.put(specialMessage, anyType, functionName, exception as Error)
 }
 
 

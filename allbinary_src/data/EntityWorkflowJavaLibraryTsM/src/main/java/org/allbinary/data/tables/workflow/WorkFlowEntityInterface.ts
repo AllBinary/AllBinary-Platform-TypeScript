@@ -39,7 +39,7 @@ interface WorkFlowEntityInterface extends BasicDataTableInterface {
 
     public get(storeName: string): Vector
 
-                @Throws(Exception::class, LicensingException::class)
+                //@Throws(Error::class, LicensingException::class)
             
     public get(name: string, storeName: string): WorkFlowInterface
 

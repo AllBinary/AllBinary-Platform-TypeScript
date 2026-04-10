@@ -60,7 +60,6 @@ export class DisposalUtil
     public dispose(image: Image){
     //var image = image
 
-    
                         if(image == 
                                     null
                                 )
@@ -76,7 +75,6 @@ export class DisposalUtil
                                     }
                                 
 
-    
                         if(image.isMutable())
                         
                                     {
@@ -85,7 +83,7 @@ export class DisposalUtil
         
         
 
-this.dispose(mutableImage!.getImage() as Resource)
+this.this.dispose(mutableImage!.getImage() as Resource)
 
                                     }
                                 
@@ -99,12 +97,11 @@ this.dispose(mutableImage!.getImage() as Resource)
     public dispose(resource: Resource){
     //var resource = resource
 
-    
                         if(!resource.isDisposed())
                         
                                     {
-                                    println(commonStrings!.CLOSE)
-dispose()
+                                    System.out.println(commonStrings!.CLOSE)
+resource.dispose()
 
                                     }
                                 

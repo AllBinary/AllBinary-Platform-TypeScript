@@ -121,7 +121,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, storeFrontInterface: StoreFrontInterface): TaxModuleInterface{
     //var abeClientInformation = abeClientInformation
@@ -131,14 +131,14 @@ private constructor (){
         
         
 
-append(URLGLOBALS.getMainPath())
-append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-append(storeFrontInterface!.getName())
-append(AbPathData.getInstance()!.SEPARATOR)
-append("generic")
-append(AbPathData.getInstance()!.SEPARATOR)
-append("taxes")
-append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.append(URLGLOBALS.getMainPath())
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
+stringBuffer!.append(storeFrontInterface!.getName())
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.append("generic")
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
+stringBuffer!.append("taxes")
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
 
     var abPath: AbPath = new AbPath(stringBuffer!.toString(), TAXATIONFILENAME);
         
@@ -186,7 +186,6 @@ index < taxNameNodeList!.getLength(); index++)
         
 
 
-    
                         if(nodeList != 
                                     null
                                 )
@@ -198,7 +197,6 @@ index < taxNameNodeList!.getLength(); index++)
         
 
 
-    
                         if(classNameNode != 
                                     null
                                 )
@@ -220,11 +218,10 @@ index < taxNameNodeList!.getLength(); index++)
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAX))
                         
                                     {
-                                    put("Class Node Null", this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Class Node Null", this, commonStrings!.GET_INSTANCE)
 
                                     }
                                 
@@ -236,11 +233,10 @@ index < taxNameNodeList!.getLength(); index++)
                                 
                         else {
                             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAX))
                         
                                     {
-                                    put("Tax Name Node Node Children", this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Tax Name Node Node Children", this, commonStrings!.GET_INSTANCE)
 
                                     }
                                 

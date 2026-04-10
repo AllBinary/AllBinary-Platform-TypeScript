@@ -91,7 +91,6 @@ export class RTSLayerUtil
         
 
 
-    
                         if(lastLevel > currentLevel)
                         
                                     {
@@ -100,7 +99,6 @@ export class RTSLayerUtil
                                     }
                                 
                              else 
-    
                         if(lastLevel < currentLevel)
                         
                                     {
@@ -124,7 +122,7 @@ export class RTSLayerUtil
 
     public downgrade(rtsLayer: RTSLayer){
     //var rtsLayer = rtsLayer
-setLevel(rtsLayer!.getLevel() -1)
+rtsLayer!.setLevel(rtsLayer!.getLevel() -1)
 
     var partInterfaceArray: PartInterface[] = rtsLayer!.getPartInterfaceArray()!;
         
@@ -150,16 +148,16 @@ setLevel(rtsLayer!.getLevel() -1)
 --index >= 0; )
         {
 partInterface= partInterfaceArray[index]! as BasicWeaponPart
-setWeaponProperties(this.createWeaponProperties(partInterface!.getWeaponProperties(), rtsLayer!.getLevel(), rtsLayer!.getLevel() +1))
+partInterface!.setWeaponProperties(this.createWeaponProperties(partInterface!.getWeaponProperties(), rtsLayer!.getLevel(), rtsLayer!.getLevel() +1))
 }
 
-select()
+rtsLayer!.select()
 }
 
 
     public upgrade(rtsLayer: RTSLayer){
     //var rtsLayer = rtsLayer
-setLevel(rtsLayer!.getLevel() +1)
+rtsLayer!.setLevel(rtsLayer!.getLevel() +1)
 
     var partInterfaceArray: PartInterface[] = rtsLayer!.getPartInterfaceArray()!;
         
@@ -185,10 +183,10 @@ setLevel(rtsLayer!.getLevel() +1)
 --index >= 0; )
         {
 partInterface= partInterfaceArray[index]! as BasicWeaponPart
-setWeaponProperties(this.createWeaponProperties(partInterface!.getWeaponProperties(), rtsLayer!.getLevel(), rtsLayer!.getLevel() -1))
+partInterface!.setWeaponProperties(this.createWeaponProperties(partInterface!.getWeaponProperties(), rtsLayer!.getLevel(), rtsLayer!.getLevel() -1))
 }
 
-select()
+rtsLayer!.select()
 }
 
 
@@ -320,7 +318,7 @@ downgradeCost += (currentWeaponCost -downgradeWeaponCost)
 }
 
 downgradeCost= downgradeCost *9 /10
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Total Cost: ")!.appendint(downgradeCost)!.toString(), this, "getDowngradeCost")
 
 
@@ -378,7 +376,7 @@ currentWeaponCost= this.getWeaponPropertiesCost(weaponProperties)
 upgradeCost += (upgradedWeaponCost -currentWeaponCost)
 }
 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append("Total Cost: ")!.appendint(upgradeCost)!.toString(), this, "getUpgradeCost")
 
 
@@ -389,7 +387,7 @@ put(StringMaker().
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public destroyAndClear(list: BasicArrayList){
 var list = list
@@ -407,10 +405,10 @@ var list = list
 index >= 0; index--)
         {
 rtsLayer= list.get(index) as RTSLayer
-setDestroyed(true)
+rtsLayer!.setDestroyed(true)
 }
 
-clear()
+list.clear()
 }
 
 
@@ -426,15 +424,15 @@ clear()
         
         
 
-setGeographicMapInterface(
+layerManager!.setGeographicMapInterface(
                                                 [
                                                     baseRaceTrackGeographicMap;
         
         
                                                 ])
-put(AllBinaryGameLayerManager.ID, layerManager)
-put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getInstance()!.LEFT)
-put(Group.ID, BasicGroupFactory.getInstance()!.NONE_ARRAY)
+hashtable.put(AllBinaryGameLayerManager.ID, layerManager)
+hashtable.put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getInstance()!.LEFT)
+hashtable.put(Group.ID, BasicGroupFactory.getInstance()!.NONE_ARRAY)
 
 
 

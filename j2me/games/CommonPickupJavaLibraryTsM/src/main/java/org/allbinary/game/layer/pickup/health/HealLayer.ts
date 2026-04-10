@@ -66,16 +66,15 @@ var graphics = graphics
     public visit(healthInterface: HealthInterface){
 var healthInterface = healthInterface
 
-    
                         if(healthInterface!.isAlive())
                         
                                     {
-                                    heal()
+                                    healthInterface!.heal()
 
                                     }
                                 
                         else {
-                            put("Heal attempt on dead: Does not currently occur", this, "visit")
+                            logUtil!.put("Heal attempt on dead: Does not currently occur", this, "visit")
 
                         }
                             

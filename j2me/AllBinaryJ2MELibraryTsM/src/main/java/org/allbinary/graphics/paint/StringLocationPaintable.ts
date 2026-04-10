@@ -38,7 +38,7 @@ this.value= value
     //var graphics = graphics
     //var x = x
     //var y = y
-drawString(this.value, x, y, 0)
+graphics.drawString(this.value, x, y, 0)
 }
 
 

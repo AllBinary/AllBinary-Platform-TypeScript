@@ -44,85 +44,77 @@ public constructor (){
             }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.ViewShippingAddressesView")
+                                    this.this.setName("Basic Shipping Address View")
+this.this.setObjectFile("views.generic.address.shipping.ViewShippingAddressesView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.EDIT) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.EditShippingAddressesView")
+                                    this.this.setName("Basic Shipping Address View")
+this.this.setObjectFile("views.generic.address.shipping.EditShippingAddressesView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.NEW) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.NewShippingAddressesView")
+                                    this.this.setName("Basic Shipping Address View")
+this.this.setObjectFile("views.generic.address.shipping.NewShippingAddressesView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.AddShippingAddressesView")
+                                    this.this.setName("Basic Shipping Address View")
+this.this.setObjectFile("views.generic.address.shipping.AddShippingAddressesView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(this.commonStrings!.DELETE) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.DeleteShippingAddressesView")
+                                    this.this.setName("Basic Shipping Address View")
+this.this.setObjectFile("views.generic.address.shipping.DeleteShippingAddressesView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(ShippingAddressData.SELECT) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.SelectShippingAddressesView")
+                                    this.this.setName("Basic Shipping Address View")
+this.this.setObjectFile("views.generic.address.shipping.SelectShippingAddressesView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(ShippingAddressData.SETTOBILLINGADDRESS) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.SetShippingAddressesView")
+                                    this.this.setName("Basic Shipping Address View")
+this.this.setObjectFile("views.generic.address.shipping.SetShippingAddressesView")
 
                                     }
                                 
@@ -130,7 +122,7 @@ this.setObjectFile("views.generic.address.shipping.SetShippingAddressesView")
                             
 
 
-                            throw Exception("No Such View Command: " +this.getCommand())
+                            throw Error("No Such View Command: " +this.getCommand())
 
                         }
                             
@@ -146,10 +138,10 @@ this.setObjectFile("views.generic.address.shipping.SetShippingAddressesView")
 
 
 
-                            throw Exception("Command Null")
+                            throw Error("Command Null")
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -159,7 +151,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

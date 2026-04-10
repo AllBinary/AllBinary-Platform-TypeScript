@@ -46,7 +46,7 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     isValid(): boolean{
 
@@ -77,11 +77,10 @@ public constructor (){
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -94,18 +93,17 @@ public constructor (){
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
-            this.setHelper()
+            this.this.setHelper()
 
-    
                         if(this.isValid())
                         
                                     {
-                                    doStartTag()
+                                    super.doStartTag()
 
 
 
@@ -116,7 +114,7 @@ public constructor (){
                                     }
                                 
                         else {
-                            doStartTag()
+                            super.doStartTag()
 
 
 
@@ -128,7 +126,7 @@ public constructor (){
                             
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -138,7 +136,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

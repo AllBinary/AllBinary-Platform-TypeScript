@@ -73,21 +73,20 @@ private constructor (index: number, size: number){
             super();
             var index = index
 var size = size
-this.setSize(size)
-this.setIndex(index)
+this.this.setSize(size)
+this.this.setIndex(index)
 }
 
 private constructor (size: number){
 
             super();
             var size = size
-this.setSize(size)
+this.this.setSize(size)
 }
 
 
     public next(): number{
 
-    
                         if(this.index >= this.lastIndex)
                         
                                     {
@@ -111,7 +110,6 @@ this.setSize(size)
 
     public previous(): number{
 
-    
                         if(this.index < 1)
                         
                                     {
@@ -136,7 +134,6 @@ this.setSize(size)
     public setIndex(index: number){
 var index = index
 
-    
                         if(index > this.lastIndex)
                         
                                     {

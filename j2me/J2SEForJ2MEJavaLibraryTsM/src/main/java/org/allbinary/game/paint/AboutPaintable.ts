@@ -120,7 +120,7 @@ var graphics = graphics
         
         
 
-drawString(this.ABOUT, halfWidth -beginWidth, 2 *charHeight, anchor)
+graphics.drawString(this.ABOUT, halfWidth -beginWidth, 2 *charHeight, anchor)
 
     var infoSize: number = this.info.length
                 ;
@@ -138,7 +138,7 @@ drawString(this.ABOUT, halfWidth -beginWidth, 2 *charHeight, anchor)
 index < infoSize; index++)
         {
 beginWidth= (font.stringWidth(this.info[index]!) shr 1)
-drawString(this.info[index]!, halfWidth -beginWidth, (4 +index) *charHeight, anchor)
+graphics.drawString(this.info[index]!, halfWidth -beginWidth, (4 +index) *charHeight, anchor)
 }
 
 
@@ -158,7 +158,7 @@ drawString(this.info[index]!, halfWidth -beginWidth, (4 +index) *charHeight, anc
 index < size; index++)
         {
 beginWidth= (font.stringWidth(this.developers[index]!) shr 1)
-drawString(this.developers[index]!, halfWidth -beginWidth, (5 +infoSize +index) *charHeight, anchor)
+graphics.drawString(this.developers[index]!, halfWidth -beginWidth, (5 +infoSize +index) *charHeight, anchor)
 }
 
 }

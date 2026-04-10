@@ -112,8 +112,8 @@ this.transformInfoInterface= transformInfoInterface
 this.abPath= AbPath()
 this.category= CategoryData.getInstance()!.ROOTCATEGORY
 this.isRealRoot= true
-this.initPath()
-this.log()
+this.this.initPath()
+this.this.log()
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, categoryAbPath: AbPath){
@@ -125,7 +125,6 @@ this.transformInfoInterface= transformInfoInterface
 this.abPath= categoryAbPath
 this.category= PathUtil.getInstance()!.getNameFromPath(categoryAbPath!.toString())
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(this.category))
                         
                                     {
@@ -134,8 +133,8 @@ this.category= CategoryData.getInstance()!.ROOTCATEGORY
 
                                     }
                                 
-this.initPath()
-this.log()
+this.this.initPath()
+this.this.log()
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
@@ -152,7 +151,6 @@ this.transformInfoInterface= transformInfoInterface
 this.abPath= AbPath(categoryPath)
 this.category= PathUtil.getInstance()!.getNameFromPath(categoryPath)
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(this.category))
                         
                                     {
@@ -161,8 +159,8 @@ this.category= CategoryData.getInstance()!.ROOTCATEGORY
 
                                     }
                                 
-this.initPath()
-this.log()
+this.this.initPath()
+this.this.log()
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<Any, Any>){
@@ -179,7 +177,6 @@ this.transformInfoInterface= transformInfoInterface
 this.abPath= AbPath(categoryPath)
 this.category= PathUtil.getInstance()!.getNameFromPath(categoryPath)
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(this.category))
                         
                                     {
@@ -188,12 +185,12 @@ this.category= CategoryData.getInstance()!.ROOTCATEGORY
 
                                     }
                                 
-this.initPath()
-this.log()
+this.this.initPath()
+this.this.log()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     initPath(){
 
@@ -217,7 +214,7 @@ this.log()
         
 
 this.webAppAbPath= AbPath(httpServletRequest!.getContextPath() +postPath)
-this.setRootFilePath(AbPath(URLGLOBALS.getMainPath() +postPath))
+this.this.setRootFilePath(AbPath(URLGLOBALS.getMainPath() +postPath))
 }
 
 
@@ -283,7 +280,7 @@ this.fileAbPath= value
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getWebAppPath(): AbPath{
 
@@ -338,7 +335,7 @@ this.category= value
         
         
 
-put(CategoryData.getInstance()!.NAME, this.getValue())
+categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.getValue())
 
 
 
@@ -354,7 +351,7 @@ put(CategoryData.getInstance()!.NAME, this.getValue())
         
         
 
-add(this.getValue())
+categoryVector!.add(this.getValue())
 
 
 
@@ -364,7 +361,7 @@ add(this.getValue())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toValidationInfoDoc(): Document{
 
@@ -376,7 +373,7 @@ add(this.getValue())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document
@@ -389,7 +386,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public validationInfo(): string{
 
@@ -403,11 +400,10 @@ var document = document
 
     public log(){
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    put(StringMaker().
+                                    logUtil!.put(StringMaker().
                             append("filePath = ")!.append(this.fileAbPath!.toString())!.append("\npath = ")!.append(this.abPath!.toString())!.append("\ncategory = ")!.append(this.category)!.toString(), this, "log()")
 
                                     }

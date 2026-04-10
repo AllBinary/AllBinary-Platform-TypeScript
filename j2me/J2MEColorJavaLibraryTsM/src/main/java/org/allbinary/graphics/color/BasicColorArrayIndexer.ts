@@ -40,7 +40,7 @@ this.circularIndexUtil= CircularIndexUtil.getInstance(this.basicColorArray!.leng
 
 
     public next(){
-next()
+this.circularIndexUtil!.next()
 }
 
 

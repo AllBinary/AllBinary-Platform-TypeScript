@@ -44,7 +44,7 @@ export class TouchScreenTypeFactory
         
         
 
-setTouch(false)
+touchScreenFactory!.setTouch(false)
 }
 
 

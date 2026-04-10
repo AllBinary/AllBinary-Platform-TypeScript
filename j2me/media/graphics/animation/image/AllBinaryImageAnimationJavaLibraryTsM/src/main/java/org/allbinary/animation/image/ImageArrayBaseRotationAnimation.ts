@@ -81,12 +81,12 @@ public constructor (originalImageArray: Image[], angleInfo: AngleInfo, animation
                             //For kotlin this is before the body of the constructor.
                     
 this.originalImageArray= originalImageArray
-this.setImageArray(imageModifierUtil!.getImageArray(originalImageArray))
+this.this.setImageArray(imageModifierUtil!.getImageArray(originalImageArray))
 this.currentImage= this.imageArray[this.circularIndexUtil!.getIndex()]!
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAnimationSize(): number{
 
@@ -101,18 +101,17 @@ this.currentImage= this.imageArray[this.circularIndexUtil!.getIndex()]!
     public setAlpha(alpha: number){
     //var alpha = alpha
 
-    
                         if(this.alphaP != alpha)
                         
                                     {
-                                    setAlpha(alpha)
-reset()
+                                    super.setAlpha(alpha)
+imageModifierUtil!.reset()
 
     var index: number = this.circularIndexUtil!.getIndex()!;
         
         
 
-setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP)
+imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP)
 
                                     }
                                 
@@ -120,38 +119,38 @@ setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.a
 
 
     public nextRotation(){
-nextRotation()
+super.nextRotation()
 
     var index: number = this.circularIndexUtil!.getIndex()!;
         
         
 
-setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP)
+imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP)
 this.currentImage= this.imageArray[index]!
 }
 
 
     public previousRotation(){
-previousRotation()
+super.previousRotation()
 
     var index: number = this.circularIndexUtil!.getIndex()!;
         
         
 
-setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP)
+imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP)
 this.currentImage= this.imageArray[index]!
 }
 
 
     public setFrame(index2: number){
     //var index2 = index2
-setFrame(index2)
+super.setFrame(index2)
 
     var index: number = this.circularIndexUtil!.getIndex()!;
         
         
 
-setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP)
+imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP)
 this.currentImage= this.imageArray[index]!
 }
 
@@ -187,7 +186,7 @@ this.circularIndexUtil= CircularIndexUtil.getInstance(this.totalFrames)
     //var graphics = graphics
     //var x = x
     //var y = y
-drawImage(this.currentImage, x, y, anchor)
+graphics.drawImage(this.currentImage, x, y, anchor)
 }
 
 
@@ -213,7 +212,7 @@ drawImage(this.currentImage, x, y, anchor)
         
 index < size2; index++)
         {
-dispose(this.imageArray[index]!)
+disposalUtil!.dispose(this.imageArray[index]!)
 }
 
 
@@ -232,14 +231,14 @@ dispose(this.imageArray[index]!)
         
 index < size; index++)
         {
-dispose(this.originalImageArray[index]!)
+disposalUtil!.dispose(this.originalImageArray[index]!)
 }
 
-dispose(this.currentImage)
+disposalUtil!.dispose(this.currentImage)
 }
 
 
-                @Throws(Throwable::class)
+                //@Throws(Error::class)
             
     finalize(){
 
@@ -263,7 +262,7 @@ dispose(this.currentImage)
         
 index < size2; index++)
         {
-dispose(this.imageArray[index]!)
+disposalUtil!.dispose(this.imageArray[index]!)
 }
 
 
@@ -282,10 +281,10 @@ dispose(this.imageArray[index]!)
         
 index < size; index++)
         {
-dispose(this.originalImageArray[index]!)
+disposalUtil!.dispose(this.originalImageArray[index]!)
 }
 
-dispose(this.currentImage)
+disposalUtil!.dispose(this.currentImage)
 }
 
 

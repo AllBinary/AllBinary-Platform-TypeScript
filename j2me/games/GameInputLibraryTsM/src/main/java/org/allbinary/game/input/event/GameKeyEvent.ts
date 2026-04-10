@@ -60,10 +60,10 @@ var repeated = repeated
                             //For kotlin this is before the body of the constructor.
                     
 this.sourceId= sourceId
-this.setOriginalKey(originalKey)
+this.this.setOriginalKey(originalKey)
 this.key= key
-this.setGameActionKey(gameActionKey)
-this.setRepeatEvents(repeated)
+this.this.setGameActionKey(gameActionKey)
+this.this.setRepeatEvents(repeated)
 }
 
 public constructor (anyType: any = {}, sourceId: number, key: number)                        
@@ -80,13 +80,13 @@ var key = key
                     
 this.sourceId= sourceId
 this.key= key
-this.setRepeatEvents(false)
+this.this.setRepeatEvents(false)
 }
 
 
     public init(anyType: any = {}){
 var anyType = anyType
-this.setSource(anyType)
+this.this.setSource(anyType)
 }
 
 
@@ -122,8 +122,8 @@ this.repeated= repeated
         
         
 
-append("\nKey: ")
-appendint(this.getKey())
+stringBuffer!.append("\nKey: ")
+stringBuffer!.appendint(this.getKey())
 
 
 

@@ -75,7 +75,7 @@ this.animationInterfaceArray= animationInterfaceArray
         
 --index >= 0; )
         {
-setFrame(frameIndex)
+this.animationInterfaceArray[index]!.setFrame(frameIndex)
 }
 
 }
@@ -91,7 +91,7 @@ setFrame(frameIndex)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAnimationSize(): number{
 
@@ -125,13 +125,13 @@ setFrame(frameIndex)
         
 --index >= 0; )
         {
-previousFrame()
+this.animationInterfaceArray[index]!.previousFrame()
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public nextFrame(){
 
@@ -145,7 +145,7 @@ previousFrame()
         
 --index >= 0; )
         {
-nextFrame()
+this.animationInterfaceArray[index]!.nextFrame()
 }
 
 }
@@ -163,7 +163,7 @@ nextFrame()
         
 --index >= 0; )
         {
-previousRotation()
+this.animationInterfaceArray[index]!.previousRotation()
 }
 
 }
@@ -181,7 +181,7 @@ previousRotation()
         
 --index >= 0; )
         {
-nextRotation()
+this.animationInterfaceArray[index]!.nextRotation()
 }
 
 }
@@ -217,7 +217,7 @@ nextRotation()
         
 --index >= 0; )
         {
-paint(graphics, x, y)
+this.animationInterfaceArray[index]!.paint(graphics, x, y)
 }
 
 }
@@ -239,7 +239,7 @@ paint(graphics, x, y)
         
 --index >= 0; )
         {
-paintThreed(graphics, x, y, z)
+this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z)
 }
 
 }
@@ -258,7 +258,7 @@ paintThreed(graphics, x, y, z)
         
 --index >= 0; )
         {
-setFrame(direction)
+this.animationInterfaceArray[index]!.setFrame(direction)
 }
 
 }
@@ -277,7 +277,7 @@ setFrame(direction)
         
 --index >= 0; )
         {
-setFrame(angle)
+this.animationInterfaceArray[index]!.setFrame(angle)
 }
 
 }
@@ -285,7 +285,7 @@ setFrame(angle)
 
     public adjustFrame(newAngle: Angle){
     //var newAngle = newAngle
-this.adjustFrame(newAngle!.getValue())
+this.this.adjustFrame(newAngle!.getValue())
 }
 
 
@@ -302,7 +302,7 @@ this.adjustFrame(newAngle!.getValue())
         
 --index >= 0; )
         {
-adjustFrame(angle)
+this.animationInterfaceArray[index]!.adjustFrame(angle)
 }
 
 }
@@ -334,7 +334,7 @@ this.animationInterfaceArray= animationInterfaceArray
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public set(gl: GL){
     //var gl = gl
@@ -349,7 +349,7 @@ this.animationInterfaceArray= animationInterfaceArray
         
 --index >= 0; )
         {
-set(gl)
+this.animationInterfaceArray[index]!.set(gl)
 }
 
 }

@@ -43,7 +43,7 @@ this.name= name
 
     public add(e: any = {}): boolean{
 var e = e
-log(this.name, this)
+ForcedLogUtil.log(this.name, this)
 
 
 
@@ -56,7 +56,7 @@ log(this.name, this)
     public add(index: number, element: any = {}){
 var index = index
 var element = element
-log(this.name, this)
+ForcedLogUtil.log(this.name, this)
 }
 
 

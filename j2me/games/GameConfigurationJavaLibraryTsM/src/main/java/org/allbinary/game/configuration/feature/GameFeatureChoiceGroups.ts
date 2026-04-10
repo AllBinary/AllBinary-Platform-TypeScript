@@ -80,7 +80,7 @@ private constructor (){
     public add(name: string, list: BasicArrayList){
 var name = name
 var list = list
-put(name, list)
+hashtable.put(name, list)
 }
 
 

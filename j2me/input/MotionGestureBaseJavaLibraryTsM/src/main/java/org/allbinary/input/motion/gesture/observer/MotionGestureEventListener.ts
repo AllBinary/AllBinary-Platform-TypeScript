@@ -40,7 +40,7 @@ interface MotionGestureEventListener extends BaseMotionGestureEventListener {
 
     onDiagonalUpLeftMotionGestureEvent(ev: MotionGestureEvent)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     released(ev: MotionGestureEvent)
 

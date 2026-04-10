@@ -27,7 +27,7 @@ export class IconLayerFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(animationInterface: Animation, width: number, height: number): IconLayer{
 var animationInterface = animationInterface

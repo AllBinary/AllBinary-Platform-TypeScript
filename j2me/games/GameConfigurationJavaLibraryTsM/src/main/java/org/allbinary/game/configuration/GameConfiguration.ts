@@ -70,21 +70,20 @@ public constructor (name: string, defaultValue: Integer, minValue: Integer, maxV
     //var defaultValue = defaultValue
     //var minValue = minValue
     //var maxValue = maxValue
-this.setName(name)
-this.setDefaultValue(defaultValue)
+this.this.setName(name)
+this.this.setDefaultValue(defaultValue)
 this.value= this.getDefaultValue()
-this.setMinValue(minValue)
-this.setMaxValue(maxValue)
-put(this.getName(), this)
+this.this.setMinValue(minValue)
+this.this.setMaxValue(maxValue)
+GameConfigurationSingleton.getInstance()!.getHashtable()!.put(this.getName(), this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setValue(value: Integer){
     //var value = value
 
-    
                         if(this.value != value)
                         
                                     {
@@ -94,7 +93,7 @@ put(this.getName(), this)
         
 
 this.value= value
-fireEvent(GameFeatureEvent(this, StringMaker().
+GameFeatureEventHandler.getInstance()!.fireEvent(GameFeatureEvent(this, StringMaker().
                             append(this.name)!.append(" value: from: ")!.appendint(oldValue!.toInt())!.append(" to ")!.appendint(this.value.toInt())!.toString()))
 
                                     }
@@ -176,10 +175,10 @@ this.defaultValue= defaultValue
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setDefault(){
-this.setValue(this.getDefaultValue())
+this.this.setValue(this.getDefaultValue())
 }
 
 
@@ -189,18 +188,18 @@ this.setValue(this.getDefaultValue())
         
         
 
-append("Name: ")
-append(this.name)
-append(" Min: ")
-appendint(this.getMinValue()!.toInt())
-append(" Max: ")
-appendint(this.getMaxValue()!.toInt())
-append(" Value: ")
-appendint(this.getValue()!.toInt())
-append(" Default: ")
-appendint(this.getDefaultValue()!.toInt())
-append(" Modifiable: ")
-appendboolean(this.isModifiable())
+stringBuffer!.append("Name: ")
+stringBuffer!.append(this.name)
+stringBuffer!.append(" Min: ")
+stringBuffer!.appendint(this.getMinValue()!.toInt())
+stringBuffer!.append(" Max: ")
+stringBuffer!.appendint(this.getMaxValue()!.toInt())
+stringBuffer!.append(" Value: ")
+stringBuffer!.appendint(this.getValue()!.toInt())
+stringBuffer!.append(" Default: ")
+stringBuffer!.appendint(this.getDefaultValue()!.toInt())
+stringBuffer!.append(" Modifiable: ")
+stringBuffer!.appendboolean(this.isModifiable())
 
 
 

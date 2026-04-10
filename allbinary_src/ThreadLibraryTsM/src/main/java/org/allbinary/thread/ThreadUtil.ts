@@ -52,7 +52,6 @@ export class ThreadUtil
     public isRunning(thread: Thread): boolean{
 var thread = thread
 
-    
                         if(thread != 
                                     null
                                  && thread.isAlive())
@@ -80,17 +79,16 @@ var thread = thread
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public join(thread: Thread){
 var thread = thread
 
-    
                         if(ThreadUtil.getInstance()!.isRunning(thread))
                         
                                     {
-                                    put("Waiting for Thread To Join/End", this, JOIN)
-join()
+                                    logUtil!.put("Waiting for Thread To Join/End", this, JOIN)
+thread.join()
 
                                     }
                                 

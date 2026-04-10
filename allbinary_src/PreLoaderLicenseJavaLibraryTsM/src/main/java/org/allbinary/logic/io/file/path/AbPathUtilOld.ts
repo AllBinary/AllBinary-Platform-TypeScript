@@ -77,7 +77,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getExtension(abFilePath: AbFilePath): string{
 var abFilePath = abFilePath
@@ -90,7 +90,7 @@ var abFilePath = abFilePath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getExtension(abPath: AbPath): string{
 var abPath = abPath
@@ -103,19 +103,18 @@ var abPath = abPath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getExtension(filePath: string): string{
 var filePath = filePath
 
-    
                         if(filePath!.length < MIN)
                         
                                     {
                                     
 
 
-                            throw Exception("Could not be a file path since its less that 4 characters")
+                            throw Error("Could not be a file path since its less that 4 characters")
 
                                     }
                                 
@@ -130,11 +129,10 @@ var filePath = filePath
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("FileExtension: " +extension, this, "getExtension()")
+                                    logUtil!.put("FileExtension: " +extension, this, "getExtension()")
 
                                     }
                                 
@@ -147,7 +145,7 @@ var filePath = filePath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getWithoutExtension(abFilePath: AbFilePath): string{
 var abFilePath = abFilePath
@@ -160,7 +158,7 @@ var abFilePath = abFilePath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getWithoutExtension(abPath: AbPath): string{
 var abPath = abPath
@@ -173,19 +171,18 @@ var abPath = abPath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getWithoutExtension(filePath: string): string{
 var filePath = filePath
 
-    
                         if(filePath!.length < MIN)
                         
                                     {
                                     
 
 
-                            throw Exception("Could not be a file path since its less that 4 characters")
+                            throw Error("Could not be a file path since its less that 4 characters")
 
                                     }
                                 
@@ -200,11 +197,10 @@ var filePath = filePath
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("FileWithoutExtension: " +pathWithoutExtension, this, "getWithoutExtension()")
+                                    logUtil!.put("FileWithoutExtension: " +pathWithoutExtension, this, "getWithoutExtension()")
 
                                     }
                                 
@@ -220,12 +216,10 @@ var filePath = filePath
     public isValid(path: string): boolean{
 var path = path
 
-    
                         if(this.isValidStart(path))
                         
                                     {
                                     
-    
                         if(this.isValidEnd(path))
                         
                                     {
@@ -253,7 +247,6 @@ var path = path
     isValidStart(path: string): boolean{
 var path = path
 
-    
                         if(path[0] == abPathData!.SEPARATORCHAR)
                         
                                     {
@@ -282,7 +275,6 @@ var path = path
     isValidEnd(path: string): boolean{
 var path = path
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(path))
                         
                                     {
@@ -296,7 +288,6 @@ var path = path
                                     }
                                 
 
-    
                         if(path[path.length -1] == abPathData!.SEPARATORCHAR)
                         
                                     {
@@ -325,7 +316,6 @@ var path = path
     public adjustStart(path: string): string{
 var path = path
 
-    
                         if(!this.isValidStart(path))
                         
                                     {
@@ -345,7 +335,6 @@ var path = path
     public adjustEnd(path: string): string{
 var path = path
 
-    
                         if(!this.isValidEnd(path))
                         
                                     {
@@ -365,7 +354,6 @@ var path = path
     public adjust(path: string): string{
 var path = path
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(path))
                         
                                     {
@@ -379,7 +367,6 @@ var path = path
                                     }
                                 
 
-    
                         if(path.indexOf("\\") >= 0)
                         
                                     {
@@ -405,7 +392,6 @@ var categoryPath = categoryPath
         
 
 
-    
                         if(endIndex < 0)
                         
                                     {
@@ -414,7 +400,6 @@ var categoryPath = categoryPath
                                     }
                                 
 
-    
                         if(endIndex < 0)
                         
 
@@ -423,7 +408,6 @@ var categoryPath = categoryPath
                         return categoryPath;
     
 
-    
                         if(categoryPath!.length == endIndex +1)
                         
                                     {
@@ -459,7 +443,7 @@ var categoryPath = categoryPath
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeNameFromPath(categoryPath: string): AbPath{
@@ -470,7 +454,6 @@ var categoryPath = categoryPath
         
 
 
-    
                         if(endIndex < 0)
                         
                                     {
@@ -479,7 +462,6 @@ var categoryPath = categoryPath
                                     }
                                 
 
-    
                         if(endIndex < 0)
                         
                                     {
@@ -493,7 +475,6 @@ var categoryPath = categoryPath
                                     }
                                 
 
-    
                         if(categoryPath!.length == endIndex +1)
                         
                                     {

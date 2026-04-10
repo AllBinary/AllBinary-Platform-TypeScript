@@ -62,8 +62,8 @@ var args = args
         
         
 
-setWebappPath("G:/mnt/bc/mydev/work/allbinary_src/ToolsJavaLibrary/tools")
-init(appUrlGlobals)
+appUrlGlobals!.setWebappPath("G:/mnt/bc/mydev/work/allbinary_src/ToolsJavaLibrary/tools")
+URLGLOBALS.init(appUrlGlobals)
 
     var testString: string = "\"super gun\" big tank \"goodgunriflegun";
         
@@ -74,16 +74,16 @@ init(appUrlGlobals)
         
         
 
-println("Old String: " +testString)
+System.out.println("Old String: " +testString)
 testString= replace.all(testString)
-println("New String: " +testString)
+System.out.println("New String: " +testString)
 
     var replaceCat: Replace = new Replace("abcdefghijklmnopqrstuxwxyzabcdefghijklmnopqrstuxwxyz", stringUtil!.EMPTY_STRING);
         
         
 
 testString= replaceCat!.all(testString)
-println("New String: " +testString)
+System.out.println("New String: " +testString)
 } catch(e: Exception)
             {
 }
@@ -118,7 +118,7 @@ public constructor (key: string, value: string){
                 //var key = key
     //var value = value
 hashMap= HashMap<Any, Any>()
-put(
+this.hashMap!.put(
                                                 [
                                                     key;
         
@@ -130,11 +130,10 @@ put(
         
                                                 ])
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE))
                         
                                     {
-                                    put(REPLACERS_ +this.hashMap!.toString(), this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(REPLACERS_ +this.hashMap!.toString(), this, commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -146,13 +145,12 @@ public constructor (keys: string[], values: string[]){
                 //var keys = keys
     //var values = values
 hashMap= HashMap<Any, Any>()
-put(keys, values)
+this.hashMap!.put(keys, values)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE))
                         
                                     {
-                                    put(REPLACERS_ +this.hashMap!.toString(), this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(REPLACERS_ +this.hashMap!.toString(), this, commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -164,11 +162,10 @@ public constructor (hashMap: HashMap<Any, Any>){
             var hashMap = hashMap
 this.hashMap= hashMap
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE_INFO))
                         
                                     {
-                                    put(REPLACERS_ +this.hashMap!.toString(), this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(REPLACERS_ +this.hashMap!.toString(), this, commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -190,11 +187,10 @@ var replace = replace
 var replace = replace
 var total = total
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE))
                         
                                     {
-                                    put(REPLACERS_ +this.hashMap!.toString(), this, ALL)
+                                    logUtil!.put(REPLACERS_ +this.hashMap!.toString(), this, ALL)
 
                                     }
                                 
@@ -261,17 +257,15 @@ values= hashMap!.get(keys as Object) as Array<String?>
         
 
 
-    
                         if(begin !=  -1)
                         
                                     {
                                     foundTotal++
 
-    
                         if(foundTotal % 100 == 0)
                         
                                     {
-                                    println(FOUND_KEY +foundTotal)
+                                    System.out.println(FOUND_KEY +foundTotal)
 
                                     }
                                 
@@ -280,14 +274,13 @@ values= hashMap!.get(keys as Object) as Array<String?>
         
         
 
-delete(0, newStringBuffer!.length())
-append(replace.substring(0, begin))
-append(values[0]!)
+newStringBuffer!.delete(0, newStringBuffer!.length())
+newStringBuffer!.append(replace.substring(0, begin))
+newStringBuffer!.append(values[0]!)
 index= newStringBuffer!.length()
-append(replace.substring(end, replace.length))
+newStringBuffer!.append(replace.substring(end, replace.length))
 replace= newStringBuffer!.toString()
 
-    
                         if(keys.length > 1)
                         
                                     {
@@ -297,7 +290,6 @@ replace= newStringBuffer!.toString()
         
 
 
-    
                         if(begin2 !=  -1)
                         
                                     {
@@ -306,11 +298,11 @@ replace= newStringBuffer!.toString()
         
         
 
-delete(0, newStringBuffer!.length())
-append(replace.substring(0, begin2))
-append(values[1]!)
+newStringBuffer!.delete(0, newStringBuffer!.length())
+newStringBuffer!.append(replace.substring(0, begin2))
+newStringBuffer!.append(values[1]!)
 index= newStringBuffer!.length()
-append(replace.substring(end2, replace.length))
+newStringBuffer!.append(replace.substring(end2, replace.length))
 replace= newStringBuffer!.toString()
 
                                     }
@@ -320,7 +312,6 @@ replace= newStringBuffer!.toString()
                                 
 totalNumberOfReplaces++
 
-    
                         if(total != Integer.MIN_VALUE && totalNumberOfReplaces >= total)
                         
                                     {
@@ -345,11 +336,10 @@ totalNumberOfReplaces++
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE))
                         
                                     {
-                                    put("Total Number Of Replaces: " +totalNumberOfReplaces, this, ALL)
+                                    logUtil!.put("Total Number Of Replaces: " +totalNumberOfReplaces, this, ALL)
 
                                     }
                                 
@@ -365,11 +355,10 @@ totalNumberOfReplaces++
     public line(replace: string): string{
 var replace = replace
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE))
                         
                                     {
-                                    put(REPLACERS_ +this.hashMap!.toString(), this, ALL)
+                                    logUtil!.put(REPLACERS_ +this.hashMap!.toString(), this, ALL)
 
                                     }
                                 
@@ -425,31 +414,29 @@ value= hashMap!.get(key as Object) as String
 
         while(index < replace.length)
         {
-delete(0, newStringBuffer!.length())
+newStringBuffer!.delete(0, newStringBuffer!.length())
 
     var begin: number = replace.indexOf(key, index)!;
         
         
 
 
-    
                         if(begin !=  -1)
                         
                                     {
-                                    println(FOUND_KEY)
+                                    System.out.println(FOUND_KEY)
 
     var end: number = replace.indexOf('\n', begin +key.length) +1;
         
         
 
 
-    
                         if(end >= 0)
                         
                                     {
-                                    append(replace.substring(0, begin))
+                                    newStringBuffer!.append(replace.substring(0, begin))
 index= newStringBuffer!.length()
-append(replace.substring(end, replace.length))
+newStringBuffer!.append(replace.substring(end, replace.length))
 replace= newStringBuffer!.toString()
 totalNumberOfReplaces++
 
@@ -470,11 +457,10 @@ totalNumberOfReplaces++
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE))
                         
                                     {
-                                    put("Total Number Of Replaces: " +totalNumberOfReplaces, this, ALL)
+                                    logUtil!.put("Total Number Of Replaces: " +totalNumberOfReplaces, this, ALL)
 
                                     }
                                 

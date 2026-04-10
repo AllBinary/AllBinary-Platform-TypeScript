@@ -146,7 +146,7 @@ this.animationBehaviorFactory= animationBehaviorFactory
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
@@ -176,7 +176,6 @@ this.animationBehaviorFactory= animationBehaviorFactory
         
 
 
-    
                         if(player == 
                                     null
                                 )
@@ -185,7 +184,7 @@ this.animationBehaviorFactory= animationBehaviorFactory
                                     
 
 
-                            throw Exception("Sound Was not Initialized")
+                            throw Error("Sound Was not Initialized")
 
                                     }
                                 

@@ -137,7 +137,7 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, this.initScaleHeight
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
@@ -145,7 +145,6 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, this.initScaleHeight
     var customTextAnimation: CustomTextAnimation
 
 
-    
                         if(dx != 0 || dy != 0)
                         
                                     {
@@ -158,7 +157,7 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, this.initScaleHeight
 
                         }
                             
-setBasicColorP(basicColor)
+customTextAnimation!.setBasicColorP(basicColor)
 
 
 

@@ -133,11 +133,10 @@ public constructor (itemHashMap: HashMap<Any, Any>){
             super();
             var itemHashMap = itemHashMap
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "Constructor(HashMap)")
+                                    logUtil!.put(this.commonStrings!.START, this, "Constructor(HashMap)")
 
                                     }
                                 
@@ -165,7 +164,7 @@ this.lastModified= itemHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as St
 this.price= Money(itemHashMap!.get(BasicItemData.PRICE) as String)
 this.comment= itemHashMap!.get(BasicItemData.COMMENT) as String
 this.customs= itemHashMap!.get(BasicItemData.CUSTOMS) as String
-this.setDownloads(itemHashMap!.get(BasicItemData.DOWNLOADS) as String)
+this.this.setDownloads(itemHashMap!.get(BasicItemData.DOWNLOADS) as String)
 this.groups= itemHashMap!.get(BasicItemData.GROUPS) as String
 this.options= itemHashMap!.get(BasicItemData.OPTIONS) as String
 this.permissions= itemHashMap!.get(BasicItemData.PERMISSIONS) as String
@@ -176,11 +175,10 @@ public constructor (){
 
             super();
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
@@ -214,7 +212,7 @@ this.lastModified= EMPTY
 this.price= Money()
 this.comment= EMPTY
 this.customs= EMPTY
-this.setDownloads(EMPTY)
+this.this.setDownloads(EMPTY)
 this.groups= EMPTY
 this.options= EMPTY
 this.permissions= EMPTY
@@ -364,7 +362,6 @@ this.customs= value
 var value = value
 this.downloads= value
 
-    
                         if(!StringValidationUtil.getInstance()!.isEmpty(this.downloads))
                         
                                     {
@@ -374,11 +371,10 @@ this.downloads= value
         
 
 
-    
                         if(downloadInteger!.toInt() != 0)
                         
                                     {
-                                    this.setDownloadable(true)
+                                    this.this.setDownloadable(true)
 
                                     }
                                 
@@ -730,7 +726,7 @@ this.downloadable= downloadable
         
         
 
-multiply(Integer(this.number).
+itemTotal!.multiply(Integer(this.number).
                             toInt())
 
 
@@ -743,11 +739,10 @@ multiply(Integer(this.number).
 
     public toHashMap(): HashMap<Any, Any>{
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "toHashMap")
+                                    logUtil!.put(this.commonStrings!.START, this, "toHashMap")
 
                                     }
                                 
@@ -756,25 +751,25 @@ multiply(Integer(this.number).
         
         
 
-put(BasicItemData.ID, this.itemId)
-put(BasicItemData.NUMBER, this.number)
-put(BasicItemData.INBASKETS, this.inBaskets)
-put(BasicItemData.WEIGHT, this.weight)
-put(EntryData.getInstance()!.ENABLE, this.enabled)
-put(BasicItemData.NEWORUSED, this.newOrUsed)
-put(BasicItemData.SUMMARY, this.summary)
-put(BasicItemData.DISTRIBUTOR, this.distributor)
-put(BasicItemData.IDUSEDBYDISTRIBUTOR, this.idUsedByDistributor)
-put(BasicItemData.PRODUCEDBY, this.producedBy)
-put(BasicItemData.PRODUCTIONDATE, this.productionDate)
-put(BasicItemData.STARTPRODUCTIONDATE, this.startProductionDate)
-put(BasicItemData.DESCRIPTION, this.description)
-put(BasicItemData.KEYWORDS, this.keywords)
-put(BasicItemData.CATEGORY, this.category)
-put(BasicItemData.TYPE, this.type)
-put(BasicItemData.SMALLIMAGE, this.smallImage)
-put(BasicItemData.MEDIUMIMAGE, this.mediumImage)
-put(BasicItemData.LARGEIMAGE, this.largeImage)
+hashMap!.put(BasicItemData.ID, this.itemId)
+hashMap!.put(BasicItemData.NUMBER, this.number)
+hashMap!.put(BasicItemData.INBASKETS, this.inBaskets)
+hashMap!.put(BasicItemData.WEIGHT, this.weight)
+hashMap!.put(EntryData.getInstance()!.ENABLE, this.enabled)
+hashMap!.put(BasicItemData.NEWORUSED, this.newOrUsed)
+hashMap!.put(BasicItemData.SUMMARY, this.summary)
+hashMap!.put(BasicItemData.DISTRIBUTOR, this.distributor)
+hashMap!.put(BasicItemData.IDUSEDBYDISTRIBUTOR, this.idUsedByDistributor)
+hashMap!.put(BasicItemData.PRODUCEDBY, this.producedBy)
+hashMap!.put(BasicItemData.PRODUCTIONDATE, this.productionDate)
+hashMap!.put(BasicItemData.STARTPRODUCTIONDATE, this.startProductionDate)
+hashMap!.put(BasicItemData.DESCRIPTION, this.description)
+hashMap!.put(BasicItemData.KEYWORDS, this.keywords)
+hashMap!.put(BasicItemData.CATEGORY, this.category)
+hashMap!.put(BasicItemData.TYPE, this.type)
+hashMap!.put(BasicItemData.SMALLIMAGE, this.smallImage)
+hashMap!.put(BasicItemData.MEDIUMIMAGE, this.mediumImage)
+hashMap!.put(BasicItemData.LARGEIMAGE, this.largeImage)
 
     var calendar: Calendar = Calendar.getInstance()!;
         
@@ -786,15 +781,15 @@ put(BasicItemData.LARGEIMAGE, this.largeImage)
         
         
 
-put(EntryData.getInstance()!.LASTMODIFIED, time)
-put(BasicItemData.PRICE, this.price.toString())
-put(BasicItemData.COMMENT, this.comment)
-put(BasicItemData.CUSTOMS, this.customs)
-put(BasicItemData.DOWNLOADS, this.getDownloads())
-put(BasicItemData.GROUPS, this.groups)
-put(BasicItemData.OPTIONS, this.options)
-put(BasicItemData.PERMISSIONS, this.permissions)
-put(BasicItemData.SPECIALS, this.specials)
+hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time)
+hashMap!.put(BasicItemData.PRICE, this.price.toString())
+hashMap!.put(BasicItemData.COMMENT, this.comment)
+hashMap!.put(BasicItemData.CUSTOMS, this.customs)
+hashMap!.put(BasicItemData.DOWNLOADS, this.getDownloads())
+hashMap!.put(BasicItemData.GROUPS, this.groups)
+hashMap!.put(BasicItemData.OPTIONS, this.options)
+hashMap!.put(BasicItemData.PERMISSIONS, this.permissions)
+hashMap!.put(BasicItemData.SPECIALS, this.specials)
 
 
 
@@ -806,11 +801,10 @@ put(BasicItemData.SPECIALS, this.specials)
 
     public toVector(): Vector{
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "toVector")
+                                    logUtil!.put(this.commonStrings!.START, this, "toVector")
 
                                     }
                                 
@@ -819,25 +813,25 @@ put(BasicItemData.SPECIALS, this.specials)
         
         
 
-add(itemId)
-add(number)
-add(inBaskets)
-add(weight)
-add(enabled)
-add(newOrUsed)
-add(summary)
-add(distributor)
-add(idUsedByDistributor)
-add(producedBy)
-add(productionDate)
-add(startProductionDate)
-add(description)
-add(keywords)
-add(category)
-add(type)
-add(this.getSmallImage())
-add(this.getMediumImage())
-add(this.getLargeImage())
+values.add(itemId)
+values.add(number)
+values.add(inBaskets)
+values.add(weight)
+values.add(enabled)
+values.add(newOrUsed)
+values.add(summary)
+values.add(distributor)
+values.add(idUsedByDistributor)
+values.add(producedBy)
+values.add(productionDate)
+values.add(startProductionDate)
+values.add(description)
+values.add(keywords)
+values.add(category)
+values.add(type)
+values.add(this.getSmallImage())
+values.add(this.getMediumImage())
+values.add(this.getLargeImage())
 
     var calendar: Calendar = Calendar.getInstance()!;
         
@@ -849,16 +843,16 @@ add(this.getLargeImage())
         
         
 
-add(time)
-add(time)
-add(this.price.toString())
-add(this.comment)
-add(this.customs)
-add(this.getDownloads())
-add(this.groups)
-add(this.options)
-add(this.permissions)
-add(this.specials)
+values.add(time)
+values.add(time)
+values.add(this.price.toString())
+values.add(this.comment)
+values.add(this.customs)
+values.add(this.getDownloads())
+values.add(this.groups)
+values.add(this.options)
+values.add(this.permissions)
+values.add(this.specials)
 
 
 
@@ -868,7 +862,7 @@ add(this.specials)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getKey(): any = {}{
 

@@ -79,11 +79,10 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    put(commonStrings!.START, this, "CategoryLoader(CategoryFactoryInterface categoryFactoryInterface)")
+                                    logUtil!.put(commonStrings!.START, this, "CategoryLoader(CategoryFactoryInterface categoryFactoryInterface)")
 
                                     }
                                 
@@ -96,14 +95,12 @@ var categoryInterface = categoryInterface
 
         try {
             
-    
                         if(categoryInterface!.getProperties()!.getPath(categoryInterface!.getHierarchy()) != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(categoryInterface!.getHierarchy()!.getLevel() == 1)
                         
                                     {
@@ -113,24 +110,22 @@ var categoryInterface = categoryInterface
         
 
 
-    
                         if(!rootAbFile!.isDirectory())
                         
                                     {
-                                    mkdirs()
+                                    rootAbFile!.mkdirs()
 
-    
                         if(!rootAbFile!.isDirectory())
                         
                                     {
                                     
 
 
-                            throw Exception("Could Not Create Directory")
+                            throw Error("Could Not Create Directory")
 
                                     }
                                 
-this.save(categoryInterface)
+this.this.save(categoryInterface)
 
                                     }
                                 
@@ -165,26 +160,25 @@ this.save(categoryInterface)
                             
 
 
-                            throw Exception("Null Category")
+                            throw Error("Null Category")
 
                         }
                             
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
                                     
         try {
-            log()
+            categoryInterface!.log()
 } catch(e2: Exception)
             {
-put("Could Not Log Category", this, "getDoc", e)
+logUtil!.put("Could Not Log Category", this, "getDoc", e)
 }
 
-put(this.commonStrings!.FAILURE, this, "getDoc", e)
+logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e)
 
                                     }
                                 
@@ -223,11 +217,10 @@ var categoryInterface = categoryInterface
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e)
 
                                     }
                                 
@@ -266,11 +259,10 @@ var document = document
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e)
 
                                     }
                                 
@@ -304,11 +296,10 @@ var categoryInterface = categoryInterface
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e)
 
                                     }
                                 
@@ -347,11 +338,10 @@ var document = document
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e)
 
                                     }
                                 
@@ -373,7 +363,6 @@ var categoryNodeList = categoryNodeList
 
         try {
             
-    
                         if(categoryNodeList != 
                                     null
                                 )
@@ -395,7 +384,6 @@ index < categoryNodeList!.getLength(); index++)
         
 
 
-    
                         if(categoryNode != 
                                     null
                                  && categoryNode!.getNodeName()!.compareTo(CategoryData.getInstance()!.NAME) == 0)
@@ -406,7 +394,7 @@ index < categoryNodeList!.getLength(); index++)
         
         
 
-addChild(categoryInterface)
+parentCategoryInterface!.addChild(categoryInterface)
 
                                     }
                                 
@@ -424,11 +412,10 @@ addChild(categoryInterface)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e)
 
                                     }
                                 
@@ -450,7 +437,6 @@ var categoryNodeList = categoryNodeList
 
         try {
             
-    
                         if(categoryNodeList != 
                                     null
                                 )
@@ -472,7 +458,6 @@ index < categoryNodeList!.getLength(); index++)
         
 
 
-    
                         if(categoryNode != 
                                     null
                                  && categoryNode!.getNodeName()!.compareTo(CategoryData.getInstance()!.NAME) == 0)
@@ -483,7 +468,7 @@ index < categoryNodeList!.getLength(); index++)
         
         
 
-addChildProperty(categoryPropertiesInterface)
+loadedCategoryInterface!.addChildProperty(categoryPropertiesInterface)
 
                                     }
                                 
@@ -501,11 +486,10 @@ addChildProperty(categoryPropertiesInterface)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e)
 
                                     }
                                 

@@ -86,11 +86,10 @@ this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(abeClientI
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -114,22 +113,20 @@ this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(abeClientI
         
 
 
-    
                         if(WorkFlowEntityFactory.getInstance()!.create2()!.get(this.workFlowInterface!.getName(), this.getTransformInfoInterface()!.getStoreName()) != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Workflow already exist", this, "validationInfo()")
+                                    logUtil!.put("Workflow already exist", this, "validationInfo()")
 
                                     }
                                 
-append("The WorkFlow name you selected is already in use.<br/>  Please select another Name.<br />")
+stringBuffer!.append("The WorkFlow name you selected is already in use.<br/>  Please select another Name.<br />")
 
                                     }
                                 
@@ -142,11 +139,10 @@ append("The WorkFlow name you selected is already in use.<br/>  Please select an
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 

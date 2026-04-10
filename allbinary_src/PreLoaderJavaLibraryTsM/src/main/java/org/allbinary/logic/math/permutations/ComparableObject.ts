@@ -28,7 +28,6 @@ export class ComparableObject
     public compareTo(anyType: any = {}): number{
 var anyType = anyType
 
-    
                         if(this.hashCode() < anyType!.hashCode())
                         
                                     {
@@ -42,7 +41,6 @@ var anyType = anyType
                                     }
                                 
                              else 
-    
                         if(this.hashCode() > anyType!.hashCode())
                         
                                     {

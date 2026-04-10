@@ -28,7 +28,7 @@ import { LocationPaintableInterface } from "../../../org/allbinary/graphics/pain
 interface AnimationInterface extends LocationPaintableInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     nextFrame()
 

@@ -57,20 +57,19 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                     
 this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest() as HttpServletRequest) as StoreFrontInterface
 
-    
                         if(this.newStoreFrontInterface!.getName() == 
                                     null
                                 )
                         
                                     {
-                                    setName(this.getWeblisketSession()!.getStoreName())
+                                    this.newStoreFrontInterface!.setName(this.getWeblisketSession()!.getStoreName())
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
@@ -84,11 +83,10 @@ this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest() as H
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view", e)
 
                                     }
                                 

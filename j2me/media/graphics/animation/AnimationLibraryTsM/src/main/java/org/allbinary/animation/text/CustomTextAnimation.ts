@@ -79,9 +79,9 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, fontSize)
         
         
 
-setFont(this.font, graphics)
-paint(graphics, x, y)
-setFont(existingFont, graphics)
+fontDebugFactory!.setFont(this.font, graphics)
+super.paint(graphics, x, y)
+fontDebugFactory!.setFont(existingFont, graphics)
 }
 
 
@@ -89,7 +89,6 @@ setFont(existingFont, graphics)
     //var scaleX = scaleX
     //var scaleY = scaleY
 
-    
                         if(scaleX != scaleY)
                         
                                     {
@@ -108,13 +107,12 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, (fontSize *scaleX).t
     public setText(text: string){
     //var text = text
 
-    
                         if(this.lastText != text)
                         
                                     {
                                     this.hasChanged= true
 this.lastText= text
-setText(text)
+super.setText(text)
 
                                     }
                                 
@@ -135,7 +133,6 @@ setText(text)
 
     public getWidth(): number{
 
-    
                         if(this.hasChanged)
                         
                                     {

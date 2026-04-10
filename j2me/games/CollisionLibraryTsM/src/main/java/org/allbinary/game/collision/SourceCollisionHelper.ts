@@ -43,7 +43,6 @@ public constructor (layerInterface: AllBinaryLayer)
     public isCollidable(layerInterface: CollidableCompositeLayer): boolean{
 var layerInterface = layerInterface
 
-    
                         if(this.sourceLayerInterface != layerInterface)
                         
                                     {

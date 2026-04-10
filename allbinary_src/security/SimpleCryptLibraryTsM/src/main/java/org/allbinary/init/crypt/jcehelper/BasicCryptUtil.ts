@@ -58,7 +58,7 @@ export class BasicCryptUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDecryptedInputStream(inputStream: InputStream, cryptInterface: CryptInterface): InputStream{
 var inputStream = inputStream
@@ -76,7 +76,6 @@ var cryptInterface = cryptInterface
         {
 ch= inputStream!.read()
 
-    
                         if(ch ==  -1)
                         
                                     {
@@ -86,7 +85,7 @@ ch= inputStream!.read()
 
                                     }
                                 
-write(ch)
+buffer.write(ch)
 }
 
 
@@ -105,7 +104,6 @@ write(ch)
         
 
 
-    
                         if(index > 0)
                         
                                     {

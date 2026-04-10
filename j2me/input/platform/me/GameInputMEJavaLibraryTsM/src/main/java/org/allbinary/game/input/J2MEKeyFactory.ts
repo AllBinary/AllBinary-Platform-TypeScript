@@ -72,7 +72,7 @@ private constructor (){
         
 --index >= 0; )
         {
-add(gameKeyArray[index]!.getId(), gameKeyArray[index]!)
+inputFactory!.add(gameKeyArray[index]!.getId(), gameKeyArray[index]!)
 }
 
 }
@@ -81,7 +81,6 @@ add(gameKeyArray[index]!.getId(), gameKeyArray[index]!)
     public isSubmission(input: Input): boolean{
 var input = input
 
-    
                         if(input == gameKeyFactory!.FIRE)
                         
                                     {
@@ -106,7 +105,6 @@ var input = input
     public isDelete(input: Input): boolean{
 var input = input
 
-    
                         if(input == gameKeyFactory!.GAME_D)
                         
                                     {
@@ -142,7 +140,6 @@ var input = input
     public isUp(input: Input): boolean{
 var input = input
 
-    
                         if(input == gameKeyFactory!.UP)
                         
                                     {
@@ -167,7 +164,6 @@ var input = input
     public isDown(input: Input): boolean{
 var input = input
 
-    
                         if(input == gameKeyFactory!.DOWN)
                         
                                     {
@@ -192,7 +188,6 @@ var input = input
     public isLeft(input: Input): boolean{
 var input = input
 
-    
                         if(input == gameKeyFactory!.LEFT)
                         
                                     {
@@ -217,7 +212,6 @@ var input = input
     public isRight(input: Input): boolean{
 var input = input
 
-    
                         if(input == gameKeyFactory!.RIGHT)
                         
                                     {
@@ -242,7 +236,6 @@ var input = input
     public isEnter(input: Input): boolean{
 var input = input
 
-    
                         if(input == gameKeyFactory!.FIRE)
                         
                                     {

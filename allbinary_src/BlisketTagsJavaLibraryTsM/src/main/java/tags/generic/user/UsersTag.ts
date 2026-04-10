@@ -47,23 +47,21 @@ this.role= value
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
-            this.setName("Generic Users View")
-this.setObjectFile("views.generic.user.UsersValidationView")
+            this.this.setName("Generic Users View")
+this.this.setObjectFile("views.generic.user.UsersValidationView")
 
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
-                                    put(UserRoleData.NAME, this.role)
+                                    this.getPropertiesHashMap()!.put(UserRoleData.NAME, this.role)
 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
@@ -74,7 +72,7 @@ this.setObjectFile("views.generic.user.UsersValidationView")
                             
 
 
-                            throw Exception("No Such View Command: " +this.getCommand())
+                            throw Error("No Such View Command: " +this.getCommand())
 
                         }
                             
@@ -90,10 +88,10 @@ this.setObjectFile("views.generic.user.UsersValidationView")
 
 
 
-                            throw Exception("Command Null")
+                            throw Error("Command Null")
 } catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

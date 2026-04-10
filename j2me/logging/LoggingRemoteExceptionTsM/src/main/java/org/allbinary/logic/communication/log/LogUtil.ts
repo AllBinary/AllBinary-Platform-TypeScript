@@ -65,6 +65,10 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 }
 
 
+    private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
+        
+        
+
     private isFirstException: boolean = true;
         
         
@@ -87,7 +91,6 @@ private constructor (){
     /*actual*/ public put(log: Log){
 var log = log
 
-    
                         if(log == 
                                     null
                                 )
@@ -122,7 +125,7 @@ var log = log
         
         
 
-this.put(specialMessage, anyType, functionName, exception)
+this.this.put(specialMessage, anyType, functionName, exception)
 }
 
 
@@ -139,14 +142,12 @@ this.put(specialMessage, anyType, functionName, exception)
     //var functionName = functionName
     //var exception = exception
 
-    
                         if(exception != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(exception::class.toString()!.compareTo(XmlRpcException::class.toString()!) == 0)
                         
                                     {
@@ -160,7 +161,6 @@ this.put(specialMessage, anyType, functionName, exception)
                                     }
                                 
 
-    
                         if(exception::class.toString()!.compareTo(IOException::class.toString()!) == 0)
                         
                                     {
@@ -174,7 +174,6 @@ this.put(specialMessage, anyType, functionName, exception)
                                     }
                                 
 
-    
                         if(this.isFirstException || this.timeDelayHelper!.isTime())
                         
                                     {
@@ -185,7 +184,6 @@ this.put(specialMessage, anyType, functionName, exception)
 
 this.isFirstException= false
 
-    
                         if(anyType != 
                                     null
                                  && anyType!::class.toString()! != 
@@ -205,9 +203,8 @@ this.isFirstException= false
 
 
         try {
-            println("Eeeek")
+            System.out.println("Eeeek")
 
-    
                         if(abeClientInformation == 
                                     null
                                 )
@@ -225,16 +222,17 @@ this.isFirstException= false
         
         
 
-delete(0, stringBuffer!.length())
-append(message)
-append(CommonSeps.getInstance()!.SPACE)
-append(SpecialMessageUtil.getInstance()!.get())
-put("message", stringBuffer!.toString())
-get(hashtable)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(message)
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(SpecialMessageUtil.getInstance()!.get())
+hashtable.put("message", stringBuffer!.toString())
+XmlRpcRemoteLogClient(abeClientInformation).
+                            get(hashtable)
 } catch(e: Throwable)
             {
-println("Exception")
-printStackTrace()
+System.out.println("Exception")
+e.printStackTrace()
 }
 
 

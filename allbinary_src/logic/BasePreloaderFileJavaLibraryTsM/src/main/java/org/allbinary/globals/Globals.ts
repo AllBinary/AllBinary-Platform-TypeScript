@@ -78,44 +78,43 @@ var pathString = pathString
         
         
 
-setWebappPath(pathString)
-init(appUrlGlobals)
-setLoader(classLoader)
+appUrlGlobals!.setWebappPath(pathString)
+URLGLOBALS.init(appUrlGlobals)
+WebappClassLoaderInfo.setLoader(classLoader)
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
 
-append("Setting Up AllBinary System Configuration Args: ")
-append(pathString)
-append(" ClassLoader: ")
-append(classLoader!::class.toString()!)
-put(stringBuffer!.toString(), this, commonStrings!.INIT)
+stringBuffer!.append("Setting Up AllBinary System Configuration Args: ")
+stringBuffer!.append(pathString)
+stringBuffer!.append(" ClassLoader: ")
+stringBuffer!.append(classLoader!::class.toString()!)
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT)
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
 
 
-    
                         if(stringValidationUtil!.isEmpty(pathString))
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-append("No Path Provided. Using Process Path: ")
-append(pathString)
-append(CommonSeps.getInstance()!.SPACE)
-append(CommonSeps.getInstance()!.EQUALS)
-append(CommonSeps.getInstance()!.SPACE)
-append(URLGLOBALS.getWebappPath())
-put(stringBuffer!.toString(), this, commonStrings!.INIT)
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("No Path Provided. Using Process Path: ")
+stringBuffer!.append(pathString)
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(CommonSeps.getInstance()!.EQUALS)
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(URLGLOBALS.getWebappPath())
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT)
 
                                     }
                                 
-delete(0, stringBuffer!.length())
-append("Webapp Path Set To: ")
-append(URLGLOBALS.getWebappPath())
-put(stringBuffer!.toString(), this, commonStrings!.INIT)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("Webapp Path Set To: ")
+stringBuffer!.append(URLGLOBALS.getWebappPath())
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT)
 }
 
 

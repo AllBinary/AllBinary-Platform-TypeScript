@@ -62,7 +62,7 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getWebappPath(): string{
 
@@ -86,7 +86,7 @@ public constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setWebappPath(path: string){
 var path = path
@@ -97,16 +97,15 @@ var path = path
         
         
 
-setWebappPath(path)
-init(urlGlobals)
+urlGlobals!.setWebappPath(path)
+URLGLOBALS.init(urlGlobals)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "setWebappPath()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setWebappPath()", e)
 
                                     }
                                 

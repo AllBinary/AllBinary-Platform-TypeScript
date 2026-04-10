@@ -69,7 +69,7 @@ export class RequestParams
 public constructor (){
 
             super();
-            put("New RequestParams Size: 0", this, this.commonStrings!.CONSTRUCTOR)
+            logUtil!.put("New RequestParams Size: 0", this, this.commonStrings!.CONSTRUCTOR)
 }
 
 public constructor (request: HttpServletRequest){
@@ -77,7 +77,7 @@ public constructor (request: HttpServletRequest){
             super();
             var request = request
 map= request.getParameterMap()
-put("RequestParams Size: " +this.getMap()!.keySet()!.size(), this, this.commonStrings!.CONSTRUCTOR)
+logUtil!.put("RequestParams Size: " +this.getMap()!.keySet()!.size(), this, this.commonStrings!.CONSTRUCTOR)
 }
 
 public constructor (pageContext: PageContext){
@@ -85,7 +85,7 @@ public constructor (pageContext: PageContext){
             super();
             var pageContext = pageContext
 map= pageContext!.getRequest()!.getParameterMap()
-put("Request Params Size: " +this.getMap()!.keySet()!.size(), this, this.commonStrings!.CONSTRUCTOR)
+logUtil!.put("Request Params Size: " +this.getMap()!.keySet()!.size(), this, this.commonStrings!.CONSTRUCTOR)
 }
 
 
@@ -163,13 +163,13 @@ i < size; i++)
         
         
 
-delete(0, stringBuffer!.length())
-append(KEY)
-append(key)
-append(VALUE)
-append(values[0]!)
-put(stringBuffer!.toString(), this, "toXmlNode(document)")
-appendChild(ModDomHelper.createNameValueNodes(document, RequestData.PARAMETER, key.toCharArray()
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(KEY)
+stringBuffer!.append(key)
+stringBuffer!.append(VALUE)
+stringBuffer!.append(values[0]!)
+logUtil!.put(stringBuffer!.toString(), this, "toXmlNode(document)")
+node.appendChild(ModDomHelper.createNameValueNodes(document, RequestData.PARAMETER, key.toCharArray()
                                         .slice(0, ).join('')
                                     , .toCharArray()))
 }
@@ -182,7 +182,7 @@ appendChild(ModDomHelper.createNameValueNodes(document, RequestData.PARAMETER, k
     
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "toXmlNode(document)", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode(document)", e)
 
 
 
@@ -194,7 +194,7 @@ put(commonStrings!.EXCEPTION, this, "toXmlNode(document)", e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toHashMap(): HashMap<Any, Any>{
 
@@ -243,17 +243,17 @@ i < size; i++)
         
         
 
-put(key.toCharArray()
+hashMap!.put(key.toCharArray()
                                         .slice(0, ).join('')
                                     , .toCharArray())
 }
 
-delete(0, stringBuffer!.length())
-append("RequestParams: ")
-append(this.map.toString())
-append("\ntoHashMap: ")
-append(hashMap!.toString())
-put(stringBuffer!.toString(), this, "toHashMap()")
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("RequestParams: ")
+stringBuffer!.append(this.map.toString())
+stringBuffer!.append("\ntoHashMap: ")
+stringBuffer!.append(hashMap!.toString())
+logUtil!.put(stringBuffer!.toString(), this, "toHashMap()")
 
 
 

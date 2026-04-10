@@ -78,14 +78,14 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public process(remoteHighScores: RemoteHighScores, abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo){
     //var remoteHighScores = remoteHighScores
     //var abeClientInformation = abeClientInformation
     //var gameInfo = gameInfo
-put("Begin Remote HighScores Retrieval", this, commonStrings!.PROCESS)
+logUtil!.put("Begin Remote HighScores Retrieval", this, commonStrings!.PROCESS)
 
     var gameInfoData: GameInfoData = GameInfoData.getInstance()!;
         
@@ -96,18 +96,17 @@ put("Begin Remote HighScores Retrieval", this, commonStrings!.PROCESS)
         
         
 
-putAll(gameInfo!.toHashtable(), hashtable)
-put(gameInfoData!.SOFTWARE_INFORMATION, remoteHighScores!.getSoftwareInformation()!.toString())
-put(remoteHighScores!.ASCENDING, remoteHighScores!.getAscending()!.toString())
+HashtableUtil.getInstance()!.putAll(gameInfo!.toHashtable(), hashtable)
+hashtable.put(gameInfoData!.SOFTWARE_INFORMATION, remoteHighScores!.getSoftwareInformation()!.toString())
+hashtable.put(remoteHighScores!.ASCENDING, remoteHighScores!.getAscending()!.toString())
 
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
 
-put(displayInfoSingleton!.ORIENTATION, BooleanFactory.getInstance()!.toString(displayInfoSingleton!.isPortrait()))
-put(RemoteHighScoresData.getInstance()!.GAME_CONFIGURATION, GameConfigurationCentral.getInstance()!.toString())
+hashtable.put(displayInfoSingleton!.ORIENTATION, BooleanFactory.getInstance()!.toString(displayInfoSingleton!.isPortrait()))
+hashtable.put(RemoteHighScoresData.getInstance()!.GAME_CONFIGURATION, GameConfigurationCentral.getInstance()!.toString())
 
-    
                         if(XmlRpcAbeClient.isOnline)
                         
                                     {
@@ -117,7 +116,7 @@ put(RemoteHighScoresData.getInstance()!.GAME_CONFIGURATION, GameConfigurationCen
         
         
 
-update(resultHashtable)
+remoteHighScores!.update(resultHashtable)
 
                                     }
                                 

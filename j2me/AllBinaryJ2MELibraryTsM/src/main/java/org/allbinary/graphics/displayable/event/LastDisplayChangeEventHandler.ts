@@ -50,7 +50,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject
@@ -60,7 +60,7 @@ private constructor (){
         
         
 
-onDisplayChangeEvent(eventObject as DisplayChangeEvent)
+displayChangeEventListener!.onDisplayChangeEvent(eventObject as DisplayChangeEvent)
 }
 
 

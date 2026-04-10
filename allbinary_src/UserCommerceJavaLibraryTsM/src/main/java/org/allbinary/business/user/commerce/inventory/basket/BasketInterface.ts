@@ -50,7 +50,7 @@ interface BasketInterface {
 
     public getNumberOf(product: string): Integer
 
-                @Throws(MoneyException::class)
+                //@Throws(MoneyException::class)
             
     public getSubTotal(): Money
 

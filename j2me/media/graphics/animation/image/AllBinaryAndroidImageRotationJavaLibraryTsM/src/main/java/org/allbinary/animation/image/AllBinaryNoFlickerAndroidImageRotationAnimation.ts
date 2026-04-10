@@ -108,25 +108,23 @@ this.twoImages[1]= ImageCopyUtil.getInstance()!.createImage(image)
         
 
 
-    
                         if(this.getBasicColorP() == 
                                     null
                                  || this.getBasicColorP()!.toInt() != basicColor!.toInt())
                         
                                     {
-                                    setColor(this.originalImage, this.imageToShow, 0, basicColor)
+                                    imageModifierUtil!.setColor(this.originalImage, this.imageToShow, 0, basicColor)
 changed= true
 
                                     }
                                 
-setBasicColorP(basicColor)
+super.setBasicColorP(basicColor)
 
-    
                         if(changed)
                         
                                     {
-                                    setRotate(0.0f, this.halfWidth.toFloat(), this.halfHeight.toFloat())
-this.updateImage()
+                                    matrix.setRotate(0.0f, this.halfWidth.toFloat(), this.halfHeight.toFloat())
+this.this.updateImage()
 
                                     }
                                 
@@ -135,7 +133,7 @@ this.updateImage()
 
     public changeBasicColor(basicColor: BasicColor){
     //var basicColor = basicColor
-this.setBasicColorP(basicColor)
+this.this.setBasicColorP(basicColor)
 }
 
 
@@ -147,7 +145,6 @@ this.setBasicColorP(basicColor)
         
 
 
-    
                         if(this.alphaP != alpha)
                         
                                     {
@@ -155,15 +152,14 @@ this.setBasicColorP(basicColor)
 
                                     }
                                 
-setAlpha(alpha)
-setAlpha(this.originalImage, this.imageToShow, 0, this.alphaP)
+super.setAlpha(alpha)
+imageModifierUtil!.setAlpha(this.originalImage, this.imageToShow, 0, this.alphaP)
 
-    
                         if(changed)
                         
                                     {
-                                    setRotate(0.0f, this.halfWidth.toFloat(), this.halfHeight.toFloat())
-this.updateImage()
+                                    matrix.setRotate(0.0f, this.halfWidth.toFloat(), this.halfHeight.toFloat())
+this.this.updateImage()
 
                                     }
                                 
@@ -171,22 +167,22 @@ this.updateImage()
 
 
     public nextRotation(){
-nextRotation()
-setRotate(this.increment.toFloat(), this.halfWidth.toFloat(), this.halfHeight.toFloat())
-this.updateImage()
+super.nextRotation()
+matrix.setRotate(this.increment.toFloat(), this.halfWidth.toFloat(), this.halfHeight.toFloat())
+this.this.updateImage()
 }
 
 
     public previousRotation(){
-previousRotation()
-setRotate( -this.increment.toFloat(), this.halfWidth.toFloat(), this.halfHeight.toFloat())
-this.updateImage()
+super.previousRotation()
+matrix.setRotate( -this.increment.toFloat(), this.halfWidth.toFloat(), this.halfHeight.toFloat())
+this.this.updateImage()
 }
 
 
     updateImage(){
-rotate(this.twoImages[this.bufferedImageIndex]!, originalImage, matrix, imageModifierUtil!.paint)
-this.swap()
+androidImageUtil!.rotate(this.twoImages[this.bufferedImageIndex]!, originalImage, matrix, imageModifierUtil!.paint)
+this.this.swap()
 }
 
 
@@ -197,22 +193,21 @@ this.swap()
         
         
 
-setIndex(index)
+this.circularIndexUtil!.setIndex(index)
 
     var newFrame: number = this.circularIndexUtil!.getIndex()!;
         
         
 
-adjustAngle(newFrame)
-setRotate((newFrame -currentFrame).toFloat() *increment, this.halfWidth.toFloat(), this.halfHeight.toFloat())
-this.updateImage()
+this.angleInfo!.adjustAngle(newFrame)
+matrix.setRotate((newFrame -currentFrame).toFloat() *increment, this.halfWidth.toFloat(), this.halfHeight.toFloat())
+this.this.updateImage()
 }
 
 
     public swap(){
 this.imageToShow= this.twoImages[this.bufferedImageIndex]!
 
-    
                         if(this.bufferedImageIndex == 0)
                         
                                     {
@@ -232,7 +227,7 @@ this.imageToShow= this.twoImages[this.bufferedImageIndex]!
 var graphics = graphics
 var x = x
 var y = y
-drawImage(this.imageToShow, x, y, anchor)
+graphics.drawImage(this.imageToShow, x, y, anchor)
 }
 
 

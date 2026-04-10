@@ -110,7 +110,7 @@ public constructor (gameCanvas: AllBinaryGameCanvas, stringArray: string[], line
 this.gameCanvas= gameCanvas
 this.stringArray= stringArray
 this.lastWidth= IntArray(this.stringArray!.length)
-this.setBasicColorP(basicColor)
+this.this.setBasicColorP(basicColor)
 this.color= basicColor!.toInt()
 this.lineArray= lineArray
 this.fontSize= font.getSize()
@@ -129,13 +129,13 @@ var graphics = graphics
         
         
 
-setFont(this.font, graphics)
+fontDebugFactory!.setFont(this.font, graphics)
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
 
-setBasicColorP(graphics, this.basicColor, this.color)
+basicSetColorUtil!.setBasicColorP(graphics, this.basicColor, this.color)
 
     var beginWidth: number= 0
 
@@ -150,7 +150,6 @@ setBasicColorP(graphics, this.basicColor, this.color)
 index >= 0; index--)
         {
 
-    
                         if(hasChanged)
                         
                                     {
@@ -159,11 +158,11 @@ index >= 0; index--)
                                     }
                                 
 beginWidth= this.lastWidth[index]!
-drawString(this.stringArray[index]!, displayInfo!.getLastHalfWidth() -beginWidth, displayInfo!.getLastHalfHeight() -lineArray[index], anchor)
+graphics.drawString(this.stringArray[index]!, displayInfo!.getLastHalfWidth() -beginWidth, displayInfo!.getLastHalfHeight() -lineArray[index], anchor)
 }
 
 hasChanged= false
-setFont(existingFont, graphics)
+fontDebugFactory!.setFont(existingFont, graphics)
 }
 
 

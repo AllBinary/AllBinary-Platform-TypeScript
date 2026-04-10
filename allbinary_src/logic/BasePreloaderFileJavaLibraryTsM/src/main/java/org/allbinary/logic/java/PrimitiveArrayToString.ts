@@ -44,7 +44,7 @@ var floats = floats
         
 index < floats.length; index++)
         {
-appendfloat(floats[index]!)
+stringBuffer!.appendfloat(floats[index]!)
 }
 
 

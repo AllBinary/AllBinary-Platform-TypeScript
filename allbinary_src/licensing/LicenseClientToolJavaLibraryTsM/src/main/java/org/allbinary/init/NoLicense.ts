@@ -27,12 +27,12 @@ export class NoLicense
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static init(classLoader: ClassLoader, pathString: string){
 var classLoader = classLoader
 var pathString = pathString
-init(classLoader, pathString)
+Globals.init(classLoader, pathString)
 }
 
 private constructor (){

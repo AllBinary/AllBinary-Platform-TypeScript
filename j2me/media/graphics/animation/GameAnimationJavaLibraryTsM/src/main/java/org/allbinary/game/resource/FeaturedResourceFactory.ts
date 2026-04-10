@@ -107,7 +107,7 @@ public constructor (){
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(level: number){
 var level = level
@@ -141,14 +141,13 @@ index < size; index++)
         
         
 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(this.GAME_FEATURE_CONTROLLED)!.append(featureInterface!.toString())!.append(this.IS_LOADING_LEVEL_LABEL)!.append(ResourceLoadingLevelFactory.getInstance()!.getLevelString(level))!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendboolean(isLoadingLevel)!.append(this.IS_FEATURE)!.appendboolean(isFeature)!.toString(), this, commonStrings!.INIT)
 
-    
                         if(isLoadingLevel && isFeature)
                         
                                     {
-                                    init(level)
+                                    featureInterface!.init(level)
 
                                     }
                                 
@@ -169,26 +168,25 @@ put(StringMaker().
         
         
 
-append(ANIMATION_FEATURES)
-appendboolean(features.isFeature(graphicsFeatureFactory!.VECTOR_GRAPHICS))
-append(IMAGE_LABEL)
-appendboolean(features.isFeature(graphicsFeatureFactory!.IMAGE_GRAPHICS))
-put(stringBuffer!.toString(), this, commonStrings!.INIT)
+stringBuffer!.append(ANIMATION_FEATURES)
+stringBuffer!.appendboolean(features.isFeature(graphicsFeatureFactory!.VECTOR_GRAPHICS))
+stringBuffer!.append(IMAGE_LABEL)
+stringBuffer!.appendboolean(features.isFeature(graphicsFeatureFactory!.IMAGE_GRAPHICS))
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT)
 
-    
                         if(features.isFeature(graphicsFeatureFactory!.IMAGE_GRAPHICS))
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-append(IMAGE_GRAPHICS_ARRAY)
-appendboolean(features.isFeature(graphicsFeatureFactory!.IMAGE_TO_ARRAY_GRAPHICS))
-append(IMAGE_GRAPHICS_ROTATION)
-appendboolean(features.isFeature(graphicsFeatureFactory!.IMAGE_TO_ARRAY_GRAPHICS))
-append(SPRITE_QUARTER)
-appendboolean(features.isFeature(graphicsFeatureFactory!.SPRITE_QUARTER_ROTATION_GRAPHICS))
-append(SPRITE_FULL)
-appendboolean(features.isFeature(graphicsFeatureFactory!.SPRITE_FULL_GRAPHICS))
-put(stringBuffer!.toString(), this, commonStrings!.INIT)
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(IMAGE_GRAPHICS_ARRAY)
+stringBuffer!.appendboolean(features.isFeature(graphicsFeatureFactory!.IMAGE_TO_ARRAY_GRAPHICS))
+stringBuffer!.append(IMAGE_GRAPHICS_ROTATION)
+stringBuffer!.appendboolean(features.isFeature(graphicsFeatureFactory!.IMAGE_TO_ARRAY_GRAPHICS))
+stringBuffer!.append(SPRITE_QUARTER)
+stringBuffer!.appendboolean(features.isFeature(graphicsFeatureFactory!.SPRITE_QUARTER_ROTATION_GRAPHICS))
+stringBuffer!.append(SPRITE_FULL)
+stringBuffer!.appendboolean(features.isFeature(graphicsFeatureFactory!.SPRITE_FULL_GRAPHICS))
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT)
 
                                     }
                                 
@@ -196,15 +194,15 @@ put(stringBuffer!.toString(), this, commonStrings!.INIT)
 
 
     public clear(){
-clear()
+this.list.clear()
 }
 
 
     public add(featureInterface: GameFeatureControlledInterface){
 var featureInterface = featureInterface
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(featureInterface))!.toString(), this, commonStrings!.ADD)
-add(featureInterface)
+this.list.add(featureInterface)
 }
 
 

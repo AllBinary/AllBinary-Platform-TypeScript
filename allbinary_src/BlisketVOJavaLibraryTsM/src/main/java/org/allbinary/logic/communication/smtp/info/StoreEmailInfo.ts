@@ -55,7 +55,6 @@ var textBody = textBody
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -64,16 +63,16 @@ var textBody = textBody
         
         
 
-put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
 this.storeFrontInterface= storeFrontInterface
-this.init()
+this.this.init()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(){
 
@@ -86,7 +85,7 @@ this.init()
         
         
 
-this.setEmailServerConfigurationInterface(emailServerConfigurationInterface)
+this.this.setEmailServerConfigurationInterface(emailServerConfigurationInterface)
 }
 
 

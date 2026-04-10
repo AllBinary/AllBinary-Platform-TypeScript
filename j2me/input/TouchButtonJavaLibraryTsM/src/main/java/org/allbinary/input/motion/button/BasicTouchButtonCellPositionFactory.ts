@@ -88,7 +88,7 @@ export class BasicTouchButtonCellPositionFactory
 public constructor (){
 
             super();
-            put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
     var touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();
         
@@ -99,7 +99,7 @@ public constructor (){
         
         
 
-init(touchButtonLocationHelper!.getTotalColumns(), touchButtonLocationHelper!.getTotalRows())
+cellPositionFactory!.init(touchButtonLocationHelper!.getTotalColumns(), touchButtonLocationHelper!.getTotalRows())
 TOP_LEFT= cellPositionFactory!.getInstance(0, 0)
 TOP_RIGHT= cellPositionFactory!.getInstance(touchButtonLocationHelper!.getTotalColumns() -1, 0)
 BOTTOM_LEFT= cellPositionFactory!.getInstance(0, touchButtonLocationHelper!.getTotalRows() -1)
@@ -111,7 +111,6 @@ BOTTOM_SECOND_FROM_LEFT= cellPositionFactory!.getInstance(1, touchButtonLocation
 SECOND_FROM_BOTTOM_LEFT= cellPositionFactory!.getInstance(0, touchButtonLocationHelper!.getTotalRows() -2)
 SECOND_FROM_BOTTOM_SECOND_FROM_LEFT= cellPositionFactory!.getInstance(1, touchButtonLocationHelper!.getTotalRows() -2)
 
-    
                         if(touchButtonLocationHelper!.getTotalRows() > 2)
                         
                                     {
@@ -127,7 +126,6 @@ SECOND_FROM_TOP_RIGHT= cellPositionFactory!.NONE
                         }
                             
 
-    
                         if(touchButtonLocationHelper!.getTotalRows() >= 4)
                         
                                     {
@@ -145,7 +143,6 @@ THIRD_FROM_BOTTOM_LEFT= cellPositionFactory!.NONE
                         }
                             
 
-    
                         if(touchButtonLocationHelper!.getTotalColumns() >= 4)
                         
                                     {

@@ -24,7 +24,7 @@ export class ClassLoaderUtil
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getName(anyType: any = {}): string{
 var anyType = anyType
@@ -34,7 +34,6 @@ var anyType = anyType
         
 
 
-    
                         if(classLoader != 
                                     null
                                 )
@@ -52,7 +51,7 @@ var anyType = anyType
 
 
 
-                            throw Exception("Unable to get ClassLoader")
+                            throw Error("Unable to get ClassLoader")
 }
 
 private constructor (){

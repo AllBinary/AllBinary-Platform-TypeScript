@@ -82,11 +82,11 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.getFormData()
+this.this.getFormData()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getFormData(){
 
@@ -96,7 +96,6 @@ this.getFormData()
         
 
 
-    
                         if(hashMap == 
                                     null
                                 )
@@ -105,7 +104,7 @@ this.getFormData()
                                     
 
 
-                            throw Exception("No Request Params Found")
+                            throw Error("No Request Params Found")
 
                                     }
                                 
@@ -118,7 +117,6 @@ this.downloadItemId= hashMap!.get(DownloadItemData.ID) as String
 
         try {
             
-    
                         if(id == 
                                     null
                                  || !StringValidationUtil.getInstance()!.isNumber(this.id))
@@ -140,7 +138,6 @@ this.downloadItemId= hashMap!.get(DownloadItemData.ID) as String
 
 this.itemInterface= inventoryEntity!.getItem(this.id)
 
-    
                         if(this.itemInterface == 
                                     null
                                 )
@@ -166,7 +163,6 @@ this.itemInterface= inventoryEntity!.getItem(this.id)
         
 
 
-    
                         if(vector.length != 1)
                         
                                     {
@@ -228,24 +224,22 @@ var document = document
         
 
 
-    
                         if(id == 
                                     null
                                  || !StringValidationUtil.getInstance()!.isNumber(this.id))
                         
                                     {
-                                    append("Id is not valid.<br />")
+                                    stringBuffer!.append("Id is not valid.<br />")
 
                                     }
                                 
 
-    
                         if(InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.getItem(this.id) == 
                                     null
                                 )
                         
                                     {
-                                    append("Item does not exist.<br />")
+                                    stringBuffer!.append("Item does not exist.<br />")
 
                                     }
                                 
@@ -260,20 +254,18 @@ var document = document
         
 
 
-    
                         if(vector.length == 0)
                         
                                     {
-                                    append("DownloadItem does not exist.<br />")
+                                    stringBuffer!.append("DownloadItem does not exist.<br />")
 
                                     }
                                 
 
-    
                         if(vector.length > 1)
                         
                                     {
-                                    append("To Many DownloadItems exist.<br />")
+                                    stringBuffer!.append("To Many DownloadItems exist.<br />")
 
                                     }
                                 

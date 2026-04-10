@@ -69,7 +69,7 @@ export class NonPlayerTopViewCharacterBehavior extends TopViewCharacterBehavior 
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public terrainEvent(layer: AllBinaryLayer, direction: Direction, x: number, y: number, geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition){
     //var layer = layer
@@ -85,7 +85,6 @@ export class NonPlayerTopViewCharacterBehavior extends TopViewCharacterBehavior 
         
 
 
-    
                         if(geographicMapCellPosition!.getColumn() > 0 && geographicMapCellPosition!.getColumn() < maxColumns)
                         
                                     {
@@ -102,7 +101,6 @@ export class NonPlayerTopViewCharacterBehavior extends TopViewCharacterBehavior 
         
 
 
-    
                         if(direction == DirectionFactory.getInstance()!.LEFT)
                         
                                     {
@@ -111,7 +109,6 @@ export class NonPlayerTopViewCharacterBehavior extends TopViewCharacterBehavior 
                                     }
                                 
                              else 
-    
                         if(direction == DirectionFactory.getInstance()!.RIGHT)
                         
                                     {
@@ -119,14 +116,13 @@ export class NonPlayerTopViewCharacterBehavior extends TopViewCharacterBehavior 
 
                                     }
                                 
-getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, nextTerrainGeographicMapCellPosition)
+geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, nextTerrainGeographicMapCellPosition)
 
     var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;
         
         
 
 
-    
                         if(!hasSolidBlock)
                         
                                     {
@@ -135,7 +131,7 @@ getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, nextTerra
         
         
 
-fireEvent(terrainEvent)
+TerrainEventHandler.getInstance(layer)!.fireEvent(terrainEvent)
 
                                     }
                                 
@@ -150,7 +146,7 @@ fireEvent(terrainEvent)
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
     //var x = x
     //var y = y
-move(x, y)
+layer.move(x, y)
 }
 
 

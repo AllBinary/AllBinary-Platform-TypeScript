@@ -145,7 +145,7 @@ public constructor (databaseConnectionInfoInterface: DatabaseConnectionInfoInter
     public addUsers(): Boolean{
 
         try {
-            put(this.commonStrings!.START, this, this.METHOD_ADD_USERS)
+            logUtil!.put(this.commonStrings!.START, this, this.METHOD_ADD_USERS)
 userDbInitInfo= UserDbInitInfo()
 inventoryDbInitInfo= InventoryDbInitInfo()
 historyDbInitInfo= HistoryDbInitInfo()
@@ -167,11 +167,10 @@ logDbInitInfo= LogDbInitInfo()
         
 
 
-    
                         if(!this.addDbUser(CUSTOMERDB, CUSTOMERDBUSER, CUSTOMERDBPASSWORD))
                         
                                     {
-                                    put(this.UNABLE_TO_CREATE_USER +CUSTOMERDBUSER, this, this.METHOD_ADD_USERS)
+                                    logUtil!.put(this.UNABLE_TO_CREATE_USER +CUSTOMERDBUSER, this, this.METHOD_ADD_USERS)
 
 
 
@@ -197,11 +196,10 @@ logDbInitInfo= LogDbInitInfo()
         
 
 
-    
                         if(!this.addDbUser(INVENTORYDB, INVENTORYDBUSER, INVENTORYDBPASSWORD))
                         
                                     {
-                                    put(this.UNABLE_TO_CREATE_USER +INVENTORYDBUSER, this, this.METHOD_ADD_USERS)
+                                    logUtil!.put(this.UNABLE_TO_CREATE_USER +INVENTORYDBUSER, this, this.METHOD_ADD_USERS)
 
 
 
@@ -227,11 +225,10 @@ logDbInitInfo= LogDbInitInfo()
         
 
 
-    
                         if(!this.addDbUser(HISTORYDB, HISTORYDBUSER, HISTORYDBPASSWORD))
                         
                                     {
-                                    put(this.UNABLE_TO_CREATE_USER +HISTORYDBUSER, this, this.METHOD_ADD_USERS)
+                                    logUtil!.put(this.UNABLE_TO_CREATE_USER +HISTORYDBUSER, this, this.METHOD_ADD_USERS)
 
 
 
@@ -257,11 +254,10 @@ logDbInitInfo= LogDbInitInfo()
         
 
 
-    
                         if(!this.addDbUser(STATICPAGESDB, STATICPAGESDBUSER, STATICPAGESDBPASSWORD))
                         
                                     {
-                                    put(this.UNABLE_TO_CREATE_USER +STATICPAGESDBUSER, this, this.METHOD_ADD_USERS)
+                                    logUtil!.put(this.UNABLE_TO_CREATE_USER +STATICPAGESDBUSER, this, this.METHOD_ADD_USERS)
 
 
 
@@ -287,11 +283,10 @@ logDbInitInfo= LogDbInitInfo()
         
 
 
-    
                         if(!this.addDbUser(LOGDB, LOGDBUSER, LOGDBPASSWORD))
                         
                                     {
-                                    put(this.UNABLE_TO_CREATE_USER +LOGDBUSER, this, this.METHOD_ADD_USERS)
+                                    logUtil!.put(this.UNABLE_TO_CREATE_USER +LOGDBUSER, this, this.METHOD_ADD_USERS)
 
 
 
@@ -301,7 +296,7 @@ logDbInitInfo= LogDbInitInfo()
 
                                     }
                                 
-put(this.commonStrings!.END, this, this.METHOD_ADD_USERS)
+logUtil!.put(this.commonStrings!.END, this, this.METHOD_ADD_USERS)
 
 
 
@@ -310,7 +305,7 @@ put(this.commonStrings!.END, this, this.METHOD_ADD_USERS)
     
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_USERS, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_USERS, e)
 
 
 
@@ -325,7 +320,7 @@ put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_USERS, e)
     public addDatabases(): Boolean{
 
         try {
-            put(this.commonStrings!.START, this, this.METHOD_ADD_DATABASES)
+            logUtil!.put(this.commonStrings!.START, this, this.METHOD_ADD_DATABASES)
 userDbInitInfo= UserDbInitInfo()
 inventoryDbInitInfo= InventoryDbInitInfo()
 historyDbInitInfo= HistoryDbInitInfo()
@@ -337,11 +332,10 @@ logDbInitInfo= LogDbInitInfo()
         
 
 
-    
                         if(!this.addDb(CUSTOMERDB))
                         
                                     {
-                                    put(this.UNABLE_TO_CREATE_DATABASE +CUSTOMERDB, this, this.METHOD_ADD_DATABASES)
+                                    logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +CUSTOMERDB, this, this.METHOD_ADD_DATABASES)
 
 
 
@@ -357,11 +351,10 @@ logDbInitInfo= LogDbInitInfo()
         
 
 
-    
                         if(!this.addDb(INVENTORYDB))
                         
                                     {
-                                    put(this.UNABLE_TO_CREATE_DATABASE +INVENTORYDB, this, this.METHOD_ADD_DATABASES)
+                                    logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +INVENTORYDB, this, this.METHOD_ADD_DATABASES)
 
 
 
@@ -377,11 +370,10 @@ logDbInitInfo= LogDbInitInfo()
         
 
 
-    
                         if(!this.addDb(HISTORYDB))
                         
                                     {
-                                    put(this.UNABLE_TO_CREATE_DATABASE +HISTORYDB, this, this.METHOD_ADD_DATABASES)
+                                    logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +HISTORYDB, this, this.METHOD_ADD_DATABASES)
 
 
 
@@ -397,11 +389,10 @@ logDbInitInfo= LogDbInitInfo()
         
 
 
-    
                         if(!this.addDb(STATICPAGESDB))
                         
                                     {
-                                    put(this.UNABLE_TO_CREATE_DATABASE +STATICPAGESDB, this, this.METHOD_ADD_DATABASES)
+                                    logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +STATICPAGESDB, this, this.METHOD_ADD_DATABASES)
 
 
 
@@ -417,11 +408,10 @@ logDbInitInfo= LogDbInitInfo()
         
 
 
-    
                         if(!this.addDb(LOGDB))
                         
                                     {
-                                    put(this.UNABLE_TO_CREATE_DATABASE +LOGDB, this, this.METHOD_ADD_DATABASES)
+                                    logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +LOGDB, this, this.METHOD_ADD_DATABASES)
 
 
 
@@ -436,13 +426,13 @@ logDbInitInfo= LogDbInitInfo()
         
         
 
-createNewFile()
+file.createNewFile()
 
     var idOutData: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(file)!;
         
         
 
-writeBytes(this.sqlCommandLog!.toString())
+idOutData!.writeBytes(this.sqlCommandLog!.toString())
 
 
 
@@ -451,7 +441,7 @@ writeBytes(this.sqlCommandLog!.toString())
     
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_DATABASES, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_DATABASES, e)
 
 
 
@@ -471,25 +461,25 @@ put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_DATABASES, e)
         
         
 
-put(commonStrings!.START, this, this.METHOD_ADD_TABLES)
-append(UserEntityFactory.getInstance()!.createTable())
-append(StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.createTable())
-append(BillingAddressesEntityFactory.getInstance()!.getInstance(this.stringUtil!.EMPTY_STRING)!.createTable())
-append(ShippingAddressesEntityFactory.getInstance()!.getInstance(this.stringUtil!.EMPTY_STRING)!.createTable())
-append(PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!.createTable())
-append(QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.createTable())
-append(OrderHistoryEntityFactory.getInstance()!.createTable())
-append(OrderItemsEntityFactory.getInstance()!.createTable())
-append(TransactionEntityFactory.getInstance()!.getTransactionEntityInstance()!.createTable())
-append(TransactionResultEntityFactory.getInstance()!.getTransactionResultEntityInstance()!.createTable())
-append(PaymentGatewayEntityFactory.getInstance()!.createTable())
-append(InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.createTable())
-append(InitInfoEntity().
+logUtil!.put(commonStrings!.START, this, this.METHOD_ADD_TABLES)
+stringBuffer!.append(UserEntityFactory.getInstance()!.createTable())
+stringBuffer!.append(StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.createTable())
+stringBuffer!.append(BillingAddressesEntityFactory.getInstance()!.getInstance(this.stringUtil!.EMPTY_STRING)!.createTable())
+stringBuffer!.append(ShippingAddressesEntityFactory.getInstance()!.getInstance(this.stringUtil!.EMPTY_STRING)!.createTable())
+stringBuffer!.append(PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!.createTable())
+stringBuffer!.append(QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.createTable())
+stringBuffer!.append(OrderHistoryEntityFactory.getInstance()!.createTable())
+stringBuffer!.append(OrderItemsEntityFactory.getInstance()!.createTable())
+stringBuffer!.append(TransactionEntityFactory.getInstance()!.getTransactionEntityInstance()!.createTable())
+stringBuffer!.append(TransactionResultEntityFactory.getInstance()!.getTransactionResultEntityInstance()!.createTable())
+stringBuffer!.append(PaymentGatewayEntityFactory.getInstance()!.createTable())
+stringBuffer!.append(InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.createTable())
+stringBuffer!.append(InitInfoEntity().
                             createTable())
-append(LogTableEntityFactory.getInstance()!.getLogTableEntityInstance()!.createTable())
-append(StaticPagesEntityFactory.getInstance()!.getStaticPagesEntityInstance()!.createTable())
-append(TransformInfoEntityBuilder.getInstance()!.createTable())
-put(ADD_TABLES_RESULTS_LABEL +stringBuffer!.toString(), this, this.METHOD_ADD_TABLES)
+stringBuffer!.append(LogTableEntityFactory.getInstance()!.getLogTableEntityInstance()!.createTable())
+stringBuffer!.append(StaticPagesEntityFactory.getInstance()!.getStaticPagesEntityInstance()!.createTable())
+stringBuffer!.append(TransformInfoEntityBuilder.getInstance()!.createTable())
+logUtil!.put(ADD_TABLES_RESULTS_LABEL +stringBuffer!.toString(), this, this.METHOD_ADD_TABLES)
 
 
 
@@ -498,7 +488,7 @@ put(ADD_TABLES_RESULTS_LABEL +stringBuffer!.toString(), this, this.METHOD_ADD_TA
     
 } catch(e: Exception)
             {
-put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_TABLES, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_TABLES, e)
 
 
 

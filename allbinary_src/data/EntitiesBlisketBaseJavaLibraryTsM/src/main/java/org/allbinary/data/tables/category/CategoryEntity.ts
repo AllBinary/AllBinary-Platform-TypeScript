@@ -67,7 +67,7 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.this.setTableName(tableName)
 }
 
 public constructor ()                        
@@ -79,7 +79,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.this.setTableName(tableName)
 }
 
 
@@ -97,26 +97,24 @@ var category = category
         
         
 
-add(categoryVector!.get(0))
-add(categoryVector!.get(1))
-insert(values)
+values.add(categoryVector!.get(0))
+values.add(categoryVector!.get(1))
+super.insert(values)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, INSERT)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT)
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, INSERT, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e)
 
                                     }
                                 
@@ -129,24 +127,22 @@ insert(values)
 var value = value
 
         try {
-            deleteWhere(CategoryData.getInstance()!.NAME, value)
+            super.deleteWhere(CategoryData.getInstance()!.NAME, value)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, commonStrings!.delete)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, commonStrings!.delete)
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
 
                                     }
                                 
@@ -161,16 +157,16 @@ var value = value
         
         
 
-append(this.sqlStrings!.CREATE_TABLE)
-append(tableName)
-append(this.sqlStrings!.START)
-append(CategoryData.getInstance()!.NAME)
-append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-append(CategoryData.getInstance()!.LEVEL)
-append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-append(this.sqlStrings!.PRIMARY_KEY)
-append(CategoryData.getInstance()!.NAME)
-append(this.sqlStrings!.END)
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)
+stringBuffer!.append(tableName)
+stringBuffer!.append(this.sqlStrings!.START)
+stringBuffer!.append(CategoryData.getInstance()!.NAME)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
+stringBuffer!.append(CategoryData.getInstance()!.LEVEL)
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
+stringBuffer!.append(this.sqlStrings!.PRIMARY_KEY)
+stringBuffer!.append(CategoryData.getInstance()!.NAME)
+stringBuffer!.append(this.sqlStrings!.END)
 
 
 
@@ -192,7 +188,7 @@ append(this.sqlStrings!.END)
 
     public update(updatedValues: HashMap<Any, Any>){
 var updatedValues = updatedValues
-updateWhere(CategoryData.getInstance()!.NAME, updatedValues!.get(CategoryData.getInstance()!.NAME) as String, updatedValues)
+super.updateWhere(CategoryData.getInstance()!.NAME, updatedValues!.get(CategoryData.getInstance()!.NAME) as String, updatedValues)
 }
 
 

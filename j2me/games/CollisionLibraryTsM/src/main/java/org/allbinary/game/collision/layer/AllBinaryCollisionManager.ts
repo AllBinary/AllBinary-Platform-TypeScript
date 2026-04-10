@@ -52,7 +52,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(layerManager: LayerManager, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface, startIndex: number){
 var layerManager = layerManager
@@ -78,13 +78,13 @@ index < size; index++)
         
         
 
-this.collide(layerManager, collidableInterfaceCompositeInterface, collidableInterfaceCompositeInterface2)
+this.this.collide(layerManager, collidableInterfaceCompositeInterface, collidableInterfaceCompositeInterface2)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     collide(layerManager: LayerManager, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface, collidableInterfaceCompositeInterface2: CollidableInterfaceCompositeInterface){
 var layerManager = layerManager
@@ -101,17 +101,15 @@ var collidableInterfaceCompositeInterface2 = collidableInterfaceCompositeInterfa
         
 
 
-    
                         if(collidableBase2!.isCollidable())
                         
                                     {
                                     
-    
                         if(collidableBase!.isCollision(collidableInterfaceCompositeInterface2))
                         
                                     {
-                                    collide(collidableInterfaceCompositeInterface2)
-collide(collidableInterfaceCompositeInterface)
+                                    collidableBase!.collide(collidableInterfaceCompositeInterface2)
+collidableBase2!.collide(collidableInterfaceCompositeInterface)
 
                                     }
                                 

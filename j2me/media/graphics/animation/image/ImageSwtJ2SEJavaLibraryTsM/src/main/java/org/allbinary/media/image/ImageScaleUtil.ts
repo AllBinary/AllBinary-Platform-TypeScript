@@ -85,7 +85,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean): Image{
     //var imageCache = imageCache
@@ -104,7 +104,7 @@ private constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createImage(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
     //var imageCache = imageCache
@@ -116,11 +116,10 @@ private constructor (){
     //var cached = cached
     //var mutable = mutable
 
-    
                         if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
                                     {
-                                    put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
 
 
 
@@ -164,7 +163,7 @@ private constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public scale(originalImage: Image, originalImageArray: Image[], ximageToShowArray: Image[], unused: number, scaleX: number, scaleY: number, maxScaleX: number, maxScaleY: number){
     //var originalImage = originalImage
@@ -175,11 +174,11 @@ private constructor (){
     //var scaleY = scaleY
     //var maxScaleX = maxScaleX
     //var maxScaleY = maxScaleY
-this.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX, scaleY, maxScaleX, maxScaleY, true)
+this.this.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX, scaleY, maxScaleX, maxScaleY, true)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public scale(originalImage: Image, originalImageArray: Image[], ximageToShowArray: Image[], unused: number, scaleX: number, scaleY: number, maxScaleX: number, maxScaleY: number, mutable: boolean){
     //var originalImage = originalImage

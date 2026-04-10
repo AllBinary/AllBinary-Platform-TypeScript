@@ -71,7 +71,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public scale(images: Image[], width: number, height: number): Image[]{
 var images = images
@@ -105,7 +105,7 @@ scaledImages[index]= this.scale(images[index]!, width, height)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public scale(image: Image, width: number, height: number): Image{
     //var image = image
@@ -119,7 +119,6 @@ scaledImages[index]= this.scale(images[index]!, width, height)
         
 
 
-    
                         if(image.isMutable())
                         
                                     {
@@ -162,7 +161,7 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image
         
         
 
-drawImage(originalPlayNImage, 0, 0, scaledImage!.getWidth(), scaledImage!.getHeight(), 0, 0, image.getWidth(), image.getHeight())
+canvasSurface!.drawImage(originalPlayNImage, 0, 0, scaledImage!.getWidth(), scaledImage!.getHeight(), 0, 0, image.getWidth(), image.getHeight())
 
 
 

@@ -58,7 +58,7 @@ public constructor ()
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     search(){
 
@@ -86,7 +86,7 @@ public constructor ()
         
         
 
-print(result)
+pageContext!.getOut()!.print(result)
 } catch(e: LicensingException)
             {
 
@@ -102,26 +102,24 @@ print(result)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "search()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "search()", e)
 
                                     }
                                 
 
         try {
-            print(error +"<br>")
-print("Exception: " +e +"<br>")
+            pageContext!.getOut()!.print(error +"<br>")
+pageContext!.getOut()!.print("Exception: " +e +"<br>")
 } catch(e2: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
                         
                                     {
-                                    put("Exception in Exception Handling", this, "search()", e)
+                                    logUtil!.put("Exception in Exception Handling", this, "search()", e)
 
                                     }
                                 
@@ -132,7 +130,7 @@ print("Exception: " +e +"<br>")
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     viewSummary(){
 
@@ -160,7 +158,7 @@ print("Exception: " +e +"<br>")
         
         
 
-print(result)
+pageContext!.getOut()!.print(result)
 } catch(e: LicensingException)
             {
 
@@ -176,26 +174,24 @@ print(result)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "viewSummary()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "viewSummary()", e)
 
                                     }
                                 
 
         try {
-            print(error +"<br>")
-print("Exception: " +e +"<br>")
+            pageContext!.getOut()!.print(error +"<br>")
+pageContext!.getOut()!.print("Exception: " +e +"<br>")
 } catch(e2: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
                         
                                     {
-                                    put("Exception in Exception Handling", this, "viewSummary())", e)
+                                    logUtil!.put("Exception in Exception Handling", this, "viewSummary())", e)
 
                                     }
                                 
@@ -206,26 +202,24 @@ print("Exception: " +e +"<br>")
 }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.SEARCH) == 0)
                         
                                     {
-                                    this.setName("Basic Search Inventory View")
-this.setObjectFile("views.generic.inventory.AutoSearchValidationInventoryView")
-this.search()
+                                    this.this.setName("Basic Search Inventory View")
+this.this.setObjectFile("views.generic.inventory.AutoSearchValidationInventoryView")
+this.this.search()
 
 
 
@@ -236,13 +230,12 @@ this.search()
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEWSUMMARY) == 0)
                         
                                     {
-                                    this.setName("Basic Inventory View")
-this.setObjectFile("views.generic.inventory.AutoValidationInventoryView")
-this.viewSummary()
+                                    this.this.setName("Basic Inventory View")
+this.this.setObjectFile("views.generic.inventory.AutoValidationInventoryView")
+this.this.viewSummary()
 
 
 
@@ -253,12 +246,11 @@ this.viewSummary()
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.setName("Basic Inventory View")
-this.setObjectFile("views.generic.inventory.AutoValidationInventoryView")
+                                    this.this.setName("Basic Inventory View")
+this.this.setObjectFile("views.generic.inventory.AutoValidationInventoryView")
 
 
 
@@ -272,7 +264,7 @@ this.setObjectFile("views.generic.inventory.AutoValidationInventoryView")
                             
 
 
-                            throw Exception("No Such View Command: " +this.getCommand())
+                            throw Error("No Such View Command: " +this.getCommand())
 
                         }
                             
@@ -282,10 +274,10 @@ this.setObjectFile("views.generic.inventory.AutoValidationInventoryView")
 
 
 
-                            throw Exception("Command Null")
+                            throw Error("Command Null")
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -295,7 +287,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

@@ -33,7 +33,7 @@ interface TopViewCharacterInterface {
 
     terrainMove(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], x: number, y: number)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     terrainEvent(x: number, y: number, geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition)
 
@@ -45,7 +45,7 @@ interface TopViewCharacterInterface {
 
     rightp()
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     reset()
 

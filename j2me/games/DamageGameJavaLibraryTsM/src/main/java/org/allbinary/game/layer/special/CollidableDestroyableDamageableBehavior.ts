@@ -57,7 +57,6 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
     public isCollision(collisionLayer: CollidableCompositeLayer): boolean{
     //var collisionLayer = collisionLayer
 
-    
                         if(this.ownerLayer!.getGroupInterface()[0] != collisionLayer!.getGroupInterface()[0])
                         
                                     {
@@ -79,7 +78,7 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public collide(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
@@ -93,13 +92,13 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
         
         
 
-damage(collidableDestroyableDamageableLayer!.getDamage(0), 0)
+ownerCollidableDestroyableDamageableLayer!.damage(collidableDestroyableDamageableLayer!.getDamage(0), 0)
 }
 
 
     public isCollision(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
-log("No Longer Used", this)
+ForcedLogUtil.log("No Longer Used", this)
 
 
 
@@ -109,11 +108,11 @@ log("No Longer Used", this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public collide(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
-log("No Longer Used", this)
+ForcedLogUtil.log("No Longer Used", this)
 }
 
 

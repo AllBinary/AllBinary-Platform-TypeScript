@@ -47,7 +47,7 @@ export class UpgradeDowngradeTouchButtonsBuilder extends BaseTouchInput {
     public getList(): BasicArrayList{
 
         try {
-            put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
     var list: BasicArrayList = new BasicArrayList();
         
@@ -69,7 +69,6 @@ export class UpgradeDowngradeTouchButtonsBuilder extends BaseTouchInput {
         
 
 
-    
                         if(basicTouchButtonCellPositionFactory!.SECOND_FROM_TOP_LEFT != cellPositionFactory!.NONE && basicTouchButtonCellPositionFactory!.SECOND_FROM_TOP_RIGHT != cellPositionFactory!.NONE)
                         
                                     {
@@ -88,8 +87,8 @@ export class UpgradeDowngradeTouchButtonsBuilder extends BaseTouchInput {
         
         
 
-add(UP)
-add(DOWN)
+list.add(UP)
+list.add(DOWN)
 
                                     }
                                 
@@ -101,7 +100,7 @@ add(DOWN)
     
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 
 
 

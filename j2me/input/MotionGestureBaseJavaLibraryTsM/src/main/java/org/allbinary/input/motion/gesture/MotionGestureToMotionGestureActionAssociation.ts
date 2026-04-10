@@ -83,7 +83,6 @@ var aList = aList
         
 
 
-    
                         if(this.list.size() != size)
                         
                                     {
@@ -107,7 +106,6 @@ var aList = aList
 i >= 0; i--)
         {
 
-    
                         if(aList!.objectArray[i] != this.list.objectArray[i])
                         
                                     {

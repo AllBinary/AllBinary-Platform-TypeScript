@@ -53,7 +53,7 @@ var popupMenuInputProcessor = popupMenuInputProcessor
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processInput(key: number): number{
 var key = key
@@ -66,11 +66,11 @@ var key = key
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     processMotionInput(motionGestureEvent: MotionGestureEvent){
 var motionGestureEvent = motionGestureEvent
-processMotionInput(motionGestureEvent)
+super.processMotionInput(motionGestureEvent)
 }
 
 

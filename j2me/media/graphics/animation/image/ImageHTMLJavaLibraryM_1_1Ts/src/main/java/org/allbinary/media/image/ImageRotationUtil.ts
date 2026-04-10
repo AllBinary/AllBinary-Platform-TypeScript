@@ -63,7 +63,6 @@ private constructor (){
     //var image = image
     //var totalAngle = totalAngle
 
-    
                         if(image.isMutable())
                         
                                     {
@@ -82,13 +81,13 @@ private constructor (){
         
         
 
-translate(originalImage!.getWidth() /2, originalImage!.getHeight() /2)
+canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight() /2)
 
     var image2: Image = this.rotateImage(originalImage, image, canvasSurface, totalAngle)!;
         
         
 
-this.drawImage(originalImage, image, canvasSurface)
+this.this.drawImage(originalImage, image, canvasSurface)
 
 
 
@@ -117,13 +116,12 @@ this.drawImage(originalImage, image, canvasSurface)
     //var canvasSurface = canvasSurface
     //var totalAngle = totalAngle
 
-    
                         if(image.isMutable())
                         
                                     {
-                                    translate( -originalImage!.getWidth() /2,  -originalImage!.getHeight() /2)
-clear()
-translate(originalImage!.getWidth() /2, originalImage!.getHeight() /2)
+                                    canvasSurface!.translate( -originalImage!.getWidth() /2,  -originalImage!.getHeight() /2)
+canvasSurface!.clear()
+canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight() /2)
 
 
 
@@ -152,11 +150,10 @@ translate(originalImage!.getWidth() /2, originalImage!.getHeight() /2)
     //var canvasSurface = canvasSurface
     //var totalAngle = totalAngle
 
-    
                         if(image.isMutable())
                         
                                     {
-                                    rotate(Math.toRadians(totalAngle).toFloat())
+                                    canvasSurface!.rotate(Math.toRadians(totalAngle).toFloat())
 
 
 
@@ -191,7 +188,6 @@ translate(originalImage!.getWidth() /2, originalImage!.getHeight() /2)
         
 
 
-    
                         if(originalImage!.isMutable())
                         
                                     {
@@ -214,11 +210,11 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image
 
                         }
                             
-drawImage(originalPlayNImage,  -originalImage!.getWidth() /2,  -originalImage!.getHeight() /2)
+canvasSurface!.drawImage(originalPlayNImage,  -originalImage!.getWidth() /2,  -originalImage!.getHeight() /2)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
     //var originalImage = originalImage
@@ -234,7 +230,6 @@ drawImage(originalPlayNImage,  -originalImage!.getWidth() /2,  -originalImage!.g
         
 
 
-    
                         if(rotatedImage == 
                                     null
                                 )
@@ -243,7 +238,7 @@ drawImage(originalPlayNImage,  -originalImage!.getWidth() /2,  -originalImage!.g
                                     
 
 
-                            throw Exception("Not Mutable")
+                            throw Error("Not Mutable")
 
                                     }
                                 

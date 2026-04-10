@@ -53,6 +53,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
     private readonly logger: Logger = Logger.getLogger(LogUtil::class.toString()!)!;
         
         
+
+    private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
+        
+        
 private constructor (){
 
             super();
@@ -81,7 +85,7 @@ private constructor (){
         
         
 
-this.put(specialMessage, anyType, functionName, exception)
+this.this.put(specialMessage, anyType, functionName, exception)
 }
 
 
@@ -89,7 +93,7 @@ this.put(specialMessage, anyType, functionName, exception)
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName
-this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT)
+this.this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT)
 }
 
 
@@ -111,7 +115,6 @@ this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJ
         
 
 
-    
                         if(clazz.toString()! != 
                                     null
                                 )
@@ -122,23 +125,22 @@ this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJ
                                     }
                                 
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage)!;
+    var message: string = logFormatUtil!.getS(className, functionName, specialMessage)!;
         
         
 
 
-    
                         if(exception != 
                                     null
                                 )
                         
                                     {
-                                    log(Level.SEVERE, message, exception)
+                                    logger.log(Level.SEVERE, message, exception)
 
                                     }
                                 
                         else {
-                            log(Level.INFO, message)
+                            logger.log(Level.INFO, message)
 
                         }
                             

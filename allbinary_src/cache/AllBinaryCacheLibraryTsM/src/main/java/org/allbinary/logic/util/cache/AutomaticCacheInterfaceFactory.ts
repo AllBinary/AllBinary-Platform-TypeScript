@@ -24,7 +24,7 @@ export class AutomaticCacheInterfaceFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface, cacheType: CacheType, cachePolicy: CachePolicy): AutomaticCacheInterface{
 var cacheableInterfaceFactoryInterface = cacheableInterfaceFactoryInterface
@@ -33,7 +33,7 @@ var cachePolicy = cachePolicy
 
 
 
-                            throw Exception("No such " +cacheType!.toString())
+                            throw Error("No such " +cacheType!.toString())
 }
 
 private constructor (){

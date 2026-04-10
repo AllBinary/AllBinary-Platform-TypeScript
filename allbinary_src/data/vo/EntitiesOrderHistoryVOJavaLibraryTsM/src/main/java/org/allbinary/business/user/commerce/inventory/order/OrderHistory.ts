@@ -18,7 +18,8 @@
 
 
 
-import { Date } from "../../../../../../../java/util/Date.js";
+
+//import { Date } from "../../../../../../../java/util/Date.js";
 
     
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
@@ -141,10 +142,10 @@ this.subTotal= orderHistory!.getSubTotal()
 this.shippingCost= orderHistory!.getShippingCost()
 this.taxes= orderHistory!.getTaxes()
 this.total= orderHistory!.getTotal()
-setUserComments(orderHistory!.getUserComments() as String)
-setUserCancelComments(orderHistory!.getUserCancelComments() as String)
-setStoreComments(orderHistory!.getStoreComments() as String)
-setStoreCancelComments(orderHistory!.getStoreCancelComments() as String)
+super.setUserComments(orderHistory!.getUserComments() as String)
+super.setUserCancelComments(orderHistory!.getUserCancelComments() as String)
+super.setStoreComments(orderHistory!.getStoreComments() as String)
+super.setStoreCancelComments(orderHistory!.getStoreCancelComments() as String)
 }
 
 public constructor (basketInterface: BasketInterface, orderHistoryHashMap: HashMap<Any, Any>)                        
@@ -171,10 +172,10 @@ this.subTotal= Money(orderHistoryHashMap!.get(OrderHistoryData.SUBTOTAL) as Stri
 this.total= Money(orderHistoryHashMap!.get(OrderHistoryData.TOTAL) as String)
 this.shippingCost= Money(orderHistoryHashMap!.get(OrderHistoryData.SHIPPINGCOST) as String)
 this.taxes= Money(orderHistoryHashMap!.get(OrderHistoryData.TAX) as String)
-setUserComments(orderHistoryHashMap!.get(OrderData.CUSTOMERCOMMENT) as String)
-setUserCancelComments(orderHistoryHashMap!.get(OrderData.CUSTOMERCANCELCOMMENT) as String)
-setStoreComments(orderHistoryHashMap!.get(OrderData.STORECOMMENT) as String)
-setStoreCancelComments(orderHistoryHashMap!.get(OrderData.STORECANCELCOMMENT) as String)
+super.setUserComments(orderHistoryHashMap!.get(OrderData.CUSTOMERCOMMENT) as String)
+super.setUserCancelComments(orderHistoryHashMap!.get(OrderData.CUSTOMERCANCELCOMMENT) as String)
+super.setStoreComments(orderHistoryHashMap!.get(OrderData.STORECOMMENT) as String)
+super.setStoreCancelComments(orderHistoryHashMap!.get(OrderData.STORECANCELCOMMENT) as String)
 }
 
 
@@ -392,28 +393,28 @@ this.total= value
         
         
 
-put(UserData.USERNAME, this.userName)
-put(OrderHistoryData.ORDERDATE, this.orderDate)
-put(OrderHistoryData.SHIPPEDDATE, this.shipDate)
-put(OrderHistoryData.TRANSDATE, this.transDate)
-put(OrderHistoryData.CANCELDATE, this.cancelDate)
-put(OrderHistoryData.ORDERDATEFORMATTED, Date(this.orderDate as Long.
+hashMap!.put(UserData.USERNAME, this.userName)
+hashMap!.put(OrderHistoryData.ORDERDATE, this.orderDate)
+hashMap!.put(OrderHistoryData.SHIPPEDDATE, this.shipDate)
+hashMap!.put(OrderHistoryData.TRANSDATE, this.transDate)
+hashMap!.put(OrderHistoryData.CANCELDATE, this.cancelDate)
+hashMap!.put(OrderHistoryData.ORDERDATEFORMATTED, Date(this.orderDate as Long.
                             longValue()).
                             toString())
-put(OrderHistoryData.SHIPPEDDATEFORMATTED, Date(this.shipDate as Long.
+hashMap!.put(OrderHistoryData.SHIPPEDDATEFORMATTED, Date(this.shipDate as Long.
                             longValue()).
                             toString())
-put(OrderHistoryData.TRANSDATEFORMATTED, Date(this.transDate as Long.
+hashMap!.put(OrderHistoryData.TRANSDATEFORMATTED, Date(this.transDate as Long.
                             longValue()).
                             toString())
-put(OrderHistoryData.CANCELDATEFORMATTED, Date(this.cancelDate as Long.
+hashMap!.put(OrderHistoryData.CANCELDATEFORMATTED, Date(this.cancelDate as Long.
                             longValue()).
                             toString())
-put(OrderHistoryData.STATUS, this.status)
-put(OrderHistoryData.SUBTOTAL, this.subTotal!.toString())
-put(OrderHistoryData.TOTAL, this.total.toString())
-put(OrderHistoryData.SHIPPINGCOST, this.shippingCost!.toString())
-put(OrderHistoryData.TAX, this.taxes.toString())
+hashMap!.put(OrderHistoryData.STATUS, this.status)
+hashMap!.put(OrderHistoryData.SUBTOTAL, this.subTotal!.toString())
+hashMap!.put(OrderHistoryData.TOTAL, this.total.toString())
+hashMap!.put(OrderHistoryData.SHIPPINGCOST, this.shippingCost!.toString())
+hashMap!.put(OrderHistoryData.TAX, this.taxes.toString())
 
 
 
@@ -423,7 +424,7 @@ put(OrderHistoryData.TAX, this.taxes.toString())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -453,22 +454,22 @@ var document = document
         
         
 
-appendChild(super.toXmlNode(document))
+node.appendChild(super.toXmlNode(document))
 
     var billingAddressNode: Node = document.createElement(BillingAddressData.BILLINGADDRESS)!;
         
         
 
-appendChild(this.billingAddress!.toXmlNode(document))
+billingAddressNode!.appendChild(this.billingAddress!.toXmlNode(document))
 
     var shippingAddressNode: Node = document.createElement(ShippingAddressData.SHIPPINGADDRESS)!;
         
         
 
-appendChild(this.shippingAddress!.toXmlNode(document))
-appendChild(billingAddressNode)
-appendChild(shippingAddressNode)
-appendChild(this.payment.toXmlNode(document))
+shippingAddressNode!.appendChild(this.shippingAddress!.toXmlNode(document))
+node.appendChild(billingAddressNode)
+node.appendChild(shippingAddressNode)
+node.appendChild(this.payment.toXmlNode(document))
 
 
 
@@ -490,7 +491,7 @@ i < size; i++)
         
 
 value= StringUtil.getInstance()!.getInstance(value)
-appendChild(ModDomHelper.createNameValueNodes(document, name, value))
+node.appendChild(ModDomHelper.createNameValueNodes(document, name, value))
 }
 
 

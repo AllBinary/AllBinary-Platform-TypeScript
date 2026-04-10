@@ -46,7 +46,7 @@ this.paintableArray= paintableArray
         
 index >= 0; index--)
         {
-paint(graphics)
+this.paintableArray[index]!.paint(graphics)
 }
 
 }
@@ -64,7 +64,7 @@ var graphics = graphics
         
 index >= 0; index--)
         {
-paintThreed(graphics)
+this.paintableArray[index]!.paintThreed(graphics)
 }
 
 }

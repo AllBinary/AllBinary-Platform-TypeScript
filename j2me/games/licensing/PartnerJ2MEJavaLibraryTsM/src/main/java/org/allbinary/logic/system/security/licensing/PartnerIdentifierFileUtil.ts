@@ -101,7 +101,6 @@ export class PartnerIdentifierFileUtil
         
 
 
-    
                         if(size > 0)
                         
                                     {
@@ -111,7 +110,7 @@ export class PartnerIdentifierFileUtil
 
                                     }
                                 
-close()
+inputStreamReader!.close()
 
 
 
@@ -125,7 +124,7 @@ close()
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e)
 
 
 

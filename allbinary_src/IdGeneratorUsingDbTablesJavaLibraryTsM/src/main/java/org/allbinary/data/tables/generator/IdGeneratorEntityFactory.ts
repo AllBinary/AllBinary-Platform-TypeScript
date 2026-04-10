@@ -51,7 +51,7 @@ export class IdGeneratorEntityFactory
         
         
 
-put(commonStrings!.EXCEPTION, "ServerLicenseRequestEntityFactory", commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, "ServerLicenseRequestEntityFactory", commonStrings!.GET_INSTANCE, e)
 
 
 

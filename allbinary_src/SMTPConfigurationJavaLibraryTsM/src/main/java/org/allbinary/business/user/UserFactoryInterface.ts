@@ -28,7 +28,7 @@ import { HashMap } from "../../../../java/util/HashMap.js";
 interface UserFactoryInterface extends Serializable {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(hashMap: HashMap<Any, Any>): UserInterface
 

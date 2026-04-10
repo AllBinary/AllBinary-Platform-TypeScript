@@ -85,11 +85,11 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.getFormData()
+this.this.getFormData()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getFormData(){
 
@@ -99,7 +99,6 @@ this.getFormData()
         
 
 
-    
                         if(hashMap == 
                                     null
                                 )
@@ -108,7 +107,7 @@ this.getFormData()
                                     
 
 
-                            throw Exception("No Request Params Found")
+                            throw Error("No Request Params Found")
 
                                     }
                                 
@@ -117,11 +116,10 @@ this.downloadItemId= hashMap!.get(DownloadItemData.ID) as String
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isValid(): Boolean{
 
-    
                         if(id == 
                                     null
                                  || !StringValidationUtil.getInstance()!.isNumber(this.id))
@@ -138,7 +136,6 @@ this.downloadItemId= hashMap!.get(DownloadItemData.ID) as String
                                 
 this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.getItem(this.id)
 
-    
                         if(this.itemInterface == 
                                     null
                                 )
@@ -159,7 +156,6 @@ this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInst
         
 
 
-    
                         if(downloadable != 0)
                         
                                     {
@@ -174,7 +170,6 @@ this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInst
         
 
 
-    
                         if(vector.length != 1)
                         
                                     {
@@ -231,7 +226,7 @@ var document = document
 }
 
 
-                @Throws(MoneyException::class)
+                //@Throws(MoneyException::class)
             
     public validationInfo(): string{
 
@@ -240,24 +235,22 @@ var document = document
         
 
 
-    
                         if(id == 
                                     null
                                  || !StringValidationUtil.getInstance()!.isNumber(this.id))
                         
                                     {
-                                    append("Id is not valid.<br />")
+                                    stringBuffer!.append("Id is not valid.<br />")
 
                                     }
                                 
 
-    
                         if(InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.getItem(this.id) == 
                                     null
                                 )
                         
                                     {
-                                    append("Item does not exist.<br />")
+                                    stringBuffer!.append("Item does not exist.<br />")
 
                                     }
                                 
@@ -267,18 +260,16 @@ var document = document
         
 
 
-    
                         if(downloadable != 0)
                         
                                     {
                                     
-    
                         if(this.downloadableItem == 
                                     null
                                 )
                         
                                     {
-                                    append("DownloadableItem does not exist for item.<br />")
+                                    stringBuffer!.append("DownloadableItem does not exist for item.<br />")
 
                                     }
                                 
@@ -286,7 +277,7 @@ var document = document
                                     }
                                 
                         else {
-                            append("Item should not have DownloadableItem.<br />")
+                            stringBuffer!.append("Item should not have DownloadableItem.<br />")
 
                         }
                             

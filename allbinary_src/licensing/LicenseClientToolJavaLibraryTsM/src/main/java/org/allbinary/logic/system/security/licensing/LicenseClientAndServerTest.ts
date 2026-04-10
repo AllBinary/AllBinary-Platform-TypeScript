@@ -63,7 +63,7 @@ var args = args
         
         
 
-test()
+licensingTest!.test()
 } catch(e: Exception)
             {
 
@@ -71,7 +71,7 @@ test()
         
         
 
-put(this.commonStrings!.EXCEPTION, "main()", "main()", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, "main()", "main()", e)
 }
 
 }
@@ -88,7 +88,7 @@ public constructor (options: string[]){
 
             super();
             var options = options
-setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH)
+LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH)
 
 
 
@@ -99,11 +99,10 @@ setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH)
         
 index < options.length; index++)
         {
-add(options[index]!)
+vector.add(options[index]!)
 }
 
 
-    
                         if(options.length < 2)
                         
                                     {
@@ -131,13 +130,12 @@ add(options[index]!)
         
 
 
-    
                         if(line != 
                                     null
                                 )
                         
                                     {
-                                    add(line)
+                                    vector.add(line)
 
                                     }
                                 
@@ -205,7 +203,7 @@ add(options[index]!)
         
 index < size; index++)
         {
-append(TESTING)
+stringBuffer!.append(TESTING)
 
     var serverName: string = vector.get(index) as String;
         
@@ -218,8 +216,8 @@ append(TESTING)
         
         
 
-addServer(serverName)
-write(licenseInitInfo)
+licenseInitInfo!.addServer(serverName)
+LicenseInitInfoUtil.getInstance()!.write(licenseInitInfo)
 
     var abeClientInformation: AbeClientInformationInterface = AbeClientInformationInterfaceFactory.getInstance()!;
         
@@ -237,32 +235,31 @@ write(licenseInitInfo)
         
 
 
-    
                         if(abeLicenseInterface != 
                                     null
                                 )
                         
                                     {
-                                    append(PROCESSING)
-append(abeLicenseInterface!.toString())
+                                    stringBuffer!.append(PROCESSING)
+stringBuffer!.append(abeLicenseInterface!.toString())
 
                                     }
                                 
-append(END)
-put(RESULT +stringBuffer!.toString(), this, "test")
-delete(0, stringBuffer!.length())
+stringBuffer!.append(END)
+logUtil!.put(RESULT +stringBuffer!.toString(), this, "test")
+stringBuffer!.delete(0, stringBuffer!.length())
 } catch(e: Exception)
             {
-add(serverName)
-put("Test Error: " +stringBuffer!.toString(), this, "test", e)
+list.add(serverName)
+logUtil!.put("Test Error: " +stringBuffer!.toString(), this, "test", e)
 }
 
 }
 
-put("Total Servers Failed: " +list.size() +" Failed Servers: " +list.toString(), this, "test")
+logUtil!.put("Total Servers Failed: " +list.size() +" Failed Servers: " +list.toString(), this, "test")
 } catch(e: Exception)
             {
-put("Test Error: " +stringBuffer!.toString(), this, "test", e)
+logUtil!.put("Test Error: " +stringBuffer!.toString(), this, "test", e)
 }
 
 }

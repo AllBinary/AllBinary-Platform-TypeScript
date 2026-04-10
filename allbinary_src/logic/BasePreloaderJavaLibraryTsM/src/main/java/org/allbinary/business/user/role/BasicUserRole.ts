@@ -35,7 +35,7 @@ export class BasicUserRole
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getRole(role: string): BasicUserRole{
@@ -66,7 +66,6 @@ index < size; index++)
         
 
 
-    
                         if(role.compareTo(userRole!.toString()) == 0)
                         
                                     {
@@ -84,7 +83,7 @@ index < size; index++)
 
 
 
-                            throw Exception("Unable to get role - Unknown Role")
+                            throw Error("Unable to get role - Unknown Role")
 }
 
 
@@ -135,7 +134,7 @@ this.role= aRole
 this.displayValue= aDisplayValue
 this.sessionTimeout= aSessionTimeout
 this.sessionInactivityTimeout= aSessionInactivityTimeout
-add(this)
+roleVector!.add(this)
 }
 
 
@@ -182,7 +181,6 @@ add(this)
     public equals(basicUserRole: BasicUserRole?): boolean{
 var basicUserRole = basicUserRole
 
-    
                         if(this.getRoleId() == basicUserRole!.getRoleId())
                         
                                     {

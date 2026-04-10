@@ -137,8 +137,8 @@ this.circularIndexUtil= CircularIndexUtil.getInstance(0)
         
         
 
-removeAllListeners()
-addListener(this)
+gameNotificationEventHandler!.removeAllListeners()
+gameNotificationEventHandler!.addListener(this)
 }
 
 
@@ -146,8 +146,8 @@ addListener(this)
 var x = x
 var y = y
 point= CustomGPoint(0, 0)
-setX(x)
-setY(y)
+this.point.setX(x)
+this.point.setY(y)
 
 
 
@@ -171,39 +171,36 @@ setY(y)
     //var basicColor = basicColor
     //var permanent = permanent
 
-    
                         if(permanent)
                         
                                     {
                                     
-    
                         if(lastString != string)
                         
                                     {
                                     this.lastString= string
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(PERMANENT_GAME_NOTIFICATION)!.append(string)!.toString(), this, commonStrings!.ADD)
 
                                     }
                                 
-add(string, seconds, basicColor)
-setSize(this.permanentGameNotification!.getSize())
+this.permanentGameNotification!.add(string, seconds, basicColor)
+this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize())
 
                                     }
                                 
                         else {
-                            add(string, seconds, basicColor)
+                            this.gameNotification!.add(string, seconds, basicColor)
 
                         }
                             
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processTick(){
 
-    
                         if(this.timeDelayHelper!.isTime(gameTickTimeDelayHelper!.startTime))
                         
                                     {
@@ -213,7 +210,6 @@ setSize(this.permanentGameNotification!.getSize())
         
 
 
-    
                         if(gameAdState!.isShowingAt(this.getLocation()))
                         
                                     {
@@ -227,20 +223,18 @@ setSize(this.permanentGameNotification!.getSize())
                         }
                             
 
-    
                         if(this.gameNotification!.getSize() > 0)
                         
                                     {
-                                    this.setAndRemove()
+                                    this.this.setAndRemove()
 
                                     }
                                 
                              else 
-    
                         if(this.permanentGameNotification!.getSize() > 0)
                         
                                     {
-                                    this.setNextUnremoveable()
+                                    this.this.setNextUnremoveable()
 
                                     }
                                 
@@ -255,7 +249,7 @@ setSize(this.permanentGameNotification!.getSize())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     setAndRemove(){
 this.string= this.gameNotification!.stringList!.remove(0) as String
@@ -264,9 +258,9 @@ this.string= this.gameNotification!.stringList!.remove(0) as String
         
         
 
-this.setX((displayInfo!.getLastWidth() -width) shr 1)
-setX(this.getX())
-setY(this.getY())
+this.this.setX((displayInfo!.getLastWidth() -width) shr 1)
+this.point.setX(this.getX())
+this.point.setY(this.getY())
 
     var time: Integer = this.gameNotification!.timeList!.remove(0) as Integer;
         
@@ -278,7 +272,6 @@ setY(this.getY())
         
 
 
-    
                         if(iTime == 0)
                         
                                     {
@@ -287,11 +280,11 @@ setY(this.getY())
                                     }
                                 
 this.timeDelayHelper!.delay= iTime
-this.setBasicColorP(this.gameNotification!.colorList!.remove(0) as BasicColor)
+this.this.setBasicColorP(this.gameNotification!.colorList!.remove(0) as BasicColor)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     setNextUnremoveable(){
 
@@ -305,29 +298,29 @@ this.string= this.permanentGameNotification!.stringList!.objectArray[index]! as 
         
         
 
-this.setX((displayInfo!.getLastWidth() -width) shr 1)
-setX(this.getX())
-setY(this.getY())
+this.this.setX((displayInfo!.getLastWidth() -width) shr 1)
+this.point.setX(this.getX())
+this.point.setY(this.getY())
 
     var time: Integer = this.permanentGameNotification!.timeList!.objectArray[index]! as Integer;
         
         
 
 this.timeDelayHelper!.delay= time.toInt() *1000
-this.setBasicColorP(this.permanentGameNotification!.colorList!.objectArray[index]! as BasicColor)
-next()
+this.this.setBasicColorP(this.permanentGameNotification!.colorList!.objectArray[index]! as BasicColor)
+this.circularIndexUtil!.next()
 }
 
 
     public clear(){
-clear()
-clear()
+this.gameNotification!.clear()
+this.permanentGameNotification!.clear()
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics, this.string)
+super.paint(graphics, this.string)
 }
 
 

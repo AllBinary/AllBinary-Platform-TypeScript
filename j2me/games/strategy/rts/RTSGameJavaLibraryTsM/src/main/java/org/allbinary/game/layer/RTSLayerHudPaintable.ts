@@ -74,7 +74,7 @@ private constructor (){
         
         
 
-this.setName(this.getRtsLayer()!.getName())
+this.this.setName(this.getRtsLayer()!.getName())
 
     var partInterface: BasicWeaponPart = this.getRtsLayer()!.getPartInterfaceArray()[0]! as BasicWeaponPart;
         
@@ -83,7 +83,6 @@ this.setName(this.getRtsLayer()!.getName())
 this.weaponProperties= partInterface!.getWeaponProperties()!.toStringArray()
 this.costY1= (y +((weaponProperties!.length +1) *charHeight))
 
-    
                         if(!AndroidUtil.isAndroid())
                         
                                     {
@@ -101,7 +100,7 @@ this.costY1= (y +((weaponProperties!.length +1) *charHeight))
 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint(graphics)
+super.paint(graphics)
 
     var charHeight: number = this.myFont!.DEFAULT_CHAR_HEIGHT;
         
@@ -123,7 +122,7 @@ paint(graphics)
         
 index < size; index++)
         {
-drawString(weaponProperties[index]!, this.textX, y +((index +1) *charHeight), 0)
+graphics.drawString(weaponProperties[index]!, this.textX, y +((index +1) *charHeight), 0)
 }
 
 }

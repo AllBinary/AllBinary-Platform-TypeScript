@@ -52,11 +52,10 @@ this.ownerLayer= ownerLayer
 var destroyed = destroyed
 this.destroyed= destroyed
 
-    
                         if(this.isDestroyed())
                         
                                     {
-                                    add(this.ownerLayer)
+                                    DestroyedLayerProcessor.getInstance()!.add(this.ownerLayer)
 
                                     }
                                 

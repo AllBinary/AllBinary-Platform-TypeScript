@@ -73,7 +73,7 @@ public constructor (gameType: GameType, gameMode: GameMode, highestLevel: number
     //var currentLevel = currentLevel
 this.gameType= gameType
 this.gameMode= gameMode
-this.setHighestLevel(highestLevel)
+this.this.setHighestLevel(highestLevel)
 this.currentLevel= currentLevel
 this.playerType= PlayerTypesFactory.getInstance()!.PLAYER_TYPE_ONE
 }
@@ -88,7 +88,7 @@ var highestLevel = highestLevel
 var currentLevel = currentLevel
 this.gameType= gameType
 this.gameMode= gameMode
-this.setHighestLevel(highestLevel)
+this.this.setHighestLevel(highestLevel)
 this.currentLevel= currentLevel
 this.playerType= playerType
 }
@@ -161,7 +161,7 @@ this.highestLevel= highestLevel
     public setCurrentLevel(currentLevel: number){
     //var currentLevel = currentLevel
 this.currentLevel= currentLevel
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(NEW_LEVEL)!.appendint(this.getCurrentLevel())!.toString(), this, SET_CURRENT_LEVEL)
 }
 
@@ -176,7 +176,6 @@ put(StringMaker().
 
     public nextGameLevel(){
 
-    
                         if(this.getCurrentLevel() < this.getHighestLevel())
                         
                                     {
@@ -184,14 +183,13 @@ put(StringMaker().
 
                                     }
                                 
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(NEXT)!.append(NEW_LEVEL)!.appendint(this.getCurrentLevel())!.toString(), this, NEXT_GAME_LEVEL)
 }
 
 
     public previousGameLevel(){
 
-    
                         if(this.getCurrentLevel() > 1)
                         this.currentLevel--
 }
@@ -199,7 +197,6 @@ put(StringMaker().
 
     public isLastLevel(): boolean{
 
-    
                         if(this.getCurrentLevel() >= this.getHighestLevel())
                         
                                     {
@@ -231,11 +228,11 @@ put(StringMaker().
         
         
 
-put(this.gameInfoData!.GAME_TYPE, this.getGameType()!.toString())
-put(this.gameInfoData!.GAME_MODE, this.gameMode!.toString())
-put(this.gameInfoData!.PLAYER_TYPE, this.playerType!.toString())
-put(this.gameInfoData!.HIGHEST_LEVEL, Integer.toString(this.getHighestLevel()))
-put(this.gameInfoData!.CURRENT_LEVEL, this.currentLevel.toString())
+hashtable.put(this.gameInfoData!.GAME_TYPE, this.getGameType()!.toString())
+hashtable.put(this.gameInfoData!.GAME_MODE, this.gameMode!.toString())
+hashtable.put(this.gameInfoData!.PLAYER_TYPE, this.playerType!.toString())
+hashtable.put(this.gameInfoData!.HIGHEST_LEVEL, Integer.toString(this.getHighestLevel()))
+hashtable.put(this.gameInfoData!.CURRENT_LEVEL, this.currentLevel.toString())
 
 
 
@@ -256,25 +253,25 @@ put(this.gameInfoData!.CURRENT_LEVEL, this.currentLevel.toString())
         
         
 
-append(this.gameInfoData!.GAME_TYPE)
-append(commonSeps!.EQUALS)
-append(this.getGameType()!.toString())
-append(commonSeps!.COMMA_SEP)
-append(this.gameInfoData!.GAME_MODE)
-append(commonSeps!.EQUALS)
-append(this.gameMode!.toString())
-append(commonSeps!.COMMA_SEP)
-append(this.gameInfoData!.PLAYER_TYPE)
-append(commonSeps!.EQUALS)
-append(StringUtil.getInstance()!.toString(this.playerType))
-append(commonSeps!.COMMA_SEP)
-append(this.gameInfoData!.HIGHEST_LEVEL)
-append(commonSeps!.EQUALS)
-appendint(this.getHighestLevel())
-append(commonSeps!.COMMA_SEP)
-append(this.gameInfoData!.CURRENT_LEVEL)
-append(commonSeps!.EQUALS)
-appendint(this.currentLevel)
+stringBuffer!.append(this.gameInfoData!.GAME_TYPE)
+stringBuffer!.append(commonSeps!.EQUALS)
+stringBuffer!.append(this.getGameType()!.toString())
+stringBuffer!.append(commonSeps!.COMMA_SEP)
+stringBuffer!.append(this.gameInfoData!.GAME_MODE)
+stringBuffer!.append(commonSeps!.EQUALS)
+stringBuffer!.append(this.gameMode!.toString())
+stringBuffer!.append(commonSeps!.COMMA_SEP)
+stringBuffer!.append(this.gameInfoData!.PLAYER_TYPE)
+stringBuffer!.append(commonSeps!.EQUALS)
+stringBuffer!.append(StringUtil.getInstance()!.toString(this.playerType))
+stringBuffer!.append(commonSeps!.COMMA_SEP)
+stringBuffer!.append(this.gameInfoData!.HIGHEST_LEVEL)
+stringBuffer!.append(commonSeps!.EQUALS)
+stringBuffer!.appendint(this.getHighestLevel())
+stringBuffer!.append(commonSeps!.COMMA_SEP)
+stringBuffer!.append(this.gameInfoData!.CURRENT_LEVEL)
+stringBuffer!.append(commonSeps!.EQUALS)
+stringBuffer!.appendint(this.currentLevel)
 
 
 

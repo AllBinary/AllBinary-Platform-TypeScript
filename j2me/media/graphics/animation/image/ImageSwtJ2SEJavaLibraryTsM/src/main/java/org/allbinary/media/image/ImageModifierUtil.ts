@@ -103,7 +103,6 @@ export class ImageModifierUtil
     var newBufferedImage: org.eclipse.swt.graphics.Image
 
 
-    
                         if(image.isMutable())
                         
                                     {
@@ -157,7 +156,6 @@ newBufferedImage= swtImage!.getImage() as org.eclipse.swt.graphics.Image
         
 
 
-    
                         if(imageData!.depth == 24)
                         
                                     {
@@ -198,7 +196,6 @@ rx= (imageData!.data[index3] and 0xFF) shl 16
 gx= (imageData!.data[index3 +1] and 0xFF) shl 8
 bx= (imageData!.data[index3 +2] and 0xFF)
 
-    
                         if(rx != 0 || gx != 0 || bx != 0)
                         
                                     {
@@ -224,12 +221,10 @@ imageData!.data[index3 +2]= b.toByte()
     //var imageIndex = imageIndex
     //var basicColor = basicColor
 
-    
                         if(features.isFeature(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
                                     
-    
                         if(image.getType() >= OpenGLESImage.TYPE)
                         
                                     {
@@ -258,7 +253,6 @@ openGLESImage!.openGLESImageProperties!.bluef= basicColor!.getBlueComponent()
     var newBufferedImage: org.eclipse.swt.graphics.Image
 
 
-    
                         if(image.isMutable())
                         
                                     {
@@ -316,7 +310,6 @@ newBufferedImage= swtImage!.getImage() as org.eclipse.swt.graphics.Image
         
 
 
-    
                         if(imageData!.depth == 24)
                         
                                     {
@@ -358,12 +351,10 @@ imageData!.data[index +2]= bx.toByte()
     //var imageIndex = imageIndex
     //var alphaInt = alphaInt
 
-    
                         if(features.isFeature(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
                                     
-    
                         if(image.getType() >= OpenGLESImage.TYPE)
                         
                                     {
@@ -386,7 +377,7 @@ openGLESImage!.openGLESImageProperties!.alphaf= (alphaInt.toFloat()) /255f
 
                                     }
                                 
-this.setAlpha(image, alphaInt)
+this.this.setAlpha(image, alphaInt)
 }
 
 
@@ -402,7 +393,6 @@ this.setAlpha(image, alphaInt)
     var newBufferedImage: org.eclipse.swt.graphics.Image
 
 
-    
                         if(image.isMutable())
                         
                                     {
@@ -479,7 +469,7 @@ newImageArray[index]= image
         
         
 
-put(commonStrings!.EXCEPTION, this, "getImageArray", e)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, "getImageArray", e)
 
 
 

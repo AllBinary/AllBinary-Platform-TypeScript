@@ -111,8 +111,8 @@ this.isHighestBest= isHighestBest
 
 
         try {
-            readUTF()
-readUTF()
+            inputStreamOne!.readUTF()
+inputStreamTwo!.readUTF()
 scoreOne= inputStreamOne!.readLong()
 scoreTwo= inputStreamTwo!.readLong()
 } catch(e: EOFException)
@@ -122,7 +122,7 @@ scoreTwo= inputStreamTwo!.readLong()
         
         
 
-put(commonStrings!.EXCEPTION, this, "compare", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e)
 }
  catch(e: IOException)
             {
@@ -131,7 +131,7 @@ put(commonStrings!.EXCEPTION, this, "compare", e)
         
         
 
-put(commonStrings!.EXCEPTION, this, "compare", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e)
 }
  catch(e: Exception)
             {
@@ -140,11 +140,10 @@ put(commonStrings!.EXCEPTION, this, "compare", e)
         
         
 
-put(commonStrings!.EXCEPTION, this, "compare", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e)
 }
 
 
-    
                         if(this.isHighestBest)
                         
                                     {
@@ -174,7 +173,6 @@ put(commonStrings!.EXCEPTION, this, "compare", e)
     //var scoreOne = scoreOne
     //var scoreTwo = scoreTwo
 
-    
                         if(scoreOne > scoreTwo)
                         
                                     {
@@ -188,7 +186,6 @@ put(commonStrings!.EXCEPTION, this, "compare", e)
                                     }
                                 
                              else 
-    
                         if(scoreOne < scoreTwo)
                         
                                     {
@@ -218,7 +215,6 @@ put(commonStrings!.EXCEPTION, this, "compare", e)
     //var scoreOne = scoreOne
     //var scoreTwo = scoreTwo
 
-    
                         if(scoreOne < scoreTwo)
                         
                                     {
@@ -232,7 +228,6 @@ put(commonStrings!.EXCEPTION, this, "compare", e)
                                     }
                                 
                              else 
-    
                         if(scoreOne > scoreTwo)
                         
                                     {

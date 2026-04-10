@@ -52,13 +52,13 @@ export class DestroyableBaseBehavior
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isDestroyed(): boolean{
 
 
 
-                            throw Exception(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
+                            throw Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
 }
 
 

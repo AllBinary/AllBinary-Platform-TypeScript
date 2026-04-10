@@ -132,7 +132,7 @@ var pageContext = pageContext
                     
 this.request= pageContext!.getRequest() as HttpServletRequest
 this.xslFile= propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME) as String
-this.getFormData()
+this.this.getFormData()
 }
 
 
@@ -142,17 +142,16 @@ this.searchParams= SearchParams(this.request)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     email(){
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put("Generated Static Pages Notification Email", this, "email")
+                                    logUtil!.put("Generated Static Pages Notification Email", this, "email")
 
                                     }
                                 
@@ -201,16 +200,15 @@ this.searchParams= SearchParams(this.request)
         
         
 
-receiveEmailInfo(UserEmailEventNameData.STOREGENERATINGSTATICPAGES, storeAdminEmailInfo)
-receiveEmailInfo(UserEmailEventNameData.STOREGENERATINGSTATICPAGES, adminEmailInfo)
+storeAdminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STOREGENERATINGSTATICPAGES, storeAdminEmailInfo)
+adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STOREGENERATINGSTATICPAGES, adminEmailInfo)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, "email", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "email", e)
 
                                     }
                                 
@@ -238,13 +236,12 @@ receiveEmailInfo(UserEmailEventNameData.STOREGENERATINGSTATICPAGES, adminEmailIn
         
         
 
-this.email()
+this.this.email()
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "generateStaticPages()")
+                                    logUtil!.put(success, this, "generateStaticPages()")
 
                                     }
                                 
@@ -262,11 +259,10 @@ this.email()
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "generateStaticPages()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "generateStaticPages()", e)
 
                                     }
                                 
@@ -299,18 +295,17 @@ this.email()
         
         
 
-copy(fromAbPath, toAbPath)
+FileUtil.getInstance()!.copy(fromAbPath, toAbPath)
 
     var success: string = "Made Public";
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    put(success, this, "makePublic()")
+                                    logUtil!.put(success, this, "makePublic()")
 
                                     }
                                 
@@ -328,11 +323,10 @@ copy(fromAbPath, toAbPath)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "makePublic()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "makePublic()", e)
 
                                     }
                                 

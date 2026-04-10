@@ -52,7 +52,7 @@ public constructor (clientInformationFactory: ClientInformationFactory){
 
             super();
                 //var clientInformationFactory = clientInformationFactory
-this.preInit()
+this.this.preInit()
 this.abeClientInformation= clientInformationFactory!.getInstance()
 }
 
@@ -80,16 +80,16 @@ var isProgress = isProgress
         
         
 
-runTask(runnable)
+primaryThreadPool!.runTask(runnable)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "exit", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "exit", e)
 
         try {
-            process()
+            processor.process()
 } catch(e2: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "exit", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "exit", e)
 }
 
 }

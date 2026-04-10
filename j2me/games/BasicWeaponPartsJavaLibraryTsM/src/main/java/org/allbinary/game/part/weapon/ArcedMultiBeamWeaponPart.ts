@@ -92,7 +92,7 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
     //var allbinaryLayerManager = allbinaryLayerManager
@@ -129,7 +129,7 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool
 index < total; index++)
         {
 weaponLayer= weaponLayerCircularStaticPool!.getInstance(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), 0, (minAngle +increment).toInt(), otherAngle.toInt(), weaponProperties, scoreableInterface)
-append(weaponLayer)
+allbinaryLayerManager!.append(weaponLayer)
 next += increment
 }
 

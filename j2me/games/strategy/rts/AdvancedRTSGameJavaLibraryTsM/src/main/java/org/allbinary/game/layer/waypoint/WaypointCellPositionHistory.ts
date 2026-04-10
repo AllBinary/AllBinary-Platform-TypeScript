@@ -58,8 +58,8 @@ export class WaypointCellPositionHistory
     public add(cellPosition: CellPosition, layerInterface: AllBinaryLayer){
 var cellPosition = cellPosition
 var layerInterface = layerInterface
-add(cellPosition)
-add(layerInterface)
+this.positionList!.add(cellPosition)
+this.layerList!.add(layerInterface)
 }
 
 
@@ -76,7 +76,7 @@ var layerInterface = layerInterface
         
 index >= 0; index--)
         {
-this.add(list.get(index) as CellPosition, layerInterface)
+this.this.add(list.get(index) as CellPosition, layerInterface)
 }
 
 }
@@ -90,12 +90,11 @@ var cellPosition = cellPosition
         
 
 
-    
                         if(index >= 0)
                         
                                     {
-                                    remove(index)
-remove(index)
+                                    this.positionList!.remove(index)
+this.layerList!.remove(index)
 
                                     }
                                 
@@ -114,12 +113,11 @@ var layerInterface = layerInterface
         {
 index= this.layerList!.indexOf(layerInterface)
 
-    
                         if(index >= 0)
                         
                                     {
-                                    remove(index)
-remove(index)
+                                    this.positionList!.remove(index)
+this.layerList!.remove(index)
 
                                     }
                                 
@@ -129,8 +127,8 @@ remove(index)
 
 
     public clear(){
-clear()
-clear()
+this.positionList!.clear()
+this.layerList!.clear()
 }
 
 
@@ -158,7 +156,6 @@ var list = list
 index >= 0; index--)
         {
 
-    
                         if(this.isCellPositionWithDrop(list.get(index) as CellPosition))
                         
                                     {
@@ -190,7 +187,6 @@ var cellPosition = cellPosition
         
 
 
-    
                         if(index >= 0)
                         
                                     {

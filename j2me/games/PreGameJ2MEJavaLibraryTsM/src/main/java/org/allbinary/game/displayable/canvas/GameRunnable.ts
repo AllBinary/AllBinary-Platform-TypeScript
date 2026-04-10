@@ -46,14 +46,14 @@ public constructor (){
 
 
     public run(){
-process()
+DisplayInfoSingleton.getInstance()!.process()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processLoopSleep(){
-sleep(wait)
+Thread.sleep(wait)
 }
 
 

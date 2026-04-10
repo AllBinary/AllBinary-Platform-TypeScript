@@ -60,22 +60,22 @@ public constructor (poolName: string, numThreads: number)
 
     public runTask(task: Runnable){
 var task = task
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(StringUtil.getInstance()!.toString(task))!.appendlong(System.currentTimeMillis())!.toString(), this, this.threadPoolStrings!.ADD_TASK)
-runTask(task)
+super.runTask(task)
 }
 
 
     startTask(task: Runnable){
 var task = task
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(this.threadPoolStrings!.START_TASK)!.append(StringUtil.getInstance()!.toString(task))!.appendlong(System.currentTimeMillis())!.toString(), this, this.commonStrings!.RUN)
 }
 
 
     completedTask(task: Runnable){
 var task = task
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(this.threadPoolStrings!.COMPLETE_TASK)!.append(StringUtil.getInstance()!.toString(task))!.appendlong(System.currentTimeMillis())!.toString(), this, this.commonStrings!.RUN)
 }
 

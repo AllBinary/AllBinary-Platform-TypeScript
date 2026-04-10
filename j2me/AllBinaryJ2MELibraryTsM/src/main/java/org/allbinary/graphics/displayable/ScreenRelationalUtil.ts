@@ -80,7 +80,6 @@ export class ScreenRelationalUtil
         
 
 
-    
                         if(largestSize < height)
                         
                                     {

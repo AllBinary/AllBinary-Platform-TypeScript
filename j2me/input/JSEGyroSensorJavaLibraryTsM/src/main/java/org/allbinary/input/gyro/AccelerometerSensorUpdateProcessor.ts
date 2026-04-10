@@ -40,7 +40,7 @@ import { AccelerometerSensorFactory } from "../../../../org/allbinary/input/acce
 export class AccelerometerSensorUpdateProcessor extends Processor {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
 
@@ -49,29 +49,26 @@ export class AccelerometerSensorUpdateProcessor extends Processor {
         
 
 
-    
                         if(Features.getInstance()!.isFeature(sensorFeatureFactory!.ORIENTATION_SENSORS))
                         
                                     {
-                                    setCompleteMotionGestureInputEventListener(SingleKeyPressGameKeyFromMotionGestureEventListener())
+                                    AccelerometerSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(SingleKeyPressGameKeyFromMotionGestureEventListener())
 
                                     }
                                 
                              else 
-    
                         if(Features.getInstance()!.isFeature(sensorFeatureFactory!.SIMULATED_ORIENTATION_SENSORS))
                         
                                     {
-                                    setCompleteMotionGestureInputEventListener(SingleKeyPressGameKeyFromMotionGestureEventListener())
+                                    AccelerometerSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(SingleKeyPressGameKeyFromMotionGestureEventListener())
 
                                     }
                                 
                              else 
-    
                         if(Features.getInstance()!.isFeature(sensorFeatureFactory!.NO_ORIENTATION))
                         
                                     {
-                                    setCompleteMotionGestureInputEventListener(NoCompleteMotionGestureInputEventListener.getInstance())
+                                    AccelerometerSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(NoCompleteMotionGestureInputEventListener.getInstance())
 
                                     }
                                 
@@ -79,7 +76,7 @@ export class AccelerometerSensorUpdateProcessor extends Processor {
                             
 
 
-                            throw Exception("Sensor Feature Not Set")
+                            throw Error("Sensor Feature Not Set")
 
                         }
                             

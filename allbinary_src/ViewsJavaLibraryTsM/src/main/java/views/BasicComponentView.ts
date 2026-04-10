@@ -81,16 +81,15 @@ public constructor (transformInfoInterface: TransformInfoInterface){
             super();
             var transformInfoInterface = transformInfoInterface
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("View Name: " +transformInfoInterface!.getName(), this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
-this.setTransformInfoInterface(transformInfoInterface)
-this.setTransformDocumentInterface(TransformDocumentFactory.getInstance())
+this.this.setTransformInfoInterface(transformInfoInterface)
+this.this.setTransformDocumentInterface(TransformDocumentFactory.getInstance())
 }
 
 
@@ -150,7 +149,7 @@ this.transformInfoInterface= transformInfoInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getDoc(): Document{
 
@@ -164,13 +163,12 @@ this.transformInfoInterface= transformInfoInterface
         
 
 
-    
                         if(dataNode != 
                                     null
                                 )
                         
                                     {
-                                    appendChild(dataNode)
+                                    this.getTransformDocumentInterface()!.getBaseNode()!.appendChild(dataNode)
 
                                     }
                                 
@@ -183,7 +181,7 @@ this.transformInfoInterface= transformInfoInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 
@@ -208,11 +206,10 @@ this.transformInfoInterface= transformInfoInterface
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
 
                                     }
                                 

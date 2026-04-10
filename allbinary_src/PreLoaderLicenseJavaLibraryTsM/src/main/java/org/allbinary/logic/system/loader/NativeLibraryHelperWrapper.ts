@@ -42,11 +42,11 @@ public constructor (libraryName: string){
 
             super();
             var libraryName = libraryName
-this.setLibraryName(libraryName)
+this.this.setLibraryName(libraryName)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public load(){
 
@@ -84,7 +84,7 @@ this.anyType= constructor.newInstance(params)
         
         
 
-invoke(anyType, 
+method.invoke(anyType, 
                             null)
 }
 
@@ -96,8 +96,8 @@ this.anyType=
 this.loader= 
                                         null
                                     
-gc()
-gc()
+System.gc()
+System.gc()
 }
 
 

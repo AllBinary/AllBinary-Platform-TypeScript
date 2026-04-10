@@ -22,7 +22,7 @@
 interface BasicWeaponPartFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getInstance(): BasicWeaponPart
 

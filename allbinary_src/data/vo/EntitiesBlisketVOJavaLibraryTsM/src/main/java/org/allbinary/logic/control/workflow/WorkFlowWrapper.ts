@@ -61,7 +61,7 @@ this.anyType= anyType
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getName(): string{
 
@@ -97,24 +97,23 @@ this.anyType= anyType
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getName()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getName()", e)
 
                                     }
                                 
 
 
 
-                            throw Exception(error)
+                            throw Error(error)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getStoreName(): string{
 
@@ -150,24 +149,23 @@ this.anyType= anyType
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "getStoreName()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getStoreName()", e)
 
                                     }
                                 
 
 
 
-                            throw Exception(error)
+                            throw Error(error)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(): Integer{
 
@@ -203,18 +201,17 @@ this.anyType= anyType
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
 
                                     }
                                 
 
 
 
-                            throw Exception(error)
+                            throw Error(error)
 }
 
 }

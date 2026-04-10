@@ -126,30 +126,28 @@ this.itemInterface= itemInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public saveFiles(byteArray: ByteArray, fileName: string, mediaData: MediaData): ItemInterface{
 var byteArray = byteArray
 var fileName = fileName
 var mediaData = mediaData
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    put("Start FileName: " +fileName, this, "saveFiles()")
+                                    logUtil!.put("Start FileName: " +fileName, this, "saveFiles()")
 
                                     }
                                 
 
-    
                         if(StringValidationUtil.getInstance()!.isEmpty(fileName))
                         
                                     {
                                     
 
 
-                            throw Exception("Image File Name Was Null")
+                            throw Error("Image File Name Was Null")
 
                                     }
                                 
@@ -163,9 +161,9 @@ var mediaData = mediaData
         
         
 
-append(URLGLOBALS.getWebappPath())
-append(storeFrontInterface!.getCurrentHostNamePath())
-append(itemInterface!.getCategory())
+stringBuffer!.append(URLGLOBALS.getWebappPath())
+stringBuffer!.append(storeFrontInterface!.getCurrentHostNamePath())
+stringBuffer!.append(itemInterface!.getCategory())
 
     var fullPath: string = stringBuffer!.toString()!;
         
@@ -177,38 +175,36 @@ append(itemInterface!.getCategory())
         
 
 
-    
                         if(!imageDirectoryFile!.isDirectory())
                         
                                     {
                                     
 
 
-                            throw Exception("Unable to save file to non existant directory")
+                            throw Error("Unable to save file to non existant directory")
 
                                     }
                                 
-delete(0, stringBuffer!.length())
-append(fullPath)
-append(fileName)
-append(AbPathData.getInstance()!.EXTENSION_SEP)
-append(mediaData!.getName())
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(fullPath)
+stringBuffer!.append(fileName)
+stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP)
+stringBuffer!.append(mediaData!.getName())
 
     var originalImageFile: AbFile = new AbFile(stringBuffer!.toString());
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    put("Saving Original Image: " +originalImageFile, this, "saveFiles()")
+                                    logUtil!.put("Saving Original Image: " +originalImageFile, this, "saveFiles()")
 
                                     }
                                 
-createNewFile()
-write(ByteArrayInputStream(byteArray), originalImageFile)
+originalImageFile!.createNewFile()
+fileUtil!.write(ByteArrayInputStream(byteArray), originalImageFile)
 
     var uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;
         
@@ -220,16 +216,15 @@ write(ByteArrayInputStream(byteArray), originalImageFile)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-append("Is Image Type: ")
-append(mediaData!.getName())
-append(" supported: ")
-appendboolean(isMediaSupported)
-put(stringBuffer!.toString(), this, "saveFiles()")
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("Is Image Type: ")
+stringBuffer!.append(mediaData!.getName())
+stringBuffer!.append(" supported: ")
+stringBuffer!.appendboolean(isMediaSupported)
+logUtil!.put(stringBuffer!.toString(), this, "saveFiles()")
 
                                     }
                                 
@@ -238,9 +233,8 @@ put(stringBuffer!.toString(), this, "saveFiles()")
         
         
 
-this.setFileNames(fileName)
+this.this.setFileNames(fileName)
 
-    
                         if(isMediaSupported)
                         
                                     {
@@ -250,38 +244,35 @@ this.setFileNames(fileName)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-append("Is ")
-append(mediaData!.toString())
-append(" Image Resize Supported:")
-appendboolean(uploadMedia!.isSupported(mediaData!.getName()))
-append(" WriterMedia: ")
-appendboolean(isMediaResizable)
-put(stringBuffer!.toString(), this, "saveFiles()")
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("Is ")
+stringBuffer!.append(mediaData!.toString())
+stringBuffer!.append(" Image Resize Supported:")
+stringBuffer!.appendboolean(uploadMedia!.isSupported(mediaData!.getName()))
+stringBuffer!.append(" WriterMedia: ")
+stringBuffer!.appendboolean(isMediaResizable)
+logUtil!.put(stringBuffer!.toString(), this, "saveFiles()")
 
                                     }
                                 
 
-    
                         if(isMediaResizable)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    put("Saving Small Image: " +this.itemInterface!.getSmallImage(), this, "saveFiles()")
+                                    logUtil!.put("Saving Small Image: " +this.itemInterface!.getSmallImage(), this, "saveFiles()")
 
                                     }
                                 
-saveImageFile(originalImageFile, itemInterface!.getSmallImage(), fullPath, mediaData, this.SMALLWIDTH, this.SMALLHEIGHT)
-saveImageFile(originalImageFile, itemInterface!.getMediumImage(), fullPath, mediaData, this.MEDIUMWIDTH, this.MEDIUMHEIGHT)
-saveImageFile(originalImageFile, itemInterface!.getLargeImage(), fullPath, mediaData, this.LARGEWIDTH, this.LARGEHEIGHT)
+mediaUtil!.saveImageFile(originalImageFile, itemInterface!.getSmallImage(), fullPath, mediaData, this.SMALLWIDTH, this.SMALLHEIGHT)
+mediaUtil!.saveImageFile(originalImageFile, itemInterface!.getMediumImage(), fullPath, mediaData, this.MEDIUMWIDTH, this.MEDIUMHEIGHT)
+mediaUtil!.saveImageFile(originalImageFile, itemInterface!.getLargeImage(), fullPath, mediaData, this.LARGEWIDTH, this.LARGEHEIGHT)
 
                                     }
                                 
@@ -292,38 +283,35 @@ saveImageFile(originalImageFile, itemInterface!.getLargeImage(), fullPath, media
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-append("Converting: ")
-append(defaultMediaData!.getName())
-append(" into ")
-append(mediaData!.getName())
-append(" if Convertable is it: ")
-appendboolean(isConvertable)
-put(stringBuffer!.toString(), this, "saveFiles()")
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("Converting: ")
+stringBuffer!.append(defaultMediaData!.getName())
+stringBuffer!.append(" into ")
+stringBuffer!.append(mediaData!.getName())
+stringBuffer!.append(" if Convertable is it: ")
+stringBuffer!.appendboolean(isConvertable)
+logUtil!.put(stringBuffer!.toString(), this, "saveFiles()")
 
                                     }
                                 
 
-    
                         if(isConvertable)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    put("Saving Small Image: " +this.itemInterface!.getSmallImage(), this, "saveFiles()")
+                                    logUtil!.put("Saving Small Image: " +this.itemInterface!.getSmallImage(), this, "saveFiles()")
 
                                     }
                                 
-saveImageFile(originalImageFile, itemInterface!.getSmallImage(), fullPath, defaultMediaData, this.SMALLWIDTH, this.SMALLHEIGHT)
-saveImageFile(originalImageFile, itemInterface!.getMediumImage(), fullPath, defaultMediaData, this.MEDIUMWIDTH, this.MEDIUMHEIGHT)
-saveImageFile(originalImageFile, itemInterface!.getLargeImage(), fullPath, defaultMediaData, this.LARGEWIDTH, this.LARGEHEIGHT)
+mediaUtil!.saveImageFile(originalImageFile, itemInterface!.getSmallImage(), fullPath, defaultMediaData, this.SMALLWIDTH, this.SMALLHEIGHT)
+mediaUtil!.saveImageFile(originalImageFile, itemInterface!.getMediumImage(), fullPath, defaultMediaData, this.MEDIUMWIDTH, this.MEDIUMHEIGHT)
+mediaUtil!.saveImageFile(originalImageFile, itemInterface!.getLargeImage(), fullPath, defaultMediaData, this.LARGEWIDTH, this.LARGEHEIGHT)
 
                                     }
                                 
@@ -333,22 +321,22 @@ saveImageFile(originalImageFile, itemInterface!.getLargeImage(), fullPath, defau
         
         
 
-createNewFile()
-write(ByteArrayInputStream(byteArray), smallImageFile)
+smallImageFile!.createNewFile()
+fileUtil!.write(ByteArrayInputStream(byteArray), smallImageFile)
 
     var mediumImageFile: AbFile = new AbFile(itemInterface!.getMediumImage());
         
         
 
-createNewFile()
-write(ByteArrayInputStream(byteArray), mediumImageFile)
+smallImageFile!.createNewFile()
+fileUtil!.write(ByteArrayInputStream(byteArray), mediumImageFile)
 
     var largeImageFile: AbFile = new AbFile(itemInterface!.getSmallImage());
         
         
 
-createNewFile()
-write(ByteArrayInputStream(byteArray), largeImageFile)
+largeImageFile!.createNewFile()
+fileUtil!.write(ByteArrayInputStream(byteArray), largeImageFile)
 
                         }
                             
@@ -359,7 +347,6 @@ write(ByteArrayInputStream(byteArray), largeImageFile)
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
@@ -368,7 +355,7 @@ write(ByteArrayInputStream(byteArray), largeImageFile)
         
         
 
-put(commonStrings!.END, this, "saveFiles()")
+logUtil!.put(commonStrings!.END, this, "saveFiles()")
 
                                     }
                                 
@@ -388,36 +375,36 @@ var fileName = fileName
         
         
 
-append(this.itemInterface!.getId())
-append(AbPathData.getInstance()!.EXTENSION_SEP)
-append(MediaData.getDefault()!.getName())
+stringBuffer!.append(this.itemInterface!.getId())
+stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP)
+stringBuffer!.append(MediaData.getDefault()!.getName())
 
     var END: string = stringBuffer!.toString()!;
         
         
 
-delete(0, stringBuffer!.length())
-append(fileName)
-append(SMALL)
-append(END)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(fileName)
+stringBuffer!.append(SMALL)
+stringBuffer!.append(END)
 
     var newImageFileName: string = stringBuffer!.toString()!;
         
         
 
-setSmallImage(newImageFileName)
-delete(0, stringBuffer!.length())
-append(fileName)
-append(MEDIUM)
-append(END)
+this.itemInterface!.setSmallImage(newImageFileName)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(fileName)
+stringBuffer!.append(MEDIUM)
+stringBuffer!.append(END)
 newImageFileName= stringBuffer!.toString()
-setMediumImage(newImageFileName)
-delete(0, stringBuffer!.length())
-append(fileName)
-append(LARGE)
-append(END)
+this.itemInterface!.setMediumImage(newImageFileName)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(fileName)
+stringBuffer!.append(LARGE)
+stringBuffer!.append(END)
 newImageFileName= stringBuffer!.toString()
-setLargeImage(newImageFileName)
+this.itemInterface!.setLargeImage(newImageFileName)
 }
 
 

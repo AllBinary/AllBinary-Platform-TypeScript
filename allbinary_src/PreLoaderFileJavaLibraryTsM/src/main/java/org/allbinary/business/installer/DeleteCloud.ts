@@ -67,7 +67,6 @@ var total = total
 
         try {
             
-    
                         if(AbFileSystem.getInstance()!.isType("com.vobject.appengine.java.io"))
                         
                                     {
@@ -76,8 +75,8 @@ var total = total
         
         
 
-append(URLGLOBALS.getWebappPath())
-append(prePath)
+stringBuffer!.append(URLGLOBALS.getWebappPath())
+stringBuffer!.append(prePath)
 
     var path: AbPath = new AbPath(stringBuffer!.toString());
         
@@ -98,11 +97,11 @@ append(prePath)
         
         
 
-delete(0, stringBuffer!.length())
-append("Searched: ")
-append(path.toFileSystemString())
-append(" BasicArrayList: ")
-appendint(size)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("Searched: ")
+stringBuffer!.append(path.toFileSystemString())
+stringBuffer!.append(" BasicArrayList: ")
+stringBuffer!.appendint(size)
 
     var portion: number = size /total +1;
         
@@ -119,7 +118,6 @@ appendint(size)
         
 
 
-    
                         if(end > size)
                         
                                     {
@@ -127,11 +125,11 @@ appendint(size)
 
                                     }
                                 
-append(" Section: ")
-appendint(start)
-append(" - ")
-appendint(end)
-put(stringBuffer!.toString(), this, "initialize()")
+stringBuffer!.append(" Section: ")
+stringBuffer!.appendint(start)
+stringBuffer!.append(" - ")
+stringBuffer!.appendint(end)
+logUtil!.put(stringBuffer!.toString(), this, "initialize()")
 
 
 
@@ -150,11 +148,10 @@ index < end; index++)
 
         try {
             
-    
                         if(nextFile!.getPath()!.indexOf(FileUploadData.getInstance()!.FILE) < 0)
                         
                                     {
-                                    delete()
+                                    nextFile!.delete()
 
                                     }
                                 
@@ -164,7 +161,7 @@ index < end; index++)
 
 }
 
-put("Deleted Files From Cloud", this, "initialize()")
+logUtil!.put("Deleted Files From Cloud", this, "initialize()")
 
                                     }
                                 
@@ -176,7 +173,7 @@ put("Deleted Files From Cloud", this, "initialize()")
     
 } catch(e: Exception)
             {
-put("Unable to copy installer files into cloud", this, "initialize()", e)
+logUtil!.put("Unable to copy installer files into cloud", this, "initialize()", e)
 
 
 

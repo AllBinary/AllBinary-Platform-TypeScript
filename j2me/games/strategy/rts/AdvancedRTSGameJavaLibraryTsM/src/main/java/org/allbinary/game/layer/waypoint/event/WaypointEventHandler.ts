@@ -38,7 +38,7 @@ public constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 var eventObject = eventObject
@@ -48,7 +48,7 @@ var eventListenerInterface = eventListenerInterface
         
         
 
-onWaypointEvent(eventObject as RTSLayerEvent)
+waypointEventListenerInterface!.onWaypointEvent(eventObject as RTSLayerEvent)
 }
 
 

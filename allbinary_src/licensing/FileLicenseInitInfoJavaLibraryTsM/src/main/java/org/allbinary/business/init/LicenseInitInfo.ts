@@ -94,13 +94,13 @@ this.serverVector= BasicArrayList()
     public setServer(value: string, index: number){
 var value = value
 var index = index
-add(index, value)
+this.serverVector!.add(index, value)
 }
 
 
     public addServer(value: string){
 var value = value
-add(value)
+this.serverVector!.add(value)
 }
 
 
@@ -117,7 +117,6 @@ add(value)
     public setServerList(servers: BasicArrayList){
 var servers = servers
 
-    
                         if(DebugFactory.getInstance() == NoDebug.getInstance())
                         
                                     {

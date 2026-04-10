@@ -48,7 +48,6 @@ var activity = activity
         
 
 
-    
                         if(SDK_VERSION <= 2)
                         
                                     {

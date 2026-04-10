@@ -67,7 +67,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -113,16 +113,15 @@ index < size; index++)
         
 
 
-    
                         if(layerInterfaceCanBeNull != 
                                     null
                                 )
                         
                                     {
                                     layerInterface= layerInterfaceCanBeNull as AllBinaryLayer
-remove(layerInterface)
+allBinaryLayerManager!.remove(layerInterface)
 destroyedEvent= destroyEventCircularStaticPool!.getInstance(layerInterface)
-fireEvent(destroyedEvent)
+destroyedEventHandler!.fireEvent(destroyedEvent)
 
                                     }
                                 
@@ -132,7 +131,7 @@ fireEvent(destroyedEvent)
                             
 }
 
-clear()
+list.clear()
 }
 
 

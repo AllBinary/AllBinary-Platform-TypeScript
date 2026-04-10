@@ -151,7 +151,7 @@ this.transformInfoInterface= transformInfoInterface
 this.categoryAbPath= pathUtil!.removeNameFromPath(categoryThemePath)
 this.themeName= pathUtil!.getNameFromPath(categoryThemePath)
 this.styleValidationInterface= cssStyleValidation
-this.init()
+this.this.init()
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, hashMap: HashMap<Any, Any>){
@@ -173,7 +173,6 @@ this.transformInfoInterface= transformInfoInterface
 this.categoryAbPath= pathUtil!.removeNameFromPath(categoryThemeAbPath!.toString())
 this.themeName= pathUtil!.getNameFromPath(categoryThemeAbPath!.toString())
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -182,17 +181,17 @@ this.themeName= pathUtil!.getNameFromPath(categoryThemeAbPath!.toString())
         
         
 
-append("CategoryThemePath: ")
-append(categoryThemeAbPath!.toString())
-append(" & CategoryPath: ")
-append(this.categoryAbPath!.toString())
-append(" & ThemeName: ")
-append(this.themeName)
-put("Http Request Constructor", this, stringBuffer!.toString())
+stringBuffer!.append("CategoryThemePath: ")
+stringBuffer!.append(categoryThemeAbPath!.toString())
+stringBuffer!.append(" & CategoryPath: ")
+stringBuffer!.append(this.categoryAbPath!.toString())
+stringBuffer!.append(" & ThemeName: ")
+stringBuffer!.append(this.themeName)
+logUtil!.put("Http Request Constructor", this, stringBuffer!.toString())
 
                                     }
                                 
-this.init()
+this.this.init()
 }
 
 public constructor (storeThemeCategoryInterface: StoreThemeCategoryInterface, node: Node){
@@ -225,11 +224,11 @@ this.themeName= DomNodeHelper.getTextNodeValue(valueNode)
 
 this.themePreviewImageName= DomNodeHelper.getTextNodeValue(previewImageNameValueNode)
 this.webAppAbPath= storeThemeCategoryInterface!.getWebAppPath()
-this.init(storeThemeCategoryInterface)
+this.this.init(storeThemeCategoryInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(){
 
@@ -247,11 +246,11 @@ this.init(storeThemeCategoryInterface)
         
         
 
-this.init(rootStoreThemeCategoryInterface)
+this.this.init(rootStoreThemeCategoryInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     init(storeThemeCategoryInterface: StoreThemeCategoryInterface){
 var storeThemeCategoryInterface = storeThemeCategoryInterface
@@ -260,7 +259,7 @@ this.webAppAbPath= storeThemeCategoryInterface!.getWebAppPath()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getTransformInfoInterface(): TransformInfoInterface{
 
@@ -312,11 +311,10 @@ this.webAppAbPath= storeThemeCategoryInterface!.getWebAppPath()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getCssStyleValidation(): CssStyleValidation{
 
-    
                         if(this.styleValidationInterface == 
                                     null
                                 )
@@ -359,16 +357,14 @@ this.styleValidationInterface= CssStyleValidation(document)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put(this.commonStrings!.START, this, commonStrings!.IS_VALID)
+                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.IS_VALID)
 
                                     }
                                 
 
-    
                         if(!StringValidationUtil.getInstance()!.isValidRequired(this.categoryAbPath!.toString(), AbSqlData.MINSTRING, AbSqlData.MAXSTRING))
                         
                                     {
@@ -377,7 +373,6 @@ this.styleValidationInterface= CssStyleValidation(document)
                                     }
                                 
 
-    
                         if(!StringValidationUtil.getInstance()!.isValidRequired(this.themeName, AbSqlData.MINSTRING, AbSqlData.MAXSTRING))
                         
                                     {
@@ -386,7 +381,6 @@ this.styleValidationInterface= CssStyleValidation(document)
                                     }
                                 
 
-    
                         if(!this.getCssStyleValidation()!.isValid())
                         
                                     {
@@ -395,11 +389,10 @@ this.styleValidationInterface= CssStyleValidation(document)
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("End: " +isValid, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("End: " +isValid, this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -412,11 +405,10 @@ this.styleValidationInterface= CssStyleValidation(document)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -439,7 +431,7 @@ this.styleValidationInterface= CssStyleValidation(document)
         
         
 
-append("Theme Validation Error")
+stringBuffer!.append("Theme Validation Error")
 
 
 
@@ -449,11 +441,10 @@ append("Theme Validation Error")
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 
@@ -505,10 +496,10 @@ var document = document
         
         
 
-add(this.getName())
-add(this.getPath())
-add(this.getPreviewImageName())
-add(this.getPreviewImagePath())
+vector.add(this.getName())
+vector.add(this.getPath())
+vector.add(this.getPreviewImageName())
+vector.add(this.getPreviewImagePath())
 
 
 
@@ -529,10 +520,10 @@ add(this.getPreviewImagePath())
         
         
 
-put(themeData!.NAME, this.getName())
-put(themeData!.PATH, this.getPath())
-put(themeData!.PREVIEW_IMAGE_NAME, this.getPreviewImageName())
-put(themeData!.PREVIEW_IMAGE_PATH, this.getPreviewImagePath())
+hashMap!.put(themeData!.NAME, this.getName())
+hashMap!.put(themeData!.PATH, this.getPath())
+hashMap!.put(themeData!.PREVIEW_IMAGE_NAME, this.getPreviewImageName())
+hashMap!.put(themeData!.PREVIEW_IMAGE_PATH, this.getPreviewImagePath())
 
 
 
@@ -542,7 +533,7 @@ put(themeData!.PREVIEW_IMAGE_PATH, this.getPreviewImagePath())
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -556,7 +547,7 @@ var document = document
         
         
 
-appendChild(domNodeInterface!.toXmlNode(document))
+node.appendChild(domNodeInterface!.toXmlNode(document))
 
 
 

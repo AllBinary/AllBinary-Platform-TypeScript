@@ -37,10 +37,10 @@ this.displayable= displayable
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(){
-repaint(displayable)
+ScreenRepaintUtil.repaint(displayable)
 }
 
 

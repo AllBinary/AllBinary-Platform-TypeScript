@@ -39,55 +39,50 @@ public constructor (){
             }
 
 
-                @Throws(JspTagException::class)
+                //@Throws(JspTagException::class)
             
     public doStartTag(): number{
 
         try {
             
-    
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.TaxValidationView")
+                                    this.this.setName("Basic Shipping Address View")
+this.this.setObjectFile("views.generic.address.shipping.TaxValidationView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.NEW) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.NewValidationView")
+                                    this.this.setName("Basic Shipping Address View")
+this.this.setObjectFile("views.generic.address.shipping.NewValidationView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.AddTaxValidationView")
+                                    this.this.setName("Basic Shipping Address View")
+this.this.setObjectFile("views.generic.address.shipping.AddTaxValidationView")
 
                                     }
                                 
                              else 
-    
                         if(this.getCommand()!.compareTo(this.commonStrings!.UPDATE) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.UpdateTaxValidationView")
+                                    this.this.setName("Basic Shipping Address View")
+this.this.setObjectFile("views.generic.address.shipping.UpdateTaxValidationView")
 
                                     }
                                 
@@ -95,7 +90,7 @@ this.setObjectFile("views.generic.address.shipping.UpdateTaxValidationView")
                             
 
 
-                            throw Exception("No Such View Command: " +this.getCommand())
+                            throw Error("No Such View Command: " +this.getCommand())
 
                         }
                             
@@ -111,10 +106,10 @@ this.setObjectFile("views.generic.address.shipping.UpdateTaxValidationView")
 
 
 
-                            throw Exception("Command Null")
+                            throw Error("Command Null")
 } catch(e: LicensingException)
             {
-sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
 
 
 
@@ -124,7 +119,7 @@ sendJspTagLicensingRedirect(this.pageContext, e)
 }
  catch(e: Exception)
             {
-sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
 
 
 

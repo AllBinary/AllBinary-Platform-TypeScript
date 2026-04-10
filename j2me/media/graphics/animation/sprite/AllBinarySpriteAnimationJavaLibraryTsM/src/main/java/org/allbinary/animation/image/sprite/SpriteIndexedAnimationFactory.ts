@@ -131,7 +131,6 @@ this.basicColorArray= basicColorArray
 this.animationFactoryInitializationVisitor!.dx=  -(this.animationFactoryInitializationVisitor!.width shr 2)
 this.animationFactoryInitializationVisitor!.dy=  -(this.animationFactoryInitializationVisitor!.height shr 2)
 
-    
                         if(AndroidUtil.isAndroid())
                         
                                     {
@@ -206,7 +205,7 @@ public constructor (image: Image, width: number, height: number, animationBehavi
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
@@ -216,7 +215,6 @@ public constructor (image: Image, width: number, height: number, animationBehavi
         
 
 
-    
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
                         
                                     {
@@ -242,7 +240,7 @@ public constructor (image: Image, width: number, height: number, animationBehavi
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(animationInterface: Animation): Animation{
     //var animationInterface = animationInterface

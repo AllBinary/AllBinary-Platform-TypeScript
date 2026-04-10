@@ -59,7 +59,7 @@ this.userInterface= userInterface
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onEmailSendFailure(emailEvent: EmailEvent){
 var emailEvent = emailEvent
@@ -73,20 +73,19 @@ var emailEvent = emailEvent
         
         
 
-offer(email.getEmail() as EmailInterface)
+EmailQueueFactory.getInstance()!.offer(email.getEmail() as EmailInterface)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onEmailSendRequest(emailEvent: EmailEvent){
 var emailEvent = emailEvent
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    put("Add Email To Que For Sending: " +emailEvent!.toString(), this, "onEmailSendRequest")
+                                    logUtil!.put("Add Email To Que For Sending: " +emailEvent!.toString(), this, "onEmailSendRequest")
 
                                     }
                                 
@@ -100,7 +99,7 @@ var emailEvent = emailEvent
         
         
 
-offer(email.getEmail() as EmailInterface)
+EmailQueueFactory.getInstance()!.offer(email.getEmail() as EmailInterface)
 }
 
 

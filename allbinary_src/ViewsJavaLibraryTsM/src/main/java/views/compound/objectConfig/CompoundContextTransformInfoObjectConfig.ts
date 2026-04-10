@@ -107,7 +107,7 @@ var document = document
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setDocument(this.generate(this.toXmlDoc()))
+this.this.setDocument(this.generate(this.toXmlDoc()))
 }
 
 public constructor (abeClientInformation: Object, transformInfoInterface: Object, name: string, type: string)                        
@@ -123,11 +123,11 @@ var type = type
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setDocument(this.generate(this.toXmlDoc()))
+this.this.setDocument(this.generate(this.toXmlDoc()))
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public get(): string{
 
@@ -150,10 +150,10 @@ this.setDocument(this.generate(this.toXmlDoc()))
         
         
 
-append(storeName)
-append(templateNameOverride)
-append(CommonSeps.getInstance()!.SPACE)
-append(RootTransformInfoData.NAME)
+stringBuffer!.append(storeName)
+stringBuffer!.append(templateNameOverride)
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(RootTransformInfoData.NAME)
 
     var rootComponentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(abeClientInformation, stringBuffer!.toString(), this.getTransformInfoInterface())!;
         
@@ -165,11 +165,10 @@ append(RootTransformInfoData.NAME)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Root View Called with: " +viewVector!.length, this, "get(transformInfoInterface)")
+                                    logUtil!.put("Root View Called with: " +viewVector!.length, this, "get(transformInfoInterface)")
 
                                     }
                                 
@@ -224,26 +223,25 @@ index < size; index++)
         
 
 replacementViewString= DocumentToNode.convertDocumentToNodeString(replacementViewString)
-delete(0, stringBuffer!.length())
-append(startXMLHeader)
-append(replacementViewString)
-append(endXMLHeader)
+stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append(startXMLHeader)
+stringBuffer!.append(replacementViewString)
+stringBuffer!.append(endXMLHeader)
 
     var templateValue: string = stringBuffer!.toString()!;
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    delete(0, stringBuffer!.length())
-append("Replacing: ")
-append(templateKey)
-append(" with ")
-append(templateValue)
-put(stringBuffer!.toString(), this, "get()")
+                                    stringBuffer!.delete(0, stringBuffer!.length())
+stringBuffer!.append("Replacing: ")
+stringBuffer!.append(templateKey)
+stringBuffer!.append(" with ")
+stringBuffer!.append(templateValue)
+logUtil!.put(stringBuffer!.toString(), this, "get()")
 
                                     }
                                 
@@ -256,11 +254,10 @@ rootView= replace.all(rootView)
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("End: Result of a compound view: " +rootView, this, "get()")
+                                    logUtil!.put("End: Result of a compound view: " +rootView, this, "get()")
 
                                     }
                                 
@@ -273,7 +270,7 @@ rootView= replace.all(rootView)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public createInputStream(): InputStream{
 
@@ -287,11 +284,10 @@ rootView= replace.all(rootView)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Template: " +completeTemplateViewBytes.decodeToString().
+                                    logUtil!.put("Template: " +completeTemplateViewBytes.decodeToString().
                             toString(), this, "createInputStream()")
 
                                     }

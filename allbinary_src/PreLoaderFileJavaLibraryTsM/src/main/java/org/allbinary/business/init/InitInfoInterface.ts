@@ -39,7 +39,7 @@ interface InitInfoInterface {
 
     public setMainPath(value: AbPath)
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public isTestingValid(testing: string): boolean
 

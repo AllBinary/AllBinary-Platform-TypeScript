@@ -97,11 +97,11 @@ this.shortName= StringMaker().
         
         
 
-append(NAME)
-append(this.getName())
-append(CommonSeps.getInstance()!.SPACE)
-append(VERSION)
-append(this.getVersion())
+stringBuffer!.append(NAME)
+stringBuffer!.append(this.getName())
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+stringBuffer!.append(VERSION)
+stringBuffer!.append(this.getVersion())
 
 
 

@@ -38,6 +38,10 @@
 }
 
 
+    private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
+        
+        
+
     private readonly LABEL: string = "org.allbinary";
         
         
@@ -74,13 +78,12 @@ private constructor (){
         
 
 
-    
                         if(log != 
                                     null
                                 )
                         
                                     {
-                                    this.put(specialMessage, anyType, functionName, exception)
+                                    this.this.put(specialMessage, anyType, functionName, exception)
 
                                     }
                                 
@@ -106,11 +109,11 @@ private constructor (){
 
 className= anyType!::class.toString()!
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
+    var message: string = logFormatUtil!.get(className, functionName, specialMessage, exception)!;
         
         
 
-i(LABEL, LOG_SUCCESS +message)
+android.util.Log.i(LABEL, LOG_SUCCESS +message)
 }
 
 

@@ -106,12 +106,10 @@ export class ThreadFactoryUtil
         
 
 
-    
                         if(J2MEUtil.isHTML())
                         
                                     {
                                     
-    
                         if(type == DemoCanvas.TYPE || type == AllBinaryGameCanvas.TYPE)
                         
                                     {
@@ -120,26 +118,26 @@ export class ThreadFactoryUtil
         
         
 
-put(StringMaker().
+PreLogUtil.put(StringMaker().
                             append("Using Pseudo Thread for DemoCanvas/AllBinaryGameCanvas under PlayN/HTML5: ")!.append(StringUtil.getInstance()!.toString(runnable))!.toString(), this, commonStrings!.CONSTRUCTOR)
 
     var primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;
         
         
 
-runTask(demoGameSingleThreadStartRunnable)
+primaryThreadPool!.runTask(demoGameSingleThreadStartRunnable)
 
                                     }
                                 
                         else {
-                            put(StringMaker().
+                            PreLogUtil.put(StringMaker().
                             append("Using Pseudo Thread for Runnable under PlayN/HTML5: ")!.append(StringUtil.getInstance()!.toString(runnable))!.toString(), this, commonStrings!.CONSTRUCTOR)
 
     var primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;
         
         
 
-runTask(runnable)
+primaryThreadPool!.runTask(runnable)
 
                         }
                             
@@ -151,7 +149,7 @@ runTask(runnable)
         
         
 
-put(thread.toString(), this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(thread.toString(), this, commonStrings!.CONSTRUCTOR)
 
 
 
@@ -163,7 +161,7 @@ put(thread.toString(), this, commonStrings!.CONSTRUCTOR)
 
     public start(thread: Thread){
     //var thread = thread
-start()
+thread.start()
 }
 
 

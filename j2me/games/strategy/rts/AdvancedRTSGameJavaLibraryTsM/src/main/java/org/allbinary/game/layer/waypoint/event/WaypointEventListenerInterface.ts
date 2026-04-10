@@ -27,7 +27,7 @@ import { EventListenerInterface } from "../../../../../../org/allbinary/logic/ut
 interface WaypointEventListenerInterface extends EventListenerInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onWaypointEvent(event: RTSLayerEvent)
 

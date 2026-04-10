@@ -64,7 +64,7 @@ this.image= image
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getAnimationSize(): number{
 
@@ -99,7 +99,7 @@ var sequence = sequence
     //var graphics = graphics
     //var x = x
     //var y = y
-drawImage(this.image, x, y, anchor)
+graphics.drawImage(this.image, x, y, anchor)
 }
 
 
@@ -124,14 +124,14 @@ drawImage(this.image, x, y, anchor)
 
 
     public close(){
-dispose(this.image)
+DisposalUtil.getInstance()!.dispose(this.image)
 }
 
 
-                @Throws(Throwable::class)
+                //@Throws(Error::class)
             
     finalize(){
-dispose(this.image)
+DisposalUtil.getInstance()!.dispose(this.image)
 }
 
 

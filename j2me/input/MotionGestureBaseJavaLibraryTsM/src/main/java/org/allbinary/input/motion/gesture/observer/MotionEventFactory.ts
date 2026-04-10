@@ -73,7 +73,6 @@ index= TouchMotionGestureFactory.getInstance()!.LAST_MOTION.getId()
         
 
 
-    
                         if(input == inputFactory!.NO_INPUT)
                         
                                     {

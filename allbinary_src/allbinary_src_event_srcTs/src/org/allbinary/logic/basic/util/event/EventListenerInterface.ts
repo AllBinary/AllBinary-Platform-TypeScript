@@ -25,7 +25,7 @@ import { EventListener } from "../../../../../java/util/EventListener.js";
 interface EventListenerInterface extends EventListener {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onEvent(eventObject: AllBinaryEventObject)
 

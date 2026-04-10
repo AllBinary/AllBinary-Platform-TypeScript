@@ -50,7 +50,7 @@ public constructor (){
             }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public getInstance(hashMap: HashMap<Any, Any>, pageContext: PageContext): any = {}{
 var hashMap = hashMap
@@ -64,7 +64,7 @@ var pageContext = pageContext
 }
 
 
-                @Throws(LicensingException::class)
+                //@Throws(LicensingException::class)
             
     public getInstance(hashMap: HashMap<Any, Any>, httpServletRequest: HttpServletRequest): any = {}{
 var hashMap = hashMap

@@ -78,7 +78,7 @@ this.layerInterfaceFactoryInterface= layerInterfaceFactoryInterface
 var graphics = graphics
 var x = x
 var y = y
-paint(graphics, x, y)
+super.paint(graphics, x, y)
 
 
 
@@ -90,7 +90,7 @@ paint(graphics, x, y)
         
 --index >= 0; )
         {
-paint(graphics, x, y)
+this.animationArray[index]!.paint(graphics, x, y)
 }
 
 }

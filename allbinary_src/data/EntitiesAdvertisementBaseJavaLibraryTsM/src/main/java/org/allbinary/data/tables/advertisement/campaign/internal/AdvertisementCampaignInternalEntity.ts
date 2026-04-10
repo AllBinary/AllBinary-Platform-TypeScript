@@ -81,7 +81,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.this.setTableName(tableName)
 }
 
 
@@ -89,24 +89,22 @@ this.setTableName(tableName)
 var value = value
 
         try {
-            deleteWhere(StoreFrontData.getInstance()!.NAME, value)
+            super.deleteWhere(StoreFrontData.getInstance()!.NAME, value)
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.SUCCESS, this, commonStrings!.delete)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, commonStrings!.delete)
 
                                     }
                                 
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
 
                                     }
                                 
@@ -122,7 +120,7 @@ var storeName = storeName
         
         
 
-put(StoreFrontData.getInstance()!.NAME, storeName)
+keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName)
 
     var hashMapVector: Vector = super.getRows(keysAndValues)!;
         
@@ -154,13 +152,12 @@ index < size; index++)
         
 
 
-    
                         if(hashMap != 
                                     null
                                 )
                         
                                     {
-                                    add(AdvertisementCampaign(hashMap) as AdvertisementCampaignInterface)
+                                    vector.add(AdvertisementCampaign(hashMap) as AdvertisementCampaignInterface)
 
                                     }
                                 
@@ -183,15 +180,14 @@ var name = name
         
         
 
-put(StoreFrontData.getInstance()!.NAME, storeName)
-put(AdvertisementCampaignData.getInstance()!.NAME, name)
+keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName)
+keysAndValues!.put(AdvertisementCampaignData.getInstance()!.NAME, name)
 
     var hashMap: HashMap<Any, Any> = super.getRow(keysAndValues)!;
         
         
 
 
-    
                         if(hashMap != 
                                     null
                                 )
@@ -221,7 +217,7 @@ put(AdvertisementCampaignData.getInstance()!.NAME, name)
 
     public update(updatedValues: HashMap<Any, Any>){
 var updatedValues = updatedValues
-updateWhere(EntryData.getInstance()!.getInstance()!.ID, updatedValues!.get(EntryData.getInstance()!.getInstance()!.ID) as String, updatedValues)
+super.updateWhere(EntryData.getInstance()!.getInstance()!.ID, updatedValues!.get(EntryData.getInstance()!.getInstance()!.ID) as String, updatedValues)
 }
 
 
@@ -241,10 +237,10 @@ updateWhere(EntryData.getInstance()!.getInstance()!.ID, updatedValues!.get(Entry
         
         
 
-append(this.sqlStrings!.CREATE_TABLE)
-append(this.getTableName())
-append(this.sqlStrings!.START)
-append(this.sqlStrings!.END)
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)
+stringBuffer!.append(this.getTableName())
+stringBuffer!.append(this.sqlStrings!.START)
+stringBuffer!.append(entryData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(StoreFrontData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(advertisementCampaignData!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(advertisementCampaignData!.DESCRIPTION)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(advertisementCampaignData!.CONFIG)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(TimeData.getInstance()!.START)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(TimeData.getInstance()!.END)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(entryData!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(entryData!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(entryData!.ID)!.append(this.sqlStrings!.END)
 
 
 

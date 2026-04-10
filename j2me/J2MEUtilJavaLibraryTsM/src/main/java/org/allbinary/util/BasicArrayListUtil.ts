@@ -62,17 +62,17 @@ var args = args
         
         
 
-add(commonPhoneStrings!.ONE)
-add(commonPhoneStrings!.TWO)
-add(commonPhoneStrings!.THREE)
-add(commonPhoneStrings!.FOUR)
-add(commonPhoneStrings!.FIVE)
-add(commonPhoneStrings!.SIX)
-add(commonPhoneStrings!.SEVEN)
-add(commonPhoneStrings!.EIGHT)
-add(commonPhoneStrings!.NINE)
-reverse(list)
-println(list)
+list.add(commonPhoneStrings!.ONE)
+list.add(commonPhoneStrings!.TWO)
+list.add(commonPhoneStrings!.THREE)
+list.add(commonPhoneStrings!.FOUR)
+list.add(commonPhoneStrings!.FIVE)
+list.add(commonPhoneStrings!.SIX)
+list.add(commonPhoneStrings!.SEVEN)
+list.add(commonPhoneStrings!.EIGHT)
+list.add(commonPhoneStrings!.NINE)
+BasicArrayListUtil.getInstance()!.reverse(list)
+System.out.println(list)
 }
 
 
@@ -146,8 +146,8 @@ index <= size; index++)
         {
 secondSwapIndex= lastMinusOneIndex -index
 temp= list.remove(index)
-add(index, list.remove(secondSwapIndex))
-add(secondSwapIndex +1, temp)
+list.add(index, list.remove(secondSwapIndex))
+list.add(secondSwapIndex +1, temp)
 }
 
 }
@@ -170,8 +170,8 @@ add(secondSwapIndex +1, temp)
         
         
 
-append(CommonLabels.getInstance()!.TOTAL_LABEL)
-appendint(size)
+stringBuffer!.append(CommonLabels.getInstance()!.TOTAL_LABEL)
+stringBuffer!.appendint(size)
 
 
 
@@ -187,8 +187,8 @@ index >= 0; index--)
         
         
 
-append(S_LABEL)
-appendint(usedList!.size())
+stringBuffer!.append(S_LABEL)
+stringBuffer!.appendint(usedList!.size())
 }
 
 

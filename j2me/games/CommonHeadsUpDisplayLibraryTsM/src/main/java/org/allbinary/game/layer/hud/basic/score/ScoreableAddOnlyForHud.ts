@@ -37,7 +37,7 @@ public constructor (scoreVectorGraphic: ScoreHudWidget)
                             //For kotlin this is before the body of the constructor.
                     
 this.scoreHudWidget= scoreVectorGraphic
-set(0)
+this.getScoreHudWidget()!.set(0)
 }
 
 
@@ -48,8 +48,8 @@ var points = points
 
     public addPoints(points: number){
 var points = points
-addPoints(points)
-add(points)
+super.addPoints(points)
+this.getScoreHudWidget()!.add(points)
 }
 
 

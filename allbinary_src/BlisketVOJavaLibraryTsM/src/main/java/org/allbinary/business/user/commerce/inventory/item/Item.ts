@@ -73,7 +73,7 @@ public constructor (itemHashMap: HashMap<Any, Any>)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setData(itemHashMap)
+this.this.setData(itemHashMap)
 }
 
 public constructor (){
@@ -99,12 +99,12 @@ this.tax= itemHashMap!.get(OrderHistoryData.TAX) as String
 this.shippingType= itemHashMap!.get(ShippingMethodData.NAME) as String
 this.shippingCost= itemHashMap!.get(ShippingMethodData.COST) as String
 this.shippedDate= itemHashMap!.get(OrderHistoryData.SHIPPEDDATE) as String
-put(StreetAddressData.NAME, itemHashMap!.get(ShippingAddressData.NAME))
-put(StreetAddressData.STREET, itemHashMap!.get(ShippingAddressData.STREET))
-put(StreetAddressData.CITY, itemHashMap!.get(ShippingAddressData.CITY))
-put(StreetAddressData.STATE, itemHashMap!.get(ShippingAddressData.STATE))
-put(StreetAddressData.CODE, itemHashMap!.get(ShippingAddressData.CODE))
-put(StreetAddressData.COUNTRY, itemHashMap!.get(ShippingAddressData.COUNTRY))
+itemHashMap!.put(StreetAddressData.NAME, itemHashMap!.get(ShippingAddressData.NAME))
+itemHashMap!.put(StreetAddressData.STREET, itemHashMap!.get(ShippingAddressData.STREET))
+itemHashMap!.put(StreetAddressData.CITY, itemHashMap!.get(ShippingAddressData.CITY))
+itemHashMap!.put(StreetAddressData.STATE, itemHashMap!.get(ShippingAddressData.STATE))
+itemHashMap!.put(StreetAddressData.CODE, itemHashMap!.get(ShippingAddressData.CODE))
+itemHashMap!.put(StreetAddressData.COUNTRY, itemHashMap!.get(ShippingAddressData.COUNTRY))
 this.shippingAddress= StreetAddress(itemHashMap)
 }
 
@@ -211,12 +211,12 @@ this.special= value
         
         
 
-put(ShippingMethodData.GROUP, this.group)
-put(OrderHistoryData.TAX, this.tax)
-put(ShippingMethodData.NAME, this.shippingType)
-put(ShippingMethodData.COST, this.shippingCost)
-put(OrderHistoryData.SHIPPEDDATE, this.shippedDate)
-put(EntryData.getInstance()!.SPECIAL, this.special)
+hashMap!.put(ShippingMethodData.GROUP, this.group)
+hashMap!.put(OrderHistoryData.TAX, this.tax)
+hashMap!.put(ShippingMethodData.NAME, this.shippingType)
+hashMap!.put(ShippingMethodData.COST, this.shippingCost)
+hashMap!.put(OrderHistoryData.SHIPPEDDATE, this.shippedDate)
+hashMap!.put(EntryData.getInstance()!.SPECIAL, this.special)
 
 
 

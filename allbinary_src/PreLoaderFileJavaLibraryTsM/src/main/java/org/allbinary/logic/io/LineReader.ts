@@ -68,11 +68,11 @@ public constructor (fileName: string){
 
 this.fileName= fileName
 idFile= AbFileInputStream(fileName)
-read(bytes)
+idFile!.read(bytes)
 string= bytes.decodeToString()
 } catch(e: Exception)
             {
-put("File: " +fileName, this, "LineReader", e)
+logUtil!.put("File: " +fileName, this, "LineReader", e)
 
 
                             {
@@ -93,7 +93,6 @@ put("File: " +fileName, this, "LineReader", e)
         
 
 
-    
                         if(nextIndex ==  -1)
                         
                                     {
@@ -114,7 +113,7 @@ put("File: " +fileName, this, "LineReader", e)
     
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "hasNext", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "hasNext", e)
 
 
                             {
@@ -132,7 +131,7 @@ put(commonStrings!.EXCEPTION, this, "hasNext", e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public next(): string{
 
@@ -143,14 +142,13 @@ put(commonStrings!.EXCEPTION, this, "hasNext", e)
         
 
 
-    
                         if(nextIndex ==  -1)
                         
                                     {
                                     
 
 
-                            throw Exception("next() should have been called first")
+                            throw Error("next() should have been called first")
 
                                     }
                                 
@@ -168,7 +166,7 @@ index= nextIndex +1
     
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, "next", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "next", e)
 
 
                             {

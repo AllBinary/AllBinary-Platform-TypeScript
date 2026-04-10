@@ -50,7 +50,6 @@ var thirdTemp = thirdTemp
         
 
 
-    
                         if(thirdTemp > 3700)
                         
                                     {
@@ -59,7 +58,6 @@ var thirdTemp = thirdTemp
                                     }
                                 
                              else 
-    
                         if(thirdTemp > 3200)
                         
                                     {
@@ -68,7 +66,6 @@ var thirdTemp = thirdTemp
                                     }
                                 
                              else 
-    
                         if(thirdTemp > 2700)
                         
                                     {
@@ -77,7 +74,6 @@ var thirdTemp = thirdTemp
                                     }
                                 
                              else 
-    
                         if(thirdTemp > 2200)
                         
                                     {
@@ -86,7 +82,6 @@ var thirdTemp = thirdTemp
                                     }
                                 
                              else 
-    
                         if(thirdTemp > 1700)
                         
                                     {
@@ -95,7 +90,6 @@ var thirdTemp = thirdTemp
                                     }
                                 
                              else 
-    
                         if(thirdTemp > 1200)
                         
                                     {
@@ -104,7 +98,6 @@ var thirdTemp = thirdTemp
                                     }
                                 
                              else 
-    
                         if(thirdTemp > 700)
                         
                                     {

@@ -47,8 +47,8 @@ public constructor (anyType: any = {})
         
         
 
-append("CapitalEvent: Value: \n")
-appendint(this.getValue())
+stringBuffer!.append("CapitalEvent: Value: \n")
+stringBuffer!.appendint(this.getValue())
 
 
 

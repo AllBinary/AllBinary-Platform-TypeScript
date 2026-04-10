@@ -45,7 +45,7 @@ export class NewUserFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(): UserInterface{
 
@@ -57,7 +57,7 @@ export class NewUserFactory
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(transformInfoInterface: TransformInfoInterface): UserInterface{
 var transformInfoInterface = transformInfoInterface
@@ -82,7 +82,7 @@ var transformInfoInterface = transformInfoInterface
         
         
 
-put(UserRoleData.NAME.toString(), role)
+hashMap!.put(UserRoleData.NAME.toString(), role)
 
 
 
@@ -92,13 +92,12 @@ put(UserRoleData.NAME.toString(), role)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(httpServletRequest: HttpServletRequest, propertiesHashMap: HashMap<Any, Any>): UserInterface{
 var httpServletRequest = httpServletRequest
 var propertiesHashMap = propertiesHashMap
 
-    
                         if(propertiesHashMap != 
                                     null
                                 )
@@ -115,7 +114,7 @@ var propertiesHashMap = propertiesHashMap
         
         
 
-put(UserRoleData.NAME.toString(), roleString)
+requestHashMap!.put(UserRoleData.NAME.toString(), roleString)
 
 
 
@@ -129,7 +128,7 @@ put(UserRoleData.NAME.toString(), roleString)
                             
 
 
-                            throw Exception("Null HashMap")
+                            throw Error("Null HashMap")
 
                         }
                             

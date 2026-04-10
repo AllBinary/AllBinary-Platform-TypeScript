@@ -99,14 +99,12 @@ var componentData = componentData
 
         try {
             
-    
                         if(component != 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(component.compareTo(this.componentFactory!.ETHERNET.toString()) == 0)
                         
                                     {
@@ -120,7 +118,6 @@ var componentData = componentData
                                     }
                                 
                              else 
-    
                         if(component.compareTo(this.componentFactory!.BRIDGE.toString()) == 0)
                         
                                     {
@@ -134,7 +131,6 @@ var componentData = componentData
                                     }
                                 
                              else 
-    
                         if(component.compareTo(this.componentFactory!.IDE.toString()) == 0)
                         
                                     {
@@ -148,7 +144,6 @@ var componentData = componentData
                                     }
                                 
                              else 
-    
                         if(component.compareTo(this.componentFactory!.MULTIMEDIA.toString()) == 0)
                         
                                     {
@@ -162,7 +157,6 @@ var componentData = componentData
                                     }
                                 
                              else 
-    
                         if(component.compareTo(this.componentFactory!.SCSI.toString()) == 0)
                         
                                     {
@@ -176,7 +170,6 @@ var componentData = componentData
                                     }
                                 
                              else 
-    
                         if(component.compareTo(this.componentFactory!.USB.toString()) == 0)
                         
                                     {
@@ -190,7 +183,6 @@ var componentData = componentData
                                     }
                                 
                              else 
-    
                         if(component.compareTo(this.componentFactory!.VGA.toString()) == 0)
                         
                                     {
@@ -204,7 +196,6 @@ var componentData = componentData
                                     }
                                 
                              else 
-    
                         if(component.compareTo(this.componentFactory!.PCI.toString()) == 0)
                         
                                     {
@@ -234,11 +225,10 @@ var componentData = componentData
         
 
 
-    
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 
                                     }
                                 
@@ -256,7 +246,6 @@ var componentData = componentData
     public getComponentType(component: string): string{
 var component = component
 
-    
                         if(component.indexOf(this.componentFactory!.ETHERNET.toString()) >= 0)
                         
                                     {
@@ -270,7 +259,6 @@ var component = component
                                     }
                                 
                              else 
-    
                         if(component.indexOf(this.componentFactory!.BRIDGE.toString()) >= 0)
                         
                                     {
@@ -284,7 +272,6 @@ var component = component
                                     }
                                 
                              else 
-    
                         if(component.indexOf(this.componentFactory!.IDE.toString()) >= 0)
                         
                                     {
@@ -298,7 +285,6 @@ var component = component
                                     }
                                 
                              else 
-    
                         if(component.indexOf(this.componentFactory!.MULTIMEDIA.toString()) >= 0)
                         
                                     {
@@ -312,7 +298,6 @@ var component = component
                                     }
                                 
                              else 
-    
                         if(component.indexOf(this.componentFactory!.SCSI.toString()) >= 0)
                         
                                     {
@@ -326,7 +311,6 @@ var component = component
                                     }
                                 
                              else 
-    
                         if(component.indexOf(this.componentFactory!.USB.toString()) >= 0)
                         
                                     {
@@ -340,7 +324,6 @@ var component = component
                                     }
                                 
                              else 
-    
                         if(component.indexOf(this.componentFactory!.VGA.toString()) >= 0)
                         
                                     {
@@ -354,7 +337,6 @@ var component = component
                                     }
                                 
                              else 
-    
                         if(component.compareTo(this.componentFactory!.PCI.toString()) == 0)
                         
                                     {

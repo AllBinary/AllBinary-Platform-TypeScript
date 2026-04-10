@@ -72,7 +72,7 @@ this.runningP= isRunning
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setThread(thread: Thread){
     //var thread = thread
@@ -82,7 +82,7 @@ this.runningP= isRunning
     public setTargetLayer(waypointLayer: PathFindingLayerInterface){
     //var waypointLayer = waypointLayer
 this.targetPathFindingLayer= waypointLayer
-this.setPriority()
+this.this.setPriority()
 }
 
 
@@ -98,7 +98,6 @@ this.setPriority()
         
 
 
-    
                         if(targetLayer != 
                                     null
                                 )

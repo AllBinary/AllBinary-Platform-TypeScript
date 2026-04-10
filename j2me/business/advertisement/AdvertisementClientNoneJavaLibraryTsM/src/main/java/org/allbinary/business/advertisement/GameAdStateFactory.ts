@@ -51,7 +51,7 @@ export class GameAdStateFactory
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(softwareInformation: SoftwareInformation): GameAdState{
     //var softwareInformation = softwareInformation

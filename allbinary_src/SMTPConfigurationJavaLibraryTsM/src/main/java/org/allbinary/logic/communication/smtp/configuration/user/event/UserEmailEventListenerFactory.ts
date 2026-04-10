@@ -36,7 +36,7 @@ export class UserEmailEventListenerFactory
          {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(abeClientInformation: AbeClientInformationInterface, userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface, userInterface: UserInterface): UserEmailEventListenerInterface{
     //var abeClientInformation = abeClientInformation

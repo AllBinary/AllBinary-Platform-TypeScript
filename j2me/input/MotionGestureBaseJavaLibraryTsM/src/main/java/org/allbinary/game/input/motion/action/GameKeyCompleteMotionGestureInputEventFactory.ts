@@ -60,12 +60,12 @@ export class GameKeyCompleteMotionGestureInputEventFactory
 
     public add(gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent){
 var gameKeyCompleteMotionGestureInputEvent = gameKeyCompleteMotionGestureInputEvent
-add(gameKeyCompleteMotionGestureInputEvent)
+eventList!.add(gameKeyCompleteMotionGestureInputEvent)
 }
 
 
     public updateAll(){
-put(StringMaker().
+logUtil!.put(StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.appendint(eventList!.size())!.toString(), this, "updateAll")
 
 
@@ -82,7 +82,7 @@ index >= 0; index--)
         
         
 
-update()
+gameKeyCompleteMotionGestureInputEvent!.update()
 }
 
 }

@@ -117,11 +117,11 @@ public constructor (hashMap: HashMap<Any, Any>){
 
             super();
             var hashMap = hashMap
-this.getFormData(hashMap)
+this.this.getFormData(hashMap)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getFormData(hashMap: HashMap<Any, Any>){
 var hashMap = hashMap
@@ -138,16 +138,14 @@ this.body= hashMap!.get(BodyData.getInstance()!.NAME) as String
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put(this.commonStrings!.START, this, commonStrings!.IS_VALID)
+                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.IS_VALID)
 
                                     }
                                 
 
-    
                         if(!StringValidationUtil.getInstance()!.isValidNotRequired(this.body, BodyData.getInstance()!.MIN, AbSqlData.MAXBLOB))
                         
                                     {
@@ -156,11 +154,10 @@ this.body= hashMap!.get(BodyData.getInstance()!.NAME) as String
                                     }
                                 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("BodyValidation: " +isValid, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("BodyValidation: " +isValid, this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -173,11 +170,10 @@ this.body= hashMap!.get(BodyData.getInstance()!.NAME) as String
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -203,10 +199,10 @@ this.body= hashMap!.get(BodyData.getInstance()!.NAME) as String
 
 
                             {
-                            append("Error: Data submitted is < ")
-appendint(BodyData.getInstance()!.MIN)
-append(" or > ")
-appendint(AbSqlData.MAXBLOB)
+                            stringBuffer!.append("Error: Data submitted is < ")
+stringBuffer!.appendint(BodyData.getInstance()!.MIN)
+stringBuffer!.append(" or > ")
+stringBuffer!.appendint(AbSqlData.MAXBLOB)
 
                             }
                     
@@ -219,11 +215,10 @@ appendint(AbSqlData.MAXBLOB)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 
@@ -259,7 +254,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

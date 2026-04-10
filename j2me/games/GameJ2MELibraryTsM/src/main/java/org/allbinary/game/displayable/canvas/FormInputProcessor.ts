@@ -118,7 +118,7 @@ this.allBinaryGameCanvas= allBinaryGameCanvas
     //var deviceId = deviceId
 
         try {
-            put(StringMaker().
+            PreLogUtil.put(StringMaker().
                             append(inputFactory!.KEY_CODE_LABEL)!.appendint(keyCode)!.append(CommonSeps.getInstance()!.SPACE)!.append(inputFactory!.DEVICE_ID_LABEL)!.appendint(deviceId)!.toString(), this, this.gameInputStrings!.KEY_PRESSED)
 
     var input: Input = inputFactory!.getInstance(keyCode)!;
@@ -130,10 +130,10 @@ this.allBinaryGameCanvas= allBinaryGameCanvas
         
         
 
-fireEvent(gameKeyEvent)
+downKeyEventHandler!.fireEvent(gameKeyEvent)
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.ADD_KEY_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.ADD_KEY_EVENT, e)
 }
 
 }
@@ -151,11 +151,10 @@ put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.ADD_KEY_EVENT, e)
         
 
 
-    
                         if(platformKeyFactory!.isEnter(input))
                         
                                     {
-                                    put(StringMaker().
+                                    PreLogUtil.put(StringMaker().
                             append(inputFactory!.KEY_CODE_LABEL)!.appendint(keyCode)!.append(CommonSeps.getInstance()!.SPACE)!.append(inputFactory!.DEVICE_ID_LABEL)!.appendint(deviceId)!.toString(), this, gameInputStrings!.KEY_RELEASED)
 
     var gameKey: GameKey = GameKeyFactory.getInstance()!.KEY_NUM0;
@@ -167,14 +166,14 @@ put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.ADD_KEY_EVENT, e)
         
         
 
-fireEvent(gameKeyEvent)
-fireEvent(gameKeyEvent)
+upGameKeyEventHandler!.fireEvent(gameKeyEvent)
+upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent)
 
                                     }
                                 
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.ADD_KEY_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.ADD_KEY_EVENT, e)
 }
 
 }

@@ -65,13 +65,13 @@ export class LicenseServerInitFileUtil
                         return object: OutputStream()
                                 {
                                 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public write(b: number){
 var b = b
 }
 
-                @Throws(IOException::class)
+                //@Throws(IOException::class)
             
     public write(b: ByteArray, off: number, len: number){
 var b = b
@@ -108,13 +108,12 @@ var len = len
         
         
 
-setFilePath(StringUtil.getInstance()!.EMPTY_STRING)
+LicenseInitInfoUtil.getInstance()!.setFilePath(StringUtil.getInstance()!.EMPTY_STRING)
 
-    
                         if(FileFactory.getInstance()!.isFile(filePath))
                         
                                     {
-                                    put("Using Existing License File", this, commonStrings!.INIT)
+                                    logUtil!.put("Using Existing License File", this, commonStrings!.INIT)
 
                                     }
                                 
@@ -125,7 +124,7 @@ setFilePath(StringUtil.getInstance()!.EMPTY_STRING)
                             
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
 }
 
 }
@@ -154,7 +153,7 @@ put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
         
         
 
-put("Writing Default License File", this, commonStrings!.INIT)
+logUtil!.put("Writing Default License File", this, commonStrings!.INIT)
 
     var fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
         
@@ -174,7 +173,6 @@ fileOutputStream= fileStreamFactory!.getFileOutputStreamInstance(StringUtil.getI
         {
 b= inputStream!.read()
 
-    
                         if(b ==  -1)
                         
                                     {
@@ -184,19 +182,19 @@ b= inputStream!.read()
 
                                     }
                                 
-write(b)
+fileOutputStream!.write(b)
 index++
 }
 
-put("Wrote Bytes: " +index, this, commonStrings!.INIT)
-flush()
+logUtil!.put("Wrote Bytes: " +index, this, commonStrings!.INIT)
+fileOutputStream!.flush()
 } catch(e: Exception)
             {
-put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
 }
 
          finally {
-            close(fileOutputStream)
+            StreamUtil.getInstance()!.close(fileOutputStream)
 
          }
         

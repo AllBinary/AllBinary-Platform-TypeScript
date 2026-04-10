@@ -42,11 +42,11 @@ export class MotionInputMappingEventListener
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public onInputMappingEvent(inputMappingEvent: InputMappingEvent){
 var inputMappingEvent = inputMappingEvent

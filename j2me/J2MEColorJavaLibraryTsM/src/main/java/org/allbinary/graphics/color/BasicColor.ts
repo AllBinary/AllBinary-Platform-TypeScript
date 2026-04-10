@@ -102,12 +102,10 @@ this.name= name
     var tempValue: number= 0
 
 
-    
                         if(this.basicColorUtil!.isAlpha)
                         
                                     {
                                     
-    
                         if(this.basicColorUtil!.ffOpaque)
                         
                                     {
@@ -226,17 +224,17 @@ this.value= ((alphaValue shl 24) and ALPHA_MASK) +((redInt shl 16) and 0x00FF000
         
         
 
-append("BasicColor: ")
-append("Alpha: ")
-appendshort(this.alpha)
-append(" Red: ")
-appendshort(this.red)
-append(" Green: ")
-appendshort(this.green)
-append(" Blue: ")
-appendshort(this.blue)
-append(" Value: ")
-appendint(this.value)
+stringBuffer!.append("BasicColor: ")
+stringBuffer!.append("Alpha: ")
+stringBuffer!.appendshort(this.alpha)
+stringBuffer!.append(" Red: ")
+stringBuffer!.appendshort(this.red)
+stringBuffer!.append(" Green: ")
+stringBuffer!.appendshort(this.green)
+stringBuffer!.append(" Blue: ")
+stringBuffer!.appendshort(this.blue)
+stringBuffer!.append(" Value: ")
+stringBuffer!.appendint(this.value)
 
 
 

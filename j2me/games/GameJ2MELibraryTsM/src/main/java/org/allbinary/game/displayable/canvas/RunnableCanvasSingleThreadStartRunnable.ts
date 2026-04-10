@@ -47,7 +47,7 @@ this.runnableCanvas= demoCanvas
     public run(){
 
         try {
-            run()
+            runnableCanvas!.run()
 } catch(e: Exception)
             {
 
@@ -55,16 +55,16 @@ this.runnableCanvas= demoCanvas
         
         
 
-put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processLoopSleep(){
-processLoopSleep()
+runnableCanvas!.processLoopSleep()
 }
 
 

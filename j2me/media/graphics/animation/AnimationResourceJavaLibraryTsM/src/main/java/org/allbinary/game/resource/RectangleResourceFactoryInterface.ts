@@ -25,11 +25,11 @@ import { Rectangle } from "../../../../org/allbinary/graphics/Rectangle.js";
 interface RectangleResourceFactoryInterface {
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getRectangle(resource: string): Rectangle
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     getRectangleArrayOfArrays(resource: string): Rectangle[][]
 

@@ -43,7 +43,6 @@ protected constructor (HIGH_SCORE_COMMANDS: Command[]){
             super();
             var HIGH_SCORE_COMMANDS = HIGH_SCORE_COMMANDS
 
-    
                         if(J2MEUtil.isJ2ME())
                         
                                     {
@@ -77,7 +76,6 @@ var command = command
 index >= 0; index--)
         {
 
-    
                         if(command == HIGH_SCORE_COMMANDS[index])
                         
                                     {
@@ -101,7 +99,7 @@ index >= 0; index--)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getIndex(command: Command): number{
 var command = command
@@ -116,7 +114,6 @@ var command = command
 index >= 0; index--)
         {
 
-    
                         if(command == HIGH_SCORE_COMMANDS[index])
                         
                                     {
@@ -134,7 +131,7 @@ index >= 0; index--)
 
 
 
-                            throw Exception("No Such Command")
+                            throw Error("No Such Command")
 }
 
 

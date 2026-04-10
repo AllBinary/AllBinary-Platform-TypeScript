@@ -104,9 +104,9 @@ var portion = portion
         
         
 
-append(TABLE_LABEL)
-append(tableName)
-append(" Restoration Failed")
+stringBuffer!.append(TABLE_LABEL)
+stringBuffer!.append(tableName)
+stringBuffer!.append(" Restoration Failed")
 
 
 

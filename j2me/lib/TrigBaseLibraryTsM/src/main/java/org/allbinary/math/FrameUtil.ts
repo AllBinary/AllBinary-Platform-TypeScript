@@ -80,7 +80,6 @@ var currentAngle = currentAngle
         
 
 
-    
                         if(currentAngle > 359)
                         
                                     {
@@ -95,7 +94,6 @@ currentAngle= (currentAngle -angleFactory!.TOTAL_ANGLE)
                                     }
                                 
 
-    
                         if(currentAngle < 0)
                         
                                     {

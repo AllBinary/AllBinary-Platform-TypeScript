@@ -68,7 +68,7 @@ private constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getInstance(node: Node): TransformInfoProperties{
 var node = node
@@ -98,11 +98,10 @@ var node = node
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Next View Name: " +name, this, "toTransformInfoPropertiesHashMap()")
+                                    logUtil!.put("Next View Name: " +name, this, "toTransformInfoPropertiesHashMap()")
 
                                     }
                                 
@@ -117,7 +116,6 @@ var node = node
         
 
 
-    
                         if(label == 
                                     null
                                 )

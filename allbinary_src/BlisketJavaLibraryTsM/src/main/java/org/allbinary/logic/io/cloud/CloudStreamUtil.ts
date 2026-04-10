@@ -51,7 +51,7 @@ export class CloudStreamUtil
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getFile(file: AbFile): InputStream{
 var file = file
@@ -66,16 +66,14 @@ var file = file
         
 
 
-    
                         if(available > 0)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Cloud File Bytes: " +available, this, "processRequest()")
+                                    logUtil!.put("Cloud File Bytes: " +available, this, "processRequest()")
 
                                     }
                                 
@@ -91,7 +89,7 @@ var file = file
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getFileAnyWhere(file: AbFile): InputStream{
 var file = file
@@ -106,16 +104,14 @@ var file = file
         
 
 
-    
                         if(available > 0)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Local File Bytes: " +available, this, "processRequest()")
+                                    logUtil!.put("Local File Bytes: " +available, this, "processRequest()")
 
                                     }
                                 
@@ -126,16 +122,14 @@ var file = file
                             inputStream= AbFileInputStream(file)
 available= inputStream!.available()
 
-    
                         if(available > 0)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Cloud File Bytes: " +available, this, "processRequest()")
+                                    logUtil!.put("Cloud File Bytes: " +available, this, "processRequest()")
 
                                     }
                                 
@@ -154,7 +148,7 @@ available= inputStream!.available()
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public getFileLocal(file: AbFile): InputStream{
 var file = file
@@ -169,16 +163,14 @@ var file = file
         
 
 
-    
                         if(available > 0)
                         
                                     {
                                     
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Local File Bytes: " +available, this, "processRequest()")
+                                    logUtil!.put("Local File Bytes: " +available, this, "processRequest()")
 
                                     }
                                 

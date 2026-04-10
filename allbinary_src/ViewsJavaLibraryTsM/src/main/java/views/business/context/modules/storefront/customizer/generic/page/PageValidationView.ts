@@ -88,11 +88,10 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("View Name: " +transformInfoInterface!.getName(), this, "PageViewValidation()")
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "PageViewValidation()")
 
                                     }
                                 
@@ -108,11 +107,10 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put(this.commonStrings!.START, this, commonStrings!.IS_VALID)
+                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.IS_VALID)
 
                                     }
                                 
@@ -132,11 +130,10 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    put("Views To Be Modified: " +allViewsToBeModifiedVector!.length, this, "get(transformInfoInterface)")
+                                    logUtil!.put("Views To Be Modified: " +allViewsToBeModifiedVector!.length, this, "get(transformInfoInterface)")
 
                                     }
                                 
@@ -166,7 +163,6 @@ index < size; index++)
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -175,10 +171,10 @@ index < size; index++)
         
         
 
-append(this.getTransformInfoInterface()!.getName())
-append(" is modifying view: ")
-append(viewNameOfViewToBeModified)
-put(stringBuffer!.toString(), this, "insert()")
+stringBuffer!.append(this.getTransformInfoInterface()!.getName())
+stringBuffer!.append(" is modifying view: ")
+stringBuffer!.append(viewNameOfViewToBeModified)
+logUtil!.put(stringBuffer!.toString(), this, "insert()")
 
                                     }
                                 
@@ -193,7 +189,6 @@ put(stringBuffer!.toString(), this, "insert()")
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -202,10 +197,10 @@ put(stringBuffer!.toString(), this, "insert()")
         
         
 
-append(this.getTransformInfoInterface()!.getName())
-append(" is adding data to view: ")
-append(viewNameOfViewToBeModified)
-put(stringBuffer!.toString(), this, "insert()")
+stringBuffer!.append(this.getTransformInfoInterface()!.getName())
+stringBuffer!.append(" is adding data to view: ")
+stringBuffer!.append(viewNameOfViewToBeModified)
+logUtil!.put(stringBuffer!.toString(), this, "insert()")
 
                                     }
                                 
@@ -220,16 +215,15 @@ put(stringBuffer!.toString(), this, "insert()")
         
 
 
-    
                         if(title.compareTo("index") == 0)
                         
                                     {
-                                    put(TitleData.getInstance()!.TEXT, this.getTransformInfoInterface()!.getStoreName() +" - Home Page")
+                                    hashMap!.put(TitleData.getInstance()!.TEXT, this.getTransformInfoInterface()!.getStoreName() +" - Home Page")
 
                                     }
                                 
                         else {
-                            put(TitleData.getInstance()!.TEXT, this.getTransformInfoInterface()!.getStoreName() +" -" +title)
+                            hashMap!.put(TitleData.getInstance()!.TEXT, this.getTransformInfoInterface()!.getStoreName() +" -" +title)
 
                         }
                             
@@ -239,7 +233,6 @@ put(stringBuffer!.toString(), this, "insert()")
         
 
 
-    
                         if(pageValidation!.isValid() == Boolean.FALSE)
                         
                                     {
@@ -248,7 +241,6 @@ put(stringBuffer!.toString(), this, "insert()")
                                     }
                                 
 
-    
                         if(isValid == Boolean.TRUE)
                         
                                     {
@@ -257,14 +249,13 @@ put(stringBuffer!.toString(), this, "insert()")
         
         
 
-appendChild(pageValidation!.toXmlNode(document))
+document.appendChild(pageValidation!.toXmlNode(document))
 
     var documentString: string = DomDocumentHelper.toString(document)!;
         
         
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -273,16 +264,16 @@ appendChild(pageValidation!.toXmlNode(document))
         
         
 
-append(viewNameOfViewToBeModified)
-append(" is changing data in ")
-append(specifiedTransformInfoInterface!.getDataFilePath()!.toString())
-append(" to the following data:\n")
-append(documentString)
-put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+stringBuffer!.append(viewNameOfViewToBeModified)
+stringBuffer!.append(" is changing data in ")
+stringBuffer!.append(specifiedTransformInfoInterface!.getDataFilePath()!.toString())
+stringBuffer!.append(" to the following data:\n")
+stringBuffer!.append(documentString)
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
 
                                     }
                                 
-write(specifiedTransformInfoInterface, documentString)
+CustomizerUtil.getInstance()!.write(specifiedTransformInfoInterface, documentString)
 
                                     }
                                 
@@ -297,11 +288,10 @@ write(specifiedTransformInfoInterface, documentString)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -385,16 +375,15 @@ index < size; index++)
         
 
 
-    
                         if(title.compareTo("index") == 0)
                         
                                     {
-                                    put(TitleData.getInstance()!.TEXT, this.getTransformInfoInterface()!.getStoreName() +" - Home Page")
+                                    hashMap!.put(TitleData.getInstance()!.TEXT, this.getTransformInfoInterface()!.getStoreName() +" - Home Page")
 
                                     }
                                 
                         else {
-                            put(TitleData.getInstance()!.TEXT, this.getTransformInfoInterface()!.getStoreName() +" -" +title)
+                            hashMap!.put(TitleData.getInstance()!.TEXT, this.getTransformInfoInterface()!.getStoreName() +" -" +title)
 
                         }
                             
@@ -404,13 +393,12 @@ index < size; index++)
         
 
 
-    
                         if(pageValidation!.isValid() == Boolean.FALSE)
                         
                                     {
-                                    append("TransformInfo Name for PageValidation:" +specifiedTransformInfoInterface!.getName())
-append("PageValidation:" +hashMap)
-append("PageValidation Info:" +pageValidation!.validationInfo())
+                                    stringBuffer!.append("TransformInfo Name for PageValidation:" +specifiedTransformInfoInterface!.getName())
+stringBuffer!.append("PageValidation:" +hashMap)
+stringBuffer!.append("PageValidation Info:" +pageValidation!.validationInfo())
 
                                     }
                                 
@@ -425,11 +413,10 @@ append("PageValidation Info:" +pageValidation!.validationInfo())
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 

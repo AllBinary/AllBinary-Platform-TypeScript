@@ -62,18 +62,17 @@ public constructor (){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
 
         try {
             
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    put(this.commonStrings!.START, this, "toXmlNode")
+                                    logUtil!.put(this.commonStrings!.START, this, "toXmlNode")
 
                                     }
                                 
@@ -108,24 +107,22 @@ index < size; index++)
         
 
 
-    
                         if(emailNode != 
                                     null
                                 )
                         
                                     {
-                                    appendChild(emailNode)
+                                    node.appendChild(emailNode)
 
                                     }
                                 
 }
 
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    put(commonStrings!.END, this, "toXmlNode()")
+                                    logUtil!.put(commonStrings!.END, this, "toXmlNode()")
 
                                     }
                                 
@@ -138,11 +135,10 @@ index < size; index++)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    put(commonStrings!.EXCEPTION, this, "toXmlNode()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode()", e)
 
                                     }
                                 

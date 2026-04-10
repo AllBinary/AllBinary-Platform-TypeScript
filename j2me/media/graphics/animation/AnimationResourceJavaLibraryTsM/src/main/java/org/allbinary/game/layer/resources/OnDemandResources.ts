@@ -46,19 +46,19 @@ protected constructor (){
             }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public waitFor(){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(){
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(imageCache: ImageCache, resourceAnimationInterfaceFactoryInterfaceFactory: BaseResourceAnimationInterfaceFactoryInterfaceFactory, portion: number, loadingString: string, index: number): number{
 var imageCache = imageCache

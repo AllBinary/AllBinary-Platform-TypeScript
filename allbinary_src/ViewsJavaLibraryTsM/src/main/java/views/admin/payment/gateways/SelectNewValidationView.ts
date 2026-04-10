@@ -81,13 +81,13 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public validationInfo(): string{
 
 
 
-                            throw Exception("validationInfo")
+                            throw Error("validationInfo")
 }
 
 
@@ -112,7 +112,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public view(): string{
 

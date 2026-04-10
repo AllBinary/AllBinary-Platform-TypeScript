@@ -57,7 +57,7 @@ export class ActivityFractureUtilAPI19 extends ActivityFractureUtilAPI5 {
         
         
 
-setSystemUiVisibility(visibility)
+decorView!.setSystemUiVisibility(visibility)
 }
 
 

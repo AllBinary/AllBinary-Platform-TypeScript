@@ -69,7 +69,6 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
 
 
-    
                         if(this.newStoreFrontInterface!.isValid() == Boolean.FALSE)
                         
                                     {
@@ -78,7 +77,6 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                                     }
                                 
 
-    
                         if(StoreFrontFactory.getInstance(newStoreFrontInterface!.getName()) == 
                                     null
                                 )
@@ -97,11 +95,10 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
 
                                     }
                                 
@@ -125,22 +122,20 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
 
 
-    
                         if(this.newStoreFrontInterface!.isValid() == Boolean.FALSE)
                         
                                     {
-                                    append(this.newStoreFrontInterface!.validationInfo())
+                                    stringBuffer!.append(this.newStoreFrontInterface!.validationInfo())
 
                                     }
                                 
 
-    
                         if(StoreFrontFactory.getInstance(newStoreFrontInterface!.getName()) == 
                                     null
                                 )
                         
                                     {
-                                    append("Store does not exist<br>")
+                                    stringBuffer!.append("Store does not exist<br>")
 
                                     }
                                 
@@ -153,11 +148,10 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 } catch(e: Exception)
             {
 
-    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
 
                                     }
                                 

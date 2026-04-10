@@ -120,7 +120,6 @@ this.rectangle= rectangle
         
 
 
-    
                         if(J2MEUtil.isHTML() || (AndroidUtil.isAndroid() && isOpenGL))
                         
                                     {
@@ -129,7 +128,6 @@ this.rectangle= rectangle
                                     }
                                 
                              else 
-    
                         if(AndroidUtil.isAndroid() || J2MEUtil.isJ2SE() || SWTUtil.isSWT)
                         
                                     {
@@ -144,7 +142,6 @@ this.rectangle= rectangle
                             
 this.BORDER= BORDER
 
-    
                         if(J2MEUtil.isJ2ME())
                         
                                     {
@@ -157,11 +154,11 @@ this.BORDER= BORDER
 
                         }
                             
-this.init(rectangle)
+this.this.init(rectangle)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public init(rectangle: Rectangle){
     //var rectangle = rectangle
@@ -177,13 +174,11 @@ this.rectangle= rectangle
         
 
 
-    
                         if(OpenGLFeatureUtil.getInstance()!.isAnyThreed())
                         
                                     {
                                     heightOffset -= myFont!.DEFAULT_CHAR_HEIGHT +2
 
-    
                         if(AndroidUtil.isAndroid())
                         
                                     {
@@ -211,7 +206,6 @@ this.offset= (heightOffset shr 1)
         
 
 
-    
                         if(J2MEUtil.isJ2ME())
                         
                                     {
@@ -224,8 +218,8 @@ this.offset= (heightOffset shr 1)
         
         
 
-setWidth(width)
-setHeight(height)
+rectangleFilledAnimation!.setWidth(width)
+rectangleFilledAnimation!.setHeight(height)
 
                         }
                             
@@ -263,10 +257,10 @@ setHeight(height)
         
         
 
-paint(graphics, x, y)
-setBasicColorP(graphics, this.foregroundBasicColor)
-paintVerticle(graphics, label, x +BORDER, y +offset, 0)
-drawRect(x, y, width, height)
+this.animationInterface!.paint(graphics, x, y)
+this.basicSetColorUtil!.setBasicColorP(graphics, this.foregroundBasicColor)
+drawStringUtil!.paintVerticle(graphics, label, x +BORDER, y +offset, 0)
+graphics.drawRect(x, y, width, height)
 }
 
 

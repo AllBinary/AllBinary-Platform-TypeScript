@@ -104,11 +104,11 @@ this.rtsFormInputArray[1]= UnitRTSFormInput(this.groupInterfaceArray)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
         
@@ -135,13 +135,13 @@ setAllBinaryGameLayerManager(allBinaryGameLayerManager)
         
 index < size; index++)
         {
-setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+this.rtsFormInputArray[index]!.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
 }
 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint){
     //var associatedRtsLayer = associatedRtsLayer
@@ -159,18 +159,16 @@ var point = point
         
 
 
-    
                         if(this.isStickyItemSelected() && associatedRtsLayer == 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getSelectedStickyItemIndex() <= this.itemIndex[0])
                         
                                     {
-                                    process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, point)
+                                    this.rtsFormInputArray[0]!.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, point)
 
                                     }
                                 
@@ -178,18 +176,17 @@ var point = point
                                     }
                                 
                              else 
-    
                         if(index > this.itemIndex[0])
                         
                                     {
-                                    process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, point)
+                                    this.rtsFormInputArray[1]!.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, point)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public process(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, index: number){
     //var associatedRtsLayer = associatedRtsLayer
@@ -202,20 +199,18 @@ var index = index
         
         
 
-put(CommonLabels.getInstance()!.INDEX_LABEL +index +" > " +this.itemIndex[0], this, commonStrings!.PROCESS)
+logUtil!.put(CommonLabels.getInstance()!.INDEX_LABEL +index +" > " +this.itemIndex[0], this, commonStrings!.PROCESS)
 
-    
                         if(this.isStickyItemSelected() && associatedRtsLayer == 
                                     null
                                 )
                         
                                     {
                                     
-    
                         if(this.getSelectedStickyItemIndex() <= this.itemIndex[0])
                         
                                     {
-                                    process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index)
+                                    this.rtsFormInputArray[0]!.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index)
 
                                     }
                                 
@@ -223,18 +218,17 @@ put(CommonLabels.getInstance()!.INDEX_LABEL +index +" > " +this.itemIndex[0], th
                                     }
                                 
                              else 
-    
                         if(index > this.itemIndex[0])
                         
                                     {
-                                    process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index)
+                                    this.rtsFormInputArray[1]!.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index)
 
                                     }
                                 
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processSticky(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint): boolean{
     //var associatedRtsLayer = associatedRtsLayer
@@ -250,7 +244,7 @@ var point = point
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public processSticky(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, index: number){
     //var associatedRtsLayer = associatedRtsLayer
@@ -258,7 +252,7 @@ var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 var layerManager = layerManager
 var item = item
 var index = index
-processSticky(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index)
+this.rtsFormInputArray[0]!.processSticky(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index)
 }
 
 
@@ -284,7 +278,7 @@ processSticky(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, i
 
     public setStickyItemSelected(stickyItemSelected: boolean){
 var stickyItemSelected = stickyItemSelected
-setStickyItemSelected(stickyItemSelected)
+this.rtsFormInputArray[0]!.setStickyItemSelected(stickyItemSelected)
 }
 
 
@@ -300,7 +294,7 @@ setStickyItemSelected(stickyItemSelected)
 
     public setSelectedStickyItem(selectedStickyItem: CustomItem){
 var selectedStickyItem = selectedStickyItem
-setSelectedStickyItem(selectedStickyItem)
+this.rtsFormInputArray[0]!.setSelectedStickyItem(selectedStickyItem)
 }
 
 

@@ -111,7 +111,6 @@ this.httpUserAgent= stringUtil!.EMPTY_STRING
         
 
 
-    
                         if(key.indexOf("user") >= 0)
                         this.httpUserAgent= "key: " +key +" value: " +value
 }
@@ -130,12 +129,12 @@ this.remotePort= Integer.toString(httpServletRequest!.getRemotePort())
         
         
 
-put(abeHttpRequestInfoData!.HTTP_USER_AGENT, this.httpUserAgent)
-put(abeHttpRequestInfoData!.REMOTE_ADDRESS, this.remoteAddress)
-put(abeHttpRequestInfoData!.REMOTE_HOST, this.remoteHost)
-put(abeHttpRequestInfoData!.REMOTE_HOST_BY_ADDRESS, this.remoteHostByAddr)
-put(abeHttpRequestInfoData!.REMOTE_PORT, this.remotePort)
-put(abeHttpRequestInfoData!.REQUEST_FILE_PATH, this.requestedFilePath)
+hashMap!.put(abeHttpRequestInfoData!.HTTP_USER_AGENT, this.httpUserAgent)
+hashMap!.put(abeHttpRequestInfoData!.REMOTE_ADDRESS, this.remoteAddress)
+hashMap!.put(abeHttpRequestInfoData!.REMOTE_HOST, this.remoteHost)
+hashMap!.put(abeHttpRequestInfoData!.REMOTE_HOST_BY_ADDRESS, this.remoteHostByAddr)
+hashMap!.put(abeHttpRequestInfoData!.REMOTE_PORT, this.remotePort)
+hashMap!.put(abeHttpRequestInfoData!.REQUEST_FILE_PATH, this.requestedFilePath)
 
 
 
@@ -151,12 +150,12 @@ put(abeHttpRequestInfoData!.REQUEST_FILE_PATH, this.requestedFilePath)
         
         
 
-add(this.httpUserAgent)
-add(this.remoteAddress)
-add(this.remoteHost)
-add(this.remoteHostByAddr)
-add(this.remotePort)
-add(this.requestedFilePath)
+vector.add(this.httpUserAgent)
+vector.add(this.remoteAddress)
+vector.add(this.remoteHost)
+vector.add(this.remoteHostByAddr)
+vector.add(this.remotePort)
+vector.add(this.requestedFilePath)
 
 
 

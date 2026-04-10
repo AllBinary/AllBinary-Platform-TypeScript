@@ -58,7 +58,7 @@ export class UserConfigurationInterfaceFactory
         
         
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(document: Document): UserConfigurationInterface{
 var document = document
@@ -77,7 +77,7 @@ var document = document
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(userRole: UserRole): UserConfigurationInterface{
 var userRole = userRole
@@ -106,7 +106,7 @@ var userRole = userRole
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     public static getInstance(): UserConfigurationInterface{
 

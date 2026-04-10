@@ -152,7 +152,7 @@ public constructor (connectionInfo: DbConnectionInfo)
     
 } catch(e: Exception)
             {
-put(this.FAILED, this, GET_HOST_NAME, e)
+logUtil!.put(this.FAILED, this, GET_HOST_NAME, e)
 
 
 
@@ -164,7 +164,7 @@ put(this.FAILED, this, GET_HOST_NAME, e)
 }
 
 
-                @Throws(Exception::class)
+                //@Throws(Error::class)
             
     addDbUser(hostName: string, db: string, userName: string, password: string): boolean{
 var hostName = hostName
@@ -176,23 +176,23 @@ var password = password
         
         
 
-append(this.GRANT_ALL)
-append(db)
-append(this.DOT_STAR)
-append(this.TO)
-append(userName)
-append(hostName)
-append(this.IDENTIFIED_BY)
-append(password)
-append(this.WITH_GRANT_OPTION)
+stringBuffer!.append(this.GRANT_ALL)
+stringBuffer!.append(db)
+stringBuffer!.append(this.DOT_STAR)
+stringBuffer!.append(this.TO)
+stringBuffer!.append(userName)
+stringBuffer!.append(hostName)
+stringBuffer!.append(this.IDENTIFIED_BY)
+stringBuffer!.append(password)
+stringBuffer!.append(this.WITH_GRANT_OPTION)
 
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
 
-append(sqlStatement)
-append(this.commonSeps!.NEW_LINE)
-executeSQLStatement(sqlStatement)
+this.sqlCommandLog!.append(sqlStatement)
+this.sqlCommandLog!.append(this.commonSeps!.NEW_LINE)
+super.executeSQLStatement(sqlStatement)
 
 
 
@@ -208,20 +208,19 @@ var userName = userName
 var password = password
 
         try {
-            this.addDbUser(this.AT_LOCALHOST, db, userName, password)
+            this.this.addDbUser(this.AT_LOCALHOST, db, userName, password)
 
     var hostName: string = this.getHostName()!;
         
         
 
 
-    
                         if(hostName != 
                                     null
                                 )
                         
                                     {
-                                    this.addDbUser(hostName, db, userName, password)
+                                    this.this.addDbUser(hostName, db, userName, password)
 
                                     }
                                 
@@ -233,7 +232,7 @@ var password = password
     
 } catch(e: Exception)
             {
-put(this.UNABLE_TO_CREATE_USER +userName, this, this.METHOD_ADD_USER, e)
+logUtil!.put(this.UNABLE_TO_CREATE_USER +userName, this, this.METHOD_ADD_USER, e)
 
 
 
@@ -254,9 +253,9 @@ var db = db
         
         
 
-append(sqlStatement)
-append(this.commonSeps!.NEW_LINE)
-executeSQLStatement(sqlStatement)
+this.sqlCommandLog!.append(sqlStatement)
+this.sqlCommandLog!.append(this.commonSeps!.NEW_LINE)
+super.executeSQLStatement(sqlStatement)
 
 
 
@@ -265,7 +264,7 @@ executeSQLStatement(sqlStatement)
     
 } catch(e: Exception)
             {
-put(UNABLE_TO_CREATE_DATABASE +db, this, this.METHOD_ADD_DB, e)
+logUtil!.put(UNABLE_TO_CREATE_DATABASE +db, this, this.METHOD_ADD_DB, e)
 
 
 

@@ -29,10 +29,10 @@ var hour = hour
         
         
 
-set(Calendar.HOUR_OF_DAY, hour)
-set(Calendar.MINUTE, 0)
-set(Calendar.SECOND, 0)
-set(Calendar.MILLISECOND, 0)
+cal.set(Calendar.HOUR_OF_DAY, hour)
+cal.set(Calendar.MINUTE, 0)
+cal.set(Calendar.SECOND, 0)
+cal.set(Calendar.MILLISECOND, 0)
 
 
 
@@ -96,13 +96,13 @@ this.hour= hour
         
         
 
-assertEquals(nightUtil!.NIGHT, nightUtil!.getNightOrDay())
+Assertions.assertEquals(nightUtil!.NIGHT, nightUtil!.getNightOrDay())
 
     var dayUtil: TimeTypeUtil = new TestableTimeTypeUtil(12);
         
         
 
-assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay())
+Assertions.assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay())
 }
 
 
@@ -149,8 +149,8 @@ assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay())
         
         
 
-assertEquals(util.NIGHT, util.getNightOrDay(nightMillis))
-assertEquals(util.DAY, util.getNightOrDay(dayMillis))
+Assertions.assertEquals(util.NIGHT, util.getNightOrDay(nightMillis))
+Assertions.assertEquals(util.DAY, util.getNightOrDay(dayMillis))
 }
 
 
@@ -172,8 +172,8 @@ assertEquals(util.DAY, util.getNightOrDay(dayMillis))
         
         
 
-assertEquals("Night", util.NIGHT)
-assertEquals("Day", util.DAY)
+Assertions.assertEquals("Night", util.NIGHT)
+Assertions.assertEquals("Day", util.DAY)
 }
 
 
@@ -188,7 +188,7 @@ assertEquals("Day", util.DAY)
         
         
 
-assertSame(a, b)
+Assertions.assertSame(a, b)
 }
 
 
