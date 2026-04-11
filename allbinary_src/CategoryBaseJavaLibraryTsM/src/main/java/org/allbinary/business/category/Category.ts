@@ -151,7 +151,7 @@ this.log();
 
                 //@Throws(Error::class)
             
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 
@@ -351,7 +351,7 @@ index < size; index++)
                         
                                     {
                                     
-    var anyType: any = {} = this.childCategoryVector!.get(index)!;
+    var anyType: any = this.childCategoryVector!.get(index)!;
         
         
 ;
@@ -408,7 +408,7 @@ var removalVector = removalVector
 index < removalSize; index++)
         {
 
-    var anyType: any = {} = removalVector!.get(index)!;
+    var anyType: any = removalVector!.get(index)!;
         
         
 ;
@@ -460,7 +460,7 @@ var categoryInterface = categoryInterface
 index < size; index++)
         {
 
-    var anyType: any = {} = this.childCategoryVector!.get(index)!;
+    var anyType: any = this.childCategoryVector!.get(index)!;
         
         
 ;
@@ -650,7 +650,7 @@ this.categoryHierarchyInterface= categoryHierarchyInterface;
 index < size; index++)
         {
 
-    var anyType: any = {} = this.childCategoryVector!.get(index)!;
+    var anyType: any = this.childCategoryVector!.get(index)!;
         
         
 ;

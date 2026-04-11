@@ -42,7 +42,7 @@ export class PathFindingNode
          {
         
 
-    public parent: any = {} = NullUtil.getInstance()!.NULL_OBJECT;
+    public parent: any = NullUtil.getInstance()!.NULL_OBJECT;
         
         
 

@@ -237,7 +237,7 @@ this.mappedList!.add(mappedToInput);
     public getMappedInput(id: Input): BasicArrayList{
     //var id = id
 
-    var mappingInputCanBeNullList: any = {}? = this.hashtable.get(id as Object);
+    var mappingInputCanBeNullList: any? = this.hashtable.get(id as Object);
         
         
 ;

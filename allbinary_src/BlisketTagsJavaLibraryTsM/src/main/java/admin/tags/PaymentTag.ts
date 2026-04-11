@@ -79,7 +79,7 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = {} = PaymentHelperFactory().
+    var anyType: any = PaymentHelperFactory().
                             getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         

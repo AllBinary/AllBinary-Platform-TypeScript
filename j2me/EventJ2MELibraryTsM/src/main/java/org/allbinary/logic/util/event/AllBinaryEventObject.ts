@@ -31,7 +31,7 @@ export class AllBinaryEventObject
         
         
 
-    private source: any = {}
+    private source: any
 public constructor (anyType: any = {}){
 
             super();
@@ -41,7 +41,7 @@ this.source= anyType;
 }
 
 
-    public getSource(): any = {}{
+    public getSource(): any{
 
 
 

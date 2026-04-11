@@ -74,7 +74,7 @@ this.storeName= storeName;
 
         try {
             
-    var anyType: any = {} = QuoteHelperFactory().
+    var anyType: any = QuoteHelperFactory().
                             getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         

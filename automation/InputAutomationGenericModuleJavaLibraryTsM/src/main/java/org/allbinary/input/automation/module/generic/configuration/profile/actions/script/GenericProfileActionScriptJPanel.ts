@@ -182,7 +182,7 @@ var evt = evt
                         
                                     {
                                     
-    var anyType: any = {} = treePath!.getLastPathComponent()!;
+    var anyType: any = treePath!.getLastPathComponent()!;
         
         
 ;

@@ -68,7 +68,7 @@ export class TableTag extends PropertiesTag {
 
     private tagRequestHelperFactoryInterface: TagHelperFactoryInterface
 
-    private requestObject: any = {}
+    private requestObject: any
 
     private current: Integer
 
@@ -203,7 +203,7 @@ this.total= total;
 
         try {
             
-    var anyType: any = {} = getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
+    var anyType: any = getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         
 ;
@@ -272,7 +272,7 @@ this.total= total;
 
         try {
             
-    var anyType: any = {} = getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
+    var anyType: any = getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         
 ;
@@ -341,7 +341,7 @@ this.total= total;
 
         try {
             
-    var anyType: any = {} = getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
+    var anyType: any = getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         
 ;
@@ -410,7 +410,7 @@ this.total= total;
 
         try {
             
-    var anyType: any = {} = getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
+    var anyType: any = getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         
 ;

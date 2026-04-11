@@ -102,7 +102,7 @@ System.out.println(list);
         
         
 
-    public getRandom(list: BasicArrayList): any = {}{
+    public getRandom(list: BasicArrayList): any{
 var list = list
 
     var i_random: number = this.getRandomIndex(list)!;
@@ -141,7 +141,7 @@ var list = list
 ;
     
 
-    var temp: any = {}
+    var temp: any
 ;
     
 

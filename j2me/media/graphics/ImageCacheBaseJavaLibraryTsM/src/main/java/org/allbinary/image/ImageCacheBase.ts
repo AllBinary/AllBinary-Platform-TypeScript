@@ -126,7 +126,7 @@ availableListOfList[index]= BasicArrayList();
     getImage(resourceId: any = {}): Image{
     //var resourceId = resourceId
 
-    var imageCanBeNull: any = {}? = this.hashtable.get(resourceId as Object);
+    var imageCanBeNull: any? = this.hashtable.get(resourceId as Object);
         
         
 ;

@@ -58,13 +58,12 @@ PreLogUtil.putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.
 ;
     
 
-                            if(anyType!.constructor.name.toString()! != 
+                        if(anyType!.constructor.name.toString()! != 
                                     null
                                 )
                         
                                     {
-                                    className= anyType!.constructor.name.toString()!.toCharArray().concatToString()
-                                ;
+                                    className= anyType!.constructor.name.toString()!;
     
 
                                     }

@@ -477,7 +477,7 @@ logUtil!.put(StringMaker().
 ;
     
 
-    var anyType: any = {}
+    var anyType: any
 ;
     
 

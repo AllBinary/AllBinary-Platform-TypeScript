@@ -85,7 +85,7 @@ this.status= value;
 ;
     
 
-    var anyType: any = {} = OrderHistoryRequestHelperFactory().
+    var anyType: any = OrderHistoryRequestHelperFactory().
                             getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         

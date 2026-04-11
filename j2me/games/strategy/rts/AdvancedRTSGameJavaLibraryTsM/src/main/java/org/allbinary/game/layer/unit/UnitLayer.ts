@@ -1468,7 +1468,7 @@ var layerManager = layerManager
 index < size; index++)
         {
 
-    var anyType: any = {} = list.get(index)!;
+    var anyType: any = list.get(index)!;
         
         
 ;
@@ -1990,7 +1990,7 @@ index >= 0; index--)
 ;
     
 
-    var anyType: any = {} = steeringVisitor!.visit(NullUtil.getInstance()!.NULL_OBJECT)!;
+    var anyType: any = steeringVisitor!.visit(NullUtil.getInstance()!.NULL_OBJECT)!;
         
         
 ;

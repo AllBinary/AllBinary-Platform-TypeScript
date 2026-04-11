@@ -100,7 +100,7 @@ classes[0]= hashMap!constructor;
 params[0]= hashMap as Object;
     
 
-    var anyType: any = {} = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, classes, params)!;
+    var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, classes, params)!;
         
         
 ;

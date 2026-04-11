@@ -39,7 +39,7 @@ export class ResourceUtil
          {
         
 
-    private classLoader: any = {} = NullUtil.getInstance()!.NULL_OBJECT;
+    private classLoader: any = NullUtil.getInstance()!.NULL_OBJECT;
         
         
 

@@ -71,7 +71,7 @@ hashMap!.put(EmailServerConfigurationData.PASSWORD, this.emailServerConfiguratio
 
                 //@Throws(Error::class)
             
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

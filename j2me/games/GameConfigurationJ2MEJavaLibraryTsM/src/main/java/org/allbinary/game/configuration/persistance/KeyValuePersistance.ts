@@ -281,7 +281,7 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
 ;
     
 
-    var anyType: any = {}
+    var anyType: any
 ;
     
 

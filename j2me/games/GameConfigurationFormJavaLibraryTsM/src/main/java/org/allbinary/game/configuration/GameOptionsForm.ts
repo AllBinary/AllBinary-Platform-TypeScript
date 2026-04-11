@@ -155,7 +155,7 @@ this.save(abeClientInformation);
                         
                                     {
                                     
-    var listCanBeNull: any = {}? = hashtable.get(key as Object);
+    var listCanBeNull: any? = hashtable.get(key as Object);
         
         
 ;

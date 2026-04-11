@@ -278,7 +278,7 @@ this.setRootFilePath(AbPath(URLGLOBALS.getMainPath() +postPath));
 }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

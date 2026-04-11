@@ -46,7 +46,7 @@ this.setMotionRectangles(motionRectangles);
 }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

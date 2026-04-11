@@ -137,7 +137,7 @@ export class TransformInfo
 
     private objectFileName: string
 
-    private anyType: any = {}
+    private anyType: any
 
     private objectConfigFileName: string
 
@@ -768,7 +768,7 @@ this.data= value;
 }
 
 
-    public getObject(): any = {}{
+    public getObject(): any{
 
 
 
@@ -1180,7 +1180,7 @@ vector.add(time);
 }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

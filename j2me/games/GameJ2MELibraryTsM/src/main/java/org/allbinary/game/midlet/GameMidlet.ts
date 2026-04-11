@@ -1824,7 +1824,7 @@ logUtil!.put(commonStrings!.START, this, "getCurrentStateHashtable");
 ;
     
 
-    var key: any = {}
+    var key: any
 ;
     
 

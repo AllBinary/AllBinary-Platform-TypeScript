@@ -27,7 +27,7 @@ export class WebappClassLoaderInfo
          {
         
 
-    private classLoader: any = {} = NullUtil.getInstance()!.NULL_OBJECT;
+    private classLoader: any = NullUtil.getInstance()!.NULL_OBJECT;
         
         
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.

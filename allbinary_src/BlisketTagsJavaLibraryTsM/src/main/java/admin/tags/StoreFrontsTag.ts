@@ -68,7 +68,7 @@ this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory());
 
         try {
             
-    var anyType: any = {} = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
+    var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         
 ;
@@ -140,7 +140,7 @@ this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory());
 
         try {
             
-    var anyType: any = {} = this.getTagRequestHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
+    var anyType: any = this.getTagRequestHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         
 ;
@@ -212,7 +212,7 @@ this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory());
 
         try {
             
-    var anyType: any = {} = this.getTagRequestHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
+    var anyType: any = this.getTagRequestHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         
 ;

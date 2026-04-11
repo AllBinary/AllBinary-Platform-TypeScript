@@ -992,7 +992,7 @@ i < keySize; i++)
 ;
     
 
-    var anyType: any = {} = this.getMap()!.get(key)!;
+    var anyType: any = this.getMap()!.get(key)!;
         
         
 ;

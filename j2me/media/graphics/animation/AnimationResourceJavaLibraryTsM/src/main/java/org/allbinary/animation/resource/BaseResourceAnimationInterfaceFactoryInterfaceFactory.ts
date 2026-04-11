@@ -173,7 +173,7 @@ hashtable.put(resource, animationInterfaceFactoryInterface);
     public getBasicAnimationInterfaceFactoryInstance(resource: string): BasicAnimationInterfaceFactoryInterface{
     //var resource = resource
 
-    var basicAnimationInterfaceFactoryInterfaceCanBeNull: any = {}? = hashtable.get(resource as Object);
+    var basicAnimationInterfaceFactoryInterfaceCanBeNull: any? = hashtable.get(resource as Object);
         
         
 ;
@@ -207,7 +207,7 @@ hashtable.put(resource, animationInterfaceFactoryInterface);
     public getRectangle(resource: string): Rectangle{
     //var resource = resource
 
-    var rectangleCanBeNull: any = {}? = rectangleHashtable!.get(resource as Object);
+    var rectangleCanBeNull: any? = rectangleHashtable!.get(resource as Object);
         
         
 ;

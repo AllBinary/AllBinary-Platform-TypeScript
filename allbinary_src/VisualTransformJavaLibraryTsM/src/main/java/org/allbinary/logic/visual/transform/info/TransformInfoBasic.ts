@@ -115,7 +115,7 @@ var hashMap = hashMap
 }
 
 
-    public getObject(): any = {}{
+    public getObject(): any{
 
 
 
@@ -276,7 +276,7 @@ var importUriPath = importUriPath
 
                 //@Throws(Error::class)
             
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

@@ -51,7 +51,7 @@ interface TransformInfoInterface extends TableMappingInterface {
 
     public getObjectFile(): string
 
-    public getObject(): any = {}
+    public getObject(): any
 
                 //@Throws(Error::class)
             

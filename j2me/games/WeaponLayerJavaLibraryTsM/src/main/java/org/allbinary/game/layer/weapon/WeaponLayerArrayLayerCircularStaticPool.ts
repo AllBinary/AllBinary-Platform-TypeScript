@@ -49,28 +49,28 @@ export class WeaponLayerArrayLayerCircularStaticPool
         
         
 
-    private ALL_WEAPONLAYER_ARRAY: any = {}[][][] = new Array(4)
+    private ALL_WEAPONLAYER_ARRAY: any[][][] = new Array(4)
                                                         ;
         
         
 
     public init(){
 
-    var WEAPONLAYER_ARRAY: any = {}[][] = arrayOfNulls<Array<Any?>>(MAX *2)
+    var WEAPONLAYER_ARRAY: any[][] = arrayOfNulls<Array<Any?>>(MAX *2)
                                                             ;
         
         
 ;
     
 
-    var TWO_WEAPONLAYER_ARRAY: any = {}[][] = arrayOfNulls<Array<Any?>>(MAX)
+    var TWO_WEAPONLAYER_ARRAY: any[][] = arrayOfNulls<Array<Any?>>(MAX)
                                                             ;
         
         
 ;
     
 
-    var THREE_WEAPONLAYER_ARRAY: any = {}[][] = arrayOfNulls<Array<Any?>>(MAX)
+    var THREE_WEAPONLAYER_ARRAY: any[][] = arrayOfNulls<Array<Any?>>(MAX)
                                                             ;
         
         

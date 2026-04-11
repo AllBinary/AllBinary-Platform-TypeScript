@@ -63,7 +63,7 @@ protected constructor (geographicMapInterface: BasicGeographicMap)
 ;
     
 
-    var cellPositionCanBeNull: any = {}? = hashtable.get(cellPositionKey as Object);
+    var cellPositionCanBeNull: any? = hashtable.get(cellPositionKey as Object);
         
         
 ;

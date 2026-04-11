@@ -70,7 +70,7 @@ public constructor (clientInfo: AbeClientInformationInterface)
 
                 //@Throws(Error::class)
             
-    public get(anyType: any = {}): any = {}{
+    public get(anyType: any = {}): any{
     //var anyType = anyType
 
         try {
@@ -115,7 +115,7 @@ xmlRpcClient!.setBasicAuthentication(
 param.add(hashtable);
     
 
-    var result: any = {} = xmlRpcClient!.execute(this.getRemoteMethod(), param, noCrypt)!;
+    var result: any = xmlRpcClient!.execute(this.getRemoteMethod(), param, noCrypt)!;
         
         
 ;

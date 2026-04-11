@@ -49,7 +49,7 @@ this.setBufferedImage(bufferedImage);
 }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

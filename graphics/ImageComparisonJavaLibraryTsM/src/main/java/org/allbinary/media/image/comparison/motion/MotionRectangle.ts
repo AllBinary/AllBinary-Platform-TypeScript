@@ -82,7 +82,7 @@ this.pixelDeltaVector= pixelDeltaVector;
 }
 
 
-    public clone(): any = {}{
+    public clone(): any{
 
     var motionRectangle: MotionRectangle = new MotionRectangle(this.getRectangle()!.clone();
 

@@ -186,7 +186,7 @@ BasicPaymentTypeUtil.getInstance()!.add(this);
 }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

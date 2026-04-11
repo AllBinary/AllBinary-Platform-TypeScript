@@ -48,7 +48,7 @@ this.setBufferedImage(BufferedImage(key.getWidth(), key.getHeight(), key.getType
 }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

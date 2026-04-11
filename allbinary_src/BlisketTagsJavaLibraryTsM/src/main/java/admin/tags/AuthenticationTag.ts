@@ -142,7 +142,7 @@ this.roles= values;
 
         try {
             
-    var anyType: any = {} = AuthenticationRequestHelperFactory().
+    var anyType: any = AuthenticationRequestHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
@@ -217,7 +217,7 @@ this.roles= values;
 
         try {
             
-    var anyType: any = {} = AuthenticationRequestHelperFactory().
+    var anyType: any = AuthenticationRequestHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
@@ -292,7 +292,7 @@ this.roles= values;
 
         try {
             
-    var anyType: any = {} = AuthenticationHelperFactory().
+    var anyType: any = AuthenticationHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
@@ -367,7 +367,7 @@ this.roles= values;
 
         try {
             
-    var anyType: any = {} = AuthenticationHelperFactory().
+    var anyType: any = AuthenticationHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
@@ -442,7 +442,7 @@ this.roles= values;
 
         try {
             
-    var anyType: any = {} = AuthenticationRequestHelperFactory().
+    var anyType: any = AuthenticationRequestHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
@@ -533,7 +533,7 @@ this.roles= values;
 
         try {
             
-    var anyType: any = {} = AuthenticationHelperFactory().
+    var anyType: any = AuthenticationHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
@@ -612,7 +612,7 @@ this.roles= values;
 
         try {
             
-    var anyType: any = {} = AuthenticationHelperFactory().
+    var anyType: any = AuthenticationHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
@@ -691,7 +691,7 @@ this.roles= values;
 
         try {
             
-    var anyType: any = {} = AuthenticationHelperFactory().
+    var anyType: any = AuthenticationHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
@@ -782,7 +782,7 @@ this.roles= values;
 
         try {
             
-    var anyType: any = {} = AuthenticationHelperFactory().
+    var anyType: any = AuthenticationHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
@@ -873,7 +873,7 @@ this.roles= values;
 
         try {
             
-    var anyType: any = {} = AuthenticationHelperFactory().
+    var anyType: any = AuthenticationHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         

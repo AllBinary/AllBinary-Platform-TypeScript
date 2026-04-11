@@ -16,7 +16,7 @@ interface XmlRpcHandler {
 
                 //@Throws(Error::class)
             
-    public execute(method: string, params: Vector<any>): any = {}
+    public execute(method: string, params: Vector<any>): any
 
 }
                 

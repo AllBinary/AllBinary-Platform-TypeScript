@@ -298,7 +298,7 @@ this.inputAutomationModuleInterface= inputAutomationModuleInterface;
 }
 
 
-    getServiceFactory(): any = {}{
+    getServiceFactory(): any{
 
 
 

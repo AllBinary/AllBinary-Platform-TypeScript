@@ -30,7 +30,7 @@ interface AdvertisementCampaignInterface {
 
     public getName(): string
 
-    public getComponent(): any = {}
+    public getComponent(): any
 
     public setName(name: string)
 

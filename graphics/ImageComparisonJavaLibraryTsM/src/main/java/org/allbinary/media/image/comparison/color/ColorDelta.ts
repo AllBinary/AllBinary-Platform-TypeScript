@@ -37,7 +37,7 @@ export class ColorDelta
                 , CacheableInterface {
         
 
-    public static getKey(rgb1: number, rgb2: number): any = {}{
+    public static getKey(rgb1: number, rgb2: number): any{
 var rgb1 = rgb1
 var rgb2 = rgb2
 
@@ -56,7 +56,7 @@ var rgb2 = rgb2
 
     private rgb2: number= 0
 
-    private key: any = {}
+    private key: any
 public constructor (rgb1: number, rgb2: number){
 
             super();
@@ -71,7 +71,7 @@ this.key= ColorDelta.getKey(rgb1, rgb2);
 }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

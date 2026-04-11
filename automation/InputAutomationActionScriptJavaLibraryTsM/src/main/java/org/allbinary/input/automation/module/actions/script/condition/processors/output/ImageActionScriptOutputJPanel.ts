@@ -333,7 +333,7 @@ itemTypesJList!.setModel(object: javax.swing.AbstractListModel()
     
 }
 
-    public getElementAt(i: number): any = {}{
+    public getElementAt(i: number): any{
 var i = i
 
 

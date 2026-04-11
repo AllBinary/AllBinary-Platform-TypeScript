@@ -65,7 +65,7 @@ public constructor (){
             }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

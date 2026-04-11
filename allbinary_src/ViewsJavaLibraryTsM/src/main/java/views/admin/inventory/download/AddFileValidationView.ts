@@ -271,7 +271,7 @@ this.itemInterface= inventoryEntity!.getItem(id);
                                     }
                                 
 
-    var downloadableFileObject: any = {} = this.getRequestHashMap()!.get(DownloadItemData.FILE)!;
+    var downloadableFileObject: any = this.getRequestHashMap()!.get(DownloadItemData.FILE)!;
         
         
 ;
@@ -331,7 +331,7 @@ this.getRequestHashMap()!.put(DownloadItemData.SIZE, (size).toString());
                         }
                             
 
-    var licenseFileObject: any = {} = this.getRequestHashMap()!.get(DownloadItemData.LICENSE_FILE)!;
+    var licenseFileObject: any = this.getRequestHashMap()!.get(DownloadItemData.LICENSE_FILE)!;
         
         
 ;
@@ -383,7 +383,7 @@ HttpFileUploadUtil.log(fileItem);
                         }
                             
 
-    var extraFilesObject: any = {} = this.getRequestHashMap()!.get(DownloadItemData.EXTRA_FILES)!;
+    var extraFilesObject: any = this.getRequestHashMap()!.get(DownloadItemData.EXTRA_FILES)!;
         
         
 ;
@@ -445,7 +445,7 @@ this.unzip(fileItem);
 hashMap!.put(BasicItemData.ID, this.itemInterface!.getId());
     
 
-    var licenseObject: any = {} = hashMap!.get(DownloadItemData.LICENSE_FILE)!;
+    var licenseObject: any = hashMap!.get(DownloadItemData.LICENSE_FILE)!;
         
         
 ;
@@ -469,7 +469,7 @@ hashMap!.put(BasicItemData.ID, this.itemInterface!.getId());
                         }
                             
 
-    var fileObject: any = {} = hashMap!.get(DownloadItemData.FILE)!;
+    var fileObject: any = hashMap!.get(DownloadItemData.FILE)!;
         
         
 ;
@@ -696,7 +696,7 @@ stringBuffer!.append("<br />");
                                     }
                                 
 
-    var downloadableFileObject: any = {} = this.getRequestHashMap()!.get(DownloadItemData.FILE)!;
+    var downloadableFileObject: any = this.getRequestHashMap()!.get(DownloadItemData.FILE)!;
         
         
 ;
@@ -737,7 +737,7 @@ stringBuffer!.append("<br/>");
                         }
                             
 
-    var licenseFileObject: any = {} = this.getRequestHashMap()!.get(DownloadItemData.LICENSE_FILE)!;
+    var licenseFileObject: any = this.getRequestHashMap()!.get(DownloadItemData.LICENSE_FILE)!;
         
         
 ;
@@ -774,7 +774,7 @@ this.validationInfo(stringBuffer, fileName, size);
                         }
                             
 
-    var extraFilesObject: any = {} = this.getRequestHashMap()!.get(DownloadItemData.EXTRA_FILES)!;
+    var extraFilesObject: any = this.getRequestHashMap()!.get(DownloadItemData.EXTRA_FILES)!;
         
         
 ;

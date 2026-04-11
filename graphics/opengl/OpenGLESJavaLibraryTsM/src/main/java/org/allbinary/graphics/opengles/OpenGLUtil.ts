@@ -351,7 +351,7 @@ var gl = gl
 ;
     
 
-    var image: any = {}
+    var image: any
 ;
     
 

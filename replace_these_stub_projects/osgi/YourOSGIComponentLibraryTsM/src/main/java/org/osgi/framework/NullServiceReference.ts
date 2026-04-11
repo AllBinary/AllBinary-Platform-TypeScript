@@ -30,7 +30,7 @@ export class NullServiceReference
          {
         
 
-    public getProperty(key: string): any = {}{
+    public getProperty(key: string): any{
 var key = key
 
 

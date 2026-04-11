@@ -121,7 +121,7 @@ var document = document
 i < size; i++)
         {
 
-    var anyType: any = {} = childCategoryVector!.get(i)!;
+    var anyType: any = childCategoryVector!.get(i)!;
         
         
 ;

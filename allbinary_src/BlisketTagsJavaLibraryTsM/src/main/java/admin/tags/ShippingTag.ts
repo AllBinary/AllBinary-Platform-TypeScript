@@ -84,7 +84,7 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = {} = ShippingHelperFactory().
+    var anyType: any = ShippingHelperFactory().
                             getInstance(propertiesHashMap, this.pageContext)!;
         
         

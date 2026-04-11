@@ -53,7 +53,7 @@ export class DiveAndDirectionalTrackingAIFactory
     //var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 
-    var visitorCanBeNull: any = {}? = hashtable.get(BasicAI.AI_VISITOR as Object);
+    var visitorCanBeNull: any? = hashtable.get(BasicAI.AI_VISITOR as Object);
         
         
 ;

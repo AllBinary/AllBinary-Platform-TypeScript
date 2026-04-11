@@ -91,7 +91,7 @@ this.setServer(0);
 
                 //@Throws(Error::class)
             
-    public get(anyType: any = {}, cryptInterface: CryptInterface): any = {}{
+    public get(anyType: any = {}, cryptInterface: CryptInterface): any{
     //var anyType = anyType
     //var cryptInterface = cryptInterface
 
@@ -161,7 +161,7 @@ logUtil!.put(CLIENT_INFO +hashtable.toString(), this, commonStrings!.GET);
 param.add(hashtable);
     
 
-    var result: any = {} = xmlRpcClient!.execute(this.getRemoteMethod(), param, cryptInterface)!;
+    var result: any = xmlRpcClient!.execute(this.getRemoteMethod(), param, cryptInterface)!;
         
         
 ;

@@ -78,7 +78,7 @@ private constructor (){
                 //@Throws(LicensingException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public getInstance(abeClientInformation: AbeClientInformationInterface, className: string): any = {}{
+    public getInstance(abeClientInformation: AbeClientInformationInterface, className: string): any{
     //var abeClientInformation = abeClientInformation
     //var className = className
 
@@ -136,7 +136,7 @@ private constructor (){
                 //@Throws(LicensingException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public getInstance(abeClientInformation: AbeClientInformationInterface, className: string, classes: Function[], params: any[]): any = {}{
+    public getInstance(abeClientInformation: AbeClientInformationInterface, className: string, classes: Function[], params: any[]): any{
     //var abeClientInformation = abeClientInformation
 var className = className
 var classes = classes

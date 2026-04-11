@@ -31,7 +31,7 @@ export class ColorCacheable
                 , CacheableInterface {
         
 
-    private key: any = {}
+    private key: any
 
     private color: Color
 public constructor (key: any = {}){
@@ -47,7 +47,7 @@ key.
 }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

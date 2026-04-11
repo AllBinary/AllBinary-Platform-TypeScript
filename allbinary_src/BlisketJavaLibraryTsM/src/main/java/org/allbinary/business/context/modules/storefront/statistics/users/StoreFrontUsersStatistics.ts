@@ -252,7 +252,7 @@ hashMap!.put(nextUserRole!.toString(), totalForRole!.toString());
 }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

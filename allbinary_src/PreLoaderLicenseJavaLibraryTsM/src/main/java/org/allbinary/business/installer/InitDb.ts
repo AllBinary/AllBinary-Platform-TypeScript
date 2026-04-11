@@ -33,7 +33,7 @@ export class InitDb
          {
         
 
-    private anyType: any = {}
+    private anyType: any
 
     private readonly METHOD_CALL_GET_HOST_NAME: string = "getHostName";
         
@@ -77,7 +77,7 @@ this.anyType= anyType;
 }
 
 
-    getHelper(): any = {}{
+    getHelper(): any{
 
 
 

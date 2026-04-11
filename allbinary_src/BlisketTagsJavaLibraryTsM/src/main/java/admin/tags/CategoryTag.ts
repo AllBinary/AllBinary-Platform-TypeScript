@@ -77,7 +77,7 @@ this.xsl= value;
 
         try {
             
-    var anyType: any = {} = CategoryRequestHelperFactory().
+    var anyType: any = CategoryRequestHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         
@@ -156,7 +156,7 @@ this.xsl= value;
 
         try {
             
-    var anyType: any = {} = CategoryRequestHelperFactory().
+    var anyType: any = CategoryRequestHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         

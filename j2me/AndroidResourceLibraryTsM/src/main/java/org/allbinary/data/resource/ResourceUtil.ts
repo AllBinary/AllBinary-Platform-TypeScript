@@ -87,11 +87,11 @@ export class ResourceUtil
         
         
 
-    private context: any = {} = NullUtil.getInstance()!.NULL_OBJECT;
+    private context: any = NullUtil.getInstance()!.NULL_OBJECT;
         
         
 
-    private resources: any = {} = NullUtil.getInstance()!.NULL_OBJECT;
+    private resources: any = NullUtil.getInstance()!.NULL_OBJECT;
         
         
 

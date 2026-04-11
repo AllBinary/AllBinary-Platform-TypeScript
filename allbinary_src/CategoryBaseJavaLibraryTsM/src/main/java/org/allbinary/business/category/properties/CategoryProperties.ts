@@ -127,7 +127,7 @@ this.category= .toCharArray();
 }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

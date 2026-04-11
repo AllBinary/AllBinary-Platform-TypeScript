@@ -168,7 +168,7 @@ var data = data
 var a = a
 var b = b
 
-    var temp: any = {} = data[a]!;
+    var temp: any = data[a]!;
         
         
 ;

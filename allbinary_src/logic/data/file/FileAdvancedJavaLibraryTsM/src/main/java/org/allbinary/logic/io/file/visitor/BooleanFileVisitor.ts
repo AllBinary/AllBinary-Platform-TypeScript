@@ -56,7 +56,7 @@ PreLogUtil.put("Filter BasicArrayList: " +this.getFilterStringBasicArrayList()!.
 }
 
 
-    public visit(anyType: any = {}): any = {}{
+    public visit(anyType: any = {}): any{
 var anyType = anyType
 
 

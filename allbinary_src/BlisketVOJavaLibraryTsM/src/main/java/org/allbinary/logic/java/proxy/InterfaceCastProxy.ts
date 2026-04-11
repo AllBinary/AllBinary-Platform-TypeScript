@@ -31,7 +31,7 @@ export class InterfaceCastProxy
                 , java.lang.reflect.InvocationHandler {
         
 
-    public static newInstance(anyType: any = {}): any = {}{
+    public static newInstance(anyType: any = {}): any{
 var anyType = anyType
 
 
@@ -44,7 +44,7 @@ var anyType = anyType
 }
 
 
-    private anyType: any = {}
+    private anyType: any
 private constructor (anyType: any = {}){
 
             super();
@@ -56,7 +56,7 @@ this.anyType= anyType;
 
                 //@Throws(Error::class)
             
-    public invoke(proxyObject: any = {}, proxyMethod: Method, proxyArgs: any[]): any = {}{
+    public invoke(proxyObject: any = {}, proxyMethod: Method, proxyArgs: any[]): any{
 var proxyObject = proxyObject
 var proxyMethod = proxyMethod
 var proxyArgs = proxyArgs

@@ -60,13 +60,13 @@ var hashtable = hashtable
         while(enumeration.hasMoreElements())
         {
 
-    var key: any = {} = enumeration.nextElement()!!;
+    var key: any = enumeration.nextElement()!!;
         
         
 ;
     
 
-    var value: any = {} = hashtable.get(key as Object)!;
+    var value: any = hashtable.get(key as Object)!;
         
         
 ;

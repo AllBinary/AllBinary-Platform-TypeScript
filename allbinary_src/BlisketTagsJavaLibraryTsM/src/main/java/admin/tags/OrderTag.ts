@@ -90,7 +90,7 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = {} = OrderHelperFactory().
+    var anyType: any = OrderHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
@@ -169,7 +169,7 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = {} = OrderHelperFactory().
+    var anyType: any = OrderHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         

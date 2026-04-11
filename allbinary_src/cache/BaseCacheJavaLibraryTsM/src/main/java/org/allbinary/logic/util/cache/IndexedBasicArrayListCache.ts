@@ -83,7 +83,7 @@ this.size= size;
 }
 
 
-    public get(index: number): any = {}{
+    public get(index: number): any{
 var index = index
 
 

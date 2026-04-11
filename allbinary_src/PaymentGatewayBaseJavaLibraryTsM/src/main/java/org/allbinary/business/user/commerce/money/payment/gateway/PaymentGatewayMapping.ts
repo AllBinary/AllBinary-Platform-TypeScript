@@ -75,7 +75,7 @@ this.paymentGatewayInterface= paymentGatewayInterface;
 
                 //@Throws(Error::class)
             
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

@@ -84,7 +84,7 @@ export class PathFinder extends GeographicPathFinderBase {
         
         
 
-    private geographicMapInterface: any = {} = NullUtil.getInstance()!.NULL_OBJECT;
+    private geographicMapInterface: any = NullUtil.getInstance()!.NULL_OBJECT;
         
         
 

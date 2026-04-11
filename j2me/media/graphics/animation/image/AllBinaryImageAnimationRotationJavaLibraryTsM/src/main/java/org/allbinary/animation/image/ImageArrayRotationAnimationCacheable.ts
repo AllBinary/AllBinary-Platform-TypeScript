@@ -48,7 +48,7 @@ public constructor (anyType: any = {}, animationBehavior: AnimationBehavior)
 }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

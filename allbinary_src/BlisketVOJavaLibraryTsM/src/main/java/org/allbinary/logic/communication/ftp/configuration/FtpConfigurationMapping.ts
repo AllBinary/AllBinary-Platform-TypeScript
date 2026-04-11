@@ -73,7 +73,7 @@ hashMap!.put(FtpConfigurationData.PATH, this.ftpConfigurationInterface!.getPath(
 
                 //@Throws(Error::class)
             
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

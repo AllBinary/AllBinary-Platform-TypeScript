@@ -37,7 +37,7 @@ export class NativeLibraryHelperWrapper
 
     private loader: ClassLoader
 
-    private anyType: any = {}
+    private anyType: any
 public constructor (libraryName: string){
 
             super();

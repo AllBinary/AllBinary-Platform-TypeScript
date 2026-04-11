@@ -59,7 +59,7 @@ this.selectedRTSLayersPlayerGameInput= selectedRTSLayersPlayerGameInput;
 }
 
 
-    public visit(anyType: any = {}): any = {}{
+    public visit(anyType: any = {}): any{
 var anyType = anyType
 
     var selectedLayer: CollidableDestroyableDamageableLayer = anyType as CollidableDestroyableDamageableLayer;

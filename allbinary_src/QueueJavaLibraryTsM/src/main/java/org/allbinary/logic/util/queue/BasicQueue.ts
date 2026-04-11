@@ -64,9 +64,9 @@ this.queueVector!.remove(anyType);
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    removeLast(): any = {}{
+    removeLast(): any{
 
-    var anyType: any = {} = this.queueVector!.lastElement()!;
+    var anyType: any = this.queueVector!.lastElement()!;
         
         
 ;

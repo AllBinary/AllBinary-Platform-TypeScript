@@ -39,7 +39,7 @@ export class InitDbHelperFactory
 
                 //@Throws(LicensingException::class)
             
-    public static getInstance(abeClientInformation: AbeClientInformationInterface, databaseConnectionInfoInterface: DatabaseConnectionInfoInterface): any = {}{
+    public static getInstance(abeClientInformation: AbeClientInformationInterface, databaseConnectionInfoInterface: DatabaseConnectionInfoInterface): any{
     //var abeClientInformation = abeClientInformation
 var databaseConnectionInfoInterface = databaseConnectionInfoInterface
 
@@ -61,7 +61,7 @@ classes[0]=
 params[0]= databaseConnectionInfoInterface as Object;
     
 
-    var anyType: any = {} = AbeFactory.getInstance()!.getInstance(abeClientInformation, CLASSNAME, classes, params)!;
+    var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, CLASSNAME, classes, params)!;
         
         
 ;
@@ -77,10 +77,10 @@ params[0]= databaseConnectionInfoInterface as Object;
 
                 //@Throws(LicensingException::class)
             
-    public static getInstance(abeClientInformation: AbeClientInformationInterface): any = {}{
+    public static getInstance(abeClientInformation: AbeClientInformationInterface): any{
     //var abeClientInformation = abeClientInformation
 
-    var anyType: any = {} = AbeFactory.getInstance()!.getInstance(abeClientInformation, CLASSNAME, 
+    var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, CLASSNAME, 
                             null, 
                             null)!;
         

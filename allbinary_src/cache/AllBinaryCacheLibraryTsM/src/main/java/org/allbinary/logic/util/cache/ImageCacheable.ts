@@ -38,7 +38,7 @@ var anyType = anyType
 }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

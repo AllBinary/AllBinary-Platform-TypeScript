@@ -551,7 +551,7 @@ var document = document
 }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

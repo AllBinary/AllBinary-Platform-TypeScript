@@ -265,7 +265,7 @@ var hashMap = hashMap
 i < size; i++)
         {
 
-    var objectKey: any = {} = keyArray[i]!;
+    var objectKey: any = keyArray[i]!;
         
         
 ;
@@ -277,7 +277,7 @@ i < size; i++)
 ;
     
 
-    var anyType: any = {} = hashMap!.get(objectKey as Object);
+    var anyType: any = hashMap!.get(objectKey as Object);
 
                          as Object;
         
@@ -527,7 +527,7 @@ i < size; i++)
 ;
     
 
-    var anyType: any = {} = hashMap!.get(name as Object);
+    var anyType: any = hashMap!.get(name as Object);
 
                          as Object;
         

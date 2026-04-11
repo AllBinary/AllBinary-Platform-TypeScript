@@ -193,7 +193,7 @@ keyValuePersistance!.loadAll(abeClientInformation);
 ;
     
 
-    var anyType: any = {} = this.SCALE.getName();
+    var anyType: any = this.SCALE.getName();
 
                          as Object;
         

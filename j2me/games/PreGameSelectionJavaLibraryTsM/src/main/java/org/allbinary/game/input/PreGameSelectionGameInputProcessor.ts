@@ -198,7 +198,7 @@ var list = list
 index < size; index++)
         {
 
-    var anyType: any = {} = list.get(index)!;
+    var anyType: any = list.get(index)!;
         
         
 ;

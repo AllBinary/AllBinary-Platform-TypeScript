@@ -74,7 +74,7 @@ this.status= value;
 
         try {
             
-    var anyType: any = {} = OrderItemsRequestHelperFactory().
+    var anyType: any = OrderItemsRequestHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         

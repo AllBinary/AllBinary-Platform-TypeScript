@@ -55,7 +55,7 @@ public constructor (){
 
                 //@Throws(LicensingException::class)
             
-    public getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any = {}{
+    public getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any{
 var hashMap = hashMap
 var pageContext = pageContext
 

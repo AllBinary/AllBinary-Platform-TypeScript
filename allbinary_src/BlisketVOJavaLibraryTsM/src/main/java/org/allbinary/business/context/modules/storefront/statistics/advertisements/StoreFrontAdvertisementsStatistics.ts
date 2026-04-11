@@ -69,7 +69,7 @@ public constructor (storeFrontInterface: StoreFrontInterface){
 }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

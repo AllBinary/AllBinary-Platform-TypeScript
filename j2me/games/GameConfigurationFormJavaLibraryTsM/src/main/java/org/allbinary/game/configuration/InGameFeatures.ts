@@ -80,7 +80,7 @@ export class InGameFeatures extends Init {
                         
                                     {
                                     
-    var inGameExclusiveOrientationSensorVectorCanBeNull: any = {}? = inGameFeatureChoiceGroups!.get()!.get(orientationData!.ORIENTATION_SENSOR_INPUT as Object);
+    var inGameExclusiveOrientationSensorVectorCanBeNull: any? = inGameFeatureChoiceGroups!.get()!.get(orientationData!.ORIENTATION_SENSOR_INPUT as Object);
         
         
 ;

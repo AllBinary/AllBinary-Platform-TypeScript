@@ -69,7 +69,7 @@ var log = log
 ;
     
 
-    var anyType: any = {} = log.getObject()!;
+    var anyType: any = log.getObject()!;
         
         
 ;
@@ -81,7 +81,7 @@ var log = log
 ;
     
 
-    var exception: any = {} = log.getThrowable()!;
+    var exception: any = log.getThrowable()!;
         
         
 ;

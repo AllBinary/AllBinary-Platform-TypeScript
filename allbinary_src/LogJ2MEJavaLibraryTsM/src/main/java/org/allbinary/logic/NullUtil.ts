@@ -50,7 +50,7 @@
 }
 
 
-    /*actual*/ public readonly NULL_OBJECT: any = {} = {};
+    /*actual*/ public readonly NULL_OBJECT: any = {};
         
         
 

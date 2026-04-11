@@ -47,7 +47,7 @@ export inner class Config
 /*Static stuff is not allowed for Typescript inner classes*//**/
 
 
-    public readonly bitmapConfig: any = {}
+    public readonly bitmapConfig: any
 public constructor (bitmapConfig: any = {}){
 
             super();

@@ -40,7 +40,7 @@ this.setListModel(listModel);
 }
 
 
-    public doInBackground(): any = {}{
+    public doInBackground(): any{
 
 
 

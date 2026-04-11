@@ -42,7 +42,7 @@ export class WorkFlowWrapper
         
         
 
-    private anyType: any = {}
+    private anyType: any
 public constructor (anyType: any = {}){
 
             super();
@@ -52,7 +52,7 @@ this.anyType= anyType;
 }
 
 
-    getWorkFlowObject(): any = {}{
+    getWorkFlowObject(): any{
 
 
 

@@ -1087,7 +1087,7 @@ values.add(this.specials);
 
                 //@Throws(Error::class)
             
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

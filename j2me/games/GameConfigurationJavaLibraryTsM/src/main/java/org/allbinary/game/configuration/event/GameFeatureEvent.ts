@@ -52,7 +52,7 @@ this.whatChanged= whatChanged;
 }
 
 
-    public getGameOption(): any = {}{
+    public getGameOption(): any{
 
 
 

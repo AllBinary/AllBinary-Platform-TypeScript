@@ -221,7 +221,7 @@ hashMap!.put(storeFrontOrdersHistoryStatisticsData!.TOTAL, this.getTotal()!.toSt
 }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

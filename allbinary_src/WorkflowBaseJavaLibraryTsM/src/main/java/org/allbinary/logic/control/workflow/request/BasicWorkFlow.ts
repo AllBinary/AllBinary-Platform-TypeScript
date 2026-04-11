@@ -180,7 +180,7 @@ this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance
 }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

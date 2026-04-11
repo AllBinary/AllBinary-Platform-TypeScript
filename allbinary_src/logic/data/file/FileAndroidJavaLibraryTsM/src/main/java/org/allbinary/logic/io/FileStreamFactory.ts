@@ -47,7 +47,7 @@ export class FileStreamFactory
 }
 
 
-    private context: any = {}
+    private context: any
 private constructor (context: Context){
 
             super();

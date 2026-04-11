@@ -2540,7 +2540,7 @@ dataHashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
 }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

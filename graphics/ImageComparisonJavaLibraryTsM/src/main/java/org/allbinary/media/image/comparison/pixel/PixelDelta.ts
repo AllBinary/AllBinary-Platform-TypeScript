@@ -40,7 +40,7 @@ export class PixelDelta
                 , CacheableInterface {
         
 
-    public static getKey(point: GPoint, colorDelta: ColorDelta): any = {}{
+    public static getKey(point: GPoint, colorDelta: ColorDelta): any{
 var point = point
 var colorDelta = colorDelta
 
@@ -59,7 +59,7 @@ var colorDelta = colorDelta
 
     private colorDelta: ColorDelta
 
-    private key: any = {}
+    private key: any
 public constructor (point: GPoint, colorDelta: ColorDelta){
 
             super();
@@ -74,7 +74,7 @@ this.key= PixelDelta.getKey(this.getPoint(), this.getColorDelta());
 }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

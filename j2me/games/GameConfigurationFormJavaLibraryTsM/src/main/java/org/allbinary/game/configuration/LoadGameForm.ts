@@ -194,7 +194,7 @@ var option = option
 index < size; index++)
         {
 
-    var anyType: any = {} = list.objectArray[index]!;
+    var anyType: any = list.objectArray[index]!;
         
         
 ;

@@ -8,7 +8,7 @@
 interface ServiceReference extends Comparable {
         
 
-    public getProperty(key: string): any = {}
+    public getProperty(key: string): any
 
     public getPropertyKeys(): string[]
 

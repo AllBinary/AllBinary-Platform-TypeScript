@@ -105,7 +105,7 @@ this.hashtable= Hashtable<any, any>();
 ;
     
 
-    var keyValue: any = {} = hashtable.get(abeClientInformationData!.KEY)!;
+    var keyValue: any = hashtable.get(abeClientInformationData!.KEY)!;
         
         
 ;

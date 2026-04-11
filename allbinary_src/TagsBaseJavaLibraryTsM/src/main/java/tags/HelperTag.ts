@@ -34,7 +34,7 @@ export class HelperTag extends PropertiesTag {
 
     private readonly tagHelperFactoryInterface: TagHelperFactoryInterface
 
-    private anyType: any = {}
+    private anyType: any
 public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 
             super();
@@ -79,7 +79,7 @@ this.anyType= tagHelperFactoryInterface!.getInstance(this.getPropertiesHashMap()
 }
 
 
-    public getHelper(): any = {}{
+    public getHelper(): any{
 
 
 

@@ -70,7 +70,7 @@ this.status= value;
 
         try {
             
-    var anyType: any = {} = OrderHistoryHelperFactory().
+    var anyType: any = OrderHistoryHelperFactory().
                             getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         

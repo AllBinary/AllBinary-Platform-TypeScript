@@ -39,7 +39,7 @@ expect export class NullUtil
     //private static readonly instance: NullUtil
     public static getInstance(): NullUtil
 
-    public readonly NULL_OBJECT: any = {}
+    public readonly NULL_OBJECT: any
     public readonly NULL_CLASS: Function
     public readonly NULL_OBJECT_ARRAY: any[]
     public readonly NULL_CHAR_ARRAY: string[]

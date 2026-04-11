@@ -104,7 +104,7 @@ export class RecordStoreHighScores extends HighScores {
     //var columnTwoHeading = columnTwoHeading
     //var recordComparatorInterface = recordComparatorInterface
 
-    var highScoresCanBeNull: any = {}? = hashTable!.get(highScoreName as Object);
+    var highScoresCanBeNull: any? = hashTable!.get(highScoreName as Object);
         
         
 ;

@@ -58,7 +58,7 @@ public constructor (){
 
         try {
             
-    var anyType: any = {} = PaymentProcessHelperFactory().
+    var anyType: any = PaymentProcessHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         

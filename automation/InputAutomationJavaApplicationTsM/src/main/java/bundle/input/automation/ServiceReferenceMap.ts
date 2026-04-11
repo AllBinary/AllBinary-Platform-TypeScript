@@ -111,7 +111,7 @@ var value = value
 }
 
 
-    public get(key: any = {}): any = {}{
+    public get(key: any = {}): any{
 var key = key
 
 
@@ -124,7 +124,7 @@ var key = key
 }
 
 
-    public put(key: any = {}, value: any = {}): any = {}{
+    public put(key: any = {}, value: any = {}): any{
 var key = key
 var value = value
 
@@ -136,7 +136,7 @@ var value = value
 }
 
 
-    public remove(key: any = {}): any = {}{
+    public remove(key: any = {}): any{
 var key = key
 
 

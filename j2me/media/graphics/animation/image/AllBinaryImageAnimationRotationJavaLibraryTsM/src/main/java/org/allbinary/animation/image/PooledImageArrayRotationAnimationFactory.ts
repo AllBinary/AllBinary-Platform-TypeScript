@@ -52,7 +52,7 @@ export class PooledImageArrayRotationAnimationFactory
                 , AnimationInterfaceFactoryInterface {
         
 
-    private allBinaryImageRotationAnimationInfo: any = {} = NullUtil.getInstance()!.NULL_OBJECT;
+    private allBinaryImageRotationAnimationInfo: any = NullUtil.getInstance()!.NULL_OBJECT;
         
         
 

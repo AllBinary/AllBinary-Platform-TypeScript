@@ -27,6 +27,9 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
 
     
+import { LogFormatUtil } from "../../../../../org/allbinary/logic/communication/log/LogFormatUtil.js";
+
+    
 
 export class Log
             extends Object
@@ -43,11 +46,11 @@ export class Log
 
     private readonly specialMessage: string
 
-    private readonly anyType: any = {}
+    private readonly anyType: any
 
     private readonly functionName: string
 
-    private readonly exception: any = {}
+    private readonly exception: any
 public constructor (){
 
             super();
@@ -111,7 +114,7 @@ this.exception= this.nullUtil!.NULL_OBJECT;
 }
 
 
-    public getObject(): any = {}{
+    public getObject(): any{
 
 
 
@@ -131,7 +134,7 @@ this.exception= this.nullUtil!.NULL_OBJECT;
 }
 
 
-    public getThrowable(): any = {}{
+    public getThrowable(): any{
 
 
 

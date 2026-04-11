@@ -33,7 +33,7 @@ interface TableMappingInterface {
 
                 //@Throws(Error::class)
             
-    public getKey(): any = {}
+    public getKey(): any
 
                 //@Throws(Error::class)
             

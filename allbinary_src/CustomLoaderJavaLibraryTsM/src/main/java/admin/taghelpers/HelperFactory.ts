@@ -50,7 +50,7 @@ export class HelperFactory
 
                 //@Throws(LicensingException::class)
             
-    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest): any = {}{
+    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest): any{
     //var abeClientInformation = abeClientInformation
     //var factoryName = factoryName
     //var className = className
@@ -91,7 +91,7 @@ params[0]= hashMap as Object;
 params[1]= httpServletRequest as Object;
     
 
-    var anyType: any = {} = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;
+    var anyType: any = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;
         
         
 ;
@@ -158,7 +158,7 @@ params[1]= httpServletRequest as Object;
 
                 //@Throws(LicensingException::class)
             
-    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, pageContext: PageContext): any = {}{
+    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, pageContext: PageContext): any{
     //var abeClientInformation = abeClientInformation
     //var factoryName = factoryName
     //var className = className
@@ -199,7 +199,7 @@ params[0]= hashMap as Object;
 params[1]= pageContext as Object;
     
 
-    var anyType: any = {} = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;
+    var anyType: any = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;
         
         
 ;
@@ -266,7 +266,7 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
 
                 //@Throws(LicensingException::class)
             
-    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, specialhashMap: HashMap<any, any>, pageContext: PageContext): any = {}{
+    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, specialhashMap: HashMap<any, any>, pageContext: PageContext): any{
     //var abeClientInformation = abeClientInformation
     //var factoryName = factoryName
     //var className = className
@@ -312,7 +312,7 @@ params[1]= specialhashMap as Object;
 params[2]= pageContext as Object;
     
 
-    var anyType: any = {} = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;
+    var anyType: any = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;
         
         
 ;
@@ -379,7 +379,7 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
 
                 //@Throws(LicensingException::class)
             
-    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string): any = {}{
+    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string): any{
     //var abeClientInformation = abeClientInformation
     //var factoryName = factoryName
     //var className = className
@@ -392,7 +392,7 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
 
         try {
             
-    var anyType: any = {} = AbeFactory.getInstance()!.getInstance(abeClientInformation, className)!;
+    var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className)!;
         
         
 ;

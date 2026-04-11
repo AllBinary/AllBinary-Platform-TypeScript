@@ -141,7 +141,7 @@ private constructor (){
 transformInfoInterface!.setChild();
     
 
-    var anyType: any = {} = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;
+    var anyType: any = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;
         
         
 ;
@@ -240,7 +240,7 @@ transformInfoInterface!.setChild();
                         }
                             
 
-    var anyType: any = {} = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;
+    var anyType: any = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;
         
         
 ;
@@ -313,7 +313,7 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e);
                                     }
                                 
 
-    var anyType: any = {} = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;
+    var anyType: any = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;
         
         
 ;

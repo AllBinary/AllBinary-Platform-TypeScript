@@ -25,7 +25,7 @@ export class BaseServiceReference
                 , ServiceReference {
         
 
-    public getProperty(key: string): any = {}{
+    public getProperty(key: string): any{
 var key = key
 
 

@@ -69,7 +69,7 @@ hashMap!.put(UserEmailEventConfigurationData.LISTENER_CLASSPATH, this.userEmailE
 
                 //@Throws(Error::class)
             
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

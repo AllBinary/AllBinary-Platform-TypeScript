@@ -299,7 +299,7 @@ this.getList()!.add(highScore);
 ;
     
 
-    var nextElement: any = {}
+    var nextElement: any
 ;
     
 

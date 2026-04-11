@@ -27,7 +27,7 @@ export class PlatformImage
          {
         
 
-    public getImage(graphicsSurface2: any = {}): any = {}{
+    public getImage(graphicsSurface2: any = {}): any{
     //var graphicsSurface2 = graphicsSurface2
 
 

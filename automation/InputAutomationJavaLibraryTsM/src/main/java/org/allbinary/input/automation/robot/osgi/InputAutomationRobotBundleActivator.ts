@@ -275,7 +275,7 @@ this.removeRobots(context);
 }
 
 
-    getServiceFactory(): any = {}{
+    getServiceFactory(): any{
 
 
 

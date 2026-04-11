@@ -64,7 +64,7 @@ public constructor ()
 
         try {
             
-    var anyType: any = {} = InventoryHelperFactory().
+    var anyType: any = InventoryHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         
@@ -154,7 +154,7 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>");
 
         try {
             
-    var anyType: any = {} = InventoryHelperFactory().
+    var anyType: any = InventoryHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         

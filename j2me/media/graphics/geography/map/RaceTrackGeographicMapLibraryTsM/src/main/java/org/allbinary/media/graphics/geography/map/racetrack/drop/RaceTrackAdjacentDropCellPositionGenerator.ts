@@ -280,7 +280,7 @@ super.update(allBinaryGameLayerManager, geographicMapInterface);
 ;
     
 
-    var objectCanBeNull: any = {}? = this.hashtable.get(Group.ID);
+    var objectCanBeNull: any? = this.hashtable.get(Group.ID);
         
         
 ;

@@ -69,7 +69,7 @@ export class MultipassWaypointPathRunnable extends WaypointPathRunnableBase {
         
         
 
-    private pathFindingInfo: any = {} = NullUtil.getInstance()!.NULL_OBJECT;
+    private pathFindingInfo: any = NullUtil.getInstance()!.NULL_OBJECT;
         
         
 

@@ -32,7 +32,7 @@ interface QueueInterface {
 
                 //@Throws(Error::class)
             
-    public remove(): any = {}
+    public remove(): any
 
 }
                 

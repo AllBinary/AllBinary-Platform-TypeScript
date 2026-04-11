@@ -70,7 +70,7 @@ private constructor (){
                                     }
                                 
 
-    var exception: any = {} = log.getThrowable()!;
+    var exception: any = log.getThrowable()!;
         
         
 ;
@@ -97,7 +97,7 @@ private constructor (){
 ;
     
 
-    var anyType: any = {} = log.getObject()!;
+    var anyType: any = log.getObject()!;
         
         
 ;

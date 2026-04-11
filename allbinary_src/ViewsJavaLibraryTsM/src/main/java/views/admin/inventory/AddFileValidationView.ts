@@ -262,7 +262,7 @@ this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.ite
                                     }
                                 
 
-    var imageFileItemObject: any = {} = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
+    var imageFileItemObject: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
         
         
 ;
@@ -477,7 +477,7 @@ stringBuffer!.append(" does not exist.<br />");
 }
 
 
-    var anyType: any = {} = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
+    var anyType: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
         
         
 ;

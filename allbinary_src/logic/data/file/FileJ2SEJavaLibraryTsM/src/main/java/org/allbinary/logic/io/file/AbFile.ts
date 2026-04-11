@@ -139,7 +139,7 @@ this.file= File(abPath!.toFileSystemString());
 }
 
 
-    public getParentFile(): any = {}{
+    public getParentFile(): any{
 
 
 
@@ -187,7 +187,7 @@ this.file= File(abPath!.toFileSystemString());
 }
 
 
-    public getAbsoluteFile(): any = {}{
+    public getAbsoluteFile(): any{
 
 
 
@@ -215,7 +215,7 @@ this.file= File(abPath!.toFileSystemString());
 
                 //@Throws(IOException::class)
             
-    public getCanonicalFile(): any = {}{
+    public getCanonicalFile(): any{
 
 
 

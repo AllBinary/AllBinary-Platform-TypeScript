@@ -167,7 +167,7 @@ hashMap!.put(StoreFrontInventoryStatisticsData.getInstance()!.TOTALVALUE, this.g
 }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

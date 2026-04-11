@@ -19,7 +19,7 @@ interface BundleContext {
 
     public registerService(clazz: string, service: any = {}, properties: Dictionary): ServiceRegistration
 
-    public getService(reference: ServiceReference): any = {}
+    public getService(reference: ServiceReference): any
 
                 //@Throws(InvalidSyntaxException::class)
             

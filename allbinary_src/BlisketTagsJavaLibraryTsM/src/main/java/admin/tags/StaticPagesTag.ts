@@ -77,7 +77,7 @@ this.xslFile= value;
 
         try {
             
-    var anyType: any = {} = StaticPagesRequestHelperFactory().
+    var anyType: any = StaticPagesRequestHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         
@@ -156,7 +156,7 @@ this.xslFile= value;
 
         try {
             
-    var anyType: any = {} = StaticPagesRequestHelperFactory().
+    var anyType: any = StaticPagesRequestHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         

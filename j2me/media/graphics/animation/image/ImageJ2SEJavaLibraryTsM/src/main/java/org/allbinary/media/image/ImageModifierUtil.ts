@@ -127,7 +127,7 @@ export class ImageModifierUtil
 ;
     
 
-    var dataElements: any = {}
+    var dataElements: any
 ;
     
 
@@ -247,7 +247,7 @@ bx= colorModel!.getBlue(dataElements);
 ;
     
 
-    var dataElements: any = {}
+    var dataElements: any
 ;
     
 

@@ -138,7 +138,7 @@ objectArray[currentIndex++]= anyType;
 }
 
 
-    public remove(index: number): any = {}{
+    public remove(index: number): any{
     //var index = index
 
                         if(index >= currentIndex)
@@ -166,7 +166,7 @@ stringBuffer!.appendint(currentIndex);
                                     }
                                 
 
-    var oldValue: any = {} = objectArray[index]!;
+    var oldValue: any = objectArray[index]!;
         
         
 ;
@@ -627,7 +627,7 @@ i >= 0; i--)
 }
 
 
-    public get(index: number): any = {}{
+    public get(index: number): any{
     //var index = index
 
                         if(index >= currentIndex)
@@ -663,7 +663,7 @@ stringBuffer!.appendint(currentIndex);
 }
 
 
-    public set(index: number, element: any = {}): any = {}{
+    public set(index: number, element: any = {}): any{
     //var index = index
     //var element = element
 
@@ -692,7 +692,7 @@ stringBuffer!.appendint(currentIndex);
                                     }
                                 
 
-    var oldValue: any = {} = objectArray[index]!;
+    var oldValue: any = objectArray[index]!;
         
         
 ;
@@ -807,7 +807,7 @@ currentIndex= 0;
 }
 
 
-    public clone(): any = {}{
+    public clone(): any{
 
     var list: BasicArrayList = new BasicArrayList();
         
@@ -821,7 +821,7 @@ currentIndex= 0;
 ;
     
 
-    var anyType: any = {}
+    var anyType: any
 ;
     
 

@@ -115,7 +115,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 index < size; index++)
         {
 
-    var layerInterfaceCanBeNull: any = {}? = list.objectArray[index];
+    var layerInterfaceCanBeNull: any? = list.objectArray[index];
         
         
 ;

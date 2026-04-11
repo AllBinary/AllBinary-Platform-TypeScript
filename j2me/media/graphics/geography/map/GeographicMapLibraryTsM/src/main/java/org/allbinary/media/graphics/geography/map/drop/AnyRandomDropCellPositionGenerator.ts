@@ -53,7 +53,7 @@ export class AnyRandomDropCellPositionGenerator extends BaseDropCellPositionGene
         
         
 
-    geographicMapInterface: any = {} = NullUtil.getInstance()!.NULL_OBJECT;
+    geographicMapInterface: any = NullUtil.getInstance()!.NULL_OBJECT;
         
         
 

@@ -113,7 +113,7 @@ this.gameCanvas= gameCanvas;
 index < size; index++)
         {
 
-    var anyType: any = {} = list.objectArray[index]!;
+    var anyType: any = list.objectArray[index]!;
         
         
 ;

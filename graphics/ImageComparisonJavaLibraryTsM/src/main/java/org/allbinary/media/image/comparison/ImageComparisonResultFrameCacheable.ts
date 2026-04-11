@@ -46,7 +46,7 @@ this.frame= frame;
 }
 
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 

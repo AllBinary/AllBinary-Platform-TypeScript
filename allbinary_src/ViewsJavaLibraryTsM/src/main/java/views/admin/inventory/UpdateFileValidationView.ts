@@ -243,7 +243,7 @@ stringBuffer!.append(this.itemInterface!.getCategory());
                                     }
                                 
 
-    var anyType: any = {} = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
+    var anyType: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
         
         
 ;
@@ -426,7 +426,7 @@ stringBuffer!.append(BasicItemValidation(this.itemInterface).
 }
 
 
-    var anyType: any = {} = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
+    var anyType: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
         
         
 ;

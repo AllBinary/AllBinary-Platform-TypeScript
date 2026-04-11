@@ -71,7 +71,7 @@ this.value= value;
 
         try {
             
-    var anyType: any = {} = ShippingAddressHelperFactory().
+    var anyType: any = ShippingAddressHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         
@@ -150,7 +150,7 @@ this.value= value;
 
         try {
             
-    var anyType: any = {} = ShippingAddressHelperFactory().
+    var anyType: any = ShippingAddressHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         

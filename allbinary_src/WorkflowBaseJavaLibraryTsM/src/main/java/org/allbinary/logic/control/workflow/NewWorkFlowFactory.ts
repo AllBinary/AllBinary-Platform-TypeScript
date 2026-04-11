@@ -111,7 +111,7 @@ params[0]= hashMap as Object;
 params[1]= pageContext as Object;
     
 
-    var anyType: any = {} = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, classes, params)!;
+    var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, classes, params)!;
         
         
 ;
@@ -194,7 +194,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
                         
                                     {
                                     
-    var anyType: any = {} = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, 
+    var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, 
                             null, 
                             null)!;
         

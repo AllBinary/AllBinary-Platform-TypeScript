@@ -37,7 +37,7 @@ public constructor (source: any = {})
 }
 
 
-    public getSource(): any = {}{
+    public getSource(): any{
 
 
 

@@ -64,7 +64,7 @@ this.setInitialized(true);
     public getResourceRelativeRelationshipList(resource: string): BasicArrayList{
 var resource = resource
 
-    var listCanBeNull: any = {}? = this.hashtable.get(resource as Object);
+    var listCanBeNull: any? = this.hashtable.get(resource as Object);
         
         
 ;

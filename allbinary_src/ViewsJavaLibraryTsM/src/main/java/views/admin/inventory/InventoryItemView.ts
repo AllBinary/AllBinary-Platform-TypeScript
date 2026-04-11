@@ -167,7 +167,7 @@ this.setRequestHashMap(MultipartRequestParams(request).
                             toHashMap());
     
 
-    var imageFileItemObject: any = {} = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
+    var imageFileItemObject: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
         
         
 ;

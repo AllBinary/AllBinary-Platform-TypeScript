@@ -33,7 +33,7 @@ interface TagHelperFactoryInterface {
 
                 //@Throws(Error::class, LicensingException::class)
             
-    getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any = {}
+    getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any
 
 }
                 

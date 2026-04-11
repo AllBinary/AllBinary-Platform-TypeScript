@@ -215,7 +215,7 @@ gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
 index < size; index++)
         {
 
-    var anyType: any = {} = removeList!.objectArray[index]!;
+    var anyType: any = removeList!.objectArray[index]!;
         
         
 ;

@@ -47,7 +47,7 @@ this.hashMap= hashMap;
 }
 
 
-    public getComponent(): any = {}{
+    public getComponent(): any{
 
 
 

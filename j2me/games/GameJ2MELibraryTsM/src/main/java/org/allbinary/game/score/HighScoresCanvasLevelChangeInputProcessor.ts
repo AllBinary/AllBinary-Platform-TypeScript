@@ -110,7 +110,7 @@ GameKeyEventHandler.getInstance()!.removeListener(this);
 index < size; index++)
         {
 
-    var anyType: any = {} = list.objectArray[index]!;
+    var anyType: any = list.objectArray[index]!;
         
         
 ;

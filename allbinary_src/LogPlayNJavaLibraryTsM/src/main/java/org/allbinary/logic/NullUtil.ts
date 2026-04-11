@@ -53,7 +53,7 @@ import { HashMap } from "../../../java/util/HashMap.js";
 }
 
 
-    /*actual*/ public readonly NULL_OBJECT: any = {} = {};
+    /*actual*/ public readonly NULL_OBJECT: any = {};
         
         
 

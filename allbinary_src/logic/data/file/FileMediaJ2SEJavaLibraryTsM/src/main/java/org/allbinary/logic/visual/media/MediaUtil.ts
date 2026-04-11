@@ -85,7 +85,7 @@ export class MediaUtil
 index < propertyStringArray!.length; index++)
         {
 
-    var propertyObject: any = {} = bufferedImage!.getProperty(propertyStringArray[index]!)!;
+    var propertyObject: any = bufferedImage!.getProperty(propertyStringArray[index]!)!;
         
         
 ;

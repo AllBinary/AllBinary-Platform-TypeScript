@@ -219,7 +219,7 @@ keysAndValues!.put(transformInfoData!.NAME, name);
                         
                                     {
                                     
-    var anyType: any = {} = hashMap!.get(transformInfoData!.OBJECTCONFIG)!;
+    var anyType: any = hashMap!.get(transformInfoData!.OBJECTCONFIG)!;
         
         
 ;
@@ -242,7 +242,7 @@ hashMap!.put(transformInfoData!.OBJECTCONFIG, decode.toCharArray());
                                     }
                                 
 
-    var objectData: any = {} = hashMap!.get(transformInfoData!.DATA)!;
+    var objectData: any = hashMap!.get(transformInfoData!.DATA)!;
         
         
 ;

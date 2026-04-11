@@ -29,7 +29,7 @@ export class BasicArrayListCacheable extends BasicArrayList
                 , CacheableInterface {
         
 
-    public getKey(): any = {}{
+    public getKey(): any{
 
 
 
